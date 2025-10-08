@@ -9,7 +9,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-[600px] flex items-center bg-secondary/30">
+    <section id="home" className="relative min-h-[600px] flex items-center bg-gradient-to-br from-primary/5 via-accent/10 to-secondary/20">
       <div className="container grid lg:grid-cols-2 gap-8 items-center py-12">
         <div className="space-y-6">
           <div className="inline-block">
@@ -19,7 +19,7 @@ const Hero = () => {
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-            Juridische Documenten voor Affiliate Websites
+            Juridische Documenten voor Affiliate Websites: Privacyverklaring, Disclosure & Cookiebeleid
           </h1>
           
           <p className="text-lg text-muted-foreground leading-relaxed">
@@ -39,11 +39,12 @@ const Hero = () => {
           </div>
         </div>
         
-        <div className="relative">
+          <div className="relative">
+          <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg blur-2xl opacity-50"></div>
           <img 
             src={heroImage} 
-            alt="Professionele juridische consultant" 
-            className="rounded-lg shadow-2xl w-full object-cover"
+            alt="Professionële juridische consultant" 
+            className="relative rounded-lg shadow-2xl w-full object-cover ring-2 ring-primary/10"
           />
         </div>
       </div>
