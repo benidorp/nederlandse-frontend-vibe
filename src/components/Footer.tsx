@@ -1,3 +1,5 @@
+import LegalFooter from "./LegalFooter";
+
 const Footer = () => {
   return (
     <footer id="contact" className="bg-primary text-primary-foreground py-12">
@@ -30,7 +32,9 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-primary-foreground/20 pt-8 text-center text-sm text-primary-foreground/80">
+        <LegalFooter />
+        
+        <div className="border-t border-primary-foreground/20 pt-8 mt-8 text-center text-sm text-primary-foreground/80">
           <p>© {new Date().getFullYear()} Legal Affiliate Agreement. Alle rechten voorbehouden.</p>
         </div>
       </div>
