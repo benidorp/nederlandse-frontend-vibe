@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import LegalFooter from "./LegalFooter";
 
 const Footer = () => {
@@ -34,8 +35,15 @@ const Footer = () => {
         
         <LegalFooter />
         
-        <div className="border-t border-primary-foreground/20 pt-8 mt-8 text-center text-sm text-primary-foreground/80">
-          <p>© {new Date().getFullYear()} Legal Affiliate Agreement. Alle rechten voorbehouden.</p>
+        <div className="border-t border-primary-foreground/20 pt-8 mt-8">
+          <div className="flex items-center justify-between">
+            <p className="text-sm text-primary-foreground/80">
+              © {new Date().getFullYear()} Legal Affiliate Agreement. Alle rechten voorbehouden.
+            </p>
+            <Link to="/es" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+              <span className="text-2xl">🇪🇸</span>
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
