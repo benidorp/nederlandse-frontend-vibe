@@ -109,12 +109,12 @@ const Services = () => {
         </div>
 
         <div className="mt-16 grid md:grid-cols-3 gap-8">
-          <Card className="border-primary/20">
+          <Card className="border-accent bg-accent text-accent-foreground">
             <CardHeader>
-              <CardTitle className="text-lg">Perfect voor Alle Affiliates</CardTitle>
+              <CardTitle className="text-lg text-accent-foreground">Perfect voor Alle Affiliates</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-accent-foreground/90">
                 Met duizenden affiliate websites zijn onze aanpasbare documenten geschikt voor elk affiliate bedrijf. 
                 Focus op het verdienen van commissies—wij hebben juridische naleving eenvoudig gemaakt!
               </p>
