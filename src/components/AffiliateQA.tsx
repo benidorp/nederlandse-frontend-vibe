@@ -139,17 +139,22 @@ const AffiliateQA = () => {
           Ontdek antwoorden op de meest gestelde vragen over affiliate marketing
         </p>
         
-        <Accordion type="single" collapsible className="w-full space-y-2">
-          {qaItems.map((item, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="bg-background rounded-lg border px-6">
-              <AccordionTrigger className="text-left hover:no-underline">
-                <span className="font-semibold">{item.question}</span>
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground">
-                {item.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
+        <Accordion type="single" collapsible className="w-full">
+          <AccordionItem value="all-questions" className="bg-background rounded-lg border px-6">
+            <AccordionTrigger className="text-left hover:no-underline">
+              <span className="font-semibold text-lg">50 Vragen over Affiliate Marketing</span>
+            </AccordionTrigger>
+            <AccordionContent className="text-muted-foreground">
+              <div className="space-y-6 pt-2">
+                {qaItems.map((item, index) => (
+                  <div key={index} className="space-y-2">
+                    <h3 className="font-semibold text-foreground">{item.question}</h3>
+                    <p className="text-sm leading-relaxed">{item.answer}</p>
+                  </div>
+                ))}
+              </div>
+            </AccordionContent>
+          </AccordionItem>
         </Accordion>
       </div>
     </section>
