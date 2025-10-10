@@ -9,20 +9,20 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-[600px] flex items-center" style={{ background: 'linear-gradient(135deg, hsl(30 15% 55%), hsl(30 15% 65%))' }}>
+    <section id="home" className="relative min-h-[600px] flex items-center" style={{ background: 'linear-gradient(135deg, hsl(30 15% 85%), hsl(30 15% 92%))' }}>
       <div className="container grid lg:grid-cols-2 gap-8 items-center py-12">
         <div className="space-y-6">
           <div className="inline-block">
-            <span className="text-sm font-semibold text-white uppercase tracking-wide">
+            <span className="text-sm font-semibold text-foreground uppercase tracking-wide">
               Juridische Zekerheid
             </span>
           </div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight">
             Juridische Documenten voor Affiliate Websites: Privacyverklaring, Disclosure & Cookiebeleid
           </h1>
           
-          <p className="text-lg text-white/90 leading-relaxed">
+          <p className="text-lg text-muted-foreground leading-relaxed">
             Professionele juridische documenten die uw affiliate business beschermen en in lijn brengen met alle wettelijke vereisten. 
             Ons betaalbare pakket bevat alle essentiële overeenkomsten zoals <strong>algemene voorwaarden, privacybeleid en disclaimers</strong>—
             voor volledige naleving, vertrouwen en gemoedsrust.
