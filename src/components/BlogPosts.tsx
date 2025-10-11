@@ -1,17 +1,10 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-
-const blogPosts = [
-  {
-    title: "AVG-compliant affiliate marketing: Een complete gids voor 2024",
-    excerpt: "Ontdek hoe je je affiliate website volledig AVG-compliant maakt en boetes voorkomt.",
-    content: `De Algemene Verordening Gegevensbescherming (AVG) heeft grote impact op hoe affiliate marketeers opereren. In deze gids behandelen we alle essentiële aspecten:
+const blogPosts = [{
+  title: "AVG-compliant affiliate marketing: Een complete gids voor 2024",
+  excerpt: "Ontdek hoe je je affiliate website volledig AVG-compliant maakt en boetes voorkomt.",
+  content: `De Algemene Verordening Gegevensbescherming (AVG) heeft grote impact op hoe affiliate marketeers opereren. In deze gids behandelen we alle essentiële aspecten:
 
 **Persoonsgegevens en affiliate marketing**
 Als affiliate marketeer verzamel je vaak meer persoonsgegevens dan je denkt. IP-adressen, cookiegegevens, en klikgedrag vallen allemaal onder de AVG. Het is cruciaal om precies te weten welke gegevens je verzamelt en waarom.
@@ -38,10 +31,9 @@ De Autoriteit Persoonsgegevens (AP) kan boetes opleggen tot €20 miljoen of 4% 
 3. Update je privacyverklaring
 4. Stel processen in voor gebruikersverzoeken
 5. Documenteer je AVG-compliance`
-  },
-  {
-    title: "Cookiebanner implementeren: Technische gids voor affiliate websites",
-    content: `Een correcte cookiebanner is essentieel voor AVG-compliance. Deze gids helpt je stap voor stap.
+}, {
+  title: "Cookiebanner implementeren: Technische gids voor affiliate websites",
+  content: `Een correcte cookiebanner is essentieel voor AVG-compliance. Deze gids helpt je stap voor stap.
 
 **Cookiecategorieën**
 Categoriseer je cookies correct:
@@ -84,11 +76,10 @@ Test je banner in verschillende browsers en apparaten. Controleer dat:
 • Cookies pas worden geplaatst na toestemming
 • De weigeren-knop echt werkt
 • Voorkeuren worden onthouden`
-  },
-  {
-    title: "Affiliate disclosure plaatsing: Waar, wanneer en hoe vaak?",
-    excerpt: "Leer de beste practices voor het plaatsen van affiliate disclosures volgens FTC en EU-regelgeving.",
-    content: `Transparantie over je affiliate commissies is niet alleen wettelijk verplicht, het bouwt ook vertrouwen op bij je publiek.
+}, {
+  title: "Affiliate disclosure plaatsing: Waar, wanneer en hoe vaak?",
+  excerpt: "Leer de beste practices voor het plaatsen van affiliate disclosures volgens FTC en EU-regelgeving.",
+  content: `Transparantie over je affiliate commissies is niet alleen wettelijk verplicht, het bouwt ook vertrouwen op bij je publiek.
 
 **FTC-richtlijnen (ook relevant in EU)**
 De Federal Trade Commission eist dat disclosures:
@@ -142,11 +133,10 @@ Een goede disclosure beschermt je tegen:
 • Claims van consumenten
 • Verwijdering uit affiliate programma's
 • Reputatieschade`
-  },
-  {
-    title: "Top 10 juridische fouten die affiliate marketeers maken (en hoe je ze voorkomt)",
-    excerpt: "Voorkom kostbare fouten met deze checklist van veelgemaakte juridische missers in affiliate marketing.",
-    content: `Deze fouten zien we keer op keer bij affiliate websites. Voorkom ze met deze gids.
+}, {
+  title: "Top 10 juridische fouten die affiliate marketeers maken (en hoe je ze voorkomt)",
+  excerpt: "Voorkom kostbare fouten met deze checklist van veelgemaakte juridische missers in affiliate marketing.",
+  content: `Deze fouten zien we keer op keer bij affiliate websites. Voorkom ze met deze gids.
 
 **1. Geen privacyverklaring**
 Fout: Website lanceren zonder privacyverklaring
@@ -206,11 +196,10 @@ Oplossing: Bewaar alle versies minimaal 7 jaar
 □ Alle affiliate links gemarkeerd
 □ Regelmatige juridische audits
 □ Documentatie van compliance inspanningen`
-  },
-  {
-    title: "GDPR voor internationale affiliate marketing: Wereldwijd compliant blijven",
-    excerpt: "Als je affiliate traffic uit meerdere landen krijgt, moet je verschillende regelgeving naleven.",
-    content: `Internationale affiliate marketing brengt extra juridische complexiteit met zich mee.
+}, {
+  title: "GDPR voor internationale affiliate marketing: Wereldwijd compliant blijven",
+  excerpt: "Als je affiliate traffic uit meerdere landen krijgt, moet je verschillende regelgeving naleven.",
+  content: `Internationale affiliate marketing brengt extra juridische complexiteit met zich mee.
 
 **Geografische scope van GDPR/AVG**
 De AVG is van toepassing als:
@@ -312,11 +301,10 @@ Voor serious affiliate marketeers die internationaal opereren:
 • Gebruik compliance platforms
 • Blijf op de hoogte van wijzigingen
 • Documenteer alle inspanningen`
-  },
-  {
-    title: "Disclaimer templates: Bescherm jezelf tegen aansprakelijkheid",
-    excerpt: "Ontdek waarom disclaimers essentieel zijn en hoe je ze correct implementeert op je affiliate site.",
-    content: `Disclaimers zijn je juridische vangnet. Ze beperken je aansprakelijkheid en stellen verwachtingen helder.
+}, {
+  title: "Disclaimer templates: Bescherm jezelf tegen aansprakelijkheid",
+  excerpt: "Ontdek waarom disclaimers essentieel zijn en hoe je ze correct implementeert op je affiliate site.",
+  content: `Disclaimers zijn je juridische vangnet. Ze beperken je aansprakelijkheid en stellen verwachtingen helder.
 
 **Waarom disclaimers nodig zijn**
 Als affiliate marketeer geef je vaak advies en aanbevelingen. Zonder goede disclaimers kun je aansprakelijk worden gesteld voor:
@@ -414,11 +402,10 @@ Een goede disclaimer pagina bevat:
 
 **Juridische review**
 Voor high-risk niches (medical, financial, legal) laat disclaimers altijd reviewen door een gespecialiseerde advocaat.`
-  },
-  {
-    title: "Van gratis template naar professioneel juridisch document: Een stappenplan",
-    excerpt: "Leer hoe je gratis templates omzet in op maat gemaakte juridische documenten voor jouw affiliate business.",
-    content: `Gratis templates zijn een goed startpunt, maar personalisatie is essentieel voor echte bescherming.
+}, {
+  title: "Van gratis template naar professioneel juridisch document: Een stappenplan",
+  excerpt: "Leer hoe je gratis templates omzet in op maat gemaakte juridische documenten voor jouw affiliate business.",
+  content: `Gratis templates zijn een goed startpunt, maar personalisatie is essentieel voor echte bescherming.
 
 **Stap 1: Verzamel je bedrijfsinformatie**
 
@@ -605,53 +592,10 @@ Bewaar voor 7+ jaar:
 • Totaal: €2000-4000 + €1100+/jaar
 
 Voor de meeste affiliate marketeers is de semi-professionele aanpak de beste balans tussen kosten en bescherming.`
-  }
-];
-
+}];
 const BlogPosts = () => {
-  return (
-    <section id="blog" className="py-20 bg-gradient-to-br from-background via-muted/30 to-background">
-      <div className="container">
-        <div className="text-center mb-12">
-          <Badge variant="outline" className="mb-4 border-primary/30">SEO Kennisbank</Badge>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Juridische Compliance voor Affiliate Marketing
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Diepgaande artikelen en gidsen om je affiliate website compliant en winstgevend te houden.
-          </p>
-        </div>
-
-        <div className="max-w-5xl mx-auto space-y-6">
-          {blogPosts.map((post, index) => (
-            <Card key={index} className="overflow-hidden border-2 border-primary/10 hover:border-primary/20 transition-all hover:shadow-xl">
-              <Accordion type="single" collapsible>
-                <AccordionItem value={`post-${index}`} className="border-0">
-                  <AccordionTrigger className="px-6 py-4 hover:no-underline group">
-                    <div className="text-left flex-1">
-                      <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors mb-2">
-                        {post.title}
-                      </h3>
-                      {post.excerpt && (
-                        <p className="text-sm text-muted-foreground line-clamp-2">
-                          {post.excerpt}
-                        </p>
-                      )}
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent className="px-6 pb-6">
-                    <div className="prose prose-sm max-w-none text-muted-foreground whitespace-pre-line leading-relaxed">
-                      {post.content}
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
-            </Card>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+  return <section id="blog" className="py-20 bg-gradient-to-br from-background via-muted/30 to-background">
+      
+    </section>;
 };
-
 export default BlogPosts;
