@@ -68,7 +68,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="diensten" className="py-20" style={{ background: 'linear-gradient(135deg, hsl(30 20% 85%), hsl(30 20% 90%))' }}>
+    <section id="diensten" className="py-20 bg-secondary/20">
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">Onze Diensten</Badge>
@@ -85,9 +85,9 @@ const Services = () => {
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <Card key={index} className="hover:shadow-lg transition-shadow bg-card/80 backdrop-blur-sm border-border">
+              <Card key={index} className="hover:shadow-lg transition-shadow bg-card border-border">
                 <CardHeader>
-                  <div className="h-12 w-12 rounded-lg flex items-center justify-center mb-4" style={{ background: 'linear-gradient(135deg, hsl(220 70% 18%), hsl(220 70% 28%))' }}>
+                  <div className="h-12 w-12 rounded-lg bg-primary flex items-center justify-center mb-4">
                     <Icon className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <CardTitle className="text-xl">{service.title}</CardTitle>
@@ -96,7 +96,7 @@ const Services = () => {
                 <CardContent>
                   <ul className="space-y-2">
                     {service.details.map((detail, idx) => (
-                      <li key={idx} className="text-sm text-muted-foreground flex items-start gap-2">
+                      <li key={idx} className="text-sm text-foreground flex items-start gap-2">
                         <span className="text-primary mt-1">•</span>
                         <span>{detail}</span>
                       </li>
@@ -109,7 +109,7 @@ const Services = () => {
         </div>
 
         <div className="mt-16 grid md:grid-cols-3 gap-8">
-          <Card style={{ background: 'linear-gradient(135deg, hsl(220 70% 12%), hsl(220 70% 18%))' }} className="border-primary/40">
+          <Card className="bg-primary border-primary">
             <CardHeader>
               <CardTitle className="text-lg text-primary-foreground">Perfect voor Alle Affiliates</CardTitle>
             </CardHeader>
@@ -121,7 +121,7 @@ const Services = () => {
             </CardContent>
           </Card>
 
-          <Card style={{ background: 'linear-gradient(135deg, hsl(220 70% 12%), hsl(220 70% 18%))' }} className="border-primary/40">
+          <Card className="bg-primary border-primary">
             <CardHeader>
               <CardTitle className="text-lg text-primary-foreground">Voor AL Uw Websites</CardTitle>
             </CardHeader>
@@ -133,7 +133,7 @@ const Services = () => {
             </CardContent>
           </Card>
 
-          <Card style={{ background: 'linear-gradient(135deg, hsl(220 70% 12%), hsl(220 70% 18%))' }} className="border-primary/40">
+          <Card className="bg-primary border-primary">
             <CardHeader>
               <CardTitle className="text-lg text-primary-foreground">Minimaliseer Uw Risico's</CardTitle>
             </CardHeader>
