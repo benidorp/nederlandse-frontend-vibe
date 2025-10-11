@@ -68,7 +68,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="diensten" className="py-20 bg-gradient-to-b from-secondary/30 to-secondary/10">
+    <section id="diensten" className="py-20 bg-gradient-to-b from-blue-50/40 to-blue-50/10">
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">Onze Diensten</Badge>
@@ -85,10 +85,10 @@ const Services = () => {
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <Card key={index} className="hover:shadow-lg transition-shadow bg-gradient-to-br from-primary/10 to-accent/5 border-primary/20">
+              <Card key={index} className="hover:shadow-lg transition-shadow bg-gradient-to-br from-blue-50/50 to-blue-100/30 border-blue-200/40">
                 <CardHeader>
-                  <div className="h-12 w-12 rounded-lg bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center mb-4">
-                    <Icon className="h-6 w-6 text-primary" />
+                  <div className="h-12 w-12 rounded-lg bg-gradient-to-br from-blue-100/60 to-blue-200/50 flex items-center justify-center mb-4">
+                    <Icon className="h-6 w-6 text-blue-700" />
                   </div>
                   <CardTitle className="text-xl">{service.title}</CardTitle>
                   <CardDescription>{service.description}</CardDescription>
@@ -97,7 +97,7 @@ const Services = () => {
                   <ul className="space-y-2">
                     {service.details.map((detail, idx) => (
                       <li key={idx} className="text-sm text-muted-foreground flex items-start gap-2">
-                        <span className="text-primary mt-1">•</span>
+                        <span className="text-blue-600 mt-1">•</span>
                         <span>{detail}</span>
                       </li>
                     ))}
@@ -109,19 +109,19 @@ const Services = () => {
         </div>
 
         <div className="mt-16 grid md:grid-cols-3 gap-8">
-          <Card className="border-accent bg-accent text-accent-foreground">
+          <Card className="border-blue-200/50 bg-gradient-to-br from-blue-100/50 to-blue-50/30">
             <CardHeader>
-              <CardTitle className="text-lg text-accent-foreground">Perfect voor Alle Affiliates</CardTitle>
+              <CardTitle className="text-lg text-foreground">Perfect voor Alle Affiliates</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-accent-foreground/90">
+              <p className="text-sm text-muted-foreground">
                 Met duizenden affiliate websites zijn onze aanpasbare documenten geschikt voor elk affiliate bedrijf. 
                 Focus op het verdienen van commissies—wij hebben juridische naleving eenvoudig gemaakt!
               </p>
             </CardContent>
           </Card>
 
-          <Card className="border-primary/20">
+          <Card className="border-blue-200/50 bg-gradient-to-br from-blue-50/30 to-background">
             <CardHeader>
               <CardTitle className="text-lg">Voor AL Uw Websites</CardTitle>
             </CardHeader>
@@ -133,7 +133,7 @@ const Services = () => {
             </CardContent>
           </Card>
 
-          <Card className="border-primary/20">
+          <Card className="border-blue-200/50 bg-gradient-to-br from-blue-50/30 to-background">
             <CardHeader>
               <CardTitle className="text-lg">Minimaliseer Uw Risico's</CardTitle>
             </CardHeader>
