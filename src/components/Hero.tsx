@@ -9,7 +9,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-[600px] flex items-center" style={{ background: 'linear-gradient(135deg, hsl(30 15% 85%), hsl(30 15% 92%))' }}>
+    <section id="home" className="relative min-h-[600px] flex items-center" style={{ background: 'linear-gradient(135deg, hsl(30 20% 75%), hsl(30 20% 85%))' }}>
       <div className="container grid lg:grid-cols-2 gap-8 items-center py-12">
         <div className="space-y-6">
           <div className="inline-block">

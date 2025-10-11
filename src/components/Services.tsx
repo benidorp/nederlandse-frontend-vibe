@@ -68,7 +68,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="diensten" className="py-20 bg-secondary/20">
+    <section id="diensten" className="py-20 bg-gradient-to-b from-secondary/30 to-secondary/10">
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">Onze Diensten</Badge>
@@ -85,9 +85,9 @@ const Services = () => {
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <Card key={index} className="hover:shadow-lg transition-shadow bg-primary/5 border-primary/10">
+              <Card key={index} className="hover:shadow-lg transition-shadow bg-gradient-to-br from-primary/10 to-accent/5 border-primary/20">
                 <CardHeader>
-                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                  <div className="h-12 w-12 rounded-lg bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center mb-4">
                     <Icon className="h-6 w-6 text-primary" />
                   </div>
                   <CardTitle className="text-xl">{service.title}</CardTitle>
