@@ -86,47 +86,95 @@ U kunt een klacht indienen bij de Autoriteit Persoonsgegevens: www.autoriteitper
   },
   {
     title: "Disclaimer",
-    content: `**Disclaimer Legal Affiliate Agreement**
+    content: `**DISCLAIMER – IAEE.EU / LEGAL AFFILIATE AGREEMENT**
 
-**Algemene disclaimer**
-De informatie op deze website is bedoeld voor algemene informatieve doeleinden. Legal Affiliate Agreement streeft naar accurate en actuele informatie, maar geeft geen garanties over de volledigheid, betrouwbaarheid of geschiktheid voor specifieke doeleinden.
+Laatst bijgewerkt: maart 2025
 
-**Geen juridisch advies**
-Deze website en de aangeboden templates vormen geen juridisch advies. Voor juridische kwesties specifiek aan uw situatie raden wij aan om een gekwalificeerde advocaat te raadplegen.
+**1. Inleiding**
 
-**Affiliate disclosure**
-Deze website kan affiliate links bevatten. Wanneer u via onze links een dienst afneemt of product koopt, kunnen wij een commissie ontvangen zonder extra kosten voor u. Dit beïnvloedt niet onze onafhankelijke meningen en aanbevelingen.
+Welkom bij IAEE.EU ("wij", "ons", "onze" of "de Website").
+Deze Disclaimer is van toepassing op al het gebruik van onze website, diensten en gelieerde platforms onder de naam Legal Affiliate Agreement. Door onze website te bezoeken of te gebruiken, stemt u in met deze disclaimer en de voorwaarden hierin vermeld.
 
-**Template gebruik**
-De aangeboden templates zijn zorgvuldig opgesteld maar dienen als startpunt. Elke situatie is uniek en kan aanpassingen vereisen. Legal Affiliate Agreement is niet aansprakelijk voor schade voortvloeiend uit:
-• Incorrect gebruik van templates
-• Onvolledige aanpassingen
-• Wijzigingen in wetgeving na publicatie
-• Specifieke situaties die niet in templates worden gedekt
+IAEE.EU biedt toegang tot juridische documenten, sjablonen en informatie, vaak via samenwerkingen met externe leveranciers en affiliate-partners. Wij streven naar correcte, actuele en betrouwbare informatie, maar kunnen de volledigheid of geschiktheid daarvan niet garanderen.
 
-**Externe links**
-Deze website bevat links naar externe websites. Legal Affiliate Agreement is niet verantwoordelijk voor de inhoud of privacy practices van deze externe sites.
+**2. Geen juridisch advies**
 
-**Wijzigingen**
-Wij behouden het recht om de inhoud van deze website en disclaimer op elk moment te wijzigen zonder voorafgaande kennisgeving.
+De inhoud van deze website – inclusief alle juridische documenten, templates, handleidingen en informatie – vormt geen juridisch advies.
+Alle informatie is uitsluitend bedoeld voor algemene informatieve en educatieve doeleinden.
 
-**Beperking aansprakelijkheid**
-Legal Affiliate Agreement is niet aansprakelijk voor:
-• Directe of indirecte schade
-• Gederfde winst
-• Verlies van data
-• Boetes van toezichthouders
+Voor advies dat specifiek is afgestemd op uw persoonlijke of zakelijke situatie, dient u altijd een gekwalificeerde jurist of advocaat te raadplegen in uw rechtsgebied.
 
-De maximale aansprakelijkheid is beperkt tot het bedrag betaald voor onze diensten.
+**3. Gebruik van templates en documenten**
 
-**Intellectueel eigendom**
-Alle content, templates en materialen zijn beschermd door auteursrecht. Ongeautoriseerd gebruik is verboden.
+De aangeboden juridische templates en documenten zijn ontwikkeld als algemene voorbeeldmodellen.
+Hoewel deze zorgvuldig zijn opgesteld, kunnen ze niet garanderen dat ze volledig of toepasselijk zijn in uw specifieke situatie.
 
-**Geschillen**
-Op eventuele geschillen is Nederlands recht van toepassing.
+U bent zelf verantwoordelijk voor:
+• het correct aanpassen van de templates aan uw behoeften;
+• het naleven van relevante wet- en regelgeving;
+• het verifiëren van juridische juistheid bij gebruik in uw rechtsgebied.
 
-**Contact**
-Voor vragen over deze disclaimer: info@legalaffiliateagreement.com`
+IAEE.EU en Legal Affiliate Agreement aanvaarden geen aansprakelijkheid voor:
+• onjuist of onvolledig gebruik van de documenten;
+• fouten of omissies in de inhoud;
+• veranderingen in wetgeving na publicatie;
+• schade of verlies (direct of indirect) voortvloeiend uit het gebruik van de materialen.
+
+**4. Affiliate disclosure**
+
+Onze website kan affiliate links bevatten. Dit betekent dat wij een commissie kunnen ontvangen wanneer u via een link op onze website een product of dienst aanschaft bij een externe partij.
+Deze commissies brengen geen extra kosten voor u met zich mee en beïnvloeden niet onze onafhankelijke redactionele keuzes of aanbevelingen.
+
+Wij zijn echter niet verantwoordelijk voor de kwaliteit, beschikbaarheid of juistheid van producten en diensten van derden. Alle transacties via affiliate-links vallen onder de voorwaarden en privacybeleid van de betreffende externe aanbieder.
+
+**5. Externe websites en links**
+
+Onze website kan verwijzingen of links bevatten naar websites van derden. Deze links worden uitsluitend ter informatie aangeboden.
+Wij hebben geen controle over de inhoud, nauwkeurigheid of beveiliging van deze externe websites en aanvaarden geen enkele aansprakelijkheid voor schade of verlies als gevolg van uw gebruik ervan.
+
+**6. Intellectueel eigendom**
+
+Alle inhoud op deze website – waaronder teksten, logo's, lay-out, juridische templates, documenten en grafisch materiaal – is beschermd door auteursrecht en intellectuele eigendomsrechten.
+
+Het is niet toegestaan om materiaal van deze website te kopiëren, te verspreiden, te publiceren, te verkopen of te hergebruiken zonder voorafgaande schriftelijke toestemming van IAEE.EU of Legal Affiliate Agreement.
+
+**7. Beperking van aansprakelijkheid**
+
+Voor zover toegestaan door toepasselijke wetgeving, is IAEE.EU / Legal Affiliate Agreement op geen enkele wijze aansprakelijk voor:
+• directe of indirecte schade;
+• winst- of inkomstenverlies;
+• verlies van gegevens of reputatie;
+• contractuele of buitencontractuele aansprakelijkheid;
+• boetes of sancties van toezichthouders.
+
+De totale aansprakelijkheid, indien wettelijk afdwingbaar, is beperkt tot het bedrag dat u daadwerkelijk heeft betaald voor onze diensten of producten.
+
+Wij bieden onze informatie, documenten en producten aan "zoals ze zijn", zonder enige vorm van garantie, expliciet of impliciet.
+
+**8. Geen garantie voor juistheid**
+
+Hoewel wij redelijke inspanningen leveren om de inhoud actueel en correct te houden, kunnen fouten of onvolledigheden voorkomen.
+Wij garanderen niet dat onze website of inhoud:
+• foutloos of ononderbroken zal functioneren;
+• vrij is van virussen of andere schadelijke componenten;
+• of geschikt is voor specifieke juridische, zakelijke of persoonlijke doeleinden.
+
+**9. Wijzigingen en updates**
+
+Wij behouden ons het recht voor om deze Disclaimer, de inhoud van de website of onze diensten op elk moment en zonder voorafgaande kennisgeving te wijzigen.
+De meest recente versie is altijd te raadplegen via https://iaee.eu.
+
+**10. Toepasselijk recht en geschillen**
+
+Op deze Disclaimer en op het gebruik van onze website is Nederlands recht van toepassing, ongeacht het land vanwaar de website wordt bezocht.
+Eventuele geschillen worden uitsluitend voorgelegd aan de bevoegde rechtbank in Nederland.
+
+**11. Contact**
+
+Voor vragen over deze disclaimer of onze diensten kunt u contact opnemen via:
+
+E-mail: support@iaee.eu
+Website: https://iaee.eu`
   },
   {
     title: "Cookiebeleid",
