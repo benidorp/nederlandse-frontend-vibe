@@ -594,7 +594,7 @@ Bewaar voor 7+ jaar:
 Voor de meeste affiliate marketeers is de semi-professionele aanpak de beste balans tussen kosten en bescherming.`
 }];
 const BlogPosts = () => {
-  return <section id="blog" className="py-20 bg-gradient-to-br from-background via-muted/30 to-background">
+  return <section id="blog" className="py-20 bg-navy text-primary-foreground">
       
     </section>;
 };

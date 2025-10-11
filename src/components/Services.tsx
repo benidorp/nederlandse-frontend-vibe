@@ -68,14 +68,14 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="diensten" className="py-20 bg-secondary/20">
+    <section id="diensten" className="py-20 bg-navy text-primary-foreground">
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">Onze Diensten</Badge>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
             Essentiële Juridische Documenten
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">
             Voor een affiliate website zijn de volgende juridische documenten essentieel. 
             Ons pakket bevat alles wat u nodig heeft.
           </p>
@@ -85,9 +85,9 @@ const Services = () => {
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <Card key={index} className="hover:shadow-lg transition-shadow bg-card border-border">
+              <Card key={index} className="hover:shadow-lg transition-shadow bg-primary-foreground text-foreground border-border">
                 <CardHeader>
-                  <div className="h-12 w-12 rounded-lg bg-primary flex items-center justify-center mb-4">
+                  <div className="h-12 w-12 rounded-lg bg-navy flex items-center justify-center mb-4">
                     <Icon className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <CardTitle className="text-xl">{service.title}</CardTitle>
@@ -96,8 +96,8 @@ const Services = () => {
                 <CardContent>
                   <ul className="space-y-2">
                     {service.details.map((detail, idx) => (
-                      <li key={idx} className="text-sm text-foreground flex items-start gap-2">
-                        <span className="text-primary mt-1">•</span>
+                      <li key={idx} className="text-sm text-foreground/90 flex items-start gap-2">
+                        <span className="text-navy mt-1">•</span>
                         <span>{detail}</span>
                       </li>
                     ))}
@@ -109,36 +109,36 @@ const Services = () => {
         </div>
 
         <div className="mt-16 grid md:grid-cols-3 gap-8">
-          <Card className="bg-primary border-primary">
+          <Card className="bg-primary-foreground border-primary-foreground text-foreground">
             <CardHeader>
-              <CardTitle className="text-lg text-primary-foreground">Perfect voor Alle Affiliates</CardTitle>
+              <CardTitle className="text-lg text-foreground">Perfect voor Alle Affiliates</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-primary-foreground/90">
+              <p className="text-sm text-foreground/90">
                 Met duizenden affiliate websites zijn onze aanpasbare documenten geschikt voor elk affiliate bedrijf. 
                 Focus op het verdienen van commissies—wij hebben juridische naleving eenvoudig gemaakt!
               </p>
             </CardContent>
           </Card>
 
-          <Card className="bg-primary border-primary">
+          <Card className="bg-primary-foreground border-primary-foreground text-foreground">
             <CardHeader>
-              <CardTitle className="text-lg text-primary-foreground">Voor AL Uw Websites</CardTitle>
+              <CardTitle className="text-lg text-foreground">Voor AL Uw Websites</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-primary-foreground/90">
+              <p className="text-sm text-foreground/90">
                 De essentiële juridische documenten voor al uw affiliate site(s). Ja, u kunt ze gebruiken voor 
                 ALLE websites zonder dat u aparte licenties hoeft aan te schaffen!
               </p>
             </CardContent>
           </Card>
 
-          <Card className="bg-primary border-primary">
+          <Card className="bg-primary-foreground border-primary-foreground text-foreground">
             <CardHeader>
-              <CardTitle className="text-lg text-primary-foreground">Minimaliseer Uw Risico's</CardTitle>
+              <CardTitle className="text-lg text-foreground">Minimaliseer Uw Risico's</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-primary-foreground/90">
+              <p className="text-sm text-foreground/90">
                 Hoewel we geen garanties kunnen geven, zijn deze juridische documenten zorgvuldig opgesteld 
                 om uw risico's zoveel mogelijk te minimaliseren en u maximale bescherming te bieden.
               </p>

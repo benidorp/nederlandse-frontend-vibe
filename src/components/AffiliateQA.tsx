@@ -130,17 +130,17 @@ const qaItems = [
 
 const AffiliateQA = () => {
   return (
-    <section id="affiliate-qa" className="py-20 px-4 bg-muted/30">
+    <section id="affiliate-qa" className="py-20 px-4 bg-navy text-primary-foreground">
       <div className="container mx-auto max-w-4xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-primary-foreground">
           Affiliate Business Vraag en Antwoord
         </h2>
-        <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
+        <p className="text-primary-foreground/80 text-center mb-12 max-w-2xl mx-auto">
           Ontdek antwoorden op de meest gestelde vragen over affiliate marketing
         </p>
         
         <Accordion type="single" collapsible className="w-full">
-          <AccordionItem value="all-questions" className="bg-background rounded-lg border px-6">
+          <AccordionItem value="all-questions" className="bg-primary-foreground text-foreground rounded-lg border px-6">
             <AccordionTrigger className="text-left hover:no-underline">
               <span className="font-semibold text-lg">50 Vragen over Affiliate Marketing</span>
             </AccordionTrigger>

@@ -9,31 +9,31 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-[600px] flex items-center bg-gradient-to-br from-taupe to-taupe-light">
+    <section id="home" className="relative min-h-[600px] flex items-center bg-primary text-primary-foreground">
       <div className="container grid lg:grid-cols-2 gap-8 items-center py-12">
         <div className="space-y-6">
           <div className="inline-block">
-            <span className="text-sm font-semibold text-foreground uppercase tracking-wide">
+            <span className="text-sm font-semibold text-primary-foreground/90 uppercase tracking-wide">
               Juridische Zekerheid
             </span>
           </div>
           
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground leading-tight">
             Juridische Documenten voor Affiliate Websites: Privacyverklaring, Disclosure & Cookiebeleid
           </h1>
           
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <p className="text-lg text-primary-foreground/90 leading-relaxed">
             Professionele juridische documenten die uw affiliate business beschermen en in lijn brengen met alle wettelijke vereisten. 
             Ons betaalbare pakket bevat alle essentiële overeenkomsten zoals <strong>algemene voorwaarden, privacybeleid en disclaimers</strong>—
             voor volledige naleving, vertrouwen en gemoedsrust.
           </p>
           
           <div className="flex flex-wrap gap-4">
-            <Button size="lg" onClick={() => scrollToSection("prijzen")} className="group">
+            <Button size="lg" onClick={() => scrollToSection("prijzen")} className="group bg-primary-foreground text-primary hover:bg-primary-foreground/90">
               Bekijk Pakketten
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button size="lg" variant="outline" onClick={() => scrollToSection("diensten")}>
+            <Button size="lg" variant="outline" onClick={() => scrollToSection("diensten")} className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
               Meer Informatie
             </Button>
           </div>
