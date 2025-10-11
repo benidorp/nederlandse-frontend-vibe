@@ -26,12 +26,29 @@ const ValueProposition = () => {
               Zonder deze documenten loop je risico op hoge boetes en juridische problemen.
             </p>
             
-            <div className="mt-8 p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-200/50">
-              <h3 className="text-lg font-semibold text-foreground mb-2">Over Mij</h3>
-              <p className="text-xl font-bold text-foreground mb-1">Nicole Henderson</p>
-              <p className="text-base text-muted-foreground">
-                Juridisch specialist gespecialiseerd in heldere, precieze en professionele juridische documenten
-              </p>
+            <div className="mt-10 p-8 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-200/50 shadow-sm">
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-bold text-foreground mb-2">Over Mij</h3>
+                <p className="text-2xl font-bold text-blue-700 mb-2">Nicole Henderson</p>
+                <p className="text-lg text-muted-foreground font-medium">
+                  Juridisch specialist gespecialiseerd in heldere, precieze en professionele juridische documenten
+                </p>
+              </div>
+              
+              <div className="space-y-4 text-left max-w-3xl mx-auto">
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  Hallo, ik ben Nicole Henderson, een juridisch schrijver gespecialiseerd in duidelijke, nauwkeurige en professionele juridische documenten. Ik stel contracten, beleid en overeenkomsten op voor bedrijven, organisaties en particulieren die uw belangen beschermen en zorgen voor naleving, waardoor juridisch papierwerk eenvoudig en stressvrij wordt.
+                </p>
+                
+                <div className="pt-4">
+                  <h4 className="text-xl font-bold text-foreground mb-3">
+                    Professionele Juridische Documenten voor Affiliate Bedrijven
+                  </h4>
+                  <p className="text-base text-muted-foreground leading-relaxed">
+                    Om de vele vragen over juridische vereisten voor affiliates te beantwoorden, heb ik hoogwaardige juridische documenten speciaal voor affiliate websites ontwikkeld. Deze documenten zijn ontworpen voor zowel nationaal als internationaal gebruik en bieden essentiële bescherming tegen een fractie van de gebruikelijke kosten. Krijg professionele juridische dekking tegen een betaalbare prijs—beveilig vandaag nog uw bedrijf!
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
