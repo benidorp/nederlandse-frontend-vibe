@@ -68,7 +68,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="diensten" className="py-20 bg-gradient-to-b from-blue-50/40 to-blue-50/10">
+    <section id="diensten" className="py-20" style={{ background: 'linear-gradient(135deg, hsl(30 20% 85%), hsl(30 20% 90%))' }}>
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">Onze Diensten</Badge>
@@ -85,10 +85,10 @@ const Services = () => {
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <Card key={index} className="hover:shadow-lg transition-shadow bg-gradient-to-br from-blue-50/50 to-blue-100/30 border-blue-200/40">
+              <Card key={index} className="hover:shadow-lg transition-shadow bg-card/80 backdrop-blur-sm border-border">
                 <CardHeader>
-                  <div className="h-12 w-12 rounded-lg bg-gradient-to-br from-blue-100/60 to-blue-200/50 flex items-center justify-center mb-4">
-                    <Icon className="h-6 w-6 text-blue-700" />
+                  <div className="h-12 w-12 rounded-lg flex items-center justify-center mb-4" style={{ background: 'linear-gradient(135deg, hsl(220 70% 18%), hsl(220 70% 28%))' }}>
+                    <Icon className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <CardTitle className="text-xl">{service.title}</CardTitle>
                   <CardDescription>{service.description}</CardDescription>
@@ -97,7 +97,7 @@ const Services = () => {
                   <ul className="space-y-2">
                     {service.details.map((detail, idx) => (
                       <li key={idx} className="text-sm text-muted-foreground flex items-start gap-2">
-                        <span className="text-blue-600 mt-1">•</span>
+                        <span className="text-primary mt-1">•</span>
                         <span>{detail}</span>
                       </li>
                     ))}
@@ -109,36 +109,36 @@ const Services = () => {
         </div>
 
         <div className="mt-16 grid md:grid-cols-3 gap-8">
-          <Card className="border-blue-700/40 bg-gradient-to-br from-blue-900/80 to-blue-800/70 text-white">
+          <Card style={{ background: 'linear-gradient(135deg, hsl(220 70% 12%), hsl(220 70% 18%))' }} className="border-primary/40">
             <CardHeader>
-              <CardTitle className="text-lg text-white">Perfect voor Alle Affiliates</CardTitle>
+              <CardTitle className="text-lg text-primary-foreground">Perfect voor Alle Affiliates</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-blue-50">
+              <p className="text-sm text-primary-foreground/90">
                 Met duizenden affiliate websites zijn onze aanpasbare documenten geschikt voor elk affiliate bedrijf. 
                 Focus op het verdienen van commissies—wij hebben juridische naleving eenvoudig gemaakt!
               </p>
             </CardContent>
           </Card>
 
-          <Card className="border-blue-700/40 bg-gradient-to-br from-blue-900/80 to-blue-800/70 text-white">
+          <Card style={{ background: 'linear-gradient(135deg, hsl(220 70% 12%), hsl(220 70% 18%))' }} className="border-primary/40">
             <CardHeader>
-              <CardTitle className="text-lg text-white">Voor AL Uw Websites</CardTitle>
+              <CardTitle className="text-lg text-primary-foreground">Voor AL Uw Websites</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-blue-50">
+              <p className="text-sm text-primary-foreground/90">
                 De essentiële juridische documenten voor al uw affiliate site(s). Ja, u kunt ze gebruiken voor 
                 ALLE websites zonder dat u aparte licenties hoeft aan te schaffen!
               </p>
             </CardContent>
           </Card>
 
-          <Card className="border-blue-700/40 bg-gradient-to-br from-blue-900/80 to-blue-800/70 text-white">
+          <Card style={{ background: 'linear-gradient(135deg, hsl(220 70% 12%), hsl(220 70% 18%))' }} className="border-primary/40">
             <CardHeader>
-              <CardTitle className="text-lg text-white">Minimaliseer Uw Risico's</CardTitle>
+              <CardTitle className="text-lg text-primary-foreground">Minimaliseer Uw Risico's</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-blue-50">
+              <p className="text-sm text-primary-foreground/90">
                 Hoewel we geen garanties kunnen geven, zijn deze juridische documenten zorgvuldig opgesteld 
                 om uw risico's zoveel mogelijk te minimaliseren en u maximale bescherming te bieden.
               </p>

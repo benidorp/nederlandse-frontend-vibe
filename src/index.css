@@ -8,42 +8,47 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 13%;
+    --background: 30 20% 85%;
+    --foreground: 220 70% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 13%;
+    --card: 30 20% 90%;
+    --card-foreground: 220 70% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 13%;
+    --popover: 30 20% 90%;
+    --popover-foreground: 220 70% 15%;
 
     --primary: 220 70% 18%;
-    --primary-foreground: 0 0% 100%;
+    --primary-foreground: 30 20% 95%;
     --primary-glow: 220 70% 28%;
 
-    --secondary: 210 30% 92%;
-    --secondary-foreground: 220 70% 18%;
+    --secondary: 30 20% 75%;
+    --secondary-foreground: 220 70% 15%;
 
-    --muted: 210 25% 94%;
-    --muted-foreground: 210 15% 40%;
+    --muted: 30 15% 80%;
+    --muted-foreground: 220 50% 30%;
 
     --accent: 220 65% 25%;
-    --accent-foreground: 0 0% 100%;
+    --accent-foreground: 30 20% 95%;
 
-    --taupe: 220 20% 45%;
-    --taupe-foreground: 0 0% 100%;
+    --taupe: 30 20% 75%;
+    --taupe-light: 30 20% 85%;
+    --taupe-foreground: 220 70% 15%;
+
+    --navy: 220 70% 18%;
+    --navy-dark: 220 70% 12%;
 
     --gradient-primary: linear-gradient(135deg, hsl(220 70% 18%), hsl(220 70% 28%));
-    --gradient-accent: linear-gradient(135deg, hsl(220 65% 25%), hsl(220 65% 35%));
-    --gradient-taupe: linear-gradient(135deg, hsl(220 20% 45%), hsl(220 20% 55%));
+    --gradient-navy: linear-gradient(135deg, hsl(220 70% 12%), hsl(220 70% 18%));
+    --gradient-taupe: linear-gradient(135deg, hsl(30 20% 75%), hsl(30 20% 85%));
+    --gradient-accent: linear-gradient(135deg, hsl(30 20% 75%), hsl(220 70% 18%));
     --shadow-elegant: 0 10px 40px -10px hsl(220 70% 18% / 0.35);
     --shadow-glow: 0 0 50px hsl(220 70% 28% / 0.25);
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 25% 88%;
-    --input: 210 25% 88%;
+    --border: 30 15% 75%;
+    --input: 30 15% 75%;
     --ring: 220 70% 18%;
 
     --radius: 0.5rem;
