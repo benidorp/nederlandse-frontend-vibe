@@ -8,27 +8,143 @@ import {
 const legalDocuments = [
   {
     title: "Algemene Voorwaarden",
-    content: `**Legal Affiliate Agreement - Algemene Voorwaarden**
+    content: `**ALGEMENE VOORWAARDEN – IAEE.EU**
 
-Laatst bijgewerkt: ${new Date().toLocaleDateString('nl-NL')}
+Laatst bijgewerkt: maart 2025
 
-**1. Toepasselijkheid**
-Deze algemene voorwaarden zijn van toepassing op alle diensten en producten aangeboden door Legal Affiliate Agreement.
+**1. Overeenkomst met de voorwaarden**
 
-**2. Gebruik van templates**
-De aangeboden templates zijn bedoeld voor algemeen gebruik. Legal Affiliate Agreement geeft geen juridisch advies en raadt aan om bij complexe situaties professioneel juridisch advies in te winnen.
+Welkom bij IAEE.EU ("wij", "ons", "onze" of "de Website"). Door onze website te bezoeken of gebruiken, gaat u ("Gebruiker", "Klant", "U") akkoord met deze Algemene Voorwaarden ("Voorwaarden").
 
-**3. Intellectueel eigendom**
-Alle templates, content en materialen blijven eigendom van Legal Affiliate Agreement. Bij aankoop verkrijgen klanten een gebruikslicentie voor eigen websites.
+Deze Voorwaarden zijn wereldwijd van toepassing, inclusief voor gebruikers in de Europese Unie (EU), de Verenigde Staten (VS), het Verenigd Koninkrijk, Canada, Australië, Brazilië en andere rechtsgebieden.
 
-**4. Aansprakelijkheid**
-Legal Affiliate Agreement is niet aansprakelijk voor schade voortvloeiend uit het gebruik van templates. Correcte implementatie is de verantwoordelijkheid van de klant.
+Indien u niet akkoord gaat met deze Voorwaarden, dient u het gebruik van de website en onze diensten onmiddellijk te staken.
 
-**5. Wijzigingen**
-Wij behouden het recht om deze voorwaarden te wijzigen. Wijzigingen worden gecommuniceerd via email.
+**2. Aard van de diensten**
 
-**6. Toepasselijk recht**
-Op deze voorwaarden is Nederlands recht van toepassing. Geschillen worden voorgelegd aan de bevoegde rechter in Nederland.`
+IAEE.EU biedt toegang tot juridische documenten, sjablonen en verwante producten, waaronder:
+
+• contracten en overeenkomsten
+• beleidsdocumenten
+• vrijwaringen
+• algemene juridische sjablonen
+
+Onze documenten worden uitsluitend aangeboden ter informatie en educatie en vormen geen juridisch advies.
+
+**3. Geen juridisch advies of advocaat-cliëntrelatie**
+
+IAEE.EU is geen advocatenkantoor en biedt geen juridische vertegenwoordiging of advies. Het gebruik van onze documenten of diensten creëert geen advocaat-cliëntrelatie.
+
+Onze producten zijn bedoeld als algemene voorbeelden. Ze kunnen aanpassing vereisen om te voldoen aan lokale wetgeving of uw specifieke situatie. Wij adviseren u altijd een gekwalificeerde advocaat te raadplegen voordat u documenten gebruikt voor commerciële of juridische doeleinden.
+
+**4. Gebruik van documenten**
+
+Door documenten van IAEE.EU te kopen, downloaden of gebruiken, gaat u akkoord met het volgende:
+
+• De documenten niet als juridisch advies te presenteren of door te verkopen.
+• IAEE.EU niet aansprakelijk te houden voor het gebruik, de interpretatie of toepassing van de documenten.
+• De documenten alleen te gebruiken binnen het toepasselijke rechtsgebied en met inachtneming van lokale wetgeving.
+• De documenten aan te passen aan uw specifieke juridische situatie.
+
+**5. Geen garanties en uitsluiting van aansprakelijkheid**
+
+Voor zover wettelijk toegestaan, worden alle diensten en documenten aangeboden "zoals ze zijn" en "zoals beschikbaar", zonder enige vorm van garantie.
+
+Wij garanderen niet dat:
+• onze documenten in elk rechtsgebied geldig of toepasbaar zijn;
+• onze inhoud foutloos, volledig of actueel is;
+• onze website ononderbroken of vrij van technische problemen functioneert.
+
+IAEE.EU wijst alle aansprakelijkheid af voor schade die voortvloeit uit het gebruik van onze website of documenten, inclusief directe, indirecte, incidentele of gevolgschade.
+
+**6. Beperking van aansprakelijkheid (wereldwijd, inclusief VS)**
+
+Voor zover maximaal toegestaan door wetgeving:
+
+• Wij zijn niet aansprakelijk voor directe, indirecte, bijzondere of punitieve schade, winstderving, verlies van data of reputatieschade.
+• Onze totale aansprakelijkheid is beperkt tot het bedrag dat u daadwerkelijk heeft betaald voor de betrokken dienst of het document.
+
+Voor gebruikers in de Verenigde Staten:
+• Wij wijzen alle impliciete garanties af, inclusief die van verhandelbaarheid of geschiktheid voor een bepaald doel.
+• Indien de uitsluiting van aansprakelijkheid niet volledig wettelijk is toegestaan, is onze aansprakelijkheid beperkt tot het minimale niveau dat door de toepasselijke wet is toegestaan.
+
+**7. Verantwoordelijkheid van de gebruiker**
+
+U bent zelf volledig verantwoordelijk voor:
+• de manier waarop u onze documenten gebruikt of aanpast;
+• naleving van de toepasselijke wetgeving in uw land of rechtsgebied;
+• eventuele gevolgen of geschillen voortvloeiend uit het gebruik van onze documenten.
+
+**8. Betalingen en restitutiebeleid**
+
+• Betalingen verlopen via beveiligde externe betalingsverwerkers. IAEE.EU slaat geen betalingsgegevens op.
+• Alle verkopen zijn definitief. Restituties worden niet verleend, tenzij dit wettelijk vereist is.
+• Technische problemen moeten binnen 7 dagen na aankoop worden gemeld via ons ondersteuningsteam.
+
+**9. Intellectuele eigendomsrechten**
+
+Alle inhoud, documenten, teksten, lay-out en materialen op IAEE.EU zijn beschermd door auteursrecht en intellectuele eigendomswetten.
+
+Het is verboden om onze documenten of inhoud te kopiëren, door te verkopen, te herdistribueren of openbaar te maken zonder schriftelijke toestemming. Schending van deze rechten kan leiden tot juridische stappen.
+
+**10. Gegevensbescherming en privacy**
+
+Wij verwerken persoonsgegevens in overeenstemming met internationale privacywetgeving, waaronder:
+• AVG (EU)
+• CCPA (VS)
+• PIPEDA (Canada)
+• LGPD (Brazilië)
+
+Wij verkopen of delen uw persoonsgegevens niet met derden, behalve waar noodzakelijk voor de uitvoering van onze diensten. Door gebruik te maken van onze website gaat u akkoord met ons Privacybeleid, waarin wordt uitgelegd hoe wij gegevens verzamelen, opslaan en verwerken.
+
+**11. Links en affiliates van derden**
+
+Onze website kan links bevatten naar externe websites en affiliate-partners. Wij onderschrijven of controleren deze websites niet en zijn niet verantwoordelijk voor de inhoud, nauwkeurigheid, producten of diensten die daar worden aangeboden.
+
+Eventuele aankopen via affiliate-links vallen onder de voorwaarden en het beleid van de betreffende externe aanbieder.
+
+**12. Internationale naleving**
+
+Onze diensten zijn wereldwijd toegankelijk, maar wij garanderen niet dat onze inhoud of documenten voldoen aan de wetgeving in elk land. U bent zelf verantwoordelijk om te controleren of het gebruik van onze diensten is toegestaan binnen uw rechtsgebied.
+
+**13. Vrijwaring**
+
+U stemt ermee in om IAEE.EU, haar eigenaren, medewerkers, partners en affiliates te vrijwaren en schadeloos te stellen tegen alle claims, verliezen, aansprakelijkheden, kosten of schade (inclusief redelijke advocaatkosten) die voortvloeien uit:
+• uw gebruik of misbruik van onze documenten;
+• schending van deze Voorwaarden;
+• geschillen of claims voortvloeiend uit uw gebruik van onze diensten.
+
+**14. Overmacht**
+
+Wij zijn niet aansprakelijk voor vertragingen of tekortkomingen die voortvloeien uit omstandigheden buiten onze redelijke controle, zoals:
+• natuurrampen, oorlog, stakingen of overheidsmaatregelen;
+• cyberaanvallen of netwerkstoringen;
+• storingen van externe leveranciers of betalingsverwerkers.
+
+**15. Toepasselijk recht en geschillenbeslechting**
+
+**Voor gebruikers buiten de VS:**
+Op deze Voorwaarden is Nederlands recht van toepassing. Geschillen worden exclusief voorgelegd aan de bevoegde rechtbank te Nederland.
+
+**Voor gebruikers in de VS:**
+• Deze Voorwaarden vallen onder het recht van de staat Delaware, VS.
+• Geschillen worden beslecht via bindende arbitrage conform de regels van de American Arbitration Association (AAA).
+• U doet afstand van uw recht op juryrechtspraak of deelname aan collectieve rechtszaken.
+
+**16. Scheidbaarheid**
+
+Indien enige bepaling van deze Voorwaarden ongeldig of niet-afdwingbaar wordt verklaard, blijven de overige bepalingen volledig van kracht.
+
+**17. Wijzigingen**
+
+Wij behouden ons het recht voor deze Voorwaarden op elk moment te wijzigen. De meest recente versie wordt altijd gepubliceerd op onze website. Voortgezet gebruik van de website na publicatie van wijzigingen geldt als aanvaarding van de bijgewerkte Voorwaarden.
+
+**18. Contact**
+
+Voor vragen, opmerkingen of klachten over deze Voorwaarden kunt u contact met ons opnemen via:
+
+E-mail: support@iaee.eu
+Website: https://iaee.eu`
   },
   {
     title: "Privacybeleid",
