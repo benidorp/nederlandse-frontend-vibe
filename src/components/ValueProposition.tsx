@@ -10,7 +10,7 @@ const ValueProposition = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-primary/5 via-accent/10 to-secondary/5">
+    <section className="py-20 bg-gradient-to-br from-blue-50/50 via-slate-50/50 to-indigo-50/50">
       <div className="container">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
@@ -25,9 +25,17 @@ const ValueProposition = () => {
               <strong> wettelijk verplicht</strong> bent om bepaalde juridische documenten op je website te hebben? 
               Zonder deze documenten loop je risico op hoge boetes en juridische problemen.
             </p>
+            
+            <div className="mt-8 p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-200/50">
+              <h3 className="text-lg font-semibold text-foreground mb-2">Over Mij</h3>
+              <p className="text-xl font-bold text-foreground mb-1">Nicole Henderson</p>
+              <p className="text-base text-muted-foreground">
+                Juridisch specialist gespecialiseerd in heldere, precieze en professionele juridische documenten
+              </p>
+            </div>
           </div>
 
-          <Card className="mb-8 border-2 border-primary/20 bg-gradient-to-br from-background to-primary/5">
+          <Card className="mb-8 border-2 border-blue-200/30 bg-gradient-to-br from-background to-blue-50/30">
             <CardHeader>
               <CardTitle className="text-2xl flex items-center gap-3">
                 <Shield className="h-8 w-8 text-primary" />
@@ -93,9 +101,9 @@ const ValueProposition = () => {
           </Card>
 
           <div className="grid md:grid-cols-3 gap-6 mb-8">
-            <Card className="border-accent/30 bg-gradient-to-br from-accent/5 to-accent/10">
+            <Card className="border-indigo-200/30 bg-gradient-to-br from-indigo-50/50 to-indigo-100/50">
               <CardContent className="pt-6">
-                <Zap className="h-10 w-10 text-accent mb-4" />
+                <Zap className="h-10 w-10 text-indigo-600 mb-4" />
                 <h3 className="text-lg font-bold mb-2">Klaar in Minuten</h3>
                 <p className="text-sm text-muted-foreground">
                   Download, vul je bedrijfsgegevens in, en plaats de documenten op je website. Geen advocaat nodig, geen weken wachten.
@@ -103,9 +111,9 @@ const ValueProposition = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-primary/30 bg-gradient-to-br from-primary/5 to-primary/10">
+            <Card className="border-blue-200/30 bg-gradient-to-br from-blue-50/50 to-blue-100/50">
               <CardContent className="pt-6">
-                <Shield className="h-10 w-10 text-primary mb-4" />
+                <Shield className="h-10 w-10 text-blue-600 mb-4" />
                 <h3 className="text-lg font-bold mb-2">Specifiek voor Affiliates</h3>
                 <p className="text-sm text-muted-foreground">
                   Niet zomaar standaard templates! Deze documenten zijn specifiek geschreven voor affiliate marketing activiteiten.
@@ -113,9 +121,9 @@ const ValueProposition = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-secondary/30 bg-gradient-to-br from-secondary/5 to-secondary/10">
+            <Card className="border-slate-200/30 bg-gradient-to-br from-slate-50/50 to-slate-100/50">
               <CardContent className="pt-6">
-                <FileCheck className="h-10 w-10 text-secondary mb-4" />
+                <FileCheck className="h-10 w-10 text-slate-600 mb-4" />
                 <h3 className="text-lg font-bold mb-2">Voor Al Je Websites</h3>
                 <p className="text-sm text-muted-foreground">
                   Één aankoop, onbeperkt gebruik. Gebruik deze documenten voor al je huidige en toekomstige affiliate websites!
@@ -124,7 +132,7 @@ const ValueProposition = () => {
             </Card>
           </div>
 
-          <Card className="bg-gradient-to-r from-primary/10 to-accent/10 border-2 border-primary/30">
+          <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-200/50">
             <CardContent className="pt-6 text-center">
               <h3 className="text-2xl font-bold mb-4 text-foreground">
                 Stop met Zorgen, Start met Verdienen
