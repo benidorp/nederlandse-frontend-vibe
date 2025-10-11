@@ -138,9 +138,9 @@ const ValueProposition = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-slate-200/30 bg-gradient-to-br from-slate-50/50 to-slate-100/50">
+            <Card className="border-blue-200/30 bg-gradient-to-br from-blue-50/50 to-blue-100/50">
               <CardContent className="pt-6">
-                <FileCheck className="h-10 w-10 text-slate-600 mb-4" />
+                <FileCheck className="h-10 w-10 text-blue-600 mb-4" />
                 <h3 className="text-lg font-bold mb-2">Voor Al Je Websites</h3>
                 <p className="text-sm text-muted-foreground">
                   Één aankoop, onbeperkt gebruik. Gebruik deze documenten voor al je huidige en toekomstige affiliate websites!
