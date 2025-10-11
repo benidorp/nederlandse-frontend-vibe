@@ -109,36 +109,36 @@ const Services = () => {
         </div>
 
         <div className="mt-16 grid md:grid-cols-3 gap-8">
-          <Card className="border-blue-200/50 bg-gradient-to-br from-blue-100/50 to-blue-50/30">
+          <Card className="border-blue-700/40 bg-gradient-to-br from-blue-900/80 to-blue-800/70 text-white">
             <CardHeader>
-              <CardTitle className="text-lg text-foreground">Perfect voor Alle Affiliates</CardTitle>
+              <CardTitle className="text-lg text-white">Perfect voor Alle Affiliates</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-blue-50">
                 Met duizenden affiliate websites zijn onze aanpasbare documenten geschikt voor elk affiliate bedrijf. 
                 Focus op het verdienen van commissies—wij hebben juridische naleving eenvoudig gemaakt!
               </p>
             </CardContent>
           </Card>
 
-          <Card className="border-blue-200/50 bg-gradient-to-br from-blue-50/30 to-background">
+          <Card className="border-blue-700/40 bg-gradient-to-br from-blue-900/80 to-blue-800/70 text-white">
             <CardHeader>
-              <CardTitle className="text-lg">Voor AL Uw Websites</CardTitle>
+              <CardTitle className="text-lg text-white">Voor AL Uw Websites</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-blue-50">
                 De essentiële juridische documenten voor al uw affiliate site(s). Ja, u kunt ze gebruiken voor 
                 ALLE websites zonder dat u aparte licenties hoeft aan te schaffen!
               </p>
             </CardContent>
           </Card>
 
-          <Card className="border-blue-200/50 bg-gradient-to-br from-blue-50/30 to-background">
+          <Card className="border-blue-700/40 bg-gradient-to-br from-blue-900/80 to-blue-800/70 text-white">
             <CardHeader>
-              <CardTitle className="text-lg">Minimaliseer Uw Risico's</CardTitle>
+              <CardTitle className="text-lg text-white">Minimaliseer Uw Risico's</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-blue-50">
                 Hoewel we geen garanties kunnen geven, zijn deze juridische documenten zorgvuldig opgesteld 
                 om uw risico's zoveel mogelijk te minimaliseren en u maximale bescherming te bieden.
               </p>
