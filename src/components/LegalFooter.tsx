@@ -32,57 +32,130 @@ Op deze voorwaarden is Nederlands recht van toepassing. Geschillen worden voorge
   },
   {
     title: "Privacybeleid",
-    content: `**Privacybeleid Legal Affiliate Agreement**
+    content: `**PRIVACYBELEID – IAEE.EU**
 
-Laatst bijgewerkt: ${new Date().toLocaleDateString('nl-NL')}
+Laatst bijgewerkt: maart 2025
 
-Legal Affiliate Agreement respecteert uw privacy en handelt in overeenstemming met de AVG (GDPR).
+Welkom bij IAEE.EU ("Website", "wij", "ons" of "onze"). Uw privacy is belangrijk voor ons. Dit privacybeleid legt uit hoe wij uw persoonsgegevens verzamelen, gebruiken, opslaan en beschermen, evenals uw rechten onder verschillende privacywetten wereldwijd.
 
-**1. Welke gegevens verzamelen wij**
-• Contactgegevens bij aanvragen (naam, email)
-• Website gebruik data via analytics (geanonimiseerd)
-• Cookies voor functionaliteit en analytics
+Dit privacybeleid is van toepassing op gebruikers over de hele wereld, inclusief maar niet beperkt tot de Europese Unie (EU), de Verenigde Staten (VS), het Verenigd Koninkrijk (VK), Canada, Australië, Brazilië, China en andere rechtsgebieden met wetten inzake gegevensbescherming.
 
-**2. Doel van gegevensverzameling**
-• Beantwoorden van vragen en aanvragen
-• Verbeteren van onze website en diensten
-• Verzenden van updates over producten (met toestemming)
+**1. INFORMATIE DIE WE VERZAMELEN**
 
-**3. Gegevensdeling**
-Wij verkopen of verhuren uw gegevens nooit aan derden. Gegevens worden alleen gedeeld met:
-• Analytics providers (Google Analytics met IP-anonimisering)
-• Email service providers voor nieuwsbrieven
-• Payment processors voor betalingen
+Wij verzamelen verschillende soorten persoonsgegevens op basis van uw interactie met onze website.
 
-**4. Bewaartermijn**
-• Contactgegevens: maximaal 2 jaar na laatste contact
-• Analytics data: 26 maanden (Google Analytics standaard)
-• Nieuwsbrief subscriptions: tot uitschrijving
+**1.1. Informatie die u ons verstrekt**
+• Accountgegevens – Naam, e-mailadres, telefoonnummer, wachtwoord.
+• Betalingsgegevens – Factureringsgegevens, transactiegeschiedenis (verwerkt door externe betalingsaanbieders; wij slaan geen betalingsgegevens op).
+• Communicatiegegevens – E-mails, ondersteuningsverzoeken, feedback.
 
-**5. Uw rechten**
-U heeft recht op:
-• Inzage in uw persoonsgegevens
-• Correctie van onjuiste gegevens
-• Verwijdering van uw gegevens
-• Bezwaar tegen verwerking
-• Dataportabiliteit
+**1.2. Informatie die we automatisch verzamelen**
+• Apparaat- en gebruiksgegevens – IP-adres, browsertype, locatie (bij benadering), bezochte pagina's, tijd doorgebracht op onze website.
+• Cookies en trackingtechnologieën – Gebruikt voor analyses, prestatietracking en marketing.
 
-**6. Cookies**
+**1.3. Informatie van derden**
+• Betalingsverwerkers (bijv. Stripe, PayPal).
+• Analyseproviders (bijv. Google Analytics, Meta Pixels).
+
+**2. HOE WE UW INFORMATIE GEBRUIKEN**
+
+Wij gebruiken persoonsgegevens voor:
+
+✔ Dienstverlening – Het verstrekken van juridische documenten en het verwerken van transacties.
+✔ Marketing – Het verzenden van updates en nieuwsbrieven (met afmeldmogelijkheden).
+✔ Beveiliging – Fraudepreventie, risicoanalyse.
+✔ Wettelijke naleving – Voldoen aan wettelijke vereisten.
+
+**3. WETTELIJKE GRONDSLAGEN VOOR DE VERWERKING VAN GEGEVENS**
+
+Wij verwerken uw gegevens op basis van verschillende wettelijke grondslagen, afhankelijk van uw locatie:
+
+**AVG (EU/EER en VK-gebruikers)**
+✔ Contractuele noodzaak – Het nakomen van onze verplichtingen jegens u.
+✔ Gerechtvaardigde belangen – Het verbeteren van de beveiliging en het voorkomen van fraude.
+✔ Wettelijke verplichtingen – Naleving van belasting- en regelgeving.
+✔ Toestemming – Voor marketingcommunicatie.
+
+**CCPA (gebruikers in Californië en de VS)**
+✔ Recht op informatie – U kunt een lijst opvragen van de gegevens die we verzamelen.
+✔ Recht op verwijdering – U kunt verzoeken om verwijdering van uw gegevens.
+✔ Recht op afmelding – Wij verkopen geen persoonsgegevens, maar u kunt het delen ervan beperken.
+
+**LGPD (Braziliaanse gebruikers)**
+✔ Wettelijke basis voor verwerking – Toestemming, contractuele noodzaak, wettelijke verplichting of gerechtvaardigd belang.
+✔ Rechten van betrokkenen – Toegang, correctie, anonimisering, verwijdering en overdraagbaarheid.
+✔ Grensoverschrijdende overdracht – Wij zorgen voor LGPD-conforme beveiligingsmaatregelen.
+
+**PIPL (Chinese gebruikers)**
+✔ Wettelijke grondslag – Expliciete toestemming is vereist vóór gegevensverzameling.
+✔ Gegevensoverdracht – Gegevens kunnen buiten China worden opgeslagen (met toestemming van de gebruiker).
+✔ Overheidsverzoeken – Wij voldoen aan de Chinese regelgeving inzake gegevensbeveiliging.
+
+**PIPEDA (Canadese gebruikers)**
+✔ Transparantie – U hebt het recht om uw gegevens in te zien en te corrigeren.
+✔ Toestemming – We vragen toestemming van de gebruiker voordat we gevoelige gegevens verzamelen.
+✔ Gegevensbeveiliging – We volgen de beste Canadese cybersecuritypraktijken.
+
+**Australische privacywet (Australische gebruikers)**
+✔ Kennisgeving van gegevensverzameling – We verzamelen gegevens indien nodig voor onze bedrijfsvoering.
+✔ Toegang en correctie – U kunt toegang tot en updates van uw gegevens aanvragen.
+✔ Overdracht naar het buitenland – Gegevens kunnen buiten Australië worden overgedragen met inachtneming van de nodige waarborgen.
+
+**4. UW RECHTEN ONDER DE PRIVACYWETGEVING**
+
+Afhankelijk van uw locatie heeft u de volgende rechten met betrekking tot uw persoonsgegevens:
+
+Regio | Rechten beschikbaar
+EU/EER (AVG) | Toegang, correctie, verwijdering, beperking, overdraagbaarheid, bezwaar, intrekking van toestemming
+VK (VK AVG) | Hetzelfde als EU AVG
+VS (CCPA – Californië) | Toegang, verwijdering en afmelden voor gegevensdeling
+Brazilië (LGPD) | Toegang, correctie, verwijdering, overdraagbaarheid, anonimisering
+China (PIPL) | Expliciete toestemming, toegang, correctie, verwijdering, exportbeperkingen
+Canada (PIPEDA) | Toegang, correctie, intrekking van toestemming
+Australië (Privacywet) | Toegang, correctie, klacht indienen
+
+Om deze rechten uit te oefenen, kunt u contact met ons opnemen via support@iaee.eu.
+
+**5. GEGEVENSOPSLAG & BEVEILIGINGSMAATREGELEN**
+
+• Gegevens worden gecodeerd en opgeslagen op beveiligde servers.
+• Betalingsgegevens worden verwerkt door PCI-conforme externe verwerkers.
+• Wij maken gebruik van firewalls, toegangscontroles en cyberbeveiligingsmonitoring.
+• De gegevensbewaring is beperkt tot de duur die noodzakelijk is voor wettelijke en operationele doeleinden.
+
+**6. GEGEVENSDELING & DERDEN**
+
+Wij verkopen geen persoonsgegevens. We kunnen echter wel informatie delen met:
+
+✔ Dienstverleners – Betalingsverwerkers, analyseplatforms.
+✔ Gerechtelijke instanties – Indien wettelijk vereist (bijv. fraudepreventie).
+✔ Bedrijfsoverdrachten – In geval van fusies of overnames.
+
+**7. COOKIES EN TRACKINGTECHNOLOGIEËN**
+
 Wij gebruiken cookies voor:
-• Essentiële website functionaliteit
-• Analytics (met toestemming)
-• Marketing (met toestemming)
+✔ Websitefunctionaliteit
+✔ Analyse en prestatietracking (Google Analytics, Meta Pixels)
+✔ Marketing en reclame (Google Ads, Facebook Ads)
 
-Zie ons cookiebeleid voor details.
+Gebruikers kunnen zich afmelden voor cookies via de browserinstellingen of via ons Cookiebeleid.
 
-**7. Beveiliging**
-Wij nemen passende technische en organisatorische maatregelen om uw gegevens te beschermen tegen ongeautoriseerde toegang.
+**8. INTERNATIONALE GEGEVENSOVERDRACHTEN**
 
-**8. Contact**
-Voor privacyvragen: privacy@legalaffiliateagreement.com
+• Gegevens kunnen worden overgedragen naar Europa, de VS en andere rechtsgebieden.
+• AVG-naleving: Wij gebruiken standaardcontractbepalingen (SCC's) voor veilige gegevensoverdrachten binnen de EU.
+• Naleving in China: grensoverschrijdende gegevensoverdrachten voldoen aan de PIPL-regelgeving.
 
-**9. Klachten**
-U kunt een klacht indienen bij de Autoriteit Persoonsgegevens: www.autoriteitpersoonsgegevens.nl`
+**9. WIJZIGINGEN IN DIT PRIVACYBELEID**
+
+We kunnen dit privacybeleid periodiek bijwerken. Updates worden op deze pagina geplaatst en als er belangrijke wijzigingen optreden, zullen we gebruikers per e-mail op de hoogte stellen.
+
+**10. CONTACTGEGEVENS**
+
+Voor vragen over privacy of om uw rechten uit te oefenen, kunt u contact met ons opnemen via:
+
+E-mail: support@iaee.eu
+Website: https://iaee.eu`
   },
   {
     title: "Disclaimer",
