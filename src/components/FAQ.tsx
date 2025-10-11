@@ -247,14 +247,14 @@ Bij complexe affiliate constructies, hoge omzetten (>€100.000/jaar), of intern
 
 const FAQ = () => {
   return (
-    <section id="faq" className="py-20 bg-navy text-primary-foreground">
+    <section id="faq" className="py-20 bg-secondary/30">
       <div className="container">
         <div className="text-center mb-12">
-          <Badge variant="outline" className="mb-4 border-primary-foreground/30">Uitgebreide Informatie</Badge>
-          <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
+          <Badge variant="outline" className="mb-4 border-primary/30">Uitgebreide Informatie</Badge>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Alles wat je moet weten over juridische documenten
           </h2>
-          <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Klik op de onderwerpen om meer te lezen over elk aspect van juridische compliance voor affiliate websites.
           </p>
         </div>
@@ -267,10 +267,10 @@ const FAQ = () => {
                 value={`item-${index}`}
                 className="bg-card border-2 border-primary/10 rounded-lg px-6 shadow-md hover:shadow-lg transition-all"
               >
-                <AccordionTrigger className="text-left hover:text-navy text-lg font-semibold text-foreground">
+                <AccordionTrigger className="text-left hover:text-primary text-lg font-semibold">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-foreground/80 leading-relaxed whitespace-pre-line pt-4">
+                <AccordionContent className="text-muted-foreground leading-relaxed whitespace-pre-line pt-4">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>

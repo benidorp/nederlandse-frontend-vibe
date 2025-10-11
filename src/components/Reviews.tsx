@@ -19,25 +19,25 @@ const reviews = [
 
 const Reviews = () => {
   return (
-    <section className="py-20 bg-navy text-primary-foreground">
+    <section className="py-20 bg-secondary/30">
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">Recensies</Badge>
-          <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Wat Onze Klanten Zeggen
           </h2>
-          <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Ontdek waarom honderden affiliates hun juridische documenten bij ons afnemen
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {reviews.map((review, index) => (
-            <Card key={index} className="hover:shadow-lg transition-shadow bg-primary-foreground text-foreground">
+            <Card key={index} className="hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
                 <div className="flex gap-1 mb-4">
                   {[...Array(review.rating)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-navy text-navy" />
+                    <Star key={i} className="h-5 w-5 fill-primary text-primary" />
                   ))}
                 </div>
                 

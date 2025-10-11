@@ -14,24 +14,24 @@ const includedItems = [
 
 const Pricing = () => {
   return (
-    <section id="prijzen" className="py-20 bg-navy text-primary-foreground">
+    <section id="prijzen" className="py-20 bg-background">
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">Prijzen</Badge>
-          <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Essentiële Affiliate Documenten
           </h2>
-          <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Compleet pakket met alle juridische documenten die u nodig heeft voor uw affiliate website
           </p>
         </div>
 
         <div className="max-w-2xl mx-auto">
-          <Card className="border-primary-foreground shadow-xl bg-primary-foreground text-foreground">
+          <Card className="border-primary shadow-xl">
             <CardHeader className="text-center pb-8">
               <div className="mb-4">
-                <span className="text-5xl font-bold text-navy">€79</span>
-                <span className="text-foreground/80 ml-2">eenmalig</span>
+                <span className="text-5xl font-bold text-primary">€79</span>
+                <span className="text-muted-foreground ml-2">eenmalig</span>
               </div>
               <CardTitle className="text-2xl">Complete Documentenpakket</CardTitle>
               <CardDescription className="text-base">
@@ -44,7 +44,7 @@ const Pricing = () => {
                 {includedItems.map((item, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <div className="h-5 w-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <Check className="h-3 w-3 text-navy" />
+                      <Check className="h-3 w-3 text-primary" />
                     </div>
                     <span className="text-foreground">{item}</span>
                   </div>
@@ -52,7 +52,7 @@ const Pricing = () => {
               </div>
 
               <div className="pt-6 border-t">
-                <Button className="w-full bg-navy text-primary-foreground hover:bg-navy/90" size="lg">
+                <Button className="w-full" size="lg">
                   Bestel Nu
                 </Button>
               </div>
