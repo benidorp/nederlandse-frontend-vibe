@@ -480,17 +480,17 @@ const LegalFooter = () => {
   return (
     <div className="border-t border-border/50 pt-8 mt-8">
       <h4 className="text-sm font-semibold mb-4 text-foreground">Juridische Informatie</h4>
-      <Accordion type="single" collapsible className="space-y-2">
+      <Accordion type="single" collapsible className="w-full max-w-3xl space-y-2">
         {legalDocuments.map((doc, index) => (
           <AccordionItem 
             key={index} 
             value={`legal-${index}`}
-            className="border border-border/50 rounded-md px-4 bg-card/50"
+            className="border border-border/50 rounded-md px-3 bg-card/50"
           >
-            <AccordionTrigger className="text-sm hover:text-primary py-3">
+            <AccordionTrigger className="text-sm hover:text-primary py-2.5 text-left">
               {doc.title}
             </AccordionTrigger>
-            <AccordionContent className="text-xs text-muted-foreground whitespace-pre-line leading-relaxed pb-4">
+            <AccordionContent className="text-xs text-muted-foreground whitespace-pre-line leading-relaxed pb-3 pt-1">
               {doc.content}
             </AccordionContent>
           </AccordionItem>
