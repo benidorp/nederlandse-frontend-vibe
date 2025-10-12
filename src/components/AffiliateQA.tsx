@@ -91,6 +91,6 @@ const qaItems = [{
   answer: "Passief inkomen blijft mogelijk, maar vereist strategische opbouw. Kwalitatieve content, automatisering en duurzame relaties met merken vormen de basis. Wie waarde biedt en meegaat met nieuwe technologieën blijft groeien. Affiliate marketing evolueert, maar het principe van verdienen door vertrouwen blijft krachtig."
 }];
 const AffiliateQA = () => {
-  return;
+  return null;
 };
 export default AffiliateQA;
