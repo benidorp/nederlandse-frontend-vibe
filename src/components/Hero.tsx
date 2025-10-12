@@ -30,7 +30,7 @@ const Hero = () => {
               Bekijk Pakketten
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button size="lg" variant="outline" onClick={() => scrollToSection("diensten")} className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+            <Button size="lg" variant="outline" onClick={() => scrollToSection("diensten")} className="border-primary-foreground/30 hover:bg-primary-foreground/10 text-slate-950">
               Meer Informatie
             </Button>
           </div>
