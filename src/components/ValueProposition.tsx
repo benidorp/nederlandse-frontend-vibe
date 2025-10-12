@@ -139,21 +139,21 @@ const ValueProposition = () => {
             </Card>
           </div>
 
-          <Card className="bg-primary-foreground border-2 border-primary-foreground/50 text-foreground">
+          <Card className="bg-primary border-2 border-primary text-primary-foreground">
             <CardContent className="pt-6 text-center">
-              <h3 className="text-2xl font-bold mb-4 text-foreground">
+              <h3 className="text-2xl font-bold mb-4 text-primary-foreground">
                 Stop met Zorgen, Start met Verdienen
               </h3>
-              <p className="text-lg text-foreground/80 mb-6 max-w-2xl mx-auto">
-                Voor slechts <strong className="text-foreground">€79 eenmalig</strong> regel je alle juridische verplichtingen 
+              <p className="text-lg text-primary-foreground/90 mb-6 max-w-2xl mx-auto">
+                Voor slechts <strong className="text-primary-foreground">€79 eenmalig</strong> regel je alle juridische verplichtingen 
                 voor al je affiliate websites. Geen maandelijkse kosten, geen gedoe met advocaten, geen risico op boetes. 
                 Gewoon alle documenten die je nodig hebt, kant-en-klaar.
               </p>
-              <Button size="lg" onClick={() => scrollToSection("prijzen")} className="group text-lg px-8 py-6 bg-navy text-primary-foreground hover:bg-navy/90">
+              <Button size="lg" onClick={() => scrollToSection("prijzen")} className="group text-lg px-8 py-6 bg-primary-foreground text-primary hover:bg-primary-foreground/90">
                 Bestel Nu voor €79
                 <CheckCircle className="ml-2 h-5 w-5" />
               </Button>
-              <p className="text-sm text-foreground/80 mt-4">
+              <p className="text-sm text-primary-foreground/80 mt-4">
                 💡 Bedenk je: één uur bij een advocaat kost al meer dan €200
               </p>
             </CardContent>
