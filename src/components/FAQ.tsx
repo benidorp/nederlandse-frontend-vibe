@@ -73,8 +73,8 @@ Geen enkel document biedt 100% bescherming, maar goede juridische documenten min
 **Moet ik de cookiebanner apart aanschaffen?**
 Ons pakket bevat het cookiebeleid (tekst), maar voor de technische cookiebanner raden we tools aan zoals Cookiebot of CookieYes.
 
-**Kan ik de templates in het Engels gebruiken?**
-Dit pakket is Nederlandstalig. Voor Engelstalige sites hebben we een apart pakket beschikbaar.`
+**In welke talen zijn de templates beschikbaar?**
+De templates zijn te downloaden in meerdere talen voor internationaal gebruik, zodat je ze kunt inzetten op al je websites wereldwijd.`
   },
   {
     question: "Juridische disclaimers & aansprakelijkheden",
