@@ -487,10 +487,10 @@ const LegalFooter = () => {
             value={`legal-${index}`}
             className="bg-primary text-primary-foreground border border-primary-foreground/20 rounded-md px-3 py-1"
           >
-            <AccordionTrigger className="text-sm hover:text-primary py-2.5 text-left">
+            <AccordionTrigger className="text-sm text-primary-foreground hover:text-primary-foreground/80 py-2.5 text-left">
               {doc.title}
             </AccordionTrigger>
-            <AccordionContent className="text-xs text-muted-foreground whitespace-pre-line leading-relaxed pb-3 pt-1">
+            <AccordionContent className="text-xs text-primary-foreground/90 whitespace-pre-line leading-relaxed pb-3 pt-1">
               {doc.content}
             </AccordionContent>
           </AccordionItem>
