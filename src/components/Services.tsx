@@ -1,74 +1,39 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Shield, FileText, AlertCircle, ScrollText, Cookie, BookOpen } from "lucide-react";
-
-const services = [
-  {
-    icon: Shield,
-    title: "Privacybeleid",
-    description: "Compleet privacybeleid conform AVG/GDPR wetgeving",
-    details: [
-      "Rechten van gebruikers onder de AVG",
-      "Welke gegevens worden verzameld",
-      "Hoe en waarom deze gegevens worden gebruikt",
-      "Gegevensdeling met derde partijen"
-    ]
-  },
-  {
-    icon: AlertCircle,
-    title: "Disclaimer",
-    description: "Juridische bescherming tegen aansprakelijkheidsclaims",
-    details: [
-      "Geen garantie voor resultaten",
-      "Geen aansprakelijkheid voor informatie",
-      "Melding van affiliate links en commissies"
-    ]
-  },
-  {
-    icon: FileText,
-    title: "Affiliate Disclosure",
-    description: "Transparante melding conform FTC-richtlijnen",
-    details: [
-      "Transparantie over adverteerders",
-      "Duidelijke commissiemelding",
-      "Naleving van EU en VS regelgeving"
-    ]
-  },
-  {
-    icon: ScrollText,
-    title: "Algemene Voorwaarden",
-    description: "Regelt de relatie tussen uw website en gebruikers",
-    details: [
-      "Beperking van aansprakelijkheid",
-      "Gebruiksrestricties",
-      "Intellectuele eigendomsrechten"
-    ]
-  },
-  {
-    icon: Cookie,
-    title: "Cookiebeleid",
-    description: "Volledige cookie-naleving en toestemming",
-    details: [
-      "Uitleg over cookiegebruik",
-      "AVG-conforme toestemming",
-      "Beheer van analytische cookies"
-    ]
-  },
-  {
-    icon: BookOpen,
-    title: "Implementatiegids",
-    description: "Stap-voor-stap instructies voor implementatie",
-    details: [
-      "Eenvoudige installatie-instructies",
-      "Juiste plaatsing van documenten",
-      "Aanpassingstips voor uw website"
-    ]
-  }
-];
-
+const services = [{
+  icon: Shield,
+  title: "Privacybeleid",
+  description: "Compleet privacybeleid conform AVG/GDPR wetgeving",
+  details: ["Rechten van gebruikers onder de AVG", "Welke gegevens worden verzameld", "Hoe en waarom deze gegevens worden gebruikt", "Gegevensdeling met derde partijen"]
+}, {
+  icon: AlertCircle,
+  title: "Disclaimer",
+  description: "Juridische bescherming tegen aansprakelijkheidsclaims",
+  details: ["Geen garantie voor resultaten", "Geen aansprakelijkheid voor informatie", "Melding van affiliate links en commissies"]
+}, {
+  icon: FileText,
+  title: "Affiliate Disclosure",
+  description: "Transparante melding conform FTC-richtlijnen",
+  details: ["Transparantie over adverteerders", "Duidelijke commissiemelding", "Naleving van EU en VS regelgeving"]
+}, {
+  icon: ScrollText,
+  title: "Algemene Voorwaarden",
+  description: "Regelt de relatie tussen uw website en gebruikers",
+  details: ["Beperking van aansprakelijkheid", "Gebruiksrestricties", "Intellectuele eigendomsrechten"]
+}, {
+  icon: Cookie,
+  title: "Cookiebeleid",
+  description: "Volledige cookie-naleving en toestemming",
+  details: ["Uitleg over cookiegebruik", "AVG-conforme toestemming", "Beheer van analytische cookies"]
+}, {
+  icon: BookOpen,
+  title: "Implementatiegids",
+  description: "Stap-voor-stap instructies voor implementatie",
+  details: ["Eenvoudige installatie-instructies", "Juiste plaatsing van documenten", "Aanpassingstips voor uw website"]
+}];
 const Services = () => {
-  return (
-    <section id="diensten" className="py-20 bg-secondary/30">
+  return <section id="diensten" className="py-20 bg-secondary/30">
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">Onze Diensten</Badge>
@@ -83,9 +48,8 @@ const Services = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => {
-            const Icon = service.icon;
-            return (
-              <Card key={index} className="hover:shadow-lg transition-shadow bg-card text-foreground border-border">
+          const Icon = service.icon;
+          return <Card key={index} className="hover:shadow-lg transition-shadow bg-card text-foreground border-border">
                 <CardHeader>
                   <div className="h-12 w-12 rounded-lg bg-primary flex items-center justify-center mb-4">
                     <Icon className="h-6 w-6 text-primary-foreground" />
@@ -95,17 +59,14 @@ const Services = () => {
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2">
-                    {service.details.map((detail, idx) => (
-                      <li key={idx} className="text-sm text-muted-foreground flex items-start gap-2">
+                    {service.details.map((detail, idx) => <li key={idx} className="text-sm text-muted-foreground flex items-start gap-2">
                         <span className="text-primary mt-1">•</span>
                         <span>{detail}</span>
-                      </li>
-                    ))}
+                      </li>)}
                   </ul>
                 </CardContent>
-              </Card>
-            );
-          })}
+              </Card>;
+        })}
         </div>
 
         <div className="mt-16 grid md:grid-cols-3 gap-8">
@@ -138,16 +99,11 @@ const Services = () => {
               <CardTitle className="text-lg text-primary-foreground">Minimaliseer Uw Risico's</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-primary-foreground/90">
-                Hoewel we geen garanties kunnen geven, zijn deze juridische documenten zorgvuldig opgesteld 
-                om uw risico's zoveel mogelijk te minimaliseren en u maximale bescherming te bieden.
-              </p>
+              <p className="text-sm text-primary-foreground/90">Hoewel we geen garanties kunnen geven, zijn deze juridische documenten zorgvuldig opgesteld om uw risico's zoveel mogelijk te minimaliseren en u maximale bescherming te geven  “Hoewel we geen absolute garanties kunnen bieden, zijn deze juridische documenten met zorg en aandacht samengesteld om jouw risico’s zo veel mogelijk te beperken. Ze bieden maximale bescherming en duidelijkheid, zodat je met vertrouwen en veiligheid jouw affiliate activiteiten kunt uitvoeren.”</p>
             </CardContent>
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Services;
