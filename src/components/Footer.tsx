@@ -26,10 +26,13 @@ const Footer = () => {
           
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
-            <p className="text-sm text-primary-foreground/80">
+            <p className="text-sm text-primary-foreground/80 mb-2">
               Voor vragen over onze juridische documenten,<br />
               neem gerust contact met ons op.
             </p>
+            <a href="mailto:support@iaee.eu" className="text-sm text-primary-foreground hover:text-primary-foreground/80 transition-colors">
+              support@iaee.eu
+            </a>
           </div>
         </div>
         
