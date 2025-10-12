@@ -33,7 +33,7 @@ const services = [{
   details: ["Eenvoudige installatie-instructies", "Juiste plaatsing van documenten", "Aanpassingstips voor uw website"]
 }];
 const Services = () => {
-  return <section id="diensten" className="py-20 bg-secondary/30">
+  return <section id="diensten" className="py-20 bg-primary/5">
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">Onze Diensten</Badge>
@@ -51,8 +51,8 @@ const Services = () => {
           const Icon = service.icon;
           return <Card key={index} className="hover:shadow-lg transition-shadow bg-card text-foreground border-border">
                 <CardHeader>
-                  <div className="h-12 w-12 rounded-lg bg-primary flex items-center justify-center mb-4">
-                    <Icon className="h-6 w-6 text-primary-foreground" />
+                  <div className="h-12 w-12 rounded-lg bg-red-600 flex items-center justify-center mb-4">
+                    <Icon className="h-6 w-6 text-white" />
                   </div>
                   <CardTitle className="text-xl">{service.title}</CardTitle>
                   <CardDescription>{service.description}</CardDescription>
@@ -60,7 +60,7 @@ const Services = () => {
                 <CardContent>
                   <ul className="space-y-2">
                     {service.details.map((detail, idx) => <li key={idx} className="text-sm text-muted-foreground flex items-start gap-2">
-                        <span className="text-primary mt-1">•</span>
+                        <span className="text-red-600 mt-1">•</span>
                         <span>{detail}</span>
                       </li>)}
                   </ul>
