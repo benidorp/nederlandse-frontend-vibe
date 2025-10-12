@@ -136,6 +136,16 @@ const ValueProposition = () => {
                 </p>
               </CardContent>
             </Card>
+
+            <Card className="border-primary-foreground/30 bg-primary-foreground text-foreground">
+              <CardContent className="pt-6">
+                <Shield className="h-10 w-10 text-primary mb-4" />
+                <h3 className="text-lg font-bold mb-2 text-foreground">Professioneel & Compliant</h3>
+                <p className="text-sm text-foreground/80">
+                  Door juridisch experts opgesteld, volledig conform AVG en internationale wetgeving. Volledige bescherming voor jouw business.
+                </p>
+              </CardContent>
+            </Card>
           </div>
 
           <Card className="bg-primary border-2 border-primary text-primary-foreground">
