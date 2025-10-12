@@ -116,7 +116,7 @@ const ValueProposition = () => {
             </CardContent>
           </Card>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-8 my-0">
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
             <Card className="border-primary-foreground/30 bg-primary-foreground text-foreground">
               <CardContent className="pt-6">
                 <Zap className="h-10 w-10 text-navy mb-4" />
@@ -136,23 +136,11 @@ const ValueProposition = () => {
                 </p>
               </CardContent>
             </Card>
-
-            <Card className="border-primary-foreground/30 bg-primary-foreground text-foreground">
-              <CardContent className="pt-6">
-                <Shield className="h-10 w-10 text-primary mb-4" />
-                <h3 className="text-lg font-bold mb-2 text-foreground">Professioneel & Compliant</h3>
-                <p className="text-sm text-foreground/80">
-                  Door juridisch experts opgesteld, volledig conform AVG en internationale wetgeving. Volledige bescherming voor jouw business.
-                </p>
-              </CardContent>
-            </Card>
           </div>
 
           <Card className="bg-primary border-2 border-primary text-primary-foreground">
             <CardContent className="pt-6 text-center">
-              <h3 className="text-2xl font-bold mb-4 text-primary-foreground">
-                Stop met Zorgen, Start met Verdienen
-              </h3>
+              <h3 className="text-2xl font-bold mb-4 text-primary-foreground"> volledig conform AVG en internationale wetgeving. Keuze om downloaden in verschillende talen voor internationaal gebruik. Volledige bescherming voor jouw business.</h3>
               <p className="text-lg text-primary-foreground/90 mb-6 max-w-2xl mx-auto">
                 Voor slechts <strong className="text-primary-foreground">€79 eenmalig</strong> regel je alle juridische verplichtingen 
                 voor al je affiliate websites. Geen maandelijkse kosten, geen gedoe met advocaten, geen risico op boetes. 
