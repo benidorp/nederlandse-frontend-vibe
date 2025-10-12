@@ -259,18 +259,18 @@ const FAQ = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <Accordion type="single" collapsible className="space-y-4">
+        <div className="max-w-3xl mx-auto">
+          <Accordion type="single" collapsible className="space-y-2">
             {faqItems.map((item, index) => (
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="bg-card border-2 border-primary/10 rounded-lg px-6 shadow-md hover:shadow-lg transition-all"
+                className="bg-card border border-primary/10 rounded-md px-3 py-1 shadow-sm hover:shadow-md transition-all"
               >
-                <AccordionTrigger className="text-left hover:text-primary text-lg font-semibold">
+                <AccordionTrigger className="text-left hover:text-primary text-sm font-medium py-2">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed whitespace-pre-line pt-4">
+                <AccordionContent className="text-muted-foreground text-xs leading-relaxed whitespace-pre-line pt-1 pb-2">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>
