@@ -52,7 +52,7 @@ const Pricing = () => {
               </div>
 
               <div className="pt-6 border-t">
-                <Button className="w-full" size="lg">
+                <Button className="w-full h-14 text-lg font-semibold shadow-lg hover:shadow-xl transition-shadow" size="lg">
                   Bestel Nu
                 </Button>
               </div>
