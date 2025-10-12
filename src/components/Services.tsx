@@ -99,7 +99,7 @@ const Services = () => {
               <CardTitle className="text-lg text-primary-foreground">Minimaliseer Uw Risico's</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-primary-foreground/90">Hoewel we geen garanties kunnen geven, zijn deze juridische documenten zorgvuldig opgesteld om uw risico's zoveel mogelijk te minimaliseren en u maximale bescherming te geven  “Hoewel we geen absolute garanties kunnen bieden, zijn deze juridische documenten met zorg en aandacht samengesteld om jouw risico’s zo veel mogelijk te beperken. Ze bieden maximale bescherming en duidelijkheid, zodat je met vertrouwen en veiligheid jouw affiliate activiteiten kunt uitvoeren.”</p>
+              <p className="text-sm text-primary-foreground/90">“Hoewel garanties niet bestaan en Geen enkel document alles kan garanderen, zijn deze juridische documenten ontworpen om je risico’s te verkleinen en je maximale bescherming te bieden. Ze geven je de zekerheid van duidelijke en betrouwbare voorwaarden.”</p>
             </CardContent>
           </Card>
         </div>
