@@ -2,15 +2,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Shield, Zap, FileCheck } from "lucide-react";
-
 const ValueProposition = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: "smooth" });
+    element?.scrollIntoView({
+      behavior: "smooth"
+    });
   };
-
-  return (
-    <section className="py-20 bg-background">
+  return <section className="py-20 bg-background">
       <div className="container">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
@@ -117,7 +116,7 @@ const ValueProposition = () => {
             </CardContent>
           </Card>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-3 gap-6 mb-8 my-0">
             <Card className="border-primary-foreground/30 bg-primary-foreground text-foreground">
               <CardContent className="pt-6">
                 <Zap className="h-10 w-10 text-navy mb-4" />
@@ -160,8 +159,6 @@ const ValueProposition = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ValueProposition;
