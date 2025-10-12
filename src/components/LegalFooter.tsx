@@ -485,7 +485,7 @@ const LegalFooter = () => {
           <AccordionItem 
             key={index} 
             value={`legal-${index}`}
-            className="border border-border/50 rounded-md px-3 bg-card/50"
+            className="bg-primary text-primary-foreground border border-primary-foreground/20 rounded-md px-3 py-1"
           >
             <AccordionTrigger className="text-sm hover:text-primary py-2.5 text-left">
               {doc.title}
