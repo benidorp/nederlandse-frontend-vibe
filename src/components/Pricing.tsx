@@ -14,7 +14,7 @@ const includedItems = [
 
 const Pricing = () => {
   return (
-    <section id="prijzen" className="py-20 bg-background">
+    <section id="prijzen" className="py-20 bg-primary/5">
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">Prijzen</Badge>
@@ -43,8 +43,8 @@ const Pricing = () => {
               <div className="space-y-3">
                 {includedItems.map((item, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <div className="h-5 w-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <Check className="h-3 w-3 text-primary" />
+                    <div className="h-5 w-5 rounded-full bg-red-600 flex items-center justify-center flex-shrink-0">
+                      <Check className="h-3 w-3 text-white" />
                     </div>
                     <span className="text-foreground">{item}</span>
                   </div>
