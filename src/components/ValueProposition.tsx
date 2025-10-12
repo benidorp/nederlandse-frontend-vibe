@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Shield, Zap, FileCheck } from "lucide-react";
+import nicoleProfile from "@/assets/nicole-profile.jpg";
 const ValueProposition = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -28,6 +29,13 @@ const ValueProposition = () => {
             <div className="mt-10 p-8 bg-secondary/30 rounded-xl border border-border shadow-sm text-foreground">
               <div className="text-center mb-6">
                 <h3 className="text-2xl font-bold text-foreground mb-2">Over Mij</h3>
+                <div className="flex justify-center my-4">
+                  <img 
+                    src={nicoleProfile} 
+                    alt="Nicole Henderson - Juridisch specialist" 
+                    className="w-24 h-24 rounded-full object-cover border-4 border-primary/20 shadow-lg"
+                  />
+                </div>
                 <p className="text-2xl font-bold text-primary mb-2">Nicole Henderson</p>
                 <p className="text-lg text-muted-foreground font-medium">
                   Juridisch specialist gespecialiseerd in heldere, precieze en professionele juridische documenten
