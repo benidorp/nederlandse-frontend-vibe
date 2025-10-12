@@ -136,6 +136,16 @@ const ValueProposition = () => {
                 </p>
               </CardContent>
             </Card>
+
+            <Card className="border-primary-foreground/30 bg-primary-foreground text-foreground">
+              <CardContent className="pt-6">
+                <Shield className="h-10 w-10 text-green-600 mb-4" />
+                <h3 className="text-lg font-bold mb-2">Internationaal Inzetbaar</h3>
+                <p className="text-sm text-muted-foreground">
+                  De templates zijn te downloaden in meerdere talen voor internationaal gebruik, zodat je ze kunt inzetten op al je websites wereldwijd.
+                </p>
+              </CardContent>
+            </Card>
           </div>
 
           <Card className="bg-primary border-2 border-primary text-primary-foreground">
