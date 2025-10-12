@@ -59,7 +59,7 @@ const ValueProposition = () => {
             </div>
           </div>
 
-          <Card className="mb-8 border-2 border-primary/20 bg-card">
+          <Card className="mb-8 border-2 border-primary/20 bg-primary/5">
             <CardHeader>
               <CardTitle className="text-2xl flex items-center gap-3">
                 <Shield className="h-8 w-8 text-primary" />
@@ -74,7 +74,7 @@ const ValueProposition = () => {
               
               <div className="grid md:grid-cols-2 gap-4 mt-6">
                 <div className="flex items-start gap-3 p-4 rounded-lg bg-secondary/30 border border-primary/10">
-                  <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-5 w-5 text-red-600 mt-0.5 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold mb-1">AVG/GDPR Privacybeleid</h4>
                     <p className="text-sm text-muted-foreground">Volledig conform Europese wetgeving, inclusief cookiegebruik en gegevensbescherming</p>
@@ -82,7 +82,7 @@ const ValueProposition = () => {
                 </div>
                 
                 <div className="flex items-start gap-3 p-4 rounded-lg bg-secondary/30 border border-primary/10">
-                  <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-5 w-5 text-red-600 mt-0.5 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold mb-1">Affiliate Disclosure</h4>
                     <p className="text-sm text-muted-foreground">Transparante melding dat je commissies verdient, conform FTC en EU regelgeving</p>
@@ -90,7 +90,7 @@ const ValueProposition = () => {
                 </div>
                 
                 <div className="flex items-start gap-3 p-4 rounded-lg bg-background border border-navy/20">
-                  <CheckCircle className="h-5 w-5 text-navy mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-5 w-5 text-red-600 mt-0.5 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold mb-1 text-foreground">Algemene Voorwaarden</h4>
                     <p className="text-sm text-foreground/80">Beschermt je tegen aansprakelijkheidsclaims en regelt de relatie met bezoekers</p>
@@ -98,7 +98,7 @@ const ValueProposition = () => {
                 </div>
                 
                 <div className="flex items-start gap-3 p-4 rounded-lg bg-background border border-navy/20">
-                  <CheckCircle className="h-5 w-5 text-navy mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-5 w-5 text-red-600 mt-0.5 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold mb-1 text-foreground">Juridische Disclaimer</h4>
                     <p className="text-sm text-foreground/80">Beperkt jouw aansprakelijkheid voor de aanbevelingen die je doet</p>
@@ -106,7 +106,7 @@ const ValueProposition = () => {
                 </div>
                 
                 <div className="flex items-start gap-3 p-4 rounded-lg bg-background border border-navy/20">
-                  <CheckCircle className="h-5 w-5 text-navy mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-5 w-5 text-red-600 mt-0.5 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold mb-1 text-foreground">Cookiebeleid</h4>
                     <p className="text-sm text-foreground/80">AVG-conform, uitleg over tracking en analytics cookies</p>
@@ -114,7 +114,7 @@ const ValueProposition = () => {
                 </div>
                 
                 <div className="flex items-start gap-3 p-4 rounded-lg bg-background border border-navy/20">
-                  <CheckCircle className="h-5 w-5 text-navy mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-5 w-5 text-red-600 mt-0.5 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold mb-1 text-foreground">Implementatie Handleiding</h4>
                     <p className="text-sm text-foreground/80">Stap-voor-stap instructies om alles correct op je website te plaatsen</p>
