@@ -57,12 +57,12 @@ const Pricing = () => {
                 </Button>
               </div>
 
-              <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-4">
-                <div className="flex gap-3">
-                  <AlertTriangle className="h-5 w-5 text-destructive flex-shrink-0 mt-0.5" />
+              <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-3">
+                <div className="flex gap-2">
+                  <AlertTriangle className="h-4 w-4 text-destructive flex-shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Belangrijk: Geen Retourneren</h4>
-                    <p className="text-sm text-muted-foreground">
+                    <h4 className="font-semibold text-sm text-foreground mb-0.5">Belangrijk: Geen Retourneren</h4>
+                    <p className="text-xs text-muted-foreground">
                       Onze producten kunnen niet worden geretourneerd en we bieden geen geld-terug-garantie. 
                       Dit is logisch voor digitale documenten die gemakkelijk kunnen worden gekopieerd na het downloaden.
                     </p>
