@@ -2,28 +2,16 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Check, AlertTriangle } from "lucide-react";
-
-const includedItems = [
-  "Privacybeleid (AVG-compliant)",
-  "Disclaimer",
-  "Affiliate Disclosure (FTC)",
-  "Algemene Voorwaarden",
-  "Cookiebeleid",
-  "Implementatiegids"
-];
-
+const includedItems = ["Privacybeleid (AVG-compliant)", "Disclaimer", "Affiliate Disclosure (FTC)", "Algemene Voorwaarden", "Cookiebeleid", "Implementatiegids"];
 const Pricing = () => {
-  return (
-    <section id="prijzen" className="py-20 bg-primary/5">
+  return <section id="prijzen" className="py-20 bg-primary/5">
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">Prijzen</Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Essentiële Affiliate Documenten
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Compleet pakket met alle juridische documenten die u nodig heeft voor uw affiliate website
-          </p>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Compleet pakket met alle juridische documenten die u nodig heeft voor uw affiliate website. Download het pakket eenvoudig in je eigen taal – of in meerdere talen – en maak je affiliatewebsite klaar voor internationaal gebruik.</p>
         </div>
 
         <div className="max-w-2xl mx-auto">
@@ -41,14 +29,12 @@ const Pricing = () => {
             
             <CardContent className="space-y-6">
               <div className="space-y-3">
-                {includedItems.map((item, index) => (
-                  <div key={index} className="flex items-center gap-3">
+                {includedItems.map((item, index) => <div key={index} className="flex items-center gap-3">
                     <div className="h-5 w-5 rounded-full bg-red-600 flex items-center justify-center flex-shrink-0">
                       <Check className="h-3 w-3 text-white" />
                     </div>
                     <span className="text-foreground">{item}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
 
               <div className="pt-6 border-t">
@@ -73,8 +59,6 @@ const Pricing = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Pricing;
