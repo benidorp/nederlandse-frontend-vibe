@@ -589,7 +589,7 @@ Q: Moet ik een advocaat raadplegen?
 A: Deze templates zijn een goed startpunt, maar het is raadzaam om juridisch advies in te winnen voor uw specifieke situatie.
 
 Q: Zijn deze documenten geldig in Nederland?
-A: Deze documenten zijn opgesteld volgens internationale standaarden. Pas ze aan voor Nederlandse wetgeving en overleg met een Nederlandse jurist.
+A: Deze documenten zijn opgesteld volgens internationale standaarden.
 
 Q: Hoe vaak moet ik updates doen?
 A: Minimaal 1x per jaar, of wanneer er significante wijzigingen zijn in uw bedrijfsvoering of wetgeving.
