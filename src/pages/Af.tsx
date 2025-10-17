@@ -487,6 +487,174 @@ For questions about this Cookie Policy, contact us at:
 📍 Address: [Insert Business Address]
 🌐 Website: https://[AffiliateWebsiteName].com`;
 
+  const privacyPolicy = `Privacy Policy for Affiliate Websites
+
+Effective Date: [Insert Date]
+Last Updated: [Insert Date]
+
+Welcome to [AffiliateWebsiteName].com ("Website," "we," "our," or "us").
+We value your privacy and are committed to protecting your personal information in compliance with global privacy laws, including the GDPR (EU), CCPA (California), and other applicable data protection regulations.
+
+This Privacy Policy explains how we collect, use, store, and protect your information when you visit our website, interact with our content, or make use of affiliate links.
+
+1. Information We Collect
+
+We may collect the following types of information:
+
+a. Personal Data You Provide
+
+Name, email address, or contact information (e.g., when signing up for newsletters, contact forms, or comments).
+
+Payment details, if applicable, when purchasing digital products directly from us.
+
+b. Automatically Collected Data
+
+IP address, browser type, device information, location data, and pages visited.
+
+Information gathered via cookies, pixels, or similar tracking technologies.
+
+c. Affiliate Tracking Data
+
+When you click on an affiliate link, third-party networks (e.g., Amazon Associates, CJ Affiliate, Rakuten, etc.) may collect data such as:
+
+Referral source (which website you came from)
+
+Click timestamps
+
+Purchase activity or conversions
+
+Device and browser information
+
+We do not control how these third parties process or use your data. Please refer to their respective privacy policies.
+
+2. How We Use Your Information
+
+We use your data for the following purposes:
+
+To operate and improve our website and content performance.
+
+To track affiliate link clicks and commissions.
+
+To respond to your inquiries or provide customer support.
+
+To send newsletters or promotional emails (only if you opt-in).
+
+To comply with legal obligations or enforce our Terms of Use.
+
+3. Cookies and Tracking Technologies
+
+We use cookies and similar technologies to enhance your experience and analyze traffic.
+Types of cookies we use include:
+
+Essential cookies – Required for basic website functionality.
+
+Analytics cookies – Help us measure website performance (e.g., Google Analytics).
+
+Affiliate tracking cookies – Used by our partners to track referrals and commissions.
+
+Advertising cookies – Used to display personalized or retargeted ads.
+
+You can disable cookies in your browser settings at any time, though some features may not function properly.
+
+4. Affiliate Partnerships and Third Parties
+
+Our website contains affiliate links to third-party merchants and advertisers, including but not limited to:
+
+Amazon Associates
+
+CJ Affiliate
+
+ShareASale
+
+Rakuten
+
+Awin
+
+Google Ads
+
+Meta (Facebook) Ads
+
+When you click an affiliate link, those third parties may collect and process data independently of us.
+We are not responsible for third-party privacy practices, cookies, or data collection methods.
+
+5. Data Retention
+
+We retain your personal data only as long as necessary for the purposes stated above, unless a longer retention period is required by law.
+
+6. Data Protection and Security
+
+We take appropriate technical and organizational measures to protect your information against unauthorized access, loss, misuse, or alteration.
+However, no online system is 100% secure, and we cannot guarantee absolute security.
+
+7. Your Rights
+
+Depending on your location, you may have the following rights under applicable privacy laws:
+
+Access your personal data.
+
+Request correction or deletion of your information.
+
+Withdraw consent to data processing.
+
+Request a copy of your data (data portability).
+
+Object to processing or marketing communications.
+
+To exercise your rights, please contact us at [Insert Contact Email].
+
+8. International Data Transfers
+
+Your data may be processed in countries outside your residence, including the United States or European Union.
+We ensure such transfers comply with data protection laws, using standard contractual clauses or equivalent safeguards.
+
+9. Children's Privacy
+
+Our website and services are not intended for individuals under the age of 18.
+We do not knowingly collect personal data from minors.
+If you believe a child has provided us data, please contact us immediately.
+
+10. Updates to This Privacy Policy
+
+We may update this Privacy Policy periodically to reflect legal or operational changes.
+All updates will be posted on this page with a revised "Last Updated" date.
+Continued use of our website constitutes acceptance of the updated version.
+
+11. Contact Information
+
+If you have any questions or concerns about this Privacy Policy, please contact us at:
+Email: [Insert Contact Email]
+Address: [Insert Business Address]
+Website: [AffiliateWebsiteName].com`;
+
+  const affiliateDisclaimerVariations = `Choosing the Right Affiliate Disclaimer for Your Website
+
+Not all affiliate disclaimers are the same. Below are 5 variations you can use depending on your style, audience, and page type.
+
+1. General Short:
+"This page contains affiliate links. If you make a purchase through these links, we may earn a commission at no extra cost to you. See our full Affiliate Disclosure."
+
+Use this for a clean, professional look on product pages or blogs.
+
+2. Slightly Longer:
+"This page contains affiliate links. By clicking and making a purchase, we may earn a small commission at no additional cost to you. Read our Affiliate Disclosure for details."
+
+Use this when you want to provide a bit more explanation without overwhelming readers.
+
+3. Friendly & Informal:
+"Note: some links on this page are affiliate links. If you click and buy something, we may earn a commission – at no extra cost to you. See our Affiliate Disclosure for more info."
+
+Use this for a casual blog or content aimed at a friendly, approachable tone.
+
+4. Amazon Specific:
+"This page contains Amazon affiliate links. If you purchase a product through these links, we may earn a commission from Amazon at no extra cost to you. Check our full Affiliate Disclosure."
+
+Use this when promoting Amazon products specifically.
+
+5. Short & Simple (Footer Use):
+"This page contains affiliate links. We may earn a commission from purchases made through these links, at no extra cost to you. Read our Affiliate Disclosure."
+
+Use this as a concise note at the bottom of posts, reviews, or landing pages.`;
+
   const implementationGuide = `IMPLEMENTATIE HANDLEIDING: HOE JURIDISCHE DOCUMENTEN OP UW WEBSITE TE PLAATSEN
 
 Deze handleiding legt uit hoe u de juridische documenten (Algemene Voorwaarden, Privacyverklaring, Affiliate Disclosure, Disclaimer en Cookiebeleid) correct op uw affiliate website implementeert.
@@ -687,6 +855,42 @@ Voor juridisch advies: Raadpleeg een advocaat gespecialiseerd in internetrecht`;
           </div>
           <div className="prose prose-sm max-w-none text-foreground whitespace-pre-wrap">
             {cookiePolicy}
+          </div>
+        </section>
+
+        {/* Privacy Policy */}
+        <section className="mb-12 p-6 bg-card rounded-lg border border-border shadow-sm">
+          <div className="flex justify-between items-start mb-4">
+            <h2 className="text-2xl font-bold text-foreground">Privacy Policy</h2>
+            <Button
+              onClick={() => downloadTextFile("privacy-policy.txt", privacyPolicy)}
+              variant="outline"
+              size="sm"
+            >
+              <Download className="w-4 h-4 mr-2" />
+              Download
+            </Button>
+          </div>
+          <div className="prose prose-sm max-w-none text-foreground whitespace-pre-wrap">
+            {privacyPolicy}
+          </div>
+        </section>
+
+        {/* Affiliate Disclaimer Variations */}
+        <section className="mb-12 p-6 bg-card rounded-lg border border-border shadow-sm">
+          <div className="flex justify-between items-start mb-4">
+            <h2 className="text-2xl font-bold text-foreground">Affiliate Disclaimer Variations</h2>
+            <Button
+              onClick={() => downloadTextFile("affiliate-disclaimer-variations.txt", affiliateDisclaimerVariations)}
+              variant="outline"
+              size="sm"
+            >
+              <Download className="w-4 h-4 mr-2" />
+              Download
+            </Button>
+          </div>
+          <div className="prose prose-sm max-w-none text-foreground whitespace-pre-wrap">
+            {affiliateDisclaimerVariations}
           </div>
         </section>
 
