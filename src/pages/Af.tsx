@@ -164,7 +164,7 @@ Welcome to [AffiliateWebsiteName].com ("Website," "we," "our," or "us"). These T
 
 By accessing or using this Website, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree, you must immediately discontinue use of the Website.
 
-🚨 IMPORTANT NOTICE
+IMPORTANT NOTICE
 
 We do not control third-party websites, merchants, or affiliate networks.
 
@@ -187,10 +187,10 @@ Your interactions and transactions with third-party merchants are entirely at yo
 2. USE OF THE WEBSITE
 
 By using this Website, you agree to:
-✔ Use the Website for lawful and informational purposes only.
-✔ Avoid using automated tools (bots, scrapers, or scripts) to collect or copy content.
-✔ Refrain from fraudulent, misleading, or deceptive practices.
-✔ Accept that we are not responsible for third-party transactions, tracking, or data collection.
+Use the Website for lawful and informational purposes only.
+Avoid using automated tools (bots, scrapers, or scripts) to collect or copy content.
+Refrain from fraudulent, misleading, or deceptive practices.
+Accept that we are not responsible for third-party transactions, tracking, or data collection.
 
 Your use of this Website signifies your compliance with all applicable local and international laws.
 
@@ -207,7 +207,7 @@ Rakuten Marketing	E-commerce affiliate tracking.	[Rakuten Policy]
 Google Ads	Shows retargeted affiliate ads.	[Google Privacy Policy]
 Facebook Pixel	Tracks affiliate sales via ads.	[Facebook Policy]
 
-📌 We disclaim all liability for third-party cookies, tracking, and external purchases.
+We disclaim all liability for third-party cookies, tracking, and external purchases.
 
 4. THIRD-PARTY SERVICES & LIABILITY WAIVER
 
@@ -217,61 +217,61 @@ We do not endorse, control, or guarantee any third-party products or services.
 
 All purchases, refunds, or disputes must be handled directly with the merchant.
 
-🚨 WE DISCLAIM ALL LIABILITY for losses, data breaches, inaccuracies, or damages caused by third-party services, including affiliate networks and advertisers.
+WE DISCLAIM ALL LIABILITY for losses, data breaches, inaccuracies, or damages caused by third-party services, including affiliate networks and advertisers.
 
-📌 If you do not wish to be tracked by third parties, please refrain from clicking affiliate links.
+If you do not wish to be tracked by third parties, please refrain from clicking affiliate links.
 
 5. INTELLECTUAL PROPERTY RIGHTS
 
-✔ All Website content, including text, graphics, designs, and trademarks, is protected by copyright and intellectual property laws.
-✔ You may not copy, modify, distribute, or reproduce our content without express written permission.
-✔ Any unauthorized use may result in civil or criminal liability.
+All Website content, including text, graphics, designs, and trademarks, is protected by copyright and intellectual property laws.
+You may not copy, modify, distribute, or reproduce our content without express written permission.
+Any unauthorized use may result in civil or criminal liability.
 
 We respect the intellectual property rights of others and expect our users to do the same.
 
 6. PROHIBITED ACTIVITIES
 
 By using this Website, you agree not to:
-❌ Engage in illegal, fraudulent, or harmful activities.
-❌ Attempt to hack, manipulate, or disrupt the Website or its servers.
-❌ Impersonate other individuals or entities.
-❌ Use bots, crawlers, or scrapers to extract content or data.
+Engage in illegal, fraudulent, or harmful activities.
+Attempt to hack, manipulate, or disrupt the Website or its servers.
+Impersonate other individuals or entities.
+Use bots, crawlers, or scrapers to extract content or data.
 
-📌 We reserve the right to suspend or permanently ban users who violate these Terms.
+We reserve the right to suspend or permanently ban users who violate these Terms.
 
 7. DISCLAIMER OF WARRANTIES
 
-🚨 THIS WEBSITE IS PROVIDED "AS IS" AND "AS AVAILABLE," WITHOUT ANY WARRANTIES OF ANY KIND.
+THIS WEBSITE IS PROVIDED "AS IS" AND "AS AVAILABLE," WITHOUT ANY WARRANTIES OF ANY KIND.
 
-✔ We make no guarantees regarding the accuracy, completeness, or availability of content.
-✔ We disclaim all responsibility for the actions of third-party merchants, affiliate partners, and networks.
-✔ You assume full responsibility for your interactions with third-party services.
+We make no guarantees regarding the accuracy, completeness, or availability of content.
+We disclaim all responsibility for the actions of third-party merchants, affiliate partners, and networks.
+You assume full responsibility for your interactions with third-party services.
 
-📌 Your sole and exclusive remedy for dissatisfaction with the Website is to stop using it.
+Your sole and exclusive remedy for dissatisfaction with the Website is to stop using it.
 
 8. LIMITATION OF LIABILITY
 
-🚨 TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE ARE NOT LIABLE FOR:
-❌ Financial losses, data breaches, or damages resulting from affiliate purchases.
-❌ Errors, inaccuracies, or outdated information on our Website.
-❌ Technical failures, cyberattacks, or interruptions beyond our control.
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE ARE NOT LIABLE FOR:
+Financial losses, data breaches, or damages resulting from affiliate purchases.
+Errors, inaccuracies, or outdated information on our Website.
+Technical failures, cyberattacks, or interruptions beyond our control.
 
 In no event shall [AffiliateWebsiteName].com, its owners, or affiliates be liable for any indirect, consequential, or incidental damages arising from your use of this Website.
 
 9. INDEMNIFICATION
 
 By using this Website, you agree to indemnify, defend, and hold harmless [AffiliateWebsiteName].com, its owners, employees, and partners from any claims, losses, or damages resulting from:
-✔ Your use of affiliate links.
-✔ Your reliance on Website content.
-✔ Your engagement with third-party merchants.
+Your use of affiliate links.
+Your reliance on Website content.
+Your engagement with third-party merchants.
 
-🚨 You accept full responsibility for your actions and interactions with third parties.
+You accept full responsibility for your actions and interactions with third parties.
 
 10. GOVERNING LAW & DISPUTE RESOLUTION
 
-✔ These Terms are governed by the laws of [Insert Jurisdiction].
-✔ Any dispute shall be resolved by binding arbitration in [Insert Location], in the English language.
-✔ You waive any right to participate in collective or class-action proceedings.
+These Terms are governed by the laws of [Insert Jurisdiction].
+Any dispute shall be resolved by binding arbitration in [Insert Location], in the English language.
+You waive any right to participate in collective or class-action proceedings.
 
 If any provision is found invalid, the remainder of these Terms shall remain in effect.
 
@@ -285,9 +285,9 @@ Continued use of the Website after changes are posted constitutes your acceptanc
 
 For questions or concerns regarding these Terms, please contact us at:
 
-📧 Email: [Insert Contact Email]
-📍 Address: [Insert Business Address]
-🌐 Website: https://[AffiliateWebsiteName].com`;
+Email: [Insert Contact Email]
+Address: [Insert Business Address]
+Website: https://[AffiliateWebsiteName].com`;
 
   const disclaimer = `DISCLAIMER
 
