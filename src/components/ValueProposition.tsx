@@ -26,7 +26,7 @@ const ValueProposition = () => {
               Zonder deze documenten loop je risico op hoge boetes en juridische problemen.
             </p>
             
-            <div className="mt-10 p-8 bg-secondary/30 rounded-xl border border-border shadow-sm text-foreground">
+            <div id="over-mij" className="mt-10 p-8 bg-secondary/30 rounded-xl border border-border shadow-sm text-foreground">
               <div className="text-center mb-6">
                 <h3 className="text-2xl font-bold text-foreground mb-2">Over Mij</h3>
                 <div className="flex justify-center my-4">
