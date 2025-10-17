@@ -799,9 +799,9 @@ Voor juridisch advies: Raadpleeg een advocaat gespecialiseerd in internetrecht`;
               Download
             </Button>
           </div>
-          <div className="prose prose-sm max-w-none text-foreground whitespace-pre-wrap">
+          <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
             {affiliateDisclosure}
-          </div>
+          </p>
         </section>
 
         {/* Terms and Conditions */}
@@ -817,9 +817,9 @@ Voor juridisch advies: Raadpleeg een advocaat gespecialiseerd in internetrecht`;
               Download
             </Button>
           </div>
-          <div className="prose prose-sm max-w-none text-foreground whitespace-pre-wrap">
+          <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
             {termsAndConditions}
-          </div>
+          </p>
         </section>
 
         {/* Disclaimer */}
@@ -835,9 +835,9 @@ Voor juridisch advies: Raadpleeg een advocaat gespecialiseerd in internetrecht`;
               Download
             </Button>
           </div>
-          <div className="prose prose-sm max-w-none text-foreground whitespace-pre-wrap">
+          <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
             {disclaimer}
-          </div>
+          </p>
         </section>
 
         {/* Cookie Policy */}
@@ -853,9 +853,9 @@ Voor juridisch advies: Raadpleeg een advocaat gespecialiseerd in internetrecht`;
               Download
             </Button>
           </div>
-          <div className="prose prose-sm max-w-none text-foreground whitespace-pre-wrap">
+          <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
             {cookiePolicy}
-          </div>
+          </p>
         </section>
 
         {/* Privacy Policy */}
@@ -871,9 +871,9 @@ Voor juridisch advies: Raadpleeg een advocaat gespecialiseerd in internetrecht`;
               Download
             </Button>
           </div>
-          <div className="prose prose-sm max-w-none text-foreground whitespace-pre-wrap">
+          <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
             {privacyPolicy}
-          </div>
+          </p>
         </section>
 
         {/* Affiliate Disclaimer Variations */}
@@ -889,9 +889,9 @@ Voor juridisch advies: Raadpleeg een advocaat gespecialiseerd in internetrecht`;
               Download
             </Button>
           </div>
-          <div className="prose prose-sm max-w-none text-foreground whitespace-pre-wrap">
+          <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
             {affiliateDisclaimerVariations}
-          </div>
+          </p>
         </section>
 
         {/* Implementation Guide */}
