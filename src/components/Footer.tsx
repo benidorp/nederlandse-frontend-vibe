@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import {
   Accordion,
   AccordionContent,
@@ -545,9 +544,9 @@ const Footer = () => {
             <p className="text-sm text-primary-foreground/80">
               © {new Date().getFullYear()} Legal Affiliate Agreement. Alle rechten voorbehouden.
             </p>
-            <Link to="/es" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+            <a href="/es" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
               <span className="text-2xl">🇪🇸</span>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 
 const FooterES = () => {
   return (
@@ -37,9 +37,9 @@ const FooterES = () => {
             <p className="text-center text-sm text-primary-foreground/80">
               © {new Date().getFullYear()} Legal Affiliate Agreement. Todos los derechos reservados.
             </p>
-            <Link to="/" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+            <a href="/affiliate-website-bescherming-essentiele-juridische-documenten-algemene-voorwaarden-privacyverklaring-disclosure-cookiebeleid" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
               <span className="text-2xl">🇪🇸</span>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
