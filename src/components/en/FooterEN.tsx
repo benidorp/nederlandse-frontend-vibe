@@ -1,14 +1,13 @@
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
 import logo from "@/assets/logo.png";
-
 const FooterEN = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: "smooth" });
+    element?.scrollIntoView({
+      behavior: "smooth"
+    });
   };
-
-  return (
-    <footer id="contact" className="bg-muted/50 border-t">
+  return <footer id="contact" className="bg-muted/50 border-t">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
@@ -39,34 +38,22 @@ const FooterEN = () => {
             <h3 className="font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <button 
-                  onClick={() => scrollToSection("home")}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
+                <button onClick={() => scrollToSection("home")} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Home
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection("about-me")}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
+                <button onClick={() => scrollToSection("about-me")} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   About Me
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection("services")}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
+                <button onClick={() => scrollToSection("services")} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Services
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection("pricing")}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
+                <button onClick={() => scrollToSection("pricing")} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Pricing
                 </button>
               </li>
@@ -104,9 +91,7 @@ const FooterEN = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <a href="mailto:info@legalaffiliateagreement.com" className="hover:text-primary transition-colors">
-                  info@legalaffiliateagreement.com
-                </a>
+                <a href="mailto:info@legalaffiliateagreement.com" className="hover:text-primary transition-colors">isupport@iaee.eu</a>
               </li>
               <li className="flex items-start gap-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
@@ -136,8 +121,6 @@ const FooterEN = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default FooterEN;
