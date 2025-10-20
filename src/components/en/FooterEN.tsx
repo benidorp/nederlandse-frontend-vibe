@@ -60,31 +60,7 @@ const FooterEN = () => {
             </ul>
           </div>
 
-          <div>
-            <h3 className="font-semibold mb-4">Legal</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Terms & Conditions
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Cookie Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Disclaimer
-                </a>
-              </li>
-            </ul>
-          </div>
+          
 
           <div>
             <h3 className="font-semibold mb-4">Contact</h3>
@@ -93,16 +69,8 @@ const FooterEN = () => {
                 <Mail className="h-4 w-4 mt-0.5 flex-shrink-0" />
                 <a href="mailto:info@legalaffiliateagreement.com" className="hover:text-primary transition-colors">isupport@iaee.eu</a>
               </li>
-              <li className="flex items-start gap-2 text-sm text-muted-foreground">
-                <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <a href="tel:+31201234567" className="hover:text-primary transition-colors">
-                  +31 20 123 4567
-                </a>
-              </li>
-              <li className="flex items-start gap-2 text-sm text-muted-foreground">
-                <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span>Amsterdam, Netherlands</span>
-              </li>
+              
+              
             </ul>
           </div>
         </div>
