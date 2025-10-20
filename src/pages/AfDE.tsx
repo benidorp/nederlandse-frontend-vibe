@@ -2,6 +2,7 @@ import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import HeaderDE from "@/components/de/HeaderDE";
 import FooterDE from "@/components/de/FooterDE";
+import LegalFooterDE from "@/components/de/LegalFooterDE";
 
 const AfDE = () => {
   const downloadTextFile = (filename: string, content: string) => {

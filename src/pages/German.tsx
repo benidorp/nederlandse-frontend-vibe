@@ -4,6 +4,9 @@ import ValuePropositionDE from "@/components/de/ValuePropositionDE";
 import ServicesDE from "@/components/de/ServicesDE";
 import PricingDE from "@/components/de/PricingDE";
 import ReviewsDE from "@/components/de/ReviewsDE";
+import BlogPostsDE from "@/components/de/BlogPostsDE";
+import FAQDE from "@/components/de/FAQDE";
+import AffiliateQADE from "@/components/de/AffiliateQADE";
 import FooterDE from "@/components/de/FooterDE";
 
 const German = () => {
@@ -16,6 +19,9 @@ const German = () => {
         <ServicesDE />
         <PricingDE />
         <ReviewsDE />
+        <BlogPostsDE />
+        <FAQDE />
+        <AffiliateQADE />
       </main>
       <FooterDE />
     </div>
