@@ -1,14 +1,7 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
-const legalDocuments = [
-  {
-    title: "Algemene Voorwaarden",
-    content: `**ALGEMENE VOORWAARDEN – IAEE.EU**
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+const legalDocuments = [{
+  title: "Algemene Voorwaarden",
+  content: `**ALGEMENE VOORWAARDEN – IAEE.EU**
 
 **1. Overeenkomst met de voorwaarden**
 
@@ -143,10 +136,9 @@ Voor vragen, opmerkingen of klachten over deze Voorwaarden kunt u contact met on
 
 E-mail: support@iaee.eu
 Website: https://iaee.eu`
-  },
-  {
-    title: "Privacybeleid",
-    content: `**PRIVACYBELEID – IAEE.EU**
+}, {
+  title: "Privacybeleid",
+  content: `**PRIVACYBELEID – IAEE.EU**
 
 Welkom bij IAEE.EU ("de Website", "wij", "ons" of "onze"). Wij respecteren uw privacy en nemen de bescherming van uw persoonsgegevens uiterst serieus. Dit privacybeleid legt uit welke informatie wij verzamelen, hoe wij die gebruiken, opslaan en beveiligen, en welke rechten u heeft onder de internationale privacywetgeving.
 
@@ -285,10 +277,9 @@ Voor vragen, klachten of verzoeken met betrekking tot dit privacybeleid kunt u c
 
 E-mail: support@iaee.eu
 Website: https://iaee.eu`
-  },
-  {
-    title: "Disclaimer",
-    content: `**DISCLAIMER – IAEE.EU / LEGAL AFFILIATE AGREEMENT**
+}, {
+  title: "Disclaimer",
+  content: `**DISCLAIMER – IAEE.EU / LEGAL AFFILIATE AGREEMENT**
 
 **1. Inleiding**
 
@@ -379,10 +370,9 @@ Heeft u vragen of opmerkingen over deze disclaimer? Neem dan contact met ons op 
 
 E-mail: support@iaee.eu
 Website: https://iaee.eu`
-  },
-  {
-    title: "Cookiebeleid",
-    content: `**COOKIEBELEID – IAEE.EU**
+}, {
+  title: "Cookiebeleid",
+  content: `**COOKIEBELEID – IAEE.EU**
 
 **1. Wat zijn cookies?**
 
@@ -481,12 +471,9 @@ Voor vragen over cookies, privacy of uw voorkeuren kunt u contact opnemen via:
 
 E-mail: support@iaee.eu
 Website: https://iaee.eu`
-  }
-];
-
+}];
 const Footer = () => {
-  return (
-    <footer id="contact" className="bg-primary text-primary-foreground py-12">
+  return <footer id="contact" className="bg-primary text-primary-foreground py-12">
       <div className="container">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
@@ -510,20 +497,14 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Juridische Informatie</h3>
             <Accordion type="single" collapsible className="w-full space-y-2">
-              {legalDocuments.map((doc, index) => (
-                <AccordionItem 
-                  key={index} 
-                  value={`legal-${index}`}
-                  className="bg-primary-foreground/10 border border-primary-foreground/20 rounded-md px-3 py-1"
-                >
+              {legalDocuments.map((doc, index) => <AccordionItem key={index} value={`legal-${index}`} className="bg-primary-foreground/10 border border-primary-foreground/20 rounded-md px-3 py-1">
                   <AccordionTrigger className="text-xs text-primary-foreground hover:text-primary-foreground/80 py-2 text-left">
                     {doc.title}
                   </AccordionTrigger>
                   <AccordionContent className="text-xs text-primary-foreground/90 whitespace-pre-line leading-relaxed pb-3 pt-1 max-h-48 overflow-y-auto">
                     {doc.content}
                   </AccordionContent>
-                </AccordionItem>
-              ))}
+                </AccordionItem>)}
             </Accordion>
           </div>
           
@@ -545,13 +526,11 @@ const Footer = () => {
               © {new Date().getFullYear()} Legal Affiliate Agreement. Alle rechten voorbehouden.
             </p>
             <a href="/es" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-              <span className="text-2xl">🇪🇸</span>
+              
             </a>
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
