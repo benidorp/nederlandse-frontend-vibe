@@ -23,7 +23,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Navigate to="/affiliate-website-bescherming-essentiele-juridische-documenten-algemene-voorwaarden-privacyverklaring-disclosure-cookiebeleid" replace />} />
           <Route path="/affiliate-website-bescherming-essentiele-juridische-documenten-algemene-voorwaarden-privacyverklaring-disclosure-cookiebeleid" element={<Index />} />
-          <Route path="/en/legal-documents-for-affiliate-websites-terms-conditions-privacy-policy-disclosure-cookie-policy" element={<English />} />
+          <Route path="/en/affiliate-website-protection-essential-legal-documents" element={<English />} />
           <Route path="/fr" element={<French />} />
           <Route path="/de" element={<German />} />
           <Route path="/af" element={<Af />} />
