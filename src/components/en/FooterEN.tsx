@@ -7,7 +7,7 @@ const FooterEN = () => {
       behavior: "smooth"
     });
   };
-  return <footer id="contact" className="bg-muted/50 border-t">
+  return <footer id="contact" className="bg-primary/5 border-t border-border">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
@@ -60,7 +60,31 @@ const FooterEN = () => {
             </ul>
           </div>
 
-          
+          <div>
+            <h3 className="font-semibold mb-4">Legal Information</h3>
+            <ul className="space-y-2">
+              <li>
+                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Terms and Conditions
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Disclaimer
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Cookie Policy
+                </a>
+              </li>
+            </ul>
+          </div>
 
           <div>
             <h3 className="font-semibold mb-4">Contact</h3>
