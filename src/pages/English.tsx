@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import HeaderEN from "@/components/en/HeaderEN";
 import HeroEN from "@/components/en/HeroEN";
 import ValuePropositionEN from "@/components/en/ValuePropositionEN";
@@ -12,23 +13,28 @@ import LegalFooterEN from "@/components/en/LegalFooterEN";
 
 const English = () => {
   return (
-    <div className="min-h-screen">
-      <HeaderEN />
-      <main>
-        <HeroEN />
-        <ValuePropositionEN />
-        <ServicesEN />
-        <BlogPostsEN />
-        <AffiliateQAEN />
-        <PricingEN />
-        <ReviewsEN />
-        <FAQEN />
-      </main>
-      <FooterEN />
-      <div className="container pb-8">
-        <LegalFooterEN />
+    <>
+      <Helmet>
+        <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+      </Helmet>
+      <div className="min-h-screen">
+        <HeaderEN />
+        <main>
+          <HeroEN />
+          <ValuePropositionEN />
+          <ServicesEN />
+          <BlogPostsEN />
+          <AffiliateQAEN />
+          <PricingEN />
+          <ReviewsEN />
+          <FAQEN />
+        </main>
+        <FooterEN />
+        <div className="container pb-8">
+          <LegalFooterEN />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -51,11 +51,15 @@ const PricingEN = () => {
                 ))}
               </div>
 
-              <div className="pt-6 border-t">
-                <Button className="w-full h-14 text-lg font-semibold shadow-lg hover:shadow-xl transition-shadow" size="lg">
-                  Order Now
-                </Button>
-              </div>
+              <div 
+                className="pt-6 border-t flex justify-center"
+                dangerouslySetInnerHTML={{
+                  __html: `<stripe-buy-button
+                    buy-button-id="buy_btn_1SKm3dFXIgtr666GOD7ZP6da"
+                    publishable-key="pk_live_51SK0ndFXIgtr666GrmKudtOsf3HHcaBw06Ei3x8LbGKOYQ3oZeIrmpMpTfoTBJ5c7tPyFfbRC7pugHMC0l6b3ZKP009fgyIrGc"
+                  ></stripe-buy-button>`
+                }}
+              />
 
               <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-3">
                 <div className="flex gap-2">
