@@ -771,9 +771,6 @@ Deze documenten zijn templates en geen vervanging voor professioneel juridisch a
 Elke website is uniek en vereist mogelijk aangepaste juridische documentatie. 
 Raadpleeg altijd een gekwalificeerde jurist voor uw specifieke situatie.
 
-CONTACT
-
-Voor vragen over implementatie: [Insert Contact Email]
 Voor juridisch advies: Raadpleeg een advocaat gespecialiseerd in internetrecht`;
 
   return (
