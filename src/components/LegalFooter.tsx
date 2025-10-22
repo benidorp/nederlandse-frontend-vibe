@@ -4,6 +4,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react";
+import jsPDF from "jspdf";
 
 const legalDocuments = [
   {
@@ -538,6 +541,40 @@ Website: https://iaee.eu`
 ];
 
 const LegalFooter = () => {
+  const downloadPDF = (title: string, content: string) => {
+    const doc = new jsPDF();
+    const pageWidth = doc.internal.pageSize.getWidth();
+    const pageHeight = doc.internal.pageSize.getHeight();
+    const margin = 20;
+    const maxLineWidth = pageWidth - margin * 2;
+    
+    // Clean up the content - remove markdown formatting
+    const cleanContent = content
+      .replace(/\*\*/g, '') // Remove bold markers
+      .replace(/•/g, '-'); // Replace bullets with dashes
+    
+    // Add title
+    doc.setFontSize(16);
+    doc.text(title, margin, margin);
+    
+    // Add content
+    doc.setFontSize(10);
+    const lines = doc.splitTextToSize(cleanContent, maxLineWidth);
+    
+    let y = margin + 10;
+    lines.forEach((line: string) => {
+      if (y > pageHeight - margin) {
+        doc.addPage();
+        y = margin;
+      }
+      doc.text(line, margin, y);
+      y += 5;
+    });
+    
+    // Download the PDF
+    doc.save(`${title}.pdf`);
+  };
+
   return (
     <div className="border-t border-border/50 pt-8 mt-8">
       <h4 className="text-sm font-semibold mb-4 text-foreground">Juridische Informatie</h4>
@@ -548,9 +585,20 @@ const LegalFooter = () => {
             value={`legal-${index}`}
             className="bg-primary text-primary-foreground border border-primary-foreground/20 rounded-md px-3 py-1"
           >
-            <AccordionTrigger className="text-sm text-primary-foreground hover:text-primary-foreground/80 py-2.5 text-left">
-              {doc.title}
-            </AccordionTrigger>
+            <div className="flex items-center justify-between gap-2">
+              <AccordionTrigger className="text-sm text-primary-foreground hover:text-primary-foreground/80 py-2.5 text-left flex-1">
+                {doc.title}
+              </AccordionTrigger>
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => downloadPDF(doc.title, doc.content)}
+                className="text-primary-foreground hover:text-primary-foreground/80 hover:bg-primary-foreground/10 h-8 px-2"
+                title="Download als PDF"
+              >
+                <Download className="h-4 w-4" />
+              </Button>
+            </div>
             <AccordionContent className="text-xs text-primary-foreground/90 whitespace-pre-line leading-relaxed pb-3 pt-1">
               {doc.content}
             </AccordionContent>
