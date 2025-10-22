@@ -111,91 +111,91 @@ For complex affiliate structures, high revenues (>€100,000/year), or internati
   },
   {
     question: "Frequently asked questions about legal documents",
-    answer: `Most Asked Questions about Legal Documents for Affiliate Websites (2025) 🛡️
+    answer: `## Most Asked Questions about Legal Documents for Affiliate Websites 🛡️
 
 🔹 A. General – Legal obligations for affiliate websites
 
-### Which legal documents are required for an affiliate website?
+## Which legal documents are required for an affiliate website?
 Affiliate websites typically need a privacy policy, cookie policy, disclaimer (affiliate disclosure) and terms and conditions to comply with privacy legislation and consumer protection.
 
-### Why do I need legal documents for my affiliate website?
+## Why do I need legal documents for my affiliate website?
 Because you collect personal data, use affiliate links and generate income. Without these documents you often violate privacy legislation such as GDPR (EU) or CCPA (US).
 
-### Are legal documents mandatory if I don't sell products?
+## Are legal documents mandatory if I don't sell products?
 Yes, even if you don't sell products but use affiliate links or collect visitor data (e.g., via Google Analytics), you need a privacy and cookie policy.
 
-### What happens if I don't place legal documents on my website?
+## What happens if I don't place legal documents on my website?
 You may risk fines (such as under GDPR or CCPA), or be held liable for misleading or privacy violations.
 
-### Can I write legal documents myself for my affiliate website?
+## Can I write legal documents myself for my affiliate website?
 You can, but it's not recommended unless you're legally trained. Using professional or customized templates is recommended.
 
 🔹 B. Privacy Policy – Data protection and GDPR
 
-### Is a privacy policy mandatory for affiliate websites?
+## Is a privacy policy mandatory for affiliate websites?
 Yes. If you collect personal data (such as IP addresses, emails, cookies or analytical data), a privacy policy is legally required.
 
-### What should be in a privacy policy for an affiliate website?
+## What should be in a privacy policy for an affiliate website?
 Among others: what data you collect, why, how long you keep it, how visitors can exercise their rights, and whether you share data with third parties (such as affiliate networks or Google).
 
-### How do I make my affiliate privacy policy GDPR-compliant?
+## How do I make my affiliate privacy policy GDPR-compliant?
 Ensure it's transparent, complete and understandable. Mention legal bases (such as consent or legitimate interest) and offer a contact point for privacy requests.
 
-### Should I mention that I use affiliate links in my privacy policy?
+## Should I mention that I use affiliate links in my privacy policy?
 Yes, always mention that external partners may collect data via tracking cookies or pixels for analytical or commercial purposes.
 
-### Do I need a DPO (Data Protection Officer) as an affiliate?
+## Do I need a DPO (Data Protection Officer) as an affiliate?
 Not required, unless you process data on a large scale. You must be accessible for privacy requests via email or contact form.
 
 🔹 C. Cookie Policy – Tracking and consent
 
-### Do I need a cookie policy for my affiliate website?
+## Do I need a cookie policy for my affiliate website?
 Yes, if you use cookies or tracking (such as Google Analytics, Facebook Pixel, or affiliate tracking), you are required to publish a cookie policy.
 
-### What should I mention in a cookie policy?
+## What should I mention in a cookie policy?
 Which cookies you use, their purpose, retention period and how visitors can manage or disable cookies.
 
-### Is a cookie banner mandatory for affiliate websites?
+## Is a cookie banner mandatory for affiliate websites?
 Yes, in the EU and UK a cookie banner is required before non-essential cookies are placed.
 
-### What's the difference between essential and non-essential cookies?
+## What's the difference between essential and non-essential cookies?
 Essential cookies are needed for the website to function (such as logging in). Non-essential cookies are used for analytics, advertising or tracking.
 
-### How do I comply with GDPR and ePrivacy Directive with cookies?
+## How do I comply with GDPR and ePrivacy Directive with cookies?
 Show a clear cookie banner, ask explicit consent for non-essential cookies, and give users control over their preferences.
 
 🔹 D. Disclaimer & Affiliate Disclosure – Transparency and liability
 
-### What is an affiliate disclaimer?
+## What is an affiliate disclaimer?
 A brief statement indicating that you receive a commission when visitors buy products through your links.
 
-### Is an affiliate disclaimer mandatory?
+## Is an affiliate disclaimer mandatory?
 Yes. Both the FTC (US) and EU Consumer Directive require transparency about commercial partnerships.
 
-### Where do I place my affiliate disclaimer?
+## Where do I place my affiliate disclaimer?
 Ideally above or below content with affiliate links, and in a separate legal page (such as "Disclaimer" or "Affiliate Disclosure").
 
-### What should be in a good affiliate disclaimer?
+## What should be in a good affiliate disclaimer?
 That you receive compensation via affiliate links, that this does not cause extra costs for the visitor, and that you remain independent in recommendations.
 
-### What's the difference between a disclaimer and affiliate disclosure?
+## What's the difference between a disclaimer and affiliate disclosure?
 The disclaimer limits your liability, while the affiliate disclosure is required to provide transparency about commercial relationships.
 
 🔹 E. Terms and Conditions – Legal basis of the website
 
-### Do I need terms and conditions for my affiliate website?
+## Do I need terms and conditions for my affiliate website?
 Not always legally required, but strongly recommended. They define the rules for website use, liability and intellectual property.
 
-### What should be in terms and conditions for an affiliate site?
+## What should be in terms and conditions for an affiliate site?
 Among others: usage rules, intellectual property rights, liability limitations, indemnification, applicable law and contact information.
 
-### Can terms and conditions legally protect me?
+## Can terms and conditions legally protect me?
 Yes. They limit your liability, clarify responsibilities, and prevent disputes with users or advertisers.
 
-### Do I need to have terms and conditions approved by visitors?
+## Do I need to have terms and conditions approved by visitors?
 Not necessarily. For websites with purchases or registrations, explicit acceptance is recommended (e.g., via checkbox). For informational sites, publication suffices.
 
-### Should I translate my legal documents for international visitors?
+## Should I translate my legal documents for international visitors?
 If you're active worldwide, an English version is strongly recommended. Some countries require local language versions (such as France or Brazil).
 
 ✅ Extra tip:
