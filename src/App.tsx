@@ -28,7 +28,7 @@ const App = () => (
           <Route path="/en/legal-documents-for-affiliate-websites-terms-conditions-privacy-policy-disclosure-cookie-policy" element={<Navigate to="/en/affiliate-website-protection-essential-legal-documents" replace />} />
           <Route path="/fr" element={<French />} />
           <Route path="/de" element={<German />} />
-          <Route path="/en/af" element={<Af />} />
+          <Route path="/af" element={<Af />} />
           <Route path="/fr/af" element={<AfFR />} />
           <Route path="/de/af" element={<AfDE />} />
           <Route path="/docs-1" element={<Languages />} />
