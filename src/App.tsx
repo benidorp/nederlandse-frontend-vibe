@@ -5,11 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Index from "./pages/Index";
 import English from "./pages/English";
-import French from "./pages/French";
-import German from "./pages/German";
 import Af from "./pages/Af";
-import AfFR from "./pages/AfFR";
-import AfDE from "./pages/AfDE";
 import Languages from "./pages/Languages";
 import NotFound from "./pages/NotFound";
 
@@ -26,11 +22,7 @@ const App = () => (
           <Route path="/affiliate-website-bescherming-essentiele-juridische-documenten-algemene-voorwaarden-privacyverklaring-disclosure-cookiebeleid" element={<Index />} />
           <Route path="/en/affiliate-website-protection-essential-legal-documents" element={<English />} />
           <Route path="/en/legal-documents-for-affiliate-websites-terms-conditions-privacy-policy-disclosure-cookie-policy" element={<Navigate to="/en/affiliate-website-protection-essential-legal-documents" replace />} />
-          <Route path="/fr" element={<French />} />
-          <Route path="/de" element={<German />} />
           <Route path="/af" element={<Af />} />
-          <Route path="/fr/af" element={<AfFR />} />
-          <Route path="/de/af" element={<AfDE />} />
           <Route path="/docs-1" element={<Languages />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
