@@ -22,7 +22,6 @@ const App = () => (
           <Route path="/" element={<Navigate to="/affiliate-website-bescherming-essentiele-juridische-documenten-algemene-voorwaarden-privacyverklaring-disclosure-cookiebeleid" replace />} />
           <Route path="/affiliate-website-bescherming-essentiele-juridische-documenten-algemene-voorwaarden-privacyverklaring-disclosure-cookiebeleid" element={<Index />} />
           <Route path="/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" element={<English />} />
-          <Route path="/en/affiliate-website-protection-essential-legal-documents" element={<Navigate to="/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" replace />} />
           <Route path="/policy" element={<LegalEN />} />
           <Route path="/af" element={<Af />} />
           <Route path="/docs-1" element={<Languages />} />
