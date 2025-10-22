@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { Download, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
@@ -815,8 +816,12 @@ Always consult a qualified lawyer for your specific situation.
 For legal advice: Consult a lawyer specialized in internet law`;
 
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
+    <>
+      <Helmet>
+        <meta name="robots" content="noindex" />
+      </Helmet>
+      <div className="min-h-screen bg-background">
+        <Header />
       
       <main className="container mx-auto px-4 py-12 max-w-4xl">
         <h1 className="text-4xl font-bold mb-8 text-foreground">Legal Documents</h1>
@@ -1020,9 +1025,10 @@ For legal advice: Consult a lawyer specialized in internet law`;
           </div>
         </section>
       </main>
-
-      <Footer />
-    </div>
+      
+        <Footer />
+      </div>
+    </>
   );
 };
 
