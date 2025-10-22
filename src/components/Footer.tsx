@@ -1,7 +1,4 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
-import jsPDF from "jspdf";
 const legalDocuments = [{
   title: "Algemene Voorwaarden",
   content: `**ALGEMENE VOORWAARDEN – IAEE.EU**
@@ -476,40 +473,6 @@ E-mail: support@iaee.eu
 Website: https://iaee.eu`
 }];
 const Footer = () => {
-  const downloadPDF = (title: string, content: string) => {
-    const doc = new jsPDF();
-    const pageWidth = doc.internal.pageSize.getWidth();
-    const pageHeight = doc.internal.pageSize.getHeight();
-    const margin = 20;
-    const maxLineWidth = pageWidth - margin * 2;
-    
-    // Clean up the content - remove markdown formatting
-    const cleanContent = content
-      .replace(/\*\*/g, '') // Remove bold markers
-      .replace(/•/g, '-'); // Replace bullets with dashes
-    
-    // Add title
-    doc.setFontSize(16);
-    doc.text(title, margin, margin);
-    
-    // Add content
-    doc.setFontSize(10);
-    const lines = doc.splitTextToSize(cleanContent, maxLineWidth);
-    
-    let y = margin + 10;
-    lines.forEach((line: string) => {
-      if (y > pageHeight - margin) {
-        doc.addPage();
-        y = margin;
-      }
-      doc.text(line, margin, y);
-      y += 5;
-    });
-    
-    // Download the PDF
-    doc.save(`${title}.pdf`);
-  };
-
   return <footer id="contact" className="bg-primary text-primary-foreground py-12">
       <div className="container">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
@@ -535,23 +498,9 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Juridische Informatie</h3>
             <Accordion type="single" collapsible className="w-full space-y-2">
               {legalDocuments.map((doc, index) => <AccordionItem key={index} value={`legal-${index}`} className="bg-primary-foreground/10 border border-primary-foreground/20 rounded-md px-3 py-1">
-                  <div className="flex items-center justify-between gap-2">
-                    <AccordionTrigger className="text-xs text-primary-foreground hover:text-primary-foreground/80 py-2 text-left flex-1">
-                      {doc.title}
-                    </AccordionTrigger>
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        downloadPDF(doc.title, doc.content);
-                      }}
-                      className="text-primary-foreground hover:text-primary-foreground/80 hover:bg-primary-foreground/10 h-7 px-2 shrink-0"
-                      title="Download als PDF"
-                    >
-                      <Download className="h-3 w-3" />
-                    </Button>
-                  </div>
+                  <AccordionTrigger className="text-xs text-primary-foreground hover:text-primary-foreground/80 py-2 text-left">
+                    {doc.title}
+                  </AccordionTrigger>
                   <AccordionContent className="text-xs text-primary-foreground/90 whitespace-pre-line leading-relaxed pb-3 pt-1 max-h-48 overflow-y-auto">
                     {doc.content}
                   </AccordionContent>
