@@ -1,4 +1,3 @@
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 const legalDocuments = [{
   title: "Algemene Voorwaarden",
   content: `**ALGEMENE VOORWAARDEN – IAEE.EU**
@@ -473,60 +472,56 @@ E-mail: support@iaee.eu
 Website: https://iaee.eu`
 }];
 const Footer = () => {
-  return <footer id="contact" className="bg-primary text-primary-foreground py-12">
+  return <footer id="contact" className="bg-navy text-white py-12">
       <div className="container">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4">Legal Affiliate Agreement</h3>
-            <p className="text-sm text-primary-foreground/80">
+            <h3 className="text-lg font-semibold mb-4 text-white">Legal Affiliate Agreement</h3>
+            <p className="text-sm text-white/70">
               Professionele juridische documenten voor affiliate websites. 
               Bescherm uw bedrijf met hoogwaardige juridische documentatie.
             </p>
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Snelle Links</h3>
+            <h3 className="text-lg font-semibold mb-4 text-white">Snelle Links</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#home" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Home</a></li>
-              <li><a href="#over-mij" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Over Mij</a></li>
-              <li><a href="#diensten" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Diensten</a></li>
-              <li><a href="#prijzen" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Prijzen</a></li>
+              <li><a href="#home" className="text-white/70 hover:text-white transition-colors">Home</a></li>
+              <li><a href="#over-mij" className="text-white/70 hover:text-white transition-colors">Over Mij</a></li>
+              <li><a href="#diensten" className="text-white/70 hover:text-white transition-colors">Diensten</a></li>
+              <li><a href="#prijzen" className="text-white/70 hover:text-white transition-colors">Prijzen</a></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Juridische Informatie</h3>
-            <Accordion type="single" collapsible className="w-full space-y-2">
-              {legalDocuments.map((doc, index) => <AccordionItem key={index} value={`legal-${index}`} className="bg-primary-foreground/10 border border-primary-foreground/20 rounded-md px-3 py-1">
-                  <AccordionTrigger className="text-xs text-primary-foreground hover:text-primary-foreground/80 py-2 text-left">
-                    {doc.title}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-xs text-primary-foreground/90 whitespace-pre-line leading-relaxed pb-3 pt-1 max-h-48 overflow-y-auto">
-                    {doc.content}
-                  </AccordionContent>
-                </AccordionItem>)}
-            </Accordion>
+            <h3 className="text-lg font-semibold mb-4 text-white">Juridische Informatie</h3>
+            <ul className="space-y-2 text-sm">
+              <li><a href="/af" className="text-white/70 hover:text-white transition-colors">Algemene Voorwaarden</a></li>
+              <li><a href="/af" className="text-white/70 hover:text-white transition-colors">Privacybeleid</a></li>
+              <li><a href="/af" className="text-white/70 hover:text-white transition-colors">Disclaimer</a></li>
+              <li><a href="/af" className="text-white/70 hover:text-white transition-colors">Cookiebeleid</a></li>
+            </ul>
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact</h3>
-            <p className="text-sm text-primary-foreground/80 mb-2">
+            <h3 className="text-lg font-semibold mb-4 text-white">Contact</h3>
+            <p className="text-sm text-white/70 mb-2">
               Voor vragen over onze juridische documenten,<br />
               neem gerust contact met ons op.
             </p>
-            <a href="mailto:support@iaee.eu" className="text-sm text-primary-foreground hover:text-primary-foreground/80 transition-colors">
+            <a href="mailto:support@iaee.eu" className="text-sm text-white/70 hover:text-white transition-colors">
               support@iaee.eu
             </a>
           </div>
         </div>
         
-        <div className="border-t border-primary-foreground/20 pt-8 mt-8">
+        <div className="border-t border-white/10 pt-8 mt-8">
           <div className="flex items-center justify-between">
-            <p className="text-sm text-primary-foreground/80">
+            <p className="text-sm text-white/70">
               © {new Date().getFullYear()} Legal Affiliate Agreement. Alle rechten voorbehouden.
             </p>
-            <a href="/es" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-              
+            <a href="/en/affiliate-website-protection-essential-legal-documents" className="flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors">
+              English
             </a>
           </div>
         </div>
