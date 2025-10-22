@@ -911,14 +911,6 @@ Voor juridisch advies: Raadpleeg een advocaat gespecialiseerd in internetrecht`;
             {implementationGuide}
           </div>
         </section>
-
-        {/* Contact Section */}
-        <section className="mb-12 p-6 bg-card rounded-lg border border-border shadow-sm">
-          <h2 className="text-2xl font-bold text-foreground mb-4">CONTACT</h2>
-          <p className="text-muted-foreground">
-            Voor vragen over implementatie: [Insert Contact Email]
-          </p>
-        </section>
       </main>
 
       <Footer />
