@@ -11,6 +11,7 @@ import Af from "./pages/Af";
 import AfFR from "./pages/AfFR";
 import AfDE from "./pages/AfDE";
 import Docs1 from "./pages/Docs1";
+import Languages from "./pages/Languages";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/fr/af" element={<AfFR />} />
           <Route path="/de/af" element={<AfDE />} />
           <Route path="/docs-1" element={<Docs1 />} />
+          <Route path="/languages" element={<Languages />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
