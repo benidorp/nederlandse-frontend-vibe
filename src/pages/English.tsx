@@ -9,7 +9,6 @@ import FAQEN from "@/components/en/FAQEN";
 import PricingEN from "@/components/en/PricingEN";
 import ReviewsEN from "@/components/en/ReviewsEN";
 import FooterEN from "@/components/en/FooterEN";
-import LegalFooterEN from "@/components/en/LegalFooterEN";
 
 const English = () => {
   return (
@@ -30,9 +29,6 @@ const English = () => {
           <FAQEN />
         </main>
         <FooterEN />
-        <div className="container pb-8">
-          <LegalFooterEN />
-        </div>
       </div>
     </>
   );
