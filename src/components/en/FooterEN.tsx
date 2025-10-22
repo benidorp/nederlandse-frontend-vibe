@@ -61,31 +61,29 @@ const FooterEN = () => {
           </div>
 
           <div>
-          <div>
             <h3 className="font-semibold mb-4 text-white">Legal Information</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/en/legal-information" className="text-sm text-white/80 hover:text-white transition-colors">
+                <a href="/en/legal-information#terms-and-conditions" className="text-sm text-white/80 hover:text-white transition-colors">
                   Terms and Conditions
                 </a>
               </li>
               <li>
-                <a href="/en/legal-information" className="text-sm text-white/80 hover:text-white transition-colors">
+                <a href="/en/legal-information#privacy-policy" className="text-sm text-white/80 hover:text-white transition-colors">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="/en/legal-information" className="text-sm text-white/80 hover:text-white transition-colors">
+                <a href="/en/legal-information#disclaimer" className="text-sm text-white/80 hover:text-white transition-colors">
                   Disclaimer
                 </a>
               </li>
               <li>
-                <a href="/en/legal-information" className="text-sm text-white/80 hover:text-white transition-colors">
+                <a href="/en/legal-information#cookie-policy" className="text-sm text-white/80 hover:text-white transition-colors">
                   Cookie Policy
                 </a>
               </li>
             </ul>
-          </div>
           </div>
 
           <div>

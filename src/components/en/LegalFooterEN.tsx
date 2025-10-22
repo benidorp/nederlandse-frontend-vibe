@@ -478,25 +478,46 @@ Website: https://iaee.eu`
 
 const LegalFooterEN = () => {
   return (
-    <div className="border-t border-border/50 pt-8 mt-8">
-      <h4 className="text-sm font-semibold mb-4 text-foreground">Legal Information</h4>
-      <Accordion type="single" collapsible className="w-full max-w-3xl space-y-2">
-        {legalDocuments.map((doc, index) => (
-          <AccordionItem 
-            key={index} 
-            value={`legal-${index}`}
-            className="bg-primary text-primary-foreground border border-primary-foreground/20 rounded-md px-3 py-1"
-          >
-            <AccordionTrigger className="text-sm text-primary-foreground hover:text-primary-foreground/80 py-2.5 text-left">
-              {doc.title}
-            </AccordionTrigger>
-            <AccordionContent className="text-xs text-primary-foreground/90 whitespace-pre-line leading-relaxed pb-3 pt-1">
-              {doc.content}
-            </AccordionContent>
-          </AccordionItem>
-        ))}
+    <section id="legal-information" className="py-12">
+      <h2 className="text-3xl font-bold mb-8 text-center">Legal Information</h2>
+      <Accordion type="single" collapsible className="w-full space-y-4 max-w-4xl mx-auto">
+        <AccordionItem value="terms" id="terms-and-conditions" className="border rounded-lg px-6">
+          <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+            Terms and Conditions
+          </AccordionTrigger>
+          <AccordionContent className="text-sm leading-relaxed whitespace-pre-line pt-4">
+            {legalDocuments[0].content}
+          </AccordionContent>
+        </AccordionItem>
+        
+        <AccordionItem value="privacy" id="privacy-policy" className="border rounded-lg px-6">
+          <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+            Privacy Policy
+          </AccordionTrigger>
+          <AccordionContent className="text-sm leading-relaxed whitespace-pre-line pt-4">
+            {legalDocuments[1].content}
+          </AccordionContent>
+        </AccordionItem>
+        
+        <AccordionItem value="disclaimer" id="disclaimer" className="border rounded-lg px-6">
+          <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+            Disclaimer
+          </AccordionTrigger>
+          <AccordionContent className="text-sm leading-relaxed whitespace-pre-line pt-4">
+            {legalDocuments[2].content}
+          </AccordionContent>
+        </AccordionItem>
+        
+        <AccordionItem value="cookies" id="cookie-policy" className="border rounded-lg px-6">
+          <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+            Cookie Policy
+          </AccordionTrigger>
+          <AccordionContent className="text-sm leading-relaxed whitespace-pre-line pt-4">
+            {legalDocuments[3].content}
+          </AccordionContent>
+        </AccordionItem>
       </Accordion>
-    </div>
+    </section>
   );
 };
 
