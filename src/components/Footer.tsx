@@ -520,7 +520,7 @@ const Footer = () => {
             <p className="text-sm text-white/70">
               © {new Date().getFullYear()} Legal Affiliate Agreement. Alle rechten voorbehouden.
             </p>
-            <a href="/en/affiliate-website-protection-essential-legal-documents" className="flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors">
+            <a href="/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" className="flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors">
               English
             </a>
           </div>

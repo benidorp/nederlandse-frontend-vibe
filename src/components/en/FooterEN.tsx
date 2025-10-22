@@ -107,6 +107,9 @@ const FooterEN = () => {
                 Nederlands
               </a>
               <span className="text-white font-medium">English</span>
+              <a href="https://legalaffiliateagreement.fr" className="text-white/70 hover:text-white transition-colors">
+                Français
+              </a>
             </div>
           </div>
         </div>
