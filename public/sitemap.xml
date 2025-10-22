@@ -25,8 +25,8 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/af</loc>
-    <lastmod>2025-10-21</lastmod>
+    <loc>https://yourdomain.com/en/af</loc>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -39,12 +39,6 @@
   <url>
     <loc>https://yourdomain.com/de/af</loc>
     <lastmod>2025-10-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://yourdomain.com/en/af</loc>
-    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
