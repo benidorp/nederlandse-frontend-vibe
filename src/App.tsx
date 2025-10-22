@@ -10,6 +10,7 @@ import German from "./pages/German";
 import Af from "./pages/Af";
 import AfFR from "./pages/AfFR";
 import AfDE from "./pages/AfDE";
+import AfEN from "./pages/AfEN";
 import Languages from "./pages/Languages";
 import NotFound from "./pages/NotFound";
 
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/af" element={<Af />} />
           <Route path="/fr/af" element={<AfFR />} />
           <Route path="/de/af" element={<AfDE />} />
+          <Route path="/en/af" element={<AfEN />} />
           <Route path="/docs-1" element={<Languages />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
