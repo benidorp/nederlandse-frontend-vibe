@@ -111,91 +111,91 @@ Bij complexe affiliate constructies, hoge omzetten (>€100.000/jaar), of intern
   },
   {
     question: "Veelgestelde vragen over juridische documenten",
-    answer: `Meest Gestelde Vragen over Juridische Documenten voor Affiliate Websites (2025) 🛡️
+    answer: `## Meest Gestelde Vragen over Juridische Documenten voor Affiliate Websites 🛡️
 
 🔹 A. Algemeen – Juridische verplichtingen voor affiliate websites
 
-### Welke juridische documenten zijn verplicht voor een affiliate website?
+## Welke juridische documenten zijn verplicht voor een affiliate website?
 Affiliate websites hebben doorgaans een privacybeleid, cookiebeleid, disclaimer (affiliate disclosure) en algemene voorwaarden nodig om te voldoen aan privacywetgeving en consumentenbescherming.
 
-### Waarom heb ik juridische documenten nodig voor mijn affiliate website?
+## Waarom heb ik juridische documenten nodig voor mijn affiliate website?
 Omdat je persoonsgegevens verzamelt, affiliate-links gebruikt en inkomsten genereert. Zonder deze documenten overtreed je vaak privacywetgeving zoals de AVG (EU) of CCPA (VS).
 
-### Zijn juridische documenten verplicht als ik geen producten verkoop?
+## Zijn juridische documenten verplicht als ik geen producten verkoop?
 Ja, ook als je geen producten verkoopt maar affiliate-links gebruikt of bezoekersgegevens verzamelt (bijv. via Google Analytics), heb je een privacy- en cookiebeleid nodig.
 
-### Wat gebeurt er als ik geen juridische documenten op mijn website plaats?
+## Wat gebeurt er als ik geen juridische documenten op mijn website plaats?
 Je kunt boetes riskeren (zoals onder de AVG of CCPA), of aansprakelijk worden gesteld bij misleiding of privacyschending.
 
-### Kan ik zelf juridische documenten schrijven voor mijn affiliate website?
+## Kan ik zelf juridische documenten schrijven voor mijn affiliate website?
 Dat kan, maar het is af te raden tenzij je juridisch onderlegd bent. Het gebruik van professionele of op maat gemaakte sjablonen is aanbevolen.
 
 🔹 B. Privacybeleid – Gegevensbescherming en AVG
 
-### Is een privacybeleid verplicht voor affiliate websites?
+## Is een privacybeleid verplicht voor affiliate websites?
 Ja. Als je persoonsgegevens verzamelt (zoals IP-adressen, e-mails, cookies of analytische data), is een privacybeleid wettelijk verplicht.
 
-### Wat moet er in een privacybeleid voor een affiliate website staan?
+## Wat moet er in een privacybeleid voor een affiliate website staan?
 Onder meer: welke gegevens je verzamelt, waarom, hoe lang je ze bewaart, hoe bezoekers hun rechten kunnen uitoefenen, en of je data deelt met derden (zoals affiliate netwerken of Google).
 
-### Hoe maak ik mijn affiliate privacybeleid AVG-conform?
+## Hoe maak ik mijn affiliate privacybeleid AVG-conform?
 Zorg dat het transparant, volledig en begrijpelijk is. Vermeld juridische grondslagen (zoals toestemming of gerechtvaardigd belang) en bied een contactpunt voor privacyverzoeken.
 
-### Moet ik vermelden dat ik affiliate-links gebruik in mijn privacybeleid?
+## Moet ik vermelden dat ik affiliate-links gebruik in mijn privacybeleid?
 Ja, vermeld altijd dat externe partners via tracking cookies of pixels gegevens kunnen verzamelen voor analytische of commerciële doeleinden.
 
-### Moet ik een DPO (Data Protection Officer) hebben als affiliate?
+## Moet ik een DPO (Data Protection Officer) hebben als affiliate?
 Niet verplicht, tenzij je grootschalig gegevens verwerkt. Wel moet je bereikbaar zijn voor privacyverzoeken via e-mail of contactformulier.
 
 🔹 C. Cookiebeleid – Tracking en toestemming
 
-### Heb ik een cookiebeleid nodig voor mijn affiliate website?
+## Heb ik een cookiebeleid nodig voor mijn affiliate website?
 Ja, als je cookies of tracking gebruikt (zoals Google Analytics, Facebook Pixel, of affiliate tracking), ben je verplicht een cookiebeleid te publiceren.
 
-### Wat moet ik in een cookiebeleid vermelden?
+## Wat moet ik in een cookiebeleid vermelden?
 Welke cookies je gebruikt, hun doel, de bewaartermijn en hoe bezoekers cookies kunnen beheren of uitschakelen.
 
-### Is een cookiebanner verplicht voor affiliate websites?
+## Is een cookiebanner verplicht voor affiliate websites?
 Ja, in de EU en UK is een cookie-banner verplicht vóórdat niet-essentiële cookies worden geplaatst.
 
-### Wat is het verschil tussen essentiële en niet-essentiële cookies?
+## Wat is het verschil tussen essentiële en niet-essentiële cookies?
 Essentiële cookies zijn nodig voor de werking van de website (zoals inloggen). Niet-essentiële cookies worden gebruikt voor analyse, advertenties of tracking.
 
-### Hoe voldoe ik aan de AVG en ePrivacy-richtlijn met cookies?
+## Hoe voldoe ik aan de AVG en ePrivacy-richtlijn met cookies?
 Toon een duidelijke cookiebanner, vraag expliciete toestemming voor niet-essentiële cookies, en geef gebruikers controle over hun voorkeuren.
 
 🔹 D. Disclaimer & Affiliate Disclosure – Transparantie en aansprakelijkheid
 
-### Wat is een affiliate disclaimer?
+## Wat is een affiliate disclaimer?
 Een korte verklaring waarin je aangeeft dat je een commissie ontvangt wanneer bezoekers via jouw links producten kopen.
 
-### Is een affiliate disclaimer verplicht?
+## Is een affiliate disclaimer verplicht?
 Ja. Zowel de FTC (VS) als de EU Consumentenrichtlijn eisen transparantie over commerciële samenwerkingen.
 
-### Waar plaats ik mijn affiliate disclaimer?
+## Waar plaats ik mijn affiliate disclaimer?
 Idealiter boven of onder content met affiliate-links, én in een aparte juridische pagina (zoals "Disclaimer" of "Affiliate Disclosure").
 
-### Wat moet er in een goede affiliate disclaimer staan?
+## Wat moet er in een goede affiliate disclaimer staan?
 Dat je een vergoeding ontvangt via affiliate-links, dat dit geen extra kosten veroorzaakt voor de bezoeker, en dat men onafhankelijk blijft in aanbevelingen.
 
-### Wat is het verschil tussen een disclaimer en affiliate disclosure?
+## Wat is het verschil tussen een disclaimer en affiliate disclosure?
 De disclaimer beperkt jouw aansprakelijkheid, terwijl de affiliate disclosure verplicht is om transparantie te bieden over commerciële relaties.
 
 🔹 E. Algemene Voorwaarden – Juridische basis van de website
 
-### Heb ik algemene voorwaarden nodig voor mijn affiliate website?
+## Heb ik algemene voorwaarden nodig voor mijn affiliate website?
 Niet altijd wettelijk verplicht, maar sterk aanbevolen. Ze bepalen de regels voor websitegebruik, aansprakelijkheid en intellectueel eigendom.
 
-### Wat moet er in algemene voorwaarden voor een affiliate site staan?
+## Wat moet er in algemene voorwaarden voor een affiliate site staan?
 Onder meer: gebruiksregels, intellectuele eigendomsrechten, aansprakelijkheidsbeperkingen, vrijwaring, toepasselijk recht en contactgegevens.
 
-### Kunnen algemene voorwaarden mij juridisch beschermen?
+## Kunnen algemene voorwaarden mij juridisch beschermen?
 Ja. Ze beperken je aansprakelijkheid, verduidelijken verantwoordelijkheden, en voorkomen geschillen met gebruikers of adverteerders.
 
-### Moet ik algemene voorwaarden laten goedkeuren door bezoekers?
+## Moet ik algemene voorwaarden laten goedkeuren door bezoekers?
 Niet per se. Voor websites met aankopen of aanmeldingen is expliciete acceptatie aanbevolen (bijv. via een checkbox). Voor informatieve sites volstaat publicatie.
 
-### Moet ik mijn juridische documenten vertalen voor internationale bezoekers?
+## Moet ik mijn juridische documenten vertalen voor internationale bezoekers?
 Als je wereldwijd actief bent, is een Engelse versie sterk aanbevolen. Sommige landen eisen lokale taalversies (zoals Frankrijk of Brazilië).
 
 ✅ Extra tip:
@@ -508,8 +508,8 @@ Niet veel. Basiskennis van websites, SEO en online marketing helpt, maar de mees
 Kies een onderwerp dat je interesseert en waar vraag naar is. Succesvolle niches zijn bijvoorbeeld gezondheid, financiën, technologie en lifestyle. Passie + vraag = winst.`
   },
   {
-    question: "Wereldwijde regels en wetgeving voor affiliate marketing in 2025",
-    answer: `# Wereldwijde regels en wetgeving voor affiliate marketing in 2025
+    question: "Wereldwijde regels en wetgeving voor affiliate marketing",
+    answer: `# Wereldwijde regels en wetgeving voor affiliate marketing
 
 Affiliate marketing is wereldwijd legaal, maar wordt streng gereguleerd door regels rond transparantie en privacy. Affiliates moeten duidelijk vermelden wanneer ze een commissie verdienen ("Deze link is een affiliate link"), om te voldoen aan de GDPR (Europa) en FTC-richtlijnen (VS). Ook cookies mogen alleen geplaatst worden na toestemming van de gebruiker. Overtredingen kunnen leiden tot blokkering van accounts of boetes. Controleer altijd de regelgeving in jouw regio voordat je campagnes start.
 
