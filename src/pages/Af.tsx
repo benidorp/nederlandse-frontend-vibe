@@ -655,132 +655,132 @@ Use this when promoting Amazon products specifically.
 
 Use this as a concise note at the bottom of posts, reviews, or landing pages.`;
 
-  const implementationGuide = `IMPLEMENTATIE HANDLEIDING: HOE JURIDISCHE DOCUMENTEN OP UW WEBSITE TE PLAATSEN
+  const implementationGuide = `IMPLEMENTATION GUIDE: HOW TO PLACE LEGAL DOCUMENTS ON YOUR WEBSITE
 
-Deze handleiding legt uit hoe u de juridische documenten (Algemene Voorwaarden, Privacyverklaring, Affiliate Disclosure, Disclaimer en Cookiebeleid) correct op uw affiliate website implementeert.
+This guide explains how to properly implement the legal documents (Terms and Conditions, Privacy Policy, Affiliate Disclosure, Disclaimer and Cookie Policy) on your affiliate website.
 
-STAP 1: DOWNLOAD DE DOCUMENTEN
+STEP 1: DOWNLOAD THE DOCUMENTS
 
-1. Klik op de downloadknoppen bij elk document op deze pagina
-2. Sla elk .txt bestand op uw computer op
-3. Open elk document en pas de placeholders aan:
-   - [Insert Date] → Vul de huidige datum in
-   - [AffiliateWebsiteName] → Vul uw website naam in
-   - [Insert Contact Email] → Vul uw contactemail in
-   - [Insert Business Address] → Vul uw bedrijfsadres in
-   - [Insert Jurisdiction] → Vul uw rechtsgebied in (bijv. "Nederland")
-   - [Insert Location] → Vul uw locatie in
+1. Click the download buttons for each document on this page
+2. Save each .txt file to your computer
+3. Open each document and customize the placeholders:
+   - [Insert Date] → Fill in the current date
+   - [AffiliateWebsiteName] → Fill in your website name
+   - [Insert Contact Email] → Fill in your contact email
+   - [Insert Business Address] → Fill in your business address
+   - [Insert Jurisdiction] → Fill in your jurisdiction (e.g., "Netherlands")
+   - [Insert Location] → Fill in your location
 
-STAP 2: CREËER APARTE PAGINA'S OP UW WEBSITE
+STEP 2: CREATE SEPARATE PAGES ON YOUR WEBSITE
 
-Maak voor elk document een aparte pagina aan:
+Create a separate page for each document:
 
-- /algemene-voorwaarden
-- /privacyverklaring
+- /terms-and-conditions
+- /privacy-policy
 - /affiliate-disclosure
 - /disclaimer
-- /cookiebeleid
+- /cookie-policy
 
-STAP 3: VOEG DE CONTENT TOE
+STEP 3: ADD THE CONTENT
 
-Kopieer de aangepaste tekst van elk document naar de corresponderende pagina op uw website.
+Copy the customized text from each document to the corresponding page on your website.
 
-Zorg voor goede leesbaarheid:
-- Gebruik koppen (H1, H2, H3) voor structuur
-- Maak paragrafen niet te lang
-- Gebruik opsommingstekens waar van toepassing
-- Gebruik voldoende witruimte tussen secties
+Ensure good readability:
+- Use headings (H1, H2, H3) for structure
+- Don't make paragraphs too long
+- Use bullet points where applicable
+- Use sufficient white space between sections
 
-STAP 4: VOEG LINKS TOE IN DE FOOTER
+STEP 4: ADD LINKS IN THE FOOTER
 
-Plaats links naar alle juridische documenten in de footer van uw website:
+Place links to all legal documents in your website's footer:
 
 <footer>
   <nav>
-    <a href="/algemene-voorwaarden">Algemene Voorwaarden</a>
-    <a href="/privacyverklaring">Privacyverklaring</a>
+    <a href="/terms-and-conditions">Terms and Conditions</a>
+    <a href="/privacy-policy">Privacy Policy</a>
     <a href="/affiliate-disclosure">Affiliate Disclosure</a>
     <a href="/disclaimer">Disclaimer</a>
-    <a href="/cookiebeleid">Cookiebeleid</a>
+    <a href="/cookie-policy">Cookie Policy</a>
   </nav>
 </footer>
 
-STAP 5: IMPLEMENTEER EEN COOKIE BANNER
+STEP 5: IMPLEMENT A COOKIE BANNER
 
-Voor GDPR-compliance heeft u een cookie banner nodig:
+For GDPR compliance, you need a cookie banner:
 
-1. Plaats de banner prominent op elke pagina
-2. Vraag toestemming VOORDAT tracking cookies worden geplaatst
-3. Geef gebruikers de mogelijkheid om cookies te accepteren of te weigeren
-4. Link naar uw Cookiebeleid voor meer informatie
+1. Place the banner prominently on every page
+2. Ask for consent BEFORE tracking cookies are placed
+3. Give users the option to accept or decline cookies
+4. Link to your Cookie Policy for more information
 
-Voorbeeld code:
+Example code:
 <div class="cookie-banner">
-  <p>Deze website gebruikt cookies voor affiliate tracking en analytics. 
-  Door verder te gaan, accepteert u ons <a href="/cookiebeleid">Cookiebeleid</a>.</p>
-  <button onclick="acceptCookies()">Accepteren</button>
-  <button onclick="declineCookies()">Weigeren</button>
+  <p>This website uses cookies for affiliate tracking and analytics. 
+  By continuing, you accept our <a href="/cookie-policy">Cookie Policy</a>.</p>
+  <button onclick="acceptCookies()">Accept</button>
+  <button onclick="declineCookies()">Decline</button>
 </div>
 
-STAP 6: AFFILIATE DISCLOSURE OP ELKE PAGINA MET AFFILIATE LINKS
+STEP 6: AFFILIATE DISCLOSURE ON EVERY PAGE WITH AFFILIATE LINKS
 
-Op elke pagina waar u affiliate links gebruikt, plaats een duidelijke disclosure:
+On every page where you use affiliate links, place a clear disclosure:
 
-"Deze pagina bevat affiliate links. Als u via deze links een aankoop doet, 
-ontvangen wij mogelijk een commissie zonder extra kosten voor u. 
-Lees onze volledige Affiliate Disclosure voor meer informatie."
+"This page contains affiliate links. If you make a purchase through these links, 
+we may receive a commission at no extra cost to you. 
+Read our full Affiliate Disclosure for more information."
 
-STAP 7: JURIDISCHE CHECKLIST
+STEP 7: LEGAL CHECKLIST
 
-☑ Alle placeholders zijn ingevuld
-☑ Documenten zijn toegankelijk via de footer
-☑ Cookie banner is geïmplementeerd
-☑ Affiliate disclosure staat op relevante pagina's
-☑ Contactgegevens zijn correct
-☑ Documenten zijn up-to-date
-☑ Links werken correct
+☑ All placeholders are filled in
+☑ Documents are accessible via the footer
+☑ Cookie banner is implemented
+☑ Affiliate disclosure is on relevant pages
+☑ Contact information is correct
+☑ Documents are up-to-date
+☑ Links work correctly
 
-STAP 8: REGELMATIGE UPDATES
+STEP 8: REGULAR UPDATES
 
-- Review uw juridische documenten minimaal 1x per jaar
-- Update de "Last Updated" datum bij wijzigingen
-- Houd wetgeving in de gaten (GDPR, AVG, etc.)
-- Pas documenten aan bij nieuwe affiliate partnerships
+- Review your legal documents at least once per year
+- Update the "Last Updated" date when making changes
+- Keep track of legislation (GDPR, AVG, etc.)
+- Adjust documents when adding new affiliate partnerships
 
-STAP 9: BACK-UPS
+STEP 9: BACKUPS
 
-Bewaar altijd een back-up van uw juridische documenten op een veilige locatie.
+Always keep a backup of your legal documents in a secure location.
 
-VEELGESTELDE VRAGEN
+FREQUENTLY ASKED QUESTIONS
 
-Q: Moet ik een advocaat raadplegen?
-A: Deze templates zijn een goed startpunt, maar het is raadzaam om juridisch advies in te winnen voor uw specifieke situatie.
+Q: Should I consult a lawyer?
+A: These templates are a good starting point, but it is advisable to seek legal advice for your specific situation.
 
-Q: Zijn deze documenten geldig in Nederland?
-A: Deze documenten zijn opgesteld volgens internationale standaarden.
+Q: Are these documents valid in the Netherlands?
+A: These documents are drafted according to international standards.
 
-Q: Hoe vaak moet ik updates doen?
-A: Minimaal 1x per jaar, of wanneer er significante wijzigingen zijn in uw bedrijfsvoering of wetgeving.
+Q: How often should I update?
+A: At least once per year, or when there are significant changes in your business operations or legislation.
 
-Q: Moet ik Google Analytics toestemming vragen?
-A: Ja, onder GDPR moet u toestemming vragen voordat u tracking cookies plaatst.
+Q: Do I need to ask permission for Google Analytics?
+A: Yes, under GDPR you must ask permission before placing tracking cookies.
 
-BELANGRIJKE WAARSCHUWING
+IMPORTANT WARNING
 
-Deze documenten zijn templates en geen vervanging voor professioneel juridisch advies. 
-Elke website is uniek en vereist mogelijk aangepaste juridische documentatie. 
-Raadpleeg altijd een gekwalificeerde jurist voor uw specifieke situatie.
+These documents are templates and not a substitute for professional legal advice. 
+Every website is unique and may require customized legal documentation. 
+Always consult a qualified lawyer for your specific situation.
 
-Voor juridisch advies: Raadpleeg een advocaat gespecialiseerd in internetrecht`;
+For legal advice: Consult a lawyer specialized in internet law`;
 
   return (
     <div className="min-h-screen bg-background">
       <Header />
       
       <main className="container mx-auto px-4 py-12 max-w-4xl">
-        <h1 className="text-4xl font-bold mb-8 text-foreground">Juridische Documenten</h1>
+        <h1 className="text-4xl font-bold mb-8 text-foreground">Legal Documents</h1>
         <p className="text-lg mb-12 text-muted-foreground">
-          Download de essentiële juridische documenten voor uw affiliate website. Elk document is beschikbaar als downloadbaar .txt bestand.
+          Download the essential legal documents for your affiliate website. Each document is available as a downloadable .txt file.
         </p>
 
         {/* Affiliate Disclosure */}
@@ -894,9 +894,9 @@ Voor juridisch advies: Raadpleeg een advocaat gespecialiseerd in internetrecht`;
         {/* Implementation Guide */}
         <section className="mb-12 p-6 bg-primary/5 rounded-lg border-2 border-primary/20 shadow-sm">
           <div className="flex justify-between items-start mb-4">
-            <h2 className="text-2xl font-bold text-foreground">Implementatie Handleiding</h2>
+            <h2 className="text-2xl font-bold text-foreground">Implementation Guide</h2>
             <Button
-              onClick={() => downloadTextFile("implementatie-handleiding.txt", implementationGuide)}
+              onClick={() => downloadTextFile("implementation-guide.txt", implementationGuide)}
               variant="default"
               size="sm"
             >
