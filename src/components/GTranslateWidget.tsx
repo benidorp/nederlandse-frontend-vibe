@@ -1,6 +1,10 @@
 import { useEffect } from "react";
 
-const GTranslateWidget = () => {
+interface GTranslateWidgetProps {
+  defaultLanguage?: string;
+}
+
+const GTranslateWidget = ({ defaultLanguage = "en" }: GTranslateWidgetProps) => {
   useEffect(() => {
     // Add GTranslate script
     const script = document.createElement("script");
@@ -11,9 +15,9 @@ const GTranslateWidget = () => {
     // Configure GTranslate
     script.onload = () => {
       (window as any).gtranslateSettings = {
-        default_language: "en",
+        default_language: defaultLanguage,
         native_language_names: true,
-        detect_browser_language: true,
+        detect_browser_language: false, // Disabled to prevent conflicts with our URL-based system
         languages: [
           "sq", "ar", "hy", "az", "be", "bn", "bs", "bg", "zh", "hr", "cs", "da", "nl", "en",
           "et", "fil", "fi", "fr", "ka", "de", "el", "gu", "he", "hi", "hu", "is", "ig", "id",
@@ -28,7 +32,7 @@ const GTranslateWidget = () => {
     return () => {
       document.body.removeChild(script);
     };
-  }, []);
+  }, [defaultLanguage]);
 
   return <div className="gtranslate_wrapper"></div>;
 };

@@ -1,51 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main pages -->
   <url>
-    <loc>https://yourdomain.com/affiliate-website-bescherming-essentiele-juridische-documenten-algemene-voorwaarden-privacyverklaring-disclosure-cookiebeleid</loc>
-    <lastmod>2025-10-21</lastmod>
+    <loc>https://iaee.eu/affiliate-website-bescherming-essentiele-juridische-documenten-algemene-voorwaarden-privacyverklaring-disclosure-cookiebeleid</loc>
+    <lastmod>2025-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/en/affiliate-website-protection-essential-legal-documents</loc>
-    <lastmod>2025-10-21</lastmod>
+    <loc>https://iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy</loc>
+    <lastmod>2025-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/fr</loc>
-    <lastmod>2025-10-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://yourdomain.com/de</loc>
-    <lastmod>2025-10-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://yourdomain.com/af</loc>
-    <lastmod>2025-10-22</lastmod>
+    <loc>https://iaee.eu/policy</loc>
+    <lastmod>2025-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/fr/af</loc>
-    <lastmod>2025-10-21</lastmod>
+    <loc>https://iaee.eu/af</loc>
+    <lastmod>2025-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/de/af</loc>
-    <lastmod>2025-10-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://yourdomain.com/docs-1</loc>
-    <lastmod>2025-10-22</lastmod>
+    <loc>https://iaee.eu/docs-1</loc>
+    <lastmod>2025-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  
+  <!-- All 65 language versions -->
+  <url><loc>https://iaee.eu/sq</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/ar</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/hy</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/az</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/be</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/bn</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/bs</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/bg</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/zh</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/hr</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/cs</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/da</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/nl</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/en</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/et</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/fil</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/fi</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/fr</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/ka</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/de</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/el</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/gu</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/he</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/hi</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/hu</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/is</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/ig</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/id</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/it</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/ja</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/jv</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/ko</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/lv</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/lt</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/lb</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/mk</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/ml</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/mt</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/mr</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/mn</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/my</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/ne</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/no</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/fa</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/pl</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/pt</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/pa</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/ro</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/ru</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/sm</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/sr</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/sd</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/sk</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/sl</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/es</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/sv</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/tg</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/ta</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/te</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/th</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/tr</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/uk</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/ur</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/uz</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iaee.eu/vi</loc><lastmod>2025-10-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
 </urlset>

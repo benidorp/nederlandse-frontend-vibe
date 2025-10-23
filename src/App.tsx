@@ -8,6 +8,8 @@ import English from "./pages/English";
 import Af from "./pages/Af";
 import Languages from "./pages/Languages";
 import LegalEN from "./pages/LegalEN";
+import LanguagePage from "./pages/LanguagePage";
+import LanguageDetector from "./components/LanguageDetector";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -18,6 +20,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <LanguageDetector />
         <Routes>
           <Route path="/" element={<Navigate to="/affiliate-website-bescherming-essentiele-juridische-documenten-algemene-voorwaarden-privacyverklaring-disclosure-cookiebeleid" replace />} />
           <Route path="/affiliate-website-bescherming-essentiele-juridische-documenten-algemene-voorwaarden-privacyverklaring-disclosure-cookiebeleid" element={<Index />} />
@@ -25,6 +28,8 @@ const App = () => (
           <Route path="/policy" element={<LegalEN />} />
           <Route path="/af" element={<Af />} />
           <Route path="/docs-1" element={<Languages />} />
+          {/* Dynamic language route for all 65+ languages */}
+          <Route path="/:lang" element={<LanguagePage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
