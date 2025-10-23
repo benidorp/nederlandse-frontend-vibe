@@ -1,0 +1,26 @@
+[[redirects]]
+  from = "/nl/*"
+  to = "https://nl.yourdomain.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/*"
+  to = "https://fr.yourdomain.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/de/*"
+  to = "https://de.yourdomain.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/*"
+  to = "https://es.yourdomain.com/:splat"
+  status = 301
+  force = true
+
+# Add more language redirects as needed for all 68 languages
+# Format: /[language-code]/* -> https://[language-code].yourdomain.com/:splat
