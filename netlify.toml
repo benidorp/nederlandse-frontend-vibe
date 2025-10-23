@@ -1,26 +1,38 @@
 [[redirects]]
   from = "/nl/*"
-  to = "https://nl.yourdomain.com/:splat"
-  status = 301
+  to = "https://nl-yourdomain.translate.goog/:splat"
+  status = 200
   force = true
 
 [[redirects]]
   from = "/fr/*"
-  to = "https://fr.yourdomain.com/:splat"
-  status = 301
+  to = "https://fr-yourdomain.translate.goog/:splat"
+  status = 200
   force = true
 
 [[redirects]]
   from = "/de/*"
-  to = "https://de.yourdomain.com/:splat"
-  status = 301
+  to = "https://de-yourdomain.translate.goog/:splat"
+  status = 200
   force = true
 
 [[redirects]]
   from = "/es/*"
-  to = "https://es.yourdomain.com/:splat"
-  status = 301
+  to = "https://es-yourdomain.translate.goog/:splat"
+  status = 200
   force = true
 
-# Add more language redirects as needed for all 68 languages
-# Format: /[language-code]/* -> https://[language-code].yourdomain.com/:splat
+[[redirects]]
+  from = "/sq/*"
+  to = "https://sq-yourdomain.translate.goog/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/ar/*"
+  to = "https://ar-yourdomain.translate.goog/:splat"
+  status = 200
+  force = true
+
+# Add remaining 62 languages following the same pattern
+# Replace yourdomain with your actual domain name
