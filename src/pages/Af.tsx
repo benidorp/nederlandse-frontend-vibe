@@ -4,31 +4,10 @@ import { Download, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import GTranslateWidget from "@/components/GTranslateWidget";
 import jsPDF from "jspdf";
 
 const Af = () => {
-  // Load GTranslate widget script
-  React.useEffect(() => {
-    // Add GTranslate settings
-    (window as any).gtranslateSettings = {
-      "default_language": "en",
-      "detect_browser_language": true,
-      "wrapper_selector": ".gtranslate_wrapper",
-      "alt_flags": { "pt": "brazil" }
-    };
-
-    // Load the script
-    const script = document.createElement('script');
-    script.src = 'https://cdn.gtranslate.net/widgets/latest/float.js';
-    script.defer = true;
-    document.body.appendChild(script);
-
-    // Cleanup
-    return () => {
-      document.body.removeChild(script);
-      delete (window as any).gtranslateSettings;
-    };
-  }, []);
   const downloadTextFile = (filename: string, content: string) => {
     const element = document.createElement("a");
     const file = new Blob([content], { type: "text/plain" });
@@ -842,7 +821,9 @@ For legal advice: Consult a lawyer specialized in internet law`;
     <>
       <Helmet>
         <meta name="robots" content="noindex" />
+        <html lang="en" />
       </Helmet>
+      <GTranslateWidget />
       <div className="min-h-screen bg-background">
         <Header />
       
