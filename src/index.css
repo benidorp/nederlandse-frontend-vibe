@@ -105,3 +105,11 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+/* GTranslate Widget Styling */
+.gtranslate_wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
