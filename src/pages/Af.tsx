@@ -1958,7 +1958,141 @@ Testimonials: Customer testimonials and case studies represent individual experi
 
 No Guarantee of Income: If we teach business, marketing, or income-generating strategies, we make no guarantee that you will achieve similar results. Success depends on many factors outside our control including your dedication, experience, resources, and market timing.
 
-Typical Results Disclaimer: Testimonials and success stories are exceptional results and not typical. The typical purchaser/student does not implement what they learn or may achieve little to no results.
+Typical Results Disclaimer: Testimonials and success stories are exceptional results and not typical. The typical purchaser/student does not implement what they learn or may achieve little to no results.`;
+
+  const photographyTerms = `INTERNATIONAL PHOTOGRAPHY TERMS & CONDITIONS
+
+1. DEFINITIONS
+
+Photographer / Contractor: The creator and copyright holder of all images, videos, and other photographic works.
+
+User / Client: Any person or entity receiving or accessing photographic works.
+
+Assignment / Service: The photographic service or product provided by the photographer.
+
+Use: Reproduction, display, distribution, or any other utilization of photographic works in accordance with copyright laws.
+
+Written / Electronic Communication: Includes email or other digital means, provided the identity of the sender is reasonably verifiable.
+
+2. SCOPE AND APPLICATION
+
+These terms apply to all agreements, offers, and assignments provided by the photographer to any user or client, including verbal, written, or electronic agreements.
+
+Unless explicitly agreed otherwise in writing, these terms remain in force even after the completion of a project.
+
+3. FEES AND PAYMENT
+
+Fees for photography services are based on agreed rates or, if unspecified, the standard rates of the photographer.
+
+Additional costs for extra work, materials, or unforeseen expenses may be charged to the client.
+
+Payments for services may include an advance or deposit, with final payment due before delivery of photographic works.
+
+Non-payment may result in suspension of services, late fees, or engagement of collection services.
+
+4. OFFERS AND ACCEPTANCE
+
+Offers or quotations are valid for a limited period unless otherwise stated.
+
+Acceptance of an offer constitutes agreement to these terms and conditions.
+
+Any changes to the assignment after acceptance require mutual written consent.
+
+5. TRAVEL, ACCOMMODATION, AND ADDITIONAL COSTS
+
+Travel costs are calculated per kilometer or as agreed and may include parking or overnight stays if required for assignments.
+
+Costs outside the photographer's home country or normal service area are considered additional and invoiced separately.
+
+6. EXECUTION OF ASSIGNMENT
+
+Photographer will perform the assignment using professional skill, in the style customary to their work.
+
+Photographer is not responsible for circumstances beyond reasonable control, including lighting conditions, participant behavior, or environmental factors.
+
+In cases of illness, extreme weather, or technical equipment failure, assignments may be rescheduled or replaced with appropriate solutions where possible.
+
+Photographer typically uses multiple cameras or backup systems to minimize the risk of data loss.
+
+7. DELIVERY OF PHOTOGRAPHIC WORKS
+
+Delivery timelines are estimated unless explicitly agreed otherwise.
+
+Images are delivered in agreed formats and resolutions, typically via secure online transfer. RAW files are not provided unless explicitly agreed.
+
+Photographer may perform basic editing (light, color, contrast, cropping). Additional retouching or extensive edits may incur extra fees.
+
+After delivery, responsibility for storage and backup lies with the user.
+
+8. PHOTOGRAPHIC PRODUCTS & GIFT VOUCHERS
+
+Physical products (albums, prints, or other merchandise) are custom-made and not returnable.
+
+Gift vouchers are personalized, non-refundable, and valid for a limited period.
+
+Product guarantees are subject to manufacturer terms where applicable.
+
+9. COPYRIGHT AND PORTRAIT RIGHTS
+
+Copyright of all photographic works remains with the photographer at all times.
+
+Works may only be used for private purposes unless explicit written permission is granted for commercial use.
+
+Photographer may use images for promotional purposes if individuals are unrecognizable or consent is granted.
+
+Users may not edit images, including applying filters, color adjustments, or other alterations, without permission.
+
+Attribution to the photographer is required wherever works are used or published.
+
+Infringement of copyright or portrait rights may result in triple the standard licensing fee as compensation.
+
+Photographer retains a backup of works for up to one year; no liability exists for loss beyond their control.
+
+10. CHANGES, CANCELLATIONS, AND RESCHEDULING
+
+Cancellations or rescheduling must be communicated in writing.
+
+Fees for cancellations depend on timing relative to the scheduled assignment.
+
+Rescheduling due to weather, pandemics, or force majeure is permitted; associated costs may apply.
+
+11. COMPLAINTS
+
+Complaints regarding the quality of work or invoices must be submitted in writing within seven days of delivery.
+
+Complaints submitted after this period may not be processed.
+
+Filing a complaint does not suspend payment obligations.
+
+12. LIABILITY AND PROFESSIONAL CARE
+
+Photographer exercises professional care in all assignments but is not liable for indirect, incidental, or consequential damages.
+
+Liability is limited to direct damages up to the total fee paid for the assignment.
+
+Photographer is not liable for errors caused by incorrect information provided by the client or third-party circumstances.
+
+Client is responsible for obtaining permissions for locations, events, or individuals.
+
+Photographer is not liable for minor deviations in colors or quality on non-calibrated screens or third-party prints.
+
+13. FORCE MAJEURE / OVERMACHT
+
+Photographer is not liable for delays or non-performance caused by circumstances beyond control, including illness, equipment failure, natural disasters, or government regulations.
+
+Obligations may be suspended until conditions allow resumption.
+
+If circumstances prevent fulfillment for an extended period, either party may terminate the agreement; costs and work performed up to that point remain payable.
+
+14. CONFIDENTIALITY AND PROFESSIONAL CONDUCT
+
+All parties shall maintain confidentiality regarding sensitive information obtained during the assignment.
+
+Photographer may cancel or terminate assignments in cases of harassment, threats, violence, or unsafe behavior.
+
+15. INTERNATIONAL SCOPE
+
+These terms apply worldwide. Users agree to comply with international copyright, portrait, and intellectual property laws, including the Berne Convention and relevant local legislation.
 
 Donation/Crowdfunding Disclosure:
 If we accept donations or crowdfunding support (Patreon, Ko-fi, Buy Me a Coffee):
@@ -2733,6 +2867,34 @@ For legal advice: Consult a lawyer specialized in internet law`;
           </div>
           <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
             {affiliateDisclaimerVariations}
+          </p>
+        </section>
+
+        {/* International Photography Terms */}
+        <section className="mb-12 p-6 bg-card rounded-lg border border-border shadow-sm">
+          <div className="flex justify-between items-start mb-4">
+            <h2 className="text-2xl font-bold text-foreground">International Photography Terms & Conditions</h2>
+            <div className="flex gap-2">
+              <Button
+                onClick={() => downloadTextFile("photography-terms.txt", photographyTerms)}
+                variant="outline"
+                size="sm"
+              >
+                <FileText className="w-4 h-4 mr-2" />
+                .TXT
+              </Button>
+              <Button
+                onClick={() => downloadPDF("International-Photography-Terms", photographyTerms)}
+                variant="default"
+                size="sm"
+              >
+                <Download className="w-4 h-4 mr-2" />
+                PDF
+              </Button>
+            </div>
+          </div>
+          <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
+            {photographyTerms}
           </p>
         </section>
 
