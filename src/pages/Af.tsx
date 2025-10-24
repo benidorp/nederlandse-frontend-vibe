@@ -2565,7 +2565,7 @@ For legal advice: Consult a lawyer specialized in internet law`;
       <main className="container mx-auto px-4 py-12 max-w-4xl">
         <h1 className="text-4xl font-bold mb-8 text-foreground">Legal Documents</h1>
         <p className="text-lg mb-12 text-muted-foreground">
-          Download the essential legal documents for your affiliate website. Each document is available as a downloadable .txt file.
+          Download the essential legal documents for your website. Each document is available as a downloadable .txt file.
         </p>
 
         {/* Affiliate Disclosure */}
