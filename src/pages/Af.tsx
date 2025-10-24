@@ -2,12 +2,6 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Download, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import GTranslateWidget from "@/components/GTranslateWidget";
@@ -2705,290 +2699,232 @@ For legal advice: Consult a lawyer specialized in internet law`;
       <main className="container mx-auto px-4 py-12 max-w-4xl">
         <h1 className="text-4xl font-bold mb-8 text-foreground">Legal Documents</h1>
         <p className="text-lg mb-12 text-muted-foreground">
-          Click on each section to expand and view the document. Download options are available for each document.
+          Download the essential legal documents for your website. Each document is available as a downloadable .txt file.
         </p>
 
-        <Accordion type="single" collapsible className="w-full space-y-2">
-          {/* Disclosure */}
-          <AccordionItem
-            value="disclosure"
-            className="bg-card border border-border rounded-lg px-4 data-[state=open]:shadow-lg transition-shadow"
-          >
-            <AccordionTrigger className="text-left hover:no-underline py-4">
-              <h2 className="text-xl font-bold text-foreground pr-4">
-                Disclosure
-              </h2>
-            </AccordionTrigger>
-            <AccordionContent className="pb-4">
-              <div className="flex gap-2 mb-3">
-                <Button
-                  onClick={() => downloadTextFile("disclosure.txt", disclosure)}
-                  variant="outline"
-                  size="sm"
-                >
-                  <FileText className="w-4 h-4 mr-2" />
-                  .TXT
-                </Button>
-                <Button
-                  onClick={() => downloadPDF("Disclosure", disclosure)}
-                  variant="default"
-                  size="sm"
-                >
-                  <Download className="w-4 h-4 mr-2" />
-                  PDF
-                </Button>
-              </div>
-              <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
-                {disclosure}
-              </p>
-            </AccordionContent>
-          </AccordionItem>
+        {/* Affiliate Disclosure */}
+        <section className="mb-12 p-6 bg-card rounded-lg border border-border shadow-sm">
+          <div className="flex justify-between items-start mb-4">
+            <h2 className="text-2xl font-bold text-foreground">Disclosure</h2>
+            <div className="flex gap-2">
+              <Button
+                onClick={() => downloadTextFile("disclosure.txt", disclosure)}
+                variant="outline"
+                size="sm"
+              >
+                <FileText className="w-4 h-4 mr-2" />
+                .TXT
+              </Button>
+              <Button
+                onClick={() => downloadPDF("Disclosure", disclosure)}
+                variant="default"
+                size="sm"
+              >
+                <Download className="w-4 h-4 mr-2" />
+                PDF
+              </Button>
+            </div>
+          </div>
+          <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
+            {disclosure}
+          </p>
+        </section>
 
-          {/* Terms and Conditions */}
-          <AccordionItem
-            value="terms"
-            className="bg-card border border-border rounded-lg px-4 data-[state=open]:shadow-lg transition-shadow"
-          >
-            <AccordionTrigger className="text-left hover:no-underline py-4">
-              <h2 className="text-xl font-bold text-foreground pr-4">
-                Terms and Conditions
-              </h2>
-            </AccordionTrigger>
-            <AccordionContent className="pb-4">
-              <div className="flex gap-2 mb-3">
-                <Button
-                  onClick={() => downloadTextFile("terms-and-conditions.txt", termsAndConditions)}
-                  variant="outline"
-                  size="sm"
-                >
-                  <FileText className="w-4 h-4 mr-2" />
-                  .TXT
-                </Button>
-                <Button
-                  onClick={() => downloadPDF("Terms-and-Conditions", termsAndConditions)}
-                  variant="default"
-                  size="sm"
-                >
-                  <Download className="w-4 h-4 mr-2" />
-                  PDF
-                </Button>
-              </div>
-              <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
-                {termsAndConditions}
-              </p>
-            </AccordionContent>
-          </AccordionItem>
+        {/* Terms and Conditions */}
+        <section className="mb-12 p-6 bg-card rounded-lg border border-border shadow-sm">
+          <div className="flex justify-between items-start mb-4">
+            <h2 className="text-2xl font-bold text-foreground">Terms and Conditions</h2>
+            <div className="flex gap-2">
+              <Button
+                onClick={() => downloadTextFile("terms-and-conditions.txt", termsAndConditions)}
+                variant="outline"
+                size="sm"
+              >
+                <FileText className="w-4 h-4 mr-2" />
+                .TXT
+              </Button>
+              <Button
+                onClick={() => downloadPDF("Terms-and-Conditions", termsAndConditions)}
+                variant="default"
+                size="sm"
+              >
+                <Download className="w-4 h-4 mr-2" />
+                PDF
+              </Button>
+            </div>
+          </div>
+          <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
+            {termsAndConditions}
+          </p>
+        </section>
 
-          {/* Disclaimer */}
-          <AccordionItem
-            value="disclaimer"
-            className="bg-card border border-border rounded-lg px-4 data-[state=open]:shadow-lg transition-shadow"
-          >
-            <AccordionTrigger className="text-left hover:no-underline py-4">
-              <h2 className="text-xl font-bold text-foreground pr-4">
-                Disclaimer
-              </h2>
-            </AccordionTrigger>
-            <AccordionContent className="pb-4">
-              <div className="flex gap-2 mb-3">
-                <Button
-                  onClick={() => downloadTextFile("disclaimer.txt", disclaimer)}
-                  variant="outline"
-                  size="sm"
-                >
-                  <FileText className="w-4 h-4 mr-2" />
-                  .TXT
-                </Button>
-                <Button
-                  onClick={() => downloadPDF("Disclaimer", disclaimer)}
-                  variant="default"
-                  size="sm"
-                >
-                  <Download className="w-4 h-4 mr-2" />
-                  PDF
-                </Button>
-              </div>
-              <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
-                {disclaimer}
-              </p>
-            </AccordionContent>
-          </AccordionItem>
+        {/* Disclaimer */}
+        <section className="mb-12 p-6 bg-card rounded-lg border border-border shadow-sm">
+          <div className="flex justify-between items-start mb-4">
+            <h2 className="text-2xl font-bold text-foreground">Disclaimer</h2>
+            <div className="flex gap-2">
+              <Button
+                onClick={() => downloadTextFile("disclaimer.txt", disclaimer)}
+                variant="outline"
+                size="sm"
+              >
+                <FileText className="w-4 h-4 mr-2" />
+                .TXT
+              </Button>
+              <Button
+                onClick={() => downloadPDF("Disclaimer", disclaimer)}
+                variant="default"
+                size="sm"
+              >
+                <Download className="w-4 h-4 mr-2" />
+                PDF
+              </Button>
+            </div>
+          </div>
+          <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
+            {disclaimer}
+          </p>
+        </section>
 
-          {/* Cookie Policy */}
-          <AccordionItem
-            value="cookies"
-            className="bg-card border border-border rounded-lg px-4 data-[state=open]:shadow-lg transition-shadow"
-          >
-            <AccordionTrigger className="text-left hover:no-underline py-4">
-              <h2 className="text-xl font-bold text-foreground pr-4">
-                Cookie Policy
-              </h2>
-            </AccordionTrigger>
-            <AccordionContent className="pb-4">
-              <div className="flex gap-2 mb-3">
-                <Button
-                  onClick={() => downloadTextFile("cookie-policy.txt", cookiePolicy)}
-                  variant="outline"
-                  size="sm"
-                >
-                  <FileText className="w-4 h-4 mr-2" />
-                  .TXT
-                </Button>
-                <Button
-                  onClick={() => downloadPDF("Cookie-Policy", cookiePolicy)}
-                  variant="default"
-                  size="sm"
-                >
-                  <Download className="w-4 h-4 mr-2" />
-                  PDF
-                </Button>
-              </div>
-              <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
-                {cookiePolicy}
-              </p>
-            </AccordionContent>
-          </AccordionItem>
+        {/* Cookie Policy */}
+        <section className="mb-12 p-6 bg-card rounded-lg border border-border shadow-sm">
+          <div className="flex justify-between items-start mb-4">
+            <h2 className="text-2xl font-bold text-foreground">Cookie Policy</h2>
+            <div className="flex gap-2">
+              <Button
+                onClick={() => downloadTextFile("cookie-policy.txt", cookiePolicy)}
+                variant="outline"
+                size="sm"
+              >
+                <FileText className="w-4 h-4 mr-2" />
+                .TXT
+              </Button>
+              <Button
+                onClick={() => downloadPDF("Cookie-Policy", cookiePolicy)}
+                variant="default"
+                size="sm"
+              >
+                <Download className="w-4 h-4 mr-2" />
+                PDF
+              </Button>
+            </div>
+          </div>
+          <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
+            {cookiePolicy}
+          </p>
+        </section>
 
-          {/* Privacy Policy */}
-          <AccordionItem
-            value="privacy"
-            className="bg-card border border-border rounded-lg px-4 data-[state=open]:shadow-lg transition-shadow"
-          >
-            <AccordionTrigger className="text-left hover:no-underline py-4">
-              <h2 className="text-xl font-bold text-foreground pr-4">
-                Privacy Policy
-              </h2>
-            </AccordionTrigger>
-            <AccordionContent className="pb-4">
-              <div className="flex gap-2 mb-3">
-                <Button
-                  onClick={() => downloadTextFile("privacy-policy.txt", privacyPolicy)}
-                  variant="outline"
-                  size="sm"
-                >
-                  <FileText className="w-4 h-4 mr-2" />
-                  .TXT
-                </Button>
-                <Button
-                  onClick={() => downloadPDF("Privacy-Policy", privacyPolicy)}
-                  variant="default"
-                  size="sm"
-                >
-                  <Download className="w-4 h-4 mr-2" />
-                  PDF
-                </Button>
-              </div>
-              <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
-                {privacyPolicy}
-              </p>
-            </AccordionContent>
-          </AccordionItem>
+        {/* Privacy Policy */}
+        <section className="mb-12 p-6 bg-card rounded-lg border border-border shadow-sm">
+          <div className="flex justify-between items-start mb-4">
+            <h2 className="text-2xl font-bold text-foreground">Privacy Policy</h2>
+            <div className="flex gap-2">
+              <Button
+                onClick={() => downloadTextFile("privacy-policy.txt", privacyPolicy)}
+                variant="outline"
+                size="sm"
+              >
+                <FileText className="w-4 h-4 mr-2" />
+                .TXT
+              </Button>
+              <Button
+                onClick={() => downloadPDF("Privacy-Policy", privacyPolicy)}
+                variant="default"
+                size="sm"
+              >
+                <Download className="w-4 h-4 mr-2" />
+                PDF
+              </Button>
+            </div>
+          </div>
+          <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
+            {privacyPolicy}
+          </p>
+        </section>
 
-          {/* Affiliate Disclaimer Variations */}
-          <AccordionItem
-            value="affiliate-variations"
-            className="bg-card border border-border rounded-lg px-4 data-[state=open]:shadow-lg transition-shadow"
-          >
-            <AccordionTrigger className="text-left hover:no-underline py-4">
-              <h2 className="text-xl font-bold text-foreground pr-4">
-                Affiliate Disclaimer Variations
-              </h2>
-            </AccordionTrigger>
-            <AccordionContent className="pb-4">
-              <div className="flex gap-2 mb-3">
-                <Button
-                  onClick={() => downloadTextFile("affiliate-disclaimer-variations.txt", affiliateDisclaimerVariations)}
-                  variant="outline"
-                  size="sm"
-                >
-                  <FileText className="w-4 h-4 mr-2" />
-                  .TXT
-                </Button>
-                <Button
-                  onClick={() => downloadPDF("Affiliate-Disclaimer-Variations", affiliateDisclaimerVariations)}
-                  variant="default"
-                  size="sm"
-                >
-                  <Download className="w-4 h-4 mr-2" />
-                  PDF
-                </Button>
-              </div>
-              <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
-                {affiliateDisclaimerVariations}
-              </p>
-            </AccordionContent>
-          </AccordionItem>
+        {/* Affiliate Disclaimer Variations */}
+        <section className="mb-12 p-6 bg-card rounded-lg border border-border shadow-sm">
+          <div className="flex justify-between items-start mb-4">
+            <h2 className="text-2xl font-bold text-foreground">Affiliate Disclaimer Variations</h2>
+            <div className="flex gap-2">
+              <Button
+                onClick={() => downloadTextFile("affiliate-disclaimer-variations.txt", affiliateDisclaimerVariations)}
+                variant="outline"
+                size="sm"
+              >
+                <FileText className="w-4 h-4 mr-2" />
+                .TXT
+              </Button>
+              <Button
+                onClick={() => downloadPDF("Affiliate-Disclaimer-Variations", affiliateDisclaimerVariations)}
+                variant="default"
+                size="sm"
+              >
+                <Download className="w-4 h-4 mr-2" />
+                PDF
+              </Button>
+            </div>
+          </div>
+          <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
+            {affiliateDisclaimerVariations}
+          </p>
+        </section>
 
-          {/* International Photography Terms */}
-          <AccordionItem
-            value="photography"
-            className="bg-card border border-border rounded-lg px-4 data-[state=open]:shadow-lg transition-shadow"
-          >
-            <AccordionTrigger className="text-left hover:no-underline py-4">
-              <h2 className="text-xl font-bold text-foreground pr-4">
-                International Photography Terms & Conditions
-              </h2>
-            </AccordionTrigger>
-            <AccordionContent className="pb-4">
-              <div className="flex gap-2 mb-3">
-                <Button
-                  onClick={() => downloadTextFile("photography-terms.txt", photographyTerms)}
-                  variant="outline"
-                  size="sm"
-                >
-                  <FileText className="w-4 h-4 mr-2" />
-                  .TXT
-                </Button>
-                <Button
-                  onClick={() => downloadPDF("International-Photography-Terms", photographyTerms)}
-                  variant="default"
-                  size="sm"
-                >
-                  <Download className="w-4 h-4 mr-2" />
-                  PDF
-                </Button>
-              </div>
-              <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
-                {photographyTerms}
-              </p>
-            </AccordionContent>
-          </AccordionItem>
+        {/* International Photography Terms */}
+        <section className="mb-12 p-6 bg-card rounded-lg border border-border shadow-sm">
+          <div className="flex justify-between items-start mb-4">
+            <h2 className="text-2xl font-bold text-foreground">International Photography Terms & Conditions</h2>
+            <div className="flex gap-2">
+              <Button
+                onClick={() => downloadTextFile("photography-terms.txt", photographyTerms)}
+                variant="outline"
+                size="sm"
+              >
+                <FileText className="w-4 h-4 mr-2" />
+                .TXT
+              </Button>
+              <Button
+                onClick={() => downloadPDF("International-Photography-Terms", photographyTerms)}
+                variant="default"
+                size="sm"
+              >
+                <Download className="w-4 h-4 mr-2" />
+                PDF
+              </Button>
+            </div>
+          </div>
+          <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
+            {photographyTerms}
+          </p>
+        </section>
 
-          {/* Implementation Guide */}
-          <AccordionItem
-            value="implementation"
-            className="bg-primary/5 border-2 border-primary/20 rounded-lg px-4 data-[state=open]:shadow-lg transition-shadow"
-          >
-            <AccordionTrigger className="text-left hover:no-underline py-4">
-              <h2 className="text-xl font-bold text-foreground pr-4">
-                Implementation Guide
-              </h2>
-            </AccordionTrigger>
-            <AccordionContent className="pb-4">
-              <div className="flex gap-2 mb-3">
-                <Button
-                  onClick={() => downloadTextFile("implementation-guide.txt", implementationGuide)}
-                  variant="outline"
-                  size="sm"
-                >
-                  <FileText className="w-4 h-4 mr-2" />
-                  .TXT
-                </Button>
-                <Button
-                  onClick={() => downloadPDF("Implementation-Guide", implementationGuide)}
-                  variant="default"
-                  size="sm"
-                >
-                  <Download className="w-4 h-4 mr-2" />
-                  PDF
-                </Button>
-              </div>
-              <div className="prose prose-sm max-w-none text-foreground whitespace-pre-wrap">
-                {implementationGuide}
-              </div>
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
+        {/* Implementation Guide */}
+        <section className="mb-12 p-6 bg-primary/5 rounded-lg border-2 border-primary/20 shadow-sm">
+          <div className="flex justify-between items-start mb-4">
+            <h2 className="text-2xl font-bold text-foreground">Implementation Guide</h2>
+            <div className="flex gap-2">
+              <Button
+                onClick={() => downloadTextFile("implementation-guide.txt", implementationGuide)}
+                variant="outline"
+                size="sm"
+              >
+                <FileText className="w-4 h-4 mr-2" />
+                .TXT
+              </Button>
+              <Button
+                onClick={() => downloadPDF("Implementation-Guide", implementationGuide)}
+                variant="default"
+                size="sm"
+              >
+                <Download className="w-4 h-4 mr-2" />
+                PDF
+              </Button>
+            </div>
+          </div>
+          <div className="prose prose-sm max-w-none text-foreground whitespace-pre-wrap">
+            {implementationGuide}
+          </div>
+        </section>
       </main>
       
       <div className="gtranslate_wrapper"></div>
