@@ -6,7 +6,7 @@ import ServicesPhotography from "@/components/photography/ServicesPhotography";
 import PhotographyQA from "@/components/photography/PhotographyQA";
 import PricingPhotography from "@/components/photography/PricingPhotography";
 import ReviewsEN from "@/components/en/ReviewsEN";
-import FAQEN from "@/components/en/FAQEN";
+import FAQPhotography from "@/components/photography/FAQPhotography";
 import FooterEN from "@/components/en/FooterEN";
 import GTranslateWidget from "@/components/GTranslateWidget";
 
@@ -31,7 +31,7 @@ const Photography = () => {
           <PhotographyQA />
           <PricingPhotography />
           <ReviewsEN />
-          <FAQEN />
+          <FAQPhotography />
         </main>
         <FooterEN />
       </div>
