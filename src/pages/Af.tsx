@@ -28,7 +28,7 @@ const Af = () => {
     // Clean up the content
     const cleanContent = content
       .replace(/\[Insert Date\]/g, '')
-      .replace(/\[AffiliateWebsiteName\]/g, 'Your Website')
+      .replace(/\[WebsiteName\]/g, 'Your Website')
       .replace(/\[Insert Jurisdiction\]/g, '')
       .replace(/\[Insert Location\]/g, '')
       .replace(/\[Insert Contact Email\]/g, '')
@@ -58,12 +58,12 @@ const Af = () => {
     doc.save(`${title.replace(/\s+/g, '-')}.pdf`);
   };
 
-  const affiliateDisclosure = `AFFILIATE DISCLOSURE
+  const disclosure = `DISCLOSURE
 
 Effective Date: [Insert Date]
 Last Updated: [Insert Date]
 
-Welcome to [AffiliateWebsiteName].com ("Website," "we," "our," or "us"). We are committed to full transparency regarding our affiliate relationships. This Affiliate Disclosure explains how we earn commissions through affiliate partnerships and our responsibilities concerning third-party services.
+Welcome to [WebsiteName].com ("Website," "we," "our," or "us"). We are committed to full transparency regarding our affiliate relationships. This Disclosure explains how we earn commissions through affiliate partnerships and our responsibilities concerning third-party services.
 
 IMPORTANT NOTICE
 
@@ -182,29 +182,29 @@ Assume all risks associated with affiliate links and third-party tracking.
 
 8. GOVERNING LAW & DISPUTE RESOLUTION
 
-This Affiliate Disclosure is governed by the laws of [Insert Jurisdiction].
+This Disclosure is governed by the laws of [Insert Jurisdiction].
 
 Any disputes will be resolved through binding arbitration in [Insert Location], in English.
 
 You waive the right to participate in class-action lawsuits against us.
 
-9. CHANGES TO THIS AFFILIATE DISCLOSURE
+9. CHANGES TO THIS DISCLOSURE
 
-We may update this Affiliate Disclosure at any time. Updates will be posted on this page with a new "Last Updated" date. Continued use of the Website after updates constitutes acceptance of the revised terms.
+We may update this Disclosure at any time. Updates will be posted on this page with a new "Last Updated" date. Continued use of the Website after updates constitutes acceptance of the revised terms.
 
 10. CONTACT INFORMATION
 
-For questions regarding this Affiliate Disclosure, contact us at:
+For questions regarding this Disclosure, contact us at:
 Email: [Insert Contact Email]
 Address: [Insert Business Address]
-Website: https://[AffiliateWebsiteName].com`;
+Website: https://[WebsiteName].com`;
 
   const termsAndConditions = `TERMS AND CONDITIONS
 
 Effective Date: [Insert Date]
 Last Updated: [Insert Date]
 
-Welcome to [AffiliateWebsiteName].com ("Website," "we," "our," or "us"). These Terms and Conditions ("Terms") govern your access to and use of our Website, including any content, affiliate links, advertisements, and third-party offers displayed herein.
+Welcome to [WebsiteName].com ("Website," "we," "our," or "us"). These Terms and Conditions ("Terms") govern your access to and use of our Website, including any content, affiliate links, advertisements, and third-party offers displayed herein.
 
 By accessing or using this Website, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree, you must immediately discontinue use of the Website.
 
@@ -220,7 +220,7 @@ Your interactions and transactions with third-party merchants are entirely at yo
 
 1. DEFINITIONS
 
-"Website" refers to [AffiliateWebsiteName].com and all its related pages, features, and content.
+"Website" refers to [WebsiteName].com and all its related pages, features, and content.
 
 "User" / "You" means any individual or entity accessing or using the Website.
 
@@ -238,7 +238,7 @@ Accept that we are not responsible for third-party transactions, tracking, or da
 
 Your use of this Website signifies your compliance with all applicable local and international laws.
 
-3. AFFILIATE DISCLOSURE
+3. DISCLOSURE
 
 This Website contains affiliate links that may generate commissions at no additional cost to you. When you click or interact with an affiliate link, a tracking cookie may be placed on your device by a third-party network.
 
@@ -300,11 +300,11 @@ Financial losses, data breaches, or damages resulting from affiliate purchases.
 Errors, inaccuracies, or outdated information on our Website.
 Technical failures, cyberattacks, or interruptions beyond our control.
 
-In no event shall [AffiliateWebsiteName].com, its owners, or affiliates be liable for any indirect, consequential, or incidental damages arising from your use of this Website.
+In no event shall [WebsiteName].com, its owners, or affiliates be liable for any indirect, consequential, or incidental damages arising from your use of this Website.
 
 9. INDEMNIFICATION
 
-By using this Website, you agree to indemnify, defend, and hold harmless [AffiliateWebsiteName].com, its owners, employees, and partners from any claims, losses, or damages resulting from:
+By using this Website, you agree to indemnify, defend, and hold harmless [WebsiteName].com, its owners, employees, and partners from any claims, losses, or damages resulting from:
 Your use of affiliate links.
 Your reliance on Website content.
 Your engagement with third-party merchants.
@@ -331,14 +331,14 @@ For questions or concerns regarding these Terms, please contact us at:
 
 Email: [Insert Contact Email]
 Address: [Insert Business Address]
-Website: https://[AffiliateWebsiteName].com`;
+Website: https://[WebsiteName].com`;
 
   const disclaimer = `DISCLAIMER
 
 Effective Date: [Insert Date]
 Last Updated: [Insert Date]
 
-Welcome to [AffiliateWebsiteName].com ("Website," "we," "our," or "us").
+Welcome to [WebsiteName].com ("Website," "we," "our," or "us").
 By accessing or using this Website, you acknowledge that you have read, understood, and agree to be bound by the terms of this Disclaimer. If you do not agree, please stop using the Website immediately.
 
 ⚠️ Important Notice
@@ -351,7 +351,7 @@ We are not responsible for any actions, tracking technologies, or cookies used b
 
 All activities and purchases made through third-party links are at your own risk and governed by the merchant's terms and privacy policies.
 
-1. Affiliate Disclosure
+1. Disclosure
 
 In compliance with the FTC Guidelines (U.S.), GDPR (EU), UK Consumer Protection, and other international marketing laws, we disclose the following:
 
@@ -428,7 +428,7 @@ Any damages or losses resulting from the use or inability to use our Website
 6. Indemnification
 
 By using this Website, you agree to indemnify, defend, and hold harmless
-[AffiliateWebsiteName].com, its owners, affiliates, and partners from any claims, damages, or legal disputes arising from:
+[WebsiteName].com, its owners, affiliates, and partners from any claims, damages, or legal disputes arising from:
 
 Your use of affiliate links
 
@@ -458,14 +458,14 @@ For questions or legal inquiries regarding this Disclaimer, please contact us:
 
 📧 Email: [Insert Contact Email]
 📍 Address: [Insert Business Address]
-🌐 Website: https://[AffiliateWebsiteName].com`;
+🌐 Website: https://[WebsiteName].com`;
 
   const cookiePolicy = `COOKIE POLICY
 
 Effective Date: [Insert Date]
 Last Updated: [Insert Date]
 
-Welcome to [AffiliateWebsiteName].com ("Website," "we," "our," or "us"). This Cookie Policy explains how we and our third-party partners use cookies and similar tracking technologies on our Website.
+Welcome to [WebsiteName].com ("Website," "we," "our," or "us"). This Cookie Policy explains how we and our third-party partners use cookies and similar tracking technologies on our Website.
 
 By continuing to use this Website, you consent to our use of cookies in accordance with this policy.
 
@@ -529,14 +529,14 @@ For questions about this Cookie Policy, contact us at:
 
 📧 Email: [Insert Contact Email]
 📍 Address: [Insert Business Address]
-🌐 Website: https://[AffiliateWebsiteName].com`;
+🌐 Website: https://[WebsiteName].com`;
 
   const privacyPolicy = `Privacy Policy for Affiliate Websites
 
 Effective Date: [Insert Date]
 Last Updated: [Insert Date]
 
-Welcome to [AffiliateWebsiteName].com ("Website," "we," "our," or "us").
+Welcome to [WebsiteName].com ("Website," "we," "our," or "us").
 We value your privacy and are committed to protecting your personal information in compliance with global privacy laws, including the GDPR (EU), CCPA (California), and other applicable data protection regulations.
 
 This Privacy Policy explains how we collect, use, store, and protect your information when you visit our website, interact with our content, or make use of affiliate links.
@@ -668,34 +668,34 @@ Continued use of our website constitutes acceptance of the updated version.
 If you have any questions or concerns about this Privacy Policy, please contact us at:
 Email: [Insert Contact Email]
 Address: [Insert Business Address]
-Website: [AffiliateWebsiteName].com`;
+Website: [WebsiteName].com`;
 
   const affiliateDisclaimerVariations = `Choosing the Right Affiliate Disclaimer for Your Website
 
 Not all affiliate disclaimers are the same. Below are 5 variations you can use depending on your style, audience, and page type.
 
 1. General Short:
-"This page contains affiliate links. If you make a purchase through these links, we may earn a commission at no extra cost to you. See our full Affiliate Disclosure."
+"This page contains affiliate links. If you make a purchase through these links, we may earn a commission at no extra cost to you. See our full Disclosure."
 
 Use this for a clean, professional look on product pages or blogs.
 
 2. Slightly Longer:
-"This page contains affiliate links. By clicking and making a purchase, we may earn a small commission at no additional cost to you. Read our Affiliate Disclosure for details."
+"This page contains affiliate links. By clicking and making a purchase, we may earn a small commission at no additional cost to you. Read our Disclosure for details."
 
 Use this when you want to provide a bit more explanation without overwhelming readers.
 
 3. Friendly & Informal:
-"Note: some links on this page are affiliate links. If you click and buy something, we may earn a commission – at no extra cost to you. See our Affiliate Disclosure for more info."
+"Note: some links on this page are affiliate links. If you click and buy something, we may earn a commission – at no extra cost to you. See our Disclosure for more info."
 
 Use this for a casual blog or content aimed at a friendly, approachable tone.
 
 4. Amazon Specific:
-"This page contains Amazon affiliate links. If you purchase a product through these links, we may earn a commission from Amazon at no extra cost to you. Check our full Affiliate Disclosure."
+"This page contains Amazon affiliate links. If you purchase a product through these links, we may earn a commission from Amazon at no extra cost to you. Check our full Disclosure."
 
 Use this when promoting Amazon products specifically.
 
 5. Short & Simple (Footer Use):
-"This page contains affiliate links. We may earn a commission from purchases made through these links, at no extra cost to you. Read our Affiliate Disclosure."
+"This page contains affiliate links. We may earn a commission from purchases made through these links, at no extra cost to you. Read our Disclosure."
 
 Use this as a concise note at the bottom of posts, reviews, or landing pages.`;
 
@@ -735,14 +735,14 @@ LEGAL WORDING:
 
 "INTELLECTUAL PROPERTY RIGHTS
 
-Copyright Ownership: All original content on this Website, including but not limited to photographs, videos, music compositions, written articles, blog posts, graphics, logos, trademarks, designs, and software code, is the exclusive property of [AffiliateWebsiteName] and is protected under:
+Copyright Ownership: All original content on this Website, including but not limited to photographs, videos, music compositions, written articles, blog posts, graphics, logos, trademarks, designs, and software code, is the exclusive property of [WebsiteName] and is protected under:
 • United States Copyright Act (17 U.S.C.)
 • Berne Convention for the Protection of Literary and Artistic Works
 • WIPO Copyright Treaty
 • EU Copyright Directive (2001/29/EC)
 • UK Copyright, Designs and Patents Act 1988
 
-Trademark Protection: All trademarks, service marks, trade names, and logos displayed on this Website are registered or unregistered trademarks of [AffiliateWebsiteName] or their respective owners. Unauthorized use is strictly prohibited.
+Trademark Protection: All trademarks, service marks, trade names, and logos displayed on this Website are registered or unregistered trademarks of [WebsiteName] or their respective owners. Unauthorized use is strictly prohibited.
 
 Restrictions on Use: You may not copy, reproduce, distribute, modify, display, perform, publish, license, create derivative works from, transfer, or sell any content, software, products, or services obtained from this Website without express written permission.
 
@@ -970,7 +970,7 @@ Legal Framework: We process personal data in compliance with:
 • Australia's Privacy Act 1988
 • Other applicable data protection laws
 
-Data Controller: [AffiliateWebsiteName], located at [Insert Business Address], is the data controller responsible for your personal information.
+Data Controller: [WebsiteName], located at [Insert Business Address], is the data controller responsible for your personal information.
 
 International Data Transfers:
 Your personal data may be transferred to and processed in countries outside your country of residence, including the United States, which may not have equivalent data protection laws.
@@ -1209,7 +1209,7 @@ Content Licensing: All streaming content, videos, podcasts, and digital media on
 • Embedded from authorized platforms (YouTube, Vimeo, Spotify, etc.)
 
 Copyright Compliance:
-• All original video, audio, and streaming content is copyrighted by [AffiliateWebsiteName]
+• All original video, audio, and streaming content is copyrighted by [WebsiteName]
 • Unauthorized recording, downloading, reproduction, or distribution is prohibited
 • Violators may be subject to legal action under copyright laws
 
@@ -1412,7 +1412,7 @@ LEGAL WORDING:
 "INDEMNIFICATION
 
 Your Indemnification Obligation:
-You agree to indemnify, defend, and hold harmless [AffiliateWebsiteName], its owners, officers, directors, employees, agents, affiliates, and partners (collectively "Indemnified Parties") from and against any and all claims, liabilities, damages, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising from or related to:
+You agree to indemnify, defend, and hold harmless [WebsiteName], its owners, officers, directors, employees, agents, affiliates, and partners (collectively "Indemnified Parties") from and against any and all claims, liabilities, damages, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising from or related to:
 
 a) Your Use of the Website:
 • Your violation of these Terms and Conditions
@@ -1602,7 +1602,7 @@ IMPLEMENTATION CHECKLIST
 ☐ Set up dispute resolution mechanisms (arbitration provider, mediation service)
 ☐ Implement data processing agreements with third-party service providers
 ☐ Create standardized user-generated content moderation policy
-☐ Display affiliate disclosures clearly on all relevant pages
+☐ Display disclosures clearly on all relevant pages
 ☐ Ensure sponsored content is properly labeled
 ☐ Provide clear cancellation instructions for subscriptions/memberships
 ☐ Implement 14-day withdrawal mechanism for EU/UK digital products
@@ -1657,7 +1657,7 @@ ALL CLAUSES ARE DRAFTED FOR INTERNATIONAL ENFORCEABILITY AND COMPLIANCE WITH:
 
   const implementationGuide = `IMPLEMENTATION GUIDE: HOW TO PLACE LEGAL DOCUMENTS ON YOUR WEBSITE
 
-This guide explains how to properly implement the legal documents (Terms and Conditions, Privacy Policy, Affiliate Disclosure, Disclaimer and Cookie Policy) on your affiliate website.
+This guide explains how to properly implement the legal documents (Terms and Conditions, Privacy Policy, Disclosure, Disclaimer and Cookie Policy) on your website.
 
 STEP 1: DOWNLOAD THE DOCUMENTS
 
@@ -1665,7 +1665,7 @@ STEP 1: DOWNLOAD THE DOCUMENTS
 2. Save each .txt file to your computer
 3. Open each document and customize the placeholders:
    - [Insert Date] → Fill in the current date
-   - [AffiliateWebsiteName] → Fill in your website name
+   - [WebsiteName] → Fill in your website name
    - [Insert Contact Email] → Fill in your contact email
    - [Insert Business Address] → Fill in your business address
    - [Insert Jurisdiction] → Fill in your jurisdiction (e.g., "Netherlands")
@@ -1699,7 +1699,7 @@ Place links to all legal documents in your website's footer:
   <nav>
     <a href="/terms-and-conditions">Terms and Conditions</a>
     <a href="/privacy-policy">Privacy Policy</a>
-    <a href="/affiliate-disclosure">Affiliate Disclosure</a>
+    <a href="/disclosure">Disclosure</a>
     <a href="/disclaimer">Disclaimer</a>
     <a href="/cookie-policy">Cookie Policy</a>
   </nav>
@@ -1722,20 +1722,20 @@ Example code:
   <button onclick="declineCookies()">Decline</button>
 </div>
 
-STEP 6: AFFILIATE DISCLOSURE ON EVERY PAGE WITH AFFILIATE LINKS
+STEP 6: DISCLOSURE ON EVERY PAGE WITH AFFILIATE LINKS
 
 On every page where you use affiliate links, place a clear disclosure:
 
 "This page contains affiliate links. If you make a purchase through these links, 
 we may receive a commission at no extra cost to you. 
-Read our full Affiliate Disclosure for more information."
+Read our full Disclosure for more information."
 
 STEP 7: LEGAL CHECKLIST
 
 ☑ All placeholders are filled in
 ☑ Documents are accessible via the footer
 ☑ Cookie banner is implemented
-☑ Affiliate disclosure is on relevant pages
+☑ Disclosure is on relevant pages
 ☑ Contact information is correct
 ☑ Documents are up-to-date
 ☑ Links work correctly
@@ -1792,10 +1792,10 @@ For legal advice: Consult a lawyer specialized in internet law`;
         {/* Affiliate Disclosure */}
         <section className="mb-12 p-6 bg-card rounded-lg border border-border shadow-sm">
           <div className="flex justify-between items-start mb-4">
-            <h2 className="text-2xl font-bold text-foreground">Affiliate Disclosure</h2>
+            <h2 className="text-2xl font-bold text-foreground">Disclosure</h2>
             <div className="flex gap-2">
               <Button
-                onClick={() => downloadTextFile("affiliate-disclosure.txt", affiliateDisclosure)}
+                onClick={() => downloadTextFile("disclosure.txt", disclosure)}
                 variant="outline"
                 size="sm"
               >
@@ -1803,7 +1803,7 @@ For legal advice: Consult a lawyer specialized in internet law`;
                 .TXT
               </Button>
               <Button
-                onClick={() => downloadPDF("Affiliate-Disclosure", affiliateDisclosure)}
+                onClick={() => downloadPDF("Disclosure", disclosure)}
                 variant="default"
                 size="sm"
               >
@@ -1813,7 +1813,7 @@ For legal advice: Consult a lawyer specialized in internet law`;
             </div>
           </div>
           <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
-            {affiliateDisclosure}
+            {disclosure}
           </p>
         </section>
 
