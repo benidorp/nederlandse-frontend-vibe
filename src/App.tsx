@@ -9,6 +9,7 @@ import Italian from "./pages/Italian";
 import Af from "./pages/Af";
 import Languages from "./pages/Languages";
 import LegalEN from "./pages/LegalEN";
+import Photography from "./pages/Photography";
 import LanguageDetector from "./components/LanguageDetector";
 import NotFound from "./pages/NotFound";
 
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/policy" element={<LegalEN />} />
           <Route path="/af" element={<Af />} />
           <Route path="/docs-1" element={<Languages />} />
+          <Route path="/photography-legal-documents-terms-conditions-privacy-policy-contract-copyright-protection" element={<Photography />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
