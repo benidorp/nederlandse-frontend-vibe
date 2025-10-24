@@ -849,9 +849,9 @@ const FAQPhotography = () => {
                 className="bg-card border border-border rounded-lg px-6 data-[state=open]:shadow-lg transition-shadow"
               >
                 <AccordionTrigger className="text-left hover:no-underline py-6">
-                  <span className="text-lg font-semibold text-foreground pr-4">
+                  <h2 className="text-lg font-semibold text-foreground pr-4">
                     {item.question}
-                  </span>
+                  </h2>
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground pb-6 whitespace-pre-line">
                   {item.answer}
