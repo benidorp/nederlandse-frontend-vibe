@@ -486,10 +486,10 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-white">Snelle Links</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#home" className="text-white/70 hover:text-white transition-colors">Home</a></li>
-              <li><a href="#over-mij" className="text-white/70 hover:text-white transition-colors">Over Mij</a></li>
-              <li><a href="#diensten" className="text-white/70 hover:text-white transition-colors">Diensten</a></li>
-              <li><a href="#prijzen" className="text-white/70 hover:text-white transition-colors">Prijzen</a></li>
+              <li><a href="#home" rel="nofollow" className="text-white/70 hover:text-white transition-colors">Home</a></li>
+              <li><a href="#over-mij" rel="nofollow" className="text-white/70 hover:text-white transition-colors">Over Mij</a></li>
+              <li><a href="#diensten" rel="nofollow" className="text-white/70 hover:text-white transition-colors">Diensten</a></li>
+              <li><a href="#prijzen" rel="nofollow" className="text-white/70 hover:text-white transition-colors">Prijzen</a></li>
             </ul>
           </div>
 

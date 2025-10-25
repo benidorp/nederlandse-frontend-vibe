@@ -18,6 +18,8 @@ const English = () => {
         <script async src="https://js.stripe.com/v3/buy-button.js"></script>
         <html lang="en" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
       </Helmet>
       <GTranslateWidget />
       <div className="min-h-screen">

@@ -17,6 +17,8 @@ const Index = () => {
       <Helmet>
         <html lang="nl" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://iaee.eu/affiliate-website-bescherming-essentiele-juridische-documenten-algemene-voorwaarden-privacyverklaring-disclosure-cookiebeleid" />
       </Helmet>
       <GTranslateWidget />
       <div className="min-h-screen">

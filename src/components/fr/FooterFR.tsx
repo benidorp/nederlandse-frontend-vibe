@@ -67,22 +67,22 @@ const FooterFR = () => {
             <h3 className="font-semibold mb-4">Juridique</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a href="#" rel="nofollow" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Politique de Confidentialité
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a href="#" rel="nofollow" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Conditions Générales
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a href="#" rel="nofollow" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Politique de Cookies
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a href="#" rel="nofollow" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Clause de Non-Responsabilité
                 </a>
               </li>

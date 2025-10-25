@@ -10,8 +10,9 @@ const LegalEN = () => {
       <Helmet>
         <title>Legal Information - Legal Affiliate Agreement</title>
         <meta name="description" content="Legal documents for affiliate websites including terms and conditions, privacy policy, disclaimer, and cookie policy." />
-        <meta name="robots" content="noindex" />
+        <meta name="robots" content="noindex, nofollow" />
         <html lang="en" />
+        <link rel="canonical" href="https://iaee.eu/policy" />
       </Helmet>
       <GTranslateWidget />
       <div className="min-h-screen bg-background">

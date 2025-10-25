@@ -2689,8 +2689,11 @@ For legal advice: Consult a lawyer specialized in internet law`;
   return (
     <>
       <Helmet>
-        <meta name="robots" content="noindex" />
+        <title>Legal Documents - Terms & Conditions, Privacy Policy, Disclaimer & Cookie Policy</title>
+        <meta name="description" content="Download free legal templates for affiliate websites including terms and conditions, privacy policy, disclaimer, and cookie policy." />
+        <meta name="robots" content="noindex, nofollow" />
         <html lang="en" />
+        <link rel="canonical" href="https://iaee.eu/af" />
       </Helmet>
       <GTranslateWidget />
       <div className="min-h-screen bg-background">
