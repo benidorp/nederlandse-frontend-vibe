@@ -57,10 +57,12 @@ const PricingEventTicketing = () => {
             </div>
 
             <div className="text-center">
-              <stripe-buy-button
-                buy-button-id="buy_btn_1QpEHFRwsGb9F7ZELvpyoNDu"
-                publishable-key="pk_live_51QpD4DRwsGb9F7ZEo4M7qZRpIztGgHwGoCpvh38h6ygK4SLQwi8Zg0W3BXX16F9yl4gqOwcNbCblZMmYpXqD1sCl00I59xnWqo"
-              />
+              <div className="[&_stripe-buy-button]:scale-125 [&_stripe-buy-button]:origin-center inline-block">
+                <stripe-buy-button
+                  buy-button-id="buy_btn_1QpEHFRwsGb9F7ZELvpyoNDu"
+                  publishable-key="pk_live_51QpD4DRwsGb9F7ZEo4M7qZRpIztGgHwGoCpvh38h6ygK4SLQwi8Zg0W3BXX16F9yl4gqOwcNbCblZMmYpXqD1sCl00I59xnWqo"
+                />
+              </div>
               <p className="text-xs text-muted-foreground mt-4">
                 * Digital products are non-refundable after download
               </p>

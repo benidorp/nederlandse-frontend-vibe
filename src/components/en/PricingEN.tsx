@@ -53,13 +53,17 @@ const PricingEN = () => {
 
               <div 
                 className="pt-6 border-t flex justify-center"
-                dangerouslySetInnerHTML={{
-                  __html: `<stripe-buy-button
-                    buy-button-id="buy_btn_1SKm3dFXIgtr666GOD7ZP6da"
-                    publishable-key="pk_live_51SK0ndFXIgtr666GrmKudtOsf3HHcaBw06Ei3x8LbGKOYQ3oZeIrmpMpTfoTBJ5c7tPyFfbRC7pugHMC0l6b3ZKP009fgyIrGc"
-                  ></stripe-buy-button>`
-                }}
-              />
+              >
+                <div 
+                  className="[&_stripe-buy-button]:scale-125 [&_stripe-buy-button]:origin-center"
+                  dangerouslySetInnerHTML={{
+                    __html: `<stripe-buy-button
+                      buy-button-id="buy_btn_1SKm3dFXIgtr666GOD7ZP6da"
+                      publishable-key="pk_live_51SK0ndFXIgtr666GrmKudtOsf3HHcaBw06Ei3x8LbGKOYQ3oZeIrmpMpTfoTBJ5c7tPyFfbRC7pugHMC0l6b3ZKP009fgyIrGc"
+                    ></stripe-buy-button>`
+                  }}
+                />
+              </div>
 
               <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-3">
                 <div className="flex gap-2">
