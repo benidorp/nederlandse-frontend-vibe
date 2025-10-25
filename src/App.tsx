@@ -34,7 +34,7 @@ const App = () => (
           <Route path="/docs-1" element={<Languages />} />
           <Route path="/photography-legal-documents-terms-conditions-privacy-policy-contract-copyright-protection" element={<Photography />} />
           <Route path="/event-ticketing-legal-documents-terms-conditions-privacy-policy-registration-refund-policy" element={<EventTicketing />} />
-          <Route path="/reisboekingswebsite-juridische-documenten-algemene-voorwaarden-privacybeleid-annuleringsbeleid" element={<TravelBooking />} />
+          <Route path="/must-have-legal-protection-for-every-hotel-and-travel-website-terms-conditions-privacy-policy-cancellation-policy-disclaimer" element={<TravelBooking />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
