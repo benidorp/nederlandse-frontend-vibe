@@ -65,7 +65,7 @@ const PricingIT = () => {
                 />
               </div>
 
-              <p className="text-sm text-center text-muted-foreground">
+              <p className="text-base font-semibold text-center text-muted-foreground">
                 Veilig betalen via Stripe, automatisch omgerekend naar uw eigen valuta.
               </p>
 

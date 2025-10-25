@@ -63,7 +63,7 @@ const PricingEventTicketing = () => {
                   publishable-key="pk_live_51QpD4DRwsGb9F7ZEo4M7qZRpIztGgHwGoCpvh38h6ygK4SLQwi8Zg0W3BXX16F9yl4gqOwcNbCblZMmYpXqD1sCl00I59xnWqo"
                 />
               </div>
-              <p className="text-sm text-muted-foreground mt-4">
+              <p className="text-base font-semibold text-muted-foreground mt-4">
                 Veilig betalen via Stripe, automatisch omgerekend naar uw eigen valuta.
               </p>
               <p className="text-xs text-muted-foreground mt-2">

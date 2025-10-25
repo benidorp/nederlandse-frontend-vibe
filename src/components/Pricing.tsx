@@ -50,7 +50,7 @@ const Pricing = () => {
                 </Button>
               </div>
 
-              <p className="text-sm text-center text-muted-foreground mt-4">
+              <p className="text-base font-semibold text-center text-muted-foreground mt-4">
                 Veilig betalen via Stripe, automatisch omgerekend naar uw eigen valuta.
               </p>
 
