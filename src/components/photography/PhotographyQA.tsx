@@ -1,6 +1,10 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { HelpCircle } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const questions = [
   {
@@ -59,24 +63,21 @@ const PhotographyQA = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto grid gap-6">
-          {questions.map((item, index) => (
-            <Card key={index} className="bg-card border-border hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="flex items-start gap-3">
-                  <div className="h-10 w-10 rounded-lg bg-red-600 flex items-center justify-center flex-shrink-0">
-                    <HelpCircle className="h-5 w-5 text-white" />
-                  </div>
-                  <CardTitle className="text-lg text-foreground">{item.question}</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-base text-muted-foreground leading-relaxed">
-                  {item.answer}
-                </CardDescription>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="max-w-3xl mx-auto">
+          <Accordion type="single" collapsible className="w-full">
+            {questions.map((item, index) => (
+              <AccordionItem key={index} value={`item-${index}`}>
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <span className="text-base font-medium text-foreground">{item.question}</span>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {item.answer}
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </div>
     </section>
