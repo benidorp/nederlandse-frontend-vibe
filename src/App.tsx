@@ -10,6 +10,7 @@ import Af from "./pages/Af";
 import Languages from "./pages/Languages";
 import LegalEN from "./pages/LegalEN";
 import Photography from "./pages/Photography";
+import EventTicketing from "./pages/EventTicketing";
 import LanguageDetector from "./components/LanguageDetector";
 import NotFound from "./pages/NotFound";
 
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/af" element={<Af />} />
           <Route path="/docs-1" element={<Languages />} />
           <Route path="/photography-legal-documents-terms-conditions-privacy-policy-contract-copyright-protection" element={<Photography />} />
+          <Route path="/event-ticketing-legal-documents-terms-conditions-privacy-policy-registration-refund-policy" element={<EventTicketing />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
