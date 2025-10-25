@@ -3,6 +3,7 @@ import HeaderEN from "@/components/en/HeaderEN";
 import HeroEventTicketing from "@/components/event-ticketing/HeroEventTicketing";
 import ValuePropositionEventTicketing from "@/components/event-ticketing/ValuePropositionEventTicketing";
 import ServicesEventTicketing from "@/components/event-ticketing/ServicesEventTicketing";
+import BlogPostsEventTicketing from "@/components/event-ticketing/BlogPostsEventTicketing";
 import EventTicketingQA from "@/components/event-ticketing/EventTicketingQA";
 import PricingEventTicketing from "@/components/event-ticketing/PricingEventTicketing";
 import ReviewsEN from "@/components/en/ReviewsEN";
@@ -28,6 +29,7 @@ const EventTicketing = () => {
           <HeroEventTicketing />
           <ValuePropositionEventTicketing />
           <ServicesEventTicketing />
+          <BlogPostsEventTicketing />
           <EventTicketingQA />
           <PricingEventTicketing />
           <ReviewsEN />
