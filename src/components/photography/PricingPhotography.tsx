@@ -1,21 +1,9 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check, AlertTriangle } from "lucide-react";
-
-const includedItems = [
-  "Terms & Conditions for Photographers",
-  "Assignment Agreement (Offerte) with Templates",
-  "Privacy Policy (GDPR-compliant)",
-  "Cookie Policy (GDPR-compliant)",
-  "Disclaimer for Photo & Content Protection",
-  "Quitclaim for Subject Agreements",
-  "Copyright Protection (Auteursrecht)",
-  "Implementation Guide"
-];
-
+const includedItems = ["Terms & Conditions for Photographers", "Assignment Agreement (Offerte) with Templates", "Privacy Policy (GDPR-compliant)", "Cookie Policy (GDPR-compliant)", "Disclaimer for Photo & Content Protection", "Quitclaim for Subject Agreements", "Copyright Protection (Auteursrecht)", "Implementation Guide"];
 const PricingPhotography = () => {
-  return (
-    <section id="pricing" className="py-20 bg-primary/5">
+  return <section id="pricing" className="py-20 bg-primary/5">
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">Pricing</Badge>
@@ -31,15 +19,11 @@ const PricingPhotography = () => {
           <Card className="border-primary shadow-xl">
             <CardHeader className="text-center pb-8">
               <div className="mb-6 flex items-center justify-center gap-4">
-                <img 
-                  src="/logo.png" 
-                  alt="Affiliate-docs Logo" 
-                  className="h-16 w-auto"
-                />
+                
               </div>
               <div className="mb-6">
                 <span className="text-6xl md:text-7xl font-bold text-primary">€79</span>
-                <span className="text-lg text-muted-foreground ml-2">one-time</span>
+                
               </div>
               <CardTitle className="text-2xl md:text-3xl mb-3">Complete Photography Legal Package</CardTitle>
               <CardDescription className="text-base md:text-lg">
@@ -49,28 +33,21 @@ const PricingPhotography = () => {
             
             <CardContent className="space-y-6">
               <div className="space-y-3">
-                {includedItems.map((item, index) => (
-                  <div key={index} className="flex items-center gap-3">
+                {includedItems.map((item, index) => <div key={index} className="flex items-center gap-3">
                     <div className="h-5 w-5 rounded-full bg-red-600 flex items-center justify-center flex-shrink-0">
                       <Check className="h-3 w-3 text-white" />
                     </div>
                     <span className="text-foreground">{item}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
 
-              <div 
-                className="pt-6 border-t flex justify-center"
-              >
-                <div 
-                  className="[&_stripe-buy-button]:scale-125 [&_stripe-buy-button]:origin-center"
-                  dangerouslySetInnerHTML={{
-                    __html: `<stripe-buy-button
+              <div className="pt-6 border-t flex justify-center">
+                <div className="[&_stripe-buy-button]:scale-125 [&_stripe-buy-button]:origin-center" dangerouslySetInnerHTML={{
+                __html: `<stripe-buy-button
                       buy-button-id="buy_btn_1SKm3dFXIgtr666GOD7ZP6da"
                       publishable-key="pk_live_51SK0ndFXIgtr666GrmKudtOsf3HHcaBw06Ei3x8LbGKOYQ3oZeIrmpMpTfoTBJ5c7tPyFfbRC7pugHMC0l6b3ZKP009fgyIrGc"
                     ></stripe-buy-button>`
-                  }}
-                />
+              }} />
               </div>
 
               <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-3">
@@ -89,8 +66,6 @@ const PricingPhotography = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default PricingPhotography;
