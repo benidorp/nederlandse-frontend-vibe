@@ -50,6 +50,10 @@ const Pricing = () => {
                 </Button>
               </div>
 
+              <p className="text-sm text-center text-muted-foreground mt-4">
+                Veilig betalen via Stripe, automatisch omgerekend naar uw eigen valuta.
+              </p>
+
               <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-3">
                 <div className="flex gap-2">
                   <AlertTriangle className="h-4 w-4 text-destructive flex-shrink-0 mt-0.5" />
