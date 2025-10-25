@@ -17,12 +17,19 @@ const Pricing = () => {
         <div className="max-w-2xl mx-auto">
           <Card className="border-primary shadow-xl">
             <CardHeader className="text-center pb-8">
-              <div className="mb-4">
-                <span className="text-5xl font-bold text-primary">€79</span>
-                <span className="text-muted-foreground ml-2">eenmalig</span>
+              <div className="mb-6 flex items-center justify-center gap-4">
+                <img 
+                  src="/logo.png" 
+                  alt="Affiliate-docs Logo" 
+                  className="h-16 w-auto"
+                />
               </div>
-              <CardTitle className="text-2xl">Complete Documentenpakket</CardTitle>
-              <CardDescription className="text-base">
+              <div className="mb-6">
+                <span className="text-6xl md:text-7xl font-bold text-primary">€79</span>
+                <span className="text-lg text-muted-foreground ml-2">eenmalig</span>
+              </div>
+              <CardTitle className="text-2xl md:text-3xl mb-3">Complete Documentenpakket</CardTitle>
+              <CardDescription className="text-base md:text-lg">
                 Alle essentiële juridische documenten voor onbeperkt gebruik
               </CardDescription>
             </CardHeader>

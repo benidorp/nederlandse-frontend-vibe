@@ -30,14 +30,21 @@ const PricingEventTicketing = () => {
         <Card className="max-w-2xl mx-auto border-2 border-primary/20 shadow-xl">
           <CardContent className="p-8">
             <div className="text-center mb-8">
-              <div className="inline-block px-4 py-1 mb-4 rounded-full bg-primary/10 text-primary text-sm font-medium">
+              <div className="mb-6 flex items-center justify-center gap-4">
+                <img 
+                  src="/logo.png" 
+                  alt="Affiliate-docs Logo" 
+                  className="h-16 w-auto"
+                />
+              </div>
+              <div className="inline-block px-4 py-1 mb-6 rounded-full bg-primary/10 text-primary text-sm font-medium">
                 Most Popular
               </div>
-              <div className="mb-2">
-                <span className="text-5xl font-bold text-foreground">€79</span>
-                <span className="text-muted-foreground ml-2">one-time</span>
+              <div className="mb-4">
+                <span className="text-6xl md:text-7xl font-bold text-foreground">€79</span>
+                <span className="text-lg text-muted-foreground ml-2">one-time</span>
               </div>
-              <p className="text-muted-foreground">Complete Event & Ticketing Legal Package</p>
+              <p className="text-lg text-muted-foreground">Complete Event & Ticketing Legal Package</p>
             </div>
 
             <div className="space-y-3 mb-8">
