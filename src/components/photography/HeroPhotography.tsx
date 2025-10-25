@@ -15,7 +15,7 @@ const HeroPhotography = () => {
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${heroImage})`,
           backgroundSize: 'cover',
-          backgroundPosition: '75% center',
+          backgroundPosition: '90% center',
         }}
       />
       
