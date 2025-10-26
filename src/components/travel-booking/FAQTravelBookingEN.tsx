@@ -104,16 +104,21 @@ const FAQTravelBookingEN = () => {
         </div>
 
         <Accordion type="single" collapsible className="w-full">
-          {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="bg-card border border-border rounded-lg mb-2 px-4">
-              <AccordionTrigger className="text-left hover:no-underline py-3">
-                <span className="font-semibold text-foreground pr-4">{faq.question}</span>
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground pb-3 pt-1">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
+          <AccordionItem value="all-questions" className="bg-card border border-border rounded-lg px-4">
+            <AccordionTrigger className="text-left hover:no-underline py-3">
+              <span className="font-semibold text-foreground pr-4">View All Questions & Answers</span>
+            </AccordionTrigger>
+            <AccordionContent className="text-muted-foreground pb-3 pt-1">
+              <div className="space-y-4">
+                {faqs.map((faq, index) => (
+                  <div key={index} className="border-b border-border last:border-0 pb-4 last:pb-0">
+                    <h3 className="font-semibold text-foreground mb-2">{faq.question}</h3>
+                    <p className="text-muted-foreground">{faq.answer}</p>
+                  </div>
+                ))}
+              </div>
+            </AccordionContent>
+          </AccordionItem>
         </Accordion>
       </div>
     </section>
