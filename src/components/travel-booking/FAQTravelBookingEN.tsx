@@ -105,11 +105,11 @@ const FAQTravelBookingEN = () => {
 
         <Accordion type="single" collapsible className="w-full">
           {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="bg-card border border-border rounded-lg mb-4 px-6">
-              <AccordionTrigger className="text-left hover:no-underline py-6">
+            <AccordionItem key={index} value={`item-${index}`} className="bg-card border border-border rounded-lg mb-2 px-4">
+              <AccordionTrigger className="text-left hover:no-underline py-3">
                 <span className="font-semibold text-foreground pr-4">{faq.question}</span>
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground pb-6 pt-2">
+              <AccordionContent className="text-muted-foreground pb-3 pt-1">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>
