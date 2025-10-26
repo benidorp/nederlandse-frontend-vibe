@@ -1,11 +1,8 @@
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check } from "lucide-react";
+
 const PricingTravelBookingEN = () => {
-  const handleCheckout = () => {
-    window.location.href = "https://buy.stripe.com/28o5mQcAE5Ik5IAaEE";
-  };
   return <section id="pricing" className="py-20 bg-background">
       <div className="container">
         <div className="text-center mb-12">
@@ -28,10 +25,6 @@ const PricingTravelBookingEN = () => {
               <CardDescription className="text-lg">
                 All essential legal documents for your travel booking platform
               </CardDescription>
-              <div className="mt-4">
-                
-                
-              </div>
             </CardHeader>
             <CardContent>
               <ul className="space-y-3">
@@ -40,20 +33,24 @@ const PricingTravelBookingEN = () => {
                     <span className="text-foreground">{feature}</span>
                   </li>)}
               </ul>
-              <p className="text-base font-semibold text-muted-foreground mt-6">
+              
+              <div className="pt-6 border-t flex justify-center mt-6">
+                <div 
+                  className="[&_stripe-buy-button]:scale-125 [&_stripe-buy-button]:origin-center"
+                  dangerouslySetInnerHTML={{
+                    __html: `<stripe-buy-button
+                      buy-button-id="buy_btn_1SKm3dFXIgtr666GOD7ZP6da"
+                      publishable-key="pk_live_51SK0ndFXIgtr666GrmKudtOsf3HHcaBw06Ei3x8LbGKOYQ3oZeIrmpMpTfoTBJ5c7tPyFfbRC7pugHMC0l6b3ZKP009fgyIrGc"
+                    ></stripe-buy-button>`
+                  }}
+                />
+              </div>
+
+              <p className="text-base font-semibold text-center text-muted-foreground mt-6">
                 Secure payment via Stripe, automatically converted to your local currency.
               </p>
             </CardContent>
-            <CardFooter>
-              <Button size="lg" className="w-full bg-red-600 hover:bg-red-700 text-white text-lg py-6" onClick={handleCheckout}>
-                Get Started Now
-              </Button>
-            </CardFooter>
           </Card>
-        </div>
-
-        <div className="mt-12 text-center">
-          <p className="text-sm text-muted-foreground">Payment processed securely by Stripe.</p>
         </div>
       </div>
     </section>;

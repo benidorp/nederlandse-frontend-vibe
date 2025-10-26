@@ -15,6 +15,7 @@ const TravelBooking = () => {
   return (
     <>
       <Helmet>
+        <script async src="https://js.stripe.com/v3/buy-button.js"></script>
         <title>Must-Have Legal Protection for Every Hotel and Travel Website: Terms & Conditions, Privacy Policy, Cancellation Policy & Disclaimer</title>
         <meta name="description" content="Essential legal documents for travel booking and hotel platforms including terms and conditions, privacy policy, disclaimer, cancellation policy and GDPR compliance." />
         <meta name="keywords" content="travel booking website legal documents, hotel booking terms and conditions, cancellation policy, privacy policy travel industry, travel booking disclaimer" />
