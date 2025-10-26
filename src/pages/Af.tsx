@@ -2,8 +2,8 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Download, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import HeaderEN from "@/components/en/HeaderEN";
+import FooterEN from "@/components/en/FooterEN";
 import GTranslateWidget from "@/components/GTranslateWidget";
 import jsPDF from "jspdf";
 
@@ -2697,7 +2697,7 @@ For legal advice: Consult a lawyer specialized in internet law`;
       </Helmet>
       <GTranslateWidget />
       <div className="min-h-screen bg-background">
-        <Header />
+        <HeaderEN />
       
       <main className="container mx-auto px-4 py-12 max-w-4xl">
         <h1 className="text-4xl font-bold mb-8 text-foreground">Legal Documents</h1>
@@ -2931,7 +2931,7 @@ For legal advice: Consult a lawyer specialized in internet law`;
       </main>
       
       <div className="gtranslate_wrapper"></div>
-      <Footer />
+      <FooterEN />
       </div>
     </>
   );

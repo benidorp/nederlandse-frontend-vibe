@@ -15,12 +15,12 @@ const LanguageDetector = () => {
   const location = useLocation();
 
   useEffect(() => {
-    // Only run on the main Dutch page
-    if (location.pathname === "/affiliate-website-bescherming-essentiele-juridische-documenten-algemene-voorwaarden-privacyverklaring-disclosure-cookiebeleid") {
+    // Only run on the main English page
+    if (location.pathname === "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy") {
       const browserLang = navigator.language.split("-")[0].toLowerCase();
       
-      // If browser language is supported and not Dutch, redirect
-      if (supportedLanguages.includes(browserLang) && browserLang !== "nl") {
+      // If browser language is supported and not English, redirect
+      if (supportedLanguages.includes(browserLang) && browserLang !== "en") {
         navigate(`/${browserLang}`, { replace: true });
       }
     }
