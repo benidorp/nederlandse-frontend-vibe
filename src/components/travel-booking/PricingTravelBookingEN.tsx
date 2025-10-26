@@ -2,14 +2,11 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Check } from "lucide-react";
-
 const PricingTravelBookingEN = () => {
   const handleCheckout = () => {
     window.location.href = "https://buy.stripe.com/28o5mQcAE5Ik5IAaEE";
   };
-
-  return (
-    <section id="pricing" className="py-20 bg-background">
+  return <section id="pricing" className="py-20 bg-background">
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">Pricing</Badge>
@@ -32,40 +29,23 @@ const PricingTravelBookingEN = () => {
                 All essential legal documents for your travel booking platform
               </CardDescription>
               <div className="mt-4">
-                <span className="text-5xl font-bold text-foreground">€97</span>
-                <span className="text-muted-foreground ml-2">one-time</span>
+                
+                
               </div>
             </CardHeader>
             <CardContent>
               <ul className="space-y-3">
-                {[
-                  "Privacy Policy (GDPR compliant)",
-                  "Terms and Conditions",
-                  "Cancellation Policy",
-                  "Disclaimer",
-                  "Cookie Policy",
-                  "Implementation Guide",
-                  "Unlimited websites",
-                  "Lifetime access",
-                  "Free updates",
-                  "Instant download"
-                ].map((feature, index) => (
-                  <li key={index} className="flex items-start gap-3">
+                {["Privacy Policy (GDPR compliant)", "Terms and Conditions", "Cancellation Policy", "Disclaimer", "Cookie Policy", "Implementation Guide", "Unlimited websites", "Lifetime access", "Free updates", "Instant download"].map((feature, index) => <li key={index} className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-red-600 flex-shrink-0 mt-0.5" />
                     <span className="text-foreground">{feature}</span>
-                  </li>
-                ))}
+                  </li>)}
               </ul>
               <p className="text-base font-semibold text-muted-foreground mt-6">
                 Secure payment via Stripe, automatically converted to your local currency.
               </p>
             </CardContent>
             <CardFooter>
-              <Button 
-                size="lg" 
-                className="w-full bg-red-600 hover:bg-red-700 text-white text-lg py-6"
-                onClick={handleCheckout}
-              >
+              <Button size="lg" className="w-full bg-red-600 hover:bg-red-700 text-white text-lg py-6" onClick={handleCheckout}>
                 Get Started Now
               </Button>
             </CardFooter>
@@ -73,13 +53,9 @@ const PricingTravelBookingEN = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="text-sm text-muted-foreground">
-            All prices exclude VAT where applicable. Payment processed securely by Stripe.
-          </p>
+          <p className="text-sm text-muted-foreground">Payment processed securely by Stripe.</p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default PricingTravelBookingEN;
