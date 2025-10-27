@@ -170,37 +170,24 @@ const FAQStreamingMedia = () => {
           ))}
         </Accordion>
 
-        <div className="mt-12">
-          <h2 className="text-2xl font-bold mb-6">Streaming Website Vragen voor Beginners</h2>
-          <Accordion type="single" collapsible className="w-full space-y-4">
-            {startingQuestions.map((item, index) => (
-              <AccordionItem key={`starting-${index}`} value={`starting-${index}`} className="border rounded-lg px-6">
-                <AccordionTrigger className="text-left hover:no-underline">
-                  <h3 className="font-semibold">{item.question}</h3>
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
-                  {item.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
-
-        <div className="mt-12">
-          <h2 className="text-2xl font-bold mb-6">Geavanceerde Streaming Website Vragen</h2>
-          <Accordion type="single" collapsible className="w-full space-y-4">
-            {advancedQuestions.map((item, index) => (
-              <AccordionItem key={`advanced-${index}`} value={`advanced-${index}`} className="border rounded-lg px-6">
-                <AccordionTrigger className="text-left hover:no-underline">
-                  <h3 className="font-semibold">{item.question}</h3>
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
-                  {item.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
+        <Accordion type="single" collapsible className="w-full space-y-4 mt-8">
+          {/* Streaming Website Vragen */}
+          <AccordionItem value="streaming-questions" className="border-2 border-primary/20 rounded-lg px-6 bg-card shadow-md">
+            <AccordionTrigger className="text-lg font-semibold hover:text-primary">
+              Streaming Website Vragen
+            </AccordionTrigger>
+            <AccordionContent className="text-muted-foreground pb-6">
+              <div className="max-w-3xl mx-auto space-y-8">
+                {[...startingQuestions, ...advancedQuestions].map((item, idx) => (
+                  <div key={idx} className="border-b border-border/50 pb-6 last:border-0">
+                    <h2 className="text-xl font-semibold text-foreground mb-3">{item.question}</h2>
+                    <div className="text-sm leading-relaxed whitespace-pre-line">{item.answer}</div>
+                  </div>
+                ))}
+              </div>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
       </div>
     </section>
   );
