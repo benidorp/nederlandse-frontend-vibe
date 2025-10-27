@@ -5,12 +5,13 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { HelpCircle } from "lucide-react";
+import { startingQuestions, ownersQuestions } from "./ElearningQA";
 
 const FAQElearning = () => {
   return (
     <section className="py-20 bg-gradient-to-b from-primary/5 to-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-primary/60 text-primary-foreground px-6 py-2 rounded-full mb-6 shadow-lg">
@@ -63,6 +64,23 @@ const FAQElearning = () => {
                 The Implementation Guide contains step-by-step instructions for adding all documents to your 
                 platform, recommended page placements, email templates for notifying students, and a checklist 
                 to ensure you haven't forgotten anything.
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* E-Learning Platform Questions */}
+            <AccordionItem value="all-elearning-questions">
+              <AccordionTrigger className="text-left">
+                E-Learning Platform Questions
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground pb-6">
+                <div className="space-y-8 whitespace-pre-line">
+                  {[...startingQuestions, ...ownersQuestions].map((item, index) => (
+                    <article key={index} className="space-y-2">
+                      <h2 className="text-xl md:text-2xl font-semibold text-foreground">{item.question}</h2>
+                      <p className="text-muted-foreground">{item.answer}</p>
+                    </article>
+                  ))}
+                </div>
               </AccordionContent>
             </AccordionItem>
           </Accordion>

@@ -4,7 +4,6 @@ import HeroElearning from "@/components/elearning/HeroElearning";
 import ValuePropositionElearning from "@/components/elearning/ValuePropositionElearning";
 import ServicesElearning from "@/components/elearning/ServicesElearning";
 import BlogPostsElearning from "@/components/elearning/BlogPostsElearning";
-import ElearningQA from "@/components/elearning/ElearningQA";
 import FAQElearning from "@/components/elearning/FAQElearning";
 import PricingElearning from "@/components/elearning/PricingElearning";
 import ReviewsElearning from "@/components/elearning/ReviewsElearning";
@@ -28,8 +27,6 @@ const Elearning = () => {
           <HeroElearning />
           <ValuePropositionElearning />
           <ServicesElearning />
-          
-          <ElearningQA />
           <PricingElearning />
           <ReviewsElearning />
           <FAQElearning />
