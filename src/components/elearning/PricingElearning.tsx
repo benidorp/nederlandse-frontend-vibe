@@ -39,20 +39,17 @@ const PricingElearning = () => {
             <CardContent className="space-y-6 pb-8">
               {/* What's included */}
               <div className="space-y-4">
-                {[
-                  "Complete Course Terms & Conditions",
-                  "GDPR-Compliant Privacy Policy for Students",
-                  "Refund & Cancellation Policy",
-                  "Intellectual Property Protection Policy",
-                  "Instructor Agreement Terms",
-                  "Certificate & Accreditation Policy",
-                  "Cookie & Tracking Policy",
-                  "Implementation Guide with Step-by-Step Instructions",
-                  "Email Templates for Student Communication",
-                  "Lifetime Access - No Recurring Fees",
-                  "Use for Unlimited Courses & Students",
-                  "30-Day Money-Back Guarantee"
-                ].map((feature, index) => (
+              {[
+                "Complete Course Terms & Conditions",
+                "GDPR-Compliant Privacy Policy for Students",
+                "Refund & Cancellation Policy",
+                "Intellectual Property Protection Policy",
+                "Instructor Agreement Terms",
+                "Certificate & Accreditation Policy",
+                "Cookie & Tracking Policy",
+                "Implementation Guide with Step-by-Step Instructions",
+                "Lifetime Access - No Recurring Fees"
+              ].map((feature, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center mt-0.5 shadow-md">
                       <Check className="w-4 h-4 text-primary-foreground" />
