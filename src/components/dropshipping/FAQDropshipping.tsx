@@ -1,6 +1,9 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 
+// Import questions from DropshippingQA
+import { startingQuestions, ownersQuestions } from "./DropshippingQA";
+
 const faqs = [
   {
     question: "Why do I need legal documents for my dropshipping store?",
@@ -39,7 +42,7 @@ const faqs = [
 const FAQDropshipping = () => {
   return (
     <section className="py-20 bg-background">
-      <div className="container max-w-4xl">
+      <div className="container max-w-3xl">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">FAQ</Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -61,6 +64,23 @@ const FAQDropshipping = () => {
               </AccordionContent>
             </AccordionItem>
           ))}
+          
+          {/* Dropshipping Questions - alle 100+ vragen */}
+          <AccordionItem value="all-dropshipping-questions">
+            <AccordionTrigger className="text-left">
+              Dropshipping Website Questions
+            </AccordionTrigger>
+            <AccordionContent className="text-muted-foreground pb-6">
+              <div className="space-y-8 whitespace-pre-line">
+                {[...startingQuestions, ...ownersQuestions].map((item, index) => (
+                  <article key={index} className="space-y-2">
+                    <h2 className="text-xl md:text-2xl font-semibold text-foreground">{item.question}</h2>
+                    <p className="text-muted-foreground">{item.answer}</p>
+                  </article>
+                ))}
+              </div>
+            </AccordionContent>
+          </AccordionItem>
         </Accordion>
       </div>
     </section>

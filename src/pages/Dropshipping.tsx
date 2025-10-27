@@ -4,7 +4,7 @@ import HeroDropshipping from "@/components/dropshipping/HeroDropshipping";
 import ValuePropositionDropshipping from "@/components/dropshipping/ValuePropositionDropshipping";
 import ServicesDropshipping from "@/components/dropshipping/ServicesDropshipping";
 import BlogPostsDropshipping from "@/components/dropshipping/BlogPostsDropshipping";
-import DropshippingQA from "@/components/dropshipping/DropshippingQA";
+
 import FAQDropshipping from "@/components/dropshipping/FAQDropshipping";
 import PricingDropshipping from "@/components/dropshipping/PricingDropshipping";
 import ReviewsDropshipping from "@/components/dropshipping/ReviewsDropshipping";
@@ -29,7 +29,7 @@ const Dropshipping = () => {
           <ValuePropositionDropshipping />
           <ServicesDropshipping />
           <BlogPostsDropshipping />
-          <DropshippingQA />
+          
           <PricingDropshipping />
           <ReviewsDropshipping />
           <FAQDropshipping />
