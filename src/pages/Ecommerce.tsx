@@ -4,7 +4,7 @@ import HeroEcommerce from "@/components/ecommerce/HeroEcommerce";
 import ValuePropositionEcommerce from "@/components/ecommerce/ValuePropositionEcommerce";
 import ServicesEcommerce from "@/components/ecommerce/ServicesEcommerce";
 import BlogPostsEcommerce from "@/components/ecommerce/BlogPostsEcommerce";
-import EcommerceQA from "@/components/ecommerce/EcommerceQA";
+
 import FAQEcommerce from "@/components/ecommerce/FAQEcommerce";
 import PricingEcommerce from "@/components/ecommerce/PricingEcommerce";
 import ReviewsEcommerce from "@/components/ecommerce/ReviewsEcommerce";
@@ -32,7 +32,6 @@ const Ecommerce = () => {
           <PricingEcommerce />
           <ReviewsEcommerce />
           <FAQEcommerce />
-          <EcommerceQA />
         </main>
         <FooterEN />
       </div>

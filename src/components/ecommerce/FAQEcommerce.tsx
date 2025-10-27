@@ -6,6 +6,9 @@ import {
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 
+// Import questions from EcommerceQA
+import { startingQuestions, ownersQuestions, onlineBusinessStartingQuestions, onlineBusinessOwnersQuestions } from "./EcommerceQA";
+
 const faqItems = [
   {
     question: "Why are legal documents critical for e-commerce stores?",
@@ -235,6 +238,23 @@ const FAQEcommerce = () => {
                 </AccordionContent>
               </AccordionItem>
             ))}
+            
+            {/* E-commerce & Online Business Questions - alle 100 vragen */}
+            <AccordionItem value="all-ecommerce-questions">
+              <AccordionTrigger className="text-left">
+                E-Commerce & Online Business Questions
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground pb-6">
+                <div className="space-y-8 whitespace-pre-line">
+                  {[...startingQuestions, ...ownersQuestions, ...onlineBusinessStartingQuestions, ...onlineBusinessOwnersQuestions].map((item, index) => (
+                    <article key={index} className="space-y-2">
+                      <h2 className="text-xl md:text-2xl font-semibold text-foreground">{item.question}</h2>
+                      <p className="text-muted-foreground">{item.answer}</p>
+                    </article>
+                  ))}
+                </div>
+              </AccordionContent>
+            </AccordionItem>
           </Accordion>
         </div>
       </div>

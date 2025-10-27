@@ -5,7 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const startingQuestions = [
+export const startingQuestions = [
   {
     question: "How to Start an E-Commerce Website from Scratch in 2025?",
     answer: "Launching an e-commerce website in 2025 involves selecting a niche (e.g., eco-friendly products), choosing a platform like Shopify or WooCommerce, and securing a domain and hosting. Integrate payment gateways (Stripe, PayPal), optimize for SEO with tools like Yoast, and promote via social media. Initial costs range from $100-$2,000, with $50-$200/month for maintenance."
@@ -212,7 +212,7 @@ const startingQuestions = [
   }
 ];
 
-const ownersQuestions = [
+export const ownersQuestions = [
   {
     question: "How to Increase Conversion Rates on My E-Commerce Website?",
     answer: "Optimize checkout with one-click options, add trust signals, and use exit-intent popups. A/B test CTAs and offer free shipping. Tools like Optimizely help improve conversions."
@@ -415,7 +415,7 @@ const ownersQuestions = [
   }
 ];
 
-const onlineBusinessStartingQuestions = [
+export const onlineBusinessStartingQuestions = [
   {
     question: "How to Start an Online Business Website from Scratch in 2025?",
     answer: "Launching an online business website in 2025 involves choosing a niche (e.g., e-commerce, consulting), selecting a platform like WordPress or Shopify, and securing a domain and hosting. Integrate payment systems, optimize for SEO with Yoast, and promote via social media. Initial costs range from $100-$2,000, with $50-$200/month for maintenance."
@@ -622,7 +622,7 @@ const onlineBusinessStartingQuestions = [
   }
 ];
 
-const onlineBusinessOwnersQuestions = [
+export const onlineBusinessOwnersQuestions = [
   {
     question: "How to Increase Conversion Rates on My Online Business Website?",
     answer: "Optimize CTAs, simplify forms, and add trust signals like reviews. Use A/B testing with Optimizely and offer discounts to boost conversions by 10-20%."
