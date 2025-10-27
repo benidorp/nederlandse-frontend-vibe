@@ -29,9 +29,9 @@ const TravelBooking = () => {
           <HeroTravelBookingEN />
           <ValuePropositionTravelBookingEN />
           <ServicesTravelBookingEN />
-          
+          <BlogPostsTravelBookingEN />
+          <PricingTravelBookingEN />
           <TravelBookingQAEN />
-          
           <ReviewsEN />
           <FAQTravelBookingEN />
         </main>
