@@ -10,10 +10,8 @@ import ReviewsEN from "@/components/en/ReviewsEN";
 import FAQTravelBookingEN from "@/components/travel-booking/FAQTravelBookingEN";
 import FooterEN from "@/components/en/FooterEN";
 import GTranslateWidget from "@/components/GTranslateWidget";
-
 const TravelBooking = () => {
-  return (
-    <>
+  return <>
       <Helmet>
         <script async src="https://js.stripe.com/v3/buy-button.js"></script>
         <title>Must-Have Legal Protection for Every Hotel and Travel Website: Terms & Conditions, Privacy Policy, Cancellation Policy & Disclaimer</title>
@@ -33,14 +31,12 @@ const TravelBooking = () => {
           <ServicesTravelBookingEN />
           <BlogPostsTravelBookingEN />
           <TravelBookingQAEN />
-          <PricingTravelBookingEN />
+          
           <ReviewsEN />
           <FAQTravelBookingEN />
         </main>
         <FooterEN />
       </div>
-    </>
-  );
+    </>;
 };
-
 export default TravelBooking;

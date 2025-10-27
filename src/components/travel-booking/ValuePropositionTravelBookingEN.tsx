@@ -3,17 +3,16 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Check, Clock, Globe, Zap } from "lucide-react";
 import nicoleProfile from "@/assets/nicole-profile.png";
-
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
   if (element) {
-    element.scrollIntoView({ behavior: 'smooth' });
+    element.scrollIntoView({
+      behavior: 'smooth'
+    });
   }
 };
-
 const ValuePropositionTravelBookingEN = () => {
-  return (
-    <section className="py-20 bg-muted/30">
+  return <section className="py-20 bg-muted/30">
       <div className="container max-w-5xl">
         <div className="max-w-4xl mx-auto mb-16">
           <Badge className="mb-4 bg-primary text-primary-foreground">Professional Legal Documents for Travel & Booking Businesses</Badge>
@@ -29,11 +28,7 @@ const ValuePropositionTravelBookingEN = () => {
         <Card className="mb-12 bg-card border-border">
           <CardContent className="pt-6">
             <div className="flex flex-col md:flex-row gap-6 items-start">
-              <img 
-                src={nicoleProfile} 
-                alt="Nicole Henderson - Legal specialist"
-                className="w-32 h-32 rounded-lg object-cover"
-              />
+              <img src={nicoleProfile} alt="Nicole Henderson - Legal specialist" className="w-32 h-32 rounded-lg object-cover" />
               <div className="flex-1">
                 <h3 className="text-2xl font-bold text-foreground mb-2">About Me</h3>
                 <p className="text-lg font-semibold text-foreground mb-2">Nicole Henderson - Legal specialist</p>
@@ -165,23 +160,14 @@ const ValuePropositionTravelBookingEN = () => {
               <p className="text-lg mb-6">
                 For only €79 one-time you arrange all legal obligations for all your travel and booking websites. No monthly fees, no hassle with lawyers, no risk of fines. Just all the documents you need, ready to use.
               </p>
-              <Button 
-                size="lg" 
-                variant="secondary"
-                onClick={() => scrollToSection("pricing")}
-                className="font-semibold"
-              >
+              <Button size="lg" variant="secondary" onClick={() => scrollToSection("pricing")} className="font-semibold">
                 Order Now for €79
               </Button>
-              <p className="text-sm mt-4 opacity-90">
-                💡 Consider this: one hour with a lawyer already costs more than €79
-              </p>
+              <p className="text-sm mt-4 opacity-90">💡 Consider this: one hour with a lawyer already costs more than €250</p>
             </CardContent>
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ValuePropositionTravelBookingEN;
