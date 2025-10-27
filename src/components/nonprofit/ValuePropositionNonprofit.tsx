@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, Clock, Globe, Zap, FileText, Shield } from "lucide-react";
-import nicoleProfile from "@/assets/nicole-profile.jpg";
+import nicoleProfile from "@/assets/nicole-working.png";
 
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
