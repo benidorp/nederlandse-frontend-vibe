@@ -11,6 +11,7 @@ import Photography from "./pages/Photography";
 import TravelBooking from "./pages/TravelBooking";
 import Ecommerce from "./pages/Ecommerce";
 import OnlineShop from "./pages/OnlineShop";
+import Dropshipping from "./pages/Dropshipping";
 import LanguageDetector from "./components/LanguageDetector";
 import NotFound from "./pages/NotFound";
 
@@ -33,6 +34,7 @@ const App = () => (
           <Route path="/must-have-legal-protection-for-every-hotel-and-travel-website-terms-conditions-privacy-policy-cancellation-policy-disclaimer" element={<TravelBooking />} />
           <Route path="/essential-legal-documents-ecommerce-website-terms-conditions-privacy-policy-return-policy-shipping-policy" element={<Ecommerce />} />
           <Route path="/webshop-online-business-legal-protection-terms-privacy-policy-cookie-policy-gdpr-compliance" element={<OnlineShop />} />
+          <Route path="/dropshipping-business-legal-documents-terms-conditions-privacy-policy-supplier-agreement-refund-policy" element={<Dropshipping />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
