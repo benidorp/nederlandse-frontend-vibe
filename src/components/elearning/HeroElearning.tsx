@@ -88,10 +88,13 @@ const HeroElearning = () => {
                   alt="Nicole Henderson - E-Learning Legal Specialist" 
                   className="relative rounded-3xl shadow-2xl w-full h-auto border-4 border-primary/20"
                 />
-                <div className="absolute bottom-6 left-6 right-6 bg-card/95 backdrop-blur-sm rounded-2xl p-6 border-2 border-primary/30 shadow-xl">
-                  <h3 className="text-xl font-bold text-foreground mb-2">Nicole Henderson</h3>
-                  <p className="text-sm text-muted-foreground">E-Learning Legal Specialist</p>
-                  <p className="text-xs text-muted-foreground mt-2">Protecting educational platforms worldwide</p>
+                <div className="absolute bottom-4 left-4 bg-gradient-to-br from-card/98 via-primary/5 to-card/98 backdrop-blur-md rounded-xl px-5 py-3 border border-primary/40 shadow-2xl hover:shadow-primary/20 hover:scale-105 transition-all duration-300">
+                  <h3 className="text-lg font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-1">Nicole Henderson</h3>
+                  <p className="text-xs font-medium text-muted-foreground">E-Learning Legal Specialist</p>
+                  <p className="text-xs text-muted-foreground/80 mt-1 flex items-center gap-1">
+                    <Shield className="w-3 h-3 text-primary" />
+                    Protecting platforms worldwide
+                  </p>
                 </div>
               </div>
             </div>
