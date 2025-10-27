@@ -5,6 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
+import { advancedQuestions, startingQuestions } from "./StreamingMediaQA";
 
 const faqItems = [
   {
@@ -168,6 +169,38 @@ const FAQStreamingMedia = () => {
             </AccordionItem>
           ))}
         </Accordion>
+
+        <div className="mt-12">
+          <h2 className="text-2xl font-bold mb-6">Streaming Website Vragen voor Beginners</h2>
+          <Accordion type="single" collapsible className="w-full space-y-4">
+            {startingQuestions.map((item, index) => (
+              <AccordionItem key={`starting-${index}`} value={`starting-${index}`} className="border rounded-lg px-6">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <h3 className="font-semibold">{item.question}</h3>
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
+                  {item.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+
+        <div className="mt-12">
+          <h2 className="text-2xl font-bold mb-6">Geavanceerde Streaming Website Vragen</h2>
+          <Accordion type="single" collapsible className="w-full space-y-4">
+            {advancedQuestions.map((item, index) => (
+              <AccordionItem key={`advanced-${index}`} value={`advanced-${index}`} className="border rounded-lg px-6">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <h3 className="font-semibold">{item.question}</h3>
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
+                  {item.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
       </div>
     </section>
   );
