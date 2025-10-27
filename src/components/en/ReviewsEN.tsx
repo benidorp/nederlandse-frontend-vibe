@@ -17,8 +17,8 @@ const ReviewsEN = () => {
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">Reviews</Badge>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Legal Information for Travel Booking Platforms
-Important information about legal requirements for your travel booking website.What Our Customers Say</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Legal Information for Travel Booking Platforms 
+What Our Customers Say</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Discover why hundreds of affiliates get their legal documents from us
           </p>
