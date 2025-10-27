@@ -70,7 +70,7 @@ const FAQNonprofit = () => {
             {/* Security & Legal Questions */}
             <AccordionItem value="security-questions" className="border-2 border-primary/20 rounded-lg px-6 bg-card shadow-md">
               <AccordionTrigger className="text-lg font-semibold hover:text-primary">
-                Beveiliging & Juridische Vragen voor Non-Profits
+                Security & Legal Questions for Non-Profits
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground pb-6">
                 <div className="space-y-8 whitespace-pre-line">
