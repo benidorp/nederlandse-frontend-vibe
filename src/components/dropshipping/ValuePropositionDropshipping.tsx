@@ -204,16 +204,15 @@ const ValuePropositionDropshipping = () => {
                 for international use. Complete protection for your business.
               </h3>
               <p className="text-lg text-muted-foreground mb-6">
-                For only <span className="text-2xl font-bold text-primary">€79 one-time</span> you arrange all legal 
-                obligations for all your dropshipping stores. No monthly fees, no hassle with lawyers, no risk of fines. 
-                Just all the documents you need, ready to use.
+                Arrange all legal obligations for all your dropshipping stores. No monthly fees, no hassle with lawyers, 
+                no risk of fines. Just all the documents you need, ready to use.
               </p>
               <Button 
                 size="lg" 
                 onClick={() => scrollToSection('pricing')}
                 className="bg-primary hover:bg-primary/90 text-white"
               >
-                Order Now for €79
+                Order Now
               </Button>
               <p className="text-sm text-muted-foreground mt-4">
                 💡 Consider this: one hour with a lawyer already costs more
