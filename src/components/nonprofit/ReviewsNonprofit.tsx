@@ -52,7 +52,6 @@ const ReviewsNonprofit = () => {
                   <div className="border-t pt-4">
                     <p className="font-bold text-foreground">{review.name}</p>
                     <p className="text-sm text-muted-foreground">{review.role}</p>
-                    <p className="text-sm text-primary font-medium">{review.organization}</p>
                   </div>
                 </CardContent>
               </Card>
