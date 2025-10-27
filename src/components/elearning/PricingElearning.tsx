@@ -40,11 +40,8 @@ const PricingElearning = () => {
               {/* What's included */}
               <div className="space-y-4">
               {[
-                "Complete Course Terms & Conditions",
                 "GDPR-Compliant Privacy Policy for Students",
-                "Refund & Cancellation Policy",
                 "Intellectual Property Protection Policy",
-                "Instructor Agreement Terms",
                 "Certificate & Accreditation Policy",
                 "Cookie & Tracking Policy",
                 "Implementation Guide with Step-by-Step Instructions",
