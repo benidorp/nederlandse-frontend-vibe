@@ -42,23 +42,23 @@ const ValuePropositionElearning = () => {
                 <div className="p-8">
                   <div className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-accent text-primary-foreground px-4 py-2 rounded-full mb-6 shadow-lg">
                     <Shield className="w-5 h-5" />
-                    <span className="font-semibold">Over Mij</span>
+                    <span className="font-semibold">About Me</span>
                   </div>
                   <h3 className="text-3xl font-bold mb-4 text-foreground">
                     Nicole Henderson
                   </h3>
                   <p className="text-lg font-semibold text-primary mb-4">
-                    Gespecialiseerd in Wetgeving voor Educatieve Platforms
+                    Specialized in Legal Compliance for Educational Platforms
                   </p>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    Als juridisch specialist in digitaal onderwijs en e-learning begrijp ik de unieke uitdagingen 
-                    waarmee educatieve platforms worden geconfronteerd. Van eigendomsrechten van cursussen tot 
-                    bescherming van studentgegevens, van terugbetalingsbeleid tot instructeursovereenkomsten - 
-                    ik heb een compleet juridisch pakket samengesteld dat al uw behoeften dekt.
+                    As a legal specialist in digital education and e-learning, I understand the unique challenges 
+                    that educational platforms face. From course ownership rights to student data protection, 
+                    from refund policies to instructor agreements - I have compiled a complete legal package 
+                    that covers all your needs.
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
-                    Dit pakket wordt gebruikt door educatieve platforms in meer dan 30 landen en biedt volledige 
-                    juridische bescherming volgens de laatste wetgeving, inclusief GDPR-compliance.
+                    This package is used by educational platforms in more than 30 countries and provides complete 
+                    legal protection according to the latest legislation, including GDPR compliance.
                   </p>
                   <div className="mt-6 flex flex-wrap gap-4">
                     <div className="flex items-center gap-2">
@@ -67,11 +67,11 @@ const ValuePropositionElearning = () => {
                     </div>
                     <div className="flex items-center gap-2">
                       <CheckCircle2 className="w-5 h-5 text-primary" />
-                      <span className="text-sm font-medium">30+ Landen</span>
+                      <span className="text-sm font-medium">30+ Countries</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <CheckCircle2 className="w-5 h-5 text-primary" />
-                      <span className="text-sm font-medium">10+ Jaar Ervaring</span>
+                      <span className="text-sm font-medium">10+ Years Experience</span>
                     </div>
                   </div>
                 </div>
