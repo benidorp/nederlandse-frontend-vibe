@@ -14,7 +14,7 @@ const includedItems = [
 
 const PricingDropshipping = () => {
   return (
-    <section id="pricing" className="py-20 bg-primary/5">
+    <section id="pricing" className="py-20 bg-gradient-to-b from-secondary/5 to-accent/5">
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">Pricing</Badge>
@@ -44,8 +44,8 @@ const PricingDropshipping = () => {
               <div className="space-y-3">
                 {includedItems.map((item, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <div className="h-5 w-5 rounded-full bg-red-600 flex items-center justify-center flex-shrink-0">
-                      <Check className="h-3 w-3 text-white" />
+                    <div className="h-6 w-6 rounded-full bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center flex-shrink-0 shadow-sm">
+                      <Check className="h-3.5 w-3.5 text-primary-foreground" />
                     </div>
                     <span className="text-foreground">{item}</span>
                   </div>

@@ -13,7 +13,7 @@ const scrollToSection = (id: string) => {
 
 const ValuePropositionDropshipping = () => {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-gradient-to-b from-background to-accent/5">
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">Professional Legal Documents for Dropshipping Businesses</Badge>
@@ -80,7 +80,7 @@ const ValuePropositionDropshipping = () => {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex gap-3">
-                <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-1 drop-shadow-sm" />
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">GDPR Privacy Policy</h4>
                   <p className="text-sm text-muted-foreground">
@@ -139,10 +139,10 @@ const ValuePropositionDropshipping = () => {
 
         {/* Benefits Grid */}
         <div className="grid md:grid-cols-3 gap-6 mb-12">
-          <Card className="text-center">
+          <Card className="text-center bg-card/80 backdrop-blur">
             <CardHeader>
-              <div className="mx-auto mb-4 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
-                <Clock className="h-6 w-6 text-primary" />
+              <div className="mx-auto mb-4 h-14 w-14 rounded-xl bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center shadow-md">
+                <Clock className="h-7 w-7 text-primary-foreground" />
               </div>
               <CardTitle>Ready in Minutes</CardTitle>
             </CardHeader>
@@ -153,10 +153,10 @@ const ValuePropositionDropshipping = () => {
             </CardContent>
           </Card>
 
-          <Card className="text-center">
+          <Card className="text-center bg-card/80 backdrop-blur">
             <CardHeader>
-              <div className="mx-auto mb-4 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
-                <FileText className="h-6 w-6 text-primary" />
+              <div className="mx-auto mb-4 h-14 w-14 rounded-xl bg-gradient-to-br from-secondary to-secondary/60 flex items-center justify-center shadow-md">
+                <FileText className="h-7 w-7 text-secondary-foreground" />
               </div>
               <CardTitle>For All Your Stores</CardTitle>
             </CardHeader>
@@ -167,10 +167,10 @@ const ValuePropositionDropshipping = () => {
             </CardContent>
           </Card>
 
-          <Card className="text-center">
+          <Card className="text-center bg-card/80 backdrop-blur">
             <CardHeader>
-              <div className="mx-auto mb-4 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
-                <Globe className="h-6 w-6 text-primary" />
+              <div className="mx-auto mb-4 h-14 w-14 rounded-xl bg-gradient-to-br from-accent to-accent/60 flex items-center justify-center shadow-md">
+                <Globe className="h-7 w-7 text-accent-foreground" />
               </div>
               <CardTitle>International Use</CardTitle>
             </CardHeader>
@@ -184,7 +184,7 @@ const ValuePropositionDropshipping = () => {
         </div>
 
         {/* CTA Card */}
-        <Card className="bg-primary/5 border-primary/20">
+        <Card className="bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20 shadow-lg">
           <CardContent className="pt-6">
             <div className="text-center">
               <h3 className="text-2xl font-bold text-foreground mb-4">

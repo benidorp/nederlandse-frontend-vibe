@@ -37,7 +37,7 @@ const services = [
 
 const ServicesDropshipping = () => {
   return (
-    <section id="services" className="py-20 bg-primary/5">
+    <section id="services" className="py-20 bg-gradient-to-b from-primary/5 to-secondary/5">
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">What's Included</Badge>
@@ -53,10 +53,10 @@ const ServicesDropshipping = () => {
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
+              <Card key={index} className="hover:shadow-lg transition-shadow bg-card/80 backdrop-blur">
                 <CardHeader>
-                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                    <Icon className="h-6 w-6 text-primary" />
+                  <div className="h-14 w-14 rounded-xl bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center mb-4 shadow-md">
+                    <Icon className="h-7 w-7 text-primary-foreground" />
                   </div>
                   <CardTitle className="text-xl">{service.title}</CardTitle>
                 </CardHeader>
