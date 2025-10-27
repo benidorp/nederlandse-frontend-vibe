@@ -29,10 +29,10 @@ const Ecommerce = () => {
           <ValuePropositionEcommerce />
           <ServicesEcommerce />
           <BlogPostsEcommerce />
-          <EcommerceQA />
           <PricingEcommerce />
           <ReviewsEcommerce />
           <FAQEcommerce />
+          <EcommerceQA />
         </main>
         <FooterEN />
       </div>

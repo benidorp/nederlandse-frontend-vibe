@@ -842,7 +842,7 @@ const EcommerceQA = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               E-Commerce & Online Business Questions
             </h2>
-            <Accordion type="single" collapsible className="space-y-4">
+            <Accordion type="single" collapsible className="space-y-4 columns-1">
               {allQuestions.map((item, index) => (
                 <AccordionItem 
                   key={index} 
