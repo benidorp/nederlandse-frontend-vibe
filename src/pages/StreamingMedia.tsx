@@ -3,7 +3,6 @@ import HeaderEN from "@/components/en/HeaderEN";
 import HeroStreamingMedia from "@/components/streaming-media/HeroStreamingMedia";
 import ValuePropositionStreamingMedia from "@/components/streaming-media/ValuePropositionStreamingMedia";
 import ServicesStreamingMedia from "@/components/streaming-media/ServicesStreamingMedia";
-import StreamingMediaQA from "@/components/streaming-media/StreamingMediaQA";
 import PricingStreamingMedia from "@/components/streaming-media/PricingStreamingMedia";
 import ReviewsStreamingMedia from "@/components/streaming-media/ReviewsStreamingMedia";
 import FAQStreamingMedia from "@/components/streaming-media/FAQStreamingMedia";
@@ -30,7 +29,6 @@ const StreamingMedia = () => {
           <HeroStreamingMedia />
           <ValuePropositionStreamingMedia />
           <ServicesStreamingMedia />
-          <StreamingMediaQA />
           <PricingStreamingMedia />
           <ReviewsStreamingMedia />
           <FAQStreamingMedia />
