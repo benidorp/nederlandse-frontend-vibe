@@ -5,6 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
+import { reviewWebsiteQuestions } from "./ReviewWebsiteQA";
 
 const faqs = [
   {
@@ -66,6 +67,23 @@ const FAQComparisonReview = () => {
               </AccordionContent>
             </AccordionItem>
           ))}
+
+          {/* Review & Comparison Website Questions */}
+          <AccordionItem value="website-questions" className="border-2 border-primary/20 rounded-lg px-6 bg-card shadow-md">
+            <AccordionTrigger className="text-lg font-semibold hover:text-primary">
+              Review & Comparison Website Questions
+            </AccordionTrigger>
+            <AccordionContent className="text-muted-foreground pb-6">
+              <div className="space-y-8 whitespace-pre-line">
+                {reviewWebsiteQuestions.map((item, idx) => (
+                  <div key={idx} className="border-b border-border/50 pb-6 last:border-0">
+                    <h3 className="font-semibold text-foreground mb-3">{item.question}</h3>
+                    <div className="text-sm leading-relaxed">{item.answer}</div>
+                  </div>
+                ))}
+              </div>
+            </AccordionContent>
+          </AccordionItem>
         </Accordion>
       </div>
     </section>
