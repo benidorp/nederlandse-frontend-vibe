@@ -13,6 +13,7 @@ import Ecommerce from "./pages/Ecommerce";
 import OnlineShop from "./pages/OnlineShop";
 import Dropshipping from "./pages/Dropshipping";
 import Elearning from "./pages/Elearning";
+import Nonprofit from "./pages/Nonprofit";
 import LanguageDetector from "./components/LanguageDetector";
 import NotFound from "./pages/NotFound";
 
@@ -37,6 +38,7 @@ const App = () => (
           <Route path="/webshop-online-business-legal-protection-terms-privacy-policy-cookie-policy-gdpr-compliance" element={<OnlineShop />} />
           <Route path="/dropshipping-business-legal-protection-terms-conditions-privacy-policy-supplier-agreement-refund-policy" element={<Dropshipping />} />
           <Route path="/elearning-platform-legal-documents-terms-privacy-policy-gdpr-compliance" element={<Elearning />} />
+          <Route path="/nonprofit-charity-legal-documents-donation-terms-privacy-policy" element={<Nonprofit />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
