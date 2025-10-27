@@ -1,4 +1,5 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { startingQuestions, ownersQuestions } from "./NonprofitQA";
 
 const FAQNonprofit = () => {
   const faqs = [
@@ -23,7 +24,7 @@ const FAQNonprofit = () => {
   return (
     <section className="py-20 bg-gradient-to-b from-primary/5 to-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               Frequently Asked Questions
@@ -48,6 +49,23 @@ const FAQNonprofit = () => {
                 </AccordionContent>
               </AccordionItem>
             ))}
+
+            {/* Non-Profit Questions */}
+            <AccordionItem value="all-nonprofit-questions" className="border-2 border-primary/20 rounded-lg px-6 bg-card shadow-md">
+              <AccordionTrigger className="text-lg font-semibold hover:text-primary">
+                Non-Profit & Charity Website Questions
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground pb-6">
+                <div className="space-y-8 whitespace-pre-line">
+                  {[...startingQuestions, ...ownersQuestions].map((item, index) => (
+                    <article key={index} className="space-y-2">
+                      <h2 className="text-xl md:text-2xl font-semibold text-foreground">{item.question}</h2>
+                      <p className="text-muted-foreground">{item.answer}</p>
+                    </article>
+                  ))}
+                </div>
+              </AccordionContent>
+            </AccordionItem>
           </Accordion>
         </div>
       </div>
