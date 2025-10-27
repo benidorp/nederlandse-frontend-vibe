@@ -171,10 +171,10 @@ const FAQStreamingMedia = () => {
         </Accordion>
 
         <Accordion type="single" collapsible className="w-full space-y-4 mt-8">
-          {/* Streaming Website Vragen */}
+          {/* Streaming Website Questions */}
           <AccordionItem value="streaming-questions" className="border-2 border-primary/20 rounded-lg px-6 bg-card shadow-md">
             <AccordionTrigger className="text-lg font-semibold hover:text-primary">
-              Streaming Website Vragen
+              Streaming Website Questions
             </AccordionTrigger>
             <AccordionContent className="text-muted-foreground pb-6">
               <div className="max-w-3xl mx-auto space-y-8">

@@ -1,411 +1,405 @@
 export const advancedQuestions = [
   {
-    question: "1. Hoe kan ik mijn streaming website sneller maken?",
-    answer: "De snelheid van een streaming website is cruciaal voor gebruikerstevredenheid en SEO. Begin met het optimaliseren van je video's door ze te comprimeren zonder kwaliteitsverlies, bijvoorbeeld via tools zoals HandBrake of FFmpeg. Gebruik een Content Delivery Network (CDN) zoals Cloudflare, Akamai of BunnyCDN om content wereldwijd sneller te laden. Implementeer caching voor statische assets en minimaliseer scripts en stylesheets. Zorg dat je hosting voldoende bandbreedte biedt en dat video's via adaptive streaming zoals HLS of DASH worden geleverd om buffering te voorkomen. Test regelmatig met tools zoals Google PageSpeed Insights of GTmetrix."
+    question: "1. How can I make my streaming website faster?",
+    answer: "The speed of a streaming website is crucial for user satisfaction and SEO. Start by optimizing your videos by compressing them without quality loss, for example via tools like HandBrake or FFmpeg. Use a Content Delivery Network (CDN) like Cloudflare, Akamai, or BunnyCDN to load content faster worldwide. Implement caching for static assets and minimize scripts and stylesheets. Ensure your hosting provides sufficient bandwidth and that videos are delivered via adaptive streaming like HLS or DASH to prevent buffering. Test regularly with tools like Google PageSpeed Insights or GTmetrix."
   },
   {
-    question: "2. Wat is de beste hosting voor een streaming website?",
-    answer: "Voor streaming websites is het belangrijk dat de hosting hoge bandbreedte, lage latency en schaalbaarheid biedt. VPS of dedicated servers zijn ideaal als je veel video's hebt en hoge bezoekersaantallen verwacht. Voor grotere sites kan cloud hosting zoals AWS, Google Cloud of DigitalOcean handig zijn vanwege schaalbare storage en CDN-integratie. Belangrijke factoren zijn: SSD-opslag voor snelle toegang, voldoende CPU en RAM voor video encoding, en een betrouwbaar netwerk met hoge uptime. Vergeet ook back-ups en monitoring niet."
+    question: "2. What is the best hosting for a streaming website?",
+    answer: "For streaming websites, it's important that hosting provides high bandwidth, low latency, and scalability. VPS or dedicated servers are ideal if you have many videos and expect high visitor numbers. For larger sites, cloud hosting like AWS, Google Cloud, or DigitalOcean can be useful due to scalable storage and CDN integration. Important factors are: SSD storage for fast access, sufficient CPU and RAM for video encoding, and a reliable network with high uptime. Don't forget backups and monitoring."
   },
   {
-    question: "3. Hoe kan ik video's beschermen tegen downloaden?",
-    answer: "Bescherming tegen downloaden is essentieel om auteursrechten te respecteren en content exclusief te houden. Digital Rights Management (DRM) zoals Widevine, FairPlay of PlayReady kan voorkomen dat gebruikers video's opslaan. Streaming via HLS/DASH maakt het moeilijk om de video als één bestand te downloaden. Voeg watermerken toe aan video's om ongeoorloofd delen te ontmoedigen. Controleer regelmatig of er content wordt gelekt en overweeg tokenized URL's of tijdelijke links die na een korte tijd verlopen."
+    question: "3. How can I protect videos against downloading?",
+    answer: "Protection against downloading is essential to respect copyrights and keep content exclusive. Digital Rights Management (DRM) like Widevine, FairPlay, or PlayReady can prevent users from saving videos. Streaming via HLS/DASH makes it difficult to download the video as a single file. Add watermarks to videos to discourage unauthorized sharing. Regularly check if content is being leaked and consider tokenized URLs or temporary links that expire after a short time."
   },
   {
-    question: "4. Hoe voeg ik betaalde content toe aan mijn streaming website?",
-    answer: "Betaalde content kan via verschillende modellen: abonnement, pay-per-view of eenmalige aankoop. Gebruik een paywall of membership plugin zoals MemberPress of Restrict Content Pro. Koppel deze aan een betrouwbare betalingsgateway zoals Stripe, PayPal of Mollie. Zorg dat je SSL-certificaten hebt voor veilige betalingen en dat je facturatie- en abonneesysteem gebruiksvriendelijk is. Je kunt ook content tiering aanbieden (bijvoorbeeld basis vs premium) om de omzet te verhogen."
+    question: "4. How do I add paid content to my streaming website?",
+    answer: "Paid content can be offered via various models: subscription, pay-per-view, or one-time purchase. Use a paywall or membership plugin like MemberPress or Restrict Content Pro. Connect this to a reliable payment gateway like Stripe, PayPal, or Mollie. Ensure you have SSL certificates for secure payments and that your billing and subscription system is user-friendly. You can also offer content tiering (for example, basic vs premium) to increase revenue."
   },
   {
-    question: "5. Wat zijn de beste video formats voor web streaming?",
-    answer: "MP4 met H.264 codec is wereldwijd compatibel en biedt een goede balans tussen kwaliteit en bestandsgrootte. Voor moderne browsers en adaptive streaming zijn WebM, HLS en DASH aan te raden, omdat ze variabele kwaliteit kunnen leveren op basis van de internetverbinding van de gebruiker. Voor mobiele gebruikers is HLS het meest betrouwbaar. Optimaliseer ook bitrate, frame rate en resolutie zodat video's soepel afspelen zonder te veel bandbreedte te gebruiken."
+    question: "5. What are the best video formats for web streaming?",
+    answer: "MP4 with H.264 codec is globally compatible and offers a good balance between quality and file size. For modern browsers and adaptive streaming, WebM, HLS, and DASH are recommended, as they can deliver variable quality based on the user's internet connection. For mobile users, HLS is most reliable. Also optimize bitrate, frame rate, and resolution so videos play smoothly without using too much bandwidth."
   },
   {
-    question: "6. Hoe kan ik mijn streaming website mobielvriendelijk maken?",
-    answer: "Responsive design is cruciaal. Gebruik frameworks zoals Bootstrap of TailwindCSS om layouts automatisch aan te passen aan verschillende schermformaten. Zorg dat de video player mobielvriendelijk is en gebruik adaptive streaming zodat video's bij langzamere verbindingen niet bufferen. Minimaliseer zware scripts en advertenties die de laadtijd vertragen. Test je website op verschillende apparaten en browsers, bijvoorbeeld met BrowserStack of Google Mobile-Friendly Test."
+    question: "6. How can I make my streaming website mobile-friendly?",
+    answer: "Responsive design is crucial. Use frameworks like Bootstrap or TailwindCSS to automatically adjust layouts to different screen sizes. Ensure the video player is mobile-friendly and use adaptive streaming so videos don't buffer on slower connections. Minimize heavy scripts and ads that slow down loading time. Test your website on different devices and browsers, for example with BrowserStack or Google Mobile-Friendly Test."
   },
   {
-    question: "7. Welke SEO-strategieën werken voor streaming websites?",
-    answer: "Optimaliseer videotitels, descriptions en meta tags voor zoekmachines. Voeg schema markup voor video's toe zodat Google previews kan tonen in zoekresultaten. Zorg voor snelle laadtijden, goede interne linking en een XML sitemap die video's bevat. Creëer content rondom keywords die gebruikers zoeken en gebruik transcripties voor betere indexering. Vergeet niet backlinks en social shares om autoriteit te vergroten."
+    question: "7. Which SEO strategies work for streaming websites?",
+    answer: "Optimize video titles, descriptions, and meta tags for search engines. Add schema markup for videos so Google can show previews in search results. Ensure fast loading times, good internal linking, and an XML sitemap that includes videos. Create content around keywords that users search for and use transcriptions for better indexing. Don't forget backlinks and social shares to increase authority."
   },
   {
-    question: "8. Hoe kan ik advertenties integreren in mijn streaming website?",
-    answer: "Video advertenties kunnen via VAST/VPAID of platforms zoals Google Ad Manager worden geïmplementeerd. Je kunt pre-roll, mid-roll en post-roll ads gebruiken. Zorg dat advertenties de user experience niet verstoren; teveel of te lange advertenties kunnen kijkers wegjagen. Overweeg ook native ads of banner ads naast de video player voor extra inkomsten. Analytics tools helpen bij het meten van advertentieprestaties."
+    question: "8. How can I integrate ads into my streaming website?",
+    answer: "Video ads can be implemented via VAST/VPAID or platforms like Google Ad Manager. You can use pre-roll, mid-roll, and post-roll ads. Ensure ads don't disrupt the user experience; too many or too long ads can drive viewers away. Also consider native ads or banner ads next to the video player for additional revenue. Analytics tools help measure ad performance."
   },
   {
-    question: "9. Hoe analyseer ik bezoekersgedrag op mijn streaming website?",
-    answer: "Gebruik Google Analytics 4 of Matomo om sessies, kijktijd, bounce rate en conversies te volgen. Voeg event tracking toe om te zien welke video's worden gestart, gepauzeerd of voltooid. Tools zoals Hotjar of Crazy Egg helpen bij heatmaps en scroll tracking, zodat je kunt zien waar gebruikers afhaken. Analyseer trends over tijd en pas contentstrategie aan op basis van data."
+    question: "9. How do I analyze visitor behavior on my streaming website?",
+    answer: "Use Google Analytics 4 or Matomo to track sessions, watch time, bounce rate, and conversions. Add event tracking to see which videos are started, paused, or completed. Tools like Hotjar or Crazy Egg help with heatmaps and scroll tracking, so you can see where users drop off. Analyze trends over time and adjust content strategy based on data."
   },
   {
-    question: "10. Hoe kan ik mijn streaming website veilig houden?",
-    answer: "Beveiliging is essentieel bij digitale content. Gebruik altijd HTTPS, sterke wachtwoorden en twee-factor-authenticatie. Houd CMS, plugins en scripts up-to-date. Implementeer een Web Application Firewall (WAF) en DDoS-bescherming. Maak regelmatige back-ups van je database en video's. Monitor logbestanden en verdachte activiteiten en overweeg een beveiligingsplugin zoals Wordfence of Sucuri."
+    question: "10. How can I keep my streaming website secure?",
+    answer: "Security is essential with digital content. Always use HTTPS, strong passwords, and two-factor authentication. Keep CMS, plugins, and scripts up-to-date. Implement a Web Application Firewall (WAF) and DDoS protection. Make regular backups of your database and videos. Monitor log files and suspicious activities and consider a security plugin like Wordfence or Sucuri."
   },
   {
-    question: "11. Hoe voeg ik live streaming toe aan mijn website?",
-    answer: "Live streaming kan via platforms zoals OBS Studio, Vimeo Live, Wowza of Mux. Embed de stream op je website met HLS of DASH, zodat kijkers realtime toegang hebben. Zorg voor een stabiele server en hoge uploadbandbreedte. Voeg interactieve functies toe zoals live chat en polls om engagement te vergroten. Test altijd vooraf met een kleine groep om latency en buffering te controleren."
+    question: "11. How do I add live streaming to my website?",
+    answer: "Live streaming can be done via platforms like OBS Studio, Vimeo Live, Wowza, or Mux. Embed the stream on your website with HLS or DASH, so viewers have real-time access. Ensure a stable server and high upload bandwidth. Add interactive features like live chat and polls to increase engagement. Always test beforehand with a small group to check latency and buffering."
   },
   {
-    question: "12. Wat is het verschil tussen VOD en live streaming?",
-    answer: "VOD (Video on Demand) is vooraf opgenomen content die kijkers op elk moment kunnen bekijken. Live streaming wordt in real-time uitgezonden en heeft hogere technische vereisten zoals lage latency en hogere servercapaciteit. VOD biedt flexibele monetization zoals pay-per-view of abonnementen, terwijl live streaming vaak wordt gebruikt voor evenementen, webinars of sportwedstrijden. Beide kunnen gecombineerd worden voor maximale engagement."
+    question: "12. What is the difference between VOD and live streaming?",
+    answer: "VOD (Video on Demand) is pre-recorded content that viewers can watch at any time. Live streaming is broadcast in real-time and has higher technical requirements like low latency and higher server capacity. VOD offers flexible monetization like pay-per-view or subscriptions, while live streaming is often used for events, webinars, or sports matches. Both can be combined for maximum engagement."
   },
   {
-    question: "13. Hoe kan ik kijkersbetrokkenheid verhogen?",
-    answer: "Betrokkenheid kun je verhogen door interactieve functies toe te voegen: live chat, polls, reacties, en content aanbevelingen. Personaliseer content via aanbevelingsalgoritmes gebaseerd op kijktijd en voorkeuren. Voeg push-notificaties toe voor nieuwe content. Zorg voor een snelle, gebruiksvriendelijke interface en minimaliseer advertenties die het kijkplezier verstoren. Analyseer gedrag met analytics-tools om strategieën continu aan te passen."
+    question: "13. How can I increase viewer engagement?",
+    answer: "You can increase engagement by adding interactive features: live chat, polls, reactions, and content recommendations. Personalize content via recommendation algorithms based on watch time and preferences. Add push notifications for new content. Ensure a fast, user-friendly interface and minimize ads that disrupt viewing pleasure. Analyze behavior with analytics tools to continuously adjust strategies."
   },
   {
-    question: "14. Hoe beheer ik grote hoeveelheden video content?",
-    answer: "Gebruik een Content Management System (CMS) dat speciaal geschikt is voor video, zoals WordPress met een video plugin of Kaltura. Organiseer video's in categorieën, tags en afspeellijsten. Gebruik metadata en transcripties voor SEO en zoekfunctionaliteit. Overweeg cloudopslag en CDN-integratie voor schaalbaarheid en snelle toegang wereldwijd."
+    question: "14. How do I manage large amounts of video content?",
+    answer: "Use a Content Management System (CMS) specifically suitable for video, like WordPress with a video plugin or Kaltura. Organize videos in categories, tags, and playlists. Use metadata and transcriptions for SEO and search functionality. Consider cloud storage and CDN integration for scalability and fast access worldwide."
   },
   {
-    question: "15. Hoe kan ik mijn streaming website monetizen?",
-    answer: "Populaire monetization methoden zijn: Abonnementen (maandelijkse of jaarlijkse toegang tot content), Pay-per-view (betaal per bekeken video of evenement), Advertenties (video ads, banner ads, native ads), Sponsoring (partnerschappen met merken), en Affiliate marketing (promotie van gerelateerde producten). Combineer meerdere methoden om inkomsten te maximaliseren en gebruik analytics om prestaties te volgen."
+    question: "15. How can I monetize my streaming website?",
+    answer: "Popular monetization methods are: Subscriptions (monthly or yearly access to content), Pay-per-view (pay per watched video or event), Ads (video ads, banner ads, native ads), Sponsorship (partnerships with brands), and Affiliate marketing (promotion of related products). Combine multiple methods to maximize revenue and use analytics to track performance."
   },
   {
-    question: "16. Welke analytics zijn belangrijk voor streaming websites?",
-    answer: "Belangrijke metrics zijn: kijktijd, bounce rate, CTR op content, conversies van abonnementen, geografische data, en terugkerende bezoekers. Event tracking helpt te begrijpen waar gebruikers afhaken of welke content populair is. Gebruik dashboards in Google Analytics, Matomo of Hotjar om trends visueel te volgen en strategieën aan te passen."
+    question: "16. Which analytics are important for streaming websites?",
+    answer: "Important metrics are: watch time, bounce rate, CTR on content, subscription conversions, geographic data, and returning visitors. Event tracking helps understand where users drop off or which content is popular. Use dashboards in Google Analytics, Matomo, or Hotjar to visually track trends and adjust strategies."
   },
   {
-    question: "17. Hoe optimaliseer ik video voor SEO?",
-    answer: "Voeg videotranscripties toe zodat zoekmachines de inhoud kunnen lezen. Optimaliseer titels, descriptions, tags en categorieën met relevante keywords. Gebruik schema.org/videoObject markup zodat Google rich snippets toont. Zorg voor snelle laadtijden en mobile-friendly design. Link intern naar relevante content en promoot video's via sociale media voor backlinks."
+    question: "17. How do I optimize video for SEO?",
+    answer: "Add video transcriptions so search engines can read the content. Optimize titles, descriptions, tags, and categories with relevant keywords. Use schema.org/videoObject markup so Google shows rich snippets. Ensure fast loading times and mobile-friendly design. Link internally to relevant content and promote videos via social media for backlinks."
   },
   {
-    question: "18. Hoe kan ik meerdere video-resoluties aanbieden?",
-    answer: "Gebruik adaptive streaming protocollen zoals HLS of DASH die automatisch de resolutie aanpassen aan de internetverbinding van de gebruiker. Bied standaard resoluties zoals 480p, 720p, 1080p en eventueel 4K aan. Optimaliseer encoders voor efficiëntie en lage buffering. Geef gebruikers de optie om handmatig resolutie te kiezen indien gewenst."
+    question: "18. How can I offer multiple video resolutions?",
+    answer: "Use adaptive streaming protocols like HLS or DASH that automatically adjust resolution to the user's internet connection. Offer standard resolutions like 480p, 720p, 1080p, and possibly 4K. Optimize encoders for efficiency and low buffering. Give users the option to manually choose resolution if desired."
   },
   {
-    question: "19. Wat zijn de juridische vereisten voor een streaming website?",
-    answer: "Zorg voor auteursrechten op alle content of de juiste licenties. Voeg een privacybeleid en cookieverklaring toe, conform AVG/GDPR. Voor betaalde content moet je duidelijke gebruikersvoorwaarden hebben. Vermijd content die inbreuk maakt op merken of auteursrechten. Bij internationale streaming moet je ook lokale wetgeving in andere landen controleren."
+    question: "19. What are the legal requirements for a streaming website?",
+    answer: "Ensure copyrights on all content or the proper licenses. Add a privacy policy and cookie statement, complying with GDPR. For paid content, you must have clear terms of service. Avoid content that infringes on trademarks or copyrights. With international streaming, you must also check local legislation in other countries."
   },
   {
-    question: "20. Hoe kan ik mijn streaming website tegen DDoS aanvallen beschermen?",
-    answer: "Gebruik een Content Delivery Network (CDN) zoals Cloudflare of Akamai dat DDoS-bescherming biedt. Implementeer een Web Application Firewall (WAF) om kwaadaardig verkeer te filteren. Monitor netwerkverkeer en stel alerts in bij verdachte activiteit. Zorg voor redundante servers en backups, zodat je website blijft werken bij een aanval."
+    question: "20. How can I protect my streaming website against DDoS attacks?",
+    answer: "Use a Content Delivery Network (CDN) like Cloudflare or Akamai that offers DDoS protection. Implement a Web Application Firewall (WAF) to filter malicious traffic. Monitor network traffic and set alerts for suspicious activity. Ensure redundant servers and backups, so your website keeps working during an attack."
   },
   {
-    question: "21. Hoe kan ik gebruikersregistratie op mijn streaming website implementeren?",
-    answer: "Gebruik een membership plugin of een geïntegreerd CMS-systeem. Zorg voor veilige registratie met e-mailverificatie en optionele social login (Google, Facebook). Voeg rolbeheer toe, zodat verschillende gebruikers toegang krijgen tot specifieke content. Beveilig wachtwoorden met hashing en bied wachtwoordherstel aan. Analyseer registratiegegevens voor segmentatie en personalisatie van content."
+    question: "21. How can I implement user registration on my streaming website?",
+    answer: "Use a membership plugin or an integrated CMS system. Ensure secure registration with email verification and optional social login (Google, Facebook). Add role management, so different users get access to specific content. Secure passwords with hashing and offer password recovery. Analyze registration data for segmentation and personalization of content."
   },
   {
-    question: "22. Welke video players zijn het beste voor streaming websites?",
-    answer: "Populaire keuzes zijn Video.js, Plyr, JW Player, Flowplayer en HTML5 native player. Belangrijke functies zijn: adaptive streaming (HLS/DASH), responsive design, ondertitels, DRM-ondersteuning en advertentie-integratie. Kies een player die goed integreert met je CMS en analytics. Test op verschillende apparaten en browsers voor optimale compatibiliteit."
+    question: "22. Which video players are best for streaming websites?",
+    answer: "Popular choices are Video.js, Plyr, JW Player, Flowplayer, and HTML5 native player. Important features are: adaptive streaming (HLS/DASH), responsive design, subtitles, DRM support, and ad integration. Choose a player that integrates well with your CMS and analytics. Test on different devices and browsers for optimal compatibility."
   },
   {
-    question: "23. Hoe kan ik ondertitels en meerdere talen toevoegen?",
-    answer: "Gebruik WebVTT of SRT bestanden voor ondertiteling. Voeg een optie toe in je video player om de taal te wisselen. Voor meerdere talen kun je aparte audio tracks aanbieden of AI-ondersteunde transcriptie gebruiken. Dit verhoogt toegankelijkheid, engagement en SEO via tekstindexering. Controleer de synchronisatie van ondertitels regelmatig."
+    question: "23. How can I add subtitles and multiple languages?",
+    answer: "Use WebVTT or SRT files for subtitling. Add an option in your video player to switch language. For multiple languages, you can offer separate audio tracks or use AI-assisted transcription. This increases accessibility, engagement, and SEO via text indexing. Regularly check subtitle synchronization."
   },
   {
-    question: "24. Hoe kan ik push-notificaties voor nieuwe content instellen?",
-    answer: "Gebruik diensten zoals OneSignal, Firebase Cloud Messaging of PWA-notificaties. Bied bezoekers een opt-in aan en segmenteer notificaties per interesse of locatie. Houd frequentie laag om afmeldingen te voorkomen en link de notificatie direct naar de relevante video. Meet click-through rates om effectiviteit te verbeteren."
+    question: "24. How can I set up push notifications for new content?",
+    answer: "Use services like OneSignal, Firebase Cloud Messaging, or PWA notifications. Offer visitors an opt-in and segment notifications by interest or location. Keep frequency low to prevent unsubscribes and link the notification directly to the relevant video. Measure click-through rates to improve effectiveness."
   },
   {
-    question: "25. Wat zijn de beste manieren om video content te comprimeren?",
-    answer: "Gebruik H.264 of H.265 codecs, en pas bitrate en resolutie aan op basis van doelapparaten. Tools zoals HandBrake, FFmpeg of Adobe Media Encoder helpen bij batch-compressie. Vermijd overcompressie om kwaliteitsverlies te minimaliseren. Combineer met adaptive streaming zodat de server verschillende resoluties aanbiedt afhankelijk van de netwerkconditie."
+    question: "25. What are the best ways to compress video content?",
+    answer: "Use H.264 or H.265 codecs, and adjust bitrate and resolution based on target devices. Tools like HandBrake, FFmpeg, or Adobe Media Encoder help with batch compression. Avoid over-compression to minimize quality loss. Combine with adaptive streaming so the server offers different resolutions depending on network conditions."
   },
   {
-    question: "26. Hoe integreer ik social sharing in mijn streaming website?",
-    answer: "Voeg share buttons toe voor Facebook, Twitter, LinkedIn, WhatsApp en TikTok. Overweeg embed code zodat gebruikers video's kunnen delen op hun eigen websites. Gebruik OG-tags en Twitter Cards voor optimale previews. Dit vergroot zichtbaarheid, verhoogt traffic en ondersteunt SEO via social signals."
+    question: "26. How do I integrate social sharing into my streaming website?",
+    answer: "Add share buttons for Facebook, Twitter, LinkedIn, WhatsApp, and TikTok. Consider embed code so users can share videos on their own websites. Use OG tags and Twitter Cards for optimal previews. This increases visibility, boosts traffic, and supports SEO via social signals."
   },
   {
-    question: "27. Hoe kan ik video analytics implementeren?",
-    answer: "Gebruik Google Analytics events, Matomo, Vimeo Analytics of JW Player Analytics. Meet start-, pause-, stop- en completion rates. Analyseer kijkduur per video, drop-offs en geografische data. Combineer met A/B-tests om content en UX te verbeteren. Maak dashboards voor realtime monitoring en trends."
+    question: "27. How can I implement video analytics?",
+    answer: "Use Google Analytics events, Matomo, Vimeo Analytics, or JW Player Analytics. Measure start, pause, stop, and completion rates. Analyze watch duration per video, drop-offs, and geographic data. Combine with A/B tests to improve content and UX. Create dashboards for real-time monitoring and trends."
   },
   {
-    question: "28. Hoe kan ik affiliate marketing toepassen op mijn streaming website?",
-    answer: "Promoot gerelateerde producten of diensten via video of banners. Gebruik affiliate links en tracking via tools zoals ThirstyAffiliates of Pretty Links. Kies partners die relevant zijn voor je doelgroep. Meet CTR en conversies om strategie te optimaliseren. Voeg duidelijke disclosures toe om transparantie te waarborgen."
+    question: "28. How can I apply affiliate marketing on my streaming website?",
+    answer: "Promote related products or services via video or banners. Use affiliate links and tracking via tools like ThirstyAffiliates or Pretty Links. Choose partners relevant to your target audience. Measure CTR and conversions to optimize strategy. Add clear disclosures to ensure transparency."
   },
   {
-    question: "29. Hoe kan ik verschillende gebruikersrollen beheren?",
-    answer: "Implementeer role-based access control (RBAC) in je CMS of membership plugin. Rollen kunnen bestaan uit administrator, content creator, betalende gebruiker, gast. Beperk toegang tot premium content of backend functionaliteiten. Dit verhoogt veiligheid en maakt beheer van grote sites overzichtelijk."
+    question: "29. How can I manage different user roles?",
+    answer: "Implement role-based access control (RBAC) in your CMS or membership plugin. Roles can consist of administrator, content creator, paying user, guest. Restrict access to premium content or backend functionalities. This increases security and makes managing large sites clear."
   },
   {
-    question: "30. Hoe integreer ik live chat voor kijkersinteractie?",
-    answer: "Gebruik tools zoals Tawk.to, LiveChat, Streamlabs Chat of CometChat. Embed de chat naast de video player. Moderatie is belangrijk om spam en ongepaste berichten te voorkomen. Voeg functies toe zoals emoticons, polls en Q&A om engagement te verhogen. Analyseer chatactiviteiten om populaire onderwerpen te identificeren."
+    question: "30. How do I integrate live chat for viewer interaction?",
+    answer: "Use tools like Tawk.to, LiveChat, Streamlabs Chat, or CometChat. Embed the chat next to the video player. Moderation is important to prevent spam and inappropriate messages. Add features like emoticons, polls, and Q&A to increase engagement. Analyze chat activities to identify popular topics."
   },
   {
-    question: "31. Hoe kan ik video's automatisch publiceren?",
-    answer: "Gebruik een CMS met scheduled publishing of een plugin zoals WP Scheduled Posts. Automatiseer contentdistributie op basis van kalender, tijdzones of seizoensgebonden content. Combineer met social media auto-posting tools voor maximale exposure. Zorg voor metadata en SEO-optimalisatie bij elke video."
+    question: "31. How can I automatically publish videos?",
+    answer: "Use a CMS with scheduled publishing or a plugin like WP Scheduled Posts. Automate content distribution based on calendar, time zones, or seasonal content. Combine with social media auto-posting tools for maximum exposure. Ensure metadata and SEO optimization with each video."
   },
   {
-    question: "32. Hoe kan ik gebruikersfeedback verzamelen?",
-    answer: "Voeg feedbackformulieren, polls of ratings toe bij video's. Gebruik tools zoals Google Forms, Typeform of Hotjar. Analyseer feedback voor contentverbetering en UX-optimalisatie. Reageer actief op suggesties om gebruikersbinding te verhogen en loyaliteit op te bouwen."
+    question: "32. How can I collect user feedback?",
+    answer: "Add feedback forms, polls, or ratings to videos. Use tools like Google Forms, Typeform, or Hotjar. Analyze feedback for content improvement and UX optimization. Respond actively to suggestions to increase user engagement and build loyalty."
   },
   {
-    question: "33. Hoe kan ik mijn streaming website internationaal maken?",
-    answer: "Implementeer multi-language ondersteuning en vertaal content met plugins of vertaalservices. Gebruik CDN's voor snelle toegang wereldwijd. Pas valuta en betalingsopties aan per regio. Houd rekening met lokale wetgeving en auteursrechten. Voeg geolocatiefunctionaliteit toe om content automatisch aan te passen aan het land van de gebruiker."
+    question: "33. How can I make my streaming website international?",
+    answer: "Implement multi-language support and translate content with plugins or translation services. Use CDNs for fast access worldwide. Adjust currency and payment options per region. Consider local legislation and copyrights. Add geolocation functionality to automatically adjust content to the user's country."
   },
   {
-    question: "34. Hoe kan ik video content categoriseren en taggen?",
-    answer: "Maak categorieën en tags voor genres, thema's, acteurs, en topics. Gebruik een CMS dat tags en afspeellijsten ondersteunt. Dit helpt gebruikers sneller content te vinden en verbetert SEO door interne linking. Overweeg automatische tagging via AI-tools zoals Google Video AI of Amazon Rekognition voor grote libraries."
+    question: "34. How can I categorize and tag video content?",
+    answer: "Create categories and tags for genres, themes, actors, and topics. Use a CMS that supports tags and playlists. This helps users find content faster and improves SEO through internal linking. Consider automatic tagging via AI tools like Google Video AI or Amazon Rekognition for large libraries."
   },
   {
-    question: "35. Hoe kan ik abonnementen beheren en vernieuwen?",
-    answer: "Gebruik een membership plugin of betaalplatform dat abonnementen automatisch verlengt. Stuur herinneringen en bevestigingen per e-mail. Voeg opties toe voor upgrading/downgrading van plannen. Integreer betalingsgateways die automatische incasso ondersteunen zoals Stripe, PayPal of Mollie. Monitor churn rate en analyseer waarom gebruikers opzeggen."
+    question: "35. How can I manage and renew subscriptions?",
+    answer: "Use a membership plugin or payment platform that automatically renews subscriptions. Send reminders and confirmations via email. Add options for upgrading/downgrading plans. Integrate payment gateways that support automatic billing like Stripe, PayPal, or Mollie. Monitor churn rate and analyze why users cancel."
   },
   {
-    question: "36. Hoe kan ik video previews of trailers toevoegen?",
-    answer: "Maak korte trailerclips van 10–30 seconden die nieuwsgierigheid wekken. Plaats ze als autoplay previews op de contentpagina of als hover previews. Zorg dat trailers lichtgewicht zijn om laadtijd te minimaliseren. Voeg call-to-action toe zoals \"Bekijk volledige video\" om conversies te verhogen."
+    question: "36. How can I add video previews or trailers?",
+    answer: "Make short trailer clips of 10–30 seconds that spark curiosity. Place them as autoplay previews on the content page or as hover previews. Ensure trailers are lightweight to minimize loading time. Add call-to-action like \"Watch full video\" to increase conversions."
   },
   {
-    question: "37. Hoe kan ik live evenementen promoten?",
-    answer: "Gebruik social media, e-mailmarketing, push-notificaties en banners op je website. Maak een countdown timer en teasers. Overweeg samenwerkingen met influencers of partners voor extra bereik. Meet engagement via registraties en kijkersdata om toekomstige campagnes te optimaliseren."
+    question: "37. How can I promote live events?",
+    answer: "Use social media, email marketing, push notifications, and banners on your website. Create a countdown timer and teasers. Consider collaborations with influencers or partners for extra reach. Measure engagement via registrations and viewer data to optimize future campaigns."
   },
   {
-    question: "38. Hoe kan ik copyright-inbreuk voorkomen?",
-    answer: "Verifieer dat je alle rechten hebt op video's of gebruik royalty-free content. Voeg watermerken en DRM toe. Implementeer automatische content-ID systemen of gebruik YouTube Content ID als je YouTube-integratie hebt. Monitor regelmatig externe sites voor ongeoorloofd delen van je content."
+    question: "38. How can I prevent copyright infringement?",
+    answer: "Verify that you have all rights to videos or use royalty-free content. Add watermarks and DRM. Implement automatic content-ID systems or use YouTube Content ID if you have YouTube integration. Regularly monitor external sites for unauthorized sharing of your content."
   },
   {
-    question: "39. Hoe kan ik video's embedden van andere platforms?",
-    answer: "Gebruik embed codes van YouTube, Vimeo of Wistia. Pas grootte en responsive instellingen aan. Voeg SEO-optimalisatie toe aan titels en descriptions. Vermijd autoplay en te veel advertenties om UX te behouden. Zorg dat embed content legaal gebruikt wordt en geen auteursrechten schendt."
+    question: "39. How can I embed videos from other platforms?",
+    answer: "Use embed codes from YouTube, Vimeo, or Wistia. Adjust size and responsive settings. Add SEO optimization to titles and descriptions. Avoid autoplay and too many ads to maintain UX. Ensure embedded content is legally used and doesn't violate copyrights."
   },
   {
-    question: "40. Hoe kan ik push notifications segmenteren?",
-    answer: "Segmenteer gebruikers op basis van interesses, locatie, kijkgedrag of abonnementstype. Gebruik tools zoals OneSignal of Firebase. Stuur relevante notificaties met gepersonaliseerde content. Analyseer open rates en clicks om segmentatie te verbeteren. Vermijd overmatig notificeren om afmeldingen te minimaliseren."
+    question: "40. How can I segment push notifications?",
+    answer: "Segment users based on interests, location, viewing behavior, or subscription type. Use tools like OneSignal or Firebase. Send relevant notifications with personalized content. Analyze open rates and clicks to improve segmentation. Avoid excessive notifications to minimize unsubscribes."
   },
   {
-    question: "41. Hoe kan ik content personaliseren voor gebruikers?",
-    answer: "Gebruik recommendation engines of AI-algoritmes die kijken naar kijkgeschiedenis, voorkeuren en ratings. Bied aanbevolen video's op de homepage of in sidebars. Segmenteer content op basis van leeftijd, locatie of interesses. Personalisatie verhoogt engagement, kijktijd en loyaliteit. Tools zoals Google Recommendations AI of Algolia kunnen hierbij helpen."
+    question: "41. How can I personalize content for users?",
+    answer: "Use recommendation engines or AI algorithms that look at viewing history, preferences, and ratings. Offer recommended videos on the homepage or in sidebars. Segment content based on age, location, or interests. Personalization increases engagement, watch time, and loyalty. Tools like Google Recommendations AI or Algolia can help."
   },
   {
-    question: "42. Hoe kan ik content modereren?",
-    answer: "Implementeer moderatie tools voor reacties, live chat en uploads. Gebruik automatische filters voor spam en ongepaste woorden. Stel moderators aan voor live toezicht. Voor user-generated content kun je een goedkeuringsworkflow instellen. Dit houdt je platform veilig en aantrekkelijk voor alle gebruikers."
+    question: "42. How can I moderate content?",
+    answer: "Implement moderation tools for comments, live chat, and uploads. Use automatic filters for spam and inappropriate words. Appoint moderators for live supervision. For user-generated content, you can set up an approval workflow. This keeps your platform safe and attractive for all users."
   },
   {
-    question: "43. Hoe kan ik push-notificaties integreren in mobiele apps?",
-    answer: "Gebruik Firebase Cloud Messaging (FCM) of OneSignal. Zorg voor opt-in via app permissions en segmenteer notificaties op basis van gebruikersgedrag. Integreer met je CMS of backend voor automatische triggers bij nieuwe content of live events. Analyseer open rates en click-through rates voor optimalisatie."
+    question: "43. How can I integrate push notifications into mobile apps?",
+    answer: "Use Firebase Cloud Messaging (FCM) or OneSignal. Ensure opt-in via app permissions and segment notifications based on user behavior. Integrate with your CMS or backend for automatic triggers on new content or live events. Analyze open rates and click-through rates for optimization."
   },
   {
-    question: "44. Hoe kan ik content automatisch taggen met AI?",
-    answer: "Gebruik video recognition AI-tools zoals Google Video AI, Amazon Rekognition of Microsoft Video Indexer. Ze kunnen objecten, gezichten, teksten en scènes herkennen en automatisch tags genereren. Dit versnelt contentbeheer, verbetert zoekfunctionaliteit en SEO. Controleer altijd automatisch gegenereerde tags voor kwaliteit."
+    question: "44. How can I automatically tag content with AI?",
+    answer: "Use video recognition AI tools like Google Video AI, Amazon Rekognition, or Microsoft Video Indexer. They can recognize objects, faces, texts, and scenes and automatically generate tags. This speeds up content management, improves search functionality and SEO. Always check automatically generated tags for quality."
   },
   {
-    question: "45. Hoe kan ik video content archiveren?",
-    answer: "Gebruik cloud storage of dedicated servers met backups en redundantie. Categoriseer content op datum, genre of populariteit. Voor oudere video's kun je lagere resoluties opslaan om opslagkosten te verlagen. Zorg voor beveiliging en encryptie, vooral bij premium content. Automatische archivering helpt bij schaalbaarheid."
+    question: "45. How can I archive video content?",
+    answer: "Use cloud storage or dedicated servers with backups and redundancy. Categorize content by date, genre, or popularity. For older videos, you can save lower resolutions to reduce storage costs. Ensure security and encryption, especially for premium content. Automatic archiving helps with scalability."
   },
   {
-    question: "46. Hoe kan ik video advertenties targeten?",
-    answer: "Gebruik ad networks die targeting ondersteunen op basis van locatie, demografie of interesses. Platforms zoals Google Ad Manager, SpotX of VAST/VPAID ads bieden uitgebreide targetingmogelijkheden. Analyseer prestaties met metrics zoals CTR en completion rate om advertenties te optimaliseren. Combineer met A/B-testing voor hogere ROI."
+    question: "46. How can I target video ads?",
+    answer: "Use ad networks that support targeting based on location, demographics, or interests. Platforms like Google Ad Manager, SpotX, or VAST/VPAID ads offer extensive targeting options. Analyze performance with metrics like CTR and completion rate to optimize ads. Combine with A/B testing for higher ROI."
   },
   {
-    question: "47. Hoe kan ik livestreams opnemen en hergebruiken?",
-    answer: "Configureer je streaming server om live video automatisch op te nemen. Tools zoals OBS of Wowza ondersteunen opname. Sla opgenomen streams op als VOD voor hergebruik op je website. Voeg metadata en transcripties toe voor SEO. Dit vergroot de waarde van live content en biedt extra monetization kansen."
+    question: "47. How can I record and reuse live streams?",
+    answer: "Configure your streaming server to automatically record live video. Tools like OBS or Wowza support recording. Save recorded streams as VOD for reuse on your website. Add metadata and transcriptions for SEO. This increases the value of live content and offers additional monetization opportunities."
   },
   {
-    question: "48. Hoe kan ik video's veilig opslaan?",
-    answer: "Gebruik encrypted cloud storage of dedicated servers met sterke toegangscontroles. Maak regelmatig backups en implementeer redundantie. Voor premium content kun je tokenized URLs of tijdelijke downloadlinks gebruiken. Monitor toegang en downloadpogingen om beveiligingsproblemen vroegtijdig te detecteren."
+    question: "48. How can I securely store videos?",
+    answer: "Use encrypted cloud storage or dedicated servers with strong access controls. Make regular backups and implement redundancy. For premium content, you can use tokenized URLs or temporary download links. Monitor access and download attempts to detect security issues early."
   },
   {
-    question: "49. Hoe kan ik abonnementen promoten?",
-    answer: "Gebruik call-to-actions op de website en binnen de video player. Stuur e-mailcampagnes met speciale aanbiedingen en gebruik retargeting ads. Bied tijdelijke kortingen of gratis proefperiodes. Analyseer conversiepercentages en optimaliseer je promoties op basis van gebruikersgedrag. Gamification, zoals badges voor trouwe kijkers, kan ook helpen."
+    question: "49. How can I promote subscriptions?",
+    answer: "Use call-to-actions on the website and within the video player. Send email campaigns with special offers and use retargeting ads. Offer temporary discounts or free trial periods. Analyze conversion rates and optimize your promotions based on user behavior. Gamification, like badges for loyal viewers, can also help."
   },
   {
-    question: "50. Hoe kan ik video analytics integreren in mijn CMS?",
-    answer: "Gebruik plugins of APIs van platforms zoals Google Analytics, JW Player Analytics of Matomo. Implementeer event tracking voor play, pause, completion en drop-offs. Maak dashboards in je CMS voor realtime monitoring. Combineer data met marketingtools voor inzicht in engagement en conversie. Analyseer trends om contentstrategie aan te passen."
+    question: "50. How can I integrate video analytics into my CMS?",
+    answer: "Use plugins or APIs from platforms like Google Analytics, JW Player Analytics, or Matomo. Implement event tracking for play, pause, completion, and drop-offs. Create dashboards in your CMS for real-time monitoring. Combine data with marketing tools for insights into engagement and conversion. Analyze trends to adjust content strategy."
   },
   {
-    question: "51. Hoe kan ik video previews automatisch genereren?",
-    answer: "Gebruik video editing scripts of AI-tools zoals FFmpeg of Adobe Media Encoder om korte previews te genereren. Automatiseer previewcreatie bij upload of publicatie. Voeg call-to-action toe en zorg dat previews lichte bestanden zijn voor snelle laadtijd. Previews verhogen kijkersbetrokkenheid en conversie."
+    question: "51. How can I automatically generate video previews?",
+    answer: "Use video editing scripts or AI tools like FFmpeg or Adobe Media Encoder to generate short previews. Automate preview creation on upload or publication. Add call-to-action and ensure previews are lightweight files for fast loading time. Previews increase viewer engagement and conversion."
   },
   {
-    question: "52. Hoe kan ik video content cureren?",
-    answer: "Organiseer content via afspeellijsten, categorieën en tags. Gebruik algoritmes voor aanbevelingen of handmatige curatie door contentmanagers. Voeg featured content of trending secties toe. Curatie verbetert gebruikerservaring, verhoogt kijktijd en stimuleert terugkerende bezoekers."
+    question: "52. How can I curate video content?",
+    answer: "Organize content via playlists, categories, and tags. Use algorithms for recommendations or manual curation by content managers. Add featured content or trending sections. Curation improves user experience, increases watch time, and encourages returning visitors."
   },
   {
-    question: "53. Hoe kan ik verschillende betalingsmodellen aanbieden?",
-    answer: "Bied abonnementen, pay-per-view, donaties of bundels aan. Integreer betrouwbare gateways zoals Stripe, PayPal, Mollie. Voeg flexibele opties toe voor upgrade/downgrade. Monitor inkomsten en churn rates om modellen aan te passen. Experimenteer met freemium-modellen om nieuwe gebruikers aan te trekken."
+    question: "53. How can I offer different payment models?",
+    answer: "Offer subscriptions, pay-per-view, donations, or bundles. Integrate reliable gateways like Stripe, PayPal, Mollie. Add flexible options for upgrade/downgrade. Monitor revenue and churn rates to adjust models. Experiment with freemium models to attract new users."
   },
   {
-    question: "54. Hoe kan ik gebruikersloyaliteit verhogen?",
-    answer: "Bied premium content, exclusieve events of beloningen aan voor trouwe kijkers. Gebruik gamification zoals badges, punten of leaderboards. Stuur gepersonaliseerde e-mails en notificaties. Analyseer kijkgedrag en pas content aan voor terugkerende gebruikers. Loyaliteit verhoogt engagement en inkomsten."
+    question: "54. How can I increase user loyalty?",
+    answer: "Offer premium content, exclusive events, or rewards for loyal viewers. Use gamification like badges, points, or leaderboards. Send personalized emails and notifications. Analyze viewing behavior and adjust content for returning users. Loyalty increases engagement and revenue."
   },
   {
-    question: "55. Hoe kan ik video content automatisch transcriberen?",
-    answer: "Gebruik AI-tools zoals Google Speech-to-Text, Amazon Transcribe of Sonix. Automatiseer transcriptie bij upload of live stream. Controleer kwaliteit en voeg correcties toe indien nodig. Transcripties verbeteren SEO, toegankelijkheid en gebruikerservaring, vooral voor meertalige content."
+    question: "55. How can I automatically transcribe video content?",
+    answer: "Use AI tools like Google Speech-to-Text, Amazon Transcribe, or Sonix. Automate transcription on upload or live stream. Check quality and add corrections if needed. Transcriptions improve SEO, accessibility, and user experience, especially for multilingual content."
   },
   {
-    question: "56. Hoe kan ik premium content beveiligen?",
-    answer: "Gebruik DRM-systemen, tokenized URL's en watermerken. Verberg premium content achter een paywall of abonnement. Beperk downloads en streaming naar geregistreerde gebruikers. Monitor toegangspogingen en implementeer waarschuwingen bij verdachte activiteit. Regelmatige audits helpen beveiligingsrisico's minimaliseren."
+    question: "56. How can I secure premium content?",
+    answer: "Use DRM systems, tokenized URLs, and watermarks. Hide premium content behind a paywall or subscription. Restrict downloads and streaming to registered users. Monitor access attempts and implement warnings for suspicious activity. Regular audits help minimize security risks."
   },
   {
-    question: "57. Hoe kan ik live chat modereren?",
-    answer: "Gebruik automatische filters voor spam en ongepaste taal. Wijs moderators aan en implementeer een goedkeuringsworkflow. Voeg functies toe zoals mute, ban of report buttons. Analyseer chatgedrag om communityrichtlijnen te verbeteren. Dit houdt de chat veilig en zorgt voor positieve interactie."
+    question: "57. How can I moderate live chat?",
+    answer: "Use automatic filters for spam and inappropriate language. Appoint moderators and implement an approval workflow. Add features like mute, ban, or report buttons. Analyze chat behavior to improve community guidelines. This keeps the chat safe and ensures positive interaction."
   },
   {
-    question: "58. Hoe kan ik video SEO verbeteren met structured data?",
-    answer: "Gebruik schema.org/videoObject markup met velden zoals titel, description, thumbnail, uploadDate en duration. Voeg transcripties toe en implementeer sitemaps voor video. Zorg voor snelle laadtijden en responsive player. Rich snippets verhogen zichtbaarheid in Google Search en verbeteren CTR."
+    question: "58. How can I improve video SEO with structured data?",
+    answer: "Use schema.org/videoObject markup with fields like title, description, thumbnail, uploadDate, and duration. Add transcriptions and implement sitemaps for video. Ensure fast loading times and responsive player. Rich snippets increase visibility in Google Search and improve CTR."
   },
   {
-    question: "59. Hoe kan ik content aanbevelingen personaliseren?",
-    answer: "Gebruik AI-algoritmes of machine learning om content aan te bevelen op basis van kijktijd, interesses en eerdere interacties. Bied dynamische secties op de homepage en player aan. Test aanbevelingen via A/B-tests voor effectiviteit. Personaliseerde aanbevelingen verhogen engagement, kijktijd en abonnementen."
+    question: "59. How can I personalize content recommendations?",
+    answer: "Use AI algorithms or machine learning to recommend content based on watch time, interests, and previous interactions. Offer dynamic sections on the homepage and player. Test recommendations via A/B tests for effectiveness. Personalized recommendations increase engagement, watch time, and subscriptions."
   },
   {
-    question: "60. Hoe kan ik mijn streaming website schaalbaar maken?",
-    answer: "Implementeer cloud hosting en CDN's voor wereldwijde toegang. Gebruik load balancing en automatische server scaling. Optimaliseer video compressie en adaptive streaming voor verschillende netwerkcondities. Houd monitoring en alerts bij voor serverbelasting. Schaalbaarheid is cruciaal voor hoge traffic en toekomstige groei."
+    question: "60. How can I make my streaming website scalable?",
+    answer: "Implement cloud hosting and CDNs for worldwide access. Use load balancing and automatic server scaling. Optimize video compression and adaptive streaming for different network conditions. Keep monitoring and alerts for server load. Scalability is crucial for high traffic and future growth."
   }
 ];
 
 export const startingQuestions = [
   {
-    question: "1. Wat is een streaming website?",
-    answer: "Een streaming website biedt video- of audio-inhoud die direct via internet kan worden bekeken of beluisterd zonder te hoeven downloaden. Voorbeelden zijn Netflix, YouTube en Spotify. Je kunt VOD (Video on Demand) of live streaming aanbieden. Het is belangrijk te begrijpen welke content je wilt aanbieden en welke doelgroep je wilt bereiken."
+    question: "1. What is a streaming website?",
+    answer: "A streaming website offers video or audio content that can be viewed or listened to directly via the internet without having to download. Examples are Netflix, YouTube, and Spotify. You can offer VOD (Video on Demand) or live streaming. It's important to understand what content you want to offer and which target audience you want to reach."
   },
   {
-    question: "2. Welke soorten streaming content kan ik aanbieden?",
-    answer: "Je kunt aanbieden: films, series, webinars, live evenementen, tutorials, podcasts of user-generated content. Voor beginners is het handig te starten met niche content, zoals educatieve video's of entertainment voor een specifieke doelgroep, omdat dit makkelijker te beheren en promoten is."
+    question: "2. What types of streaming content can I offer?",
+    answer: "You can offer: movies, series, webinars, live events, tutorials, podcasts, or user-generated content. For beginners, it's useful to start with niche content, like educational videos or entertainment for a specific target audience, as this is easier to manage and promote."
   },
   {
-    question: "3. Heb ik een domeinnaam nodig voor een streaming website?",
-    answer: "Ja, een domeinnaam is essentieel voor branding en SEO. Kies een korte, herkenbare naam die past bij je niche. Gebruik een betrouwbare registrar zoals GoDaddy, Namecheap of TransIP en overweeg een .com, .nl of een niche-specifieke extensie zoals .tv."
+    question: "3. Do I need a domain name for a streaming website?",
+    answer: "Yes, a domain name is essential for branding and SEO. Choose a short, recognizable name that fits your niche. Use a reliable registrar like GoDaddy, Namecheap, or TransIP and consider a .com, .nl, or a niche-specific extension like .tv."
   },
   {
-    question: "4. Welke hosting is geschikt voor beginners?",
-    answer: "Voor beginners zijn shared hosting of VPS-opties vaak voldoende. Kies een hostingprovider met goede snelheid, SSL-certificaat en voldoende opslag voor video's. Voor kleine sites kan Cloudflare CDN helpen bij snellere laadtijden en betere veiligheid."
+    question: "4. Which hosting is suitable for beginners?",
+    answer: "For beginners, shared hosting or VPS options are often sufficient. Choose a hosting provider with good speed, SSL certificate, and sufficient storage for videos. For small sites, Cloudflare CDN can help with faster loading times and better security."
   },
   {
-    question: "5. Hoe kan ik video uploaden naar mijn website?",
-    answer: "Gebruik een CMS zoals WordPress met een video plugin, of platforms zoals Vimeo, Wistia of YouTube voor externe hosting. Embed video's op je website om opslag en bandbreedte te besparen. Zorg voor correcte formaten zoals MP4 en optimale resoluties."
+    question: "5. How can I upload video to my website?",
+    answer: "Use a CMS like WordPress with a video plugin, or platforms like Vimeo, Wistia, or YouTube for external hosting. Embed videos on your website to save storage and bandwidth. Ensure correct formats like MP4 and optimal resolutions."
   },
   {
-    question: "6. Hoe maak ik mijn streaming website mobielvriendelijk?",
-    answer: "Gebruik responsive thema's of page builders. Test video players op verschillende schermformaten. Minimaliseer zware scripts en advertenties. Tools zoals Google Mobile-Friendly Test helpen bij controle. Mobielvriendelijkheid verbetert gebruikerservaring en SEO."
+    question: "6. How do I make my streaming website mobile-friendly?",
+    answer: "Use responsive themes or page builders. Test video players on different screen sizes. Minimize heavy scripts and ads. Tools like Google Mobile-Friendly Test help with checking. Mobile-friendliness improves user experience and SEO."
   },
   {
-    question: "7. Wat is het verschil tussen gratis en betaalde streaming?",
-    answer: "Gratis streaming is vaak ondersteund door advertenties of sponsors. Betaalde streaming kan via abonnementen of pay-per-view. Betaalde content vereist beveiliging, betalingsgateways en vaak een membership plugin. Het kiezen van een model hangt af van je doelgroep en monetizationstrategie."
+    question: "7. What is the difference between free and paid streaming?",
+    answer: "Free streaming is often supported by ads or sponsors. Paid streaming can be via subscriptions or pay-per-view. Paid content requires security, payment gateways, and often a membership plugin. Choosing a model depends on your target audience and monetization strategy."
   },
   {
-    question: "8. Welke video player kan ik gebruiken als beginner?",
-    answer: "Voor beginners zijn Video.js, Plyr of de standaard WordPress player geschikt. Ze zijn eenvoudig te integreren, responsive en hebben basisfunctionaliteiten zoals ondertitels, autoplay en fullscreen. Kies een player die compatibel is met je CMS en hosting."
+    question: "8. Which video player can I use as a beginner?",
+    answer: "For beginners, Video.js, Plyr, or the standard WordPress player are suitable. They're easy to integrate, responsive, and have basic functionalities like subtitles, autoplay, and fullscreen. Choose a player compatible with your CMS and hosting."
   },
   {
-    question: "9. Hoe kan ik video's beschermen tegen downloaden?",
-    answer: "Voor beginners kun je embedden via Vimeo of Wistia, die basisbescherming bieden. Voeg eenvoudige watermerken toe en beperk toegang via membership of login. Volledige DRM is vaak complex, maar eenvoudige beveiligingslagen helpen al om illegaal downloaden te verminderen."
+    question: "9. How can I protect videos against downloading?",
+    answer: "For beginners, you can embed via Vimeo or Wistia, which offer basic protection. Add simple watermarks and restrict access via membership or login. Full DRM is often complex, but simple security layers help reduce illegal downloading."
   },
   {
-    question: "10. Hoe kan ik mijn streaming website sneller maken?",
-    answer: "Gebruik CDN's, caching plugins, geoptimaliseerde video's en lichte thema's. Comprimeer bestanden met tools zoals HandBrake. Minimaliseer zware scripts en afbeeldingen. Test regelmatig met Google PageSpeed Insights en pas aan waar nodig."
+    question: "10. How can I make my streaming website faster?",
+    answer: "Use CDNs, caching plugins, optimized videos, and lightweight themes. Compress files with tools like HandBrake. Minimize heavy scripts and images. Test regularly with Google PageSpeed Insights and adjust where needed."
   },
   {
-    question: "11. Hoe kan ik beginnersvriendelijke content organiseren?",
-    answer: "Gebruik categorieën, afspeellijsten en tags om video's logisch te ordenen. Voeg zoekfunctionaliteit toe en maak een overzichtelijke homepage. Dit helpt gebruikers snel content te vinden en verbetert SEO."
+    question: "11. How can I organize beginner-friendly content?",
+    answer: "Use categories, playlists, and tags to logically order videos. Add search functionality and create a clear homepage. This helps users quickly find content and improves SEO."
   },
   {
-    question: "12. Hoe voeg ik een contactformulier toe?",
-    answer: "Gebruik plugins zoals Contact Form 7 of WPForms. Voeg velden toe voor naam, e-mail en bericht. Beveilig met CAPTCHA tegen spam. Contactformulieren helpen bij gebruikersfeedback en klantenservice."
+    question: "12. How do I add a contact form?",
+    answer: "Use plugins like Contact Form 7 or WPForms. Add fields for name, email, and message. Secure with CAPTCHA against spam. Contact forms help with user feedback and customer service."
   },
   {
-    question: "13. Hoe kan ik een basis SEO-strategie toepassen?",
-    answer: "Optimaliseer titels, meta descriptions en URL's. Voeg video transcripties toe. Gebruik keywords in content en interne links. Creëer een XML sitemap en koppel deze aan Google Search Console. Kleine SEO-stappen vergroten zichtbaarheid."
+    question: "13. How can I apply a basic SEO strategy?",
+    answer: "Optimize titles, meta descriptions, and URLs. Add video transcriptions. Use keywords in content and internal links. Create an XML sitemap and connect it to Google Search Console. Small SEO steps increase visibility."
   },
   {
-    question: "14. Hoe kan ik sociale media integreren?",
-    answer: "Voeg share buttons, follow buttons en embed feeds toe. Gebruik social media om nieuwe content te promoten. Dit helpt bij trafficgeneratie en merkbekendheid."
+    question: "14. How can I integrate social media?",
+    answer: "Add share buttons, follow buttons, and embed feeds. Use social media to promote new content. This helps with traffic generation and brand awareness."
   },
   {
-    question: "15. Hoe kan ik reacties toevoegen aan video's?",
-    answer: "Gebruik plugins voor Reacties of Disqus. Zorg voor moderatie om spam en ongepaste inhoud te filteren. Interactie verhoogt engagement en houdt gebruikers langer op je website."
+    question: "15. How can I add comments to videos?",
+    answer: "Use plugins for Comments or Disqus. Ensure moderation to filter spam and inappropriate content. Interaction increases engagement and keeps users on your website longer."
   },
   {
-    question: "16. Hoe kan ik gratis video hosting gebruiken?",
-    answer: "Platforms zoals YouTube of Vimeo Free laten je video's hosten zonder serverbelasting. Embed video's op je website. Let op dat sommige gratis platforms advertenties tonen of beperkingen hebben op kwaliteit."
+    question: "16. How can I use free video hosting?",
+    answer: "Platforms like YouTube or Vimeo Free let you host videos without server load. Embed videos on your website. Note that some free platforms show ads or have limitations on quality."
   },
   {
-    question: "17. Hoe kan ik live streaming toevoegen als beginner?",
-    answer: "Gebruik OBS Studio voor eenvoudige live streaming naar YouTube, Facebook of Vimeo. Embed de live stream op je website. Begin met kleine evenementen om ervaring op te doen en test de verbinding en latency."
+    question: "17. How can I add live streaming as a beginner?",
+    answer: "Use OBS Studio for simple live streaming to YouTube, Facebook, or Vimeo. Embed the live stream on your website. Start with small events to gain experience and test connection and latency."
   },
   {
-    question: "18. Hoe kan ik een simpele betalingsoptie toevoegen?",
-    answer: "Gebruik PayPal buttons of Stripe Checkout. Voor beginners zijn dit makkelijke manieren om toegang te verkopen tot premium content. Voeg een simpele paywall toe en test betalingen grondig."
+    question: "18. How can I add a simple payment option?",
+    answer: "Use PayPal buttons or Stripe Checkout. For beginners, these are easy ways to sell access to premium content. Add a simple paywall and test payments thoroughly."
   },
   {
-    question: "19. Hoe kan ik analytics bijhouden?",
-    answer: "Integreer Google Analytics en eventueel YouTube/Vimeo analytics. Meet kijkers, sessies, kijktijd en bounce rate. Begin eenvoudig met basismetrics en breid later uit naarmate je meer ervaring krijgt."
+    question: "19. How can I track analytics?",
+    answer: "Integrate Google Analytics and possibly YouTube/Vimeo analytics. Measure viewers, sessions, watch time, and bounce rate. Start simple with basic metrics and expand later as you gain more experience."
   },
   {
-    question: "20. Hoe kan ik beginnersfouten bij streaming vermijden?",
-    answer: "Start klein, focus op mobielvriendelijkheid, snelle laadtijden en eenvoudige navigatie. Test video's op verschillende apparaten. Houd hosting en bandbreedte in de gaten. Luister naar gebruikersfeedback en pas de website stap voor stap aan."
+    question: "20. How can I avoid beginner mistakes with streaming?",
+    answer: "Start small, focus on mobile-friendliness, fast loading times, and simple navigation. Test videos on different devices. Keep an eye on hosting and bandwidth. Listen to user feedback and adjust the website step by step."
   },
   {
-    question: "21. Hoe kan ik mijn eerste video uploaden?",
-    answer: "Gebruik het CMS of platform van je keuze (bijv. WordPress + plugin). Optimaliseer de video voor web (MP4, compressie). Voeg titel, description en tags toe voor SEO. Test de video op desktop en mobiel."
+    question: "21. How can I upload my first video?",
+    answer: "Use the CMS or platform of your choice (e.g., WordPress + plugin). Optimize the video for web (MP4, compression). Add title, description, and tags for SEO. Test the video on desktop and mobile."
   },
   {
-    question: "22. Hoe kan ik een homepage ontwerpen voor streaming?",
-    answer: "Houd de homepage overzichtelijk: featured video, categorieën, trending content. Voeg duidelijke call-to-actions toe zoals \"Bekijk nu\" of \"Abonneer\". Gebruik een responsive layout en aantrekkelijke visuals."
+    question: "22. How can I design a homepage for streaming?",
+    answer: "Keep the homepage clear: featured video, categories, trending content. Add clear call-to-actions like \"Watch now\" or \"Subscribe\". Use a responsive layout and attractive visuals."
   },
   {
-    question: "23. Hoe kan ik beginnersvriendelijke navigatie maken?",
-    answer: "Gebruik menu's, categorieën en zoekbalken. Vermijd te veel submenus. Plaats populaire video's of aanbevolen content prominent. Dit helpt gebruikers sneller content te vinden en verbetert engagement."
+    question: "23. How can I create beginner-friendly navigation?",
+    answer: "Use menus, categories, and search bars. Avoid too many submenus. Place popular videos or recommended content prominently. This helps users find content faster and improves engagement."
   },
   {
-    question: "24. Hoe kan ik beginnersvriendelijke hosting kiezen?",
-    answer: "Kies een betrouwbare provider met SSL-certificaat, eenvoudige installatie en goede support. Voor kleine sites is shared hosting prima. Controleer bandbreedte en opslag voor video's."
+    question: "24. How can I choose beginner-friendly hosting?",
+    answer: "Choose a reliable provider with SSL certificate, easy installation, and good support. For small sites, shared hosting is fine. Check bandwidth and storage for videos."
   },
   {
-    question: "25. Hoe kan ik beginnersvriendelijke video compressie toepassen?",
-    answer: "Gebruik HandBrake of FFmpeg. Selecteer H.264 codec, verminder bitrate en resolutie tot een goed compromis tussen kwaliteit en bestandsgrootte. Test video's op mobiel en desktop."
+    question: "25. How can I apply beginner-friendly video compression?",
+    answer: "Use HandBrake or FFmpeg. Select H.264 codec, reduce bitrate and resolution to a good compromise between quality and file size. Test videos on mobile and desktop."
   },
   {
-    question: "26. Hoe kan ik gratis templates gebruiken?",
-    answer: "Gebruik WordPress, Wix of Squarespace met gratis thema's. Kies thema's met video-compatibiliteit en responsive design. Pas kleuren en layout aan voor je merk."
+    question: "26. How can I use free templates?",
+    answer: "Use WordPress, Wix, or Squarespace with free themes. Choose themes with video compatibility and responsive design. Adjust colors and layout for your brand."
   },
   {
-    question: "27. Hoe kan ik beginnersvriendelijke video categorieën maken?",
-    answer: "Maak logische categorieën zoals \"Films\", \"Series\", \"Tutorials\". Gebruik tags voor specifieke onderwerpen. Dit helpt bij navigatie en SEO."
+    question: "27. How can I create beginner-friendly video categories?",
+    answer: "Create logical categories like \"Films\", \"Series\", \"Tutorials\". Use tags for specific topics. This helps with navigation and SEO."
   },
   {
-    question: "28. Hoe kan ik beginnersvriendelijke paywalls instellen?",
-    answer: "Gebruik eenvoudige membership plugins zoals Paid Memberships Pro. Beperk toegang tot premium content. Begin met eenvoudige betaalopties zoals PayPal of Stripe."
+    question: "28. How can I set up beginner-friendly paywalls?",
+    answer: "Use simple membership plugins like Paid Memberships Pro. Restrict access to premium content. Start with simple payment options like PayPal or Stripe."
   },
   {
-    question: "29. Hoe kan ik beginnersvriendelijke video embeds gebruiken?",
-    answer: "Gebruik YouTube of Vimeo embed code. Plaats video's in pagina's of posts. Zorg dat de embed responsive is. Voeg titel en description toe voor SEO."
+    question: "29. How can I use beginner-friendly video embeds?",
+    answer: "Use YouTube or Vimeo embed code. Place videos in pages or posts. Ensure the embed is responsive. Add title and description for SEO."
   },
   {
-    question: "30. Hoe kan ik beginnersvriendelijke video previews maken?",
-    answer: "Maak korte previews van 10–20 seconden. Gebruik gratis tools zoals Kapwing of Clipchamp. Plaats previews op de homepage of bij video's. Dit verhoogt kijkersinteresse."
+    question: "30. How can I create beginner-friendly video previews?",
+    answer: "Create short previews of 10–20 seconds. Use free tools like Kapwing or Clipchamp. Place previews on the homepage or with videos. This increases viewer interest."
   },
   {
-    question: "31. Hoe kan ik beginnersvriendelijke live events promoten?",
-    answer: "Gebruik social media, e-mail en banners. Maak een countdown en teasers. Begin met kleine events om ervaring op te doen. Analyseer resultaten om toekomstige promotie te verbeteren."
+    question: "31. How can I promote beginner-friendly live events?",
+    answer: "Use social media, email, and banners. Create a countdown and teasers. Start with small events to gain experience. Analyze results to improve future promotion."
   },
   {
-    question: "32. Hoe kan ik beginnersvriendelijke analytics instellen?",
-    answer: "Gebruik Google Analytics voor basisdata: bezoekers, kijktijd, bounce rate. Voeg events toe voor play, pause en completion. Houd het simpel en bouw later uit."
+    question: "32. How can I set up beginner-friendly analytics?",
+    answer: "Use Google Analytics for basic data: visitors, watch time, bounce rate. Add events for play, pause, and completion. Keep it simple and expand later."
   },
   {
-    question: "33. Hoe kan ik beginnersvriendelijke SEO toepassen?",
-    answer: "Optimaliseer titels, descriptions, URL's en tags. Voeg video transcripties toe. Gebruik XML sitemap en interne links. Begin klein en verbeter stap voor stap."
+    question: "33. How can I apply beginner-friendly SEO?",
+    answer: "Optimize titles, descriptions, URLs, and tags. Add video transcriptions. Use XML sitemap and internal links. Start small and improve step by step."
   },
   {
-    question: "34. Hoe kan ik beginnersvriendelijke gebruikersregistratie toevoegen?",
-    answer: "Gebruik eenvoudige registration forms met e-mail en wachtwoord. Voeg optioneel social login toe. Beveilig met CAPTCHA en e-mailverificatie."
+    question: "34. How can I add beginner-friendly user registration?",
+    answer: "Use simple registration forms with email and password. Add optional social login. Secure with CAPTCHA and email verification."
   },
   {
-    question: "35. Hoe kan ik beginnersvriendelijke commentaarsecties toevoegen?",
-    answer: "Gebruik plugins zoals Disqus of WordPress comments. Voeg moderatie toe. Begin klein en schaal op basis van gebruikersinteractie."
+    question: "35. How can I add beginner-friendly comment sections?",
+    answer: "Use plugins like Disqus or WordPress comments. Add moderation. Start small and scale based on user interaction."
   },
   {
-    question: "36. Hoe kan ik beginnersvriendelijke push-notificaties gebruiken?",
-    answer: "Gebruik OneSignal of Firebase. Vraag opt-in en stuur notificaties bij nieuwe content. Analyseer clicks en pas frequentie aan."
+    question: "36. How can I use beginner-friendly push notifications?",
+    answer: "Use OneSignal or Firebase. Request opt-in and send notifications for new content. Analyze clicks and adjust frequency."
   },
   {
-    question: "37. Hoe kan ik beginnersvriendelijke social sharing implementeren?",
-    answer: "Voeg share buttons toe bij video's. Gebruik OG-tags voor optimale previews. Promoot content via sociale media."
+    question: "37. How can I implement beginner-friendly social sharing?",
+    answer: "Add share buttons to videos. Use OG tags for optimal previews. Promote content via social media."
   },
   {
-    question: "38. Hoe kan ik beginnersvriendelijke video hosting kiezen?",
-    answer: "Begin met Vimeo, YouTube of Wistia. Deze bieden gratis of goedkope hosting en goede embed-opties. Zo bespaar je bandbreedte en complexiteit."
+    question: "38. How can I choose beginner-friendly video hosting?",
+    answer: "Use YouTube, Vimeo, or Wistia for easy embedding and minimal server load. Choose based on features, ads, and costs."
   },
   {
-    question: "39. Hoe kan ik beginnersvriendelijke betalingsgateways gebruiken?",
-    answer: "Gebruik PayPal of Stripe, makkelijk te integreren. Test betalingen en bied eenvoudige instructies voor gebruikers."
+    question: "39. How can I create beginner-friendly video descriptions?",
+    answer: "Write clear, concise descriptions with keywords. Include call-to-action and links. Descriptions help SEO and viewer engagement."
   },
   {
-    question: "40. Hoe kan ik beginnersvriendelijke content promoten?",
-    answer: "Gebruik social media, e-mail marketing en SEO. Creëer teasers en previews. Begin klein en focus op consistente publicatie en branding."
+    question: "40. How can I implement beginner-friendly video tags?",
+    answer: "Use relevant keywords as tags. Add multiple tags per video for better discoverability. Tags improve SEO and categorization."
   }
 ];
-
-const StreamingMediaQA = () => {
-  return null;
-};
-
-export default StreamingMediaQA;
