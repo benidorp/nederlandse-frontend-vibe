@@ -15,22 +15,6 @@ const FAQNonprofit = () => {
       answer: "Each document comes with a comprehensive implementation guide. Simply download the documents, customize them with your organization's details, and add them to your website footer. The guide includes specific instructions for popular website platforms and donation systems."
     },
     {
-      question: "Can I use these for both online and offline fundraising?",
-      answer: "Yes! While optimized for online use, these documents cover all types of fundraising activities including events, direct mail campaigns, major gift programs, and online donations."
-    },
-    {
-      question: "What about tax deductibility information?",
-      answer: "The donation terms include sections for tax deductibility disclosures. You'll need to add your specific tax-exempt status and registration numbers, but the framework is already in place."
-    },
-    {
-      question: "Do these documents protect our volunteers?",
-      answer: "Yes. The volunteer agreement clearly defines roles, responsibilities, and liabilities, protecting both your organization and your volunteers. It includes confidentiality clauses and proper termination procedures."
-    },
-    {
-      question: "How often should I update these documents?",
-      answer: "We recommend reviewing your legal documents annually or when major changes occur in your operations or relevant laws. All updates to the templates are included free for life."
-    },
-    {
       question: "Can I customize these documents for my organization?",
       answer: "Absolutely! The documents are provided in editable format so you can add your organization's name, logo, and specific details. The core legal language remains protected while allowing necessary customization."
     }
