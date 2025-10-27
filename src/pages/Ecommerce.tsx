@@ -1,0 +1,43 @@
+import { Helmet } from "react-helmet";
+import HeaderEN from "@/components/en/HeaderEN";
+import HeroEcommerce from "@/components/ecommerce/HeroEcommerce";
+import ValuePropositionEcommerce from "@/components/ecommerce/ValuePropositionEcommerce";
+import ServicesEcommerce from "@/components/ecommerce/ServicesEcommerce";
+import BlogPostsEcommerce from "@/components/ecommerce/BlogPostsEcommerce";
+import EcommerceQA from "@/components/ecommerce/EcommerceQA";
+import FAQEcommerce from "@/components/ecommerce/FAQEcommerce";
+import PricingEcommerce from "@/components/ecommerce/PricingEcommerce";
+import ReviewsEcommerce from "@/components/ecommerce/ReviewsEcommerce";
+import FooterEN from "@/components/en/FooterEN";
+import GTranslateWidget from "@/components/GTranslateWidget";
+
+const Ecommerce = () => {
+  return (
+    <>
+      <Helmet>
+        <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+        <html lang="en" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://iaee.eu/essential-legal-documents-ecommerce-website-terms-conditions-privacy-policy-return-policy-shipping-policy" />
+      </Helmet>
+      <GTranslateWidget />
+      <div className="min-h-screen">
+        <HeaderEN />
+        <main>
+          <HeroEcommerce />
+          <ValuePropositionEcommerce />
+          <ServicesEcommerce />
+          <BlogPostsEcommerce />
+          <EcommerceQA />
+          <PricingEcommerce />
+          <ReviewsEcommerce />
+          <FAQEcommerce />
+        </main>
+        <FooterEN />
+      </div>
+    </>
+  );
+};
+
+export default Ecommerce;
