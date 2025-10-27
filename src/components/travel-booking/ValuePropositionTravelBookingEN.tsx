@@ -13,8 +13,8 @@ const scrollToSection = (id: string) => {
 
 const ValuePropositionTravelBookingEN = () => {
   return (
-    <section className="py-20 bg-background">
-      <div className="container">
+    <section className="py-20 bg-muted/30">
+      <div className="container max-w-5xl">
         <div className="max-w-4xl mx-auto mb-16">
           <Badge className="mb-4 bg-primary text-primary-foreground">Professional Legal Documents for Travel & Booking Businesses</Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
@@ -112,7 +112,7 @@ const ValuePropositionTravelBookingEN = () => {
           </Card>
 
           {/* Benefits Grid */}
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-3 gap-6 mb-8 max-w-4xl mx-auto">
             <Card className="bg-card border-border">
               <CardContent className="pt-6">
                 <Zap className="h-12 w-12 text-primary mb-4" />
