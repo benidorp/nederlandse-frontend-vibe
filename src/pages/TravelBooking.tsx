@@ -29,7 +29,7 @@ const TravelBooking = () => {
           <HeroTravelBookingEN />
           <ValuePropositionTravelBookingEN />
           <ServicesTravelBookingEN />
-          <BlogPostsTravelBookingEN />
+          
           <TravelBookingQAEN />
           
           <ReviewsEN />
