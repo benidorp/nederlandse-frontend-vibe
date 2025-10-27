@@ -7,13 +7,13 @@ const reviews = [
     name: "Sophie van der Berg",
     role: "Wedding Photographer",
     rating: 5,
-    text: "Als trouwfotograaf had ik professionele juridische documenten nodig voor mijn klanten. Deze templates zijn perfect - de opdrachtsovereenkomst, de modelverklaring en het auteursrecht beschermen mijn werk volledig. De implementatiehandleiding maakte het installeren op mijn website super eenvoudig. Eindelijk kan ik met een gerust hart werken!"
+    text: "As a wedding photographer, I needed professional legal documents for my clients. These templates are perfect - the assignment agreement, model release, and copyright protection fully protect my work. The implementation guide made installing it on my website super easy. Finally, I can work with peace of mind!"
   },
   {
     name: "Mark Jansen",
     role: "Commercial Photographer",
     rating: 5,
-    text: "Voor mijn fotobedrijf zijn deze juridische documenten goud waard. De AVG-compliant privacy policy en cookie policy geven mijn klanten vertrouwen, en de copyright bescherming voorkomt dat mijn foto's zonder toestemming gebruikt worden. Professionele kwaliteit voor een fractie van wat een advocaat zou kosten!"
+    text: "For my photography business, these legal documents are worth gold. The GDPR-compliant privacy policy and cookie policy give my clients confidence, and the copyright protection prevents my photos from being used without permission. Professional quality for a fraction of what a lawyer would cost!"
   }
 ];
 
