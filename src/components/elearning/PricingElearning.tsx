@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Check, Sparkles } from "lucide-react";
+import { Check, Sparkles, AlertTriangle } from "lucide-react";
+import stripeLogo from "@/assets/stripe-logo.svg";
 
 const PricingElearning = () => {
   return (
@@ -29,10 +29,11 @@ const PricingElearning = () => {
                   Most Popular
                 </div>
               </div>
-              <CardTitle className="text-3xl mb-4">E-Learning Legal Package</CardTitle>
-              <div className="text-5xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-2">
-                Contact for Price
+              <div className="mb-4">
+                <span className="text-5xl font-bold text-primary">€79</span>
+                <span className="text-muted-foreground ml-2">one-time</span>
               </div>
+              <CardTitle className="text-2xl">E-Learning Legal Package</CardTitle>
               <p className="text-muted-foreground">One-time payment • Instant access</p>
             </CardHeader>
             <CardContent className="space-y-6 pb-8">
@@ -62,26 +63,38 @@ const PricingElearning = () => {
               </div>
 
               {/* Payment Section */}
-              <div className="pt-6">
-                <Button 
-                  size="lg" 
-                  className="w-full bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all text-lg py-6"
-                  onClick={() => window.location.href = 'mailto:info@iaee.eu?subject=E-Learning Legal Package Bestelling'}
-                >
-                  Bestel Nu - Contact voor Prijs
-                </Button>
-                <p className="text-center text-sm text-muted-foreground mt-4">
-                  📧 We sturen u direct alle informatie en betaalopties
+              <div 
+                className="pt-6 border-t flex justify-center"
+              >
+                <div 
+                  className="[&_stripe-buy-button]:scale-125 [&_stripe-buy-button]:origin-center"
+                  dangerouslySetInnerHTML={{
+                    __html: `<stripe-buy-button
+                      buy-button-id="buy_btn_1SKm3dFXIgtr666GOD7ZP6da"
+                      publishable-key="pk_live_51SK0ndFXIgtr666GrmKudtOsf3HHcaBw06Ei3x8LbGKOYQ3oZeIrmpMpTfoTBJ5c7tPyFfbRC7pugHMC0l6b3ZKP009fgyIrGc"
+                    ></stripe-buy-button>`
+                  }}
+                />
+              </div>
+
+              <div className="flex items-center justify-center gap-2 mt-4">
+                <img src={stripeLogo} alt="Stripe" className="h-5 w-5" />
+                <p className="text-sm font-medium text-muted-foreground">
+                  Secure payment via Stripe • Automatically converted to your local currency
                 </p>
               </div>
 
-              {/* Trust badges */}
-              <div className="pt-6 border-t border-primary/20">
-                <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
-                  <span>✅ Instant Download</span>
-                  <span>🔒 Secure Payment</span>
-                  <span>💯 Money-Back Guarantee</span>
-                  <span>🌍 International Use</span>
+              {/* Warning */}
+              <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-3">
+                <div className="flex gap-2">
+                  <AlertTriangle className="h-4 w-4 text-destructive flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h4 className="font-semibold text-sm text-foreground mb-0.5">Important: No Returns</h4>
+                    <p className="text-xs text-muted-foreground">
+                      Our products cannot be returned and we do not offer a money-back guarantee. 
+                      This makes sense for digital documents that can easily be copied after download.
+                    </p>
+                  </div>
                 </div>
               </div>
             </CardContent>

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { GraduationCap, Shield, CheckCircle } from "lucide-react";
-import nicoleProfile from "@/assets/nicole-profile.jpg";
+import nicoleWorking from "@/assets/nicole-working.png";
 
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
@@ -84,7 +84,7 @@ const HeroElearning = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl blur-2xl"></div>
                 <img 
-                  src={nicoleProfile} 
+                  src={nicoleWorking} 
                   alt="Nicole Henderson - E-Learning Legal Specialist" 
                   className="relative rounded-3xl shadow-2xl w-full h-auto border-4 border-primary/20"
                 />
