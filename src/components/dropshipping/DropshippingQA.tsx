@@ -405,6 +405,46 @@ export const ownersQuestions = [
   {
     question: "How Do I Recover Abandoned Carts in My Dropshipping Store?",
     answer: "Send recovery emails with Klaviyo, use retargeting ads, and simplify checkout to bring back customers."
+  },
+  {
+    question: "What VAT rules apply for international sales within the EU?",
+    answer: "Since July 2021, the One-Stop-Shop (OSS) scheme applies to e-commerce sellers selling to consumers in other EU countries. You must:\n\nCharge VAT in the customer's country once the sales threshold is exceeded (OSS: €10,000 total for EU sales).\n\nReport all EU sales via a single OSS declaration in the Netherlands.\n\nApply the VAT rate of the customer's country."
+  },
+  {
+    question: "What VAT rules apply for sales outside the EU?",
+    answer: "For exports outside the EU, you usually do not charge Dutch VAT, but the customer often pays import VAT and customs duties in their country. Check local rules for each country, as some have thresholds or special e-commerce requirements. Ensure suppliers and shippers are aware of customs documentation."
+  },
+  {
+    question: "How do I register my international webshop?",
+    answer: "First, register your business in the Netherlands at the Chamber of Commerce (KvK).\n\nCheck if you need a VAT number for international sales.\n\nRegister for OSS for EU consumer sales.\n\nMake sure your terms and conditions comply with international consumer laws."
+  },
+  {
+    question: "How can I accept international payments?",
+    answer: "Use payment gateways that support multiple currencies, such as Stripe, PayPal, Mollie, Adyen, or Klarna. Display prices in the local currency to increase conversions. Ensure fraud protection and SSL security. Clearly communicate any additional fees or exchange rates."
+  },
+  {
+    question: "How can I organize international shipping?",
+    answer: "Work with reliable logistics partners like DHL, UPS, FedEx, or local fulfillment centers. Offer tracking and realistic delivery times. Check customs rules and import costs for each country. Clearly display shipping costs and estimated delivery times on your website. Consider EU warehouses for faster delivery within Europe."
+  },
+  {
+    question: "How can I adapt my website for international visitors?",
+    answer: "Use multi-language support (e.g., WPML for WordPress, Shopify Translate).\n\nDisplay prices in local currencies.\n\nUse geo-targeting for shipping options, language, and content.\n\nOptimize SEO per country with hreflang tags so Google shows the correct language version."
+  },
+  {
+    question: "What legal rules apply for international sales?",
+    answer: "Respect consumer rights in each country, such as return policies and warranties.\n\nInclude an international privacy policy compliant with GDPR and other local laws (e.g., CCPA for the USA).\n\nEnsure product information and disclaimers comply with local regulations.\n\nCheck whether specific products are restricted or require certifications (CE marking, safety, chemicals)."
+  },
+  {
+    question: "How can I provide international customer support?",
+    answer: "Offer multilingual support via email, chat, or phone. Use FAQs per country. Automate responses where possible with chatbots and translation tools like DeepL or Google Translate. Ensure returns and warranty procedures are clear for foreign customers."
+  },
+  {
+    question: "How can I run international marketing campaigns?",
+    answer: "Use Google Ads and Meta Ads with country-specific targeting.\n\nOptimize your website for local keywords (SEO).\n\nCollaborate with influencers or partners in target countries.\n\nAdapt content for cultural preferences (local holidays, trends).\n\nTrack conversions per country and optimize campaigns accordingly."
+  },
+  {
+    question: "How can I minimize risks for international dropshipping?",
+    answer: "Choose reliable suppliers close to your target market to avoid long shipping times and customs issues.\n\nAvoid products with import restrictions or banned items.\n\nImplement tracking and insurance for shipments.\n\nProvide clear return and refund policies per country.\n\nReview contracts with suppliers and logistics providers regarding liability for damage or lost packages."
   }
 ];
 
