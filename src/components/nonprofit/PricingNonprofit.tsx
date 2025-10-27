@@ -66,8 +66,8 @@ const PricingNonprofit = () => {
                   className="[&_stripe-buy-button]:scale-125 [&_stripe-buy-button]:origin-center"
                   dangerouslySetInnerHTML={{
                     __html: `<stripe-buy-button
-                      buy-button-id="buy_btn_1QYdMjP6OLyvLfi1Iw70oUdV"
-                      publishable-key="pk_live_51QYdKoP6OLyvLfi1vk3GFDi2X7wS64l95G6KzIWgxXWYoSAm8RLXBIZwsqGnNlGnVrfpSZUbWI0v4xbVYi1c0Tjr00oIkxRxJr"
+                      buy-button-id="buy_btn_1SKm3dFXIgtr666GOD7ZP6da"
+                      publishable-key="pk_live_51SK0ndFXIgtr666GrmKudtOsf3HHcaBw06Ei3x8LbGKOYQ3oZeIrmpMpTfoTBJ5c7tPyFfbRC7pugHMC0l6b3ZKP009fgyIrGc"
                     ></stripe-buy-button>`
                   }}
                 />
