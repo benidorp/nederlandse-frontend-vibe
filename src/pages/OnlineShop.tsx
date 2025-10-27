@@ -4,7 +4,7 @@ import HeroOnlineShop from "@/components/online-shop/HeroOnlineShop";
 import ValuePropositionOnlineShop from "@/components/online-shop/ValuePropositionOnlineShop";
 import ServicesOnlineShop from "@/components/online-shop/ServicesOnlineShop";
 import BlogPostsOnlineShop from "@/components/online-shop/BlogPostsOnlineShop";
-import OnlineShopQA from "@/components/online-shop/OnlineShopQA";
+
 import FAQOnlineShop from "@/components/online-shop/FAQOnlineShop";
 import PricingOnlineShop from "@/components/online-shop/PricingOnlineShop";
 import ReviewsOnlineShop from "@/components/online-shop/ReviewsOnlineShop";
@@ -29,7 +29,7 @@ const OnlineShop = () => {
           <ValuePropositionOnlineShop />
           <ServicesOnlineShop />
           <BlogPostsOnlineShop />
-          <OnlineShopQA />
+          
           <PricingOnlineShop />
           <ReviewsOnlineShop />
           <FAQOnlineShop />
