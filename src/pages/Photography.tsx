@@ -5,7 +5,7 @@ import ValuePropositionPhotography from "@/components/photography/ValuePropositi
 import ServicesPhotography from "@/components/photography/ServicesPhotography";
 import PhotographyQA from "@/components/photography/PhotographyQA";
 import PricingPhotography from "@/components/photography/PricingPhotography";
-import ReviewsEN from "@/components/en/ReviewsEN";
+import ReviewsPhotography from "@/components/photography/ReviewsPhotography";
 import FAQPhotography from "@/components/photography/FAQPhotography";
 import FooterEN from "@/components/en/FooterEN";
 import GTranslateWidget from "@/components/GTranslateWidget";
@@ -32,7 +32,7 @@ const Photography = () => {
           <ServicesPhotography />
           <PhotographyQA />
           <PricingPhotography />
-          <ReviewsEN />
+          <ReviewsPhotography />
           <FAQPhotography />
         </main>
         <FooterEN />
