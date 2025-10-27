@@ -157,9 +157,7 @@ const ValuePropositionTravelBookingEN = () => {
               <h3 className="text-2xl font-bold mb-4">
                 Fully compliant with GDPR and international legislation. Option to download in different languages for international use. Complete protection for your business.
               </h3>
-              <p className="text-lg mb-6">
-                For only €79 one-time you arrange all legal obligations for all your travel and booking websites. No monthly fees, no hassle with lawyers, no risk of fines. Just all the documents you need, ready to use.
-              </p>
+              <p className="text-lg mb-6">For only one-time you arrange all legal obligations for all your travel and booking websites. No monthly fees, no hassle with lawyers, no risk of fines. Just all the documents you need, ready to use.</p>
               <Button size="lg" variant="secondary" onClick={() => scrollToSection("pricing")} className="font-semibold">
                 Order Now for €79
               </Button>
