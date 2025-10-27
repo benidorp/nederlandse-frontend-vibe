@@ -842,21 +842,24 @@ const EcommerceQA = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               E-Commerce & Online Business Questions
             </h2>
-            <Accordion type="single" collapsible className="space-y-4 columns-1">
-              {allQuestions.map((item, index) => (
-                <AccordionItem 
-                  key={index} 
-                  value={`question-${index}`}
-                  className="border rounded-lg px-6 bg-background"
-                >
-                  <AccordionTrigger className="text-left hover:no-underline py-6">
-                    <h2 className="font-semibold text-foreground pr-4 text-xl">{item.question}</h2>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-6">
-                    {item.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="all-questions" className="border rounded-lg bg-background">
+                <AccordionTrigger className="text-left hover:no-underline py-6 px-6">
+                  <h2 className="font-semibold text-foreground pr-4 text-xl">
+                    Alle e‑commerce & online business vragen
+                  </h2>
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground pb-6">
+                  <div className="px-6 space-y-8">
+                    {allQuestions.map((item, index) => (
+                      <article key={index} className="space-y-2">
+                        <h2 className="text-xl md:text-2xl font-semibold text-foreground">{item.question}</h2>
+                        <p className="text-muted-foreground">{item.answer}</p>
+                      </article>
+                    ))}
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
             </Accordion>
           </div>
         </div>
