@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, Clock, Globe, Zap, FileText, Shield } from "lucide-react";
+import nicoleWorking from "@/assets/nicole-working.png";
 
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
@@ -23,25 +24,56 @@ const ValuePropositionElearning = () => {
             </p>
           </div>
 
-          {/* Personal introduction card with extra styling */}
+          {/* About Me Section with Photo */}
           <Card className="mb-12 overflow-hidden border-2 border-primary/20 shadow-2xl hover:shadow-3xl transition-all">
-            <div className="bg-gradient-to-r from-primary/10 via-primary/5 to-transparent p-8">
-              <div className="flex flex-col md:flex-row gap-8 items-center">
-                <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary to-accent p-1 shadow-xl">
-                  <div className="w-full h-full rounded-full bg-card flex items-center justify-center">
-                    <Shield className="w-16 h-16 text-primary" />
-                  </div>
+            <div className="bg-gradient-to-r from-primary/10 via-primary/5 to-transparent">
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                {/* Photo */}
+                <div className="relative h-full min-h-[400px]">
+                  <img 
+                    src={nicoleWorking} 
+                    alt="Nicole Henderson working at her office" 
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent to-card/80"></div>
                 </div>
-                <div className="flex-1 text-center md:text-left">
-                  <h3 className="text-2xl font-bold mb-3 text-foreground">
-                    Specialized in Educational Platform Law
+                
+                {/* Text Content */}
+                <div className="p-8">
+                  <div className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-accent text-primary-foreground px-4 py-2 rounded-full mb-6 shadow-lg">
+                    <Shield className="w-5 h-5" />
+                    <span className="font-semibold">Over Mij</span>
+                  </div>
+                  <h3 className="text-3xl font-bold mb-4 text-foreground">
+                    Nicole Henderson
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    As a legal specialist in digital education and e-learning, I understand the unique challenges 
-                    educational platforms face. From course ownership rights to student data protection, refund policies 
-                    to instructor agreements - I've created a complete legal package that covers all your needs. 
-                    This package is used by educational platforms in over 30 countries.
+                  <p className="text-lg font-semibold text-primary mb-4">
+                    Gespecialiseerd in Wetgeving voor Educatieve Platforms
                   </p>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    Als juridisch specialist in digitaal onderwijs en e-learning begrijp ik de unieke uitdagingen 
+                    waarmee educatieve platforms worden geconfronteerd. Van eigendomsrechten van cursussen tot 
+                    bescherming van studentgegevens, van terugbetalingsbeleid tot instructeursovereenkomsten - 
+                    ik heb een compleet juridisch pakket samengesteld dat al uw behoeften dekt.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Dit pakket wordt gebruikt door educatieve platforms in meer dan 30 landen en biedt volledige 
+                    juridische bescherming volgens de laatste wetgeving, inclusief GDPR-compliance.
+                  </p>
+                  <div className="mt-6 flex flex-wrap gap-4">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle2 className="w-5 h-5 text-primary" />
+                      <span className="text-sm font-medium">500+ Platforms</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle2 className="w-5 h-5 text-primary" />
+                      <span className="text-sm font-medium">30+ Landen</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle2 className="w-5 h-5 text-primary" />
+                      <span className="text-sm font-medium">10+ Jaar Ervaring</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

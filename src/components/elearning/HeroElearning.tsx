@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { GraduationCap, Shield, CheckCircle } from "lucide-react";
+import nicoleProfile from "@/assets/nicole-profile.jpg";
 
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
@@ -16,63 +17,85 @@ const HeroElearning = () => {
       </div>
 
       <div className="container mx-auto px-4 py-16 relative z-10">
-        <div className="max-w-5xl mx-auto text-center">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-primary/60 text-primary-foreground px-6 py-2 rounded-full mb-8 shadow-lg animate-fade-in">
-            <GraduationCap className="w-5 h-5" />
-            <span className="font-semibold">Legal Protection for Online Education</span>
-          </div>
-
-          {/* Main heading */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-primary/80 to-accent bg-clip-text text-transparent animate-fade-in leading-tight">
-            Complete Legal Documents for Your E-Learning Platform
-          </h1>
-
-          {/* Subheading */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto animate-fade-in">
-            Protect your online courses, instructors, and students with professionally crafted legal documents. 
-            GDPR-compliant, ready to use, and trusted by educational platforms worldwide.
-          </p>
-
-          {/* USPs */}
-          <div className="flex flex-wrap justify-center gap-6 mb-10 animate-fade-in">
-            {[
-              "Course Terms & Conditions",
-              "Student Privacy Protection",
-              "Intellectual Property Rights",
-              "100% GDPR Compliant"
-            ].map((item, index) => (
-              <div key={index} className="flex items-center gap-2 bg-card/50 backdrop-blur px-4 py-2 rounded-lg border border-primary/20 shadow-sm hover:shadow-md transition-all">
-                <CheckCircle className="w-5 h-5 text-primary" />
-                <span className="font-medium">{item}</span>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Left side - Text content */}
+            <div className="text-left">
+              {/* Badge */}
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-primary/60 text-primary-foreground px-6 py-2 rounded-full mb-8 shadow-lg animate-fade-in">
+                <GraduationCap className="w-5 h-5" />
+                <span className="font-semibold">Legal Protection for Online Education</span>
               </div>
-            ))}
-          </div>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">
-            <Button 
-              size="lg" 
-              onClick={() => scrollToSection('pricing')}
-              className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-white text-lg px-8 py-6 shadow-xl hover:shadow-2xl transition-all transform hover:scale-105"
-            >
-              <Shield className="w-5 h-5 mr-2" />
-              Protect Your Platform Now
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline"
-              onClick={() => scrollToSection('services')}
-              className="text-lg px-8 py-6 border-2 hover:bg-primary/5"
-            >
-              See What's Included
-            </Button>
-          </div>
+              {/* Main heading */}
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-primary/80 to-accent bg-clip-text text-transparent animate-fade-in leading-tight">
+                Complete Legal Documents for Your E-Learning Platform
+              </h1>
 
-          {/* Trust indicator */}
-          <p className="mt-8 text-sm text-muted-foreground animate-fade-in">
-            ⚡ Instant download • 🔒 Secure payment • ✅ Money-back guarantee
-          </p>
+              {/* Subheading */}
+              <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-fade-in">
+                Protect your online courses, instructors, and students with professionally crafted legal documents. 
+                GDPR-compliant, ready to use, and trusted by educational platforms worldwide.
+              </p>
+
+              {/* USPs */}
+              <div className="grid grid-cols-1 gap-3 mb-10 animate-fade-in">
+                {[
+                  "Course Terms & Conditions",
+                  "Student Privacy Protection",
+                  "Intellectual Property Rights",
+                  "100% GDPR Compliant"
+                ].map((item, index) => (
+                  <div key={index} className="flex items-center gap-2 bg-card/50 backdrop-blur px-4 py-2 rounded-lg border border-primary/20 shadow-sm hover:shadow-md transition-all">
+                    <CheckCircle className="w-5 h-5 text-primary" />
+                    <span className="font-medium">{item}</span>
+                  </div>
+                ))}
+              </div>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col gap-4 animate-fade-in">
+                <Button 
+                  size="lg" 
+                  onClick={() => scrollToSection('pricing')}
+                  className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-white text-lg px-8 py-6 shadow-xl hover:shadow-2xl transition-all transform hover:scale-105"
+                >
+                  <Shield className="w-5 h-5 mr-2" />
+                  Protect Your Platform Now
+                </Button>
+                <Button 
+                  size="lg" 
+                  variant="outline"
+                  onClick={() => scrollToSection('services')}
+                  className="text-lg px-8 py-6 border-2 hover:bg-primary/5"
+                >
+                  See What's Included
+                </Button>
+              </div>
+
+              {/* Trust indicator */}
+              <p className="mt-8 text-sm text-muted-foreground animate-fade-in">
+                ⚡ Instant download • 🔒 Secure payment • ✅ Money-back guarantee
+              </p>
+            </div>
+
+            {/* Right side - Nicole's photo */}
+            <div className="relative animate-fade-in">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl blur-2xl"></div>
+                <img 
+                  src={nicoleProfile} 
+                  alt="Nicole Henderson - E-Learning Legal Specialist" 
+                  className="relative rounded-3xl shadow-2xl w-full h-auto border-4 border-primary/20"
+                />
+                <div className="absolute bottom-6 left-6 right-6 bg-card/95 backdrop-blur-sm rounded-2xl p-6 border-2 border-primary/30 shadow-xl">
+                  <h3 className="text-xl font-bold text-foreground mb-2">Nicole Henderson</h3>
+                  <p className="text-sm text-muted-foreground">E-Learning Legal Specialist</p>
+                  <p className="text-xs text-muted-foreground mt-2">Protecting educational platforms worldwide</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

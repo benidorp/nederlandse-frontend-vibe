@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Check, Sparkles } from "lucide-react";
 
 const PricingElearning = () => {
@@ -60,10 +61,18 @@ const PricingElearning = () => {
                 ))}
               </div>
 
-              {/* Stripe Buy Button */}
+              {/* Payment Section */}
               <div className="pt-6">
-                <div id="stripe-pricing-table"></div>
-                <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+                <Button 
+                  size="lg" 
+                  className="w-full bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all text-lg py-6"
+                  onClick={() => window.location.href = 'mailto:info@iaee.eu?subject=E-Learning Legal Package Bestelling'}
+                >
+                  Bestel Nu - Contact voor Prijs
+                </Button>
+                <p className="text-center text-sm text-muted-foreground mt-4">
+                  📧 We sturen u direct alle informatie en betaalopties
+                </p>
               </div>
 
               {/* Trust badges */}
