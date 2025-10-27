@@ -826,93 +826,31 @@ const onlineBusinessOwnersQuestions = [
 ];
 
 const EcommerceQA = () => {
+  // Combine all questions into one array
+  const allQuestions = [
+    ...startingQuestions,
+    ...ownersQuestions,
+    ...onlineBusinessStartingQuestions,
+    ...onlineBusinessOwnersQuestions
+  ];
+
   return (
     <section className="py-20 bg-muted/30">
       <div className="container">
-        <div className="max-w-4xl mx-auto space-y-16">
-          {/* Starting Questions Section */}
+        <div className="max-w-4xl mx-auto">
           <div className="space-y-8">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Questions About Starting an E-Commerce Website
+              E-Commerce & Online Business Questions
             </h2>
             <Accordion type="single" collapsible className="space-y-4">
-              {startingQuestions.map((item, index) => (
+              {allQuestions.map((item, index) => (
                 <AccordionItem 
                   key={index} 
-                  value={`starting-${index}`}
+                  value={`question-${index}`}
                   className="border rounded-lg px-6 bg-background"
                 >
                   <AccordionTrigger className="text-left hover:no-underline py-6">
-                    <span className="font-semibold text-foreground pr-4">{item.question}</span>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-6">
-                    {item.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </div>
-
-          {/* Owners Questions Section */}
-          <div className="space-y-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Questions from E-Commerce Website Owners
-            </h2>
-            <Accordion type="single" collapsible className="space-y-4">
-              {ownersQuestions.map((item, index) => (
-                <AccordionItem 
-                  key={index} 
-                  value={`owners-${index}`}
-                  className="border rounded-lg px-6 bg-background"
-                >
-                  <AccordionTrigger className="text-left hover:no-underline py-6">
-                    <span className="font-semibold text-foreground pr-4">{item.question}</span>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-6">
-                    {item.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </div>
-
-          {/* Online Business Starting Questions Section */}
-          <div className="space-y-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Questions About Starting an Online Business Website
-            </h2>
-            <Accordion type="single" collapsible className="space-y-4">
-              {onlineBusinessStartingQuestions.map((item, index) => (
-                <AccordionItem 
-                  key={index} 
-                  value={`online-starting-${index}`}
-                  className="border rounded-lg px-6 bg-background"
-                >
-                  <AccordionTrigger className="text-left hover:no-underline py-6">
-                    <span className="font-semibold text-foreground pr-4">{item.question}</span>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-6">
-                    {item.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </div>
-
-          {/* Online Business Owners Questions Section */}
-          <div className="space-y-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Questions from Online Business Website Owners
-            </h2>
-            <Accordion type="single" collapsible className="space-y-4">
-              {onlineBusinessOwnersQuestions.map((item, index) => (
-                <AccordionItem 
-                  key={index} 
-                  value={`online-owners-${index}`}
-                  className="border rounded-lg px-6 bg-background"
-                >
-                  <AccordionTrigger className="text-left hover:no-underline py-6">
-                    <span className="font-semibold text-foreground pr-4">{item.question}</span>
+                    <h2 className="font-semibold text-foreground pr-4 text-xl">{item.question}</h2>
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground pb-6">
                     {item.answer}
