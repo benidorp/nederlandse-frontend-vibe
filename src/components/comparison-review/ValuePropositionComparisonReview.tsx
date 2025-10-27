@@ -11,7 +11,7 @@ const ValuePropositionComparisonReview = () => {
             <img 
               src={nicoleImage} 
               alt="Nicole Henderson - Legal Expert for Review Websites" 
-              className="relative rounded-lg shadow-2xl w-full object-cover ring-2 ring-primary/10" 
+              className="relative rounded-lg shadow-2xl w-full object-cover ring-2 ring-primary/10 brightness-110" 
             />
           </div>
           

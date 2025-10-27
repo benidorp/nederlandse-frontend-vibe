@@ -96,18 +96,6 @@ const PricingComparisonReview = () => {
                 <img src={stripeLogo} alt="Stripe secure payments" className="h-5 w-5" />
                 <p className="text-sm text-muted-foreground">Secure payment via Stripe • Instant download after purchase</p>
               </div>
-
-              <div className="pt-2 space-y-2">
-                <p className="text-sm font-semibold text-foreground">Buy now for €79</p>
-                <div className="[&_stripe-buy-button]:scale-110 [&_stripe-buy-button]:origin-center flex justify-center"
-                  dangerouslySetInnerHTML={{
-                    __html: `<stripe-buy-button
-                        buy-button-id="buy_btn_1SKm3dFXIgtr666GOD7ZP6da"
-                        publishable-key="pk_live_51SK0ndFXIgtr666GrmKudtOsf3HHcaBw06Ei3x8LbGKOYQ3oZeIrmpMpTfoTBJ5c7tPyFfbRC7pugHMC0l6b3ZKP009fgyIrGc"
-                      ></stripe-buy-button>`
-                  }}
-                />
-              </div>
             </div>
           </div>
         </div>
