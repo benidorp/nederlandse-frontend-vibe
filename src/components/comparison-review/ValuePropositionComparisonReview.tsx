@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import nicoleImage from "@/assets/nicole-profile.jpg";
+import nicoleImage from "@/assets/nicole-comparison-review.png";
 
 const ValuePropositionComparisonReview = () => {
   return (

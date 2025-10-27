@@ -78,12 +78,19 @@ const PricingComparisonReview = () => {
               </div>
             </div>
 
-            <div className="text-center">
+            <div className="text-center space-y-6">
+              <div className="text-4xl font-bold text-primary mb-2">€79</div>
+              <p className="text-muted-foreground mb-6">One-time payment • Lifetime access • All documents included</p>
+              
               <stripe-buy-button
                 buy-button-id="buy_btn_1QZd3zP6r5mPIV8XTQxYSX1v"
                 publishable-key="pk_live_51QZcpRP6r5mPIV8X3vsWaJYMXQCyxY4BHZY7I70yMTbgLBCCjAGD0yQlgfPtRu0W0CeVCTojk6zGZuOZOQlBhGhL00E2zQIJXF"
               >
               </stripe-buy-button>
+              
+              <p className="text-sm text-muted-foreground mt-4">
+                Secure payment powered by Stripe • Instant download after purchase
+              </p>
             </div>
           </div>
         </div>
