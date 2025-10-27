@@ -10,139 +10,430 @@ const legalDocuments = [
     title: "Terms and Conditions",
     content: `**TERMS AND CONDITIONS – IAEE.EU**
 
+**Last Updated: January 2025**
+
 **1. Agreement to Terms**
 
-Welcome to IAEE.EU ("we", "us", "our" or "the Website"). By visiting or using our website, you ("User", "Customer", "You") agree to these Terms and Conditions ("Terms").
+Welcome to IAEE.EU ("we", "us", "our" or "the Website"). By visiting or using our website at https://iaee.eu, you ("User", "Customer", "You", "Visitor") expressly agree to be bound by these Terms and Conditions ("Terms", "Agreement").
 
-These Terms apply worldwide, including for users in the European Union (EU), the United States (US), the United Kingdom, Canada, Australia, Brazil and other jurisdictions.
+These Terms constitute a legally binding agreement between you and IAEE.EU and apply to all users worldwide, including but not limited to users in the European Union (EU), European Economic Area (EEA), United States (US), United Kingdom (UK), Canada, Australia, Brazil, China, India, Singapore, and all other jurisdictions.
 
-If you do not agree to these Terms, you must immediately cease using the website and our services.
+**IMPORTANT NOTICE**: If you do not agree to any provision of these Terms, you must immediately cease all use of our website and services. Continued use constitutes full acceptance.
 
-**2. Nature of Services**
+**2. Nature of Services and Business Model**
 
-IAEE.EU provides access to legal documents, templates and related products, including:
+IAEE.EU operates as an informational platform and affiliate marketing website providing:
 
-• contracts and agreements
-• policy documents
-• disclaimers
-• general legal templates
+• Access to legal document templates, contracts, and policy documents
+• Downloadable legal resources and educational materials
+• Links and referrals to third-party legal service providers
+• General legal information for educational purposes
+• Affiliate partnerships with external legal document providers
 
-Our documents are provided for informational and educational purposes only and do not constitute legal advice.
+**2.1 Affiliate Disclosure**
 
-**3. No Legal Advice or Attorney-Client Relationship**
+We maintain affiliate partnerships with third-party vendors. When you purchase products or services through links on our website, we may receive a commission at no additional cost to you. These affiliate relationships do not:
+• Influence our editorial independence or recommendations
+• Create any warranty or guarantee regarding third-party products
+• Establish any agency, partnership, or employment relationship with third parties
+• Transfer any liability to IAEE.EU for third-party products or services
 
-IAEE.EU is not a law firm and does not provide legal representation or advice. Use of our documents or services does not create an attorney-client relationship.
+**3. Strict No Legal Advice Disclaimer**
 
-Our products are intended as general examples. They may require adaptation to comply with local legislation or your specific situation. We always recommend consulting a qualified attorney before using documents for commercial or legal purposes.
+**CRITICAL NOTICE**: IAEE.EU is NOT a law firm, legal practice, or provider of legal services. We do not employ attorneys and do not provide legal advice, legal representation, or legal consultation of any kind.
 
-**4. Use of Documents**
+**3.1 No Attorney-Client Relationship**
 
-By purchasing, downloading or using documents from IAEE.EU, you agree to the following:
+Use of our website, purchase of documents, or any communication with us does NOT create:
+• An attorney-client relationship
+• A fiduciary relationship
+• Any duty of confidentiality beyond standard privacy obligations
+• Any professional legal services relationship
 
-• Not to present the documents as legal advice or resell them.
-• Not to hold IAEE.EU liable for the use, interpretation or application of the documents.
-• To use the documents only within the applicable jurisdiction and in compliance with local legislation.
-• To adapt the documents to your specific legal situation.
+**3.2 Mandatory Legal Consultation**
 
-**5. No Warranties and Limitation of Liability**
+Before using any legal documents or acting on information from this website, you MUST consult with a licensed attorney in your jurisdiction. Legal requirements vary significantly by:
+• Country and jurisdiction
+• State or province
+• Local municipality
+• Industry and business type
+• Specific circumstances
 
-To the extent permitted by law, all services and documents are provided "as is" and "as available", without any form of warranty.
+**4. Use of Documents and Templates**
 
-We do not guarantee that:
-• our documents are valid or applicable in every jurisdiction;
-• our content is error-free, complete or current;
-• our website operates uninterrupted or free of technical problems.
+**4.1 License and Permitted Use**
 
-IAEE.EU disclaims all liability for damages arising from the use of our website or documents, including direct, indirect, incidental or consequential damages.
+By purchasing or downloading documents from IAEE.EU, you receive a limited, non-exclusive, non-transferable license to:
+• Use the documents for your own personal or single business purpose
+• Adapt the documents to your specific legal requirements
+• Consult the documents for informational purposes
 
-**6. Limitation of Liability (Worldwide, Including US)**
+**4.2 Prohibited Uses**
 
-To the maximum extent permitted by law:
+You are expressly PROHIBITED from:
+• Reselling, redistributing, or licensing documents to third parties
+• Presenting documents as legal advice or professional legal services
+• Using documents without appropriate legal review and customization
+• Removing copyright notices or attribution
+• Creating derivative works for commercial distribution
+• Uploading to document-sharing websites or repositories
+• Using documents in jurisdictions where they may not be valid
 
-• We are not liable for direct, indirect, special or punitive damages, loss of profits, loss of data or reputational damage.
-• Our total liability is limited to the amount you actually paid for the relevant service or document.
+**4.3 User Obligations**
 
-For users in the United States:
-• We disclaim all implied warranties, including those of merchantability or fitness for a particular purpose.
-• If the exclusion of liability is not fully permitted by law, our liability is limited to the minimum level permitted by applicable law.
+You acknowledge and agree that:
+• You are solely responsible for ensuring legal compliance in your jurisdiction
+• Documents must be reviewed and adapted by qualified legal counsel
+• IAEE.EU makes no representations about legal validity or enforceability
+• You will indemnify IAEE.EU against all claims arising from your use
 
-**7. User Responsibility**
+**5. Comprehensive Disclaimer of Warranties**
 
-You are solely responsible for:
-• the manner in which you use or adapt our documents;
-• compliance with applicable legislation in your country or jurisdiction;
-• any consequences or disputes arising from the use of our documents.
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, ALL SERVICES AND DOCUMENTS ARE PROVIDED STRICTLY "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY OR OTHERWISE.
 
-**8. Payments and Refund Policy**
+**5.1 Specific Disclaimers**
 
-• Payments are processed through secure external payment processors. IAEE.EU does not store payment information.
-• All sales are final. Refunds are not granted unless legally required.
-• Technical issues must be reported within 7 days of purchase through our support team.
+We specifically disclaim all warranties including but not limited to:
+• MERCHANTABILITY and FITNESS FOR A PARTICULAR PURPOSE
+• NON-INFRINGEMENT of intellectual property rights
+• ACCURACY, COMPLETENESS, or CURRENTNESS of information
+• UNINTERRUPTED or ERROR-FREE operation
+• SECURITY or FREEDOM FROM VIRUSES
+• RESULTS or outcomes from use of documents
+• LEGAL VALIDITY in any specific jurisdiction
+• COMPLIANCE with changing laws and regulations
+
+**5.2 No Guarantee of Legal Validity**
+
+We make NO WARRANTY that:
+• Our documents comply with laws in your jurisdiction
+• Our documents are suitable for your specific situation
+• Our documents will achieve your intended legal purpose
+• Information on our website is current or complete
+• Third-party services will meet your expectations
+
+**6. Limitation of Liability (Maximum Protection)**
+
+**6.1 Complete Exclusion of Liability**
+
+TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IAEE.EU, ITS OWNERS, DIRECTORS, EMPLOYEES, CONTRACTORS, AFFILIATES, PARTNERS, AND SERVICE PROVIDERS SHALL NOT BE LIABLE FOR ANY DAMAGES WHATSOEVER, INCLUDING BUT NOT LIMITED TO:
+
+• DIRECT, INDIRECT, INCIDENTAL, or CONSEQUENTIAL damages
+• SPECIAL, EXEMPLARY, or PUNITIVE damages
+• LOSS OF PROFITS, REVENUE, or BUSINESS opportunities
+• LOSS OF DATA or information
+• LOSS OF GOODWILL or reputation
+• LEGAL FEES, FINES, or penalties
+• BUSINESS INTERRUPTION
+• PERSONAL INJURY or emotional distress
+• DAMAGES arising from third-party products or services
+• DAMAGES arising from use, misuse, or inability to use our services
+
+**6.2 Maximum Liability Cap**
+
+In jurisdictions where liability cannot be completely excluded, our TOTAL LIABILITY is strictly limited to the lesser of:
+• The amount you actually paid to IAEE.EU in the 12 months preceding the claim, OR
+• €25 (twenty-five euros)
+
+**6.3 Jurisdiction-Specific Provisions**
+
+**For United States Users:**
+• We disclaim all implied warranties to the maximum extent permitted under state and federal law
+• You waive any right to jury trial for disputes arising from these Terms
+• You waive participation in class action lawsuits
+• Disputes must be resolved through individual binding arbitration
+
+**For California Residents (CCPA):**
+• You have rights to access and deletion of personal data
+• We do not sell personal information
+• Contact support@iaee.eu for privacy requests
+
+**For EU/EEA/UK Users (GDPR):**
+• Consumer protection laws may provide additional rights
+• Nothing in these Terms limits your statutory consumer rights
+• Data protection rights are outlined in our Privacy Policy
+
+**7. User Responsibilities and Obligations**
+
+**7.1 Compliance Requirements**
+
+You are solely and exclusively responsible for:
+• Verifying legal requirements in your jurisdiction
+• Consulting qualified legal professionals before using documents
+• Ensuring compliance with all applicable laws and regulations
+• Adapting documents to your specific circumstances
+• Monitoring changes in applicable laws
+• Obtaining necessary licenses, permits, or registrations
+• Paying all applicable taxes and fees
+
+**7.2 Prohibited Conduct**
+
+You agree NOT to:
+• Violate any laws, regulations, or third-party rights
+• Use the website for fraudulent or illegal purposes
+• Attempt to gain unauthorized access to our systems
+• Transmit viruses, malware, or harmful code
+• Scrape, harvest, or collect user data
+• Interfere with website operation or security
+• Impersonate others or provide false information
+• Use automated systems (bots) without permission
+
+**8. Payments, Pricing, and Refund Policy**
+
+**8.1 Payment Processing**
+
+• All payments are processed through secure third-party payment processors (Stripe, PayPal)
+• We do NOT store credit card information
+• Prices are displayed in Euros (€) unless otherwise stated
+• Prices are subject to change without prior notice
+• You are responsible for all applicable taxes
+
+**8.2 Digital Products - No Refund Policy**
+
+**IMPORTANT**: Due to the nature of digital products and instant access upon purchase:
+• ALL SALES ARE FINAL
+• NO REFUNDS will be issued under any circumstances, except where legally mandated
+• Refunds are NOT available for change of mind, compatibility issues, or dissatisfaction
+• Technical delivery issues must be reported within 7 days to support@iaee.eu
+
+**8.3 EU Consumer Rights Exception**
+
+EU consumers may have a 14-day withdrawal right under the Consumer Rights Directive. However, by purchasing and immediately downloading digital content, you:
+• Expressly consent to immediate performance
+• Acknowledge that you lose your right of withdrawal upon download
+• Waive your withdrawal right for digital content
 
 **9. Intellectual Property Rights**
 
-All content, documents, texts, layout and materials on IAEE.EU are protected by copyright and intellectual property laws.
+**9.1 Ownership**
 
-It is prohibited to copy, resell, redistribute or publicly disclose our documents or content without written permission. Violation of these rights may result in legal action.
+All content on IAEE.EU, including but not limited to:
+• Text, articles, and written content
+• Legal templates and documents
+• Graphics, logos, and images
+• Website design and layout
+• Software and code
+• Trademarks and branding
 
-**10. Data Protection and Privacy**
+...is protected by international copyright laws, trademark laws, and other intellectual property rights and is owned by or licensed to IAEE.EU.
 
-We process personal data in accordance with international privacy legislation, including:
-• GDPR (EU)
-• CCPA (US)
-• PIPEDA (Canada)
-• LGPD (Brazil)
+**9.2 Copyright Enforcement**
 
-We do not sell or share your personal data with third parties, except where necessary for the provision of our services. By using our website, you agree to our Privacy Policy, which explains how we collect, store and process data.
+Unauthorized use of our intellectual property may result in:
+• Civil litigation and injunctive relief
+• Criminal prosecution where applicable
+• Claims for statutory damages
+• Recovery of attorney fees and costs
 
-**11. Third-Party Links and Affiliates**
+**9.3 DMCA Compliance**
 
-Our website may contain links to external websites and affiliate partners. We do not endorse or control these websites and are not responsible for the content, accuracy, products or services offered there.
+We comply with the Digital Millennium Copyright Act (DMCA). Copyright infringement notices should be sent to: support@iaee.eu
 
-Any purchases made through affiliate links are subject to the terms and conditions and policy of the relevant external provider.
+**10. Privacy and Data Protection**
 
-**12. International Compliance**
+**10.1 Comprehensive Privacy Compliance**
 
-Our services are accessible worldwide, but we do not guarantee that our content or documents comply with legislation in every country. You are responsible for verifying whether the use of our services is permitted within your jurisdiction.
+We process personal data in strict accordance with:
+• GDPR (EU General Data Protection Regulation)
+• UK GDPR and Data Protection Act 2018
+• CCPA/CPRA (California Consumer Privacy Act/Rights Act)
+• PIPEDA (Canada Personal Information Protection and Electronic Documents Act)
+• LGPD (Brazil Lei Geral de Proteção de Dados)
+• PIPL (China Personal Information Protection Law)
+• Privacy Act 1988 (Australia)
+• PDPA (Singapore Personal Data Protection Act)
+
+**10.2 Data Collection and Use**
+
+We collect and process:
+• Account information (name, email, password)
+• Payment information (processed by third parties)
+• Technical data (IP address, browser, device)
+• Usage data (pages visited, interactions)
+• Cookies and tracking technologies
+
+Detailed information is available in our Privacy Policy.
+
+**10.3 Your Privacy Rights**
+
+Depending on your jurisdiction, you may have rights to:
+• Access your personal data
+• Correct inaccurate data
+• Delete your data ("right to be forgotten")
+• Restrict or object to processing
+• Data portability
+• Withdraw consent
+• Lodge complaints with supervisory authorities
+
+Exercise your rights by contacting: support@iaee.eu
+
+**11. Third-Party Links and Services**
+
+**11.1 External Websites**
+
+Our website contains links to third-party websites, services, and products. We do NOT:
+• Control or endorse third-party content
+• Verify accuracy of third-party information
+• Warrant quality or safety of third-party products
+• Accept liability for third-party services
+• Monitor third-party privacy practices
+
+**11.2 Third-Party Transactions**
+
+Purchases or interactions with third parties are subject exclusively to:
+• The third party's terms and conditions
+• The third party's privacy policy
+• The third party's refund and warranty policies
+
+IAEE.EU is NOT a party to these transactions and accepts NO LIABILITY.
+
+**12. International Use and Compliance**
+
+**12.1 Global Accessibility**
+
+Our website is accessible worldwide. However:
+• We do NOT guarantee compliance with all local laws
+• You are responsible for determining if use is legal in your jurisdiction
+• Some services may not be available in all countries
+• Export control laws may apply
+
+**12.2 Language and Translation**
+
+• English is the authoritative language for all legal documents
+• Translations are provided for convenience only
+• In case of conflicts, the English version prevails
 
 **13. Indemnification**
 
-You agree to indemnify and hold harmless IAEE.EU, its owners, employees, partners and affiliates against all claims, losses, liabilities, costs or damages (including reasonable attorney fees) arising from:
-• your use or misuse of our documents;
-• breach of these Terms;
-• disputes or claims arising from your use of our services.
+You agree to indemnify, defend, and hold harmless IAEE.EU, its owners, officers, directors, employees, contractors, affiliates, partners, and service providers from and against ANY AND ALL:
+• Claims, demands, and causes of action
+• Losses, liabilities, damages, and costs
+• Attorney fees and legal expenses
+• Fines, penalties, and judgments
+
+Arising from or relating to:
+• Your use or misuse of our website or services
+• Your violation of these Terms
+• Your violation of any laws or third-party rights
+• Your use of documents or information from our website
+• Any content you submit or transmit
+• Your negligence or willful misconduct
 
 **14. Force Majeure**
 
-We are not liable for delays or failures arising from circumstances beyond our reasonable control, such as:
-• natural disasters, war, strikes or government measures;
-• cyber attacks or network failures;
-• failures of external suppliers or payment processors.
+We are NOT liable for failure to perform due to circumstances beyond our reasonable control, including:
+• Natural disasters (earthquakes, floods, fires, pandemics)
+• War, terrorism, civil unrest, or government actions
+• Strikes, labor disputes, or supply chain disruptions
+• Cyber attacks, hacking, or network failures
+• Power outages or telecommunications failures
+• Acts of God or other unforeseeable events
 
-**15. Applicable Law and Dispute Resolution**
+**15. Governing Law and Dispute Resolution**
 
-**For users outside the US:**
-These Terms are governed by Dutch law. Disputes are exclusively submitted to the competent court in the Netherlands.
+**15.1 For Users Outside the United States:**
 
-**For users in the US:**
-• These Terms are governed by the laws of the State of Delaware, USA.
-• Disputes will be resolved through binding arbitration in accordance with the rules of the American Arbitration Association (AAA).
-• You waive your right to a jury trial or participation in class actions.
+• These Terms are governed by the laws of the Netherlands
+• Disputes shall be exclusively submitted to the competent courts in Amsterdam, Netherlands
+• You consent to personal jurisdiction in Dutch courts
+• Dutch law applies regardless of conflict of law principles
 
-**16. Severability**
+**15.2 For United States Users:**
 
-If any provision of these Terms is declared invalid or unenforceable, the remaining provisions remain in full force.
+**Governing Law**: These Terms are governed by the laws of the State of Delaware, USA, without regard to conflict of law provisions.
 
-**17. Amendments**
+**Mandatory Binding Arbitration**:
+• All disputes MUST be resolved through binding arbitration
+• Arbitration shall be conducted under the American Arbitration Association (AAA) Commercial Arbitration Rules
+• Arbitration location: Delaware, USA
+• You WAIVE your right to a jury trial
+• You WAIVE your right to participate in class actions or class arbitrations
+• Arbitration awards are final and binding
+• Costs of arbitration shall be borne according to AAA rules
 
-We reserve the right to modify these Terms at any time. The most recent version is always published on our website. Continued use of the website after publication of changes constitutes acceptance of the updated Terms.
+**Exception**: Either party may seek injunctive relief in court for intellectual property violations.
 
-**18. Contact**
+**15.3 Small Claims Court**
 
-For questions, comments or complaints about these Terms, you can contact us at:
+Either party may bring qualifying claims in small claims court in their local jurisdiction.
 
-Email: support@iaee.eu
-Website: https://iaee.eu`
+**16. Severability and Waiver**
+
+**16.1 Severability**
+
+If any provision of these Terms is found to be invalid, illegal, or unenforceable:
+• The remaining provisions remain in full force and effect
+• The invalid provision shall be modified to achieve the intended purpose to the extent possible
+• The invalidity does not affect the validity of the agreement as a whole
+
+**16.2 Waiver**
+
+• Our failure to enforce any provision does NOT constitute a waiver
+• Waiver of any breach does NOT constitute waiver of subsequent breaches
+• All waivers must be in writing and signed by authorized representatives
+
+**17. Modifications and Updates**
+
+**17.1 Right to Modify**
+
+We reserve the ABSOLUTE RIGHT to modify, amend, or update these Terms at any time and for any reason, with or without notice.
+
+**17.2 Notice of Changes**
+
+• Material changes will be posted on this page with an updated "Last Updated" date
+• Significant changes may be announced via email to registered users
+• Continued use after changes constitutes acceptance of modified Terms
+
+**17.3 Your Responsibility**
+
+You are responsible for regularly reviewing these Terms. If you disagree with modifications, your sole remedy is to discontinue use of our website.
+
+**18. Entire Agreement**
+
+These Terms, together with our Privacy Policy, Cookie Policy, and Disclaimer, constitute the ENTIRE AGREEMENT between you and IAEE.EU and supersede all prior:
+• Agreements, understandings, or arrangements
+• Written or oral communications
+• Representations or warranties
+
+**19. Assignment**
+
+• You may NOT assign or transfer your rights or obligations under these Terms
+• We may assign our rights and obligations to any third party without your consent
+• Assignment includes mergers, acquisitions, or sale of assets
+
+**20. Survival**
+
+The following provisions survive termination of these Terms:
+• Intellectual Property Rights
+• Limitation of Liability
+• Indemnification
+• Governing Law and Dispute Resolution
+• Any provisions that by their nature should survive
+
+**21. Contact Information**
+
+For all questions, concerns, complaints, or legal notices regarding these Terms:
+
+**Email**: support@iaee.eu
+**Website**: https://iaee.eu
+**Business Address**: [To be specified based on actual registered address]
+
+**Legal Notices**: All legal notices must be sent to support@iaee.eu and are deemed received upon email delivery confirmation.
+
+**22. Acknowledgment**
+
+BY USING THIS WEBSITE, YOU ACKNOWLEDGE THAT:
+• You have read and understood these Terms in their entirety
+• You agree to be legally bound by all provisions
+• You have the legal capacity to enter into this agreement
+• You will use the website in compliance with all applicable laws
+
+---
+
+**ELECTRONIC ACCEPTANCE**: Your use of this website constitutes electronic acceptance of these Terms under the E-SIGN Act and equivalent laws worldwide.
+
+**Last Updated**: January 2025
+**Version**: 2.0`
   },
   {
     title: "Privacy Policy",
