@@ -2,15 +2,15 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Star } from "lucide-react";
 const reviews = [{
-  name: "Sophie van den Berg",
-  role: "Affiliate Marketer",
+  name: "Emma Thompson",
+  role: "Hotel Owner",
   rating: 5,
-  text: "These legal documents are a must-have for every website! They are professionally written, easy to implement, and specifically tailored to affiliate businesses. The fact that they are suitable for international use is a huge plus. It has saved me time, money, and the effort of figuring out legal requirements myself. Highly recommended!"
+  text: "Running a boutique hotel requires proper legal protection, and these documents provided exactly what I needed. The cancellation policy and terms & conditions are crystal clear for guests, and the GDPR compliance gave me peace of mind. Professional quality at a fraction of what a lawyer would charge!"
 }, {
-  name: "Mark Jansen",
-  role: "Online Entrepreneur",
+  name: "Lucas Martinez",
+  role: "Travel Platform Founder",
   rating: 5,
-  text: "These legal documents are exactly what I needed for my affiliate website. They are clear, professionally drafted, and cover all essential legal aspects. The best part is that they are ready to use and can be implemented quickly. A great investment for anyone in the affiliate business!"
+  text: "As someone managing a booking platform for vacation rentals, these legal templates were a lifesaver. They cover everything from data protection to liability disclaimers, and the implementation guide made setup incredibly straightforward. Best investment I made for my travel business!"
 }];
 const ReviewsEN = () => {
   return <section className="py-20 bg-secondary/30">
@@ -19,7 +19,7 @@ const ReviewsEN = () => {
           <Badge variant="outline" className="mb-4">Reviews</Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">What Our Customers Say</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover why hundreds of affiliates get their legal documents from us
+            Discover why hotel owners and travel platforms trust our legal documents
           </p>
         </div>
 
