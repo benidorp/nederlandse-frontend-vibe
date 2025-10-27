@@ -1,0 +1,54 @@
+name: Build and deploy to cPanel (SFTP)
+
+on:
+  push:
+    branches: ["main"] # Pas hier aan als je een andere branch wilt gebruiken
+
+env:
+  BUILD_DIR: build # Pas aan naar 'dist' als jouw project Vite of vergelijkbaar gebruikt
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18" # Pas aan indien nodig
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+        env:
+          CI: false
+
+      - name: Deploy via SFTP (SSH) to cPanel
+        if: ${{ secrets.SFTP_HOST != '' }}
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SFTP_HOST }}
+          username: ${{ secrets.SFTP_USER }}
+          port: ${{ secrets.SFTP_PORT || '22' }}
+          key: ${{ secrets.SFTP_PRIVATE_KEY }}
+          passphrase: ${{ secrets.SFTP_PASSPHRASE }}
+          source: "./${{ env.BUILD_DIR }}/"
+          target: ${{ secrets.REMOTE_PATH }}
+          strip_components: 1
+          recursive: true
+
+      # --- Alternatief: FTP (gebruik alleen als je geen SFTP hebt) ---
+      # Om FTP te gebruiken: voeg FTP_HOST, FTP_USERNAME, FTP_PASSWORD secrets toe en activeer onderstaande stap
+      # - name: Deploy via FTP to cPanel
+      #   if: ${{ secrets.FTP_HOST != '' }}
+      #   uses: SamKirkland/FTP-Deploy-Action@v4.3.0
+      #   with:
+      #     server: ${{ secrets.FTP_HOST }}
+      #     username: ${{ secrets.FTP_USERNAME }}
+      #     password: ${{ secrets.FTP_PASSWORD }}
+      #     local-dir: ${{ env.BUILD_DIR }}
+      #     server-dir: ${{ secrets.REMOTE_PATH }}
