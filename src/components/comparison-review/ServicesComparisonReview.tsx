@@ -37,7 +37,7 @@ const services = [
 
 const ServicesComparisonReview = () => {
   return (
-    <section id="services" className="py-20 bg-background">
+    <section id="services" className="py-20 bg-primary/5">
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">Our Services</Badge>
@@ -55,8 +55,8 @@ const ServicesComparisonReview = () => {
             return (
               <Card key={index} className="hover:shadow-lg transition-shadow border-primary/10">
                 <CardHeader>
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                    <Icon className="h-6 w-6 text-primary" />
+                  <div className={`w-12 h-12 ${index % 2 === 0 ? 'bg-primary/10' : 'bg-destructive/10'} rounded-lg flex items-center justify-center mb-4`}>
+                    <Icon className={`h-6 w-6 ${index % 2 === 0 ? 'text-primary' : 'text-destructive'}`} />
                   </div>
                   <CardTitle className="text-foreground">{service.title}</CardTitle>
                 </CardHeader>

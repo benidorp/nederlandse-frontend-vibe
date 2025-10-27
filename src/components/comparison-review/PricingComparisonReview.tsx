@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import stripeLogo from "@/assets/stripe-logo.svg";
 
 const PricingComparisonReview = () => {
   return (
@@ -81,16 +82,32 @@ const PricingComparisonReview = () => {
             <div className="text-center space-y-6">
               <div className="text-4xl font-bold text-primary mb-2">€79</div>
               <p className="text-muted-foreground mb-6">One-time payment • Lifetime access • All documents included</p>
-              
-              <stripe-buy-button
-                buy-button-id="buy_btn_1QZd3zP6r5mPIV8XTQxYSX1v"
-                publishable-key="pk_live_51QZcpRP6r5mPIV8X3vsWaJYMXQCyxY4BHZY7I70yMTbgLBCCjAGD0yQlgfPtRu0W0CeVCTojk6zGZuOZOQlBhGhL00E2zQIJXF"
-              >
-              </stripe-buy-button>
-              
-              <p className="text-sm text-muted-foreground mt-4">
-                Secure payment powered by Stripe • Instant download after purchase
-              </p>
+
+              <div className="[&_stripe-buy-button]:scale-125 [&_stripe-buy-button]:origin-center flex justify-center"
+                dangerouslySetInnerHTML={{
+                  __html: `<stripe-buy-button
+                      buy-button-id="buy_btn_1SKm3dFXIgtr666GOD7ZP6da"
+                      publishable-key="pk_live_51SK0ndFXIgtr666GrmKudtOsf3HHcaBw06Ei3x8LbGKOYQ3oZeIrmpMpTfoTBJ5c7tPyFfbRC7pugHMC0l6b3ZKP009fgyIrGc"
+                    ></stripe-buy-button>`
+                }}
+              />
+
+              <div className="flex items-center justify-center gap-2">
+                <img src={stripeLogo} alt="Stripe secure payments" className="h-5 w-5" />
+                <p className="text-sm text-muted-foreground">Secure payment via Stripe • Instant download after purchase</p>
+              </div>
+
+              <div className="pt-2 space-y-2">
+                <p className="text-sm font-semibold text-foreground">Buy now for €79</p>
+                <div className="[&_stripe-buy-button]:scale-110 [&_stripe-buy-button]:origin-center flex justify-center"
+                  dangerouslySetInnerHTML={{
+                    __html: `<stripe-buy-button
+                        buy-button-id="buy_btn_1SKm3dFXIgtr666GOD7ZP6da"
+                        publishable-key="pk_live_51SK0ndFXIgtr666GrmKudtOsf3HHcaBw06Ei3x8LbGKOYQ3oZeIrmpMpTfoTBJ5c7tPyFfbRC7pugHMC0l6b3ZKP009fgyIrGc"
+                      ></stripe-buy-button>`
+                  }}
+                />
+              </div>
             </div>
           </div>
         </div>

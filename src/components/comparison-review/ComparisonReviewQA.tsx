@@ -15,7 +15,7 @@ const benefits = [
 
 const ComparisonReviewQA = () => {
   return (
-    <section className="py-20 bg-secondary/30">
+    <section className="py-20 bg-primary/5">
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">Why You Need This</Badge>
@@ -33,8 +33,8 @@ const ComparisonReviewQA = () => {
               <CardContent className="pt-6">
                 <div className="flex gap-4">
                   <div className="flex-shrink-0">
-                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                      <CheckCircle2 className="h-5 w-5 text-primary" />
+                    <div className={`w-10 h-10 ${index % 2 === 0 ? 'bg-primary/10' : 'bg-destructive/10'} rounded-full flex items-center justify-center`}>
+                      <CheckCircle2 className={`h-5 w-5 ${index % 2 === 0 ? 'text-primary' : 'text-destructive'}`} />
                     </div>
                   </div>
                   <p className="text-foreground leading-relaxed pt-2">{benefit}</p>
