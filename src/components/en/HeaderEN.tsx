@@ -11,7 +11,7 @@ const HeaderEN = () => {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <img src={logo} alt="Legal Affiliate Agreement" className="h-10 w-10" />
-          <span className="text-xl font-bold text-primary">Essential Legal Documents For Your Website Agreement</span>
+          <span className="text-xl font-bold text-primary">Essential Legal Documents For Your Website</span>
         </div>
         
         <nav className="hidden md:flex items-center gap-6">
