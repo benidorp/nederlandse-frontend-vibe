@@ -65,43 +65,55 @@ const ValuePropositionTravelBookingEN = () => {
                 Our complete package contains all legal documents specifically written for travel booking and hotel websites. Not generic templates, but professional texts that perfectly align with your business model:
               </p>
               <div className="space-y-4">
-                <div className="flex gap-3">
-                  <Check className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                <div className="flex gap-3 p-4 rounded-lg bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800">
+                  <div className="h-6 w-6 rounded-full bg-blue-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Check className="h-4 w-4 text-white" />
+                  </div>
                   <div>
                     <h4 className="font-semibold text-foreground">GDPR Privacy Policy</h4>
                     <p className="text-muted-foreground">Fully compliant with European legislation, including cookie usage and data protection for customer bookings</p>
                   </div>
                 </div>
-                <div className="flex gap-3">
-                  <Check className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                <div className="flex gap-3 p-4 rounded-lg bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800">
+                  <div className="h-6 w-6 rounded-full bg-green-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Check className="h-4 w-4 text-white" />
+                  </div>
                   <div>
                     <h4 className="font-semibold text-foreground">Cancellation Policy</h4>
                     <p className="text-muted-foreground">Clear terms for booking cancellations, refunds, and modifications, compliant with EU consumer protection laws</p>
                   </div>
                 </div>
-                <div className="flex gap-3">
-                  <Check className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                <div className="flex gap-3 p-4 rounded-lg bg-purple-50 dark:bg-purple-950/20 border border-purple-200 dark:border-purple-800">
+                  <div className="h-6 w-6 rounded-full bg-purple-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Check className="h-4 w-4 text-white" />
+                  </div>
                   <div>
                     <h4 className="font-semibold text-foreground">Terms & Conditions</h4>
                     <p className="text-muted-foreground">Protects you from liability claims and regulates the relationship with customers and hotel partners</p>
                   </div>
                 </div>
-                <div className="flex gap-3">
-                  <Check className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                <div className="flex gap-3 p-4 rounded-lg bg-orange-50 dark:bg-orange-950/20 border border-orange-200 dark:border-orange-800">
+                  <div className="h-6 w-6 rounded-full bg-orange-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Check className="h-4 w-4 text-white" />
+                  </div>
                   <div>
                     <h4 className="font-semibold text-foreground">Legal Disclaimer</h4>
                     <p className="text-muted-foreground">Limits your liability for booking information, pricing accuracy, and third-party services</p>
                   </div>
                 </div>
-                <div className="flex gap-3">
-                  <Check className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                <div className="flex gap-3 p-4 rounded-lg bg-pink-50 dark:bg-pink-950/20 border border-pink-200 dark:border-pink-800">
+                  <div className="h-6 w-6 rounded-full bg-pink-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Check className="h-4 w-4 text-white" />
+                  </div>
                   <div>
                     <h4 className="font-semibold text-foreground">Cookie Policy</h4>
                     <p className="text-muted-foreground">GDPR compliant, explanation of tracking, analytics, and booking-related cookies</p>
                   </div>
                 </div>
-                <div className="flex gap-3">
-                  <Check className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                <div className="flex gap-3 p-4 rounded-lg bg-indigo-50 dark:bg-indigo-950/20 border border-indigo-200 dark:border-indigo-800">
+                  <div className="h-6 w-6 rounded-full bg-indigo-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Check className="h-4 w-4 text-white" />
+                  </div>
                   <div>
                     <h4 className="font-semibold text-foreground">Implementation Guide</h4>
                     <p className="text-muted-foreground">Step-by-step instructions to place everything correctly on your website</p>
