@@ -10,10 +10,8 @@ import PricingElearning from "@/components/elearning/PricingElearning";
 import ReviewsElearning from "@/components/elearning/ReviewsElearning";
 import FooterEN from "@/components/en/FooterEN";
 import GTranslateWidget from "@/components/GTranslateWidget";
-
 const Elearning = () => {
-  return (
-    <>
+  return <>
       <Helmet>
         <script async src="https://js.stripe.com/v3/buy-button.js"></script>
         <html lang="en" />
@@ -30,7 +28,7 @@ const Elearning = () => {
           <HeroElearning />
           <ValuePropositionElearning />
           <ServicesElearning />
-          <BlogPostsElearning />
+          
           <ElearningQA />
           <PricingElearning />
           <ReviewsElearning />
@@ -38,8 +36,6 @@ const Elearning = () => {
         </main>
         <FooterEN />
       </div>
-    </>
-  );
+    </>;
 };
-
 export default Elearning;
