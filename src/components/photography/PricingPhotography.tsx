@@ -22,10 +22,7 @@ const PricingPhotography = () => {
               <div className="mb-6 flex items-center justify-center gap-4">
                 
               </div>
-              <div className="mb-6">
-                <span className="text-6xl md:text-7xl font-bold text-primary">€79</span>
-                
-              </div>
+              
               <CardTitle className="text-2xl md:text-3xl mb-3">Complete Photography Legal Package</CardTitle>
               <CardDescription className="text-base md:text-lg">
                 All essential legal documents for unlimited use across all your photography websites
