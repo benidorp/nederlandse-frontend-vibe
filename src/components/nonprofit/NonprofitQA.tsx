@@ -324,6 +324,49 @@ export const ownersQuestions = [
   }
 ];
 
+export const securityQuestions = [
+  {
+    question: "1. Hoe bouw ik een veilige non-profit of charity website?",
+    answer: "Veiligheid is cruciaal omdat je vaak persoonsgegevens, donaties en vrijwilligersinformatie verwerkt. Gebruik HTTPS voor alle pagina's via een SSL-certificaat. Kies een betrouwbare hostingprovider met goede back-ups, firewall en malware-scanning. Beperk toegang tot admin- en donorgegevens met role-based access control en sterke wachtwoorden. Overweeg twee-factor-authenticatie (2FA) voor alle beheerdersaccounts. Test regelmatig op kwetsbaarheden met tools zoals Sucuri of Qualys."
+  },
+  {
+    question: "2. Welke CMS-systemen zijn geschikt voor non-profit websites?",
+    answer: "Populaire opties zijn WordPress, Drupal en Joomla vanwege flexibiliteit, plugin-ecosysteem en beveiligingsopties. Gebruik non-profit-specifieke thema's en plugins voor donaties, evenementen en vrijwilligersbeheer. Voor grotere organisaties kan een custom CMS of non-profit SaaS-platforms zoals NationBuilder of Wild Apricot een betere schaalbaarheid en compliance bieden."
+  },
+  {
+    question: "3. Hoe kan ik donaties veilig accepteren op mijn website?",
+    answer: "Gebruik betrouwbare betalingsgateways zoals Stripe, PayPal, Mollie of iDEAL. Zorg dat de betaalpagina volledig SSL-versleuteld is. Beperk opslag van gevoelige betalingsgegevens; laat de gateway dit afhandelen. Implementeer fraudedetectie en regelmatige monitoring. Verstrek altijd bonnen en bevestigingen aan donateurs voor transparantie en vertrouwen."
+  },
+  {
+    question: "4. Welke juridische regels gelden voor non-profit websites in Nederland/EU?",
+    answer: "AVG/GDPR compliance: Persoonsgegevens van donateurs, vrijwilligers en bezoekers moeten veilig worden verwerkt. Voeg privacybeleid en cookieverklaring toe. Civiel recht: Transparantie over fondsen en bestemming van donaties is verplicht. Belastingregels: Controleer of je als ANBI geregistreerd bent voor belastingvoordelen. Copyright en content: Zorg dat foto's, video's en teksten rechtenvrij of correct gelicentieerd zijn."
+  },
+  {
+    question: "5. Hoe kan ik vrijwilligersinformatie veilig beheren?",
+    answer: "Gebruik een beveiligd CRM-systeem of een plugin voor WordPress/Drupal. Beperk toegang tot gevoelige gegevens zoals adres, telefoonnummer en medische informatie. Versleutel opslag en back-ups. Train vrijwilligers en beheerders over veiligheid en privacy. Regel periodieke audits en verwijder gegevens die niet langer nodig zijn."
+  },
+  {
+    question: "6. Hoe kan ik een overzichtelijke en gebruiksvriendelijke opbouw maken?",
+    answer: "Gebruik duidelijke navigatie en call-to-actions zoals \"Doneer nu\", \"Word vrijwilliger\" of \"Bekijk projecten\". Plaats belangrijke informatie boven de vouw, inclusief missie, impact en contact. Gebruik responsive design zodat mobiele bezoekers een optimale ervaring hebben. Integreer multimedia zoals foto's en video's om emotionele betrokkenheid te verhogen."
+  },
+  {
+    question: "7. Hoe kan ik donaties en fondsenwerving transparant tonen?",
+    answer: "Maak een speciale transparantiepagina met jaarverslagen, financiële overzichten en impactstatistieken. Gebruik grafieken of infographics om bedragen en bestedingen inzichtelijk te maken. Vermeld externe audits of keurmerken (ANBI, CBF). Dit verhoogt vertrouwen bij donateurs en vergemakkelijkt juridische compliance."
+  },
+  {
+    question: "8. Welke maatregelen zijn er tegen hacking en datalekken?",
+    answer: "Regelmatige updates van CMS, plugins en thema's. Firewall en malware-scans. Back-ups en disaster recovery plan. Beperk toegang tot admin en gevoelige data via 2FA en sterke wachtwoorden. Monitor logs en verdachte activiteiten met tools zoals Wordfence of Cloudflare Security. Train medewerkers in phishingpreventie en veilig gebruik van tools."
+  },
+  {
+    question: "9. Hoe kan ik juridische disclaimers en privacybeleid implementeren?",
+    answer: "Maak aparte pagina's voor privacybeleid, cookieverklaring en gebruiksvoorwaarden. Vermeld welke persoonsgegevens je verzamelt, waarom en hoe lang ze worden bewaard. Voeg opt-in mechanismen toe voor nieuwsbrieven of tracking. Bij internationale bezoekers moet je ook voldoen aan GDPR/EU-regels. Laat juridische teksten waar mogelijk door een specialist checken."
+  },
+  {
+    question: "10. Hoe kan ik content en afbeeldingen legaal gebruiken?",
+    answer: "Gebruik eigen content of rechtenvrije bronnen zoals Unsplash, Pexels of Pixabay. Koop licenties voor stockfoto's of video's indien nodig. Voeg bronvermelding toe waar vereist. Vermijd inbreuk op auteursrechten van derden. Voor vrijwilligersfoto's of evenementen is het verstandig toestemming te vragen voor publicatie op de website en social media."
+  }
+];
+
 const NonprofitQA = () => {
   return null;
 };
