@@ -15,6 +15,7 @@ import Dropshipping from "./pages/Dropshipping";
 import Elearning from "./pages/Elearning";
 import Nonprofit from "./pages/Nonprofit";
 import StreamingMedia from "./pages/StreamingMedia";
+import ComparisonReview from "./pages/ComparisonReview";
 import LanguageDetector from "./components/LanguageDetector";
 import NotFound from "./pages/NotFound";
 
@@ -41,6 +42,7 @@ const App = () => (
           <Route path="/elearning-platform-legal-documents-terms-privacy-policy-gdpr-compliance" element={<Elearning />} />
           <Route path="/nonprofit-charity-legal-documents-donation-terms-privacy-policy" element={<Nonprofit />} />
           <Route path="/streaming-media-legal-documents-terms-conditions-privacy-policy-dmca-content-license" element={<StreamingMedia />} />
+          <Route path="/comparison-review-website-legal-documents-terms-privacy-affiliate-disclosure-disclaimer" element={<ComparisonReview />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
