@@ -58,20 +58,24 @@ const Af = () => {
     doc.save(`${title.replace(/\s+/g, '-')}.pdf`);
   };
 
-  const disclosure = `DISCLOSURE
+  const disclosure = `AFFILIATE DISCLOSURE & LEGAL AGREEMENT
 
-Effective Date: [Insert Date]
-Last Updated: [Insert Date]
+Effective Date: January 1, 2025
+Last Updated: January 27, 2025
 
-Welcome to [WebsiteName].com ("Website," "we," "our," or "us"). We are committed to full transparency regarding our affiliate relationships. This Disclosure explains how we earn commissions through affiliate partnerships and our responsibilities concerning third-party services.
+Welcome to [WebsiteName].com ("Website," "we," "our," or "us"). We are committed to full transparency regarding our affiliate relationships, user-generated content, intellectual property rights, and all legal obligations across multiple business sectors including e-commerce, dropshipping, travel booking, online learning, streaming media, nonprofit/charity operations, and photography services.
 
-IMPORTANT NOTICE
+This comprehensive disclosure covers ALL aspects of our operations and applies globally to users in all jurisdictions.
 
-Affiliate links on this Website may track your activity using cookies, pixels, or other tracking technologies.
+CRITICAL LEGAL NOTICE - READ CAREFULLY
 
-Clicking on affiliate links may result in third-party cookies being stored on your device.
-
-You assume all risks associated with affiliate purchases, third-party data collection, and reliance on our content.
+⚠️ By using this Website, you acknowledge and agree to ALL terms, disclaimers, and waivers contained herein.
+⚠️ Affiliate links may track your activity using cookies, pixels, or tracking technologies managed by third parties.
+⚠️ You assume ALL risks associated with purchases, bookings, enrollments, donations, subscriptions, and reliance on our content.
+⚠️ We provide opinions and reviews - NOT professional advice (legal, financial, medical, tax, or educational accreditation).
+⚠️ Third-party services, merchants, hotels, airlines, instructors, and charities operate independently - we are NOT responsible for their actions.
+⚠️ User-generated content is NOT endorsed by us and users retain liability for their submissions.
+⚠️ All intellectual property is protected globally under international copyright treaties.
 
 1. AFFILIATE RELATIONSHIPS & COMMISSIONS
 
@@ -192,12 +196,926 @@ You waive the right to participate in class-action lawsuits against us.
 
 We may update this Disclosure at any time. Updates will be posted on this page with a new "Last Updated" date. Continued use of the Website after updates constitutes acceptance of the revised terms.
 
-10. CONTACT INFORMATION
+10. LIABILITY DISCLAIMER & OPINION PROTECTION
 
-For questions regarding this Disclosure, contact us at:
-Email: [Insert Contact Email]
-Address: [Insert Business Address]
-Website: https://[WebsiteName].com`;
+All content, reviews, comparisons, and recommendations on this Website represent our personal opinions and experiences.
+
+10.1 Opinion & Review Protection
+
+All product reviews, service comparisons, ratings, and recommendations are subjective opinions protected under freedom of speech laws.
+
+We make reasonable efforts to provide accurate information, but we do NOT guarantee:
+• Product quality, performance, or suitability for your needs
+• Service availability, reliability, or customer satisfaction
+• Pricing accuracy (prices may change without notice)
+• Compatibility with your specific situation or requirements
+
+10.2 Third-Party Services Disclaimer
+
+We are NOT responsible for:
+• Product defects, shipping delays, or merchant errors
+• Service interruptions, cancellations, or poor customer support
+• Data breaches or privacy violations by third parties
+• Billing disputes, unauthorized charges, or refund issues
+• Changes to terms, policies, or service offerings by third parties
+
+10.3 No Professional Relationship
+
+Nothing on this Website creates:
+• Attorney-client privilege or legal representation
+• Financial advisor-client relationship or fiduciary duty
+• Doctor-patient relationship or medical care obligation
+• Teacher-student accreditation or certified educational credentials
+• Charity-donor legal obligations or tax-deductible guarantees
+
+Your sole remedy for disagreement with our opinions is to discontinue use and seek alternative information sources.
+
+11. USER-GENERATED CONTENT POLICY
+
+11.1 User Responsibilities
+
+Users who submit comments, reviews, photos, videos, testimonials, or any content ("User Content") to this Website agree to:
+
+• Retain full legal responsibility and liability for their submissions
+• Grant us a worldwide, perpetual, royalty-free, irrevocable license to use, modify, display, and distribute their content
+• Warrant that they own all rights to submitted content or have obtained necessary permissions
+• Indemnify us against any claims, damages, or legal actions arising from their content
+
+11.2 Prohibited Content
+
+Users may NOT submit content that:
+• Infringes intellectual property rights (copyright, trademark, patents)
+• Contains defamatory, libelous, or false statements
+• Violates privacy rights or discloses confidential information
+• Promotes illegal activities, violence, hatred, or discrimination
+• Contains malware, viruses, or malicious code
+• Constitutes spam, advertising, or commercial solicitation
+• Violates any applicable laws or regulations
+
+11.3 Content Moderation Rights
+
+We reserve the right to:
+• Review, edit, or remove any User Content at our sole discretion
+• Suspend or terminate user accounts for violations
+• Report illegal content to law enforcement authorities
+• Use automated filtering and moderation tools
+
+We are NOT obligated to monitor User Content and assume NO liability for content posted by users.
+
+11.4 No Endorsement
+
+User-generated content does NOT represent our views, opinions, or endorsements. We disclaim all responsibility for user submissions.
+
+12. DMCA POLICY & COPYRIGHT PROTECTION
+
+12.1 Digital Millennium Copyright Act (DMCA) Compliance
+
+We respect intellectual property rights and comply with the DMCA (17 U.S.C. § 512) and international copyright laws.
+
+If you believe content on this Website infringes your copyright, submit a DMCA takedown notice to:
+
+Email: [Insert DMCA Contact Email]
+Subject Line: "DMCA Takedown Request"
+
+Your notice must include:
+1. Physical or electronic signature of copyright owner or authorized agent
+2. Identification of copyrighted work claimed to be infringed
+3. Identification of infringing material and its location on our Website (URL)
+4. Your contact information (name, address, telephone, email)
+5. Statement of good faith belief that use is unauthorized
+6. Statement under penalty of perjury that information is accurate and you are authorized to act
+
+12.2 Counter-Notice Procedure
+
+If your content was removed due to a DMCA claim and you believe it was wrongful, you may submit a counter-notice including:
+1. Your physical or electronic signature
+2. Identification of removed content and its prior location
+3. Statement under penalty of perjury that removal was a mistake or misidentification
+4. Your name, address, and consent to jurisdiction
+
+12.3 Repeat Infringer Policy
+
+We maintain a policy of terminating accounts of repeat copyright infringers in accordance with DMCA requirements.
+
+12.4 International Copyright Protection
+
+Our content is protected under:
+• Berne Convention for the Protection of Literary and Artistic Works
+• WIPO Copyright Treaty
+• EU Copyright Directive
+• Universal Copyright Convention
+• National copyright laws of applicable jurisdictions
+
+13. CONTENT LICENSE AGREEMENT
+
+13.1 Our Content License to You
+
+We grant you a limited, non-exclusive, non-transferable, revocable license to:
+• Access and view Website content for personal, non-commercial use
+• Share links to our content on social media with proper attribution
+• Print single copies for personal reference
+
+You may NOT:
+• Reproduce, duplicate, copy, or republish our content without written permission
+• Create derivative works or modifications
+• Remove copyright notices, watermarks, or attribution
+• Use content for commercial purposes without licensing
+• Frame, mirror, or scrape our Website
+• Use automated tools (bots, scrapers) to extract content
+
+13.2 Your Content License to Us
+
+By submitting User Content, you grant us:
+• Worldwide, perpetual, irrevocable, royalty-free, transferable license
+• Rights to use, reproduce, modify, adapt, publish, translate, distribute, and display your content
+• Rights to sublicense content to third parties
+• Rights to use your name, username, and likeness in connection with your content
+
+This license survives account termination and content deletion.
+
+14. VOLUNTEER AGREEMENTS (FOR NONPROFIT/CHARITY OPERATIONS)
+
+14.1 Volunteer Relationship
+
+Volunteers are NOT employees and receive NO compensation, benefits, or employment rights.
+
+By volunteering, you:
+• Acknowledge voluntary nature of service
+• Waive claims for wages, benefits, or unemployment compensation
+• Accept that volunteer status may be terminated at any time
+• Agree to confidentiality of sensitive organizational information
+• Release us from liability for injuries sustained during volunteer activities (except gross negligence or willful misconduct)
+
+14.2 Volunteer Responsibilities
+
+Volunteers must:
+• Complete any required training or orientation
+• Follow organizational policies and procedures
+• Maintain confidentiality of donor information and organizational data
+• Act professionally and ethically
+• Report conflicts of interest
+• Not misrepresent the organization
+
+14.3 Background Checks & Screening
+
+We reserve the right to conduct background checks for volunteer positions involving vulnerable populations, financial access, or positions of trust.
+
+15. DONOR PRIVACY PROTECTION (NONPROFIT/CHARITY)
+
+15.1 Donor Information Collection
+
+We collect donor information including:
+• Name, address, email, phone number
+• Donation amount and frequency
+• Payment information (processed securely through third parties)
+• Correspondence and communication preferences
+
+15.2 Donor Privacy Rights
+
+Donors have the right to:
+• Know how their information is used
+• Opt out of mailings, calls, or solicitations
+• Request removal from donor lists
+• Access and correct their donor records
+• Remain anonymous if legally permitted
+
+We will NOT:
+• Sell, rent, or trade donor information
+• Share donor data with third parties without consent (except payment processors and legal requirements)
+• Publicly disclose donation amounts without permission
+
+15.3 Donor Recognition
+
+Donors may request anonymity. Public recognition requires explicit consent.
+
+16. DONATION TERMS & CONDITIONS
+
+16.1 Donation Processing
+
+All donations are:
+• Voluntary and non-refundable except as required by law or in cases of processing errors
+• Processed through secure third-party payment processors
+• Subject to verification and fraud prevention measures
+
+We reserve the right to:
+• Refuse or return donations from questionable sources
+• Modify donation programs and campaigns
+• Allocate donations to areas of greatest need unless otherwise restricted by donor
+
+16.2 Tax Deductibility Disclaimer
+
+⚠️ We do NOT provide tax advice. Consult a qualified tax professional regarding donation deductibility.
+
+Tax-deductible status depends on:
+• Our organizational tax-exempt status (if applicable)
+• Applicable tax laws in your jurisdiction
+• Proper documentation and receipts
+• Whether donation is made in exchange for goods/services
+
+We provide donation receipts for record-keeping purposes but do NOT guarantee tax deductibility.
+
+16.3 Recurring Donations
+
+Recurring donors agree to:
+• Automatic charges at specified intervals
+• Responsibility for maintaining valid payment information
+• Notification of cancellation or modifications
+• Understanding that cancellation does not entitle refunds for past donations
+
+Cancel recurring donations by: [Insert Cancellation Method]
+
+17. FUNDRAISING DISCLOSURE (CHARITABLE/NONPROFIT COMPLIANCE)
+
+17.1 Fundraising Registration
+
+Where required by law, we maintain active fundraising registrations with state charity offices.
+
+Registration does NOT constitute endorsement by government authorities.
+
+17.2 Fundraising Purpose & Allocation
+
+Funds raised through this Website are used for:
+• [Insert primary charitable purposes]
+• Administrative and operational costs
+• Program expenses and service delivery
+• Marketing and fundraising activities
+
+Percentage allocations: [Insert if required by law or transparency practices]
+
+17.3 Professional Fundraiser Disclosure
+
+If we use professional fundraisers or commercial co-ventures, we disclose:
+• Name and relationship of fundraising professional
+• Percentage or amount retained by fundraiser
+• Net amount benefiting the organization
+
+17.4 No Guarantee of Outcomes
+
+Donations support our mission but do NOT guarantee specific outcomes, results, or impact. Program success depends on numerous factors beyond our control.
+
+18. STREAMING MEDIA LEGAL REQUIREMENTS
+
+18.1 Content Licensing & Rights
+
+All streaming content (video, audio, live streams) is licensed or owned by us.
+
+Users may NOT:
+• Record, download, or redistribute streaming content
+• Circumvent digital rights management (DRM) protections
+• Share account credentials or access
+• Use content for commercial purposes without licensing
+
+18.2 Streaming Service Terms
+
+Access to streaming content requires:
+• Active subscription or payment
+• Compliance with geographic restrictions and licensing territories
+• Acceptance of platform terms of service
+• Minimum age requirements (if applicable)
+
+18.3 Content Availability Disclaimer
+
+We do NOT guarantee:
+• Uninterrupted or error-free streaming
+• Availability of specific content (content may be removed or rotated)
+• Compatibility with all devices or browsers
+• Specific video/audio quality
+
+Technical issues should be reported to: [Insert Support Contact]
+
+18.4 User Conduct for Live Streams
+
+Users participating in live streams must NOT:
+• Post offensive, harassing, or illegal comments
+• Impersonate others or misrepresent identity
+• Disrupt stream functionality or other viewers' experience
+• Share inappropriate links or spam
+
+Violations may result in account suspension or termination.
+
+19. EDUCATIONAL/E-LEARNING LEGAL REQUIREMENTS
+
+19.1 Course Enrollment Terms
+
+By enrolling in courses, you agree to:
+• Pay applicable fees before accessing materials
+• Use content solely for personal educational purposes
+• Not share, distribute, or resell course materials
+• Complete courses within specified timeframes (if applicable)
+• Accept that course completion does NOT guarantee certification or employment
+
+19.2 Student Privacy Protection (FERPA/GDPR Compliance)
+
+We protect student educational records in compliance with:
+• Family Educational Rights and Privacy Act (FERPA) - US
+• General Data Protection Regulation (GDPR) - EU
+• Children's Online Privacy Protection Act (COPPA) - for users under 13
+• National privacy laws of applicable jurisdictions
+
+We collect student information for:
+• Course enrollment and access
+• Progress tracking and assessment
+• Communication about courses and updates
+• Compliance with legal obligations
+
+Students have rights to:
+• Access their educational records
+• Request corrections to inaccurate information
+• Control disclosure of personally identifiable information
+• File complaints with regulatory authorities
+
+We do NOT share student information with third parties except:
+• As required by law or legal process
+• With consent for specific purposes
+• Service providers under strict confidentiality agreements
+
+19.3 Intellectual Property in Courses
+
+Course materials are protected intellectual property.
+
+Students receive a limited license to access materials for educational purposes only.
+
+Students may NOT:
+• Copy, reproduce, or distribute course materials
+• Create derivative works from course content
+• Share login credentials or course access
+• Use materials for commercial purposes
+
+Student-created work (assignments, projects) remains student property, but students grant us license to use for educational examples (with anonymization if requested).
+
+19.4 No Accreditation Guarantee
+
+⚠️ Unless explicitly stated otherwise, courses are NOT accredited by governmental education authorities.
+
+Certificates of completion represent course participation but may NOT be recognized for:
+• Professional licensing or certification
+• College credit or degree requirements
+• Employment prerequisites
+• Continuing education requirements
+
+Verify accreditation status independently before enrollment if credentials are important for your goals.
+
+19.5 Instructor Qualifications
+
+Instructors are selected based on expertise and experience but may NOT hold formal teaching certifications or academic credentials.
+
+We make reasonable efforts to verify instructor qualifications but do NOT guarantee:
+• Academic degrees or professional licenses
+• Teaching effectiveness or student satisfaction
+• Accuracy or completeness of instruction
+
+19.6 Course Terms & Conditions
+
+Enrollment Confirmation: You receive access upon payment confirmation.
+
+Course Access Duration: [Insert duration, e.g., "Lifetime access" or "6 months from enrollment"]
+
+Content Updates: Course content may be updated, modified, or discontinued without notice.
+
+Prerequisites: Some courses may require prerequisite knowledge or skills. Ensure you meet requirements before enrolling.
+
+Certificate Requirements: Certificates (if offered) require completion of specified assessments, minimum participation, or other criteria.
+
+20. REFUND & CANCELLATION POLICY
+
+20.1 E-Learning/Course Refunds
+
+Refund Period: [Insert period, e.g., "14 days from purchase" or "30-day money-back guarantee"]
+
+Conditions for Refund:
+• Request made within refund period
+• Less than [X%] of course content accessed
+• No certificate issued
+• No previous refunds issued to same account (prevents abuse)
+
+Non-Refundable:
+• Courses marked "non-refundable" or "final sale"
+• Bundled courses or discounted promotions (unless specified)
+• After refund period expires
+• If account violated terms of service
+
+Refund Process: Email [Insert Support Email] with order number and reason. Refunds processed within [X business days] to original payment method.
+
+20.2 Subscription Cancellations
+
+Subscription Services: Cancel anytime by [Insert Method]
+
+Effective Date: Cancellation effective at end of current billing cycle. No prorated refunds unless required by law.
+
+Reactivation: Reactivate subscriptions by [Insert Method]. Previous access and data may not be restored.
+
+20.3 Digital Products & Downloads
+
+Digital products (e-books, templates, downloads) are generally non-refundable once downloaded due to their nature.
+
+Exceptions: Technical issues preventing access, duplicate charges, or product significantly different from description.
+
+21. TRAVEL BOOKING TERMS & CONDITIONS
+
+21.1 Booking Confirmation
+
+Bookings are confirmed only upon receipt of payment and confirmation email.
+
+We act as intermediary between customers and service providers (hotels, airlines, tour operators). Final contracts are between you and service providers.
+
+21.2 Pricing & Availability
+
+Prices are subject to change until booking is confirmed.
+
+We are NOT responsible for:
+• Price increases after browsing but before booking
+• Currency fluctuation charges
+• Taxes, fees, or surcharges imposed by destinations
+• Availability changes or sold-out accommodations
+
+21.3 Cancellation & Modification Terms
+
+Cancellation Policies: Each booking is subject to supplier cancellation policy, which varies by property, airline, and rate type.
+
+Cancellation Deadlines: Review specific cancellation deadlines before booking. Missing deadlines may result in forfeiture of deposits or full charges.
+
+Modification Fees: Changes to dates, names, or destinations may incur fees from both us and service providers.
+
+21.4 Travel Insurance Recommendation
+
+⚠️ We STRONGLY recommend purchasing travel insurance covering:
+• Trip cancellations and interruptions
+• Medical emergencies and evacuation
+• Lost luggage and travel delays
+• Unforeseen circumstances (illness, weather, natural disasters)
+
+We are NOT responsible for losses incurred due to lack of insurance.
+
+21.5 Force Majeure & Travel Disruptions
+
+We are NOT liable for cancellations, delays, or disruptions caused by:
+• Natural disasters (earthquakes, hurricanes, floods)
+• Pandemics, epidemics, or health emergencies
+• War, terrorism, civil unrest, or government actions
+• Strikes, labor disputes, or transportation failures
+• Weather conditions or Acts of God
+
+Refunds in force majeure situations follow supplier policies and may not be available.
+
+21.6 Hotel & Accommodation Terms
+
+Check-In/Check-Out Times: Comply with property policies. Early check-in or late check-out subject to availability and fees.
+
+Property Standards: Hotel ratings (stars) are subjective and based on local standards or third-party ratings. We do NOT guarantee specific room conditions or amenities.
+
+Special Requests: Requests (room type, floor, bed configuration) are NOT guaranteed and subject to availability.
+
+21.7 Flight Booking Terms
+
+Airline Regulations: Subject to airline terms and conditions, baggage policies, and fare rules.
+
+Ticket Changes: Airlines impose change fees and fare differences. Low-cost carriers may not allow changes.
+
+Missed Flights: We are NOT responsible for missed flights due to traffic, delays, or personal circumstances.
+
+Passport & Visa Requirements: Travelers are responsible for valid passports, visas, and entry requirements. Check destination requirements before booking.
+
+21.8 No Liability for Third-Party Services
+
+We are NOT liable for:
+• Hotel overbooking or room assignment issues
+• Airline delays, cancellations, or lost baggage
+• Poor service quality or cleanliness
+• Safety incidents or injuries at properties
+• Misrepresentation by hotels or airlines
+
+Direct complaints and claims to service providers.
+
+22. DROPSHIPPING & E-COMMERCE SHIPPING POLICY
+
+22.1 Order Processing
+
+Orders are processed within [X business days] of payment confirmation.
+
+Order confirmation email does NOT guarantee product availability. We reserve the right to cancel orders for out-of-stock items.
+
+22.2 Shipping Methods & Timeframes
+
+We offer the following shipping options:
+• Standard Shipping: [X-X business days]
+• Expedited Shipping: [X-X business days]
+• International Shipping: [X-X weeks] depending on customs clearance
+
+Shipping times are ESTIMATES and not guaranteed. We are NOT responsible for carrier delays.
+
+22.3 Dropshipping Disclosure
+
+⚠️ Some products are fulfilled through dropshipping partnerships. This means:
+• Products ship directly from manufacturers or third-party warehouses
+• Packaging may differ from our branding
+• Shipping times may vary by supplier
+• Multiple shipments may arrive separately for multi-item orders
+
+22.4 International Shipping Terms
+
+International customers are responsible for:
+• Customs duties, import taxes, and clearance fees
+• Compliance with import restrictions and regulations
+• Additional shipping time for customs processing
+• Accurate address information including postal codes
+
+We do NOT refund customs fees or taxes.
+
+Undeliverable packages due to refused customs charges will NOT be refunded.
+
+22.5 Tracking & Delivery
+
+Tracking information provided via email when available. Not all carriers or regions offer tracking.
+
+Delivery Attempts: Carriers typically attempt delivery 2-3 times before returning to sender. Unclaimed packages are NOT refunded.
+
+Address Accuracy: Verify shipping address before checkout. We are NOT responsible for packages shipped to incorrect addresses provided by customers.
+
+22.6 Lost or Damaged Shipments
+
+Report lost or damaged shipments within [X days] of expected delivery.
+
+We will investigate with carrier and arrange:
+• Replacement shipment, or
+• Full refund
+
+Proof of damage (photos) may be required.
+
+23. RETURN & REFUND POLICY (E-COMMERCE/DROPSHIPPING)
+
+23.1 Return Eligibility
+
+Returns accepted within [X days] of delivery for:
+• Defective or damaged products
+• Wrong item shipped
+• Significant difference from product description
+
+Returns NOT accepted for:
+• Change of mind (unless legally required in your jurisdiction)
+• Products used, worn, or altered
+• Digital products already downloaded
+• Customized or personalized items
+• Hygiene products (cosmetics, intimate items, food)
+• Final sale or clearance items
+
+23.2 Return Process
+
+1. Contact: Email [Insert Return Email] with order number and reason
+2. Authorization: Wait for return authorization and instructions
+3. Ship: Return item in original condition and packaging
+4. Refund: Processed within [X business days] of receiving return
+
+Return Shipping Costs:
+• Defective/Wrong Item: We cover return shipping
+• Buyer Remorse: Customer pays return shipping (where returns are allowed)
+
+23.3 Refund Methods
+
+Refunds issued to original payment method.
+
+Processing time: [X business days] after return received and inspected.
+
+Shipping fees are NON-refundable except for defective/wrong items.
+
+23.4 International Returns
+
+International returns may be subject to:
+• Higher shipping costs (customer responsibility)
+• Customs fees upon return (non-refundable)
+• Extended processing times
+
+We recommend purchasing shipping insurance for international returns.
+
+23.5 Exchanges
+
+We generally do NOT offer direct exchanges. Return for refund and place new order for desired item.
+
+24. INTELLECTUAL PROPERTY POLICY (COMPREHENSIVE)
+
+24.1 Website Content Ownership
+
+All content on this Website is owned or licensed by us and protected under:
+• Copyright laws (US, EU, international)
+• Trademark laws
+• Patent laws (where applicable)
+• Trade secret protections
+• Database rights (EU)
+
+24.2 Prohibited Uses
+
+You may NOT:
+• Copy website design, layout, or code
+• Extract databases or content collections
+• Use our trademarks or logos without permission
+• Create derivative works or competing services
+• Reverse engineer any software or technology
+• Frame or embed our content without authorization
+
+24.3 Trademark Notice
+
+[WebsiteName] and associated logos are trademarks of [Company Name]. All rights reserved.
+
+Third-party trademarks mentioned are property of respective owners and used for identification purposes only. No endorsement implied.
+
+24.4 Patent Rights
+
+Where applicable, certain processes, technologies, or methods are subject to patent protection. Unauthorized use may constitute patent infringement.
+
+24.5 Licensing Opportunities
+
+For licensing inquiries, contact: [Insert Licensing Email]
+
+25. CERTIFICATE & ACCREDITATION POLICY (E-LEARNING)
+
+25.1 Certificate Issuance
+
+Certificates of completion are issued upon:
+• Completing all required course modules
+• Passing assessments with minimum score [Insert %]
+• Meeting participation requirements
+• Account in good standing (no violations)
+
+25.2 Certificate Authenticity
+
+Certificates include:
+• Unique certificate ID for verification
+• Course title and completion date
+• Digital signature or seal
+• Verification URL (if applicable)
+
+Fraudulent certificates will result in account termination and legal action.
+
+25.3 No Third-Party Accreditation
+
+⚠️ IMPORTANT: Unless explicitly stated, our certificates are NOT:
+• Accredited by governmental education agencies
+• Recognized by professional licensing boards
+• Accepted for college credit or degree requirements
+• Valid for continuing education units (CEUs) unless specified
+
+25.4 Employer Recognition
+
+We do NOT guarantee employer recognition or acceptance of certificates. Verify acceptance with your employer or licensing authority before enrollment.
+
+25.5 Certificate Replacement
+
+Lost certificates can be reissued for a fee of [Insert Amount]. Contact [Insert Support Email] with proof of completion.
+
+26. INSTRUCTOR AGREEMENT TERMS (E-LEARNING PLATFORMS)
+
+26.1 Instructor Relationship
+
+Instructors are independent contractors, NOT employees.
+
+Instructors retain copyright to original course content but grant us license to host, display, and distribute content on our platform.
+
+26.2 Revenue Sharing
+
+Instructors earn [Insert %] of net revenue from course sales after:
+• Payment processing fees
+• Platform fees
+• Applicable taxes
+• Refunds and chargebacks
+
+Payments made monthly for earnings exceeding [Insert Minimum Amount].
+
+26.3 Content Requirements
+
+Instructors must:
+• Provide original content or properly licensed materials
+• Ensure accuracy and quality of instruction
+• Update content to maintain relevance
+• Respond to student questions within reasonable timeframe
+• Comply with content policies and community guidelines
+
+26.4 Content Removal Rights
+
+We may remove courses that:
+• Violate intellectual property rights
+• Contain inaccurate or misleading information
+• Generate excessive complaints or refund requests
+• Violate community standards or legal requirements
+
+26.5 Non-Compete & Exclusivity
+
+Unless otherwise agreed, instructors may offer courses on other platforms.
+
+Instructors may NOT:
+• Directly solicit our students to competitor platforms
+• Use our student data for external marketing
+• Violate confidentiality of platform analytics or business information
+
+27. ADDITIONAL DISCLAIMERS & PROTECTIONS
+
+27.1 Results & Outcomes Disclaimer
+
+NO GUARANTEE OF RESULTS: We do NOT guarantee specific outcomes, including but not limited to:
+• Financial gains or business success
+• Educational advancement or career improvement
+• Health improvements or wellness outcomes
+• Successful travel experiences or satisfaction
+• Product performance or longevity
+• Service quality from third parties
+
+Past results, testimonials, and case studies are NOT indicative of future performance.
+
+27.2 Third-Party Links Disclaimer
+
+This Website contains links to external websites. We are NOT responsible for:
+• Content, accuracy, or availability of external sites
+• Privacy practices of third-party websites
+• Transactions or interactions with external services
+• Security or safety of external platforms
+
+Clicking external links is at your own risk.
+
+27.3 Testimonials & Reviews Disclaimer
+
+Testimonials and reviews may NOT represent typical results. Individual experiences vary based on numerous factors.
+
+We may receive compensation for some testimonials or reviews (disclosed where applicable).
+
+27.4 Translation & Language Disclaimer
+
+Content may be available in multiple languages through automated or human translation. We are NOT responsible for:
+• Translation errors or inaccuracies
+• Cultural misunderstandings or interpretations
+• Legal differences in translated terms
+
+English version governs in case of conflicts.
+
+27.5 Accessibility Commitment
+
+We strive for digital accessibility compliance with WCAG 2.1 guidelines but do NOT guarantee full accessibility for all users and assistive technologies.
+
+Report accessibility issues to: [Insert Accessibility Email]
+
+27.6 Age Restrictions
+
+Users must be at least 18 years old (or age of majority in their jurisdiction) to make purchases, enroll in courses, or make donations.
+
+Users under 13 are prohibited from submitting personal information per COPPA.
+
+27.7 Geographic Restrictions
+
+Some services may not be available in all jurisdictions due to legal restrictions or licensing limitations.
+
+We reserve the right to block access from certain geographic regions.
+
+28. DISPUTE RESOLUTION & LEGAL PROCESS
+
+28.1 Informal Resolution
+
+Before filing legal claims, parties must attempt informal resolution by contacting:
+Email: [Insert Legal Email]
+Subject: "Legal Dispute - [Brief Description]"
+
+We will respond within [X business days] to discuss resolution.
+
+28.2 Binding Arbitration
+
+Any disputes not resolved informally must be submitted to binding arbitration in [Insert Jurisdiction] under rules of [Insert Arbitration Organization].
+
+Arbitration Proceedings:
+• Conducted in English
+• Single arbitrator mutually agreed upon
+• Limited discovery to reduce costs
+• Arbitrator's decision is final and binding
+• Judgment may be entered in any court of competent jurisdiction
+
+28.3 Class Action Waiver
+
+YOU WAIVE THE RIGHT TO PARTICIPATE IN CLASS ACTION LAWSUITS OR CLASS-WIDE ARBITRATION.
+
+All disputes must be brought individually. No consolidation with other claims without written consent.
+
+28.4 Governing Law
+
+These terms governed by laws of [Insert Jurisdiction] without regard to conflict of laws principles.
+
+For EU consumers: This does NOT limit statutory consumer rights under EU law.
+
+28.5 Limitation Period
+
+Claims must be brought within ONE (1) YEAR of the event giving rise to the claim. Claims filed after this period are barred.
+
+28.6 Severability
+
+If any provision is found unenforceable, remaining provisions continue in full effect. Unenforceable provisions will be modified to the minimum extent necessary to make enforceable.
+
+29. INDEMNIFICATION
+
+You agree to indemnify, defend, and hold harmless [WebsiteName], its owners, officers, directors, employees, contractors, agents, and affiliates from any claims, damages, losses, liabilities, costs, or expenses (including reasonable attorneys' fees) arising from:
+
+• Your use or misuse of the Website or services
+• Your violation of these terms or any applicable laws
+• Your User Content or submissions
+• Your violation of third-party rights (intellectual property, privacy, publicity)
+• Your transactions with third-party merchants, hotels, airlines, instructors, or service providers
+• Your reliance on content, advice, or recommendations
+
+This indemnification survives termination of your use of the Website.
+
+30. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW:
+
+WE SHALL NOT BE LIABLE FOR ANY:
+• Indirect, incidental, consequential, special, or punitive damages
+• Loss of profits, revenue, data, or business opportunities
+• Personal injury or property damage (except gross negligence or willful misconduct)
+• Third-party actions or omissions
+• Force majeure events or circumstances beyond our control
+
+MAXIMUM LIABILITY: Our total liability shall not exceed the amount you paid to us in the twelve (12) months preceding the claim, or $100 USD, whichever is less.
+
+Some jurisdictions do not allow limitation of liability for certain damages. In such jurisdictions, our liability is limited to the fullest extent permitted by law.
+
+31. SEVERABILITY & ENTIRE AGREEMENT
+
+31.1 Severability
+
+If any provision of these terms is found invalid or unenforceable by a court of competent jurisdiction, that provision will be enforced to the maximum extent permissible, and other provisions remain in full force and effect.
+
+31.2 Entire Agreement
+
+These terms, together with our Privacy Policy, Cookie Policy, and any specific service agreements, constitute the entire agreement between you and [WebsiteName] regarding use of our services.
+
+31.3 No Waiver
+
+Our failure to enforce any provision does NOT constitute a waiver of that provision or any other provision.
+
+31.4 Assignment
+
+You may NOT assign or transfer these terms without our written consent. We may assign our rights and obligations without restriction.
+
+32. MODIFICATIONS & UPDATES
+
+32.1 Right to Modify
+
+We reserve the right to modify, update, or replace these terms at any time at our sole discretion.
+
+32.2 Notification of Changes
+
+Material changes will be communicated via:
+• Email notification to registered users
+• Prominent notice on Website homepage
+• Updated "Last Modified" date
+
+32.3 Acceptance of Changes
+
+Continued use of the Website after modifications constitutes acceptance of updated terms.
+
+If you do not agree with modifications, your sole remedy is to discontinue use of the Website.
+
+33. CONTACT INFORMATION & LEGAL NOTICES
+
+For questions, concerns, or legal notices regarding these terms:
+
+General Inquiries: [Insert Contact Email]
+Legal Department: [Insert Legal Email]
+DMCA Notices: [Insert DMCA Email]
+Privacy Requests: [Insert Privacy Email]
+Returns & Refunds: [Insert Support Email]
+
+Mailing Address: [Insert Business Address]
+Website: https://[WebsiteName].com
+
+Business Hours: [Insert Hours]
+Response Time: We aim to respond within [X business days]
+
+34. FINAL ACKNOWLEDGMENT
+
+BY USING THIS WEBSITE, YOU ACKNOWLEDGE THAT YOU HAVE:
+
+✓ Read and understood ALL terms, disclosures, and policies
+✓ Agree to ALL terms without modification or reservation
+✓ Waive rights to class action participation
+✓ Accept binding arbitration for dispute resolution
+✓ Understand limitations of liability and disclaimers
+✓ Acknowledge that third-party services are beyond our control
+✓ Accept responsibility for your own decisions and actions
+✓ Understand this is NOT professional advice (legal, financial, medical, educational accreditation)
+✓ Agree to indemnify us against claims arising from your use
+✓ Accept that certificates may NOT be accredited or recognized
+✓ Understand donations are non-refundable and NOT guaranteed to be tax-deductible
+✓ Accept travel booking risks and cancellation policies
+✓ Understand dropshipping fulfillment and shipping variables
+✓ Acknowledge all intellectual property rights
+✓ Accept User-Generated Content policy and license grants
+
+This agreement is legally binding. If you do not agree, DO NOT use this Website.
+
+LAST UPDATED: January 27, 2025
+EFFECTIVE DATE: January 1, 2025
+
+═══════════════════════════════════════════════════════════════
+
+© [Insert Year] [WebsiteName]. All Rights Reserved.
+
+Protected under international copyright and trademark laws.
+
+Unauthorized use, reproduction, or distribution of content is strictly prohibited and may result in severe civil and criminal penalties.`;
 
   const termsAndConditions = `TERMS AND CONDITIONS
 
