@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check, AlertTriangle } from "lucide-react";
+import stripeLogo from "@/assets/stripe-logo.svg";
 const includedItems = ["Terms & Conditions for Photographers", "Assignment Agreement (Offerte) with Templates", "Privacy Policy (GDPR-compliant)", "Cookie Policy (GDPR-compliant)", "Disclaimer for Photo & Content Protection", "Quitclaim for Subject Agreements", "Copyright Protection (Auteursrecht)", "Implementation Guide"];
 const PricingPhotography = () => {
   return <section id="pricing" className="py-20 bg-primary/5">
@@ -50,9 +51,12 @@ const PricingPhotography = () => {
               }} />
               </div>
 
-              <p className="text-base font-semibold text-center text-muted-foreground mt-4">
-                Veilig betalen via Stripe, automatisch omgerekend naar uw eigen valuta.
-              </p>
+              <div className="flex items-center justify-center gap-2 mt-4">
+                <img src={stripeLogo} alt="Stripe" className="h-5 w-5" />
+                <p className="text-sm font-medium text-muted-foreground">
+                  Secure payment via Stripe • Automatically converted to your local currency
+                </p>
+              </div>
 
               <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-3 text-base font-medium">
                 <div className="flex gap-2">

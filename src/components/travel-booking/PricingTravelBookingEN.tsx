@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check, AlertTriangle } from "lucide-react";
+import stripeLogo from "@/assets/stripe-logo.svg";
 
 const includedItems = [
   "GDPR Privacy Policy",
@@ -64,9 +65,12 @@ const PricingTravelBookingEN = () => {
                 />
               </div>
 
-              <p className="text-base font-semibold text-center text-muted-foreground">
-                Veilig betalen via Stripe, automatisch omgerekend naar uw eigen valuta.
-              </p>
+              <div className="flex items-center justify-center gap-2 mt-4">
+                <img src={stripeLogo} alt="Stripe" className="h-5 w-5" />
+                <p className="text-sm font-medium text-muted-foreground">
+                  Secure payment via Stripe • Automatically converted to your local currency
+                </p>
+              </div>
 
               <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-3">
                 <div className="flex gap-2">
