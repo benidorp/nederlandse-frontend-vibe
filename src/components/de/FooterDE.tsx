@@ -143,6 +143,22 @@ const FooterDE = () => {
               DE
             </a>
           </div>
+          
+          {/* SEO Internal Linking - Hidden from view but crawlable */}
+          <div className="sr-only">
+            <nav aria-label="Zusätzliche Seiten">
+              <a href="/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy">Affiliate-Rechtsdokumente</a>
+              <a href="/photography-legal-documents-terms-conditions-privacy-policy-contract-copyright-protection">Fotografie-Rechtsdokumente</a>
+              <a href="/must-have-legal-protection-for-every-hotel-and-travel-website-terms-conditions-privacy-policy-cancellation-policy-disclaimer">Reise-Rechtsdokumente</a>
+              <a href="/essential-legal-documents-ecommerce-website-terms-conditions-privacy-policy-return-policy-shipping-policy">E-Commerce-Rechtsdokumente</a>
+              <a href="/webshop-online-business-legal-protection-terms-privacy-policy-cookie-policy-gdpr-compliance">Online-Shop-Rechtsdokumente</a>
+              <a href="/dropshipping-business-legal-protection-terms-conditions-privacy-policy-supplier-agreement-refund-policy">Dropshipping-Rechtsdokumente</a>
+              <a href="/elearning-platform-legal-documents-terms-privacy-policy-gdpr-compliance">E-Learning-Rechtsdokumente</a>
+              <a href="/nonprofit-charity-legal-documents-donation-terms-privacy-policy">Nonprofit-Rechtsdokumente</a>
+              <a href="/streaming-media-legal-documents-terms-conditions-privacy-policy-dmca-content-license">Streaming-Rechtsdokumente</a>
+              <a href="/comparison-review-website-legal-documents-terms-privacy-affiliate-disclosure-disclaimer">Vergleichs-Rechtsdokumente</a>
+            </nav>
+          </div>
         </div>
       </div>
     </footer>

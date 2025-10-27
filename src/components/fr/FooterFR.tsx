@@ -127,6 +127,22 @@ const FooterFR = () => {
               <span className="text-primary font-medium">Français</span>
             </div>
           </div>
+          
+          {/* SEO Internal Linking - Hidden from view but crawlable */}
+          <div className="sr-only">
+            <nav aria-label="Pages supplémentaires">
+              <a href="/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy">Documents Juridiques Affiliation</a>
+              <a href="/photography-legal-documents-terms-conditions-privacy-policy-contract-copyright-protection">Documents Juridiques Photographie</a>
+              <a href="/must-have-legal-protection-for-every-hotel-and-travel-website-terms-conditions-privacy-policy-cancellation-policy-disclaimer">Documents Juridiques Voyages</a>
+              <a href="/essential-legal-documents-ecommerce-website-terms-conditions-privacy-policy-return-policy-shipping-policy">Documents Juridiques E-commerce</a>
+              <a href="/webshop-online-business-legal-protection-terms-privacy-policy-cookie-policy-gdpr-compliance">Documents Juridiques Boutique en Ligne</a>
+              <a href="/dropshipping-business-legal-protection-terms-conditions-privacy-policy-supplier-agreement-refund-policy">Documents Juridiques Dropshipping</a>
+              <a href="/elearning-platform-legal-documents-terms-privacy-policy-gdpr-compliance">Documents Juridiques E-learning</a>
+              <a href="/nonprofit-charity-legal-documents-donation-terms-privacy-policy">Documents Juridiques Associations</a>
+              <a href="/streaming-media-legal-documents-terms-conditions-privacy-policy-dmca-content-license">Documents Juridiques Streaming</a>
+              <a href="/comparison-review-website-legal-documents-terms-privacy-affiliate-disclosure-disclaimer">Documents Juridiques Comparaison</a>
+            </nav>
+          </div>
         </div>
       </div>
     </footer>
