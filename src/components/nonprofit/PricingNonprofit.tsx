@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle2 } from "lucide-react";
+import { Check, Sparkles, AlertTriangle } from "lucide-react";
+import stripeLogo from "@/assets/stripe-logo.svg";
 
 const PricingNonprofit = () => {
   const features = [
@@ -8,76 +9,99 @@ const PricingNonprofit = () => {
     "Volunteer Agreement Template",
     "Cookie Policy",
     "Fundraising Disclosure Statement",
-    "Implementation Guide & Checklist",
-    "Lifetime Updates & Support",
-    "Multi-Language Ready"
+    "Implementation Guide & Checklist"
   ];
 
   return (
-    <section id="pricing" className="py-20 bg-gradient-to-b from-primary/5 to-background">
+    <section id="pricing" className="py-20 bg-gradient-to-br from-background via-primary/5 to-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
+          {/* Header */}
           <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-primary/60 text-primary-foreground px-6 py-2 rounded-full mb-6 shadow-lg">
+              <Sparkles className="w-5 h-5" />
+              <span className="font-semibold">Simple Pricing</span>
+            </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               Invest in Your Mission's Protection
             </h2>
             <p className="text-xl text-muted-foreground">
-              One-time investment, lifetime protection for your charitable organization
+              One-time investment. No subscriptions. Lifetime access.
             </p>
           </div>
 
-          <Card className="border-2 border-primary/30 shadow-2xl overflow-hidden">
-            <CardHeader className="bg-gradient-to-br from-primary to-primary/80 text-primary-foreground text-center py-12">
+          {/* Pricing Card */}
+          <Card className="border-4 border-primary/30 shadow-2xl bg-gradient-to-br from-card via-card to-primary/5">
+            <CardHeader className="text-center pb-8 pt-8">
               <div className="mb-4">
-                <span className="text-lg font-semibold">Complete Legal Package</span>
+                <div className="inline-block bg-gradient-to-r from-primary to-accent text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold shadow-md">
+                  Most Popular
+                </div>
               </div>
-              <CardTitle className="text-5xl md:text-6xl font-bold mb-4">
-                €79
-              </CardTitle>
-              <p className="text-lg opacity-90">One-time payment • Lifetime access</p>
+              <div className="mb-4">
+                <span className="text-5xl font-bold text-primary">€79</span>
+                <span className="text-muted-foreground ml-2">one-time</span>
+              </div>
+              <CardTitle className="text-2xl">Non-Profit Legal Package</CardTitle>
+              <p className="text-muted-foreground">One-time payment • Instant access</p>
             </CardHeader>
-            <CardContent className="pt-12 pb-12">
-              <div className="grid md:grid-cols-2 gap-4 mb-10">
-                {features.map((feature, index) => (
+            <CardContent className="space-y-6 pb-8">
+              {/* What's included */}
+              <div className="space-y-4">
+              {features.map((feature, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <div className="flex-shrink-0">
-                      <div className="w-6 h-6 rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center">
-                        <CheckCircle2 className="w-4 h-4 text-primary-foreground" />
-                      </div>
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center mt-0.5 shadow-md">
+                      <Check className="w-4 h-4 text-primary-foreground" />
                     </div>
                     <span className="text-foreground font-medium">{feature}</span>
                   </div>
                 ))}
               </div>
 
-              <div className="text-center">
-                <stripe-buy-button
-                  buy-button-id="buy_btn_1QYdMjP6OLyvLfi1Iw70oUdV"
-                  publishable-key="pk_live_51QYdKoP6OLyvLfi1vk3GFDi2X7wS64l95G6KzIWgxXWYoSAm8RLXBIZwsqGnNlGnVrfpSZUbWI0v4xbVYi1c0Tjr00oIkxRxJr"
-                >
-                </stripe-buy-button>
-                
-                <div className="mt-8 flex items-center justify-center gap-8 text-sm text-muted-foreground">
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-primary" />
-                    <span>Instant Download</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-primary" />
-                    <span>Secure Payment</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-primary" />
-                    <span>Money-Back Guarantee</span>
+              {/* Payment Section */}
+              <div 
+                className="pt-6 border-t flex justify-center"
+              >
+                <div 
+                  className="[&_stripe-buy-button]:scale-125 [&_stripe-buy-button]:origin-center"
+                  dangerouslySetInnerHTML={{
+                    __html: `<stripe-buy-button
+                      buy-button-id="buy_btn_1QYdMjP6OLyvLfi1Iw70oUdV"
+                      publishable-key="pk_live_51QYdKoP6OLyvLfi1vk3GFDi2X7wS64l95G6KzIWgxXWYoSAm8RLXBIZwsqGnNlGnVrfpSZUbWI0v4xbVYi1c0Tjr00oIkxRxJr"
+                    ></stripe-buy-button>`
+                  }}
+                />
+              </div>
+
+              <div className="flex items-center justify-center gap-2 mt-4">
+                <img src={stripeLogo} alt="Stripe" className="h-5 w-5" />
+                <p className="text-sm font-medium text-muted-foreground">
+                  Secure payment via Stripe • Automatically converted to your local currency
+                </p>
+              </div>
+
+              {/* Warning */}
+              <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-3">
+                <div className="flex gap-2">
+                  <AlertTriangle className="h-4 w-4 text-destructive flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h4 className="font-semibold text-sm text-foreground mb-0.5">Important: No Returns</h4>
+                    <p className="text-xs text-muted-foreground">
+                      Our products cannot be returned and we do not offer a money-back guarantee. 
+                      This makes sense for digital documents that can easily be copied after download.
+                    </p>
                   </div>
                 </div>
-
-                <p className="mt-6 text-sm text-muted-foreground">
-                  💡 More affordable than one hour with a lawyer
-                </p>
               </div>
             </CardContent>
           </Card>
+
+          {/* Additional info */}
+          <div className="text-center mt-8 text-muted-foreground">
+            <p className="text-sm">
+              💡 Compare: One hour with a lawyer costs €150-300. This complete package saves you thousands.
+            </p>
+          </div>
         </div>
       </div>
     </section>

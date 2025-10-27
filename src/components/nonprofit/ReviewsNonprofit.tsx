@@ -5,45 +5,24 @@ const ReviewsNonprofit = () => {
   const reviews = [
     {
       name: "Sarah Mitchell",
-      organization: "Clean Water Initiative",
+      organization: "Hope Rising Foundation",
       role: "Executive Director",
       rating: 5,
       text: "As a small charity, legal costs were always a concern. This package gave us everything we needed at a fraction of the cost. Our donors now have complete confidence in our transparency and data protection."
     },
     {
       name: "James O'Connor",
-      organization: "Youth Education Fund",
+      organization: "Bright Future Collective",
       role: "Operations Manager",
       rating: 5,
       text: "The volunteer agreement alone was worth the investment. We've had no issues since implementing these documents, and our board loves the professional approach to legal compliance."
     },
     {
       name: "Maria Santos",
-      organization: "Animal Rescue Alliance",
+      organization: "Hearts United Charity",
       role: "Founder",
       rating: 5,
       text: "Perfect for international fundraising! The GDPR compliance meant we could confidently accept donations from EU supporters. The implementation guide made everything so easy to set up."
-    },
-    {
-      name: "David Chen",
-      organization: "Community Health Network",
-      role: "Legal Coordinator",
-      rating: 5,
-      text: "Comprehensive and well-written. I reviewed these documents with our attorney and they were impressed with the quality. Saved us thousands in legal fees."
-    },
-    {
-      name: "Emma Thompson",
-      organization: "Environmental Action Group",
-      role: "Program Director",
-      rating: 5,
-      text: "The fundraising disclosure template helped us build trust with major donors. Clear, transparent, and exactly what we needed for grant applications."
-    },
-    {
-      name: "Michael Rodriguez",
-      organization: "Homeless Support Services",
-      role: "Executive Director",
-      rating: 5,
-      text: "Quick implementation, professional results. Our website is now fully compliant and our volunteers feel protected. Best investment we made this year."
     }
   ];
 
