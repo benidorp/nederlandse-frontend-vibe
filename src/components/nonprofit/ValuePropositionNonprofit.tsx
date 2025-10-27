@@ -33,7 +33,7 @@ const ValuePropositionNonprofit = () => {
                   <img 
                     src={nicoleProfile} 
                     alt="Nicole Henderson - Non-Profit Legal Specialist" 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover brightness-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent to-card/80"></div>
                 </div>
