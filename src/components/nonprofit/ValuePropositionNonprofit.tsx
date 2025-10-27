@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, Clock, Globe, Zap, FileText, Shield } from "lucide-react";
-import nicoleProfile from "@/assets/nicole-nonprofit.png";
+import nicoleProfile from "@/assets/nicole-nonprofit-clear.png";
 
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
@@ -33,7 +33,7 @@ const ValuePropositionNonprofit = () => {
                   <img 
                     src={nicoleProfile} 
                     alt="Nicole Henderson - Non-Profit Legal Specialist" 
-                    className="w-full h-full object-cover brightness-125 contrast-110 saturate-110"
+                    className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent to-card/80"></div>
                 </div>
