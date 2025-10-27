@@ -9,14 +9,14 @@ const HeroPhotography = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-[600px] bg-gradient-to-br from-background to-muted">
+    <section id="home" className="relative min-h-[600px] bg-navy">
       <div className="container py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
               Legal Documents for Photography Websites
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className="text-xl text-white/90 mb-8">
               Protect your photography business with professionally crafted legal documents. Terms & Conditions, Assignment Agreements, Privacy Policy, Quitclaim, Copyright Protection & More.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -32,6 +32,7 @@ const HeroPhotography = () => {
                 size="lg" 
                 variant="outline"
                 onClick={() => scrollToSection("services")}
+                className="bg-white/10 text-white border-white/20 hover:bg-white/20"
               >
                 Learn More
               </Button>
