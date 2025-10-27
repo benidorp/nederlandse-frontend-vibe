@@ -80,7 +80,9 @@ const ValuePropositionDropshipping = () => {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex gap-3">
-                <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-1 drop-shadow-sm" />
+                <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center flex-shrink-0 shadow-sm">
+                  <CheckCircle2 className="h-5 w-5 text-primary-foreground" />
+                </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">GDPR Privacy Policy</h4>
                   <p className="text-sm text-muted-foreground">
@@ -89,7 +91,9 @@ const ValuePropositionDropshipping = () => {
                 </div>
               </div>
               <div className="flex gap-3">
-                <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center flex-shrink-0 shadow-sm">
+                  <CheckCircle2 className="h-5 w-5 text-primary-foreground" />
+                </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Return & Refund Policy</h4>
                   <p className="text-sm text-muted-foreground">
@@ -98,7 +102,9 @@ const ValuePropositionDropshipping = () => {
                 </div>
               </div>
               <div className="flex gap-3">
-                <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center flex-shrink-0 shadow-sm">
+                  <CheckCircle2 className="h-5 w-5 text-primary-foreground" />
+                </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Terms & Conditions</h4>
                   <p className="text-sm text-muted-foreground">
@@ -107,7 +113,9 @@ const ValuePropositionDropshipping = () => {
                 </div>
               </div>
               <div className="flex gap-3">
-                <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center flex-shrink-0 shadow-sm">
+                  <CheckCircle2 className="h-5 w-5 text-primary-foreground" />
+                </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Shipping Policy</h4>
                   <p className="text-sm text-muted-foreground">
@@ -116,7 +124,9 @@ const ValuePropositionDropshipping = () => {
                 </div>
               </div>
               <div className="flex gap-3">
-                <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center flex-shrink-0 shadow-sm">
+                  <CheckCircle2 className="h-5 w-5 text-primary-foreground" />
+                </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Cookie Policy</h4>
                   <p className="text-sm text-muted-foreground">
@@ -125,7 +135,9 @@ const ValuePropositionDropshipping = () => {
                 </div>
               </div>
               <div className="flex gap-3">
-                <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center flex-shrink-0 shadow-sm">
+                  <CheckCircle2 className="h-5 w-5 text-primary-foreground" />
+                </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Implementation Guide</h4>
                   <p className="text-sm text-muted-foreground">
