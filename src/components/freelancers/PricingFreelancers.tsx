@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check, AlertTriangle } from "lucide-react";
@@ -15,23 +14,6 @@ const includedItems = [
 ];
 
 const PricingFreelancers = () => {
-  const stripeButtonRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    // Load Stripe script
-    const script = document.createElement('script');
-    script.src = 'https://js.stripe.com/v3/buy-button.js';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      // Cleanup script on unmount
-      if (document.body.contains(script)) {
-        document.body.removeChild(script);
-      }
-    };
-  }, []);
-
   return (
     <section id="pricing" className="py-16 bg-secondary/30">
       <div className="container">
@@ -70,12 +52,16 @@ const PricingFreelancers = () => {
                 ))}
               </div>
 
-              <div className="pt-6 border-t" ref={stripeButtonRef}>
-                <stripe-buy-button
-                  buy-button-id="buy_btn_1QbVzqP59jeztTKHgDXFhBCj"
-                  publishable-key="pk_live_51QbVvSP59jeztTKHGPAUJfzp9zMVJPyakuwdpj8WmInPjVk1HzHDqbMZcmH2Yq7ktowv7RHC5sAbQR1c3WcJmLW800JELcR7Bv"
-                >
-                </stripe-buy-button>
+              <div className="pt-6 border-t flex justify-center">
+                <div 
+                  className="[&_stripe-buy-button]:scale-125 [&_stripe-buy-button]:origin-center"
+                  dangerouslySetInnerHTML={{
+                    __html: `<stripe-buy-button
+                      buy-button-id="buy_btn_1QbVzqP59jeztTKHgDXFhBCj"
+                      publishable-key="pk_live_51QbVvSP59jeztTKHGPAUJfzp9zMVJPyakuwdpj8WmInPjVk1HzHDqbMZcmH2Yq7ktowv7RHC5sAbQR1c3WcJmLW800JELcR7Bv"
+                    ></stripe-buy-button>`
+                  }}
+                />
               </div>
 
               <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
