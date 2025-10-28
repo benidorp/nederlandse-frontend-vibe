@@ -43,22 +43,58 @@ const FooterFreelancers = () => {
           
           <div>
             <h4 className="font-semibold mb-4">Legal Documents</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>Client Service Agreement</li>
-              <li>Terms of Service</li>
-              <li>Privacy Policy</li>
-              <li>Liability Disclaimer</li>
-              <li>Cookie Policy</li>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <button onClick={() => scrollToSection("services")} className="text-muted-foreground hover:text-primary transition-colors">
+                  Client Service Agreement
+                </button>
+              </li>
+              <li>
+                <button onClick={() => scrollToSection("services")} className="text-muted-foreground hover:text-primary transition-colors">
+                  Terms of Service
+                </button>
+              </li>
+              <li>
+                <button onClick={() => scrollToSection("services")} className="text-muted-foreground hover:text-primary transition-colors">
+                  Privacy Policy
+                </button>
+              </li>
+              <li>
+                <button onClick={() => scrollToSection("services")} className="text-muted-foreground hover:text-primary transition-colors">
+                  Liability Disclaimer
+                </button>
+              </li>
+              <li>
+                <button onClick={() => scrollToSection("services")} className="text-muted-foreground hover:text-primary transition-colors">
+                  Cookie Policy
+                </button>
+              </li>
             </ul>
           </div>
           
           <div>
             <h4 className="font-semibold mb-4">Support</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>Contact Us</li>
-              <li>Implementation Guide</li>
-              <li>Documentation</li>
-              <li>Terms & Conditions</li>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <button onClick={() => scrollToSection("pricing")} className="text-muted-foreground hover:text-primary transition-colors">
+                  Contact Us
+                </button>
+              </li>
+              <li>
+                <button onClick={() => scrollToSection("services")} className="text-muted-foreground hover:text-primary transition-colors">
+                  Implementation Guide
+                </button>
+              </li>
+              <li>
+                <button onClick={() => scrollToSection("faq")} className="text-muted-foreground hover:text-primary transition-colors">
+                  Documentation
+                </button>
+              </li>
+              <li>
+                <button onClick={() => scrollToSection("faq")} className="text-muted-foreground hover:text-primary transition-colors">
+                  Terms & Conditions
+                </button>
+              </li>
             </ul>
           </div>
         </div>
