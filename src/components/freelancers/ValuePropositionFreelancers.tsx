@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Shield, FileText, Scale, Globe, Clock, CheckCircle2 } from "lucide-react";
-import profileImage from "@/assets/nicole-profile.jpg";
+import profileImage from "@/assets/nicole-freelancer-profile.png";
 
 const ValuePropositionFreelancers = () => {
   const scrollToSection = (id: string) => {
