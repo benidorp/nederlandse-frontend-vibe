@@ -65,20 +65,6 @@ const PricingFreelancers = () => {
                 />
               </div>
 
-              <div className="pt-4 text-center">
-                <p className="text-xs text-muted-foreground mb-2">Having trouble with the button? Open checkout in a new tab:</p>
-                <Button asChild>
-                  <a
-                    href="https://buy.stripe.com/eVq4gz95B3em1at4uu9Zm01"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Pay securely via Stripe in a new tab"
-                  >
-                    Pay securely via Stripe (opens new tab)
-                  </a>
-                </Button>
-              </div>
-
               <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
                 <img src={stripeLogo} alt="Stripe" className="h-6" />
                 <span>Secure payment via Stripe</span>
