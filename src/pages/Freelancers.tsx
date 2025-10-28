@@ -7,6 +7,7 @@ import PricingFreelancers from "@/components/freelancers/PricingFreelancers";
 import ReviewsFreelancers from "@/components/freelancers/ReviewsFreelancers";
 import FAQFreelancers from "@/components/freelancers/FAQFreelancers";
 import BlogPostsFreelancers from "@/components/freelancers/BlogPostsFreelancers";
+import CTABoxFreelancers from "@/components/freelancers/CTABoxFreelancers";
 import FooterFreelancers from "@/components/freelancers/FooterFreelancers";
 import GTranslateWidget from "@/components/GTranslateWidget";
 
@@ -50,6 +51,7 @@ const Freelancers = () => {
           <ReviewsFreelancers />
           <FAQFreelancers />
           <BlogPostsFreelancers />
+          <CTABoxFreelancers />
         </main>
         <FooterFreelancers />
         <GTranslateWidget />
