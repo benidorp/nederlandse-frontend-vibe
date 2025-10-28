@@ -57,8 +57,8 @@ const PricingFreelancers = () => {
                   className="[&_stripe-buy-button]:scale-125 [&_stripe-buy-button]:origin-center"
                   dangerouslySetInnerHTML={{
                     __html: `<stripe-buy-button
-                      buy-button-id="buy_btn_1QbVzqP59jeztTKHgDXFhBCj"
-                      publishable-key="pk_live_51QbVvSP59jeztTKHGPAUJfzp9zMVJPyakuwdpj8WmInPjVk1HzHDqbMZcmH2Yq7ktowv7RHC5sAbQR1c3WcJmLW800JELcR7Bv"
+                      buy-button-id="buy_btn_1SKm3dFXIgtr666GOD7ZP6da"
+                      publishable-key="pk_live_51SK0ndFXIgtr666GrmKudtOsf3HHcaBw06Ei3x8LbGKOYQ3oZeIrmpMpTfoTBJ5c7tPyFfbRC7pugHMC0l6b3ZKP009fgyIrGc"
                     ></stripe-buy-button>`
                   }}
                 />
