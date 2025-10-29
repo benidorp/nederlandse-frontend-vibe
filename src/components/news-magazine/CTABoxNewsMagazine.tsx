@@ -1,17 +1,16 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
-
 const CTABoxNewsMagazine = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({
+        behavior: "smooth"
+      });
     }
   };
-
-  return (
-    <section className="py-20 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950 dark:to-blue-900">
+  return <section className="py-20 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950 dark:to-blue-900">
       <div className="container">
         <Card className="max-w-4xl mx-auto border-blue-200 dark:border-blue-800 shadow-2xl bg-white dark:bg-slate-900">
           <CardContent className="p-8 md:p-12">
@@ -68,22 +67,14 @@ const CTABoxNewsMagazine = () => {
             </div>
 
             <div className="text-center">
-              <Button 
-                size="lg" 
-                onClick={() => scrollToSection("pricing")}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg font-semibold shadow-lg"
-              >
+              <Button size="lg" onClick={() => scrollToSection("pricing")} className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg font-semibold shadow-lg">
                 Bestel Nu - Slechts €79
               </Button>
-              <p className="text-sm text-muted-foreground mt-4">
-                Direct downloaden na betaling • Geen abonnement • Geld-terug-garantie
-              </p>
+              <p className="text-sm text-muted-foreground mt-4">Direct downloaden na betaling • Geen abonnement • Meerdere Talen</p>
             </div>
           </CardContent>
         </Card>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CTABoxNewsMagazine;
