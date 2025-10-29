@@ -28,10 +28,10 @@ const NewsMagazine = () => {
           <HeroNewsMagazine />
           <ValuePropositionNewsMagazine />
           <ServicesNewsMagazine />
-          <CTABoxNewsMagazine />
           <PricingNewsMagazine />
           <ReviewsNewsMagazine />
           <FAQNewsMagazine />
+          <CTABoxNewsMagazine />
         </main>
         <FooterNewsMagazine />
       </div>
