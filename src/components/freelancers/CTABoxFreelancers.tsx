@@ -19,22 +19,22 @@ const CTABoxFreelancers = () => {
               </div>
               
               <h2 className="text-3xl md:text-4xl font-bold">
-                Bescherm Je Freelance Business Vandaag
+                Protect Your Freelance Business Today
               </h2>
               
               <p className="text-lg text-primary-foreground/90">
-                Krijg direct toegang tot alle professionele juridische documenten die je nodig hebt. 
-                Eenmalige betaling van slechts €79 voor levenslange bescherming.
+                Get instant access to all professional legal documents you need. 
+                One-time payment of just €79 for lifetime protection.
               </p>
 
               <div className="flex flex-wrap gap-4 justify-center my-6">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-5 w-5" />
-                  <span>Klaar in minuten</span>
+                  <span>Ready in minutes</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-5 w-5" />
-                  <span>Onbeperkt gebruik</span>
+                  <span>Unlimited use</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-5 w-5" />
@@ -47,11 +47,11 @@ const CTABoxFreelancers = () => {
                 onClick={() => scrollToSection("pricing")}
                 className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 text-lg px-8 py-6 h-auto"
               >
-                Bestel Nu - Slechts €79
+                Order Now - Just €79
               </Button>
 
               <p className="text-sm text-primary-foreground/80">
-                Direct download na betaling • Geen abonnement • Geld-terug-garantie
+                Instant download after payment • No subscription • Money-back guarantee
               </p>
             </div>
           </CardContent>
