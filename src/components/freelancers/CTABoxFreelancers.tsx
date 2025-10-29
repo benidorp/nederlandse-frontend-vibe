@@ -45,7 +45,7 @@ const CTABoxFreelancers = () => {
                 Order Now - Just €79
               </Button>
 
-              <p className="text-sm text-primary-foreground/80">Instant download after payment • No subscription • No Money-back guarantee</p>
+              <p className="text-sm text-primary-foreground/80">Instant download after payment • No subscription • Multiple Languages</p>
             </div>
           </CardContent>
         </Card>
