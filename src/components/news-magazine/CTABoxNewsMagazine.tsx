@@ -16,11 +16,11 @@ const CTABoxNewsMagazine = () => {
           <CardContent className="p-8 md:p-12">
             <div className="text-center mb-8">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Bescherm Uw Nieuwswebsite Vandaag Nog
+                Protect Your News Website Today
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Krijg alle essentiële juridische documenten voor uw nieuws- of magazine website. 
-                GDPR-compliant, professioneel opgesteld en direct te downloaden.
+                Get all essential legal documents for your news or magazine website. 
+                GDPR-compliant, professionally drafted and ready to download.
               </p>
             </div>
 
@@ -31,7 +31,7 @@ const CTABoxNewsMagazine = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">GDPR Privacy Policy</h3>
-                  <p className="text-sm text-muted-foreground">Volledig compliant met EU wetgeving</p>
+                  <p className="text-sm text-muted-foreground">Fully compliant with EU legislation</p>
                 </div>
               </div>
 
@@ -41,7 +41,7 @@ const CTABoxNewsMagazine = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Editorial Policy</h3>
-                  <p className="text-sm text-muted-foreground">Professionele redactionele richtlijnen</p>
+                  <p className="text-sm text-muted-foreground">Professional editorial guidelines</p>
                 </div>
               </div>
 
@@ -51,7 +51,7 @@ const CTABoxNewsMagazine = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Copyright Policy</h3>
-                  <p className="text-sm text-muted-foreground">Bescherm uw content en intellectueel eigendom</p>
+                  <p className="text-sm text-muted-foreground">Protect your content and intellectual property</p>
                 </div>
               </div>
 
@@ -61,16 +61,16 @@ const CTABoxNewsMagazine = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Terms & Conditions</h3>
-                  <p className="text-sm text-muted-foreground">Duidelijke gebruikersvoorwaarden</p>
+                  <p className="text-sm text-muted-foreground">Clear terms of use</p>
                 </div>
               </div>
             </div>
 
             <div className="text-center">
               <Button size="lg" onClick={() => scrollToSection("pricing")} className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg font-semibold shadow-lg">
-                Bestel Nu - Slechts €79
+                Order Now - Only €79
               </Button>
-              <p className="text-sm text-muted-foreground mt-4">Direct downloaden na betaling • Geen abonnement • Meerdere Talen</p>
+              <p className="text-sm text-muted-foreground mt-4">Instant download after payment • No subscription • Multiple Languages</p>
             </div>
           </CardContent>
         </Card>
