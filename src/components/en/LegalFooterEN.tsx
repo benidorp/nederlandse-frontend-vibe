@@ -1,14 +1,7 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
-const legalDocuments = [
-  {
-    title: "Terms and Conditions",
-    content: `**TERMS AND CONDITIONS – IAEE.EU**
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+const legalDocuments = [{
+  title: "Terms and Conditions",
+  content: `**TERMS AND CONDITIONS – IAEE.EU**
 
 **Last Updated: January 2025**
 
@@ -434,10 +427,9 @@ BY USING THIS WEBSITE, YOU ACKNOWLEDGE THAT:
 
 **Last Updated**: January 2025
 **Version**: 2.0`
-  },
-  {
-    title: "Privacy Policy",
-    content: `**PRIVACY POLICY – IAEE.EU**
+}, {
+  title: "Privacy Policy",
+  content: `**PRIVACY POLICY – IAEE.EU**
 
 Welcome to IAEE.EU ("the Website", "we", "us" or "our"). We respect your privacy and take the protection of your personal data very seriously. This privacy policy explains what information we collect, how we use, store and secure it, and what rights you have under international privacy legislation.
 
@@ -576,10 +568,9 @@ For questions, complaints or requests regarding this privacy policy, you can con
 
 Email: support@iaee.eu
 Website: https://iaee.eu`
-  },
-  {
-    title: "Disclaimer",
-    content: `**DISCLAIMER – IAEE.EU / LEGAL AFFILIATE AGREEMENT**
+}, {
+  title: "Disclaimer",
+  content: `**DISCLAIMER – IAEE.EU / LEGAL AFFILIATE AGREEMENT**
 
 **1. Introduction**
 
@@ -666,10 +657,9 @@ For questions about this disclaimer or our services, you can contact us at:
 
 Email: support@iaee.eu
 Website: https://iaee.eu`
-  },
-  {
-    title: "Cookie Policy",
-    content: `**COOKIE POLICY – IAEE.EU**
+}, {
+  title: "Cookie Policy",
+  content: `**COOKIE POLICY – IAEE.EU**
 
 **1. Introduction**
 
@@ -764,52 +754,11 @@ For questions about cookies, privacy or your preferences, you can contact us at:
 
 Email: support@iaee.eu
 Website: https://iaee.eu`
-  }
-];
-
+}];
 const LegalFooterEN = () => {
-  return (
-    <section id="legal-information" className="py-12">
-      <h2 className="text-3xl font-bold mb-8 text-center">Legal Information</h2>
-      <Accordion type="single" collapsible className="w-full space-y-4 max-w-4xl mx-auto">
-        <AccordionItem value="terms" id="terms-and-conditions" className="border rounded-lg px-6">
-          <AccordionTrigger className="text-lg font-semibold hover:no-underline">
-            Terms and Conditions
-          </AccordionTrigger>
-          <AccordionContent className="text-sm leading-relaxed whitespace-pre-line pt-4">
-            {legalDocuments[0].content}
-          </AccordionContent>
-        </AccordionItem>
-        
-        <AccordionItem value="privacy" id="privacy-policy" className="border rounded-lg px-6">
-          <AccordionTrigger className="text-lg font-semibold hover:no-underline">
-            Privacy Policy
-          </AccordionTrigger>
-          <AccordionContent className="text-sm leading-relaxed whitespace-pre-line pt-4">
-            {legalDocuments[1].content}
-          </AccordionContent>
-        </AccordionItem>
-        
-        <AccordionItem value="disclaimer" id="disclaimer" className="border rounded-lg px-6">
-          <AccordionTrigger className="text-lg font-semibold hover:no-underline">
-            Disclaimer
-          </AccordionTrigger>
-          <AccordionContent className="text-sm leading-relaxed whitespace-pre-line pt-4">
-            {legalDocuments[2].content}
-          </AccordionContent>
-        </AccordionItem>
-        
-        <AccordionItem value="cookies" id="cookie-policy" className="border rounded-lg px-6">
-          <AccordionTrigger className="text-lg font-semibold hover:no-underline">
-            Cookie Policy
-          </AccordionTrigger>
-          <AccordionContent className="text-sm leading-relaxed whitespace-pre-line pt-4">
-            {legalDocuments[3].content}
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
-    </section>
-  );
+  return <section id="legal-information" className="py-12">
+      
+      
+    </section>;
 };
-
 export default LegalFooterEN;
