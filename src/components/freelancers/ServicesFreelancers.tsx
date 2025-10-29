@@ -94,7 +94,7 @@ const ServicesFreelancers = () => {
           {services.map((service, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <service.icon className="h-10 w-10 text-primary mb-2" />
+                <service.icon className="h-10 w-10 mb-2" style={{ color: index % 2 === 0 ? '#3b82f6' : '#ef4444' }} />
                 <CardTitle>{service.title}</CardTitle>
                 <CardDescription>{service.description}</CardDescription>
               </CardHeader>
@@ -102,7 +102,7 @@ const ServicesFreelancers = () => {
                 <ul className="space-y-2">
                   {service.details.map((detail, idx) => (
                     <li key={idx} className="flex items-start gap-2 text-sm">
-                      <CheckCircle2 className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <CheckCircle2 className="h-4 w-4 mt-0.5 flex-shrink-0" style={{ color: '#3b82f6' }} />
                       <span className="text-muted-foreground">{detail}</span>
                     </li>
                   ))}
@@ -115,7 +115,7 @@ const ServicesFreelancers = () => {
         <div className="grid md:grid-cols-3 gap-6">
           <Card className="bg-primary/5 border-primary/20">
             <CardContent className="pt-6">
-              <Euro className="h-8 w-8 text-primary mb-3" />
+              <Euro className="h-8 w-8 mb-3" style={{ color: '#3b82f6' }} />
               <h3 className="font-semibold text-lg mb-2">Save Thousands</h3>
               <p className="text-sm text-muted-foreground">
                 Avoid expensive hourly lawyer fees. Get professional legal documents at a fraction of the cost.
@@ -125,7 +125,7 @@ const ServicesFreelancers = () => {
 
           <Card className="bg-primary/5 border-primary/20">
             <CardContent className="pt-6">
-              <Clock className="h-8 w-8 text-primary mb-3" />
+              <Clock className="h-8 w-8 mb-3" style={{ color: '#ef4444' }} />
               <h3 className="font-semibold text-lg mb-2">Instant Download</h3>
               <p className="text-sm text-muted-foreground">
                 No waiting for lawyers. Download and start using your legal documents within minutes of purchase.
@@ -135,7 +135,7 @@ const ServicesFreelancers = () => {
 
           <Card className="bg-primary/5 border-primary/20">
             <CardContent className="pt-6">
-              <Shield className="h-8 w-8 text-primary mb-3" />
+              <Shield className="h-8 w-8 mb-3" style={{ color: '#3b82f6' }} />
               <h3 className="font-semibold text-lg mb-2">Minimize Risk</h3>
               <p className="text-sm text-muted-foreground">
                 Protect yourself from payment disputes, liability claims, and legal complications with proper documentation.

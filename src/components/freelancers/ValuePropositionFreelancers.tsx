@@ -60,42 +60,42 @@ const ValuePropositionFreelancers = () => {
             <CardContent>
               <div className="space-y-3">
                 <div className="flex items-start gap-2">
-                  <FileText className="h-5 w-5 text-primary mt-0.5" />
+                  <FileText className="h-5 w-5 mt-0.5" style={{ color: '#3b82f6' }} />
                   <div>
                     <h4 className="font-semibold">Client Service Agreement</h4>
                     <p className="text-sm text-muted-foreground">Professional contract template for all client engagements</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
-                  <FileText className="h-5 w-5 text-primary mt-0.5" />
+                  <FileText className="h-5 w-5 mt-0.5" style={{ color: '#ef4444' }} />
                   <div>
                     <h4 className="font-semibold">Terms of Service</h4>
                     <p className="text-sm text-muted-foreground">Clear terms for your freelance services</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
-                  <Shield className="h-5 w-5 text-primary mt-0.5" />
+                  <Shield className="h-5 w-5 mt-0.5" style={{ color: '#3b82f6' }} />
                   <div>
                     <h4 className="font-semibold">GDPR Privacy Policy</h4>
                     <p className="text-sm text-muted-foreground">Compliant with EU and international data protection laws</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
-                  <Scale className="h-5 w-5 text-primary mt-0.5" />
+                  <Scale className="h-5 w-5 mt-0.5" style={{ color: '#ef4444' }} />
                   <div>
                     <h4 className="font-semibold">Liability Disclaimer</h4>
                     <p className="text-sm text-muted-foreground">Protect yourself from liability claims</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
-                  <FileText className="h-5 w-5 text-primary mt-0.5" />
+                  <FileText className="h-5 w-5 mt-0.5" style={{ color: '#3b82f6' }} />
                   <div>
                     <h4 className="font-semibold">Cookie Policy</h4>
                     <p className="text-sm text-muted-foreground">Website cookie compliance documentation</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 mt-0.5" style={{ color: '#ef4444' }} />
                   <div>
                     <h4 className="font-semibold">Implementation Guide</h4>
                     <p className="text-sm text-muted-foreground">Step-by-step instructions for easy setup</p>
@@ -109,7 +109,7 @@ const ValuePropositionFreelancers = () => {
         <div className="grid md:grid-cols-3 gap-6 mb-12">
           <Card>
             <CardHeader>
-              <Clock className="h-8 w-8 text-primary mb-2" />
+              <Clock className="h-8 w-8 mb-2" style={{ color: '#3b82f6' }} />
               <CardTitle>Ready in Minutes</CardTitle>
             </CardHeader>
             <CardContent>
@@ -121,7 +121,7 @@ const ValuePropositionFreelancers = () => {
 
           <Card>
             <CardHeader>
-              <Globe className="h-8 w-8 text-primary mb-2" />
+              <Globe className="h-8 w-8 mb-2" style={{ color: '#ef4444' }} />
               <CardTitle>For All Your Projects</CardTitle>
             </CardHeader>
             <CardContent>
@@ -133,7 +133,7 @@ const ValuePropositionFreelancers = () => {
 
           <Card>
             <CardHeader>
-              <Shield className="h-8 w-8 text-primary mb-2" />
+              <Shield className="h-8 w-8 mb-2" style={{ color: '#3b82f6' }} />
               <CardTitle>International Use</CardTitle>
             </CardHeader>
             <CardContent>
