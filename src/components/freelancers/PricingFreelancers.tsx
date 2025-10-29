@@ -3,20 +3,9 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Check, AlertTriangle } from "lucide-react";
 import stripeLogo from "@/assets/stripe-logo.svg";
-
-const includedItems = [
-  "Client Service Agreement Template",
-  "Terms of Service Document",
-  "GDPR-Compliant Privacy Policy",
-  "Liability Disclaimer",
-  "Cookie Policy",
-  "Implementation Guide & Instructions",
-  "Unlimited Use for All Your Clients"
-];
-
+const includedItems = ["Client Service Agreement Template", "Terms of Service Document", "GDPR-Compliant Privacy Policy", "Liability Disclaimer", "Cookie Policy", "Implementation Guide & Instructions", "Unlimited Use for All Your Clients"];
 const PricingFreelancers = () => {
-  return (
-    <section id="pricing" className="py-16 bg-secondary/30">
+  return <section id="pricing" className="py-16 bg-secondary/30">
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">Special Offer</Badge>
@@ -33,8 +22,8 @@ const PricingFreelancers = () => {
           <Card className="border-primary shadow-lg">
             <CardHeader className="text-center pb-8">
               <div className="mb-4">
-                <span className="text-5xl font-bold">€79</span>
-                <span className="text-muted-foreground ml-2">one-time</span>
+                
+                
               </div>
               <CardTitle className="text-2xl">Freelancer Legal Protection Package</CardTitle>
               <CardDescription className="text-base">
@@ -43,26 +32,21 @@ const PricingFreelancers = () => {
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="space-y-3">
-                {includedItems.map((item, index) => (
-                  <div key={index} className="flex items-center gap-3">
+                {includedItems.map((item, index) => <div key={index} className="flex items-center gap-3">
                     <div className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center">
                       <Check className="h-3 w-3 text-primary" />
                     </div>
                     <span className="text-sm">{item}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
 
               <div className="pt-6 border-t flex justify-center">
-                <div 
-                  className="[&_stripe-buy-button]:scale-125 [&_stripe-buy-button]:origin-center"
-                  dangerouslySetInnerHTML={{
-                    __html: `<stripe-buy-button
+                <div className="[&_stripe-buy-button]:scale-125 [&_stripe-buy-button]:origin-center" dangerouslySetInnerHTML={{
+                __html: `<stripe-buy-button
                       buy-button-id="buy_btn_1SKm3dFXIgtr666GOD7ZP6da"
                       publishable-key="pk_live_51SK0ndFXIgtr666GrmKudtOsf3HHcaBw06Ei3x8LbGKOYQ3oZeIrmpMpTfoTBJ5c7tPyFfbRC7pugHMC0l6b3ZKP009fgyIrGc"
                     ></stripe-buy-button>`
-                  }}
-                />
+              }} />
               </div>
 
               <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
@@ -83,8 +67,6 @@ const PricingFreelancers = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default PricingFreelancers;
