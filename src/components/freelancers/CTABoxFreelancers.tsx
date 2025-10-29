@@ -1,15 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, CheckCircle2 } from "lucide-react";
-
 const CTABoxFreelancers = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: "smooth" });
+    element?.scrollIntoView({
+      behavior: "smooth"
+    });
   };
-
-  return (
-    <section className="py-16 bg-gradient-to-b from-background to-secondary/30">
+  return <section className="py-16 bg-gradient-to-b from-background to-secondary/30">
       <div className="container">
         <Card className="bg-primary text-primary-foreground shadow-2xl">
           <CardContent className="p-8 md:p-12">
@@ -42,23 +41,15 @@ const CTABoxFreelancers = () => {
                 </div>
               </div>
 
-              <Button 
-                size="lg" 
-                onClick={() => scrollToSection("pricing")}
-                className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 text-lg px-8 py-6 h-auto"
-              >
+              <Button size="lg" onClick={() => scrollToSection("pricing")} className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 text-lg px-8 py-6 h-auto">
                 Order Now - Just €79
               </Button>
 
-              <p className="text-sm text-primary-foreground/80">
-                Instant download after payment • No subscription • Money-back guarantee
-              </p>
+              <p className="text-sm text-primary-foreground/80">Instant download after payment • No subscription • No Money-back guarantee</p>
             </div>
           </CardContent>
         </Card>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CTABoxFreelancers;
