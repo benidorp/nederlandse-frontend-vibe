@@ -8,6 +8,7 @@ import FAQNewsMagazine from "@/components/news-magazine/FAQNewsMagazine";
 import PricingNewsMagazine from "@/components/news-magazine/PricingNewsMagazine";
 import ReviewsNewsMagazine from "@/components/news-magazine/ReviewsNewsMagazine";
 import FooterNewsMagazine from "@/components/news-magazine/FooterNewsMagazine";
+import CTABoxNewsMagazine from "@/components/news-magazine/CTABoxNewsMagazine";
 import GTranslateWidget from "@/components/GTranslateWidget";
 const NewsMagazine = () => {
   return <>
@@ -27,7 +28,7 @@ const NewsMagazine = () => {
           <HeroNewsMagazine />
           <ValuePropositionNewsMagazine />
           <ServicesNewsMagazine />
-          
+          <CTABoxNewsMagazine />
           <PricingNewsMagazine />
           <ReviewsNewsMagazine />
           <FAQNewsMagazine />
