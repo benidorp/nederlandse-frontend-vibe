@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { FileText, Scale, Shield, Cookie, AlertTriangle, BookOpen, Clock, Globe, Infinity } from "lucide-react";
-import nicoleProfile from "@/assets/nicole-profile.jpg";
+import nicoleProfile from "@/assets/lawyer-office.png";
 
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
