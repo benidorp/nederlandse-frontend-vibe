@@ -9,8 +9,10 @@ import PricingNewsMagazine from "@/components/news-magazine/PricingNewsMagazine"
 import ReviewsNewsMagazine from "@/components/news-magazine/ReviewsNewsMagazine";
 import FooterNewsMagazine from "@/components/news-magazine/FooterNewsMagazine";
 import GTranslateWidget from "@/components/GTranslateWidget";
+
 const NewsMagazine = () => {
-  return <>
+  return (
+    <>
       <Helmet>
         <script async src="https://js.stripe.com/v3/buy-button.js"></script>
         <html lang="en" />
@@ -27,13 +29,15 @@ const NewsMagazine = () => {
           <HeroNewsMagazine />
           <ValuePropositionNewsMagazine />
           <ServicesNewsMagazine />
-          
+          <BlogPostsNewsMagazine />
           <PricingNewsMagazine />
           <ReviewsNewsMagazine />
           <FAQNewsMagazine />
         </main>
         <FooterNewsMagazine />
       </div>
-    </>;
+    </>
+  );
 };
+
 export default NewsMagazine;

@@ -3,21 +3,26 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { FileText, Scale, Shield, Cookie, AlertTriangle, BookOpen, Clock, Globe, Infinity } from "lucide-react";
 import nicoleProfile from "@/assets/nicole-profile.jpg";
+
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
   element?.scrollIntoView({
     behavior: "smooth"
   });
 };
+
 const ValuePropositionNewsMagazine = () => {
-  return <section className="py-20 bg-background">
+  return (
+    <section className="py-20 bg-background">
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">Why You Need This</Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Legal Protection for News & Magazine Publishers
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">Running a news or magazine website without proper legal documents puts you at risk of GDPR fines, copyright lawsuits, and reader privacy violations. Protect your publication today.</p>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            Running a news or magazine website without proper legal documents puts you at risk of GDPR fines up to €20 million, copyright lawsuits, and reader privacy violations. Protect your publication today.
+          </p>
         </div>
 
         {/* About Me Section */}
@@ -26,7 +31,11 @@ const ValuePropositionNewsMagazine = () => {
             <CardContent className="p-8">
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
-                  <img src={nicoleProfile} alt="Nicole Henderson - Legal Specialist" className="rounded-lg shadow-lg w-full" />
+                  <img 
+                    src={nicoleProfile} 
+                    alt="Nicole Henderson - Legal Specialist" 
+                    className="rounded-lg shadow-lg w-full"
+                  />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-foreground mb-4">About Me</h3>
@@ -174,12 +183,19 @@ const ValuePropositionNewsMagazine = () => {
             <p className="text-lg mb-6 opacity-90">
               One-time payment. Lifetime access. All documents included. Compare to €2,000+ in lawyer fees.
             </p>
-            <Button size="lg" variant="secondary" onClick={() => scrollToSection("pricing")} className="text-lg px-8">
+            <Button 
+              size="lg" 
+              variant="secondary"
+              onClick={() => scrollToSection("pricing")}
+              className="text-lg px-8"
+            >
               Get Started Now
             </Button>
           </CardContent>
         </Card>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default ValuePropositionNewsMagazine;

@@ -1,8 +1,10 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import logo from "@/assets/logo.png";
 import LegalFooterEN from "@/components/en/LegalFooterEN";
+
 const FooterNewsMagazine = () => {
-  return <footer id="contact" className="bg-muted/50 border-t">
+  return (
+    <footer id="contact" className="bg-muted/50 border-t">
       <div className="container py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="space-y-4">
@@ -40,10 +42,16 @@ const FooterNewsMagazine = () => {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2 text-muted-foreground">
                 <Mail className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span>support@iaee.eu</span>
+                <span>info@legaldocs.eu</span>
               </li>
-              
-              
+              <li className="flex items-start gap-2 text-muted-foreground">
+                <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                <span>+31 20 123 4567</span>
+              </li>
+              <li className="flex items-start gap-2 text-muted-foreground">
+                <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                <span>Amsterdam, Netherlands</span>
+              </li>
             </ul>
           </div>
         </div>
@@ -67,6 +75,8 @@ const FooterNewsMagazine = () => {
 
         <LegalFooterEN />
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default FooterNewsMagazine;
