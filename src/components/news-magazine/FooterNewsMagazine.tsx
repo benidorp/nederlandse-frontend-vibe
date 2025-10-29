@@ -28,10 +28,10 @@ const FooterNewsMagazine = () => {
           <div>
             <h4 className="font-semibold mb-4">Legal Documents</h4>
             <ul className="space-y-2 text-sm">
-              <li><span className="text-muted-foreground">Privacy Policy</span></li>
-              <li><span className="text-muted-foreground">Editorial Policy</span></li>
-              <li><span className="text-muted-foreground">Copyright Policy</span></li>
-              <li><span className="text-muted-foreground">Terms & Conditions</span></li>
+              <li><a href="/policy" className="text-muted-foreground hover:text-primary transition-colors">Privacy Policy</a></li>
+              <li><a href="/policy" className="text-muted-foreground hover:text-primary transition-colors">Editorial Policy</a></li>
+              <li><a href="/policy" className="text-muted-foreground hover:text-primary transition-colors">Copyright Policy</a></li>
+              <li><a href="/policy" className="text-muted-foreground hover:text-primary transition-colors">Terms & Conditions</a></li>
             </ul>
           </div>
 
