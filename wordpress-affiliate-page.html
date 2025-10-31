@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Documents for Affiliate Websites</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 20px;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #2d3748;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #2d3748;
+        }
+        
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+        
+        .btn-primary {
+            background: white;
+            color: #667eea;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border-color: white;
+            color: white;
+        }
+        
+        .btn-outline:hover {
+            background: rgba(255,255,255,0.1);
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 80px 20px;
+        }
+        
+        .bg-light {
+            background: #f7fafc;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        /* About Section */
+        .about-box {
+            background: #edf2f7;
+            padding: 40px;
+            border-radius: 12px;
+            margin: 40px 0;
+            border: 2px solid #e2e8f0;
+        }
+        
+        .profile-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: block;
+            border: 4px solid #667eea;
+        }
+        
+        /* Card Grid */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        
+        .card-icon {
+            width: 50px;
+            height: 50px;
+            background: #dc2626;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: white;
+            font-size: 24px;
+        }
+        
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        
+        .card p {
+            color: #718096;
+            margin-bottom: 15px;
+        }
+        
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .card li {
+            color: #718096;
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .card li:before {
+            content: "•";
+            color: #dc2626;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        /* Feature Grid */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .feature-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: left;
+        }
+        
+        .feature-card h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+        
+        .feature-card p {
+            color: rgba(255,255,255,0.9);
+        }
+        
+        /* Checkmark List */
+        .checkmark-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .checkmark-item {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+            display: flex;
+            gap: 15px;
+        }
+        
+        .checkmark {
+            color: #dc2626;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+        
+        /* CTA Box */
+        .cta-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .cta-box h3 {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta-box p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        
+        .price {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        
+        /* Pricing Section */
+        .pricing-card {
+            max-width: 600px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 2px solid #667eea;
+        }
+        
+        .pricing-header {
+            text-align: center;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .price-tag {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #667eea;
+            margin: 20px 0;
+        }
+        
+        .price-tag small {
+            font-size: 1.5rem;
+            color: #718096;
+        }
+        
+        .included-list {
+            margin: 30px 0;
+        }
+        
+        .included-item {
+            padding: 15px 0;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .included-item:last-child {
+            border-bottom: none;
+        }
+        
+        /* Reviews */
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+        
+        .review-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .stars {
+            color: #fbbf24;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .review-text {
+            font-style: italic;
+            color: #4a5568;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        .reviewer {
+            border-top: 2px solid #e2e8f0;
+            padding-top: 20px;
+        }
+        
+        .reviewer-name {
+            font-weight: bold;
+            color: #2d3748;
+        }
+        
+        .reviewer-role {
+            color: #718096;
+            font-size: 0.9rem;
+        }
+        
+        /* FAQ */
+        .faq-item {
+            background: white;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 20px;
+            font-weight: 600;
+            color: #2d3748;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-question:hover {
+            background: #f7fafc;
+        }
+        
+        .faq-answer {
+            padding: 0 20px 20px 20px;
+            color: #4a5568;
+            line-height: 1.8;
+            white-space: pre-line;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .hero {
+                padding: 40px 20px;
+            }
+            
+            section {
+                padding: 40px 20px;
+            }
+            
+            .card-grid,
+            .review-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="badge">Legal Certainty</div>
+                <h1>Legal Documents for Affiliate Websites: Terms & Conditions, Privacy Policy, Disclosure & Cookie Policy</h1>
+                <p>Professional legal documents that protect your affiliate business and ensure compliance with all legal requirements. Our affordable package includes all essential agreements such as <strong>terms and conditions, privacy policy, and disclaimers</strong>—for complete compliance, trust, and peace of mind.</p>
+                <div class="button-group">
+                    <a href="#pricing" class="btn btn-primary">View Packages</a>
+                    <a href="#services" class="btn btn-outline">More Information</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section id="about">
+        <div class="container">
+            <div class="text-center">
+                <div class="badge" style="background: #e2e8f0; color: #667eea;">Professional Legal Documents for Affiliate Businesses</div>
+                <h2>All Legally Required Documents Your Affiliate Website Needs</h2>
+                <p style="font-size: 1.2rem; color: #4a5568; max-width: 800px; margin: 0 auto 40px;">
+                    As an affiliate marketer, you earn commissions by recommending products. But did you know that you're <strong>legally required</strong> to have certain legal documents on your website? Without these documents, you risk high fines and legal issues.
+                </p>
+
+                <div class="about-box">
+                    <h3 style="text-align: center;">About Me</h3>
+                    <img src="https://via.placeholder.com/100" alt="Nicole Henderson" class="profile-image">
+                    <p style="text-align: center; font-size: 1.3rem; font-weight: bold; color: #667eea; margin-bottom: 10px;">Nicole Henderson</p>
+                    <p style="text-align: center; color: #718096; margin-bottom: 30px;">Legal specialist specialized in clear, precise, and professional legal documents</p>
+                    
+                    <p style="margin-bottom: 20px;">
+                        Hello, I'm Nicole Henderson, a legal writer specializing in clear, accurate, and professional legal documents. I draft contracts, policies, and agreements for businesses, organizations, and individuals that protect your interests and ensure compliance, making legal paperwork simple and stress-free.
+                    </p>
+                    
+                    <h4 style="margin-top: 30px; margin-bottom: 15px;">Professional Legal Documents for Affiliate Businesses</h4>
+                    <p>
+                        To answer the many questions about legal requirements for affiliates, I've developed high-quality legal documents specifically for affiliate websites. These documents are designed for both national and international use and provide essential protection at a fraction of the usual cost. Get professional legal coverage at an affordable price—secure your business today!
+                    </p>
+                </div>
+            </div>
+
+            <!-- What You Get -->
+            <div style="background: #f0f4ff; border: 2px solid #667eea; border-radius: 12px; padding: 40px; margin: 40px 0;">
+                <h3 style="text-align: center; margin-bottom: 20px;">🛡️ What You Get: The Complete Legal Package</h3>
+                <p style="text-align: center; margin-bottom: 30px; color: #4a5568;">
+                    Our complete package contains <strong>all legal documents specifically written for affiliate websites</strong>. Not generic templates, but professional texts that perfectly align with your affiliate business model:
+                </p>
+                
+                <div class="checkmark-list">
+                    <div class="checkmark-item">
+                        <span class="checkmark">✓</span>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">GDPR Privacy Policy</h4>
+                            <p style="color: #718096; margin: 0;">Fully compliant with European legislation, including cookie usage and data protection</p>
+                        </div>
+                    </div>
+                    
+                    <div class="checkmark-item">
+                        <span class="checkmark">✓</span>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Affiliate Disclosure</h4>
+                            <p style="color: #718096; margin: 0;">Transparent notification that you earn commissions, compliant with FTC and EU regulations</p>
+                        </div>
+                    </div>
+                    
+                    <div class="checkmark-item">
+                        <span class="checkmark">✓</span>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Terms & Conditions</h4>
+                            <p style="color: #718096; margin: 0;">Protects you from liability claims and regulates the relationship with visitors</p>
+                        </div>
+                    </div>
+                    
+                    <div class="checkmark-item">
+                        <span class="checkmark">✓</span>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Legal Disclaimer</h4>
+                            <p style="color: #718096; margin: 0;">Limits your liability for the recommendations you make</p>
+                        </div>
+                    </div>
+                    
+                    <div class="checkmark-item">
+                        <span class="checkmark">✓</span>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Cookie Policy</h4>
+                            <p style="color: #718096; margin: 0;">GDPR compliant, explanation of tracking and analytics cookies</p>
+                        </div>
+                    </div>
+                    
+                    <div class="checkmark-item">
+                        <span class="checkmark">✓</span>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Implementation Guide</h4>
+                            <p style="color: #718096; margin: 0;">Step-by-step instructions to place everything correctly on your website</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features -->
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>⚡ Ready in Minutes</h3>
+                    <p>Download, fill in your business details, and place the documents on your website. No lawyer needed, no weeks of waiting.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>📄 For All Your Websites</h3>
+                    <p>One purchase, unlimited use. Use these documents for all your current and future affiliate websites!</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🌍 International Use</h3>
+                    <p>The templates are available for download in multiple languages for international use, so you can deploy them on all your websites worldwide.</p>
+                </div>
+            </div>
+
+            <!-- CTA Box -->
+            <div class="cta-box">
+                <h3>Fully compliant with GDPR and international legislation</h3>
+                <p>For only <strong>€79 one-time</strong> you arrange all legal obligations for all your affiliate websites. No monthly fees, no hassle with lawyers, no risk of fines. Just all the documents you need, ready to use.</p>
+                <a href="#pricing" class="btn btn-primary" style="font-size: 1.2rem; padding: 18px 40px;">Order Now for €79</a>
+                <p style="font-size: 0.9rem; margin-top: 20px;">💡 Consider this: one hour with a lawyer already costs more than €200</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-light">
+        <div class="container">
+            <div class="text-center">
+                <div class="badge" style="background: #e2e8f0; color: #667eea;">Our Services</div>
+                <h2>Essential Legal Documents</h2>
+                <p style="font-size: 1.1rem; color: #718096; max-width: 700px; margin: 0 auto 40px;">
+                    For an affiliate website, the following legal documents are essential. Our package contains everything you need.
+                </p>
+            </div>
+
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🛡️</div>
+                    <h3>Privacy Policy</h3>
+                    <p>Complete privacy policy compliant with GDPR legislation</p>
+                    <ul>
+                        <li>User rights under GDPR</li>
+                        <li>What data is collected</li>
+                        <li>How and why this data is used</li>
+                        <li>Data sharing with third parties</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">⚠️</div>
+                    <h3>Disclaimer</h3>
+                    <p>Legal protection against liability claims</p>
+                    <ul>
+                        <li>No guarantee for results</li>
+                        <li>No liability for information</li>
+                        <li>Notification of affiliate links and commissions</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">📄</div>
+                    <h3>Affiliate Disclosure</h3>
+                    <p>Transparent disclosure compliant with FTC guidelines</p>
+                    <ul>
+                        <li>Transparency about advertisers</li>
+                        <li>Clear commission disclosure</li>
+                        <li>Compliance with EU and US regulations</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">📜</div>
+                    <h3>Terms & Conditions</h3>
+                    <p>Governs the relationship between your website and users</p>
+                    <ul>
+                        <li>Limitation of liability</li>
+                        <li>Usage restrictions</li>
+                        <li>Intellectual property rights</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🍪</div>
+                    <h3>Cookie Policy</h3>
+                    <p>Full cookie compliance and consent</p>
+                    <ul>
+                        <li>Explanation of cookie usage</li>
+                        <li>GDPR-compliant consent</li>
+                        <li>Management of analytical cookies</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">📖</div>
+                    <h3>Implementation Guide</h3>
+                    <p>Step-by-step instructions for implementation</p>
+                    <ul>
+                        <li>Simple installation instructions</li>
+                        <li>Correct placement of documents</li>
+                        <li>Customization tips for your website</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 40px;">
+                <div class="badge" style="background: #e2e8f0; color: #667eea;">Pricing</div>
+                <h2>Complete Legal Package for Affiliate Websites</h2>
+                <p style="font-size: 1.1rem; color: #718096;">One-time payment, lifetime access to all documents</p>
+            </div>
+
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="price-tag">
+                        €79
+                        <small>one-time</small>
+                    </div>
+                    <h3>Complete Legal Protection Package</h3>
+                    <p style="color: #718096;">All essential legal documents for your affiliate business</p>
+                </div>
+
+                <div class="included-list">
+                    <div class="included-item">
+                        <span class="checkmark">✓</span>
+                        <div>
+                            <strong>GDPR Privacy Policy</strong>
+                            <p style="margin: 0; color: #718096; font-size: 0.9rem;">Fully EU compliant</p>
+                        </div>
+                    </div>
+                    <div class="included-item">
+                        <span class="checkmark">✓</span>
+                        <div>
+                            <strong>Affiliate Disclosure</strong>
+                            <p style="margin: 0; color: #718096; font-size: 0.9rem;">FTC compliant</p>
+                        </div>
+                    </div>
+                    <div class="included-item">
+                        <span class="checkmark">✓</span>
+                        <div>
+                            <strong>Terms & Conditions</strong>
+                            <p style="margin: 0; color: #718096; font-size: 0.9rem;">Professional legal terms</p>
+                        </div>
+                    </div>
+                    <div class="included-item">
+                        <span class="checkmark">✓</span>
+                        <div>
+                            <strong>Legal Disclaimer</strong>
+                            <p style="margin: 0; color: #718096; font-size: 0.9rem;">Liability protection</p>
+                        </div>
+                    </div>
+                    <div class="included-item">
+                        <span class="checkmark">✓</span>
+                        <div>
+                            <strong>Cookie Policy</strong>
+                            <p style="margin: 0; color: #718096; font-size: 0.9rem;">GDPR cookie compliance</p>
+                        </div>
+                    </div>
+                    <div class="included-item">
+                        <span class="checkmark">✓</span>
+                        <div>
+                            <strong>Implementation Guide</strong>
+                            <p style="margin: 0; color: #718096; font-size: 0.9rem;">Step-by-step instructions</p>
+                        </div>
+                    </div>
+                    <div class="included-item">
+                        <span class="checkmark">✓</span>
+                        <div>
+                            <strong>Multiple Languages</strong>
+                            <p style="margin: 0; color: #718096; font-size: 0.9rem;">Download in various languages</p>
+                        </div>
+                    </div>
+                    <div class="included-item">
+                        <span class="checkmark">✓</span>
+                        <div>
+                            <strong>Unlimited Website Use</strong>
+                            <p style="margin: 0; color: #718096; font-size: 0.9rem;">Use on all your websites</p>
+                        </div>
+                    </div>
+                    <div class="included-item">
+                        <span class="checkmark">✓</span>
+                        <div>
+                            <strong>Instant Download</strong>
+                            <p style="margin: 0; color: #718096; font-size: 0.9rem;">Immediate access after payment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 30px;">
+                    <a href="#" class="btn btn-primary" style="font-size: 1.2rem; padding: 18px 40px; width: 100%; justify-content: center; display: inline-block;">Order Now - Only €79</a>
+                    <p style="margin-top: 20px; color: #718096; font-size: 0.9rem;">🔒 Secure payment via Stripe • Instant download after payment • No subscription</p>
+                    <p style="margin-top: 10px; color: #ef4444; font-weight: 600;">⚠️ No returns - Digital product</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 40px;">
+                <div class="badge" style="background: #e2e8f0; color: #667eea;">Reviews</div>
+                <h2>What Our Customers Say</h2>
+                <p style="font-size: 1.1rem; color: #718096;">Discover why affiliate marketers trust our legal documents</p>
+            </div>
+
+            <div class="review-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">
+                        "Running a boutique hotel requires proper legal protection, and these documents provided exactly what I needed. The cancellation policy and terms & conditions are crystal clear for guests, and the GDPR compliance gave me peace of mind. Professional quality at a fraction of what a lawyer would charge!"
+                    </p>
+                    <div class="reviewer">
+                        <p class="reviewer-name">Emma Thompson</p>
+                        <p class="reviewer-role">Hotel Owner</p>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">
+                        "As someone managing a booking platform for vacation rentals, these legal templates were a lifesaver. They cover everything from data protection to liability disclaimers, and the implementation guide made setup incredibly straightforward. Best investment I made for my travel business!"
+                    </p>
+                    <div class="reviewer">
+                        <p class="reviewer-name">Lucas Martinez</p>
+                        <p class="reviewer-role">Travel Platform Founder</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 40px;">
+                <div class="badge" style="background: #e2e8f0; color: #667eea;">FAQ</div>
+                <h2>Frequently Asked Questions</h2>
+                <p style="font-size: 1.1rem; color: #718096;">Everything you need to know about legal documents for affiliate websites</p>
+            </div>
+
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <strong>Why are legal documents important for affiliate sites?</strong>
+                        <span>▼</span>
+                    </div>
+                    <div class="faq-answer">
+As an affiliate marketer, you are legally required to be transparent about your business model and how you handle visitor data. Without proper legal documents, you risk:
+
+• Heavy fines from regulators such as data protection authorities - up to €20 million or 4% of annual revenue
+• Claims from consumers for misleading information
+• Removal from affiliate networks such as Google AdSense
+• Reputation damage and loss of trust from your audience
+
+The main legislation you must comply with is GDPR, the ePrivacy Directive, and regulations around transparent affiliate marketing such as FTC guidelines. With the right documents, you protect yourself and build trust with your visitors.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <strong>How do I integrate these documents on my site?</strong>
+                        <span>▼</span>
+                    </div>
+                    <div class="faq-answer">
+The placement of legal documents is crucial for compliance and user-friendliness.
+
+**Footer placement (mandatory):**
+Place links to all your legal documents in the footer of every page:
+• Privacy Policy
+• Terms and Conditions
+• Cookie Policy
+• Disclaimer
+• Affiliate Disclosure
+
+**Per article/post:**
+For product reviews and articles with affiliate links:
+• Short disclosure at the beginning of the article (first 150 words)
+• Prominent marking of affiliate links, for example: [AD] or [affiliate link]
+• Link to full disclosure at the bottom of the article
+
+**Near affiliate links:**
+• Use an abbreviation such as * or [AD] directly next to the link
+• Add a tooltip on hover with "affiliate link"
+• In product boxes: small disclaimer at the bottom
+
+Our implementation guide contains code snippets for WordPress, Shopify, Webflow and HTML websites, including CSS styling examples.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <strong>Are these templates valid throughout Europe?</strong>
+                        <span>▼</span>
+                    </div>
+                    <div class="faq-answer">
+Yes, our templates comply with GDPR which applies in all EU countries. Some countries have additional rules - this is mentioned in the templates.
+
+**Can I use these templates for multiple websites?**
+Yes! With purchase you get an unlimited license for all your own affiliate websites.
+
+**What if I also sell products, not just affiliate links?**
+Then you need additional documents such as Right of Withdrawal and Shipping Policy. Contact us for a customized package.
+
+**How often should I update my documents?**
+At least once a year, but also when you add new tools or legislation changes.
+
+**In which languages are the templates available?**
+The templates can be downloaded in multiple languages for international use, so you can deploy them on all your websites worldwide.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <strong>What is affiliate marketing?</strong>
+                        <span>▼</span>
+                    </div>
+                    <div class="faq-answer">
+Affiliate marketing is a form of online performance marketing where an 'affiliate' (partner) promotes products or services from a merchant (advertiser). When someone buys something or completes a pre-agreed action via the affiliate's unique link, the affiliate receives a commission.
+
+**How does affiliate marketing work?**
+• You choose a niche or product/service to promote
+• You sign up for an affiliate program or network
+• You get a unique affiliate link (with tracking)
+• You promote that link via your website, blog, social media, email, etc.
+• Someone clicks on that link and makes a purchase or completes an action
+• The system registers that the lead/sale came from your link and pays you the commission
+
+**Is affiliate marketing legal?**
+Yes, affiliate marketing is inherently a legitimate marketing model — as long as you comply with laws and regulations (such as transparency, proper disclosure, avoiding fraud).
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <strong>Legal disclaimers & liabilities</strong>
+                        <span>▼</span>
+                    </div>
+                    <div class="faq-answer">
+**Important disclaimer:**
+
+These document templates have been carefully prepared and reviewed, but serve as a starting point for your legal compliance. Legal Affiliate Agreement does not provide legal advice and is not liable for damages arising from the use of these templates.
+
+**Limitation of liability:**
+• Templates are general and may not be suitable for every specific situation
+• Legislation may change after publication of templates
+• Correct implementation and adaptation is your responsibility
+• When in doubt, always consult a specialized lawyer
+
+**What we offer:**
+• Professionally prepared templates as a solid basis
+• Regular updates with major legislative changes
+• Clear implementation instructions
+• Email support for questions about the templates
+
+By using these templates, you agree to our terms and conditions and disclaimer. You acknowledge that legal compliance remains your own responsibility.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="cta-box">
+                <h3>Get Complete Legal Protection Today</h3>
+                <p>All essential legal documents for your affiliate website. GDPR-compliant, professionally drafted and ready to download immediately.</p>
+                <div style="margin: 30px 0;">
+                    <p style="font-size: 1.1rem; margin-bottom: 15px;">✓ Instant download after payment</p>
+                    <p style="font-size: 1.1rem; margin-bottom: 15px;">✓ No subscription required</p>
+                    <p style="font-size: 1.1rem; margin-bottom: 15px;">✓ Multiple languages available</p>
+                    <p style="font-size: 1.1rem; margin-bottom: 15px;">✓ Use on unlimited websites</p>
+                </div>
+                <a href="#pricing" class="btn btn-primary" style="font-size: 1.3rem; padding: 20px 50px;">Order Now - Only €79</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
