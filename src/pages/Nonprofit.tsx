@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import HeaderEN from "@/components/en/HeaderEN";
+import HiddenInternalLinks from "@/components/HiddenInternalLinks";
 import HeroNonprofit from "@/components/nonprofit/HeroNonprofit";
 import ValuePropositionNonprofit from "@/components/nonprofit/ValuePropositionNonprofit";
 import ServicesNonprofit from "@/components/nonprofit/ServicesNonprofit";
@@ -14,6 +15,7 @@ import GTranslateWidget from "@/components/GTranslateWidget";
 const Nonprofit = () => {
   return (
     <>
+      <HiddenInternalLinks />
       <Helmet>
         <script async src="https://js.stripe.com/v3/buy-button.js"></script>
         <html lang="en" />

@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import HeaderFreelancers from "@/components/freelancers/HeaderFreelancers";
+import HiddenInternalLinks from "@/components/HiddenInternalLinks";
 import HeroFreelancers from "@/components/freelancers/HeroFreelancers";
 import ValuePropositionFreelancers from "@/components/freelancers/ValuePropositionFreelancers";
 import ServicesFreelancers from "@/components/freelancers/ServicesFreelancers";
@@ -14,6 +15,7 @@ import GTranslateWidget from "@/components/GTranslateWidget";
 const Freelancers = () => {
   return (
     <>
+      <HiddenInternalLinks />
       <Helmet>
         <html lang="en" />
         <title>Legal Documents for Freelancers & Independent Contractors | Terms & Conditions, Privacy Policy, Client Contracts</title>

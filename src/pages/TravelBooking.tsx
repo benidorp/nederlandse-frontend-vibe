@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import HeaderEN from "@/components/en/HeaderEN";
+import HiddenInternalLinks from "@/components/HiddenInternalLinks";
 import HeroTravelBookingEN from "@/components/travel-booking/HeroTravelBookingEN";
 import ValuePropositionTravelBookingEN from "@/components/travel-booking/ValuePropositionTravelBookingEN";
 import ServicesTravelBookingEN from "@/components/travel-booking/ServicesTravelBookingEN";
@@ -23,6 +24,7 @@ const TravelBooking = () => {
         <link rel="canonical" href="https://iaee.eu/must-have-legal-protection-for-every-hotel-and-travel-website-terms-conditions-privacy-policy-cancellation-policy-disclaimer" />
       </Helmet>
       <GTranslateWidget />
+      <HiddenInternalLinks />
       <div className="min-h-screen">
         <HeaderEN />
         <main>

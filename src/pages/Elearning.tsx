@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import HeaderEN from "@/components/en/HeaderEN";
+import HiddenInternalLinks from "@/components/HiddenInternalLinks";
 import HeroElearning from "@/components/elearning/HeroElearning";
 import ValuePropositionElearning from "@/components/elearning/ValuePropositionElearning";
 import ServicesElearning from "@/components/elearning/ServicesElearning";
@@ -21,6 +22,7 @@ const Elearning = () => {
         <link rel="canonical" href="https://iaee.eu/elearning-platform-legal-documents-terms-privacy-policy-gdpr-compliance" />
       </Helmet>
       <GTranslateWidget />
+      <HiddenInternalLinks />
       <div className="min-h-screen">
         <HeaderEN />
         <main>

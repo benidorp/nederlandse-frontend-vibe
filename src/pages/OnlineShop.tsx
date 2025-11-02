@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import HeaderEN from "@/components/en/HeaderEN";
+import HiddenInternalLinks from "@/components/HiddenInternalLinks";
 import HeroOnlineShop from "@/components/online-shop/HeroOnlineShop";
 import ValuePropositionOnlineShop from "@/components/online-shop/ValuePropositionOnlineShop";
 import ServicesOnlineShop from "@/components/online-shop/ServicesOnlineShop";
@@ -14,6 +15,7 @@ import GTranslateWidget from "@/components/GTranslateWidget";
 const OnlineShop = () => {
   return (
     <>
+      <HiddenInternalLinks />
       <Helmet>
         <script async src="https://js.stripe.com/v3/buy-button.js"></script>
         <html lang="en" />

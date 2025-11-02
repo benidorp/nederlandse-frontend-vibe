@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import HeaderEN from "@/components/en/HeaderEN";
 import HeroEN from "@/components/en/HeroEN";
+import HiddenInternalLinks from "@/components/HiddenInternalLinks";
 import ValuePropositionEN from "@/components/en/ValuePropositionEN";
 import ServicesEN from "@/components/en/ServicesEN";
 import BlogPostsEN from "@/components/en/BlogPostsEN";
@@ -22,6 +23,7 @@ const English = () => {
         <link rel="canonical" href="https://iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
       </Helmet>
       <GTranslateWidget />
+      <HiddenInternalLinks />
       <div className="min-h-screen">
         <HeaderEN />
         <main>

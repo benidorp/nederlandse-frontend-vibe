@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import HeaderEN from "@/components/en/HeaderEN";
+import HiddenInternalLinks from "@/components/HiddenInternalLinks";
 import HeroPhotography from "@/components/photography/HeroPhotography";
 import ValuePropositionPhotography from "@/components/photography/ValuePropositionPhotography";
 import ServicesPhotography from "@/components/photography/ServicesPhotography";
@@ -13,6 +14,7 @@ import GTranslateWidget from "@/components/GTranslateWidget";
 const Photography = () => {
   return (
     <>
+      <HiddenInternalLinks />
       <Helmet>
         <title>Legal Documents for Photography Websites: Terms & Conditions, Privacy Policy, Disclosure & Cookie Policy</title>
         <meta name="description" content="Essential legal documents for photographers including terms and conditions, assignment agreements, privacy policy, disclaimer, quitclaim, and copyright protection." />

@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import HeaderEN from "@/components/en/HeaderEN";
+import HiddenInternalLinks from "@/components/HiddenInternalLinks";
 import HeroComparisonReview from "@/components/comparison-review/HeroComparisonReview";
 import ValuePropositionComparisonReview from "@/components/comparison-review/ValuePropositionComparisonReview";
 import ServicesComparisonReview from "@/components/comparison-review/ServicesComparisonReview";
@@ -13,6 +14,7 @@ import GTranslateWidget from "@/components/GTranslateWidget";
 const ComparisonReview = () => {
   return (
     <>
+      <HiddenInternalLinks />
       <Helmet>
         <title>Legal Documents for Comparison & Review Websites: Terms & Conditions, Privacy Policy, Affiliate Disclosure & Disclaimer</title>
         <meta name="description" content="Essential legal documents for comparison and review websites including terms and conditions, FTC-compliant affiliate disclosure, privacy policy, liability disclaimer, and user content policies." />

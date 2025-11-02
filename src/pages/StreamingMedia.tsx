@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import HeaderEN from "@/components/en/HeaderEN";
+import HiddenInternalLinks from "@/components/HiddenInternalLinks";
 import HeroStreamingMedia from "@/components/streaming-media/HeroStreamingMedia";
 import ValuePropositionStreamingMedia from "@/components/streaming-media/ValuePropositionStreamingMedia";
 import ServicesStreamingMedia from "@/components/streaming-media/ServicesStreamingMedia";
@@ -12,6 +13,7 @@ import GTranslateWidget from "@/components/GTranslateWidget";
 const StreamingMedia = () => {
   return (
     <>
+      <HiddenInternalLinks />
       <Helmet>
         <title>Legal Documents for Streaming & Media Websites: Terms & Conditions, Privacy Policy, DMCA Policy & Content License</title>
         <meta name="description" content="Essential legal documents for streaming platforms including terms and conditions, content licensing, privacy policy, DMCA policy, and copyright protection for influencers and media companies." />

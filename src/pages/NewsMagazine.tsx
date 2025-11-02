@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import HeaderNewsMagazine from "@/components/news-magazine/HeaderNewsMagazine";
+import HiddenInternalLinks from "@/components/HiddenInternalLinks";
 import HeroNewsMagazine from "@/components/news-magazine/HeroNewsMagazine";
 import ValuePropositionNewsMagazine from "@/components/news-magazine/ValuePropositionNewsMagazine";
 import ServicesNewsMagazine from "@/components/news-magazine/ServicesNewsMagazine";
