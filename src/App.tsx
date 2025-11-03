@@ -33,7 +33,6 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Navigate to="/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" replace />} />
           <Route path="/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" element={<English />} />
-          <Route path="/en/legal-documents-for-affiliate-websites-terms-conditions-privacy-policy-disclosure-cookie-policy" element={<English />} />
           <Route path="/policy" element={<LegalEN />} />
           <Route path="/af" element={<Af />} />
           <Route path="/docs-1" element={<Languages />} />
