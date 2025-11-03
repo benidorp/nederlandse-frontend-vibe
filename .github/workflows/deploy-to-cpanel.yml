@@ -5,7 +5,7 @@ on:
     branches: ["main"] # Pas hier aan als je een andere branch wilt gebruiken
 
 env:
-  BUILD_DIR: build # Pas aan naar 'dist' als jouw project Vite of vergelijkbaar gebruikt
+  BUILD_DIR: dist # Vite output dir
 
 jobs:
   build-and-deploy:
