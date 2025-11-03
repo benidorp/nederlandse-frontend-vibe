@@ -3,12 +3,16 @@
   RewriteEngine On
   RewriteBase /
 
-  # Als bestand of map bestaat, serveer het direct
+  # Force non-www to root domain, preserve full path
+  RewriteCond %{HTTP_HOST} ^www\.iaee\.eu$ [NC]
+  RewriteRule ^(.*)$ https://iaee.eu/$1 [L,R=301]
+
+  # If file or directory exists, serve it directly
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
 
-  # Anders: stuur alles naar index.html (voor client-side routing)
+  # Otherwise: route everything to index.html (client-side routing)
   RewriteRule ^ index.html [L]
 </IfModule>
 
