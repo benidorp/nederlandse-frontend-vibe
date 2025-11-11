@@ -111,19 +111,22 @@ const FooterEN = () => {
             </div>
           </div>
           
-          {/* SEO Internal Linking - Hidden from view but crawlable */}
-          <div className="sr-only">
-            <nav aria-label="Additional pages">
-              <a href="/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy">Affiliate Website Legal Documents</a>
-              <a href="/photography-legal-documents-terms-conditions-privacy-policy-contract-copyright-protection">Photography Legal Documents</a>
-              <a href="/must-have-legal-protection-for-every-hotel-and-travel-website-terms-conditions-privacy-policy-cancellation-policy-disclaimer">Travel Booking Legal Documents</a>
-              <a href="/essential-legal-documents-ecommerce-website-terms-conditions-privacy-policy-return-policy-shipping-policy">Ecommerce Legal Documents</a>
-              <a href="/webshop-online-business-legal-protection-terms-privacy-policy-cookie-policy-gdpr-compliance">Online Shop Legal Documents</a>
-              <a href="/dropshipping-business-legal-protection-terms-conditions-privacy-policy-supplier-agreement-refund-policy">Dropshipping Legal Documents</a>
-              <a href="/elearning-platform-legal-documents-terms-privacy-policy-gdpr-compliance">E-learning Legal Documents</a>
-              <a href="/nonprofit-charity-legal-documents-donation-terms-privacy-policy">Nonprofit Legal Documents</a>
-              <a href="/streaming-media-legal-documents-terms-conditions-privacy-policy-dmca-content-license">Streaming Media Legal Documents</a>
-              <a href="/comparison-review-website-legal-documents-terms-privacy-affiliate-disclosure-disclaimer">Comparison Review Legal Documents</a>
+          {/* All Pages Links */}
+          <div className="mt-8 pt-8 border-t border-white/10">
+            <h3 className="font-semibold mb-4 text-white">All Legal Document Pages</h3>
+            <nav aria-label="All pages" className="grid grid-cols-2 md:grid-cols-3 gap-3">
+              <a href="/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" className="text-sm text-white/70 hover:text-white transition-colors">Affiliate Website Legal Documents</a>
+              <a href="/photography-legal-documents-terms-conditions-privacy-policy-contract-copyright-protection" className="text-sm text-white/70 hover:text-white transition-colors">Photography Legal Documents</a>
+              <a href="/must-have-legal-protection-for-every-hotel-and-travel-website-terms-conditions-privacy-policy-cancellation-policy-disclaimer" className="text-sm text-white/70 hover:text-white transition-colors">Travel Booking Legal Documents</a>
+              <a href="/essential-legal-documents-ecommerce-website-terms-conditions-privacy-policy-return-policy-shipping-policy" className="text-sm text-white/70 hover:text-white transition-colors">Ecommerce Legal Documents</a>
+              <a href="/webshop-online-business-legal-protection-terms-privacy-policy-cookie-policy-gdpr-compliance" className="text-sm text-white/70 hover:text-white transition-colors">Online Shop Legal Documents</a>
+              <a href="/dropshipping-business-legal-protection-terms-conditions-privacy-policy-supplier-agreement-refund-policy" className="text-sm text-white/70 hover:text-white transition-colors">Dropshipping Legal Documents</a>
+              <a href="/elearning-platform-legal-documents-terms-privacy-policy-gdpr-compliance" className="text-sm text-white/70 hover:text-white transition-colors">E-learning Legal Documents</a>
+              <a href="/nonprofit-charity-legal-documents-donation-terms-privacy-policy" className="text-sm text-white/70 hover:text-white transition-colors">Nonprofit Legal Documents</a>
+              <a href="/streaming-media-legal-documents-terms-conditions-privacy-policy-dmca-content-license" className="text-sm text-white/70 hover:text-white transition-colors">Streaming Media Legal Documents</a>
+              <a href="/comparison-review-website-legal-documents-terms-privacy-affiliate-disclosure-disclaimer" className="text-sm text-white/70 hover:text-white transition-colors">Comparison Review Legal Documents</a>
+              <a href="/news-magazine-legal-documents-terms-conditions-privacy-policy-copyright-editorial-policy" className="text-sm text-white/70 hover:text-white transition-colors">News Magazine Legal Documents</a>
+              <a href="/freelancers-self-employed-legal-documents-contracts-terms-privacy-policy" className="text-sm text-white/70 hover:text-white transition-colors">Freelancers Legal Documents</a>
             </nav>
           </div>
         </div>
