@@ -117,15 +117,6 @@ const FooterFR = () => {
             <p className="text-sm text-muted-foreground">
               © 2024 Legal Affiliate Agreement. Tous droits réservés.
             </p>
-            <div className="flex gap-4 text-sm">
-              <a href="/affiliate-website-bescherming-essentiele-juridische-documenten-algemene-voorwaarden-privacyverklaring-disclosure-cookiebeleid" className="text-muted-foreground hover:text-primary transition-colors">
-                Nederlands
-              </a>
-              <a href="/en" className="text-muted-foreground hover:text-primary transition-colors">
-                English
-              </a>
-              <span className="text-primary font-medium">Français</span>
-            </div>
           </div>
           
           {/* All Pages Links */}

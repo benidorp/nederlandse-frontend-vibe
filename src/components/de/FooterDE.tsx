@@ -129,20 +129,6 @@ const FooterDE = () => {
           <p className="text-sm text-muted-foreground">
             © 2025 Legal Affiliate Agreement. Alle Rechte vorbehalten.
           </p>
-          <div className="flex gap-4">
-            <a href="/affiliate-website-bescherming-essentiele-juridische-documenten-algemene-voorwaarden-privacyverklaring-disclosure-cookiebeleid" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-              NL
-            </a>
-            <a href="/en" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-              EN
-            </a>
-            <a href="/fr" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-              FR
-            </a>
-            <a href="/de" className="text-sm text-primary font-semibold">
-              DE
-            </a>
-          </div>
           
           {/* All Pages Links */}
           <div className="mt-8 pt-8 border-t border-border">
