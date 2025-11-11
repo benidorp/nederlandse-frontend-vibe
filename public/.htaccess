@@ -7,6 +7,17 @@
   RewriteCond %{HTTP_HOST} ^www\.iaee\.eu$ [NC]
   RewriteRule ^(.*)$ https://iaee.eu/$1 [L,R=301]
 
+  # GTranslate Pro: Allow PHP files and subdirectories
+  # Let GTranslate handle language subdirectories (fr/, de/, nl/, etc.)
+  RewriteCond %{REQUEST_URI} ^/[a-z]{2}/ [NC]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^([a-z]{2})/(.*)$ gtranslate/gtranslate.php?glang=$1&url=$2 [L,QSA]
+
+  # Allow GTranslate PHP files to be accessed
+  RewriteCond %{REQUEST_URI} ^/gtranslate/
+  RewriteRule ^ - [L]
+
   # If file or directory exists, serve it directly
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
