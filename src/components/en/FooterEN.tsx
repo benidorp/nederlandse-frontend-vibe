@@ -91,7 +91,7 @@ const FooterEN = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-sm text-white/70">
                 <Mail className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <a href="mailto:info@legalaffiliateagreement.com" className="hover:text-white transition-colors">isupport@iaee.eu</a>
+                <a href="mailto:support@iaee.eu" className="hover:text-white transition-colors">support@iaee.eu</a>
               </li>
             </ul>
           </div>
