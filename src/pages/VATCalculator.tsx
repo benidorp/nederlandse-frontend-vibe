@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Calculator, Globe, TrendingUp, FileText, CheckCircle2 } from "lucide-react";
 import HeaderEN from "@/components/en/HeaderEN";
 import FooterEN from "@/components/en/FooterEN";
@@ -27,7 +27,8 @@ const VATCalculator = () => {
     }
   };
 
-  const calculateResults = () => {
+
+  const results = useMemo(() => {
     if (!selectedCountry || !amount || selectedRate === null) return null;
 
     const numAmount = parseFloat(amount);
@@ -54,9 +55,7 @@ const VATCalculator = () => {
       vatAmount,
       amountInclVAT,
     };
-  };
-
-  const results = calculateResults();
+  }, [selectedCountry, amount, selectedRate, includesVAT]);
 
   return (
     <>
@@ -316,7 +315,7 @@ const VATCalculator = () => {
 
                   {/* Results Card */}
                   {results ? (
-                    <VATResults results={results} />
+                    <VATResults key={`${results.country.countryCode}-${results.rate}`} results={results} />
                   ) : (
                     <Card className="flex items-center justify-center border-2 shadow-lg">
                       <CardContent className="text-center py-16 px-6">
