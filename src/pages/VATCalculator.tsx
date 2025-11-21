@@ -19,20 +19,11 @@ const VATCalculator = () => {
   const [amount, setAmount] = useState<string>("");
   const [includesVAT, setIncludesVAT] = useState<"yes" | "no">("no");
   const [selectedRate, setSelectedRate] = useState<number | null>(null);
-  const [showResults, setShowResults] = useState(false);
-
   const handleCountryChange = (countryCode: string) => {
     const country = vatRates.find(c => c.countryCode === countryCode);
     if (country) {
       setSelectedCountry(country);
       setSelectedRate(country.standardRate);
-      setShowResults(false);
-    }
-  };
-
-  const handleCalculate = () => {
-    if (selectedCountry && amount && selectedRate !== null) {
-      setShowResults(true);
     }
   };
 
@@ -65,7 +56,7 @@ const VATCalculator = () => {
     };
   };
 
-  const results = showResults ? calculateResults() : null;
+  const results = calculateResults();
 
   return (
     <>
@@ -195,15 +186,6 @@ const VATCalculator = () => {
                           </div>
                         </div>
 
-                        {/* Calculate Button */}
-                        <Button 
-                          onClick={handleCalculate} 
-                          className="w-full"
-                          disabled={!amount || selectedRate === null}
-                        >
-                          <Calculator className="w-4 h-4 mr-2" />
-                          Berekenen
-                        </Button>
                       </>
                     )}
 
