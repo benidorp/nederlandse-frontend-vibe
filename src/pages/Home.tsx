@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Shield, FileText, Scale, CheckCircle } from "lucide-react";
+import { Shield, FileText, Scale, CheckCircle, Calculator } from "lucide-react";
 import HeaderEN from "@/components/en/HeaderEN";
 import FooterEN from "@/components/en/FooterEN";
 import GTranslateWidget from "@/components/GTranslateWidget";
@@ -157,6 +157,36 @@ const Home = () => {
                 <p className="text-base text-muted-foreground mb-8">
                   Choose your website type below and get instant access to all the legal documents you need to operate safely and compliantly.
                 </p>
+              </div>
+            </div>
+          </section>
+
+          {/* BTW Calculator Highlight */}
+          <section className="py-12 bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10">
+            <div className="container">
+              <div className="max-w-4xl mx-auto">
+                <Card className="border-primary/20 shadow-lg">
+                  <CardContent className="p-8">
+                    <div className="flex flex-col md:flex-row items-center gap-6">
+                      <div className="flex-shrink-0 w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                        <Calculator className="w-8 h-8 text-primary" />
+                      </div>
+                      <div className="flex-1 text-center md:text-left">
+                        <h2 className="text-2xl md:text-3xl font-bold mb-2">
+                          Wereldwijde BTW-calculator
+                        </h2>
+                        <p className="text-muted-foreground mb-4">
+                          Bereken eenvoudig BTW voor meer dan 40 landen wereldwijd. Professionele tool voor internationale ondernemers.
+                        </p>
+                      </div>
+                      <Link to="/btw-calculator-wereldwijd">
+                        <Button size="lg" className="whitespace-nowrap">
+                          Probeer nu gratis
+                        </Button>
+                      </Link>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
             </div>
           </section>
