@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 import { useState } from "react";
-import { Calculator } from "lucide-react";
+import { Calculator, Globe, TrendingUp, FileText, CheckCircle2 } from "lucide-react";
 import HeaderEN from "@/components/en/HeaderEN";
 import FooterEN from "@/components/en/FooterEN";
 import GTranslateWidget from "@/components/GTranslateWidget";
@@ -73,143 +73,267 @@ const VATCalculator = () => {
         <HeaderEN />
         <main>
           {/* Hero Section */}
-          <section className="relative py-12 md:py-20 bg-gradient-to-b from-primary/10 via-primary/5 to-background">
-            <div className="container">
+          <section className="relative py-16 md:py-24 bg-gradient-to-br from-primary/5 via-background to-primary/5 overflow-hidden">
+            <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+            <div className="container relative">
               <div className="max-w-4xl mx-auto text-center">
-                <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-primary/10 border border-primary/20">
-                  <Calculator className="w-4 h-4 text-primary" />
-                  <span className="text-sm font-medium text-primary">Wereldwijde BTW-berekening</span>
+                <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-sm">
+                  <Globe className="w-4 h-4 text-primary animate-pulse" />
+                  <span className="text-sm font-medium text-primary">Wereldwijd • 60+ Landen</span>
                 </div>
                 
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                  Wereldwijde BTW-calculator voor Ondernemers
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
+                  Wereldwijde BTW-calculator
                 </h1>
                 
-                <p className="text-xl text-muted-foreground mb-4">
-                  Bereken eenvoudig de BTW voor elk land wereldwijd. Professionele tool voor internationale ondernemers met actuele tarieven en overzichtelijke resultaten.
+                <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+                  Bereken eenvoudig en nauwkeurig de BTW voor elk land wereldwijd. 
+                  Professionele tool met actuele tarieven voor internationale ondernemers.
                 </p>
+
+                <div className="flex flex-wrap gap-6 justify-center text-sm">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-primary" />
+                    <span className="text-muted-foreground">60+ Landen</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-primary" />
+                    <span className="text-muted-foreground">Actuele Tarieven</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-primary" />
+                    <span className="text-muted-foreground">Direct Resultaat</span>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
 
-          {/* Calculator Section */}
-          <section className="py-12 md:py-16 bg-background">
+          {/* How it Works Section */}
+          <section className="py-12 md:py-16 bg-muted/30">
             <div className="container">
-              <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-8">
-                {/* Input Card */}
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="text-2xl">BTW Berekenen</CardTitle>
-                    <CardDescription>
-                      Selecteer uw land en vul het bedrag in om de BTW te berekenen
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-6">
-                    {/* Country Selection */}
-                    <div className="space-y-2">
-                      <Label htmlFor="country">Selecteer Land</Label>
-                      <Select onValueChange={handleCountryChange}>
-                        <SelectTrigger id="country">
-                          <SelectValue placeholder="Kies een land..." />
-                        </SelectTrigger>
-                        <SelectContent className="max-h-[300px]">
-                          {vatRates.map((country) => (
-                            <SelectItem key={country.countryCode} value={country.countryCode}>
-                              {country.country} ({country.currencySymbol})
-                            </SelectItem>
-                          ))}
-                        </SelectContent>
-                      </Select>
-                    </div>
+              <div className="max-w-5xl mx-auto">
+                <div className="text-center mb-12">
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4">Hoe werkt de BTW calculator?</h2>
+                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                    In 4 eenvoudige stappen bereken je de BTW voor elk land
+                  </p>
+                </div>
 
-                    {selectedCountry && (
-                      <>
-                        {/* Rate Selection */}
-                        <div className="space-y-2">
-                          <Label>BTW-tarief</Label>
-                          <RadioGroup 
-                            value={selectedRate?.toString()} 
-                            onValueChange={(value) => setSelectedRate(parseFloat(value))}
-                          >
-                            <div className="flex items-center space-x-2">
-                              <RadioGroupItem value={selectedCountry.standardRate.toString()} id="standard" />
-                              <Label htmlFor="standard" className="cursor-pointer">
-                                Standaard tarief: {selectedCountry.standardRate}%
-                              </Label>
-                            </div>
-                            {selectedCountry.reducedRates.map((rate, index) => (
-                              <div key={index} className="flex items-center space-x-2">
-                                <RadioGroupItem value={rate.toString()} id={`reduced-${index}`} />
-                                <Label htmlFor={`reduced-${index}`} className="cursor-pointer">
-                                  Verlaagd tarief: {rate}%
-                                </Label>
-                              </div>
-                            ))}
-                          </RadioGroup>
-                        </div>
-
-                        {/* Include/Exclude VAT */}
-                        <div className="space-y-2">
-                          <Label>Het bedrag is:</Label>
-                          <RadioGroup value={includesVAT} onValueChange={(value: "yes" | "no") => setIncludesVAT(value)}>
-                            <div className="flex items-center space-x-2">
-                              <RadioGroupItem value="no" id="excl" />
-                              <Label htmlFor="excl" className="cursor-pointer">
-                                Exclusief BTW
-                              </Label>
-                            </div>
-                            <div className="flex items-center space-x-2">
-                              <RadioGroupItem value="yes" id="incl" />
-                              <Label htmlFor="incl" className="cursor-pointer">
-                                Inclusief BTW
-                              </Label>
-                            </div>
-                          </RadioGroup>
-                        </div>
-
-                        {/* Amount Input */}
-                        <div className="space-y-2">
-                          <Label htmlFor="amount">Bedrag ({selectedCountry.currencySymbol})</Label>
-                          <div className="relative">
-                            <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground">
-                              {selectedCountry.currencySymbol}
-                            </span>
-                            <Input
-                              id="amount"
-                              type="number"
-                              step="0.01"
-                              placeholder="0.00"
-                              value={amount}
-                              onChange={(e) => setAmount(e.target.value)}
-                              className="pl-8"
-                            />
-                          </div>
-                        </div>
-
-                      </>
-                    )}
-
-                    {!selectedCountry && (
-                      <div className="text-center py-8 text-muted-foreground">
-                        Selecteer eerst een land om te beginnen
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  <Card className="relative overflow-hidden border-2 hover:border-primary/50 transition-all">
+                    <div className="absolute top-0 right-0 w-20 h-20 bg-primary/10 rounded-full -mr-10 -mt-10"></div>
+                    <CardHeader>
+                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                        <Globe className="w-6 h-6 text-primary" />
                       </div>
-                    )}
-                  </CardContent>
-                </Card>
-
-                {/* Results Card */}
-                {results ? (
-                  <VATResults results={results} />
-                ) : (
-                  <Card className="flex items-center justify-center">
-                    <CardContent className="text-center py-12">
-                      <Calculator className="w-16 h-16 mx-auto mb-4 text-muted-foreground opacity-50" />
+                      <CardTitle className="text-xl">1. Kies land</CardTitle>
+                    </CardHeader>
+                    <CardContent>
                       <p className="text-muted-foreground">
-                        Vul de gegevens in en klik op "Berekenen" om de resultaten te zien
+                        Selecteer het land waarvoor je de BTW wilt berekenen uit onze lijst van 60+ landen.
                       </p>
                     </CardContent>
                   </Card>
-                )}
+
+                  <Card className="relative overflow-hidden border-2 hover:border-primary/50 transition-all">
+                    <div className="absolute top-0 right-0 w-20 h-20 bg-primary/10 rounded-full -mr-10 -mt-10"></div>
+                    <CardHeader>
+                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                        <TrendingUp className="w-6 h-6 text-primary" />
+                      </div>
+                      <CardTitle className="text-xl">2. Kies tarief</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground">
+                        Selecteer het standaard of verlaagd tarief. Elk land heeft eigen BTW-percentages.
+                      </p>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="relative overflow-hidden border-2 hover:border-primary/50 transition-all">
+                    <div className="absolute top-0 right-0 w-20 h-20 bg-primary/10 rounded-full -mr-10 -mt-10"></div>
+                    <CardHeader>
+                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                        <FileText className="w-6 h-6 text-primary" />
+                      </div>
+                      <CardTitle className="text-xl">3. Vul bedrag in</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground">
+                        Voer het bedrag in en geef aan of dit inclusief of exclusief BTW is.
+                      </p>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="relative overflow-hidden border-2 hover:border-primary/50 transition-all">
+                    <div className="absolute top-0 right-0 w-20 h-20 bg-primary/10 rounded-full -mr-10 -mt-10"></div>
+                    <CardHeader>
+                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                        <Calculator className="w-6 h-6 text-primary" />
+                      </div>
+                      <CardTitle className="text-xl">4. Zie resultaat</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground">
+                        De calculator toont direct alle bedragen en een overzicht voor je aangifte.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="py-12 md:py-16 bg-background">
+            <div className="container">
+              <div className="max-w-5xl mx-auto">
+                <div className="text-center mb-10">
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4">BTW Calculator</h2>
+                  <p className="text-lg text-muted-foreground">
+                    Bereken direct de BTW voor jouw internationale transacties
+                  </p>
+                </div>
+                
+                <div className="grid lg:grid-cols-2 gap-8">
+                  {/* Input Card */}
+                  <Card className="border-2 shadow-lg">
+                    <CardHeader className="space-y-1 pb-4">
+                      <CardTitle className="text-2xl flex items-center gap-2">
+                        <Calculator className="w-6 h-6 text-primary" />
+                        BTW Berekenen
+                      </CardTitle>
+                      <CardDescription className="text-base">
+                        Vul de onderstaande velden in om de BTW te berekenen
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className="space-y-6">
+                      {/* Country Selection */}
+                      <div className="space-y-3">
+                        <Label htmlFor="country" className="text-base font-semibold">
+                          <Globe className="w-4 h-4 inline mr-2" />
+                          Selecteer Land
+                        </Label>
+                        <Select onValueChange={handleCountryChange}>
+                          <SelectTrigger id="country">
+                            <SelectValue placeholder="Kies een land..." />
+                          </SelectTrigger>
+                          <SelectContent className="max-h-[300px]">
+                            {vatRates.map((country) => (
+                              <SelectItem key={country.countryCode} value={country.countryCode}>
+                                {country.country} ({country.currencySymbol})
+                              </SelectItem>
+                            ))}
+                          </SelectContent>
+                        </Select>
+                      </div>
+
+                      {selectedCountry && (
+                        <>
+                          {/* Rate Selection */}
+                          <div className="space-y-3">
+                            <Label className="text-base font-semibold">
+                              <TrendingUp className="w-4 h-4 inline mr-2" />
+                              BTW-tarief
+                            </Label>
+                            <RadioGroup 
+                              value={selectedRate?.toString()} 
+                              onValueChange={(value) => setSelectedRate(parseFloat(value))}
+                            >
+                              <div className="flex items-center space-x-2 p-3 rounded-lg border bg-card hover:bg-accent/50 transition-colors">
+                                <RadioGroupItem value={selectedCountry.standardRate.toString()} id="standard" />
+                                <Label htmlFor="standard" className="cursor-pointer flex-1 font-medium">
+                                  Standaard tarief: {selectedCountry.standardRate}%
+                                </Label>
+                              </div>
+                              {selectedCountry.reducedRates.map((rate, index) => (
+                                <div key={index} className="flex items-center space-x-2 p-3 rounded-lg border bg-card hover:bg-accent/50 transition-colors">
+                                  <RadioGroupItem value={rate.toString()} id={`reduced-${index}`} />
+                                  <Label htmlFor={`reduced-${index}`} className="cursor-pointer flex-1 font-medium">
+                                    Verlaagd tarief: {rate}%
+                                  </Label>
+                                </div>
+                              ))}
+                            </RadioGroup>
+                          </div>
+
+                          {/* Include/Exclude VAT */}
+                          <div className="space-y-3">
+                            <Label className="text-base font-semibold">Het bedrag is:</Label>
+                            <RadioGroup value={includesVAT} onValueChange={(value: "yes" | "no") => setIncludesVAT(value)}>
+                              <div className="flex items-center space-x-2 p-3 rounded-lg border bg-card hover:bg-accent/50 transition-colors">
+                                <RadioGroupItem value="no" id="excl" />
+                                <Label htmlFor="excl" className="cursor-pointer flex-1 font-medium">
+                                  Exclusief BTW
+                                </Label>
+                              </div>
+                              <div className="flex items-center space-x-2 p-3 rounded-lg border bg-card hover:bg-accent/50 transition-colors">
+                                <RadioGroupItem value="yes" id="incl" />
+                                <Label htmlFor="incl" className="cursor-pointer flex-1 font-medium">
+                                  Inclusief BTW
+                                </Label>
+                              </div>
+                            </RadioGroup>
+                          </div>
+
+                          {/* Amount Input */}
+                          <div className="space-y-3">
+                            <Label htmlFor="amount" className="text-base font-semibold">
+                              <FileText className="w-4 h-4 inline mr-2" />
+                              Bedrag ({selectedCountry.currencySymbol})
+                            </Label>
+                            <div className="relative">
+                              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground font-semibold text-lg">
+                                {selectedCountry.currencySymbol}
+                              </span>
+                              <Input
+                                id="amount"
+                                type="number"
+                                step="0.01"
+                                placeholder="0.00"
+                                value={amount}
+                                onChange={(e) => setAmount(e.target.value)}
+                                className="pl-10 h-12 text-lg font-medium"
+                              />
+                            </div>
+                          </div>
+                        </>
+                      )}
+
+                      {!selectedCountry && (
+                        <div className="text-center py-12 px-4">
+                          <Globe className="w-16 h-16 mx-auto mb-4 text-muted-foreground/50" />
+                          <p className="text-lg text-muted-foreground font-medium">
+                            Selecteer een land om te beginnen
+                          </p>
+                          <p className="text-sm text-muted-foreground mt-2">
+                            Kies uit 60+ landen wereldwijd
+                          </p>
+                        </div>
+                      )}
+                    </CardContent>
+                  </Card>
+
+                  {/* Results Card */}
+                  {results ? (
+                    <VATResults results={results} />
+                  ) : (
+                    <Card className="flex items-center justify-center border-2 shadow-lg">
+                      <CardContent className="text-center py-16 px-6">
+                        <div className="relative">
+                          <div className="absolute inset-0 bg-primary/5 rounded-full blur-3xl"></div>
+                          <Calculator className="w-20 h-20 mx-auto mb-6 text-primary relative" />
+                        </div>
+                        <p className="text-lg text-muted-foreground font-medium mb-2">
+                          Vul de gegevens in om de BTW te berekenen
+                        </p>
+                        <p className="text-sm text-muted-foreground">
+                          De resultaten verschijnen hier automatisch
+                        </p>
+                      </CardContent>
+                    </Card>
+                  )}
+                </div>
               </div>
             </div>
           </section>
