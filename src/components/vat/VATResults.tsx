@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { VATRate } from "@/data/vatRates";
@@ -122,4 +123,4 @@ const VATResults = ({ results }: VATResultsProps) => {
   );
 };
 
-export default VATResults;
+export default memo(VATResults);
