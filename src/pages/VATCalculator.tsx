@@ -1,7 +1,6 @@
 import { Helmet } from "react-helmet";
 import { useState, useMemo } from "react";
 import { Calculator, Globe, TrendingUp, FileText, CheckCircle2 } from "lucide-react";
-import HeaderEN from "@/components/en/HeaderEN";
 import FooterEN from "@/components/en/FooterEN";
 import GTranslateWidget from "@/components/GTranslateWidget";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -69,7 +68,6 @@ const VATCalculator = () => {
       </Helmet>
       <GTranslateWidget />
       <div className="min-h-screen">
-        <HeaderEN />
         <main>
           {/* Hero Section */}
           <section className="relative py-16 md:py-24 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10 overflow-hidden">
