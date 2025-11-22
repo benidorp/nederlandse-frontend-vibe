@@ -17,7 +17,7 @@ const GTranslateWidget = ({ defaultLanguage = "en" }: GTranslateWidgetProps) => 
       (window as any).gtranslateSettings = {
         default_language: defaultLanguage,
         native_language_names: true,
-        detect_browser_language: false, // Disabled to prevent conflicts with our URL-based system
+        detect_browser_language: false,
         languages: [
           "sq", "ar", "hy", "az", "be", "bn", "bs", "bg", "zh", "hr", "cs", "da", "nl", "en",
           "et", "fil", "fi", "fr", "ka", "de", "el", "gu", "he", "hi", "hu", "is", "ig", "id",
@@ -30,7 +30,12 @@ const GTranslateWidget = ({ defaultLanguage = "en" }: GTranslateWidgetProps) => 
     };
 
     return () => {
-      document.body.removeChild(script);
+      // Safely remove script only if it's still in the DOM
+      if (script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
+      // Clean up gtranslate settings
+      delete (window as any).gtranslateSettings;
     };
   }, [defaultLanguage]);
 
