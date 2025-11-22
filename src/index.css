@@ -9,53 +9,53 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 220 70% 15%;
+    --foreground: 215 25% 27%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 70% 15%;
+    --card-foreground: 215 25% 27%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 70% 15%;
+    --popover-foreground: 215 25% 27%;
 
-    --primary: 220 85% 55%;
+    --primary: 215 70% 28%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 220 80% 65%;
+    --primary-glow: 210 80% 45%;
 
-    --secondary: 280 70% 60%;
+    --secondary: 205 85% 55%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 15% 96%;
-    --muted-foreground: 220 50% 30%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 25% 40%;
 
-    --accent: 160 75% 45%;
+    --accent: 200 65% 45%;
     --accent-foreground: 0 0% 100%;
 
     --success: 140 70% 50%;
     --success-foreground: 0 0% 100%;
 
-    --info: 200 85% 55%;
+    --info: 210 80% 55%;
     --info-foreground: 0 0% 100%;
 
     --warning: 35 90% 55%;
     --warning-foreground: 0 0% 100%;
 
-    --navy: 220 70% 25%;
-    --navy-dark: 220 70% 18%;
+    --navy: 215 80% 22%;
+    --navy-dark: 220 85% 15%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(220 85% 55%), hsl(280 70% 60%));
-    --gradient-secondary: linear-gradient(135deg, hsl(280 70% 60%), hsl(160 75% 45%));
-    --gradient-accent: linear-gradient(135deg, hsl(160 75% 45%), hsl(200 85% 55%));
-    --gradient-navy: linear-gradient(135deg, hsl(220 70% 18%), hsl(220 70% 25%));
-    --shadow-elegant: 0 10px 40px -10px hsl(220 85% 55% / 0.35);
-    --shadow-glow: 0 0 50px hsl(220 80% 65% / 0.25);
-    --shadow-colorful: 0 20px 60px -15px hsl(280 70% 60% / 0.4);
+    --gradient-primary: linear-gradient(135deg, hsl(215 70% 28%), hsl(205 85% 55%));
+    --gradient-secondary: linear-gradient(135deg, hsl(205 85% 55%), hsl(200 65% 45%));
+    --gradient-accent: linear-gradient(135deg, hsl(200 65% 45%), hsl(210 80% 55%));
+    --gradient-navy: linear-gradient(135deg, hsl(220 85% 15%), hsl(215 80% 22%));
+    --shadow-elegant: 0 10px 40px -10px hsl(215 70% 28% / 0.25);
+    --shadow-glow: 0 0 50px hsl(210 80% 45% / 0.2);
+    --shadow-colorful: 0 20px 60px -15px hsl(205 85% 55% / 0.3);
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 90%;
-    --input: 220 15% 90%;
-    --ring: 220 85% 55%;
+    --border: 215 20% 90%;
+    --input: 215 20% 90%;
+    --ring: 215 70% 28%;
 
     --radius: 0.5rem;
 
