@@ -72,20 +72,20 @@ const VATCalculator = () => {
         <HeaderEN />
         <main>
           {/* Hero Section */}
-          <section className="relative py-16 md:py-24 bg-gradient-to-br from-primary/5 via-background to-primary/5 overflow-hidden">
+          <section className="relative py-16 md:py-24 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10 overflow-hidden">
             <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
             <div className="container relative">
               <div className="max-w-4xl mx-auto text-center">
-                <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-sm">
+                <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full bg-gradient-to-r from-primary/20 to-secondary/20 border border-primary/30 backdrop-blur-sm shadow-lg">
                   <Globe className="w-4 h-4 text-primary animate-pulse" />
-                  <span className="text-sm font-medium text-primary">Wereldwijd • 60+ Landen</span>
+                  <span className="text-sm font-semibold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Wereldwijd • 60+ Landen</span>
                 </div>
                 
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">
                   Wereldwijde BTW-calculator
                 </h1>
                 
-                <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+                <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
                   Bereken eenvoudig en nauwkeurig de BTW voor elk land wereldwijd. 
                   Professionele tool met actuele tarieven voor internationale ondernemers.
                 </p>
@@ -120,61 +120,61 @@ const VATCalculator = () => {
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                  <Card className="relative overflow-hidden border-2 hover:border-primary/50 transition-all">
-                    <div className="absolute top-0 right-0 w-20 h-20 bg-primary/10 rounded-full -mr-10 -mt-10"></div>
+                  <Card className="relative overflow-hidden border-2 hover:border-primary/50 transition-all group hover:shadow-colorful duration-300">
+                    <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary/20 to-transparent rounded-full -mr-12 -mt-12 group-hover:scale-150 transition-transform duration-300"></div>
                     <CardHeader>
-                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                        <Globe className="w-6 h-6 text-primary" />
+                      <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <Globe className="w-7 h-7 text-white" />
                       </div>
-                      <CardTitle className="text-xl">1. Kies land</CardTitle>
+                      <CardTitle className="text-xl font-bold">1. Kies land</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-muted-foreground">
+                      <p className="text-muted-foreground leading-relaxed">
                         Selecteer het land waarvoor je de BTW wilt berekenen uit onze lijst van 60+ landen.
                       </p>
                     </CardContent>
                   </Card>
 
-                  <Card className="relative overflow-hidden border-2 hover:border-primary/50 transition-all">
-                    <div className="absolute top-0 right-0 w-20 h-20 bg-primary/10 rounded-full -mr-10 -mt-10"></div>
+                  <Card className="relative overflow-hidden border-2 hover:border-secondary/50 transition-all group hover:shadow-colorful duration-300">
+                    <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-secondary/20 to-transparent rounded-full -mr-12 -mt-12 group-hover:scale-150 transition-transform duration-300"></div>
                     <CardHeader>
-                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                        <TrendingUp className="w-6 h-6 text-primary" />
+                      <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-secondary to-secondary/70 flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <TrendingUp className="w-7 h-7 text-white" />
                       </div>
-                      <CardTitle className="text-xl">2. Kies tarief</CardTitle>
+                      <CardTitle className="text-xl font-bold">2. Kies tarief</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-muted-foreground">
+                      <p className="text-muted-foreground leading-relaxed">
                         Selecteer het standaard of verlaagd tarief. Elk land heeft eigen BTW-percentages.
                       </p>
                     </CardContent>
                   </Card>
 
-                  <Card className="relative overflow-hidden border-2 hover:border-primary/50 transition-all">
-                    <div className="absolute top-0 right-0 w-20 h-20 bg-primary/10 rounded-full -mr-10 -mt-10"></div>
+                  <Card className="relative overflow-hidden border-2 hover:border-accent/50 transition-all group hover:shadow-colorful duration-300">
+                    <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-accent/20 to-transparent rounded-full -mr-12 -mt-12 group-hover:scale-150 transition-transform duration-300"></div>
                     <CardHeader>
-                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                        <FileText className="w-6 h-6 text-primary" />
+                      <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent to-accent/70 flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <FileText className="w-7 h-7 text-white" />
                       </div>
-                      <CardTitle className="text-xl">3. Vul bedrag in</CardTitle>
+                      <CardTitle className="text-xl font-bold">3. Vul bedrag in</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-muted-foreground">
+                      <p className="text-muted-foreground leading-relaxed">
                         Voer het bedrag in en geef aan of dit inclusief of exclusief BTW is.
                       </p>
                     </CardContent>
                   </Card>
 
-                  <Card className="relative overflow-hidden border-2 hover:border-primary/50 transition-all">
-                    <div className="absolute top-0 right-0 w-20 h-20 bg-primary/10 rounded-full -mr-10 -mt-10"></div>
+                  <Card className="relative overflow-hidden border-2 hover:border-info/50 transition-all group hover:shadow-colorful duration-300">
+                    <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-info/20 to-transparent rounded-full -mr-12 -mt-12 group-hover:scale-150 transition-transform duration-300"></div>
                     <CardHeader>
-                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                        <Calculator className="w-6 h-6 text-primary" />
+                      <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-info to-info/70 flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <Calculator className="w-7 h-7 text-white" />
                       </div>
-                      <CardTitle className="text-xl">4. Zie resultaat</CardTitle>
+                      <CardTitle className="text-xl font-bold">4. Zie resultaat</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-muted-foreground">
+                      <p className="text-muted-foreground leading-relaxed">
                         De calculator toont direct alle bedragen en een overzicht voor je aangifte.
                       </p>
                     </CardContent>
@@ -214,13 +214,16 @@ const VATCalculator = () => {
                           Selecteer Land
                         </Label>
                         <Select onValueChange={handleCountryChange}>
-                          <SelectTrigger id="country">
+                          <SelectTrigger id="country" className="h-14 text-base">
                             <SelectValue placeholder="Kies een land..." />
                           </SelectTrigger>
                           <SelectContent className="max-h-[300px]">
                             {vatRates.map((country) => (
                               <SelectItem key={country.countryCode} value={country.countryCode}>
-                                {country.country} ({country.currencySymbol})
+                                <span className="flex items-center gap-2">
+                                  <span className="text-xl">{country.flag}</span>
+                                  {country.country} ({country.currencySymbol})
+                                </span>
                               </SelectItem>
                             ))}
                           </SelectContent>

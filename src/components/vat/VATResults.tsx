@@ -27,38 +27,49 @@ const VATResults = ({ results }: VATResultsProps) => {
   const vatPercentage = (vatAmount / amountInclVAT) * 100;
 
   return (
-    <Card className="border-2 shadow-lg">
-      <CardHeader className="border-b bg-muted/30">
-        <CardTitle className="text-2xl flex items-center gap-2">
-          <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-            <span className="text-lg">✓</span>
+    <Card className="border-2 shadow-lg bg-gradient-to-br from-card via-card to-primary/5">
+      <CardHeader className="border-b bg-gradient-to-r from-primary/10 to-secondary/10">
+        <CardTitle className="text-2xl flex items-center gap-3">
+          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg">
+            <span className="text-lg text-white">✓</span>
           </div>
           Resultaten
         </CardTitle>
-        <p className="text-base text-muted-foreground mt-2">
-          {country.country} - BTW {rate}%
+        <p className="text-base text-muted-foreground mt-2 flex items-center gap-2">
+          <span className="text-2xl">{country.flag}</span>
+          <span className="font-semibold">{country.country}</span>
+          <span className="text-primary">- BTW {rate}%</span>
         </p>
       </CardHeader>
       <CardContent className="space-y-6 pt-6">
         {/* Amount Details */}
         <div className="space-y-3">
-          <div className="p-5 rounded-xl bg-gradient-to-br from-muted/50 to-muted/30 border space-y-2 hover:shadow-md transition-shadow">
-            <p className="text-sm font-medium text-muted-foreground uppercase tracking-wide">Bedrag exclusief BTW</p>
-            <p className="text-3xl font-bold">
+          <div className="p-5 rounded-xl bg-gradient-to-br from-info/20 to-info/5 border-2 border-info/30 space-y-2 hover:shadow-colorful transition-all hover:scale-105 duration-300">
+            <p className="text-sm font-semibold text-info uppercase tracking-wide flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-info"></span>
+              Bedrag exclusief BTW
+            </p>
+            <p className="text-4xl font-bold text-info">
               {country.currencySymbol} {formatCurrency(amountExclVAT)}
             </p>
           </div>
 
-          <div className="p-5 rounded-xl bg-gradient-to-br from-primary/15 to-primary/5 border border-primary/20 space-y-2 hover:shadow-md transition-shadow">
-            <p className="text-sm font-medium text-muted-foreground uppercase tracking-wide">BTW bedrag ({rate}%)</p>
-            <p className="text-3xl font-bold text-primary">
+          <div className="p-5 rounded-xl bg-gradient-to-br from-secondary/25 to-secondary/10 border-2 border-secondary/40 space-y-2 hover:shadow-colorful transition-all hover:scale-105 duration-300">
+            <p className="text-sm font-semibold text-secondary uppercase tracking-wide flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-secondary"></span>
+              BTW bedrag ({rate}%)
+            </p>
+            <p className="text-4xl font-bold text-secondary">
               {country.currencySymbol} {formatCurrency(vatAmount)}
             </p>
           </div>
 
-          <div className="p-5 rounded-xl bg-gradient-to-br from-muted/50 to-muted/30 border space-y-2 hover:shadow-md transition-shadow">
-            <p className="text-sm font-medium text-muted-foreground uppercase tracking-wide">Bedrag inclusief BTW</p>
-            <p className="text-3xl font-bold">
+          <div className="p-5 rounded-xl bg-gradient-to-br from-accent/25 to-accent/10 border-2 border-accent/40 space-y-2 hover:shadow-colorful transition-all hover:scale-105 duration-300">
+            <p className="text-sm font-semibold text-accent uppercase tracking-wide flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-accent"></span>
+              Bedrag inclusief BTW
+            </p>
+            <p className="text-4xl font-bold text-accent">
               {country.currencySymbol} {formatCurrency(amountInclVAT)}
             </p>
           </div>
