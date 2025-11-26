@@ -26,7 +26,7 @@ const VATFAQSection = () => {
           
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="item-1" className="bg-background px-6 rounded-xl border-2 shadow-sm hover:shadow-md transition-all">
-              <AccordionTrigger className="hover:no-underline text-left font-semibold py-5">
+              <AccordionTrigger headingLevel="h3" className="hover:no-underline text-left font-semibold py-5">
                 Wat is BTW en waarom moet ik dit berekenen?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
@@ -42,7 +42,7 @@ const VATFAQSection = () => {
             </AccordionItem>
 
             <AccordionItem value="item-2" className="bg-background px-6 rounded-xl border-2 shadow-sm hover:shadow-md transition-all">
-              <AccordionTrigger className="hover:no-underline text-left font-semibold py-5">
+              <AccordionTrigger headingLevel="h3" className="hover:no-underline text-left font-semibold py-5">
                 Wat is het verschil tussen inclusief en exclusief BTW?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
@@ -69,7 +69,7 @@ const VATFAQSection = () => {
             </AccordionItem>
 
             <AccordionItem value="item-3" className="bg-background px-6 rounded-xl border-2 shadow-sm hover:shadow-md transition-all">
-              <AccordionTrigger className="hover:no-underline text-left font-semibold py-5">
+              <AccordionTrigger headingLevel="h3" className="hover:no-underline text-left font-semibold py-5">
                 Waarom verschillen BTW-tarieven per land?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
@@ -94,7 +94,7 @@ const VATFAQSection = () => {
             </AccordionItem>
 
             <AccordionItem value="item-4" className="bg-background px-6 rounded-xl border-2 shadow-sm hover:shadow-md transition-all">
-              <AccordionTrigger className="hover:no-underline text-left font-semibold py-5">
+              <AccordionTrigger headingLevel="h3" className="hover:no-underline text-left font-semibold py-5">
                 Hoe kies ik het juiste BTW-tarief?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
@@ -127,7 +127,7 @@ const VATFAQSection = () => {
             </AccordionItem>
 
             <AccordionItem value="item-5" className="bg-background px-6 rounded-xl border-2 shadow-sm hover:shadow-md transition-all">
-              <AccordionTrigger className="hover:no-underline text-left font-semibold py-5">
+              <AccordionTrigger headingLevel="h3" className="hover:no-underline text-left font-semibold py-5">
                 Hoe gebruik ik deze calculator voor mijn BTW-aangifte?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
@@ -165,7 +165,7 @@ const VATFAQSection = () => {
             </AccordionItem>
 
             <AccordionItem value="item-6" className="bg-background px-6 rounded-xl border-2 shadow-sm hover:shadow-md transition-all">
-              <AccordionTrigger className="hover:no-underline text-left font-semibold py-5">
+              <AccordionTrigger headingLevel="h3" className="hover:no-underline text-left font-semibold py-5">
                 Zijn de BTW-tarieven altijd actueel?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
@@ -185,7 +185,7 @@ const VATFAQSection = () => {
             </AccordionItem>
 
             <AccordionItem value="item-7" className="bg-background px-6 rounded-xl border-2 shadow-sm hover:shadow-md transition-all">
-              <AccordionTrigger className="hover:no-underline text-left font-semibold py-5">
+              <AccordionTrigger headingLevel="h3" className="hover:no-underline text-left font-semibold py-5">
                 Werkt deze calculator voor alle landen?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
@@ -217,7 +217,7 @@ const VATFAQSection = () => {
             </AccordionItem>
 
             <AccordionItem value="item-8" className="bg-background px-6 rounded-xl border-2 shadow-sm hover:shadow-md transition-all">
-              <AccordionTrigger className="hover:no-underline text-left font-semibold py-5">
+              <AccordionTrigger headingLevel="h3" className="hover:no-underline text-left font-semibold py-5">
                 Kan ik deze calculator gebruiken voor internationale handel?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
