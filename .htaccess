@@ -1,0 +1,6 @@
+<FilesMatch "\.(ttf|ttc|otf|eot|svg|woff|woff2|js|css)$">
+    Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
+
+# Additional configuration rules can go below
+# For example, basic rewrite rules or other custom settings
