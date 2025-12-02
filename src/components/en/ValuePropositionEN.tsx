@@ -29,7 +29,7 @@ const ValuePropositionEN = () => {
               Without these documents, you risk high fines and legal issues.
             </p>
             
-            <div id="about-me" className="mt-10 p-8 bg-secondary/30 rounded-xl border border-border shadow-sm text-foreground">
+            <div id="about-me" className="mt-10 p-8 bg-card rounded-xl border border-border shadow-sm text-foreground">
               <div className="text-center mb-6">
                 <h3 className="text-2xl font-bold text-foreground mb-2">About Me</h3>
                 <div className="flex justify-center my-4">
@@ -76,7 +76,7 @@ const ValuePropositionEN = () => {
               </p>
               
               <div className="grid md:grid-cols-2 gap-4 mt-6">
-                <div className="flex items-start gap-3 p-4 rounded-lg bg-secondary/30 border border-primary/10">
+                <div className="flex items-start gap-3 p-4 rounded-lg bg-card border border-primary/10">
                   <CheckCircle className="h-5 w-5 text-red-600 mt-0.5 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold mb-1">GDPR Privacy Policy</h4>
@@ -84,7 +84,7 @@ const ValuePropositionEN = () => {
                   </div>
                 </div>
                 
-                <div className="flex items-start gap-3 p-4 rounded-lg bg-secondary/30 border border-primary/10">
+                <div className="flex items-start gap-3 p-4 rounded-lg bg-card border border-primary/10">
                   <CheckCircle className="h-5 w-5 text-red-600 mt-0.5 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold mb-1">Affiliate Disclosure</h4>

@@ -13,7 +13,7 @@ const reviews = [{
   text: "As someone managing a booking platform for vacation rentals, these legal templates were a lifesaver. They cover everything from data protection to liability disclaimers, and the implementation guide made setup incredibly straightforward. Best investment I made for my travel business!"
 }];
 const ReviewsEN = () => {
-  return <section className="py-20 bg-secondary/30">
+  return <section className="py-20 bg-background">
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">Reviews</Badge>
