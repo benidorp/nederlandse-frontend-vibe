@@ -62,7 +62,7 @@ const ValuePropositionEN = () => {
             </div>
           </div>
 
-          <Card className="mb-8 border-2 border-primary/20 bg-primary/5">
+          <Card className="mb-8 border-2 border-primary/20 bg-card">
             <CardHeader>
               <CardTitle className="text-2xl flex items-center gap-3">
                 <Shield className="h-8 w-8 text-primary" />
@@ -128,7 +128,7 @@ const ValuePropositionEN = () => {
           </Card>
 
           <div className="grid md:grid-cols-3 gap-6 mb-8">
-            <Card className="border-primary/20 bg-primary/5 text-foreground">
+            <Card className="border-primary/20 bg-card text-foreground">
               <CardContent className="pt-6">
                 <Zap className="h-10 w-10 text-navy mb-4" />
                 <h3 className="text-lg font-bold mb-2 text-foreground">Ready in Minutes</h3>
@@ -138,7 +138,7 @@ const ValuePropositionEN = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-primary/20 bg-primary/5 text-foreground">
+            <Card className="border-primary/20 bg-card text-foreground">
               <CardContent className="pt-6">
                 <FileCheck className="h-10 w-10 text-blue-600 mb-4" />
                 <h3 className="text-lg font-bold mb-2">For All Your Websites</h3>
@@ -148,7 +148,7 @@ const ValuePropositionEN = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-primary/20 bg-primary/5 text-foreground">
+            <Card className="border-primary/20 bg-card text-foreground">
               <CardContent className="pt-6">
                 <Shield className="h-10 w-10 text-green-600 mb-4" />
                 <h3 className="text-lg font-bold mb-2">International Use</h3>
