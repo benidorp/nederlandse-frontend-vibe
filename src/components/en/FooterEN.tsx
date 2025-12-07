@@ -118,6 +118,7 @@ const FooterEN = () => {
               <a href="/comparison-review-website-legal-documents-terms-privacy-affiliate-disclosure-disclaimer" className="text-sm text-white/70 hover:text-white transition-colors">Comparison Review Legal Documents</a>
               <a href="/news-magazine-legal-documents-terms-conditions-privacy-policy-copyright-editorial-policy" className="text-sm text-white/70 hover:text-white transition-colors">News Magazine Legal Documents</a>
               <a href="/freelancers-self-employed-legal-documents-contracts-terms-privacy-policy" className="text-sm text-white/70 hover:text-white transition-colors">Freelancers Legal Documents</a>
+              <a href="/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" className="text-sm text-white/70 hover:text-white transition-colors">Premium Domain Names</a>
             </nav>
           </div>
         </div>

@@ -15,6 +15,7 @@ const HiddenInternalLinks = () => {
       <Link to="/comparison-review-website-legal-documents-terms-privacy-affiliate-disclosure-disclaimer">Comparison Review Legal Documents</Link>
       <Link to="/news-magazine-legal-documents-terms-conditions-privacy-policy-copyright-editorial-policy">News Magazine Legal Documents</Link>
       <Link to="/freelancers-self-employed-legal-documents-contracts-terms-privacy-policy">Freelancers Legal Documents</Link>
+      <Link to="/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde">Premium Domain Names</Link>
     </nav>
   );
 };
