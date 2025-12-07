@@ -23,6 +23,7 @@ import Spanish from "./pages/Spanish";
 import VATCalculator from "./pages/VATCalculator";
 import LanguageDetector from "./components/LanguageDetector";
 import NotFound from "./pages/NotFound";
+import PremiumDomains from "./pages/PremiumDomains";
 
 const queryClient = new QueryClient();
 
@@ -52,6 +53,7 @@ const App = () => (
           <Route path="/freelancers-self-employed-legal-documents-contracts-terms-privacy-policy" element={<Freelancers />} />
           <Route path="/es/documentos-legales-sitios-web-afiliados-terminos-condiciones-politica-privacidad-divulgacion-cookies" element={<Spanish />} />
           <Route path="/btw-calculator-wereldwijd" element={<VATCalculator />} />
+          <Route path="/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" element={<PremiumDomains />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
