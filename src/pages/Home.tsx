@@ -96,6 +96,12 @@ const pages = [
     link: "/freelancers-self-employed-legal-documents-contracts-terms-privacy-policy"
   },
   {
+    title: "Premium Domain Names",
+    description: "High-authority premium domain names with proven SEO value for sale. Boost your rankings instantly.",
+    image: affiliateImage,
+    link: "/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde"
+  },
+  {
     title: "Spanish Legal Documents",
     description: "Complete legal documents for affiliate websites in Spanish with terms and privacy policy.",
     image: spanishImage,

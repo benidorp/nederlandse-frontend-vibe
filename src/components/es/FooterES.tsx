@@ -118,6 +118,7 @@ const FooterES = () => {
               <a href="/comparison-review-website-legal-documents-terms-privacy-affiliate-disclosure-disclaimer" className="text-sm text-white/70 hover:text-white transition-colors">Documentos Legales para Reseñas Comparativas</a>
               <a href="/news-magazine-legal-documents-terms-conditions-privacy-policy-copyright-editorial-policy" className="text-sm text-white/70 hover:text-white transition-colors">Documentos Legales para Revistas de Noticias</a>
               <a href="/freelancers-self-employed-legal-documents-contracts-terms-privacy-policy" className="text-sm text-white/70 hover:text-white transition-colors">Documentos Legales para Freelancers</a>
+              <a href="/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" className="text-sm text-white/70 hover:text-white transition-colors">Nombres de Dominio Premium</a>
             </nav>
           </div>
         </div>
