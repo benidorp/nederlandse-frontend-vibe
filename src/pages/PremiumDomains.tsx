@@ -1207,9 +1207,9 @@ const PremiumDomains = () => {
                   </p>
                   <div className="grid sm:grid-cols-3 gap-4">
                     {[
-                      { range: "DA 30-40", label: "Goede Autoriteit", color: "text-blue-400" },
-                      { range: "DA 40-50", label: "Sterke Autoriteit", color: "text-amber-400" },
-                      { range: "DA 50+", label: "Premium Autoriteit", color: "text-emerald-400" }
+                      { range: "DA 20-25", label: "Goede Autoriteit", color: "text-blue-400" },
+                      { range: "DA 25-30", label: "Sterke Autoriteit", color: "text-amber-400" },
+                      { range: "DA 30+", label: "Premium Autoriteit", color: "text-emerald-400" }
                     ].map((item, index) => (
                       <div key={index} className="text-center p-4 rounded-lg bg-slate-900/50">
                         <div className={`text-lg font-bold ${item.color}`}>{item.range}</div>
