@@ -45,11 +45,11 @@ const premiumDomains = [
   },
   {
     name: "beauxartsliege.be",
-    description: "Premium domein voor kunst, cultuur of galerieën met Belgische focus.",
+    description: "Kunst domein met backlinks van Wikipedia, CNN, Behance en RTBF.",
     mozScore: 36,
     category: "Kunst/Cultuur",
     price: "Op aanvraag",
-    backlinks: "1.3K+"
+    backlinks: "1.1K+"
   },
   {
     name: "paulsmithmusic.eu",
