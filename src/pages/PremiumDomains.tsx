@@ -77,11 +77,11 @@ const premiumDomains = [
   },
   {
     name: "improve-research.eu",
-    description: "Onderzoeksdomein met academische backlinks en EU-autoriteit.",
-    mozScore: 33,
+    description: "Onderzoeksdomein met backlinks van Europa.eu, Cambridge, Springer en LSE.",
+    mozScore: 32,
     category: "Onderzoek",
     price: "Op aanvraag",
-    backlinks: "790+"
+    backlinks: "2.7K+"
   },
   {
     name: "etongmbh.de",
