@@ -37,11 +37,11 @@ const premiumDomains = [
   },
   {
     name: "antigonetickets.be",
-    description: "Ideaal voor ticketing, evenementen of entertainment platforms in België.",
+    description: "Belgisch ticketing domein met backlinks van Nieuwsblad, De Standaard en GVA.",
     mozScore: 36,
     category: "Entertainment",
     price: "Op aanvraag",
-    backlinks: "920+"
+    backlinks: "6.6K+"
   },
   {
     name: "beauxartsliege.be",
