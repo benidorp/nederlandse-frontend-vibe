@@ -29,11 +29,11 @@ const premiumDomains = [
   },
   {
     name: "toulousespaceshow.eu",
-    description: "Premium ruimtevaart/technologie domein met Franse autoriteit.",
-    mozScore: 36,
+    description: "Premium ruimtevaart domein met backlinks van Europa.eu, NASA.gov, IEEE.org en Wikipedia.",
+    mozScore: 35,
     category: "Technologie",
     price: "Op aanvraag",
-    backlinks: "950+"
+    backlinks: "3.4K+"
   },
   {
     name: "antigonetickets.be",
