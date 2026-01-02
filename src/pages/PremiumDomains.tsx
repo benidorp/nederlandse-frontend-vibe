@@ -1129,17 +1129,6 @@ const PremiumDomains = () => {
                 </Card>
               ))}
             </div>
-            
-            <div className="mt-12 text-center">
-              <p className="text-slate-500 mb-4">Zoekt u een specifiek domein? Neem contact op voor ons volledige portfolio.</p>
-              <Button 
-                onClick={() => scrollToSection("contact")}
-                variant="outline"
-                className="border-amber-500/50 text-amber-400 hover:bg-amber-500/10"
-              >
-                Bekijk Volledig Portfolio
-              </Button>
-            </div>
           </div>
         </section>
 
