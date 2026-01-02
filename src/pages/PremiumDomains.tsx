@@ -20,14 +20,6 @@ const premiumDomains = [
     backlinks: "4.6K+"
   },
   {
-    name: "egam.eu",
-    description: "Sterk EU-domein met hoge autoriteit voor diverse toepassingen.",
-    mozScore: 43,
-    category: "Algemeen",
-    price: "Op aanvraag",
-    backlinks: "1.8K+"
-  },
-  {
     name: "toulousespaceshow.eu",
     description: "Premium ruimtevaart domein met backlinks van Europa.eu, NASA.gov, IEEE.org en Wikipedia.",
     mozScore: 35,
@@ -156,14 +148,6 @@ const premiumDomains = [
     backlinks: "710+"
   },
   {
-    name: "inbots.eu",
-    description: "Robotica en AI EU-domein met technische autoriteit.",
-    mozScore: 31,
-    category: "Technologie",
-    price: "Op aanvraag",
-    backlinks: "700+"
-  },
-  {
     name: "toastit-live.be",
     description: "Belgisch entertainment/media domein.",
     mozScore: 31,
@@ -226,14 +210,6 @@ const premiumDomains = [
     category: "Veiligheid",
     price: "Op aanvraag",
     backlinks: "660+"
-  },
-  {
-    name: "eneduerabe.eu",
-    description: "Energie en duurzaamheid EU-project domein.",
-    mozScore: 30,
-    category: "Energie",
-    price: "Op aanvraag",
-    backlinks: "650+"
   },
   {
     name: "leading-the-digital-decade.eu",
@@ -356,22 +332,6 @@ const premiumDomains = [
     backlinks: "510+"
   },
   {
-    name: "cefims.eu",
-    description: "Financieel en economisch EU-domein.",
-    mozScore: 28,
-    category: "Finance",
-    price: "Op aanvraag",
-    backlinks: "500+"
-  },
-  {
-    name: "4umaps.eu",
-    description: "Kaarten en navigatie EU-domein.",
-    mozScore: 28,
-    category: "Technologie",
-    price: "Op aanvraag",
-    backlinks: "490+"
-  },
-  {
     name: "davidhughesillustration.co.uk",
     description: "Creatief UK domein, perfect voor illustratie of design studios.",
     mozScore: 27,
@@ -386,14 +346,6 @@ const premiumDomains = [
     category: "Digitaal",
     price: "Op aanvraag",
     backlinks: "500+"
-  },
-  {
-    name: "employersday.eu",
-    description: "HR en werkgevers EU-evenement domein.",
-    mozScore: 27,
-    category: "Business",
-    price: "Op aanvraag",
-    backlinks: "480+"
   },
   {
     name: "centremlm.be",
@@ -540,30 +492,6 @@ const premiumDomains = [
     backlinks: "440+"
   },
   {
-    name: "lirec.eu",
-    description: "EU-onderzoeksproject domein.",
-    mozScore: 26,
-    category: "Onderzoek",
-    price: "Op aanvraag",
-    backlinks: "420+"
-  },
-  {
-    name: "calciopotenza.eu",
-    description: "Italiaans voetbal domein.",
-    mozScore: 25,
-    category: "Sport",
-    price: "Op aanvraag",
-    backlinks: "400+"
-  },
-  {
-    name: "teatrodeiconciatori.it",
-    description: "Italiaans theater domein, ideaal voor kunst en entertainment.",
-    mozScore: 25,
-    category: "Theater/Kunst",
-    price: "Op aanvraag",
-    backlinks: "450+"
-  },
-  {
     name: "brave-project.eu",
     description: "Innovatief EU-project domein voor tech of sociale initiatieven.",
     mozScore: 25,
@@ -578,14 +506,6 @@ const premiumDomains = [
     category: "Zorg",
     price: "Op aanvraag",
     backlinks: "440+"
-  },
-  {
-    name: "liveartarchive.eu",
-    description: "Kunst archief domein, ideaal voor culturele instellingen.",
-    mozScore: 25,
-    category: "Kunst",
-    price: "Op aanvraag",
-    backlinks: "420+"
   },
   {
     name: "serletproject.eu",
@@ -628,28 +548,12 @@ const premiumDomains = [
     backlinks: "390+"
   },
   {
-    name: "claustrofobia.nl",
-    description: "Nederlands entertainment/escape room domein.",
-    mozScore: 25,
-    category: "Entertainment",
-    price: "Op aanvraag",
-    backlinks: "410+"
-  },
-  {
     name: "happyvpro.nl",
     description: "Nederlands media domein.",
     mozScore: 25,
     category: "Media",
     price: "Op aanvraag",
     backlinks: "400+"
-  },
-  {
-    name: "digitaltransport.eu",
-    description: "Digitaal transport EU-domein.",
-    mozScore: 25,
-    category: "Transport",
-    price: "Op aanvraag",
-    backlinks: "390+"
   },
   {
     name: "xcycle-h2020.eu",
@@ -666,14 +570,6 @@ const premiumDomains = [
     category: "Netwerk",
     price: "Op aanvraag",
     backlinks: "370+"
-  },
-  {
-    name: "hermandeconinckprijs.eu",
-    description: "Belgisch literatuur/prijs domein.",
-    mozScore: 24,
-    category: "Cultuur",
-    price: "Op aanvraag",
-    backlinks: "380+"
   },
   {
     name: "vos-photos.eu",
@@ -788,14 +684,6 @@ const premiumDomains = [
     backlinks: "290+"
   },
   {
-    name: "gateone-project.eu",
-    description: "EU-project domein.",
-    mozScore: 22,
-    category: "Projecten",
-    price: "Op aanvraag",
-    backlinks: "280+"
-  },
-  {
     name: "eurasiancouncilforeignaffairs.eu",
     description: "Internationale betrekkingen EU-domein.",
     mozScore: 22,
@@ -836,26 +724,10 @@ const premiumDomains = [
     backlinks: "270+"
   },
   {
-    name: "fortunale.eu",
-    description: "EU lifestyle/fortuin domein.",
-    mozScore: 21,
-    category: "Lifestyle",
-    price: "Op aanvraag",
-    backlinks: "260+"
-  },
-  {
     name: "eccomascfd2006.nl",
     description: "Nederlands technisch domein.",
     mozScore: 21,
     category: "Technologie",
-    price: "Op aanvraag",
-    backlinks: "250+"
-  },
-  {
-    name: "nilg.eu",
-    description: "EU-domein voor diverse toepassingen.",
-    mozScore: 21,
-    category: "Algemeen",
     price: "Op aanvraag",
     backlinks: "250+"
   },
