@@ -13,11 +13,11 @@ import { useToast } from "@/hooks/use-toast";
 const premiumDomains = [
   {
     name: "escp-eap.eu",
-    description: "Premium business school domein met sterke academische autoriteit.",
+    description: "Premium business school domein met backlinks van Wikipedia, Cornell, Spiegel en Le Monde.",
     mozScore: 38,
     category: "Onderwijs",
     price: "Op aanvraag",
-    backlinks: "1.2K+"
+    backlinks: "4.6K+"
   },
   {
     name: "egam.eu",
