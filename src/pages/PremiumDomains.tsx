@@ -738,6 +738,174 @@ const premiumDomains = [
     category: "Smart City",
     price: "Op aanvraag",
     backlinks: "290+"
+  },
+  {
+    name: "dunyaendesiedefilm.nl",
+    description: "Nederlands film/media domein.",
+    mozScore: 0,
+    category: "Media",
+    price: "Op aanvraag",
+    backlinks: "TBD"
+  },
+  {
+    name: "edlupt.eu",
+    description: "EU-domein.",
+    mozScore: 0,
+    category: "Algemeen",
+    price: "Op aanvraag",
+    backlinks: "TBD"
+  },
+  {
+    name: "epc2018.be",
+    description: "Belgisch evenement domein.",
+    mozScore: 0,
+    category: "Evenementen",
+    price: "Op aanvraag",
+    backlinks: "TBD"
+  },
+  {
+    name: "fantasticgymnastics.nl",
+    description: "Nederlands sport/gymnastiek domein.",
+    mozScore: 0,
+    category: "Sport",
+    price: "Op aanvraag",
+    backlinks: "TBD"
+  },
+  {
+    name: "front-vosges-14-18.eu",
+    description: "Historisch WO1 herdenkingsdomein.",
+    mozScore: 0,
+    category: "Geschiedenis",
+    price: "Op aanvraag",
+    backlinks: "TBD"
+  },
+  {
+    name: "icesculpture.be",
+    description: "Belgisch kunst/evenement domein.",
+    mozScore: 0,
+    category: "Kunst",
+    price: "Op aanvraag",
+    backlinks: "TBD"
+  },
+  {
+    name: "ismagazine.nl",
+    description: "Nederlands magazine/media domein.",
+    mozScore: 0,
+    category: "Media",
+    price: "Op aanvraag",
+    backlinks: "TBD"
+  },
+  {
+    name: "landstewardship.eu",
+    description: "EU landbeheer/duurzaamheid domein.",
+    mozScore: 0,
+    category: "Duurzaamheid",
+    price: "Op aanvraag",
+    backlinks: "TBD"
+  },
+  {
+    name: "nailtalk.nl",
+    description: "Nederlands beauty/nagel domein.",
+    mozScore: 0,
+    category: "Beauty",
+    price: "Op aanvraag",
+    backlinks: "TBD"
+  },
+  {
+    name: "partymenu.eu",
+    description: "EU catering/evenement domein.",
+    mozScore: 0,
+    category: "Food",
+    price: "Op aanvraag",
+    backlinks: "TBD"
+  },
+  {
+    name: "push-pull-parking.eu",
+    description: "EU mobiliteit/parking domein.",
+    mozScore: 0,
+    category: "Mobiliteit",
+    price: "Op aanvraag",
+    backlinks: "TBD"
+  },
+  {
+    name: "spanvis.nl",
+    description: "Nederlands domein.",
+    mozScore: 0,
+    category: "Algemeen",
+    price: "Op aanvraag",
+    backlinks: "TBD"
+  },
+  {
+    name: "tabby.eu",
+    description: "Kort en memorabel EU-domein.",
+    mozScore: 0,
+    category: "Algemeen",
+    price: "Op aanvraag",
+    backlinks: "TBD"
+  },
+  {
+    name: "werving-selectiebureau.nl",
+    description: "Nederlands HR/recruitment domein.",
+    mozScore: 0,
+    category: "Business",
+    price: "Op aanvraag",
+    backlinks: "TBD"
+  },
+  {
+    name: "muenchner-kirchennachrichten.de",
+    description: "Duits nieuws/religieus domein.",
+    mozScore: 0,
+    category: "Nieuws",
+    price: "Op aanvraag",
+    backlinks: "TBD"
+  },
+  {
+    name: "wbetting.co.uk",
+    description: "Brits betting/gaming domein.",
+    mozScore: 0,
+    category: "Gaming",
+    price: "Op aanvraag",
+    backlinks: "TBD"
+  },
+  {
+    name: "artsalivewales.org.uk",
+    description: "Welsh kunst/cultuur domein.",
+    mozScore: 0,
+    category: "Kunst",
+    price: "Op aanvraag",
+    backlinks: "TBD"
+  },
+  {
+    name: "102touchfm.co.uk",
+    description: "Brits radio/media domein.",
+    mozScore: 0,
+    category: "Media",
+    price: "Op aanvraag",
+    backlinks: "TBD"
+  },
+  {
+    name: "ontwerpnovi.nl",
+    description: "Nederlands design/architectuur domein.",
+    mozScore: 0,
+    category: "Design",
+    price: "Op aanvraag",
+    backlinks: "TBD"
+  },
+  {
+    name: "iceel.eu",
+    description: "EU-domein.",
+    mozScore: 0,
+    category: "Algemeen",
+    price: "Op aanvraag",
+    backlinks: "TBD"
+  },
+  {
+    name: "iaee.eu",
+    description: "EU-domein.",
+    mozScore: 0,
+    category: "Algemeen",
+    price: "Op aanvraag",
+    backlinks: "TBD"
   }
 ];
 
