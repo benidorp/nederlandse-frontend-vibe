@@ -1064,7 +1064,7 @@ const PremiumDomains = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/50 to-transparent" />
           
           <div className="container mx-auto px-4 relative z-10">
-            <div className="text-center mb-16">
+            <div className="text-center mb-12">
               <Badge className="mb-4 bg-slate-800 text-amber-400 border-slate-700">
                 <Globe className="w-4 h-4 mr-2 inline" />
                 Beschikbare Domeinen
@@ -1074,6 +1074,16 @@ const PremiumDomains = () => {
               </h2>
               <p className="text-slate-400 max-w-2xl mx-auto">
                 Elk domein is zorgvuldig geselecteerd op basis van MOZ-autoriteit, backlinkprofiel en SEO-potentieel.
+              </p>
+            </div>
+            
+            {/* SEO Intro Text */}
+            <div className="max-w-4xl mx-auto mb-16 bg-slate-800/30 border border-slate-700/50 rounded-2xl p-8">
+              <p className="text-slate-300 leading-relaxed mb-4">
+                <strong className="text-white">Op zoek naar een domeinnaam met echte SEO-waarde?</strong> Bij ons koop je betrouwbare <strong className="text-amber-400">expired domeinnamen met backlinks</strong> en hoge autoriteit, zorgvuldig gecontroleerd op kwaliteit en historie. Met een expired domein start je niet vanaf nul, maar profiteer je direct van bestaande links, vertrouwen en online geschiedenis.
+              </p>
+              <p className="text-slate-300 leading-relaxed">
+                Naast expired domeinnamen bieden wij ook <strong className="text-amber-400">premium domeinnamen</strong> aan: korte, krachtige namen met merkwaarde en commerciële potentie. Of je nu een website, webshop of SEO-project start — een domeinnaam met autoriteit geeft je een duidelijke voorsprong in Google.
               </p>
             </div>
             
