@@ -69,11 +69,11 @@ const premiumDomains = [
   },
   {
     name: "martonecycling.eu",
-    description: "Premium fiets/sport domein voor wielrennen of sportmerken.",
+    description: "Fiets domein met backlinks van Globo, Harper's Bazaar, Vogue en Grazia.",
     mozScore: 35,
     category: "Sport",
     price: "Op aanvraag",
-    backlinks: "820+"
+    backlinks: "232+"
   },
   {
     name: "improve-research.eu",
