@@ -1389,6 +1389,171 @@ const PremiumDomains = () => {
                     </AccordionContent>
                   </AccordionItem>
                 ))}
+                
+                {/* Complete Guide: 35 Questions about Expired Domains */}
+                <AccordionItem 
+                  value="complete-guide"
+                  className="bg-gradient-to-br from-amber-500/10 to-slate-800/40 border border-amber-500/30 rounded-xl px-6"
+                >
+                  <AccordionTrigger className="text-left text-white hover:text-amber-400 hover:no-underline py-4">
+                    <h3 className="font-semibold">Complete Gids: 35 Vragen over Expired Domeinnamen & SEO</h3>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-slate-400 pb-6 leading-relaxed">
+                    <div className="space-y-8 whitespace-pre-line">
+                      {[
+                        {
+                          question: "1. Welke domeinnaam moet ik kopen als beginner?",
+                          answer: "Als beginner kies je het beste een domeinnaam die makkelijk te onthouden is, duidelijk aangeeft wat je doet en vertrouwen uitstraalt. Veel starters zoeken op \"welke domeinnaam moet ik kopen\" en komen automatisch bij nieuwe domeinen uit, terwijl een betrouwbare expired domeinnaam vaak al autoriteit en waarde heeft opgebouwd."
+                        },
+                        {
+                          question: "2. Wat is het verschil tussen een nieuwe domeinnaam en een expired domeinnaam?",
+                          answer: "Een nieuwe domeinnaam heeft geen geschiedenis en begint volledig vanaf nul. Een expired domeinnaam is eerder geregistreerd geweest en kan nog backlinks, autoriteit en vertrouwen bij Google hebben. Dat maakt een expired domeinnaam vaak aantrekkelijker voor SEO en zichtbaarheid."
+                        },
+                        {
+                          question: "3. Is het beter om een nieuwe domeinnaam te kopen of een expired domeinnaam?",
+                          answer: "Wie zoekt op \"nieuwe domeinnaam of expired domeinnaam\" vergelijkt meestal snelheid en resultaat. Voor branding kan een nieuwe naam werken, maar voor sneller vindbaar worden in Google biedt een goede expired domeinnaam vaak een duidelijke voorsprong."
+                        },
+                        {
+                          question: "4. Waarom scoort mijn nieuwe website zo slecht in Google?",
+                          answer: "Nieuwe websites moeten hun betrouwbaarheid nog opbouwen. Zonder backlinks en geschiedenis duurt dit vaak maanden. Een expired domeinnaam met goede links kan ervoor zorgen dat je niet helemaal opnieuw hoeft te beginnen."
+                        },
+                        {
+                          question: "5. Is een expired domeinnaam veilig om te kopen?",
+                          answer: "Ja, mits het gaat om een gecontroleerde en betrouwbare expired domeinnaam. Het risico zit niet in \"expired\", maar in domeinen die niet zijn gecontroleerd op spam, misbruik of slechte backlinks."
+                        },
+                        {
+                          question: "6. Wat betekent een domeinnaam met goede backlinks?",
+                          answer: "Een domeinnaam met goede backlinks heeft verwijzingen van echte, relevante websites. Deze links zorgen voor autoriteit en vertrouwen bij zoekmachines, wat essentieel is voor SEO-prestaties."
+                        },
+                        {
+                          question: "7. Waarom zijn backlinks belangrijk bij het kopen van een domeinnaam?",
+                          answer: "Backlinks zijn één van de belangrijkste rankingfactoren van Google. Wanneer je zoekt op \"SEO domeinnaam kopen\", zoek je eigenlijk naar een domein dat al vertrouwen heeft opgebouwd — precies wat een goede expired domeinnaam biedt."
+                        },
+                        {
+                          question: "8. Hoe kan ik zien of een expired domeinnaam betrouwbaar is?",
+                          answer: "Een betrouwbare expired domeinnaam is gecontroleerd op: websitegeschiedenis, kwaliteit van backlinks, afwezigheid van spam, gokken of adult content. Als verkoper selecteer je alleen domeinen die aan deze criteria voldoen."
+                        },
+                        {
+                          question: "9. Kan ik een expired domeinnaam gebruiken voor een nieuwe website?",
+                          answer: "Ja. Je kunt een expired domeinnaam perfect gebruiken voor een compleet nieuw project. De inhoud is nieuw, maar de domeinnaam brengt al online autoriteit mee."
+                        },
+                        {
+                          question: "10. Is een expired domeinnaam geschikt voor beginners?",
+                          answer: "Zeker. Beginners profiteren vaak juist het meest omdat ze: sneller zichtbaarheid krijgen, minder SEO-achterstand hebben, een professionelere start maken."
+                        },
+                        {
+                          question: "11. Waarom zijn sommige domeinnamen duurder dan andere?",
+                          answer: "Zoekopdrachten zoals \"waarom is een domeinnaam zo duur\" komen vaak voort uit onbegrip over waarde. De prijs wordt bepaald door: naamkwaliteit, SEO-waarde, backlinks, commerciële toepasbaarheid."
+                        },
+                        {
+                          question: "12. Kan ik een expired domeinnaam later weer verkopen?",
+                          answer: "Ja. Veel mensen zoeken naar \"domeinnaam als investering\". Een sterke expired domeinnaam behoudt vaak zijn waarde en kan zelfs in prijs stijgen."
+                        },
+                        {
+                          question: "13. Kan een expired domeinnaam slecht zijn voor SEO?",
+                          answer: "Alleen als hij een slechte geschiedenis heeft. Daarom is het verschil groot tussen: ongecontroleerde expired domeinen en zorgvuldig geselecteerde, betrouwbare domeinnamen."
+                        },
+                        {
+                          question: "14. Waar moet ik op letten bij het kopen van een expired domeinnaam?",
+                          answer: "Belangrijke aandachtspunten zijn: spamvrije historie, relevante backlinks, logische domeinnaam, geen merknaamrisico."
+                        },
+                        {
+                          question: "15. Hoe snel kan ik starten na het kopen van een domeinnaam?",
+                          answer: "Na overdracht kun je de domeinnaam direct gebruiken voor: een website, e-mail, webshop. Net als bij een nieuwe domeinnaam."
+                        },
+                        {
+                          question: "16. Heb ik technische kennis nodig om een expired domeinnaam te gebruiken?",
+                          answer: "Nee. Een expired domeinnaam werkt technisch hetzelfde als een nieuwe domeinnaam en kan bij elke hostingprovider worden gebruikt."
+                        },
+                        {
+                          question: "17. Is een expired domeinnaam geschikt voor een webshop?",
+                          answer: "Ja. Webshops profiteren extra van: vertrouwen, autoriteit, betere start in Google. Dat is cruciaal voor conversies."
+                        },
+                        {
+                          question: "18. Wat betekent domeinautoriteit bij het kopen van een domeinnaam?",
+                          answer: "Domeinautoriteit is een indicatie van hoe sterk een domein is op basis van links en historie. Veel expired domeinnamen scoren hier hoger dan nieuwe domeinen."
+                        },
+                        {
+                          question: "19. Is een expired domeinnaam beter dan linkbuilding?",
+                          answer: "In veel gevallen wel. Je koopt als het ware een bestaande reputatie, in plaats van die later duur en risicovol op te bouwen."
+                        },
+                        {
+                          question: "20. Waarom kiezen ondernemers bewust voor een expired domeinnaam?",
+                          answer: "Omdat ze zoeken naar: sneller resultaat, minder SEO-risico, een slimme start met voorsprong."
+                        },
+                        {
+                          question: "21. Is een expired domeinnaam geschikt voor elke niche?",
+                          answer: "Voor bijna elke niche zijn goede expired domeinnamen beschikbaar, zolang naam en historie logisch aansluiten bij het onderwerp."
+                        },
+                        {
+                          question: "22. Kan ik hulp krijgen bij het kiezen van de juiste domeinnaam?",
+                          answer: "Ja. Veel beginners zoeken op \"welke domeinnaam past bij mijn bedrijf\". Begeleiding voorkomt miskopen en bespaart geld."
+                        },
+                        {
+                          question: "23. Wat is het grootste voordeel van een expired domeinnaam?",
+                          answer: "Het grootste voordeel is dat je niet vanaf nul begint in zoekmachines."
+                        },
+                        {
+                          question: "24. Wat is het grootste misverstand over expired domeinnamen?",
+                          answer: "Dat ze per definitie risicovol zijn. In werkelijkheid zijn ongeteste domeinen risicovol — niet zorgvuldig geselecteerde expired domeinnamen."
+                        },
+                        {
+                          question: "25. Voor wie is een betrouwbare expired domeinnaam het meest geschikt?",
+                          answer: "Voor: starters, ondernemers, webshops, SEO-projecten, investeerders. Iedereen die zoekt op \"beste domeinnaam kopen\" en slim wil beginnen."
+                        },
+                        {
+                          question: "26. Hoe weet ik of een domeinnaam geschikt is voor SEO?",
+                          answer: "Een domeinnaam is geschikt voor SEO als: de naam logisch en relevant is, hij geen spamverleden heeft, er kwalitatieve backlinks aanwezig zijn. Een expired domeinnaam met goede links scoort hier vaak beter dan een nieuwe domeinnaam."
+                        },
+                        {
+                          question: "27. Heeft het kopen van een expired domeinnaam invloed op Google rankings?",
+                          answer: "Ja. Google kijkt naar de geschiedenis en linkstructuur van een domein. Een betrouwbare expired domeinnaam kan helpen om sneller zichtbaarheid op te bouwen, mits correct ingezet."
+                        },
+                        {
+                          question: "28. Wat zijn de voordelen van een expired domeinnaam met autoriteit?",
+                          answer: "De belangrijkste voordelen zijn: sneller vertrouwen bij zoekmachines, minder afhankelijkheid van linkbuilding, sterkere startpositie dan concurrenten met nieuwe domeinen."
+                        },
+                        {
+                          question: "29. Moet ik een keyword in mijn domeinnaam hebben voor SEO?",
+                          answer: "Niet per se. Zoekopdrachten zoals \"keyword domeinnaam SEO\" laten zien dat dit een veelgestelde vraag is. Een duidelijke, betrouwbare naam is belangrijker dan exacte zoekwoorden, vooral bij expired domeinnamen met autoriteit."
+                        },
+                        {
+                          question: "30. Is een korte domeinnaam beter dan een lange domeinnaam?",
+                          answer: "Ja. Korte domeinnamen zijn: makkelijker te onthouden, professioneler, waardevaster. Veel premium expired domeinnamen zijn juist kort en krachtig."
+                        },
+                        {
+                          question: "31. Kan ik een expired domeinnaam gebruiken voor meerdere projecten?",
+                          answer: "Ja, bijvoorbeeld voor: een hoofdwebsite, een nicheproject, een merkportaal. Wel is het belangrijk dat de inhoud logisch aansluit bij de geschiedenis van het domein."
+                        },
+                        {
+                          question: "32. Wat gebeurt er met oude backlinks als ik een nieuwe website plaats?",
+                          answer: "De backlinks blijven bestaan zolang ze niet worden verwijderd door de verwijzende websites. Dat is juist één van de grote voordelen van het kopen van een expired domeinnaam."
+                        },
+                        {
+                          question: "33. Is een expired domeinnaam beter dan meerdere nieuwe domeinen?",
+                          answer: "Voor focus en SEO is één sterke expired domeinnaam vaak effectiever dan meerdere nieuwe domeinen zonder autoriteit."
+                        },
+                        {
+                          question: "34. Kan ik met een expired domeinnaam sneller klanten krijgen?",
+                          answer: "Indirect wel. Snellere zichtbaarheid en meer vertrouwen zorgen ervoor dat bezoekers eerder converteren."
+                        },
+                        {
+                          question: "35. Hoe lang blijft de waarde van een expired domeinnaam behouden?",
+                          answer: "Zolang het domein goed wordt gebruikt en onderhouden, blijft de waarde behouden en kan deze zelfs groeien."
+                        },
+                        {
+                          question: "36. Waarom zou ik een domeinnaam kopen bij een gespecialiseerde verkoper?",
+                          answer: "Omdat een gespecialiseerde verkoper: domeinen vooraf controleert, risico's uitsluit, beginners begeleidt, transparant is over kwaliteit en geschiedenis. Dat maakt het verschil tussen gokken en bewust investeren."
+                        }
+                      ].map((item, index) => (
+                        <article key={index} className="space-y-2">
+                          <h4 className="text-lg font-semibold text-white">{item.question}</h4>
+                          <p className="text-slate-400">{item.answer}</p>
+                        </article>
+                      ))}
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
               </Accordion>
             </div>
           </div>
