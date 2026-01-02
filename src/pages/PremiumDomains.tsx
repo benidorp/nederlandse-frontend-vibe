@@ -1007,13 +1007,13 @@ const PremiumDomains = () => {
                 Exclusieve Collectie Premium Domeinen
               </Badge>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
                 <span className="bg-gradient-to-r from-white via-slate-100 to-slate-300 bg-clip-text text-transparent">
-                  Premium Domeinnamen met
+                  Expired domeinnamen met backlinks kopen |
                 </span>
                 <br />
                 <span className="bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 bg-clip-text text-transparent">
-                  Hoge Autoriteit & SEO-Waarde
+                  Premium domeinnamen met hoge autoriteit & SEO-Waarde
                 </span>
               </h1>
               
