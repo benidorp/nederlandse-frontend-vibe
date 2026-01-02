@@ -61,11 +61,11 @@ const premiumDomains = [
   },
   {
     name: "eu-asiacentre.eu",
-    description: "Internationaal EU-Azië samenwerkingsdomein met sterke autoriteit.",
+    description: "EU-Azië domein met backlinks van Wikipedia, NBC News, Cambridge en Reddit.",
     mozScore: 36,
     category: "Internationaal",
     price: "Op aanvraag",
-    backlinks: "940+"
+    backlinks: "898+"
   },
   {
     name: "martonecycling.eu",
