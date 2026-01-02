@@ -876,8 +876,8 @@ const PremiumDomains = () => {
               {/* Stats */}
               <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
                 {[
-                  { label: "Gemiddelde MOZ Score", value: "40+" },
-                  { label: "Premium Domeinen", value: "25+" },
+                  { label: "Gemiddelde MOZ Score", value: "27+" },
+                  { label: "Premium Domeinen", value: "70+" },
                   { label: "Jaren Ervaring", value: "10+" },
                   { label: "Tevreden Klanten", value: "500+" }
                 ].map((stat, index) => (
