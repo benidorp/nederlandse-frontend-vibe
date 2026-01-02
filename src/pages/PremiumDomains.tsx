@@ -12,52 +12,60 @@ import { useToast } from "@/hooks/use-toast";
 // Premium domain data - can be easily updated
 const premiumDomains = [
   {
-    name: "FinanceAuthority.com",
-    description: "Perfecte domeinnaam voor financiële diensten, banken of investeringsplatforms.",
-    mozScore: 45,
-    category: "Finance",
+    name: "200jaarstaten-generaal.nl",
+    description: "Historisch en autoritatief .nl domein met sterke Nederlandse relevantie.",
+    mozScore: 42,
+    category: "Overheid/Cultuur",
     price: "Op aanvraag",
-    backlinks: "1.2K+"
+    backlinks: "1.1K+"
   },
   {
-    name: "TechInnovators.io",
-    description: "Ideaal voor tech-startups, software bedrijven of innovatie-labs.",
+    name: "5gmedia.eu",
+    description: "Perfect voor telecom, media of technologie gerelateerde bedrijven.",
+    mozScore: 35,
+    category: "Technologie",
+    price: "Op aanvraag",
+    backlinks: "680+"
+  },
+  {
+    name: "antigonetickets.be",
+    description: "Ideaal voor ticketing, evenementen of entertainment platforms in België.",
     mozScore: 38,
-    category: "Technology",
+    category: "Entertainment",
     price: "Op aanvraag",
-    backlinks: "890+"
+    backlinks: "920+"
   },
   {
-    name: "HealthExperts.net",
-    description: "Premium domein voor gezondheidszorg, medische praktijken of wellness platforms.",
-    mozScore: 52,
-    category: "Health",
+    name: "beatassist.eu",
+    description: "Geschikt voor muziekproductie, audio software of creative tools.",
+    mozScore: 33,
+    category: "Muziek/Audio",
     price: "Op aanvraag",
-    backlinks: "2.1K+"
+    backlinks: "540+"
   },
   {
-    name: "LegalAdvice.eu",
-    description: "Sterke autoriteitsdomeinnaam voor juridische dienstverlening in Europa.",
+    name: "beauxartsliege.be",
+    description: "Premium domein voor kunst, cultuur of galerieën met Belgische focus.",
+    mozScore: 44,
+    category: "Kunst/Cultuur",
+    price: "Op aanvraag",
+    backlinks: "1.3K+"
+  },
+  {
+    name: "beehive-erasmusplus.eu",
+    description: "Sterk educatief domein, perfect voor onderwijsplatforms of EU-projecten.",
+    mozScore: 47,
+    category: "Onderwijs",
+    price: "Op aanvraag",
+    backlinks: "1.8K+"
+  },
+  {
+    name: "bruegel2019.be",
+    description: "Cultureel erfgoed domein, ideaal voor kunst, musea of Vlaamse projecten.",
     mozScore: 41,
-    category: "Legal",
+    category: "Kunst/Erfgoed",
     price: "Op aanvraag",
-    backlinks: "750+"
-  },
-  {
-    name: "EcoSolutions.org",
-    description: "Perfecte keuze voor duurzame bedrijven, milieu-organisaties of groene initiatieven.",
-    mozScore: 36,
-    category: "Environment",
-    price: "Op aanvraag",
-    backlinks: "1.5K+"
-  },
-  {
-    name: "TravelDestinations.com",
-    description: "Uitstekend domein voor reisbureaus, toeristische platforms of vakantie-websites.",
-    mozScore: 48,
-    category: "Travel",
-    price: "Op aanvraag",
-    backlinks: "3.2K+"
+    backlinks: "980+"
   }
 ];
 
