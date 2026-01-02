@@ -1408,14 +1408,6 @@ const PremiumDomains = () => {
                   {
                     question: "Wat is de beste manier om expired domeinnamen met autoriteit te vinden?",
                     answer: "De beste manier is via een gespecialiseerde verkoper die domeinen vooraf controleert. Zelf zoeken via auction sites brengt risico's met zich mee. Wij selecteren alleen domeinnamen met kwalitatieve links, geen spamhistorie en echte SEO-waarde. Zo weet je zeker dat je investeert in een betrouwbaar domein."
-                  },
-                  {
-                    question: "Hoeveel kost een premium domeinnaam?",
-                    answer: "De prijs varieert afhankelijk van de Domain Authority, het aantal en de kwaliteit van backlinks, de niche-relevantie en de potentiële SEO-waarde. Neem contact met ons op voor een prijsopgave voor specifieke domeinen. We bieden ook betalingsregelingen voor grotere aankopen."
-                  },
-                  {
-                    question: "Waar kan ik expired domeinnamen kopen in Nederland?",
-                    answer: "Bij ons kun je betrouwbare expired domeinnamen kopen, speciaal geselecteerd voor de Nederlandse en Europese markt. Elk domein is gecontroleerd op kwaliteit, historie en backlinks. We bieden persoonlijk advies en begeleiding bij het kiezen van het juiste domein voor jouw project."
                   }
                 ].map((faq, index) => (
                   <AccordionItem 
