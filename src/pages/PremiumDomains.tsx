@@ -955,7 +955,7 @@ const PremiumDomains = () => {
   return (
     <>
       <Helmet>
-        <title>Expired domeinnamen met backlinks kopen | Premium domeinnamen met hoge autoriteit & SEO-Waarde</title>
+        <title>Premium Expired domeinnamen met backlinks hoge autoriteit & SEO-Waarde</title>
         <meta name="description" content="Koop premium domeinnamen met hoge MOZ-autoriteit en SEO-waarde. Ideaal voor 301 redirects, authority stacking en krachtige backlink opbouw. Direct beschikbaar." />
         <meta name="keywords" content="premium domeinnamen, MOZ autoriteit, SEO domeinen, authority domains, 301 redirect domeinen, backlink domeinen, expired domains" />
         <link rel="canonical" href="https://www.iaee.eu/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
@@ -1008,12 +1008,8 @@ const PremiumDomains = () => {
               </Badge>
               
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                <span className="bg-gradient-to-r from-white via-slate-100 to-slate-300 bg-clip-text text-transparent">
-                  Expired domeinnamen met backlinks kopen |
-                </span>
-                <br />
                 <span className="bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 bg-clip-text text-transparent">
-                  Premium domeinnamen met hoge autoriteit & SEO-Waarde
+                  Premium Expired domeinnamen met backlinks hoge autoriteit & SEO-Waarde
                 </span>
               </h1>
               
