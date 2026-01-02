@@ -1324,7 +1324,7 @@ const PremiumDomains = () => {
                 {[
                   { icon: Shield, title: "Schone Geschiedenis", desc: "Geen spam of penaltyverleden" },
                   { icon: Link, title: "Kwalitatieve Backlinks", desc: "Van betrouwbare bronnen" },
-                  { icon: BarChart3, title: "Hoge DA Score", desc: "Minimaal DA 30+" },
+                  { icon: BarChart3, title: "Hoge DA Score", desc: "Minimaal DA 20+" },
                   { icon: Globe, title: "Relevante Niches", desc: "Thematisch passende domeinen" }
                 ].map((item, index) => (
                   <div key={index} className="text-center p-6 rounded-xl bg-slate-800/30 border border-slate-700/50 hover:border-amber-500/30 transition-all">
