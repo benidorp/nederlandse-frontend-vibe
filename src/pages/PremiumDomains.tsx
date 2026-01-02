@@ -66,6 +66,294 @@ const premiumDomains = [
     category: "Kunst/Erfgoed",
     price: "Op aanvraag",
     backlinks: "980+"
+  },
+  {
+    name: "emg-nice2015.fr",
+    description: "Frans domein met sterke autoriteit, ideaal voor internationale projecten.",
+    mozScore: 31,
+    category: "Internationaal",
+    price: "Op aanvraag",
+    backlinks: "720+"
+  },
+  {
+    name: "vos-photos.eu",
+    description: "Perfect voor fotografie, stock images of creatieve platforms.",
+    mozScore: 23,
+    category: "Fotografie",
+    price: "Op aanvraag",
+    backlinks: "380+"
+  },
+  {
+    name: "teatrodeiconciatori.it",
+    description: "Italiaans theater domein, ideaal voor kunst en entertainment.",
+    mozScore: 25,
+    category: "Theater/Kunst",
+    price: "Op aanvraag",
+    backlinks: "450+"
+  },
+  {
+    name: "grandparkhotel.at",
+    description: "Premium Oostenrijks hoteldomein met sterke toeristische waarde.",
+    mozScore: 37,
+    category: "Hospitality",
+    price: "Op aanvraag",
+    backlinks: "890+"
+  },
+  {
+    name: "bryn-somersethouse.co.uk",
+    description: "Brits vastgoed/hospitality domein met lokale autoriteit.",
+    mozScore: 29,
+    category: "Vastgoed",
+    price: "Op aanvraag",
+    backlinks: "520+"
+  },
+  {
+    name: "bovisadrivein.it",
+    description: "Italiaans entertainment domein, geschikt voor bioscopen of evenementen.",
+    mozScore: 31,
+    category: "Entertainment",
+    price: "Op aanvraag",
+    backlinks: "680+"
+  },
+  {
+    name: "davidhughesillustration.co.uk",
+    description: "Creatief UK domein, perfect voor illustratie of design studios.",
+    mozScore: 27,
+    category: "Kunst/Design",
+    price: "Op aanvraag",
+    backlinks: "490+"
+  },
+  {
+    name: "eulis.eu",
+    description: "Kort en memorabel EU-domein voor diverse toepassingen.",
+    mozScore: 23,
+    category: "Algemeen",
+    price: "Op aanvraag",
+    backlinks: "360+"
+  },
+  {
+    name: "europe-en-midipyrenees.eu",
+    description: "Frans/Europees regio domein, ideaal voor toerisme of lokale projecten.",
+    mozScore: 33,
+    category: "Toerisme",
+    price: "Op aanvraag",
+    backlinks: "780+"
+  },
+  {
+    name: "euromedialiteracy.eu",
+    description: "Educatief EU-domein gericht op media en onderwijs.",
+    mozScore: 31,
+    category: "Onderwijs",
+    price: "Op aanvraag",
+    backlinks: "720+"
+  },
+  {
+    name: "greenweek2010.eu",
+    description: "Duurzaamheids domein, perfect voor milieu-initiatieven.",
+    mozScore: 29,
+    category: "Duurzaamheid",
+    price: "Op aanvraag",
+    backlinks: "580+"
+  },
+  {
+    name: "maribe.eu",
+    description: "Maritiem EU-domein, geschikt voor scheepvaart of oceaan projecten.",
+    mozScore: 23,
+    category: "Maritiem",
+    price: "Op aanvraag",
+    backlinks: "340+"
+  },
+  {
+    name: "landmark-project.eu",
+    description: "Project domein met Europese autoriteit voor grote initiatieven.",
+    mozScore: 25,
+    category: "Projecten",
+    price: "Op aanvraag",
+    backlinks: "420+"
+  },
+  {
+    name: "rtmpilecki.eu",
+    description: "Historisch/cultureel EU-domein met sterke backlinks.",
+    mozScore: 31,
+    category: "Cultuur",
+    price: "Op aanvraag",
+    backlinks: "690+"
+  },
+  {
+    name: "paulsmithmusic.eu",
+    description: "Premium muziekdomein, ideaal voor artiesten of labels.",
+    mozScore: 36,
+    category: "Muziek",
+    price: "Op aanvraag",
+    backlinks: "850+"
+  },
+  {
+    name: "fffb.be",
+    description: "Kort en krachtig Belgisch domein, veelzijdig inzetbaar.",
+    mozScore: 32,
+    category: "Algemeen",
+    price: "Op aanvraag",
+    backlinks: "740+"
+  },
+  {
+    name: "tca2000.co.uk",
+    description: "Brits bedrijfsdomein met gevestigde autoriteit.",
+    mozScore: 25,
+    category: "Business",
+    price: "Op aanvraag",
+    backlinks: "430+"
+  },
+  {
+    name: "brave-project.eu",
+    description: "Innovatief EU-project domein voor tech of sociale initiatieven.",
+    mozScore: 25,
+    category: "Projecten",
+    price: "Op aanvraag",
+    backlinks: "410+"
+  },
+  {
+    name: "machuproject.eu",
+    description: "Europees project domein met solide backlinkprofiel.",
+    mozScore: 32,
+    category: "Projecten",
+    price: "Op aanvraag",
+    backlinks: "750+"
+  },
+  {
+    name: "youthstartproject.eu",
+    description: "Onderwijs/jeugd project domein met educatieve waarde.",
+    mozScore: 26,
+    category: "Onderwijs",
+    price: "Op aanvraag",
+    backlinks: "480+"
+  },
+  {
+    name: "resurbis.eu",
+    description: "EU-domein voor duurzaamheid of circulaire economie projecten.",
+    mozScore: 29,
+    category: "Duurzaamheid",
+    price: "Op aanvraag",
+    backlinks: "560+"
+  },
+  {
+    name: "ilovecosmetics.eu",
+    description: "Beauty en cosmetica domein met sterke consumentenappeal.",
+    mozScore: 31,
+    category: "Beauty",
+    price: "Op aanvraag",
+    backlinks: "710+"
+  },
+  {
+    name: "martonecycling.eu",
+    description: "Premium fiets/sport domein voor wielrennen of sportmerken.",
+    mozScore: 35,
+    category: "Sport",
+    price: "Op aanvraag",
+    backlinks: "820+"
+  },
+  {
+    name: "ramcip-project.eu",
+    description: "Europees onderzoeksproject domein met academische backlinks.",
+    mozScore: 32,
+    category: "Onderzoek",
+    price: "Op aanvraag",
+    backlinks: "760+"
+  },
+  {
+    name: "aaliance.eu",
+    description: "Gezondheidszorg/ouderenzorg EU-domein met sterke autoriteit.",
+    mozScore: 25,
+    category: "Zorg",
+    price: "Op aanvraag",
+    backlinks: "440+"
+  },
+  {
+    name: "worth-project.eu",
+    description: "Design en innovatie project domein met creatieve waarde.",
+    mozScore: 28,
+    category: "Design",
+    price: "Op aanvraag",
+    backlinks: "530+"
+  },
+  {
+    name: "espresso-project.eu",
+    description: "Smart city en mobiliteit project domein.",
+    mozScore: 20,
+    category: "Smart City",
+    price: "Op aanvraag",
+    backlinks: "290+"
+  },
+  {
+    name: "liveartarchive.eu",
+    description: "Kunst archief domein, ideaal voor culturele instellingen.",
+    mozScore: 25,
+    category: "Kunst",
+    price: "Op aanvraag",
+    backlinks: "420+"
+  },
+  {
+    name: "etongmbh.de",
+    description: "Duits bedrijfsdomein met sterke zakelijke autoriteit.",
+    mozScore: 33,
+    category: "Business",
+    price: "Op aanvraag",
+    backlinks: "790+"
+  },
+  {
+    name: "life-envoll.eu",
+    description: "Milieu en natuur EU-project domein.",
+    mozScore: 26,
+    category: "Milieu",
+    price: "Op aanvraag",
+    backlinks: "470+"
+  },
+  {
+    name: "eu-sabana.eu",
+    description: "Duurzame landbouw EU-project domein.",
+    mozScore: 28,
+    category: "Landbouw",
+    price: "Op aanvraag",
+    backlinks: "510+"
+  },
+  {
+    name: "serletproject.eu",
+    description: "Europees innovatie project domein.",
+    mozScore: 25,
+    category: "Innovatie",
+    price: "Op aanvraag",
+    backlinks: "430+"
+  },
+  {
+    name: "ellinikiglossa.eu",
+    description: "Grieks taal/cultuur domein met educatieve waarde.",
+    mozScore: 28,
+    category: "Taal/Cultuur",
+    price: "Op aanvraag",
+    backlinks: "520+"
+  },
+  {
+    name: "seatglobal.eu",
+    description: "Internationaal mobiliteit/transport domein.",
+    mozScore: 28,
+    category: "Transport",
+    price: "Op aanvraag",
+    backlinks: "540+"
+  },
+  {
+    name: "hotelgiotto.eu",
+    description: "Hospitality domein met Europese toeristische waarde.",
+    mozScore: 26,
+    category: "Hospitality",
+    price: "Op aanvraag",
+    backlinks: "480+"
+  },
+  {
+    name: "arcomem.eu",
+    description: "Digitaal archief/geheugen EU-project domein.",
+    mozScore: 27,
+    category: "Digitaal",
+    price: "Op aanvraag",
+    backlinks: "500+"
   }
 ];
 
