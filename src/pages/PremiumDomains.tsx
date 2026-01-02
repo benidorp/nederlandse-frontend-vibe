@@ -53,11 +53,11 @@ const premiumDomains = [
   },
   {
     name: "paulsmithmusic.eu",
-    description: "Premium muziekdomein, ideaal voor artiesten of labels.",
+    description: "Muziekdomein met backlinks van BBC, The Guardian, NME en Pitchfork.",
     mozScore: 36,
     category: "Muziek",
     price: "Op aanvraag",
-    backlinks: "850+"
+    backlinks: "719+"
   },
   {
     name: "eu-asiacentre.eu",
