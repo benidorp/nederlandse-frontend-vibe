@@ -1692,6 +1692,33 @@ const PremiumDomains = () => {
           </div>
         </section>
 
+        {/* Contact Section */}
+        <section className="py-16 bg-slate-950">
+          <div className="container mx-auto px-4">
+            <div className="max-w-2xl mx-auto text-center">
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                Neem Contact Op
+              </h2>
+              <p className="text-slate-300 mb-8">
+                Heeft u vragen over een specifiek domein of wilt u advies over welke expired domeinnaam het beste bij uw project past? Neem gerust contact met ons op.
+              </p>
+              <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-8">
+                <div className="flex flex-col gap-4">
+                  <div className="flex items-center justify-center gap-3">
+                    <Mail className="h-5 w-5 text-amber-400" />
+                    <a href="mailto:info@iaeecommunity.com" className="text-amber-400 hover:text-amber-300 transition-colors text-lg font-medium">
+                      info@iaeecommunity.com
+                    </a>
+                  </div>
+                  <p className="text-slate-400 text-sm">
+                    Wij reageren binnen 24 uur op uw bericht.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Footer */}
         <footer className="py-12 bg-slate-950 border-t border-slate-800">
           <div className="container mx-auto px-4">
