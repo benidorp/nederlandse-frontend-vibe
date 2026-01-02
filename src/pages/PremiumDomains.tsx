@@ -1654,6 +1654,44 @@ const PremiumDomains = () => {
           </div>
         </section>
 
+        {/* SEO Content Section */}
+        <section className="py-16 bg-gradient-to-b from-slate-900 to-slate-950">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <article className="prose prose-invert prose-lg max-w-none">
+                <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 text-center">
+                  Expired Domeinnamen Kopen: Investeer in Bewezen SEO-Autoriteit
+                </h2>
+                
+                <div className="space-y-6 text-slate-300 leading-relaxed">
+                  <p>
+                    Een <strong className="text-amber-400">expired domeinnaam kopen</strong> is de slimste manier om direct te profiteren van jarenlang opgebouwde <strong className="text-white">domeinautoriteit</strong> en <strong className="text-white">kwalitatieve backlinks</strong>. In tegenstelling tot een nieuwe domeinnaam, beschikt een premium expired domein al over vertrouwen bij Google en andere zoekmachines. Dit vertaalt zich direct naar betere rankings, snellere indexatie en meer organisch verkeer.
+                  </p>
+                  
+                  <p>
+                    Onze zorgvuldig geselecteerde <strong className="text-amber-400">premium domeinen</strong> hebben een bewezen trackrecord met backlinks van autoritaire bronnen zoals Wikipedia, universiteiten, overheidsinstanties en gerenommeerde nieuwssites. Deze <strong className="text-white">hoogwaardige backlinks</strong> zijn het resultaat van jaren online aanwezigheid en zijn praktisch onmogelijk om zelf op te bouwen — tenzij u bereid bent duizenden euro's te investeren in linkbuilding.
+                  </p>
+                  
+                  <p>
+                    Of u nu een <strong className="text-white">webshop wilt starten</strong>, een <strong className="text-white">affiliate website</strong> wilt lanceren, of uw bestaande bedrijf een <strong className="text-white">SEO-boost</strong> wilt geven: een expired domeinnaam met hoge <strong className="text-amber-400">MOZ Domain Authority (DA)</strong> geeft u een onmiskenbare voorsprong op de concurrentie. Terwijl anderen maanden wachten tot Google hun nieuwe domein vertrouwt, profiteert u direct van bestaande autoriteit.
+                  </p>
+                  
+                  <p>
+                    <strong className="text-white">Waarom wachten?</strong> Elk premium domein in ons portfolio is gecontroleerd op spamvrije geschiedenis, relevante backlinks en schone linkprofielen. U koopt geen risico — u koopt een strategisch actief dat direct waarde toevoegt aan uw online aanwezigheid. Van <strong className="text-white">301 redirects</strong> voor authority stacking tot het direct starten van een nieuwe website: de mogelijkheden zijn eindeloos.
+                  </p>
+                  
+                  <div className="bg-gradient-to-r from-amber-500/10 to-slate-800/30 border border-amber-500/20 rounded-xl p-6 mt-8">
+                    <p className="text-center text-lg mb-0">
+                      <strong className="text-amber-400">Klaar om uw online succes te versnellen?</strong><br />
+                      <span className="text-slate-300">Bekijk ons portfolio van 110+ premium expired domeinnamen en ontdek welk domein perfect past bij uw ambitie. Investeer vandaag nog in bewezen autoriteit en laat uw concurrenten achter.</span>
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
         {/* Footer */}
         <footer className="py-12 bg-slate-950 border-t border-slate-800">
           <div className="container mx-auto px-4">
