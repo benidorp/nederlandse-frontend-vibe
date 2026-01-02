@@ -333,11 +333,11 @@ const premiumDomains = [
   },
   {
     name: "ellinikiglossa.eu",
-    description: "Grieks taal/cultuur domein met educatieve waarde.",
+    description: "Grieks taal/cultuur domein met sterke backlinks van Wikipedia, UCI.edu en universiteiten.",
     mozScore: 28,
     category: "Taal/Cultuur",
     price: "Op aanvraag",
-    backlinks: "520+"
+    backlinks: "4.1K+"
   },
   {
     name: "seatglobal.eu",
