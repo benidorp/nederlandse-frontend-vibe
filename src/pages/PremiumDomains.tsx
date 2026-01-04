@@ -468,11 +468,16 @@ const premiumDomains = [
   },
   {
     name: "worth-project.eu",
-    description: "Design en innovatie project domein met creatieve waarde.",
-    mozScore: 28,
+    description: "Design en innovatie project domein met backlinks van Europa.eu, Euronews, AngelList en UAL Arts.",
+    mozScore: 29,
+    pageAuthority: 32,
+    linkingDomains: 162,
+    inboundLinks: "245+",
+    followedLinks: "209+",
     category: "Design",
     price: "Op aanvraag",
-    backlinks: "530+"
+    backlinks: "245+",
+    topBacklinks: ["europa.eu (DA 97)", "euronews.com (DA 92)", "angel.co (DA 86)", "campaign-archive.com (DA 84)", "arts.ac.uk (DA 81)"]
   },
   {
     name: "eu-sabana.eu",
