@@ -1651,16 +1651,8 @@ const PremiumDomains = () => {
                       {domain.description}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent>
-                    {/* Prominent Price Display */}
-                    <div className="mb-4 p-3 bg-gradient-to-r from-amber-500/20 to-amber-600/10 border border-amber-500/30 rounded-lg text-center">
-                      <span className="text-2xl font-bold text-amber-400">{domain.price}</span>
-                      {domain.price !== "Op aanvraag" && (
-                        <span className="text-xs text-slate-400 block mt-1">Eenmalige betaling</span>
-                      )}
-                    </div>
-                    
-                    <div className="space-y-3 mb-4">
+                  <CardContent className="flex flex-col h-full">
+                    <div className="space-y-3 mb-4 flex-grow">
                       <div className="flex items-center justify-between text-sm">
                         <div className="flex items-center gap-2 text-slate-400">
                           <Link className="w-4 h-4" />
@@ -1704,28 +1696,36 @@ const PremiumDomains = () => {
                         </div>
                       )}
                     </div>
-                    {domain.stripeButtonId ? (
-                      <div className="flex flex-col gap-2">
-                        <div 
-                          className="stripe-button-container"
-                          dangerouslySetInnerHTML={{
-                            __html: `<stripe-buy-button
-                              buy-button-id="${domain.stripeButtonId}"
-                              publishable-key="pk_live_51M6JQGILs3fqMdMBgEiYWZkZxZ7J8oqm4Z9Z5xZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ"
-                            ></stripe-buy-button>`
-                          }}
-                        />
-                        <p className="text-xs text-center text-amber-400 font-medium">Koop Nu - {domain.price}</p>
+                    
+                    {/* Price Display - Compact at bottom */}
+                    <div className="mt-auto pt-4 border-t border-slate-700/50">
+                      <div className="flex items-center justify-between mb-3">
+                        <span className="text-xs text-slate-500 uppercase tracking-wide">Prijs</span>
+                        <span className="text-lg font-semibold text-amber-400">{domain.price}</span>
                       </div>
-                    ) : (
-                      <Button 
-                        onClick={() => handleDomainInquiry(domain.name)}
-                        className="w-full bg-gradient-to-r from-slate-700 to-slate-800 hover:from-amber-500 hover:to-amber-600 hover:text-slate-950 transition-all duration-300 border border-slate-600 hover:border-amber-500"
-                      >
-                        Neem Contact Op
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                      </Button>
-                    )}
+                      
+                      {domain.stripeButtonId ? (
+                        <div className="flex flex-col gap-2">
+                          <div 
+                            className="stripe-button-container"
+                            dangerouslySetInnerHTML={{
+                              __html: `<stripe-buy-button
+                                buy-button-id="${domain.stripeButtonId}"
+                                publishable-key="pk_live_51M6JQGILs3fqMdMBgEiYWZkZxZ7J8oqm4Z9Z5xZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ"
+                              ></stripe-buy-button>`
+                            }}
+                          />
+                        </div>
+                      ) : (
+                        <Button 
+                          onClick={() => handleDomainInquiry(domain.name)}
+                          className="w-full bg-gradient-to-r from-slate-700 to-slate-800 hover:from-amber-500 hover:to-amber-600 hover:text-slate-950 transition-all duration-300 border border-slate-600 hover:border-amber-500"
+                        >
+                          Neem Contact Op
+                          <ArrowRight className="ml-2 h-4 w-4" />
+                        </Button>
+                      )}
+                    </div>
                   </CardContent>
                 </Card>
               ))}
