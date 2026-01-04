@@ -746,11 +746,16 @@ const premiumDomains = [
   },
   {
     name: "landmark-project.eu",
-    description: "Project domein met Europese autoriteit voor grote initiatieven.",
+    description: "EU-project domein met backlinks van Europa.eu, Wikipedia DE, Cambridge en Yumpu.",
     mozScore: 25,
+    pageAuthority: 32,
+    linkingDomains: 161,
+    inboundLinks: "1.1K+",
+    followedLinks: "954+",
     category: "Projecten",
     price: "Op aanvraag",
-    backlinks: "420+"
+    backlinks: "1.1K+",
+    topBacklinks: ["europa.eu (DA 97)", "goo.gl (DA 95)", "de.wikipedia.org (DA 94)", "cambridge.org (DA 93)", "yumpu.com (DA 91)"]
   },
   {
     name: "tca2000.co.uk",
