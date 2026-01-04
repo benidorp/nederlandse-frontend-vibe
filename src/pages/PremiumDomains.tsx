@@ -804,14 +804,6 @@ const premiumDomains = [
     topBacklinks: ["europa.eu (DA 97)", "bt.com (DA 91)", "mynewsdesk.com (DA 89)", "campaign-archive.com (DA 84)", "panda.org (DA 77)"]
   },
   {
-    name: "recharge-green.eu",
-    description: "Groene energie en opladen EU-domein.",
-    mozScore: 26,
-    category: "Energie",
-    price: "Op aanvraag",
-    backlinks: "430+"
-  },
-  {
     name: "unamec.be",
     description: "Belgisch medisch/zorg domein.",
     mozScore: 26,
@@ -914,6 +906,19 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "284+",
     topBacklinks: ["pages.dev (DA 91)", "wikitravel.org (DA 79)", "groupon.co.uk (DA 76)", "groupon.fr (DA 63)", "travellerspoint.com (DA 60)"]
+  },
+  {
+    name: "recharge-green.eu",
+    description: "Groene energie en opladen EU-domein met backlinks van Google Groups, MDPI, BioMedCentral en FAO.",
+    mozScore: 25,
+    pageAuthority: 28,
+    linkingDomains: 128,
+    inboundLinks: "5.5K+",
+    followedLinks: "5.5K+",
+    category: "Energie",
+    price: "Op aanvraag",
+    backlinks: "5.5K+",
+    topBacklinks: ["groups.google.com (DA 93)", "mdpi.com (DA 92)", "biomedcentral.com (DA 91)", "fao.org (DA 91)", "bayern.de (DA 89)"]
   },
   {
     name: "brave-project.eu",
