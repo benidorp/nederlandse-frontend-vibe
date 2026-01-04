@@ -1090,6 +1090,19 @@ const premiumDomains = [
     topBacklinks: ["unesco.org (DA 93)", "wur.nl (DA 71)", "jouwweb.nl (DA 63)", "startpagina.nl (DA 63)", "fok.nl (DA 59)"]
   },
   {
+    name: "wbetting.co.uk",
+    description: "Brits betting/gaming domein met backlinks van OVH, Joomla.org, WSU en CSIC.",
+    mozScore: 21,
+    pageAuthority: 41,
+    linkingDomains: 468,
+    inboundLinks: "280.6K+",
+    followedLinks: "198.3K+",
+    category: "Gaming",
+    price: "Op aanvraag",
+    backlinks: "280.6K+",
+    topBacklinks: ["ovh.net (DA 92)", "joomla.org (DA 92)", "wsu.edu (DA 87)", "csic.es (DA 78)", "knows.nl (DA 65)"]
+  },
+  {
     name: "mbelgique.be",
     description: "Belgisch nationaal domein.",
     mozScore: 21,
@@ -1157,14 +1170,6 @@ const premiumDomains = [
     description: "EU catering/evenement domein.",
     mozScore: 0,
     category: "Food",
-    price: "Op aanvraag",
-    backlinks: "TBD"
-  },
-  {
-    name: "wbetting.co.uk",
-    description: "Brits betting/gaming domein.",
-    mozScore: 0,
-    category: "Gaming",
     price: "Op aanvraag",
     backlinks: "TBD"
   },
