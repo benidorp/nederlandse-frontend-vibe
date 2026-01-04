@@ -409,6 +409,19 @@ const premiumDomains = [
     backlinks: "375+",
     topBacklinks: ["ow.ly (DA 90)", "euractiv.com (DA 84)", "campaign-archive.com (DA 84)", "danfoss.com (DA 69)", "coleurope.eu (DA 57)"]
   },
+  {
+    name: "partymenu.eu",
+    description: "EU catering/evenement domein met backlinks van Google.sk, Wikiwand, RA.co en Pravda.sk.",
+    mozScore: 30,
+    pageAuthority: 35,
+    linkingDomains: 328,
+    inboundLinks: "2.2K+",
+    followedLinks: "2.1K+",
+    category: "Food",
+    price: "Op aanvraag",
+    backlinks: "2.2K+",
+    topBacklinks: ["google.sk (DA 85)", "wikiwand.com (DA 85)", "ra.co (DA 85)", "pravda.sk (DA 79)", "dennikn.sk (DA 76)"]
+  },
   // DA 29
   {
     name: "evacuate.eu",
@@ -1175,14 +1188,6 @@ const premiumDomains = [
     description: "Historisch WO1 herdenkingsdomein.",
     mozScore: 0,
     category: "Geschiedenis",
-    price: "Op aanvraag",
-    backlinks: "TBD"
-  },
-  {
-    name: "partymenu.eu",
-    description: "EU catering/evenement domein.",
-    mozScore: 0,
-    category: "Food",
     price: "Op aanvraag",
     backlinks: "TBD"
   },
