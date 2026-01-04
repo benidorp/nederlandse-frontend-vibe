@@ -658,6 +658,19 @@ const premiumDomains = [
     backlinks: "136+",
     topBacklinks: ["tinyurl.com (DA 94)", "ub.edu (DA 86)", "lu.se (DA 79)", "confex.com (DA 73)", "sdu.dk (DA 71)"]
   },
+  {
+    name: "youthstartproject.eu",
+    description: "Onderwijs/jeugd project domein met backlinks van Europa.eu, Campaign Archive, Observador en OpenEdition.",
+    mozScore: 28,
+    pageAuthority: 24,
+    linkingDomains: 64,
+    inboundLinks: "2.9K+",
+    followedLinks: "2.8K+",
+    category: "Onderwijs",
+    price: "Op aanvraag",
+    backlinks: "2.9K+",
+    topBacklinks: ["europa.eu (DA 97)", "campaign-archive.com (DA 84)", "observador.pt (DA 84)", "openedition.org (DA 78)", "wort.lu (DA 75)"]
+  },
   // DA 27
   {
     name: "spanvis.nl",
@@ -776,14 +789,6 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "2.6K+",
     topBacklinks: ["europa.eu (DA 97)", "bt.com (DA 91)", "mynewsdesk.com (DA 89)", "campaign-archive.com (DA 84)", "panda.org (DA 77)"]
-  },
-  {
-    name: "youthstartproject.eu",
-    description: "Onderwijs/jeugd project domein met educatieve waarde.",
-    mozScore: 26,
-    category: "Onderwijs",
-    price: "Op aanvraag",
-    backlinks: "480+"
   },
   {
     name: "life-envoll.eu",
