@@ -221,11 +221,16 @@ const premiumDomains = [
   },
   {
     name: "evader-project.eu",
-    description: "EU-project domein met sterke backlinks.",
+    description: "EU-project domein met backlinks van Europa.eu, Spiegel, Europa Press en Heise.",
     mozScore: 31,
+    pageAuthority: 30,
+    linkingDomains: 91,
+    inboundLinks: "128+",
+    followedLinks: "109+",
     category: "Projecten",
     price: "Op aanvraag",
-    backlinks: "710+"
+    backlinks: "128+",
+    topBacklinks: ["europa.eu (DA 97)", "spiegel.de (DA 93)", "europapress.es (DA 91)", "heise.de (DA 91)", "autoblog.com (DA 90)"]
   },
   {
     name: "toastit-live.be",
