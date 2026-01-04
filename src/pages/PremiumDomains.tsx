@@ -645,6 +645,19 @@ const premiumDomains = [
     backlinks: "9.6K+",
     topBacklinks: ["fr.wikipedia.org (DA 95)", "it.wikipedia.org (DA 93)", "wiktionary.org (DA 93)", "lefigaro.fr (DA 93)", "nl.wikipedia.org (DA 91)"]
   },
+  {
+    name: "epc2018.be",
+    description: "Belgisch evenement domein met backlinks van TinyURL, UB.edu, Lund Universiteit en Confex.",
+    mozScore: 28,
+    pageAuthority: 24,
+    linkingDomains: 57,
+    inboundLinks: "136+",
+    followedLinks: "121+",
+    category: "Evenementen",
+    price: "Op aanvraag",
+    backlinks: "136+",
+    topBacklinks: ["tinyurl.com (DA 94)", "ub.edu (DA 86)", "lu.se (DA 79)", "confex.com (DA 73)", "sdu.dk (DA 71)"]
+  },
   // DA 27
   {
     name: "spanvis.nl",
@@ -1214,15 +1227,6 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "191+",
     topBacklinks: ["europa.eu (DA 97)", "medium.com (DA 95)", "mdpi.com (DA 92)", "campaign-archive.com (DA 84)", "telecomtv.com (DA 67)"]
-  },
-  // DA TBD (0)
-  {
-    name: "epc2018.be",
-    description: "Belgisch evenement domein.",
-    mozScore: 0,
-    category: "Evenementen",
-    price: "Op aanvraag",
-    backlinks: "TBD"
   },
 ];
 const PremiumDomains = () => {
