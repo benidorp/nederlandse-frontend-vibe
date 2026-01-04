@@ -879,6 +879,19 @@ const premiumDomains = [
   },
   // DA 25
   {
+    name: "gastrosafezone.eu",
+    description: "Design en horeca veiligheid domein met backlinks van CNN, The Conversation, Pagina12 en Elle Decor.",
+    mozScore: 25,
+    pageAuthority: 24,
+    linkingDomains: 47,
+    inboundLinks: "66+",
+    followedLinks: "58+",
+    category: "Design/Horeca",
+    price: "Op aanvraag",
+    backlinks: "66+",
+    topBacklinks: ["cnn.com (DA 94)", "theconversation.com (DA 92)", "realty.rbc.ru (DA 88)", "pagina12.com.ar (DA 82)", "elledecor.com (DA 80)"]
+  },
+  {
     name: "hotelgiotto.eu",
     description: "Hospitality domein met backlinks van Pages.dev, Wikitravel, Groupon UK en Travellerspoint.",
     mozScore: 25,
