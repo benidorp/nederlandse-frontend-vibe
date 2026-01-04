@@ -343,6 +343,19 @@ const premiumDomains = [
     backlinks: "189+",
     topBacklinks: ["europa.eu (DA 97)", "politico.eu (DA 91)", "lse.ac.uk (DA 89)", "fapesp.br (DA 72)", "eureporter.co (DA 68)"]
   },
+  {
+    name: "landstewardship.eu",
+    description: "EU landbeheer/duurzaamheid domein met backlinks van Europa.eu, ABC.es, Gencat.cat en Spaanse universiteiten.",
+    mozScore: 31,
+    pageAuthority: 33,
+    linkingDomains: 200,
+    inboundLinks: "7.5K+",
+    followedLinks: "7.4K+",
+    category: "Duurzaamheid",
+    price: "Op aanvraag",
+    backlinks: "7.5K+",
+    topBacklinks: ["europa.eu (DA 97)", "abc.es (DA 93)", "gencat.cat (DA 89)", "ask.com (DA 88)", "ecoticias.com (DA 74)"]
+  },
   // DA 30
   {
     name: "ilovecosmetics.eu",
@@ -1057,14 +1070,6 @@ const premiumDomains = [
     description: "Nederlands magazine/media domein.",
     mozScore: 0,
     category: "Media",
-    price: "Op aanvraag",
-    backlinks: "TBD"
-  },
-  {
-    name: "landstewardship.eu",
-    description: "EU landbeheer/duurzaamheid domein.",
-    mozScore: 0,
-    category: "Duurzaamheid",
     price: "Op aanvraag",
     backlinks: "TBD"
   },
