@@ -23,7 +23,7 @@ const premiumDomains = [
     inboundLinks: "4.6K+",
     followedLinks: "4.2K+",
     category: "Onderwijs",
-    price: "Op aanvraag",
+    price: "€999",
     backlinks: "4.6K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "lemonde.fr (DA 93)", "cornell.edu (DA 92)", "spiegel.de (DA 90)"]
   },
@@ -37,7 +37,7 @@ const premiumDomains = [
     inboundLinks: "1.9K+",
     followedLinks: "1.7K+",
     category: "Hospitality",
-    price: "Op aanvraag",
+    price: "€799",
     backlinks: "1.9K+",
     topBacklinks: ["theguardian.com (DA 94)", "telegraph.co.uk (DA 94)", "dailymail.co.uk (DA 94)", "irishtimes.com (DA 91)", "derstandard.at (DA 82)"]
   },
@@ -50,7 +50,7 @@ const premiumDomains = [
     inboundLinks: "1.9K+",
     followedLinks: "1.5K+",
     category: "Kunst",
-    price: "Op aanvraag",
+    price: "€849",
     backlinks: "1.9K+",
     topBacklinks: ["europa.eu (DA 97)", "theguardian.com (DA 94)", "telegraph.co.uk (DA 94)", "dw.com (DA 93)", "boston.com (DA 92)"]
   },
@@ -63,7 +63,7 @@ const premiumDomains = [
     inboundLinks: "3K+",
     followedLinks: "2.9K+",
     category: "Algemeen",
-    price: "Op aanvraag",
+    price: "€899",
     backlinks: "3K+",
     topBacklinks: ["youtube.com (DA 100)", "lemonde.fr (DA 93)", "mdpi.com (DA 92)", "corriere.it (DA 92)", "wired.it (DA 90)"]
   },
@@ -77,7 +77,7 @@ const premiumDomains = [
     inboundLinks: "6.6K+",
     followedLinks: "6.6K+",
     category: "Entertainment",
-    price: "Op aanvraag",
+    price: "€699",
     backlinks: "6.6K+",
     topBacklinks: ["standaard.be (DA 81)", "nieuwsblad.be (DA 79)", "gva.be (DA 73)"]
   },
