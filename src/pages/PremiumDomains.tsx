@@ -853,6 +853,19 @@ const premiumDomains = [
     backlinks: "214+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "ja.wikipedia.org (DA 93)", "ipfs.io (DA 84)", "filmweb.pl (DA 80)", "csfd.cz (DA 72)"]
   },
+  {
+    name: "102touchfm.co.uk",
+    description: "Brits radio/media domein met backlinks van Wikipedia, BBC, Bit.ly, Foursquare en DigitalSpy.",
+    mozScore: 26,
+    pageAuthority: 30,
+    linkingDomains: 292,
+    inboundLinks: "11.8K+",
+    followedLinks: "8.8K+",
+    category: "Media",
+    price: "Op aanvraag",
+    backlinks: "11.8K+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "bbc.co.uk (DA 95)", "bit.ly (DA 94)", "foursquare.com (DA 92)", "digitalspy.com (DA 88)"]
+  },
   // DA 25
   {
     name: "brave-project.eu",
@@ -1203,14 +1216,6 @@ const premiumDomains = [
     description: "Nederlands sport/gymnastiek domein.",
     mozScore: 0,
     category: "Sport",
-    price: "Op aanvraag",
-    backlinks: "TBD"
-  },
-  {
-    name: "102touchfm.co.uk",
-    description: "Brits radio/media domein.",
-    mozScore: 0,
-    category: "Media",
     price: "Op aanvraag",
     backlinks: "TBD"
   },
