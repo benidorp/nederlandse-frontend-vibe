@@ -130,11 +130,16 @@ const premiumDomains = [
   },
   {
     name: "co-da.eu",
-    description: "Kort en krachtig EU-domein voor samenwerkingsprojecten.",
-    mozScore: 33,
+    description: "Kort en krachtig EU-domein met backlinks van Globo, HuffPost, CBS News, Gizmodo en Fast Company.",
+    mozScore: 32,
+    pageAuthority: 22,
+    linkingDomains: 96,
+    inboundLinks: "276+",
+    followedLinks: "260+",
     category: "Samenwerking",
     price: "Op aanvraag",
-    backlinks: "780+"
+    backlinks: "276+",
+    topBacklinks: ["globo.com (DA 95)", "huffpost.com (DA 94)", "cbsnews.com (DA 93)", "gizmodo.com (DA 93)", "fastcompany.com (DA 92)"]
   },
   {
     name: "europe-en-midipyrenees.eu",
