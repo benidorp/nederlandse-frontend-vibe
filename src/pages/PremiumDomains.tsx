@@ -713,11 +713,16 @@ const premiumDomains = [
   },
   {
     name: "transitionproject.eu",
-    description: "Transitie en verandering EU-project domein.",
+    description: "Transitie en verandering EU-project domein met backlinks van Europa.eu, Eventbrite, Storify en Sheffield University.",
     mozScore: 27,
+    pageAuthority: 28,
+    linkingDomains: 75,
+    inboundLinks: "207+",
+    followedLinks: "179+",
     category: "Projecten",
     price: "Op aanvraag",
-    backlinks: "470+"
+    backlinks: "207+",
+    topBacklinks: ["europa.eu (DA 97)", "bit.ly (DA 94)", "eventbrite.com (DA 93)", "storify.com (DA 90)", "shef.ac.uk (DA 79)"]
   },
   {
     name: "expo-2050.be",
