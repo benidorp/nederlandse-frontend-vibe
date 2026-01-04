@@ -28,11 +28,16 @@ const premiumDomains = [
   // DA 37
   {
     name: "grandparkhotel.at",
-    description: "Premium Oostenrijks hoteldomein met sterke toeristische waarde.",
+    description: "Premium Oostenrijks hoteldomein met backlinks van The Guardian, Telegraph, Daily Mail, Irish Times en Der Standard.",
     mozScore: 37,
+    pageAuthority: 27,
+    linkingDomains: 198,
+    inboundLinks: "1.9K+",
+    followedLinks: "1.7K+",
     category: "Hospitality",
     price: "Op aanvraag",
-    backlinks: "890+"
+    backlinks: "1.9K+",
+    topBacklinks: ["theguardian.com (DA 94)", "telegraph.co.uk (DA 94)", "dailymail.co.uk (DA 94)", "irishtimes.com (DA 91)", "derstandard.at (DA 82)"]
   },
   {
     name: "icesculpture.be",
