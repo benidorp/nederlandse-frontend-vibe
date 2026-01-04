@@ -156,11 +156,16 @@ const premiumDomains = [
   },
   {
     name: "machuproject.eu",
-    description: "Europees project domein met solide backlinkprofiel.",
-    mozScore: 32,
+    description: "Europees project domein met backlinks van Wikipedia, Cambridge, UNESCO en Reddit.",
+    mozScore: 31,
+    pageAuthority: 27,
+    linkingDomains: 162,
+    inboundLinks: "379+",
+    followedLinks: "266+",
     category: "Projecten",
     price: "Op aanvraag",
-    backlinks: "750+"
+    backlinks: "379+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "cambridge.org (DA 93)", "unesco.org (DA 93)", "reddit.com (DA 92)", "mdpi.com (DA 92)"]
   },
   {
     name: "ramcip-project.eu",
