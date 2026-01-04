@@ -1077,6 +1077,19 @@ const premiumDomains = [
     backlinks: "270+"
   },
   {
+    name: "ismagazine.nl",
+    description: "Nederlands magazine/media domein met backlinks van UNESCO, WUR en Startpagina.",
+    mozScore: 21,
+    pageAuthority: 20,
+    linkingDomains: 56,
+    inboundLinks: "496+",
+    followedLinks: "339+",
+    category: "Media",
+    price: "Op aanvraag",
+    backlinks: "496+",
+    topBacklinks: ["unesco.org (DA 93)", "wur.nl (DA 71)", "jouwweb.nl (DA 63)", "startpagina.nl (DA 63)", "fok.nl (DA 59)"]
+  },
+  {
     name: "mbelgique.be",
     description: "Belgisch nationaal domein.",
     mozScore: 21,
@@ -1136,14 +1149,6 @@ const premiumDomains = [
     description: "Historisch WO1 herdenkingsdomein.",
     mozScore: 0,
     category: "Geschiedenis",
-    price: "Op aanvraag",
-    backlinks: "TBD"
-  },
-  {
-    name: "ismagazine.nl",
-    description: "Nederlands magazine/media domein.",
-    mozScore: 0,
-    category: "Media",
     price: "Op aanvraag",
     backlinks: "TBD"
   },
