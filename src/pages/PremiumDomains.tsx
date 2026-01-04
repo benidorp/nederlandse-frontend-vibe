@@ -1091,11 +1091,16 @@ const premiumDomains = [
   // DA 22
   {
     name: "bruegel2019.be",
-    description: "Cultureel erfgoed domein, ideaal voor kunst, musea of Vlaamse projecten.",
+    description: "Cultureel erfgoed domein met backlinks van Campaign Archive, Knack.be en Brusselslife.",
     mozScore: 22,
+    pageAuthority: 24,
+    linkingDomains: 42,
+    inboundLinks: "323+",
+    followedLinks: "312+",
     category: "Kunst/Erfgoed",
     price: "Op aanvraag",
-    backlinks: "320+"
+    backlinks: "323+",
+    topBacklinks: ["campaign-archive.com (DA 84)", "knack.be (DA 77)", "tntcode.com (DA 61)", "tvl.be (DA 52)", "brusselslife.be (DA 52)"]
   },
   {
     name: "romain-roquette.be",
