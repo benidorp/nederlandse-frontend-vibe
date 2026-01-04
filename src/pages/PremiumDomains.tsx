@@ -804,14 +804,6 @@ const premiumDomains = [
     topBacklinks: ["europa.eu (DA 97)", "bt.com (DA 91)", "mynewsdesk.com (DA 89)", "campaign-archive.com (DA 84)", "panda.org (DA 77)"]
   },
   {
-    name: "hotelgiotto.eu",
-    description: "Hospitality domein met Europese toeristische waarde.",
-    mozScore: 26,
-    category: "Hospitality",
-    price: "Op aanvraag",
-    backlinks: "480+"
-  },
-  {
     name: "recharge-green.eu",
     description: "Groene energie en opladen EU-domein.",
     mozScore: 26,
@@ -910,6 +902,19 @@ const premiumDomains = [
     topBacklinks: ["en.wikipedia.org (DA 97)", "bbc.co.uk (DA 95)", "bit.ly (DA 94)", "foursquare.com (DA 92)", "digitalspy.com (DA 88)"]
   },
   // DA 25
+  {
+    name: "hotelgiotto.eu",
+    description: "Hospitality domein met backlinks van Pages.dev, Wikitravel, Groupon UK en Travellerspoint.",
+    mozScore: 25,
+    pageAuthority: 24,
+    linkingDomains: 78,
+    inboundLinks: "284+",
+    followedLinks: "198+",
+    category: "Hospitality",
+    price: "Op aanvraag",
+    backlinks: "284+",
+    topBacklinks: ["pages.dev (DA 91)", "wikitravel.org (DA 79)", "groupon.co.uk (DA 76)", "groupon.fr (DA 63)", "travellerspoint.com (DA 60)"]
+  },
   {
     name: "brave-project.eu",
     description: "Innovatief EU-project domein voor tech of sociale initiatieven.",
