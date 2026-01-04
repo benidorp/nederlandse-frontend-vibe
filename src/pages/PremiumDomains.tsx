@@ -507,11 +507,16 @@ const premiumDomains = [
   },
   {
     name: "seatglobal.eu",
-    description: "Internationaal mobiliteit/transport domein.",
-    mozScore: 28,
+    description: "Internationaal mobiliteit/transport domein met backlinks van Europa.eu, Springer, PLOS en Phys.org.",
+    mozScore: 27,
+    pageAuthority: 29,
+    linkingDomains: 123,
+    inboundLinks: "4.8K+",
+    followedLinks: "4.7K+",
     category: "Transport",
     price: "Op aanvraag",
-    backlinks: "540+"
+    backlinks: "4.8K+",
+    topBacklinks: ["europa.eu (DA 97)", "springer.com (DA 93)", "plos.org (DA 93)", "salon.com (DA 91)", "phys.org (DA 91)"]
   },
   {
     name: "movecare-project.eu",
