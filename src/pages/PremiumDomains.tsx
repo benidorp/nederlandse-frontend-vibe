@@ -1652,7 +1652,7 @@ const PremiumDomains = () => {
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="flex flex-col h-full">
-                    <div className="space-y-3 mb-4 flex-grow">
+                    <div className="space-y-3 mb-4">
                       <div className="flex items-center justify-between text-sm">
                         <div className="flex items-center gap-2 text-slate-400">
                           <Link className="w-4 h-4" />
