@@ -442,11 +442,16 @@ const premiumDomains = [
   },
   {
     name: "5gmedia.eu",
-    description: "Perfect voor telecom, media of technologie gerelateerde bedrijven.",
+    description: "Telecom/media domein met backlinks van Medium, IBM, Telefónica en universiteiten.",
     mozScore: 29,
+    pageAuthority: 24,
+    linkingDomains: 69,
+    inboundLinks: "338+",
+    followedLinks: "265+",
     category: "Technologie",
     price: "Op aanvraag",
-    backlinks: "510+"
+    backlinks: "338+",
+    topBacklinks: ["medium.com (DA 95)", "ibm.com (DA 93)", "telefonica.com (DA 79)", "upv.es (DA 79)", "upm.es (DA 78)"]
   },
   {
     name: "finnovaregio.eu",
