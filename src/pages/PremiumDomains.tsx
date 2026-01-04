@@ -673,19 +673,7 @@ const premiumDomains = [
   },
   // DA 27
   {
-    name: "wetenschapbegintmetverwondering.nl",
-    description: "Nederlands wetenschapscommunicatie domein met backlinks van RUG, NU.nl en Nationale Wetenschapsagenda.",
-    mozScore: 27,
-    pageAuthority: 24,
-    linkingDomains: 52,
-    inboundLinks: "97+",
-    followedLinks: "81+",
-    category: "Wetenschap",
-    price: "Op aanvraag",
-    backlinks: "97+",
-    topBacklinks: ["rug.nl (DA 84)", "nu.nl (DA 91)", "wetenschapsagenda.nl (DA 65)"]
-  },
-  {
+    name: "spanvis.nl",
     description: "Nederlands domein met backlinks van Wikipedia (EN, RU, NL), Wikiwand en XS4All.",
     mozScore: 27,
     pageAuthority: 29,
@@ -817,19 +805,29 @@ const premiumDomains = [
   },
   {
     name: "wetenschapbegintmetverwondering.nl",
-    description: "Nederlands educatief wetenschapsdomein.",
-    mozScore: 26,
-    category: "Onderwijs",
+    description: "Nederlands wetenschapscommunicatie domein met backlinks van RUG, NU.nl en Nationale Wetenschapsagenda.",
+    mozScore: 27,
+    pageAuthority: 24,
+    linkingDomains: 52,
+    inboundLinks: "97+",
+    followedLinks: "81+",
+    category: "Wetenschap",
     price: "Op aanvraag",
-    backlinks: "440+"
+    backlinks: "97+",
+    topBacklinks: ["rug.nl (DA 84)", "nu.nl (DA 91)", "wetenschapsagenda.nl (DA 65)"]
   },
   {
     name: "gastrosafezone.eu",
-    description: "Gastronomie en voedselveiligheid EU-domein.",
-    mozScore: 26,
-    category: "Food",
+    description: "Design en horeca veiligheid domein met backlinks van CNN, The Conversation, Pagina12 en Elle Decor.",
+    mozScore: 25,
+    pageAuthority: 24,
+    linkingDomains: 47,
+    inboundLinks: "66+",
+    followedLinks: "58+",
+    category: "Design/Horeca",
     price: "Op aanvraag",
-    backlinks: "420+"
+    backlinks: "66+",
+    topBacklinks: ["cnn.com (DA 94)", "theconversation.com (DA 92)", "realty.rbc.ru (DA 88)", "pagina12.com.ar (DA 82)", "elledecor.com (DA 80)"]
   },
   {
     name: "khresmoi.eu",
