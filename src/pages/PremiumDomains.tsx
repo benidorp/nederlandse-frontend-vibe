@@ -902,6 +902,19 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "400+"
   },
+  {
+    name: "edlupt.eu",
+    description: "EU-domein met backlinks van Pinterest, ANSA, RUG Groningen en Italiaanse universiteiten.",
+    mozScore: 25,
+    pageAuthority: 28,
+    linkingDomains: 192,
+    inboundLinks: "119.7K+",
+    followedLinks: "119.6K+",
+    category: "Algemeen",
+    price: "Op aanvraag",
+    backlinks: "119.7K+",
+    topBacklinks: ["pinterest.com (DA 94)", "ansa.it (DA 91)", "rug.nl (DA 81)", "cnr.it (DA 75)", "unito.it (DA 70)"]
+  },
   // DA 24
   {
     name: "xcycle-h2020.eu",
@@ -1099,14 +1112,6 @@ const premiumDomains = [
     description: "Nederlands film/media domein.",
     mozScore: 0,
     category: "Media",
-    price: "Op aanvraag",
-    backlinks: "TBD"
-  },
-  {
-    name: "edlupt.eu",
-    description: "EU-domein.",
-    mozScore: 0,
-    category: "Algemeen",
     price: "Op aanvraag",
     backlinks: "TBD"
   },
