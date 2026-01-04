@@ -696,6 +696,19 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "460+"
   },
+  {
+    name: "iceel.eu",
+    description: "EU-domein met backlinks van Europa.eu, France Info, CNRS en Franse universiteiten.",
+    mozScore: 27,
+    pageAuthority: 30,
+    linkingDomains: 130,
+    inboundLinks: "3.6K+",
+    followedLinks: "3.5K+",
+    category: "Algemeen",
+    price: "Op aanvraag",
+    backlinks: "3.6K+",
+    topBacklinks: ["europa.eu (DA 97)", "franceinfo.fr (DA 91)", "cnrs.fr (DA 90)", "psl.eu (DA 78)", "education.fr (DA 77)"]
+  },
   // DA 26
   {
     name: "covenant-capacity.eu",
@@ -1143,14 +1156,6 @@ const premiumDomains = [
     description: "Brits radio/media domein.",
     mozScore: 0,
     category: "Media",
-    price: "Op aanvraag",
-    backlinks: "TBD"
-  },
-  {
-    name: "iceel.eu",
-    description: "EU-domein.",
-    mozScore: 0,
-    category: "Algemeen",
     price: "Op aanvraag",
     backlinks: "TBD"
   },
