@@ -674,11 +674,16 @@ const premiumDomains = [
   },
   {
     name: "lt-pl-ru.eu",
-    description: "Baltische regio EU-samenwerkingsdomein.",
+    description: "Baltische regio EU-samenwerkingsdomein met backlinks van Europa.eu, Wikipedia DE, Ask.com en Rzeczpospolita.",
     mozScore: 27,
+    pageAuthority: 31,
+    linkingDomains: 155,
+    inboundLinks: "44.2K+",
+    followedLinks: "37.2K+",
     category: "Internationaal",
     price: "Op aanvraag",
-    backlinks: "480+"
+    backlinks: "44.2K+",
+    topBacklinks: ["europa.eu (DA 97)", "de.wikipedia.org (DA 94)", "ask.com (DA 88)", "rp.pl (DA 82)", "worldwidetopsite.com (DA 71)"]
   },
   {
     name: "transitionproject.eu",
