@@ -1088,14 +1088,19 @@ const premiumDomains = [
     backlinks: "119.7K+",
     topBacklinks: ["pinterest.com (DA 94)", "ansa.it (DA 91)", "rug.nl (DA 81)", "cnr.it (DA 75)", "unito.it (DA 70)"]
   },
-  // DA 24
+  // DA 25
   {
     name: "xcycle-h2020.eu",
-    description: "EU-fiets en mobiliteit H2020 project domein.",
-    mozScore: 24,
+    description: "EU H2020 mobiliteit domein met backlinks van Europa.eu, Springer, MDPI en Frontiers.",
+    mozScore: 25,
+    pageAuthority: 32,
+    linkingDomains: 145,
+    inboundLinks: "275+",
+    followedLinks: "202+",
     category: "Mobiliteit",
     price: "Op aanvraag",
-    backlinks: "380+"
+    backlinks: "275+",
+    topBacklinks: ["europa.eu (DA 97)", "springer.com (DA 93)", "mdpi.com (DA 92)", "frontiersin.org (DA 92)", "euractiv.com (DA 84)"]
   },
   {
     name: "deparisnet.be",
