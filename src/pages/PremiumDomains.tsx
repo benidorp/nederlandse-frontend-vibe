@@ -416,11 +416,16 @@ const premiumDomains = [
   },
   {
     name: "eureka-hvacr.eu",
-    description: "HVAC en klimaattechniek EU-domein.",
-    mozScore: 29,
+    description: "HVAC en klimaattechniek EU-domein met backlinks van Ow.ly, EurActiv en Danfoss.",
+    mozScore: 30,
+    pageAuthority: 23,
+    linkingDomains: 80,
+    inboundLinks: "375+",
+    followedLinks: "357+",
     category: "Technologie",
     price: "Op aanvraag",
-    backlinks: "530+"
+    backlinks: "375+",
+    topBacklinks: ["ow.ly (DA 90)", "euractiv.com (DA 84)", "campaign-archive.com (DA 84)", "danfoss.com (DA 69)", "coleurope.eu (DA 57)"]
   },
   {
     name: "energaware.eu",
