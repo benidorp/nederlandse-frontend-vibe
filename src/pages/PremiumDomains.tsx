@@ -195,11 +195,16 @@ const premiumDomains = [
   },
   {
     name: "emg-nice2015.fr",
-    description: "Frans domein met sterke autoriteit, ideaal voor internationale projecten.",
-    mozScore: 31,
+    description: "Frans domein met backlinks van Wikipedia, GoFundMe, Nice Matin en Triathlon.org.",
+    mozScore: 32,
+    pageAuthority: 31,
+    linkingDomains: 191,
+    inboundLinks: "3.1K+",
+    followedLinks: "3K+",
     category: "Internationaal",
     price: "Op aanvraag",
-    backlinks: "720+"
+    backlinks: "3.1K+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "fr.wikipedia.org (DA 95)", "gofundme.com (DA 93)", "mundodeportivo.com (DA 92)", "nicematin.com (DA 73)"]
   },
   {
     name: "euromedialiteracy.eu",
