@@ -804,14 +804,6 @@ const premiumDomains = [
     topBacklinks: ["europa.eu (DA 97)", "bt.com (DA 91)", "mynewsdesk.com (DA 89)", "campaign-archive.com (DA 84)", "panda.org (DA 77)"]
   },
   {
-    name: "unamec.be",
-    description: "Belgisch medisch/zorg domein.",
-    mozScore: 26,
-    category: "Zorg",
-    price: "Op aanvraag",
-    backlinks: "440+"
-  },
-  {
     name: "josephines.be",
     description: "Belgisch lifestyle/hospitality domein.",
     mozScore: 26,
@@ -940,6 +932,19 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "227+",
     topBacklinks: ["europa.eu (DA 97)", "cambridge.org (DA 93)", "springer.com (DA 93)", "heise.de (DA 91)", "euractiv.com (DA 84)"]
+  },
+  {
+    name: "unamec.be",
+    description: "Belgisch medisch/zorg domein met backlinks van OUP, Yumpu, KU Leuven en UGent.",
+    mozScore: 25,
+    pageAuthority: 23,
+    linkingDomains: 93,
+    inboundLinks: "188+",
+    followedLinks: "150+",
+    category: "Zorg",
+    price: "Op aanvraag",
+    backlinks: "188+",
+    topBacklinks: ["oup.com (DA 93)", "yumpu.com (DA 91)", "kuleuven.be (DA 83)", "ugent.be (DA 76)", "justlanded.com (DA 76)"]
   },
   {
     name: "front-vosges-14-18.eu",
