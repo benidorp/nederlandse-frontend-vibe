@@ -1781,17 +1781,17 @@ const PremiumDomains = () => {
                     Hoe hoger de score, hoe meer autoriteit het domein heeft opgebouwd door kwaliteitsbacklinks, leeftijd en betrouwbaarheid.
                   </p>
                   <div className="grid sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
-                    <div className="rounded-lg bg-slate-950 border border-slate-700 p-4 text-center">
+                    <div className="rounded-lg bg-black border border-cyan-500/50 p-4 text-center">
                       <div className="text-xl font-bold text-cyan-400 mb-1">DA 20-25</div>
                       <div className="text-sm font-medium text-white">Goede Autoriteit</div>
                     </div>
                     
-                    <div className="rounded-lg bg-slate-950 border border-slate-700 p-4 text-center">
+                    <div className="rounded-lg bg-black border border-yellow-500/50 p-4 text-center">
                       <div className="text-xl font-bold text-yellow-400 mb-1">DA 25-30</div>
                       <div className="text-sm font-medium text-white">Sterke Autoriteit</div>
                     </div>
                     
-                    <div className="rounded-lg bg-slate-950 border border-slate-700 p-4 text-center">
+                    <div className="rounded-lg bg-black border border-green-500/50 p-4 text-center">
                       <div className="text-xl font-bold text-green-400 mb-1">DA 30+</div>
                       <div className="text-sm font-medium text-white">Premium Autoriteit</div>
                     </div>
