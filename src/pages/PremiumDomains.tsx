@@ -648,11 +648,16 @@ const premiumDomains = [
   },
   {
     name: "arcomem.eu",
-    description: "Digitaal archief/geheugen EU-project domein.",
+    description: "Digitaal archief EU-project domein met backlinks van Wikipedia, Europa.eu, W3.org, SlideShare en Oxford.",
     mozScore: 27,
+    pageAuthority: 33,
+    linkingDomains: 691,
+    inboundLinks: "2.7K+",
+    followedLinks: "2.6K+",
     category: "Digitaal",
     price: "Op aanvraag",
-    backlinks: "500+"
+    backlinks: "2.7K+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "europa.eu (DA 97)", "w3.org (DA 95)", "slideshare.net (DA 94)", "ox.ac.uk (DA 92)"]
   },
   {
     name: "centremlm.be",
