@@ -1771,7 +1771,7 @@ const PremiumDomains = () => {
             
             {/* SEO Value Explanation */}
             <div className="mt-16 max-w-4xl mx-auto">
-              <Card className="bg-gradient-to-br from-amber-500/10 to-slate-800/50 border-amber-500/20">
+              <Card className="bg-slate-950 border-amber-500/30">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-white mb-4">
                     De Kracht van MOZ Domain Authority
