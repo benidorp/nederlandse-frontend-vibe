@@ -831,11 +831,16 @@ const premiumDomains = [
   },
   {
     name: "khresmoi.eu",
-    description: "Medische informatie EU-project domein.",
-    mozScore: 26,
+    description: "Medisch zoek-EU-project domein met backlinks van MDPI, Springer, BioMedCentral en Charles University.",
+    mozScore: 27,
+    pageAuthority: 32,
+    linkingDomains: 184,
+    inboundLinks: "31.7K+",
+    followedLinks: "31.5K+",
     category: "Gezondheid",
     price: "Op aanvraag",
-    backlinks: "430+"
+    backlinks: "31.7K+",
+    topBacklinks: ["mdpi.com (DA 92)", "springer.com (DA 93)", "biomedcentral.com (DA 91)", "cuni.cz (DA 85)"]
   },
   {
     name: "sialon.eu",
