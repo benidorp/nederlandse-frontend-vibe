@@ -260,11 +260,16 @@ const premiumDomains = [
   },
   {
     name: "ilovecosmetics.eu",
-    description: "Beauty en cosmetica domein met sterke consumentenappeal.",
-    mozScore: 31,
+    description: "Beauty en cosmetica domein met backlinks van Alza, Glamour Magazine en CB Insights.",
+    mozScore: 30,
+    pageAuthority: 36,
+    linkingDomains: 472,
+    inboundLinks: "1.6K+",
+    followedLinks: "1.3K+",
     category: "Beauty",
     price: "Op aanvraag",
-    backlinks: "710+"
+    backlinks: "1.6K+",
+    topBacklinks: ["alza.cz (DA 92)", "glamourmagazine.co.uk (DA 82)", "polyvore.com (DA 79)", "fave.co (DA 78)", "cbinsights.com (DA 77)"]
   },
   {
     name: "hznet.nl",
