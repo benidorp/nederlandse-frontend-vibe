@@ -1780,41 +1780,20 @@ const PremiumDomains = () => {
                     MOZ Domain Authority (DA) is een score van 1-100 die voorspelt hoe goed een website zal ranken in zoekmachines. 
                     Hoe hoger de score, hoe meer autoriteit het domein heeft opgebouwd door kwaliteitsbacklinks, leeftijd en betrouwbaarheid.
                   </p>
-                  <div className="grid sm:grid-cols-3 gap-6">
-                    <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-blue-500/20 to-blue-600/10 border border-blue-500/30 p-6 text-center">
-                      <div className="absolute top-0 right-0 w-20 h-20 bg-blue-500/10 rounded-full -translate-y-1/2 translate-x-1/2" />
-                      <div className="relative">
-                        <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 mb-3">
-                          <TrendingUp className="w-6 h-6 text-blue-400" />
-                        </div>
-                        <div className="text-2xl font-bold text-blue-400 mb-1">DA 20-25</div>
-                        <div className="text-sm font-medium text-slate-300">Goede Autoriteit</div>
-                        <div className="mt-2 text-xs text-slate-400">Solide basis voor groei</div>
-                      </div>
+                  <div className="grid sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
+                    <div className="rounded-lg bg-slate-800 border border-slate-600 p-4 text-center">
+                      <div className="text-xl font-bold text-cyan-300 mb-1">DA 20-25</div>
+                      <div className="text-sm font-medium text-white">Goede Autoriteit</div>
                     </div>
                     
-                    <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-amber-500/20 to-amber-600/10 border border-amber-500/30 p-6 text-center">
-                      <div className="absolute top-0 right-0 w-20 h-20 bg-amber-500/10 rounded-full -translate-y-1/2 translate-x-1/2" />
-                      <div className="relative">
-                        <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 mb-3">
-                          <Award className="w-6 h-6 text-amber-400" />
-                        </div>
-                        <div className="text-2xl font-bold text-amber-400 mb-1">DA 25-30</div>
-                        <div className="text-sm font-medium text-slate-300">Sterke Autoriteit</div>
-                        <div className="mt-2 text-xs text-slate-400">Bewezen SEO-waarde</div>
-                      </div>
+                    <div className="rounded-lg bg-slate-800 border border-slate-600 p-4 text-center">
+                      <div className="text-xl font-bold text-yellow-300 mb-1">DA 25-30</div>
+                      <div className="text-sm font-medium text-white">Sterke Autoriteit</div>
                     </div>
                     
-                    <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-emerald-500/20 to-emerald-600/10 border border-emerald-500/30 p-6 text-center">
-                      <div className="absolute top-0 right-0 w-20 h-20 bg-emerald-500/10 rounded-full -translate-y-1/2 translate-x-1/2" />
-                      <div className="relative">
-                        <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 mb-3">
-                          <Crown className="w-6 h-6 text-emerald-400" />
-                        </div>
-                        <div className="text-2xl font-bold text-emerald-400 mb-1">DA 30+</div>
-                        <div className="text-sm font-medium text-slate-300">Premium Autoriteit</div>
-                        <div className="mt-2 text-xs text-slate-400">Topklasse domeinen</div>
-                      </div>
+                    <div className="rounded-lg bg-slate-800 border border-slate-600 p-4 text-center">
+                      <div className="text-xl font-bold text-green-300 mb-1">DA 30+</div>
+                      <div className="text-sm font-medium text-white">Premium Autoriteit</div>
                     </div>
                   </div>
                 </CardContent>
