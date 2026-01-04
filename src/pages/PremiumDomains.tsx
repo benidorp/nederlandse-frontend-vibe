@@ -730,11 +730,16 @@ const premiumDomains = [
   },
   {
     name: "aaliance.eu",
-    description: "Gezondheidszorg/ouderenzorg EU-domein met sterke autoriteit.",
+    description: "Gezondheidszorg/ouderenzorg EU-domein met backlinks van Europa.eu, Cambridge, Springer, Heise en EurActiv.",
     mozScore: 25,
+    pageAuthority: 23,
+    linkingDomains: 69,
+    inboundLinks: "227+",
+    followedLinks: "163+",
     category: "Zorg",
     price: "Op aanvraag",
-    backlinks: "440+"
+    backlinks: "227+",
+    topBacklinks: ["europa.eu (DA 97)", "cambridge.org (DA 93)", "springer.com (DA 93)", "heise.de (DA 91)", "euractiv.com (DA 84)"]
   },
   {
     name: "serletproject.eu",
