@@ -1120,11 +1120,16 @@ const premiumDomains = [
   },
   {
     name: "europeanmuseumforum.eu",
-    description: "Europees museum forum domein.",
+    description: "Europees museum forum domein met backlinks van Wikipedia (EN, ES, FR, RU, NL), Bit.ly en Creative Commons.",
     mozScore: 22,
+    pageAuthority: 32,
+    linkingDomains: 810,
+    inboundLinks: "4.9K+",
+    followedLinks: "4.7K+",
     category: "Cultuur",
     price: "Op aanvraag",
-    backlinks: "310+"
+    backlinks: "4.9K+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "es.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)", "ru.wikipedia.org (DA 94)", "creativecommons.org (DA 94)"]
   },
   {
     name: "escmalta2018.eu",
