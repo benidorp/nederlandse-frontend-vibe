@@ -364,11 +364,16 @@ const premiumDomains = [
   },
   {
     name: "resurbis.eu",
-    description: "EU-domein voor duurzaamheid of circulaire economie projecten.",
-    mozScore: 29,
+    description: "EU-domein voor duurzaamheid met backlinks van Europa.eu, MDPI, EurekAlert en Wired.",
+    mozScore: 28,
+    pageAuthority: 24,
+    linkingDomains: 87,
+    inboundLinks: "185+",
+    followedLinks: "153+",
     category: "Duurzaamheid",
     price: "Op aanvraag",
-    backlinks: "560+"
+    backlinks: "185+",
+    topBacklinks: ["europa.eu (DA 97)", "mdpi.com (DA 92)", "eurekalert.org (DA 91)", "wired.it (DA 90)", "ub.edu (DA 86)"]
   },
   {
     name: "bryn-somersethouse.co.uk",
