@@ -377,11 +377,16 @@ const premiumDomains = [
   },
   {
     name: "bryn-somersethouse.co.uk",
-    description: "Brits vastgoed/hospitality domein met lokale autoriteit.",
+    description: "Brits vastgoed/hospitality domein met backlinks van Forbes, The Guardian, Evening Standard en Time Out.",
     mozScore: 29,
+    pageAuthority: 30,
+    linkingDomains: 96,
+    inboundLinks: "167+",
+    followedLinks: "132+",
     category: "Vastgoed",
     price: "Op aanvraag",
-    backlinks: "520+"
+    backlinks: "167+",
+    topBacklinks: ["forbes.com (DA 94)", "theguardian.com (DA 94)", "standard.co.uk (DA 93)", "timeout.com (DA 92)", "thetimes.com (DA 92)"]
   },
   {
     name: "euforistudy.eu",
