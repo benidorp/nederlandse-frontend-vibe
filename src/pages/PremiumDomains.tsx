@@ -844,11 +844,16 @@ const premiumDomains = [
   },
   {
     name: "sialon.eu",
-    description: "Gezondheidsonderzoek EU-domein.",
-    mozScore: 26,
+    description: "EU-gezondheidsonderzoek domein met backlinks van BBC, Europa.eu en The Conversation.",
+    mozScore: 24,
+    pageAuthority: 25,
+    linkingDomains: 66,
+    inboundLinks: "145+",
+    followedLinks: "125+",
     category: "Gezondheid",
     price: "Op aanvraag",
-    backlinks: "420+"
+    backlinks: "145+",
+    topBacklinks: ["bbc.co.uk (DA 95)", "europa.eu (DA 97)", "theconversation.com (DA 92)", "bbc.com (DA 94)"]
   },
   {
     name: "spaceinfoday.eu",
