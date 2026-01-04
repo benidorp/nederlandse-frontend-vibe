@@ -273,11 +273,16 @@ const premiumDomains = [
   },
   {
     name: "hznet.nl",
-    description: "Nederlands netwerk domein met lokale autoriteit.",
+    description: "Nederlands netwerk domein met backlinks van Microsoft, NOS, Neowin, Tweakers en XS4All.",
     mozScore: 31,
+    pageAuthority: 25,
+    linkingDomains: 152,
+    inboundLinks: "1.7K+",
+    followedLinks: "1.6K+",
     category: "Netwerk",
     price: "Op aanvraag",
-    backlinks: "700+"
+    backlinks: "1.7K+",
+    topBacklinks: ["microsoft.com (DA 99)", "nos.nl (DA 90)", "neowin.net (DA 88)", "techpowerup.com (DA 83)", "tweakers.net (DA 79)"]
   },
   {
     name: "bovisadrivein.it",
