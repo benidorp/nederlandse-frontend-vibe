@@ -1040,11 +1040,16 @@ const premiumDomains = [
   },
   {
     name: "tca2000.co.uk",
-    description: "Brits bedrijfsdomein met gevestigde autoriteit.",
-    mozScore: 25,
+    description: "Brits domein met backlinks van Wikipedia (EN, FR, JA, PL), Fandom en DigitalSpy.",
+    mozScore: 26,
+    pageAuthority: 29,
+    linkingDomains: 180,
+    inboundLinks: "662+",
+    followedLinks: "460+",
     category: "Business",
     price: "Op aanvraag",
-    backlinks: "430+"
+    backlinks: "662+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "fr.wikipedia.org (DA 95)", "fandom.com (DA 94)", "ja.wikipedia.org (DA 93)", "pl.wikipedia.org (DA 93)"]
   },
   {
     name: "tandemtech.be",
