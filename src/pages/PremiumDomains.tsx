@@ -1324,11 +1324,16 @@ const premiumDomains = [
   },
   {
     name: "eurasiancouncilforeignaffairs.eu",
-    description: "Internationale betrekkingen EU-domein.",
-    mozScore: 22,
+    description: "Internationale betrekkingen domein met backlinks van Wikipedia (EN, ES, FR, ZH), Cambridge en The Diplomat.",
+    mozScore: 23,
+    pageAuthority: 23,
+    linkingDomains: 65,
+    inboundLinks: "184+",
+    followedLinks: "98+",
     category: "Internationaal",
     price: "Op aanvraag",
-    backlinks: "290+"
+    backlinks: "184+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "es.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)", "bit.ly (DA 94)", "cam.ac.uk (DA 92)"]
   },
   {
     name: "waterpipp.eu",
