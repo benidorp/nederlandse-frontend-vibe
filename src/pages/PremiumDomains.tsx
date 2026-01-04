@@ -210,7 +210,7 @@ const premiumDomains = [
     inboundLinks: "2.7K+",
     followedLinks: "2.6K+",
     category: "Onderzoek",
-    price: "Op aanvraag",
+    price: "€899",
     backlinks: "2.7K+",
     topBacklinks: ["europa.eu (DA 94)", "cam.ac.uk (DA 93)", "springer.com (DA 92)", "lse.ac.uk (DA 90)"]
   },
@@ -223,7 +223,7 @@ const premiumDomains = [
     inboundLinks: "276+",
     followedLinks: "260+",
     category: "Samenwerking",
-    price: "Op aanvraag",
+    price: "€799",
     backlinks: "276+",
     topBacklinks: ["globo.com (DA 95)", "huffpost.com (DA 94)", "cbsnews.com (DA 93)", "gizmodo.com (DA 93)", "fastcompany.com (DA 92)"]
   },
@@ -236,7 +236,7 @@ const premiumDomains = [
     inboundLinks: "3.1K+",
     followedLinks: "3K+",
     category: "Internationaal",
-    price: "Op aanvraag",
+    price: "€749",
     backlinks: "3.1K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "gofundme.com (DA 93)", "mundodeportivo.com (DA 92)", "nicematin.com (DA 73)", "triathlon.org (DA 68)"]
   },
@@ -249,7 +249,7 @@ const premiumDomains = [
     inboundLinks: "2.5K+",
     followedLinks: "2.3K+",
     category: "Onderwijs",
-    price: "Op aanvraag",
+    price: "€949",
     backlinks: "2.5K+",
     topBacklinks: ["es.wikipedia.org (DA 96)", "psu.edu (DA 92)", "scoop.it (DA 92)", "wisc.edu (DA 91)", "coe.int (DA 89)"]
   },
@@ -262,7 +262,7 @@ const premiumDomains = [
     inboundLinks: "307+",
     followedLinks: "254+",
     category: "Transport",
-    price: "Op aanvraag",
+    price: "€699",
     backlinks: "307+",
     topBacklinks: ["goo.gl (DA 95)", "tripadvisor.com (DA 93)", "skyscrapercity.com (DA 86)", "ricksteves.com (DA 77)", "rome2rio.com (DA 76)"]
   },
@@ -276,7 +276,7 @@ const premiumDomains = [
     inboundLinks: "379+",
     followedLinks: "266+",
     category: "Projecten",
-    price: "Op aanvraag",
+    price: "€799",
     backlinks: "379+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "cambridge.org (DA 93)", "unesco.org (DA 93)", "reddit.com (DA 92)", "mdpi.com (DA 92)"]
   },
@@ -289,7 +289,7 @@ const premiumDomains = [
     inboundLinks: "333+",
     followedLinks: "293+",
     category: "Onderzoek",
-    price: "Op aanvraag",
+    price: "€849",
     backlinks: "333+",
     topBacklinks: ["europa.eu (DA 97)", "github.com (DA 96)", "nytimes.com (DA 95)", "elpais.com (DA 94)", "springer.com (DA 93)"]
   },
@@ -302,7 +302,7 @@ const premiumDomains = [
     inboundLinks: "128+",
     followedLinks: "109+",
     category: "Projecten",
-    price: "Op aanvraag",
+    price: "€649",
     backlinks: "128+",
     topBacklinks: ["europa.eu (DA 97)", "spiegel.de (DA 93)", "europapress.es (DA 91)", "heise.de (DA 91)", "autoblog.com (DA 90)"]
   },
@@ -315,7 +315,7 @@ const premiumDomains = [
     inboundLinks: "15.2K+",
     followedLinks: "15K+",
     category: "Media",
-    price: "Op aanvraag",
+    price: "€999",
     backlinks: "15.2K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "kuleuven.be (DA 83)", "nieuwsblad.be (DA 82)", "skynet.be (DA 80)", "yle.fi (DA 78)"]
   },
@@ -328,7 +328,7 @@ const premiumDomains = [
     inboundLinks: "1.7K+",
     followedLinks: "1.6K+",
     category: "Netwerk",
-    price: "Op aanvraag",
+    price: "€849",
     backlinks: "1.7K+",
     topBacklinks: ["microsoft.com (DA 99)", "nos.nl (DA 90)", "neowin.net (DA 88)", "techpowerup.com (DA 83)", "tweakers.net (DA 79)"]
   },
@@ -341,7 +341,7 @@ const premiumDomains = [
     inboundLinks: "189+",
     followedLinks: "174+",
     category: "Digitaal",
-    price: "Op aanvraag",
+    price: "€749",
     backlinks: "189+",
     topBacklinks: ["europa.eu (DA 97)", "politico.eu (DA 91)", "lse.ac.uk (DA 89)", "fapesp.br (DA 72)", "eureporter.co (DA 68)"]
   },
@@ -354,7 +354,7 @@ const premiumDomains = [
     inboundLinks: "7.5K+",
     followedLinks: "7.4K+",
     category: "Duurzaamheid",
-    price: "Op aanvraag",
+    price: "€899",
     backlinks: "7.5K+",
     topBacklinks: ["europa.eu (DA 97)", "abc.es (DA 93)", "gencat.cat (DA 89)", "ask.com (DA 88)", "ecoticias.com (DA 74)"]
   },
@@ -368,7 +368,7 @@ const premiumDomains = [
     inboundLinks: "1.6K+",
     followedLinks: "1.3K+",
     category: "Beauty",
-    price: "Op aanvraag",
+    price: "€799",
     backlinks: "1.6K+",
     topBacklinks: ["alza.cz (DA 92)", "glamourmagazine.co.uk (DA 82)", "polyvore.com (DA 79)", "fave.co (DA 78)", "cbinsights.com (DA 77)"]
   },
@@ -381,7 +381,7 @@ const premiumDomains = [
     inboundLinks: "199+",
     followedLinks: "95+",
     category: "Cultuur",
-    price: "Op aanvraag",
+    price: "€549",
     backlinks: "199+",
     topBacklinks: ["es.wikipedia.org (DA 96)", "gov.pl (DA 91)", "threadreaderapp.com (DA 78)", "gloria.tv (DA 69)", "dbpedia.org (DA 65)"]
   },
@@ -394,7 +394,7 @@ const premiumDomains = [
     inboundLinks: "156.1K+",
     followedLinks: "155.8K+",
     category: "Energie",
-    price: "Op aanvraag",
+    price: "€1.299",
     backlinks: "156.1K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "cnet.com (DA 93)", "theconversation.com (DA 92)", "ieee.org (DA 92)", "corriere.it (DA 92)"]
   },
@@ -407,7 +407,7 @@ const premiumDomains = [
     inboundLinks: "375+",
     followedLinks: "357+",
     category: "Technologie",
-    price: "Op aanvraag",
+    price: "€549",
     backlinks: "375+",
     topBacklinks: ["ow.ly (DA 90)", "euractiv.com (DA 84)", "campaign-archive.com (DA 84)", "danfoss.com (DA 69)", "coleurope.eu (DA 57)"]
   },
@@ -420,7 +420,7 @@ const premiumDomains = [
     inboundLinks: "2.2K+",
     followedLinks: "2.1K+",
     category: "Food",
-    price: "Op aanvraag",
+    price: "€699",
     backlinks: "2.2K+",
     topBacklinks: ["google.sk (DA 85)", "wikiwand.com (DA 85)", "ra.co (DA 85)", "pravda.sk (DA 79)", "dennikn.sk (DA 76)"]
   },
@@ -434,7 +434,7 @@ const premiumDomains = [
     inboundLinks: "1.7K+",
     followedLinks: "1.7K+",
     category: "Veiligheid",
-    price: "Op aanvraag",
+    price: "€799",
     backlinks: "1.7K+",
     topBacklinks: ["europa.eu (DA 97)", "elpais.com (DA 94)", "springer.com (DA 93)", "mdpi.com (DA 92)", "xataka.com (DA 90)"]
   },
@@ -447,7 +447,7 @@ const premiumDomains = [
     inboundLinks: "259+",
     followedLinks: "249+",
     category: "Duurzaamheid",
-    price: "Op aanvraag",
+    price: "€549",
     backlinks: "259+",
     topBacklinks: ["europa.eu (DA 97)", "eurekalert.org (DA 91)", "rai.it (DA 81)", "au.dk (DA 77)", "aaas.org (DA 76)"]
   },
@@ -460,7 +460,7 @@ const premiumDomains = [
     inboundLinks: "167+",
     followedLinks: "132+",
     category: "Vastgoed",
-    price: "Op aanvraag",
+    price: "€899",
     backlinks: "167+",
     topBacklinks: ["forbes.com (DA 94)", "theguardian.com (DA 94)", "standard.co.uk (DA 93)", "timeout.com (DA 92)", "thetimes.com (DA 92)"]
   },
@@ -473,7 +473,7 @@ const premiumDomains = [
     inboundLinks: "215+",
     followedLinks: "170+",
     category: "Onderwijs",
-    price: "Op aanvraag",
+    price: "€649",
     backlinks: "215+",
     topBacklinks: ["theguardian.com (DA 94)", "ask.com (DA 88)", "tcd.ie (DA 86)", "vu.nl (DA 76)", "muni.cz (DA 74)"]
   },
@@ -486,7 +486,7 @@ const premiumDomains = [
     inboundLinks: "1.5K+",
     followedLinks: "1.2K+",
     category: "Muziek/Audio",
-    price: "Op aanvraag",
+    price: "€749",
     backlinks: "1.5K+",
     topBacklinks: ["sites.google.com (DA 96)", "scoop.it (DA 92)", "envato.com (DA 91)", "informer.com (DA 90)", "codecanyon.net (DA 83)"]
   },
@@ -499,7 +499,7 @@ const premiumDomains = [
     inboundLinks: "15.1K+",
     followedLinks: "15.1K+",
     category: "Energie",
-    price: "Op aanvraag",
+    price: "€999",
     backlinks: "15.1K+",
     topBacklinks: ["europa.eu (DA 97)", "uol.com.br (DA 95)", "elpais.com (DA 94)", "lefigaro.fr (DA 93)", "mdpi.com (DA 92)"]
   },
@@ -512,7 +512,7 @@ const premiumDomains = [
     inboundLinks: "338+",
     followedLinks: "265+",
     category: "Technologie",
-    price: "Op aanvraag",
+    price: "€749",
     backlinks: "338+",
     topBacklinks: ["medium.com (DA 95)", "ibm.com (DA 93)", "telefonica.com (DA 79)", "upv.es (DA 79)", "upm.es (DA 78)"]
   },
@@ -525,7 +525,7 @@ const premiumDomains = [
     inboundLinks: "156+",
     followedLinks: "143+",
     category: "Finance",
-    price: "Op aanvraag",
+    price: "€499",
     backlinks: "156+",
     topBacklinks: ["goo.gl (DA 95)", "crunchbase.com (DA 91)", "splashthat.com (DA 86)", "emprendedores.es (DA 66)", "climate-kic.org (DA 64)"]
   },
