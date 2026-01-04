@@ -1701,7 +1701,7 @@ const PremiumDomains = () => {
                     <div className="mt-auto pt-4 border-t border-slate-700/50">
                       <div className="flex items-center justify-between mb-3 bg-slate-800/60 rounded-lg px-3 py-2">
                         <span className="text-sm font-medium text-slate-300">Prijs</span>
-                        <span className="text-base font-bold text-amber-400">{domain.price}</span>
+                        <span className="text-lg font-bold text-amber-400">{domain.price}</span>
                       </div>
                       
                       {domain.stripeButtonId ? (
