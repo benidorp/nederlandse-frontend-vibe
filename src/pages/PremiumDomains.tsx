@@ -1114,11 +1114,16 @@ const premiumDomains = [
   },
   {
     name: "deparisnet.be",
-    description: "Belgisch netwerk domein.",
-    mozScore: 24,
+    description: "Belgisch netwerk domein met backlinks van Europa.eu, Wikipedia (ES, FR), Yumpu en Google.be.",
+    mozScore: 26,
+    pageAuthority: 28,
+    linkingDomains: 135,
+    inboundLinks: "710+",
+    followedLinks: "445+",
     category: "Netwerk",
     price: "Op aanvraag",
-    backlinks: "370+"
+    backlinks: "710+",
+    topBacklinks: ["europa.eu (DA 97)", "es.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)", "jimdofree.com (DA 95)", "yumpu.com (DA 91)"]
   },
   {
     name: "heinekenthecity.nl",
