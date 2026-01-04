@@ -1018,14 +1018,6 @@ const premiumDomains = [
     backlinks: "TBD"
   },
   {
-    name: "nailtalk.nl",
-    description: "Nederlands beauty/nagel domein.",
-    mozScore: 0,
-    category: "Beauty",
-    price: "Op aanvraag",
-    backlinks: "TBD"
-  },
-  {
     name: "partymenu.eu",
     description: "EU catering/evenement domein.",
     mozScore: 0,
@@ -1054,14 +1046,6 @@ const premiumDomains = [
     description: "Kort en memorabel EU-domein.",
     mozScore: 0,
     category: "Algemeen",
-    price: "Op aanvraag",
-    backlinks: "TBD"
-  },
-  {
-    name: "werving-selectiebureau.nl",
-    description: "Nederlands HR/recruitment domein.",
-    mozScore: 0,
-    category: "Business",
     price: "Op aanvraag",
     backlinks: "TBD"
   },
@@ -1098,14 +1082,6 @@ const premiumDomains = [
     backlinks: "TBD"
   },
   {
-    name: "ontwerpnovi.nl",
-    description: "Nederlands design/architectuur domein.",
-    mozScore: 0,
-    category: "Design",
-    price: "Op aanvraag",
-    backlinks: "TBD"
-  },
-  {
     name: "iceel.eu",
     description: "EU-domein.",
     mozScore: 0,
@@ -1113,14 +1089,6 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "TBD"
   },
-  {
-    name: "iaee.eu",
-    description: "EU-domein.",
-    mozScore: 0,
-    category: "Algemeen",
-    price: "Op aanvraag",
-    backlinks: "TBD"
-  }
 ];
 const PremiumDomains = () => {
   const { toast } = useToast();
