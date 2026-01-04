@@ -1014,11 +1014,16 @@ const premiumDomains = [
   },
   {
     name: "serletproject.eu",
-    description: "Europees innovatie project domein.",
+    description: "EU-project domein met backlinks van Apple.com, Bit.ly, RTL.fr en Wikipedia Grieks.",
     mozScore: 25,
+    pageAuthority: 30,
+    linkingDomains: 491,
+    inboundLinks: "2K+",
+    followedLinks: "1.9K+",
     category: "Innovatie",
     price: "Op aanvraag",
-    backlinks: "430+"
+    backlinks: "2K+",
+    topBacklinks: ["apple.com (DA 99)", "bit.ly (DA 94)", "home.pl (DA 93)", "cocolog-nifty.com (DA 90)", "rtl.fr (DA 89)"]
   },
   {
     name: "landmark-project.eu",
