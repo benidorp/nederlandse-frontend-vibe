@@ -247,11 +247,16 @@ const premiumDomains = [
   },
   {
     name: "citiexpress.eu",
-    description: "Transport en logistiek EU-domein.",
-    mozScore: 31,
+    description: "Transport en logistiek EU-domein met backlinks van TripAdvisor, SkyscraperCity en Rick Steves.",
+    mozScore: 32,
+    pageAuthority: 32,
+    linkingDomains: 171,
+    inboundLinks: "307+",
+    followedLinks: "254+",
     category: "Transport",
     price: "Op aanvraag",
-    backlinks: "680+"
+    backlinks: "307+",
+    topBacklinks: ["goo.gl (DA 95)", "tripadvisor.com (DA 93)", "skyscrapercity.com (DA 86)", "ricksteves.com (DA 77)", "rome2rio.com (DA 76)"]
   },
   {
     name: "ilovecosmetics.eu",
