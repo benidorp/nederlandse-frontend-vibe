@@ -1067,6 +1067,19 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "280+"
   },
+  {
+    name: "artsalivewales.org.uk",
+    description: "Welsh kunst/cultuur domein met backlinks van The Guardian, Mirror, Eventbrite en Wales Online.",
+    mozScore: 22,
+    pageAuthority: 27,
+    linkingDomains: 116,
+    inboundLinks: "863+",
+    followedLinks: "752+",
+    category: "Kunst",
+    price: "Op aanvraag",
+    backlinks: "863+",
+    topBacklinks: ["theguardian.com (DA 94)", "mirror.co.uk (DA 94)", "eventbrite.co.uk (DA 91)", "walesonline.co.uk (DA 90)", "constantcontact.com (DA 90)"]
+  },
   // DA 21
   {
     name: "stationlansingerland-zoetermeer.nl",
@@ -1170,14 +1183,6 @@ const premiumDomains = [
     description: "EU catering/evenement domein.",
     mozScore: 0,
     category: "Food",
-    price: "Op aanvraag",
-    backlinks: "TBD"
-  },
-  {
-    name: "artsalivewales.org.uk",
-    description: "Welsh kunst/cultuur domein.",
-    mozScore: 0,
-    category: "Kunst",
     price: "Op aanvraag",
     backlinks: "TBD"
   },
