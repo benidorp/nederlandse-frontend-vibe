@@ -1180,11 +1180,16 @@ const premiumDomains = [
   },
   {
     name: "200jaarstaten-generaal.nl",
-    description: "Historisch en autoritatief .nl domein met sterke Nederlandse relevantie.",
-    mozScore: 23,
+    description: "Nederlands overheidsdomein met backlinks van NOS, Universiteit Leiden en Tweede Kamer.",
+    mozScore: 22,
+    pageAuthority: 21,
+    linkingDomains: 37,
+    inboundLinks: "150+",
+    followedLinks: "136+",
     category: "Overheid/Cultuur",
     price: "Op aanvraag",
-    backlinks: "350+"
+    backlinks: "150+",
+    topBacklinks: ["nos.nl (DA 90)", "universiteitleiden.nl (DA 82)", "transparent.com (DA 76)", "tweedekamer.nl (DA 64)", "rd.nl (DA 62)"]
   },
   {
     name: "eu-thor.eu",
