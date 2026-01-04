@@ -753,11 +753,16 @@ const premiumDomains = [
   // DA 26
   {
     name: "covenant-capacity.eu",
-    description: "EU-covenant en capaciteitsopbouw domein.",
+    description: "EU-covenant en capaciteitsopbouw domein met backlinks van Europa.eu, BT, MyNewsDesk en WWF Panda.",
     mozScore: 26,
+    pageAuthority: 24,
+    linkingDomains: 85,
+    inboundLinks: "2.6K+",
+    followedLinks: "2.5K+",
     category: "Samenwerking",
     price: "Op aanvraag",
-    backlinks: "450+"
+    backlinks: "2.6K+",
+    topBacklinks: ["europa.eu (DA 97)", "bt.com (DA 91)", "mynewsdesk.com (DA 89)", "campaign-archive.com (DA 84)", "panda.org (DA 77)"]
   },
   {
     name: "eustartupvillageforum.eu",
