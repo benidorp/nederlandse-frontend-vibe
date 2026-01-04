@@ -1139,11 +1139,16 @@ const premiumDomains = [
   },
   {
     name: "waterpipp.eu",
-    description: "Water en milieu EU-project domein.",
+    description: "Water en milieu EU-project domein met backlinks van Europa.eu, Bit.ly, Ask.com en Campaign Archive.",
     mozScore: 22,
+    pageAuthority: 28,
+    linkingDomains: 96,
+    inboundLinks: "1.2K+",
+    followedLinks: "1.1K+",
     category: "Milieu",
     price: "Op aanvraag",
-    backlinks: "280+"
+    backlinks: "1.2K+",
+    topBacklinks: ["europa.eu (DA 97)", "bit.ly (DA 94)", "ask.com (DA 88)", "campaign-archive.com (DA 84)", "worldwidetopsite.com (DA 71)"]
   },
   {
     name: "artsalivewales.org.uk",
