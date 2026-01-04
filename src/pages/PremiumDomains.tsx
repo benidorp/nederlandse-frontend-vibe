@@ -979,6 +979,19 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "330+"
   },
+  {
+    name: "eccomascfd2006.nl",
+    description: "Nederlands technisch domein met backlinks van TU Delft, Southampton, Liverpool en NTNU.",
+    mozScore: 23,
+    pageAuthority: 25,
+    linkingDomains: 52,
+    inboundLinks: "371+",
+    followedLinks: "352+",
+    category: "Technologie",
+    price: "Op aanvraag",
+    backlinks: "371+",
+    topBacklinks: ["tudelft.nl (DA 85)", "soton.ac.uk (DA 85)", "uu.se (DA 83)", "liverpool.ac.uk (DA 83)", "ntnu.no (DA 77)"]
+  },
   // DA 22
   {
     name: "bruegel2019.be",
@@ -1060,14 +1073,6 @@ const premiumDomains = [
     category: "Technologie",
     price: "Op aanvraag",
     backlinks: "270+"
-  },
-  {
-    name: "eccomascfd2006.nl",
-    description: "Nederlands technisch domein.",
-    mozScore: 21,
-    category: "Technologie",
-    price: "Op aanvraag",
-    backlinks: "250+"
   },
   // DA 20
   {
