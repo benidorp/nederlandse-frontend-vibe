@@ -138,11 +138,16 @@ const premiumDomains = [
   },
   {
     name: "europe-en-midipyrenees.eu",
-    description: "Frans/Europees regio domein, ideaal voor toerisme of lokale projecten.",
+    description: "Frans/Europees regio domein met backlinks van Scoop.it, France Info, La Tribune en Franse overheid.",
     mozScore: 33,
+    pageAuthority: 24,
+    linkingDomains: 167,
+    inboundLinks: "690.3K+",
+    followedLinks: "689.6K+",
     category: "Toerisme",
     price: "Op aanvraag",
-    backlinks: "780+"
+    backlinks: "690.3K+",
+    topBacklinks: ["scoop.it (DA 92)", "franceinfo.fr (DA 91)", "latribune.fr (DA 86)", "culture.gouv.fr (DA 76)", "agriculture.gouv.fr (DA 72)"]
   },
   {
     name: "machuproject.eu",
