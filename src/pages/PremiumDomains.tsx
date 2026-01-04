@@ -1137,6 +1137,19 @@ const premiumDomains = [
     backlinks: "113+",
     topBacklinks: ["fr.wikipedia.org (DA 95)", "bfmtv.com (DA 92)", "heise.de (DA 91)", "nu.nl (DA 91)", "europe1.fr (DA 90)"]
   },
+  {
+    name: "lifemanev.eu",
+    description: "EU-project domein over duurzame landbouw met backlinks van MDPI, ITACYL en CSIC.",
+    mozScore: 23,
+    pageAuthority: 24,
+    linkingDomains: 40,
+    inboundLinks: "1.1K+",
+    followedLinks: "1K+",
+    category: "Duurzaamheid",
+    price: "Op aanvraag",
+    backlinks: "1.1K+",
+    topBacklinks: ["mdpi.com (DA 92)", "itacyl.es (DA 45)", "cebas.csic.es (DA 42)"]
+  },
   // DA 22
   {
     name: "bruegel2019.be",
