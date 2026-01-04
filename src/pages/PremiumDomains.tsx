@@ -34,6 +34,19 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "890+"
   },
+  {
+    name: "icesculpture.be",
+    description: "Belgisch kunst/evenement domein met backlinks van Europa.eu, The Guardian, Telegraph, DW en Boston.com.",
+    mozScore: 37,
+    pageAuthority: 33,
+    linkingDomains: 349,
+    inboundLinks: "1.9K+",
+    followedLinks: "1.5K+",
+    category: "Kunst",
+    price: "Op aanvraag",
+    backlinks: "1.9K+",
+    topBacklinks: ["europa.eu (DA 97)", "theguardian.com (DA 94)", "telegraph.co.uk (DA 94)", "dw.com (DA 93)", "boston.com (DA 92)"]
+  },
   // DA 36
   {
     name: "antigonetickets.be",
@@ -990,14 +1003,6 @@ const premiumDomains = [
     description: "Historisch WO1 herdenkingsdomein.",
     mozScore: 0,
     category: "Geschiedenis",
-    price: "Op aanvraag",
-    backlinks: "TBD"
-  },
-  {
-    name: "icesculpture.be",
-    description: "Belgisch kunst/evenement domein.",
-    mozScore: 0,
-    category: "Kunst",
     price: "Op aanvraag",
     backlinks: "TBD"
   },
