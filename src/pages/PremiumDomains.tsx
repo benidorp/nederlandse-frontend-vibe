@@ -1154,11 +1154,16 @@ const premiumDomains = [
   },
   {
     name: "eulis.eu",
-    description: "Kort en memorabel EU-domein voor diverse toepassingen.",
-    mozScore: 23,
+    description: "EU-domein met backlinks van Wikipedia (EN, ES, PT, FR), Europa.eu en MDPI.",
+    mozScore: 24,
+    pageAuthority: 33,
+    linkingDomains: 246,
+    inboundLinks: "1.9K+",
+    followedLinks: "1.7K+",
     category: "Algemeen",
     price: "Op aanvraag",
-    backlinks: "360+"
+    backlinks: "1.9K+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "europa.eu (DA 97)", "es.wikipedia.org (DA 96)", "pt.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)"]
   },
   {
     name: "maribe.eu",
