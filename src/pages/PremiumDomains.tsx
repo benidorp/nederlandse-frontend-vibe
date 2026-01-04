@@ -726,11 +726,16 @@ const premiumDomains = [
   },
   {
     name: "expo-2050.be",
-    description: "Belgisch expo/tentoonstelling domein.",
+    description: "Belgisch expo/tentoonstelling domein met backlinks van The Conversation, Radio France, RTBF en La Libre.",
     mozScore: 27,
+    pageAuthority: 27,
+    linkingDomains: 96,
+    inboundLinks: "210+",
+    followedLinks: "182+",
     category: "Evenementen",
     price: "Op aanvraag",
-    backlinks: "460+"
+    backlinks: "210+",
+    topBacklinks: ["theconversation.com (DA 92)", "radiofrance.fr (DA 92)", "theculturetrip.com (DA 89)", "rtbf.be (DA 89)", "lalibre.be (DA 84)"]
   },
   {
     name: "iceel.eu",
