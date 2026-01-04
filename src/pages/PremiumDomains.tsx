@@ -870,11 +870,16 @@ const premiumDomains = [
   },
   {
     name: "beehive-erasmusplus.eu",
-    description: "Sterk educatief domein, perfect voor onderwijsplatforms of EU-projecten.",
+    description: "Erasmus+ educatief EU-domein met backlinks van Pages.dev, Gameforge, GitBook en universiteiten.",
     mozScore: 26,
+    pageAuthority: 34,
+    linkingDomains: 452,
+    inboundLinks: "6.2K+",
+    followedLinks: "3.7K+",
     category: "Onderwijs",
     price: "Op aanvraag",
-    backlinks: "440+"
+    backlinks: "6.2K+",
+    topBacklinks: ["sakura.ne.jp (DA 93)", "pages.dev (DA 91)", "biglobe.ne.jp (DA 91)", "gameforge.com (DA 90)", "gitbook.io (DA 85)"]
   },
   {
     name: "dunyaendesiedefilm.nl",
