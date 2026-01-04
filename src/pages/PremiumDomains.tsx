@@ -15,65 +15,105 @@ const premiumDomains = [
     name: "escp-eap.eu",
     description: "Premium business school domein met backlinks van Wikipedia, Cornell, Spiegel en Le Monde.",
     mozScore: 38,
+    pageAuthority: 28,
+    linkingDomains: 292,
+    inboundLinks: "4.6K+",
+    followedLinks: "4.2K+",
     category: "Onderwijs",
     price: "Op aanvraag",
-    backlinks: "4.6K+"
+    backlinks: "4.6K+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "cornell.edu (DA 92)", "spiegel.de (DA 90)", "lemonde.fr (DA 93)"]
   },
   {
     name: "toulousespaceshow.eu",
     description: "Premium ruimtevaart domein met backlinks van Europa.eu, NASA.gov, IEEE.org en Wikipedia.",
     mozScore: 35,
+    pageAuthority: 31,
+    linkingDomains: 397,
+    inboundLinks: "3.4K+",
+    followedLinks: "1.8K+",
     category: "Technologie",
     price: "Op aanvraag",
-    backlinks: "3.4K+"
+    backlinks: "3.4K+",
+    topBacklinks: ["europa.eu (DA 94)", "nasa.gov (DA 95)", "ieee.org (DA 93)", "en.wikipedia.org (DA 97)"]
   },
   {
     name: "antigonetickets.be",
     description: "Belgisch ticketing domein met backlinks van Nieuwsblad, De Standaard en GVA.",
     mozScore: 36,
+    pageAuthority: 23,
+    linkingDomains: 120,
+    inboundLinks: "6.6K+",
+    followedLinks: "6.6K+",
     category: "Entertainment",
     price: "Op aanvraag",
-    backlinks: "6.6K+"
+    backlinks: "6.6K+",
+    topBacklinks: ["nieuwsblad.be (DA 79)", "standaard.be (DA 81)", "gva.be (DA 73)"]
   },
   {
     name: "beauxartsliege.be",
     description: "Kunst domein met backlinks van Wikipedia, CNN, Behance en RTBF.",
     mozScore: 36,
+    pageAuthority: 34,
+    linkingDomains: 231,
+    inboundLinks: "1.1K+",
+    followedLinks: "831+",
     category: "Kunst/Cultuur",
     price: "Op aanvraag",
-    backlinks: "1.1K+"
+    backlinks: "1.1K+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "cnn.com (DA 94)", "behance.net (DA 92)", "rtbf.be (DA 82)"]
   },
   {
     name: "paulsmithmusic.eu",
     description: "Muziekdomein met backlinks van BBC, The Guardian, NME en Pitchfork.",
     mozScore: 36,
+    pageAuthority: 34,
+    linkingDomains: 302,
+    inboundLinks: "719+",
+    followedLinks: "663+",
     category: "Muziek",
     price: "Op aanvraag",
-    backlinks: "719+"
+    backlinks: "719+",
+    topBacklinks: ["bbc.co.uk (DA 95)", "theguardian.com (DA 95)", "nme.com (DA 86)", "pitchfork.com (DA 88)"]
   },
   {
     name: "eu-asiacentre.eu",
     description: "EU-Azië domein met backlinks van Wikipedia, NBC News, Cambridge en Reddit.",
     mozScore: 36,
+    pageAuthority: 33,
+    linkingDomains: 277,
+    inboundLinks: "898+",
+    followedLinks: "785+",
     category: "Internationaal",
     price: "Op aanvraag",
-    backlinks: "898+"
+    backlinks: "898+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "nbcnews.com (DA 93)", "cam.ac.uk (DA 93)", "reddit.com (DA 97)"]
   },
   {
     name: "martonecycling.eu",
     description: "Fiets domein met backlinks van Globo, Harper's Bazaar, Vogue en Grazia.",
     mozScore: 35,
+    pageAuthority: 29,
+    linkingDomains: 118,
+    inboundLinks: "232+",
+    followedLinks: "173+",
     category: "Sport",
     price: "Op aanvraag",
-    backlinks: "232+"
+    backlinks: "232+",
+    topBacklinks: ["globo.com (DA 93)", "harpersbazaar.com (DA 89)", "vogue.com (DA 92)", "grazia.it (DA 73)"]
   },
   {
     name: "improve-research.eu",
     description: "Onderzoeksdomein met backlinks van Europa.eu, Cambridge, Springer en LSE.",
     mozScore: 32,
+    pageAuthority: 30,
+    linkingDomains: 106,
+    inboundLinks: "2.7K+",
+    followedLinks: "2.6K+",
     category: "Onderzoek",
     price: "Op aanvraag",
-    backlinks: "2.7K+"
+    backlinks: "2.7K+",
+    topBacklinks: ["europa.eu (DA 94)", "cam.ac.uk (DA 93)", "springer.com (DA 92)", "lse.ac.uk (DA 90)"]
   },
   {
     name: "etongmbh.de",
@@ -316,9 +356,14 @@ const premiumDomains = [
     name: "ellinikiglossa.eu",
     description: "Grieks taal/cultuur domein met sterke backlinks van Wikipedia, UCI.edu en universiteiten.",
     mozScore: 28,
+    pageAuthority: 31,
+    linkingDomains: 164,
+    inboundLinks: "4.1K+",
+    followedLinks: "4K+",
     category: "Taal/Cultuur",
     price: "Op aanvraag",
-    backlinks: "4.1K+"
+    backlinks: "4.1K+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "uci.edu (DA 91)"]
   },
   {
     name: "seatglobal.eu",
