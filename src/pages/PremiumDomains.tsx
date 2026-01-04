@@ -1151,11 +1151,16 @@ const premiumDomains = [
   },
   {
     name: "nanostarproject.eu",
-    description: "Nanotechnologie EU-project domein.",
+    description: "Nanotechnologie EU-project domein met backlinks van Springer, Sapo.pt, Pages.dev en universiteiten (UPM, UC3M).",
     mozScore: 21,
+    pageAuthority: 28,
+    linkingDomains: 76,
+    inboundLinks: "338+",
+    followedLinks: "306+",
     category: "Technologie",
     price: "Op aanvraag",
-    backlinks: "270+"
+    backlinks: "338+",
+    topBacklinks: ["springer.com (DA 93)", "sapo.pt (DA 93)", "pages.dev (DA 91)", "upm.es (DA 78)", "uc3m.es (DA 77)"]
   },
   // DA 20
   {
