@@ -1148,11 +1148,16 @@ const premiumDomains = [
   // DA 21
   {
     name: "stationlansingerland-zoetermeer.nl",
-    description: "Nederlands transport/station domein.",
+    description: "Nederlands transport/station domein met backlinks van Wikipedia (FR, NL), NS, Nieuws.nl en ProRail.",
     mozScore: 21,
+    pageAuthority: 24,
+    linkingDomains: 62,
+    inboundLinks: "187+",
+    followedLinks: "134+",
     category: "Transport",
     price: "Op aanvraag",
-    backlinks: "270+"
+    backlinks: "187+",
+    topBacklinks: ["fr.wikipedia.org (DA 95)", "nl.wikipedia.org (DA 91)", "ns.nl (DA 72)", "nieuws.nl (DA 63)", "prorail.nl (DA 55)"]
   },
   {
     name: "ismagazine.nl",
