@@ -997,6 +997,19 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "370+"
   },
+  {
+    name: "heinekenthecity.nl",
+    description: "Nederlands stedelijk/lifestyle domein met backlinks van Dezeen, Symbaloo, Fodors en VPRO.",
+    mozScore: 24,
+    pageAuthority: 18,
+    linkingDomains: 52,
+    inboundLinks: "214+",
+    followedLinks: "205+",
+    category: "Lifestyle",
+    price: "Op aanvraag",
+    backlinks: "214+",
+    topBacklinks: ["dezeen.com (DA 88)", "symbaloo.com (DA 84)", "fodors.com (DA 82)", "vpro.nl (DA 68)", "clara.net (DA 65)"]
+  },
   // DA 23
   {
     name: "vos-photos.eu",
@@ -1053,14 +1066,6 @@ const premiumDomains = [
     category: "Onderzoek",
     price: "Op aanvraag",
     backlinks: "340+"
-  },
-  {
-    name: "heinekenthecity.nl",
-    description: "Nederlands stedelijk/lifestyle domein.",
-    mozScore: 23,
-    category: "Lifestyle",
-    price: "Op aanvraag",
-    backlinks: "330+"
   },
   {
     name: "eccomascfd2006.nl",
