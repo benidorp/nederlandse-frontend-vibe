@@ -656,9 +656,10 @@ const premiumDomains = [
     inboundLinks: "136+",
     followedLinks: "121+",
     category: "Evenementen",
-    price: "Op aanvraag",
+    price: "€299",
     backlinks: "136+",
-    topBacklinks: ["tinyurl.com (DA 94)", "ub.edu (DA 86)", "lu.se (DA 79)", "confex.com (DA 73)", "sdu.dk (DA 71)"]
+    topBacklinks: ["tinyurl.com (DA 94)", "ub.edu (DA 86)", "lu.se (DA 79)", "confex.com (DA 73)", "sdu.dk (DA 71)"],
+    stripeButtonId: "buy_btn_1QgH0pILs3fqMdMB8L9j5sXn"
   },
   {
     name: "youthstartproject.eu",
@@ -1696,13 +1697,28 @@ const PremiumDomains = () => {
                         </div>
                       )}
                     </div>
-                    <Button 
-                      onClick={() => handleDomainInquiry(domain.name)}
-                      className="w-full bg-gradient-to-r from-slate-700 to-slate-800 hover:from-amber-500 hover:to-amber-600 hover:text-slate-950 transition-all duration-300 border border-slate-600 hover:border-amber-500"
-                    >
-                      Neem Contact Op
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
+                    {domain.stripeButtonId ? (
+                      <div className="flex flex-col gap-2">
+                        <div 
+                          className="stripe-button-container"
+                          dangerouslySetInnerHTML={{
+                            __html: `<stripe-buy-button
+                              buy-button-id="${domain.stripeButtonId}"
+                              publishable-key="pk_live_51M6JQGILs3fqMdMBgEiYWZkZxZ7J8oqm4Z9Z5xZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ"
+                            ></stripe-buy-button>`
+                          }}
+                        />
+                        <p className="text-xs text-center text-amber-400 font-medium">Koop Nu - {domain.price}</p>
+                      </div>
+                    ) : (
+                      <Button 
+                        onClick={() => handleDomainInquiry(domain.name)}
+                        className="w-full bg-gradient-to-r from-slate-700 to-slate-800 hover:from-amber-500 hover:to-amber-600 hover:text-slate-950 transition-all duration-300 border border-slate-600 hover:border-amber-500"
+                      >
+                        Neem Contact Op
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Button>
+                    )}
                   </CardContent>
                 </Card>
               ))}
