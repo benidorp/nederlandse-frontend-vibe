@@ -1049,14 +1049,6 @@ const premiumDomains = [
     backlinks: "350+"
   },
   {
-    name: "infoecmi.eu",
-    description: "EU-informatie domein.",
-    mozScore: 23,
-    category: "Informatie",
-    price: "Op aanvraag",
-    backlinks: "340+"
-  },
-  {
     name: "eu-thor.eu",
     description: "EU-project domein met backlinks van Wikipedia (EN, FR, DE), Europa.eu, Yumpu en WHOI.",
     mozScore: 23,
@@ -1108,6 +1100,19 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "323+",
     topBacklinks: ["campaign-archive.com (DA 84)", "knack.be (DA 77)", "tntcode.com (DA 61)", "tvl.be (DA 52)", "brusselslife.be (DA 52)"]
+  },
+  {
+    name: "infoecmi.eu",
+    description: "EU-informatie domein met backlinks van Wikipedia (EN, ES, PT, RU, DE), UCL en ETH Zürich.",
+    mozScore: 22,
+    pageAuthority: 31,
+    linkingDomains: 259,
+    inboundLinks: "1.2K+",
+    followedLinks: "727+",
+    category: "Informatie",
+    price: "Op aanvraag",
+    backlinks: "1.2K+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "es.wikipedia.org (DA 96)", "pt.wikipedia.org (DA 96)", "ru.wikipedia.org (DA 94)", "ucl.ac.uk (DA 91)"]
   },
   {
     name: "romain-roquette.be",
