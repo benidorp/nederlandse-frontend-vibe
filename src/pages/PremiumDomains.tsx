@@ -234,11 +234,16 @@ const premiumDomains = [
   },
   {
     name: "toastit-live.be",
-    description: "Belgisch entertainment/media domein.",
+    description: "Belgisch entertainment/media domein met backlinks van Wikipedia, KU Leuven, Nieuwsblad en Yle.",
     mozScore: 31,
+    pageAuthority: 29,
+    linkingDomains: 268,
+    inboundLinks: "15.2K+",
+    followedLinks: "15K+",
     category: "Media",
     price: "Op aanvraag",
-    backlinks: "690+"
+    backlinks: "15.2K+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "fr.wikipedia.org (DA 95)", "pl.wikipedia.org (DA 93)", "nl.wikipedia.org (DA 91)", "kuleuven.be (DA 83)"]
   },
   {
     name: "citiexpress.eu",
