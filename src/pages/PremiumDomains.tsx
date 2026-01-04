@@ -182,11 +182,16 @@ const premiumDomains = [
   },
   {
     name: "fffb.be",
-    description: "Kort en krachtig Belgisch domein, veelzijdig inzetbaar.",
-    mozScore: 32,
+    description: "Kort en krachtig Belgisch domein met backlinks van Wikipedia, Variety, RTBF en Courrier International.",
+    mozScore: 33,
+    pageAuthority: 33,
+    linkingDomains: 228,
+    inboundLinks: "1.7K+",
+    followedLinks: "1.7K+",
     category: "Algemeen",
     price: "Op aanvraag",
-    backlinks: "740+"
+    backlinks: "1.7K+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "variety.com (DA 93)", "constantcontact.com (DA 90)", "rtbf.be (DA 89)", "courrierinternational.com (DA 80)"]
   },
   {
     name: "emg-nice2015.fr",
