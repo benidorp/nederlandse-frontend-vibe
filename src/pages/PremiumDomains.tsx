@@ -22,7 +22,7 @@ const premiumDomains = [
     category: "Onderwijs",
     price: "Op aanvraag",
     backlinks: "4.6K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "cornell.edu (DA 92)", "spiegel.de (DA 90)", "lemonde.fr (DA 93)"]
+    topBacklinks: ["en.wikipedia.org (DA 97)", "lemonde.fr (DA 93)", "cornell.edu (DA 92)", "spiegel.de (DA 90)"]
   },
   {
     name: "toulousespaceshow.eu",
@@ -35,7 +35,7 @@ const premiumDomains = [
     category: "Technologie",
     price: "Op aanvraag",
     backlinks: "3.4K+",
-    topBacklinks: ["europa.eu (DA 94)", "nasa.gov (DA 95)", "ieee.org (DA 93)", "en.wikipedia.org (DA 97)"]
+    topBacklinks: ["en.wikipedia.org (DA 97)", "nasa.gov (DA 95)", "europa.eu (DA 94)", "ieee.org (DA 93)"]
   },
   {
     name: "antigonetickets.be",
@@ -48,7 +48,7 @@ const premiumDomains = [
     category: "Entertainment",
     price: "Op aanvraag",
     backlinks: "6.6K+",
-    topBacklinks: ["nieuwsblad.be (DA 79)", "standaard.be (DA 81)", "gva.be (DA 73)"]
+    topBacklinks: ["standaard.be (DA 81)", "nieuwsblad.be (DA 79)", "gva.be (DA 73)"]
   },
   {
     name: "beauxartsliege.be",
@@ -74,7 +74,7 @@ const premiumDomains = [
     category: "Muziek",
     price: "Op aanvraag",
     backlinks: "719+",
-    topBacklinks: ["bbc.co.uk (DA 95)", "theguardian.com (DA 95)", "nme.com (DA 86)", "pitchfork.com (DA 88)"]
+    topBacklinks: ["bbc.co.uk (DA 95)", "theguardian.com (DA 95)", "pitchfork.com (DA 88)", "nme.com (DA 86)"]
   },
   {
     name: "eu-asiacentre.eu",
@@ -87,7 +87,7 @@ const premiumDomains = [
     category: "Internationaal",
     price: "Op aanvraag",
     backlinks: "898+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "nbcnews.com (DA 93)", "cam.ac.uk (DA 93)", "reddit.com (DA 97)"]
+    topBacklinks: ["en.wikipedia.org (DA 97)", "reddit.com (DA 97)", "nbcnews.com (DA 93)", "cam.ac.uk (DA 93)"]
   },
   {
     name: "martonecycling.eu",
@@ -100,7 +100,7 @@ const premiumDomains = [
     category: "Sport",
     price: "Op aanvraag",
     backlinks: "232+",
-    topBacklinks: ["globo.com (DA 93)", "harpersbazaar.com (DA 89)", "vogue.com (DA 92)", "grazia.it (DA 73)"]
+    topBacklinks: ["globo.com (DA 93)", "vogue.com (DA 92)", "harpersbazaar.com (DA 89)", "grazia.it (DA 73)"]
   },
   {
     name: "improve-research.eu",
@@ -204,7 +204,7 @@ const premiumDomains = [
     category: "Internationaal",
     price: "Op aanvraag",
     backlinks: "3.1K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "fr.wikipedia.org (DA 95)", "gofundme.com (DA 93)", "mundodeportivo.com (DA 92)", "nicematin.com (DA 73)"]
+    topBacklinks: ["en.wikipedia.org (DA 97)", "gofundme.com (DA 93)", "mundodeportivo.com (DA 92)", "nicematin.com (DA 73)", "triathlon.org (DA 68)"]
   },
   {
     name: "euromedialiteracy.eu",
@@ -243,7 +243,7 @@ const premiumDomains = [
     category: "Media",
     price: "Op aanvraag",
     backlinks: "15.2K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "fr.wikipedia.org (DA 95)", "pl.wikipedia.org (DA 93)", "nl.wikipedia.org (DA 91)", "kuleuven.be (DA 83)"]
+    topBacklinks: ["en.wikipedia.org (DA 97)", "kuleuven.be (DA 83)", "nieuwsblad.be (DA 82)", "skynet.be (DA 80)", "yle.fi (DA 78)"]
   },
   {
     name: "citiexpress.eu",
@@ -308,7 +308,7 @@ const premiumDomains = [
     category: "Cultuur",
     price: "Op aanvraag",
     backlinks: "199+",
-    topBacklinks: ["es.wikipedia.org (DA 96)", "id.wikipedia.org (DA 93)", "zh.wikipedia.org (DA 91)", "gov.pl (DA 91)", "threadreaderapp.com (DA 78)"]
+    topBacklinks: ["es.wikipedia.org (DA 96)", "gov.pl (DA 91)", "threadreaderapp.com (DA 78)", "gloria.tv (DA 69)", "dbpedia.org (DA 65)"]
   },
   {
     name: "friendsofthesupergrid.eu",
@@ -321,7 +321,7 @@ const premiumDomains = [
     category: "Energie",
     price: "Op aanvraag",
     backlinks: "156.1K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "es.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)", "cnet.com (DA 93)", "ieee.org (DA 92)"]
+    topBacklinks: ["en.wikipedia.org (DA 97)", "cnet.com (DA 93)", "theconversation.com (DA 92)", "ieee.org (DA 92)", "corriere.it (DA 92)"]
   },
   {
     name: "evacuate.eu",
