@@ -1133,14 +1133,19 @@ const premiumDomains = [
     backlinks: "214+",
     topBacklinks: ["dezeen.com (DA 88)", "symbaloo.com (DA 84)", "fodors.com (DA 82)", "vpro.nl (DA 68)", "clara.net (DA 65)"]
   },
-  // DA 23
+  // DA 24
   {
     name: "vos-photos.eu",
-    description: "Perfect voor fotografie, stock images of creatieve platforms.",
-    mozScore: 23,
+    description: "Fotografie EU-domein met backlinks van E-Monsite, JournalDuNet, CNRS en Wikipedia SV.",
+    mozScore: 24,
+    pageAuthority: 31,
+    linkingDomains: 578,
+    inboundLinks: "4.6K+",
+    followedLinks: "3.8K+",
     category: "Fotografie",
     price: "Op aanvraag",
-    backlinks: "380+"
+    backlinks: "4.6K+",
+    topBacklinks: ["e-monsite.com (DA 92)", "home.blog (DA 91)", "journaldunet.com (DA 91)", "cnrs.fr (DA 90)", "allthatsinteresting.com (DA 85)"]
   },
   {
     name: "eulis.eu",
