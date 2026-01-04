@@ -857,11 +857,16 @@ const premiumDomains = [
   },
   {
     name: "spaceinfoday.eu",
-    description: "Ruimtevaart informatie EU-evenement domein.",
+    description: "EU ruimtevaart Horizon 2020 domein met backlinks van Europa.eu en universiteiten.",
     mozScore: 26,
+    pageAuthority: 25,
+    linkingDomains: 77,
+    inboundLinks: "6.4K+",
+    followedLinks: "6.4K+",
     category: "Technologie",
     price: "Op aanvraag",
-    backlinks: "410+"
+    backlinks: "6.4K+",
+    topBacklinks: ["europa.eu (DA 97)", "ucm.es (DA 84)"]
   },
   {
     name: "beehive-erasmusplus.eu",
