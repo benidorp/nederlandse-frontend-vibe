@@ -804,14 +804,6 @@ const premiumDomains = [
     topBacklinks: ["europa.eu (DA 97)", "bt.com (DA 91)", "mynewsdesk.com (DA 89)", "campaign-archive.com (DA 84)", "panda.org (DA 77)"]
   },
   {
-    name: "josephines.be",
-    description: "Belgisch lifestyle/hospitality domein.",
-    mozScore: 26,
-    category: "Lifestyle",
-    price: "Op aanvraag",
-    backlinks: "430+"
-  },
-  {
     name: "wetenschapbegintmetverwondering.nl",
     description: "Nederlands educatief wetenschapsdomein.",
     mozScore: 26,
@@ -945,6 +937,19 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "188+",
     topBacklinks: ["oup.com (DA 93)", "yumpu.com (DA 91)", "kuleuven.be (DA 83)", "ugent.be (DA 76)", "justlanded.com (DA 76)"]
+  },
+  {
+    name: "josephines.be",
+    description: "Belgisch lifestyle/hospitality domein met backlinks van Mixcloud, De Standaard en Elle.be.",
+    mozScore: 25,
+    pageAuthority: 23,
+    linkingDomains: 69,
+    inboundLinks: "175+",
+    followedLinks: "145+",
+    category: "Lifestyle",
+    price: "Op aanvraag",
+    backlinks: "175+",
+    topBacklinks: ["mixcloud.com (DA 92)", "standaard.be (DA 76)", "elle.be (DA 62)", "outtraveler.com (DA 55)", "seniorennet.be (DA 54)"]
   },
   {
     name: "front-vosges-14-18.eu",
