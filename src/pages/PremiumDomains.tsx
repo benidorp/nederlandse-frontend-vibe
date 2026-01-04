@@ -1510,7 +1510,7 @@ const PremiumDomains = () => {
             </div>
             
             {/* SEO Intro Text */}
-            <div className="max-w-4xl mx-auto mb-16 bg-slate-800/30 border border-slate-700/50 rounded-2xl p-8">
+            <div className="max-w-5xl mx-auto mb-16 bg-slate-800/30 border border-slate-700/50 rounded-2xl p-8">
               <p className="text-slate-300 leading-relaxed mb-4">
                 <strong className="text-white">Op zoek naar een domeinnaam met echte SEO-waarde?</strong> Bij ons koop je betrouwbare <strong className="text-amber-400">expired domeinnamen met backlinks</strong> en hoge autoriteit, zorgvuldig gecontroleerd op kwaliteit en historie. Met een expired domein start je niet vanaf nul, maar profiteer je direct van bestaande links, vertrouwen en online geschiedenis.
               </p>
