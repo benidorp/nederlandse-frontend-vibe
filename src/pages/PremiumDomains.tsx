@@ -1053,11 +1053,16 @@ const premiumDomains = [
   },
   {
     name: "eu-thor.eu",
-    description: "EU-project domein.",
+    description: "EU-project domein met backlinks van Wikipedia (EN, FR, DE), Europa.eu, Yumpu en WHOI.",
     mozScore: 23,
+    pageAuthority: 28,
+    linkingDomains: 156,
+    inboundLinks: "18.4K+",
+    followedLinks: "18.3K+",
     category: "Projecten",
     price: "Op aanvraag",
-    backlinks: "350+"
+    backlinks: "18.4K+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "europa.eu (DA 97)", "fr.wikipedia.org (DA 95)", "de.wikipedia.org (DA 94)", "yumpu.com (DA 91)"]
   },
   {
     name: "eccomascfd2006.nl",
