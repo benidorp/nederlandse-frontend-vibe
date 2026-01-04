@@ -8,6 +8,8 @@ import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Crown, TrendingUp, Shield, Globe, Zap, Award, ArrowRight, CheckCircle, Star, Link, Target, BarChart3, Mail, User, MessageSquare } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import LegalFooterPremiumDomains from "@/components/premium-domains/LegalFooterPremiumDomains";
+import FooterPremiumDomains from "@/components/premium-domains/FooterPremiumDomains";
 
 // Premium domain data - can be easily updated
 const premiumDomains = [
@@ -2322,20 +2324,11 @@ const PremiumDomains = () => {
           </div>
         </section>
 
+        {/* Legal Footer */}
+        <LegalFooterPremiumDomains />
+
         {/* Footer */}
-        <footer className="py-12 bg-slate-950 border-t border-slate-800">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-              <div className="flex items-center gap-3">
-                <Crown className="h-6 w-6 text-amber-400" />
-                <span className="text-lg font-semibold text-white">Premium Domeinen</span>
-              </div>
-              <p className="text-slate-500 text-sm text-center md:text-right">
-                © {new Date().getFullYear()} IAEE. Alle rechten voorbehouden.
-              </p>
-            </div>
-          </div>
-        </footer>
+        <FooterPremiumDomains />
       </div>
     </>
   );
