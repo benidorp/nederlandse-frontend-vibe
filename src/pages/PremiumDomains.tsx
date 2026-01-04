@@ -312,11 +312,16 @@ const premiumDomains = [
   },
   {
     name: "friendsofthesupergrid.eu",
-    description: "Energie en infrastructuur EU-domein.",
+    description: "Energie en infrastructuur EU-domein met backlinks van Wikipedia, CNET, IEEE en The Conversation.",
     mozScore: 30,
+    pageAuthority: 30,
+    linkingDomains: 297,
+    inboundLinks: "156.1K+",
+    followedLinks: "155.8K+",
     category: "Energie",
     price: "Op aanvraag",
-    backlinks: "670+"
+    backlinks: "156.1K+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "es.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)", "cnet.com (DA 93)", "ieee.org (DA 92)"]
   },
   {
     name: "evacuate.eu",
