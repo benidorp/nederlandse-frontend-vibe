@@ -1072,11 +1072,16 @@ const premiumDomains = [
   // DA 20
   {
     name: "espresso-project.eu",
-    description: "Smart city en mobiliteit project domein.",
+    description: "Smart city en mobiliteit project domein met backlinks van Europa.eu, Medium, MDPI en Telecom TV.",
     mozScore: 20,
+    pageAuthority: 28,
+    linkingDomains: 81,
+    inboundLinks: "191+",
+    followedLinks: "146+",
     category: "Smart City",
     price: "Op aanvraag",
-    backlinks: "290+"
+    backlinks: "191+",
+    topBacklinks: ["europa.eu (DA 97)", "medium.com (DA 95)", "mdpi.com (DA 92)", "campaign-archive.com (DA 84)", "telecomtv.com (DA 67)"]
   },
   // DA TBD (0)
   {
