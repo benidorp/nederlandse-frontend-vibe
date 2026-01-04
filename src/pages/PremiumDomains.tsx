@@ -1107,11 +1107,16 @@ const premiumDomains = [
   },
   {
     name: "naumburgermeister.eu",
-    description: "Duits/EU lokaal bestuur domein.",
+    description: "Duits/EU lokaal bestuur domein met backlinks van Wikipedia (EN, ES, FR, RU, NL), Bit.ly en Creative Commons.",
     mozScore: 22,
+    pageAuthority: 32,
+    linkingDomains: 810,
+    inboundLinks: "4.9K+",
+    followedLinks: "4.7K+",
     category: "Overheid",
     price: "Op aanvraag",
-    backlinks: "300+"
+    backlinks: "4.9K+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "es.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)", "ru.wikipedia.org (DA 94)", "creativecommons.org (DA 94)"]
   },
   {
     name: "europeanmuseumforum.eu",
