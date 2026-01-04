@@ -1029,11 +1029,16 @@ const premiumDomains = [
   },
   {
     name: "maribe.eu",
-    description: "Maritiem EU-domein, geschikt voor scheepvaart of oceaan projecten.",
+    description: "Maritiem EU-domein met backlinks van Europa.eu, The Conversation, MDPI en Bristol University.",
     mozScore: 23,
+    pageAuthority: 28,
+    linkingDomains: 90,
+    inboundLinks: "146+",
+    followedLinks: "115+",
     category: "Maritiem",
     price: "Op aanvraag",
-    backlinks: "340+"
+    backlinks: "146+",
+    topBacklinks: ["europa.eu (DA 97)", "theconversation.com (DA 92)", "mdpi.com (DA 92)", "siliconrepublic.com (DA 83)", "bristol.ac.uk (DA 78)"]
   },
   {
     name: "200jaarstaten-generaal.nl",
