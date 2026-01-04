@@ -543,11 +543,16 @@ const premiumDomains = [
   },
   {
     name: "movecare-project.eu",
-    description: "Zorg en mobiliteit EU-project domein.",
-    mozScore: 28,
+    description: "Zorg en mobiliteit EU-project domein met backlinks van Springer, MDPI, Il Fatto Quotidiano en Italiaanse universiteiten.",
+    mozScore: 27,
+    pageAuthority: 22,
+    linkingDomains: 58,
+    inboundLinks: "117+",
+    followedLinks: "97+",
     category: "Zorg",
     price: "Op aanvraag",
-    backlinks: "510+"
+    backlinks: "117+",
+    topBacklinks: ["springer.com (DA 93)", "mdpi.com (DA 92)", "ilfattoquotidiano.it (DA 90)", "unimi.it (DA 72)", "polimi.it (DA 71)"]
   },
   // DA 27
   {
