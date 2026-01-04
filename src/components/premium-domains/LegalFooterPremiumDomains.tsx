@@ -106,7 +106,34 @@ h) Resultaten van het koppelen van aangekochte domeinen aan bestaande websites
 i) Effectiviteit van 301-redirects, link building of andere SEO-technieken
 j) Resultaten binnen een bepaald tijdsbestek
 
-6.2 **RISICO EN VERANTWOORDELIJKHEID**
+6.2 **VERANDERLIJKHEID VAN DOMEINGEGEVENS - KRITIEKE DISCLAIMER**
+
+**ZEER BELANGRIJK**: Alle informatie over domeinen die op onze website wordt weergegeven, inclusief maar niet beperkt tot Domain Authority (DA), Page Authority (PA), Domain Rating (DR), Trust Flow, Citation Flow, aantal backlinks, backlinkprofiel, verwijzende domeinen, organisch verkeer, geschatte waarde, en alle andere statistieken, metrics en gegevens:
+
+a) Was CORRECT op het moment van PLAATSING of laatste controle door ons
+b) Kan op ELKE DAG, elk uur, elke minuut WIJZIGEN, VERANDEREN, FLUCTUEREN of VERVALLEN
+c) Is ONDERHEVIG aan continue veranderingen door factoren volledig buiten onze controle
+d) Kan SIGNIFICANT AFWIJKEN op het moment dat u de pagina bekijkt versus het moment van plaatsing
+e) Wordt NIET in realtime geüpdatet en vertegenwoordigt GEEN actuele waarden
+f) Is gebaseerd op EXTERNE TOOLS (zoals Moz, Ahrefs, Majestic, SEMrush) die hun eigen methodes en updates hebben
+g) Kan ZONDER VOORAFGAANDE KENNISGEVING volledig veranderen door algoritme-updates van deze tools
+
+**KOPER VERANTWOORDELIJKHEID VOOR VERIFICATIE**:
+
+U, als potentiële koper, bent VOLLEDIG EN UITSLUITEND VERANTWOORDELIJK voor:
+
+a) Het ZELF CONTROLEREN en VERIFIËREN van ALLE domeingegevens VOOR aankoop
+b) Het uitvoeren van uw eigen onderzoek via MOZ (https://moz.com), Ahrefs, Majestic, SEMrush of andere tools
+c) Het vergelijken van door ons gepresenteerde data met actuele data van officiële bronnen
+d) Het nemen van een aankoopbeslissing gebaseerd op uw EIGEN onderzoek en verificatie
+e) Het begrijpen dat gegevens op onze site NIET als definitieve of actuele waarheid mogen worden beschouwd
+f) Het accepteren van alle risico's verbonden aan eventuele discrepanties tussen gepresenteerde en actuele gegevens
+
+**WIJ ADVISEREN DRINGEND**: Controleer ALTIJD via https://moz.com/link-explorer of een andere betrouwbare SEO-tool de actuele Domain Authority, Page Authority, backlinks en andere metrics DIRECT VOOR uw aankoop. Neem GEEN aankoopbeslissing uitsluitend gebaseerd op de informatie op onze website.
+
+Door een aankoop te doen, bevestigt u dat u ZELF de domeingegevens hebt gecontroleerd en geverifieerd, en dat u accepteert dat eventuele verschillen tussen gepresenteerde en actuele gegevens VOLLEDIG uw eigen risico zijn.
+
+6.3 **RISICO EN VERANTWOORDELIJKHEID**
 
 De koper erkent, accepteert, begrijpt en bevestigt uitdrukkelijk dat:
 
