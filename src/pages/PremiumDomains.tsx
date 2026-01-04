@@ -1048,11 +1048,16 @@ const premiumDomains = [
   },
   {
     name: "tandemtech.be",
-    description: "Belgisch technologie domein.",
+    description: "Belgisch tech domein met backlinks van Medium, TinyURL, Bit.ly, Tweakers en Knack.",
     mozScore: 25,
+    pageAuthority: 23,
+    linkingDomains: 61,
+    inboundLinks: "613+",
+    followedLinks: "565+",
     category: "Technologie",
     price: "Op aanvraag",
-    backlinks: "400+"
+    backlinks: "613+",
+    topBacklinks: ["medium.com (DA 95)", "tinyurl.com (DA 94)", "bit.ly (DA 94)", "about.me (DA 92)", "pages.dev (DA 91)"]
   },
   {
     name: "lifemanev.eu",
