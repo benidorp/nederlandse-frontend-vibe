@@ -325,11 +325,16 @@ const premiumDomains = [
   },
   {
     name: "evacuate.eu",
-    description: "Veiligheid en noodplanning EU-domein.",
-    mozScore: 30,
+    description: "Veiligheid en noodplanning EU-domein met backlinks van Europa.eu, El País, Springer en KU Leuven.",
+    mozScore: 29,
+    pageAuthority: 24,
+    linkingDomains: 99,
+    inboundLinks: "1.7K+",
+    followedLinks: "1.7K+",
     category: "Veiligheid",
     price: "Op aanvraag",
-    backlinks: "660+"
+    backlinks: "1.7K+",
+    topBacklinks: ["europa.eu (DA 97)", "elpais.com (DA 94)", "springer.com (DA 93)", "mdpi.com (DA 92)", "xataka.com (DA 90)"]
   },
   {
     name: "leading-the-digital-decade.eu",
