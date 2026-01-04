@@ -11,6 +11,7 @@ import { useToast } from "@/hooks/use-toast";
 
 // Premium domain data - can be easily updated
 const premiumDomains = [
+  // DA 38
   {
     name: "escp-eap.eu",
     description: "Premium business school domein met backlinks van Wikipedia, Cornell, Spiegel en Le Monde.",
@@ -24,19 +25,16 @@ const premiumDomains = [
     backlinks: "4.6K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "lemonde.fr (DA 93)", "cornell.edu (DA 92)", "spiegel.de (DA 90)"]
   },
+  // DA 37
   {
-    name: "toulousespaceshow.eu",
-    description: "Premium ruimtevaart domein met backlinks van Europa.eu, NASA.gov, IEEE.org en Wikipedia.",
-    mozScore: 35,
-    pageAuthority: 31,
-    linkingDomains: 397,
-    inboundLinks: "3.4K+",
-    followedLinks: "1.8K+",
-    category: "Technologie",
+    name: "grandparkhotel.at",
+    description: "Premium Oostenrijks hoteldomein met sterke toeristische waarde.",
+    mozScore: 37,
+    category: "Hospitality",
     price: "Op aanvraag",
-    backlinks: "3.4K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "nasa.gov (DA 95)", "europa.eu (DA 94)", "ieee.org (DA 93)"]
+    backlinks: "890+"
   },
+  // DA 36
   {
     name: "antigonetickets.be",
     description: "Belgisch ticketing domein met backlinks van Nieuwsblad, De Standaard en GVA.",
@@ -89,6 +87,20 @@ const premiumDomains = [
     backlinks: "898+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "reddit.com (DA 97)", "nbcnews.com (DA 93)", "cam.ac.uk (DA 93)"]
   },
+  // DA 35
+  {
+    name: "toulousespaceshow.eu",
+    description: "Premium ruimtevaart domein met backlinks van Europa.eu, NASA.gov, IEEE.org en Wikipedia.",
+    mozScore: 35,
+    pageAuthority: 31,
+    linkingDomains: 397,
+    inboundLinks: "3.4K+",
+    followedLinks: "1.8K+",
+    category: "Technologie",
+    price: "Op aanvraag",
+    backlinks: "3.4K+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "nasa.gov (DA 95)", "europa.eu (DA 94)", "ieee.org (DA 93)"]
+  },
   {
     name: "martonecycling.eu",
     description: "Fiets domein met backlinks van Globo, Harper's Bazaar, Vogue en Grazia.",
@@ -102,19 +114,7 @@ const premiumDomains = [
     backlinks: "232+",
     topBacklinks: ["globo.com (DA 93)", "vogue.com (DA 92)", "harpersbazaar.com (DA 89)", "grazia.it (DA 73)"]
   },
-  {
-    name: "improve-research.eu",
-    description: "Onderzoeksdomein met backlinks van Europa.eu, Cambridge, Springer en LSE.",
-    mozScore: 32,
-    pageAuthority: 30,
-    linkingDomains: 106,
-    inboundLinks: "2.7K+",
-    followedLinks: "2.6K+",
-    category: "Onderzoek",
-    price: "Op aanvraag",
-    backlinks: "2.7K+",
-    topBacklinks: ["europa.eu (DA 94)", "cam.ac.uk (DA 93)", "springer.com (DA 92)", "lse.ac.uk (DA 90)"]
-  },
+  // DA 33
   {
     name: "etongmbh.de",
     description: "Duits bedrijfsdomein met sterke zakelijke autoriteit en backlinks van Naver, Yumpu, Heise, Computerbase en Motor-Talk.",
@@ -127,19 +127,6 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "3.9K+",
     topBacklinks: ["naver.com (DA 93)", "yumpu.com (DA 91)", "heise.de (DA 91)", "computerbase.de (DA 84)", "motor-talk.de (DA 73)"]
-  },
-  {
-    name: "co-da.eu",
-    description: "Kort en krachtig EU-domein met backlinks van Globo, HuffPost, CBS News, Gizmodo en Fast Company.",
-    mozScore: 32,
-    pageAuthority: 22,
-    linkingDomains: 96,
-    inboundLinks: "276+",
-    followedLinks: "260+",
-    category: "Samenwerking",
-    price: "Op aanvraag",
-    backlinks: "276+",
-    topBacklinks: ["globo.com (DA 95)", "huffpost.com (DA 94)", "cbsnews.com (DA 93)", "gizmodo.com (DA 93)", "fastcompany.com (DA 92)"]
   },
   {
     name: "europe-en-midipyrenees.eu",
@@ -155,32 +142,6 @@ const premiumDomains = [
     topBacklinks: ["scoop.it (DA 92)", "franceinfo.fr (DA 91)", "latribune.fr (DA 86)", "culture.gouv.fr (DA 76)", "agriculture.gouv.fr (DA 72)"]
   },
   {
-    name: "machuproject.eu",
-    description: "Europees project domein met backlinks van Wikipedia, Cambridge, UNESCO en Reddit.",
-    mozScore: 31,
-    pageAuthority: 27,
-    linkingDomains: 162,
-    inboundLinks: "379+",
-    followedLinks: "266+",
-    category: "Projecten",
-    price: "Op aanvraag",
-    backlinks: "379+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "cambridge.org (DA 93)", "unesco.org (DA 93)", "reddit.com (DA 92)", "mdpi.com (DA 92)"]
-  },
-  {
-    name: "ramcip-project.eu",
-    description: "Europees onderzoeksproject domein met backlinks van Europa.eu, GitHub, NY Times en Springer.",
-    mozScore: 31,
-    pageAuthority: 28,
-    linkingDomains: 96,
-    inboundLinks: "333+",
-    followedLinks: "293+",
-    category: "Onderzoek",
-    price: "Op aanvraag",
-    backlinks: "333+",
-    topBacklinks: ["europa.eu (DA 97)", "github.com (DA 96)", "nytimes.com (DA 95)", "elpais.com (DA 94)", "springer.com (DA 93)"]
-  },
-  {
     name: "fffb.be",
     description: "Kort en krachtig Belgisch domein met backlinks van Wikipedia, Variety, RTBF en Courrier International.",
     mozScore: 33,
@@ -192,6 +153,33 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "1.7K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "variety.com (DA 93)", "constantcontact.com (DA 90)", "rtbf.be (DA 89)", "courrierinternational.com (DA 80)"]
+  },
+  // DA 32
+  {
+    name: "improve-research.eu",
+    description: "Onderzoeksdomein met backlinks van Europa.eu, Cambridge, Springer en LSE.",
+    mozScore: 32,
+    pageAuthority: 30,
+    linkingDomains: 106,
+    inboundLinks: "2.7K+",
+    followedLinks: "2.6K+",
+    category: "Onderzoek",
+    price: "Op aanvraag",
+    backlinks: "2.7K+",
+    topBacklinks: ["europa.eu (DA 94)", "cam.ac.uk (DA 93)", "springer.com (DA 92)", "lse.ac.uk (DA 90)"]
+  },
+  {
+    name: "co-da.eu",
+    description: "Kort en krachtig EU-domein met backlinks van Globo, HuffPost, CBS News, Gizmodo en Fast Company.",
+    mozScore: 32,
+    pageAuthority: 22,
+    linkingDomains: 96,
+    inboundLinks: "276+",
+    followedLinks: "260+",
+    category: "Samenwerking",
+    price: "Op aanvraag",
+    backlinks: "276+",
+    topBacklinks: ["globo.com (DA 95)", "huffpost.com (DA 94)", "cbsnews.com (DA 93)", "gizmodo.com (DA 93)", "fastcompany.com (DA 92)"]
   },
   {
     name: "emg-nice2015.fr",
@@ -220,6 +208,46 @@ const premiumDomains = [
     topBacklinks: ["es.wikipedia.org (DA 96)", "psu.edu (DA 92)", "scoop.it (DA 92)", "wisc.edu (DA 91)", "coe.int (DA 89)"]
   },
   {
+    name: "citiexpress.eu",
+    description: "Transport en logistiek EU-domein met backlinks van TripAdvisor, SkyscraperCity en Rick Steves.",
+    mozScore: 32,
+    pageAuthority: 32,
+    linkingDomains: 171,
+    inboundLinks: "307+",
+    followedLinks: "254+",
+    category: "Transport",
+    price: "Op aanvraag",
+    backlinks: "307+",
+    topBacklinks: ["goo.gl (DA 95)", "tripadvisor.com (DA 93)", "skyscrapercity.com (DA 86)", "ricksteves.com (DA 77)", "rome2rio.com (DA 76)"]
+  },
+  // DA 31
+  {
+    name: "machuproject.eu",
+    description: "Europees project domein met backlinks van Wikipedia, Cambridge, UNESCO en Reddit.",
+    mozScore: 31,
+    pageAuthority: 27,
+    linkingDomains: 162,
+    inboundLinks: "379+",
+    followedLinks: "266+",
+    category: "Projecten",
+    price: "Op aanvraag",
+    backlinks: "379+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "cambridge.org (DA 93)", "unesco.org (DA 93)", "reddit.com (DA 92)", "mdpi.com (DA 92)"]
+  },
+  {
+    name: "ramcip-project.eu",
+    description: "Europees onderzoeksproject domein met backlinks van Europa.eu, GitHub, NY Times en Springer.",
+    mozScore: 31,
+    pageAuthority: 28,
+    linkingDomains: 96,
+    inboundLinks: "333+",
+    followedLinks: "293+",
+    category: "Onderzoek",
+    price: "Op aanvraag",
+    backlinks: "333+",
+    topBacklinks: ["europa.eu (DA 97)", "github.com (DA 96)", "nytimes.com (DA 95)", "elpais.com (DA 94)", "springer.com (DA 93)"]
+  },
+  {
     name: "evader-project.eu",
     description: "EU-project domein met backlinks van Europa.eu, Spiegel, Europa Press en Heise.",
     mozScore: 31,
@@ -246,32 +274,6 @@ const premiumDomains = [
     topBacklinks: ["en.wikipedia.org (DA 97)", "kuleuven.be (DA 83)", "nieuwsblad.be (DA 82)", "skynet.be (DA 80)", "yle.fi (DA 78)"]
   },
   {
-    name: "citiexpress.eu",
-    description: "Transport en logistiek EU-domein met backlinks van TripAdvisor, SkyscraperCity en Rick Steves.",
-    mozScore: 32,
-    pageAuthority: 32,
-    linkingDomains: 171,
-    inboundLinks: "307+",
-    followedLinks: "254+",
-    category: "Transport",
-    price: "Op aanvraag",
-    backlinks: "307+",
-    topBacklinks: ["goo.gl (DA 95)", "tripadvisor.com (DA 93)", "skyscrapercity.com (DA 86)", "ricksteves.com (DA 77)", "rome2rio.com (DA 76)"]
-  },
-  {
-    name: "ilovecosmetics.eu",
-    description: "Beauty en cosmetica domein met backlinks van Alza, Glamour Magazine en CB Insights.",
-    mozScore: 30,
-    pageAuthority: 36,
-    linkingDomains: 472,
-    inboundLinks: "1.6K+",
-    followedLinks: "1.3K+",
-    category: "Beauty",
-    price: "Op aanvraag",
-    backlinks: "1.6K+",
-    topBacklinks: ["alza.cz (DA 92)", "glamourmagazine.co.uk (DA 82)", "polyvore.com (DA 79)", "fave.co (DA 78)", "cbinsights.com (DA 77)"]
-  },
-  {
     name: "hznet.nl",
     description: "Nederlands netwerk domein met backlinks van Microsoft, NOS, Neowin, Tweakers en XS4All.",
     mozScore: 31,
@@ -285,17 +287,31 @@ const premiumDomains = [
     topBacklinks: ["microsoft.com (DA 99)", "nos.nl (DA 90)", "neowin.net (DA 88)", "techpowerup.com (DA 83)", "tweakers.net (DA 79)"]
   },
   {
-    name: "bovisadrivein.it",
-    description: "Italiaans entertainment domein met backlinks van Behance, Giphy, Corriere en MyMovies.",
-    mozScore: 28,
-    pageAuthority: 22,
-    linkingDomains: 52,
-    inboundLinks: "78+",
-    followedLinks: "60+",
-    category: "Entertainment",
+    name: "leading-the-digital-decade.eu",
+    description: "Digitale transformatie EU-domein met backlinks van Europa.eu, Politico EU en LSE.",
+    mozScore: 31,
+    pageAuthority: 30,
+    linkingDomains: 80,
+    inboundLinks: "189+",
+    followedLinks: "174+",
+    category: "Digitaal",
     price: "Op aanvraag",
-    backlinks: "78+",
-    topBacklinks: ["behance.net (DA 93)", "giphy.com (DA 92)", "corriere.it (DA 92)", "ilgiornale.it (DA 85)", "elledecor.com (DA 81)"]
+    backlinks: "189+",
+    topBacklinks: ["europa.eu (DA 97)", "politico.eu (DA 91)", "lse.ac.uk (DA 89)", "fapesp.br (DA 72)", "eureporter.co (DA 68)"]
+  },
+  // DA 30
+  {
+    name: "ilovecosmetics.eu",
+    description: "Beauty en cosmetica domein met backlinks van Alza, Glamour Magazine en CB Insights.",
+    mozScore: 30,
+    pageAuthority: 36,
+    linkingDomains: 472,
+    inboundLinks: "1.6K+",
+    followedLinks: "1.3K+",
+    category: "Beauty",
+    price: "Op aanvraag",
+    backlinks: "1.6K+",
+    topBacklinks: ["alza.cz (DA 92)", "glamourmagazine.co.uk (DA 82)", "polyvore.com (DA 79)", "fave.co (DA 78)", "cbinsights.com (DA 77)"]
   },
   {
     name: "rtmpilecki.eu",
@@ -324,6 +340,20 @@ const premiumDomains = [
     topBacklinks: ["en.wikipedia.org (DA 97)", "cnet.com (DA 93)", "theconversation.com (DA 92)", "ieee.org (DA 92)", "corriere.it (DA 92)"]
   },
   {
+    name: "eureka-hvacr.eu",
+    description: "HVAC en klimaattechniek EU-domein met backlinks van Ow.ly, EurActiv en Danfoss.",
+    mozScore: 30,
+    pageAuthority: 23,
+    linkingDomains: 80,
+    inboundLinks: "375+",
+    followedLinks: "357+",
+    category: "Technologie",
+    price: "Op aanvraag",
+    backlinks: "375+",
+    topBacklinks: ["ow.ly (DA 90)", "euractiv.com (DA 84)", "campaign-archive.com (DA 84)", "danfoss.com (DA 69)", "coleurope.eu (DA 57)"]
+  },
+  // DA 29
+  {
     name: "evacuate.eu",
     description: "Veiligheid en noodplanning EU-domein met backlinks van Europa.eu, El País, Springer en KU Leuven.",
     mozScore: 29,
@@ -337,19 +367,6 @@ const premiumDomains = [
     topBacklinks: ["europa.eu (DA 97)", "elpais.com (DA 94)", "springer.com (DA 93)", "mdpi.com (DA 92)", "xataka.com (DA 90)"]
   },
   {
-    name: "leading-the-digital-decade.eu",
-    description: "Digitale transformatie EU-domein met backlinks van Europa.eu, Politico EU en LSE.",
-    mozScore: 31,
-    pageAuthority: 30,
-    linkingDomains: 80,
-    inboundLinks: "189+",
-    followedLinks: "174+",
-    category: "Digitaal",
-    price: "Op aanvraag",
-    backlinks: "189+",
-    topBacklinks: ["europa.eu (DA 97)", "politico.eu (DA 91)", "lse.ac.uk (DA 89)", "fapesp.br (DA 72)", "eureporter.co (DA 68)"]
-  },
-  {
     name: "greenweek2010.eu",
     description: "Duurzaamheids domein met backlinks van Europa.eu, EurekAlert, RAI en AAAS.",
     mozScore: 29,
@@ -361,19 +378,6 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "259+",
     topBacklinks: ["europa.eu (DA 97)", "eurekalert.org (DA 91)", "rai.it (DA 81)", "au.dk (DA 77)", "aaas.org (DA 76)"]
-  },
-  {
-    name: "resurbis.eu",
-    description: "EU-domein voor duurzaamheid met backlinks van Europa.eu, MDPI, EurekAlert en Wired.",
-    mozScore: 28,
-    pageAuthority: 24,
-    linkingDomains: 87,
-    inboundLinks: "185+",
-    followedLinks: "153+",
-    category: "Duurzaamheid",
-    price: "Op aanvraag",
-    backlinks: "185+",
-    topBacklinks: ["europa.eu (DA 97)", "mdpi.com (DA 92)", "eurekalert.org (DA 91)", "wired.it (DA 90)", "ub.edu (DA 86)"]
   },
   {
     name: "bryn-somersethouse.co.uk",
@@ -413,19 +417,6 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "1.5K+",
     topBacklinks: ["sites.google.com (DA 96)", "scoop.it (DA 92)", "envato.com (DA 91)", "informer.com (DA 90)", "codecanyon.net (DA 83)"]
-  },
-  {
-    name: "eureka-hvacr.eu",
-    description: "HVAC en klimaattechniek EU-domein met backlinks van Ow.ly, EurActiv en Danfoss.",
-    mozScore: 30,
-    pageAuthority: 23,
-    linkingDomains: 80,
-    inboundLinks: "375+",
-    followedLinks: "357+",
-    category: "Technologie",
-    price: "Op aanvraag",
-    backlinks: "375+",
-    topBacklinks: ["ow.ly (DA 90)", "euractiv.com (DA 84)", "campaign-archive.com (DA 84)", "danfoss.com (DA 69)", "coleurope.eu (DA 57)"]
   },
   {
     name: "energaware.eu",
@@ -479,6 +470,33 @@ const premiumDomains = [
     backlinks: "245+",
     topBacklinks: ["europa.eu (DA 97)", "euronews.com (DA 92)", "angel.co (DA 86)", "campaign-archive.com (DA 84)", "arts.ac.uk (DA 81)"]
   },
+  // DA 28
+  {
+    name: "bovisadrivein.it",
+    description: "Italiaans entertainment domein met backlinks van Behance, Giphy, Corriere en MyMovies.",
+    mozScore: 28,
+    pageAuthority: 22,
+    linkingDomains: 52,
+    inboundLinks: "78+",
+    followedLinks: "60+",
+    category: "Entertainment",
+    price: "Op aanvraag",
+    backlinks: "78+",
+    topBacklinks: ["behance.net (DA 93)", "giphy.com (DA 92)", "corriere.it (DA 92)", "ilgiornale.it (DA 85)", "elledecor.com (DA 81)"]
+  },
+  {
+    name: "resurbis.eu",
+    description: "EU-domein voor duurzaamheid met backlinks van Europa.eu, MDPI, EurekAlert en Wired.",
+    mozScore: 28,
+    pageAuthority: 24,
+    linkingDomains: 87,
+    inboundLinks: "185+",
+    followedLinks: "153+",
+    category: "Duurzaamheid",
+    price: "Op aanvraag",
+    backlinks: "185+",
+    topBacklinks: ["europa.eu (DA 97)", "mdpi.com (DA 92)", "eurekalert.org (DA 91)", "wired.it (DA 90)", "ub.edu (DA 86)"]
+  },
   {
     name: "eu-sabana.eu",
     description: "Duurzame landbouw EU-project domein met backlinks van Europa.eu, The Conversation en Frontiers.",
@@ -506,6 +524,15 @@ const premiumDomains = [
     topBacklinks: ["en.wikipedia.org (DA 97)", "uci.edu (DA 91)"]
   },
   {
+    name: "movecare-project.eu",
+    description: "Zorg en mobiliteit EU-project domein.",
+    mozScore: 28,
+    category: "Zorg",
+    price: "Op aanvraag",
+    backlinks: "510+"
+  },
+  // DA 27
+  {
     name: "seatglobal.eu",
     description: "Internationaal mobiliteit/transport domein met backlinks van Europa.eu, Springer, PLOS en Phys.org.",
     mozScore: 27,
@@ -517,14 +544,6 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "4.8K+",
     topBacklinks: ["europa.eu (DA 97)", "springer.com (DA 93)", "plos.org (DA 93)", "salon.com (DA 91)", "phys.org (DA 91)"]
-  },
-  {
-    name: "movecare-project.eu",
-    description: "Zorg en mobiliteit EU-project domein.",
-    mozScore: 28,
-    category: "Zorg",
-    price: "Op aanvraag",
-    backlinks: "510+"
   },
   {
     name: "davidhughesillustration.co.uk",
@@ -574,6 +593,7 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "460+"
   },
+  // DA 26
   {
     name: "covenant-capacity.eu",
     description: "EU-covenant en capaciteitsopbouw domein.",
@@ -686,6 +706,7 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "440+"
   },
+  // DA 25
   {
     name: "brave-project.eu",
     description: "Innovatief EU-project domein voor tech of sociale initiatieven.",
@@ -750,6 +771,7 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "400+"
   },
+  // DA 24
   {
     name: "xcycle-h2020.eu",
     description: "EU-fiets en mobiliteit H2020 project domein.",
@@ -766,6 +788,7 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "370+"
   },
+  // DA 23
   {
     name: "vos-photos.eu",
     description: "Perfect voor fotografie, stock images of creatieve platforms.",
@@ -830,14 +853,7 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "330+"
   },
-  {
-    name: "grandparkhotel.at",
-    description: "Premium Oostenrijks hoteldomein met sterke toeristische waarde.",
-    mozScore: 37,
-    category: "Hospitality",
-    price: "Op aanvraag",
-    backlinks: "890+"
-  },
+  // DA 22
   {
     name: "bruegel2019.be",
     description: "Cultureel erfgoed domein, ideaal voor kunst, musea of Vlaamse projecten.",
@@ -894,6 +910,7 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "280+"
   },
+  // DA 21
   {
     name: "stationlansingerland-zoetermeer.nl",
     description: "Nederlands transport/station domein.",
@@ -926,6 +943,7 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "250+"
   },
+  // DA 20
   {
     name: "espresso-project.eu",
     description: "Smart city en mobiliteit project domein.",
@@ -934,6 +952,7 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "290+"
   },
+  // DA TBD (0)
   {
     name: "dunyaendesiedefilm.nl",
     description: "Nederlands film/media domein.",
@@ -1103,7 +1122,6 @@ const premiumDomains = [
     backlinks: "TBD"
   }
 ];
-
 const PremiumDomains = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
