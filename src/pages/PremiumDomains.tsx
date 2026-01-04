@@ -1075,6 +1075,19 @@ const premiumDomains = [
     backlinks: "371+",
     topBacklinks: ["tudelft.nl (DA 85)", "soton.ac.uk (DA 85)", "uu.se (DA 83)", "liverpool.ac.uk (DA 83)", "ntnu.no (DA 77)"]
   },
+  {
+    name: "mbelgique.be",
+    description: "Belgisch nationaal domein met backlinks van Wikipedia FR, BFMTV, Heise, NU.nl en Europe1.",
+    mozScore: 23,
+    pageAuthority: 22,
+    linkingDomains: 58,
+    inboundLinks: "113+",
+    followedLinks: "87+",
+    category: "Algemeen",
+    price: "Op aanvraag",
+    backlinks: "113+",
+    topBacklinks: ["fr.wikipedia.org (DA 95)", "bfmtv.com (DA 92)", "heise.de (DA 91)", "nu.nl (DA 91)", "europe1.fr (DA 90)"]
+  },
   // DA 22
   {
     name: "bruegel2019.be",
@@ -1197,14 +1210,6 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "7.6K+",
     topBacklinks: ["liveinternet.ru (DA 93)", "pages.dev (DA 91)", "xsrv.jp (DA 89)", "toolforge.org (DA 80)", "worldwidetopsite.com (DA 71)"]
-  },
-  {
-    name: "mbelgique.be",
-    description: "Belgisch nationaal domein.",
-    mozScore: 21,
-    category: "Algemeen",
-    price: "Op aanvraag",
-    backlinks: "260+"
   },
   {
     name: "nanostarproject.eu",
