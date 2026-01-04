@@ -1065,14 +1065,6 @@ const premiumDomains = [
     topBacklinks: ["medium.com (DA 95)", "tinyurl.com (DA 94)", "bit.ly (DA 94)", "about.me (DA 92)", "pages.dev (DA 91)"]
   },
   {
-    name: "lifemanev.eu",
-    description: "EU-life project domein.",
-    mozScore: 25,
-    category: "Milieu",
-    price: "Op aanvraag",
-    backlinks: "390+"
-  },
-  {
     name: "happyvpro.nl",
     description: "Nederlands media domein met backlinks van TinyURL, Ello, XS4ALL, Emerce en VPRO.",
     mozScore: 25,
