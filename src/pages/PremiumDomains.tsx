@@ -673,7 +673,19 @@ const premiumDomains = [
   },
   // DA 27
   {
-    name: "spanvis.nl",
+    name: "wetenschapbegintmetverwondering.nl",
+    description: "Nederlands wetenschapscommunicatie domein met backlinks van RUG, NU.nl en Nationale Wetenschapsagenda.",
+    mozScore: 27,
+    pageAuthority: 24,
+    linkingDomains: 52,
+    inboundLinks: "97+",
+    followedLinks: "81+",
+    category: "Wetenschap",
+    price: "Op aanvraag",
+    backlinks: "97+",
+    topBacklinks: ["rug.nl (DA 84)", "nu.nl (DA 91)", "wetenschapsagenda.nl (DA 65)"]
+  },
+  {
     description: "Nederlands domein met backlinks van Wikipedia (EN, RU, NL), Wikiwand en XS4All.",
     mozScore: 27,
     pageAuthority: 29,
