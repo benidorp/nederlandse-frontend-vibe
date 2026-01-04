@@ -949,11 +949,16 @@ const premiumDomains = [
   },
   {
     name: "brave-project.eu",
-    description: "Innovatief EU-project domein voor tech of sociale initiatieven.",
-    mozScore: 25,
+    description: "EU-project domein met backlinks van Europa.eu, El Diario, Stuttgarter Zeitung en universiteiten.",
+    mozScore: 24,
+    pageAuthority: 24,
+    linkingDomains: 73,
+    inboundLinks: "194+",
+    followedLinks: "133+",
     category: "Projecten",
     price: "Op aanvraag",
-    backlinks: "410+"
+    backlinks: "194+",
+    topBacklinks: ["europa.eu (DA 97)", "eldiario.es (DA 91)", "stuttgarter-zeitung.de (DA 81)", "techxplore.com (DA 79)", "uah.es (DA 70)"]
   },
   {
     name: "aaliance.eu",
