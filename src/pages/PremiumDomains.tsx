@@ -286,11 +286,16 @@ const premiumDomains = [
   },
   {
     name: "bovisadrivein.it",
-    description: "Italiaans entertainment domein, geschikt voor bioscopen of evenementen.",
-    mozScore: 31,
+    description: "Italiaans entertainment domein met backlinks van Behance, Giphy, Corriere en MyMovies.",
+    mozScore: 28,
+    pageAuthority: 22,
+    linkingDomains: 52,
+    inboundLinks: "78+",
+    followedLinks: "60+",
     category: "Entertainment",
     price: "Op aanvraag",
-    backlinks: "680+"
+    backlinks: "78+",
+    topBacklinks: ["behance.net (DA 93)", "giphy.com (DA 92)", "corriere.it (DA 92)", "ilgiornale.it (DA 85)", "elledecor.com (DA 81)"]
   },
   {
     name: "rtmpilecki.eu",
