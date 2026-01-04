@@ -1133,11 +1133,16 @@ const premiumDomains = [
   },
   {
     name: "escmalta2018.eu",
-    description: "ESC evenement domein.",
+    description: "ESC evenement domein met backlinks van ETH Zürich, Azure, Copernicus, CSIC en Monash University.",
     mozScore: 22,
+    pageAuthority: 25,
+    linkingDomains: 102,
+    inboundLinks: "1.1K+",
+    followedLinks: "1K+",
     category: "Evenementen",
     price: "Op aanvraag",
-    backlinks: "290+"
+    backlinks: "1.1K+",
+    topBacklinks: ["ethz.ch (DA 89)", "azure.com (DA 84)", "copernicus.eu (DA 83)", "csic.es (DA 78)", "monash.edu (DA 77)"]
   },
   {
     name: "eurasiancouncilforeignaffairs.eu",
