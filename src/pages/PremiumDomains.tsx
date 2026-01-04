@@ -169,11 +169,16 @@ const premiumDomains = [
   },
   {
     name: "ramcip-project.eu",
-    description: "Europees onderzoeksproject domein met academische backlinks.",
-    mozScore: 32,
+    description: "Europees onderzoeksproject domein met backlinks van Europa.eu, GitHub, NY Times en Springer.",
+    mozScore: 31,
+    pageAuthority: 28,
+    linkingDomains: 96,
+    inboundLinks: "333+",
+    followedLinks: "293+",
     category: "Onderzoek",
     price: "Op aanvraag",
-    backlinks: "760+"
+    backlinks: "333+",
+    topBacklinks: ["europa.eu (DA 97)", "github.com (DA 96)", "nytimes.com (DA 95)", "elpais.com (DA 94)", "springer.com (DA 93)"]
   },
   {
     name: "fffb.be",
