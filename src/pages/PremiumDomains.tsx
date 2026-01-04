@@ -1197,7 +1197,7 @@ const PremiumDomains = () => {
                         <div className="text-xs">
                           <span className="text-slate-500 block mb-1">Top Backlinks:</span>
                           <div className="flex flex-wrap gap-1">
-                            {domain.topBacklinks.slice(0, 3).map((link, i) => (
+                            {domain.topBacklinks.slice(0, 5).map((link, i) => (
                               <Badge key={i} variant="outline" className="text-[10px] border-amber-500/30 text-amber-400/80 bg-amber-500/5">
                                 {link}
                               </Badge>
