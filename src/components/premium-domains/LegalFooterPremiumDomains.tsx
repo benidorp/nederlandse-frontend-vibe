@@ -10,7 +10,7 @@ const legalDocuments = [
     title: "Algemene Voorwaarden",
     content: `**ALGEMENE VOORWAARDEN – PREMIUM DOMEINEN**
 
-**Laatst bijgewerkt: Januari 2025**
+**Laatst bijgewerkt: Januari 2026**
 
 **ZEER BELANGRIJK - LEES ZORGVULDIG VOOR GEBRUIK**
 
@@ -18,7 +18,11 @@ const legalDocuments = [
 
 1.1 Welkom bij onze Premium Domeinen dienst ("wij", "ons", "onze", "de Website", "de Dienst", "Verkoper"). Door onze website te bezoeken, te browsen, te gebruiken, een account aan te maken, een aankoop te doen of anderszins te interageren met onze diensten, gaat u ("Gebruiker", "Klant", "U", "Bezoeker", "Koper") UITDRUKKELIJK, ONVOORWAARDELIJK EN VOLLEDIG akkoord met deze Algemene Voorwaarden ("Voorwaarden", "Overeenkomst", "Gebruiksvoorwaarden").
 
-1.2 Deze Voorwaarden vormen een JURIDISCH BINDENDE OVEREENKOMST tussen u en onze dienst. Deze overeenkomst is van toepassing op ALLE gebruikers WERELDWIJD, inclusief maar niet beperkt tot gebruikers in de Europese Unie (EU), Europese Economische Ruimte (EER), Nederland, België, Duitsland, Frankrijk, Spanje, Italië, Verenigd Koninkrijk (VK), Verenigde Staten (VS), Canada, Australië, Nieuw-Zeeland, Japan, Zuid-Korea, Singapore, Hong Kong, Brazilië, Mexico, India, Zuid-Afrika en ALLE andere rechtsgebieden en landen ter wereld.
+1.2 Deze Voorwaarden vormen een JURIDISCH BINDENDE OVEREENKOMST tussen u en onze dienst. Deze overeenkomst is van toepassing op ALLE gebruikers WERELDWIJD, in ALLE landen en rechtsgebieden ter wereld, zonder enige territoriale beperking. Dit omvat UITDRUKKELIJK maar is NIET BEPERKT tot: de Europese Unie (EU) en al haar lidstaten (België, Bulgarije, Cyprus, Denemarken, Duitsland, Estland, Finland, Frankrijk, Griekenland, Hongarije, Ierland, Italië, Kroatië, Letland, Litouwen, Luxemburg, Malta, Nederland, Oostenrijk, Polen, Portugal, Roemenië, Slovenië, Slowakije, Spanje, Tsjechië, Zweden), de Europese Economische Ruimte (EER) inclusief IJsland, Liechtenstein en Noorwegen, Zwitserland, het Verenigd Koninkrijk (VK), de Verenigde Staten van Amerika (VS) inclusief alle staten en territoria (Puerto Rico, Guam, Amerikaanse Maagdeneilanden, etc.), Canada, Australië, Nieuw-Zeeland, Japan, Zuid-Korea, China (inclusief Hong Kong SAR en Macau SAR), Taiwan, Singapore, Maleisië, Thailand, Vietnam, Filippijnen, Indonesië, India, Pakistan, Bangladesh, Sri Lanka, Verenigde Arabische Emiraten (VAE), Saudi-Arabië, Qatar, Koeweit, Bahrein, Oman, Israël, Turkije, Rusland, Oekraïne, alle landen in het Midden-Oosten, alle landen in Afrika (inclusief Nigeria, Zuid-Afrika, Egypte, Marokko, Kenia, Ghana, etc.), alle landen in Latijns-Amerika en het Caribisch gebied (Brazilië, Mexico, Argentinië, Colombia, Chili, Peru, Venezuela, Ecuador, Bolivia, Paraguay, Uruguay, Costa Rica, Panama, Guatemala, Honduras, El Salvador, Nicaragua, Cuba, Dominicaanse Republiek, Jamaica, Trinidad en Tobago, Bahama's, etc.), alle eilandstaten in de Stille Oceaan, alle microstaten en territoria wereldwijd, en ALLE andere soevereine staten, afhankelijke gebieden, autonome regio's en territoriale entiteiten die nu bestaan of in de toekomst kunnen worden erkend onder internationaal recht.
+
+1.2.1 **UNIVERSELE TOEPASSING**: Deze Voorwaarden zijn van toepassing ongeacht uw nationaliteit, woonplaats, verblijfplaats, staatsburgerschap, of de locatie van waaruit u onze diensten gebruikt. De voorwaarden gelden voor alle natuurlijke personen, rechtspersonen, ondernemingen, overheden, non-profitorganisaties en alle andere entiteiten die onze diensten gebruiken.
+
+1.2.2 **GEEN TERRITORIALE UITZONDERINGEN**: Er zijn GEEN landen, regio's, territoria of rechtsgebieden uitgezonderd van de toepassing van deze Voorwaarden. Indien lokale wetgeving strengere bepalingen voorschrijft dan deze Voorwaarden, prevaleert de strengste bepaling ten gunste van onze aansprakelijkheidsbeperkingen.
 
 1.3 **KRITIEKE MEDEDELING**: Als u NIET AKKOORD gaat met ENIGE bepaling, clausule, sectie of voorwaarde van deze Voorwaarden, hoe klein of onbeduidend deze ook mag lijken, dient u ONMIDDELLIJK en ZONDER VERTRAGING elk gebruik van onze website, platform en diensten volledig te staken en te verlaten. VOORTGEZET GEBRUIK, zelfs één seconde na het lezen van deze voorwaarden, betekent VOLLEDIGE, ONHERROEPELIJKE EN BINDENDE AANVAARDING van ALLE bepalingen hierin.
 
@@ -258,30 +262,46 @@ Wij verwerken persoonsgegevens in strikte overeenstemming met:
 
 **13. TOEPASSELIJK RECHT, JURISDICTIE EN GESCHILLENBESLECHTING**
 
-13.1 **TOEPASSELIJK RECHT**
+13.1 **TOEPASSELIJK RECHT - INTERNATIONAAL BINDEND**
 
 Deze Voorwaarden worden exclusief beheerst door en geïnterpreteerd in overeenstemming met het recht van NEDERLAND, met uitsluiting van:
 - Conflicterende rechtsregels of principes van internationaal privaatrecht
 - Het Verdrag der Verenigde Naties inzake internationale koopovereenkomsten (Weens Koopverdrag)
 - Enige andere internationale verdragen die afwijkende regels zouden voorschrijven
 
-13.2 **EXCLUSIEVE JURISDICTIE**
+13.1.1 **RECHTSKEUZE WERELDWIJD BINDEND**: Deze rechtskeuze is bindend voor ALLE gebruikers wereldwijd, ongeacht hun locatie, nationaliteit of woonplaats. Door gebruik te maken van onze diensten, stemt u uitdrukkelijk in met de toepassing van Nederlands recht, zelfs indien dit recht minder gunstig voor u is dan het recht van uw eigen land.
 
-Alle geschillen, claims, controverses of acties voortvloeiend uit of verband houdend met deze Voorwaarden, ons platform, onze diensten of transacties worden UITSLUITEND voorgelegd aan de bevoegde rechtbanken in AMSTERDAM, NEDERLAND.
+13.1.2 **AFSTAND VAN LOKAAL RECHT**: Voor zover wettelijk toegestaan, doet u afstand van elk recht om te eisen dat het recht van uw eigen land of regio wordt toegepast, inclusief maar niet beperkt tot consumentenbeschermingswetten, aansprakelijkheidswetten en alle andere wetten die gunstiger voor u zouden kunnen zijn.
 
-U stemt hierbij onvoorwaardelijk in met:
-- De exclusieve persoonlijke jurisdictie van Nederlandse rechtbanken
-- De exclusieve materiële jurisdictie van Nederlandse rechtbanken
-- Afstand van elk recht om jurisdictie of bevoegdheid te betwisten
-- Afstand van elk recht op forumkeuze elders
+13.2 **EXCLUSIEVE JURISDICTIE - WERELDWIJD VAN TOEPASSING**
 
-13.3 **AFSTAND VAN COLLECTIEVE ACTIES**
+Alle geschillen, claims, controverses, acties, rechtszaken of procedures, ongeacht hun aard, oorsprong of grondslag, voortvloeiend uit of verband houdend met deze Voorwaarden, ons platform, onze diensten, transacties, domeinen, communicatie of enig ander aspect van onze relatie met u, worden UITSLUITEND en DEFINITIEF voorgelegd aan de bevoegde rechtbanken in AMSTERDAM, NEDERLAND.
 
-U stemt ermee in dat alle claims UITSLUITEND op individuele basis zullen worden ingediend en beslecht. U doet afstand van elk recht om:
-- Deel te nemen aan een collectieve actie (class action)
-- Deel te nemen aan een representatieve actie
-- Claims te consolideren met claims van anderen
-- Een collectief of groepsgeschil te initiëren
+U stemt hierbij UITDRUKKELIJK, ONVOORWAARDELIJK EN ONHERROEPELIJK in met:
+- De EXCLUSIEVE persoonlijke jurisdictie van Nederlandse rechtbanken in Amsterdam
+- De EXCLUSIEVE materiële jurisdictie van Nederlandse rechtbanken in Amsterdam
+- VOLLEDIGE afstand van elk recht om jurisdictie, bevoegdheid of venue te betwisten
+- VOLLEDIGE afstand van elk recht op forumkeuze in enig ander land, staat, regio of rechtsgebied
+- VOLLEDIGE afstand van elk verweer gebaseerd op forum non conveniens
+- VOLLEDIGE afstand van elk recht om procedures te initiëren in uw eigen land of regio
+- AANVAARDING dat u naar Nederland moet reizen voor eventuele juridische procedures
+
+13.2.1 **INTERNATIONALE ERKENNING EN TENUITVOERLEGGING**: U stemt ermee in dat een vonnis van Nederlandse rechtbanken bindend en afdwingbaar is in elk land waar u activa of belangen heeft. U stemt in met registratie en tenuitvoerlegging van Nederlandse vonnissen in elk relevant rechtsgebied.
+
+13.3 **AFSTAND VAN COLLECTIEVE ACTIES - WERELDWIJD**
+
+U stemt ermee in dat alle claims UITSLUITEND op INDIVIDUELE basis zullen worden ingediend en beslecht. U doet VOLLEDIG en DEFINITIEF afstand van elk recht om, onder welk rechtssysteem dan ook:
+- Deel te nemen aan een collectieve actie (class action) onder Amerikaans recht of vergelijkbare procedures elders
+- Deel te nemen aan een representatieve actie of optredem namens anderen
+- Deel te nemen aan groepsvorderingen onder EU-recht (Richtlijn 2020/1828)
+- Claims te consolideren met claims van anderen in enig rechtsgebied
+- Een collectief of groepsgeschil te initiëren of eraan deel te nemen
+- Te profiteren van collectieve schikkingen of uitspraken
+- Deel te nemen aan massaschadeprocedures
+
+13.3.1 **GEEN JURY**: Voor zover wettelijk toegestaan, doet u afstand van elk recht op juryrechtspraak.
+
+13.4 **TAALVERKLARING**: De Nederlandse versie van deze Voorwaarden is de enige authentieke versie. Vertalingen zijn uitsluitend informatief. Bij tegenstrijdigheden prevaleert de Nederlandse tekst.
 
 **14. WIJZIGINGEN, UPDATES EN AANPASSINGEN**
 
@@ -329,24 +349,66 @@ h) U erkent dat deze Voorwaarden EERLIJK en REDELIJK zijn`
     title: "Privacybeleid",
     content: `**UITGEBREID PRIVACYBELEID – PREMIUM DOMEINEN**
 
-**Laatst bijgewerkt: Januari 2025**
+**Laatst bijgewerkt: Januari 2026**
 
 **1. INLEIDING EN TOEPASSINGSGEBIED**
 
 1.1 Dit Privacybeleid ("Beleid") beschrijft uitvoerig hoe onze Premium Domeinen dienst ("wij", "ons", "onze", "de Verwerkingsverantwoordelijke") persoonsgegevens verzamelt, gebruikt, verwerkt, opslaat, deelt, overdraagt en beschermt wanneer u onze website, platform en diensten gebruikt.
 
-1.2 Dit Beleid is van toepassing op ALLE gebruikers WERELDWIJD en is opgesteld in overeenstemming met:
-- Algemene Verordening Gegevensbescherming (AVG/GDPR) - EU
-- ePrivacy Richtlijn (Cookie Wetgeving) - EU
-- UK GDPR en Data Protection Act 2018 - VK
-- CCPA/CPRA (California Consumer Privacy Act/Rights Act) - VS
-- LGPD (Lei Geral de Proteção de Dados) - Brazilië
+1.2 Dit Beleid is van toepassing op ALLE gebruikers WERELDWIJD, in ALLE landen en rechtsgebieden ter wereld, zonder enige territoriale beperking. Dit Beleid is opgesteld in overeenstemming met alle toepasselijke privacy- en gegevensbeschermingswetgeving, inclusief maar niet beperkt tot:
+
+**EUROPESE UNIE EN EUROPESE ECONOMISCHE RUIMTE**
+- Algemene Verordening Gegevensbescherming (AVG/GDPR) - Verordening (EU) 2016/679
+- ePrivacy Richtlijn (2002/58/EG, gewijzigd door 2009/136/EG)
+- Nationale implementatiewetgeving van alle EU-lidstaten
+
+**VERENIGD KONINKRIJK**
+- UK GDPR (Data Protection Act 2018)
+- Privacy and Electronic Communications Regulations (PECR)
+
+**NOORD-AMERIKA**
+- CCPA/CPRA (California Consumer Privacy Act/California Privacy Rights Act) - VS
+- VCDPA (Virginia Consumer Data Protection Act) - VS
+- CPA (Colorado Privacy Act) - VS
+- CTDPA (Connecticut Data Privacy Act) - VS
+- UCPA (Utah Consumer Privacy Act) - VS
+- Alle andere staatswetten inzake privacy in de VS
 - PIPEDA (Personal Information Protection and Electronic Documents Act) - Canada
-- Privacy Act 1988 en Australian Privacy Principles - Australië
-- POPIA (Protection of Personal Information Act) - Zuid-Afrika
+- FIPPA en PHIPA - Canada provinciale wetgeving
+- Ley Federal de Protección de Datos Personales - Mexico
+
+**LATIJNS-AMERIKA EN CARIBISCH GEBIED**
+- LGPD (Lei Geral de Proteção de Dados) - Brazilië
+- Ley de Protección de Datos Personales - Argentinië
+- Ley de Protección de Datos Personales - Colombia
+- Ley de Protección de la Vida Privada - Chili
+- Alle andere gegevensbeschermingswetten in Latijns-Amerika
+
+**AZIË-PACIFIC**
 - APPI (Act on Protection of Personal Information) - Japan
 - PDPA (Personal Data Protection Act) - Singapore
-- Alle andere toepasselijke privacy- en gegevensbeschermingswetgeving wereldwijd
+- PDPA (Personal Data Protection Act) - Thailand
+- PDPA (Personal Data Protection Act) - Maleisië
+- PIPL (Personal Information Protection Law) - China
+- Privacy Act 1988 en Australian Privacy Principles - Australië
+- Privacy Act 2020 - Nieuw-Zeeland
+- PIPA (Personal Information Protection Act) - Zuid-Korea
+- Information Technology Act en Digital Personal Data Protection Act - India
+
+**MIDDEN-OOSTEN EN AFRIKA**
+- POPIA (Protection of Personal Information Act) - Zuid-Afrika
+- NDPR (Nigeria Data Protection Regulation) - Nigeria
+- Data Protection Act - Kenia
+- PDPL (Personal Data Protection Law) - VAE/DIFC
+- Qatar National Information Assurance Policy
+- Alle andere gegevensbeschermingswetten in het Midden-Oosten en Afrika
+
+**OVERIGE RECHTSGEBIEDEN**
+- Federal Law on Personal Data - Rusland
+- Alle andere nationale, regionale en lokale gegevensbeschermingswetten wereldwijd
+- Toekomstige wetgeving die van toepassing kan worden
+
+1.2.1 **UNIVERSELE NALEVING**: Wij streven ernaar te voldoen aan de strengste gegevensbeschermingsnormen wereldwijd. Indien er conflicten bestaan tussen verschillende rechtsgebieden, passen wij de hoogste beschermingsstandaard toe die verenigbaar is met onze bedrijfsvoering.
 
 1.3 Door gebruik te maken van onze diensten, stemt u in met de praktijken beschreven in dit Beleid.
 
@@ -557,7 +619,7 @@ Wij reageren binnen DERTIG (30) dagen op verzoeken, of binnen de wettelijk verei
     title: "Disclaimer",
     content: `**UITGEBREIDE JURIDISCHE DISCLAIMER – PREMIUM DOMEINEN**
 
-**Laatst bijgewerkt: Januari 2025**
+**Laatst bijgewerkt: Januari 2026**
 
 **ZEER BELANGRIJK - LEES ZORGVULDIG VOOR GEBRUIK**
 
@@ -755,7 +817,7 @@ e) De informatie actueel, volledig of foutloos is
     title: "Cookiebeleid",
     content: `**UITGEBREID COOKIEBELEID – PREMIUM DOMEINEN**
 
-**Laatst bijgewerkt: Januari 2025**
+**Laatst bijgewerkt: Januari 2026**
 
 **1. INLEIDING EN TOEPASSINGSGEBIED**
 
