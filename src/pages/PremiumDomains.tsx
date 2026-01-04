@@ -208,11 +208,16 @@ const premiumDomains = [
   },
   {
     name: "euromedialiteracy.eu",
-    description: "Educatief EU-domein gericht op media en onderwijs.",
-    mozScore: 31,
+    description: "Educatief EU-domein met backlinks van Wikipedia, Penn State, Wisconsin en Council of Europe.",
+    mozScore: 32,
+    pageAuthority: 38,
+    linkingDomains: 372,
+    inboundLinks: "2.5K+",
+    followedLinks: "2.3K+",
     category: "Onderwijs",
     price: "Op aanvraag",
-    backlinks: "720+"
+    backlinks: "2.5K+",
+    topBacklinks: ["es.wikipedia.org (DA 96)", "psu.edu (DA 92)", "scoop.it (DA 92)", "wisc.edu (DA 91)", "coe.int (DA 89)"]
   },
   {
     name: "evader-project.eu",
