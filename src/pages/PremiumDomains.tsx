@@ -840,6 +840,19 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "440+"
   },
+  {
+    name: "dunyaendesiedefilm.nl",
+    description: "Nederlands film/media domein met backlinks van Wikipedia (EN, JA), IPFS, FilmWeb en Cinemagia.",
+    mozScore: 26,
+    pageAuthority: 23,
+    linkingDomains: 102,
+    inboundLinks: "214+",
+    followedLinks: "180+",
+    category: "Media",
+    price: "Op aanvraag",
+    backlinks: "214+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "ja.wikipedia.org (DA 93)", "ipfs.io (DA 84)", "filmweb.pl (DA 80)", "csfd.cz (DA 72)"]
+  },
   // DA 25
   {
     name: "brave-project.eu",
@@ -1159,14 +1172,6 @@ const premiumDomains = [
     topBacklinks: ["europa.eu (DA 97)", "medium.com (DA 95)", "mdpi.com (DA 92)", "campaign-archive.com (DA 84)", "telecomtv.com (DA 67)"]
   },
   // DA TBD (0)
-  {
-    name: "dunyaendesiedefilm.nl",
-    description: "Nederlands film/media domein.",
-    mozScore: 0,
-    category: "Media",
-    price: "Op aanvraag",
-    backlinks: "TBD"
-  },
   {
     name: "epc2018.be",
     description: "Belgisch evenement domein.",
