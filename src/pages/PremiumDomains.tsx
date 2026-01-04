@@ -132,6 +132,19 @@ const premiumDomains = [
     backlinks: "232+",
     topBacklinks: ["globo.com (DA 93)", "vogue.com (DA 92)", "harpersbazaar.com (DA 89)", "grazia.it (DA 73)"]
   },
+  {
+    name: "muenchner-kirchennachrichten.de",
+    description: "Duits nieuws/religieus domein met backlinks van Wikipedia (EN, DE, ZH, NL), Spiegel en La Croix.",
+    mozScore: 35,
+    pageAuthority: 29,
+    linkingDomains: 281,
+    inboundLinks: "3.3K+",
+    followedLinks: "1.8K+",
+    category: "Nieuws",
+    price: "Op aanvraag",
+    backlinks: "3.3K+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "de.wikipedia.org (DA 94)", "fandom.com (DA 94)", "spiegel.de (DA 93)", "la-croix.com (DA 88)"]
+  },
   // DA 33
   {
     name: "etongmbh.de",
@@ -1071,14 +1084,6 @@ const premiumDomains = [
     description: "Kort en memorabel EU-domein.",
     mozScore: 0,
     category: "Algemeen",
-    price: "Op aanvraag",
-    backlinks: "TBD"
-  },
-  {
-    name: "muenchner-kirchennachrichten.de",
-    description: "Duits nieuws/religieus domein.",
-    mozScore: 0,
-    category: "Nieuws",
     price: "Op aanvraag",
     backlinks: "TBD"
   },
