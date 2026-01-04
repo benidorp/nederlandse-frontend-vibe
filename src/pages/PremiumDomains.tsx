@@ -455,11 +455,16 @@ const premiumDomains = [
   },
   {
     name: "finnovaregio.eu",
-    description: "Financiële innovatie EU-regio domein.",
-    mozScore: 28,
+    description: "Financiële innovatie EU-regio domein met backlinks van Crunchbase, Splashthat en Climate-KIC.",
+    mozScore: 29,
+    pageAuthority: 20,
+    linkingDomains: 41,
+    inboundLinks: "156+",
+    followedLinks: "143+",
     category: "Finance",
     price: "Op aanvraag",
-    backlinks: "500+"
+    backlinks: "156+",
+    topBacklinks: ["goo.gl (DA 95)", "crunchbase.com (DA 91)", "splashthat.com (DA 86)", "emprendedores.es (DA 66)", "climate-kic.org (DA 64)"]
   },
   {
     name: "worth-project.eu",
