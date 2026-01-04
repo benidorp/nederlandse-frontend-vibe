@@ -1074,11 +1074,16 @@ const premiumDomains = [
   },
   {
     name: "happyvpro.nl",
-    description: "Nederlands media domein.",
+    description: "Nederlands media domein met backlinks van TinyURL, Ello, XS4ALL, Emerce en VPRO.",
     mozScore: 25,
+    pageAuthority: 23,
+    linkingDomains: 74,
+    inboundLinks: "1.5K+",
+    followedLinks: "1.4K+",
     category: "Media",
     price: "Op aanvraag",
-    backlinks: "400+"
+    backlinks: "1.5K+",
+    topBacklinks: ["tinyurl.com (DA 94)", "ello.co (DA 85)", "xs4all.nl (DA 79)", "emerce.nl (DA 69)", "vpro.nl (DA 68)"]
   },
   {
     name: "edlupt.eu",
