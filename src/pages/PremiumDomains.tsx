@@ -299,11 +299,16 @@ const premiumDomains = [
   },
   {
     name: "rtmpilecki.eu",
-    description: "Historisch/cultureel EU-domein met sterke backlinks.",
-    mozScore: 31,
+    description: "Historisch/cultureel EU-domein met backlinks van Wikipedia (ES, ID, ZH), Poolse overheid en Thread Reader.",
+    mozScore: 30,
+    pageAuthority: 27,
+    linkingDomains: 96,
+    inboundLinks: "199+",
+    followedLinks: "95+",
     category: "Cultuur",
     price: "Op aanvraag",
-    backlinks: "690+"
+    backlinks: "199+",
+    topBacklinks: ["es.wikipedia.org (DA 96)", "id.wikipedia.org (DA 93)", "zh.wikipedia.org (DA 91)", "gov.pl (DA 91)", "threadreaderapp.com (DA 78)"]
   },
   {
     name: "friendsofthesupergrid.eu",
