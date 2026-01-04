@@ -351,11 +351,16 @@ const premiumDomains = [
   },
   {
     name: "greenweek2010.eu",
-    description: "Duurzaamheids domein, perfect voor milieu-initiatieven.",
+    description: "Duurzaamheids domein met backlinks van Europa.eu, EurekAlert, RAI en AAAS.",
     mozScore: 29,
+    pageAuthority: 28,
+    linkingDomains: 109,
+    inboundLinks: "259+",
+    followedLinks: "249+",
     category: "Duurzaamheid",
     price: "Op aanvraag",
-    backlinks: "580+"
+    backlinks: "259+",
+    topBacklinks: ["europa.eu (DA 97)", "eurekalert.org (DA 91)", "rai.it (DA 81)", "au.dk (DA 77)", "aaas.org (DA 76)"]
   },
   {
     name: "resurbis.eu",
