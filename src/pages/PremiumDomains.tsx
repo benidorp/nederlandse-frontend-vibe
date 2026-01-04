@@ -608,6 +608,19 @@ const premiumDomains = [
   },
   // DA 27
   {
+    name: "spanvis.nl",
+    description: "Nederlands domein met backlinks van Wikipedia (EN, RU, NL), Wikiwand en XS4All.",
+    mozScore: 27,
+    pageAuthority: 29,
+    linkingDomains: 241,
+    inboundLinks: "2.1K+",
+    followedLinks: "1.9K+",
+    category: "Algemeen",
+    price: "Op aanvraag",
+    backlinks: "2.1K+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "ru.wikipedia.org (DA 94)", "nl.wikipedia.org (DA 91)", "wikiwand.com (DA 85)", "xs4all.nl (DA 79)"]
+  },
+  {
     name: "seatglobal.eu",
     description: "Internationaal mobiliteit/transport domein met backlinks van Europa.eu, Springer, PLOS en Phys.org.",
     mozScore: 27,
@@ -1091,14 +1104,6 @@ const premiumDomains = [
     description: "EU catering/evenement domein.",
     mozScore: 0,
     category: "Food",
-    price: "Op aanvraag",
-    backlinks: "TBD"
-  },
-  {
-    name: "spanvis.nl",
-    description: "Nederlands domein.",
-    mozScore: 0,
-    category: "Algemeen",
     price: "Op aanvraag",
     backlinks: "TBD"
   },
