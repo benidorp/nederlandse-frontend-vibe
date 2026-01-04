@@ -1104,11 +1104,16 @@ const premiumDomains = [
   },
   {
     name: "romain-roquette.be",
-    description: "Belgisch persoonlijk/portfolio domein.",
+    description: "Belgisch persoonlijk/portfolio domein met backlinks van Airbnb, Foursquare, The Culture Trip en Knack.be.",
     mozScore: 22,
+    pageAuthority: 28,
+    linkingDomains: 63,
+    inboundLinks: "112+",
+    followedLinks: "74+",
     category: "Portfolio",
     price: "Op aanvraag",
-    backlinks: "310+"
+    backlinks: "112+",
+    topBacklinks: ["airbnb.com (DA 93)", "foursquare.com (DA 92)", "theculturetrip.com (DA 89)", "untappd.com (DA 77)", "knack.be (DA 77)"]
   },
   {
     name: "naumburgermeister.eu",
