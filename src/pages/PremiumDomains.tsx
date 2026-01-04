@@ -527,6 +527,19 @@ const premiumDomains = [
     backlinks: "245+",
     topBacklinks: ["europa.eu (DA 97)", "euronews.com (DA 92)", "angel.co (DA 86)", "campaign-archive.com (DA 84)", "arts.ac.uk (DA 81)"]
   },
+  {
+    name: "push-pull-parking.eu",
+    description: "EU mobiliteit/parking domein met backlinks van Europa.eu, Medium, Zeit.de en Thread Reader.",
+    mozScore: 29,
+    pageAuthority: 30,
+    linkingDomains: 107,
+    inboundLinks: "320+",
+    followedLinks: "292+",
+    category: "Mobiliteit",
+    price: "Op aanvraag",
+    backlinks: "320+",
+    topBacklinks: ["europa.eu (DA 97)", "medium.com (DA 95)", "zeit.de (DA 91)", "threadreaderapp.com (DA 78)", "eur.nl (DA 68)"]
+  },
   // DA 28
   {
     name: "bovisadrivein.it",
@@ -1078,14 +1091,6 @@ const premiumDomains = [
     description: "EU catering/evenement domein.",
     mozScore: 0,
     category: "Food",
-    price: "Op aanvraag",
-    backlinks: "TBD"
-  },
-  {
-    name: "push-pull-parking.eu",
-    description: "EU mobiliteit/parking domein.",
-    mozScore: 0,
-    category: "Mobiliteit",
     price: "Op aanvraag",
     backlinks: "TBD"
   },
