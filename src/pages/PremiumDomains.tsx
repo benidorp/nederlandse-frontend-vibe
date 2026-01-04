@@ -481,11 +481,16 @@ const premiumDomains = [
   },
   {
     name: "eu-sabana.eu",
-    description: "Duurzame landbouw EU-project domein.",
+    description: "Duurzame landbouw EU-project domein met backlinks van Europa.eu, The Conversation en Frontiers.",
     mozScore: 28,
+    pageAuthority: 24,
+    linkingDomains: 69,
+    inboundLinks: "413+",
+    followedLinks: "397+",
     category: "Landbouw",
     price: "Op aanvraag",
-    backlinks: "510+"
+    backlinks: "413+",
+    topBacklinks: ["europa.eu (DA 97)", "theconversation.com (DA 92)", "frontiersin.org (DA 92)", "diarioinformacion.com (DA 82)", "informacion.es (DA 78)"]
   },
   {
     name: "ellinikiglossa.eu",
