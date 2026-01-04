@@ -77,11 +77,16 @@ const premiumDomains = [
   },
   {
     name: "etongmbh.de",
-    description: "Duits bedrijfsdomein met sterke zakelijke autoriteit.",
+    description: "Duits bedrijfsdomein met sterke zakelijke autoriteit en backlinks van Naver, Yumpu, Heise, Computerbase en Motor-Talk.",
     mozScore: 33,
+    pageAuthority: 27,
+    linkingDomains: 321,
+    inboundLinks: "3.9K+",
+    followedLinks: "1.6K+",
     category: "Business",
     price: "Op aanvraag",
-    backlinks: "790+"
+    backlinks: "3.9K+",
+    topBacklinks: ["naver.com (DA 93)", "yumpu.com (DA 91)", "heise.de (DA 91)", "computerbase.de (DA 84)", "motor-talk.de (DA 73)"]
   },
   {
     name: "co-da.eu",
@@ -1111,12 +1116,50 @@ const PremiumDomains = () => {
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <div className="flex items-center justify-between mb-4 text-sm">
-                      <div className="flex items-center gap-2 text-slate-400">
-                        <Link className="w-4 h-4" />
-                        <span>Backlinks: {domain.backlinks}</span>
+                    <div className="space-y-3 mb-4">
+                      <div className="flex items-center justify-between text-sm">
+                        <div className="flex items-center gap-2 text-slate-400">
+                          <Link className="w-4 h-4" />
+                          <span>Backlinks: {domain.backlinks}</span>
+                        </div>
+                        <span className="text-amber-400 font-semibold">{domain.price}</span>
                       </div>
-                      <span className="text-amber-400 font-semibold">{domain.price}</span>
+                      
+                      {/* Extra stats for domains with detailed info */}
+                      {domain.pageAuthority && (
+                        <div className="grid grid-cols-2 gap-2 text-xs">
+                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                            <span className="text-slate-500">Page Authority:</span>
+                            <span className="text-white ml-1 font-medium">{domain.pageAuthority}</span>
+                          </div>
+                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                            <span className="text-slate-500">Linking Domains:</span>
+                            <span className="text-white ml-1 font-medium">{domain.linkingDomains}</span>
+                          </div>
+                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                            <span className="text-slate-500">Inbound Links:</span>
+                            <span className="text-white ml-1 font-medium">{domain.inboundLinks}</span>
+                          </div>
+                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                            <span className="text-slate-500">Followed Links:</span>
+                            <span className="text-white ml-1 font-medium">{domain.followedLinks}</span>
+                          </div>
+                        </div>
+                      )}
+                      
+                      {/* Top backlinks */}
+                      {domain.topBacklinks && domain.topBacklinks.length > 0 && (
+                        <div className="text-xs">
+                          <span className="text-slate-500 block mb-1">Top Backlinks:</span>
+                          <div className="flex flex-wrap gap-1">
+                            {domain.topBacklinks.slice(0, 3).map((link, i) => (
+                              <Badge key={i} variant="outline" className="text-[10px] border-amber-500/30 text-amber-400/80 bg-amber-500/5">
+                                {link}
+                              </Badge>
+                            ))}
+                          </div>
+                        </div>
+                      )}
                     </div>
                     <Button 
                       onClick={() => handleDomainInquiry(domain.name)}
