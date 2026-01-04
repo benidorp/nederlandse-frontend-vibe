@@ -1632,7 +1632,7 @@ const PremiumDomains = () => {
               {premiumDomains.map((domain, index) => (
                 <Card 
                   key={index} 
-                  className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 border-slate-700/50 backdrop-blur hover:border-amber-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10 group"
+                  className="h-full flex flex-col bg-gradient-to-br from-slate-800/80 to-slate-900/80 border-slate-700/50 backdrop-blur hover:border-amber-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10 group"
                 >
                   <CardHeader className="pb-3">
                     <div className="flex items-start justify-between">
@@ -1651,7 +1651,7 @@ const PremiumDomains = () => {
                       {domain.description}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent className="flex flex-col h-full">
+                  <CardContent className="flex flex-col flex-grow">
                     <div className="space-y-3 mb-4">
                       <div className="flex items-center justify-between text-sm">
                         <div className="flex items-center gap-2 text-slate-400">
