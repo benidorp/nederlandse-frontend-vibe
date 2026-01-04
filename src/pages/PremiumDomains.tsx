@@ -1060,14 +1060,6 @@ const premiumDomains = [
     backlinks: "350+"
   },
   {
-    name: "oramed-fp7.eu",
-    description: "Medisch onderzoek EU-FP7 project domein.",
-    mozScore: 23,
-    category: "Onderzoek",
-    price: "Op aanvraag",
-    backlinks: "340+"
-  },
-  {
     name: "eccomascfd2006.nl",
     description: "Nederlands technisch domein met backlinks van TU Delft, Southampton, Liverpool en NTNU.",
     mozScore: 23,
@@ -1206,6 +1198,19 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "187+",
     topBacklinks: ["fr.wikipedia.org (DA 95)", "nl.wikipedia.org (DA 91)", "ns.nl (DA 72)", "nieuws.nl (DA 63)", "prorail.nl (DA 55)"]
+  },
+  {
+    name: "oramed-fp7.eu",
+    description: "Medisch onderzoek EU-FP7 project domein met backlinks van Europa.eu, Springer, IIT en FGOV.be.",
+    mozScore: 21,
+    pageAuthority: 24,
+    linkingDomains: 60,
+    inboundLinks: "130+",
+    followedLinks: "109+",
+    category: "Onderzoek",
+    price: "Op aanvraag",
+    backlinks: "130+",
+    topBacklinks: ["europa.eu (DA 97)", "springer.com (DA 93)", "iit.edu (DA 75)", "fgov.be (DA 72)", "upc.edu (DA 71)"]
   },
   {
     name: "ismagazine.nl",
