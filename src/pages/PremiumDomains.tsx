@@ -876,6 +876,19 @@ const premiumDomains = [
     topBacklinks: ["europa.eu (DA 97)", "cambridge.org (DA 93)", "springer.com (DA 93)", "heise.de (DA 91)", "euractiv.com (DA 84)"]
   },
   {
+    name: "front-vosges-14-18.eu",
+    description: "Historisch WO1 herdenkingsdomein met backlinks van Wikipedia (FR, DE), StackExchange, FranceInfo en INRIA.",
+    mozScore: 25,
+    pageAuthority: 27,
+    linkingDomains: 122,
+    inboundLinks: "443+",
+    followedLinks: "318+",
+    category: "Geschiedenis",
+    price: "Op aanvraag",
+    backlinks: "443+",
+    topBacklinks: ["fr.wikipedia.org (DA 95)", "de.wikipedia.org (DA 94)", "stackexchange.com (DA 91)", "franceinfo.fr (DA 91)", "inria.fr (DA 83)"]
+  },
+  {
     name: "serletproject.eu",
     description: "Europees innovatie project domein.",
     mozScore: 25,
@@ -1190,14 +1203,6 @@ const premiumDomains = [
     description: "Nederlands sport/gymnastiek domein.",
     mozScore: 0,
     category: "Sport",
-    price: "Op aanvraag",
-    backlinks: "TBD"
-  },
-  {
-    name: "front-vosges-14-18.eu",
-    description: "Historisch WO1 herdenkingsdomein.",
-    mozScore: 0,
-    category: "Geschiedenis",
     price: "Op aanvraag",
     backlinks: "TBD"
   },
