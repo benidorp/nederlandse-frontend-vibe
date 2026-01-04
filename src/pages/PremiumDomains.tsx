@@ -338,11 +338,16 @@ const premiumDomains = [
   },
   {
     name: "leading-the-digital-decade.eu",
-    description: "Digitale transformatie EU-domein met sterke autoriteit.",
-    mozScore: 30,
+    description: "Digitale transformatie EU-domein met backlinks van Europa.eu, Politico EU en LSE.",
+    mozScore: 31,
+    pageAuthority: 30,
+    linkingDomains: 80,
+    inboundLinks: "189+",
+    followedLinks: "174+",
     category: "Digitaal",
     price: "Op aanvraag",
-    backlinks: "680+"
+    backlinks: "189+",
+    topBacklinks: ["europa.eu (DA 97)", "politico.eu (DA 91)", "lse.ac.uk (DA 89)", "fapesp.br (DA 72)", "eureporter.co (DA 68)"]
   },
   {
     name: "greenweek2010.eu",
