@@ -776,6 +776,19 @@ const premiumDomains = [
     backlinks: "219+",
     topBacklinks: ["europa.eu (DA 97)", "pages.dev (DA 91)", "campaign-archive.com (DA 84)", "siliconrepublic.com (DA 83)", "wko.at (DA 74)"]
   },
+  {
+    name: "life-envoll.eu",
+    description: "Milieu en natuur EU-project domein met backlinks van Europa.eu, FranceInfo, Campaign Archive en Midi Libre.",
+    mozScore: 27,
+    pageAuthority: 22,
+    linkingDomains: 54,
+    inboundLinks: "67.8K+",
+    followedLinks: "67.8K+",
+    category: "Milieu",
+    price: "Op aanvraag",
+    backlinks: "67.8K+",
+    topBacklinks: ["europa.eu (DA 97)", "franceinfo.fr (DA 91)", "campaign-archive.com (DA 84)", "midilibre.fr (DA 81)", "developpement-durable.gouv.fr (DA 74)"]
+  },
   // DA 26
   {
     name: "covenant-capacity.eu",
@@ -789,14 +802,6 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "2.6K+",
     topBacklinks: ["europa.eu (DA 97)", "bt.com (DA 91)", "mynewsdesk.com (DA 89)", "campaign-archive.com (DA 84)", "panda.org (DA 77)"]
-  },
-  {
-    name: "life-envoll.eu",
-    description: "Milieu en natuur EU-project domein.",
-    mozScore: 26,
-    category: "Milieu",
-    price: "Op aanvraag",
-    backlinks: "470+"
   },
   {
     name: "hotelgiotto.eu",
