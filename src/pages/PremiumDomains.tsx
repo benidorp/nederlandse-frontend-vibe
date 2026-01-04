@@ -1503,9 +1503,9 @@ const PremiumDomains = () => {
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                 Premium Domeinnamen Te Koop
               </h2>
-              <p className="text-slate-400 max-w-2xl mx-auto">
+              <p className="text-slate-400 max-w-3xl mx-auto">
                 Elk domein is zorgvuldig geselecteerd op basis van MOZ-autoriteit, backlinkprofiel en SEO-potentieel. 
-                Zoek je een <strong className="text-white">expired domeinnaam kopen</strong> of <strong className="text-white">betrouwbare expired domeinen</strong>? Bekijk ons aanbod hieronder.
+                Wil je een <strong className="text-white">expired domeinnaam kopen</strong> of zoek je <strong className="text-white">betrouwbare expired domeinamen</strong>? Bekijk ons aanbod hieronder.
               </p>
             </div>
             
