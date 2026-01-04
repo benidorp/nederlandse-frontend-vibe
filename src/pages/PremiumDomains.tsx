@@ -390,11 +390,16 @@ const premiumDomains = [
   },
   {
     name: "euforistudy.eu",
-    description: "Educatief EU-studie domein.",
+    description: "Educatief EU-studie domein met backlinks van The Guardian, Trinity College Dublin en VU Amsterdam.",
     mozScore: 29,
+    pageAuthority: 27,
+    linkingDomains: 72,
+    inboundLinks: "215+",
+    followedLinks: "170+",
     category: "Onderwijs",
     price: "Op aanvraag",
-    backlinks: "540+"
+    backlinks: "215+",
+    topBacklinks: ["theguardian.com (DA 94)", "ask.com (DA 88)", "tcd.ie (DA 86)", "vu.nl (DA 76)", "muni.cz (DA 74)"]
   },
   {
     name: "beatassist.eu",
