@@ -1168,6 +1168,19 @@ const premiumDomains = [
     topBacklinks: ["ovh.net (DA 92)", "joomla.org (DA 92)", "wsu.edu (DA 87)", "csic.es (DA 78)", "knows.nl (DA 65)"]
   },
   {
+    name: "fantasticgymnastics.nl",
+    description: "Nederlands sport/gymnastiek domein met backlinks van LiveInternet, Pages.dev, XSRV en Toolforge.",
+    mozScore: 21,
+    pageAuthority: 29,
+    linkingDomains: 246,
+    inboundLinks: "7.6K+",
+    followedLinks: "7.5K+",
+    category: "Sport",
+    price: "Op aanvraag",
+    backlinks: "7.6K+",
+    topBacklinks: ["liveinternet.ru (DA 93)", "pages.dev (DA 91)", "xsrv.jp (DA 89)", "toolforge.org (DA 80)", "worldwidetopsite.com (DA 71)"]
+  },
+  {
     name: "mbelgique.be",
     description: "Belgisch nationaal domein.",
     mozScore: 21,
@@ -1208,14 +1221,6 @@ const premiumDomains = [
     description: "Belgisch evenement domein.",
     mozScore: 0,
     category: "Evenementen",
-    price: "Op aanvraag",
-    backlinks: "TBD"
-  },
-  {
-    name: "fantasticgymnastics.nl",
-    description: "Nederlands sport/gymnastiek domein.",
-    mozScore: 0,
-    category: "Sport",
     price: "Op aanvraag",
     backlinks: "TBD"
   },
