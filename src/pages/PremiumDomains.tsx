@@ -606,6 +606,19 @@ const premiumDomains = [
     backlinks: "117+",
     topBacklinks: ["springer.com (DA 93)", "mdpi.com (DA 92)", "ilfattoquotidiano.it (DA 90)", "unimi.it (DA 72)", "polimi.it (DA 71)"]
   },
+  {
+    name: "davidhughesillustration.co.uk",
+    description: "Creatief UK domein met backlinks van The Guardian, Creative Bloq, ORF.at en Publishers Weekly.",
+    mozScore: 28,
+    pageAuthority: 27,
+    linkingDomains: 157,
+    inboundLinks: "3.9K+",
+    followedLinks: "3.9K+",
+    category: "Kunst/Design",
+    price: "Op aanvraag",
+    backlinks: "3.9K+",
+    topBacklinks: ["theguardian.com (DA 94)", "creativebloq.com (DA 86)", "orf.at (DA 86)", "librarything.com (DA 80)", "publishersweekly.com (DA 77)"]
+  },
   // DA 27
   {
     name: "spanvis.nl",
@@ -632,14 +645,6 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "4.8K+",
     topBacklinks: ["europa.eu (DA 97)", "springer.com (DA 93)", "plos.org (DA 93)", "salon.com (DA 91)", "phys.org (DA 91)"]
-  },
-  {
-    name: "davidhughesillustration.co.uk",
-    description: "Creatief UK domein, perfect voor illustratie of design studios.",
-    mozScore: 27,
-    category: "Kunst/Design",
-    price: "Op aanvraag",
-    backlinks: "490+"
   },
   {
     name: "arcomem.eu",
