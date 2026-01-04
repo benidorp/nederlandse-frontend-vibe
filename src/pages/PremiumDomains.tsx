@@ -52,6 +52,19 @@ const premiumDomains = [
     backlinks: "1.9K+",
     topBacklinks: ["europa.eu (DA 97)", "theguardian.com (DA 94)", "telegraph.co.uk (DA 94)", "dw.com (DA 93)", "boston.com (DA 92)"]
   },
+  {
+    name: "tabby.eu",
+    description: "Kort en memorabel EU-domein met backlinks van YouTube, Le Monde, MDPI, Corriere en Wired Italia.",
+    mozScore: 37,
+    pageAuthority: 27,
+    linkingDomains: 166,
+    inboundLinks: "3K+",
+    followedLinks: "2.9K+",
+    category: "Algemeen",
+    price: "Op aanvraag",
+    backlinks: "3K+",
+    topBacklinks: ["youtube.com (DA 100)", "lemonde.fr (DA 93)", "mdpi.com (DA 92)", "corriere.it (DA 92)", "wired.it (DA 90)"]
+  },
   // DA 36
   {
     name: "antigonetickets.be",
@@ -1074,14 +1087,6 @@ const premiumDomains = [
   {
     name: "spanvis.nl",
     description: "Nederlands domein.",
-    mozScore: 0,
-    category: "Algemeen",
-    price: "Op aanvraag",
-    backlinks: "TBD"
-  },
-  {
-    name: "tabby.eu",
-    description: "Kort en memorabel EU-domein.",
     mozScore: 0,
     category: "Algemeen",
     price: "Op aanvraag",
