@@ -619,6 +619,19 @@ const premiumDomains = [
     backlinks: "3.9K+",
     topBacklinks: ["theguardian.com (DA 94)", "creativebloq.com (DA 86)", "orf.at (DA 86)", "librarything.com (DA 80)", "publishersweekly.com (DA 77)"]
   },
+  {
+    name: "centremlm.be",
+    description: "Belgisch centrum domein met backlinks van Wikipedia (FR, IT, NL), Le Figaro en Wiktionary.",
+    mozScore: 28,
+    pageAuthority: 28,
+    linkingDomains: 182,
+    inboundLinks: "9.6K+",
+    followedLinks: "9.3K+",
+    category: "Algemeen",
+    price: "Op aanvraag",
+    backlinks: "9.6K+",
+    topBacklinks: ["fr.wikipedia.org (DA 95)", "it.wikipedia.org (DA 93)", "wiktionary.org (DA 93)", "lefigaro.fr (DA 93)", "nl.wikipedia.org (DA 91)"]
+  },
   // DA 27
   {
     name: "spanvis.nl",
@@ -658,14 +671,6 @@ const premiumDomains = [
     price: "Op aanvraag",
     backlinks: "2.7K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "europa.eu (DA 97)", "w3.org (DA 95)", "slideshare.net (DA 94)", "ox.ac.uk (DA 92)"]
-  },
-  {
-    name: "centremlm.be",
-    description: "Belgisch centrum domein met lokale autoriteit.",
-    mozScore: 27,
-    category: "Algemeen",
-    price: "Op aanvraag",
-    backlinks: "470+"
   },
   {
     name: "lt-pl-ru.eu",
