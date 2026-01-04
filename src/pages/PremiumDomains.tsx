@@ -403,11 +403,16 @@ const premiumDomains = [
   },
   {
     name: "beatassist.eu",
-    description: "Geschikt voor muziekproductie, audio software of creative tools.",
+    description: "Muziekproductie domein met backlinks van Google Sites, Scoop.it, Envato en MusicRadar.",
     mozScore: 29,
+    pageAuthority: 29,
+    linkingDomains: 164,
+    inboundLinks: "1.5K+",
+    followedLinks: "1.2K+",
     category: "Muziek/Audio",
     price: "Op aanvraag",
-    backlinks: "540+"
+    backlinks: "1.5K+",
+    topBacklinks: ["sites.google.com (DA 96)", "scoop.it (DA 92)", "envato.com (DA 91)", "informer.com (DA 90)", "codecanyon.net (DA 83)"]
   },
   {
     name: "eureka-hvacr.eu",
