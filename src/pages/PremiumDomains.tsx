@@ -90,7 +90,7 @@ const premiumDomains = [
     inboundLinks: "1.1K+",
     followedLinks: "831+",
     category: "Kunst/Cultuur",
-    price: "Op aanvraag",
+    price: "€749",
     backlinks: "1.1K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "cnn.com (DA 94)", "behance.net (DA 92)", "rtbf.be (DA 82)"]
   },
@@ -103,7 +103,7 @@ const premiumDomains = [
     inboundLinks: "719+",
     followedLinks: "663+",
     category: "Muziek",
-    price: "Op aanvraag",
+    price: "€799",
     backlinks: "719+",
     topBacklinks: ["bbc.co.uk (DA 95)", "theguardian.com (DA 95)", "pitchfork.com (DA 88)", "nme.com (DA 86)"]
   },
@@ -116,7 +116,7 @@ const premiumDomains = [
     inboundLinks: "898+",
     followedLinks: "785+",
     category: "Internationaal",
-    price: "Op aanvraag",
+    price: "€749",
     backlinks: "898+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "reddit.com (DA 97)", "nbcnews.com (DA 93)", "cam.ac.uk (DA 93)"]
   },
@@ -130,7 +130,7 @@ const premiumDomains = [
     inboundLinks: "3.4K+",
     followedLinks: "1.8K+",
     category: "Technologie",
-    price: "Op aanvraag",
+    price: "€899",
     backlinks: "3.4K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "nasa.gov (DA 95)", "europa.eu (DA 94)", "ieee.org (DA 93)"]
   },
@@ -143,7 +143,7 @@ const premiumDomains = [
     inboundLinks: "232+",
     followedLinks: "173+",
     category: "Sport",
-    price: "Op aanvraag",
+    price: "€599",
     backlinks: "232+",
     topBacklinks: ["globo.com (DA 93)", "vogue.com (DA 92)", "harpersbazaar.com (DA 89)", "grazia.it (DA 73)"]
   },
@@ -156,7 +156,7 @@ const premiumDomains = [
     inboundLinks: "3.3K+",
     followedLinks: "1.8K+",
     category: "Nieuws",
-    price: "Op aanvraag",
+    price: "€699",
     backlinks: "3.3K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "de.wikipedia.org (DA 94)", "fandom.com (DA 94)", "spiegel.de (DA 93)", "la-croix.com (DA 88)"]
   },
@@ -170,7 +170,7 @@ const premiumDomains = [
     inboundLinks: "3.9K+",
     followedLinks: "1.6K+",
     category: "Business",
-    price: "Op aanvraag",
+    price: "€649",
     backlinks: "3.9K+",
     topBacklinks: ["naver.com (DA 93)", "yumpu.com (DA 91)", "heise.de (DA 91)", "computerbase.de (DA 84)", "motor-talk.de (DA 73)"]
   },
@@ -183,7 +183,7 @@ const premiumDomains = [
     inboundLinks: "690.3K+",
     followedLinks: "689.6K+",
     category: "Toerisme",
-    price: "Op aanvraag",
+    price: "€749",
     backlinks: "690.3K+",
     topBacklinks: ["scoop.it (DA 92)", "franceinfo.fr (DA 91)", "latribune.fr (DA 86)", "culture.gouv.fr (DA 76)", "agriculture.gouv.fr (DA 72)"]
   },
@@ -196,7 +196,7 @@ const premiumDomains = [
     inboundLinks: "1.7K+",
     followedLinks: "1.7K+",
     category: "Algemeen",
-    price: "Op aanvraag",
+    price: "€599",
     backlinks: "1.7K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "variety.com (DA 93)", "constantcontact.com (DA 90)", "rtbf.be (DA 89)", "courrierinternational.com (DA 80)"]
   },
@@ -1652,13 +1652,20 @@ const PremiumDomains = () => {
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
+                    {/* Prominent Price Display */}
+                    <div className="mb-4 p-3 bg-gradient-to-r from-amber-500/20 to-amber-600/10 border border-amber-500/30 rounded-lg text-center">
+                      <span className="text-2xl font-bold text-amber-400">{domain.price}</span>
+                      {domain.price !== "Op aanvraag" && (
+                        <span className="text-xs text-slate-400 block mt-1">Eenmalige betaling</span>
+                      )}
+                    </div>
+                    
                     <div className="space-y-3 mb-4">
                       <div className="flex items-center justify-between text-sm">
                         <div className="flex items-center gap-2 text-slate-400">
                           <Link className="w-4 h-4" />
                           <span>Backlinks: {domain.backlinks}</span>
                         </div>
-                        <span className="text-amber-400 font-semibold">{domain.price}</span>
                       </div>
                       
                       {/* Extra stats for domains with detailed info */}
