@@ -429,11 +429,16 @@ const premiumDomains = [
   },
   {
     name: "energaware.eu",
-    description: "Energie bewustzijn EU-project domein.",
+    description: "Energie bewustzijn EU-project domein met backlinks van Europa.eu, UOL, El País en Le Figaro.",
     mozScore: 29,
+    pageAuthority: 26,
+    linkingDomains: 61,
+    inboundLinks: "15.1K+",
+    followedLinks: "15.1K+",
     category: "Energie",
     price: "Op aanvraag",
-    backlinks: "520+"
+    backlinks: "15.1K+",
+    topBacklinks: ["europa.eu (DA 97)", "uol.com.br (DA 95)", "elpais.com (DA 94)", "lefigaro.fr (DA 93)", "mdpi.com (DA 92)"]
   },
   {
     name: "5gmedia.eu",
