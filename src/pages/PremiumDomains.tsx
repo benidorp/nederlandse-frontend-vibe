@@ -356,7 +356,8 @@ const premiumDomains = [
     category: "Duurzaamheid",
     price: "€899",
     backlinks: "7.5K+",
-    topBacklinks: ["europa.eu (DA 97)", "abc.es (DA 93)", "gencat.cat (DA 89)", "ask.com (DA 88)", "ecoticias.com (DA 74)"]
+    topBacklinks: ["europa.eu (DA 97)", "abc.es (DA 93)", "gencat.cat (DA 89)", "ask.com (DA 88)", "ecoticias.com (DA 74)"],
+    useCases: ["Natuurbeheer & Rewilding NGO", "Duurzame Landbouw Platform", "Ecotoerisme & Agritoerisme", "Milieu Consultancy Bureau", "Landschapsarchitectuur Studio", "Biologische Boerderij Collectief", "Climate Action Stichting", "Permacultuur Academie", "Bossen & Biodiversiteit Initiatief", "Regeneratieve Landbouw Community"]
   },
   // DA 30
   {
@@ -370,7 +371,8 @@ const premiumDomains = [
     category: "Beauty",
     price: "€799",
     backlinks: "1.6K+",
-    topBacklinks: ["alza.cz (DA 92)", "glamourmagazine.co.uk (DA 82)", "polyvore.com (DA 79)", "fave.co (DA 78)", "cbinsights.com (DA 77)"]
+    topBacklinks: ["alza.cz (DA 92)", "glamourmagazine.co.uk (DA 82)", "polyvore.com (DA 79)", "fave.co (DA 78)", "cbinsights.com (DA 77)"],
+    useCases: ["Beauty & Skincare E-commerce", "Cosmetica Review Blog", "Make-up Artist Portfolio", "Natuurlijke Cosmetica Merk", "Beauty Influencer Platform", "Schoonheidssalon Keten", "K-Beauty & J-Beauty Import", "Vegan Cosmetica Webshop", "Beauty Box Subscription Service", "Cosmetica Ingrediënten Database"]
   },
   {
     name: "rtmpilecki.eu",
@@ -1690,6 +1692,20 @@ const PremiumDomains = () => {
                             {domain.topBacklinks.slice(0, 5).map((link, i) => (
                               <Badge key={i} variant="outline" className="text-[10px] border-amber-500/30 text-amber-400/80 bg-amber-500/5">
                                 {link}
+                              </Badge>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                      
+                      {/* Use Cases */}
+                      {domain.useCases && domain.useCases.length > 0 && (
+                        <div className="text-xs">
+                          <span className="text-slate-500 block mb-1">Geschikt voor:</span>
+                          <div className="flex flex-wrap gap-1">
+                            {domain.useCases.map((useCase, i) => (
+                              <Badge key={i} variant="outline" className="text-[10px] border-emerald-500/30 text-emerald-400/80 bg-emerald-500/5">
+                                {useCase}
                               </Badge>
                             ))}
                           </div>
