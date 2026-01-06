@@ -716,6 +716,8 @@ i) Domeinen kunnen zijn gebruikt voor phishing, malware, illegale activiteiten o
 j) De reputatie van een domein kan permanent beschadigd zijn
 k) Archieven zoals Wayback Machine tonen mogelijk niet alle historische content
 l) DNS-records, e-mailreputatie of IP-reputatie kunnen besmet zijn
+m) Domeinen kunnen in het verleden zijn gebruikt voor 301 redirects naar andere websites, waardoor de huidige backlinks en autoriteit mogelijk afkomstig zijn van of gerelateerd zijn aan content die niet meer relevant of beschikbaar is
+n) Vorige eigenaren kunnen het domein hebben ingezet als redirect-domein voor linkbuilding, PBN-netwerken of andere SEO-strategieën
 
 **TECHNISCHE RISICO'S**
 m) Overdrachten kunnen mislukken of vertraagd worden door technische problemen
