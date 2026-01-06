@@ -41,7 +41,8 @@ const premiumDomains = [
     category: "Hospitality",
     price: "€799",
     backlinks: "1.9K+",
-    topBacklinks: ["theguardian.com (DA 94)", "telegraph.co.uk (DA 94)", "dailymail.co.uk (DA 94)", "irishtimes.com (DA 91)", "derstandard.at (DA 82)"]
+    topBacklinks: ["theguardian.com (DA 94)", "telegraph.co.uk (DA 94)", "dailymail.co.uk (DA 94)", "irishtimes.com (DA 91)", "derstandard.at (DA 82)"],
+    stripePaymentLink: "https://buy.stripe.com/14A8wP2Hd16edXfgdc9Zm03"
   },
   {
     name: "icesculpture.be",
@@ -1733,6 +1734,29 @@ const PremiumDomains = () => {
                               ></stripe-buy-button>`
                             }}
                           />
+                          <div className="flex flex-col items-center gap-1.5 text-center">
+                            <div className="flex items-center gap-2">
+                              <Lock className="w-3 h-3 text-slate-400" />
+                              <img src={stripeLogo} alt="Stripe" className="h-5" />
+                            </div>
+                            <p className="text-[10px] text-slate-400 leading-tight">
+                              Veilige betaling via Stripe • PayPal • Amazon Pay en meer
+                              <br />
+                              Automatisch omgerekend naar uw lokale valuta
+                            </p>
+                          </div>
+                        </div>
+                      ) : domain.stripePaymentLink ? (
+                        <div className="flex flex-col gap-3">
+                          <a 
+                            href={domain.stripePaymentLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-amber-500/25"
+                          >
+                            Koop Nu
+                            <ArrowRight className="h-4 w-4" />
+                          </a>
                           <div className="flex flex-col items-center gap-1.5 text-center">
                             <div className="flex items-center gap-2">
                               <Lock className="w-3 h-3 text-slate-400" />
