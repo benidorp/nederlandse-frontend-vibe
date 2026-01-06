@@ -1747,16 +1747,25 @@ const PremiumDomains = () => {
                             </p>
                           </div>
                         </div>
-                      ) : domain.stripePaymentLink ? (
+                      ) : (
                         <div className="flex flex-col gap-3">
-                          <a 
-                            href={domain.stripePaymentLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#F59E0B] hover:bg-[#D97706] text-slate-950 font-semibold rounded-md transition-all duration-200 shadow-md hover:shadow-lg text-sm"
-                          >
-                            Koop Nu
-                          </a>
+                          {domain.stripePaymentLink ? (
+                            <a 
+                              href={domain.stripePaymentLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#F59E0B] hover:bg-[#D97706] text-slate-950 font-semibold rounded-md transition-all duration-200 shadow-md hover:shadow-lg text-sm"
+                            >
+                              Koop Nu
+                            </a>
+                          ) : (
+                            <button 
+                              disabled
+                              className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-slate-600 text-slate-300 font-semibold rounded-md text-sm cursor-not-allowed opacity-75"
+                            >
+                              Betaallink volgt
+                            </button>
+                          )}
                           <div className="flex flex-col items-center gap-2 text-center">
                             <div className="flex items-center justify-center gap-1.5 flex-wrap">
                               {/* Visa - Clear text logo */}
@@ -1797,14 +1806,6 @@ const PremiumDomains = () => {
                             </p>
                           </div>
                         </div>
-                      ) : (
-                        <Button 
-                          onClick={() => handleDomainInquiry(domain.name)}
-                          className="w-full bg-gradient-to-r from-slate-700 to-slate-800 hover:from-amber-500 hover:to-amber-600 hover:text-slate-950 transition-all duration-300 border border-slate-600 hover:border-amber-500"
-                        >
-                          Neem Contact Op
-                          <ArrowRight className="ml-2 h-4 w-4" />
-                        </Button>
                       )}
                     </div>
                   </CardContent>
