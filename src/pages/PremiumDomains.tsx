@@ -553,8 +553,8 @@ const premiumDomains = [
     inboundLinks: "338+",
     followedLinks: "265+",
     category: "Technologie",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
+    price: "€675",
+    stripePaymentLink: "https://buy.stripe.com/cNi00jdlR9CK5qJf989Zm0k",
     backlinks: "338+",
     topBacklinks: ["medium.com (DA 95)", "ibm.com (DA 93)", "telefonica.com (DA 79)", "upv.es (DA 79)", "upm.es (DA 78)"]
   },
