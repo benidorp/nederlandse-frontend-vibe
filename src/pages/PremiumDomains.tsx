@@ -281,7 +281,8 @@ const premiumDomains = [
     inboundLinks: "379+",
     followedLinks: "266+",
     category: "Projecten",
-    price: "€799",
+    price: "€695",
+    stripePaymentLink: "https://buy.stripe.com/dRm28r5TpaGO6uNe549Zm0b",
     backlinks: "379+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "cambridge.org (DA 93)", "unesco.org (DA 93)", "reddit.com (DA 92)", "mdpi.com (DA 92)"]
   },
@@ -294,7 +295,8 @@ const premiumDomains = [
     inboundLinks: "333+",
     followedLinks: "293+",
     category: "Onderzoek",
-    price: "€849",
+    price: "€695",
+    stripePaymentLink: "https://buy.stripe.com/dRm28r5TpaGO6uNe549Zm0b",
     backlinks: "333+",
     topBacklinks: ["europa.eu (DA 97)", "github.com (DA 96)", "nytimes.com (DA 95)", "elpais.com (DA 94)", "springer.com (DA 93)"]
   },
@@ -307,7 +309,8 @@ const premiumDomains = [
     inboundLinks: "128+",
     followedLinks: "109+",
     category: "Projecten",
-    price: "€649",
+    price: "€695",
+    stripePaymentLink: "https://buy.stripe.com/dRm28r5TpaGO6uNe549Zm0b",
     backlinks: "128+",
     topBacklinks: ["europa.eu (DA 97)", "spiegel.de (DA 93)", "europapress.es (DA 91)", "heise.de (DA 91)", "autoblog.com (DA 90)"]
   },
@@ -320,7 +323,8 @@ const premiumDomains = [
     inboundLinks: "15.2K+",
     followedLinks: "15K+",
     category: "Media",
-    price: "€999",
+    price: "€695",
+    stripePaymentLink: "https://buy.stripe.com/dRm28r5TpaGO6uNe549Zm0b",
     backlinks: "15.2K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "kuleuven.be (DA 83)", "nieuwsblad.be (DA 82)", "skynet.be (DA 80)", "yle.fi (DA 78)"]
   },
@@ -333,7 +337,8 @@ const premiumDomains = [
     inboundLinks: "1.7K+",
     followedLinks: "1.6K+",
     category: "Netwerk",
-    price: "€849",
+    price: "€695",
+    stripePaymentLink: "https://buy.stripe.com/dRm28r5TpaGO6uNe549Zm0b",
     backlinks: "1.7K+",
     topBacklinks: ["microsoft.com (DA 99)", "nos.nl (DA 90)", "neowin.net (DA 88)", "techpowerup.com (DA 83)", "tweakers.net (DA 79)"]
   },
@@ -346,7 +351,8 @@ const premiumDomains = [
     inboundLinks: "189+",
     followedLinks: "174+",
     category: "Digitaal",
-    price: "€749",
+    price: "€695",
+    stripePaymentLink: "https://buy.stripe.com/dRm28r5TpaGO6uNe549Zm0b",
     backlinks: "189+",
     topBacklinks: ["europa.eu (DA 97)", "politico.eu (DA 91)", "lse.ac.uk (DA 89)", "fapesp.br (DA 72)", "eureporter.co (DA 68)"]
   },
@@ -359,7 +365,8 @@ const premiumDomains = [
     inboundLinks: "7.5K+",
     followedLinks: "7.4K+",
     category: "Duurzaamheid",
-    price: "€899",
+    price: "€695",
+    stripePaymentLink: "https://buy.stripe.com/dRm28r5TpaGO6uNe549Zm0b",
     backlinks: "7.5K+",
     topBacklinks: ["europa.eu (DA 97)", "abc.es (DA 93)", "gencat.cat (DA 89)", "ask.com (DA 88)", "ecoticias.com (DA 74)"],
     useCases: ["Natuurbeheer & Rewilding NGO", "Duurzame Landbouw Platform", "Ecotoerisme & Agritoerisme", "Milieu Consultancy Bureau", "Landschapsarchitectuur Studio", "Biologische Boerderij Collectief", "Climate Action Stichting", "Permacultuur Academie", "Bossen & Biodiversiteit Initiatief", "Regeneratieve Landbouw Community"]
