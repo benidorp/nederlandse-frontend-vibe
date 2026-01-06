@@ -6,7 +6,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Crown, TrendingUp, Shield, Globe, Zap, Award, ArrowRight, CheckCircle, Star, Link, Target, BarChart3, Mail, User, MessageSquare, Lock, ArrowUp } from "lucide-react";
+import { Crown, TrendingUp, Shield, Globe, Zap, Award, ArrowRight, CheckCircle, Star, Link, Target, BarChart3, Mail, User, MessageSquare, Lock, ArrowUp, Home } from "lucide-react";
+import { Link as RouterLink } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
 import LegalLinksPremiumDomains from "@/components/premium-domains/LegalLinksPremiumDomains";
 import FooterPremiumDomains from "@/components/premium-domains/FooterPremiumDomains";
@@ -1512,11 +1513,17 @@ const PremiumDomains = () => {
         {/* Header */}
         <header className="sticky top-0 z-50 backdrop-blur-xl bg-slate-950/80 border-b border-amber-500/20">
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <Crown className="h-8 w-8 text-amber-400" />
-              <span className="text-xl font-bold bg-gradient-to-r from-amber-200 to-amber-400 bg-clip-text text-transparent">
-                Premium Domeinen
-              </span>
+            <div className="flex items-center gap-6">
+              <RouterLink to="/" className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium flex items-center gap-1">
+                <Home className="h-4 w-4" />
+                Home
+              </RouterLink>
+              <RouterLink to="/expireddomeinnamen/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" className="flex items-center gap-3">
+                <Crown className="h-8 w-8 text-amber-400" />
+                <span className="text-xl font-bold bg-gradient-to-r from-amber-200 to-amber-400 bg-clip-text text-transparent hover:from-amber-300 hover:to-amber-500 transition-all">
+                  Premium Domeinen
+                </span>
+              </RouterLink>
             </div>
             <nav className="hidden md:flex items-center gap-6">
               <button onClick={() => scrollToSection("domains")} className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium">
