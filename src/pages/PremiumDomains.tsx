@@ -374,7 +374,8 @@ const premiumDomains = [
     inboundLinks: "1.6K+",
     followedLinks: "1.3K+",
     category: "Beauty",
-    price: "€799",
+    price: "€595",
+    stripePaymentLink: "https://buy.stripe.com/fZu6oH6Xt3emg5n5yy9Zm0a",
     backlinks: "1.6K+",
     topBacklinks: ["alza.cz (DA 92)", "glamourmagazine.co.uk (DA 82)", "polyvore.com (DA 79)", "fave.co (DA 78)", "cbinsights.com (DA 77)"],
     useCases: ["Beauty & Skincare E-commerce", "Cosmetica Review Blog", "Make-up Artist Portfolio", "Natuurlijke Cosmetica Merk", "Beauty Influencer Platform", "Schoonheidssalon Keten", "K-Beauty & J-Beauty Import", "Vegan Cosmetica Webshop", "Beauty Box Subscription Service", "Cosmetica Ingrediënten Database"]
@@ -388,7 +389,8 @@ const premiumDomains = [
     inboundLinks: "199+",
     followedLinks: "95+",
     category: "Cultuur",
-    price: "€549",
+    price: "€595",
+    stripePaymentLink: "https://buy.stripe.com/fZu6oH6Xt3emg5n5yy9Zm0a",
     backlinks: "199+",
     topBacklinks: ["es.wikipedia.org (DA 96)", "gov.pl (DA 91)", "threadreaderapp.com (DA 78)", "gloria.tv (DA 69)", "dbpedia.org (DA 65)"]
   },
@@ -401,7 +403,8 @@ const premiumDomains = [
     inboundLinks: "156.1K+",
     followedLinks: "155.8K+",
     category: "Energie",
-    price: "€1.299",
+    price: "€595",
+    stripePaymentLink: "https://buy.stripe.com/fZu6oH6Xt3emg5n5yy9Zm0a",
     backlinks: "156.1K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "cnet.com (DA 93)", "theconversation.com (DA 92)", "ieee.org (DA 92)", "corriere.it (DA 92)"]
   },
@@ -414,7 +417,8 @@ const premiumDomains = [
     inboundLinks: "375+",
     followedLinks: "357+",
     category: "Technologie",
-    price: "€549",
+    price: "€595",
+    stripePaymentLink: "https://buy.stripe.com/fZu6oH6Xt3emg5n5yy9Zm0a",
     backlinks: "375+",
     topBacklinks: ["ow.ly (DA 90)", "euractiv.com (DA 84)", "campaign-archive.com (DA 84)", "danfoss.com (DA 69)", "coleurope.eu (DA 57)"]
   },
@@ -427,7 +431,8 @@ const premiumDomains = [
     inboundLinks: "2.2K+",
     followedLinks: "2.1K+",
     category: "Food",
-    price: "€699",
+    price: "€595",
+    stripePaymentLink: "https://buy.stripe.com/fZu6oH6Xt3emg5n5yy9Zm0a",
     backlinks: "2.2K+",
     topBacklinks: ["google.sk (DA 85)", "wikiwand.com (DA 85)", "ra.co (DA 85)", "pravda.sk (DA 79)", "dennikn.sk (DA 76)"]
   },
