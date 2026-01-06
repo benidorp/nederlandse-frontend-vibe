@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import { Crown, ArrowLeft } from "lucide-react";
+import { Crown, ArrowLeft, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import LegalFooterPremiumDomains from "@/components/premium-domains/LegalFooterPremiumDomains";
@@ -27,12 +27,20 @@ const PremiumDomainsLegal = () => {
                 <Crown className="h-8 w-8 text-amber-400" />
                 <span className="text-xl font-bold text-white">Premium Domeinen</span>
               </Link>
-              <Link to="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde">
-                <Button variant="outline" className="border-slate-700 text-white hover:bg-slate-800">
-                  <ArrowLeft className="mr-2 h-4 w-4" />
-                  Terug naar Domeinen
-                </Button>
-              </Link>
+              <div className="flex items-center gap-3">
+                <Link to="/">
+                  <Button variant="outline" className="bg-slate-800 border-slate-600 text-white hover:bg-slate-700">
+                    <Home className="mr-2 h-4 w-4" />
+                    Home
+                  </Button>
+                </Link>
+                <Link to="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde">
+                  <Button variant="outline" className="bg-slate-800 border-slate-600 text-white hover:bg-slate-700">
+                    <ArrowLeft className="mr-2 h-4 w-4" />
+                    Terug naar Domeinen
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </header>
