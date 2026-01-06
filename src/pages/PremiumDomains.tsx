@@ -1176,9 +1176,10 @@ const premiumDomains = [
     inboundLinks: "146+",
     followedLinks: "115+",
     category: "Maritiem",
-    price: "Op aanvraag",
+    price: "€125",
     backlinks: "146+",
-    topBacklinks: ["europa.eu (DA 97)", "theconversation.com (DA 92)", "mdpi.com (DA 92)", "siliconrepublic.com (DA 83)", "bristol.ac.uk (DA 78)"]
+    topBacklinks: ["europa.eu (DA 97)", "theconversation.com (DA 92)", "mdpi.com (DA 92)", "siliconrepublic.com (DA 83)", "bristol.ac.uk (DA 78)"],
+    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
   },
   {
     name: "200jaarstaten-generaal.nl",
@@ -1189,9 +1190,10 @@ const premiumDomains = [
     inboundLinks: "150+",
     followedLinks: "136+",
     category: "Overheid/Cultuur",
-    price: "Op aanvraag",
+    price: "€125",
     backlinks: "150+",
-    topBacklinks: ["nos.nl (DA 90)", "universiteitleiden.nl (DA 82)", "transparent.com (DA 76)", "tweedekamer.nl (DA 64)", "rd.nl (DA 62)"]
+    topBacklinks: ["nos.nl (DA 90)", "universiteitleiden.nl (DA 82)", "transparent.com (DA 76)", "tweedekamer.nl (DA 64)", "rd.nl (DA 62)"],
+    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
   },
   {
     name: "eu-thor.eu",
@@ -1202,9 +1204,10 @@ const premiumDomains = [
     inboundLinks: "18.4K+",
     followedLinks: "18.3K+",
     category: "Projecten",
-    price: "Op aanvraag",
+    price: "€125",
     backlinks: "18.4K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "europa.eu (DA 97)", "fr.wikipedia.org (DA 95)", "de.wikipedia.org (DA 94)", "yumpu.com (DA 91)"]
+    topBacklinks: ["en.wikipedia.org (DA 97)", "europa.eu (DA 97)", "fr.wikipedia.org (DA 95)", "de.wikipedia.org (DA 94)", "yumpu.com (DA 91)"],
+    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
   },
   {
     name: "eccomascfd2006.nl",
@@ -1215,9 +1218,10 @@ const premiumDomains = [
     inboundLinks: "371+",
     followedLinks: "352+",
     category: "Technologie",
-    price: "Op aanvraag",
+    price: "€125",
     backlinks: "371+",
-    topBacklinks: ["tudelft.nl (DA 85)", "soton.ac.uk (DA 85)", "uu.se (DA 83)", "liverpool.ac.uk (DA 83)", "ntnu.no (DA 77)"]
+    topBacklinks: ["tudelft.nl (DA 85)", "soton.ac.uk (DA 85)", "uu.se (DA 83)", "liverpool.ac.uk (DA 83)", "ntnu.no (DA 77)"],
+    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
   },
   {
     name: "mbelgique.be",
@@ -1228,9 +1232,10 @@ const premiumDomains = [
     inboundLinks: "113+",
     followedLinks: "87+",
     category: "Algemeen",
-    price: "Op aanvraag",
+    price: "€125",
     backlinks: "113+",
-    topBacklinks: ["fr.wikipedia.org (DA 95)", "bfmtv.com (DA 92)", "heise.de (DA 91)", "nu.nl (DA 91)", "europe1.fr (DA 90)"]
+    topBacklinks: ["fr.wikipedia.org (DA 95)", "bfmtv.com (DA 92)", "heise.de (DA 91)", "nu.nl (DA 91)", "europe1.fr (DA 90)"],
+    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
   },
   {
     name: "lifemanev.eu",
@@ -1241,9 +1246,10 @@ const premiumDomains = [
     inboundLinks: "1.1K+",
     followedLinks: "1K+",
     category: "Duurzaamheid",
-    price: "Op aanvraag",
+    price: "€125",
     backlinks: "1.1K+",
-    topBacklinks: ["mdpi.com (DA 92)", "itacyl.es (DA 45)", "cebas.csic.es (DA 42)"]
+    topBacklinks: ["mdpi.com (DA 92)", "itacyl.es (DA 45)", "cebas.csic.es (DA 42)"],
+    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
   },
   // DA 22
   {
@@ -1255,9 +1261,10 @@ const premiumDomains = [
     inboundLinks: "323+",
     followedLinks: "312+",
     category: "Kunst/Erfgoed",
-    price: "Op aanvraag",
+    price: "€125",
     backlinks: "323+",
-    topBacklinks: ["campaign-archive.com (DA 84)", "knack.be (DA 77)", "tntcode.com (DA 61)", "tvl.be (DA 52)", "brusselslife.be (DA 52)"]
+    topBacklinks: ["campaign-archive.com (DA 84)", "knack.be (DA 77)", "tntcode.com (DA 61)", "tvl.be (DA 52)", "brusselslife.be (DA 52)"],
+    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
   },
   {
     name: "infoecmi.eu",
@@ -1268,9 +1275,10 @@ const premiumDomains = [
     inboundLinks: "1.2K+",
     followedLinks: "727+",
     category: "Informatie",
-    price: "Op aanvraag",
+    price: "€125",
     backlinks: "1.2K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "es.wikipedia.org (DA 96)", "pt.wikipedia.org (DA 96)", "ru.wikipedia.org (DA 94)", "ucl.ac.uk (DA 91)"]
+    topBacklinks: ["en.wikipedia.org (DA 97)", "es.wikipedia.org (DA 96)", "pt.wikipedia.org (DA 96)", "ru.wikipedia.org (DA 94)", "ucl.ac.uk (DA 91)"],
+    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
   },
   {
     name: "romain-roquette.be",
@@ -1281,9 +1289,10 @@ const premiumDomains = [
     inboundLinks: "112+",
     followedLinks: "74+",
     category: "Portfolio",
-    price: "Op aanvraag",
+    price: "€125",
     backlinks: "112+",
-    topBacklinks: ["airbnb.com (DA 93)", "foursquare.com (DA 92)", "theculturetrip.com (DA 89)", "untappd.com (DA 77)", "knack.be (DA 77)"]
+    topBacklinks: ["airbnb.com (DA 93)", "foursquare.com (DA 92)", "theculturetrip.com (DA 89)", "untappd.com (DA 77)", "knack.be (DA 77)"],
+    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
   },
   {
     name: "naumburgermeister.eu",
@@ -1294,9 +1303,10 @@ const premiumDomains = [
     inboundLinks: "4.9K+",
     followedLinks: "4.7K+",
     category: "Overheid",
-    price: "Op aanvraag",
+    price: "€125",
     backlinks: "4.9K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "es.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)", "ru.wikipedia.org (DA 94)", "creativecommons.org (DA 94)"]
+    topBacklinks: ["en.wikipedia.org (DA 97)", "es.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)", "ru.wikipedia.org (DA 94)", "creativecommons.org (DA 94)"],
+    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
   },
   {
     name: "europeanmuseumforum.eu",
@@ -1307,9 +1317,10 @@ const premiumDomains = [
     inboundLinks: "4.9K+",
     followedLinks: "4.7K+",
     category: "Cultuur",
-    price: "Op aanvraag",
+    price: "€125",
     backlinks: "4.9K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "es.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)", "ru.wikipedia.org (DA 94)", "creativecommons.org (DA 94)"]
+    topBacklinks: ["en.wikipedia.org (DA 97)", "es.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)", "ru.wikipedia.org (DA 94)", "creativecommons.org (DA 94)"],
+    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
   },
   {
     name: "escmalta2018.eu",
@@ -1320,9 +1331,10 @@ const premiumDomains = [
     inboundLinks: "1.1K+",
     followedLinks: "1K+",
     category: "Evenementen",
-    price: "Op aanvraag",
+    price: "€125",
     backlinks: "1.1K+",
-    topBacklinks: ["ethz.ch (DA 89)", "azure.com (DA 84)", "copernicus.eu (DA 83)", "csic.es (DA 78)", "monash.edu (DA 77)"]
+    topBacklinks: ["ethz.ch (DA 89)", "azure.com (DA 84)", "copernicus.eu (DA 83)", "csic.es (DA 78)", "monash.edu (DA 77)"],
+    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
   },
   {
     name: "eurasiancouncilforeignaffairs.eu",
@@ -1333,9 +1345,10 @@ const premiumDomains = [
     inboundLinks: "184+",
     followedLinks: "98+",
     category: "Internationaal",
-    price: "Op aanvraag",
+    price: "€125",
     backlinks: "184+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "es.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)", "bit.ly (DA 94)", "cam.ac.uk (DA 92)"]
+    topBacklinks: ["en.wikipedia.org (DA 97)", "es.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)", "bit.ly (DA 94)", "cam.ac.uk (DA 92)"],
+    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
   },
   {
     name: "waterpipp.eu",
@@ -1346,9 +1359,10 @@ const premiumDomains = [
     inboundLinks: "1.2K+",
     followedLinks: "1.1K+",
     category: "Milieu",
-    price: "Op aanvraag",
+    price: "€125",
     backlinks: "1.2K+",
-    topBacklinks: ["europa.eu (DA 97)", "bit.ly (DA 94)", "ask.com (DA 88)", "campaign-archive.com (DA 84)", "worldwidetopsite.com (DA 71)"]
+    topBacklinks: ["europa.eu (DA 97)", "bit.ly (DA 94)", "ask.com (DA 88)", "campaign-archive.com (DA 84)", "worldwidetopsite.com (DA 71)"],
+    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
   },
   {
     name: "artsalivewales.org.uk",
@@ -1359,9 +1373,10 @@ const premiumDomains = [
     inboundLinks: "863+",
     followedLinks: "752+",
     category: "Kunst",
-    price: "Op aanvraag",
+    price: "€125",
     backlinks: "863+",
-    topBacklinks: ["theguardian.com (DA 94)", "mirror.co.uk (DA 94)", "eventbrite.co.uk (DA 91)", "walesonline.co.uk (DA 90)", "constantcontact.com (DA 90)"]
+    topBacklinks: ["theguardian.com (DA 94)", "mirror.co.uk (DA 94)", "eventbrite.co.uk (DA 91)", "walesonline.co.uk (DA 90)", "constantcontact.com (DA 90)"],
+    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
   },
   // DA 21
   {
