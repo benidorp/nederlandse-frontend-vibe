@@ -25,7 +25,7 @@ const premiumDomains = [
     inboundLinks: "4.6K+",
     followedLinks: "4.2K+",
     category: "Onderwijs",
-    price: "€999",
+    price: "€1.495 excl. btw",
     backlinks: "4.6K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "lemonde.fr (DA 93)", "cornell.edu (DA 92)", "spiegel.de (DA 90)"],
     stripePaymentLink: "https://buy.stripe.com/6oUeVdepVg18dXf9OO9Zm04"
