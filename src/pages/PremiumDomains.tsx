@@ -135,7 +135,8 @@ const premiumDomains = [
     inboundLinks: "3.4K+",
     followedLinks: "1.8K+",
     category: "Technologie",
-    price: "€899",
+    price: "€875",
+    stripePaymentLink: "https://buy.stripe.com/aFa5kD81x16e1ate549Zm0e",
     backlinks: "3.4K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "nasa.gov (DA 95)", "europa.eu (DA 94)", "ieee.org (DA 93)"]
   },
@@ -148,7 +149,8 @@ const premiumDomains = [
     inboundLinks: "232+",
     followedLinks: "173+",
     category: "Sport",
-    price: "€599",
+    price: "€875",
+    stripePaymentLink: "https://buy.stripe.com/aFa5kD81x16e1ate549Zm0e",
     backlinks: "232+",
     topBacklinks: ["globo.com (DA 93)", "vogue.com (DA 92)", "harpersbazaar.com (DA 89)", "grazia.it (DA 73)"]
   },
@@ -161,7 +163,8 @@ const premiumDomains = [
     inboundLinks: "3.3K+",
     followedLinks: "1.8K+",
     category: "Nieuws",
-    price: "€699",
+    price: "€875",
+    stripePaymentLink: "https://buy.stripe.com/aFa5kD81x16e1ate549Zm0e",
     backlinks: "3.3K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "de.wikipedia.org (DA 94)", "fandom.com (DA 94)", "spiegel.de (DA 93)", "la-croix.com (DA 88)"]
   },
@@ -175,7 +178,8 @@ const premiumDomains = [
     inboundLinks: "3.9K+",
     followedLinks: "1.6K+",
     category: "Business",
-    price: "€649",
+    price: "€795",
+    stripePaymentLink: "https://buy.stripe.com/7sYaEXdlR02a4mF1ii9Zm0d",
     backlinks: "3.9K+",
     topBacklinks: ["naver.com (DA 93)", "yumpu.com (DA 91)", "heise.de (DA 91)", "computerbase.de (DA 84)", "motor-talk.de (DA 73)"]
   },
@@ -188,7 +192,8 @@ const premiumDomains = [
     inboundLinks: "690.3K+",
     followedLinks: "689.6K+",
     category: "Toerisme",
-    price: "€749",
+    price: "€795",
+    stripePaymentLink: "https://buy.stripe.com/7sYaEXdlR02a4mF1ii9Zm0d",
     backlinks: "690.3K+",
     topBacklinks: ["scoop.it (DA 92)", "franceinfo.fr (DA 91)", "latribune.fr (DA 86)", "culture.gouv.fr (DA 76)", "agriculture.gouv.fr (DA 72)"]
   },
@@ -201,7 +206,8 @@ const premiumDomains = [
     inboundLinks: "1.7K+",
     followedLinks: "1.7K+",
     category: "Algemeen",
-    price: "€599",
+    price: "€795",
+    stripePaymentLink: "https://buy.stripe.com/7sYaEXdlR02a4mF1ii9Zm0d",
     backlinks: "1.7K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "variety.com (DA 93)", "constantcontact.com (DA 90)", "rtbf.be (DA 89)", "courrierinternational.com (DA 80)"]
   },
@@ -215,7 +221,8 @@ const premiumDomains = [
     inboundLinks: "2.7K+",
     followedLinks: "2.6K+",
     category: "Onderzoek",
-    price: "€899",
+    price: "€775",
+    stripePaymentLink: "https://buy.stripe.com/00w5kDbdJ16e3iB6CC9Zm0c",
     backlinks: "2.7K+",
     topBacklinks: ["europa.eu (DA 94)", "cam.ac.uk (DA 93)", "springer.com (DA 92)", "lse.ac.uk (DA 90)"]
   },
@@ -228,7 +235,8 @@ const premiumDomains = [
     inboundLinks: "276+",
     followedLinks: "260+",
     category: "Samenwerking",
-    price: "€799",
+    price: "€775",
+    stripePaymentLink: "https://buy.stripe.com/00w5kDbdJ16e3iB6CC9Zm0c",
     backlinks: "276+",
     topBacklinks: ["globo.com (DA 95)", "huffpost.com (DA 94)", "cbsnews.com (DA 93)", "gizmodo.com (DA 93)", "fastcompany.com (DA 92)"]
   },
@@ -241,7 +249,8 @@ const premiumDomains = [
     inboundLinks: "3.1K+",
     followedLinks: "3K+",
     category: "Internationaal",
-    price: "€749",
+    price: "€775",
+    stripePaymentLink: "https://buy.stripe.com/00w5kDbdJ16e3iB6CC9Zm0c",
     backlinks: "3.1K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "gofundme.com (DA 93)", "mundodeportivo.com (DA 92)", "nicematin.com (DA 73)", "triathlon.org (DA 68)"]
   },
@@ -254,7 +263,8 @@ const premiumDomains = [
     inboundLinks: "2.5K+",
     followedLinks: "2.3K+",
     category: "Onderwijs",
-    price: "€949",
+    price: "€775",
+    stripePaymentLink: "https://buy.stripe.com/00w5kDbdJ16e3iB6CC9Zm0c",
     backlinks: "2.5K+",
     topBacklinks: ["es.wikipedia.org (DA 96)", "psu.edu (DA 92)", "scoop.it (DA 92)", "wisc.edu (DA 91)", "coe.int (DA 89)"]
   },
@@ -267,7 +277,8 @@ const premiumDomains = [
     inboundLinks: "307+",
     followedLinks: "254+",
     category: "Transport",
-    price: "€699",
+    price: "€775",
+    stripePaymentLink: "https://buy.stripe.com/00w5kDbdJ16e3iB6CC9Zm0c",
     backlinks: "307+",
     topBacklinks: ["goo.gl (DA 95)", "tripadvisor.com (DA 93)", "skyscrapercity.com (DA 86)", "ricksteves.com (DA 77)", "rome2rio.com (DA 76)"]
   },
