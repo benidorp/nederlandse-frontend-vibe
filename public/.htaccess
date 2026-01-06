@@ -7,8 +7,9 @@
   RewriteCond %{HTTP_HOST} ^www\.iaee\.eu$ [NC]
   RewriteRule ^(.*)$ https://iaee.eu/$1 [L,R=301]
 
-  # 301 Redirect: Premium Domeinen naar subdirectory
-  RewriteRule ^premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde$ /expireddomeinnamen/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde [R=301,L]
+  # 301 Redirect: Premium Domeinen naar subdirectory met /nl/
+  RewriteRule ^premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde$ /expireddomeinnamen/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde [R=301,L]
+  RewriteRule ^expireddomeinnamen/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde$ /expireddomeinnamen/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde [R=301,L]
 
   # 301 Redirect: Premium Domeinen Juridische Documenten naar subdirectory met /nl/
   RewriteRule ^premium-domeinnamen-juridische-documenten$ /expireddomeinnamen/nl/premium-domeinnamen-juridische-documenten [R=301,L]

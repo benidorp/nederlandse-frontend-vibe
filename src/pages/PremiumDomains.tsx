@@ -1501,7 +1501,7 @@ const PremiumDomains = () => {
         <title>Premium Expired domeinnamen met backlinks hoge autoriteit & SEO-Waarde</title>
         <meta name="description" content="Expired domeinnaam met backlinks kopen? Betrouwbare expired domeinen met hoge autoriteit en SEO-waarde. Premium domeinnaam kopen voor snellere Google rankings. Direct beschikbaar." />
         <meta name="keywords" content="expired domeinnaam kopen, expired domeinnamen met backlinks, domeinnaam met autoriteit, betrouwbare expired domeinen, premium domeinnaam kopen, domeinnaam met SEO waarde, oude domeinnaam met links, beste domeinnamen te koop" />
-        <link rel="canonical" href="https://iaee.eu/expireddomeinnamen/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
+        <link rel="canonical" href="https://iaee.eu/expireddomeinnamen/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">

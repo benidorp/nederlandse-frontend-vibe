@@ -103,7 +103,7 @@ const FooterPremiumDomains = () => {
             <Link to="/" className="text-slate-400 hover:text-amber-400 transition-colors">
               Home
             </Link>
-            <Link to="/expireddomeinnamen/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" className="text-slate-400 hover:text-amber-400 transition-colors">
+            <Link to="/expireddomeinnamen/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" className="text-slate-400 hover:text-amber-400 transition-colors">
               Premium Domeinen
             </Link>
             <Link to="/expireddomeinnamen/nl/premium-domeinnamen-juridische-documenten" className="text-slate-400 hover:text-amber-400 transition-colors">

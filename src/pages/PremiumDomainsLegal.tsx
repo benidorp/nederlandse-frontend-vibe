@@ -23,11 +23,11 @@ const PremiumDomainsLegal = () => {
         <header className="py-6 border-b border-slate-800 bg-slate-950/80 backdrop-blur-sm sticky top-0 z-50">
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between">
-              <Link to="/expireddomeinnamen/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" className="flex items-center gap-3">
+              <Link to="/expireddomeinnamen/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" className="flex items-center gap-3">
                 <Crown className="h-8 w-8 text-amber-400" />
                 <span className="text-xl font-bold text-white">Premium Domeinen</span>
               </Link>
-              <Link to="/expireddomeinnamen/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde">
+              <Link to="/expireddomeinnamen/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde">
                 <Button variant="outline" className="border-slate-700 text-white hover:bg-slate-800">
                   <ArrowLeft className="mr-2 h-4 w-4" />
                   Terug naar Domeinen
