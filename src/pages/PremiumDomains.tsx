@@ -1506,21 +1506,21 @@ const PremiumDomains = () => {
         <title>Premium Expired domeinnamen met backlinks hoge autoriteit & SEO-Waarde</title>
         <meta name="description" content="Expired domeinnaam met backlinks kopen? Betrouwbare expired domeinen met hoge autoriteit en SEO-waarde. Premium domeinnaam kopen voor snellere Google rankings. Direct beschikbaar." />
         <meta name="keywords" content="expired domeinnaam kopen, expired domeinnamen met backlinks, domeinnaam met autoriteit, betrouwbare expired domeinen, premium domeinnaam kopen, domeinnaam met SEO waarde, oude domeinnaam met links, beste domeinnamen te koop" />
-        <link rel="canonical" href="https://iaee.eu/expireddomeinnamen/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
+        <link rel="canonical" href="https://iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
         {/* Header */}
         <header className="sticky top-0 z-50 backdrop-blur-xl bg-slate-950/80 border-b border-amber-500/20">
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-            <RouterLink to="/expireddomeinnamen/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" className="flex items-center gap-3">
+            <RouterLink to="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" className="flex items-center gap-3">
               <Crown className="h-8 w-8 text-amber-400" />
               <span className="text-xl font-bold bg-gradient-to-r from-amber-200 to-amber-400 bg-clip-text text-transparent hover:from-amber-300 hover:to-amber-500 transition-all">
                 Premium Domeinen
               </span>
             </RouterLink>
             <nav className="hidden md:flex items-center gap-6">
-              <RouterLink to="/expireddomeinnamen/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium flex items-center gap-1">
+              <RouterLink to="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium flex items-center gap-1">
                 <Home className="h-4 w-4" />
                 Home
               </RouterLink>

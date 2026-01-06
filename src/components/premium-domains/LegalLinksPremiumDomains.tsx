@@ -9,14 +9,14 @@ const LegalLinksPremiumDomains = () => {
         </h3>
         <div className="flex flex-wrap justify-center gap-4">
           <Link 
-            to="/expireddomeinnamen/nl/premium-domeinnamen-juridische-documenten" 
+            to="/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" 
             className="text-slate-300 hover:text-amber-400 transition-colors text-sm underline underline-offset-2"
           >
             Algemene Voorwaarden
           </Link>
           <span className="text-slate-600">|</span>
           <Link 
-            to="/expireddomeinnamen/nl/premium-domeinnamen-juridische-documenten" 
+            to="/expireddomainnames/nl/premium-domeinnamen-juridische-documenten"
             className="text-slate-300 hover:text-amber-400 transition-colors text-sm underline underline-offset-2"
           >
             Privacybeleid
