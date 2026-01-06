@@ -1373,7 +1373,7 @@ const premiumDomains = [
     inboundLinks: "187+",
     followedLinks: "134+",
     category: "Transport",
-    price: "Op aanvraag",
+    price: "€79",
     backlinks: "187+",
     topBacklinks: ["fr.wikipedia.org (DA 95)", "nl.wikipedia.org (DA 91)", "ns.nl (DA 72)", "nieuws.nl (DA 63)", "prorail.nl (DA 55)"],
     stripePaymentLink: "https://buy.stripe.com/7sY28rdlR9CK2exf989Zm05"
@@ -1387,7 +1387,7 @@ const premiumDomains = [
     inboundLinks: "130+",
     followedLinks: "109+",
     category: "Onderzoek",
-    price: "Op aanvraag",
+    price: "€79",
     backlinks: "130+",
     topBacklinks: ["europa.eu (DA 97)", "springer.com (DA 93)", "iit.edu (DA 75)", "fgov.be (DA 72)", "upc.edu (DA 71)"],
     stripePaymentLink: "https://buy.stripe.com/7sY28rdlR9CK2exf989Zm05"
@@ -1401,7 +1401,7 @@ const premiumDomains = [
     inboundLinks: "496+",
     followedLinks: "339+",
     category: "Media",
-    price: "Op aanvraag",
+    price: "€79",
     backlinks: "496+",
     topBacklinks: ["unesco.org (DA 93)", "wur.nl (DA 71)", "jouwweb.nl (DA 63)", "startpagina.nl (DA 63)", "fok.nl (DA 59)"],
     stripePaymentLink: "https://buy.stripe.com/7sY28rdlR9CK2exf989Zm05"
@@ -1415,7 +1415,7 @@ const premiumDomains = [
     inboundLinks: "280.6K+",
     followedLinks: "198.3K+",
     category: "Gaming",
-    price: "Op aanvraag",
+    price: "€79",
     backlinks: "280.6K+",
     topBacklinks: ["ovh.net (DA 92)", "joomla.org (DA 92)", "wsu.edu (DA 87)", "csic.es (DA 78)", "knows.nl (DA 65)"],
     stripePaymentLink: "https://buy.stripe.com/7sY28rdlR9CK2exf989Zm05"
@@ -1429,7 +1429,7 @@ const premiumDomains = [
     inboundLinks: "7.6K+",
     followedLinks: "7.5K+",
     category: "Sport",
-    price: "Op aanvraag",
+    price: "€79",
     backlinks: "7.6K+",
     topBacklinks: ["liveinternet.ru (DA 93)", "pages.dev (DA 91)", "xsrv.jp (DA 89)", "toolforge.org (DA 80)", "worldwidetopsite.com (DA 71)"],
     stripePaymentLink: "https://buy.stripe.com/7sY28rdlR9CK2exf989Zm05"
@@ -1443,7 +1443,7 @@ const premiumDomains = [
     inboundLinks: "338+",
     followedLinks: "306+",
     category: "Technologie",
-    price: "Op aanvraag",
+    price: "€79",
     backlinks: "338+",
     topBacklinks: ["springer.com (DA 93)", "sapo.pt (DA 93)", "pages.dev (DA 91)", "upm.es (DA 78)", "uc3m.es (DA 77)"],
     stripePaymentLink: "https://buy.stripe.com/7sY28rdlR9CK2exf989Zm05"
@@ -1458,7 +1458,7 @@ const premiumDomains = [
     inboundLinks: "191+",
     followedLinks: "146+",
     category: "Smart City",
-    price: "Op aanvraag",
+    price: "€79",
     backlinks: "191+",
     topBacklinks: ["europa.eu (DA 97)", "medium.com (DA 95)", "mdpi.com (DA 92)", "campaign-archive.com (DA 84)", "telecomtv.com (DA 67)"],
     stripePaymentLink: "https://buy.stripe.com/7sY28rdlR9CK2exf989Zm05"
