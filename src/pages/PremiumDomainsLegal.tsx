@@ -75,8 +75,8 @@ const PremiumDomainsLegal = () => {
                   </p>
                   <p>
                     <strong className="text-amber-400">Contact:</strong> Voor vragen over onze juridische documenten of domeinverkoop kunt u contact opnemen via{" "}
-                    <a href="mailto:info@iaeecommunity.com" className="text-amber-400 hover:underline">
-                      info@iaeecommunity.com
+                    <a href="mailto:support@iaee.eu" className="text-amber-400 hover:underline">
+                      support@iaee.eu
                     </a>
                   </p>
                 </div>
