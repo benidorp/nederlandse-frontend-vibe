@@ -15,7 +15,7 @@ const PremiumDomainsLegal = () => {
           content="Juridische documenten voor premium domeinnamen verkoop. Algemene voorwaarden, privacybeleid, disclaimer en cookiebeleid voor de aankoop van expired domeinen met SEO-waarde." 
         />
         <meta name="robots" content="noindex, nofollow" />
-        <link rel="canonical" href="https://iaee.eu/expireddomeinnamen/premium-domeinnamen-juridische-documenten" />
+        <link rel="canonical" href="https://iaee.eu/expireddomeinnamen/nl/premium-domeinnamen-juridische-documenten" />
       </Helmet>
       
       <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900">
