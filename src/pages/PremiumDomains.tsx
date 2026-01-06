@@ -82,7 +82,8 @@ const premiumDomains = [
     inboundLinks: "6.6K+",
     followedLinks: "6.6K+",
     category: "Entertainment",
-    price: "€699",
+    price: "€925",
+    stripePaymentLink: "https://buy.stripe.com/28E00ja9F9CK6uNgdc9Zm0f",
     backlinks: "6.6K+",
     topBacklinks: ["standaard.be (DA 81)", "nieuwsblad.be (DA 79)", "gva.be (DA 73)"]
   },
@@ -95,7 +96,8 @@ const premiumDomains = [
     inboundLinks: "1.1K+",
     followedLinks: "831+",
     category: "Kunst/Cultuur",
-    price: "€749",
+    price: "€925",
+    stripePaymentLink: "https://buy.stripe.com/28E00ja9F9CK6uNgdc9Zm0f",
     backlinks: "1.1K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "cnn.com (DA 94)", "behance.net (DA 92)", "rtbf.be (DA 82)"]
   },
@@ -108,7 +110,8 @@ const premiumDomains = [
     inboundLinks: "719+",
     followedLinks: "663+",
     category: "Muziek",
-    price: "€799",
+    price: "€925",
+    stripePaymentLink: "https://buy.stripe.com/28E00ja9F9CK6uNgdc9Zm0f",
     backlinks: "719+",
     topBacklinks: ["bbc.co.uk (DA 95)", "theguardian.com (DA 95)", "pitchfork.com (DA 88)", "nme.com (DA 86)"]
   },
@@ -121,7 +124,8 @@ const premiumDomains = [
     inboundLinks: "898+",
     followedLinks: "785+",
     category: "Internationaal",
-    price: "€749",
+    price: "€925",
+    stripePaymentLink: "https://buy.stripe.com/28E00ja9F9CK6uNgdc9Zm0f",
     backlinks: "898+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "reddit.com (DA 97)", "nbcnews.com (DA 93)", "cam.ac.uk (DA 93)"]
   },
