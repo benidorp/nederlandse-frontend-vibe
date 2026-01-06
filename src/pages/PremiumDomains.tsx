@@ -54,10 +54,10 @@ const premiumDomains = [
     inboundLinks: "1.9K+",
     followedLinks: "1.5K+",
     category: "Kunst",
-    price: "€849",
+    price: "€950",
     backlinks: "1.9K+",
     topBacklinks: ["europa.eu (DA 97)", "theguardian.com (DA 94)", "telegraph.co.uk (DA 94)", "dw.com (DA 93)", "boston.com (DA 92)"],
-    stripePaymentLink: "https://buy.stripe.com/14A8wP2Hd16edXfgdc9Zm03"
+    stripePaymentLink: "https://buy.stripe.com/fZu4gzdlRaGOg5n3qq9Zm0h"
   },
   {
     name: "tabby.eu",
