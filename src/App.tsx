@@ -55,7 +55,7 @@ const App = () => (
           <Route path="/es/documentos-legales-sitios-web-afiliados-terminos-condiciones-politica-privacidad-divulgacion-cookies" element={<Spanish />} />
           <Route path="/btw-calculator-wereldwijd" element={<VATCalculator />} />
           <Route path="/expireddomeinnamen/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" element={<PremiumDomains />} />
-          <Route path="/expireddomeinnamen/premium-domeinnamen-juridische-documenten" element={<PremiumDomainsLegal />} />
+          <Route path="/expireddomeinnamen/nl/premium-domeinnamen-juridische-documenten" element={<PremiumDomainsLegal />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
