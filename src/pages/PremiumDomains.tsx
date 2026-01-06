@@ -27,7 +27,7 @@ const premiumDomains = [
     price: "€999",
     backlinks: "4.6K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "lemonde.fr (DA 93)", "cornell.edu (DA 92)", "spiegel.de (DA 90)"],
-    stripeButtonId: "buy_btn_1SmXPUFXIgtr666GKiqpGe4u"
+    stripePaymentLink: "https://buy.stripe.com/14A8wP2Hd16edXfgdc9Zm03"
   },
   // DA 37
   {
