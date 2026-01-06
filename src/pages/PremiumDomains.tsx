@@ -1858,6 +1858,14 @@ const PremiumDomains = () => {
                               <img src={stripeLogo} alt="Stripe" className="h-5" />
                             </div>
                             <p className="text-[10px] text-slate-400 leading-tight">
+                              Na betaling ontvangt u binnen 24 uur de verhuistoken op uw e-mailadres.{" "}
+                              <a href="#domein-verhuizen" className="text-amber-400 hover:text-amber-300 underline">
+                                Hoe werkt verhuizen?
+                              </a>
+                              <br />
+                              Controleer ook uw spamfolder.
+                            </p>
+                            <p className="text-[10px] text-slate-400 leading-tight mt-1">
                               Veilige betaling via Stripe • PayPal • Amazon Pay en meer
                               <br />
                               Automatisch omgerekend naar uw lokale valuta
@@ -1916,6 +1924,14 @@ const PremiumDomains = () => {
                               <img src={stripeLogo} alt="Stripe" className="h-5" />
                             </div>
                             <p className="text-[10px] text-slate-400 leading-tight">
+                              Na betaling ontvangt u binnen 24 uur de verhuistoken op uw e-mailadres.{" "}
+                              <a href="#domein-verhuizen" className="text-amber-400 hover:text-amber-300 underline">
+                                Hoe werkt verhuizen?
+                              </a>
+                              <br />
+                              Controleer ook uw spamfolder.
+                            </p>
+                            <p className="text-[10px] text-slate-400 leading-tight mt-1">
                               Veilige betaling via Stripe
                               <br />
                               Automatisch omgerekend naar uw lokale valuta
@@ -2518,6 +2534,88 @@ const PremiumDomains = () => {
                   </div>
                 </div>
               </article>
+            </div>
+          </div>
+        </section>
+
+        {/* Domain Transfer Instructions - Collapsible Section */}
+        <section id="domein-verhuizen" className="py-16 bg-slate-900">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <Accordion type="single" collapsible className="w-full">
+                <AccordionItem value="transfer-instructions" className="border border-amber-500/30 rounded-xl bg-slate-800/50">
+                  <AccordionTrigger headingLevel="h2" className="px-6 text-xl font-bold text-white hover:no-underline">
+                    <div className="flex items-center gap-3">
+                      <Globe className="w-6 h-6 text-amber-400" />
+                      <span>Hoe verhuist u uw domein met de verhuistoken (EPP/Auth code)?</span>
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent className="px-6 pb-6">
+                    <div className="space-y-6 text-slate-300">
+                      <p className="text-lg">
+                        Na uw aankoop ontvangt u binnen 24 uur een <strong className="text-amber-400">verhuistoken</strong> (ook wel EPP-code of Auth-code genoemd) op het e-mailadres dat u bij de betaling hebt opgegeven. Met deze code kunt u het domein eenvoudig verhuizen naar uw eigen domeinregistrar of hostingprovider.
+                      </p>
+                      
+                      <div className="bg-slate-900/50 rounded-lg p-6 border border-slate-700">
+                        <h3 className="text-lg font-semibold text-white mb-4">Stapsgewijze instructies:</h3>
+                        <ol className="space-y-4">
+                          <li className="flex gap-3">
+                            <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">1</span>
+                            <div>
+                              <strong className="text-white">Ontvang de verhuistoken</strong>
+                              <p className="text-slate-400 mt-1">Controleer uw inbox (en spamfolder) voor de e-mail met de verhuistoken. Deze ontvangt u binnen 24 uur na betaling.</p>
+                            </div>
+                          </li>
+                          <li className="flex gap-3">
+                            <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">2</span>
+                            <div>
+                              <strong className="text-white">Log in bij uw domeinregistrar of hostingprovider</strong>
+                              <p className="text-slate-400 mt-1">Ga naar het domeinbeheer van uw provider (bijv. TransIP, Versio, Hostnet, Combell, one.com, GoDaddy, etc.).</p>
+                            </div>
+                          </li>
+                          <li className="flex gap-3">
+                            <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">3</span>
+                            <div>
+                              <strong className="text-white">Start de domeinverhuizing</strong>
+                              <p className="text-slate-400 mt-1">Zoek naar de optie "Domein verhuizen", "Transfer domein" of "Domein overnemen". Voer de domeinnaam in die u wilt verhuizen.</p>
+                            </div>
+                          </li>
+                          <li className="flex gap-3">
+                            <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">4</span>
+                            <div>
+                              <strong className="text-white">Voer de verhuistoken in</strong>
+                              <p className="text-slate-400 mt-1">Plak de verhuistoken (EPP/Auth-code) die u van ons hebt ontvangen in het daarvoor bestemde veld.</p>
+                            </div>
+                          </li>
+                          <li className="flex gap-3">
+                            <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">5</span>
+                            <div>
+                              <strong className="text-white">Bevestig en wacht op voltooiing</strong>
+                              <p className="text-slate-400 mt-1">De verhuizing duurt meestal 1-5 werkdagen, afhankelijk van de domeinextensie (.nl, .be, .eu, .com, etc.). U ontvangt een bevestiging wanneer de verhuizing is voltooid.</p>
+                            </div>
+                          </li>
+                        </ol>
+                      </div>
+                      
+                      <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg p-4">
+                        <div className="flex gap-3">
+                          <CheckCircle className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                          <div>
+                            <strong className="text-white">Tip:</strong>
+                            <p className="text-slate-300 mt-1">
+                              Heeft u nog geen domeinregistrar? Populaire Nederlandse en Belgische providers zijn TransIP, Versio, Hostnet, Antagonist, Combell en one.com. De meeste providers bieden gratis domeinverhuizing aan.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <p className="text-slate-400 text-sm">
+                        Heeft u vragen over de domeinverhuizing? Neem gerust contact met ons op via <a href="mailto:support@iaee.eu" className="text-amber-400 hover:text-amber-300">support@iaee.eu</a>.
+                      </p>
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </div>
           </div>
         </section>
