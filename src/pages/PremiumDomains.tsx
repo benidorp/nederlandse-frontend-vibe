@@ -2021,7 +2021,7 @@ const PremiumDomains = () => {
                   },
                   {
                     question: "Waarom staan er soms websites uit jullie portfolio in de geschiedenis van een domein?",
-                    answer: "Sommige domeinnamen in ons portfolio zijn eerder ingezet voor onze eigen projecten, testwebsites of 301 redirects. Dit betreft websites zoals NailTalk, OntwerpNovi, OliveVines en vergelijkbare projecten. Dit is juist een voordeel: deze domeinen hebben bewezen resultaten en zijn actief getest op SEO-prestaties. Al onze domeinnamen worden vóór verkoop grondig gecontroleerd bij meerdere bronnen (zoals Wayback Machine, Ahrefs, MOZ en spamcheckers) en zijn volledig vrij van schadelijk verleden zoals spam, adult content of gokgerelateerde historie. Een website uit ons eigen portfolio in de geschiedenis is dus een teken van kwaliteit en zorgvuldig beheer — geen reden tot zorg."
+                    answer: "Sommige domeinnamen in ons portfolio zijn eerder ingezet voor onze eigen projecten, testwebsites of 301 redirects. Dit betreft websites zoals NailTalk, OntwerpNovi, OliveVines en vergelijkbare projecten. Dit is juist een voordeel: deze domeinen hebben bewezen resultaten en zijn actief getest op SEO-prestaties. Al onze domeinnamen worden vóór verkoop grondig gecontroleerd bij meerdere bronnen (zoals webgeschiedenis-archieven, Google, Ahrefs, MOZ en spamcheckers) en zijn volledig vrij van schadelijk verleden zoals spam, adult content of gokgerelateerde historie. Een website uit ons eigen portfolio in de geschiedenis is dus een teken van kwaliteit en zorgvuldig beheer — geen reden tot zorg."
                   }
                 ].map((faq, index) => (
                   <AccordionItem 
