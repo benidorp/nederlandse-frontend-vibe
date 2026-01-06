@@ -1520,7 +1520,7 @@ const PremiumDomains = () => {
               </span>
             </RouterLink>
             <nav className="hidden md:flex items-center gap-6">
-              <RouterLink to="/" className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium flex items-center gap-1">
+              <RouterLink to="/expireddomeinnamen/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium flex items-center gap-1">
                 <Home className="h-4 w-4" />
                 Home
               </RouterLink>
