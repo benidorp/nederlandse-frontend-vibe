@@ -1061,7 +1061,7 @@ Sommige browsers bieden een "Do Not Track" (DNT) signaal. Wij respecteren moment
 **12. CONTACT**
 
 12.1 Voor vragen, opmerkingen of klachten over ons Cookiebeleid:
-**E-mail**: info@iaeecommunity.com
+**E-mail**: support@iaee.eu
 
 12.2 U kunt ook contact opnemen met de Autoriteit Persoonsgegevens (www.autoriteitpersoonsgegevens.nl) indien u klachten heeft over ons cookiegebruik.
 
@@ -1077,29 +1077,44 @@ Sommige browsers bieden een "Do Not Track" (DNT) signaal. Wij respecteren moment
 
 const LegalFooterPremiumDomains = () => {
   return (
-    <section className="py-16 bg-slate-950">
+    <section className="py-12 bg-slate-950">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-xl md:text-2xl font-bold text-white mb-4">
             Juridische Informatie
           </h2>
-          
-          <Accordion type="single" collapsible className="space-y-4">
-            {legalDocuments.map((doc, index) => (
-              <AccordionItem 
-                key={index} 
-                value={`item-${index}`}
-                className="bg-slate-800/50 border border-slate-700 rounded-lg px-6"
-              >
-                <AccordionTrigger className="text-white hover:text-amber-400 text-lg font-semibold py-4">
-                  {doc.title}
-                </AccordionTrigger>
-                <AccordionContent className="text-slate-300 text-sm leading-relaxed pb-6 whitespace-pre-line">
-                  {doc.content}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
+          <p className="text-slate-400 mb-6">
+            Bekijk onze volledige juridische documenten op onze juridische pagina.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a 
+              href="/expireddomeinnamen/nl/premium-domeinnamen-juridische-documenten" 
+              className="text-amber-400 hover:text-amber-300 transition-colors underline"
+            >
+              Algemene Voorwaarden
+            </a>
+            <span className="text-slate-600">|</span>
+            <a 
+              href="/expireddomeinnamen/nl/premium-domeinnamen-juridische-documenten" 
+              className="text-amber-400 hover:text-amber-300 transition-colors underline"
+            >
+              Privacybeleid
+            </a>
+            <span className="text-slate-600">|</span>
+            <a 
+              href="/expireddomeinnamen/nl/premium-domeinnamen-juridische-documenten" 
+              className="text-amber-400 hover:text-amber-300 transition-colors underline"
+            >
+              Disclaimer
+            </a>
+            <span className="text-slate-600">|</span>
+            <a 
+              href="/expireddomeinnamen/nl/premium-domeinnamen-juridische-documenten" 
+              className="text-amber-400 hover:text-amber-300 transition-colors underline"
+            >
+              Cookiebeleid
+            </a>
+          </div>
         </div>
       </div>
     </section>
