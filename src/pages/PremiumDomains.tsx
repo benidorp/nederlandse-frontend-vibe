@@ -1754,17 +1754,16 @@ const PremiumDomains = () => {
                               href={domain.stripePaymentLink}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#F59E0B] hover:bg-[#D97706] text-slate-950 font-semibold rounded-md transition-all duration-200 shadow-md hover:shadow-lg text-sm"
+                              className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[#F59E0B] hover:bg-[#D97706] text-slate-950 font-bold rounded-md transition-all duration-200 shadow-md hover:shadow-lg text-base"
                             >
                               Koop Nu
                             </a>
                           ) : (
-                            <button 
-                              disabled
-                              className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-slate-600 text-slate-300 font-semibold rounded-md text-sm cursor-not-allowed opacity-75"
+                            <div 
+                              className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[#F59E0B] text-slate-950 font-bold rounded-md shadow-md text-base"
                             >
-                              Betaallink volgt
-                            </button>
+                              Koop Nu
+                            </div>
                           )}
                           <div className="flex flex-col items-center gap-2 text-center">
                             <div className="flex items-center justify-center gap-1.5 flex-wrap">
