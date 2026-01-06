@@ -981,6 +981,34 @@ const premiumDomains = [
     backlinks: "11.8K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "bbc.co.uk (DA 95)", "bit.ly (DA 94)", "foursquare.com (DA 92)", "digitalspy.com (DA 88)"]
   },
+  {
+    name: "tca2000.co.uk",
+    description: "Brits domein met backlinks van Wikipedia (EN, FR, JA, PL), Fandom en DigitalSpy.",
+    mozScore: 26,
+    pageAuthority: 29,
+    linkingDomains: 180,
+    inboundLinks: "662+",
+    followedLinks: "460+",
+    category: "Business",
+    price: "€329",
+    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
+    backlinks: "662+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "fr.wikipedia.org (DA 95)", "fandom.com (DA 94)", "ja.wikipedia.org (DA 93)", "pl.wikipedia.org (DA 93)"]
+  },
+  {
+    name: "deparisnet.be",
+    description: "Belgisch netwerk domein met backlinks van Europa.eu, Wikipedia (ES, FR), Yumpu en Google.be.",
+    mozScore: 26,
+    pageAuthority: 28,
+    linkingDomains: 135,
+    inboundLinks: "710+",
+    followedLinks: "445+",
+    category: "Netwerk",
+    price: "€329",
+    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
+    backlinks: "710+",
+    topBacklinks: ["europa.eu (DA 97)", "es.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)", "jimdofree.com (DA 95)", "yumpu.com (DA 91)"]
+  },
   // DA 25
   {
     name: "gastrosafezone.eu",
@@ -1123,19 +1151,6 @@ const premiumDomains = [
     topBacklinks: ["europa.eu (DA 97)", "goo.gl (DA 95)", "de.wikipedia.org (DA 94)", "cambridge.org (DA 93)", "yumpu.com (DA 91)"]
   },
   {
-    name: "tca2000.co.uk",
-    description: "Brits domein met backlinks van Wikipedia (EN, FR, JA, PL), Fandom en DigitalSpy.",
-    mozScore: 26,
-    pageAuthority: 29,
-    linkingDomains: 180,
-    inboundLinks: "662+",
-    followedLinks: "460+",
-    category: "Business",
-    price: "Op aanvraag",
-    backlinks: "662+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "fr.wikipedia.org (DA 95)", "fandom.com (DA 94)", "ja.wikipedia.org (DA 93)", "pl.wikipedia.org (DA 93)"]
-  },
-  {
     name: "tandemtech.be",
     description: "Belgisch tech domein met backlinks van Medium, TinyURL, Bit.ly, Tweakers en Knack.",
     mozScore: 25,
@@ -1191,19 +1206,6 @@ const premiumDomains = [
     stripePaymentLink: "https://buy.stripe.com/8x26oH95B4iq9GZ6CC9Zm07",
     backlinks: "275+",
     topBacklinks: ["europa.eu (DA 97)", "springer.com (DA 93)", "mdpi.com (DA 92)", "frontiersin.org (DA 92)", "euractiv.com (DA 84)"]
-  },
-  {
-    name: "deparisnet.be",
-    description: "Belgisch netwerk domein met backlinks van Europa.eu, Wikipedia (ES, FR), Yumpu en Google.be.",
-    mozScore: 26,
-    pageAuthority: 28,
-    linkingDomains: 135,
-    inboundLinks: "710+",
-    followedLinks: "445+",
-    category: "Netwerk",
-    price: "Op aanvraag",
-    backlinks: "710+",
-    topBacklinks: ["europa.eu (DA 97)", "es.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)", "jimdofree.com (DA 95)", "yumpu.com (DA 91)"]
   },
   {
     name: "heinekenthecity.nl",
