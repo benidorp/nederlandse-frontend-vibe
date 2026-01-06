@@ -1742,6 +1742,13 @@ const PremiumDomains = () => {
               <p className="text-slate-300 leading-relaxed text-sm">
                 <strong className="text-white">Veel gezocht:</strong> expired domeinnaam met backlinks kopen • betrouwbare expired domeinen • expired domeinnaam met autoriteit • premium domeinnaam kopen • domeinnaam met SEO waarde • oude domeinnaam met links • beste domeinnamen te koop
               </p>
+              <p className="text-slate-300 leading-relaxed text-sm mt-4 bg-slate-700/30 rounded-lg px-4 py-3 border border-slate-600/30">
+                <Mail className="inline-block w-4 h-4 text-amber-400 mr-2 -mt-0.5" />
+                Na aankoop ontvangt u binnen 24 uur uw verhuistoken (EPP-code) per e-mail. Controleer ook uw spamfolder.{" "}
+                <a href="#domein-verhuizen" className="text-amber-400 hover:text-amber-300 underline underline-offset-2">
+                  Lees hier hoe u uw domein verhuist →
+                </a>
+              </p>
             </div>
 
             {/* VAT Notice */}
