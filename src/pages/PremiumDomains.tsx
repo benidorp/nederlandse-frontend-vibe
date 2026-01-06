@@ -426,8 +426,8 @@ const premiumDomains = [
     inboundLinks: "156.1K+",
     followedLinks: "155.8K+",
     category: "Energie",
-    price: "€595",
-    stripePaymentLink: "https://buy.stripe.com/fZu6oH6Xt3emg5n5yy9Zm0a",
+    price: "€795",
+    stripePaymentLink: "https://buy.stripe.com/9B6cN54Pl5mu9GZe549Zm0l",
     backlinks: "156.1K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "cnet.com (DA 93)", "theconversation.com (DA 92)", "ieee.org (DA 92)", "corriere.it (DA 92)"]
   },
