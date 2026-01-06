@@ -441,7 +441,8 @@ const premiumDomains = [
     inboundLinks: "1.7K+",
     followedLinks: "1.7K+",
     category: "Veiligheid",
-    price: "€799",
+    price: "€429",
+    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
     backlinks: "1.7K+",
     topBacklinks: ["europa.eu (DA 97)", "elpais.com (DA 94)", "springer.com (DA 93)", "mdpi.com (DA 92)", "xataka.com (DA 90)"]
   },
@@ -454,7 +455,8 @@ const premiumDomains = [
     inboundLinks: "259+",
     followedLinks: "249+",
     category: "Duurzaamheid",
-    price: "€549",
+    price: "€429",
+    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
     backlinks: "259+",
     topBacklinks: ["europa.eu (DA 97)", "eurekalert.org (DA 91)", "rai.it (DA 81)", "au.dk (DA 77)", "aaas.org (DA 76)"]
   },
@@ -467,7 +469,8 @@ const premiumDomains = [
     inboundLinks: "167+",
     followedLinks: "132+",
     category: "Vastgoed",
-    price: "€899",
+    price: "€429",
+    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
     backlinks: "167+",
     topBacklinks: ["forbes.com (DA 94)", "theguardian.com (DA 94)", "standard.co.uk (DA 93)", "timeout.com (DA 92)", "thetimes.com (DA 92)"]
   },
@@ -480,7 +483,8 @@ const premiumDomains = [
     inboundLinks: "215+",
     followedLinks: "170+",
     category: "Onderwijs",
-    price: "€649",
+    price: "€429",
+    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
     backlinks: "215+",
     topBacklinks: ["theguardian.com (DA 94)", "ask.com (DA 88)", "tcd.ie (DA 86)", "vu.nl (DA 76)", "muni.cz (DA 74)"]
   },
@@ -493,7 +497,8 @@ const premiumDomains = [
     inboundLinks: "1.5K+",
     followedLinks: "1.2K+",
     category: "Muziek/Audio",
-    price: "€749",
+    price: "€429",
+    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
     backlinks: "1.5K+",
     topBacklinks: ["sites.google.com (DA 96)", "scoop.it (DA 92)", "envato.com (DA 91)", "informer.com (DA 90)", "codecanyon.net (DA 83)"]
   },
@@ -506,7 +511,8 @@ const premiumDomains = [
     inboundLinks: "15.1K+",
     followedLinks: "15.1K+",
     category: "Energie",
-    price: "€999",
+    price: "€429",
+    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
     backlinks: "15.1K+",
     topBacklinks: ["europa.eu (DA 97)", "uol.com.br (DA 95)", "elpais.com (DA 94)", "lefigaro.fr (DA 93)", "mdpi.com (DA 92)"]
   },
@@ -519,7 +525,8 @@ const premiumDomains = [
     inboundLinks: "338+",
     followedLinks: "265+",
     category: "Technologie",
-    price: "€749",
+    price: "€429",
+    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
     backlinks: "338+",
     topBacklinks: ["medium.com (DA 95)", "ibm.com (DA 93)", "telefonica.com (DA 79)", "upv.es (DA 79)", "upm.es (DA 78)"]
   },
@@ -532,7 +539,8 @@ const premiumDomains = [
     inboundLinks: "156+",
     followedLinks: "143+",
     category: "Finance",
-    price: "€499",
+    price: "€429",
+    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
     backlinks: "156+",
     topBacklinks: ["goo.gl (DA 95)", "crunchbase.com (DA 91)", "splashthat.com (DA 86)", "emprendedores.es (DA 66)", "climate-kic.org (DA 64)"]
   },
@@ -545,7 +553,8 @@ const premiumDomains = [
     inboundLinks: "245+",
     followedLinks: "209+",
     category: "Design",
-    price: "Op aanvraag",
+    price: "€429",
+    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
     backlinks: "245+",
     topBacklinks: ["europa.eu (DA 97)", "euronews.com (DA 92)", "angel.co (DA 86)", "campaign-archive.com (DA 84)", "arts.ac.uk (DA 81)"]
   },
@@ -558,7 +567,8 @@ const premiumDomains = [
     inboundLinks: "320+",
     followedLinks: "292+",
     category: "Mobiliteit",
-    price: "Op aanvraag",
+    price: "€429",
+    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
     backlinks: "320+",
     topBacklinks: ["europa.eu (DA 97)", "medium.com (DA 95)", "zeit.de (DA 91)", "threadreaderapp.com (DA 78)", "eur.nl (DA 68)"]
   },
@@ -572,7 +582,8 @@ const premiumDomains = [
     inboundLinks: "78+",
     followedLinks: "60+",
     category: "Entertainment",
-    price: "Op aanvraag",
+    price: "€429",
+    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
     backlinks: "78+",
     topBacklinks: ["behance.net (DA 93)", "giphy.com (DA 92)", "corriere.it (DA 92)", "ilgiornale.it (DA 85)", "elledecor.com (DA 81)"]
   },
@@ -585,7 +596,8 @@ const premiumDomains = [
     inboundLinks: "185+",
     followedLinks: "153+",
     category: "Duurzaamheid",
-    price: "Op aanvraag",
+    price: "€429",
+    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
     backlinks: "185+",
     topBacklinks: ["europa.eu (DA 97)", "mdpi.com (DA 92)", "eurekalert.org (DA 91)", "wired.it (DA 90)", "ub.edu (DA 86)"]
   },
@@ -598,7 +610,8 @@ const premiumDomains = [
     inboundLinks: "413+",
     followedLinks: "397+",
     category: "Landbouw",
-    price: "Op aanvraag",
+    price: "€429",
+    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
     backlinks: "413+",
     topBacklinks: ["europa.eu (DA 97)", "theconversation.com (DA 92)", "frontiersin.org (DA 92)", "diarioinformacion.com (DA 82)", "informacion.es (DA 78)"]
   },
@@ -611,7 +624,8 @@ const premiumDomains = [
     inboundLinks: "4.1K+",
     followedLinks: "4K+",
     category: "Taal/Cultuur",
-    price: "Op aanvraag",
+    price: "€429",
+    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
     backlinks: "4.1K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "uci.edu (DA 91)"]
   },
@@ -638,7 +652,8 @@ const premiumDomains = [
     inboundLinks: "3.9K+",
     followedLinks: "3.9K+",
     category: "Kunst/Design",
-    price: "Op aanvraag",
+    price: "€429",
+    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
     backlinks: "3.9K+",
     topBacklinks: ["theguardian.com (DA 94)", "creativebloq.com (DA 86)", "orf.at (DA 86)", "librarything.com (DA 80)", "publishersweekly.com (DA 77)"]
   },
@@ -651,7 +666,8 @@ const premiumDomains = [
     inboundLinks: "9.6K+",
     followedLinks: "9.3K+",
     category: "Algemeen",
-    price: "Op aanvraag",
+    price: "€429",
+    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
     backlinks: "9.6K+",
     topBacklinks: ["fr.wikipedia.org (DA 95)", "it.wikipedia.org (DA 93)", "wiktionary.org (DA 93)", "lefigaro.fr (DA 93)", "nl.wikipedia.org (DA 91)"]
   },
@@ -664,10 +680,10 @@ const premiumDomains = [
     inboundLinks: "136+",
     followedLinks: "121+",
     category: "Evenementen",
-    price: "€299",
+    price: "€429",
+    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
     backlinks: "136+",
-    topBacklinks: ["tinyurl.com (DA 94)", "ub.edu (DA 86)", "lu.se (DA 79)", "confex.com (DA 73)", "sdu.dk (DA 71)"],
-    stripeButtonId: "buy_btn_1QgH0pILs3fqMdMB8L9j5sXn"
+    topBacklinks: ["tinyurl.com (DA 94)", "ub.edu (DA 86)", "lu.se (DA 79)", "confex.com (DA 73)", "sdu.dk (DA 71)"]
   },
   {
     name: "youthstartproject.eu",
@@ -678,7 +694,8 @@ const premiumDomains = [
     inboundLinks: "2.9K+",
     followedLinks: "2.8K+",
     category: "Onderwijs",
-    price: "Op aanvraag",
+    price: "€429",
+    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
     backlinks: "2.9K+",
     topBacklinks: ["europa.eu (DA 97)", "campaign-archive.com (DA 84)", "observador.pt (DA 84)", "openedition.org (DA 78)", "wort.lu (DA 75)"]
   },
@@ -1787,7 +1804,7 @@ const PremiumDomains = () => {
                         <span className="text-lg font-bold text-amber-400">{domain.price}</span>
                       </div>
                       
-                      {domain.stripeButtonId ? (
+                      {'stripeButtonId' in domain && domain.stripeButtonId ? (
                         <div className="flex flex-col gap-3">
                           <div 
                             className="stripe-button-container flex justify-center"
