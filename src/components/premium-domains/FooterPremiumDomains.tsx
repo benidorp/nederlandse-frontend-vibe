@@ -13,7 +13,7 @@ const FooterPremiumDomains = () => {
     <footer className="py-12 bg-slate-950 border-t border-slate-800">
       <div className="container mx-auto px-4">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-4">
