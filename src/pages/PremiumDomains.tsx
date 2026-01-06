@@ -1486,7 +1486,7 @@ const PremiumDomains = () => {
     const body = encodeURIComponent(
       `Naam: ${formData.name}\nE-mail: ${formData.email}\nDomein: ${formData.domain}\n\nBericht:\n${formData.message}`
     );
-    window.location.href = `mailto:info@iaee.eu?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:support@iaee.eu?subject=${subject}&body=${body}`;
     
     toast({
       title: "Aanvraag wordt verzonden",
@@ -2419,8 +2419,8 @@ const PremiumDomains = () => {
                 <div className="flex flex-col gap-4">
                   <div className="flex items-center justify-center gap-3">
                     <Mail className="h-5 w-5 text-amber-400" />
-                    <a href="mailto:info@iaeecommunity.com" className="text-amber-400 hover:text-amber-300 transition-colors text-lg font-medium">
-                      info@iaeecommunity.com
+                    <a href="mailto:support@iaee.eu" className="text-amber-400 hover:text-amber-300 transition-colors text-lg font-medium">
+                      support@iaee.eu
                     </a>
                   </div>
                   <p className="text-slate-400 text-sm">
