@@ -2590,8 +2590,22 @@ const PremiumDomains = () => {
                           <li className="flex gap-3">
                             <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">5</span>
                             <div>
-                              <strong className="text-white">Bevestig en wacht op voltooiing</strong>
-                              <p className="text-slate-400 mt-1">De verhuizing duurt meestal 1-5 werkdagen, afhankelijk van de domeinextensie (.nl, .be, .eu, .com, etc.). U ontvangt een bevestiging wanneer de verhuizing is voltooid.</p>
+                              <strong className="text-white">Bevestig de verhuizing</strong>
+                              <p className="text-slate-400 mt-1">Vul de gekochte domeinnaam in bij uw provider en bevestig de verhuizing. Voer vervolgens de EPP-code (verhuistoken) in die u van ons hebt ontvangen.</p>
+                            </div>
+                          </li>
+                          <li className="flex gap-3">
+                            <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">6</span>
+                            <div>
+                              <strong className="text-white">Wacht op voltooiing</strong>
+                              <p className="text-slate-400 mt-1">De verhuizing wordt nu in werking gezet en duurt meestal 1-5 werkdagen, afhankelijk van de domeinextensie (.nl, .be, .eu, .com, etc.). Zodra de verhuizing is voltooid, verschijnt het domein automatisch in uw account.</p>
+                            </div>
+                          </li>
+                          <li className="flex gap-3">
+                            <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">7</span>
+                            <div>
+                              <strong className="text-white">Gebruik uw domein</strong>
+                              <p className="text-slate-400 mt-1">Na voltooiing kunt u het domein direct inzetten: gebruik het als een 301-redirect naar uw bestaande website voor extra SEO-waarde, of koppel het aan een hostingpakket om een nieuwe website te bouwen.</p>
                             </div>
                           </li>
                         </ol>
