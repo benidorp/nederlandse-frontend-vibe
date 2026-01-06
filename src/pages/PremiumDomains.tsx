@@ -2549,7 +2549,7 @@ const PremiumDomains = () => {
         <section id="domein-verhuizen" className="py-16 bg-slate-900">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <Accordion type="single" collapsible className="w-full">
+              <Accordion type="single" collapsible defaultValue="transfer-instructions" className="w-full">
                 <AccordionItem value="transfer-instructions" className="border border-amber-500/30 rounded-xl bg-slate-800/50">
                   <AccordionTrigger headingLevel="h2" className="px-6 text-xl font-bold text-white hover:no-underline">
                     <div className="flex items-center gap-3">
