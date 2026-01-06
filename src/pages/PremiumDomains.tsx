@@ -8,7 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Crown, TrendingUp, Shield, Globe, Zap, Award, ArrowRight, CheckCircle, Star, Link, Target, BarChart3, Mail, User, MessageSquare, Lock, ArrowUp } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import LegalFooterPremiumDomains from "@/components/premium-domains/LegalFooterPremiumDomains";
+import LegalLinksPremiumDomains from "@/components/premium-domains/LegalLinksPremiumDomains";
 import FooterPremiumDomains from "@/components/premium-domains/FooterPremiumDomains";
 import stripeLogo from "@/assets/stripe-logo.svg";
 
@@ -2454,7 +2454,7 @@ const PremiumDomains = () => {
         </button>
 
         {/* Legal Footer */}
-        <LegalFooterPremiumDomains />
+        <LegalLinksPremiumDomains />
 
         {/* Footer */}
         <FooterPremiumDomains />
