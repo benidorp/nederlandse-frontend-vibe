@@ -83,11 +83,11 @@ const FooterPremiumDomains = () => {
             <h4 className="text-white font-semibold mb-4">Contact</h4>
             <div className="space-y-3">
               <a 
-                href="mailto:info@iaeecommunity.com" 
+                href="mailto:support@iaee.eu" 
                 className="flex items-center gap-2 text-slate-400 hover:text-amber-400 transition-colors text-sm"
               >
                 <Mail className="h-4 w-4" />
-                info@iaeecommunity.com
+                support@iaee.eu
               </a>
               <p className="text-slate-500 text-xs">
                 Wij reageren binnen 24 uur op uw bericht.
