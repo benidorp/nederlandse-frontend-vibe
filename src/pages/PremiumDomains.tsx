@@ -1729,6 +1729,13 @@ const PremiumDomains = () => {
               </p>
             </div>
             
+            {/* VAT Notice */}
+            <div className="max-w-5xl mx-auto mb-6 text-center">
+              <p className="text-sm text-slate-400 bg-slate-800/40 border border-slate-700/40 rounded-lg px-4 py-3 inline-block">
+                <span className="text-amber-400 font-medium">BTW-informatie:</span> Prijzen voor klanten binnen de EU zijn exclusief BTW. Voor klanten buiten de EU wordt geen BTW berekend.
+              </p>
+            </div>
+
             {/* SEO Intro Text */}
             <div className="max-w-5xl mx-auto mb-16 bg-slate-800/30 border border-slate-700/50 rounded-2xl p-8">
               <p className="text-slate-300 leading-relaxed mb-4">
