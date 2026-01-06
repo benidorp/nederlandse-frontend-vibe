@@ -821,8 +821,8 @@ const premiumDomains = [
     inboundLinks: "3.6K+",
     followedLinks: "3.5K+",
     category: "Algemeen",
-    price: "€329",
-    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
+    price: "€450",
+    stripePaymentLink: "https://buy.stripe.com/fZu14n6Xt7uCf1j9OO9Zm0j",
     backlinks: "3.6K+",
     topBacklinks: ["europa.eu (DA 97)", "franceinfo.fr (DA 91)", "cnrs.fr (DA 90)", "psl.eu (DA 78)", "education.fr (DA 77)"]
   },
