@@ -1375,7 +1375,8 @@ const premiumDomains = [
     category: "Transport",
     price: "Op aanvraag",
     backlinks: "187+",
-    topBacklinks: ["fr.wikipedia.org (DA 95)", "nl.wikipedia.org (DA 91)", "ns.nl (DA 72)", "nieuws.nl (DA 63)", "prorail.nl (DA 55)"]
+    topBacklinks: ["fr.wikipedia.org (DA 95)", "nl.wikipedia.org (DA 91)", "ns.nl (DA 72)", "nieuws.nl (DA 63)", "prorail.nl (DA 55)"],
+    stripePaymentLink: "https://buy.stripe.com/7sY28rdlR9CK2exf989Zm05"
   },
   {
     name: "oramed-fp7.eu",
@@ -1388,7 +1389,8 @@ const premiumDomains = [
     category: "Onderzoek",
     price: "Op aanvraag",
     backlinks: "130+",
-    topBacklinks: ["europa.eu (DA 97)", "springer.com (DA 93)", "iit.edu (DA 75)", "fgov.be (DA 72)", "upc.edu (DA 71)"]
+    topBacklinks: ["europa.eu (DA 97)", "springer.com (DA 93)", "iit.edu (DA 75)", "fgov.be (DA 72)", "upc.edu (DA 71)"],
+    stripePaymentLink: "https://buy.stripe.com/7sY28rdlR9CK2exf989Zm05"
   },
   {
     name: "ismagazine.nl",
@@ -1401,7 +1403,8 @@ const premiumDomains = [
     category: "Media",
     price: "Op aanvraag",
     backlinks: "496+",
-    topBacklinks: ["unesco.org (DA 93)", "wur.nl (DA 71)", "jouwweb.nl (DA 63)", "startpagina.nl (DA 63)", "fok.nl (DA 59)"]
+    topBacklinks: ["unesco.org (DA 93)", "wur.nl (DA 71)", "jouwweb.nl (DA 63)", "startpagina.nl (DA 63)", "fok.nl (DA 59)"],
+    stripePaymentLink: "https://buy.stripe.com/7sY28rdlR9CK2exf989Zm05"
   },
   {
     name: "wbetting.co.uk",
@@ -1414,7 +1417,8 @@ const premiumDomains = [
     category: "Gaming",
     price: "Op aanvraag",
     backlinks: "280.6K+",
-    topBacklinks: ["ovh.net (DA 92)", "joomla.org (DA 92)", "wsu.edu (DA 87)", "csic.es (DA 78)", "knows.nl (DA 65)"]
+    topBacklinks: ["ovh.net (DA 92)", "joomla.org (DA 92)", "wsu.edu (DA 87)", "csic.es (DA 78)", "knows.nl (DA 65)"],
+    stripePaymentLink: "https://buy.stripe.com/7sY28rdlR9CK2exf989Zm05"
   },
   {
     name: "fantasticgymnastics.nl",
@@ -1427,7 +1431,8 @@ const premiumDomains = [
     category: "Sport",
     price: "Op aanvraag",
     backlinks: "7.6K+",
-    topBacklinks: ["liveinternet.ru (DA 93)", "pages.dev (DA 91)", "xsrv.jp (DA 89)", "toolforge.org (DA 80)", "worldwidetopsite.com (DA 71)"]
+    topBacklinks: ["liveinternet.ru (DA 93)", "pages.dev (DA 91)", "xsrv.jp (DA 89)", "toolforge.org (DA 80)", "worldwidetopsite.com (DA 71)"],
+    stripePaymentLink: "https://buy.stripe.com/7sY28rdlR9CK2exf989Zm05"
   },
   {
     name: "nanostarproject.eu",
@@ -1440,7 +1445,8 @@ const premiumDomains = [
     category: "Technologie",
     price: "Op aanvraag",
     backlinks: "338+",
-    topBacklinks: ["springer.com (DA 93)", "sapo.pt (DA 93)", "pages.dev (DA 91)", "upm.es (DA 78)", "uc3m.es (DA 77)"]
+    topBacklinks: ["springer.com (DA 93)", "sapo.pt (DA 93)", "pages.dev (DA 91)", "upm.es (DA 78)", "uc3m.es (DA 77)"],
+    stripePaymentLink: "https://buy.stripe.com/7sY28rdlR9CK2exf989Zm05"
   },
   // DA 20
   {
@@ -1454,7 +1460,8 @@ const premiumDomains = [
     category: "Smart City",
     price: "Op aanvraag",
     backlinks: "191+",
-    topBacklinks: ["europa.eu (DA 97)", "medium.com (DA 95)", "mdpi.com (DA 92)", "campaign-archive.com (DA 84)", "telecomtv.com (DA 67)"]
+    topBacklinks: ["europa.eu (DA 97)", "medium.com (DA 95)", "mdpi.com (DA 92)", "campaign-archive.com (DA 84)", "telecomtv.com (DA 67)"],
+    stripePaymentLink: "https://buy.stripe.com/7sY28rdlR9CK2exf989Zm05"
   },
 ];
 const PremiumDomains = () => {
