@@ -10,6 +10,9 @@
   # 301 Redirect: Premium Domeinen naar subdirectory
   RewriteRule ^premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde$ /expireddomeinnamen/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde [R=301,L]
 
+  # 301 Redirect: Premium Domeinen Juridische Documenten naar subdirectory
+  RewriteRule ^premium-domeinnamen-juridische-documenten$ /expireddomeinnamen/premium-domeinnamen-juridische-documenten [R=301,L]
+
   # GTranslate Pro: Allow PHP files and subdirectories
   # Let GTranslate handle language subdirectories (fr/, de/, nl/, etc.)
   RewriteCond %{REQUEST_URI} ^/[a-z]{2}/ [NC]
