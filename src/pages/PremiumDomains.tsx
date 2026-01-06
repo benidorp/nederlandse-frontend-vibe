@@ -2428,18 +2428,6 @@ const PremiumDomains = () => {
                   </p>
                 </div>
               </div>
-              
-              {/* Stripe Payment Button */}
-              <div className="mt-8 flex justify-center">
-                <div 
-                  dangerouslySetInnerHTML={{
-                    __html: `<stripe-buy-button
-                      buy-button-id="buy_btn_1QgH0pILs3fqMdMB8L9j5sXn"
-                      publishable-key="pk_live_51M6JQGILS3fqMdMBgEiYWZkZxZ7J8oqm4Z9Z5xZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ"
-                    ></stripe-buy-button>`
-                  }}
-                />
-              </div>
             </div>
           </div>
         </section>
