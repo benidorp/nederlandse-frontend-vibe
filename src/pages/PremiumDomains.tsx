@@ -68,7 +68,8 @@ const premiumDomains = [
     inboundLinks: "3K+",
     followedLinks: "2.9K+",
     category: "Algemeen",
-    price: "€899",
+    price: "€1950",
+    stripePaymentLink: "https://buy.stripe.com/bJe7sL2HdcOWbP7bWW9Zm0g",
     backlinks: "3K+",
     topBacklinks: ["youtube.com (DA 100)", "lemonde.fr (DA 93)", "mdpi.com (DA 92)", "corriere.it (DA 92)", "wired.it (DA 90)"]
   },
