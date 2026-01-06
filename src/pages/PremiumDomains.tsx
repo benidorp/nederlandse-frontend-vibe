@@ -1752,48 +1752,42 @@ const PremiumDomains = () => {
                             href={domain.stripePaymentLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#635BFF] hover:bg-[#5851ea] text-white font-semibold rounded-md transition-all duration-200 shadow-md hover:shadow-lg text-sm"
+                            className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#F59E0B] hover:bg-[#D97706] text-slate-950 font-semibold rounded-md transition-all duration-200 shadow-md hover:shadow-lg text-sm"
                           >
                             Koop Nu
                           </a>
                           <div className="flex flex-col items-center gap-2 text-center">
                             <div className="flex items-center justify-center gap-1.5 flex-wrap">
                               {/* Visa */}
-                              <div className="flex items-center bg-white rounded px-1.5 py-0.5">
-                                <svg className="h-4 w-6" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <rect width="38" height="24" rx="3" fill="#1434CB"/>
-                                  <path d="M15.7 16.5L17.3 7.5H19.7L18.1 16.5H15.7Z" fill="white"/>
-                                  <path d="M26.3 7.7C25.8 7.5 25 7.3 24 7.3C21.6 7.3 19.9 8.6 19.9 10.4C19.9 11.7 21 12.4 21.9 12.9C22.8 13.4 23.1 13.7 23.1 14.1C23.1 14.7 22.4 15 21.7 15C20.7 15 20.2 14.9 19.4 14.5L19.1 14.4L18.8 16.2C19.4 16.5 20.4 16.7 21.5 16.7C24.1 16.7 25.7 15.4 25.8 13.5C25.8 12.4 25.1 11.6 23.7 10.9C22.9 10.5 22.4 10.2 22.4 9.7C22.4 9.3 22.9 8.8 23.9 8.8C24.7 8.8 25.3 9 25.8 9.2L26 9.3L26.3 7.7Z" fill="white"/>
-                                  <path d="M30.4 7.5H28.5C27.9 7.5 27.5 7.7 27.2 8.3L23.7 16.5H26.3L26.8 15H30C30.1 15.4 30.3 16.5 30.3 16.5H32.6L30.4 7.5ZM27.5 13.2C27.7 12.6 28.6 10.3 28.6 10.3C28.6 10.3 28.8 9.7 29 9.4L29.2 10.2C29.2 10.2 29.7 12.5 29.8 13.2H27.5Z" fill="white"/>
-                                  <path d="M13.2 7.5L10.8 13.5L10.5 12C10 10.4 8.5 8.6 6.8 7.7L9 16.5H11.6L15.8 7.5H13.2Z" fill="white"/>
-                                  <path d="M8.4 7.5H4.5L4.5 7.7C7.5 8.5 9.5 10.4 10.2 12.5L9.4 8.4C9.3 7.7 8.9 7.5 8.4 7.5Z" fill="#F9A51A"/>
+                              <div className="flex items-center bg-white rounded px-1.5 py-1">
+                                <svg className="h-5 w-8" viewBox="0 0 48 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M19.5 1L17 15H13L15.5 1H19.5Z" fill="#1434CB"/>
+                                  <path d="M32 1L28.5 15H24.5L25.5 11L23 11C22.5 11 22 10.5 22 10L21 15H17L20.5 1H26C28 1 29.5 2.5 29.5 4.5C29.5 7 27.5 9 25 9H24L28 1H32Z" fill="#1434CB"/>
+                                  <path d="M35 15H31L33 6L35 15ZM34 4.5C34 5.5 33 6.5 32 6.5C31 6.5 30 5.5 30 4.5C30 3.5 31 2.5 32 2.5C33 2.5 34 3.5 34 4.5Z" fill="#1434CB"/>
+                                  <path d="M44 1L42 15H38L38.5 12.5C37.5 14.5 36 15.5 34 15.5C32 15.5 31 14 31 12C31 8.5 34 6 37.5 6H39L39.5 4C39.5 2.5 38.5 2 37 2C35.5 2 34 2.5 33 3L33.5 0C35 -0.5 37 0 38.5 0C42 0 44 1 44 4.5V1Z" fill="#1434CB"/>
+                                  <text x="4" y="12" fill="#1434CB" fontSize="11" fontWeight="bold" fontFamily="Arial">VISA</text>
                                 </svg>
                               </div>
                               {/* Mastercard */}
-                              <div className="flex items-center bg-white rounded px-1.5 py-0.5">
-                                <svg className="h-4 w-6" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <rect width="38" height="24" rx="3" fill="#000"/>
-                                  <circle cx="15" cy="12" r="7" fill="#EB001B"/>
-                                  <circle cx="23" cy="12" r="7" fill="#F79E1B"/>
-                                  <path d="M19 7.5C20.5 8.7 21.5 10.2 21.5 12C21.5 13.8 20.5 15.3 19 16.5C17.5 15.3 16.5 13.8 16.5 12C16.5 10.2 17.5 8.7 19 7.5Z" fill="#FF5F00"/>
+                              <div className="flex items-center bg-white rounded px-1.5 py-1">
+                                <svg className="h-5 w-8" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <circle cx="16" cy="12" r="10" fill="#EB001B"/>
+                                  <circle cx="32" cy="12" r="10" fill="#F79E1B"/>
+                                  <path d="M24 4C27 6.5 29 9 29 12C29 15 27 17.5 24 20C21 17.5 19 15 19 12C19 9 21 6.5 24 4Z" fill="#FF5F00"/>
                                 </svg>
                               </div>
-                              {/* PayPal */}
-                              <div className="flex items-center bg-white rounded px-1.5 py-0.5">
-                                <svg className="h-4 w-6" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <rect width="38" height="24" rx="3" fill="#003087"/>
-                                  <path d="M14.5 10H13.2C13.1 10 13 10.1 13 10.2L12.4 14.5C12.4 14.6 12.5 14.6 12.5 14.6H13.1C13.2 14.6 13.3 14.5 13.3 14.4L13.5 13.1C13.5 13 13.6 12.9 13.7 12.9H14.2C15.3 12.9 15.9 12.4 16.1 11.4C16.2 11 16.1 10.6 15.9 10.4C15.6 10.1 15.1 10 14.5 10ZM14.7 11.5C14.6 12 14.2 12 13.8 12H13.6L13.8 10.9C13.8 10.9 13.8 10.8 13.9 10.8H14C14.3 10.8 14.5 10.8 14.6 11C14.7 11.1 14.7 11.3 14.7 11.5Z" fill="white"/>
-                                  <path d="M20.5 11.4H19.9C19.8 11.4 19.8 11.5 19.8 11.5L19.7 11.6L19.7 11.5C19.5 11.3 19.2 11.2 18.7 11.2C17.6 11.2 16.7 12 16.5 13.1C16.4 13.6 16.5 14.1 16.8 14.5C17 14.8 17.4 15 17.8 15C18.5 15 18.9 14.6 18.9 14.6L18.9 14.7C18.9 14.8 18.9 14.8 19 14.8H19.5C19.6 14.8 19.7 14.7 19.7 14.6L20.1 12C20.1 11.9 20.1 11.9 20 11.9L20.5 11.4ZM19.2 13.1C19.1 13.6 18.7 13.9 18.2 13.9C18 13.9 17.8 13.8 17.7 13.7C17.6 13.5 17.5 13.3 17.6 13.1C17.7 12.6 18.1 12.3 18.6 12.3C18.8 12.3 19 12.4 19.1 12.5C19.2 12.7 19.3 12.9 19.2 13.1Z" fill="white"/>
-                                  <path d="M25.5 11.4H24.9C24.8 11.4 24.7 11.5 24.6 11.6L23.6 13.1L23.2 11.7C23.2 11.5 23 11.4 22.9 11.4H22.3C22.2 11.4 22.1 11.5 22.2 11.6L23 14.4L22.2 15.5C22.2 15.6 22.2 15.8 22.3 15.8H22.9C23 15.8 23.1 15.7 23.2 15.6L25.7 11.7C25.7 11.6 25.7 11.4 25.5 11.4Z" fill="white"/>
-                                </svg>
+                              {/* PayPal - Clear P logo */}
+                              <div className="flex items-center bg-[#003087] rounded px-2 py-1">
+                                <span className="text-white font-bold text-sm italic">P</span>
+                                <span className="text-[#009CDE] font-bold text-sm italic">P</span>
                               </div>
-                              {/* Amazon Pay */}
-                              <div className="flex items-center bg-white rounded px-1.5 py-0.5">
-                                <svg className="h-4 w-6" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <rect width="38" height="24" rx="3" fill="#FF9900"/>
-                                  <path d="M25.5 15.5C23.8 16.8 21.3 17.5 19.2 17.5C16.2 17.5 13.5 16.4 11.5 14.5C11.3 14.3 11.5 14.1 11.7 14.2C13.9 15.5 16.6 16.3 19.4 16.3C21.3 16.3 23.4 15.9 25.3 15.1C25.6 15 25.8 15.3 25.5 15.5Z" fill="#221F1F"/>
-                                  <path d="M26.3 14.6C26 14.2 24.3 14.4 23.6 14.5C23.4 14.5 23.4 14.4 23.5 14.2C24.7 13.4 26.8 13.6 27 14C27.2 14.3 27 16 25.8 16.9C25.7 17 25.5 16.9 25.6 16.8C25.9 16.3 26.5 15 26.3 14.6Z" fill="#221F1F"/>
-                                  <path d="M14.8 11.2C14.8 11.6 14.8 12 14.9 12.3C14.9 12.4 14.9 12.4 14.8 12.5L14.4 12.8C14.3 12.9 14.3 12.9 14.2 12.8C14 12.5 13.8 12.2 13.8 11.7V9.9C13.8 9.3 13.6 8.9 13.2 8.6C12.8 8.4 12.3 8.3 11.7 8.3C11.1 8.3 10.5 8.4 9.9 8.7C9.8 8.7 9.8 8.8 9.8 8.9L9.9 9.4C9.9 9.5 10 9.5 10 9.5C10.5 9.3 11 9.2 11.5 9.2C11.9 9.2 12.2 9.3 12.4 9.4C12.6 9.6 12.7 9.9 12.7 10.2V10.5C12.1 10.5 11.5 10.5 10.9 10.7C10.2 10.9 9.7 11.3 9.7 12.1C9.7 12.9 10.2 13.4 11.1 13.4C11.8 13.4 12.3 13.1 12.7 12.7C12.8 12.9 12.9 13.1 13.1 13.3C13.2 13.4 13.2 13.4 13.3 13.3L13.8 12.9C13.9 12.9 13.9 12.8 13.9 12.7C13.7 12.5 13.6 12.2 13.6 11.9V11.2H14.8ZM12.7 11.9C12.7 12.1 12.6 12.3 12.4 12.5C12.2 12.7 12 12.8 11.7 12.8C11.3 12.8 11 12.5 11 12C11 11.4 11.4 11.1 12.1 11.1C12.3 11.1 12.5 11.1 12.7 11.2V11.9Z" fill="#221F1F"/>
+                              {/* Amazon Pay - Clear logo */}
+                              <div className="flex items-center bg-[#232F3E] rounded px-2 py-1">
+                                <svg className="h-4 w-12" viewBox="0 0 60 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <text x="2" y="13" fill="#FF9900" fontSize="10" fontWeight="bold" fontFamily="Arial">amazon</text>
+                                  <path d="M2 16C8 18 16 19 24 18C28 17.5 32 16.5 35 15" stroke="#FF9900" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+                                  <path d="M34 13L36 15L34 17" stroke="#FF9900" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+                                  <text x="38" y="13" fill="white" fontSize="8" fontFamily="Arial">pay</text>
                                 </svg>
                               </div>
                             </div>
