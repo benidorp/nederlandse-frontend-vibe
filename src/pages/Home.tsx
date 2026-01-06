@@ -99,7 +99,7 @@ const pages = [
     title: "Premium Domain Names",
     description: "High-authority premium domain names with proven SEO value for sale. Boost your rankings instantly.",
     image: affiliateImage,
-    link: "/expireddomeinnamen/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde"
+    link: "/expireddomeinnamen/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde"
   },
   {
     title: "Spanish Legal Documents",
