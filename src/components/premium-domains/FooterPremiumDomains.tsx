@@ -78,45 +78,6 @@ const FooterPremiumDomains = () => {
             </ul>
           </div>
 
-          {/* Legal Documents */}
-          <div>
-            <h4 className="text-white font-semibold mb-4">Juridische Informatie</h4>
-            <ul className="space-y-2">
-              <li>
-                <Link 
-                  to="/premium-domeinnamen-juridische-documenten"
-                  className="text-slate-400 hover:text-amber-400 transition-colors text-sm"
-                >
-                  Algemene Voorwaarden
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  to="/premium-domeinnamen-juridische-documenten"
-                  className="text-slate-400 hover:text-amber-400 transition-colors text-sm"
-                >
-                  Privacybeleid
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  to="/premium-domeinnamen-juridische-documenten"
-                  className="text-slate-400 hover:text-amber-400 transition-colors text-sm"
-                >
-                  Disclaimer
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  to="/premium-domeinnamen-juridische-documenten"
-                  className="text-slate-400 hover:text-amber-400 transition-colors text-sm"
-                >
-                  Cookiebeleid
-                </Link>
-              </li>
-            </ul>
-          </div>
-
           {/* Contact */}
           <div>
             <h4 className="text-white font-semibold mb-4">Contact</h4>
