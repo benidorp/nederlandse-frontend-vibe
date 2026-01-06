@@ -28,7 +28,7 @@ const PremiumDomainsLegal = () => {
                 <span className="text-xl font-bold text-white">Premium Domeinen</span>
               </Link>
               <div className="flex items-center gap-3">
-                <Link to="/">
+                <Link to="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde">
                   <Button variant="outline" className="bg-slate-800 border-slate-600 text-white hover:bg-slate-700">
                     <Home className="mr-2 h-4 w-4" />
                     Home
