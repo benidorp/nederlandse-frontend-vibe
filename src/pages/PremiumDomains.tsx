@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Crown, TrendingUp, Shield, Globe, Zap, Award, ArrowRight, CheckCircle, Star, Link, Target, BarChart3, Mail, User, MessageSquare, Lock } from "lucide-react";
+import { Crown, TrendingUp, Shield, Globe, Zap, Award, ArrowRight, CheckCircle, Star, Link, Target, BarChart3, Mail, User, MessageSquare, Lock, ArrowUp } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import LegalFooterPremiumDomains from "@/components/premium-domains/LegalFooterPremiumDomains";
 import FooterPremiumDomains from "@/components/premium-domains/FooterPremiumDomains";
@@ -1578,7 +1578,7 @@ const PremiumDomains = () => {
                   size="lg"
                   variant="outline"
                   onClick={() => scrollToSection("why-premium")}
-                  className="border-slate-600 text-slate-200 hover:bg-slate-800 hover:text-white text-lg px-8 py-6"
+                  className="bg-slate-800 border-slate-600 text-slate-200 hover:bg-slate-700 hover:text-white text-lg px-8 py-6"
                 >
                   Meer Informatie
                 </Button>
@@ -2443,6 +2443,15 @@ const PremiumDomains = () => {
             </div>
           </div>
         </section>
+
+        {/* Back to Top Button */}
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="fixed bottom-6 right-6 z-50 p-3 bg-amber-500 hover:bg-amber-600 text-slate-950 rounded-full shadow-lg transition-all duration-200 hover:shadow-xl"
+          aria-label="Terug naar boven"
+        >
+          <ArrowUp className="w-6 h-6" />
+        </button>
 
         {/* Legal Footer */}
         <LegalFooterPremiumDomains />
