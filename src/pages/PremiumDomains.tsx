@@ -6,10 +6,11 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Crown, TrendingUp, Shield, Globe, Zap, Award, ArrowRight, CheckCircle, Star, Link, Target, BarChart3, Mail, User, MessageSquare } from "lucide-react";
+import { Crown, TrendingUp, Shield, Globe, Zap, Award, ArrowRight, CheckCircle, Star, Link, Target, BarChart3, Mail, User, MessageSquare, Lock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import LegalFooterPremiumDomains from "@/components/premium-domains/LegalFooterPremiumDomains";
 import FooterPremiumDomains from "@/components/premium-domains/FooterPremiumDomains";
+import stripeLogo from "@/assets/stripe-logo.svg";
 
 // Premium domain data - can be easily updated
 const premiumDomains = [
@@ -25,7 +26,8 @@ const premiumDomains = [
     category: "Onderwijs",
     price: "€999",
     backlinks: "4.6K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "lemonde.fr (DA 93)", "cornell.edu (DA 92)", "spiegel.de (DA 90)"]
+    topBacklinks: ["en.wikipedia.org (DA 97)", "lemonde.fr (DA 93)", "cornell.edu (DA 92)", "spiegel.de (DA 90)"],
+    stripeButtonId: "buy_btn_1SKm3dFXIgtr666GOD7ZP6da"
   },
   // DA 37
   {
@@ -1721,16 +1723,27 @@ const PremiumDomains = () => {
                       </div>
                       
                       {domain.stripeButtonId ? (
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col gap-3">
                           <div 
-                            className="stripe-button-container"
+                            className="stripe-button-container flex justify-center"
                             dangerouslySetInnerHTML={{
                               __html: `<stripe-buy-button
                                 buy-button-id="${domain.stripeButtonId}"
-                                publishable-key="pk_live_51M6JQGILs3fqMdMBgEiYWZkZxZ7J8oqm4Z9Z5xZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ"
+                                publishable-key="pk_live_51SK0ndFXIgtr666GrmKudtOsf3HHcaBw06Ei3x8LbGKOYQ3oZeIrmpMpTfoTBJ5c7tPyFfbRC7pugHMC0l6b3ZKP009fgyIrGc"
                               ></stripe-buy-button>`
                             }}
                           />
+                          <div className="flex flex-col items-center gap-1.5 text-center">
+                            <div className="flex items-center gap-2">
+                              <Lock className="w-3 h-3 text-slate-400" />
+                              <img src={stripeLogo} alt="Stripe" className="h-5" />
+                            </div>
+                            <p className="text-[10px] text-slate-400 leading-tight">
+                              Veilige betaling via Stripe • PayPal • Amazon Pay en meer
+                              <br />
+                              Automatisch omgerekend naar uw lokale valuta
+                            </p>
+                          </div>
                         </div>
                       ) : (
                         <Button 
