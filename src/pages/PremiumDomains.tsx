@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Crown, TrendingUp, Shield, Globe, Zap, Award, ArrowRight, CheckCircle, Star, Link, Target, BarChart3, Mail, User, MessageSquare, Lock, ArrowUp, Home } from "lucide-react";
+import { Crown, TrendingUp, Shield, Globe, Zap, Award, ArrowRight, CheckCircle, Star, Link, Target, BarChart3, Mail, User, MessageSquare, Lock, ArrowUp, Home, ExternalLink } from "lucide-react";
 import { Link as RouterLink } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
 import LegalLinksPremiumDomains from "@/components/premium-domains/LegalLinksPremiumDomains";
@@ -2622,10 +2622,30 @@ const PremiumDomains = () => {
                         <div className="flex gap-3">
                           <CheckCircle className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
                           <div>
-                            <strong className="text-white">Tip:</strong>
+                            <strong className="text-white">Onze aanbeveling: Junda Hosting</strong>
                             <p className="text-slate-300 mt-1">
-                              Heeft u nog geen domeinregistrar? Populaire Nederlandse en Belgische providers zijn TransIP, Versio, Hostnet, Antagonist, Combell en one.com. De meeste providers bieden gratis domeinverhuizing aan.
+                              Op zoek naar betrouwbare hosting of domeinregistratie? Wij raden <strong className="text-amber-400">Junda</strong> aan — een Nederlandse provider met uitstekende support, snelle servers en scherpe prijzen. Junda biedt gratis domeinverhuizing aan en maakt het eenvoudig om uw nieuwe domein direct te koppelen aan professionele WordPress-hosting.
                             </p>
+                            <div className="flex flex-wrap gap-3 mt-3">
+                              <a 
+                                href="https://www.junda.nl/wordpress-hosting?via=291063" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-semibold rounded-lg transition-colors"
+                              >
+                                <ExternalLink className="w-4 h-4" />
+                                Bekijk WordPress Hosting
+                              </a>
+                              <a 
+                                href="https://www.junda.nl/domeinnaam-verhuizen?via=291063" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 px-4 py-2 border border-amber-500 text-amber-400 hover:bg-amber-500/10 font-semibold rounded-lg transition-colors"
+                              >
+                                <ExternalLink className="w-4 h-4" />
+                                Domein Verhuizen
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
