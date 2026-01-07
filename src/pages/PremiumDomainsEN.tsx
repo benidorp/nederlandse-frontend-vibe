@@ -437,367 +437,129 @@ const premiumDomains = [
     mozScore: 30,
     pageAuthority: 23,
     linkingDomains: 80,
-    inboundLinks: "375+",
-    followedLinks: "357+",
+    inboundLinks: "232+",
+    followedLinks: "118+",
     category: "Technology",
     price: "€595",
     stripePaymentLink: "https://buy.stripe.com/fZu6oH6Xt3emg5n5yy9Zm0a",
-    backlinks: "375+",
-    topBacklinks: ["ow.ly (DA 90)", "euractiv.com (DA 84)", "campaign-archive.com (DA 84)", "danfoss.com (DA 69)", "coleurope.eu (DA 57)"]
-  },
-  {
-    name: "partymenu.eu",
-    description: "EU catering/event domain with backlinks from Google.sk, Wikiwand, RA.co and Pravda.sk.",
-    mozScore: 30,
-    pageAuthority: 35,
-    linkingDomains: 328,
-    inboundLinks: "2.2K+",
-    followedLinks: "2.1K+",
-    category: "Food",
-    price: "€595",
-    stripePaymentLink: "https://buy.stripe.com/fZu6oH6Xt3emg5n5yy9Zm0a",
-    backlinks: "2.2K+",
-    topBacklinks: ["google.sk (DA 85)", "wikiwand.com (DA 85)", "ra.co (DA 85)", "pravda.sk (DA 79)", "dennikn.sk (DA 76)"]
+    backlinks: "232+",
+    topBacklinks: ["ow.ly (DA 93)", "euractiv.com (DA 84)", "danfoss.com (DA 77)", "hvacrindustry.com (DA 52)"]
   },
   // DA 29
   {
-    name: "evacuate.eu",
-    description: "Safety and emergency planning EU domain with backlinks from Europa.eu, El País, Springer and KU Leuven.",
-    mozScore: 29,
-    pageAuthority: 24,
-    linkingDomains: 99,
-    inboundLinks: "1.7K+",
-    followedLinks: "1.7K+",
-    category: "Safety",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "1.7K+",
-    topBacklinks: ["europa.eu (DA 97)", "elpais.com (DA 94)", "springer.com (DA 93)", "mdpi.com (DA 92)", "xataka.com (DA 90)"]
-  },
-  {
-    name: "greenweek2010.eu",
-    description: "Sustainability domain with backlinks from Europa.eu, EurekAlert, RAI and AAAS.",
-    mozScore: 29,
-    pageAuthority: 28,
-    linkingDomains: 109,
-    inboundLinks: "259+",
-    followedLinks: "249+",
-    category: "Sustainability",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "259+",
-    topBacklinks: ["europa.eu (DA 97)", "eurekalert.org (DA 91)", "rai.it (DA 81)", "au.dk (DA 77)", "aaas.org (DA 76)"]
-  },
-  {
-    name: "bryn-somersethouse.co.uk",
-    description: "British real estate/hospitality domain with backlinks from Forbes, The Guardian, Evening Standard and Time Out.",
-    mozScore: 29,
-    pageAuthority: 30,
-    linkingDomains: 96,
-    inboundLinks: "167+",
-    followedLinks: "132+",
-    category: "Real Estate",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "167+",
-    topBacklinks: ["forbes.com (DA 94)", "theguardian.com (DA 94)", "standard.co.uk (DA 93)", "timeout.com (DA 92)", "thetimes.com (DA 92)"]
-  },
-  {
-    name: "euforistudy.eu",
-    description: "Educational EU study domain with backlinks from The Guardian, Trinity College Dublin and VU Amsterdam.",
-    mozScore: 29,
-    pageAuthority: 27,
-    linkingDomains: 72,
-    inboundLinks: "215+",
-    followedLinks: "170+",
-    category: "Education",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "215+",
-    topBacklinks: ["theguardian.com (DA 94)", "ask.com (DA 88)", "tcd.ie (DA 86)", "vu.nl (DA 76)", "muni.cz (DA 74)"]
-  },
-  {
-    name: "beatassist.eu",
-    description: "Music production domain with backlinks from Google Sites, Scoop.it, Envato and MusicRadar.",
-    mozScore: 29,
-    pageAuthority: 29,
-    linkingDomains: 164,
-    inboundLinks: "1.5K+",
-    followedLinks: "1.2K+",
-    category: "Music/Audio",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "1.5K+",
-    topBacklinks: ["sites.google.com (DA 96)", "scoop.it (DA 92)", "envato.com (DA 91)", "informer.com (DA 90)", "codecanyon.net (DA 83)"]
-  },
-  {
-    name: "energaware.eu",
-    description: "Energy awareness EU project domain with backlinks from Europa.eu, UOL, El País and Le Figaro.",
+    name: "ener2i.eu",
+    description: "Energy innovation EU domain with backlinks from Europa.eu, Wikipedia, JRC and ResearchGate.",
     mozScore: 29,
     pageAuthority: 26,
-    linkingDomains: 61,
-    inboundLinks: "15.1K+",
-    followedLinks: "15.1K+",
+    linkingDomains: 126,
+    inboundLinks: "346+",
+    followedLinks: "285+",
     category: "Energy",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "15.1K+",
-    topBacklinks: ["europa.eu (DA 97)", "uol.com.br (DA 95)", "elpais.com (DA 94)", "lefigaro.fr (DA 93)", "mdpi.com (DA 92)"]
+    price: "€495",
+    stripePaymentLink: "https://buy.stripe.com/eVqcN5flZcOW2ex1zz9Zm09",
+    backlinks: "346+",
+    topBacklinks: ["europa.eu (DA 97)", "en.wikipedia.org (DA 97)", "ec.europa.eu (DA 94)", "researchgate.net (DA 93)", "cordis.europa.eu (DA 88)"]
   },
   {
-    name: "5gmedia.eu",
-    description: "Telecom/media domain with backlinks from Medium, IBM, Telefónica and universities.",
+    name: "edda-project.eu",
+    description: "EU project domain with backlinks from Europa.eu, El Pais, ABC.es and Spanish universities.",
     mozScore: 29,
     pageAuthority: 24,
-    linkingDomains: 69,
-    inboundLinks: "338+",
-    followedLinks: "265+",
+    linkingDomains: 72,
+    inboundLinks: "127+",
+    followedLinks: "115+",
+    category: "Projects",
+    price: "€495",
+    stripePaymentLink: "https://buy.stripe.com/eVqcN5flZcOW2ex1zz9Zm09",
+    backlinks: "127+",
+    topBacklinks: ["europa.eu (DA 97)", "elpais.com (DA 94)", "abc.es (DA 93)", "upm.es (DA 78)", "uah.es (DA 70)"]
+  },
+  {
+    name: "cultureaction-europe.eu",
+    description: "European culture and arts domain with backlinks from Wikipedia, Europa.eu, UK Parliament and ResearchGate.",
+    mozScore: 29,
+    pageAuthority: 35,
+    linkingDomains: 418,
+    inboundLinks: "3.5K+",
+    followedLinks: "3.1K+",
+    category: "Culture",
+    price: "€495",
+    stripePaymentLink: "https://buy.stripe.com/eVqcN5flZcOW2ex1zz9Zm09",
+    backlinks: "3.5K+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "europa.eu (DA 97)", "parliament.uk (DA 93)", "researchgate.net (DA 93)", "kulturradet.se (DA 69)"]
+  },
+  {
+    name: "atsp-project.eu",
+    description: "Aerospace/technology EU project domain with backlinks from Europa.eu, Springer and TU Vienna.",
+    mozScore: 29,
+    pageAuthority: 28,
+    linkingDomains: 86,
+    inboundLinks: "2.7K+",
+    followedLinks: "2.6K+",
     category: "Technology",
-    price: "€675",
-    stripePaymentLink: "https://buy.stripe.com/cNi00jdlR9CK5qJf989Zm0k",
-    backlinks: "338+",
-    topBacklinks: ["medium.com (DA 95)", "ibm.com (DA 93)", "telefonica.com (DA 79)", "upv.es (DA 79)", "upm.es (DA 78)"]
-  },
-  {
-    name: "finnovaregio.eu",
-    description: "Financial innovation EU regional domain with backlinks from Crunchbase, Splashthat and Climate-KIC.",
-    mozScore: 29,
-    pageAuthority: 20,
-    linkingDomains: 41,
-    inboundLinks: "156+",
-    followedLinks: "143+",
-    category: "Finance",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "156+",
-    topBacklinks: ["goo.gl (DA 95)", "crunchbase.com (DA 91)", "splashthat.com (DA 86)", "emprendedores.es (DA 66)", "climate-kic.org (DA 64)"]
-  },
-  {
-    name: "worth-project.eu",
-    description: "Design and innovation project domain with backlinks from Europa.eu, Euronews, AngelList and UAL Arts.",
-    mozScore: 29,
-    pageAuthority: 32,
-    linkingDomains: 162,
-    inboundLinks: "245+",
-    followedLinks: "209+",
-    category: "Design",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "245+",
-    topBacklinks: ["europa.eu (DA 97)", "euronews.com (DA 92)", "angel.co (DA 86)", "campaign-archive.com (DA 84)", "arts.ac.uk (DA 81)"]
-  },
-  {
-    name: "push-pull-parking.eu",
-    description: "EU mobility/parking domain with backlinks from Europa.eu, Medium, Zeit.de and Thread Reader.",
-    mozScore: 29,
-    pageAuthority: 30,
-    linkingDomains: 107,
-    inboundLinks: "320+",
-    followedLinks: "292+",
-    category: "Mobility",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "320+",
-    topBacklinks: ["europa.eu (DA 97)", "medium.com (DA 95)", "zeit.de (DA 91)", "threadreaderapp.com (DA 78)", "eur.nl (DA 68)"]
+    price: "€495",
+    stripePaymentLink: "https://buy.stripe.com/eVqcN5flZcOW2ex1zz9Zm09",
+    backlinks: "2.7K+",
+    topBacklinks: ["europa.eu (DA 97)", "springer.com (DA 93)", "tuwien.ac.at (DA 78)", "onera.fr (DA 68)", "cimne.com (DA 63)"]
   },
   // DA 28
   {
-    name: "bovisadrivein.it",
-    description: "Italian entertainment domain with backlinks from Behance, Giphy, Corriere and MyMovies.",
-    mozScore: 28,
-    pageAuthority: 22,
-    linkingDomains: 52,
-    inboundLinks: "78+",
-    followedLinks: "60+",
-    category: "Entertainment",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "78+",
-    topBacklinks: ["behance.net (DA 93)", "giphy.com (DA 92)", "corriere.it (DA 92)", "ilgiornale.it (DA 85)", "elledecor.com (DA 81)"]
-  },
-  {
-    name: "resurbis.eu",
-    description: "EU sustainability domain with backlinks from Europa.eu, MDPI, EurekAlert and Wired.",
-    mozScore: 28,
-    pageAuthority: 24,
-    linkingDomains: 87,
-    inboundLinks: "185+",
-    followedLinks: "153+",
-    category: "Sustainability",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "185+",
-    topBacklinks: ["europa.eu (DA 97)", "mdpi.com (DA 92)", "eurekalert.org (DA 91)", "wired.it (DA 90)", "ub.edu (DA 86)"]
-  },
-  {
-    name: "eu-sabana.eu",
-    description: "Sustainable agriculture EU project domain with backlinks from Europa.eu, The Conversation and Frontiers.",
-    mozScore: 28,
-    pageAuthority: 24,
-    linkingDomains: 69,
-    inboundLinks: "413+",
-    followedLinks: "397+",
-    category: "Agriculture",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "413+",
-    topBacklinks: ["europa.eu (DA 97)", "theconversation.com (DA 92)", "frontiersin.org (DA 92)", "diarioinformacion.com (DA 82)", "informacion.es (DA 78)"]
-  },
-  {
-    name: "ellinikiglossa.eu",
-    description: "Greek language/culture domain with strong backlinks from Wikipedia, UCI.edu and universities.",
-    mozScore: 28,
-    pageAuthority: 31,
-    linkingDomains: 164,
-    inboundLinks: "4.1K+",
-    followedLinks: "4K+",
-    category: "Language/Culture",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "4.1K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "uci.edu (DA 91)"]
-  },
-  {
-    name: "movecare-project.eu",
-    description: "Care and mobility EU project domain with backlinks from Springer, MDPI, Il Fatto Quotidiano and Italian universities.",
-    mozScore: 27,
-    pageAuthority: 22,
-    linkingDomains: 58,
-    inboundLinks: "117+",
-    followedLinks: "97+",
-    category: "Healthcare",
-    price: "€329",
-    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
-    backlinks: "117+",
-    topBacklinks: ["springer.com (DA 93)", "mdpi.com (DA 92)", "ilfattoquotidiano.it (DA 90)", "unimi.it (DA 72)", "polimi.it (DA 71)"]
-  },
-  {
-    name: "davidhughesillustration.co.uk",
-    description: "Creative UK domain with backlinks from The Guardian, Creative Bloq, ORF.at and Publishers Weekly.",
+    name: "smagrinet.eu",
+    description: "Smart grid/energy EU domain with backlinks from Europa.eu, Wikipedia, Medium and Springer.",
     mozScore: 28,
     pageAuthority: 27,
-    linkingDomains: 157,
-    inboundLinks: "3.9K+",
-    followedLinks: "3.9K+",
-    category: "Art/Design",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "3.9K+",
-    topBacklinks: ["theguardian.com (DA 94)", "creativebloq.com (DA 86)", "orf.at (DA 86)", "librarything.com (DA 80)", "publishersweekly.com (DA 77)"]
+    linkingDomains: 100,
+    inboundLinks: "287+",
+    followedLinks: "242+",
+    category: "Energy",
+    price: "€425",
+    stripePaymentLink: "https://buy.stripe.com/dRm5kD81x3emf1jb1b9Zm06",
+    backlinks: "287+",
+    topBacklinks: ["europa.eu (DA 97)", "en.wikipedia.org (DA 97)", "medium.com (DA 95)", "springer.com (DA 93)", "cordis.europa.eu (DA 88)"]
   },
   {
-    name: "centremlm.be",
-    description: "Belgian centre domain with backlinks from Wikipedia (FR, IT, NL), Le Figaro and Wiktionary.",
+    name: "europebynature.eu",
+    description: "European nature/environment domain with backlinks from Europa.eu, European Commission and Council of Europe.",
     mozScore: 28,
-    pageAuthority: 28,
-    linkingDomains: 182,
-    inboundLinks: "9.6K+",
-    followedLinks: "9.3K+",
-    category: "General",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "9.6K+",
-    topBacklinks: ["fr.wikipedia.org (DA 95)", "it.wikipedia.org (DA 93)", "wiktionary.org (DA 93)", "lefigaro.fr (DA 93)", "nl.wikipedia.org (DA 91)"]
+    pageAuthority: 27,
+    linkingDomains: 99,
+    inboundLinks: "1.7K+",
+    followedLinks: "1.6K+",
+    category: "Nature",
+    price: "€425",
+    stripePaymentLink: "https://buy.stripe.com/dRm5kD81x3emf1jb1b9Zm06",
+    backlinks: "1.7K+",
+    topBacklinks: ["europa.eu (DA 97)", "ec.europa.eu (DA 94)", "coe.int (DA 89)", "campaign-archive.com (DA 84)", "europarl.europa.eu (DA 83)"]
   },
   {
-    name: "epc2018.be",
-    description: "Belgian event domain with backlinks from TinyURL, UB.edu, Lund University and Confex.",
+    name: "artbooking.eu",
+    description: "Art booking and events domain with backlinks from Wikipedia, Twitch, Europa.eu and Booking.com.",
     mozScore: 28,
-    pageAuthority: 24,
-    linkingDomains: 57,
-    inboundLinks: "136+",
-    followedLinks: "121+",
-    category: "Events",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "136+",
-    topBacklinks: ["tinyurl.com (DA 94)", "ub.edu (DA 86)", "lu.se (DA 79)", "confex.com (DA 73)", "sdu.dk (DA 71)"]
+    pageAuthority: 32,
+    linkingDomains: 290,
+    inboundLinks: "2.4K+",
+    followedLinks: "1.8K+",
+    category: "Art",
+    price: "€425",
+    stripePaymentLink: "https://buy.stripe.com/dRm5kD81x3emf1jb1b9Zm06",
+    backlinks: "2.4K+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "twitch.tv (DA 94)", "europa.eu (DA 94)", "booking.com (DA 93)", "dailymotion.com (DA 93)"]
   },
   {
-    name: "youthstartproject.eu",
-    description: "Education/youth project domain with backlinks from Europa.eu, Campaign Archive, Observador and OpenEdition.",
+    name: "zosima-project.eu",
+    description: "EU project domain with backlinks from Europa.eu, OpenAIRE and Horizon 2020.",
     mozScore: 28,
-    pageAuthority: 24,
-    linkingDomains: 64,
-    inboundLinks: "2.9K+",
-    followedLinks: "2.8K+",
-    category: "Education",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "2.9K+",
-    topBacklinks: ["europa.eu (DA 97)", "campaign-archive.com (DA 84)", "observador.pt (DA 84)", "openedition.org (DA 78)", "wort.lu (DA 75)"]
+    pageAuthority: 20,
+    linkingDomains: 44,
+    inboundLinks: "89+",
+    followedLinks: "72+",
+    category: "Projects",
+    price: "€425",
+    stripePaymentLink: "https://buy.stripe.com/dRm5kD81x3emf1jb1b9Zm06",
+    backlinks: "89+",
+    topBacklinks: ["europa.eu (DA 97)", "openaire.eu (DA 76)", "h2020.md (DA 47)"]
   },
   // DA 27
-  {
-    name: "spanvis.nl",
-    description: "Dutch domain with backlinks from Wikipedia (EN, RU, NL), Wikiwand and XS4All.",
-    mozScore: 27,
-    pageAuthority: 29,
-    linkingDomains: 241,
-    inboundLinks: "2.1K+",
-    followedLinks: "1.9K+",
-    category: "General",
-    price: "€329",
-    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
-    backlinks: "2.1K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "ru.wikipedia.org (DA 94)", "nl.wikipedia.org (DA 91)", "wikiwand.com (DA 85)", "xs4all.nl (DA 79)"]
-  },
-  {
-    name: "seatglobal.eu",
-    description: "International mobility/transport domain with backlinks from Europa.eu, Springer, PLOS and Phys.org.",
-    mozScore: 27,
-    pageAuthority: 29,
-    linkingDomains: 123,
-    inboundLinks: "4.8K+",
-    followedLinks: "4.7K+",
-    category: "Transport",
-    price: "€329",
-    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
-    backlinks: "4.8K+",
-    topBacklinks: ["europa.eu (DA 97)", "springer.com (DA 93)", "plos.org (DA 93)", "salon.com (DA 91)", "phys.org (DA 91)"]
-  },
-  {
-    name: "arcomem.eu",
-    description: "Digital archive EU project domain with backlinks from Wikipedia, Europa.eu, W3.org, SlideShare and Oxford.",
-    mozScore: 27,
-    pageAuthority: 33,
-    linkingDomains: 691,
-    inboundLinks: "2.7K+",
-    followedLinks: "2.6K+",
-    category: "Digital",
-    price: "€329",
-    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
-    backlinks: "2.7K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "europa.eu (DA 97)", "w3.org (DA 95)", "slideshare.net (DA 94)", "ox.ac.uk (DA 92)"]
-  },
-  {
-    name: "lt-pl-ru.eu",
-    description: "Baltic region EU cooperation domain with backlinks from Europa.eu, Wikipedia DE, Ask.com and Rzeczpospolita.",
-    mozScore: 27,
-    pageAuthority: 31,
-    linkingDomains: 155,
-    inboundLinks: "44.2K+",
-    followedLinks: "37.2K+",
-    category: "International",
-    price: "€329",
-    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
-    backlinks: "44.2K+",
-    topBacklinks: ["europa.eu (DA 97)", "de.wikipedia.org (DA 94)", "ask.com (DA 88)", "rp.pl (DA 82)", "worldwidetopsite.com (DA 71)"]
-  },
-  {
-    name: "transitionproject.eu",
-    description: "Transition and change EU project domain with backlinks from Europa.eu, Eventbrite, Storify and Sheffield University.",
-    mozScore: 27,
-    pageAuthority: 28,
-    linkingDomains: 75,
-    inboundLinks: "207+",
-    followedLinks: "179+",
-    category: "Projects",
-    price: "€329",
-    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
-    backlinks: "207+",
-    topBacklinks: ["europa.eu (DA 97)", "bit.ly (DA 94)", "eventbrite.com (DA 93)", "storify.com (DA 90)", "shef.ac.uk (DA 79)"]
-  },
   {
     name: "expo-2050.be",
     description: "Belgian expo/exhibition domain with backlinks from The Conversation, Radio France, RTBF and La Libre.",
@@ -1098,348 +860,124 @@ const premiumDomains = [
     name: "front-vosges-14-18.eu",
     description: "Historical WWI memorial domain with backlinks from Wikipedia (FR, DE), StackExchange, FranceInfo and INRIA.",
     mozScore: 25,
-    pageAuthority: 27,
-    linkingDomains: 122,
-    inboundLinks: "443+",
-    followedLinks: "318+",
+    pageAuthority: 28,
+    linkingDomains: 153,
+    inboundLinks: "1.2K+",
+    followedLinks: "1K+",
     category: "History",
     price: "€249",
     stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
-    backlinks: "443+",
-    topBacklinks: ["fr.wikipedia.org (DA 95)", "de.wikipedia.org (DA 94)", "stackexchange.com (DA 91)", "franceinfo.fr (DA 91)", "inria.fr (DA 83)"]
-  },
-  {
-    name: "serletproject.eu",
-    description: "EU project domain with backlinks from Apple.com, Bit.ly, RTL.fr and Wikipedia Greek.",
-    mozScore: 25,
-    pageAuthority: 30,
-    linkingDomains: 491,
-    inboundLinks: "2K+",
-    followedLinks: "1.9K+",
-    category: "Innovation",
-    price: "€249",
-    stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
-    backlinks: "2K+",
-    topBacklinks: ["apple.com (DA 99)", "bit.ly (DA 94)", "home.pl (DA 93)", "cocolog-nifty.com (DA 90)", "rtl.fr (DA 89)"]
-  },
-  {
-    name: "landmark-project.eu",
-    description: "EU project domain with backlinks from Europa.eu, Wikipedia DE, Cambridge and Yumpu.",
-    mozScore: 25,
-    pageAuthority: 32,
-    linkingDomains: 161,
-    inboundLinks: "1.1K+",
-    followedLinks: "954+",
-    category: "Projects",
-    price: "€249",
-    stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
-    backlinks: "1.1K+",
-    topBacklinks: ["europa.eu (DA 97)", "goo.gl (DA 95)", "de.wikipedia.org (DA 94)", "cambridge.org (DA 93)", "yumpu.com (DA 91)"]
-  },
-  {
-    name: "tandemtech.be",
-    description: "Belgian tech domain with backlinks from Medium, TinyURL, Bit.ly, Tweakers and Knack.",
-    mozScore: 25,
-    pageAuthority: 23,
-    linkingDomains: 61,
-    inboundLinks: "613+",
-    followedLinks: "565+",
-    category: "Technology",
-    price: "€249",
-    stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
-    backlinks: "613+",
-    topBacklinks: ["medium.com (DA 95)", "tinyurl.com (DA 94)", "bit.ly (DA 94)", "about.me (DA 92)", "pages.dev (DA 91)"]
-  },
-  {
-    name: "happyvpro.nl",
-    description: "Dutch media domain with backlinks from TinyURL, Ello, XS4ALL, Emerce and VPRO.",
-    mozScore: 25,
-    pageAuthority: 23,
-    linkingDomains: 74,
-    inboundLinks: "1.5K+",
-    followedLinks: "1.4K+",
-    category: "Media",
-    price: "€249",
-    stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
-    backlinks: "1.5K+",
-    topBacklinks: ["tinyurl.com (DA 94)", "ello.co (DA 85)", "xs4all.nl (DA 79)", "emerce.nl (DA 69)", "vpro.nl (DA 68)"]
-  },
-  {
-    name: "edlupt.eu",
-    description: "EU domain with backlinks from Pinterest, ANSA, RUG Groningen and Italian universities.",
-    mozScore: 25,
-    pageAuthority: 28,
-    linkingDomains: 192,
-    inboundLinks: "119.7K+",
-    followedLinks: "119.6K+",
-    category: "General",
-    price: "€249",
-    stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
-    backlinks: "119.7K+",
-    topBacklinks: ["pinterest.com (DA 94)", "ansa.it (DA 91)", "rug.nl (DA 81)", "cnr.it (DA 75)", "unito.it (DA 70)"]
-  },
-  // DA 25
-  {
-    name: "xcycle-h2020.eu",
-    description: "EU H2020 mobility domain with backlinks from Europa.eu, Springer, MDPI and Frontiers.",
-    mozScore: 25,
-    pageAuthority: 32,
-    linkingDomains: 145,
-    inboundLinks: "275+",
-    followedLinks: "202+",
-    category: "Mobility",
-    price: "€249",
-    stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
-    backlinks: "275+",
-    topBacklinks: ["europa.eu (DA 97)", "springer.com (DA 93)", "mdpi.com (DA 92)", "frontiersin.org (DA 92)", "euractiv.com (DA 84)"]
-  },
-  {
-    name: "heinekenthecity.nl",
-    description: "Dutch urban/lifestyle domain with backlinks from Dezeen, Symbaloo, Fodors and VPRO.",
-    mozScore: 24,
-    pageAuthority: 18,
-    linkingDomains: 52,
-    inboundLinks: "214+",
-    followedLinks: "205+",
-    category: "Lifestyle",
-    price: "€175",
-    stripePaymentLink: "https://buy.stripe.com/8x26oH95B4iq9GZ6CC9Zm07",
-    backlinks: "214+",
-    topBacklinks: ["dezeen.com (DA 88)", "symbaloo.com (DA 84)", "fodors.com (DA 82)", "vpro.nl (DA 68)", "clara.net (DA 65)"]
+    backlinks: "1.2K+",
+    topBacklinks: ["fr.wikipedia.org (DA 95)", "de.wikipedia.org (DA 94)", "stackexchange.com (DA 92)", "franceinfo.fr (DA 91)", "inria.fr (DA 82)"]
   },
   // DA 24
   {
-    name: "vos-photos.eu",
-    description: "Photography EU domain with backlinks from E-Monsite, JournalDuNet, CNRS and Wikipedia SV.",
+    name: "vilareal-lux.eu",
+    description: "Luxury travel domain with backlinks from Wikipedia (ES, PT, GA), Tripadvisor and Booking.",
     mozScore: 24,
-    pageAuthority: 31,
-    linkingDomains: 578,
-    inboundLinks: "4.6K+",
-    followedLinks: "3.8K+",
-    category: "Photography",
+    pageAuthority: 27,
+    linkingDomains: 138,
+    inboundLinks: "542+",
+    followedLinks: "410+",
+    category: "Luxury",
     price: "€175",
     stripePaymentLink: "https://buy.stripe.com/8x26oH95B4iq9GZ6CC9Zm07",
-    backlinks: "4.6K+",
-    topBacklinks: ["e-monsite.com (DA 92)", "home.blog (DA 91)", "journaldunet.com (DA 91)", "cnrs.fr (DA 90)", "allthatsinteresting.com (DA 85)"]
+    backlinks: "542+",
+    topBacklinks: ["es.wikipedia.org (DA 96)", "pt.wikipedia.org (DA 94)", "gl.wikipedia.org (DA 84)", "tripadvisor.com (DA 93)", "booking.com (DA 93)"]
   },
   {
-    name: "eulis.eu",
-    description: "EU domain with backlinks from Wikipedia (EN, ES, PT, FR), Europa.eu and MDPI.",
+    name: "project-icarus.eu",
+    description: "Space/technology EU domain with backlinks from Wikipedia (EN, DE, RU, JA), Medium and NASA.",
     mozScore: 24,
-    pageAuthority: 33,
-    linkingDomains: 246,
-    inboundLinks: "1.9K+",
-    followedLinks: "1.7K+",
-    category: "General",
-    price: "€175",
-    stripePaymentLink: "https://buy.stripe.com/8x26oH95B4iq9GZ6CC9Zm07",
-    backlinks: "1.9K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "europa.eu (DA 97)", "es.wikipedia.org (DA 96)", "pt.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)"]
-  },
-  {
-    name: "maribe.eu",
-    description: "Maritime EU domain with backlinks from Europa.eu, The Conversation, MDPI and Bristol University.",
-    mozScore: 23,
-    pageAuthority: 28,
-    linkingDomains: 90,
-    inboundLinks: "146+",
-    followedLinks: "115+",
-    category: "Maritime",
-    price: "€125",
-    backlinks: "146+",
-    topBacklinks: ["europa.eu (DA 97)", "theconversation.com (DA 92)", "mdpi.com (DA 92)", "siliconrepublic.com (DA 83)", "bristol.ac.uk (DA 78)"],
-    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
-  },
-  {
-    name: "200jaarstaten-generaal.nl",
-    description: "Dutch government domain with backlinks from NOS, Leiden University and House of Representatives.",
-    mozScore: 22,
-    pageAuthority: 21,
-    linkingDomains: 37,
-    inboundLinks: "150+",
-    followedLinks: "136+",
-    category: "Government/Culture",
-    price: "€125",
-    backlinks: "150+",
-    topBacklinks: ["nos.nl (DA 90)", "universiteitleiden.nl (DA 82)", "transparent.com (DA 76)", "tweedekamer.nl (DA 64)", "rd.nl (DA 62)"],
-    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
-  },
-  {
-    name: "eu-thor.eu",
-    description: "EU project domain with backlinks from Wikipedia (EN, FR, DE), Europa.eu, Yumpu and WHOI.",
-    mozScore: 23,
-    pageAuthority: 28,
-    linkingDomains: 156,
-    inboundLinks: "18.4K+",
-    followedLinks: "18.3K+",
-    category: "Projects",
-    price: "€125",
-    backlinks: "18.4K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "europa.eu (DA 97)", "fr.wikipedia.org (DA 95)", "de.wikipedia.org (DA 94)", "yumpu.com (DA 91)"],
-    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
-  },
-  {
-    name: "eccomascfd2006.nl",
-    description: "Dutch technical domain with backlinks from TU Delft, Southampton, Liverpool and NTNU.",
-    mozScore: 23,
-    pageAuthority: 25,
-    linkingDomains: 52,
-    inboundLinks: "371+",
-    followedLinks: "352+",
+    pageAuthority: 27,
+    linkingDomains: 132,
+    inboundLinks: "443+",
+    followedLinks: "365+",
     category: "Technology",
-    price: "€125",
-    backlinks: "371+",
-    topBacklinks: ["tudelft.nl (DA 85)", "soton.ac.uk (DA 85)", "uu.se (DA 83)", "liverpool.ac.uk (DA 83)", "ntnu.no (DA 77)"],
-    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
+    price: "€175",
+    stripePaymentLink: "https://buy.stripe.com/8x26oH95B4iq9GZ6CC9Zm07",
+    backlinks: "443+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "de.wikipedia.org (DA 94)", "ru.wikipedia.org (DA 93)", "ja.wikipedia.org (DA 93)", "medium.com (DA 95)"]
   },
+  // DA 23
   {
-    name: "mbelgique.be",
-    description: "Belgian national domain with backlinks from Wikipedia FR, BFMTV, Heise, NU.nl and Europe1.",
+    name: "eit-agrotech.eu",
+    description: "Agricultural technology EU domain with backlinks from Europa.eu, QS World University Rankings and Bioeconomy BW.",
     mozScore: 23,
     pageAuthority: 22,
-    linkingDomains: 58,
-    inboundLinks: "113+",
-    followedLinks: "87+",
-    category: "General",
-    price: "€125",
-    backlinks: "113+",
-    topBacklinks: ["fr.wikipedia.org (DA 95)", "bfmtv.com (DA 92)", "heise.de (DA 91)", "nu.nl (DA 91)", "europe1.fr (DA 90)"],
-    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
+    linkingDomains: 56,
+    inboundLinks: "148+",
+    followedLinks: "127+",
+    category: "Agriculture",
+    price: "€145",
+    stripePaymentLink: "https://buy.stripe.com/bJe8wP1D99CKbP728I9Zm03",
+    backlinks: "148+",
+    topBacklinks: ["europa.eu (DA 97)", "topuniversities.com (DA 88)", "biooekonomierat.de (DA 52)", "bioeconomy-bw.de (DA 40)"]
   },
   {
-    name: "lifemanev.eu",
-    description: "EU project domain about sustainable agriculture with backlinks from MDPI, ITACYL and CSIC.",
+    name: "socialab.eu",
+    description: "Social innovation EU domain with backlinks from Europa.eu, Medium, Campaign Archive and Startups.com.",
     mozScore: 23,
-    pageAuthority: 24,
-    linkingDomains: 40,
-    inboundLinks: "1.1K+",
-    followedLinks: "1K+",
-    category: "Sustainability",
-    price: "€125",
-    backlinks: "1.1K+",
-    topBacklinks: ["mdpi.com (DA 92)", "itacyl.es (DA 45)", "cebas.csic.es (DA 42)"],
-    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
+    pageAuthority: 23,
+    linkingDomains: 101,
+    inboundLinks: "308+",
+    followedLinks: "254+",
+    category: "Innovation",
+    price: "€145",
+    stripePaymentLink: "https://buy.stripe.com/bJe8wP1D99CKbP728I9Zm03",
+    backlinks: "308+",
+    topBacklinks: ["europa.eu (DA 97)", "medium.com (DA 95)", "campaign-archive.com (DA 84)", "startups.com (DA 69)", "innovation.org (DA 58)"]
+  },
+  {
+    name: "electrificationplatform.eu",
+    description: "Electric vehicle/energy EU domain with backlinks from Europa.eu, EurActiv and Clean Energy Wire.",
+    mozScore: 23,
+    pageAuthority: 21,
+    linkingDomains: 53,
+    inboundLinks: "132+",
+    followedLinks: "108+",
+    category: "Energy",
+    price: "€145",
+    stripePaymentLink: "https://buy.stripe.com/bJe8wP1D99CKbP728I9Zm03",
+    backlinks: "132+",
+    topBacklinks: ["europa.eu (DA 97)", "euractiv.com (DA 84)", "cleanenergywire.org (DA 69)", "electrive.net (DA 58)"]
   },
   // DA 22
   {
-    name: "bruegel2019.be",
-    description: "Cultural heritage domain with backlinks from Campaign Archive, Knack.be and Brusselslife.",
-    mozScore: 22,
-    pageAuthority: 24,
-    linkingDomains: 42,
-    inboundLinks: "323+",
-    followedLinks: "312+",
-    category: "Art/Heritage",
-    price: "€125",
-    backlinks: "323+",
-    topBacklinks: ["campaign-archive.com (DA 84)", "knack.be (DA 79)", "brusselslife.be (DA 54)"],
-    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
-  },
-  {
-    name: "theworkshopschool.eu",
-    description: "Educational workshop domain with backlinks from Wikipedia (EN, ES, FR, ZH), CreativeCommons.",
+    name: "mediaguide.eu",
+    description: "Media/journalism EU domain with backlinks from Europa.eu, Guardian Project and Journalism.co.uk.",
     mozScore: 22,
     pageAuthority: 25,
-    linkingDomains: 104,
-    inboundLinks: "4.9K+",
-    followedLinks: "4.7K+",
-    category: "Culture",
+    linkingDomains: 128,
+    inboundLinks: "892+",
+    followedLinks: "654+",
+    category: "Media",
     price: "€125",
-    backlinks: "4.9K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "es.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)", "ru.wikipedia.org (DA 94)", "creativecommons.org (DA 94)"],
-    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
+    stripePaymentLink: "https://buy.stripe.com/3cs6oH95B6yybP79OO9Zm01",
+    backlinks: "892+",
+    topBacklinks: ["europa.eu (DA 97)", "guardianproject.info (DA 72)", "journalism.co.uk (DA 67)", "mediawijzer.net (DA 55)"]
   },
   {
-    name: "escmalta2018.eu",
-    description: "ESC event domain with backlinks from ETH Zürich, Azure, Copernicus, CSIC and Monash University.",
+    name: "eunews.eu",
+    description: "European news domain with backlinks from Wikipedia (EN, IT), El Pais and Corriere.",
     mozScore: 22,
-    pageAuthority: 25,
-    linkingDomains: 102,
-    inboundLinks: "1.1K+",
-    followedLinks: "1K+",
-    category: "Events",
-    price: "€125",
-    backlinks: "1.1K+",
-    topBacklinks: ["ethz.ch (DA 89)", "azure.com (DA 84)", "copernicus.eu (DA 83)", "csic.es (DA 78)", "monash.edu (DA 77)"],
-    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
-  },
-  {
-    name: "eurasiancouncilforeignaffairs.eu",
-    description: "International relations domain with backlinks from Wikipedia (EN, ES, FR, ZH), Cambridge and The Diplomat.",
-    mozScore: 23,
-    pageAuthority: 23,
-    linkingDomains: 65,
-    inboundLinks: "184+",
-    followedLinks: "98+",
-    category: "International",
-    price: "€125",
-    backlinks: "184+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "es.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)", "bit.ly (DA 94)", "cam.ac.uk (DA 92)"],
-    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
-  },
-  {
-    name: "waterpipp.eu",
-    description: "Water and environment EU project domain with backlinks from Europa.eu, Bit.ly, Ask.com and Campaign Archive.",
-    mozScore: 22,
-    pageAuthority: 28,
-    linkingDomains: 96,
-    inboundLinks: "1.2K+",
+    pageAuthority: 26,
+    linkingDomains: 185,
+    inboundLinks: "1.4K+",
     followedLinks: "1.1K+",
-    category: "Environment",
+    category: "News",
     price: "€125",
-    backlinks: "1.2K+",
-    topBacklinks: ["europa.eu (DA 97)", "bit.ly (DA 94)", "ask.com (DA 88)", "campaign-archive.com (DA 84)", "worldwidetopsite.com (DA 71)"],
-    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
-  },
-  {
-    name: "artsalivewales.org.uk",
-    description: "Welsh art/culture domain with backlinks from The Guardian, Mirror, Eventbrite and Wales Online.",
-    mozScore: 22,
-    pageAuthority: 27,
-    linkingDomains: 116,
-    inboundLinks: "863+",
-    followedLinks: "752+",
-    category: "Art",
-    price: "€125",
-    backlinks: "863+",
-    topBacklinks: ["theguardian.com (DA 94)", "mirror.co.uk (DA 94)", "eventbrite.co.uk (DA 91)", "walesonline.co.uk (DA 90)", "constantcontact.com (DA 90)"],
-    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
+    stripePaymentLink: "https://buy.stripe.com/3cs6oH95B6yybP79OO9Zm01",
+    backlinks: "1.4K+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "it.wikipedia.org (DA 94)", "elpais.com (DA 94)", "corriere.it (DA 92)", "termcat.cat (DA 72)"]
   },
   // DA 21
   {
-    name: "stationlansingerland-zoetermeer.nl",
-    description: "Dutch transport/station domain with backlinks from Wikipedia (FR, NL), NS, Nieuws.nl and ProRail.",
+    name: "mooimagazine.nl",
+    description: "Dutch lifestyle/beauty magazine domain with backlinks from UNESCO, WUR, Jouwweb and Startpagina.",
     mozScore: 21,
     pageAuthority: 24,
-    linkingDomains: 62,
-    inboundLinks: "187+",
-    followedLinks: "134+",
-    category: "Transport",
-    price: "€79",
-    backlinks: "187+",
-    topBacklinks: ["fr.wikipedia.org (DA 95)", "nl.wikipedia.org (DA 91)", "ns.nl (DA 72)", "nieuws.nl (DA 63)", "prorail.nl (DA 55)"],
-    stripePaymentLink: "https://buy.stripe.com/7sY28rdlR9CK2exf989Zm05"
-  },
-  {
-    name: "oramed-fp7.eu",
-    description: "Medical research EU FP7 project domain with backlinks from Europa.eu, Springer, IIT and FGOV.be.",
-    mozScore: 21,
-    pageAuthority: 24,
-    linkingDomains: 60,
-    inboundLinks: "130+",
-    followedLinks: "109+",
-    category: "Research",
-    price: "€79",
-    backlinks: "130+",
-    topBacklinks: ["europa.eu (DA 97)", "springer.com (DA 93)", "iit.edu (DA 75)", "fgov.be (DA 72)", "upc.edu (DA 71)"],
-    stripePaymentLink: "https://buy.stripe.com/7sY28rdlR9CK2exf989Zm05"
-  },
-  {
-    name: "ismagazine.nl",
-    description: "Dutch magazine/media domain with backlinks from UNESCO, WUR and Startpagina.",
-    mozScore: 21,
-    pageAuthority: 20,
-    linkingDomains: 56,
+    linkingDomains: 108,
     inboundLinks: "496+",
     followedLinks: "339+",
     category: "Media",
@@ -1700,293 +1238,185 @@ const PremiumDomainsEN = () => {
               {premiumDomains.map((domain, index) => (
                 <Card 
                   key={index} 
-                  className="bg-gradient-to-br from-slate-800/60 to-slate-900/60 border-slate-700/50 hover:border-amber-500/50 transition-all duration-300 group overflow-hidden"
+                  className="h-full flex flex-col bg-gradient-to-br from-slate-800/80 to-slate-900/80 border-slate-700/50 backdrop-blur hover:border-amber-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10 group"
                 >
                   <CardHeader className="pb-3">
                     <div className="flex items-start justify-between">
-                      <Badge variant="outline" className="bg-slate-700/50 text-slate-300 border-slate-600 text-xs">
+                      <Badge variant="outline" className="text-xs border-slate-600 text-slate-400">
                         {domain.category}
                       </Badge>
-                      <div className="flex flex-col items-end">
-                        <div className={`px-3 py-1 rounded-full text-sm font-bold ${
-                          domain.mozScore >= 35 ? 'bg-green-500/20 text-green-400 border border-green-500/30' :
-                          domain.mozScore >= 30 ? 'bg-yellow-500/20 text-yellow-400 border border-yellow-500/30' :
-                          domain.mozScore >= 25 ? 'bg-cyan-500/20 text-cyan-400 border border-cyan-500/30' :
-                          'bg-slate-500/20 text-slate-400 border border-slate-500/30'
-                        }`}>
-                          DA {domain.mozScore}
-                        </div>
+                      <div className="flex items-center gap-1 bg-amber-500/10 px-2 py-1 rounded-full">
+                        <BarChart3 className="w-3 h-3 text-amber-400" />
+                        <span className="text-xs font-semibold text-amber-400">MOZ {domain.mozScore}</span>
                       </div>
                     </div>
-                    <CardTitle className="text-xl text-white group-hover:text-amber-400 transition-colors mt-2">
+                    <CardTitle className="text-xl text-white group-hover:text-amber-400 transition-colors mt-3">
                       {domain.name}
                     </CardTitle>
-                    <CardDescription className="text-slate-400 text-sm leading-relaxed">
+                    <CardDescription className="text-slate-400">
                       {domain.description}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent className="space-y-4">
-                    {/* Metrics Grid */}
-                    <div className="grid grid-cols-2 gap-3">
-                      <div className="bg-slate-900/50 rounded-lg p-3">
-                        <div className="text-xs text-slate-500 mb-1">Page Authority</div>
-                        <div className="text-lg font-bold text-white">{domain.pageAuthority}</div>
-                      </div>
-                      <div className="bg-slate-900/50 rounded-lg p-3">
-                        <div className="text-xs text-slate-500 mb-1">Linking Domains</div>
-                        <div className="text-lg font-bold text-white">{domain.linkingDomains}</div>
-                      </div>
-                      <div className="bg-slate-900/50 rounded-lg p-3">
-                        <div className="text-xs text-slate-500 mb-1">Inbound Links</div>
-                        <div className="text-lg font-bold text-amber-400">{domain.inboundLinks}</div>
-                      </div>
-                      <div className="bg-slate-900/50 rounded-lg p-3">
-                        <div className="text-xs text-slate-500 mb-1">Followed Links</div>
-                        <div className="text-lg font-bold text-amber-400">{domain.followedLinks}</div>
-                      </div>
-                    </div>
-                    
-                    {/* Top Backlinks - Expandable */}
-                    <Accordion type="single" collapsible className="w-full">
-                      <AccordionItem value="backlinks" className="border-slate-700/50">
-                        <AccordionTrigger className="text-sm text-slate-300 hover:text-amber-400 py-2">
-                          <span className="flex items-center gap-2">
-                            <Link className="w-4 h-4" />
-                            View Top Backlinks ({domain.topBacklinks.length})
-                          </span>
-                        </AccordionTrigger>
-                        <AccordionContent>
-                          <ul className="space-y-1 text-sm">
-                            {domain.topBacklinks.map((backlink, idx) => (
-                              <li key={idx} className="text-slate-400 flex items-center gap-2">
-                                <CheckCircle className="w-3 h-3 text-green-500 flex-shrink-0" />
-                                {backlink}
-                              </li>
-                            ))}
-                          </ul>
-                        </AccordionContent>
-                      </AccordionItem>
-                    </Accordion>
-                    
-                    {/* Price and CTA */}
-                    <div className="pt-4 border-t border-slate-700/50">
-                      <div className="flex items-center justify-between mb-4">
-                        <span className="text-slate-400">Price</span>
-                        <span className="text-3xl font-bold text-amber-400">{domain.price}</span>
+                  <CardContent className="flex flex-col flex-grow">
+                    <div className="space-y-3 mb-4">
+                      <div className="flex items-center justify-between text-sm">
+                        <div className="flex items-center gap-2 text-slate-400">
+                          <Link className="w-4 h-4" />
+                          <span>Backlinks: {domain.backlinks}</span>
+                        </div>
                       </div>
                       
-                      {/* Use Cases if available */}
-                      {domain.useCases && domain.useCases.length > 0 ? (
-                        <div className="flex flex-col gap-3">
-                          {/* Use Cases Section */}
-                          <Accordion type="single" collapsible className="w-full">
-                            <AccordionItem value="usecases" className="border-slate-700/50">
-                              <AccordionTrigger className="text-sm text-slate-300 hover:text-amber-400 py-2">
-                                <span className="flex items-center gap-2">
-                                  <Target className="w-4 h-4" />
-                                  View Potential Use Cases ({domain.useCases.length})
-                                </span>
-                              </AccordionTrigger>
-                              <AccordionContent>
-                                <ul className="space-y-1 text-sm">
-                                  {domain.useCases.map((useCase, idx) => (
-                                    <li key={idx} className="text-slate-400 flex items-center gap-2">
-                                      <CheckCircle className="w-3 h-3 text-amber-500 flex-shrink-0" />
-                                      {useCase}
-                                    </li>
-                                  ))}
-                                </ul>
-                              </AccordionContent>
-                            </AccordionItem>
-                          </Accordion>
-                          
-                          {domain.stripePaymentLink ? (
-                            <a 
-                              href={domain.stripePaymentLink}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[#F59E0B] hover:bg-[#D97706] text-slate-950 font-bold rounded-md transition-all duration-200 shadow-md hover:shadow-lg text-lg"
-                            >
-                              Buy Now
-                            </a>
-                          ) : (
-                            <div 
-                              className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[#F59E0B] text-slate-950 font-bold rounded-md shadow-md text-lg"
-                            >
-                              Buy Now
-                            </div>
-                          )}
-                          <div className="flex flex-col items-center gap-2 text-center">
-                            <div className="flex items-center justify-center gap-1 flex-wrap">
-                              {/* Visa */}
-                              <div className="flex items-center bg-[#1A1F71] rounded px-1 py-0.5 h-4">
-                                <span className="text-white font-bold text-[7px] italic tracking-tight" style={{fontFamily: 'Arial'}}>VISA</span>
-                              </div>
-                              {/* Mastercard */}
-                              <div className="flex items-center bg-[#000000] rounded px-1 py-0.5 h-4">
-                                <svg className="h-2.5 w-4" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <circle cx="11" cy="10" r="8" fill="#EB001B"/>
-                                  <circle cx="21" cy="10" r="8" fill="#F79E1B"/>
-                                  <path d="M16 3.5C18.5 5.5 20 7.5 20 10C20 12.5 18.5 14.5 16 16.5C13.5 14.5 12 12.5 12 10C12 7.5 13.5 5.5 16 3.5Z" fill="#FF5F00"/>
-                                </svg>
-                              </div>
-                              {/* PayPal */}
-                              <div className="flex items-center bg-[#003087] rounded px-1 py-0.5 h-4">
-                                <span className="text-white font-bold text-[7px] italic" style={{fontFamily: 'Arial'}}>Pay</span>
-                                <span className="text-[#00ADEF] font-bold text-[7px] italic" style={{fontFamily: 'Arial'}}>Pal</span>
-                              </div>
-                              {/* Amazon Pay */}
-                              <div className="flex items-center bg-[#232F3E] rounded px-1 py-0.5 h-4">
-                                <svg className="h-2.5 w-8" viewBox="0 0 60 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <text x="2" y="13" fill="#FF9900" fontSize="10" fontWeight="bold" fontFamily="Arial">amazon</text>
-                                  <path d="M2 16C8 18 16 19 24 18C28 17.5 32 16.5 35 15" stroke="#FF9900" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-                                  <path d="M34 13L36 15L34 17" stroke="#FF9900" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
-                                  <text x="38" y="13" fill="white" fontSize="8" fontFamily="Arial">pay</text>
-                                </svg>
-                              </div>
-                              {/* Apple Pay */}
-                              <div className="flex items-center bg-black rounded px-1 py-0.5 h-4">
-                                <svg className="h-2.5 w-6" viewBox="0 0 50 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M8.5 4C9.5 4 10.3 3.5 10.8 2.7C11.3 2 11.5 1 11.4 0C10.5 0.1 9.4 0.6 8.8 1.4C8.3 2 7.9 3 8 4C9 4 9.5 4 8.5 4Z" fill="white"/>
-                                  <path d="M11.4 4.3C9.8 4.2 8.4 5.2 7.6 5.2C6.8 5.2 5.6 4.3 4.3 4.4C2.6 4.4 1 5.3 0.2 6.9C-1.5 10 0.1 14.5 1.7 17C2.5 18.2 3.5 19.6 4.8 19.5C6 19.5 6.5 18.7 8 18.7C9.5 18.7 10 19.5 11.3 19.5C12.6 19.5 13.5 18.2 14.3 17C15.2 15.7 15.6 14.4 15.6 14.3C15.6 14.3 12.5 13.1 12.5 9.6C12.5 6.5 15 5.1 15.1 5C13.8 3.1 11.8 4.3 11.4 4.3Z" fill="white"/>
-                                  <text x="18" y="14" fill="white" fontSize="10" fontWeight="500" fontFamily="Arial">Pay</text>
-                                </svg>
-                              </div>
-                              {/* Google Pay */}
-                              <div className="flex items-center bg-white rounded px-1 py-0.5 border border-slate-300 h-4">
-                                <svg className="h-2.5 w-10" viewBox="0 0 65 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <text x="0" y="14" fontSize="11" fontWeight="500" fontFamily="Arial">
-                                    <tspan fill="#4285F4">G</tspan>
-                                    <tspan fill="#EA4335">o</tspan>
-                                    <tspan fill="#FBBC05">o</tspan>
-                                    <tspan fill="#4285F4">g</tspan>
-                                    <tspan fill="#34A853">l</tspan>
-                                    <tspan fill="#EA4335">e</tspan>
-                                  </text>
-                                  <text x="38" y="14" fill="#5F6368" fontSize="11" fontWeight="500" fontFamily="Arial">Pay</text>
-                                </svg>
-                              </div>
-                              {/* Klarna */}
-                              <div className="flex items-center bg-[#FFB3C7] rounded px-1 py-0.5 h-4">
-                                <span className="text-black font-bold text-[7px]" style={{fontFamily: 'Arial'}}>Klarna</span>
-                              </div>
-                            </div>
-                            <div className="flex items-center gap-2 mt-2">
-                              <Lock className="w-3 h-3 text-slate-400" />
-                              <div className="flex items-center bg-[#635BFF] rounded px-2 py-0.5">
-                                <span className="text-white font-bold text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
-                              </div>
-                            </div>
-                            <p className="text-[10px] text-slate-400 leading-tight mt-2">
-                              Secure payment via Stripe
-                              <br />
-                              Automatically converted to your local currency
-                            </p>
-                            <p className="text-[10px] text-slate-400 leading-tight mt-3">
-                              After payment you will receive the transfer token (EPP/Auth code) within 24 hours at your email address.
-                              <br />
-                              Also check your spam folder.
-                            </p>
-                            <a href="#domain-transfer" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
-                              How does transfer work?
-                            </a>
+                      {/* Extra stats for domains with detailed info */}
+                      {domain.pageAuthority && (
+                        <div className="grid grid-cols-2 gap-2 text-xs">
+                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                            <span className="text-slate-500">Page Authority:</span>
+                            <span className="text-white ml-1 font-medium">{domain.pageAuthority}</span>
                           </div>
-                        </div>
-                      ) : (
-                        <div className="flex flex-col gap-3">
-                          {domain.stripePaymentLink ? (
-                            <a 
-                              href={domain.stripePaymentLink}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[#F59E0B] hover:bg-[#D97706] text-slate-950 font-bold rounded-md transition-all duration-200 shadow-md hover:shadow-lg text-lg"
-                            >
-                              Buy Now
-                            </a>
-                          ) : (
-                            <div 
-                              className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[#F59E0B] text-slate-950 font-bold rounded-md shadow-md text-lg"
-                            >
-                              Buy Now
-                            </div>
-                          )}
-                          <div className="flex flex-col items-center gap-2 text-center">
-                            <div className="flex items-center justify-center gap-1 flex-wrap">
-                              {/* Visa */}
-                              <div className="flex items-center bg-[#1A1F71] rounded px-1 py-0.5 h-4">
-                                <span className="text-white font-bold text-[7px] italic tracking-tight" style={{fontFamily: 'Arial'}}>VISA</span>
-                              </div>
-                              {/* Mastercard */}
-                              <div className="flex items-center bg-[#000000] rounded px-1 py-0.5 h-4">
-                                <svg className="h-2.5 w-4" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <circle cx="11" cy="10" r="8" fill="#EB001B"/>
-                                  <circle cx="21" cy="10" r="8" fill="#F79E1B"/>
-                                  <path d="M16 3.5C18.5 5.5 20 7.5 20 10C20 12.5 18.5 14.5 16 16.5C13.5 14.5 12 12.5 12 10C12 7.5 13.5 5.5 16 3.5Z" fill="#FF5F00"/>
-                                </svg>
-                              </div>
-                              {/* PayPal */}
-                              <div className="flex items-center bg-[#003087] rounded px-1 py-0.5 h-4">
-                                <span className="text-white font-bold text-[7px] italic" style={{fontFamily: 'Arial'}}>Pay</span>
-                                <span className="text-[#00ADEF] font-bold text-[7px] italic" style={{fontFamily: 'Arial'}}>Pal</span>
-                              </div>
-                              {/* Amazon Pay */}
-                              <div className="flex items-center bg-[#232F3E] rounded px-1 py-0.5 h-4">
-                                <svg className="h-2.5 w-8" viewBox="0 0 60 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <text x="2" y="13" fill="#FF9900" fontSize="10" fontWeight="bold" fontFamily="Arial">amazon</text>
-                                  <path d="M2 16C8 18 16 19 24 18C28 17.5 32 16.5 35 15" stroke="#FF9900" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-                                  <path d="M34 13L36 15L34 17" stroke="#FF9900" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
-                                  <text x="38" y="13" fill="white" fontSize="8" fontFamily="Arial">pay</text>
-                                </svg>
-                              </div>
-                              {/* Apple Pay */}
-                              <div className="flex items-center bg-black rounded px-1 py-0.5 h-4">
-                                <svg className="h-2.5 w-6" viewBox="0 0 50 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M8.5 4C9.5 4 10.3 3.5 10.8 2.7C11.3 2 11.5 1 11.4 0C10.5 0.1 9.4 0.6 8.8 1.4C8.3 2 7.9 3 8 4C9 4 9.5 4 8.5 4Z" fill="white"/>
-                                  <path d="M11.4 4.3C9.8 4.2 8.4 5.2 7.6 5.2C6.8 5.2 5.6 4.3 4.3 4.4C2.6 4.4 1 5.3 0.2 6.9C-1.5 10 0.1 14.5 1.7 17C2.5 18.2 3.5 19.6 4.8 19.5C6 19.5 6.5 18.7 8 18.7C9.5 18.7 10 19.5 11.3 19.5C12.6 19.5 13.5 18.2 14.3 17C15.2 15.7 15.6 14.4 15.6 14.3C15.6 14.3 12.5 13.1 12.5 9.6C12.5 6.5 15 5.1 15.1 5C13.8 3.1 11.8 4.3 11.4 4.3Z" fill="white"/>
-                                  <text x="18" y="14" fill="white" fontSize="10" fontWeight="500" fontFamily="Arial">Pay</text>
-                                </svg>
-                              </div>
-                              {/* Google Pay */}
-                              <div className="flex items-center bg-white rounded px-1 py-0.5 border border-slate-300 h-4">
-                                <svg className="h-2.5 w-10" viewBox="0 0 65 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <text x="0" y="14" fontSize="11" fontWeight="500" fontFamily="Arial">
-                                    <tspan fill="#4285F4">G</tspan>
-                                    <tspan fill="#EA4335">o</tspan>
-                                    <tspan fill="#FBBC05">o</tspan>
-                                    <tspan fill="#4285F4">g</tspan>
-                                    <tspan fill="#34A853">l</tspan>
-                                    <tspan fill="#EA4335">e</tspan>
-                                  </text>
-                                  <text x="38" y="14" fill="#5F6368" fontSize="11" fontWeight="500" fontFamily="Arial">Pay</text>
-                                </svg>
-                              </div>
-                              {/* Klarna */}
-                              <div className="flex items-center bg-[#FFB3C7] rounded px-1 py-0.5 h-4">
-                                <span className="text-black font-bold text-[7px]" style={{fontFamily: 'Arial'}}>Klarna</span>
-                              </div>
-                            </div>
-                            <div className="flex items-center gap-2 mt-2">
-                              <Lock className="w-3 h-3 text-slate-400" />
-                              <div className="flex items-center bg-[#635BFF] rounded px-2 py-0.5">
-                                <span className="text-white font-bold text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
-                              </div>
-                            </div>
-                            <p className="text-[10px] text-slate-400 leading-tight mt-2">
-                              Secure payment via Stripe
-                              <br />
-                              Automatically converted to your local currency
-                            </p>
-                            <p className="text-[10px] text-slate-400 leading-tight mt-3">
-                              After payment you will receive the transfer token (EPP/Auth code) within 24 hours at your email address.
-                              <br />
-                              Also check your spam folder.
-                            </p>
-                            <a href="#domain-transfer" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
-                              How does transfer work?
-                            </a>
+                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                            <span className="text-slate-500">Linking Domains:</span>
+                            <span className="text-white ml-1 font-medium">{domain.linkingDomains}</span>
+                          </div>
+                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                            <span className="text-slate-500">Inbound Links:</span>
+                            <span className="text-white ml-1 font-medium">{domain.inboundLinks}</span>
+                          </div>
+                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                            <span className="text-slate-500">Followed Links:</span>
+                            <span className="text-white ml-1 font-medium">{domain.followedLinks}</span>
                           </div>
                         </div>
                       )}
+                      
+                      {/* Top backlinks */}
+                      {domain.topBacklinks && domain.topBacklinks.length > 0 && (
+                        <div className="text-xs">
+                          <span className="text-slate-500 block mb-1">Top Backlinks:</span>
+                          <div className="flex flex-wrap gap-1">
+                            {domain.topBacklinks.slice(0, 5).map((link, i) => (
+                              <Badge key={i} variant="outline" className="text-[10px] border-amber-500/30 text-amber-400/80 bg-amber-500/5">
+                                {link}
+                              </Badge>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                      
+                      {/* Use Cases */}
+                      {domain.useCases && domain.useCases.length > 0 && (
+                        <div className="text-xs">
+                          <span className="text-slate-500 block mb-1">Suitable for:</span>
+                          <div className="flex flex-wrap gap-1">
+                            {domain.useCases.map((useCase, i) => (
+                              <Badge key={i} variant="outline" className="text-[10px] border-emerald-500/30 text-emerald-400/80 bg-emerald-500/5">
+                                {useCase}
+                              </Badge>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                    
+                    {/* Price Display - Compact at bottom */}
+                    <div className="mt-auto pt-4 border-t border-slate-700/50">
+                      <div className="flex items-center justify-between mb-3 bg-slate-800/60 rounded-lg px-3 py-2">
+                        <span className="text-sm font-medium text-slate-300">Price</span>
+                        <span className="text-lg font-bold text-amber-400">{domain.price}</span>
+                      </div>
+                      
+                      <div className="flex flex-col gap-3">
+                        {domain.stripePaymentLink ? (
+                          <a 
+                            href={domain.stripePaymentLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[#F59E0B] hover:bg-[#D97706] text-slate-950 font-bold rounded-md transition-all duration-200 shadow-md hover:shadow-lg text-lg"
+                          >
+                            Buy Now
+                          </a>
+                        ) : (
+                          <div 
+                            className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[#F59E0B] text-slate-950 font-bold rounded-md shadow-md text-lg"
+                          >
+                            Buy Now
+                          </div>
+                        )}
+                        <div className="flex flex-col items-center gap-2 text-center">
+                          <div className="flex items-center justify-center gap-1 flex-wrap">
+                            {/* Visa - Clear text logo */}
+                            <div className="flex items-center bg-[#1A1F71] rounded px-1 py-0.5 h-4">
+                              <span className="text-white font-bold text-[7px] italic tracking-tight" style={{fontFamily: 'Arial'}}>VISA</span>
+                            </div>
+                            {/* Mastercard - Clear circles */}
+                            <div className="flex items-center bg-[#000000] rounded px-1 py-0.5 h-4">
+                              <svg className="h-2.5 w-4" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="11" cy="10" r="8" fill="#EB001B"/>
+                                <circle cx="21" cy="10" r="8" fill="#F79E1B"/>
+                                <path d="M16 3.5C18.5 5.5 20 7.5 20 10C20 12.5 18.5 14.5 16 16.5C13.5 14.5 12 12.5 12 10C12 7.5 13.5 5.5 16 3.5Z" fill="#FF5F00"/>
+                              </svg>
+                            </div>
+                            {/* PayPal - Clear text logo */}
+                            <div className="flex items-center bg-[#003087] rounded px-1 py-0.5 h-4">
+                              <span className="text-white font-bold text-[7px] italic" style={{fontFamily: 'Arial'}}>Pay</span>
+                              <span className="text-[#00ADEF] font-bold text-[7px] italic" style={{fontFamily: 'Arial'}}>Pal</span>
+                            </div>
+                            {/* Amazon Pay - Clear logo */}
+                            <div className="flex items-center bg-[#232F3E] rounded px-1 py-0.5 h-4">
+                              <svg className="h-2.5 w-8" viewBox="0 0 60 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <text x="2" y="13" fill="#FF9900" fontSize="10" fontWeight="bold" fontFamily="Arial">amazon</text>
+                                <path d="M2 16C8 18 16 19 24 18C28 17.5 32 16.5 35 15" stroke="#FF9900" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+                                <path d="M34 13L36 15L34 17" stroke="#FF9900" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+                                <text x="38" y="13" fill="white" fontSize="8" fontFamily="Arial">pay</text>
+                              </svg>
+                            </div>
+                            {/* Apple Pay - Clear logo */}
+                            <div className="flex items-center bg-black rounded px-1 py-0.5 h-4">
+                              <svg className="h-2.5 w-6" viewBox="0 0 50 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.5 4C9.5 4 10.3 3.5 10.8 2.7C11.3 2 11.5 1 11.4 0C10.5 0.1 9.4 0.6 8.8 1.4C8.3 2 7.9 3 8 4C9 4 9.5 4 8.5 4Z" fill="white"/>
+                                <path d="M11.4 4.3C9.8 4.2 8.4 5.2 7.6 5.2C6.8 5.2 5.6 4.3 4.3 4.4C2.6 4.4 1 5.3 0.2 6.9C-1.5 10 0.1 14.5 1.7 17C2.5 18.2 3.5 19.6 4.8 19.5C6 19.5 6.5 18.7 8 18.7C9.5 18.7 10 19.5 11.3 19.5C12.6 19.5 13.5 18.2 14.3 17C15.2 15.7 15.6 14.4 15.6 14.3C15.6 14.3 12.5 13.1 12.5 9.6C12.5 6.5 15 5.1 15.1 5C13.8 3.1 11.8 4.3 11.4 4.3Z" fill="white"/>
+                                <text x="18" y="14" fill="white" fontSize="10" fontWeight="500" fontFamily="Arial">Pay</text>
+                              </svg>
+                            </div>
+                            {/* Google Pay - Clear and readable */}
+                            <div className="flex items-center bg-white rounded px-1 py-0.5 border border-slate-300 h-4">
+                              <svg className="h-2.5 w-10" viewBox="0 0 65 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <text x="0" y="14" fontSize="11" fontWeight="500" fontFamily="Arial">
+                                  <tspan fill="#4285F4">G</tspan>
+                                  <tspan fill="#EA4335">o</tspan>
+                                  <tspan fill="#FBBC05">o</tspan>
+                                  <tspan fill="#4285F4">g</tspan>
+                                  <tspan fill="#34A853">l</tspan>
+                                  <tspan fill="#EA4335">e</tspan>
+                                </text>
+                                <text x="38" y="14" fill="#5F6368" fontSize="11" fontWeight="500" fontFamily="Arial">Pay</text>
+                              </svg>
+                            </div>
+                            {/* Klarna - Clear logo */}
+                            <div className="flex items-center bg-[#FFB3C7] rounded px-1 py-0.5 h-4">
+                              <span className="text-black font-bold text-[7px]" style={{fontFamily: 'Arial'}}>Klarna</span>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-2 mt-2">
+                            <Lock className="w-3 h-3 text-slate-400" />
+                            <div className="flex items-center bg-[#635BFF] rounded px-2 py-0.5">
+                              <span className="text-white font-bold text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
+                            </div>
+                          </div>
+                          <p className="text-[10px] text-slate-400 leading-tight mt-2">
+                            Secure payment via Stripe
+                            <br />
+                            Automatically converted to your local currency
+                          </p>
+                          <p className="text-[10px] text-slate-400 leading-tight mt-3">
+                            After payment you will receive the transfer token (EPP/Auth code) within 24 hours at your email address.
+                            <br />
+                            Also check your spam folder.
+                          </p>
+                          <a href="#domain-transfer" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
+                            How does transfer work?
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </CardContent>
                 </Card>
@@ -2183,12 +1613,10 @@ const PremiumDomainsEN = () => {
                   { icon: BarChart3, title: "High DA Score", desc: "Minimum DA 20+" },
                   { icon: Globe, title: "Relevant Niches", desc: "Thematically matching domains" }
                 ].map((item, index) => (
-                  <div key={index} className="text-center p-6 rounded-xl bg-slate-800/30 border border-slate-700/50">
-                    <div className="w-12 h-12 rounded-full bg-amber-500/10 flex items-center justify-center mx-auto mb-4">
-                      <item.icon className="h-6 w-6 text-amber-400" />
-                    </div>
-                    <h4 className="text-lg font-semibold text-white mb-2">{item.title}</h4>
-                    <p className="text-sm text-slate-400">{item.desc}</p>
+                  <div key={index} className="text-center p-6 rounded-xl bg-slate-800/30 border border-slate-700/50 hover:border-amber-500/30 transition-all">
+                    <item.icon className="w-10 h-10 text-amber-400 mx-auto mb-4" />
+                    <h4 className="text-white font-semibold mb-2">{item.title}</h4>
+                    <p className="text-slate-400 text-sm">{item.desc}</p>
                   </div>
                 ))}
               </div>
@@ -2200,159 +1628,206 @@ const PremiumDomainsEN = () => {
         <section id="faq" className="py-20 bg-gradient-to-b from-slate-950 to-slate-900">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <Badge className="mb-4 bg-amber-500/10 text-amber-400 border-amber-500/30">
+              <Badge className="mb-4 bg-slate-800 text-amber-400 border-slate-700">
                 Frequently Asked Questions
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Everything You Want to Know About Premium Domains
+                FAQ about Premium Domains & SEO
               </h2>
-              <p className="text-slate-400 max-w-2xl mx-auto">
-                Below you'll find answers to the most frequently asked questions about expired domain names, premium domains and SEO authority.
-              </p>
             </div>
             
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-3xl mx-auto">
               <Accordion type="single" collapsible className="space-y-4">
-                <AccordionItem value="faq-group-1" className="bg-slate-800/30 border border-slate-700/50 rounded-xl px-6">
-                  <AccordionTrigger className="text-lg font-medium text-white hover:text-amber-400 py-6">
-                    General Questions About Domain Names (10 Questions)
+                {[
+                  {
+                    question: "Where can I buy an expired domain name with backlinks?",
+                    answer: "An expired domain name with backlinks is best purchased from a specialized seller who manually checks domains for quality, history and authority. This prevents you from buying a domain name with spam links or SEO problems. We only offer reliable expired domains that have been carefully checked."
+                  },
+                  {
+                    question: "What is a reliable expired domain name with high authority?",
+                    answer: "A reliable expired domain name with high authority is a domain that has quality backlinks, a clean website history, no spam, gambling or adult history and relevant links from real content. This type of domain name offers real SEO value and gives you a head start in Google."
+                  },
+                  {
+                    question: "How much SEO value does an expired domain name with links have?",
+                    answer: "The SEO value of an expired domain name with links mainly consists of existing backlinks, built-up domain authority and faster trust from Google. This can significantly shorten the time to rank — often months to years faster than with a new domain name."
+                  },
+                  {
+                    question: "Is an expired domain name with authority better than link building?",
+                    answer: "In many cases, yes. With an expired domain name you buy existing links and authority, while link building can be time-consuming, expensive and risky. An old domain name with SEO value gives you an immediate head start without months of investment in link building."
+                  },
+                  {
+                    question: "Can I use an expired domain name for a new website?",
+                    answer: "Yes. You can perfectly use an expired domain name with SEO value for a new website, as long as the content logically matches the subject and history of the domain. The backlinks remain active and you immediately benefit from the built-up authority."
+                  },
+                  {
+                    question: "What is the difference between a premium domain name and an expired domain name?",
+                    answer: "A premium domain name is mainly valuable because of name quality and brand value, while an expired domain name with backlinks brings additional SEO authority and history. Both can be valuable, depending on your goal. Some domains combine both advantages."
+                  },
+                  {
+                    question: "Why are expired domain names with backlinks more expensive?",
+                    answer: "Expired domain names with backlinks are more expensive because they already have SEO value, they save time and costs and they enable a faster start. You pay for built-up trust, not just for a name. The investment often pays for itself quickly through better rankings."
+                  },
+                  {
+                    question: "Are expired domain names with authority suitable for webshops?",
+                    answer: "Yes. For webshops, trust is crucial. An expired domain name with high authority can contribute to better visibility, higher conversions and faster indexation. This gives your webshop a head start over competitors who start with a new domain name."
+                  },
+                  {
+                    question: "Can I combine a premium domain name with SEO benefits?",
+                    answer: "Yes. Some premium domain names are also expired domains with a strong link history. This combines brand value with SEO authority and is often the most valuable. In our portfolio you will find several domains that offer both benefits."
+                  },
+                  {
+                    question: "Why are more and more entrepreneurs choosing expired domain names with SEO value?",
+                    answer: "Because entrepreneurs are looking for faster results in Google, less dependence on link building and a strong foundation for growth. A reliable expired domain name with backlinks and authority offers exactly the head start that makes the difference."
+                  },
+                  {
+                    question: "What is Domain Authority (DA) and why is it important?",
+                    answer: "Domain Authority is a score from 1-100 developed by MOZ that predicts how well a website will rank in search engines. A higher DA means more authority and better chances of ranking high. It is based on factors such as the number and quality of backlinks, the age of the domain and overall reliability."
+                  },
+                  {
+                    question: "How does a 301 redirect work for SEO?",
+                    answer: "A 301 redirect is a permanent redirect that tells search engines that a page has been permanently moved. When you 301 redirect a premium domain to your site, a large part of the SEO value (link juice) of that domain is transferred to your site. This can significantly improve your rankings."
+                  },
+                  {
+                    question: "How long does it take before I see results?",
+                    answer: "The effects of a domain transfer or 301 redirect are usually visible in the search results within 2-8 weeks. This depends on how often Google crawls your site and the current state of your website. Premium domains with active backlinks often show results faster."
+                  },
+                  {
+                    question: "What is the best way to find expired domain names with authority?",
+                    answer: "The best way is through a specialized seller who pre-checks domains. Searching yourself via auction sites carries risks. We only select domain names with quality links, no spam history and real SEO value. This way you know for sure that you are investing in a reliable domain."
+                  },
+                  {
+                    question: "Why do websites from your portfolio sometimes appear in the history of a domain?",
+                    answer: "Some domain names in our portfolio have previously been used for our own projects, test websites or 301 redirects. This includes websites such as NailTalk, OntwerpNovi, OliveVines and similar projects. This is actually an advantage: these domains have proven results and have been actively tested for SEO performance. All our domain names are thoroughly checked at multiple sources (such as web history archives, Google, Ahrefs, MOZ and spam checkers) and are completely free of harmful history such as spam, adult content or gambling-related history. A website from our own portfolio in the history is therefore a sign of quality and careful management — not a cause for concern."
+                  },
+                  {
+                    question: "How does SEO and link building work? And why should I keep maintaining my purchased domain?",
+                    answer: "SEO (Search Engine Optimization) is about optimizing your website so that search engines like Google can find, understand and rank it better. Link building is a crucial part of this: obtaining backlinks (references) from other websites to yours. These links act as 'votes of trust' and tell Google that your content is valuable.\n\n**Why maintenance is essential:**\nA premium domain name with existing backlinks gives you a strong foundation, but no domain name offers guarantees on rankings. SEO is an ongoing process. Backlinks can disappear over time when referring websites go offline or remove content. Additionally, Google's algorithms change regularly, so what works today may be different tomorrow.\n\n**Tips for successful maintenance and link building:**\n• **Create valuable content** — Regularly publish relevant, original articles, guides or tools that others want to share and link to.\n• **Guest blogging** — Write articles for respected websites in your industry with a link back to your site.\n• **Broken link building** — Find broken links on relevant websites and offer your content as a replacement.\n• **HARO/Helpareporter** — Respond to journalist questions to get mentions and links in news articles.\n• **Social media and PR** — Actively share your content and build relationships with influencers and media.\n• **Internal link structure** — Ensure logical internal links between your pages to distribute authority.\n• **Monitor your backlinks** — Use tools like Ahrefs, MOZ or SEMrush to monitor your link profile and disavow harmful links.\n• **Technical SEO** — Ensure fast loading times, mobile-friendly design and a secure HTTPS connection.\n\n**Important to know:**\nNo domain name, however strong, guarantees top positions in Google. The built-up authority gives you a head start, but success depends on continuous effort: regular content, active link building and technical maintenance. See your premium domain as a solid foundation — you determine the building on top of it yourself with consistent SEO efforts."
+                  }
+                ].map((faq, index) => (
+                  <AccordionItem 
+                    key={index} 
+                    value={`item-${index}`}
+                    className="bg-slate-800/40 border border-slate-700/50 rounded-xl px-6 data-[state=open]:border-amber-500/30"
+                  >
+                    <AccordionTrigger className="text-left text-white hover:text-amber-400 hover:no-underline py-4">
+                      <h3 className="font-semibold">{faq.question}</h3>
+                    </AccordionTrigger>
+                    <AccordionContent className="text-slate-400 pb-4 leading-relaxed whitespace-pre-line">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+                
+                {/* Complete Guide: 35 Questions about Expired Domains */}
+                <AccordionItem 
+                  value="complete-guide"
+                  className="bg-gradient-to-br from-amber-500/10 to-slate-800/40 border border-amber-500/30 rounded-xl px-6"
+                >
+                  <AccordionTrigger className="text-left text-white hover:text-amber-400 hover:no-underline py-4">
+                    <h3 className="font-semibold">Complete Guide: 35 Questions about Expired Domain Names & SEO</h3>
                   </AccordionTrigger>
-                  <AccordionContent className="pb-6">
-                    <div className="space-y-6 text-slate-300">
+                  <AccordionContent className="text-slate-400 pb-6 leading-relaxed">
+                    <div className="space-y-8 whitespace-pre-line">
                       {[
                         {
-                          question: "1. What is an expired domain name?",
-                          answer: "An expired domain name is a domain that a previous owner has not renewed. It becomes available for purchase again. What makes it special: often an expired domain still has existing backlinks, domain history and SEO value that you can use immediately."
+                          question: "1. Which domain name should I buy as a beginner?",
+                          answer: "As a beginner, it's best to choose a domain name that is easy to remember, clearly indicates what you do and inspires trust. Many starters search for \"which domain name should I buy\" and automatically end up with new domains, while a reliable expired domain name often already has built-up authority and value."
                         },
                         {
-                          question: "2. What is the difference between an expired domain and a new domain?",
-                          answer: "A new domain has no history, no backlinks, no authority. An expired domain often already has links from other websites, a domain age and established trust. This can give you a significant head start in search engines."
+                          question: "2. What is the difference between a new domain name and an expired domain name?",
+                          answer: "A new domain name has no history and starts completely from scratch. An expired domain name has been registered before and may still have backlinks, authority and trust with Google. This often makes an expired domain name more attractive for SEO and visibility."
                         },
                         {
-                          question: "3. What is a premium domain name?",
-                          answer: "A premium domain is a domain of exceptional value, for example because it is: short and memorable, has a strong keyword, or already has high authority and backlinks. Premium domains are traded above the normal registration price."
+                          question: "3. Is it better to buy a new domain name or an expired domain name?",
+                          answer: "Those searching for \"new domain name or expired domain name\" usually compare speed and results. A new name can work for branding, but for becoming visible in Google faster, a good expired domain name often offers a clear head start."
                         },
                         {
-                          question: "4. Why are expired domain names interesting for SEO?",
-                          answer: "Because expired domains often already have: Domain age, Backlinks from other websites, Authority in Google. This means you don't start at zero, but with a head start."
+                          question: "4. Why does my new website score so poorly in Google?",
+                          answer: "New websites still need to build up their reliability. Without backlinks and history, this often takes months. An expired domain name with good links can ensure that you don't have to start completely from scratch."
                         },
                         {
-                          question: "5. Are all expired domains good for SEO?",
-                          answer: "No. Some expired domains have a bad history (spam, penalties, etc.). Therefore it's important to buy reliable expired domains that have been checked for quality, link profile and history."
+                          question: "5. Is an expired domain name safe to buy?",
+                          answer: "Yes, as long as it's a checked and reliable expired domain name. The risk is not in \"expired\", but in domains that have not been checked for spam, abuse or bad backlinks."
                         },
                         {
-                          question: "6. How can I tell if an expired domain is reliable?",
-                          answer: "Key indicators are: Healthy backlink profile, No spam history, Consistent history (via Wayback Machine), Good MOZ or Ahrefs scores. Our domains are all pre-checked."
+                          question: "6. What does a domain name with good backlinks mean?",
+                          answer: "A domain name with good backlinks has references from real, relevant websites. These links provide authority and trust with search engines, which is essential for SEO performance."
                         },
                         {
-                          question: "7. What does 'domain authority' mean?",
-                          answer: "Domain Authority (DA) is a score developed by MOZ that estimates how strong a domain is. The higher the score, the more likely the domain is to rank well. A high DA often comes from quality backlinks and a long domain history."
+                          question: "7. Why are backlinks important when buying a domain name?",
+                          answer: "Backlinks are one of the most important ranking factors for Google. When you search for \"SEO domain name buy\", you're actually looking for a domain that has already built up trust — exactly what a good expired domain name offers."
                         },
                         {
-                          question: "8. Can I use an expired domain for any type of website?",
-                          answer: "Yes, as long as the content fits the domain. For SEO it's smart to stay close to the original theme of the domain, for example if the domain had many links from tech sites, it's best to start a tech-related website."
+                          question: "8. How can I see if an expired domain name is reliable?",
+                          answer: "A reliable expired domain name is checked for: website history, quality of backlinks, absence of spam, gambling or adult content. As a seller, you only select domains that meet these criteria."
                         },
                         {
-                          question: "9. Do I become the full owner of the domain after purchase?",
-                          answer: "Yes, after purchase you receive the transfer code (EPP code) and the domain is transferred to your name. You have full ownership."
+                          question: "9. Can I use an expired domain name for a new website?",
+                          answer: "Yes. You can perfectly use an expired domain name for a completely new project. The content is new, but the domain name already brings online authority."
                         },
                         {
-                          question: "10. Does the price include hosting?",
-                          answer: "No, the prices listed only include the domain name. Hosting can be arranged separately at any provider of your choice."
-                        }
-                      ].map((item, index) => (
-                        <article key={index} className="space-y-2">
-                          <h4 className="text-lg font-semibold text-white">{item.question}</h4>
-                          <p className="text-slate-400">{item.answer}</p>
-                        </article>
-                      ))}
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="faq-group-2" className="bg-slate-800/30 border border-slate-700/50 rounded-xl px-6">
-                  <AccordionTrigger className="text-lg font-medium text-white hover:text-amber-400 py-6">
-                    Purchase and Technical Questions (8 Questions)
-                  </AccordionTrigger>
-                  <AccordionContent className="pb-6">
-                    <div className="space-y-6 text-slate-300">
-                      {[
-                        {
-                          question: "11. How does payment work?",
-                          answer: "Payment is done via Stripe. You can pay with credit card, iDeal, PayPal, Apple Pay, Google Pay, Klarna and more. After payment you receive the EPP code within 24 hours."
+                          question: "10. Is an expired domain name suitable for beginners?",
+                          answer: "Certainly. Beginners often benefit the most because they: get visibility faster, have less SEO backlog, make a more professional start."
                         },
                         {
-                          question: "12. What is an EPP code?",
-                          answer: "An EPP code (also called Auth code or transfer token) is a unique code needed to transfer the domain to your own registrar. You receive this from us after payment."
+                          question: "11. Why are some domain names more expensive than others?",
+                          answer: "Searches like \"why is a domain name so expensive\" often stem from misunderstanding about value. The price is determined by: name quality, SEO value, backlinks, commercial applicability."
                         },
                         {
-                          question: "13. How long does a domain transfer take?",
-                          answer: "After you've entered the EPP code at your registrar, transfer usually takes 1-5 business days, depending on the domain extension (.nl, .eu, .com, etc.)."
+                          question: "12. Can I resell an expired domain name later?",
+                          answer: "Yes. Many people search for \"domain name as investment\". A strong expired domain name often retains its value and can even increase in price."
                         },
                         {
-                          question: "14. Can I resell the domain?",
-                          answer: "Yes, you're the full owner. You can use, resell or rent it as you wish."
+                          question: "13. Can an expired domain name be bad for SEO?",
+                          answer: "Only if it has a bad history. That's why the difference is big between: unchecked expired domains and carefully selected, reliable domain names."
                         },
                         {
-                          question: "15. What if I have problems with the transfer?",
-                          answer: "Contact us at support@iaee.eu and we'll help you through the process."
+                          question: "14. What should I look for when buying an expired domain name?",
+                          answer: "Important points of attention are: spam-free history, relevant backlinks, logical domain name, no trademark risk."
                         },
                         {
-                          question: "16. Are there additional costs on top of the listed price?",
-                          answer: "The listed price is exclusive of VAT for EU customers. Non-EU customers pay no VAT. After purchase you may have to pay the annual renewal fee at your own registrar."
+                          question: "15. How quickly can I start after buying a domain name?",
+                          answer: "After transfer you can immediately use the domain name for: a website, email, webshop. Just like with a new domain name."
                         },
                         {
-                          question: "17. Can I inquire about domains not listed?",
-                          answer: "Yes, contact us via the contact form if you're looking for a specific type of domain. We may have more domains available."
+                          question: "16. Do I need technical knowledge to use an expired domain name?",
+                          answer: "No. An expired domain name works technically the same as a new domain name and can be used at any hosting provider."
                         },
                         {
-                          question: "18. Is there a warranty on the domain?",
-                          answer: "We guarantee that all data is accurate at the time of purchase. After transfer, the domain is entirely in your hands."
-                        }
-                      ].map((item, index) => (
-                        <article key={index} className="space-y-2">
-                          <h4 className="text-lg font-semibold text-white">{item.question}</h4>
-                          <p className="text-slate-400">{item.answer}</p>
-                        </article>
-                      ))}
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="faq-group-3" className="bg-slate-800/30 border border-slate-700/50 rounded-xl px-6">
-                  <AccordionTrigger className="text-lg font-medium text-white hover:text-amber-400 py-6">
-                    SEO and Strategy Questions (18 Questions)
-                  </AccordionTrigger>
-                  <AccordionContent className="pb-6">
-                    <div className="space-y-6 text-slate-300">
-                      {[
-                        {
-                          question: "19. What's the best way to use an expired domain for SEO?",
-                          answer: "The most used methods are: 301 redirect to your existing website to transfer authority, Use as main domain for a new project, Build a relevant content website that links to your main site, Authority stacking with multiple domains."
+                          question: "17. Is an expired domain name suitable for a webshop?",
+                          answer: "Yes. Webshops benefit extra from: trust, authority, better start in Google. This is crucial for conversions."
                         },
                         {
-                          question: "20. How quickly do I see results after a 301 redirect?",
-                          answer: "This varies, but often you see improvements within 2-8 weeks. Google needs time to crawl and process the redirect."
+                          question: "18. What does domain authority mean when buying a domain name?",
+                          answer: "Domain authority is an indication of how strong a domain is based on links and history. Many expired domain names score higher here than new domains."
                         },
                         {
-                          question: "21. Is it safe to buy an expired domain?",
-                          answer: "Yes, if you buy from a reliable party that checks domains for spam history, penalties and link quality. That's exactly what we do."
+                          question: "19. Is an expired domain name better than link building?",
+                          answer: "In many cases, yes. You essentially buy an existing reputation, instead of building it later expensively and riskily."
                         },
                         {
-                          question: "22. What is 'authority stacking'?",
-                          answer: "Authority stacking is a strategy where you use multiple authoritative domains to strengthen your main website. Each domain passes its own authority on."
+                          question: "20. Why do entrepreneurs consciously choose an expired domain name?",
+                          answer: "Because they're looking for: faster results, less SEO risk, a smart start with a head start."
+                        },
+                        {
+                          question: "21. Is an expired domain name suitable for every niche?",
+                          answer: "For almost every niche, good expired domain names are available, as long as the name and history logically match the topic."
+                        },
+                        {
+                          question: "22. Can I get help choosing the right domain name?",
+                          answer: "Yes. Many beginners search for \"which domain name fits my business\". Guidance prevents bad purchases and saves money."
                         },
                         {
                           question: "23. What is the biggest advantage of an expired domain name?",
-                          answer: "The biggest advantage is that you don't start from scratch in search engines."
+                          answer: "The biggest advantage is that you don't start from zero in search engines."
                         },
                         {
                           question: "24. What is the biggest misconception about expired domain names?",
-                          answer: "That they are risky by definition. In reality, untested domains are risky — not carefully selected expired domain names."
+                          answer: "That they are inherently risky. In reality, untested domains are risky — not carefully selected expired domain names."
                         },
                         {
-                          question: "25. Who is a reliable expired domain name most suitable for?",
-                          answer: "For: starters, entrepreneurs, webshops, SEO projects, investors. Anyone searching for \"best domain to buy\" who wants to start smart."
+                          question: "25. For whom is a reliable expired domain name most suitable?",
+                          answer: "For: starters, entrepreneurs, webshops, SEO projects, investors. Everyone searching for \"best domain name to buy\" and wanting to start smart."
                         },
                         {
                           question: "26. How do I know if a domain name is suitable for SEO?",
@@ -2363,24 +1838,24 @@ const PremiumDomainsEN = () => {
                           answer: "Yes. Google looks at the history and link structure of a domain. A reliable expired domain name can help build visibility faster, if used correctly."
                         },
                         {
-                          question: "28. What are the advantages of an expired domain name with authority?",
-                          answer: "The main advantages are: faster trust from search engines, less dependence on link building, stronger starting position than competitors with new domains."
+                          question: "28. What are the benefits of an expired domain name with authority?",
+                          answer: "The main benefits are: faster trust from search engines, less dependence on link building, stronger starting position than competitors with new domains."
                         },
                         {
                           question: "29. Do I need a keyword in my domain name for SEO?",
-                          answer: "Not necessarily. Searches like \"keyword domain SEO\" show this is a frequently asked question. A clear, reliable name is more important than exact keywords, especially with expired domain names with authority."
+                          answer: "Not necessarily. Searches like \"keyword domain name SEO\" show this is a frequently asked question. A clear, reliable name is more important than exact keywords, especially with expired domain names with authority."
                         },
                         {
                           question: "30. Is a short domain name better than a long domain name?",
-                          answer: "Yes. Short domain names are: easier to remember, more professional, more valuable. Many premium expired domain names are indeed short and powerful."
+                          answer: "Yes. Short domain names are: easier to remember, more professional, more valuable. Many premium expired domain names are precisely short and powerful."
                         },
                         {
                           question: "31. Can I use an expired domain name for multiple projects?",
-                          answer: "Yes, for example for: a main website, a niche project, a brand portal. However, it's important that the content logically connects to the domain's history."
+                          answer: "Yes, for example for: a main website, a niche project, a brand portal. It is important that the content logically matches the history of the domain."
                         },
                         {
                           question: "32. What happens to old backlinks when I place a new website?",
-                          answer: "The backlinks remain as long as they're not removed by the referring websites. That's exactly one of the big advantages of buying an expired domain name."
+                          answer: "The backlinks remain as long as they are not removed by the referring websites. That is precisely one of the great advantages of buying an expired domain name."
                         },
                         {
                           question: "33. Is an expired domain name better than multiple new domains?",
@@ -2388,15 +1863,15 @@ const PremiumDomainsEN = () => {
                         },
                         {
                           question: "34. Can I get customers faster with an expired domain name?",
-                          answer: "Indirectly, yes. Faster visibility and more trust mean visitors convert sooner."
+                          answer: "Indirectly, yes. Faster visibility and more trust ensure that visitors convert earlier."
                         },
                         {
-                          question: "35. How long does the value of an expired domain name last?",
-                          answer: "As long as the domain is used and maintained well, the value is preserved and can even grow."
+                          question: "35. How long does the value of an expired domain name remain?",
+                          answer: "As long as the domain is used and maintained well, the value is retained and can even grow."
                         },
                         {
                           question: "36. Why should I buy a domain name from a specialized seller?",
-                          answer: "Because a specialized seller: checks domains in advance, excludes risks, guides beginners, is transparent about quality and history. That makes the difference between gambling and conscious investing."
+                          answer: "Because a specialized seller: checks domains in advance, excludes risks, guides beginners, is transparent about quality and history. That makes the difference between gambling and consciously investing."
                         }
                       ].map((item, index) => (
                         <article key={index} className="space-y-2">
