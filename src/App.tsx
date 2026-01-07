@@ -25,6 +25,8 @@ import LanguageDetector from "./components/LanguageDetector";
 import NotFound from "./pages/NotFound";
 import PremiumDomains from "./pages/PremiumDomains";
 import PremiumDomainsLegal from "./pages/PremiumDomainsLegal";
+import PremiumDomainsEN from "./pages/PremiumDomainsEN";
+import PremiumDomainsLegalEN from "./pages/PremiumDomainsLegalEN";
 
 const queryClient = new QueryClient();
 
@@ -56,6 +58,8 @@ const App = () => (
           <Route path="/btw-calculator-wereldwijd" element={<VATCalculator />} />
           <Route path="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" element={<PremiumDomains />} />
           <Route path="/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" element={<PremiumDomainsLegal />} />
+          <Route path="/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" element={<PremiumDomainsEN />} />
+          <Route path="/expireddomainnames/en/premium-domains-legal-documents" element={<PremiumDomainsLegalEN />} />
           {/* Redirects from old URLs */}
           <Route path="/expireddomeinnamen/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" element={<Navigate to="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" replace />} />
           <Route path="/expireddomeinnamen/nl/premium-domeinnamen-juridische-documenten" element={<Navigate to="/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" replace />} />
