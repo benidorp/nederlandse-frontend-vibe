@@ -1860,9 +1860,32 @@ const PremiumDomains = () => {
                             }}
                           />
                           <div className="flex flex-col items-center gap-1.5 text-center">
-                            <div className="flex items-center gap-2">
+                            <div className="flex items-center justify-center gap-1.5 flex-wrap">
+                              {/* Apple Pay */}
+                              <div className="flex items-center bg-black rounded px-2 py-1">
+                                <svg className="h-4 w-10" viewBox="0 0 50 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8.5 4C9.5 4 10.3 3.5 10.8 2.7C11.3 2 11.5 1 11.4 0C10.5 0.1 9.4 0.6 8.8 1.4C8.3 2 7.9 3 8 4C9 4 9.5 4 8.5 4Z" fill="white"/>
+                                  <path d="M11.4 4.3C9.8 4.2 8.4 5.2 7.6 5.2C6.8 5.2 5.6 4.3 4.3 4.4C2.6 4.4 1 5.3 0.2 6.9C-1.5 10 0.1 14.5 1.7 17C2.5 18.2 3.5 19.6 4.8 19.5C6 19.5 6.5 18.7 8 18.7C9.5 18.7 10 19.5 11.3 19.5C12.6 19.5 13.5 18.2 14.3 17C15.2 15.7 15.6 14.4 15.6 14.3C15.6 14.3 12.5 13.1 12.5 9.6C12.5 6.5 15 5.1 15.1 5C13.8 3.1 11.8 4.3 11.4 4.3Z" fill="white"/>
+                                  <text x="18" y="14" fill="white" fontSize="10" fontWeight="500" fontFamily="Arial">Pay</text>
+                                </svg>
+                              </div>
+                              {/* Google Pay */}
+                              <div className="flex items-center bg-white rounded px-2 py-1 border border-slate-300">
+                                <svg className="h-4 w-10" viewBox="0 0 50 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M10 5C8.8 5 7.8 5.4 7 6.1L8.4 7.4C8.9 6.9 9.4 6.7 10 6.7C11 6.7 11.8 7.2 12.2 8H7.5V9.5H12.4C12.4 9.7 12.5 9.8 12.5 10C12.5 10.7 12.3 11.4 11.9 12L10 10L7.1 12.9C8 13.8 9.3 14.4 10.5 14.3C12.7 14.2 14.5 12.5 14.8 10.3C15.1 8 13.7 5.9 11.5 5.2C11 5.1 10.5 5 10 5Z" fill="#4285F4"/>
+                                  <text x="17" y="13" fill="#5F6368" fontSize="9" fontWeight="500" fontFamily="Arial">Pay</text>
+                                </svg>
+                              </div>
+                              {/* Klarna */}
+                              <div className="flex items-center bg-[#FFB3C7] rounded px-2 py-1">
+                                <span className="text-black font-bold text-xs" style={{fontFamily: 'Arial'}}>Klarna</span>
+                              </div>
+                            </div>
+                            <div className="flex items-center gap-2 mt-1">
                               <Lock className="w-3 h-3 text-slate-400" />
-                              <img src={stripeLogo} alt="Stripe" className="h-5" />
+                              <div className="flex items-center bg-[#635BFF] rounded px-2 py-0.5">
+                                <span className="text-white font-bold text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
+                              </div>
                             </div>
                             <p className="text-[10px] text-slate-400 leading-tight">
                               Na betaling ontvangt u binnen 24 uur de verhuistoken op uw e-mailadres.{" "}
@@ -1873,7 +1896,7 @@ const PremiumDomains = () => {
                               Controleer ook uw spamfolder.
                             </p>
                             <p className="text-[10px] text-slate-400 leading-tight mt-1">
-                              Veilige betaling via Stripe • PayPal • Amazon Pay en meer
+                              Veilige betaling via Stripe
                               <br />
                               Automatisch omgerekend naar uw lokale valuta
                             </p>
@@ -1925,10 +1948,31 @@ const PremiumDomains = () => {
                                   <text x="38" y="13" fill="white" fontSize="8" fontFamily="Arial">pay</text>
                                 </svg>
                               </div>
+                              {/* Apple Pay - Clear logo */}
+                              <div className="flex items-center bg-black rounded px-2 py-1">
+                                <svg className="h-4 w-10" viewBox="0 0 50 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8.5 4C9.5 4 10.3 3.5 10.8 2.7C11.3 2 11.5 1 11.4 0C10.5 0.1 9.4 0.6 8.8 1.4C8.3 2 7.9 3 8 4C9 4 9.5 4 8.5 4Z" fill="white"/>
+                                  <path d="M11.4 4.3C9.8 4.2 8.4 5.2 7.6 5.2C6.8 5.2 5.6 4.3 4.3 4.4C2.6 4.4 1 5.3 0.2 6.9C-1.5 10 0.1 14.5 1.7 17C2.5 18.2 3.5 19.6 4.8 19.5C6 19.5 6.5 18.7 8 18.7C9.5 18.7 10 19.5 11.3 19.5C12.6 19.5 13.5 18.2 14.3 17C15.2 15.7 15.6 14.4 15.6 14.3C15.6 14.3 12.5 13.1 12.5 9.6C12.5 6.5 15 5.1 15.1 5C13.8 3.1 11.8 4.3 11.4 4.3Z" fill="white"/>
+                                  <text x="18" y="14" fill="white" fontSize="10" fontWeight="500" fontFamily="Arial">Pay</text>
+                                </svg>
+                              </div>
+                              {/* Google Pay - Clear logo */}
+                              <div className="flex items-center bg-white rounded px-2 py-1 border border-slate-300">
+                                <svg className="h-4 w-10" viewBox="0 0 50 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M10 5C8.8 5 7.8 5.4 7 6.1L8.4 7.4C8.9 6.9 9.4 6.7 10 6.7C11 6.7 11.8 7.2 12.2 8H7.5V9.5H12.4C12.4 9.7 12.5 9.8 12.5 10C12.5 10.7 12.3 11.4 11.9 12L10 10L7.1 12.9C8 13.8 9.3 14.4 10.5 14.3C12.7 14.2 14.5 12.5 14.8 10.3C15.1 8 13.7 5.9 11.5 5.2C11 5.1 10.5 5 10 5Z" fill="#4285F4"/>
+                                  <text x="17" y="13" fill="#5F6368" fontSize="9" fontWeight="500" fontFamily="Arial">Pay</text>
+                                </svg>
+                              </div>
+                              {/* Klarna - Clear logo */}
+                              <div className="flex items-center bg-[#FFB3C7] rounded px-2 py-1">
+                                <span className="text-black font-bold text-xs" style={{fontFamily: 'Arial'}}>Klarna</span>
+                              </div>
                             </div>
-                            <div className="flex items-center gap-2">
+                            <div className="flex items-center gap-2 mt-1">
                               <Lock className="w-3 h-3 text-slate-400" />
-                              <img src={stripeLogo} alt="Stripe" className="h-5" />
+                              <div className="flex items-center bg-[#635BFF] rounded px-2 py-0.5">
+                                <span className="text-white font-bold text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
+                              </div>
                             </div>
                             <p className="text-[10px] text-slate-400 leading-tight">
                               Na betaling ontvangt u binnen 24 uur de verhuistoken op uw e-mailadres.{" "}
