@@ -2588,7 +2588,7 @@ const PremiumDomains = () => {
                   </p>
                   
                   <p>
-                    <strong className="text-white">Waarom wachten?</strong> Elk premium domein in ons portfolio is gecontroleerd op spamvrije geschiedenis, relevante backlinks en schone linkprofielen. U koopt geen risico — u koopt een strategisch actief dat direct waarde toevoegt aan uw online aanwezigheid. Van <strong className="text-white">301 redirects</strong> voor authority stacking tot het direct starten van een nieuwe website: de mogelijkheden zijn eindeloos.
+                    <strong className="text-white">Waarom wachten?</strong> Elk premium domein in ons portfolio is gecontroleerd op spamvrije geschiedenis, relevante backlinks en goede linkprofielen. U koopt een strategisch actief domeinnaam dat direct waarde toevoegt aan uw online aanwezigheid. Van <strong className="text-white">301 redirects</strong> voor authority stacking tot het direct starten van een nieuwe website: de mogelijkheden zijn eindeloos.
                   </p>
                   
                   <div className="bg-gradient-to-r from-amber-500/10 to-slate-800/30 border border-amber-500/20 rounded-xl p-6 mt-8">
