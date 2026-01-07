@@ -1869,11 +1869,18 @@ const PremiumDomains = () => {
                                   <text x="18" y="14" fill="white" fontSize="10" fontWeight="500" fontFamily="Arial">Pay</text>
                                 </svg>
                               </div>
-                              {/* Google Pay */}
+                              {/* Google Pay - Clear and readable */}
                               <div className="flex items-center bg-white rounded px-2 py-1 border border-slate-300">
-                                <svg className="h-4 w-10" viewBox="0 0 50 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M10 5C8.8 5 7.8 5.4 7 6.1L8.4 7.4C8.9 6.9 9.4 6.7 10 6.7C11 6.7 11.8 7.2 12.2 8H7.5V9.5H12.4C12.4 9.7 12.5 9.8 12.5 10C12.5 10.7 12.3 11.4 11.9 12L10 10L7.1 12.9C8 13.8 9.3 14.4 10.5 14.3C12.7 14.2 14.5 12.5 14.8 10.3C15.1 8 13.7 5.9 11.5 5.2C11 5.1 10.5 5 10 5Z" fill="#4285F4"/>
-                                  <text x="17" y="13" fill="#5F6368" fontSize="9" fontWeight="500" fontFamily="Arial">Pay</text>
+                                <svg className="h-4 w-14" viewBox="0 0 65 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <text x="0" y="14" fontSize="11" fontWeight="500" fontFamily="Arial">
+                                    <tspan fill="#4285F4">G</tspan>
+                                    <tspan fill="#EA4335">o</tspan>
+                                    <tspan fill="#FBBC05">o</tspan>
+                                    <tspan fill="#4285F4">g</tspan>
+                                    <tspan fill="#34A853">l</tspan>
+                                    <tspan fill="#EA4335">e</tspan>
+                                  </text>
+                                  <text x="38" y="14" fill="#5F6368" fontSize="11" fontWeight="500" fontFamily="Arial">Pay</text>
                                 </svg>
                               </div>
                               {/* Klarna */}
@@ -1888,18 +1895,18 @@ const PremiumDomains = () => {
                               </div>
                             </div>
                             <p className="text-[10px] text-slate-400 leading-tight">
-                              Na betaling ontvangt u binnen 24 uur de verhuistoken op uw e-mailadres.{" "}
-                              <a href="#domein-verhuizen" className="text-amber-400 hover:text-amber-300 underline">
-                                Hoe werkt verhuizen?
-                              </a>
-                              <br />
-                              Controleer ook uw spamfolder.
-                            </p>
-                            <p className="text-[10px] text-slate-400 leading-tight mt-1">
                               Veilige betaling via Stripe
                               <br />
                               Automatisch omgerekend naar uw lokale valuta
                             </p>
+                            <p className="text-[10px] text-slate-400 leading-tight mt-3">
+                              Na betaling ontvangt u binnen 24 uur de verhuistoken op uw e-mailadres.
+                              <br />
+                              Controleer ook uw spamfolder.
+                            </p>
+                            <a href="#domein-verhuizen" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
+                              Hoe werkt verhuizen?
+                            </a>
                           </div>
                         </div>
                       ) : (
@@ -1956,11 +1963,18 @@ const PremiumDomains = () => {
                                   <text x="18" y="14" fill="white" fontSize="10" fontWeight="500" fontFamily="Arial">Pay</text>
                                 </svg>
                               </div>
-                              {/* Google Pay - Clear logo */}
+                              {/* Google Pay - Clear and readable */}
                               <div className="flex items-center bg-white rounded px-2 py-1 border border-slate-300">
-                                <svg className="h-4 w-10" viewBox="0 0 50 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M10 5C8.8 5 7.8 5.4 7 6.1L8.4 7.4C8.9 6.9 9.4 6.7 10 6.7C11 6.7 11.8 7.2 12.2 8H7.5V9.5H12.4C12.4 9.7 12.5 9.8 12.5 10C12.5 10.7 12.3 11.4 11.9 12L10 10L7.1 12.9C8 13.8 9.3 14.4 10.5 14.3C12.7 14.2 14.5 12.5 14.8 10.3C15.1 8 13.7 5.9 11.5 5.2C11 5.1 10.5 5 10 5Z" fill="#4285F4"/>
-                                  <text x="17" y="13" fill="#5F6368" fontSize="9" fontWeight="500" fontFamily="Arial">Pay</text>
+                                <svg className="h-4 w-14" viewBox="0 0 65 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <text x="0" y="14" fontSize="11" fontWeight="500" fontFamily="Arial">
+                                    <tspan fill="#4285F4">G</tspan>
+                                    <tspan fill="#EA4335">o</tspan>
+                                    <tspan fill="#FBBC05">o</tspan>
+                                    <tspan fill="#4285F4">g</tspan>
+                                    <tspan fill="#34A853">l</tspan>
+                                    <tspan fill="#EA4335">e</tspan>
+                                  </text>
+                                  <text x="38" y="14" fill="#5F6368" fontSize="11" fontWeight="500" fontFamily="Arial">Pay</text>
                                 </svg>
                               </div>
                               {/* Klarna - Clear logo */}
@@ -1975,18 +1989,18 @@ const PremiumDomains = () => {
                               </div>
                             </div>
                             <p className="text-[10px] text-slate-400 leading-tight">
-                              Na betaling ontvangt u binnen 24 uur de verhuistoken op uw e-mailadres.{" "}
-                              <a href="#domein-verhuizen" className="text-amber-400 hover:text-amber-300 underline">
-                                Hoe werkt verhuizen?
-                              </a>
-                              <br />
-                              Controleer ook uw spamfolder.
-                            </p>
-                            <p className="text-[10px] text-slate-400 leading-tight mt-1">
                               Veilige betaling via Stripe
                               <br />
                               Automatisch omgerekend naar uw lokale valuta
                             </p>
+                            <p className="text-[10px] text-slate-400 leading-tight mt-3">
+                              Na betaling ontvangt u binnen 24 uur de verhuistoken op uw e-mailadres.
+                              <br />
+                              Controleer ook uw spamfolder.
+                            </p>
+                            <a href="#domein-verhuizen" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
+                              Hoe werkt verhuizen?
+                            </a>
                           </div>
                         </div>
                       )}
