@@ -2607,15 +2607,16 @@ const PremiumDomains = () => {
         <section id="domein-verhuizen" className="py-16 bg-slate-900">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <Accordion type="single" collapsible defaultValue="transfer-instructions" className="w-full">
-                <AccordionItem value="transfer-instructions" className="border border-amber-500/30 rounded-xl bg-slate-800/50">
-                  <AccordionTrigger headingLevel="h2" className="px-6 text-xl font-bold text-white hover:no-underline">
-                    <div className="flex items-center gap-3">
-                      <Globe className="w-6 h-6 text-amber-400" />
-                      <span>Hoe verhuist u uw domein met de verhuistoken (EPP/Auth code)?</span>
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent className="px-6 pb-6">
+              <div className="border border-amber-500/30 rounded-xl bg-slate-800/50">
+                  <div className="px-6 py-4">
+                    <h2 className="text-xl font-bold text-white">
+                      <div className="flex items-center gap-3">
+                        <Globe className="w-6 h-6 text-amber-400" />
+                        <span>Hoe verhuist u uw domein met de verhuistoken (EPP/Auth code)?</span>
+                      </div>
+                    </h2>
+                  </div>
+                  <div className="px-6 pb-6">
                     <div className="space-y-6 text-slate-300">
                       <p className="text-lg">
                         Na uw aankoop ontvangt u binnen 24 uur een <strong className="text-amber-400">verhuistoken</strong> (ook wel EPP-code of Auth-code genoemd) op het e-mailadres dat u bij de betaling hebt opgegeven. Met deze code kunt u het domein eenvoudig verhuizen naar uw eigen domeinregistrar of hostingprovider.
@@ -2712,9 +2713,8 @@ const PremiumDomains = () => {
                         Heeft u vragen over de domeinverhuizing? Neem gerust contact met ons op via <a href="mailto:support@iaee.eu" className="text-amber-400 hover:text-amber-300">support@iaee.eu</a>.
                       </p>
                     </div>
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
+                  </div>
+                </div>
             </div>
           </div>
         </section>
