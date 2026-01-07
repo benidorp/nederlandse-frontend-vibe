@@ -1900,7 +1900,7 @@ const PremiumDomains = () => {
                               Automatisch omgerekend naar uw lokale valuta
                             </p>
                             <p className="text-[10px] text-slate-400 leading-tight mt-3">
-                              Na betaling ontvangt u binnen 24 uur de verhuistoken op uw e-mailadres.
+                              Na betaling ontvangt u binnen 24 uur de verhuistoken (EPP/Auth-code) op uw e-mailadres.
                               <br />
                               Controleer ook uw spamfolder.
                             </p>
@@ -1994,7 +1994,7 @@ const PremiumDomains = () => {
                               Automatisch omgerekend naar uw lokale valuta
                             </p>
                             <p className="text-[10px] text-slate-400 leading-tight mt-3">
-                              Na betaling ontvangt u binnen 24 uur de verhuistoken op uw e-mailadres.
+                              Na betaling ontvangt u binnen 24 uur de verhuistoken (EPP/Auth-code) op uw e-mailadres.
                               <br />
                               Controleer ook uw spamfolder.
                             </p>
