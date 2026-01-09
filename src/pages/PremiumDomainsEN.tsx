@@ -1714,65 +1714,90 @@ const PremiumDomainsEN = () => {
               {premiumDomains.map((domain, index) => (
                 <Card 
                   key={index} 
-                  className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 border-slate-700/50 hover:border-amber-500/50 transition-all duration-300 group overflow-hidden"
+                  className="h-full flex flex-col bg-gradient-to-br from-slate-800/80 to-slate-900/80 border-slate-700/50 backdrop-blur hover:border-amber-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10 group"
                 >
                   <CardHeader className="pb-3">
-                    <div className="flex items-start justify-between gap-2 mb-2">
-                      <CardTitle className="text-lg text-white group-hover:text-amber-400 transition-colors break-all">
-                        {domain.name}
-                      </CardTitle>
-                      <Badge className="bg-amber-500/20 text-amber-400 border-amber-500/30 flex-shrink-0 whitespace-nowrap">
-                        MOZ {domain.mozScore}
+                    <div className="flex items-start justify-between">
+                      <Badge variant="outline" className="text-xs border-slate-600 text-slate-400">
+                        {domain.category}
                       </Badge>
+                      <div className="flex items-center gap-1 bg-amber-500/10 px-2 py-1 rounded-full">
+                        <BarChart3 className="w-3 h-3 text-amber-400" />
+                        <span className="text-xs font-semibold text-amber-400">MOZ {domain.mozScore}</span>
+                      </div>
                     </div>
-                    <CardDescription className="text-slate-400 text-sm leading-relaxed">
+                    <CardTitle className="text-xl text-white group-hover:text-amber-400 transition-colors mt-3">
+                      {domain.name}
+                    </CardTitle>
+                    <CardDescription className="text-slate-400">
                       {domain.description}
                     </CardDescription>
                   </CardHeader>
-                  
-                  <CardContent className="space-y-4">
-                    {/* Metrics Grid */}
-                    <div className="grid grid-cols-2 gap-2 text-xs">
-                      <div className="bg-slate-900/50 rounded-lg p-2">
-                        <div className="text-slate-500">DA Score</div>
-                        <div className="text-amber-400 font-semibold">{domain.mozScore}</div>
-                      </div>
-                      <div className="bg-slate-900/50 rounded-lg p-2">
-                        <div className="text-slate-500">PA Score</div>
-                        <div className="text-white font-semibold">{domain.pageAuthority}</div>
-                      </div>
-                      <div className="bg-slate-900/50 rounded-lg p-2">
-                        <div className="text-slate-500">Linking Domains</div>
-                        <div className="text-white font-semibold">{domain.linkingDomains}</div>
-                      </div>
-                      <div className="bg-slate-900/50 rounded-lg p-2">
-                        <div className="text-slate-500">Backlinks</div>
-                        <div className="text-white font-semibold">{domain.backlinks}</div>
-                      </div>
-                    </div>
-                    
-                    {/* Top Backlinks */}
-                    <div className="space-y-2">
-                      <div className="text-xs text-slate-500 font-medium">Top Backlinks:</div>
-                      <div className="flex flex-wrap gap-1">
-                        {domain.topBacklinks.slice(0, 3).map((backlink, idx) => (
-                          <span key={idx} className="text-[10px] bg-slate-900/70 text-slate-300 px-2 py-1 rounded-full">
-                            {backlink}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                    
-                    {/* Price and CTA */}
-                    <div className="pt-4 border-t border-slate-700/50">
-                      <div className="flex items-center justify-between mb-4">
-                        <div>
-                          <span className="text-slate-500 text-xs">Price</span>
-                          <div className="text-lg font-bold text-white">{domain.price}</div>
+                  <CardContent className="flex flex-col flex-grow">
+                    <div className="space-y-3 mb-4">
+                      <div className="flex items-center justify-between text-sm">
+                        <div className="flex items-center gap-2 text-slate-400">
+                          <Link className="w-4 h-4" />
+                          <span>Backlinks: {domain.backlinks}</span>
                         </div>
-                        <Badge variant="outline" className="border-slate-600 text-slate-400">
-                          {domain.category}
-                        </Badge>
+                      </div>
+                      
+                      {/* Extra stats for domains with detailed info */}
+                      {domain.pageAuthority && (
+                        <div className="grid grid-cols-2 gap-2 text-xs">
+                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                            <span className="text-slate-500">Page Authority:</span>
+                            <span className="text-white ml-1 font-medium">{domain.pageAuthority}</span>
+                          </div>
+                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                            <span className="text-slate-500">Linking Domains:</span>
+                            <span className="text-white ml-1 font-medium">{domain.linkingDomains}</span>
+                          </div>
+                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                            <span className="text-slate-500">Inbound Links:</span>
+                            <span className="text-white ml-1 font-medium">{domain.inboundLinks}</span>
+                          </div>
+                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                            <span className="text-slate-500">Followed Links:</span>
+                            <span className="text-white ml-1 font-medium">{domain.followedLinks}</span>
+                          </div>
+                        </div>
+                      )}
+                      
+                      {/* Top backlinks */}
+                      {domain.topBacklinks && domain.topBacklinks.length > 0 && (
+                        <div className="text-xs">
+                          <span className="text-slate-500 block mb-1">Top Backlinks:</span>
+                          <div className="flex flex-wrap gap-1">
+                            {domain.topBacklinks.slice(0, 5).map((link, i) => (
+                              <Badge key={i} variant="outline" className="text-[10px] border-amber-500/30 text-amber-400/80 bg-amber-500/5">
+                                {link}
+                              </Badge>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                      
+                      {/* Use Cases */}
+                      {domain.useCases && domain.useCases.length > 0 && (
+                        <div className="text-xs">
+                          <span className="text-slate-500 block mb-1">Suitable for:</span>
+                          <div className="flex flex-wrap gap-1">
+                            {domain.useCases.map((useCase, i) => (
+                              <Badge key={i} variant="outline" className="text-[10px] border-emerald-500/30 text-emerald-400/80 bg-emerald-500/5">
+                                {useCase}
+                              </Badge>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                    
+                    {/* Price Display - Compact at bottom */}
+                    <div className="mt-auto pt-4 border-t border-slate-700/50">
+                      <div className="flex items-center justify-between mb-3 bg-slate-800/60 rounded-lg px-3 py-2">
+                        <span className="text-sm font-medium text-slate-300">Price</span>
+                        <span className="text-lg font-bold text-amber-400">{domain.price}</span>
                       </div>
                       
                       {!domain.stripePaymentLink ? (
@@ -2170,239 +2195,248 @@ const PremiumDomainsEN = () => {
                 Frequently Asked Questions
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Everything You Need to Know About Expired Domain Names
+                FAQ about Premium Domains & SEO
               </h2>
-              <p className="text-slate-400 max-w-3xl mx-auto">
-                Find answers to the most common questions about buying and using expired domain names.
-              </p>
             </div>
             
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-3xl mx-auto">
               <Accordion type="single" collapsible className="space-y-4">
-                <AccordionItem value="basics" className="bg-slate-800/50 border border-slate-700/50 rounded-xl overflow-hidden">
-                  <AccordionTrigger className="px-6 py-4 text-left text-white hover:text-amber-400 transition-colors">
-                    <span className="text-lg font-semibold">Basic Questions About Expired Domain Names</span>
+                {[
+                  {
+                    question: "Where can I buy an expired domain name with backlinks?",
+                    answer: "You can best buy an expired domain name with backlinks from a specialized seller who manually checks domains for quality, history and authority. This prevents you from buying a domain name with spam links or SEO problems. We only offer reliable expired domains that have been carefully checked."
+                  },
+                  {
+                    question: "What is a reliable expired domain name with high authority?",
+                    answer: "A reliable expired domain name with high authority is a domain that has quality backlinks, a clean website history, no spam, gambling or adult past, and relevant links from real content. This type of domain name offers real SEO value and gives you an advantage in Google."
+                  },
+                  {
+                    question: "How much SEO value does an expired domain name with links have?",
+                    answer: "The SEO value of an expired domain name with links lies mainly in existing backlinks, built-up domain authority and faster trust with Google. This can significantly shorten the time to rank — often months to years faster than with a new domain name."
+                  },
+                  {
+                    question: "Is an expired domain name with authority better than link building?",
+                    answer: "In many cases yes. With an expired domain name you buy existing links and authority, while link building can be time-consuming, expensive and risky. An old domain name with SEO value gives you an immediate advantage without months of investment in link building."
+                  },
+                  {
+                    question: "Can I use an expired domain name for a new website?",
+                    answer: "Yes. You can perfectly use an expired domain name with SEO value for a new website, as long as the content logically connects to the subject and history of the domain. The backlinks remain active and you immediately benefit from the built-up authority."
+                  },
+                  {
+                    question: "What is the difference between a premium domain name and an expired domain name?",
+                    answer: "A premium domain name is mainly valuable due to name quality and brand value, while an expired domain name with backlinks brings extra SEO authority and history. Both can be valuable, depending on your goal. Some domains combine both advantages."
+                  },
+                  {
+                    question: "Why are expired domain names with backlinks more expensive?",
+                    answer: "Expired domain names with backlinks are more expensive because they already have SEO value, they save time and costs, and they enable a faster start. You pay for built-up trust, not just for a name. The investment often pays for itself quickly through better rankings."
+                  },
+                  {
+                    question: "Are expired domain names with authority suitable for webshops?",
+                    answer: "Yes. For webshops, trust is crucial. An expired domain name with high authority can contribute to better visibility, higher conversions and faster indexation. This gives your webshop an advantage over competitors who start with a new domain name."
+                  },
+                  {
+                    question: "Can I combine a premium domain name with SEO benefits?",
+                    answer: "Yes. Some premium domain names are also expired domains with a strong link history. This combines brand value with SEO authority and is often the most valuable. In our portfolio you will find several domains that offer both advantages."
+                  },
+                  {
+                    question: "Why are more and more entrepreneurs choosing expired domain names with SEO value?",
+                    answer: "Because entrepreneurs are looking for faster results in Google, less dependence on link building and a strong foundation for growth. A reliable expired domain name with backlinks and authority offers exactly that advantage that makes the difference."
+                  },
+                  {
+                    question: "What is Domain Authority (DA) and why is it important?",
+                    answer: "Domain Authority is a score from 1-100 developed by MOZ that predicts how well a website will rank in search engines. A higher DA means more authority and better chances of ranking high. It is based on factors such as the number and quality of backlinks, the age of the domain and the overall reliability."
+                  },
+                  {
+                    question: "How does a 301 redirect work for SEO?",
+                    answer: "A 301 redirect is a permanent redirect that tells search engines that a page has been permanently moved. When you 301-redirect a premium domain to your site, a large part of the SEO value (link juice) of that domain is transferred to your site. This can significantly improve your rankings."
+                  },
+                  {
+                    question: "How long does it take before I see results?",
+                    answer: "The effects of a domain transfer or 301 redirect are usually visible within 2-8 weeks in the search results. This depends on how often Google crawls your site and the current state of your website. Premium domains with active backlinks often show results faster."
+                  },
+                  {
+                    question: "What is the best way to find expired domain names with authority?",
+                    answer: "The best way is through a specialized seller who pre-checks domains. Searching yourself via auction sites involves risks. We only select domain names with quality links, no spam history and real SEO value. This way you know for sure that you are investing in a reliable domain."
+                  },
+                  {
+                    question: "Why are there sometimes websites from your portfolio in a domain's history?",
+                    answer: "Some domain names in our portfolio were previously used for our own projects, test websites or 301 redirects. This includes websites such as NailTalk, OntwerpNovi, OliveVines and similar projects. This is actually an advantage: these domains have proven results and have been actively tested for SEO performance. All our domain names are thoroughly checked before sale with multiple sources (such as web history archives, Google, Ahrefs, MOZ and spam checkers) and are completely free of harmful history such as spam, adult content or gambling-related history. A website from our own portfolio in the history is therefore a sign of quality and careful management — no reason for concern."
+                  },
+                  {
+                    question: "How does SEO and link building work? And why do I need to keep maintaining my purchased domain?",
+                    answer: "SEO (Search Engine Optimization) is about optimizing your website so that search engines like Google can find, understand and rank it better. Link building is a crucial part of this: obtaining backlinks (references) from other websites to yours. These links act as 'votes of confidence' and tell Google that your content is valuable.\n\n**Why maintenance is essential:**\nA premium domain name with existing backlinks gives you a strong foundation, but no domain name offers guarantees on rankings. SEO is an ongoing process. Backlinks can disappear over time when referring websites go offline or remove content. In addition, Google's algorithms change regularly, so what works today may be different tomorrow.\n\n**Tips for successful maintenance and link building:**\n• **Create valuable content** — Regularly publish relevant, original articles, guides or tools that others want to share and link to.\n• **Guest blogging** — Write articles for respected websites in your industry with a link back to your site.\n• **Broken link building** — Find broken links on relevant websites and offer your content as a replacement.\n• **HARO/Helpareporter** — Respond to journalist questions to get mentions and links in news articles.\n• **Social media and PR** — Actively share your content and build relationships with influencers and media.\n• **Internal link structure** — Ensure logical internal links between your pages to distribute authority.\n• **Monitor your backlinks** — Use tools like Ahrefs, MOZ or SEMrush to monitor your link profile and disavow harmful links.\n• **Technical SEO** — Ensure fast loading times, mobile-friendly design and a secure HTTPS connection.\n\n**Important to know:**\nNo domain name, no matter how strong, guarantees top positions in Google. The built-up authority gives you a head start, but success depends on continuous effort: regular content, active link building and technical maintenance. See your premium domain as a solid foundation — you determine the structure above it with consistent SEO efforts."
+                  }
+                ].map((faq, index) => (
+                  <AccordionItem 
+                    key={index} 
+                    value={`item-${index}`}
+                    className="bg-slate-800/40 border border-slate-700/50 rounded-xl px-6 data-[state=open]:border-amber-500/30"
+                  >
+                    <AccordionTrigger className="text-left text-white hover:text-amber-400 hover:no-underline py-4">
+                      <h3 className="font-semibold">{faq.question}</h3>
+                    </AccordionTrigger>
+                    <AccordionContent className="text-slate-400 pb-4 leading-relaxed">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+                
+                {/* Complete Guide: 35 Questions about Expired Domains */}
+                <AccordionItem 
+                  value="complete-guide"
+                  className="bg-gradient-to-br from-amber-500/10 to-slate-800/40 border border-amber-500/30 rounded-xl px-6"
+                >
+                  <AccordionTrigger className="text-left text-white hover:text-amber-400 hover:no-underline py-4">
+                    <h3 className="font-semibold">Complete Guide: 35 Questions about Expired Domain Names & SEO</h3>
                   </AccordionTrigger>
-                  <AccordionContent className="px-6 pb-6">
-                    <div className="space-y-6 text-slate-300">
+                  <AccordionContent className="text-slate-400 pb-6 leading-relaxed">
+                    <div className="space-y-8 whitespace-pre-line">
                       {[
                         {
-                          question: "1. What is an expired domain name?",
-                          answer: "An expired domain name is a domain that the previous owner no longer uses or has let expire. Often the domain still has value in the form of: existing backlinks, history in Google, trust built up over the years. By buying such a domain, you benefit from this without having to start from scratch."
+                          question: "1. Which domain name should I buy as a beginner?",
+                          answer: "As a beginner, you are best off choosing a domain name that is easy to remember, clearly indicates what you do and exudes trust. Many starters search for \"which domain name should I buy\" and automatically end up with new domains, while a reliable expired domain name often already has built-up authority and value."
                         },
                         {
-                          question: "2. What is an expired domain name with backlinks?",
-                          answer: "An expired domain name with backlinks is a domain where other websites still link to. These links (backlinks) can be very valuable for SEO. When you take over such a domain, you get the link power included."
+                          question: "2. What is the difference between a new domain name and an expired domain name?",
+                          answer: "A new domain name has no history and starts completely from scratch. An expired domain name has been registered before and may still have backlinks, authority and trust with Google. That makes an expired domain name often more attractive for SEO and visibility."
                         },
                         {
-                          question: "3. What does a reliable expired domain name mean?",
-                          answer: "A reliable expired domain is a domain that has been carefully checked for: spam history, unnatural link profiles, Google penalties. A reliable expired domain is clean and suitable for new projects without risk."
+                          question: "3. Is it better to buy a new domain name or an expired domain name?",
+                          answer: "Those who search for \"new domain name or expired domain name\" are usually comparing speed and results. For branding, a new name can work, but for getting found in Google faster, a good expired domain name often offers a clear head start."
                         },
                         {
-                          question: "4. What is the difference between an expired domain name and a premium domain name?",
-                          answer: "An expired domain name is a domain that was once active and is now available for reuse. A premium domain name can also be expired, but often refers to domains with extra value due to: a strong brand name, high search volume, high authority."
+                          question: "4. Why does my new website score so poorly in Google?",
+                          answer: "New websites still need to build their reliability. Without backlinks and history, this often takes months. An expired domain name with good links can ensure that you don't have to start completely from scratch."
                         },
                         {
-                          question: "5. What is domain authority?",
-                          answer: "Domain authority (DA) is a score from 1-100 that indicates how strong a domain is for SEO. The higher the score, the more likely the domain will rank well in Google. Domains with high authority often have many quality backlinks."
+                          question: "5. Is an expired domain name safe to buy?",
+                          answer: "Yes, as long as it is a checked and reliable expired domain name. The risk is not in \"expired\", but in domains that have not been checked for spam, abuse or bad backlinks."
+                        },
+                        {
+                          question: "6. What does a domain name with good backlinks mean?",
+                          answer: "A domain name with good backlinks has references from real, relevant websites. These links ensure authority and trust with search engines, which is essential for SEO performance."
+                        },
+                        {
+                          question: "7. Why are backlinks important when buying a domain name?",
+                          answer: "Backlinks are one of the most important ranking factors of Google. When you search for \"SEO domain name buy\", you are actually looking for a domain that has already built up trust — exactly what a good expired domain name offers."
+                        },
+                        {
+                          question: "8. How can I see if an expired domain name is reliable?",
+                          answer: "A reliable expired domain name is checked for: website history, quality of backlinks, absence of spam, gambling or adult content. As a seller, you only select domains that meet these criteria."
+                        },
+                        {
+                          question: "9. Can I use an expired domain name for a new website?",
+                          answer: "Yes. You can perfectly use an expired domain name for a completely new project. The content is new, but the domain name already brings online authority."
+                        },
+                        {
+                          question: "10. Is an expired domain name suitable for beginners?",
+                          answer: "Certainly. Beginners often benefit the most because they: get faster visibility, have less SEO backlog, make a more professional start."
+                        },
+                        {
+                          question: "11. Why are some domain names more expensive than others?",
+                          answer: "Searches like \"why is a domain name so expensive\" often come from misunderstanding value. The price is determined by: name quality, SEO value, backlinks, commercial applicability."
+                        },
+                        {
+                          question: "12. Can I sell an expired domain name later?",
+                          answer: "Yes. Many people search for \"domain name as investment\". A strong expired domain name often retains its value and can even increase in price."
+                        },
+                        {
+                          question: "13. Can an expired domain name be bad for SEO?",
+                          answer: "Only if it has a bad history. That's why there is a big difference between: unchecked expired domains and carefully selected, reliable domain names."
+                        },
+                        {
+                          question: "14. What should I pay attention to when buying an expired domain name?",
+                          answer: "Important points of attention are: spam-free history, relevant backlinks, logical domain name, no trademark risk."
+                        },
+                        {
+                          question: "15. How quickly can I start after buying a domain name?",
+                          answer: "After transfer you can immediately use the domain name for: a website, email, webshop. Just like with a new domain name."
+                        },
+                        {
+                          question: "16. Do I need technical knowledge to use an expired domain name?",
+                          answer: "No. An expired domain name technically works the same as a new domain name and can be used with any hosting provider."
+                        },
+                        {
+                          question: "17. Is an expired domain name suitable for a webshop?",
+                          answer: "Yes. Webshops especially benefit from: trust, authority, better start in Google. That is crucial for conversions."
+                        },
+                        {
+                          question: "18. What does domain authority mean when buying a domain name?",
+                          answer: "Domain authority is an indication of how strong a domain is based on links and history. Many expired domain names score higher here than new domains."
+                        },
+                        {
+                          question: "19. Is an expired domain name better than link building?",
+                          answer: "For many entrepreneurs, yes. Link building is labor-intensive, expensive and can take years. With a good expired domain name you buy: an immediate head start, less risk, faster results."
+                        },
+                        {
+                          question: "20. How much does a good expired domain name cost?",
+                          answer: "Prices vary depending on: domain authority, backlink profile, industry. A cheap domain without value says little — quality costs, but earns itself back."
+                        },
+                        {
+                          question: "21. Is a keyword in my domain name important for SEO?",
+                          answer: "Less important than it used to be. A clear, reliable name is now more important than exact keywords."
+                        },
+                        {
+                          question: "22. Can I use an expired domain name for an affiliate website?",
+                          answer: "Yes, especially if it has relevant backlinks and thematic history. This gives you a quicker start in competitive niches."
+                        },
+                        {
+                          question: "23. What if an expired domain name has been penalized by Google?",
+                          answer: "A domain with a penalty should be avoided. That's why we check every domain in advance for spam, penalties and unnatural links."
+                        },
+                        {
+                          question: "24. How do I transfer a purchased domain name to my own hosting?",
+                          answer: "After purchase you will receive an EPP/auth code. You enter this at your new registrar to complete the transfer."
+                        },
+                        {
+                          question: "25. Is a .nl or .eu domain better than a .com?",
+                          answer: "It depends on your target audience. For the Netherlands, .nl is strong. For Europe, .eu. For international, .com. The authority of the domain is more important than the extension."
+                        },
+                        {
+                          question: "26. Can I redirect an expired domain name to my existing website?",
+                          answer: "Yes. With a 301 redirect you transfer the SEO value of the expired domain to your main site. This is a popular strategy for boosting authority."
+                        },
+                        {
+                          question: "27. How long does it take before an expired domain name ranks in Google?",
+                          answer: "Faster than with a new domain — often within days or weeks, depending on the quality of the domain and the content you place."
+                        },
+                        {
+                          question: "28. What are the advantages of an expired domain name compared to a new domain name?",
+                          answer: "Faster visibility, existing backlinks, more trust with Google, less dependence on link building."
+                        },
+                        {
+                          question: "29. Can I trust an expired domain name from a random marketplace?",
+                          answer: "Not always. Many marketplaces do not check quality. That's why it's wiser to buy from a specialized seller who guarantees transparency and quality."
+                        },
+                        {
+                          question: "30. How do I know if a domain name has valuable backlinks?",
+                          answer: "Use tools like Ahrefs, MOZ or SEMrush. We provide this information transparently for every domain in our portfolio."
+                        },
+                        {
+                          question: "31. Is investing in an expired domain name a good idea?",
+                          answer: "For many entrepreneurs and investors, yes. A strong domain with authority retains its value and can even increase."
+                        },
+                        {
+                          question: "32. What happens to old backlinks when I build a new website?",
+                          answer: "The backlinks remain as long as they are not removed by the referring websites. That is precisely one of the great advantages of an expired domain name."
+                        },
+                        {
+                          question: "33. Can I use an expired domain name for a local business?",
+                          answer: "Yes, especially if the domain has regional relevance or local backlinks. This can help you get found in local searches."
+                        },
+                        {
+                          question: "34. Are there risks with buying an expired domain name?",
+                          answer: "Only if you don't check the domain in advance. Spam, penalties or unnatural links are risks that we filter out in advance."
+                        },
+                        {
+                          question: "35. Why buy from a specialized expired domain seller?",
+                          answer: "Because you: get pre-checked quality, avoid risk, receive transparency about each domain, and save time and money on your own research."
                         }
-                      ].map((item, index) => (
-                        <article key={index} className="space-y-2">
-                          <h4 className="text-lg font-semibold text-white">{item.question}</h4>
-                          <p className="text-slate-400">{item.answer}</p>
-                        </article>
-                      ))}
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="buying" className="bg-slate-800/50 border border-slate-700/50 rounded-xl overflow-hidden">
-                  <AccordionTrigger className="px-6 py-4 text-left text-white hover:text-amber-400 transition-colors">
-                    <span className="text-lg font-semibold">Buying Expired Domain Names</span>
-                  </AccordionTrigger>
-                  <AccordionContent className="px-6 pb-6">
-                    <div className="space-y-6 text-slate-300">
-                      {[
-                        {
-                          question: "6. Why would you buy an expired domain name?",
-                          answer: "Because you benefit from: faster visibility in Google, existing backlinks, an older domain name (which helps for SEO). It saves time, money and effort compared to starting from scratch with a brand new domain."
-                        },
-                        {
-                          question: "7. What should you pay attention to when buying an expired domain name?",
-                          answer: "Important checkpoints are: does the domain have quality backlinks? Is there no spam or penalty history? Does the name fit your industry? A trustworthy seller checks this for you in advance."
-                        },
-                        {
-                          question: "8. Is buying an expired domain name safe?",
-                          answer: "Yes, if you choose a reliable source. Pay attention to: complete transparency about the history, proof of domain authority, verified transfer via Stripe or another secure payment method. With us you buy verified, clean expired domain names."
-                        },
-                        {
-                          question: "9. What are the risks of an expired domain name without research?",
-                          answer: "If you don't research a domain, there is a risk of: Google penalties, invisible spam, unnatural link profiles. That's why we only sell carefully vetted expired domains."
-                        },
-                        {
-                          question: "10. Where can you buy trustworthy expired domain names?",
-                          answer: "At specialized sellers who: provide transparency about each domain, test for spam and penalties, verify backlinks. Avoid random marketplaces where you have to do the research yourself."
-                        }
-                      ].map((item, index) => (
-                        <article key={index} className="space-y-2">
-                          <h4 className="text-lg font-semibold text-white">{item.question}</h4>
-                          <p className="text-slate-400">{item.answer}</p>
-                        </article>
-                      ))}
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="seo" className="bg-slate-800/50 border border-slate-700/50 rounded-xl overflow-hidden">
-                  <AccordionTrigger className="px-6 py-4 text-left text-white hover:text-amber-400 transition-colors">
-                    <span className="text-lg font-semibold">Expired Domain Names and SEO</span>
-                  </AccordionTrigger>
-                  <AccordionContent className="px-6 pb-6">
-                    <div className="space-y-6 text-slate-300">
-                      {[
-                        {
-                          question: "11. What is the SEO value of an expired domain name?",
-                          answer: "The SEO value lies in: the accumulated authority, existing backlinks, the domain age. Google sees older domains with a good reputation as more reliable."
-                        },
-                        {
-                          question: "12. Do old domain names rank faster in Google?",
-                          answer: "Often yes. An old domain name with history and backlinks often has a head start over a brand new domain. This is especially true if the domain has a clean history."
-                        },
-                        {
-                          question: "13. What is a \"backlink\" and why is it important?",
-                          answer: "A backlink is a link from another website to your domain. Backlinks are: a trust signal for Google, an indicator of the domain's value, crucial for SEO performance. The more quality links, the better."
-                        },
-                        {
-                          question: "14. How do I know if an expired domain name has value?",
-                          answer: "Check on: domain authority (DA), number and quality of backlinks, spam-free history. With us you get full transparency about these values."
-                        },
-                        {
-                          question: "15. Can an expired domain name hurt my SEO?",
-                          answer: "Yes, if the domain was used for spam or has a penalty. That's why you should only buy from reliable sellers who pre-verify every domain."
-                        }
-                      ].map((item, index) => (
-                        <article key={index} className="space-y-2">
-                          <h4 className="text-lg font-semibold text-white">{item.question}</h4>
-                          <p className="text-slate-400">{item.answer}</p>
-                        </article>
-                      ))}
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="usage" className="bg-slate-800/50 border border-slate-700/50 rounded-xl overflow-hidden">
-                  <AccordionTrigger className="px-6 py-4 text-left text-white hover:text-amber-400 transition-colors">
-                    <span className="text-lg font-semibold">How to Use an Expired Domain Name</span>
-                  </AccordionTrigger>
-                  <AccordionContent className="px-6 pb-6">
-                    <div className="space-y-6 text-slate-300">
-                      {[
-                        {
-                          question: "16. How do I use an expired domain name for my website?",
-                          answer: "Simply: transfer the domain to your hosting or registrar, build a new website on the domain, use the existing authority as a foundation."
-                        },
-                        {
-                          question: "17. Can I redirect an expired domain name to my existing website?",
-                          answer: "Yes. With a 301-redirect you pass the SEO value of the expired domain to your main website. This is a popular strategy for boosting authority."
-                        },
-                        {
-                          question: "18. What is a 301-redirect?",
-                          answer: "A 301-redirect is a permanent redirect that tells Google: \"this domain now points to another domain.\" Link power flows through and is added to your main site."
-                        },
-                        {
-                          question: "19. How long does it take for an expired domain name to rank in Google?",
-                          answer: "Faster than with a new domain — often within days or weeks. This depends on: the quality of the domain, the content you place, the existing links."
-                        },
-                        {
-                          question: "20. Is an expired domain name suitable for a new webshop?",
-                          answer: "Yes, especially if it has relevant history or authority. A domain with a good reputation helps webshops build trust and rank faster."
-                        }
-                      ].map((item, index) => (
-                        <article key={index} className="space-y-2">
-                          <h4 className="text-lg font-semibold text-white">{item.question}</h4>
-                          <p className="text-slate-400">{item.answer}</p>
-                        </article>
-                      ))}
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="advice" className="bg-slate-800/50 border border-slate-700/50 rounded-xl overflow-hidden">
-                  <AccordionTrigger className="px-6 py-4 text-left text-white hover:text-amber-400 transition-colors">
-                    <span className="text-lg font-semibold">Complete Guide & Advice on Expired Domain Names</span>
-                  </AccordionTrigger>
-                  <AccordionContent className="px-6 pb-6">
-                    <div className="space-y-6 text-slate-300">
-                      {[
-                        {
-                          question: "21. Is an expired domain name better than a new domain name?",
-                          answer: "In many cases yes. Especially for SEO purposes. A new domain has no history and therefore no trust — building that up costs time and money."
-                        },
-                        {
-                          question: "22. What does a good expired domain name cost?",
-                          answer: "Prices vary based on: domain authority (DA), backlink profile, demand and industry. A cheap domain without value says little; a slightly higher price is often worth it if the quality has been verified."
-                        },
-                        {
-                          question: "23. What is the biggest advantage of an expired domain name?",
-                          answer: "The biggest advantage is that you don't start from scratch in search engines."
-                        },
-                        {
-                          question: "24. What is the biggest misconception about expired domain names?",
-                          answer: "That they are inherently risky. In reality, untested domains are risky — not carefully selected expired domain names."
-                        },
-                        {
-                          question: "25. Who is a reliable expired domain name best suited for?",
-                          answer: "For: starters, entrepreneurs, webshops, SEO projects, investors. Everyone looking for \"best domain name to buy\" and wanting to start smart."
-                        },
-                        {
-                          question: "26. How do I know if a domain name is suitable for SEO?",
-                          answer: "A domain name is suitable for SEO if: the name is logical and relevant, it has no spam history, quality backlinks are present. An expired domain name with good links often scores better here than a new domain name."
-                        },
-                        {
-                          question: "27. Does buying an expired domain name affect Google rankings?",
-                          answer: "Yes. Google looks at the history and link structure of a domain. A reliable expired domain name can help build visibility faster, if used correctly."
-                        },
-                        {
-                          question: "28. What are the benefits of an expired domain name with authority?",
-                          answer: "The main benefits are: faster trust with search engines, less dependence on link building, stronger starting position than competitors with new domains."
-                        },
-                        {
-                          question: "29. Do I need a keyword in my domain name for SEO?",
-                          answer: "Not necessarily. Searches like \"keyword domain name SEO\" show this is a frequently asked question. A clear, reliable name is more important than exact keywords, especially with expired domain names with authority."
-                        },
-                        {
-                          question: "30. Is a short domain name better than a long domain name?",
-                          answer: "Yes. Short domain names are: easier to remember, more professional, more valuable. Many premium expired domain names are precisely short and powerful."
-                        },
-                        {
-                          question: "31. Can I use an expired domain name for multiple projects?",
-                          answer: "Yes, for example for: a main website, a niche project, a brand portal. However, it is important that the content logically connects to the domain's history."
-                        },
-                        {
-                          question: "32. What happens to old backlinks when I place a new website?",
-                          answer: "The backlinks remain as long as they are not removed by the referring websites. That is precisely one of the great advantages of buying an expired domain name."
-                        },
-                        {
-                          question: "33. Is an expired domain name better than multiple new domains?",
-                          answer: "For focus and SEO, one strong expired domain name is often more effective than multiple new domains without authority."
-                        },
-                        {
-                          question: "34. Can I get customers faster with an expired domain name?",
-                          answer: "Indirectly yes. Faster visibility and more trust ensure that visitors convert sooner."
-                        },
-                        {
-                          question: "35. How long does the value of an expired domain name remain preserved?",
-                          answer: "As long as the domain is used and maintained well, the value is preserved and can even grow."
-                        },
-                        {
-                          question: "36. Why should I buy a domain name from a specialized seller?",
-                          answer: "Because a specialized seller: checks domains in advance, excludes risks, guides beginners, is transparent about quality and history. That makes the difference between gambling and consciously investing."
-                        }
-                      ].map((item, index) => (
-                        <article key={index} className="space-y-2">
-                          <h4 className="text-lg font-semibold text-white">{item.question}</h4>
-                          <p className="text-slate-400">{item.answer}</p>
-                        </article>
+                      ].map((faq, index) => (
+                        <div key={index}>
+                          <h4 className="text-lg font-semibold text-white mb-2">{faq.question}</h4>
+                          <p className="text-slate-400">{faq.answer}</p>
+                        </div>
                       ))}
                     </div>
                   </AccordionContent>
