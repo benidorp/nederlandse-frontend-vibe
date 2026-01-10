@@ -9,28 +9,28 @@ const LegalLinksPremiumDomainsES = () => {
         </h3>
         <div className="flex flex-wrap justify-center gap-4">
           <Link 
-            to="/expireddomainnames/es/dominios-premium-documentos-legales" 
+            to="/expireddomainnames/es/documentos-legales-dominios-premium" 
             className="text-slate-300 hover:text-amber-400 transition-colors text-sm underline underline-offset-2"
           >
             Términos y Condiciones
           </Link>
           <span className="text-slate-600">|</span>
           <Link 
-            to="/expireddomainnames/es/dominios-premium-documentos-legales"
+            to="/expireddomainnames/es/documentos-legales-dominios-premium"
             className="text-slate-300 hover:text-amber-400 transition-colors text-sm underline underline-offset-2"
           >
             Política de Privacidad
           </Link>
           <span className="text-slate-600">|</span>
           <Link 
-            to="/expireddomainnames/es/dominios-premium-documentos-legales" 
+            to="/expireddomainnames/es/documentos-legales-dominios-premium" 
             className="text-slate-300 hover:text-amber-400 transition-colors text-sm underline underline-offset-2"
           >
             Descargo de Responsabilidad
           </Link>
           <span className="text-slate-600">|</span>
           <Link 
-            to="/expireddomainnames/es/dominios-premium-documentos-legales" 
+            to="/expireddomainnames/es/documentos-legales-dominios-premium" 
             className="text-slate-300 hover:text-amber-400 transition-colors text-sm underline underline-offset-2"
           >
             Política de Cookies
