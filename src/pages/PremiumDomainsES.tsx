@@ -1714,66 +1714,76 @@ const PremiumDomainsES = () => {
               {premiumDomains.map((domain, index) => (
                 <Card 
                   key={index} 
-                  className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 border-slate-700/50 hover:border-amber-500/50 transition-all duration-300 group overflow-hidden"
+                  className="h-full flex flex-col bg-gradient-to-br from-slate-800/80 to-slate-900/80 border-slate-700/50 backdrop-blur hover:border-amber-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10 group"
                 >
                   <CardHeader className="pb-3">
                     <div className="flex items-start justify-between">
-                      <div className="flex-1 min-w-0">
-                        <CardTitle className="text-white group-hover:text-amber-400 transition-colors text-base leading-tight break-all">
-                          {domain.name}
-                        </CardTitle>
-                        <CardDescription className="text-slate-400 mt-1 text-xs">
-                          {domain.category}
-                        </CardDescription>
-                      </div>
-                      <Badge className="bg-amber-500/20 text-amber-400 border-amber-500/30 flex-shrink-0 ml-2 text-xs px-2 py-1">
-                        MOZ {domain.mozScore}
+                      <Badge variant="outline" className="text-xs border-slate-600 text-slate-400">
+                        {domain.category}
                       </Badge>
+                      <div className="flex items-center gap-1 bg-amber-500/10 px-2 py-1 rounded-full">
+                        <BarChart3 className="w-3 h-3 text-amber-400" />
+                        <span className="text-xs font-semibold text-amber-400">MOZ {domain.mozScore}</span>
+                      </div>
                     </div>
-                  </CardHeader>
-                  <CardContent className="space-y-3">
-                    <p className="text-slate-300 text-sm leading-relaxed">
+                    <CardTitle className="text-xl text-white group-hover:text-amber-400 transition-colors mt-3">
+                      {domain.name}
+                    </CardTitle>
+                    <CardDescription className="text-slate-400">
                       {domain.description}
-                    </p>
-                    
-                    {/* Metrics Grid */}
-                    <div className="grid grid-cols-2 gap-2 text-xs">
-                      <div className="bg-slate-900/50 rounded-lg p-2">
-                        <div className="text-slate-500">Page Auth.</div>
-                        <div className="text-white font-semibold">{domain.pageAuthority}</div>
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="flex flex-col flex-grow">
+                    <div className="space-y-3 mb-4">
+                      <div className="flex items-center justify-between text-sm">
+                        <div className="flex items-center gap-2 text-slate-400">
+                          <Link className="w-4 h-4" />
+                          <span>Backlinks: {domain.backlinks}</span>
+                        </div>
                       </div>
-                      <div className="bg-slate-900/50 rounded-lg p-2">
-                        <div className="text-slate-500">Dominios Enlace</div>
-                        <div className="text-white font-semibold">{domain.linkingDomains}</div>
-                      </div>
-                      <div className="bg-slate-900/50 rounded-lg p-2">
-                        <div className="text-slate-500">Enlaces Entrantes</div>
-                        <div className="text-white font-semibold">{domain.inboundLinks}</div>
-                      </div>
-                      <div className="bg-slate-900/50 rounded-lg p-2">
-                        <div className="text-slate-500">Enlaces Seguidos</div>
-                        <div className="text-white font-semibold">{domain.followedLinks}</div>
-                      </div>
-                    </div>
-                    
-                    {/* Top Backlinks - Show 5 */}
-                    <div className="bg-slate-900/30 rounded-lg p-3">
-                      <div className="text-xs text-slate-500 mb-2">Top 5 Backlinks:</div>
-                      <div className="space-y-1">
-                        {domain.topBacklinks.slice(0, 5).map((link, idx) => (
-                          <div key={idx} className="flex items-center gap-2 text-xs">
-                            <Link className="w-3 h-3 text-amber-400 flex-shrink-0" />
-                            <span className="text-slate-300 truncate">{link}</span>
+                      
+                      {/* Extra stats for domains with detailed info */}
+                      {domain.pageAuthority && (
+                        <div className="grid grid-cols-2 gap-2 text-xs">
+                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                            <span className="text-slate-500">Page Authority:</span>
+                            <span className="text-white ml-1 font-medium">{domain.pageAuthority}</span>
                           </div>
-                        ))}
-                      </div>
+                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                            <span className="text-slate-500">Linking Domains:</span>
+                            <span className="text-white ml-1 font-medium">{domain.linkingDomains}</span>
+                          </div>
+                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                            <span className="text-slate-500">Inbound Links:</span>
+                            <span className="text-white ml-1 font-medium">{domain.inboundLinks}</span>
+                          </div>
+                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                            <span className="text-slate-500">Followed Links:</span>
+                            <span className="text-white ml-1 font-medium">{domain.followedLinks}</span>
+                          </div>
+                        </div>
+                      )}
+                      
+                      {/* Top backlinks */}
+                      {domain.topBacklinks && domain.topBacklinks.length > 0 && (
+                        <div className="text-xs">
+                          <span className="text-slate-500 block mb-1">Top Backlinks:</span>
+                          <div className="flex flex-wrap gap-1">
+                            {domain.topBacklinks.slice(0, 5).map((link, i) => (
+                              <Badge key={i} variant="outline" className="text-[10px] border-amber-500/30 text-amber-400/80 bg-amber-500/5">
+                                {link}
+                              </Badge>
+                            ))}
+                          </div>
+                        </div>
+                      )}
                     </div>
                     
-                    {/* Price and CTA */}
-                    <div className="pt-3 border-t border-slate-700/50">
-                      <div className="flex items-center justify-between mb-3">
+                    {/* Price Display - Compact at bottom */}
+                    <div className="mt-auto pt-4 border-t border-slate-700/50">
+                      <div className="flex items-center justify-between mb-3 bg-slate-800/60 rounded-lg px-3 py-2">
+                        <span className="text-sm font-medium text-slate-300">Precio</span>
                         <span className="text-lg font-bold text-amber-400">{domain.price}</span>
-                        <span className="text-xs text-slate-500">pago único</span>
                       </div>
                       
                       {domain.name === "friendsofthesupergrid.eu" ? (
