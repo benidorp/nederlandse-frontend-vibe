@@ -12,6 +12,7 @@ import { useToast } from "@/hooks/use-toast";
 import LegalLinksPremiumDomainsES from "@/components/premium-domains/LegalLinksPremiumDomainsES";
 import FooterPremiumDomainsES from "@/components/premium-domains/FooterPremiumDomainsES";
 import stripeLogo from "@/assets/stripe-logo.svg";
+import { validateContactForm, buildSafeMailtoUrl } from "@/lib/formValidation";
 
 // Premium domain data - exact copy from Dutch version
 const premiumDomains = [
@@ -1529,6 +1530,7 @@ const PremiumDomainsES = () => {
     domain: "",
     message: ""
   });
+  const [formErrors, setFormErrors] = useState<Record<string, string>>({});
 
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -1536,22 +1538,30 @@ const PremiumDomainsES = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    setFormErrors({});
     
-    if (!formData.name || !formData.email || !formData.domain) {
+    // Validate form data
+    const validation = validateContactForm(formData);
+    
+    if (!validation.success) {
+      const errorResult = validation as { success: false; errors: Record<string, string> };
+      setFormErrors(errorResult.errors);
+      const firstError = Object.values(errorResult.errors)[0] || "Por favor verifique su entrada";
       toast({
-        title: "Complete todos los campos obligatorios",
-        description: "Nombre, correo electrónico y selección de dominio son obligatorios.",
+        title: "Por favor corrija los errores del formulario",
+        description: firstError,
         variant: "destructive"
       });
       return;
     }
 
-    // Construct mailto link
-    const subject = encodeURIComponent(`Solicitud de Dominio Premium: ${formData.domain}`);
-    const body = encodeURIComponent(
-      `Nombre: ${formData.name}\nCorreo electrónico: ${formData.email}\nDominio: ${formData.domain}\n\nMensaje:\n${formData.message}`
-    );
-    window.location.href = `mailto:support@iaee.eu?subject=${subject}&body=${body}`;
+    const { data } = validation;
+    
+    // Build safe mailto URL with sanitized data
+    const subject = `Solicitud de Dominio Premium: ${data.domain}`;
+    const body = `Nombre: ${data.name}\nCorreo electrónico: ${data.email}\nDominio: ${data.domain}\n\nMensaje:\n${data.message || ""}`;
+    
+    window.location.href = buildSafeMailtoUrl("support@iaee.eu", subject, body);
     
     toast({
       title: "Solicitud enviándose",
