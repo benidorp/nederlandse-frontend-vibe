@@ -885,20 +885,6 @@ const premiumDomains = [
     topBacklinks: ["rug.nl (DA 84)", "nu.nl (DA 91)", "wetenschapsagenda.nl (DA 65)"]
   },
   {
-    name: "gastrosafezone.eu",
-    description: "Dominio de diseño y seguridad hotelera con backlinks de CNN, The Conversation, Pagina12 y Elle Decor.",
-    mozScore: 25,
-    pageAuthority: 24,
-    linkingDomains: 47,
-    inboundLinks: "66+",
-    followedLinks: "58+",
-    category: "Diseño/Hostelería",
-    price: "€249",
-    stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
-    backlinks: "66+",
-    topBacklinks: ["cnn.com (DA 94)", "theconversation.com (DA 92)", "realty.rbc.ru (DA 88)", "pagina12.com.ar (DA 82)", "elledecor.com (DA 80)"]
-  },
-  {
     name: "khresmoi.eu",
     description: "Dominio de proyecto EU de búsqueda médica con backlinks de MDPI, Springer, BioMedCentral y Universidad Charles.",
     mozScore: 27,
@@ -1011,6 +997,20 @@ const premiumDomains = [
     topBacklinks: ["europa.eu (DA 97)", "es.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)", "jimdofree.com (DA 95)", "yumpu.com (DA 91)"]
   },
   // DA 25
+  {
+    name: "gastrosafezone.eu",
+    description: "Dominio de diseño y seguridad hotelera con backlinks de CNN, The Conversation, Pagina12 y Elle Decor.",
+    mozScore: 25,
+    pageAuthority: 24,
+    linkingDomains: 47,
+    inboundLinks: "66+",
+    followedLinks: "58+",
+    category: "Diseño/Hostelería",
+    price: "€249",
+    stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
+    backlinks: "66+",
+    topBacklinks: ["cnn.com (DA 94)", "theconversation.com (DA 92)", "realty.rbc.ru (DA 88)", "pagina12.com.ar (DA 82)", "elledecor.com (DA 80)"]
+  },
   {
     name: "hotelgiotto.eu",
     description: "Dominio de hostelería con backlinks de Pages.dev, Wikitravel, Groupon UK y Travellerspoint.",

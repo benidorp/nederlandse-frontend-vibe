@@ -871,20 +871,6 @@ const premiumDomains = [
     topBacklinks: ["rug.nl (DA 84)", "nu.nl (DA 91)", "wetenschapsagenda.nl (DA 65)"]
   },
   {
-    name: "gastrosafezone.eu",
-    description: "Design- und Gastronomie-Sicherheits-Domain mit Backlinks von CNN, The Conversation, Pagina12 und Elle Decor.",
-    mozScore: 25,
-    pageAuthority: 24,
-    linkingDomains: 47,
-    inboundLinks: "66+",
-    followedLinks: "58+",
-    category: "Design/Gastronomie",
-    price: "€249",
-    stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
-    backlinks: "66+",
-    topBacklinks: ["cnn.com (DA 94)", "theconversation.com (DA 92)", "realty.rbc.ru (DA 88)", "pagina12.com.ar (DA 82)", "elledecor.com (DA 80)"]
-  },
-  {
     name: "khresmoi.eu",
     description: "Medizinisches Such-EU-Projekt-Domain mit Backlinks von MDPI, Springer, BioMedCentral und Charles Universität.",
     mozScore: 27,
@@ -933,12 +919,54 @@ const premiumDomains = [
     pageAuthority: 34,
     linkingDomains: 452,
     inboundLinks: "6.2K+",
-    followedLinks: "6.1K+",
+    followedLinks: "3.7K+",
     category: "Bildung",
     price: "€329",
     stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
     backlinks: "6.2K+",
-    topBacklinks: ["pages.dev (DA 91)", "gameforge.com (DA 87)", "gitbook.io (DA 84)", "ua.es (DA 73)", "usal.es (DA 72)"]
+    topBacklinks: ["sakura.ne.jp (DA 93)", "pages.dev (DA 91)", "biglobe.ne.jp (DA 91)", "gameforge.com (DA 90)", "gitbook.io (DA 85)"]
+  },
+  {
+    name: "dunyaendesiedefilm.nl",
+    description: "Niederländische Film/Medien-Domain mit Backlinks von Wikipedia (EN, JA), IPFS, FilmWeb und Cinemagia.",
+    mozScore: 26,
+    pageAuthority: 23,
+    linkingDomains: 102,
+    inboundLinks: "214+",
+    followedLinks: "180+",
+    category: "Medien",
+    price: "€329",
+    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
+    backlinks: "214+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "ja.wikipedia.org (DA 93)", "ipfs.io (DA 84)", "filmweb.pl (DA 80)", "csfd.cz (DA 72)"]
+  },
+  {
+    name: "102touchfm.co.uk",
+    description: "Britische Radio/Medien-Domain mit Backlinks von Wikipedia, BBC, Bit.ly, Foursquare und DigitalSpy.",
+    mozScore: 26,
+    pageAuthority: 30,
+    linkingDomains: 292,
+    inboundLinks: "11.8K+",
+    followedLinks: "8.8K+",
+    category: "Medien",
+    price: "€329",
+    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
+    backlinks: "11.8K+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "bbc.co.uk (DA 95)", "bit.ly (DA 94)", "foursquare.com (DA 92)", "digitalspy.com (DA 88)"]
+  },
+  {
+    name: "tca2000.co.uk",
+    description: "Britische Domain mit Backlinks von Wikipedia (EN, FR, JA, PL), Fandom und DigitalSpy.",
+    mozScore: 26,
+    pageAuthority: 29,
+    linkingDomains: 180,
+    inboundLinks: "662+",
+    followedLinks: "460+",
+    category: "Business",
+    price: "€329",
+    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
+    backlinks: "662+",
+    topBacklinks: ["en.wikipedia.org (DA 97)", "fr.wikipedia.org (DA 95)", "fandom.com (DA 94)", "ja.wikipedia.org (DA 93)", "pl.wikipedia.org (DA 93)"]
   },
   {
     name: "deparisnet.be",
@@ -955,6 +983,20 @@ const premiumDomains = [
     topBacklinks: ["europa.eu (DA 97)", "es.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)", "jimdofree.com (DA 95)", "yumpu.com (DA 91)"]
   },
   // DA 25
+  {
+    name: "gastrosafezone.eu",
+    description: "Design- und Gastronomie-Sicherheits-Domain mit Backlinks von CNN, The Conversation, Pagina12 und Elle Decor.",
+    mozScore: 25,
+    pageAuthority: 24,
+    linkingDomains: 47,
+    inboundLinks: "66+",
+    followedLinks: "58+",
+    category: "Design/Gastronomie",
+    price: "€249",
+    stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
+    backlinks: "66+",
+    topBacklinks: ["cnn.com (DA 94)", "theconversation.com (DA 92)", "realty.rbc.ru (DA 88)", "pagina12.com.ar (DA 82)", "elledecor.com (DA 80)"]
+  },
   {
     name: "hotelgiotto.eu",
     description: "Gastgewerbe-Domain mit Backlinks von Pages.dev, Wikitravel, Groupon UK und Travellerspoint.",
