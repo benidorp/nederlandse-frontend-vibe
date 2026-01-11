@@ -167,6 +167,68 @@ const Home = () => {
             </div>
           </section>
 
+          {/* Premium Domains Highlight Section */}
+          <section className="py-16 md:py-20 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">
+            <div className="container">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div className="order-2 lg:order-1">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-amber-500/10 border border-amber-500/30">
+                    <span className="text-sm font-medium text-amber-400">🔥 High Authority SEO Domains</span>
+                  </div>
+                  <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white leading-tight">
+                    Premium Expired Domain Names
+                  </h2>
+                  <p className="text-xl text-slate-300 mb-6 leading-relaxed">
+                    Boost your website's SEO rankings instantly with our curated collection of high-authority expired domain names. Each domain comes with proven backlinks and established domain authority.
+                  </p>
+                  <ul className="space-y-3 mb-8">
+                    <li className="flex items-center gap-3 text-slate-300">
+                      <CheckCircle className="w-5 h-5 text-amber-400 flex-shrink-0" />
+                      <span>MOZ Domain Authority 20-50+</span>
+                    </li>
+                    <li className="flex items-center gap-3 text-slate-300">
+                      <CheckCircle className="w-5 h-5 text-amber-400 flex-shrink-0" />
+                      <span>Verified Quality Backlinks</span>
+                    </li>
+                    <li className="flex items-center gap-3 text-slate-300">
+                      <CheckCircle className="w-5 h-5 text-amber-400 flex-shrink-0" />
+                      <span>Instant Transfer Available</span>
+                    </li>
+                    <li className="flex items-center gap-3 text-slate-300">
+                      <CheckCircle className="w-5 h-5 text-amber-400 flex-shrink-0" />
+                      <span>Perfect for 301 Redirects & PBN</span>
+                    </li>
+                  </ul>
+                  <div className="flex flex-wrap gap-4">
+                    <Link to="/expireddomainnames/en/buy-premium-domains-high-authority-seo-value">
+                      <Button size="lg" className="bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold text-lg px-8">
+                        View Premium Domains
+                      </Button>
+                    </Link>
+                    <Link to="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde">
+                      <Button size="lg" variant="outline" className="border-slate-500 text-slate-300 hover:bg-slate-700 text-lg px-8">
+                        Nederlandse versie
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+                <div className="order-1 lg:order-2">
+                  <div className="relative">
+                    <div className="absolute -inset-4 bg-gradient-to-r from-amber-500/20 to-amber-600/20 rounded-2xl blur-xl"></div>
+                    <img 
+                      src={affiliateImage} 
+                      alt="Premium Domain Names - High Authority SEO Domains"
+                      className="relative w-full h-auto rounded-xl shadow-2xl border border-slate-700"
+                    />
+                    <div className="absolute -bottom-4 -right-4 bg-amber-500 text-slate-900 px-6 py-3 rounded-lg font-bold text-lg shadow-lg">
+                      From €149
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* BTW Calculator Highlight */}
           <section className="py-12 bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10">
             <div className="container">
