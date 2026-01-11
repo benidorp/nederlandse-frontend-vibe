@@ -1745,16 +1745,18 @@ const PremiumDomainsFR = () => {
                     </div>
                     
                     {/* Top Backlinks */}
-                    <div className="mb-4">
-                      <div className="text-xs text-slate-500 mb-2">Meilleurs Backlinks :</div>
-                      <div className="flex flex-wrap gap-1">
-                        {domain.topBacklinks.slice(0, 3).map((link, idx) => (
-                          <span key={idx} className="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">
-                            {link}
-                          </span>
-                        ))}
+                    {domain.topBacklinks && domain.topBacklinks.length > 0 && (
+                      <div className="text-xs mb-4">
+                        <span className="text-slate-500 block mb-1">Top Backlinks :</span>
+                        <div className="flex flex-col gap-1">
+                          {domain.topBacklinks.slice(0, 5).map((link, i) => (
+                            <Badge key={i} variant="outline" className="text-[10px] border-amber-500/30 text-amber-400/80 bg-amber-500/5 w-fit">
+                              {link}
+                            </Badge>
+                          ))}
+                        </div>
                       </div>
-                    </div>
+                    )}
                     
                     {/* Price */}
                     <div className="flex items-center justify-between mb-4 bg-slate-800/60 rounded-lg px-4 py-3">
