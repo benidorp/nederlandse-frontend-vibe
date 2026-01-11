@@ -13,7 +13,7 @@ const FooterPremiumDomains = () => {
     <footer className="py-12 bg-slate-950 border-t border-slate-800">
       <div className="container mx-auto px-4">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-4">
@@ -78,6 +78,88 @@ const FooterPremiumDomains = () => {
             </ul>
           </div>
 
+          {/* All Pages - Domain Names Column */}
+          <div>
+            <h4 className="text-white font-semibold mb-4">Alle Pagina's</h4>
+            <ul className="space-y-2">
+              <li>
+                <Link to="/" className="text-slate-400 hover:text-amber-400 transition-colors text-sm">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" className="text-slate-400 hover:text-amber-400 transition-colors text-sm">
+                  Premium Domeinen
+                </Link>
+              </li>
+              <li>
+                <Link to="/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" className="text-slate-400 hover:text-amber-400 transition-colors text-sm">
+                  Juridische Documenten
+                </Link>
+              </li>
+              <li>
+                <Link to="/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" className="text-slate-400 hover:text-amber-400 transition-colors text-sm">
+                  Affiliate Legal Docs
+                </Link>
+              </li>
+              <li>
+                <Link to="/photography-legal-documents-terms-conditions-privacy-policy-contract-copyright-protection" className="text-slate-400 hover:text-amber-400 transition-colors text-sm">
+                  Photography Legal Docs
+                </Link>
+              </li>
+              <li>
+                <Link to="/must-have-legal-protection-for-every-hotel-and-travel-website-terms-conditions-privacy-policy-cancellation-policy-disclaimer" className="text-slate-400 hover:text-amber-400 transition-colors text-sm">
+                  Travel Legal Docs
+                </Link>
+              </li>
+              <li>
+                <Link to="/essential-legal-documents-ecommerce-website-terms-conditions-privacy-policy-return-policy-shipping-policy" className="text-slate-400 hover:text-amber-400 transition-colors text-sm">
+                  E-commerce Legal Docs
+                </Link>
+              </li>
+              <li>
+                <Link to="/webshop-online-business-legal-protection-terms-privacy-policy-cookie-policy-gdpr-compliance" className="text-slate-400 hover:text-amber-400 transition-colors text-sm">
+                  Webshop Legal Docs
+                </Link>
+              </li>
+              <li>
+                <Link to="/dropshipping-business-legal-protection-terms-conditions-privacy-policy-supplier-agreement-refund-policy" className="text-slate-400 hover:text-amber-400 transition-colors text-sm">
+                  Dropshipping Legal Docs
+                </Link>
+              </li>
+              <li>
+                <Link to="/elearning-platform-legal-documents-terms-privacy-policy-gdpr-compliance" className="text-slate-400 hover:text-amber-400 transition-colors text-sm">
+                  E-learning Legal Docs
+                </Link>
+              </li>
+              <li>
+                <Link to="/nonprofit-charity-legal-documents-donation-terms-privacy-policy" className="text-slate-400 hover:text-amber-400 transition-colors text-sm">
+                  Nonprofit Legal Docs
+                </Link>
+              </li>
+              <li>
+                <Link to="/streaming-media-legal-documents-terms-conditions-privacy-policy-dmca-content-license" className="text-slate-400 hover:text-amber-400 transition-colors text-sm">
+                  Streaming Legal Docs
+                </Link>
+              </li>
+              <li>
+                <Link to="/comparison-review-website-legal-documents-terms-privacy-affiliate-disclosure-disclaimer" className="text-slate-400 hover:text-amber-400 transition-colors text-sm">
+                  Review Legal Docs
+                </Link>
+              </li>
+              <li>
+                <Link to="/news-magazine-legal-documents-terms-conditions-privacy-policy-copyright-editorial-policy" className="text-slate-400 hover:text-amber-400 transition-colors text-sm">
+                  News Legal Docs
+                </Link>
+              </li>
+              <li>
+                <Link to="/freelancers-self-employed-legal-documents-contracts-terms-privacy-policy" className="text-slate-400 hover:text-amber-400 transition-colors text-sm">
+                  Freelancer Legal Docs
+                </Link>
+              </li>
+            </ul>
+          </div>
+
           {/* Contact */}
           <div>
             <h4 className="text-white font-semibold mb-4">Contact</h4>
@@ -96,57 +178,6 @@ const FooterPremiumDomains = () => {
           </div>
         </div>
 
-        {/* All Pages Links */}
-        <div className="border-t border-slate-800 pt-8 mb-8">
-          <h4 className="text-white font-semibold mb-4 text-center">Alle Pagina's</h4>
-          <div className="flex flex-wrap justify-center gap-4 text-xs">
-            <Link to="/" className="text-slate-400 hover:text-amber-400 transition-colors">
-              Home
-            </Link>
-            <Link to="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" className="text-slate-400 hover:text-amber-400 transition-colors">
-              Premium Domeinen
-            </Link>
-            <Link to="/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" className="text-slate-400 hover:text-amber-400 transition-colors">
-              Juridische Documenten
-            </Link>
-            <Link to="/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" className="text-slate-400 hover:text-amber-400 transition-colors">
-              Affiliate Legal Docs
-            </Link>
-            <Link to="/photography-legal-documents-terms-conditions-privacy-policy-contract-copyright-protection" className="text-slate-400 hover:text-amber-400 transition-colors">
-              Photography Legal Docs
-            </Link>
-            <Link to="/must-have-legal-protection-for-every-hotel-and-travel-website-terms-conditions-privacy-policy-cancellation-policy-disclaimer" className="text-slate-400 hover:text-amber-400 transition-colors">
-              Travel Legal Docs
-            </Link>
-            <Link to="/essential-legal-documents-ecommerce-website-terms-conditions-privacy-policy-return-policy-shipping-policy" className="text-slate-400 hover:text-amber-400 transition-colors">
-              E-commerce Legal Docs
-            </Link>
-            <Link to="/webshop-online-business-legal-protection-terms-privacy-policy-cookie-policy-gdpr-compliance" className="text-slate-400 hover:text-amber-400 transition-colors">
-              Webshop Legal Docs
-            </Link>
-            <Link to="/dropshipping-business-legal-protection-terms-conditions-privacy-policy-supplier-agreement-refund-policy" className="text-slate-400 hover:text-amber-400 transition-colors">
-              Dropshipping Legal Docs
-            </Link>
-            <Link to="/elearning-platform-legal-documents-terms-privacy-policy-gdpr-compliance" className="text-slate-400 hover:text-amber-400 transition-colors">
-              E-learning Legal Docs
-            </Link>
-            <Link to="/nonprofit-charity-legal-documents-donation-terms-privacy-policy" className="text-slate-400 hover:text-amber-400 transition-colors">
-              Nonprofit Legal Docs
-            </Link>
-            <Link to="/streaming-media-legal-documents-terms-conditions-privacy-policy-dmca-content-license" className="text-slate-400 hover:text-amber-400 transition-colors">
-              Streaming Legal Docs
-            </Link>
-            <Link to="/comparison-review-website-legal-documents-terms-privacy-affiliate-disclosure-disclaimer" className="text-slate-400 hover:text-amber-400 transition-colors">
-              Review Legal Docs
-            </Link>
-            <Link to="/news-magazine-legal-documents-terms-conditions-privacy-policy-copyright-editorial-policy" className="text-slate-400 hover:text-amber-400 transition-colors">
-              News Legal Docs
-            </Link>
-            <Link to="/freelancers-self-employed-legal-documents-contracts-terms-privacy-policy" className="text-slate-400 hover:text-amber-400 transition-colors">
-              Freelancer Legal Docs
-            </Link>
-          </div>
-        </div>
 
         {/* Copyright */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 border-t border-slate-800 pt-8">
