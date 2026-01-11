@@ -12,6 +12,7 @@ import { useToast } from "@/hooks/use-toast";
 import LegalLinksPremiumDomains from "@/components/premium-domains/LegalLinksPremiumDomains";
 import FooterPremiumDomains from "@/components/premium-domains/FooterPremiumDomains";
 import stripeLogo from "@/assets/stripe-logo.svg";
+import { validateContactForm, buildSafeMailtoUrl } from "@/lib/formValidation";
 
 // Premium domain data - can be easily updated
 const premiumDomains = [
@@ -1570,6 +1571,7 @@ const PremiumDomains = () => {
     domain: "",
     message: ""
   });
+  const [formErrors, setFormErrors] = useState<Record<string, string>>({});
 
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -1577,22 +1579,30 @@ const PremiumDomains = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    setFormErrors({});
     
-    if (!formData.name || !formData.email || !formData.domain) {
+    // Validate form data
+    const validation = validateContactForm(formData);
+    
+    if (!validation.success) {
+      const errorResult = validation as { success: false; errors: Record<string, string> };
+      setFormErrors(errorResult.errors);
+      const firstError = Object.values(errorResult.errors)[0] || "Controleer uw invoer";
       toast({
-        title: "Vul alle verplichte velden in",
-        description: "Naam, e-mail en domeinkeuze zijn verplicht.",
+        title: "Vul alle verplichte velden correct in",
+        description: firstError,
         variant: "destructive"
       });
       return;
     }
 
-    // Construct mailto link
-    const subject = encodeURIComponent(`Premium Domein Aanvraag: ${formData.domain}`);
-    const body = encodeURIComponent(
-      `Naam: ${formData.name}\nE-mail: ${formData.email}\nDomein: ${formData.domain}\n\nBericht:\n${formData.message}`
-    );
-    window.location.href = `mailto:support@iaee.eu?subject=${subject}&body=${body}`;
+    const { data } = validation;
+    
+    // Build safe mailto URL with sanitized data
+    const subject = `Premium Domein Aanvraag: ${data.domain}`;
+    const body = `Naam: ${data.name}\nE-mail: ${data.email}\nDomein: ${data.domain}\n\nBericht:\n${data.message || ""}`;
+    
+    window.location.href = buildSafeMailtoUrl("support@iaee.eu", subject, body);
     
     toast({
       title: "Aanvraag wordt verzonden",
