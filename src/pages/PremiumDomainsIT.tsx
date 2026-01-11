@@ -2298,6 +2298,171 @@ const PremiumDomainsIT = () => {
                     </AccordionContent>
                   </AccordionItem>
                 ))}
+                
+                {/* Complete Guide: 35 Questions about Expired Domains */}
+                <AccordionItem 
+                  value="complete-guide"
+                  className="bg-gradient-to-br from-amber-500/10 to-slate-800/40 border border-amber-500/30 rounded-xl px-6"
+                >
+                  <AccordionTrigger className="text-left text-white hover:text-amber-400 hover:no-underline py-4">
+                    <h3 className="font-semibold">Guida Completa: 35 Domande sui Domini Scaduti & SEO</h3>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-slate-400 pb-6 leading-relaxed">
+                    <div className="space-y-8 whitespace-pre-line">
+                      {[
+                        {
+                          question: "1. Quale nome di dominio dovrei comprare come principiante?",
+                          answer: "Come principiante, è meglio scegliere un nome di dominio facile da ricordare, che indichi chiaramente cosa fai e che ispiri fiducia. Molti principianti cercano 'quale dominio devo comprare' e finiscono automaticamente sui nuovi domini, mentre un dominio scaduto affidabile ha spesso già accumulato autorità e valore."
+                        },
+                        {
+                          question: "2. Qual è la differenza tra un nuovo dominio e un dominio scaduto?",
+                          answer: "Un nuovo dominio non ha storia e parte completamente da zero. Un dominio scaduto è già stato registrato e potrebbe ancora avere backlink, autorità e fiducia con Google. Questo rende un dominio scaduto spesso più attraente per SEO e visibilità."
+                        },
+                        {
+                          question: "3. È meglio comprare un nuovo dominio o un dominio scaduto?",
+                          answer: "Chi cerca 'nuovo dominio o dominio scaduto' sta solitamente confrontando velocità e risultati. Per il branding, un nuovo nome può funzionare, ma per essere trovati più velocemente in Google, un buon dominio scaduto offre spesso un chiaro vantaggio."
+                        },
+                        {
+                          question: "4. Perché il mio nuovo sito web si posiziona così male in Google?",
+                          answer: "I nuovi siti web devono ancora costruire la loro affidabilità. Senza backlink e storia, questo richiede spesso mesi. Un dominio scaduto con buoni link può evitarti di dover ricominciare completamente da zero."
+                        },
+                        {
+                          question: "5. È sicuro comprare un dominio scaduto?",
+                          answer: "Sì, purché sia un dominio scaduto verificato e affidabile. Il rischio non è in 'scaduto', ma nei domini che non sono stati verificati per spam, abusi o backlink di bassa qualità."
+                        },
+                        {
+                          question: "6. Cosa significa un dominio con buoni backlink?",
+                          answer: "Un dominio con buoni backlink ha riferimenti da siti web reali e pertinenti. Questi link forniscono autorità e fiducia con i motori di ricerca, essenziale per le prestazioni SEO."
+                        },
+                        {
+                          question: "7. Perché i backlink sono importanti quando compri un dominio?",
+                          answer: "I backlink sono uno dei fattori di ranking più importanti di Google. Quando cerchi 'comprare dominio SEO', stai effettivamente cercando un dominio che ha già costruito fiducia — esattamente ciò che offre un buon dominio scaduto."
+                        },
+                        {
+                          question: "8. Come posso vedere se un dominio scaduto è affidabile?",
+                          answer: "Un dominio scaduto affidabile è verificato per: storia del sito web, qualità dei backlink, assenza di spam, gioco d'azzardo o contenuti per adulti. Come venditore, selezioniamo solo domini che soddisfano questi criteri."
+                        },
+                        {
+                          question: "9. Posso usare un dominio scaduto per un nuovo sito web?",
+                          answer: "Sì. Puoi usare perfettamente un dominio scaduto per un progetto completamente nuovo. Il contenuto è nuovo, ma il dominio porta già autorità online."
+                        },
+                        {
+                          question: "10. Un dominio scaduto è adatto ai principianti?",
+                          answer: "Certamente. I principianti spesso ne beneficiano di più perché: ottengono visibilità più velocemente, hanno meno ritardo SEO, fanno un inizio più professionale."
+                        },
+                        {
+                          question: "11. Perché alcuni domini sono più costosi di altri?",
+                          answer: "Ricerche come 'perché un dominio è così costoso' spesso derivano da incomprensione del valore. Il prezzo è determinato da: qualità del nome, valore SEO, backlink, applicabilità commerciale."
+                        },
+                        {
+                          question: "12. Posso rivendere un dominio scaduto in seguito?",
+                          answer: "Sì. Molte persone cercano 'dominio come investimento'. Un dominio scaduto forte spesso mantiene il suo valore e può persino aumentare di prezzo."
+                        },
+                        {
+                          question: "13. Un dominio scaduto può essere dannoso per la SEO?",
+                          answer: "Solo se ha una cattiva storia. Ecco perché c'è una grande differenza tra: domini scaduti non verificati e domini selezionati con cura e affidabili."
+                        },
+                        {
+                          question: "14. A cosa devo fare attenzione quando compro un dominio scaduto?",
+                          answer: "Punti importanti da considerare sono: storia senza spam, backlink pertinenti, nome di dominio logico, nessun rischio di marchio registrato."
+                        },
+                        {
+                          question: "15. Quanto velocemente posso iniziare dopo aver comprato un dominio?",
+                          answer: "Dopo il trasferimento puoi usare immediatamente il dominio per: un sito web, email, negozio online. Proprio come con un nuovo dominio."
+                        },
+                        {
+                          question: "16. Ho bisogno di conoscenze tecniche per usare un dominio scaduto?",
+                          answer: "No. Un dominio scaduto funziona tecnicamente come un nuovo dominio e può essere usato con qualsiasi provider di hosting."
+                        },
+                        {
+                          question: "17. Un dominio scaduto è adatto per un negozio online?",
+                          answer: "Sì. I negozi online beneficiano particolarmente di: fiducia, autorità, miglior inizio in Google. Questo è cruciale per le conversioni."
+                        },
+                        {
+                          question: "18. Cosa significa autorità di dominio quando compri un dominio?",
+                          answer: "L'autorità di dominio è un'indicazione di quanto è forte un dominio in base a link e storia. Molti domini scaduti ottengono punteggi più alti qui rispetto ai nuovi domini."
+                        },
+                        {
+                          question: "19. Un dominio scaduto è meglio del link building?",
+                          answer: "In molti casi sì. Acquisti essenzialmente una reputazione esistente, invece di costruirla più tardi in modo costoso e rischioso."
+                        },
+                        {
+                          question: "20. Perché gli imprenditori scelgono consapevolmente un dominio scaduto?",
+                          answer: "Perché cercano: risultati più veloci, meno rischio SEO, un inizio intelligente con vantaggio."
+                        },
+                        {
+                          question: "21. Un dominio scaduto è adatto per ogni nicchia?",
+                          answer: "Per quasi ogni nicchia sono disponibili buoni domini scaduti, purché nome e storia si colleghino logicamente all'argomento."
+                        },
+                        {
+                          question: "22. Posso ricevere aiuto nella scelta del dominio giusto?",
+                          answer: "Sì. Molti principianti cercano 'quale dominio si adatta alla mia azienda'. La guida previene errori di acquisto e fa risparmiare denaro."
+                        },
+                        {
+                          question: "23. Qual è il più grande vantaggio di un dominio scaduto?",
+                          answer: "Il più grande vantaggio è che non parti da zero nei motori di ricerca."
+                        },
+                        {
+                          question: "24. Qual è il più grande malinteso sui domini scaduti?",
+                          answer: "Che siano per definizione rischiosi. In realtà, i domini non testati sono rischiosi — non i domini scaduti selezionati con cura."
+                        },
+                        {
+                          question: "25. Per chi è più adatto un dominio scaduto affidabile?",
+                          answer: "Per: principianti, imprenditori, negozi online, progetti SEO, investitori. Chiunque cerchi 'comprare il miglior dominio' e voglia iniziare in modo intelligente."
+                        },
+                        {
+                          question: "26. Come so se un dominio è adatto per la SEO?",
+                          answer: "Un dominio è adatto per la SEO se: il nome è logico e pertinente, non ha passato di spam, sono presenti backlink di qualità. Un dominio scaduto con buoni link spesso ottiene punteggi migliori qui rispetto a un nuovo dominio."
+                        },
+                        {
+                          question: "27. L'acquisto di un dominio scaduto influenza i ranking di Google?",
+                          answer: "Sì. Google guarda la storia e la struttura dei link di un dominio. Un dominio scaduto affidabile può aiutare a costruire visibilità più velocemente, se usato correttamente."
+                        },
+                        {
+                          question: "28. Quali sono i vantaggi di un dominio scaduto con autorità?",
+                          answer: "I principali vantaggi sono: fiducia più veloce con i motori di ricerca, meno dipendenza dal link building, posizione di partenza più forte rispetto ai concorrenti con nuovi domini."
+                        },
+                        {
+                          question: "29. Devo avere una keyword nel mio dominio per la SEO?",
+                          answer: "Non necessariamente. Ricerche come 'dominio keyword SEO' mostrano che questa è una domanda frequente. Un nome chiaro e affidabile è più importante delle keyword esatte, specialmente per domini scaduti con autorità."
+                        },
+                        {
+                          question: "30. Un dominio corto è meglio di un dominio lungo?",
+                          answer: "Sì. I domini corti sono: più facili da ricordare, più professionali, più stabili nel valore. Molti domini scaduti premium sono proprio corti e potenti."
+                        },
+                        {
+                          question: "31. Posso usare un dominio scaduto per più progetti?",
+                          answer: "Sì, per esempio per: un sito web principale, un progetto di nicchia, un portale di marca. È importante però che il contenuto si colleghi logicamente alla storia del dominio."
+                        },
+                        {
+                          question: "32. Cosa succede ai vecchi backlink se creo un nuovo sito web?",
+                          answer: "I backlink rimangono finché non vengono rimossi dai siti web di riferimento. Questo è proprio uno dei grandi vantaggi dell'acquisto di un dominio scaduto."
+                        },
+                        {
+                          question: "33. Un dominio scaduto è meglio di più nuovi domini?",
+                          answer: "Per focus e SEO, un dominio scaduto forte è spesso più efficace di più nuovi domini senza autorità."
+                        },
+                        {
+                          question: "34. Posso ottenere clienti più velocemente con un dominio scaduto?",
+                          answer: "Indirettamente sì. Visibilità più veloce e più fiducia fanno sì che i visitatori convertano prima."
+                        },
+                        {
+                          question: "35. Quanto a lungo si mantiene il valore di un dominio scaduto?",
+                          answer: "Finché il dominio viene usato e mantenuto bene, il valore si mantiene e può persino crescere."
+                        },
+                        {
+                          question: "36. Perché dovrei comprare un dominio da un venditore specializzato?",
+                          answer: "Perché un venditore specializzato: verifica i domini in anticipo, esclude i rischi, guida i principianti, è trasparente sulla qualità e la storia. Questo fa la differenza tra scommettere e investire consapevolmente."
+                        }
+                      ].map((item, index) => (
+                        <article key={index} className="space-y-2">
+                          <h4 className="text-lg font-semibold text-white">{item.question}</h4>
+                          <p className="text-slate-400">{item.answer}</p>
+                        </article>
+                      ))}
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
               </Accordion>
             </div>
           </div>
