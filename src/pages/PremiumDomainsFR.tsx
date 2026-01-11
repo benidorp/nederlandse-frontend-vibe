@@ -2050,168 +2050,250 @@ const PremiumDomainsFR = () => {
         <section id="faq" className="py-20 bg-gradient-to-b from-slate-950 to-slate-900">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <Badge className="mb-4 bg-amber-500/10 text-amber-400 border-amber-500/30">
+              <Badge className="mb-4 bg-slate-800 text-amber-400 border-slate-700">
                 Questions Fréquentes
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                FAQ - Noms de Domaine Expirés
+                FAQ sur les Domaines Premium & SEO
               </h2>
-              <p className="text-slate-400 max-w-3xl mx-auto">
-                Tout ce que vous devez savoir sur l'achat de noms de domaine expirés premium.
-              </p>
             </div>
             
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-3xl mx-auto">
               <Accordion type="single" collapsible className="space-y-4">
-                <AccordionItem value="general" className="bg-slate-800/40 border-slate-700/50 rounded-xl px-6">
-                  <AccordionTrigger className="text-white hover:text-amber-400 text-left">
-                    <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-full bg-amber-500/10 flex items-center justify-center">
-                        <Globe className="w-4 h-4 text-amber-400" />
-                      </div>
-                      <span>Questions Générales</span>
-                    </div>
+                {[
+                  {
+                    question: "Où puis-je acheter un nom de domaine expiré avec des backlinks ?",
+                    answer: "Un nom de domaine expiré avec des backlinks s'achète mieux auprès d'un vendeur spécialisé qui vérifie manuellement les domaines pour leur qualité, leur historique et leur autorité. Ainsi, vous évitez d'acheter un nom de domaine avec des liens spam ou des problèmes SEO. Nous proposons uniquement des domaines expirés fiables qui ont été soigneusement vérifiés."
+                  },
+                  {
+                    question: "Qu'est-ce qu'un nom de domaine expiré fiable avec une haute autorité ?",
+                    answer: "Un nom de domaine expiré fiable avec une haute autorité est un domaine qui possède des backlinks de qualité, un historique de site web propre, pas d'historique de spam, jeux d'argent ou contenu adulte, et des liens pertinents provenant de contenu réel. Ce type de nom de domaine offre une vraie valeur SEO et vous donne une longueur d'avance dans Google."
+                  },
+                  {
+                    question: "Quelle est la valeur SEO d'un nom de domaine expiré avec des liens ?",
+                    answer: "La valeur SEO d'un nom de domaine expiré avec des liens réside principalement dans les backlinks existants, l'autorité de domaine accumulée et une confiance plus rapide auprès de Google. Cela peut raccourcir considérablement le temps de classement — souvent des mois voire des années plus rapidement qu'avec un nouveau nom de domaine."
+                  },
+                  {
+                    question: "Un nom de domaine expiré avec autorité est-il meilleur que le link building ?",
+                    answer: "Dans de nombreux cas, oui. Avec un nom de domaine expiré, vous achetez des liens et une autorité existants, tandis que le link building peut être chronophage, coûteux et risqué. Un ancien nom de domaine avec une valeur SEO vous donne immédiatement une longueur d'avance sans investissement de plusieurs mois en link building."
+                  },
+                  {
+                    question: "Puis-je utiliser un nom de domaine expiré pour un nouveau site web ?",
+                    answer: "Oui. Vous pouvez parfaitement utiliser un nom de domaine expiré avec une valeur SEO pour un nouveau site web, tant que le contenu correspond logiquement au sujet et à l'historique du domaine. Les backlinks restent actifs et vous profitez directement de l'autorité accumulée."
+                  },
+                  {
+                    question: "Quelle est la différence entre un nom de domaine premium et un nom de domaine expiré ?",
+                    answer: "Un nom de domaine premium est principalement précieux pour la qualité du nom et la valeur de marque, tandis qu'un nom de domaine expiré avec des backlinks apporte une autorité SEO et un historique supplémentaires. Les deux peuvent être précieux selon votre objectif. Certains domaines combinent les deux avantages."
+                  },
+                  {
+                    question: "Pourquoi les noms de domaine expirés avec des backlinks sont-ils plus chers ?",
+                    answer: "Les noms de domaine expirés avec des backlinks sont plus chers parce qu'ils ont déjà une valeur SEO, ils économisent du temps et des coûts, et ils permettent un démarrage plus rapide. Vous payez pour la confiance accumulée, pas seulement pour un nom. L'investissement est souvent rapidement rentabilisé par de meilleurs classements."
+                  },
+                  {
+                    question: "Les noms de domaine expirés avec autorité sont-ils adaptés aux boutiques en ligne ?",
+                    answer: "Oui. Pour les boutiques en ligne, la confiance est cruciale. Un nom de domaine expiré avec une haute autorité peut contribuer à une meilleure visibilité, des conversions plus élevées et une indexation plus rapide. Cela donne à votre boutique en ligne une longueur d'avance sur les concurrents qui commencent avec un nouveau nom de domaine."
+                  },
+                  {
+                    question: "Puis-je combiner un nom de domaine premium avec des avantages SEO ?",
+                    answer: "Oui. Certains noms de domaine premium sont également des domaines expirés avec un fort historique de liens. Cela combine la valeur de marque avec l'autorité SEO et est souvent le plus précieux. Dans notre portfolio, vous trouverez plusieurs domaines qui offrent les deux avantages."
+                  },
+                  {
+                    question: "Pourquoi de plus en plus d'entrepreneurs choisissent des noms de domaine expirés avec une valeur SEO ?",
+                    answer: "Parce que les entrepreneurs recherchent des résultats plus rapides dans Google, moins de dépendance au link building et une base solide pour la croissance. Un nom de domaine expiré fiable avec des backlinks et une autorité offre exactement cette longueur d'avance qui fait la différence."
+                  },
+                  {
+                    question: "Qu'est-ce que l'Autorité de Domaine (DA) et pourquoi est-ce important ?",
+                    answer: "L'Autorité de Domaine est un score de 1 à 100 développé par MOZ qui prédit la capacité d'un site web à se classer dans les moteurs de recherche. Un DA plus élevé signifie plus d'autorité et de meilleures chances de classement. Il est basé sur des facteurs tels que le nombre et la qualité des backlinks, l'âge du domaine et la fiabilité globale."
+                  },
+                  {
+                    question: "Comment fonctionne une redirection 301 pour le SEO ?",
+                    answer: "Une redirection 301 est une redirection permanente qui indique aux moteurs de recherche qu'une page a été déplacée de façon permanente. Lorsque vous redirigez en 301 un domaine premium vers votre site, une grande partie de la valeur SEO (link juice) de ce domaine est transférée vers votre site. Cela peut améliorer significativement vos classements."
+                  },
+                  {
+                    question: "Combien de temps faut-il pour voir des résultats ?",
+                    answer: "Les effets d'un transfert de domaine ou d'une redirection 301 sont généralement visibles dans les résultats de recherche dans les 2 à 8 semaines. Cela dépend de la fréquence à laquelle Google crawle votre site et de l'état actuel de votre site web. Les domaines premium avec des backlinks actifs montrent souvent des résultats plus rapides."
+                  },
+                  {
+                    question: "Quelle est la meilleure façon de trouver des noms de domaine expirés avec autorité ?",
+                    answer: "La meilleure façon est via un vendeur spécialisé qui vérifie les domaines au préalable. Chercher soi-même via des sites d'enchères comporte des risques. Nous sélectionnons uniquement des noms de domaine avec des liens de qualité, pas d'historique de spam et une vraie valeur SEO. Ainsi, vous êtes sûr d'investir dans un domaine fiable."
+                  },
+                  {
+                    question: "Pourquoi y a-t-il parfois des sites web de notre portfolio dans l'historique d'un domaine ?",
+                    answer: "Certains noms de domaine de notre portfolio ont été utilisés auparavant pour nos propres projets, sites de test ou redirections 301. Cela concerne des sites web comme NailTalk, OntwerpNovi, OliveVines et projets similaires. C'est justement un avantage : ces domaines ont des résultats prouvés et ont été activement testés pour leurs performances SEO. Tous nos noms de domaine sont minutieusement vérifiés avant la vente auprès de plusieurs sources (comme les archives d'historique web, Google, Ahrefs, MOZ et les vérificateurs de spam) et sont entièrement exempts d'historique nuisible comme le spam, le contenu adulte ou l'historique lié aux jeux d'argent. Un site web de notre propre portfolio dans l'historique est donc un signe de qualité et de gestion soigneuse — pas une raison de s'inquiéter."
+                  },
+                  {
+                    question: "Comment fonctionnent le SEO et le link building ? Et pourquoi dois-je continuer à entretenir mon domaine acheté ?",
+                    answer: "Le SEO (Search Engine Optimization) consiste à optimiser votre site web pour que les moteurs de recherche comme Google puissent mieux le trouver, le comprendre et le classer plus haut. Le link building est une partie cruciale de cela : obtenir des backlinks (références) d'autres sites web vers le vôtre. Ces liens fonctionnent comme des 'votes de confiance' et indiquent à Google que votre contenu est précieux.\n\n**Pourquoi l'entretien est essentiel :**\nUn nom de domaine premium avec des backlinks existants vous donne une base solide, mais aucun nom de domaine n'offre de garanties de classements. Le SEO est un processus continu. Les backlinks peuvent disparaître au fil du temps lorsque les sites référents passent hors ligne ou suppriment du contenu. De plus, les algorithmes de Google changent régulièrement, donc ce qui fonctionne aujourd'hui peut être différent demain.\n\n**Conseils pour un entretien et link building réussis :**\n• **Créez du contenu précieux** — Publiez régulièrement des articles, guides ou outils pertinents et originaux que d'autres veulent partager et vers lesquels ils veulent créer des liens.\n• **Guest blogging** — Écrivez des articles pour des sites web respectés dans votre secteur avec un lien retour vers votre site.\n• **Broken link building** — Trouvez des liens cassés sur des sites web pertinents et proposez votre contenu en remplacement.\n• **HARO/Helpareporter** — Répondez aux questions de journalistes pour obtenir des mentions et des liens dans des articles de presse.\n• **Réseaux sociaux et RP** — Partagez activement votre contenu et établissez des relations avec des influenceurs et les médias.\n• **Structure de liens internes** — Assurez-vous d'avoir des liens internes logiques entre vos pages pour distribuer l'autorité.\n• **Surveillez vos backlinks** — Utilisez des outils comme Ahrefs, MOZ ou SEMrush pour surveiller votre profil de liens et désavouer les liens nuisibles.\n• **SEO technique** — Assurez-vous d'avoir des temps de chargement rapides, un design adapté aux mobiles et une connexion HTTPS sécurisée.\n\n**Important à savoir :**\nAucun nom de domaine, aussi fort soit-il, ne garantit des positions au sommet de Google. L'autorité accumulée vous donne une longueur d'avance, mais le succès dépend d'efforts continus : du contenu régulier, du link building actif et de l'entretien technique. Considérez votre domaine premium comme une fondation solide — vous déterminez vous-même le bâtiment au-dessus avec des efforts SEO constants."
+                  }
+                ].map((faq, index) => (
+                  <AccordionItem 
+                    key={index} 
+                    value={`item-${index}`}
+                    className="bg-slate-800/40 border border-slate-700/50 rounded-xl px-6 data-[state=open]:border-amber-500/30"
+                  >
+                    <AccordionTrigger className="text-left text-white hover:text-amber-400 hover:no-underline py-4">
+                      <h3 className="font-semibold">{faq.question}</h3>
+                    </AccordionTrigger>
+                    <AccordionContent className="text-slate-400 pb-4 leading-relaxed">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+                
+                {/* Complete Guide: 35 Questions about Expired Domains */}
+                <AccordionItem 
+                  value="complete-guide"
+                  className="bg-gradient-to-br from-amber-500/10 to-slate-800/40 border border-amber-500/30 rounded-xl px-6"
+                >
+                  <AccordionTrigger className="text-left text-white hover:text-amber-400 hover:no-underline py-4">
+                    <h3 className="font-semibold">Guide Complet : 35 Questions sur les Noms de Domaine Expirés & SEO</h3>
                   </AccordionTrigger>
-                  <AccordionContent className="text-slate-300 pt-4">
-                    <div className="space-y-6">
+                  <AccordionContent className="text-slate-400 pb-6 leading-relaxed">
+                    <div className="space-y-8 whitespace-pre-line">
                       {[
                         {
-                          question: "1. Qu'est-ce qu'un nom de domaine expiré ?",
-                          answer: "Un nom de domaine expiré est un domaine qui a été utilisé auparavant mais qui n'a pas été renouvelé. Cela peut arriver parce que l'ancien propriétaire n'en avait plus besoin, a oublié de le renouveler, ou pour des raisons commerciales. Beaucoup de ces domaines ont encore une autorité et des backlinks — une ressource précieuse pour quiconque veut démarrer un nouveau projet."
+                          question: "1. Quel nom de domaine dois-je acheter en tant que débutant ?",
+                          answer: "En tant que débutant, il est préférable de choisir un nom de domaine facile à retenir, qui indique clairement ce que vous faites et qui inspire confiance. Beaucoup de débutants recherchent 'quel nom de domaine dois-je acheter' et arrivent automatiquement aux nouveaux domaines, alors qu'un nom de domaine expiré fiable a souvent déjà accumulé de l'autorité et de la valeur."
                         },
                         {
-                          question: "2. Qu'est-ce qu'un nom de domaine expiré avec des backlinks ?",
-                          answer: "C'est un nom de domaine expiré qui a encore des liens existants d'autres sites web. Ces backlinks donnent au domaine une autorité mesurable (comme le score MOZ DA), ce qui peut contribuer à un meilleur classement dans les moteurs de recherche. Si vous cherchez un nom de domaine avec valeur SEO, c'est ce que vous trouverez ici."
+                          question: "2. Quelle est la différence entre un nouveau nom de domaine et un nom de domaine expiré ?",
+                          answer: "Un nouveau nom de domaine n'a pas d'historique et commence complètement de zéro. Un nom de domaine expiré a déjà été enregistré et peut encore avoir des backlinks, de l'autorité et de la confiance auprès de Google. Cela rend un nom de domaine expiré souvent plus attractif pour le SEO et la visibilité."
                         },
                         {
-                          question: "3. Pourquoi acheter un nom de domaine expiré plutôt qu'un nouveau domaine ?",
-                          answer: "Avec un nouveau domaine, vous partez vraiment de zéro. Pas de confiance, pas de backlinks, pas d'historique. Avec un nom de domaine expiré de qualité, vous démarrez avec un avantage : vous bénéficiez de l'autorité et des liens construits au fil des années. Cela peut faire gagner des mois, voire des années de travail SEO."
+                          question: "3. Est-il préférable d'acheter un nouveau nom de domaine ou un nom de domaine expiré ?",
+                          answer: "Ceux qui recherchent 'nouveau nom de domaine ou nom de domaine expiré' comparent généralement la vitesse et les résultats. Pour le branding, un nouveau nom peut fonctionner, mais pour être trouvé plus rapidement dans Google, un bon nom de domaine expiré offre souvent une longueur d'avance claire."
                         },
                         {
-                          question: "4. Comment puis-je utiliser un nom de domaine expiré ?",
-                          answer: "Pour un nouveau site web, une boutique en ligne ou une page d'entreprise. Pour un projet d'affiliation ou de niche. Pour un redirect 301 afin de renforcer votre domaine actuel avec de l'autorité. Pour un PBN (réseau de blogs privés)."
+                          question: "4. Pourquoi mon nouveau site web se classe-t-il si mal dans Google ?",
+                          answer: "Les nouveaux sites web doivent encore établir leur fiabilité. Sans backlinks et historique, cela prend souvent des mois. Un nom de domaine expiré avec de bons liens peut vous éviter de devoir tout recommencer de zéro."
                         },
                         {
-                          question: "5. Qu'est-ce que l'Autorité de Domaine MOZ (DA) ?",
-                          answer: "L'Autorité de Domaine est un score développé par Moz, sur une échelle de 1 à 100. Plus le chiffre est élevé, plus le domaine a de l'autorité et plus il peut contribuer à des classements plus élevés dans Google. Les domaines avec DA 20+ sont généralement précieux ; les domaines avec DA 30+ sont premium."
-                        }
-                      ].map((item, index) => (
-                        <article key={index} className="space-y-2">
-                          <h4 className="text-lg font-semibold text-white">{item.question}</h4>
-                          <p className="text-slate-400">{item.answer}</p>
-                        </article>
-                      ))}
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="quality" className="bg-slate-800/40 border-slate-700/50 rounded-xl px-6">
-                  <AccordionTrigger className="text-white hover:text-amber-400 text-left">
-                    <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-full bg-amber-500/10 flex items-center justify-center">
-                        <Shield className="w-4 h-4 text-amber-400" />
-                      </div>
-                      <span>Qualité & Fiabilité</span>
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-slate-300 pt-4">
-                    <div className="space-y-6">
-                      {[
-                        {
-                          question: "6. Comment savoir si un nom de domaine expiré est fiable ?",
-                          answer: "Examinez la qualité des backlinks, pas seulement la quantité. Vérifiez l'historique dans Wayback Machine. Vérifiez les pénalités dans Google Search Console (si applicable). Analysez les métriques DA/PA via Moz, Ahrefs ou Majestic. Les vendeurs sérieux fournissent cette information de manière transparente."
+                          question: "5. Est-il sûr d'acheter un nom de domaine expiré ?",
+                          answer: "Oui, à condition qu'il s'agisse d'un nom de domaine expiré vérifié et fiable. Le risque n'est pas dans 'expiré', mais dans les domaines qui n'ont pas été vérifiés pour le spam, les abus ou les mauvais backlinks."
                         },
                         {
-                          question: "7. Comment vérifier un nom de domaine expiré avant de l'acheter ?",
-                          answer: "Utilisez Moz, Ahrefs ou Majestic pour l'analyse des liens. Consultez archive.org (Wayback Machine) pour l'histoire du site. Utilisez Google Safe Browsing pour vérifier le statut de spam. Vérifiez auprès d'un vendeur spécialisé si le domaine a été pré-vérifié."
+                          question: "6. Que signifie un nom de domaine avec de bons backlinks ?",
+                          answer: "Un nom de domaine avec de bons backlinks a des références provenant de sites web réels et pertinents. Ces liens fournissent de l'autorité et de la confiance auprès des moteurs de recherche, ce qui est essentiel pour les performances SEO."
                         },
                         {
-                          question: "8. Les backlinks sont-ils garantis pour toujours ?",
-                          answer: "Non. Les backlinks peuvent être supprimés par les sites référents ou devenir obsolètes avec le temps. Mais les backlinks de qualité provenant de sources stables (universités, gouvernements, grands médias) restent généralement en place pendant longtemps."
+                          question: "7. Pourquoi les backlinks sont-ils importants lors de l'achat d'un nom de domaine ?",
+                          answer: "Les backlinks sont l'un des facteurs de classement les plus importants de Google. Lorsque vous recherchez 'acheter nom de domaine SEO', vous recherchez en fait un domaine qui a déjà établi la confiance — exactement ce qu'offre un bon nom de domaine expiré."
                         },
                         {
-                          question: "9. Quels risques y a-t-il avec un nom de domaine expiré ?",
-                          answer: "Un domaine peut avoir une mauvaise histoire (spam, malware, contenu interdit). Les liens de mauvaise qualité peuvent même nuire à votre classement. C'est pourquoi un contrôle de qualité préalable est essentiel."
+                          question: "8. Comment puis-je voir si un nom de domaine expiré est fiable ?",
+                          answer: "Un nom de domaine expiré fiable est vérifié pour : l'historique du site web, la qualité des backlinks, l'absence de spam, de jeux d'argent ou de contenu adulte. En tant que vendeur, vous ne sélectionnez que les domaines qui répondent à ces critères."
                         },
                         {
-                          question: "10. Est-il prudent d'acheter un nom de domaine expiré bon marché ?",
-                          answer: "Pas toujours. Des domaines très bon marché peuvent avoir été dévalués, blacklistés ou pleins de liens spam. Il est préférable de payer un peu plus pour un domaine vérifié avec une vraie histoire."
-                        }
-                      ].map((item, index) => (
-                        <article key={index} className="space-y-2">
-                          <h4 className="text-lg font-semibold text-white">{item.question}</h4>
-                          <p className="text-slate-400">{item.answer}</p>
-                        </article>
-                      ))}
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="seo" className="bg-slate-800/40 border-slate-700/50 rounded-xl px-6">
-                  <AccordionTrigger className="text-white hover:text-amber-400 text-left">
-                    <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-full bg-amber-500/10 flex items-center justify-center">
-                        <TrendingUp className="w-4 h-4 text-amber-400" />
-                      </div>
-                      <span>SEO & Valeur</span>
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-slate-300 pt-4">
-                    <div className="space-y-6">
-                      {[
-                        {
-                          question: "11. Comment les redirections 301 fonctionnent-elles avec les domaines expirés ?",
-                          answer: "Vous pouvez rediriger un domaine expiré avec autorité vers votre propre site web. De cette façon, la valeur des liens (link juice) va vers votre domaine et votre classement dans Google peut s'améliorer. C'est l'une des stratégies SEO les plus efficaces."
+                          question: "9. Puis-je utiliser un nom de domaine expiré pour un nouveau site web ?",
+                          answer: "Oui. Vous pouvez parfaitement utiliser un nom de domaine expiré pour un projet complètement nouveau. Le contenu est nouveau, mais le nom de domaine apporte déjà une autorité en ligne."
                         },
                         {
-                          question: "12. Quelle est la différence entre DA, PA et DR ?",
-                          answer: "DA (Domain Authority) : score de Moz pour l'ensemble du domaine. PA (Page Authority) : score de Moz pour des pages individuelles. DR (Domain Rating) : alternative d'Ahrefs à DA. Tous sont des scores indicatifs, pas des valeurs officielles de Google, mais ils sont très utiles pour comparer les domaines."
+                          question: "10. Un nom de domaine expiré convient-il aux débutants ?",
+                          answer: "Certainement. Les débutants en profitent souvent le plus parce qu'ils : obtiennent une visibilité plus rapide, ont moins de retard SEO, font un démarrage plus professionnel."
                         },
                         {
-                          question: "13. Un nom de domaine expiré est-il une garantie de classement plus élevé ?",
-                          answer: "Non, ce n'est pas une garantie. Mais ça aide énormément. Un bon contenu reste nécessaire. Mais vous démarrez avec un avantage significatif par rapport à un tout nouveau domaine."
+                          question: "11. Pourquoi certains noms de domaine sont-ils plus chers que d'autres ?",
+                          answer: "Les recherches comme 'pourquoi un nom de domaine est-il si cher' proviennent souvent d'une incompréhension de la valeur. Le prix est déterminé par : la qualité du nom, la valeur SEO, les backlinks, l'applicabilité commerciale."
                         },
                         {
-                          question: "14. Puis-je utiliser un nom de domaine expiré pour une nouvelle marque ?",
-                          answer: "Oui, tant que le nom convient à votre marque et que l'historique du domaine est propre. Assurez-vous qu'il n'y a pas de conflits de marques."
-                        }
-                      ].map((item, index) => (
-                        <article key={index} className="space-y-2">
-                          <h4 className="text-lg font-semibold text-white">{item.question}</h4>
-                          <p className="text-slate-400">{item.answer}</p>
-                        </article>
-                      ))}
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="buying" className="bg-slate-800/40 border-slate-700/50 rounded-xl px-6">
-                  <AccordionTrigger className="text-white hover:text-amber-400 text-left">
-                    <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-full bg-amber-500/10 flex items-center justify-center">
-                        <Award className="w-4 h-4 text-amber-400" />
-                      </div>
-                      <span>Achat & Processus</span>
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-slate-300 pt-4">
-                    <div className="space-y-6">
-                      {[
-                        {
-                          question: "15. Que dois-je faire après avoir acheté un nom de domaine expiré ?",
-                          answer: "Transférez le domaine vers votre propre registrar. Configurez un hébergement ou une redirection. Soumettez une sitemap à Google Search Console. Construisez du contenu pertinent ou liez le domaine à votre projet principal."
+                          question: "12. Puis-je revendre un nom de domaine expiré plus tard ?",
+                          answer: "Oui. Beaucoup de gens recherchent 'nom de domaine comme investissement'. Un nom de domaine expiré fort conserve souvent sa valeur et peut même augmenter de prix."
                         },
                         {
-                          question: "16. Combien coûte un nom de domaine expiré ?",
-                          answer: "Les prix varient énormément : de quelques dizaines d'euros à des milliers d'euros. Le prix dépend de la qualité des backlinks, du score DA, du potentiel de la niche et de la demande du marché."
+                          question: "13. Un nom de domaine expiré peut-il être mauvais pour le SEO ?",
+                          answer: "Seulement s'il a un mauvais historique. C'est pourquoi la différence est grande entre : les domaines expirés non vérifiés et les noms de domaine soigneusement sélectionnés et fiables."
                         },
                         {
-                          question: "17. Comment transférer un domaine acheté ?",
-                          answer: "Après l'achat, vous recevez un code de transfert (code EPP/Auth) dans les 24 heures par e-mail. Avec ce code, vous pouvez transférer le domaine vers votre propre registrar."
+                          question: "14. À quoi dois-je faire attention lors de l'achat d'un nom de domaine expiré ?",
+                          answer: "Points d'attention importants : historique sans spam, backlinks pertinents, nom de domaine logique, pas de risque de marque déposée."
                         },
                         {
-                          question: "18. Est-ce que je possède immédiatement le domaine après le paiement ?",
-                          answer: "Après le paiement, vous recevez le code de transfert et tous les droits sur le domaine. Le transfert effectif vers votre registrar prend généralement 1 à 5 jours ouvrables selon l'extension du domaine."
+                          question: "15. À quelle vitesse puis-je démarrer après l'achat d'un nom de domaine ?",
+                          answer: "Après le transfert, vous pouvez utiliser le nom de domaine immédiatement pour : un site web, un e-mail, une boutique en ligne. Tout comme avec un nouveau nom de domaine."
+                        },
+                        {
+                          question: "16. Ai-je besoin de connaissances techniques pour utiliser un nom de domaine expiré ?",
+                          answer: "Non. Un nom de domaine expiré fonctionne techniquement de la même manière qu'un nouveau nom de domaine et peut être utilisé chez n'importe quel hébergeur."
+                        },
+                        {
+                          question: "17. Un nom de domaine expiré convient-il à une boutique en ligne ?",
+                          answer: "Oui. Les boutiques en ligne bénéficient particulièrement de : la confiance, l'autorité, un meilleur démarrage dans Google. C'est crucial pour les conversions."
+                        },
+                        {
+                          question: "18. Que signifie l'autorité de domaine lors de l'achat d'un nom de domaine ?",
+                          answer: "L'autorité de domaine est une indication de la force d'un domaine basée sur les liens et l'historique. Beaucoup de noms de domaine expirés obtiennent ici un score plus élevé que les nouveaux domaines."
+                        },
+                        {
+                          question: "19. Un nom de domaine expiré est-il meilleur que le link building ?",
+                          answer: "Dans de nombreux cas, oui. Vous achetez en quelque sorte une réputation existante, au lieu de la construire plus tard de manière coûteuse et risquée."
+                        },
+                        {
+                          question: "20. Pourquoi les entrepreneurs choisissent-ils consciemment un nom de domaine expiré ?",
+                          answer: "Parce qu'ils recherchent : des résultats plus rapides, moins de risque SEO, un démarrage intelligent avec une longueur d'avance."
+                        },
+                        {
+                          question: "21. Un nom de domaine expiré convient-il à toutes les niches ?",
+                          answer: "Pour presque toutes les niches, de bons noms de domaine expirés sont disponibles, tant que le nom et l'historique correspondent logiquement au sujet."
+                        },
+                        {
+                          question: "22. Puis-je obtenir de l'aide pour choisir le bon nom de domaine ?",
+                          answer: "Oui. Beaucoup de débutants recherchent 'quel nom de domaine convient à mon entreprise'. L'accompagnement évite les mauvais achats et économise de l'argent."
+                        },
+                        {
+                          question: "23. Quel est le plus grand avantage d'un nom de domaine expiré ?",
+                          answer: "Le plus grand avantage est que vous ne commencez pas de zéro dans les moteurs de recherche."
+                        },
+                        {
+                          question: "24. Quelle est la plus grande idée fausse sur les noms de domaine expirés ?",
+                          answer: "Qu'ils sont par définition risqués. En réalité, ce sont les domaines non testés qui sont risqués — pas les noms de domaine expirés soigneusement sélectionnés."
+                        },
+                        {
+                          question: "25. Pour qui un nom de domaine expiré fiable convient-il le mieux ?",
+                          answer: "Pour : les débutants, les entrepreneurs, les boutiques en ligne, les projets SEO, les investisseurs. Tous ceux qui recherchent 'acheter le meilleur nom de domaine' et veulent commencer intelligemment."
+                        },
+                        {
+                          question: "26. Comment savoir si un nom de domaine convient au SEO ?",
+                          answer: "Un nom de domaine convient au SEO si : le nom est logique et pertinent, il n'a pas d'historique de spam, il y a des backlinks de qualité. Un nom de domaine expiré avec de bons liens obtient souvent ici un meilleur score qu'un nouveau nom de domaine."
+                        },
+                        {
+                          question: "27. L'achat d'un nom de domaine expiré a-t-il une influence sur les classements Google ?",
+                          answer: "Oui. Google regarde l'historique et la structure des liens d'un domaine. Un nom de domaine expiré fiable peut aider à construire une visibilité plus rapidement, s'il est correctement utilisé."
+                        },
+                        {
+                          question: "28. Quels sont les avantages d'un nom de domaine expiré avec autorité ?",
+                          answer: "Les principaux avantages sont : confiance plus rapide auprès des moteurs de recherche, moins de dépendance au link building, position de départ plus forte que les concurrents avec de nouveaux domaines."
+                        },
+                        {
+                          question: "29. Dois-je avoir un mot-clé dans mon nom de domaine pour le SEO ?",
+                          answer: "Pas nécessairement. Les recherches comme 'mot-clé nom de domaine SEO' montrent que c'est une question fréquente. Un nom clair et fiable est plus important que des mots-clés exacts, surtout pour les noms de domaine expirés avec autorité."
+                        },
+                        {
+                          question: "30. Un nom de domaine court est-il meilleur qu'un nom de domaine long ?",
+                          answer: "Oui. Les noms de domaine courts sont : plus faciles à retenir, plus professionnels, plus stables en valeur. Beaucoup de noms de domaine expirés premium sont justement courts et puissants."
+                        },
+                        {
+                          question: "31. Puis-je utiliser un nom de domaine expiré pour plusieurs projets ?",
+                          answer: "Oui, par exemple pour : un site web principal, un projet de niche, un portail de marque. Il est cependant important que le contenu corresponde logiquement à l'historique du domaine."
+                        },
+                        {
+                          question: "32. Qu'arrive-t-il aux anciens backlinks si je place un nouveau site web ?",
+                          answer: "Les backlinks restent en place tant qu'ils ne sont pas supprimés par les sites référents. C'est justement l'un des grands avantages de l'achat d'un nom de domaine expiré."
+                        },
+                        {
+                          question: "33. Un nom de domaine expiré est-il meilleur que plusieurs nouveaux domaines ?",
+                          answer: "Pour le focus et le SEO, un seul nom de domaine expiré fort est souvent plus efficace que plusieurs nouveaux domaines sans autorité."
+                        },
+                        {
+                          question: "34. Puis-je obtenir des clients plus rapidement avec un nom de domaine expiré ?",
+                          answer: "Indirectement, oui. Une visibilité plus rapide et plus de confiance font que les visiteurs convertissent plus tôt."
+                        },
+                        {
+                          question: "35. Combien de temps la valeur d'un nom de domaine expiré reste-t-elle préservée ?",
+                          answer: "Tant que le domaine est bien utilisé et entretenu, la valeur reste préservée et peut même augmenter."
+                        },
+                        {
+                          question: "36. Pourquoi devrais-je acheter un nom de domaine chez un vendeur spécialisé ?",
+                          answer: "Parce qu'un vendeur spécialisé : vérifie les domaines au préalable, exclut les risques, accompagne les débutants, est transparent sur la qualité et l'historique. C'est ce qui fait la différence entre jouer et investir consciemment."
                         }
                       ].map((item, index) => (
                         <article key={index} className="space-y-2">
@@ -2360,89 +2442,162 @@ const PremiumDomainsFR = () => {
           </div>
         </section>
 
-        {/* Domain Transfer Instructions */}
+        {/* Domain Transfer Instructions - Collapsible Section */}
         <section id="transfert-domaine" className="py-16 bg-slate-900">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="border border-amber-500/30 rounded-xl bg-slate-800/50">
-                <div className="px-6 py-4">
-                  <h2 className="text-xl font-bold text-white">
-                    <div className="flex items-center gap-3">
-                      <Globe className="w-6 h-6 text-amber-400" />
-                      <span>Comment transférer votre domaine avec le code de transfert (EPP/Auth code) ?</span>
-                    </div>
-                  </h2>
-                </div>
-                <div className="px-6 pb-6">
-                  <div className="space-y-6 text-slate-300">
-                    <p className="text-lg">
-                      Après votre achat, vous recevrez un <strong className="text-amber-400">code de transfert</strong> (également appelé code EPP ou code Auth) sous 24 heures à l'adresse e-mail que vous avez fournie lors du paiement. Avec ce code, vous pouvez facilement transférer le domaine vers votre propre registrar ou hébergeur.
-                    </p>
-                    
-                    <div className="bg-slate-900/50 rounded-lg p-6 border border-slate-700">
-                      <h3 className="text-lg font-semibold text-white mb-4">Instructions étape par étape :</h3>
-                      <ol className="space-y-4">
-                        <li className="flex gap-3">
-                          <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">1</span>
+                  <div className="px-6 py-4">
+                    <h2 className="text-xl font-bold text-white">
+                      <div className="flex items-center gap-3">
+                        <Globe className="w-6 h-6 text-amber-400" />
+                        <span>Comment transférer votre domaine avec le code de transfert (EPP/Auth code) ?</span>
+                      </div>
+                    </h2>
+                  </div>
+                  <div className="px-6 pb-6">
+                    <div className="space-y-6 text-slate-300">
+                      <p className="text-lg">
+                        Après votre achat, vous recevrez un <strong className="text-amber-400">code de transfert</strong> (également appelé code EPP ou code Auth) sous 24 heures à l'adresse e-mail que vous avez fournie lors du paiement. Avec ce code, vous pouvez facilement transférer le domaine vers votre propre registrar ou hébergeur.
+                      </p>
+                      
+                      <div className="bg-slate-900/50 rounded-lg p-6 border border-slate-700">
+                        <h3 className="text-lg font-semibold text-white mb-4">Instructions étape par étape :</h3>
+                        <ol className="space-y-4">
+                          <li className="flex gap-3">
+                            <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">1</span>
+                            <div>
+                              <strong className="text-white">Recevez le code de transfert</strong>
+                              <p className="text-slate-400 mt-1">Vérifiez votre boîte de réception (et dossier spam) pour l'e-mail avec le code de transfert. Vous le recevrez sous 24 heures après le paiement.</p>
+                            </div>
+                          </li>
+                          <li className="flex gap-3">
+                            <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">2</span>
+                            <div>
+                              <strong className="text-white">Connectez-vous chez votre registrar ou hébergeur</strong>
+                              <p className="text-slate-400 mt-1">Allez dans la gestion de domaines de votre fournisseur (par ex. OVH, Gandi, Hostinger, GoDaddy, etc.).</p>
+                            </div>
+                          </li>
+                          <li className="flex gap-3">
+                            <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">3</span>
+                            <div>
+                              <strong className="text-white">Lancez le transfert de domaine</strong>
+                              <p className="text-slate-400 mt-1">Recherchez l'option "Transférer domaine", "Transfer domain" ou "Reprendre domaine". Entrez le nom de domaine que vous souhaitez transférer.</p>
+                            </div>
+                          </li>
+                          <li className="flex gap-3">
+                            <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">4</span>
+                            <div>
+                              <strong className="text-white">Entrez le code de transfert</strong>
+                              <p className="text-slate-400 mt-1">Collez le code de transfert (code EPP/Auth) que vous avez reçu par e-mail dans le champ prévu à cet effet.</p>
+                            </div>
+                          </li>
+                          <li className="flex gap-3">
+                            <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">5</span>
+                            <div>
+                              <strong className="text-white">Confirmez le transfert</strong>
+                              <p className="text-slate-400 mt-1">Entrez le nom de domaine acheté chez votre fournisseur et confirmez le transfert. Entrez ensuite le code EPP (code de transfert) que vous avez reçu de nous.</p>
+                            </div>
+                          </li>
+                          <li className="flex gap-3">
+                            <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">6</span>
+                            <div>
+                              <strong className="text-white">Attendez la finalisation</strong>
+                              <p className="text-slate-400 mt-1">Le transfert est maintenant lancé et prend généralement 1 à 5 jours ouvrables, selon l'extension du domaine (.nl, .be, .eu, .com, etc.). Une fois le transfert terminé, le domaine apparaîtra automatiquement dans votre compte.</p>
+                            </div>
+                          </li>
+                          <li className="flex gap-3">
+                            <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">7</span>
+                            <div>
+                              <strong className="text-white">Utilisez votre domaine</strong>
+                              <p className="text-slate-400 mt-1">Après finalisation, vous pouvez utiliser le domaine immédiatement : utilisez-le comme redirection 301 vers votre site web existant pour une valeur SEO supplémentaire, ou liez-le à un pack d'hébergement pour créer un nouveau site web.</p>
+                            </div>
+                          </li>
+                        </ol>
+                      </div>
+                      
+                      <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg p-4">
+                        <div className="flex gap-3">
+                          <CheckCircle className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
                           <div>
-                            <strong className="text-white">Recevez le code de transfert</strong>
-                            <p className="text-slate-400 mt-1">Vérifiez votre boîte de réception (et dossier spam) pour l'e-mail avec le code de transfert. Vous le recevrez sous 24 heures après le paiement.</p>
+                            <strong className="text-white">Notre recommandation : Junda Hosting</strong>
+                            <p className="text-slate-300 mt-1">
+                              Vous cherchez un hébergement ou un enregistrement de domaine fiable ? Nous recommandons <strong className="text-amber-400">Junda</strong> — un fournisseur néerlandais avec un excellent support, des serveurs rapides et des prix compétitifs. Junda offre le transfert de domaine gratuit et facilite la liaison de votre nouveau domaine à un hébergement WordPress professionnel.
+                            </p>
+                            <div className="flex flex-wrap gap-3 mt-3">
+                              <a 
+                                href="https://www.junda.nl/wordpress-hosting?via=291063" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-semibold rounded-lg transition-colors"
+                              >
+                                <ExternalLink className="w-4 h-4" />
+                                Voir Hébergement WordPress
+                              </a>
+                              <a 
+                                href="https://www.junda.nl/domeinnaam-verhuizen?via=291063" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 px-4 py-2 border border-amber-500 text-amber-400 hover:bg-amber-500/10 font-semibold rounded-lg transition-colors"
+                              >
+                                <ExternalLink className="w-4 h-4" />
+                                Transférer Domaine
+                              </a>
+                            </div>
                           </div>
-                        </li>
-                        <li className="flex gap-3">
-                          <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">2</span>
-                          <div>
-                            <strong className="text-white">Connectez-vous chez votre registrar ou hébergeur</strong>
-                            <p className="text-slate-400 mt-1">Allez dans la gestion de domaines de votre fournisseur (par ex. OVH, Gandi, Hostinger, GoDaddy, etc.).</p>
-                          </div>
-                        </li>
-                        <li className="flex gap-3">
-                          <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">3</span>
-                          <div>
-                            <strong className="text-white">Lancez le transfert de domaine</strong>
-                            <p className="text-slate-400 mt-1">Recherchez l'option "Transférer domaine", "Transfer domain" ou "Reprendre domaine". Entrez le nom de domaine que vous souhaitez transférer.</p>
-                          </div>
-                        </li>
-                        <li className="flex gap-3">
-                          <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">4</span>
-                          <div>
-                            <strong className="text-white">Entrez le code de transfert</strong>
-                            <p className="text-slate-400 mt-1">Collez le code de transfert (code EPP/Auth) que vous avez reçu par e-mail.</p>
-                          </div>
-                        </li>
-                        <li className="flex gap-3">
-                          <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">5</span>
-                          <div>
-                            <strong className="text-white">Confirmez et attendez</strong>
-                            <p className="text-slate-400 mt-1">Le transfert prend généralement 1 à 5 jours ouvrables selon l'extension du domaine. Vous recevrez une confirmation lorsque le transfert sera terminé.</p>
-                          </div>
-                        </li>
-                      </ol>
-                    </div>
-                    
-                    <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg p-4">
-                      <p className="text-amber-400 font-semibold mb-2">💡 Conseil</p>
-                      <p className="text-slate-300 text-sm">
-                        Assurez-vous que le domaine n'est pas verrouillé (Domain Lock) avant de commencer le transfert. Si vous avez des questions, n'hésitez pas à nous contacter.
+                        </div>
+                      </div>
+                      
+                      <p className="text-slate-400 text-sm">
+                        Vous avez des questions sur le transfert de domaine ? N'hésitez pas à nous contacter via <a href="mailto:support@iaee.eu" className="text-amber-400 hover:text-amber-300">support@iaee.eu</a>.
                       </p>
                     </div>
                   </div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Section */}
+        <section className="py-16 bg-slate-950">
+          <div className="container mx-auto px-4">
+            <div className="max-w-2xl mx-auto text-center">
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                Contactez-Nous
+              </h2>
+              <p className="text-slate-300 mb-8">
+                Vous avez des questions sur un domaine spécifique ou souhaitez des conseils sur le nom de domaine expiré qui convient le mieux à votre projet ? N'hésitez pas à nous contacter.
+              </p>
+              <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-8">
+                <div className="flex flex-col gap-4">
+                  <div className="flex items-center justify-center gap-3">
+                    <Mail className="h-5 w-5 text-amber-400" />
+                    <a href="mailto:support@iaee.eu" className="text-amber-400 hover:text-amber-300 transition-colors text-lg font-medium">
+                      support@iaee.eu
+                    </a>
+                  </div>
+                  <p className="text-slate-400 text-sm">
+                    Nous répondons à votre message dans les 24 heures.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Scroll to Top Button */}
-        <button 
+        {/* Back to Top Button */}
+        <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="fixed bottom-6 right-6 z-50 p-3 bg-amber-500 hover:bg-amber-600 text-slate-950 rounded-full shadow-lg transition-all hover:scale-110"
+          className="fixed bottom-6 right-6 z-50 p-3 bg-amber-500 hover:bg-amber-600 text-slate-950 rounded-full shadow-lg transition-all duration-200 hover:shadow-xl"
           aria-label="Retour en haut"
         >
           <ArrowUp className="w-6 h-6" />
         </button>
 
+        {/* Legal Footer */}
         <LegalLinksPremiumDomainsFR />
+
+        {/* Footer */}
         <FooterPremiumDomainsFR />
       </div>
     </>
