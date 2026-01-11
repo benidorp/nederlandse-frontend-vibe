@@ -885,20 +885,6 @@ const premiumDomains = [
     topBacklinks: ["rug.nl (DA 84)", "nu.nl (DA 91)", "wetenschapsagenda.nl (DA 65)"]
   },
   {
-    name: "gastrosafezone.eu",
-    description: "Design en horeca veiligheid domein met backlinks van CNN, The Conversation, Pagina12 en Elle Decor.",
-    mozScore: 25,
-    pageAuthority: 24,
-    linkingDomains: 47,
-    inboundLinks: "66+",
-    followedLinks: "58+",
-    category: "Design/Horeca",
-    price: "€249",
-    stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
-    backlinks: "66+",
-    topBacklinks: ["cnn.com (DA 94)", "theconversation.com (DA 92)", "realty.rbc.ru (DA 88)", "pagina12.com.ar (DA 82)", "elledecor.com (DA 80)"]
-  },
-  {
     name: "khresmoi.eu",
     description: "Medisch zoek-EU-project domein met backlinks van MDPI, Springer, BioMedCentral en Charles University.",
     mozScore: 27,
