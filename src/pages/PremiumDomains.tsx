@@ -1866,7 +1866,7 @@ const PremiumDomains = () => {
                               ></stripe-buy-button>`
                             }}
                           />
-                          <div className="flex flex-col items-center gap-1.5 text-center">
+                          <div className="flex flex-col items-center gap-1.5 text-center" data-nosnippet>
                             <div className="flex items-center justify-center gap-1 flex-wrap">
                               {/* Apple Pay */}
                               <div className="flex items-center bg-black rounded px-1 py-0.5 h-4">
@@ -1936,7 +1936,7 @@ const PremiumDomains = () => {
                               Koop Nu
                             </div>
                           )}
-                          <div className="flex flex-col items-center gap-2 text-center">
+                          <div className="flex flex-col items-center gap-2 text-center" data-nosnippet>
                             <div className="flex items-center justify-center gap-1 flex-wrap">
                               {/* Visa - Clear text logo */}
                               <div className="flex items-center bg-[#1A1F71] rounded px-1 py-0.5 h-4">

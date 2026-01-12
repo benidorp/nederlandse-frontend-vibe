@@ -1861,7 +1861,7 @@ const PremiumDomainsDE = () => {
                           >
                             Jetzt Kaufen
                           </a>
-                          <div className="flex flex-col items-center gap-2 text-center">
+                          <div className="flex flex-col items-center gap-2 text-center" data-nosnippet>
                             <div className="flex items-center justify-center gap-1 flex-wrap">
                               {/* Visa - Clear text logo */}
                               <div className="flex items-center bg-[#1A1F71] rounded px-1 py-0.5 h-4">
