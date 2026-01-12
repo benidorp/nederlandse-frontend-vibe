@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// Using native anchor tags for absolute URLs
 
 interface LanguageOption {
   code: string;
@@ -7,16 +7,16 @@ interface LanguageOption {
 }
 
 const languages: LanguageOption[] = [
-  { code: "nl", name: "Nederlands", path: "/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" },
-  { code: "en", name: "English", path: "/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" },
-  { code: "de", name: "Deutsch", path: "/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert" },
-  { code: "fr", name: "Français", path: "/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo" },
-  { code: "es", name: "Español", path: "/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" },
-  { code: "it", name: "Italiano", path: "/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo" },
-  { code: "pl", name: "Polski", path: "/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo" },
-  { code: "pt", name: "Português", path: "/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" },
-  { code: "zh", name: "中文", path: "/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" },
-  { code: "ja", name: "日本語", path: "/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" },
+  { code: "nl", name: "Nederlands", path: "https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" },
+  { code: "en", name: "English", path: "https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" },
+  { code: "de", name: "Deutsch", path: "https://www.iaee.eu/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert" },
+  { code: "fr", name: "Français", path: "https://www.iaee.eu/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo" },
+  { code: "es", name: "Español", path: "https://www.iaee.eu/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" },
+  { code: "it", name: "Italiano", path: "https://www.iaee.eu/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo" },
+  { code: "pl", name: "Polski", path: "https://www.iaee.eu/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo" },
+  { code: "pt", name: "Português", path: "https://www.iaee.eu/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" },
+  { code: "zh", name: "中文", path: "https://www.iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" },
+  { code: "ja", name: "日本語", path: "https://www.iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" },
 ];
 
 // SVG Flag components
@@ -131,9 +131,9 @@ const LanguageSwitcher = ({ currentLanguage }: LanguageSwitcherProps) => {
           const isActive = currentLanguage === lang.code;
           
           return (
-            <Link
+            <a
               key={lang.code}
-              to={lang.path}
+              href={lang.path}
               className={`
                 relative w-6 h-5 sm:w-7 sm:h-5 rounded-sm overflow-hidden border transition-all duration-200 
                 hover:scale-110 hover:shadow-md bg-slate-800 p-0.5
@@ -145,7 +145,7 @@ const LanguageSwitcher = ({ currentLanguage }: LanguageSwitcherProps) => {
               title={lang.name}
             >
               <FlagComponent />
-            </Link>
+            </a>
           );
         })}
       </div>
