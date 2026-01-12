@@ -2597,6 +2597,27 @@ const PremiumDomainsFR = () => {
                           </div>
                         </div>
                       </div>
+
+                      {/* NordVPN Recommendation Section */}
+                      <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-lg p-4 mt-4">
+                        <div className="text-center">
+                          <h4 className="font-bold text-white text-lg mb-2">🔒 Protégez Votre Vie Privée avec NordVPN</h4>
+                          <p className="text-white/90 text-sm mb-3">
+                            Qu'est-ce qu'un VPN ? Un <a href="https://www.dpbolvw.net/click-100643838-12814529" target="_blank" rel="noopener noreferrer" className="underline text-yellow-300 hover:text-yellow-200">Réseau Privé Virtuel (VPN)</a> chiffre votre connexion internet et masque votre adresse IP, protégeant vos données personnelles contre les pirates, les traqueurs et la surveillance.
+                          </p>
+                          <p className="text-white/80 text-xs mb-4">
+                            Pour les propriétaires de domaines premium, protéger votre identité en ligne est crucial. NordVPN vous permet de naviguer anonymement, d'accéder au contenu mondial et de sécuriser vos transactions commerciales.
+                          </p>
+                          <a 
+                            href="https://www.dpbolvw.net/click-100643838-12814529" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-2 px-6 rounded-full transition-colors text-sm"
+                          >
+                            Obtenez NordVPN Maintenant →
+                          </a>
+                        </div>
+                      </div>
                       
                       <p className="text-slate-400 text-sm">
                         Vous avez des questions sur le transfert de domaine ? N'hésitez pas à nous contacter via <a href="mailto:support@iaee.eu" className="text-amber-400 hover:text-amber-300">support@iaee.eu</a>.
