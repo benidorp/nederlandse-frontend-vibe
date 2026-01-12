@@ -2549,6 +2549,27 @@ const PremiumDomainsDE = () => {
                           </div>
                         </div>
                       </div>
+
+                      {/* NordVPN Recommendation Section */}
+                      <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-lg p-4 mt-4">
+                        <div className="text-center">
+                          <h4 className="font-bold text-white text-lg mb-2">🔒 Schützen Sie Ihre Privatsphäre mit NordVPN</h4>
+                          <p className="text-white/90 text-sm mb-3">
+                            Was ist ein VPN? Ein <a href="https://www.anrdoezrs.net/click-100643838-14063115" target="_blank" rel="noopener noreferrer" className="underline text-yellow-300 hover:text-yellow-200">Virtuelles Privates Netzwerk (VPN)</a> verschlüsselt Ihre Internetverbindung und verbirgt Ihre IP-Adresse, wodurch Ihre persönlichen Daten vor Hackern, Trackern und Überwachung geschützt werden.
+                          </p>
+                          <p className="text-white/80 text-xs mb-4">
+                            Für Besitzer von Premium-Domains ist der Schutz Ihrer Online-Identität entscheidend. NordVPN ermöglicht anonymes Surfen, Zugang zu globalen Inhalten und sichere Geschäftstransaktionen.
+                          </p>
+                          <a 
+                            href="https://www.anrdoezrs.net/click-100643838-14063115" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-2 px-6 rounded-full transition-colors text-sm"
+                          >
+                            NordVPN Jetzt Holen →
+                          </a>
+                        </div>
+                      </div>
                       
                       <p className="text-slate-400 text-sm">
                         Haben Sie Fragen zum Domain-Transfer? Kontaktieren Sie uns gerne unter <a href="mailto:support@iaee.eu" className="text-amber-400 hover:text-amber-300">support@iaee.eu</a>.
