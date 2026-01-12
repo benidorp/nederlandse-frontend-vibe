@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import FooterPremiumDomainsPT from "@/components/premium-domains/FooterPremiumDomainsPT";
+import LanguageSwitcher from "@/components/premium-domains/LanguageSwitcher";
 import stripeLogo from "@/assets/stripe-logo.svg";
 
 interface PremiumDomain {
@@ -180,6 +181,11 @@ const PremiumDomainsPT = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+      {/* Language Switcher */}
+      <div className="bg-slate-900">
+        <LanguageSwitcher currentLanguage="pt" />
+      </div>
+      
       <Helmet>
         <html lang="pt" />
         <title>Comprar Domínios Premium | Alta Autoridade &amp; Valor SEO | Domínios Expirados</title>
