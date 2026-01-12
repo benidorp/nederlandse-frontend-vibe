@@ -2592,6 +2592,71 @@ const PremiumDomainsIT = () => {
           </div>
         </section>
 
+        {/* Domain Transfer Instructions */}
+        <section id="trasferimento-dominio" className="py-16 bg-slate-900">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="border border-amber-500/30 rounded-xl bg-slate-800/50">
+                <div className="px-6 py-4">
+                  <h2 className="text-xl font-bold text-white">
+                    <div className="flex items-center gap-3">
+                      <Globe className="w-6 h-6 text-amber-400" />
+                      <span>Come trasferire il tuo dominio con il token di trasferimento (EPP/Auth code)?</span>
+                    </div>
+                  </h2>
+                </div>
+                <div className="px-6 pb-6">
+                  <div className="space-y-6 text-slate-300">
+                    <p className="text-lg">
+                      Dopo l'acquisto, riceverai entro 24 ore un <strong className="text-amber-400">token di trasferimento</strong> (chiamato anche codice EPP o Auth-code) all'indirizzo email indicato durante il pagamento. Con questo codice puoi facilmente trasferire il dominio al tuo registrar o provider di hosting.
+                    </p>
+                    
+                    <div className="bg-slate-900/50 rounded-lg p-6 border border-slate-700">
+                      <h3 className="text-lg font-semibold text-white mb-4">Istruzioni passo passo:</h3>
+                      <ol className="space-y-4">
+                        <li className="flex gap-3">
+                          <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">1</span>
+                          <div>
+                            <strong className="text-white">Ricevi il token di trasferimento</strong>
+                            <p className="text-slate-400 mt-1">Dopo il pagamento riceverai entro 24 ore il codice di autorizzazione unico via email.</p>
+                          </div>
+                        </li>
+                        <li className="flex gap-3">
+                          <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">2</span>
+                          <div>
+                            <strong className="text-white">Avvia il trasferimento presso il tuo registrar</strong>
+                            <p className="text-slate-400 mt-1">Accedi al tuo provider di hosting o registrar preferito e scegli "Trasferisci dominio".</p>
+                          </div>
+                        </li>
+                        <li className="flex gap-3">
+                          <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">3</span>
+                          <div>
+                            <strong className="text-white">Inserisci il nome del dominio e il codice di autorizzazione</strong>
+                            <p className="text-slate-400 mt-1">Compila il nome del dominio e il codice EPP/Auth che hai ricevuto da noi.</p>
+                          </div>
+                        </li>
+                        <li className="flex gap-3">
+                          <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">4</span>
+                          <div>
+                            <strong className="text-white">Conferma il trasferimento</strong>
+                            <p className="text-slate-400 mt-1">Segui i passaggi del tuo nuovo registrar per completare il trasferimento. Di solito richiede 5-7 giorni.</p>
+                          </div>
+                        </li>
+                      </ol>
+                    </div>
+                    
+                    <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg p-4">
+                      <p className="text-amber-300 text-sm">
+                        <strong>Nota:</strong> Se hai problemi con il trasferimento o non ricevi il codice entro 24 ore, contattaci tramite il modulo di contatto o invia un'email a support@iaee.eu.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Back to Top */}
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
