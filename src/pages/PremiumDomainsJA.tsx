@@ -1015,7 +1015,7 @@ const premiumDomains = [
   // DA 25
   {
     name: "gastrosafezone.eu",
-    description: "Design and hospitality safety domain with backlinks from CNN, The Conversation, Pagina12 and Elle Decor.",
+    description: "CNN、The Conversation、Pagina12、Elle Decorからのバックリンクを持つデザイン・ホスピタリティ安全ドメイン。",
     mozScore: 25,
     pageAuthority: 24,
     linkingDomains: 47,
@@ -1029,7 +1029,7 @@ const premiumDomains = [
   },
   {
     name: "hotelgiotto.eu",
-    description: "Hospitality domain with backlinks from Pages.dev, Wikitravel, Groupon UK and Travellerspoint.",
+    description: "Pages.dev、Wikitravel、Groupon UK、Travellerspointからのバックリンクを持つホスピタリティドメイン。",
     mozScore: 25,
     pageAuthority: 24,
     linkingDomains: 78,
@@ -1043,7 +1043,7 @@ const premiumDomains = [
   },
   {
     name: "recharge-green.eu",
-    description: "Green energy and charging EU domain with backlinks from Google Groups, MDPI, BioMedCentral and FAO.",
+    description: "Googleグループ、MDPI、BioMedCentral、FAOからのバックリンクを持つグリーンエネルギー・充電EUドメイン。",
     mozScore: 25,
     pageAuthority: 28,
     linkingDomains: 128,
@@ -1057,7 +1057,7 @@ const premiumDomains = [
   },
   {
     name: "brave-project.eu",
-    description: "EU project domain with backlinks from Europa.eu, El Diario, Stuttgarter Zeitung and universities.",
+    description: "Europa.eu、El Diario、Stuttgarter Zeitung、大学からのバックリンクを持つEUプロジェクトドメイン。",
     mozScore: 24,
     pageAuthority: 24,
     linkingDomains: 73,
@@ -1071,7 +1071,7 @@ const premiumDomains = [
   },
   {
     name: "aaliance.eu",
-    description: "Healthcare/elderly care EU domain with backlinks from Europa.eu, Cambridge, Springer, Heise and EurActiv.",
+    description: "Europa.eu、ケンブリッジ、Springer、Heise、EurActivからのバックリンクを持つヘルスケア・高齢者ケアEUドメイン。",
     mozScore: 25,
     pageAuthority: 23,
     linkingDomains: 69,
@@ -1085,7 +1085,7 @@ const premiumDomains = [
   },
   {
     name: "unamec.be",
-    description: "Belgian medical/healthcare domain with backlinks from OUP, Yumpu, KU Leuven and UGent.",
+    description: "OUP、Yumpu、KU Leuven、UGentからのバックリンクを持つベルギー医療・ヘルスケアドメイン。",
     mozScore: 25,
     pageAuthority: 23,
     linkingDomains: 93,
@@ -1099,7 +1099,7 @@ const premiumDomains = [
   },
   {
     name: "josephines.be",
-    description: "Belgian lifestyle/hospitality domain with backlinks from Mixcloud, De Standaard and Elle.be.",
+    description: "Mixcloud、De Standaard、Elle.beからのバックリンクを持つベルギーライフスタイル・ホスピタリティドメイン。",
     mozScore: 25,
     pageAuthority: 23,
     linkingDomains: 69,
@@ -1113,7 +1113,7 @@ const premiumDomains = [
   },
   {
     name: "front-vosges-14-18.eu",
-    description: "Historical WWI memorial domain with backlinks from Wikipedia (FR, DE), StackExchange, FranceInfo and INRIA.",
+    description: "Wikipedia（FR、DE）、StackExchange、FranceInfo、INRIAからのバックリンクを持つ第一次世界大戦記念歴史ドメイン。",
     mozScore: 25,
     pageAuthority: 27,
     linkingDomains: 122,
@@ -1127,7 +1127,7 @@ const premiumDomains = [
   },
   {
     name: "serletproject.eu",
-    description: "EU project domain with backlinks from Apple.com, Bit.ly, RTL.fr and Greek Wikipedia.",
+    description: "Apple.com、Bit.ly、RTL.fr、ギリシャ語Wikipediaからのバックリンクを持つEUプロジェクトドメイン。",
     mozScore: 25,
     pageAuthority: 30,
     linkingDomains: 491,
@@ -1141,7 +1141,7 @@ const premiumDomains = [
   },
   {
     name: "landmark-project.eu",
-    description: "EU project domain with backlinks from Europa.eu, Wikipedia DE, Cambridge and Yumpu.",
+    description: "Europa.eu、Wikipedia DE、ケンブリッジ、Yumpuからのバックリンクを持つEUプロジェクトドメイン。",
     mozScore: 25,
     pageAuthority: 32,
     linkingDomains: 161,
@@ -1155,7 +1155,7 @@ const premiumDomains = [
   },
   {
     name: "tandemtech.be",
-    description: "Belgian tech domain with backlinks from Medium, TinyURL, Bit.ly, Tweakers and Knack.",
+    description: "Medium、TinyURL、Bit.ly、Tweakers、Knackからのバックリンクを持つベルギーテックドメイン。",
     mozScore: 25,
     pageAuthority: 23,
     linkingDomains: 61,
@@ -1169,7 +1169,7 @@ const premiumDomains = [
   },
   {
     name: "happyvpro.nl",
-    description: "Dutch media domain with backlinks from TinyURL, Ello, XS4ALL, Emerce and VPRO.",
+    description: "TinyURL、Ello、XS4ALL、Emerce、VPROからのバックリンクを持つオランダメディアドメイン。",
     mozScore: 25,
     pageAuthority: 23,
     linkingDomains: 74,
@@ -1183,7 +1183,7 @@ const premiumDomains = [
   },
   {
     name: "edlupt.eu",
-    description: "EU domain with backlinks from Pinterest, ANSA, RUG Groningen and Italian universities.",
+    description: "Pinterest、ANSA、フローニンゲン大学、イタリアの大学からのバックリンクを持つEUドメイン。",
     mozScore: 25,
     pageAuthority: 28,
     linkingDomains: 192,
@@ -1198,7 +1198,7 @@ const premiumDomains = [
   // DA 25
   {
     name: "xcycle-h2020.eu",
-    description: "EU H2020 mobility domain with backlinks from Europa.eu, Springer, MDPI and Frontiers.",
+    description: "Europa.eu、Springer、MDPI、Frontiersからのバックリンクを持つEU H2020モビリティドメイン。",
     mozScore: 25,
     pageAuthority: 32,
     linkingDomains: 145,
@@ -1212,7 +1212,7 @@ const premiumDomains = [
   },
   {
     name: "heinekenthecity.nl",
-    description: "Dutch urban/lifestyle domain with backlinks from Dezeen, Symbaloo, Fodors and VPRO.",
+    description: "Dezeen、Symbaloo、Fodors、VPROからのバックリンクを持つオランダ都市・ライフスタイルドメイン。",
     mozScore: 24,
     pageAuthority: 18,
     linkingDomains: 52,
@@ -1227,7 +1227,7 @@ const premiumDomains = [
   // DA 24
   {
     name: "vos-photos.eu",
-    description: "Photography EU domain with backlinks from E-Monsite, JournalDuNet, CNRS and Wikipedia SV.",
+    description: "E-Monsite、JournalDuNet、CNRS、Wikipedia SVからのバックリンクを持つ写真EUドメイン。",
     mozScore: 24,
     pageAuthority: 31,
     linkingDomains: 578,
@@ -1241,7 +1241,7 @@ const premiumDomains = [
   },
   {
     name: "eulis.eu",
-    description: "EU domain with backlinks from Wikipedia (EN, ES, PT, FR), Europa.eu and MDPI.",
+    description: "Wikipedia（EN、ES、PT、FR）、Europa.eu、MDPIからのバックリンクを持つEUドメイン。",
     mozScore: 24,
     pageAuthority: 33,
     linkingDomains: 246,
@@ -1255,7 +1255,7 @@ const premiumDomains = [
   },
   {
     name: "maribe.eu",
-    description: "Maritime EU domain with backlinks from Europa.eu, The Conversation, MDPI and Bristol University.",
+    description: "Europa.eu、The Conversation、MDPI、ブリストル大学からのバックリンクを持つ海事EUドメイン。",
     mozScore: 23,
     pageAuthority: 28,
     linkingDomains: 90,
@@ -1269,7 +1269,7 @@ const premiumDomains = [
   },
   {
     name: "200jaarstaten-generaal.nl",
-    description: "Dutch government domain with backlinks from NOS, Leiden University and House of Representatives.",
+    description: "NOS、ライデン大学、衆議院からのバックリンクを持つオランダ政府ドメイン。",
     mozScore: 22,
     pageAuthority: 21,
     linkingDomains: 37,
@@ -1283,7 +1283,7 @@ const premiumDomains = [
   },
   {
     name: "eu-thor.eu",
-    description: "EU project domain with backlinks from Wikipedia (EN, FR, DE), Europa.eu, Yumpu and WHOI.",
+    description: "Wikipedia（EN、FR、DE）、Europa.eu、Yumpu、WHOIからのバックリンクを持つEUプロジェクトドメイン。",
     mozScore: 23,
     pageAuthority: 28,
     linkingDomains: 156,
@@ -1297,7 +1297,7 @@ const premiumDomains = [
   },
   {
     name: "eccomascfd2006.nl",
-    description: "Dutch technical domain with backlinks from TU Delft, Southampton, Liverpool and NTNU.",
+    description: "デルフト工科大学、サウサンプトン、リバプール、NTNUからのバックリンクを持つオランダ技術ドメイン。",
     mozScore: 23,
     pageAuthority: 25,
     linkingDomains: 52,
@@ -1311,7 +1311,7 @@ const premiumDomains = [
   },
   {
     name: "mbelgique.be",
-    description: "Belgian national domain with backlinks from Wikipedia FR, BFMTV, Heise, NU.nl and Europe1.",
+    description: "Wikipedia FR、BFMTV、Heise、NU.nl、Europe1からのバックリンクを持つベルギー全国ドメイン。",
     mozScore: 23,
     pageAuthority: 22,
     linkingDomains: 58,
@@ -1325,7 +1325,7 @@ const premiumDomains = [
   },
   {
     name: "lifemanev.eu",
-    description: "EU project domain about sustainable agriculture with backlinks from MDPI, ITACYL and CSIC.",
+    description: "MDPI、ITACYL、CSICからのバックリンクを持つ持続可能農業に関するEUプロジェクトドメイン。",
     mozScore: 23,
     pageAuthority: 24,
     linkingDomains: 40,
@@ -1340,7 +1340,7 @@ const premiumDomains = [
   // DA 22
   {
     name: "bruegel2019.be",
-    description: "Cultural heritage domain with backlinks from Campaign Archive, Knack.be and Brusselslife.",
+    description: "Campaign Archive、Knack.be、Brusselslifeからのバックリンクを持つ文化遺産ドメイン。",
     mozScore: 22,
     pageAuthority: 24,
     linkingDomains: 42,
@@ -1354,7 +1354,7 @@ const premiumDomains = [
   },
   {
     name: "infoecmi.eu",
-    description: "EU information domain with backlinks from Wikipedia (EN, ES, PT, RU, DE), UCL and ETH Zürich.",
+    description: "Wikipedia（EN、ES、PT、RU、DE）、UCL、ETHチューリッヒからのバックリンクを持つEU情報ドメイン。",
     mozScore: 22,
     pageAuthority: 31,
     linkingDomains: 259,
@@ -1368,7 +1368,7 @@ const premiumDomains = [
   },
   {
     name: "romain-roquette.be",
-    description: "Belgian personal/portfolio domain with backlinks from Airbnb, Foursquare, The Culture Trip and Knack.be.",
+    description: "Airbnb、Foursquare、The Culture Trip、Knack.beからのバックリンクを持つベルギー個人・ポートフォリオドメイン。",
     mozScore: 22,
     pageAuthority: 28,
     linkingDomains: 63,
@@ -1382,7 +1382,7 @@ const premiumDomains = [
   },
   {
     name: "naumburgermeister.eu",
-    description: "German/EU local government domain with backlinks from Wikipedia (EN, ES, FR, RU, NL), Bit.ly and Creative Commons.",
+    description: "Wikipedia（EN、ES、FR、RU、NL）、Bit.ly、Creative Commonsからのバックリンクを持つドイツ/EU地方政府ドメイン。",
     mozScore: 22,
     pageAuthority: 32,
     linkingDomains: 810,
@@ -1396,7 +1396,7 @@ const premiumDomains = [
   },
   {
     name: "europeanmuseumforum.eu",
-    description: "European museum forum domain with backlinks from Wikipedia (EN, ES, FR, RU, NL), Bit.ly and Creative Commons.",
+    description: "Wikipedia（EN、ES、FR、RU、NL）、Bit.ly、Creative Commonsからのバックリンクを持つヨーロッパ博物館フォーラムドメイン。",
     mozScore: 22,
     pageAuthority: 32,
     linkingDomains: 810,
@@ -1410,7 +1410,7 @@ const premiumDomains = [
   },
   {
     name: "escmalta2018.eu",
-    description: "ESC event domain with backlinks from ETH Zürich, Azure, Copernicus, CSIC and Monash University.",
+    description: "ETHチューリッヒ、Azure、Copernicus、CSIC、モナッシュ大学からのバックリンクを持つESCイベントドメイン。",
     mozScore: 22,
     pageAuthority: 25,
     linkingDomains: 102,
@@ -1424,7 +1424,7 @@ const premiumDomains = [
   },
   {
     name: "waterpipp.eu",
-    description: "Water and environment EU project domain with backlinks from Europa.eu, Bit.ly, Ask.com and Campaign Archive.",
+    description: "Europa.eu、Bit.ly、Ask.com、Campaign Archiveからのバックリンクを持つ水・環境EUプロジェクトドメイン。",
     mozScore: 22,
     pageAuthority: 28,
     linkingDomains: 96,
@@ -1438,7 +1438,7 @@ const premiumDomains = [
   },
   {
     name: "artsalivewales.org.uk",
-    description: "Welsh arts/culture domain with backlinks from The Guardian, Mirror, Eventbrite and Wales Online.",
+    description: "ガーディアン、Mirror、Eventbrite、Wales Onlineからのバックリンクを持つウェールズアート・文化ドメイン。",
     mozScore: 22,
     pageAuthority: 27,
     linkingDomains: 116,
@@ -1453,7 +1453,7 @@ const premiumDomains = [
   // DA 21
   {
     name: "stationlansingerland-zoetermeer.nl",
-    description: "Dutch transport/station domain with backlinks from Wikipedia (FR, NL), NS, Nieuws.nl and ProRail.",
+    description: "Wikipedia（FR、NL）、NS、Nieuws.nl、ProRailからのバックリンクを持つオランダ交通・駅ドメイン。",
     mozScore: 21,
     pageAuthority: 24,
     linkingDomains: 62,
@@ -1467,7 +1467,7 @@ const premiumDomains = [
   },
   {
     name: "oramed-fp7.eu",
-    description: "Medical research EU-FP7 project domain with backlinks from Europa.eu, Springer, IIT and FGOV.be.",
+    description: "Europa.eu、Springer、IIT、FGOV.beからのバックリンクを持つ医学研究EU-FP7プロジェクトドメイン。",
     mozScore: 21,
     pageAuthority: 24,
     linkingDomains: 60,
@@ -1481,7 +1481,7 @@ const premiumDomains = [
   },
   {
     name: "ismagazine.nl",
-    description: "Dutch magazine/media domain with backlinks from UNESCO, WUR and Startpagina.",
+    description: "UNESCO、WUR、Startpaginaからのバックリンクを持つオランダ雑誌・メディアドメイン。",
     mozScore: 21,
     pageAuthority: 20,
     linkingDomains: 56,
@@ -1495,7 +1495,7 @@ const premiumDomains = [
   },
   {
     name: "wbetting.co.uk",
-    description: "British betting/gaming domain with backlinks from OVH, Joomla.org, WSU and CSIC.",
+    description: "OVH、Joomla.org、WSU、CSICからのバックリンクを持つイギリスベッティング・ゲーミングドメイン。",
     mozScore: 21,
     pageAuthority: 41,
     linkingDomains: 468,
@@ -1509,7 +1509,7 @@ const premiumDomains = [
   },
   {
     name: "fantasticgymnastics.nl",
-    description: "Dutch sports/gymnastics domain with backlinks from LiveInternet, Pages.dev, XSRV and Toolforge.",
+    description: "LiveInternet、Pages.dev、XSRV、Toolforgeからのバックリンクを持つオランダスポーツ・体操ドメイン。",
     mozScore: 21,
     pageAuthority: 29,
     linkingDomains: 246,
@@ -1523,7 +1523,7 @@ const premiumDomains = [
   },
   {
     name: "nanostarproject.eu",
-    description: "Nanotechnology EU project domain with backlinks from Springer, Sapo.pt, Pages.dev and universities (UPM, UC3M).",
+    description: "Springer、Sapo.pt、Pages.dev、大学（UPM、UC3M）からのバックリンクを持つナノテクノロジーEUプロジェクトドメイン。",
     mozScore: 21,
     pageAuthority: 28,
     linkingDomains: 76,
@@ -1538,7 +1538,7 @@ const premiumDomains = [
   // DA 20
   {
     name: "espresso-project.eu",
-    description: "Smart city and mobility project domain with backlinks from Europa.eu, Medium, MDPI and Telecom TV.",
+    description: "Europa.eu、Medium、MDPI、Telecom TVからのバックリンクを持つスマートシティ・モビリティプロジェクトドメイン。",
     mozScore: 20,
     pageAuthority: 28,
     linkingDomains: 81,
