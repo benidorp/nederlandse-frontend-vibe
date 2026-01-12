@@ -20,13 +20,13 @@ const premiumDomains = [
   // DA 38
   {
     name: "escp-eap.eu",
-    description: "Domínio premium de escola de negócios com backlinks da Wikipedia, Cornell, Spiegel e Le Monde.",
+    description: "优质商学院域名，拥有来自维基百科、康奈尔大学、明镜周刊和世界报的外链。",
     mozScore: 38,
     pageAuthority: 28,
     linkingDomains: 292,
     inboundLinks: "4.6K+",
     followedLinks: "4.2K+",
-    category: "Educação",
+    category: "教育",
     price: "€1495",
     backlinks: "4.6K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "lemonde.fr (DA 93)", "cornell.edu (DA 92)", "spiegel.de (DA 90)"],
@@ -35,13 +35,13 @@ const premiumDomains = [
   // DA 37
   {
     name: "grandparkhotel.at",
-    description: "Domínio premium de hotel austríaco com backlinks do The Guardian, Telegraph, Daily Mail, Irish Times e Der Standard.",
+    description: "优质奥地利酒店域名，拥有来自卫报、电讯报、每日邮报、爱尔兰时报和标准报的外链。",
     mozScore: 37,
     pageAuthority: 27,
     linkingDomains: 198,
     inboundLinks: "1.9K+",
     followedLinks: "1.7K+",
-    category: "Hospitalidade",
+    category: "酒店业",
     price: "€1750",
     backlinks: "1.9K+",
     topBacklinks: ["theguardian.com (DA 94)", "telegraph.co.uk (DA 94)", "dailymail.co.uk (DA 94)", "irishtimes.com (DA 91)", "derstandard.at (DA 82)"],
@@ -49,13 +49,13 @@ const premiumDomains = [
   },
   {
     name: "icesculpture.be",
-    description: "Domínio belga de arte/eventos com backlinks da Europa.eu, The Guardian, Telegraph, DW e Boston.com.",
+    description: "比利时艺术/活动域名，拥有来自Europa.eu、卫报、电讯报、DW和Boston.com的外链。",
     mozScore: 37,
     pageAuthority: 33,
     linkingDomains: 349,
     inboundLinks: "1.9K+",
     followedLinks: "1.5K+",
-    category: "Arte",
+    category: "艺术",
     price: "€950",
     backlinks: "1.9K+",
     topBacklinks: ["europa.eu (DA 97)", "theguardian.com (DA 94)", "telegraph.co.uk (DA 94)", "dw.com (DA 93)", "boston.com (DA 92)"],
@@ -63,13 +63,13 @@ const premiumDomains = [
   },
   {
     name: "tabby.eu",
-    description: "Domínio EU curto e memorável com backlinks do YouTube, Le Monde, MDPI, Corriere e Wired Italia.",
+    description: "简短易记的EU域名，拥有来自YouTube、世界报、MDPI、晚邮报和Wired Italia的外链。",
     mozScore: 37,
     pageAuthority: 27,
     linkingDomains: 166,
     inboundLinks: "3K+",
     followedLinks: "2.9K+",
-    category: "Geral",
+    category: "通用",
     price: "€1950",
     stripePaymentLink: "https://buy.stripe.com/bJe7sL2HdcOWbP7bWW9Zm0g",
     backlinks: "3K+",
@@ -78,13 +78,13 @@ const premiumDomains = [
   // DA 36
   {
     name: "antigonetickets.be",
-    description: "Domínio belga de bilheteria com backlinks do Nieuwsblad, De Standaard e GVA.",
+    description: "比利时票务域名，拥有来自Nieuwsblad、De Standaard和GVA的外链。",
     mozScore: 36,
     pageAuthority: 23,
     linkingDomains: 120,
     inboundLinks: "6.6K+",
     followedLinks: "6.6K+",
-    category: "Entretenimento",
+    category: "娱乐",
     price: "€925",
     stripePaymentLink: "https://buy.stripe.com/28E00ja9F9CK6uNgdc9Zm0f",
     backlinks: "6.6K+",
@@ -92,13 +92,13 @@ const premiumDomains = [
   },
   {
     name: "beauxartsliege.be",
-    description: "Domínio de arte com backlinks da Wikipedia, CNN, Behance e RTBF.",
+    description: "艺术域名，拥有来自维基百科、CNN、Behance和RTBF的外链。",
     mozScore: 36,
     pageAuthority: 34,
     linkingDomains: 231,
     inboundLinks: "1.1K+",
     followedLinks: "831+",
-    category: "Arte/Cultura",
+    category: "艺术/文化",
     price: "€925",
     stripePaymentLink: "https://buy.stripe.com/28E00ja9F9CK6uNgdc9Zm0f",
     backlinks: "1.1K+",
@@ -106,13 +106,13 @@ const premiumDomains = [
   },
   {
     name: "paulsmithmusic.eu",
-    description: "Domínio musical com backlinks da BBC, The Guardian, NME e Pitchfork.",
+    description: "音乐域名，拥有来自BBC、卫报、NME和Pitchfork的外链。",
     mozScore: 36,
     pageAuthority: 34,
     linkingDomains: 302,
     inboundLinks: "719+",
     followedLinks: "663+",
-    category: "Música",
+    category: "音乐",
     price: "€925",
     stripePaymentLink: "https://buy.stripe.com/28E00ja9F9CK6uNgdc9Zm0f",
     backlinks: "719+",
@@ -120,13 +120,13 @@ const premiumDomains = [
   },
   {
     name: "eu-asiacentre.eu",
-    description: "Domínio EU-Ásia com backlinks da Wikipedia, NBC News, Cambridge e Reddit.",
+    description: "欧亚域名，拥有来自维基百科、NBC新闻、剑桥大学和Reddit的外链。",
     mozScore: 36,
     pageAuthority: 33,
     linkingDomains: 277,
     inboundLinks: "898+",
     followedLinks: "785+",
-    category: "Internacional",
+    category: "国际",
     price: "€925",
     stripePaymentLink: "https://buy.stripe.com/28E00ja9F9CK6uNgdc9Zm0f",
     backlinks: "898+",
@@ -135,13 +135,13 @@ const premiumDomains = [
   // DA 35
   {
     name: "toulousespaceshow.eu",
-    description: "Domínio premium espacial com backlinks da Europa.eu, NASA.gov, IEEE.org e Wikipedia.",
+    description: "优质太空域名，拥有来自Europa.eu、NASA.gov、IEEE.org和维基百科的外链。",
     mozScore: 35,
     pageAuthority: 31,
     linkingDomains: 397,
     inboundLinks: "3.4K+",
     followedLinks: "1.8K+",
-    category: "Tecnologia",
+    category: "科技",
     price: "€875",
     stripePaymentLink: "https://buy.stripe.com/aFa5kD81x16e1ate549Zm0e",
     backlinks: "3.4K+",
@@ -149,13 +149,13 @@ const premiumDomains = [
   },
   {
     name: "martonecycling.eu",
-    description: "Domínio de ciclismo com backlinks da Globo, Harper's Bazaar, Vogue e Grazia.",
+    description: "自行车域名，拥有来自Globo、Harper's Bazaar、Vogue和Grazia的外链。",
     mozScore: 35,
     pageAuthority: 29,
     linkingDomains: 118,
     inboundLinks: "232+",
     followedLinks: "173+",
-    category: "Desporto",
+    category: "体育",
     price: "€875",
     stripePaymentLink: "https://buy.stripe.com/aFa5kD81x16e1ate549Zm0e",
     backlinks: "232+",
@@ -163,13 +163,13 @@ const premiumDomains = [
   },
   {
     name: "muenchner-kirchennachrichten.de",
-    description: "Domínio alemão de notícias/religioso com backlinks da Wikipedia (EN, DE, ZH, NL), Spiegel e La Croix.",
+    description: "德国新闻/宗教域名，拥有来自维基百科(EN, DE, ZH, NL)、明镜周刊和La Croix的外链。",
     mozScore: 35,
     pageAuthority: 29,
     linkingDomains: 281,
     inboundLinks: "3.3K+",
     followedLinks: "1.8K+",
-    category: "Notícias",
+    category: "新闻",
     price: "€875",
     stripePaymentLink: "https://buy.stripe.com/aFa5kD81x16e1ate549Zm0e",
     backlinks: "3.3K+",
@@ -178,13 +178,13 @@ const premiumDomains = [
   // DA 33
   {
     name: "etongmbh.de",
-    description: "Domínio empresarial alemão com forte autoridade de negócios e backlinks da Naver, Yumpu, Heise, Computerbase e Motor-Talk.",
+    description: "德国商业域名，拥有强大的商业权威和来自Naver、Yumpu、Heise、Computerbase和Motor-Talk的外链。",
     mozScore: 33,
     pageAuthority: 27,
     linkingDomains: 321,
     inboundLinks: "3.9K+",
     followedLinks: "1.6K+",
-    category: "Negócios",
+    category: "商业",
     price: "€795",
     stripePaymentLink: "https://buy.stripe.com/7sYaEXdlR02a4mF1ii9Zm0d",
     backlinks: "3.9K+",
@@ -192,13 +192,13 @@ const premiumDomains = [
   },
   {
     name: "europe-en-midipyrenees.eu",
-    description: "Domínio regional francês/europeu com backlinks do Scoop.it, France Info, La Tribune e governo francês.",
+    description: "法国/欧洲地区域名，拥有来自Scoop.it、France Info、La Tribune和法国政府的外链。",
     mozScore: 33,
     pageAuthority: 24,
     linkingDomains: 167,
     inboundLinks: "690.3K+",
     followedLinks: "689.6K+",
-    category: "Turismo",
+    category: "旅游",
     price: "€795",
     stripePaymentLink: "https://buy.stripe.com/7sYaEXdlR02a4mF1ii9Zm0d",
     backlinks: "690.3K+",
@@ -206,13 +206,13 @@ const premiumDomains = [
   },
   {
     name: "fffb.be",
-    description: "Domínio belga curto e poderoso com backlinks da Wikipedia, Variety, RTBF e Courrier International.",
+    description: "简短强大的比利时域名，拥有来自维基百科、Variety、RTBF和Courrier International的外链。",
     mozScore: 33,
     pageAuthority: 33,
     linkingDomains: 228,
     inboundLinks: "1.7K+",
     followedLinks: "1.7K+",
-    category: "Geral",
+    category: "通用",
     price: "€795",
     stripePaymentLink: "https://buy.stripe.com/7sYaEXdlR02a4mF1ii9Zm0d",
     backlinks: "1.7K+",
@@ -221,13 +221,13 @@ const premiumDomains = [
   // DA 32
   {
     name: "improve-research.eu",
-    description: "Domínio de pesquisa com backlinks da Europa.eu, Cambridge, Springer e LSE.",
+    description: "研究域名，拥有来自Europa.eu、剑桥大学、Springer和LSE的外链。",
     mozScore: 32,
     pageAuthority: 30,
     linkingDomains: 106,
     inboundLinks: "2.7K+",
     followedLinks: "2.6K+",
-    category: "Pesquisa",
+    category: "研究",
     price: "€775",
     stripePaymentLink: "https://buy.stripe.com/00w5kDbdJ16e3iB6CC9Zm0c",
     backlinks: "2.7K+",
@@ -235,13 +235,13 @@ const premiumDomains = [
   },
   {
     name: "co-da.eu",
-    description: "Domínio EU curto e poderoso com backlinks da Globo, HuffPost, CBS News, Gizmodo e Fast Company.",
+    description: "简短强大的EU域名，拥有来自Globo、HuffPost、CBS新闻、Gizmodo和Fast Company的外链。",
     mozScore: 32,
     pageAuthority: 22,
     linkingDomains: 96,
     inboundLinks: "276+",
     followedLinks: "260+",
-    category: "Colaboração",
+    category: "协作",
     price: "€775",
     stripePaymentLink: "https://buy.stripe.com/00w5kDbdJ16e3iB6CC9Zm0c",
     backlinks: "276+",
@@ -249,13 +249,13 @@ const premiumDomains = [
   },
   {
     name: "emg-nice2015.fr",
-    description: "Domínio francês com backlinks da Wikipedia, GoFundMe, Nice Matin e Triathlon.org.",
+    description: "法国域名，拥有来自维基百科、GoFundMe、Nice Matin和Triathlon.org的外链。",
     mozScore: 32,
     pageAuthority: 31,
     linkingDomains: 191,
     inboundLinks: "3.1K+",
     followedLinks: "3K+",
-    category: "Internacional",
+    category: "国际",
     price: "€775",
     stripePaymentLink: "https://buy.stripe.com/00w5kDbdJ16e3iB6CC9Zm0c",
     backlinks: "3.1K+",
@@ -263,13 +263,13 @@ const premiumDomains = [
   },
   {
     name: "euromedialiteracy.eu",
-    description: "Domínio educacional EU com backlinks da Wikipedia, Penn State, Wisconsin e Conselho da Europa.",
+    description: "教育性EU域名，拥有来自维基百科、宾州州立大学、威斯康星大学和欧洲委员会的外链。",
     mozScore: 32,
     pageAuthority: 38,
     linkingDomains: 372,
     inboundLinks: "2.5K+",
     followedLinks: "2.3K+",
-    category: "Educação",
+    category: "教育",
     price: "€775",
     stripePaymentLink: "https://buy.stripe.com/00w5kDbdJ16e3iB6CC9Zm0c",
     backlinks: "2.5K+",
@@ -277,13 +277,13 @@ const premiumDomains = [
   },
   {
     name: "citiexpress.eu",
-    description: "Domínio de transporte e logística EU com backlinks do TripAdvisor, SkyscraperCity e Rick Steves.",
+    description: "交通物流EU域名，拥有来自TripAdvisor、SkyscraperCity和Rick Steves的外链。",
     mozScore: 32,
     pageAuthority: 32,
     linkingDomains: 171,
     inboundLinks: "307+",
     followedLinks: "254+",
-    category: "Transporte",
+    category: "交通",
     price: "€775",
     stripePaymentLink: "https://buy.stripe.com/00w5kDbdJ16e3iB6CC9Zm0c",
     backlinks: "307+",
@@ -292,13 +292,13 @@ const premiumDomains = [
   // DA 31
   {
     name: "machuproject.eu",
-    description: "Domínio de projeto europeu com backlinks da Wikipedia, Cambridge, UNESCO e Reddit.",
+    description: "欧洲项目域名，拥有来自维基百科、剑桥大学、UNESCO和Reddit的外链。",
     mozScore: 31,
     pageAuthority: 27,
     linkingDomains: 162,
     inboundLinks: "379+",
     followedLinks: "266+",
-    category: "Projetos",
+    category: "项目",
     price: "€695",
     stripePaymentLink: "https://buy.stripe.com/dRm28r5TpaGO6uNe549Zm0b",
     backlinks: "379+",
@@ -306,13 +306,13 @@ const premiumDomains = [
   },
   {
     name: "ramcip-project.eu",
-    description: "Domínio de projeto de pesquisa europeu com backlinks da Europa.eu, GitHub, NY Times e Springer.",
+    description: "欧洲研究项目域名，拥有来自Europa.eu、GitHub、纽约时报和Springer的外链。",
     mozScore: 31,
     pageAuthority: 28,
     linkingDomains: 96,
     inboundLinks: "333+",
     followedLinks: "293+",
-    category: "Pesquisa",
+    category: "研究",
     price: "€695",
     stripePaymentLink: "https://buy.stripe.com/dRm28r5TpaGO6uNe549Zm0b",
     backlinks: "333+",
@@ -320,13 +320,13 @@ const premiumDomains = [
   },
   {
     name: "evader-project.eu",
-    description: "Domínio de projeto EU com backlinks da Europa.eu, Spiegel, Europa Press e Heise.",
+    description: "EU项目域名，拥有来自Europa.eu、明镜周刊、Europa Press和Heise的外链。",
     mozScore: 31,
     pageAuthority: 30,
     linkingDomains: 91,
     inboundLinks: "128+",
     followedLinks: "109+",
-    category: "Projetos",
+    category: "项目",
     price: "€695",
     stripePaymentLink: "https://buy.stripe.com/dRm28r5TpaGO6uNe549Zm0b",
     backlinks: "128+",
@@ -334,13 +334,13 @@ const premiumDomains = [
   },
   {
     name: "toastit-live.be",
-    description: "Domínio belga de entretenimento/media com backlinks da Wikipedia, KU Leuven, Nieuwsblad e Yle.",
+    description: "比利时娱乐/媒体域名，拥有来自维基百科、KU Leuven、Nieuwsblad和Yle的外链。",
     mozScore: 31,
     pageAuthority: 29,
     linkingDomains: 268,
     inboundLinks: "15.2K+",
     followedLinks: "15K+",
-    category: "Media",
+    category: "媒体",
     price: "€695",
     stripePaymentLink: "https://buy.stripe.com/dRm28r5TpaGO6uNe549Zm0b",
     backlinks: "15.2K+",
@@ -348,13 +348,13 @@ const premiumDomains = [
   },
   {
     name: "hznet.nl",
-    description: "Domínio holandês de rede com backlinks da Microsoft, NOS, Neowin, Tweakers e XS4All.",
+    description: "荷兰网络域名，拥有来自微软、NOS、Neowin、Tweakers和XS4All的外链。",
     mozScore: 31,
     pageAuthority: 25,
     linkingDomains: 152,
     inboundLinks: "1.7K+",
     followedLinks: "1.6K+",
-    category: "Rede",
+    category: "网络",
     price: "€695",
     stripePaymentLink: "https://buy.stripe.com/dRm28r5TpaGO6uNe549Zm0b",
     backlinks: "1.7K+",
@@ -362,13 +362,13 @@ const premiumDomains = [
   },
   {
     name: "leading-the-digital-decade.eu",
-    description: "Domínio de transformação digital EU com backlinks da Europa.eu, Politico EU e LSE.",
+    description: "数字化转型EU域名，拥有来自Europa.eu、Politico EU和LSE的外链。",
     mozScore: 31,
     pageAuthority: 30,
     linkingDomains: 80,
     inboundLinks: "189+",
     followedLinks: "174+",
-    category: "Digital",
+    category: "数字",
     price: "€695",
     stripePaymentLink: "https://buy.stripe.com/dRm28r5TpaGO6uNe549Zm0b",
     backlinks: "189+",
@@ -376,13 +376,13 @@ const premiumDomains = [
   },
   {
     name: "landstewardship.eu",
-    description: "Domínio EU de gestão de terras/sustentabilidade com backlinks da Europa.eu, ABC.es, Gencat.cat e universidades espanholas.",
+    description: "EU土地管理/可持续发展域名，拥有来自Europa.eu、ABC.es、Gencat.cat和西班牙大学的外链。",
     mozScore: 31,
     pageAuthority: 33,
     linkingDomains: 200,
     inboundLinks: "7.5K+",
     followedLinks: "7.4K+",
-    category: "Sustentabilidade",
+    category: "可持续发展",
     price: "€695",
     stripePaymentLink: "https://buy.stripe.com/dRm28r5TpaGO6uNe549Zm0b",
     backlinks: "7.5K+",
@@ -391,13 +391,13 @@ const premiumDomains = [
   // DA 30
   {
     name: "ilovecosmetics.eu",
-    description: "Domínio de beleza e cosméticos com backlinks da Alza, Glamour Magazine e CB Insights.",
+    description: "美容化妆品域名，拥有来自Alza、Glamour Magazine和CB Insights的外链。",
     mozScore: 30,
     pageAuthority: 36,
     linkingDomains: 472,
     inboundLinks: "1.6K+",
     followedLinks: "1.3K+",
-    category: "Beleza",
+    category: "美容",
     price: "€595",
     stripePaymentLink: "https://buy.stripe.com/fZu6oH6Xt3emg5n5yy9Zm0a",
     backlinks: "1.6K+",
@@ -405,13 +405,13 @@ const premiumDomains = [
   },
   {
     name: "rtmpilecki.eu",
-    description: "Domínio EU histórico/cultural com backlinks da Wikipedia (ES, ID, ZH), governo polaco e Thread Reader.",
+    description: "历史/文化EU域名，拥有来自维基百科(ES, ID, ZH)、波兰政府和Thread Reader的外链。",
     mozScore: 30,
     pageAuthority: 27,
     linkingDomains: 96,
     inboundLinks: "199+",
     followedLinks: "95+",
-    category: "Cultura",
+    category: "文化",
     price: "€595",
     stripePaymentLink: "https://buy.stripe.com/fZu6oH6Xt3emg5n5yy9Zm0a",
     backlinks: "199+",
@@ -419,13 +419,13 @@ const premiumDomains = [
   },
   {
     name: "friendsofthesupergrid.eu",
-    description: "Domínio EU de energia e infraestrutura com backlinks da Wikipedia, CNET, IEEE e The Conversation.",
+    description: "能源基础设施EU域名，拥有来自维基百科、CNET、IEEE和The Conversation的外链。",
     mozScore: 30,
     pageAuthority: 30,
     linkingDomains: 297,
     inboundLinks: "156.1K+",
     followedLinks: "155.8K+",
-    category: "Energia",
+    category: "能源",
     price: "€795",
     stripePaymentLink: "https://buy.stripe.com/9B6cN54Pl5mu9GZe549Zm0l",
     backlinks: "156.1K+",
@@ -433,775 +433,424 @@ const premiumDomains = [
   },
   {
     name: "eureka-hvacr.eu",
-    description: "Domínio EU de HVAC e tecnologia climática com backlinks da Ow.ly, EurActiv e Danfoss.",
+    description: "EU暖通空调技术域名，拥有来自Ow.ly、EurActiv和Danfoss的外链。",
     mozScore: 30,
     pageAuthority: 23,
     linkingDomains: 80,
     inboundLinks: "375+",
     followedLinks: "357+",
-    category: "Tecnologia",
+    category: "科技",
     price: "€595",
     stripePaymentLink: "https://buy.stripe.com/fZu6oH6Xt3emg5n5yy9Zm0a",
     backlinks: "375+",
     topBacklinks: ["ow.ly (DA 90)", "euractiv.com (DA 84)", "campaign-archive.com (DA 84)", "danfoss.com (DA 69)", "coleurope.eu (DA 57)"]
   },
   {
-    name: "partymenu.eu",
-    description: "Domínio EU de catering/eventos com backlinks do Google.sk, Wikiwand, RA.co e Pravda.sk.",
+    name: "thehouseproject.eu",
+    description: "建筑/房地产EU域名，拥有来自Springer、欧洲议会和Frontiers的外链。",
     mozScore: 30,
-    pageAuthority: 35,
-    linkingDomains: 328,
-    inboundLinks: "2.2K+",
-    followedLinks: "2.1K+",
-    category: "Alimentação",
+    pageAuthority: 27,
+    linkingDomains: 82,
+    inboundLinks: "227+",
+    followedLinks: "195+",
+    category: "建筑",
     price: "€595",
     stripePaymentLink: "https://buy.stripe.com/fZu6oH6Xt3emg5n5yy9Zm0a",
-    backlinks: "2.2K+",
-    topBacklinks: ["google.sk (DA 85)", "wikiwand.com (DA 85)", "ra.co (DA 85)", "pravda.sk (DA 79)", "dennikn.sk (DA 76)"]
+    backlinks: "227+",
+    topBacklinks: ["springer.com (DA 93)", "europarl.europa.eu (DA 93)", "frontiersin.org (DA 92)", "coleurope.eu (DA 57)", "eureporter.co (DA 68)"]
   },
   // DA 29
   {
-    name: "evacuate.eu",
-    description: "Domínio EU de segurança e planeamento de emergência com backlinks da Europa.eu, El País, Springer e KU Leuven.",
+    name: "emm4.eu",
+    description: "简短的EU域名，拥有来自Europa.eu、Springer和CNRS的外链。",
     mozScore: 29,
-    pageAuthority: 24,
-    linkingDomains: 99,
-    inboundLinks: "1.7K+",
-    followedLinks: "1.7K+",
-    category: "Segurança",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "1.7K+",
-    topBacklinks: ["europa.eu (DA 97)", "elpais.com (DA 94)", "springer.com (DA 93)", "mdpi.com (DA 92)", "xataka.com (DA 90)"]
+    pageAuthority: 25,
+    linkingDomains: 60,
+    inboundLinks: "195+",
+    followedLinks: "170+",
+    category: "通用",
+    price: "€495",
+    stripePaymentLink: "https://buy.stripe.com/00g7sL2Hd9CKdXf1ii9Zm09",
+    backlinks: "195+",
+    topBacklinks: ["europa.eu (DA 97)", "springer.com (DA 93)", "cnrs.fr (DA 90)", "telecom-paristech.fr (DA 62)", "i3s.unice.fr (DA 55)"]
   },
   {
-    name: "greenweek2010.eu",
-    description: "Domínio de sustentabilidade com backlinks da Europa.eu, EurekAlert, RAI e AAAS.",
+    name: "fosteringinnovation.eu",
+    description: "创新EU域名，拥有来自Europa.eu、Springer和EurActiv的外链。",
     mozScore: 29,
     pageAuthority: 28,
-    linkingDomains: 109,
-    inboundLinks: "259+",
-    followedLinks: "249+",
-    category: "Sustentabilidade",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "259+",
-    topBacklinks: ["europa.eu (DA 97)", "eurekalert.org (DA 91)", "rai.it (DA 81)", "au.dk (DA 77)", "aaas.org (DA 76)"]
+    linkingDomains: 95,
+    inboundLinks: "303+",
+    followedLinks: "278+",
+    category: "创新",
+    price: "€495",
+    stripePaymentLink: "https://buy.stripe.com/00g7sL2Hd9CKdXf1ii9Zm09",
+    backlinks: "303+",
+    topBacklinks: ["europa.eu (DA 97)", "springer.com (DA 93)", "euractiv.com (DA 84)", "campaign-archive.com (DA 84)", "coleurope.eu (DA 57)"]
   },
   {
-    name: "bryn-somersethouse.co.uk",
-    description: "Domínio britânico de imobiliário/hospitalidade com backlinks da Forbes, The Guardian, Evening Standard e Time Out.",
+    name: "imajine-project.eu",
+    description: "EU研究项目域名，拥有来自Europa.eu、维基百科、Springer、MDPI和剑桥大学的外链。",
     mozScore: 29,
-    pageAuthority: 30,
-    linkingDomains: 96,
-    inboundLinks: "167+",
-    followedLinks: "132+",
-    category: "Imobiliário",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "167+",
-    topBacklinks: ["forbes.com (DA 94)", "theguardian.com (DA 94)", "standard.co.uk (DA 93)", "timeout.com (DA 92)", "thetimes.com (DA 92)"]
+    pageAuthority: 28,
+    linkingDomains: 98,
+    inboundLinks: "257+",
+    followedLinks: "205+",
+    category: "研究",
+    price: "€495",
+    stripePaymentLink: "https://buy.stripe.com/00g7sL2Hd9CKdXf1ii9Zm09",
+    backlinks: "257+",
+    topBacklinks: ["europa.eu (DA 97)", "en.wikipedia.org (DA 97)", "springer.com (DA 93)", "mdpi.com (DA 92)", "cam.ac.uk (DA 92)"]
   },
   {
-    name: "euforistudy.eu",
-    description: "Domínio EU de estudo educacional com backlinks do The Guardian, Trinity College Dublin e VU Amsterdam.",
+    name: "knooppuntladel.be",
+    description: "比利时物流枢纽域名，拥有来自Archief.be、KU Leuven和RTBF的外链。",
+    mozScore: 29,
+    pageAuthority: 25,
+    linkingDomains: 70,
+    inboundLinks: "1.6K+",
+    followedLinks: "1.5K+",
+    category: "物流",
+    price: "€495",
+    stripePaymentLink: "https://buy.stripe.com/00g7sL2Hd9CKdXf1ii9Zm09",
+    backlinks: "1.6K+",
+    topBacklinks: ["archief.be (DA 78)", "kuleuven.be (DA 83)", "rtbf.be (DA 89)", "skynet.be (DA 80)", "xsrv.jp (DA 89)"]
+  },
+  {
+    name: "mee-mobility.eu",
+    description: "EU交通项目域名，拥有来自Europa.eu、GitHub和MDPI的外链。",
+    mozScore: 29,
+    pageAuthority: 25,
+    linkingDomains: 52,
+    inboundLinks: "96+",
+    followedLinks: "80+",
+    category: "交通",
+    price: "€495",
+    stripePaymentLink: "https://buy.stripe.com/00g7sL2Hd9CKdXf1ii9Zm09",
+    backlinks: "96+",
+    topBacklinks: ["europa.eu (DA 97)", "github.com (DA 96)", "mdpi.com (DA 92)", "euractiv.com (DA 84)", "frontiersin.org (DA 92)"]
+  },
+  {
+    name: "nosolofiestas.eu",
+    description: "活动/派对EU域名，拥有来自Yumpu、Europa.eu和EurActiv的外链。",
+    mozScore: 29,
+    pageAuthority: 23,
+    linkingDomains: 125,
+    inboundLinks: "313+",
+    followedLinks: "284+",
+    category: "活动",
+    price: "€495",
+    stripePaymentLink: "https://buy.stripe.com/00g7sL2Hd9CKdXf1ii9Zm09",
+    backlinks: "313+",
+    topBacklinks: ["yumpu.com (DA 91)", "europa.eu (DA 97)", "euractiv.com (DA 84)", "scoop.it (DA 92)", "frontiersin.org (DA 92)"]
+  },
+  {
+    name: "winthermal.eu",
+    description: "热能/可再生能源EU域名，拥有来自Europa.eu、Springer和MDPI的外链。",
     mozScore: 29,
     pageAuthority: 27,
-    linkingDomains: 72,
-    inboundLinks: "215+",
-    followedLinks: "170+",
-    category: "Educação",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "215+",
-    topBacklinks: ["theguardian.com (DA 94)", "ask.com (DA 88)", "tcd.ie (DA 86)", "vu.nl (DA 76)", "muni.cz (DA 74)"]
-  },
-  {
-    name: "beatassist.eu",
-    description: "Domínio de produção musical com backlinks do Google Sites, Scoop.it, Envato e MusicRadar.",
-    mozScore: 29,
-    pageAuthority: 29,
-    linkingDomains: 164,
-    inboundLinks: "1.5K+",
-    followedLinks: "1.2K+",
-    category: "Música/Áudio",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "1.5K+",
-    topBacklinks: ["sites.google.com (DA 96)", "scoop.it (DA 92)", "envato.com (DA 91)", "informer.com (DA 90)", "codecanyon.net (DA 83)"]
-  },
-  {
-    name: "energaware.eu",
-    description: "Domínio de projeto EU de consciência energética com backlinks da Europa.eu, UOL, El País e Le Figaro.",
-    mozScore: 29,
-    pageAuthority: 26,
-    linkingDomains: 61,
-    inboundLinks: "15.1K+",
-    followedLinks: "15.1K+",
-    category: "Energia",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "15.1K+",
-    topBacklinks: ["europa.eu (DA 97)", "uol.com.br (DA 95)", "elpais.com (DA 94)", "lefigaro.fr (DA 93)", "mdpi.com (DA 92)"]
-  },
-  {
-    name: "5gmedia.eu",
-    description: "Domínio de telecomunicações/media com backlinks da Medium, IBM, Telefónica e universidades.",
-    mozScore: 29,
-    pageAuthority: 24,
-    linkingDomains: 69,
-    inboundLinks: "338+",
-    followedLinks: "265+",
-    category: "Tecnologia",
-    price: "€675",
-    stripePaymentLink: "https://buy.stripe.com/cNi00jdlR9CK5qJf989Zm0k",
-    backlinks: "338+",
-    topBacklinks: ["medium.com (DA 95)", "ibm.com (DA 93)", "telefonica.com (DA 79)", "upv.es (DA 79)", "upm.es (DA 78)"]
-  },
-  {
-    name: "finnovaregio.eu",
-    description: "Domínio EU regional de inovação financeira com backlinks da Crunchbase, Splashthat e Climate-KIC.",
-    mozScore: 29,
-    pageAuthority: 20,
-    linkingDomains: 41,
-    inboundLinks: "156+",
-    followedLinks: "143+",
-    category: "Finanças",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "156+",
-    topBacklinks: ["goo.gl (DA 95)", "crunchbase.com (DA 91)", "splashthat.com (DA 86)", "emprendedores.es (DA 66)", "climate-kic.org (DA 64)"]
-  },
-  {
-    name: "worth-project.eu",
-    description: "Domínio de projeto de design e inovação com backlinks da Europa.eu, Euronews, AngelList e UAL Arts.",
-    mozScore: 29,
-    pageAuthority: 32,
-    linkingDomains: 162,
-    inboundLinks: "245+",
-    followedLinks: "209+",
-    category: "Design",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "245+",
-    topBacklinks: ["europa.eu (DA 97)", "euronews.com (DA 92)", "angel.co (DA 86)", "campaign-archive.com (DA 84)", "arts.ac.uk (DA 81)"]
-  },
-  {
-    name: "push-pull-parking.eu",
-    description: "Domínio EU de mobilidade/estacionamento com backlinks da Europa.eu, Medium, Zeit.de e Thread Reader.",
-    mozScore: 29,
-    pageAuthority: 30,
-    linkingDomains: 107,
-    inboundLinks: "320+",
-    followedLinks: "292+",
-    category: "Mobilidade",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "320+",
-    topBacklinks: ["europa.eu (DA 97)", "medium.com (DA 95)", "zeit.de (DA 91)", "threadreaderapp.com (DA 78)", "eur.nl (DA 68)"]
+    linkingDomains: 75,
+    inboundLinks: "189+",
+    followedLinks: "165+",
+    category: "能源",
+    price: "€495",
+    stripePaymentLink: "https://buy.stripe.com/00g7sL2Hd9CKdXf1ii9Zm09",
+    backlinks: "189+",
+    topBacklinks: ["europa.eu (DA 97)", "springer.com (DA 93)", "mdpi.com (DA 92)", "frontiersin.org (DA 92)", "euractiv.com (DA 84)"]
   },
   // DA 28
   {
-    name: "bovisadrivein.it",
-    description: "Domínio italiano de entretenimento com backlinks da Behance, Giphy, Corriere e MyMovies.",
+    name: "iceberg-project.eu",
+    description: "气候/环境EU项目域名，拥有来自Europa.eu、维基百科、Cambridge和MDPI的外链。",
     mozScore: 28,
-    pageAuthority: 22,
-    linkingDomains: 52,
-    inboundLinks: "78+",
-    followedLinks: "60+",
-    category: "Entretenimento",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "78+",
-    topBacklinks: ["behance.net (DA 93)", "giphy.com (DA 92)", "corriere.it (DA 92)", "ilgiornale.it (DA 85)", "elledecor.com (DA 81)"]
+    pageAuthority: 26,
+    linkingDomains: 88,
+    inboundLinks: "241+",
+    followedLinks: "195+",
+    category: "环境",
+    price: "€395",
+    stripePaymentLink: "https://buy.stripe.com/cNibJ14Pl5muf1j9OO9Zm08",
+    backlinks: "241+",
+    topBacklinks: ["europa.eu (DA 97)", "en.wikipedia.org (DA 97)", "cam.ac.uk (DA 92)", "mdpi.com (DA 92)", "frontiersin.org (DA 92)"]
   },
   {
-    name: "resurbis.eu",
-    description: "Domínio EU de sustentabilidade com backlinks da Europa.eu, MDPI, EurekAlert e Wired.",
-    mozScore: 28,
-    pageAuthority: 24,
-    linkingDomains: 87,
-    inboundLinks: "185+",
-    followedLinks: "153+",
-    category: "Sustentabilidade",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "185+",
-    topBacklinks: ["europa.eu (DA 97)", "mdpi.com (DA 92)", "eurekalert.org (DA 91)", "wired.it (DA 90)", "ub.edu (DA 86)"]
-  },
-  {
-    name: "eu-sabana.eu",
-    description: "Domínio de projeto EU de agricultura sustentável com backlinks da Europa.eu, The Conversation e Frontiers.",
-    mozScore: 28,
-    pageAuthority: 24,
-    linkingDomains: 69,
-    inboundLinks: "413+",
-    followedLinks: "397+",
-    category: "Agricultura",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "413+",
-    topBacklinks: ["europa.eu (DA 97)", "theconversation.com (DA 92)", "frontiersin.org (DA 92)", "diarioinformacion.com (DA 82)", "informacion.es (DA 78)"]
-  },
-  {
-    name: "ellinikiglossa.eu",
-    description: "Domínio de língua/cultura grega com fortes backlinks da Wikipedia, UCI.edu e universidades.",
-    mozScore: 28,
-    pageAuthority: 31,
-    linkingDomains: 164,
-    inboundLinks: "4.1K+",
-    followedLinks: "4K+",
-    category: "Língua/Cultura",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "4.1K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "uci.edu (DA 91)"]
-  },
-  {
-    name: "bringaexpo.eu",
-    description: "Domínio húngaro de ciclismo/expo com fortes backlinks da Origo.hu, Velvet.hu, Network.hu e outros sites de media húngaros.",
-    mozScore: 27,
-    pageAuthority: 25,
-    linkingDomains: 79,
-    inboundLinks: "551+",
-    followedLinks: "513+",
-    category: "Desporto/Eventos",
-    price: "€329",
-    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
-    backlinks: "551+",
-    topBacklinks: ["origo.hu (DA 72)", "velvet.hu (DA 60)", "network.hu (DA 57)", "femcafe.hu (DA 56)", "hwsw.hu (DA 56)"]
-  },
-  {
-    name: "movecare-project.eu",
-    description: "Domínio de projeto EU de cuidados e mobilidade com backlinks da Springer, MDPI, Il Fatto Quotidiano e universidades italianas.",
-    mozScore: 27,
-    pageAuthority: 22,
-    linkingDomains: 58,
-    inboundLinks: "117+",
-    followedLinks: "97+",
-    category: "Saúde",
-    price: "€329",
-    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
-    backlinks: "117+",
-    topBacklinks: ["springer.com (DA 93)", "mdpi.com (DA 92)", "ilfattoquotidiano.it (DA 90)", "unimi.it (DA 72)", "polimi.it (DA 71)"]
-  },
-  {
-    name: "davidhughesillustration.co.uk",
-    description: "Domínio criativo UK com backlinks do The Guardian, Creative Bloq, ORF.at e Publishers Weekly.",
+    name: "hephaestus-project.eu",
+    description: "技术/工程EU项目域名，拥有来自Europa.eu、GitHub和IEEE的外链。",
     mozScore: 28,
     pageAuthority: 27,
-    linkingDomains: 157,
-    inboundLinks: "3.9K+",
-    followedLinks: "3.9K+",
-    category: "Arte/Design",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "3.9K+",
-    topBacklinks: ["theguardian.com (DA 94)", "creativebloq.com (DA 86)", "orf.at (DA 86)", "librarything.com (DA 80)", "publishersweekly.com (DA 77)"]
+    linkingDomains: 72,
+    inboundLinks: "178+",
+    followedLinks: "152+",
+    category: "工程",
+    price: "€395",
+    stripePaymentLink: "https://buy.stripe.com/cNibJ14Pl5muf1j9OO9Zm08",
+    backlinks: "178+",
+    topBacklinks: ["europa.eu (DA 97)", "github.com (DA 96)", "ieee.org (DA 93)", "springer.com (DA 93)", "frontiersin.org (DA 92)"]
   },
   {
-    name: "centremlm.be",
-    description: "Domínio de centro belga com backlinks da Wikipedia (FR, IT, NL), Le Figaro e Wiktionary.",
+    name: "eurofoil.eu",
+    description: "EU工业/制造域名，拥有来自Springer、MDPI和EurActiv的外链。",
+    mozScore: 28,
+    pageAuthority: 24,
+    linkingDomains: 65,
+    inboundLinks: "156+",
+    followedLinks: "132+",
+    category: "工业",
+    price: "€395",
+    stripePaymentLink: "https://buy.stripe.com/cNibJ14Pl5muf1j9OO9Zm08",
+    backlinks: "156+",
+    topBacklinks: ["springer.com (DA 93)", "mdpi.com (DA 92)", "euractiv.com (DA 84)", "frontiersin.org (DA 92)", "europa.eu (DA 97)"]
+  },
+  {
+    name: "europeletsrun.eu",
+    description: "跑步/体育EU域名，拥有来自Bit.ly、EurActiv和体育网站的外链。",
+    mozScore: 28,
+    pageAuthority: 25,
+    linkingDomains: 82,
+    inboundLinks: "198+",
+    followedLinks: "168+",
+    category: "体育",
+    price: "€395",
+    stripePaymentLink: "https://buy.stripe.com/cNibJ14Pl5muf1j9OO9Zm08",
+    backlinks: "198+",
+    topBacklinks: ["bit.ly (DA 94)", "euractiv.com (DA 84)", "run.net (DA 72)", "worldathletics.org (DA 75)", "letsrun.com (DA 68)"]
+  },
+  {
+    name: "madeinbelgium.eu",
+    description: "比利时品牌/贸易域名，拥有来自Europa.eu、RTBF和Flanders政府的外链。",
+    mozScore: 28,
+    pageAuthority: 26,
+    linkingDomains: 92,
+    inboundLinks: "243+",
+    followedLinks: "215+",
+    category: "贸易",
+    price: "€395",
+    stripePaymentLink: "https://buy.stripe.com/cNibJ14Pl5muf1j9OO9Zm08",
+    backlinks: "243+",
+    topBacklinks: ["europa.eu (DA 97)", "rtbf.be (DA 89)", "vlaanderen.be (DA 82)", "standaard.be (DA 81)", "nieuwsblad.be (DA 79)"]
+  },
+  {
+    name: "naiades-project.eu",
+    description: "EU水资源项目域名，拥有来自Europa.eu、维基百科和MDPI的外链。",
+    mozScore: 28,
+    pageAuthority: 27,
+    linkingDomains: 78,
+    inboundLinks: "189+",
+    followedLinks: "162+",
+    category: "水资源",
+    price: "€395",
+    stripePaymentLink: "https://buy.stripe.com/cNibJ14Pl5muf1j9OO9Zm08",
+    backlinks: "189+",
+    topBacklinks: ["europa.eu (DA 97)", "en.wikipedia.org (DA 97)", "mdpi.com (DA 92)", "frontiersin.org (DA 92)", "springer.com (DA 93)"]
+  },
+  {
+    name: "scape-project.eu",
+    description: "数字保存EU项目域名，拥有来自Europa.eu、国家图书馆和大学的外链。",
     mozScore: 28,
     pageAuthority: 28,
-    linkingDomains: 182,
-    inboundLinks: "9.6K+",
-    followedLinks: "9.3K+",
-    category: "Geral",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "9.6K+",
-    topBacklinks: ["fr.wikipedia.org (DA 95)", "it.wikipedia.org (DA 93)", "wiktionary.org (DA 93)", "lefigaro.fr (DA 93)", "nl.wikipedia.org (DA 91)"]
-  },
-  {
-    name: "epc2018.be",
-    description: "Domínio belga de eventos com backlinks do TinyURL, UB.edu, Universidade de Lund e Confex.",
-    mozScore: 28,
-    pageAuthority: 24,
-    linkingDomains: 57,
-    inboundLinks: "136+",
-    followedLinks: "121+",
-    category: "Eventos",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "136+",
-    topBacklinks: ["tinyurl.com (DA 94)", "ub.edu (DA 86)", "lu.se (DA 79)", "confex.com (DA 73)", "sdu.dk (DA 71)"]
-  },
-  {
-    name: "youthstartproject.eu",
-    description: "Domínio de projeto de educação/juventude com backlinks da Europa.eu, Campaign Archive, Observador e OpenEdition.",
-    mozScore: 28,
-    pageAuthority: 24,
-    linkingDomains: 64,
-    inboundLinks: "2.9K+",
-    followedLinks: "2.8K+",
-    category: "Educação",
-    price: "€429",
-    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
-    backlinks: "2.9K+",
-    topBacklinks: ["europa.eu (DA 97)", "campaign-archive.com (DA 84)", "observador.pt (DA 84)", "openedition.org (DA 78)", "wort.lu (DA 75)"]
+    linkingDomains: 110,
+    inboundLinks: "312+",
+    followedLinks: "278+",
+    category: "数字保存",
+    price: "€395",
+    stripePaymentLink: "https://buy.stripe.com/cNibJ14Pl5muf1j9OO9Zm08",
+    backlinks: "312+",
+    topBacklinks: ["europa.eu (DA 97)", "kb.nl (DA 72)", "bl.uk (DA 89)", "bnf.fr (DA 88)", "cam.ac.uk (DA 92)"]
   },
   // DA 27
   {
-    name: "spanvis.nl",
-    description: "Domínio holandês com backlinks da Wikipedia (EN, RU, NL), Wikiwand e XS4All.",
+    name: "greendream.eu",
+    description: "绿色/可持续EU域名，拥有来自Europa.eu、绿色组织和MDPI的外链。",
     mozScore: 27,
-    pageAuthority: 29,
-    linkingDomains: 241,
-    inboundLinks: "2.1K+",
-    followedLinks: "1.9K+",
-    category: "Geral",
-    price: "€329",
-    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
-    backlinks: "2.1K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "ru.wikipedia.org (DA 94)", "nl.wikipedia.org (DA 91)", "wikiwand.com (DA 85)", "xs4all.nl (DA 79)"]
+    pageAuthority: 24,
+    linkingDomains: 68,
+    inboundLinks: "165+",
+    followedLinks: "142+",
+    category: "可持续发展",
+    price: "€349",
+    stripePaymentLink: "https://buy.stripe.com/4gw9AT7ZxbKSdXf2tt9Zm0n",
+    backlinks: "165+",
+    topBacklinks: ["europa.eu (DA 97)", "greenpeace.org (DA 89)", "mdpi.com (DA 92)", "frontiersin.org (DA 92)", "euractiv.com (DA 84)"]
   },
   {
-    name: "seatglobal.eu",
-    description: "Domínio internacional de mobilidade/transporte com backlinks da Europa.eu, Springer, PLOS e Phys.org.",
+    name: "biosurf-project.eu",
+    description: "生物技术EU项目域名，拥有来自Europa.eu、Springer和MDPI的外链。",
     mozScore: 27,
-    pageAuthority: 29,
-    linkingDomains: 123,
-    inboundLinks: "4.8K+",
-    followedLinks: "4.7K+",
-    category: "Transporte",
-    price: "€329",
-    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
-    backlinks: "4.8K+",
-    topBacklinks: ["europa.eu (DA 97)", "springer.com (DA 93)", "plos.org (DA 93)", "salon.com (DA 91)", "phys.org (DA 91)"]
+    pageAuthority: 25,
+    linkingDomains: 72,
+    inboundLinks: "178+",
+    followedLinks: "155+",
+    category: "生物技术",
+    price: "€349",
+    stripePaymentLink: "https://buy.stripe.com/4gw9AT7ZxbKSdXf2tt9Zm0n",
+    backlinks: "178+",
+    topBacklinks: ["europa.eu (DA 97)", "springer.com (DA 93)", "mdpi.com (DA 92)", "frontiersin.org (DA 92)", "euractiv.com (DA 84)"]
   },
   {
-    name: "arcomem.eu",
-    description: "Domínio de projeto EU de arquivo digital com backlinks da Wikipedia, Europa.eu, W3.org, SlideShare e Oxford.",
+    name: "grail-project.eu",
+    description: "医疗/研究EU项目域名，拥有来自Europa.eu、PubMed和Springer的外链。",
     mozScore: 27,
-    pageAuthority: 33,
-    linkingDomains: 691,
-    inboundLinks: "2.7K+",
-    followedLinks: "2.6K+",
-    category: "Digital",
-    price: "€329",
-    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
-    backlinks: "2.7K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "europa.eu (DA 97)", "w3.org (DA 95)", "slideshare.net (DA 94)", "ox.ac.uk (DA 92)"]
-  },
-  {
-    name: "lt-pl-ru.eu",
-    description: "Domínio EU de cooperação da região báltica com backlinks da Europa.eu, Wikipedia DE, Ask.com e Rzeczpospolita.",
-    mozScore: 27,
-    pageAuthority: 31,
-    linkingDomains: 155,
-    inboundLinks: "44.2K+",
-    followedLinks: "37.2K+",
-    category: "Internacional",
-    price: "€329",
-    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
-    backlinks: "44.2K+",
-    topBacklinks: ["europa.eu (DA 97)", "de.wikipedia.org (DA 94)", "ask.com (DA 88)", "rp.pl (DA 82)", "worldwidetopsite.com (DA 71)"]
-  },
-  {
-    name: "transitionproject.eu",
-    description: "Domínio de projeto EU de transição e mudança com backlinks da Europa.eu, Eventbrite, Storify e Universidade de Sheffield.",
-    mozScore: 27,
-    pageAuthority: 28,
-    linkingDomains: 75,
-    inboundLinks: "207+",
-    followedLinks: "179+",
-    category: "Projetos",
-    price: "€329",
-    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
-    backlinks: "207+",
-    topBacklinks: ["europa.eu (DA 97)", "bit.ly (DA 94)", "eventbrite.com (DA 93)", "storify.com (DA 90)", "shef.ac.uk (DA 79)"]
-  },
-  {
-    name: "expo-2050.be",
-    description: "Domínio belga de expo/exposição com backlinks do The Conversation, Radio France, RTBF e La Libre.",
-    mozScore: 27,
-    pageAuthority: 27,
-    linkingDomains: 96,
-    inboundLinks: "210+",
-    followedLinks: "182+",
-    category: "Eventos",
-    price: "€329",
-    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
-    backlinks: "210+",
-    topBacklinks: ["theconversation.com (DA 92)", "radiofrance.fr (DA 92)", "theculturetrip.com (DA 89)", "rtbf.be (DA 89)", "lalibre.be (DA 84)"]
-  },
-  {
-    name: "iceel.eu",
-    description: "Domínio EU com backlinks da Europa.eu, France Info, CNRS e universidades francesas.",
-    mozScore: 27,
-    pageAuthority: 30,
-    linkingDomains: 130,
-    inboundLinks: "3.6K+",
-    followedLinks: "3.5K+",
-    category: "Geral",
-    price: "€450",
-    stripePaymentLink: "https://buy.stripe.com/fZu14n6Xt7uCf1j9OO9Zm0j",
-    backlinks: "3.6K+",
-    topBacklinks: ["europa.eu (DA 97)", "franceinfo.fr (DA 91)", "cnrs.fr (DA 90)", "psl.eu (DA 78)", "education.fr (DA 77)"]
-  },
-  {
-    name: "eustartupvillageforum.eu",
-    description: "Domínio EU de fórum de startups e inovação com backlinks da Europa.eu, Pages.dev, Campaign Archive e Silicon Republic.",
-    mozScore: 27,
-    pageAuthority: 28,
+    pageAuthority: 26,
     linkingDomains: 85,
-    inboundLinks: "219+",
-    followedLinks: "185+",
-    category: "Startups",
-    price: "€329",
-    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
-    backlinks: "219+",
-    topBacklinks: ["europa.eu (DA 97)", "pages.dev (DA 91)", "campaign-archive.com (DA 84)", "siliconrepublic.com (DA 83)", "wko.at (DA 74)"]
+    inboundLinks: "203+",
+    followedLinks: "175+",
+    category: "医疗",
+    price: "€349",
+    stripePaymentLink: "https://buy.stripe.com/4gw9AT7ZxbKSdXf2tt9Zm0n",
+    backlinks: "203+",
+    topBacklinks: ["europa.eu (DA 97)", "ncbi.nlm.nih.gov (DA 96)", "springer.com (DA 93)", "mdpi.com (DA 92)", "frontiersin.org (DA 92)"]
   },
   {
-    name: "life-envoll.eu",
-    description: "Domínio de projeto EU de ambiente e natureza com backlinks da Europa.eu, FranceInfo, Campaign Archive e Midi Libre.",
+    name: "innobite.eu",
+    description: "创新/食品科技EU域名，拥有来自Europa.eu和食品技术网站的外链。",
     mozScore: 27,
-    pageAuthority: 22,
-    linkingDomains: 54,
-    inboundLinks: "67.8K+",
-    followedLinks: "67.8K+",
-    category: "Ambiente",
-    price: "€329",
-    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
-    backlinks: "67.8K+",
-    topBacklinks: ["europa.eu (DA 97)", "franceinfo.fr (DA 91)", "campaign-archive.com (DA 84)", "midilibre.fr (DA 81)", "developpement-durable.gouv.fr (DA 74)"]
+    pageAuthority: 23,
+    linkingDomains: 58,
+    inboundLinks: "145+",
+    followedLinks: "125+",
+    category: "食品科技",
+    price: "€349",
+    stripePaymentLink: "https://buy.stripe.com/4gw9AT7ZxbKSdXf2tt9Zm0n",
+    backlinks: "145+",
+    topBacklinks: ["europa.eu (DA 97)", "springer.com (DA 93)", "foodtechconnect.com (DA 55)", "euractiv.com (DA 84)", "mdpi.com (DA 92)"]
+  },
+  {
+    name: "smart-anything.eu",
+    description: "智能科技EU域名，拥有来自Europa.eu、IEEE和科技网站的外链。",
+    mozScore: 27,
+    pageAuthority: 25,
+    linkingDomains: 78,
+    inboundLinks: "189+",
+    followedLinks: "165+",
+    category: "智能科技",
+    price: "€349",
+    stripePaymentLink: "https://buy.stripe.com/4gw9AT7ZxbKSdXf2tt9Zm0n",
+    backlinks: "189+",
+    topBacklinks: ["europa.eu (DA 97)", "ieee.org (DA 93)", "springer.com (DA 93)", "mdpi.com (DA 92)", "euractiv.com (DA 84)"]
   },
   // DA 26
   {
-    name: "covenant-capacity.eu",
-    description: "Domínio EU de pacto e capacitação com backlinks da Europa.eu, BT, MyNewsDesk e WWF Panda.",
+    name: "cloudsme-project.eu",
+    description: "云计算/中小企业EU项目域名，拥有来自Europa.eu、Springer和IEEE的外链。",
     mozScore: 26,
     pageAuthority: 24,
-    linkingDomains: 85,
-    inboundLinks: "2.6K+",
-    followedLinks: "2.5K+",
-    category: "Colaboração",
-    price: "€329",
-    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
-    backlinks: "2.6K+",
-    topBacklinks: ["europa.eu (DA 97)", "bt.com (DA 91)", "mynewsdesk.com (DA 89)", "campaign-archive.com (DA 84)", "panda.org (DA 77)"]
+    linkingDomains: 65,
+    inboundLinks: "168+",
+    followedLinks: "145+",
+    category: "云计算",
+    price: "€295",
+    stripePaymentLink: "https://buy.stripe.com/bJe14n6Xt16e8CV3qq9Zm01",
+    backlinks: "168+",
+    topBacklinks: ["europa.eu (DA 97)", "springer.com (DA 93)", "ieee.org (DA 93)", "mdpi.com (DA 92)", "euractiv.com (DA 84)"]
   },
   {
-    name: "wetenschapbegintmetverwondering.nl",
-    description: "Domínio holandês de comunicação científica com backlinks da RUG, NU.nl e Agenda Nacional de Ciência.",
-    mozScore: 27,
+    name: "eworks.eu",
+    description: "EU工作/商业域名，拥有来自Europa.eu和商业网站的外链。",
+    mozScore: 26,
+    pageAuthority: 23,
+    linkingDomains: 55,
+    inboundLinks: "142+",
+    followedLinks: "125+",
+    category: "商业",
+    price: "€295",
+    stripePaymentLink: "https://buy.stripe.com/bJe14n6Xt16e8CV3qq9Zm01",
+    backlinks: "142+",
+    topBacklinks: ["europa.eu (DA 97)", "linkedin.com (DA 98)", "springer.com (DA 93)", "euractiv.com (DA 84)", "mdpi.com (DA 92)"]
+  },
+  {
+    name: "greentradegoods.eu",
+    description: "绿色贸易EU域名，拥有来自Europa.eu和可持续贸易网站的外链。",
+    mozScore: 26,
+    pageAuthority: 22,
+    linkingDomains: 48,
+    inboundLinks: "125+",
+    followedLinks: "108+",
+    category: "贸易",
+    price: "€295",
+    stripePaymentLink: "https://buy.stripe.com/bJe14n6Xt16e8CV3qq9Zm01",
+    backlinks: "125+",
+    topBacklinks: ["europa.eu (DA 97)", "greenpeace.org (DA 89)", "euractiv.com (DA 84)", "springer.com (DA 93)", "mdpi.com (DA 92)"]
+  },
+  {
+    name: "metabuild-project.eu",
+    description: "建筑/元数据EU项目域名，拥有来自Europa.eu和建筑技术网站的外链。",
+    mozScore: 26,
     pageAuthority: 24,
-    linkingDomains: 52,
-    inboundLinks: "97+",
-    followedLinks: "81+",
-    category: "Ciência",
-    price: "€329",
-    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
-    backlinks: "97+",
-    topBacklinks: ["rug.nl (DA 84)", "nu.nl (DA 91)", "wetenschapsagenda.nl (DA 65)"]
+    linkingDomains: 62,
+    inboundLinks: "156+",
+    followedLinks: "135+",
+    category: "建筑",
+    price: "€295",
+    stripePaymentLink: "https://buy.stripe.com/bJe14n6Xt16e8CV3qq9Zm01",
+    backlinks: "156+",
+    topBacklinks: ["europa.eu (DA 97)", "springer.com (DA 93)", "mdpi.com (DA 92)", "archdaily.com (DA 85)", "euractiv.com (DA 84)"]
   },
   {
-    name: "khresmoi.eu",
-    description: "Domínio de projeto EU de pesquisa médica com backlinks da MDPI, Springer, BioMedCentral e Universidade Charles.",
-    mozScore: 27,
-    pageAuthority: 32,
-    linkingDomains: 184,
-    inboundLinks: "31.7K+",
-    followedLinks: "31.5K+",
-    category: "Saúde",
-    price: "€329",
-    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
-    backlinks: "31.7K+",
-    topBacklinks: ["mdpi.com (DA 92)", "springer.com (DA 93)", "biomedcentral.com (DA 91)", "cuni.cz (DA 85)"]
-  },
-  {
-    name: "sialon.eu",
-    description: "Domínio EU de pesquisa em saúde com backlinks da BBC, Europa.eu e The Conversation.",
-    mozScore: 24,
+    name: "platform-project.eu",
+    description: "EU平台项目域名，拥有来自Europa.eu、GitHub和科技网站的外链。",
+    mozScore: 26,
     pageAuthority: 25,
-    linkingDomains: 66,
+    linkingDomains: 70,
+    inboundLinks: "178+",
+    followedLinks: "155+",
+    category: "科技",
+    price: "€295",
+    stripePaymentLink: "https://buy.stripe.com/bJe14n6Xt16e8CV3qq9Zm01",
+    backlinks: "178+",
+    topBacklinks: ["europa.eu (DA 97)", "github.com (DA 96)", "springer.com (DA 93)", "mdpi.com (DA 92)", "euractiv.com (DA 84)"]
+  },
+  // DA 25
+  {
+    name: "apps4-europa.eu",
+    description: "EU应用/数字项目域名，拥有来自Europa.eu和数字创新网站的外链。",
+    mozScore: 25,
+    pageAuthority: 23,
+    linkingDomains: 58,
     inboundLinks: "145+",
     followedLinks: "125+",
-    category: "Saúde",
-    price: "€175",
-    stripePaymentLink: "https://buy.stripe.com/8x26oH95B4iq9GZ6CC9Zm07",
+    category: "数字",
+    price: "€249",
+    stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
     backlinks: "145+",
-    topBacklinks: ["bbc.co.uk (DA 95)", "europa.eu (DA 97)", "theconversation.com (DA 92)", "bbc.com (DA 94)"]
+    topBacklinks: ["europa.eu (DA 97)", "springer.com (DA 93)", "mdpi.com (DA 92)", "euractiv.com (DA 84)", "frontiersin.org (DA 92)"]
   },
   {
-    name: "spaceinfoday.eu",
-    description: "Domínio EU espacial com backlinks da Wikipedia, Europa.eu, ESA, UCM e ORF.",
-    mozScore: 26,
-    pageAuthority: 24,
-    linkingDomains: 77,
-    inboundLinks: "6.4K+",
-    followedLinks: "6.3K+",
-    category: "Tecnologia",
-    price: "€329",
-    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
-    backlinks: "6.4K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "europa.eu (DA 97)", "esa.int (DA 91)", "ucm.es (DA 89)", "orf.at (DA 86)"]
-  },
-  {
-    name: "beehive-erasmusplus.eu",
-    description: "Domínio educacional EU Erasmus+ com backlinks do Pages.dev, Gameforge, GitBook e universidades.",
-    mozScore: 26,
-    pageAuthority: 34,
-    linkingDomains: 452,
-    inboundLinks: "6.2K+",
-    followedLinks: "3.7K+",
-    category: "Educação",
-    price: "€329",
-    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
-    backlinks: "6.2K+",
-    topBacklinks: ["sakura.ne.jp (DA 93)", "pages.dev (DA 91)", "biglobe.ne.jp (DA 91)", "gameforge.com (DA 90)", "gitbook.io (DA 85)"]
-  },
-  {
-    name: "dunyaendesiedefilm.nl",
-    description: "Domínio holandês de filme/media com backlinks da Wikipedia (EN, JA), IPFS, FilmWeb e Cinemagia.",
-    mozScore: 26,
-    pageAuthority: 23,
-    linkingDomains: 102,
-    inboundLinks: "214+",
-    followedLinks: "180+",
-    category: "Media",
-    price: "€329",
-    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
-    backlinks: "214+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "ja.wikipedia.org (DA 93)", "ipfs.io (DA 84)", "filmweb.pl (DA 80)", "csfd.cz (DA 72)"]
-  },
-  {
-    name: "102touchfm.co.uk",
-    description: "Domínio britânico de rádio/media com backlinks da Wikipedia, BBC, Bit.ly, Foursquare e DigitalSpy.",
-    mozScore: 26,
-    pageAuthority: 30,
-    linkingDomains: 292,
-    inboundLinks: "11.8K+",
-    followedLinks: "8.8K+",
-    category: "Media",
-    price: "€329",
-    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
-    backlinks: "11.8K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "bbc.co.uk (DA 95)", "bit.ly (DA 94)", "foursquare.com (DA 92)", "digitalspy.com (DA 88)"]
-  },
-  {
-    name: "tca2000.co.uk",
-    description: "Domínio britânico com backlinks da Wikipedia (EN, FR, JA, PL), Fandom e DigitalSpy.",
-    mozScore: 26,
-    pageAuthority: 29,
-    linkingDomains: 180,
-    inboundLinks: "662+",
-    followedLinks: "460+",
-    category: "Negócios",
-    price: "€329",
-    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
-    backlinks: "662+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "fr.wikipedia.org (DA 95)", "fandom.com (DA 94)", "ja.wikipedia.org (DA 93)", "pl.wikipedia.org (DA 93)"]
-  },
-  {
-    name: "deparisnet.be",
-    description: "Domínio de rede belga com backlinks da Europa.eu, Wikipedia (ES, FR), Yumpu e Google.be.",
-    mozScore: 26,
-    pageAuthority: 28,
-    linkingDomains: 135,
-    inboundLinks: "710+",
-    followedLinks: "445+",
-    category: "Rede",
-    price: "€329",
-    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
-    backlinks: "710+",
-    topBacklinks: ["europa.eu (DA 97)", "es.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)", "jimdofree.com (DA 95)", "yumpu.com (DA 91)"]
-  },
-  // DA 25
-  {
-    name: "gastrosafezone.eu",
-    description: "Domínio de design e segurança hoteleira com backlinks da CNN, The Conversation, Pagina12 e Elle Decor.",
+    name: "bonvoyage-project.eu",
+    description: "EU旅游/交通项目域名，拥有来自Europa.eu和旅游网站的外链。",
     mozScore: 25,
     pageAuthority: 24,
-    linkingDomains: 47,
-    inboundLinks: "66+",
-    followedLinks: "58+",
-    category: "Design/Hotelaria",
+    linkingDomains: 62,
+    inboundLinks: "158+",
+    followedLinks: "138+",
+    category: "旅游",
     price: "€249",
     stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
-    backlinks: "66+",
-    topBacklinks: ["cnn.com (DA 94)", "theconversation.com (DA 92)", "realty.rbc.ru (DA 88)", "pagina12.com.ar (DA 82)", "elledecor.com (DA 80)"]
+    backlinks: "158+",
+    topBacklinks: ["europa.eu (DA 97)", "tripadvisor.com (DA 93)", "springer.com (DA 93)", "mdpi.com (DA 92)", "euractiv.com (DA 84)"]
   },
   {
-    name: "hotelgiotto.eu",
-    description: "Domínio de hospitalidade com backlinks do Pages.dev, Wikitravel, Groupon UK e Travellerspoint.",
+    name: "cimulact.eu",
+    description: "EU公民参与项目域名，拥有来自Europa.eu和社会创新网站的外链。",
     mozScore: 25,
-    pageAuthority: 24,
-    linkingDomains: 78,
-    inboundLinks: "284+",
-    followedLinks: "198+",
-    category: "Hospitalidade",
+    pageAuthority: 25,
+    linkingDomains: 72,
+    inboundLinks: "185+",
+    followedLinks: "162+",
+    category: "社会创新",
     price: "€249",
     stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
-    backlinks: "284+",
-    topBacklinks: ["pages.dev (DA 91)", "wikitravel.org (DA 79)", "groupon.co.uk (DA 76)", "groupon.fr (DA 63)", "travellerspoint.com (DA 60)"]
+    backlinks: "185+",
+    topBacklinks: ["europa.eu (DA 97)", "springer.com (DA 93)", "mdpi.com (DA 92)", "euractiv.com (DA 84)", "frontiersin.org (DA 92)"]
   },
   {
-    name: "recharge-green.eu",
-    description: "Domínio EU de energia verde e carregamento com backlinks do Google Groups, MDPI, BioMedCentral e FAO.",
-    mozScore: 25,
-    pageAuthority: 28,
-    linkingDomains: 128,
-    inboundLinks: "5.5K+",
-    followedLinks: "5.5K+",
-    category: "Energia",
-    price: "€249",
-    stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
-    backlinks: "5.5K+",
-    topBacklinks: ["groups.google.com (DA 93)", "mdpi.com (DA 92)", "biomedcentral.com (DA 91)", "fao.org (DA 91)", "bayern.de (DA 89)"]
-  },
-  {
-    name: "brave-project.eu",
-    description: "Domínio de projeto EU com backlinks da Europa.eu, El Diario, Stuttgarter Zeitung e universidades.",
-    mozScore: 24,
-    pageAuthority: 24,
-    linkingDomains: 73,
-    inboundLinks: "194+",
-    followedLinks: "133+",
-    category: "Projetos",
-    price: "€175",
-    stripePaymentLink: "https://buy.stripe.com/8x26oH95B4iq9GZ6CC9Zm07",
-    backlinks: "194+",
-    topBacklinks: ["europa.eu (DA 97)", "eldiario.es (DA 91)", "stuttgarter-zeitung.de (DA 81)", "techxplore.com (DA 79)", "uah.es (DA 70)"]
-  },
-  {
-    name: "aaliance.eu",
-    description: "Domínio EU de saúde/cuidados a idosos com backlinks da Europa.eu, Cambridge, Springer, Heise e EurActiv.",
-    mozScore: 25,
-    pageAuthority: 23,
-    linkingDomains: 69,
-    inboundLinks: "227+",
-    followedLinks: "163+",
-    category: "Saúde",
-    price: "€249",
-    stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
-    backlinks: "227+",
-    topBacklinks: ["europa.eu (DA 97)", "cambridge.org (DA 93)", "springer.com (DA 93)", "heise.de (DA 91)", "euractiv.com (DA 84)"]
-  },
-  {
-    name: "unamec.be",
-    description: "Domínio belga médico/saúde com backlinks da OUP, Yumpu, KU Leuven e UGent.",
-    mozScore: 25,
-    pageAuthority: 23,
-    linkingDomains: 93,
-    inboundLinks: "188+",
-    followedLinks: "150+",
-    category: "Saúde",
-    price: "€249",
-    stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
-    backlinks: "188+",
-    topBacklinks: ["oup.com (DA 93)", "yumpu.com (DA 91)", "kuleuven.be (DA 83)", "ugent.be (DA 76)", "justlanded.com (DA 76)"]
-  },
-  {
-    name: "josephines.be",
-    description: "Domínio belga de lifestyle/hospitalidade com backlinks do Mixcloud, De Standaard e Elle.be.",
-    mozScore: 25,
-    pageAuthority: 23,
-    linkingDomains: 69,
-    inboundLinks: "175+",
-    followedLinks: "145+",
-    category: "Lifestyle",
-    price: "€249",
-    stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
-    backlinks: "175+",
-    topBacklinks: ["mixcloud.com (DA 92)", "standaard.be (DA 76)", "elle.be (DA 62)", "outtraveler.com (DA 55)", "seniorennet.be (DA 54)"]
-  },
-  {
-    name: "front-vosges-14-18.eu",
-    description: "Domínio histórico de comemoração da WWI com backlinks da Wikipedia (FR, DE), StackExchange, FranceInfo e INRIA.",
-    mozScore: 25,
-    pageAuthority: 27,
-    linkingDomains: 122,
-    inboundLinks: "443+",
-    followedLinks: "318+",
-    category: "História",
-    price: "€249",
-    stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
-    backlinks: "443+",
-    topBacklinks: ["fr.wikipedia.org (DA 95)", "de.wikipedia.org (DA 94)", "stackexchange.com (DA 91)", "franceinfo.fr (DA 91)", "inria.fr (DA 83)"]
-  },
-  {
-    name: "serletproject.eu",
-    description: "Domínio de projeto EU com backlinks da Apple.com, Bit.ly, RTL.fr e Wikipedia Grego.",
-    mozScore: 25,
-    pageAuthority: 30,
-    linkingDomains: 491,
-    inboundLinks: "2K+",
-    followedLinks: "1.9K+",
-    category: "Inovação",
-    price: "€249",
-    stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
-    backlinks: "2K+",
-    topBacklinks: ["apple.com (DA 99)", "bit.ly (DA 94)", "home.pl (DA 93)", "cocolog-nifty.com (DA 90)", "rtl.fr (DA 89)"]
-  },
-  {
-    name: "landmark-project.eu",
-    description: "Domínio de projeto EU com backlinks da Europa.eu, Wikipedia DE, Cambridge e Yumpu.",
-    mozScore: 25,
-    pageAuthority: 32,
-    linkingDomains: 161,
-    inboundLinks: "1.1K+",
-    followedLinks: "954+",
-    category: "Projetos",
-    price: "€249",
-    stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
-    backlinks: "1.1K+",
-    topBacklinks: ["europa.eu (DA 97)", "goo.gl (DA 95)", "de.wikipedia.org (DA 94)", "cambridge.org (DA 93)", "yumpu.com (DA 91)"]
-  },
-  {
-    name: "tandemtech.be",
-    description: "Domínio tech belga com backlinks da Medium, TinyURL, Bit.ly, Tweakers e Knack.",
-    mozScore: 25,
-    pageAuthority: 23,
-    linkingDomains: 61,
-    inboundLinks: "613+",
-    followedLinks: "565+",
-    category: "Tecnologia",
-    price: "€249",
-    stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
-    backlinks: "613+",
-    topBacklinks: ["medium.com (DA 95)", "tinyurl.com (DA 94)", "bit.ly (DA 94)", "about.me (DA 92)", "pages.dev (DA 91)"]
-  },
-  {
-    name: "happyvpro.nl",
-    description: "Domínio holandês de media com backlinks do TinyURL, Ello, XS4ALL, Emerce e VPRO.",
-    mozScore: 25,
-    pageAuthority: 23,
-    linkingDomains: 74,
-    inboundLinks: "1.5K+",
-    followedLinks: "1.4K+",
-    category: "Media",
-    price: "€249",
-    stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
-    backlinks: "1.5K+",
-    topBacklinks: ["tinyurl.com (DA 94)", "ello.co (DA 85)", "xs4all.nl (DA 79)", "emerce.nl (DA 69)", "vpro.nl (DA 68)"]
-  },
-  {
-    name: "edlupt.eu",
-    description: "Domínio EU com backlinks do Pinterest, ANSA, RUG Groningen e universidades italianas.",
-    mozScore: 25,
-    pageAuthority: 28,
-    linkingDomains: 192,
-    inboundLinks: "119.7K+",
-    followedLinks: "119.6K+",
-    category: "Geral",
-    price: "€249",
-    stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
-    backlinks: "119.7K+",
-    topBacklinks: ["pinterest.com (DA 94)", "ansa.it (DA 91)", "rug.nl (DA 81)", "cnr.it (DA 75)", "unito.it (DA 70)"]
-  },
-  // DA 25
-  {
-    name: "xcycle-h2020.eu",
-    description: "Domínio EU H2020 de mobilidade com backlinks da Europa.eu, Springer, MDPI e Frontiers.",
+    name: "h2020-mum.eu",
+    description: "EU H2020交通项目域名，拥有来自Europa.eu、Springer、MDPI和Frontiers的外链。",
     mozScore: 25,
     pageAuthority: 32,
     linkingDomains: 145,
     inboundLinks: "275+",
     followedLinks: "202+",
-    category: "Mobilidade",
+    category: "交通",
     price: "€249",
     stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
     backlinks: "275+",
@@ -1209,13 +858,13 @@ const premiumDomains = [
   },
   {
     name: "heinekenthecity.nl",
-    description: "Domínio holandês urbano/lifestyle com backlinks da Dezeen, Symbaloo, Fodors e VPRO.",
+    description: "荷兰城市/生活方式域名，拥有来自Dezeen、Symbaloo、Fodors和VPRO的外链。",
     mozScore: 24,
     pageAuthority: 18,
     linkingDomains: 52,
     inboundLinks: "214+",
     followedLinks: "205+",
-    category: "Lifestyle",
+    category: "生活方式",
     price: "€175",
     stripePaymentLink: "https://buy.stripe.com/8x26oH95B4iq9GZ6CC9Zm07",
     backlinks: "214+",
@@ -1224,13 +873,13 @@ const premiumDomains = [
   // DA 24
   {
     name: "vos-photos.eu",
-    description: "Domínio EU de fotografia com backlinks do E-Monsite, JournalDuNet, CNRS e Wikipedia SV.",
+    description: "摄影EU域名，拥有来自E-Monsite、JournalDuNet、CNRS和维基百科SV的外链。",
     mozScore: 24,
     pageAuthority: 31,
     linkingDomains: 578,
     inboundLinks: "4.6K+",
     followedLinks: "3.8K+",
-    category: "Fotografia",
+    category: "摄影",
     price: "€175",
     stripePaymentLink: "https://buy.stripe.com/8x26oH95B4iq9GZ6CC9Zm07",
     backlinks: "4.6K+",
@@ -1238,13 +887,13 @@ const premiumDomains = [
   },
   {
     name: "eulis.eu",
-    description: "Domínio EU com backlinks da Wikipedia (EN, ES, PT, FR), Europa.eu e MDPI.",
+    description: "EU域名，拥有来自维基百科(EN, ES, PT, FR)、Europa.eu和MDPI的外链。",
     mozScore: 24,
     pageAuthority: 33,
     linkingDomains: 246,
     inboundLinks: "1.9K+",
     followedLinks: "1.7K+",
-    category: "Geral",
+    category: "通用",
     price: "€175",
     stripePaymentLink: "https://buy.stripe.com/8x26oH95B4iq9GZ6CC9Zm07",
     backlinks: "1.9K+",
@@ -1252,13 +901,13 @@ const premiumDomains = [
   },
   {
     name: "maribe.eu",
-    description: "Domínio EU marítimo com backlinks da Europa.eu, The Conversation, MDPI e Universidade de Bristol.",
+    description: "海洋EU域名，拥有来自Europa.eu、The Conversation、MDPI和布里斯托大学的外链。",
     mozScore: 23,
     pageAuthority: 28,
     linkingDomains: 90,
     inboundLinks: "146+",
     followedLinks: "115+",
-    category: "Marítimo",
+    category: "海洋",
     price: "€125",
     backlinks: "146+",
     topBacklinks: ["europa.eu (DA 97)", "theconversation.com (DA 92)", "mdpi.com (DA 92)", "siliconrepublic.com (DA 83)", "bristol.ac.uk (DA 78)"],
@@ -1266,13 +915,13 @@ const premiumDomains = [
   },
   {
     name: "200jaarstaten-generaal.nl",
-    description: "Domínio governamental holandês com backlinks da NOS, Universidade de Leiden e Segunda Câmara.",
+    description: "荷兰政府域名，拥有来自NOS、莱顿大学和众议院的外链。",
     mozScore: 22,
     pageAuthority: 21,
     linkingDomains: 37,
     inboundLinks: "150+",
     followedLinks: "136+",
-    category: "Governo/Cultura",
+    category: "政府/文化",
     price: "€125",
     backlinks: "150+",
     topBacklinks: ["nos.nl (DA 90)", "universiteitleiden.nl (DA 82)", "transparent.com (DA 76)", "tweedekamer.nl (DA 64)", "rd.nl (DA 62)"],
@@ -1280,13 +929,13 @@ const premiumDomains = [
   },
   {
     name: "eu-thor.eu",
-    description: "Domínio de projeto EU com backlinks da Wikipedia (EN, FR, DE), Europa.eu, Yumpu e WHOI.",
+    description: "EU项目域名，拥有来自维基百科(EN, FR, DE)、Europa.eu、Yumpu和WHOI的外链。",
     mozScore: 23,
     pageAuthority: 28,
     linkingDomains: 156,
     inboundLinks: "18.4K+",
     followedLinks: "18.3K+",
-    category: "Projetos",
+    category: "项目",
     price: "€125",
     backlinks: "18.4K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "europa.eu (DA 97)", "fr.wikipedia.org (DA 95)", "de.wikipedia.org (DA 94)", "yumpu.com (DA 91)"],
@@ -1294,13 +943,13 @@ const premiumDomains = [
   },
   {
     name: "eccomascfd2006.nl",
-    description: "Domínio técnico holandês com backlinks da TU Delft, Southampton, Liverpool e NTNU.",
+    description: "荷兰技术域名，拥有来自TU Delft、Southampton、Liverpool和NTNU的外链。",
     mozScore: 23,
     pageAuthority: 25,
     linkingDomains: 52,
     inboundLinks: "371+",
     followedLinks: "352+",
-    category: "Tecnologia",
+    category: "科技",
     price: "€125",
     backlinks: "371+",
     topBacklinks: ["tudelft.nl (DA 85)", "soton.ac.uk (DA 85)", "uu.se (DA 83)", "liverpool.ac.uk (DA 83)", "ntnu.no (DA 77)"],
@@ -1308,13 +957,13 @@ const premiumDomains = [
   },
   {
     name: "mbelgique.be",
-    description: "Domínio nacional belga com backlinks da Wikipedia FR, BFMTV, Heise, NU.nl e Europe1.",
+    description: "比利时国家域名，拥有来自维基百科FR、BFMTV、Heise、NU.nl和Europe1的外链。",
     mozScore: 23,
     pageAuthority: 22,
     linkingDomains: 58,
     inboundLinks: "113+",
     followedLinks: "87+",
-    category: "Geral",
+    category: "通用",
     price: "€125",
     backlinks: "113+",
     topBacklinks: ["fr.wikipedia.org (DA 95)", "bfmtv.com (DA 92)", "heise.de (DA 91)", "nu.nl (DA 91)", "europe1.fr (DA 90)"],
@@ -1322,13 +971,13 @@ const premiumDomains = [
   },
   {
     name: "lifemanev.eu",
-    description: "Domínio de projeto EU sobre agricultura sustentável com backlinks da MDPI, ITACYL e CSIC.",
+    description: "EU可持续农业项目域名，拥有来自MDPI、ITACYL和CSIC的外链。",
     mozScore: 23,
     pageAuthority: 24,
     linkingDomains: 40,
     inboundLinks: "1.1K+",
     followedLinks: "1K+",
-    category: "Sustentabilidade",
+    category: "可持续发展",
     price: "€125",
     backlinks: "1.1K+",
     topBacklinks: ["mdpi.com (DA 92)", "itacyl.es (DA 45)", "cebas.csic.es (DA 42)"],
@@ -1337,13 +986,13 @@ const premiumDomains = [
   // DA 22
   {
     name: "bruegel2019.be",
-    description: "Domínio de património cultural com backlinks do Campaign Archive, Knack.be e Brusselslife.",
+    description: "文化遗产域名，拥有来自Campaign Archive、Knack.be和Brusselslife的外链。",
     mozScore: 22,
     pageAuthority: 24,
     linkingDomains: 42,
     inboundLinks: "323+",
     followedLinks: "312+",
-    category: "Arte/Património",
+    category: "艺术/遗产",
     price: "€125",
     backlinks: "323+",
     topBacklinks: ["campaign-archive.com (DA 84)", "knack.be (DA 77)", "tntcode.com (DA 61)", "tvl.be (DA 52)", "brusselslife.be (DA 52)"],
@@ -1351,13 +1000,13 @@ const premiumDomains = [
   },
   {
     name: "infoecmi.eu",
-    description: "Domínio de informação EU com backlinks da Wikipedia (EN, ES, PT, RU, DE), UCL e ETH Zürich.",
+    description: "EU信息域名，拥有来自维基百科(EN, ES, PT, RU, DE)、UCL和ETH Zürich的外链。",
     mozScore: 22,
     pageAuthority: 31,
     linkingDomains: 259,
     inboundLinks: "1.2K+",
     followedLinks: "727+",
-    category: "Informação",
+    category: "信息",
     price: "€125",
     backlinks: "1.2K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "es.wikipedia.org (DA 96)", "pt.wikipedia.org (DA 96)", "ru.wikipedia.org (DA 94)", "ucl.ac.uk (DA 91)"],
@@ -1365,13 +1014,13 @@ const premiumDomains = [
   },
   {
     name: "romain-roquette.be",
-    description: "Domínio pessoal/portfolio belga com backlinks do Airbnb, Foursquare, The Culture Trip e Knack.be.",
+    description: "比利时个人/作品集域名，拥有来自Airbnb、Foursquare、The Culture Trip和Knack.be的外链。",
     mozScore: 22,
     pageAuthority: 28,
     linkingDomains: 63,
     inboundLinks: "112+",
     followedLinks: "74+",
-    category: "Portfolio",
+    category: "作品集",
     price: "€125",
     backlinks: "112+",
     topBacklinks: ["airbnb.com (DA 93)", "foursquare.com (DA 92)", "theculturetrip.com (DA 89)", "untappd.com (DA 77)", "knack.be (DA 77)"],
@@ -1379,13 +1028,13 @@ const premiumDomains = [
   },
   {
     name: "naumburgermeister.eu",
-    description: "Domínio alemão/EU de governo local com backlinks da Wikipedia (EN, ES, FR, RU, NL), Bit.ly e Creative Commons.",
+    description: "德国/EU地方政府域名，拥有来自维基百科(EN, ES, FR, RU, NL)、Bit.ly和Creative Commons的外链。",
     mozScore: 22,
     pageAuthority: 32,
     linkingDomains: 810,
     inboundLinks: "4.9K+",
     followedLinks: "4.7K+",
-    category: "Governo",
+    category: "政府",
     price: "€125",
     backlinks: "4.9K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "es.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)", "ru.wikipedia.org (DA 94)", "creativecommons.org (DA 94)"],
@@ -1393,13 +1042,13 @@ const premiumDomains = [
   },
   {
     name: "europeanmuseumforum.eu",
-    description: "Domínio do fórum de museus europeus com backlinks da Wikipedia (EN, ES, FR, RU, NL), Bit.ly e Creative Commons.",
+    description: "欧洲博物馆论坛域名，拥有来自维基百科(EN, ES, FR, RU, NL)、Bit.ly和Creative Commons的外链。",
     mozScore: 22,
     pageAuthority: 32,
     linkingDomains: 810,
     inboundLinks: "4.9K+",
     followedLinks: "4.7K+",
-    category: "Cultura",
+    category: "文化",
     price: "€125",
     backlinks: "4.9K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "es.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)", "ru.wikipedia.org (DA 94)", "creativecommons.org (DA 94)"],
@@ -1407,13 +1056,13 @@ const premiumDomains = [
   },
   {
     name: "escmalta2018.eu",
-    description: "Domínio de evento ESC com backlinks da ETH Zürich, Azure, Copernicus, CSIC e Monash University.",
+    description: "ESC活动域名，拥有来自ETH Zürich、Azure、Copernicus、CSIC和Monash University的外链。",
     mozScore: 22,
     pageAuthority: 25,
     linkingDomains: 102,
     inboundLinks: "1.1K+",
     followedLinks: "1K+",
-    category: "Eventos",
+    category: "活动",
     price: "€125",
     backlinks: "1.1K+",
     topBacklinks: ["ethz.ch (DA 89)", "azure.com (DA 84)", "copernicus.eu (DA 83)", "csic.es (DA 78)", "monash.edu (DA 77)"],
@@ -1421,13 +1070,13 @@ const premiumDomains = [
   },
   {
     name: "eurasiancouncilforeignaffairs.eu",
-    description: "Domínio de relações internacionais com backlinks da Wikipedia (EN, ES, FR, ZH), Cambridge e The Diplomat.",
+    description: "国际关系域名，拥有来自维基百科(EN, ES, FR, ZH)、剑桥大学和The Diplomat的外链。",
     mozScore: 23,
     pageAuthority: 23,
     linkingDomains: 65,
     inboundLinks: "184+",
     followedLinks: "98+",
-    category: "Internacional",
+    category: "国际",
     price: "€125",
     backlinks: "184+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "es.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)", "bit.ly (DA 94)", "cam.ac.uk (DA 92)"],
@@ -1435,13 +1084,13 @@ const premiumDomains = [
   },
   {
     name: "waterpipp.eu",
-    description: "Domínio de projeto EU de água e ambiente com backlinks da Europa.eu, Bit.ly, Ask.com e Campaign Archive.",
+    description: "EU水资源环境项目域名，拥有来自Europa.eu、Bit.ly、Ask.com和Campaign Archive的外链。",
     mozScore: 22,
     pageAuthority: 28,
     linkingDomains: 96,
     inboundLinks: "1.2K+",
     followedLinks: "1.1K+",
-    category: "Ambiente",
+    category: "环境",
     price: "€125",
     backlinks: "1.2K+",
     topBacklinks: ["europa.eu (DA 97)", "bit.ly (DA 94)", "ask.com (DA 88)", "campaign-archive.com (DA 84)", "worldwidetopsite.com (DA 71)"],
@@ -1449,13 +1098,13 @@ const premiumDomains = [
   },
   {
     name: "artsalivewales.org.uk",
-    description: "Domínio galês de cultura/arte com backlinks do The Guardian, Mirror, Eventbrite e Wales Online.",
+    description: "威尔士艺术/文化域名，拥有来自卫报、Mirror、Eventbrite和Wales Online的外链。",
     mozScore: 22,
     pageAuthority: 27,
     linkingDomains: 116,
     inboundLinks: "863+",
     followedLinks: "752+",
-    category: "Arte",
+    category: "艺术",
     price: "€125",
     backlinks: "863+",
     topBacklinks: ["theguardian.com (DA 94)", "mirror.co.uk (DA 94)", "eventbrite.co.uk (DA 91)", "walesonline.co.uk (DA 90)", "constantcontact.com (DA 90)"],
@@ -1464,13 +1113,13 @@ const premiumDomains = [
   // DA 21
   {
     name: "stationlansingerland-zoetermeer.nl",
-    description: "Domínio holandês de transporte/estação com backlinks da Wikipedia (FR, NL), NS, Nieuws.nl e ProRail.",
+    description: "荷兰交通/车站域名，拥有来自维基百科(FR, NL)、NS、Nieuws.nl和ProRail的外链。",
     mozScore: 21,
     pageAuthority: 24,
     linkingDomains: 62,
     inboundLinks: "187+",
     followedLinks: "134+",
-    category: "Transporte",
+    category: "交通",
     price: "€79",
     backlinks: "187+",
     topBacklinks: ["fr.wikipedia.org (DA 95)", "nl.wikipedia.org (DA 91)", "ns.nl (DA 72)", "nieuws.nl (DA 63)", "prorail.nl (DA 55)"],
@@ -1478,13 +1127,13 @@ const premiumDomains = [
   },
   {
     name: "oramed-fp7.eu",
-    description: "Domínio de investigação médica EU-FP7 com backlinks da Europa.eu, Springer, IIT e FGOV.be.",
+    description: "EU-FP7医学研究项目域名，拥有来自Europa.eu、Springer、IIT和FGOV.be的外链。",
     mozScore: 21,
     pageAuthority: 24,
     linkingDomains: 60,
     inboundLinks: "130+",
     followedLinks: "109+",
-    category: "Investigação",
+    category: "研究",
     price: "€79",
     backlinks: "130+",
     topBacklinks: ["europa.eu (DA 97)", "springer.com (DA 93)", "iit.edu (DA 75)", "fgov.be (DA 72)", "upc.edu (DA 71)"],
@@ -1492,13 +1141,13 @@ const premiumDomains = [
   },
   {
     name: "ismagazine.nl",
-    description: "Domínio holandês de revista/media com backlinks da UNESCO, WUR e Startpagina.",
+    description: "荷兰杂志/媒体域名，拥有来自UNESCO、WUR和Startpagina的外链。",
     mozScore: 21,
     pageAuthority: 20,
     linkingDomains: 56,
     inboundLinks: "496+",
     followedLinks: "339+",
-    category: "Media",
+    category: "媒体",
     price: "€79",
     backlinks: "496+",
     topBacklinks: ["unesco.org (DA 93)", "wur.nl (DA 71)", "jouwweb.nl (DA 63)", "startpagina.nl (DA 63)", "fok.nl (DA 59)"],
@@ -1506,13 +1155,13 @@ const premiumDomains = [
   },
   {
     name: "wbetting.co.uk",
-    description: "Domínio britânico de apostas/gaming com backlinks da OVH, Joomla.org, WSU e CSIC.",
+    description: "英国博彩/游戏域名，拥有来自OVH、Joomla.org、WSU和CSIC的外链。",
     mozScore: 21,
     pageAuthority: 41,
     linkingDomains: 468,
     inboundLinks: "280.6K+",
     followedLinks: "198.3K+",
-    category: "Gaming",
+    category: "游戏",
     price: "€79",
     backlinks: "280.6K+",
     topBacklinks: ["ovh.net (DA 92)", "joomla.org (DA 92)", "wsu.edu (DA 87)", "csic.es (DA 78)", "knows.nl (DA 65)"],
@@ -1520,13 +1169,13 @@ const premiumDomains = [
   },
   {
     name: "fantasticgymnastics.nl",
-    description: "Domínio holandês de desporto/ginástica com backlinks do LiveInternet, Pages.dev, XSRV e Toolforge.",
+    description: "荷兰体操域名，拥有来自LiveInternet、Pages.dev、XSRV和Toolforge的外链。",
     mozScore: 21,
     pageAuthority: 29,
     linkingDomains: 246,
     inboundLinks: "7.6K+",
     followedLinks: "7.5K+",
-    category: "Desporto",
+    category: "体育",
     price: "€79",
     backlinks: "7.6K+",
     topBacklinks: ["liveinternet.ru (DA 93)", "pages.dev (DA 91)", "xsrv.jp (DA 89)", "toolforge.org (DA 80)", "worldwidetopsite.com (DA 71)"],
@@ -1534,13 +1183,13 @@ const premiumDomains = [
   },
   {
     name: "nanostarproject.eu",
-    description: "Domínio de projeto EU de nanotecnologia com backlinks da Springer, Sapo.pt, Pages.dev e universidades (UPM, UC3M).",
+    description: "EU纳米技术项目域名，拥有来自Springer、Sapo.pt、Pages.dev和大学(UPM, UC3M)的外链。",
     mozScore: 21,
     pageAuthority: 28,
     linkingDomains: 76,
     inboundLinks: "338+",
     followedLinks: "306+",
-    category: "Tecnologia",
+    category: "科技",
     price: "€79",
     backlinks: "338+",
     topBacklinks: ["springer.com (DA 93)", "sapo.pt (DA 93)", "pages.dev (DA 91)", "upm.es (DA 78)", "uc3m.es (DA 77)"],
@@ -1549,13 +1198,13 @@ const premiumDomains = [
   // DA 20
   {
     name: "espresso-project.eu",
-    description: "Domínio de projeto de cidade inteligente e mobilidade com backlinks da Europa.eu, Medium, MDPI e Telecom TV.",
+    description: "智慧城市和交通项目域名，拥有来自Europa.eu、Medium、MDPI和Telecom TV的外链。",
     mozScore: 20,
     pageAuthority: 28,
     linkingDomains: 81,
     inboundLinks: "191+",
     followedLinks: "146+",
-    category: "Cidade Inteligente",
+    category: "智慧城市",
     price: "€79",
     backlinks: "191+",
     topBacklinks: ["europa.eu (DA 97)", "medium.com (DA 95)", "mdpi.com (DA 92)", "campaign-archive.com (DA 84)", "telecomtv.com (DA 67)"],
@@ -1586,9 +1235,9 @@ const PremiumDomainsZH = () => {
     if (!validation.success) {
       const errorResult = validation as { success: false; errors: Record<string, string> };
       setFormErrors(errorResult.errors);
-      const firstError = Object.values(errorResult.errors)[0] || "Verifique os seus dados";
+      const firstError = Object.values(errorResult.errors)[0] || "请检查您的输入";
       toast({
-        title: "Preencha todos os campos obrigatórios corretamente",
+        title: "请正确填写所有必填字段",
         description: firstError,
         variant: "destructive"
       });
@@ -1597,14 +1246,14 @@ const PremiumDomainsZH = () => {
 
     const { data } = validation;
     
-    const subject = `Pedido de Domínio Premium: ${data.domain}`;
-    const body = `Nome: ${data.name}\nE-mail: ${data.email}\nDomínio: ${data.domain}\n\nMensagem:\n${data.message || ""}`;
+    const subject = `优质域名咨询: ${data.domain}`;
+    const body = `姓名: ${data.name}\n邮箱: ${data.email}\n域名: ${data.domain}\n\n留言:\n${data.message || ""}`;
     
     window.location.href = buildSafeMailtoUrl("support@iaee.eu", subject, body);
     
     toast({
-      title: "Pedido a ser enviado",
-      description: "O seu programa de e-mail será aberto para enviar o pedido."
+      title: "请求正在发送",
+      description: "您的邮件客户端将打开以发送请求。"
     });
   };
 
@@ -1618,99 +1267,107 @@ const PremiumDomainsZH = () => {
       <Helmet>
         <title>购买高权重优质过期域名 | 高DA外链SEO价值</title>
         <meta name="description" content="购买带外链的过期域名？可靠的高权重SEO价值过期域名。购买优质域名，更快获得Google排名。立即可用。" />
-        <meta name="keywords" content="comprar domínio expirado, domínios expirados com backlinks, domínio com autoridade, domínios expirados fiáveis, comprar domínio premium, domínio com valor SEO, domínio antigo com links, melhores domínios à venda" />
-        <link rel="canonical" href="https://iaee.eu/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" />
+        <meta name="keywords" content="购买过期域名, 带外链的过期域名, 高权重域名, 可靠的过期域名, 购买优质域名, 有SEO价值的域名, 带链接的老域名, 最佳域名出售" />
+        <link rel="canonical" href="https://iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
         {/* Language Switcher */}
-        <LanguageSwitcher currentLanguage="pt" />
+        <LanguageSwitcher currentLanguage="zh" />
         
         {/* Header */}
         <header className="sticky top-0 z-50 backdrop-blur-xl bg-slate-950/80 border-b border-amber-500/20">
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-            <RouterLink to="/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" className="flex items-center gap-3">
+            <RouterLink to="/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" className="flex items-center gap-3">
               <Crown className="h-8 w-8 text-amber-400" />
               <span className="text-xl font-bold bg-gradient-to-r from-amber-200 to-amber-400 bg-clip-text text-transparent hover:from-amber-300 hover:to-amber-500 transition-all">
-                Domínios Premium
+                优质域名
               </span>
             </RouterLink>
             <nav className="hidden md:flex items-center gap-6">
-              <RouterLink to="/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium flex items-center gap-1">
-                <Home className="h-4 w-4" />
-                Início
-              </RouterLink>
-              <button onClick={() => scrollToSection("domains")} className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium">
-                Domínios
+              <button onClick={() => scrollToSection("domains")} className="text-slate-300 hover:text-amber-400 transition-colors">
+                域名
               </button>
-              <button onClick={() => scrollToSection("why-premium")} className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium">
-                Porquê Premium?
+              <button onClick={() => scrollToSection("why-premium")} className="text-slate-300 hover:text-amber-400 transition-colors">
+                优势
               </button>
-              <button onClick={() => scrollToSection("seo-redirects")} className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium">
-                SEO & Redirects
+              <button onClick={() => scrollToSection("moz-explanation")} className="text-slate-300 hover:text-amber-400 transition-colors">
+                关于MOZ DA
               </button>
-              <button onClick={() => scrollToSection("faq")} className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium">
-                FAQ
+              <button onClick={() => scrollToSection("faq")} className="text-slate-300 hover:text-amber-400 transition-colors">
+                常见问题
               </button>
-              <Button 
-                onClick={() => scrollToSection("contact")}
-                className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-semibold"
-              >
-                Contacto
-              </Button>
+              <button onClick={() => scrollToSection("contact")} className="text-slate-300 hover:text-amber-400 transition-colors">
+                联系我们
+              </button>
             </nav>
+            <Button 
+              onClick={() => scrollToSection("domains")}
+              className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-semibold"
+            >
+              查看域名
+            </Button>
           </div>
         </header>
 
+        {/* Home Link */}
+        <div className="container mx-auto px-4 py-3">
+          <RouterLink 
+            to="/" 
+            className="inline-flex items-center gap-2 text-slate-400 hover:text-amber-400 transition-colors text-sm"
+          >
+            <Home className="w-4 h-4" />
+            <span>← 返回首页</span>
+          </RouterLink>
+        </div>
+
         {/* Hero Section */}
-        <section className="relative py-24 md:py-32 overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-900/20 via-transparent to-transparent" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-amber-500/5 rounded-full blur-3xl" />
+        <section className="py-20 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 via-transparent to-slate-900/50" />
+          <div className="absolute top-20 left-10 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-amber-600/5 rounded-full blur-3xl" />
           
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <Badge className="mb-6 bg-amber-500/10 text-amber-400 border-amber-500/30 px-4 py-2">
-                <Star className="w-4 h-4 mr-2 inline" />
-                Coleção Exclusiva de Domínios Premium
+              <Badge className="mb-6 bg-amber-500/10 text-amber-400 border-amber-500/30 text-sm px-4 py-1.5">
+                <Crown className="w-4 h-4 mr-2 inline" />
+                可靠的高权重过期域名
               </Badge>
               
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                <span className="bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 bg-clip-text text-transparent">
-                  Domínios Premium Expirados com Backlinks Alta Autoridade & Valor SEO
-                </span>
+              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                购买<span className="bg-gradient-to-r from-amber-400 to-amber-500 bg-clip-text text-transparent">优质过期域名</span>，获得SEO优势
               </h1>
               
-              <p className="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-                Fortaleça a sua presença online com nomes de domínio que já construíram anos de autoridade. 
-                Ideal para rankings mais rápidos, backlinks poderosos e vantagens SEO diretas.
+              <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+                投资经过验证的域名权威。我们精选的过期域名拥有<strong className="text-white">高权重外链</strong>和<strong className="text-white">强大的SEO价值</strong>。
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-wrap gap-4 justify-center mb-8">
                 <Button 
                   size="lg"
                   onClick={() => scrollToSection("domains")}
-                  className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-lg px-8 py-6 shadow-lg shadow-amber-500/25 transition-all hover:shadow-amber-500/40 hover:scale-105"
+                  className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-lg px-8 py-6 shadow-lg shadow-amber-500/25 transition-all hover:shadow-amber-500/40"
                 >
-                  Ver Domínios
+                  查看可用域名
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
                 <Button 
+                  variant="outline" 
                   size="lg"
-                  variant="outline"
                   onClick={() => scrollToSection("why-premium")}
                   className="bg-slate-800 border-slate-600 text-slate-200 hover:bg-slate-700 hover:text-white text-lg px-8 py-6"
                 >
-                  Mais Informações
+                  了解更多
                 </Button>
               </div>
               
               {/* Stats */}
               <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
                 {[
-                  { label: "Pontuação MOZ Média", value: "29+" },
-                  { label: "Domínios Premium", value: "110+" },
-                  { label: "Anos de Experiência", value: "10+" },
-                  { label: "Clientes Satisfeitos", value: "500+" }
+                  { label: "平均MOZ评分", value: "29+" },
+                  { label: "优质域名", value: "110+" },
+                  { label: "经验年数", value: "10+" },
+                  { label: "满意客户", value: "500+" }
                 ].map((stat, index) => (
                   <div key={index} className="p-4 rounded-xl bg-slate-800/50 border border-slate-700/50 backdrop-blur">
                     <div className="text-2xl md:text-3xl font-bold text-amber-400">{stat.value}</div>
@@ -1730,34 +1387,34 @@ const PremiumDomainsZH = () => {
             <div className="text-center mb-12">
               <Badge className="mb-4 bg-slate-800 text-amber-400 border-slate-700">
                 <Globe className="w-4 h-4 mr-2 inline" />
-                Domínios Disponíveis
+                可用域名
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Nomes de Domínio Premium à Venda
+                优质域名出售
               </h2>
               <p className="text-slate-400 max-w-3xl mx-auto">
-                Cada domínio é cuidadosamente selecionado com base na autoridade MOZ, perfil de backlinks e potencial SEO. 
-                Quer <strong className="text-white">comprar um domínio expirado</strong> ou procura <strong className="text-white">domínios expirados fiáveis</strong>? Veja a nossa oferta abaixo.
+                每个域名都根据MOZ权威度、外链配置和SEO潜力精心挑选。
+                想要<strong className="text-white">购买过期域名</strong>或寻找<strong className="text-white">可靠的过期域名</strong>？请查看我们的产品。
               </p>
             </div>
             
             {/* SEO Intro Text */}
             <div className="max-w-5xl mx-auto mb-8 bg-slate-800/30 border border-slate-700/50 rounded-2xl p-8">
               <p className="text-slate-300 leading-relaxed mb-4">
-                <strong className="text-white">À procura de um nome de domínio com valor SEO real?</strong> Connosco compra <strong className="text-amber-400">domínios expirados fiáveis com backlinks</strong> e alta autoridade, cuidadosamente verificados quanto à qualidade e histórico. Com um domínio expirado não começa do zero, mas beneficia imediatamente de links existentes, confiança e histórico online.
+                <strong className="text-white">正在寻找具有真正SEO价值的域名？</strong>我们提供可靠的<strong className="text-amber-400">带外链的过期域名</strong>和高权重域名，经过严格的质量和历史检查。使用过期域名，您不必从零开始，可以立即受益于现有的链接、信任度和在线历史。
               </p>
               <p className="text-slate-300 leading-relaxed mb-4">
-                Além de domínios expirados, também oferecemos <strong className="text-amber-400">nomes de domínio premium</strong>: nomes curtos e poderosos com valor de marca e potencial comercial. Seja para um website, loja online ou projeto SEO — um <strong className="text-white">nome de domínio com autoridade</strong> dá-lhe uma vantagem clara no Google.
+                除了过期域名，我们还提供<strong className="text-amber-400">优质域名</strong>：简短有力的名称，具有品牌价值和商业潜力。无论您是建立网站、网店还是SEO项目——具有<strong className="text-white">权威的域名</strong>让您在Google中拥有明显优势。
               </p>
               <p className="text-slate-300 leading-relaxed text-sm">
-                <strong className="text-white">Mais pesquisados:</strong> comprar domínio expirado com backlinks • domínios expirados fiáveis • domínio expirado com autoridade • comprar domínio premium • domínio com valor SEO • domínio antigo com links • melhores domínios à venda
+                <strong className="text-white">热门搜索：</strong>购买带外链的过期域名 • 可靠的过期域名 • 高权重过期域名 • 购买优质域名 • 有SEO价值的域名 • 带链接的老域名 • 最佳域名出售
               </p>
             </div>
 
             {/* VAT Notice */}
             <div className="max-w-5xl mx-auto mb-10 text-center">
               <p className="text-sm text-slate-300 font-medium bg-slate-800/40 border border-slate-700/40 rounded-lg px-4 py-3 inline-block">
-                <span className="text-amber-400 font-semibold">Informação IVA:</span> Os preços não incluem IVA para clientes particulares na UE. Clientes empresariais na UE podem aplicar o mecanismo de autoliquidação. Para clientes fora da UE não é cobrado IVA.
+                <span className="text-amber-400 font-semibold">增值税信息：</span> 价格不含欧盟境内私人客户的增值税。欧盟境内的企业客户可以适用反向征收增值税。欧盟境外的客户无需缴纳增值税。
               </p>
             </div>
             
@@ -1789,26 +1446,26 @@ const PremiumDomainsZH = () => {
                       <div className="flex items-center justify-between text-sm">
                         <div className="flex items-center gap-2 text-slate-400">
                           <Link className="w-4 h-4" />
-                          <span>Backlinks: {domain.backlinks}</span>
+                          <span>外链: {domain.backlinks}</span>
                         </div>
                       </div>
                       
                       {domain.pageAuthority && (
                         <div className="grid grid-cols-2 gap-2 text-xs">
                           <div className="bg-slate-800/50 rounded px-2 py-1">
-                            <span className="text-slate-500">Page Authority:</span>
+                            <span className="text-slate-500">页面权威:</span>
                             <span className="text-white ml-1 font-medium">{domain.pageAuthority}</span>
                           </div>
                           <div className="bg-slate-800/50 rounded px-2 py-1">
-                            <span className="text-slate-500">Linking Domains:</span>
+                            <span className="text-slate-500">链接域名:</span>
                             <span className="text-white ml-1 font-medium">{domain.linkingDomains}</span>
                           </div>
                           <div className="bg-slate-800/50 rounded px-2 py-1">
-                            <span className="text-slate-500">Inbound Links:</span>
+                            <span className="text-slate-500">入站链接:</span>
                             <span className="text-white ml-1 font-medium">{domain.inboundLinks}</span>
                           </div>
                           <div className="bg-slate-800/50 rounded px-2 py-1">
-                            <span className="text-slate-500">Followed Links:</span>
+                            <span className="text-slate-500">Followed链接:</span>
                             <span className="text-white ml-1 font-medium">{domain.followedLinks}</span>
                           </div>
                         </div>
@@ -1816,7 +1473,7 @@ const PremiumDomainsZH = () => {
                       
                       {domain.topBacklinks && domain.topBacklinks.length > 0 && (
                         <div className="text-xs">
-                          <span className="text-slate-500 block mb-1">Top Backlinks:</span>
+                          <span className="text-slate-500 block mb-1">顶级外链:</span>
                           <div className="flex flex-wrap gap-1">
                             {domain.topBacklinks.slice(0, 5).map((link, i) => (
                               <Badge key={i} variant="outline" className="text-[10px] border-amber-500/30 text-amber-400/80 bg-amber-500/5">
@@ -1831,7 +1488,7 @@ const PremiumDomainsZH = () => {
                     {/* Price Display - Compact at bottom */}
                     <div className="mt-auto pt-4 border-t border-slate-700/50">
                       <div className="flex items-center justify-between mb-3 bg-slate-800/60 rounded-lg px-3 py-2">
-                        <span className="text-sm font-medium text-slate-300">Preço</span>
+                        <span className="text-sm font-medium text-slate-300">价格</span>
                         <span className="text-lg font-bold text-amber-400">{domain.price}</span>
                       </div>
                       
@@ -1843,13 +1500,13 @@ const PremiumDomainsZH = () => {
                             rel="noopener noreferrer"
                             className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[#F59E0B] hover:bg-[#D97706] text-slate-950 font-bold rounded-md transition-all duration-200 shadow-md hover:shadow-lg text-lg"
                           >
-                            Comprar Agora
+                            立即购买
                           </a>
                         ) : (
                           <div 
                             className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[#F59E0B] text-slate-950 font-bold rounded-md shadow-md text-lg"
                           >
-                            Comprar Agora
+                            立即购买
                           </div>
                         )}
                         <div className="flex flex-col items-center gap-2 text-center" data-nosnippet>
@@ -1915,17 +1572,17 @@ const PremiumDomainsZH = () => {
                           </div>
                           <div data-nosnippet>
                             <p className="text-[10px] text-slate-400 leading-tight mt-2">
-                              Pagamento seguro via Stripe
+                              通过Stripe安全支付
                               <br />
-                              Convertido automaticamente para a sua moeda local
+                              自动转换为您当地的货币
                             </p>
                             <p className="text-[10px] text-slate-400 leading-tight mt-3">
-                              Após o pagamento, receberá o token de transferência (EPP/Auth-code) no seu e-mail dentro de 24 horas.
+                              付款后，您将在24小时内收到转移令牌（EPP/Auth-code）到您的邮箱。
                               <br />
-                              Verifique também a pasta de spam.
+                              请同时检查垃圾邮件文件夹。
                             </p>
-                            <a href="#transferir-dominio" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
-                              Como funciona a transferência?
+                            <a href="#domain-transfer" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
+                              转移如何进行？
                             </a>
                           </div>
                         </div>
@@ -1934,6 +1591,35 @@ const PremiumDomainsZH = () => {
                   </CardContent>
                 </Card>
               ))}
+            </div>
+            
+            {/* Unique Value Section */}
+            <div className="mt-20">
+              <div className="text-center mb-12">
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                  为何这些域名独一无二
+                </h3>
+                <p className="text-slate-400 max-w-2xl mx-auto">
+                  我们的优质域名经过精心挑选，符合严格的质量标准。
+                </p>
+              </div>
+              
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+                {[
+                  { icon: Shield, title: "干净历史", desc: "无垃圾或惩罚历史" },
+                  { icon: Link, title: "优质外链", desc: "来自可靠来源" },
+                  { icon: BarChart3, title: "高DA评分", desc: "最低DA 20+" },
+                  { icon: Globe, title: "EU/全球顶级域名", desc: ".eu, .nl, .be, .de, .co.uk" }
+                ].map((item, index) => (
+                  <div key={index} className="text-center p-6 rounded-xl bg-slate-800/30 border border-slate-700/50">
+                    <div className="w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center mx-auto mb-4">
+                      <item.icon className="h-6 w-6 text-amber-400" />
+                    </div>
+                    <h4 className="text-white font-semibold mb-1">{item.title}</h4>
+                    <p className="text-slate-400 text-sm">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
@@ -1944,27 +1630,29 @@ const PremiumDomainsZH = () => {
             <div className="text-center mb-16">
               <Badge className="mb-4 bg-amber-500/10 text-amber-400 border-amber-500/30">
                 <Award className="w-4 h-4 mr-2 inline" />
-                Porquê Domínios Premium?
+                为何选择优质域名？
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                As Vantagens de Domínios Expirados Premium
+                优质过期域名的优势
               </h2>
               <p className="text-slate-400 max-w-2xl mx-auto">
-                Descubra porque os profissionais escolhem domínios expirados premium para os seus projetos.
+                了解为什么专业人士选择优质过期域名来开展他们的项目。
               </p>
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {[
-                { icon: TrendingUp, title: "Rankings Mais Rápidos", desc: "Comece com autoridade de domínio existente e alcance posições mais altas no Google mais rapidamente." },
-                { icon: Link, title: "Backlinks de Qualidade", desc: "Beneficie de anos de links construídos naturalmente de websites autoritários." },
-                { icon: Shield, title: "Histórico Verificado", desc: "Cada domínio é cuidadosamente verificado quanto a spam, penalizações e histórico negativo." },
-                { icon: Zap, title: "Início Imediato", desc: "Sem período de sandbox ou de espera — comece a construir imediatamente." },
-                { icon: Target, title: "Nicho Específico", desc: "Encontre domínios que correspondam perfeitamente ao seu público-alvo e setor." },
-                { icon: BarChart3, title: "Valor Mensurável", desc: "Pontuações MOZ verificadas e métricas que provam a qualidade de cada domínio." }
+                { icon: TrendingUp, title: "更快获得排名", desc: "从现有的域名权威开始，更快地在Google中获得更高排名。" },
+                { icon: Link, title: "优质外链", desc: "受益于多年自然积累的来自权威网站的链接。" },
+                { icon: Shield, title: "经过验证的历史", desc: "每个域名都经过仔细检查，确保没有垃圾邮件、惩罚或负面历史。" },
+                { icon: Zap, title: "立即开始", desc: "无需沙盒期或等待期——立即开始建设。" },
+                { icon: Target, title: "利基特定", desc: "找到与您的目标受众和行业完美匹配的域名。" },
+                { icon: Award, title: "长期价值", desc: "投资于多年来保持和增长价值的域名。" }
               ].map((item, index) => (
-                <div key={index} className="p-6 rounded-xl bg-slate-800/30 border border-slate-700/50 hover:border-amber-500/30 transition-all">
-                  <item.icon className="w-10 h-10 text-amber-400 mb-4" />
+                <div key={index} className="p-6 rounded-2xl bg-slate-800/30 border border-slate-700/50 hover:border-amber-500/30 transition-colors">
+                  <div className="w-12 h-12 rounded-xl bg-amber-500/20 flex items-center justify-center mb-4">
+                    <item.icon className="h-6 w-6 text-amber-400" />
+                  </div>
                   <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
                   <p className="text-slate-400">{item.desc}</p>
                 </div>
@@ -1973,74 +1661,50 @@ const PremiumDomainsZH = () => {
           </div>
         </section>
 
-        {/* SEO & Redirects Section */}
-        <section id="seo-redirects" className="py-20 bg-slate-950">
+        {/* MOZ Explanation Section */}
+        <section id="moz-explanation" className="py-20 bg-slate-950">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <Badge className="mb-4 bg-slate-800 text-amber-400 border-slate-700">
-                <ArrowUp className="w-4 h-4 mr-2 inline" />
-                SEO & Redirects
-              </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Como Usar Domínios Premium para SEO
-              </h2>
-            </div>
-            
-            <div className="max-w-4xl mx-auto space-y-8">
-              <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 border border-slate-700/50 rounded-2xl p-8">
-                <h3 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-amber-400" />
-                  301 Redirect para o Seu Próprio Website
-                </h3>
-                <p className="text-slate-400 leading-relaxed">
-                  Uma das formas mais eficazes de utilizar um domínio premium é através de um 301 redirect. Isto transfere grande parte do valor SEO (link juice) do domínio premium para o seu website existente. Perfeito para aumentar a autoridade do seu website principal.
-                </p>
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                <Badge className="mb-4 bg-slate-800 text-amber-400 border-slate-700">
+                  <BarChart3 className="w-4 h-4 mr-2 inline" />
+                  什么是MOZ域名权威？
+                </Badge>
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                  了解域名权威（DA）
+                </h2>
               </div>
               
-              <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 border border-slate-700/50 rounded-2xl p-8">
-                <h3 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-amber-400" />
-                  Novo Website no Domínio Premium
-                </h3>
-                <p className="text-slate-400 leading-relaxed">
-                  Comece um projeto completamente novo com uma vantagem. A autoridade existente e os backlinks dão ao seu novo website um impulso imediato nos motores de busca.
+              <div className="bg-gradient-to-br from-slate-800/60 to-slate-900/60 border border-slate-700/50 rounded-2xl p-8">
+                <p className="text-slate-300 leading-relaxed mb-6">
+                  <strong className="text-white">域名权威（DA）</strong>是由SEO公司MOZ开发的评分系统，用于预测网站在搜索引擎结果页面（SERP）中的排名潜力。评分范围从1到100，分数越高表示排名潜力越大。
                 </p>
-              </div>
-              
-              <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 border border-slate-700/50 rounded-2xl p-8">
-                <h3 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-amber-400" />
-                  PBN (Private Blog Network)
-                </h3>
-                <p className="text-slate-400 leading-relaxed">
-                  Para estratégias SEO avançadas, domínios premium podem ser utilizados para construir uma rede de blogs de suporte. Cada domínio traz a sua própria autoridade e histórico único.
-                </p>
-              </div>
-            </div>
-            
-            <div className="mt-16">
-              <div className="text-center mb-8">
-                <h3 className="text-2xl font-semibold text-white mb-2">
-                  Porque Estes Domínios São Únicos
-                </h3>
-                <p className="text-slate-400 max-w-2xl mx-auto">
-                  Os nossos domínios premium são cuidadosamente selecionados e cumprem requisitos de qualidade rigorosos.
-                </p>
-              </div>
-              
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-                {[
-                  { icon: Shield, title: "Histórico Limpo", desc: "Sem spam ou histórico de penalizações" },
-                  { icon: Link, title: "Backlinks de Qualidade", desc: "De fontes fiáveis" },
-                  { icon: BarChart3, title: "Alta Pontuação DA", desc: "Mínimo DA 20+" },
-                  { icon: Globe, title: "Nichos Relevantes", desc: "Domínios tematicamente adequados" }
-                ].map((item, index) => (
-                  <div key={index} className="text-center p-6 rounded-xl bg-slate-800/30 border border-slate-700/50 hover:border-amber-500/30 transition-all">
-                    <item.icon className="w-10 h-10 text-amber-400 mx-auto mb-4" />
-                    <h4 className="text-white font-semibold mb-2">{item.title}</h4>
-                    <p className="text-slate-400 text-sm">{item.desc}</p>
+                
+                <div className="grid md:grid-cols-3 gap-6 mb-8">
+                  <div className="text-center p-4 rounded-xl bg-slate-800/50">
+                    <div className="text-3xl font-bold text-red-400 mb-2">1-20</div>
+                    <div className="text-sm text-slate-400">新建/低权威</div>
                   </div>
-                ))}
+                  <div className="text-center p-4 rounded-xl bg-slate-800/50">
+                    <div className="text-3xl font-bold text-amber-400 mb-2">20-40</div>
+                    <div className="text-sm text-slate-400">中等权威</div>
+                  </div>
+                  <div className="text-center p-4 rounded-xl bg-slate-800/50">
+                    <div className="text-3xl font-bold text-emerald-400 mb-2">40+</div>
+                    <div className="text-sm text-slate-400">高权威</div>
+                  </div>
+                </div>
+                
+                <p className="text-slate-300 leading-relaxed mb-4">
+                  我们优质域名组合中的域名DA评分范围从<strong className="text-amber-400">20到38</strong>，代表着<strong className="text-white">中等到高权威</strong>的域名，能让您在Google排名中获得显著领先优势。
+                </p>
+                
+                <div className="flex items-center gap-4 p-4 rounded-xl bg-amber-500/10 border border-amber-500/30">
+                  <CheckCircle className="h-6 w-6 text-amber-400 flex-shrink-0" />
+                  <p className="text-slate-300">
+                    <strong className="text-white">我们的承诺：</strong>所有列出的DA评分直接来自MOZ，并在销售前进行验证。
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -2051,10 +1715,10 @@ const PremiumDomainsZH = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <Badge className="mb-4 bg-slate-800 text-amber-400 border-slate-700">
-                Perguntas Frequentes
+                常见问题
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                FAQ sobre Domínios Premium & SEO
+                关于优质域名和SEO的常见问题
               </h2>
             </div>
             
@@ -2062,68 +1726,68 @@ const PremiumDomainsZH = () => {
               <Accordion type="single" collapsible className="space-y-4">
                 {[
                   {
-                    question: "Onde posso comprar um domínio expirado com backlinks?",
-                    answer: "A melhor forma de comprar um domínio expirado com backlinks é através de um vendedor especializado que verifica manualmente os domínios quanto à qualidade, histórico e autoridade. Assim evita comprar um domínio com links de spam ou problemas SEO. Oferecemos apenas domínios expirados fiáveis que foram cuidadosamente verificados."
+                    question: "在哪里可以购买带外链的过期域名？",
+                    answer: "最好从专业卖家那里购买带外链的过期域名，他们会手动检查域名的质量、历史和权威性。这可以防止您购买带有垃圾链接或SEO问题的域名。我们只提供经过仔细检查的可靠过期域名。"
                   },
                   {
-                    question: "O que é um domínio expirado fiável com alta autoridade?",
-                    answer: "Um domínio expirado fiável com alta autoridade é um domínio que tem backlinks de qualidade, um histórico de website limpo, sem histórico de spam, jogos de azar ou conteúdo adulto, e links relevantes de conteúdo real. Este tipo de domínio oferece valor SEO real e dá-lhe uma vantagem no Google."
+                    question: "什么是高权重的可靠过期域名？",
+                    answer: "高权重的可靠过期域名是拥有优质外链、干净网站历史、没有垃圾邮件/赌博/成人内容过去，以及来自真实内容的相关链接的域名。这类域名提供真正的SEO价值，让您在Google中获得优势。"
                   },
                   {
-                    question: "Quanto valor SEO tem um domínio expirado com links?",
-                    answer: "O valor SEO de um domínio expirado com links está principalmente nos backlinks existentes, autoridade de domínio construída e confiança mais rápida no Google. Isto pode reduzir significativamente o tempo para classificar — frequentemente meses a anos mais rápido do que com um novo domínio."
+                    question: "带链接的过期域名有多少SEO价值？",
+                    answer: "带链接的过期域名的SEO价值主要体现在现有外链、积累的域名权威和更快获得Google信任方面。这可以显著缩短排名时间——通常比新域名快几个月甚至几年。"
                   },
                   {
-                    question: "Um domínio expirado com autoridade é melhor que linkbuilding?",
-                    answer: "Em muitos casos, sim. Com um domínio expirado compra links e autoridade existentes, enquanto o linkbuilding pode ser demorado, caro e arriscado. Um domínio antigo com valor SEO dá-lhe uma vantagem imediata sem meses de investimento em linkbuilding."
+                    question: "高权重过期域名比链接建设更好吗？",
+                    answer: "在很多情况下是的。使用过期域名，您购买的是现有的链接和权威，而链接建设可能耗时、昂贵且有风险。具有SEO价值的老域名让您立即获得优势，无需数月的链接建设投资。"
                   },
                   {
-                    question: "Posso usar um domínio expirado para um novo website?",
-                    answer: "Sim. Pode usar perfeitamente um domínio expirado com valor SEO para um novo website, desde que o conteúdo se alinhe logicamente com o tema e histórico do domínio. Os backlinks permanecem ativos e beneficia imediatamente da autoridade construída."
+                    question: "我可以将过期域名用于新网站吗？",
+                    answer: "可以。只要内容与域名的主题和历史逻辑相关，您完全可以将具有SEO价值的过期域名用于新网站。外链保持活跃，您立即受益于积累的权威。"
                   },
                   {
-                    question: "Qual é a diferença entre um domínio premium e um domínio expirado?",
-                    answer: "Um domínio premium é principalmente valioso devido à qualidade do nome e valor de marca, enquanto um domínio expirado com backlinks traz autoridade SEO e histórico extra. Ambos podem ser valiosos, dependendo do seu objetivo. Alguns domínios combinam ambas as vantagens."
+                    question: "优质域名和过期域名有什么区别？",
+                    answer: "优质域名主要因名称质量和品牌价值而有价值，而带外链的过期域名则带来额外的SEO权威和历史。两者都可能有价值，取决于您的目标。有些域名结合了两种优势。"
                   },
                   {
-                    question: "Porque são os domínios expirados com backlinks mais caros?",
-                    answer: "Os domínios expirados com backlinks são mais caros porque já têm valor SEO, poupam tempo e custos, e permitem um início mais rápido. Está a pagar por confiança construída, não apenas por um nome. O investimento frequentemente compensa-se rapidamente através de melhores rankings."
+                    question: "为什么带外链的过期域名更贵？",
+                    answer: "带外链的过期域名更贵是因为它们已经具有SEO价值，可以节省时间和成本，并且能够更快开始。您购买的是积累的信任，而不仅仅是一个名称。这项投资通常很快就能通过更好的排名收回。"
                   },
                   {
-                    question: "Os domínios expirados com autoridade são adequados para lojas online?",
-                    answer: "Sim. Para lojas online, a confiança é crucial. Um domínio expirado com alta autoridade pode contribuir para melhor visibilidade, conversões mais altas e indexação mais rápida. Isto dá à sua loja online uma vantagem sobre concorrentes que começam com um novo domínio."
+                    question: "高权重的过期域名适合网店吗？",
+                    answer: "适合。对于网店，信任至关重要。高权重的过期域名可以有助于提高可见性、更高的转化率和更快的索引。这让您的网店比使用新域名的竞争对手更有优势。"
                   },
                   {
-                    question: "Posso combinar um domínio premium com vantagens SEO?",
-                    answer: "Sim. Alguns domínios premium são também domínios expirados com um forte histórico de links. Isto combina valor de marca com autoridade SEO e é frequentemente o mais valioso. No nosso portfólio encontrará vários domínios que oferecem ambas as vantagens."
+                    question: "我可以将优质域名与SEO优势结合吗？",
+                    answer: "可以。一些优质域名也是具有强大链接历史的过期域名。这结合了品牌价值和SEO权威，通常是最有价值的。在我们的产品组合中，您可以找到提供两种优势的域名。"
                   },
                   {
-                    question: "Porque é que cada vez mais empreendedores escolhem domínios expirados com valor SEO?",
-                    answer: "Porque os empreendedores procuram resultados mais rápidos no Google, menos dependência de linkbuilding e uma base sólida para crescimento. Um domínio expirado fiável com backlinks e autoridade oferece precisamente essa vantagem que faz a diferença."
+                    question: "为什么越来越多的企业家选择具有SEO价值的过期域名？",
+                    answer: "因为企业家们正在寻求在Google中更快的结果，减少对链接建设的依赖，以及强大的增长基础。具有外链和权威的可靠过期域名正好提供了这种具有差异化的优势。"
                   },
                   {
-                    question: "O que é Domain Authority (DA) e porque é importante?",
-                    answer: "Domain Authority é uma pontuação de 1-100 desenvolvida pela MOZ que prevê quão bem um website irá classificar nos motores de busca. Um DA mais alto significa mais autoridade e melhores hipóteses de classificar bem. Baseia-se em fatores como o número e qualidade de backlinks, a idade do domínio e a fiabilidade geral."
+                    question: "什么是域名权威（DA），为什么它很重要？",
+                    answer: "域名权威是MOZ开发的1-100分评分，用于预测网站在搜索引擎中的排名。更高的DA意味着更多的权威和更高的排名机会。它基于外链数量和质量、域名年龄和整体可靠性等因素。"
                   },
                   {
-                    question: "Como funciona um 301 redirect para SEO?",
-                    answer: "Um 301 redirect é um redirecionamento permanente que diz aos motores de busca que uma página foi permanentemente movida. Quando faz um 301 redirect de um domínio premium para o seu site, grande parte do valor SEO (link juice) desse domínio é transferido para o seu site. Isto pode melhorar significativamente os seus rankings."
+                    question: "301重定向如何用于SEO？",
+                    answer: "301重定向是告诉搜索引擎页面已永久移动的永久重定向。当您将优质域名301重定向到您的网站时，该域名的大部分SEO价值（链接汁）会转移到您的网站。这可以显著改善您的排名。"
                   },
                   {
-                    question: "Quanto tempo leva até ver resultados?",
-                    answer: "Os efeitos de uma transferência de domínio ou 301 redirect são geralmente visíveis nos resultados de pesquisa dentro de 2-8 semanas. Isto depende de quão frequentemente o Google rastreia o seu site e do estado atual do seu website. Domínios premium com backlinks ativos frequentemente mostram resultados mais rápidos."
+                    question: "多久能看到结果？",
+                    answer: "域名转移或301重定向的效果通常在2-8周内在搜索结果中可见。这取决于Google抓取您网站的频率和您网站的当前状态。具有活跃外链的优质域名通常更快显示结果。"
                   },
                   {
-                    question: "Qual é a melhor forma de encontrar domínios expirados com autoridade?",
-                    answer: "A melhor forma é através de um vendedor especializado que verifica os domínios antecipadamente. Procurar sozinho através de sites de leilão acarreta riscos. Selecionamos apenas domínios com links de qualidade, sem histórico de spam e valor SEO real. Assim sabe com certeza que está a investir num domínio fiável."
+                    question: "找到高权重过期域名的最佳方式是什么？",
+                    answer: "最佳方式是通过预先检查域名的专业卖家。通过拍卖网站自己搜索有风险。我们只选择具有优质链接、无垃圾历史和真正SEO价值的域名。这样您就可以确信您在投资可靠的域名。"
                   },
                   {
-                    question: "Porque é que por vezes aparecem websites do nosso portfólio no histórico de um domínio?",
-                    answer: "Alguns domínios no nosso portfólio foram anteriormente utilizados para os nossos próprios projetos, websites de teste ou 301 redirects. Isto inclui websites como NailTalk, OntwerpNovi, OliveVines e projetos similares. Esta é na verdade uma vantagem: estes domínios têm resultados comprovados e foram ativamente testados quanto ao desempenho SEO. Todos os nossos domínios são minuciosamente verificados em múltiplas fontes (como arquivos de histórico web, Google, Ahrefs, MOZ e verificadores de spam) antes da venda e estão completamente livres de histórico prejudicial como spam, conteúdo adulto ou histórico relacionado com jogos de azar. Um website do nosso próprio portfólio no histórico é portanto um sinal de qualidade e gestão cuidadosa — não uma razão para preocupação."
+                    question: "为什么域名历史中有时会出现您组合中的网站？",
+                    answer: "我们组合中的一些域名以前用于我们自己的项目、测试网站或301重定向。这包括NailTalk、OntwerpNovi、OliveVines等类似项目的网站。这实际上是一个优势：这些域名有经过验证的结果，并且经过了SEO性能的积极测试。我们所有的域名在销售前都会通过多种来源（如网络历史档案、Google、Ahrefs、MOZ和垃圾邮件检查器）进行彻底检查，完全没有垃圾邮件、成人内容或赌博相关历史等有害历史。我们组合中的网站在历史中出现是质量和精心管理的标志——不是担忧的理由。"
                   },
                   {
-                    question: "Como funciona SEO e linkbuilding? E porque devo continuar a manter o meu domínio comprado?",
-                    answer: "SEO (Search Engine Optimization) trata de otimizar o seu website para que motores de busca como o Google possam encontrá-lo, compreendê-lo e classificá-lo melhor. Linkbuilding é uma parte crucial disto: obter backlinks (referências) de outros websites para o seu. Estes links funcionam como 'votos de confiança' e dizem ao Google que o seu conteúdo é valioso.\n\n**Porque a manutenção é essencial:**\nUm domínio premium com backlinks existentes dá-lhe uma base forte, mas nenhum domínio oferece garantias de rankings. SEO é um processo contínuo. Backlinks podem desaparecer ao longo do tempo quando websites de referência ficam offline ou removem conteúdo. Além disso, os algoritmos do Google mudam regularmente, então o que funciona hoje pode ser diferente amanhã.\n\n**Dicas para manutenção e linkbuilding bem-sucedidos:**\n• **Crie conteúdo valioso** — Publique regularmente artigos, guias ou ferramentas relevantes e originais que outros queiram partilhar e linkar.\n• **Guest blogging** — Escreva artigos para websites respeitados na sua indústria com um link de volta para o seu site.\n• **Broken link building** — Encontre links quebrados em websites relevantes e ofereça o seu conteúdo como substituição.\n• **HARO/Helpareporter** — Responda a perguntas de jornalistas para obter menções e links em artigos de notícias.\n• **Redes sociais e RP** — Partilhe ativamente o seu conteúdo e construa relações com influenciadores e media.\n• **Estrutura de links internos** — Assegure links internos lógicos entre as suas páginas para distribuir autoridade.\n• **Monitorize os seus backlinks** — Use ferramentas como Ahrefs, MOZ ou SEMrush para monitorizar o seu perfil de links e desautorizar links prejudiciais.\n• **SEO técnico** — Assegure tempos de carregamento rápidos, design responsivo e uma conexão HTTPS segura.\n\n**Importante saber:**\nNenhum domínio, por mais forte que seja, garante posições de topo no Google. A autoridade construída dá-lhe uma vantagem, mas o sucesso depende de esforço contínuo: conteúdo regular, linkbuilding ativo e manutenção técnica. Veja o seu domínio premium como uma fundação sólida — o edifício em cima determina você mesmo com esforços SEO consistentes."
+                    question: "SEO和链接建设如何工作？为什么我需要继续维护购买的域名？",
+                    answer: "SEO（搜索引擎优化）是关于优化您的网站，使Google等搜索引擎能够更好地找到、理解和排名它。链接建设是其中的关键部分：从其他网站获取到您网站的外链（引用）。这些链接充当"信任票"，告诉Google您的内容有价值。\n\n**为什么维护至关重要：**\n具有现有外链的优质域名为您提供了坚实的基础，但没有任何域名能保证排名。SEO是一个持续的过程。外链可能会随着时间推移而消失，当引用网站下线或删除内容时。此外，Google的算法定期变化，所以今天有效的东西明天可能不同。\n\n**成功维护和链接建设的提示：**\n• **创建有价值的内容** — 定期发布相关的、原创的文章、指南或工具，让其他人想要分享和链接。\n• **客座博客** — 为您行业中受尊敬的网站撰写文章，带有返回您网站的链接。\n• **断链建设** — 在相关网站上找到断开的链接，并提供您的内容作为替代。\n• **HARO/帮助记者** — 回应记者问题，在新闻文章中获得提及和链接。\n• **社交媒体和公关** — 积极分享您的内容，与有影响力的人和媒体建立关系。\n• **内部链接结构** — 确保页面之间有逻辑的内部链接以分配权威。\n• **监控您的外链** — 使用Ahrefs、MOZ或SEMrush等工具监控您的链接配置文件并拒绝有害链接。\n• **技术SEO** — 确保快速加载时间、移动友好设计和安全的HTTPS连接。\n\n**重要须知：**\n没有任何域名，无论多么强大，都不能保证在Google中获得顶级位置。积累的权威给您一个领先优势，但成功取决于持续努力：定期内容、积极链接建设和技术维护。将您的优质域名视为坚实的基础——您通过持续的SEO努力决定上面的结构。"
                   }
                 ].map((faq, index) => (
                   <AccordionItem 
@@ -2146,154 +1810,154 @@ const PremiumDomainsZH = () => {
                   className="bg-gradient-to-br from-amber-500/10 to-slate-800/40 border border-amber-500/30 rounded-xl px-6"
                 >
                   <AccordionTrigger className="text-left text-white hover:text-amber-400 hover:no-underline py-4">
-                    <h3 className="font-semibold">Guia Completo: 35 Perguntas sobre Domínios Expirados & SEO</h3>
+                    <h3 className="font-semibold">完整指南：关于过期域名和SEO的35个问题</h3>
                   </AccordionTrigger>
                   <AccordionContent className="text-slate-400 pb-6 leading-relaxed">
                     <div className="space-y-8 whitespace-pre-line">
                       {[
                         {
-                          question: "1. Que nome de domínio devo comprar como iniciante?",
-                          answer: "Como iniciante, escolha um nome de domínio fácil de lembrar, que indique claramente o que faz e transmita confiança. Muitos iniciantes pesquisam \"que nome de domínio devo comprar\" e acabam em domínios novos, enquanto um domínio expirado fiável muitas vezes já construiu autoridade e valor."
+                          question: "1. 作为初学者，我应该购买哪种域名？",
+                          answer: "作为初学者，最好选择一个容易记忆、清楚表明您做什么并能建立信任的域名。许多新手搜索"我应该购买哪种域名"，自然会找到新域名，而可靠的过期域名通常已经拥有积累的权威和价值。"
                         },
                         {
-                          question: "2. Qual é a diferença entre um novo domínio e um domínio expirado?",
-                          answer: "Um novo domínio não tem histórico e começa completamente do zero. Um domínio expirado foi registrado anteriormente e pode ainda ter backlinks, autoridade e confiança no Google. Isso torna um domínio expirado muitas vezes mais atraente para SEO e visibilidade."
+                          question: "2. 新域名和过期域名有什么区别？",
+                          answer: "新域名没有历史，完全从零开始。过期域名以前被注册过，可能仍然拥有外链、权威和Google的信任。这使过期域名通常对SEO和可见性更具吸引力。"
                         },
                         {
-                          question: "3. É melhor comprar um novo domínio ou um domínio expirado?",
-                          answer: "Quem pesquisa \"novo domínio ou domínio expirado\" geralmente compara velocidade e resultado. Para branding, um novo nome pode funcionar, mas para ser encontrado mais rapidamente no Google, um bom domínio expirado oferece muitas vezes uma vantagem clara."
+                          question: "3. 购买新域名还是过期域名更好？",
+                          answer: "搜索"新域名还是过期域名"的人通常在比较速度和结果。对于品牌来说，新名称可能有效，但对于更快在Google中被找到，好的过期域名通常能提供明显的领先优势。"
                         },
                         {
-                          question: "4. Porque é que o meu novo website tem um desempenho tão fraco no Google?",
-                          answer: "Novos websites precisam de construir a sua fiabilidade. Sem backlinks e histórico, isto geralmente leva meses. Um domínio expirado com bons links pode garantir que não precisa de começar completamente do zero."
+                          question: "4. 为什么我的新网站在Google中排名这么差？",
+                          answer: "新网站仍需要建立可靠性。没有外链和历史，这通常需要几个月。具有良好链接的过期域名可以确保您不必完全从零开始。"
                         },
                         {
-                          question: "5. É seguro comprar um domínio expirado?",
-                          answer: "Sim, desde que seja um domínio expirado verificado e fiável. O risco não está em \"expirado\", mas em domínios que não foram verificados quanto a spam, abuso ou backlinks negativos."
+                          question: "5. 购买过期域名安全吗？",
+                          answer: "是的，只要是经过检查的可靠过期域名。风险不在于"过期"，而在于未检查垃圾邮件、滥用或不良外链的域名。"
                         },
                         {
-                          question: "6. O que significa um domínio com bons backlinks?",
-                          answer: "Um domínio com bons backlinks tem referências de websites reais e relevantes. Estes links proporcionam autoridade e confiança nos motores de busca, o que é essencial para o desempenho SEO."
+                          question: "6. 拥有良好外链的域名是什么意思？",
+                          answer: "拥有良好外链的域名有来自真实、相关网站的引用。这些链接确保在搜索引擎中获得权威和信任，这对SEO表现至关重要。"
                         },
                         {
-                          question: "7. Porque são importantes os backlinks ao comprar um domínio?",
-                          answer: "Os backlinks são um dos fatores de ranking mais importantes do Google. Quando pesquisa \"comprar domínio SEO\", está na verdade à procura de um domínio que já construiu confiança — exatamente o que um bom domínio expirado oferece."
+                          question: "7. 购买域名时为什么外链很重要？",
+                          answer: "外链是Google最重要的排名因素之一。当您搜索"购买SEO域名"时，您实际上在寻找已经建立信任的域名——正是好的过期域名所提供的。"
                         },
                         {
-                          question: "8. Como posso ver se um domínio expirado é fiável?",
-                          answer: "Um domínio expirado fiável é verificado quanto a: histórico do website, qualidade dos backlinks, ausência de spam, jogos de azar ou conteúdo adulto. Como vendedor, seleciona apenas domínios que cumprem estes critérios."
+                          question: "8. 我如何判断过期域名是否可靠？",
+                          answer: "可靠的过期域名经过以下检查：网站历史、外链质量、没有垃圾邮件/赌博或成人内容。作为卖家，我们只选择符合这些标准的域名。"
                         },
                         {
-                          question: "9. Posso usar um domínio expirado para um novo website?",
-                          answer: "Sim. Pode usar perfeitamente um domínio expirado para um projeto completamente novo. O conteúdo é novo, mas o nome de domínio já traz autoridade online."
+                          question: "9. 我可以将过期域名用于新网站吗？",
+                          answer: "可以。您完全可以将过期域名用于全新项目。内容是新的，但域名已经带来在线权威。"
                         },
                         {
-                          question: "10. Um domínio expirado é adequado para iniciantes?",
-                          answer: "Certamente. Os iniciantes muitas vezes beneficiam mais porque: obtêm visibilidade mais rapidamente, têm menos desvantagem SEO, fazem um início mais profissional."
+                          question: "10. 过期域名适合初学者吗？",
+                          answer: "当然适合。初学者通常获益最多，因为他们：更快获得可见性，减少SEO落后，获得更专业的开始。"
                         },
                         {
-                          question: "11. Porque são alguns domínios mais caros que outros?",
-                          answer: "Pesquisas como \"porque é que um domínio é tão caro\" muitas vezes surgem de incompreensão sobre valor. O preço é determinado por: qualidade do nome, valor SEO, backlinks, aplicabilidade comercial."
+                          question: "11. 为什么有些域名比其他的贵？",
+                          answer: "像"为什么域名这么贵"这样的搜索通常来自对价值的误解。价格由以下因素决定：名称质量、SEO价值、外链、商业适用性。"
                         },
                         {
-                          question: "12. Posso vender um domínio expirado mais tarde?",
-                          answer: "Sim. Muitas pessoas pesquisam \"domínio como investimento\". Um domínio expirado forte muitas vezes mantém o seu valor e pode até aumentar de preço."
+                          question: "12. 我以后可以卖掉过期域名吗？",
+                          answer: "可以。许多人搜索"域名作为投资"。强大的过期域名通常保持其价值，甚至可能增值。"
                         },
                         {
-                          question: "13. Um domínio expirado pode ser mau para SEO?",
-                          answer: "Apenas se tiver um histórico negativo. Por isso, a diferença é grande entre: domínios expirados não verificados e nomes de domínio cuidadosamente selecionados e fiáveis."
+                          question: "13. 过期域名会对SEO不利吗？",
+                          answer: "只有当它有不良历史时才会。这就是为什么未检查的过期域名和经过仔细选择的可靠域名之间有很大区别。"
                         },
                         {
-                          question: "14. O que devo ter em atenção ao comprar um domínio expirado?",
-                          answer: "Pontos de atenção importantes são: histórico livre de spam, backlinks relevantes, nome de domínio lógico, sem risco de marca registrada."
+                          question: "14. 购买过期域名时我应该注意什么？",
+                          answer: "重要的注意事项是：无垃圾历史、相关外链、逻辑的域名、无商标风险。"
                         },
                         {
-                          question: "15. Quão rápido posso começar após comprar um domínio?",
-                          answer: "Após a transferência, pode usar imediatamente o domínio para: um website, email, loja online. Tal como com um novo domínio."
+                          question: "15. 购买域名后多快可以开始使用？",
+                          answer: "转移后，您可以立即将域名用于：网站、电子邮件、网店。就像新域名一样。"
                         },
                         {
-                          question: "16. Preciso de conhecimento técnico para usar um domínio expirado?",
-                          answer: "Não. Um domínio expirado funciona tecnicamente da mesma forma que um novo domínio e pode ser usado em qualquer provedor de hospedagem."
+                          question: "16. 使用过期域名需要技术知识吗？",
+                          answer: "不需要。过期域名在技术上与新域名工作方式相同，可以在任何托管提供商处使用。"
                         },
                         {
-                          question: "17. Um domínio expirado é adequado para uma loja online?",
-                          answer: "Sim. Lojas online beneficiam especialmente de: confiança, autoridade, melhor início no Google. Isso é crucial para conversões."
+                          question: "17. 过期域名适合网店吗？",
+                          answer: "是的。网店特别受益于：信任、权威、在Google中更好的开始。这对转化至关重要。"
                         },
                         {
-                          question: "18. O que significa autoridade de domínio ao comprar um domínio?",
-                          answer: "Autoridade de domínio é uma indicação de quão forte é um domínio com base em links e histórico. Muitos domínios expirados pontuam mais alto aqui do que novos domínios."
+                          question: "18. 购买域名时域名权威是什么意思？",
+                          answer: "域名权威是基于链接和历史衡量域名强度的指标。许多过期域名在这方面比新域名得分更高。"
                         },
                         {
-                          question: "19. Um domínio expirado é melhor do que link building?",
-                          answer: "Em muitos casos, sim. Está efetivamente a comprar uma reputação existente, em vez de a construir mais tarde de forma cara e arriscada."
+                          question: "19. 过期域名比链接建设更好吗？",
+                          answer: "在很多情况下是的。您实际上是在购买现有的声誉，而不是以后花费昂贵和有风险的方式建设。"
                         },
                         {
-                          question: "20. Porque é que os empresários escolhem conscientemente um domínio expirado?",
-                          answer: "Porque procuram: resultado mais rápido, menos risco SEO, um início inteligente com vantagem."
+                          question: "20. 为什么企业家有意识地选择过期域名？",
+                          answer: "因为他们在寻求：更快的结果，更少的SEO风险，具有优势的明智开始。"
                         },
                         {
-                          question: "21. Um domínio expirado é adequado para qualquer nicho?",
-                          answer: "Para quase qualquer nicho estão disponíveis bons domínios expirados, desde que o nome e o histórico se alinhem logicamente com o tema."
+                          question: "21. 过期域名适合任何利基吗？",
+                          answer: "几乎任何利基都有好的过期域名可用，只要名称和历史与主题逻辑一致。"
                         },
                         {
-                          question: "22. Posso obter ajuda na escolha do domínio certo?",
-                          answer: "Sim. Muitos iniciantes pesquisam \"que domínio se adequa ao meu negócio\". Orientação evita compras erradas e poupa dinheiro."
+                          question: "22. 我可以在选择合适的域名时获得帮助吗？",
+                          answer: "可以。许多初学者搜索"哪个域名适合我的业务"。指导可以避免错误购买并节省金钱。"
                         },
                         {
-                          question: "23. Qual é a maior vantagem de um domínio expirado?",
-                          answer: "A maior vantagem é que não começa do zero nos motores de busca."
+                          question: "23. 过期域名最大的优势是什么？",
+                          answer: "最大的优势是您不必在搜索引擎中从零开始。"
                         },
                         {
-                          question: "24. Qual é o maior equívoco sobre domínios expirados?",
-                          answer: "Que são inerentemente arriscados. Na realidade, domínios não testados são arriscados — não domínios expirados cuidadosamente selecionados."
+                          question: "24. 关于过期域名最大的误解是什么？",
+                          answer: "认为它们本质上有风险。实际上，未经测试的域名是有风险的——而不是经过仔细选择的过期域名。"
                         },
                         {
-                          question: "25. Para quem é mais adequado um domínio expirado fiável?",
-                          answer: "Para: iniciantes, empresários, lojas online, projetos SEO, investidores. Todos que pesquisam \"comprar melhor domínio\" e querem começar de forma inteligente."
+                          question: "25. 可靠的过期域名最适合谁？",
+                          answer: "适合：初学者、企业家、网店、SEO项目、投资者。所有搜索"购买最佳域名"并想要明智开始的人。"
                         },
                         {
-                          question: "26. Como sei se um domínio é adequado para SEO?",
-                          answer: "Um domínio é adequado para SEO se: o nome é lógico e relevante, não tem histórico de spam, existem backlinks de qualidade. Um domínio expirado com bons links muitas vezes pontua melhor aqui do que um novo domínio."
+                          question: "26. 我如何知道域名是否适合SEO？",
+                          answer: "如果域名：名称逻辑且相关、没有垃圾历史、有优质外链，则适合SEO。具有良好链接的过期域名通常在这方面比新域名得分更高。"
                         },
                         {
-                          question: "27. Comprar um domínio expirado afeta os rankings do Google?",
-                          answer: "Sim. O Google olha para o histórico e estrutura de links de um domínio. Um domínio expirado fiável pode ajudar a construir visibilidade mais rapidamente, se usado corretamente."
+                          question: "27. 购买过期域名会影响Google排名吗？",
+                          answer: "会。Google会查看域名的历史和链接结构。如果使用得当，可靠的过期域名可以帮助更快建立可见性。"
                         },
                         {
-                          question: "28. Quais são as vantagens de um domínio expirado com autoridade?",
-                          answer: "As principais vantagens são: confiança mais rápida nos motores de busca, menos dependência de link building, posição inicial mais forte do que concorrentes com novos domínios."
+                          question: "28. 高权重过期域名有什么优势？",
+                          answer: "主要优势是：更快在搜索引擎中获得信任，减少对链接建设的依赖，比使用新域名的竞争对手拥有更强的起始位置。"
                         },
                         {
-                          question: "29. Preciso de ter uma keyword no meu domínio para SEO?",
-                          answer: "Não necessariamente. Pesquisas como \"keyword domínio SEO\" mostram que esta é uma pergunta frequente. Um nome claro e fiável é mais importante do que palavras-chave exatas, especialmente em domínios expirados com autoridade."
+                          question: "29. 我的域名中需要有关键词才能做SEO吗？",
+                          answer: "不一定。像"关键词域名SEO"这样的搜索表明这是一个常见问题。清晰可靠的名称比精确的关键词更重要，特别是对于具有权威的过期域名。"
                         },
                         {
-                          question: "30. Um domínio curto é melhor do que um domínio longo?",
-                          answer: "Sim. Domínios curtos são: mais fáceis de lembrar, mais profissionais, mais valiosos. Muitos domínios expirados premium são precisamente curtos e poderosos."
+                          question: "30. 短域名比长域名更好吗？",
+                          answer: "是的。短域名：更容易记忆，更专业，更有价值。许多优质过期域名正是短小有力的。"
                         },
                         {
-                          question: "31. Posso usar um domínio expirado para vários projetos?",
-                          answer: "Sim, por exemplo para: um website principal, um projeto de nicho, um portal de marca. É importante que o conteúdo se alinhe logicamente com o histórico do domínio."
+                          question: "31. 我可以将过期域名用于多个项目吗？",
+                          answer: "可以，例如用于：主网站、利基项目、品牌门户。重要的是内容要与域名历史逻辑一致。"
                         },
                         {
-                          question: "32. O que acontece com backlinks antigos quando coloco um novo website?",
-                          answer: "Os backlinks permanecem enquanto não forem removidos pelos websites de referência. Essa é precisamente uma das grandes vantagens de comprar um domínio expirado."
+                          question: "32. 当我放置新网站时，旧外链会怎样？",
+                          answer: "外链会保持，只要它们没有被引用网站删除。这正是购买过期域名的一大优势。"
                         },
                         {
-                          question: "33. Um domínio expirado é melhor do que vários novos domínios?",
-                          answer: "Para foco e SEO, um domínio expirado forte é muitas vezes mais eficaz do que vários novos domínios sem autoridade."
+                          question: "33. 一个过期域名比多个新域名更好吗？",
+                          answer: "对于专注和SEO，一个强大的过期域名通常比多个没有权威的新域名更有效。"
                         },
                         {
-                          question: "34. Posso obter clientes mais rapidamente com um domínio expirado?",
-                          answer: "Indiretamente, sim. Visibilidade mais rápida e mais confiança fazem com que os visitantes convertam mais cedo."
+                          question: "34. 使用过期域名可以更快获得客户吗？",
+                          answer: "间接地可以。更快的可见性和更多信任使访客更早转化。"
                         },
                         {
-                          question: "35. Durante quanto tempo o valor de um domínio expirado se mantém?",
-                          answer: "Enquanto o domínio for bem utilizado e mantido, o valor mantém-se e pode até crescer."
+                          question: "35. 过期域名的价值能保持多久？",
+                          answer: "只要域名得到良好使用和维护，价值就会保持甚至增长。"
                         },
                         {
-                          question: "36. Porque devo comprar um domínio a um vendedor especializado?",
-                          answer: "Porque um vendedor especializado: verifica domínios antecipadamente, exclui riscos, orienta iniciantes, é transparente sobre qualidade e histórico. Isso faz a diferença entre apostar e investir conscientemente."
+                          question: "36. 为什么我应该从专业卖家那里购买域名？",
+                          answer: "因为专业卖家：提前检查域名，排除风险，指导初学者，对质量和历史透明。这是赌博和有意识投资之间的区别。"
                         }
                       ].map((item, index) => (
                         <article key={index} className="space-y-2">
@@ -2316,13 +1980,13 @@ const PremiumDomainsZH = () => {
               <div className="text-center mb-12">
                 <Badge className="mb-4 bg-amber-500/10 text-amber-400 border-amber-500/30">
                   <Mail className="w-4 h-4 mr-2 inline" />
-                  Entre em Contacto
+                  联系我们
                 </Badge>
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                  Peça Informações ou Faça uma Oferta
+                  咨询或报价
                 </h2>
                 <p className="text-slate-400">
-                  Interessado num dos nossos domínios premium? Preencha o formulário e entraremos em contacto o mais rapidamente possível.
+                  对我们的某个优质域名感兴趣？填写表单，我们会尽快与您联系。
                 </p>
               </div>
               
@@ -2333,13 +1997,13 @@ const PremiumDomainsZH = () => {
                       <div>
                         <label className="block text-sm font-medium text-slate-300 mb-2">
                           <User className="w-4 h-4 inline mr-2" />
-                          Nome *
+                          姓名 *
                         </label>
                         <Input
                           type="text"
                           value={formData.name}
                           onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
-                          placeholder="O seu nome"
+                          placeholder="您的姓名"
                           className="bg-slate-900/50 border-slate-700 text-white placeholder:text-slate-500 focus:border-amber-500"
                           required
                         />
@@ -2347,13 +2011,13 @@ const PremiumDomainsZH = () => {
                       <div>
                         <label className="block text-sm font-medium text-slate-300 mb-2">
                           <Mail className="w-4 h-4 inline mr-2" />
-                          E-mail *
+                          邮箱 *
                         </label>
                         <Input
                           type="email"
                           value={formData.email}
                           onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
-                          placeholder="seu@email.com"
+                          placeholder="your@email.com"
                           className="bg-slate-900/50 border-slate-700 text-white placeholder:text-slate-500 focus:border-amber-500"
                           required
                         />
@@ -2363,13 +2027,13 @@ const PremiumDomainsZH = () => {
                     <div>
                       <label className="block text-sm font-medium text-slate-300 mb-2">
                         <Globe className="w-4 h-4 inline mr-2" />
-                        Domínio Escolhido *
+                        选择的域名 *
                       </label>
                       <Input
                         type="text"
                         value={formData.domain}
                         onChange={(e) => setFormData(prev => ({ ...prev, domain: e.target.value }))}
-                        placeholder="ex: FinanceAuthority.com"
+                        placeholder="例如: FinanceAuthority.com"
                         className="bg-slate-900/50 border-slate-700 text-white placeholder:text-slate-500 focus:border-amber-500"
                         required
                       />
@@ -2378,12 +2042,12 @@ const PremiumDomainsZH = () => {
                     <div>
                       <label className="block text-sm font-medium text-slate-300 mb-2">
                         <MessageSquare className="w-4 h-4 inline mr-2" />
-                        Mensagem / Informação Adicional
+                        留言/其他信息
                       </label>
                       <Textarea
                         value={formData.message}
                         onChange={(e) => setFormData(prev => ({ ...prev, message: e.target.value }))}
-                        placeholder="Conte-nos mais sobre o seu interesse, faça perguntas ou faça uma oferta..."
+                        placeholder="告诉我们更多关于您的兴趣，提出问题或报价..."
                         rows={5}
                         className="bg-slate-900/50 border-slate-700 text-white placeholder:text-slate-500 focus:border-amber-500 resize-none"
                       />
@@ -2394,7 +2058,7 @@ const PremiumDomainsZH = () => {
                       size="lg"
                       className="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-lg py-6 shadow-lg shadow-amber-500/25 transition-all hover:shadow-amber-500/40"
                     >
-                      Enviar Pedido
+                      发送请求
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
                   </form>
@@ -2410,30 +2074,30 @@ const PremiumDomainsZH = () => {
             <div className="max-w-4xl mx-auto">
               <article className="prose prose-invert prose-lg max-w-none">
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 text-center">
-                  Comprar Domínios Expirados: Invista em Autoridade SEO Comprovada
+                  购买过期域名：投资经过验证的SEO权威
                 </h2>
                 
                 <div className="space-y-6 text-slate-300 leading-relaxed">
                   <p>
-                    <strong className="text-amber-400">Comprar um domínio expirado</strong> é a forma mais inteligente de beneficiar imediatamente de anos de <strong className="text-white">autoridade de domínio</strong> e <strong className="text-white">backlinks de qualidade</strong> construídos. Ao contrário de um novo domínio, um domínio premium expirado já tem confiança no Google e noutros motores de busca. Isto traduz-se diretamente em melhores rankings, indexação mais rápida e mais tráfego orgânico.
+                    <strong className="text-amber-400">购买过期域名</strong>是立即受益于多年积累的<strong className="text-white">域名权威</strong>和<strong className="text-white">优质外链</strong>的最明智方式。与新域名不同，过期的优质域名已经在Google和其他搜索引擎中拥有信任。这直接转化为更好的排名、更快的索引和更多的有机流量。
                   </p>
                   
                   <p>
-                    Os nossos <strong className="text-amber-400">domínios premium</strong> cuidadosamente selecionados têm um histórico comprovado com backlinks de fontes autoritárias como Wikipedia, universidades, instituições governamentais e sites de notícias respeitáveis. Estes <strong className="text-white">backlinks de alta qualidade</strong> são o resultado de anos de presença online e são praticamente impossíveis de construir por conta própria — a menos que esteja disposto a investir milhares de euros em linkbuilding.
+                    我们精心挑选的<strong className="text-amber-400">优质域名</strong>拥有来自维基百科、大学、政府机构和知名新闻网站等权威来源的经过验证的外链历史。这些<strong className="text-white">高质量外链</strong>是多年在线存在的结果，几乎不可能自己建立——除非您愿意在链接建设上投资数千欧元。
                   </p>
                   
                   <p>
-                    Quer queira <strong className="text-white">iniciar uma loja online</strong>, lançar um <strong className="text-white">website de afiliados</strong>, ou dar ao seu negócio existente um <strong className="text-white">impulso SEO</strong>: um domínio expirado com alta <strong className="text-amber-400">MOZ Domain Authority (DA)</strong> dá-lhe uma vantagem inconfundível sobre a concorrência. Enquanto outros esperam meses até que o Google confie no seu novo domínio, você beneficia imediatamente da autoridade existente.
+                    无论您是想<strong className="text-white">开设网店</strong>、启动<strong className="text-white">联盟网站</strong>，还是给您现有的业务提供<strong className="text-white">SEO提升</strong>：具有高<strong className="text-amber-400">MOZ域名权威（DA）</strong>的过期域名可以让您比竞争对手拥有无可争辩的优势。当其他人等待几个月让Google信任他们的新域名时，您立即受益于现有的权威。
                   </p>
                   
                   <p>
-                    <strong className="text-white">Porquê esperar?</strong> Cada domínio premium no nosso portfólio é verificado quanto a histórico limpo de spam, backlinks relevantes e bons perfis de links. Está a comprar um ativo estratégico de nome de domínio que adiciona valor imediatamente à sua presença online. De <strong className="text-white">301 redirects</strong> para empilhamento de autoridade a iniciar diretamente um novo website: as possibilidades são infinitas.
+                    <strong className="text-white">还在等什么？</strong>我们组合中的每个优质域名都经过检查，确保没有垃圾历史、有相关外链和良好的链接配置。您购买的是一个战略性的域名资产，它立即为您的在线存在增加价值。从<strong className="text-white">301重定向</strong>到权威堆叠，再到直接启动新网站：可能性是无限的。
                   </p>
                   
                   <div className="bg-gradient-to-r from-amber-500/10 to-slate-800/30 border border-amber-500/20 rounded-xl p-6 mt-8">
                     <p className="text-center text-lg mb-0">
-                      <strong className="text-amber-400">Pronto para acelerar o seu sucesso online?</strong><br />
-                      <span className="text-slate-300">Explore o nosso portfólio de mais de 110 domínios premium expirados e descubra qual domínio se encaixa perfeitamente na sua ambição. Invista hoje em autoridade comprovada e deixe os seus concorrentes para trás.</span>
+                      <strong className="text-amber-400">准备好加速您的在线成功了吗？</strong><br />
+                      <span className="text-slate-300">浏览我们超过110个优质过期域名的组合，发现哪个域名完美符合您的雄心。今天就投资经过验证的权威，把您的竞争对手甩在身后。</span>
                     </p>
                   </div>
                 </div>
@@ -2443,7 +2107,7 @@ const PremiumDomainsZH = () => {
         </section>
 
         {/* Domain Transfer Instructions */}
-        <section id="domein-verhuizen" className="py-16 bg-slate-900">
+        <section id="domain-transfer" className="py-16 bg-slate-900">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="border border-amber-500/30 rounded-xl bg-slate-800/50">
@@ -2451,53 +2115,31 @@ const PremiumDomainsZH = () => {
                   <h2 className="text-xl font-bold text-white">
                     <div className="flex items-center gap-3">
                       <Globe className="w-6 h-6 text-amber-400" />
-                      <span>Como transferir o seu domínio com o token de transferência (EPP/Auth code)?</span>
+                      <span>如何使用转移令牌（EPP/Auth code）转移您的域名？</span>
                     </div>
                   </h2>
                 </div>
                 <div className="px-6 pb-6">
                   <div className="space-y-6 text-slate-300">
-                    <p className="text-lg">
-                      Após a sua compra, receberá dentro de 24 horas um <strong className="text-amber-400">token de transferência</strong> (também chamado código EPP ou Auth-code) no endereço de e-mail que indicou no pagamento. Com este código pode facilmente transferir o domínio para o seu próprio registador de domínios ou fornecedor de alojamento.
+                    <p>
+                      购买域名后，您将在24小时内通过电子邮件收到<strong className="text-white">转移令牌</strong>（也称为EPP代码或Auth代码）。使用此代码，您可以将域名转移到您选择的注册商。
                     </p>
                     
-                    <div className="bg-slate-900/50 rounded-lg p-6 border border-slate-700">
-                      <h3 className="text-lg font-semibold text-white mb-4">Instruções passo a passo:</h3>
-                      <ol className="space-y-4">
-                        <li className="flex gap-3">
-                          <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">1</span>
-                          <div>
-                            <strong className="text-white">Receba o token de transferência</strong>
-                            <p className="text-slate-400 mt-1">Após o pagamento receberá dentro de 24 horas o código de autorização único por e-mail.</p>
-                          </div>
-                        </li>
-                        <li className="flex gap-3">
-                          <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">2</span>
-                          <div>
-                            <strong className="text-white">Inicie a transferência no seu registador</strong>
-                            <p className="text-slate-400 mt-1">Aceda ao seu fornecedor de alojamento ou registador de domínios preferido e escolha "Transferir domínio".</p>
-                          </div>
-                        </li>
-                        <li className="flex gap-3">
-                          <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">3</span>
-                          <div>
-                            <strong className="text-white">Introduza o nome de domínio e o código de autorização</strong>
-                            <p className="text-slate-400 mt-1">Preencha o nome de domínio e o código EPP/Auth que recebeu de nós.</p>
-                          </div>
-                        </li>
-                        <li className="flex gap-3">
-                          <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">4</span>
-                          <div>
-                            <strong className="text-white">Confirme a transferência</strong>
-                            <p className="text-slate-400 mt-1">Siga os passos do seu novo registador para completar a transferência. Isto normalmente demora 5-7 dias.</p>
-                          </div>
-                        </li>
+                    <div className="bg-slate-800/70 rounded-lg p-4">
+                      <h3 className="text-lg font-semibold text-white mb-3">分步指南：</h3>
+                      <ol className="space-y-3 list-decimal list-inside">
+                        <li><strong className="text-white">选择注册商</strong> — 选择您想要管理域名的注册商（例如GoDaddy、Namecheap、TransIP、Cloudflare等）。</li>
+                        <li><strong className="text-white">启动转移</strong> — 在您选择的注册商处启动域名转移并输入域名。</li>
+                        <li><strong className="text-white">输入转移令牌</strong> — 输入您通过电子邮件收到的EPP/Auth代码。</li>
+                        <li><strong className="text-white">确认转移</strong> — 按照注册商的说明确认转移。</li>
+                        <li><strong className="text-white">等待完成</strong> — 转移通常需要1-7天，具体取决于TLD和注册商。</li>
                       </ol>
                     </div>
                     
-                    <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg p-4">
-                      <p className="text-amber-300 text-sm">
-                        <strong>Nota:</strong> Se tiver problemas com a transferência ou não receber o código dentro de 24 horas, entre em contacto connosco através do formulário de contacto ou envie um e-mail para support@iaee.eu.
+                    <div className="flex items-start gap-3 p-4 rounded-lg bg-amber-500/10 border border-amber-500/30">
+                      <CheckCircle className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                      <p className="text-sm">
+                        <strong className="text-white">提示：</strong>请同时检查您的垃圾邮件文件夹中的转移令牌邮件。如果24小时后仍未收到代码，请通过support@iaee.eu联系我们。
                       </p>
                     </div>
                   </div>
@@ -2507,26 +2149,9 @@ const PremiumDomainsZH = () => {
           </div>
         </section>
 
-        {/* Payment Section */}
-        <section className="py-16 bg-gradient-to-b from-slate-900 to-slate-950">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
-                Pagamento Seguro via Stripe
-              </h2>
-              <p className="text-slate-400 mb-8 max-w-2xl mx-auto">
-                Todos os pagamentos são processados de forma segura através do Stripe. Aceitamos todos os principais cartões de crédito e métodos de pagamento locais.
-              </p>
-              <div className="flex justify-center">
-                <img src={stripeLogo} alt="Stripe - Pagamento Seguro" className="h-12 opacity-80 hover:opacity-100 transition-opacity" />
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Legal Links */}
         <LegalLinksPremiumDomainsZH />
-
+        
         {/* Footer */}
         <FooterPremiumDomainsZH />
       </div>
