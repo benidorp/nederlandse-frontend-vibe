@@ -1901,19 +1901,21 @@ const PremiumDomains = () => {
                                 <span className="text-white font-bold text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
                               </div>
                             </div>
-                            <p className="text-[10px] text-slate-400 leading-tight mt-2">
-                              Veilige betaling via Stripe
-                              <br />
-                              Automatisch omgerekend naar uw lokale valuta
-                            </p>
-                            <p className="text-[10px] text-slate-400 leading-tight mt-3">
-                              Na betaling ontvangt u binnen 24 uur de verhuistoken (EPP/Auth-code) op uw e-mailadres.
-                              <br />
-                              Controleer ook uw spamfolder.
-                            </p>
-                            <a href="#domein-verhuizen" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
-                              Hoe werkt verhuizen?
-                            </a>
+                            <div data-nosnippet>
+                              <p className="text-[10px] text-slate-400 leading-tight mt-2">
+                                Veilige betaling via Stripe
+                                <br />
+                                Automatisch omgerekend naar uw lokale valuta
+                              </p>
+                              <p className="text-[10px] text-slate-400 leading-tight mt-3">
+                                Na betaling ontvangt u binnen 24 uur de verhuistoken (EPP/Auth-code) op uw e-mailadres.
+                                <br />
+                                Controleer ook uw spamfolder.
+                              </p>
+                              <a href="#domein-verhuizen" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
+                                Hoe werkt verhuizen?
+                              </a>
+                            </div>
                           </div>
                         </div>
                       ) : (
@@ -1995,19 +1997,21 @@ const PremiumDomains = () => {
                                 <span className="text-white font-bold text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
                               </div>
                             </div>
-                            <p className="text-[10px] text-slate-400 leading-tight mt-2">
-                              Veilige betaling via Stripe
-                              <br />
-                              Automatisch omgerekend naar uw lokale valuta
-                            </p>
-                            <p className="text-[10px] text-slate-400 leading-tight mt-3">
-                              Na betaling ontvangt u binnen 24 uur de verhuistoken (EPP/Auth-code) op uw e-mailadres.
-                              <br />
-                              Controleer ook uw spamfolder.
-                            </p>
-                            <a href="#domein-verhuizen" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
-                              Hoe werkt verhuizen?
-                            </a>
+                            <div data-nosnippet>
+                              <p className="text-[10px] text-slate-400 leading-tight mt-2">
+                                Veilige betaling via Stripe
+                                <br />
+                                Automatisch omgerekend naar uw lokale valuta
+                              </p>
+                              <p className="text-[10px] text-slate-400 leading-tight mt-3">
+                                Na betaling ontvangt u binnen 24 uur de verhuistoken (EPP/Auth-code) op uw e-mailadres.
+                                <br />
+                                Controleer ook uw spamfolder.
+                              </p>
+                              <a href="#domein-verhuizen" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
+                                Hoe werkt verhuizen?
+                              </a>
+                            </div>
                           </div>
                         </div>
                       )}

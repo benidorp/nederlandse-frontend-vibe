@@ -1937,19 +1937,21 @@ const PremiumDomainsES = () => {
                                 <span className="text-white font-bold text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
                               </div>
                             </div>
-                            <p className="text-[10px] text-slate-400 leading-tight mt-2">
-                              Pago seguro vía Stripe
-                              <br />
-                              Convertido automáticamente a su moneda local
-                            </p>
-                            <p className="text-[10px] text-slate-400 leading-tight mt-3">
-                              Después del pago recibirá el token de transferencia (código EPP/Auth) en su correo electrónico dentro de 24 horas.
-                              <br />
-                              Revise también su carpeta de spam.
-                            </p>
-                            <a href="#domein-verhuizen" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
-                              ¿Cómo funciona la transferencia?
-                            </a>
+                            <div data-nosnippet>
+                              <p className="text-[10px] text-slate-400 leading-tight mt-2">
+                                Pago seguro vía Stripe
+                                <br />
+                                Convertido automáticamente a su moneda local
+                              </p>
+                              <p className="text-[10px] text-slate-400 leading-tight mt-3">
+                                Después del pago recibirá el token de transferencia (código EPP/Auth) en su correo electrónico dentro de 24 horas.
+                                <br />
+                                Revise también su carpeta de spam.
+                              </p>
+                              <a href="#domein-verhuizen" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
+                                ¿Cómo funciona la transferencia?
+                              </a>
+                            </div>
                           </div>
                         </div>
                       )}

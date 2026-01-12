@@ -1922,19 +1922,21 @@ const PremiumDomainsDE = () => {
                                 <span className="text-white font-bold text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
                               </div>
                             </div>
-                            <p className="text-[10px] text-slate-400 leading-tight mt-2">
-                              Sichere Zahlung über Stripe
-                              <br />
-                              Automatisch in Ihre lokale Währung umgerechnet
-                            </p>
-                            <p className="text-[10px] text-slate-400 leading-tight mt-3">
-                              Nach der Zahlung erhalten Sie innerhalb von 24 Stunden den Umzugstoken (EPP/Auth-Code) an Ihre E-Mail-Adresse.
-                              <br />
-                              Überprüfen Sie auch Ihren Spam-Ordner.
-                            </p>
-                            <a href="#domain-umziehen" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
-                              Wie funktioniert der Umzug?
-                            </a>
+                            <div data-nosnippet>
+                              <p className="text-[10px] text-slate-400 leading-tight mt-2">
+                                Sichere Zahlung über Stripe
+                                <br />
+                                Automatisch in Ihre lokale Währung umgerechnet
+                              </p>
+                              <p className="text-[10px] text-slate-400 leading-tight mt-3">
+                                Nach der Zahlung erhalten Sie innerhalb von 24 Stunden den Umzugstoken (EPP/Auth-Code) an Ihre E-Mail-Adresse.
+                                <br />
+                                Überprüfen Sie auch Ihren Spam-Ordner.
+                              </p>
+                              <a href="#domain-umziehen" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
+                                Wie funktioniert der Umzug?
+                              </a>
+                            </div>
                           </div>
                         </div>
                       ) : (

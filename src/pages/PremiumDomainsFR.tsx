@@ -1858,19 +1858,21 @@ const PremiumDomainsFR = () => {
                             <span className="text-white font-bold text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
                           </div>
                         </div>
-                        <p className="text-[10px] text-slate-400 leading-tight mt-2">
-                          Paiement sécurisé via Stripe
-                          <br />
-                          Conversion automatique dans votre devise locale
-                        </p>
-                        <p className="text-[10px] text-slate-400 leading-tight mt-3">
-                          Après paiement, vous recevrez le code de transfert (EPP/Auth-code) par e-mail sous 24 heures.
-                          <br />
-                          Vérifiez également votre dossier spam.
-                        </p>
-                        <a href="#transfert-domaine" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
-                          Comment fonctionne le transfert ?
-                        </a>
+                        <div data-nosnippet>
+                          <p className="text-[10px] text-slate-400 leading-tight mt-2">
+                            Paiement sécurisé via Stripe
+                            <br />
+                            Conversion automatique dans votre devise locale
+                          </p>
+                          <p className="text-[10px] text-slate-400 leading-tight mt-3">
+                            Après paiement, vous recevrez le code de transfert (EPP/Auth-code) par e-mail sous 24 heures.
+                            <br />
+                            Vérifiez également votre dossier spam.
+                          </p>
+                          <a href="#transfert-domaine" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
+                            Comment fonctionne le transfert ?
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </CardContent>
