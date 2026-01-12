@@ -15,6 +15,7 @@ const languages: LanguageOption[] = [
   { code: "it", name: "Italiano", path: "/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo" },
   { code: "pl", name: "Polski", path: "/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo" },
   { code: "pt", name: "Português", path: "/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" },
+  { code: "zh", name: "中文", path: "/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" },
 ];
 
 // SVG Flag components
@@ -82,6 +83,19 @@ const FlagPT = () => (
   </svg>
 );
 
+const FlagZH = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="24" fill="#DE2910"/>
+    <g fill="#FFDE00">
+      <polygon points="6,4 7.2,7.8 3.2,5.6 8.8,5.6 4.8,7.8"/>
+      <polygon points="11,2 11.4,3.2 10.2,2.4 11.8,2.4 10.6,3.2"/>
+      <polygon points="13,4 13.4,5.2 12.2,4.4 13.8,4.4 12.6,5.2"/>
+      <polygon points="13,7 13.4,8.2 12.2,7.4 13.8,7.4 12.6,8.2"/>
+      <polygon points="11,9 11.4,10.2 10.2,9.4 11.8,9.4 10.6,10.2"/>
+    </g>
+  </svg>
+);
+
 const flagComponents: Record<string, React.FC> = {
   nl: FlagNL,
   en: FlagGB,
@@ -91,6 +105,7 @@ const flagComponents: Record<string, React.FC> = {
   it: FlagIT,
   pl: FlagPL,
   pt: FlagPT,
+  zh: FlagZH,
 };
 
 interface LanguageSwitcherProps {
