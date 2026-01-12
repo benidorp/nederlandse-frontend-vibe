@@ -2650,6 +2650,27 @@ const PremiumDomainsIT = () => {
                         <strong>Nota:</strong> Se hai problemi con il trasferimento o non ricevi il codice entro 24 ore, contattaci tramite il modulo di contatto o invia un'email a support@iaee.eu.
                       </p>
                     </div>
+
+                    {/* NordVPN Recommendation Section */}
+                    <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-lg p-4 mt-4">
+                      <div className="text-center">
+                        <h4 className="font-bold text-white text-lg mb-2">🔒 Proteggi la Tua Privacy con NordVPN</h4>
+                        <p className="text-white/90 text-sm mb-3">
+                          Cos'è una VPN? Una <a href="https://www.anrdoezrs.net/click-100643838-13345017" target="_blank" rel="noopener noreferrer" className="underline text-yellow-300 hover:text-yellow-200">Rete Privata Virtuale (VPN)</a> crittografa la tua connessione internet e nasconde il tuo indirizzo IP, proteggendo i tuoi dati personali da hacker, tracker e sorveglianza.
+                        </p>
+                        <p className="text-white/80 text-xs mb-4">
+                          Per i proprietari di domini premium, proteggere la propria identità online è fondamentale. NordVPN ti permette di navigare in modo anonimo, accedere a contenuti globali e proteggere le tue transazioni commerciali.
+                        </p>
+                        <a 
+                          href="https://www.anrdoezrs.net/click-100643838-13345017" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-2 px-6 rounded-full transition-colors text-sm"
+                        >
+                          Ottieni NordVPN Ora →
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
