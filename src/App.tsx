@@ -39,6 +39,8 @@ import PremiumDomainsPL from "./pages/PremiumDomainsPL";
 import PremiumDomainsLegalPL from "./pages/PremiumDomainsLegalPL";
 import PremiumDomainsPT from "./pages/PremiumDomainsPT";
 import PremiumDomainsLegalPT from "./pages/PremiumDomainsLegalPT";
+import PremiumDomainsZH from "./pages/PremiumDomainsZH";
+import PremiumDomainsLegalZH from "./pages/PremiumDomainsLegalZH";
 
 const queryClient = new QueryClient();
 
@@ -84,6 +86,8 @@ const App = () => (
           <Route path="/expireddomainnames/pl/dokumenty-prawne-domeny-premium" element={<PremiumDomainsLegalPL />} />
           <Route path="/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" element={<PremiumDomainsPT />} />
           <Route path="/expireddomainnames/pt/documentos-legais-dominios-premium" element={<PremiumDomainsLegalPT />} />
+          <Route path="/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" element={<PremiumDomainsZH />} />
+          <Route path="/expireddomainnames/zh/fa-lv-wen-jian-you-zhi-yu-ming" element={<PremiumDomainsLegalZH />} />
           {/* Redirects from old URLs */}
           <Route path="/expireddomeinnamen/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" element={<Navigate to="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" replace />} />
           <Route path="/expireddomeinnamen/nl/premium-domeinnamen-juridische-documenten" element={<Navigate to="/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" replace />} />
