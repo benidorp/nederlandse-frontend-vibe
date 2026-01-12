@@ -2139,6 +2139,171 @@ const PremiumDomainsPT = () => {
                     </AccordionContent>
                   </AccordionItem>
                 ))}
+                
+                {/* Complete Guide: 35 Questions about Expired Domains */}
+                <AccordionItem 
+                  value="complete-guide"
+                  className="bg-gradient-to-br from-amber-500/10 to-slate-800/40 border border-amber-500/30 rounded-xl px-6"
+                >
+                  <AccordionTrigger className="text-left text-white hover:text-amber-400 hover:no-underline py-4">
+                    <h3 className="font-semibold">Guia Completo: 35 Perguntas sobre Domínios Expirados & SEO</h3>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-slate-400 pb-6 leading-relaxed">
+                    <div className="space-y-8 whitespace-pre-line">
+                      {[
+                        {
+                          question: "1. Que nome de domínio devo comprar como iniciante?",
+                          answer: "Como iniciante, escolha um nome de domínio fácil de lembrar, que indique claramente o que faz e transmita confiança. Muitos iniciantes pesquisam \"que nome de domínio devo comprar\" e acabam em domínios novos, enquanto um domínio expirado fiável muitas vezes já construiu autoridade e valor."
+                        },
+                        {
+                          question: "2. Qual é a diferença entre um novo domínio e um domínio expirado?",
+                          answer: "Um novo domínio não tem histórico e começa completamente do zero. Um domínio expirado foi registrado anteriormente e pode ainda ter backlinks, autoridade e confiança no Google. Isso torna um domínio expirado muitas vezes mais atraente para SEO e visibilidade."
+                        },
+                        {
+                          question: "3. É melhor comprar um novo domínio ou um domínio expirado?",
+                          answer: "Quem pesquisa \"novo domínio ou domínio expirado\" geralmente compara velocidade e resultado. Para branding, um novo nome pode funcionar, mas para ser encontrado mais rapidamente no Google, um bom domínio expirado oferece muitas vezes uma vantagem clara."
+                        },
+                        {
+                          question: "4. Porque é que o meu novo website tem um desempenho tão fraco no Google?",
+                          answer: "Novos websites precisam de construir a sua fiabilidade. Sem backlinks e histórico, isto geralmente leva meses. Um domínio expirado com bons links pode garantir que não precisa de começar completamente do zero."
+                        },
+                        {
+                          question: "5. É seguro comprar um domínio expirado?",
+                          answer: "Sim, desde que seja um domínio expirado verificado e fiável. O risco não está em \"expirado\", mas em domínios que não foram verificados quanto a spam, abuso ou backlinks negativos."
+                        },
+                        {
+                          question: "6. O que significa um domínio com bons backlinks?",
+                          answer: "Um domínio com bons backlinks tem referências de websites reais e relevantes. Estes links proporcionam autoridade e confiança nos motores de busca, o que é essencial para o desempenho SEO."
+                        },
+                        {
+                          question: "7. Porque são importantes os backlinks ao comprar um domínio?",
+                          answer: "Os backlinks são um dos fatores de ranking mais importantes do Google. Quando pesquisa \"comprar domínio SEO\", está na verdade à procura de um domínio que já construiu confiança — exatamente o que um bom domínio expirado oferece."
+                        },
+                        {
+                          question: "8. Como posso ver se um domínio expirado é fiável?",
+                          answer: "Um domínio expirado fiável é verificado quanto a: histórico do website, qualidade dos backlinks, ausência de spam, jogos de azar ou conteúdo adulto. Como vendedor, seleciona apenas domínios que cumprem estes critérios."
+                        },
+                        {
+                          question: "9. Posso usar um domínio expirado para um novo website?",
+                          answer: "Sim. Pode usar perfeitamente um domínio expirado para um projeto completamente novo. O conteúdo é novo, mas o nome de domínio já traz autoridade online."
+                        },
+                        {
+                          question: "10. Um domínio expirado é adequado para iniciantes?",
+                          answer: "Certamente. Os iniciantes muitas vezes beneficiam mais porque: obtêm visibilidade mais rapidamente, têm menos desvantagem SEO, fazem um início mais profissional."
+                        },
+                        {
+                          question: "11. Porque são alguns domínios mais caros que outros?",
+                          answer: "Pesquisas como \"porque é que um domínio é tão caro\" muitas vezes surgem de incompreensão sobre valor. O preço é determinado por: qualidade do nome, valor SEO, backlinks, aplicabilidade comercial."
+                        },
+                        {
+                          question: "12. Posso vender um domínio expirado mais tarde?",
+                          answer: "Sim. Muitas pessoas pesquisam \"domínio como investimento\". Um domínio expirado forte muitas vezes mantém o seu valor e pode até aumentar de preço."
+                        },
+                        {
+                          question: "13. Um domínio expirado pode ser mau para SEO?",
+                          answer: "Apenas se tiver um histórico negativo. Por isso, a diferença é grande entre: domínios expirados não verificados e nomes de domínio cuidadosamente selecionados e fiáveis."
+                        },
+                        {
+                          question: "14. O que devo ter em atenção ao comprar um domínio expirado?",
+                          answer: "Pontos de atenção importantes são: histórico livre de spam, backlinks relevantes, nome de domínio lógico, sem risco de marca registrada."
+                        },
+                        {
+                          question: "15. Quão rápido posso começar após comprar um domínio?",
+                          answer: "Após a transferência, pode usar imediatamente o domínio para: um website, email, loja online. Tal como com um novo domínio."
+                        },
+                        {
+                          question: "16. Preciso de conhecimento técnico para usar um domínio expirado?",
+                          answer: "Não. Um domínio expirado funciona tecnicamente da mesma forma que um novo domínio e pode ser usado em qualquer provedor de hospedagem."
+                        },
+                        {
+                          question: "17. Um domínio expirado é adequado para uma loja online?",
+                          answer: "Sim. Lojas online beneficiam especialmente de: confiança, autoridade, melhor início no Google. Isso é crucial para conversões."
+                        },
+                        {
+                          question: "18. O que significa autoridade de domínio ao comprar um domínio?",
+                          answer: "Autoridade de domínio é uma indicação de quão forte é um domínio com base em links e histórico. Muitos domínios expirados pontuam mais alto aqui do que novos domínios."
+                        },
+                        {
+                          question: "19. Um domínio expirado é melhor do que link building?",
+                          answer: "Em muitos casos, sim. Está efetivamente a comprar uma reputação existente, em vez de a construir mais tarde de forma cara e arriscada."
+                        },
+                        {
+                          question: "20. Porque é que os empresários escolhem conscientemente um domínio expirado?",
+                          answer: "Porque procuram: resultado mais rápido, menos risco SEO, um início inteligente com vantagem."
+                        },
+                        {
+                          question: "21. Um domínio expirado é adequado para qualquer nicho?",
+                          answer: "Para quase qualquer nicho estão disponíveis bons domínios expirados, desde que o nome e o histórico se alinhem logicamente com o tema."
+                        },
+                        {
+                          question: "22. Posso obter ajuda na escolha do domínio certo?",
+                          answer: "Sim. Muitos iniciantes pesquisam \"que domínio se adequa ao meu negócio\". Orientação evita compras erradas e poupa dinheiro."
+                        },
+                        {
+                          question: "23. Qual é a maior vantagem de um domínio expirado?",
+                          answer: "A maior vantagem é que não começa do zero nos motores de busca."
+                        },
+                        {
+                          question: "24. Qual é o maior equívoco sobre domínios expirados?",
+                          answer: "Que são inerentemente arriscados. Na realidade, domínios não testados são arriscados — não domínios expirados cuidadosamente selecionados."
+                        },
+                        {
+                          question: "25. Para quem é mais adequado um domínio expirado fiável?",
+                          answer: "Para: iniciantes, empresários, lojas online, projetos SEO, investidores. Todos que pesquisam \"comprar melhor domínio\" e querem começar de forma inteligente."
+                        },
+                        {
+                          question: "26. Como sei se um domínio é adequado para SEO?",
+                          answer: "Um domínio é adequado para SEO se: o nome é lógico e relevante, não tem histórico de spam, existem backlinks de qualidade. Um domínio expirado com bons links muitas vezes pontua melhor aqui do que um novo domínio."
+                        },
+                        {
+                          question: "27. Comprar um domínio expirado afeta os rankings do Google?",
+                          answer: "Sim. O Google olha para o histórico e estrutura de links de um domínio. Um domínio expirado fiável pode ajudar a construir visibilidade mais rapidamente, se usado corretamente."
+                        },
+                        {
+                          question: "28. Quais são as vantagens de um domínio expirado com autoridade?",
+                          answer: "As principais vantagens são: confiança mais rápida nos motores de busca, menos dependência de link building, posição inicial mais forte do que concorrentes com novos domínios."
+                        },
+                        {
+                          question: "29. Preciso de ter uma keyword no meu domínio para SEO?",
+                          answer: "Não necessariamente. Pesquisas como \"keyword domínio SEO\" mostram que esta é uma pergunta frequente. Um nome claro e fiável é mais importante do que palavras-chave exatas, especialmente em domínios expirados com autoridade."
+                        },
+                        {
+                          question: "30. Um domínio curto é melhor do que um domínio longo?",
+                          answer: "Sim. Domínios curtos são: mais fáceis de lembrar, mais profissionais, mais valiosos. Muitos domínios expirados premium são precisamente curtos e poderosos."
+                        },
+                        {
+                          question: "31. Posso usar um domínio expirado para vários projetos?",
+                          answer: "Sim, por exemplo para: um website principal, um projeto de nicho, um portal de marca. É importante que o conteúdo se alinhe logicamente com o histórico do domínio."
+                        },
+                        {
+                          question: "32. O que acontece com backlinks antigos quando coloco um novo website?",
+                          answer: "Os backlinks permanecem enquanto não forem removidos pelos websites de referência. Essa é precisamente uma das grandes vantagens de comprar um domínio expirado."
+                        },
+                        {
+                          question: "33. Um domínio expirado é melhor do que vários novos domínios?",
+                          answer: "Para foco e SEO, um domínio expirado forte é muitas vezes mais eficaz do que vários novos domínios sem autoridade."
+                        },
+                        {
+                          question: "34. Posso obter clientes mais rapidamente com um domínio expirado?",
+                          answer: "Indiretamente, sim. Visibilidade mais rápida e mais confiança fazem com que os visitantes convertam mais cedo."
+                        },
+                        {
+                          question: "35. Durante quanto tempo o valor de um domínio expirado se mantém?",
+                          answer: "Enquanto o domínio for bem utilizado e mantido, o valor mantém-se e pode até crescer."
+                        },
+                        {
+                          question: "36. Porque devo comprar um domínio a um vendedor especializado?",
+                          answer: "Porque um vendedor especializado: verifica domínios antecipadamente, exclui riscos, orienta iniciantes, é transparente sobre qualidade e histórico. Isso faz a diferença entre apostar e investir conscientemente."
+                        }
+                      ].map((item, index) => (
+                        <article key={index} className="space-y-2">
+                          <h4 className="text-lg font-semibold text-white">{item.question}</h4>
+                          <p className="text-slate-400">{item.answer}</p>
+                        </article>
+                      ))}
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
               </Accordion>
             </div>
           </div>
