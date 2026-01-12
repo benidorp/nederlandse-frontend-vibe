@@ -99,7 +99,7 @@ interface LanguageSwitcherProps {
 
 const LanguageSwitcher = ({ currentLanguage }: LanguageSwitcherProps) => {
   return (
-    <div className="flex items-center justify-center gap-2 py-3 bg-gradient-to-b from-slate-900 to-slate-800 border-b border-slate-700">
+    <div className="flex items-center justify-center gap-2 py-3 bg-gradient-to-b from-black via-slate-900 to-slate-800 border-b border-slate-700/50">
       <span className="text-slate-400 text-xs font-medium mr-1 hidden sm:inline">Select language:</span>
       <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap justify-center">
         {languages.map((lang) => {
