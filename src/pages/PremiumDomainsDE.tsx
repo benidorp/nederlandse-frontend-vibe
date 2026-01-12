@@ -659,6 +659,20 @@ const premiumDomains = [
     topBacklinks: ["en.wikipedia.org (DA 97)", "uci.edu (DA 91)"]
   },
   {
+    name: "bringaexpo.eu",
+    description: "Ungarische Fahrrad/Expo-Domain mit starken Backlinks von Origo.hu, Velvet.hu, Network.hu und anderen ungarischen Medienwebsites.",
+    mozScore: 27,
+    pageAuthority: 25,
+    linkingDomains: 79,
+    inboundLinks: "551+",
+    followedLinks: "513+",
+    category: "Sport/Veranstaltungen",
+    price: "€329",
+    stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
+    backlinks: "551+",
+    topBacklinks: ["origo.hu (DA 72)", "velvet.hu (DA 60)", "network.hu (DA 57)", "femcafe.hu (DA 56)", "hwsw.hu (DA 56)"]
+  },
+  {
     name: "movecare-project.eu",
     description: "Pflege- und Mobilitäts-EU-Projekt-Domain mit Backlinks von Springer, MDPI, Il Fatto Quotidiano und italienischen Universitäten.",
     mozScore: 27,
