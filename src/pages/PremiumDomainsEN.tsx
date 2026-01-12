@@ -1910,19 +1910,21 @@ const PremiumDomainsEN = () => {
                                 <span className="text-white font-bold text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
                               </div>
                             </div>
-                            <p className="text-[10px] text-slate-400 leading-tight mt-2">
-                              Secure payment via Stripe
-                              <br />
-                              Automatically converted to your local currency
-                            </p>
-                            <p className="text-[10px] text-slate-400 leading-tight mt-3">
-                              After payment you will receive the transfer token (EPP/Auth code) at your email address within 24 hours.
-                              <br />
-                              Also check your spam folder.
-                            </p>
-                            <a href="#domain-transfer" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
-                              How does the transfer work?
-                            </a>
+                            <div data-nosnippet>
+                              <p className="text-[10px] text-slate-400 leading-tight mt-2">
+                                Secure payment via Stripe
+                                <br />
+                                Automatically converted to your local currency
+                              </p>
+                              <p className="text-[10px] text-slate-400 leading-tight mt-3">
+                                After payment you will receive the transfer token (EPP/Auth code) at your email address within 24 hours.
+                                <br />
+                                Also check your spam folder.
+                              </p>
+                              <a href="#domain-transfer" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
+                                How does the transfer work?
+                              </a>
+                            </div>
                           </div>
                         </div>
                       ) : (
@@ -2004,19 +2006,21 @@ const PremiumDomainsEN = () => {
                                 <span className="text-white font-bold text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
                               </div>
                             </div>
-                            <p className="text-[10px] text-slate-400 leading-tight mt-2">
-                              Secure payment via Stripe
-                              <br />
-                              Automatically converted to your local currency
-                            </p>
-                            <p className="text-[10px] text-slate-400 leading-tight mt-3">
-                              After payment you will receive the transfer token (EPP/Auth code) at your email address within 24 hours.
-                              <br />
-                              Also check your spam folder.
-                            </p>
-                            <a href="#domain-transfer" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
-                              How does the transfer work?
-                            </a>
+                            <div data-nosnippet>
+                              <p className="text-[10px] text-slate-400 leading-tight mt-2">
+                                Secure payment via Stripe
+                                <br />
+                                Automatically converted to your local currency
+                              </p>
+                              <p className="text-[10px] text-slate-400 leading-tight mt-3">
+                                After payment you will receive the transfer token (EPP/Auth code) at your email address within 24 hours.
+                                <br />
+                                Also check your spam folder.
+                              </p>
+                              <a href="#domain-transfer" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
+                                How does the transfer work?
+                              </a>
+                            </div>
                           </div>
                         </div>
                       )}

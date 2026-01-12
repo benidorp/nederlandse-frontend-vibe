@@ -1896,19 +1896,21 @@ const PremiumDomainsIT = () => {
                                 <span className="text-white font-bold text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
                               </div>
                             </div>
-                            <p className="text-[10px] text-slate-400 leading-tight mt-2">
-                              Pagamento sicuro tramite Stripe
-                              <br />
-                              Conversione automatica nella tua valuta locale
-                            </p>
-                            <p className="text-[10px] text-slate-400 leading-tight mt-3">
-                              Dopo il pagamento riceverai il token di trasferimento (EPP/Auth-code) al tuo indirizzo email entro 24 ore.
-                              <br />
-                              Controlla anche la cartella spam.
-                            </p>
-                            <a href="#trasferimento-dominio" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
-                              Come funziona il trasferimento?
-                            </a>
+                            <div data-nosnippet>
+                              <p className="text-[10px] text-slate-400 leading-tight mt-2">
+                                Pagamento sicuro tramite Stripe
+                                <br />
+                                Conversione automatica nella tua valuta locale
+                              </p>
+                              <p className="text-[10px] text-slate-400 leading-tight mt-3">
+                                Dopo il pagamento riceverai il token di trasferimento (EPP/Auth-code) al tuo indirizzo email entro 24 ore.
+                                <br />
+                                Controlla anche la cartella spam.
+                              </p>
+                              <a href="#trasferimento-dominio" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
+                                Come funziona il trasferimento?
+                              </a>
+                            </div>
                           </div>
                         </div>
                       ) : (
@@ -1990,19 +1992,21 @@ const PremiumDomainsIT = () => {
                                 <span className="text-white font-bold text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
                               </div>
                             </div>
-                            <p className="text-[10px] text-slate-400 leading-tight mt-2">
-                              Pagamento sicuro tramite Stripe
-                              <br />
-                              Conversione automatica nella tua valuta locale
-                            </p>
-                            <p className="text-[10px] text-slate-400 leading-tight mt-3">
-                              Dopo il pagamento riceverai il token di trasferimento (EPP/Auth-code) al tuo indirizzo email entro 24 ore.
-                              <br />
-                              Controlla anche la cartella spam.
-                            </p>
-                            <a href="#trasferimento-dominio" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
-                              Come funziona il trasferimento?
-                            </a>
+                            <div data-nosnippet>
+                              <p className="text-[10px] text-slate-400 leading-tight mt-2">
+                                Pagamento sicuro tramite Stripe
+                                <br />
+                                Conversione automatica nella tua valuta locale
+                              </p>
+                              <p className="text-[10px] text-slate-400 leading-tight mt-3">
+                                Dopo il pagamento riceverai il token di trasferimento (EPP/Auth-code) al tuo indirizzo email entro 24 ore.
+                                <br />
+                                Controlla anche la cartella spam.
+                              </p>
+                              <a href="#trasferimento-dominio" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
+                                Come funziona il trasferimento?
+                              </a>
+                            </div>
                           </div>
                         </div>
                       )}
