@@ -66,6 +66,27 @@ const PricingES = () => {
                 />
               </div>
 
+              {/* NordVPN Recommendation Section */}
+              <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-lg p-4 mt-4">
+                <div className="text-center">
+                  <h4 className="font-bold text-white text-lg mb-2">🔒 Protege tu Privacidad con NordVPN</h4>
+                  <p className="text-white/90 text-sm mb-3">
+                    ¿Qué es una VPN? Una <a href="https://www.anrdoezrs.net/click-100643838-14439598" target="_blank" rel="noopener noreferrer" className="underline text-yellow-300 hover:text-yellow-200">Red Privada Virtual (VPN)</a> encripta tu conexión a internet y oculta tu dirección IP, protegiendo tus datos personales de hackers, rastreadores y vigilancia.
+                  </p>
+                  <p className="text-white/80 text-xs mb-4">
+                    Como afiliado, tu seguridad online es crucial. NordVPN te permite navegar de forma anónima, acceder a contenido global y proteger tus transacciones comerciales.
+                  </p>
+                  <a 
+                    href="https://www.anrdoezrs.net/click-100643838-14439598" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-2 px-6 rounded-full transition-colors text-sm"
+                  >
+                    Obtén NordVPN Ahora →
+                  </a>
+                </div>
+              </div>
+
               <div className="flex items-center justify-center gap-2 mt-4">
                 <img src={stripeLogo} alt="Stripe" className="h-5 w-5" />
                 <p className="text-sm font-medium text-muted-foreground">
