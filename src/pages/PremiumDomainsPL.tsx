@@ -11,6 +11,7 @@ import { Link as RouterLink } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
 import LegalLinksPremiumDomainsPL from "@/components/premium-domains/LegalLinksPremiumDomainsPL";
 import FooterPremiumDomainsPL from "@/components/premium-domains/FooterPremiumDomainsPL";
+import LanguageSwitcher from "@/components/premium-domains/LanguageSwitcher";
 import stripeLogo from "@/assets/stripe-logo.svg";
 import { validateContactForm, buildSafeMailtoUrl } from "@/lib/formValidation";
 
@@ -264,6 +265,9 @@ const PremiumDomainsPL = () => {
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+        {/* Language Switcher */}
+        <LanguageSwitcher currentLanguage="pl" />
+        
         {/* Header */}
         <header className="sticky top-0 z-50 backdrop-blur-xl bg-slate-950/80 border-b border-amber-500/20">
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">
