@@ -16,6 +16,7 @@ const languages: LanguageOption[] = [
   { code: "pl", name: "Polski", path: "/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo" },
   { code: "pt", name: "Português", path: "/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" },
   { code: "zh", name: "中文", path: "/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" },
+  { code: "ja", name: "日本語", path: "/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" },
 ];
 
 // SVG Flag components
@@ -96,6 +97,13 @@ const FlagZH = () => (
   </svg>
 );
 
+const FlagJA = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="24" fill="#FFFFFF"/>
+    <circle cx="16" cy="12" r="7" fill="#BC002D"/>
+  </svg>
+);
+
 const flagComponents: Record<string, React.FC> = {
   nl: FlagNL,
   en: FlagGB,
@@ -106,6 +114,7 @@ const flagComponents: Record<string, React.FC> = {
   pl: FlagPL,
   pt: FlagPT,
   zh: FlagZH,
+  ja: FlagJA,
 };
 
 interface LanguageSwitcherProps {
