@@ -16,18 +16,18 @@ import stripeLogo from "@/assets/stripe-logo.svg";
 import { validateContactForm, buildSafeMailtoUrl } from "@/lib/formValidation";
 
 
-// Premium domain data - exact copy from Dutch version
+// プレミアムドメインデータ
 const premiumDomains = [
   // DA 38
   {
     name: "escp-eap.eu",
-    description: "Premium business school domain with backlinks from Wikipedia, Cornell, Spiegel and Le Monde.",
+    description: "Wikipedia、コーネル大学、シュピーゲル、ル・モンドからのバックリンクを持つプレミアムビジネススクールドメイン。",
     mozScore: 38,
     pageAuthority: 28,
     linkingDomains: 292,
     inboundLinks: "4.6K+",
     followedLinks: "4.2K+",
-    category: "Education",
+    category: "教育",
     price: "€1495",
     backlinks: "4.6K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "lemonde.fr (DA 93)", "cornell.edu (DA 92)", "spiegel.de (DA 90)"],
@@ -36,13 +36,13 @@ const premiumDomains = [
   // DA 37
   {
     name: "grandparkhotel.at",
-    description: "Premium Austrian hotel domain with backlinks from The Guardian, Telegraph, Daily Mail, Irish Times and Der Standard.",
+    description: "ガーディアン、テレグラフ、デイリーメール、アイリッシュタイムズ、デアスタンダードからのバックリンクを持つプレミアムオーストリアホテルドメイン。",
     mozScore: 37,
     pageAuthority: 27,
     linkingDomains: 198,
     inboundLinks: "1.9K+",
     followedLinks: "1.7K+",
-    category: "Hospitality",
+    category: "ホスピタリティ",
     price: "€1750",
     backlinks: "1.9K+",
     topBacklinks: ["theguardian.com (DA 94)", "telegraph.co.uk (DA 94)", "dailymail.co.uk (DA 94)", "irishtimes.com (DA 91)", "derstandard.at (DA 82)"],
@@ -50,13 +50,13 @@ const premiumDomains = [
   },
   {
     name: "icesculpture.be",
-    description: "Belgian art/event domain with backlinks from Europa.eu, The Guardian, Telegraph, DW and Boston.com.",
+    description: "Europa.eu、ガーディアン、テレグラフ、DW、Boston.comからのバックリンクを持つベルギーアート/イベントドメイン。",
     mozScore: 37,
     pageAuthority: 33,
     linkingDomains: 349,
     inboundLinks: "1.9K+",
     followedLinks: "1.5K+",
-    category: "Art",
+    category: "アート",
     price: "€950",
     backlinks: "1.9K+",
     topBacklinks: ["europa.eu (DA 97)", "theguardian.com (DA 94)", "telegraph.co.uk (DA 94)", "dw.com (DA 93)", "boston.com (DA 92)"],
@@ -64,13 +64,13 @@ const premiumDomains = [
   },
   {
     name: "tabby.eu",
-    description: "Short and memorable EU domain with backlinks from YouTube, Le Monde, MDPI, Corriere and Wired Italia.",
+    description: "YouTube、ル・モンド、MDPI、Corriere、Wired Italiaからのバックリンクを持つ短く覚えやすいEUドメイン。",
     mozScore: 37,
     pageAuthority: 27,
     linkingDomains: 166,
     inboundLinks: "3K+",
     followedLinks: "2.9K+",
-    category: "General",
+    category: "一般",
     price: "€1950",
     stripePaymentLink: "https://buy.stripe.com/bJe7sL2HdcOWbP7bWW9Zm0g",
     backlinks: "3K+",
@@ -79,13 +79,13 @@ const premiumDomains = [
   // DA 36
   {
     name: "antigonetickets.be",
-    description: "Belgian ticketing domain with backlinks from Nieuwsblad, De Standaard and GVA.",
+    description: "Nieuwsblad、De Standaard、GVAからのバックリンクを持つベルギーチケットドメイン。",
     mozScore: 36,
     pageAuthority: 23,
     linkingDomains: 120,
     inboundLinks: "6.6K+",
     followedLinks: "6.6K+",
-    category: "Entertainment",
+    category: "エンターテイメント",
     price: "€925",
     stripePaymentLink: "https://buy.stripe.com/28E00ja9F9CK6uNgdc9Zm0f",
     backlinks: "6.6K+",
@@ -93,13 +93,13 @@ const premiumDomains = [
   },
   {
     name: "beauxartsliege.be",
-    description: "Art domain with backlinks from Wikipedia, CNN, Behance and RTBF.",
+    description: "Wikipedia、CNN、Behance、RTBFからのバックリンクを持つアートドメイン。",
     mozScore: 36,
     pageAuthority: 34,
     linkingDomains: 231,
     inboundLinks: "1.1K+",
     followedLinks: "831+",
-    category: "Art/Culture",
+    category: "アート/文化",
     price: "€925",
     stripePaymentLink: "https://buy.stripe.com/28E00ja9F9CK6uNgdc9Zm0f",
     backlinks: "1.1K+",
@@ -107,13 +107,13 @@ const premiumDomains = [
   },
   {
     name: "paulsmithmusic.eu",
-    description: "Music domain with backlinks from BBC, The Guardian, NME and Pitchfork.",
+    description: "BBC、ガーディアン、NME、Pitchforkからのバックリンクを持つ音楽ドメイン。",
     mozScore: 36,
     pageAuthority: 34,
     linkingDomains: 302,
     inboundLinks: "719+",
     followedLinks: "663+",
-    category: "Music",
+    category: "音楽",
     price: "€925",
     stripePaymentLink: "https://buy.stripe.com/28E00ja9F9CK6uNgdc9Zm0f",
     backlinks: "719+",
@@ -121,13 +121,13 @@ const premiumDomains = [
   },
   {
     name: "eu-asiacentre.eu",
-    description: "EU-Asia domain with backlinks from Wikipedia, NBC News, Cambridge and Reddit.",
+    description: "Wikipedia、NBC News、ケンブリッジ、Redditからのバックリンクを持つEU-アジアドメイン。",
     mozScore: 36,
     pageAuthority: 33,
     linkingDomains: 277,
     inboundLinks: "898+",
     followedLinks: "785+",
-    category: "International",
+    category: "国際",
     price: "€925",
     stripePaymentLink: "https://buy.stripe.com/28E00ja9F9CK6uNgdc9Zm0f",
     backlinks: "898+",
@@ -136,13 +136,13 @@ const premiumDomains = [
   // DA 35
   {
     name: "toulousespaceshow.eu",
-    description: "Premium space domain with backlinks from Europa.eu, NASA.gov, IEEE.org and Wikipedia.",
+    description: "Europa.eu、NASA.gov、IEEE.org、Wikipediaからのバックリンクを持つプレミアム宇宙ドメイン。",
     mozScore: 35,
     pageAuthority: 31,
     linkingDomains: 397,
     inboundLinks: "3.4K+",
     followedLinks: "1.8K+",
-    category: "Technology",
+    category: "テクノロジー",
     price: "€875",
     stripePaymentLink: "https://buy.stripe.com/aFa5kD81x16e1ate549Zm0e",
     backlinks: "3.4K+",
@@ -150,13 +150,13 @@ const premiumDomains = [
   },
   {
     name: "martonecycling.eu",
-    description: "Cycling domain with backlinks from Globo, Harper's Bazaar, Vogue and Grazia.",
+    description: "Globo、Harper's Bazaar、Vogue、Graziaからのバックリンクを持つサイクリングドメイン。",
     mozScore: 35,
     pageAuthority: 29,
     linkingDomains: 118,
     inboundLinks: "232+",
     followedLinks: "173+",
-    category: "Sport",
+    category: "スポーツ",
     price: "€875",
     stripePaymentLink: "https://buy.stripe.com/aFa5kD81x16e1ate549Zm0e",
     backlinks: "232+",
@@ -164,13 +164,13 @@ const premiumDomains = [
   },
   {
     name: "muenchner-kirchennachrichten.de",
-    description: "German news/religious domain with backlinks from Wikipedia (EN, DE, ZH, NL), Spiegel and La Croix.",
+    description: "Wikipedia（EN、DE、ZH、NL）、シュピーゲル、La Croixからのバックリンクを持つドイツニュース/宗教ドメイン。",
     mozScore: 35,
     pageAuthority: 29,
     linkingDomains: 281,
     inboundLinks: "3.3K+",
     followedLinks: "1.8K+",
-    category: "News",
+    category: "ニュース",
     price: "€875",
     stripePaymentLink: "https://buy.stripe.com/aFa5kD81x16e1ate549Zm0e",
     backlinks: "3.3K+",
@@ -179,13 +179,13 @@ const premiumDomains = [
   // DA 33
   {
     name: "etongmbh.de",
-    description: "German business domain with strong commercial authority and backlinks from Naver, Yumpu, Heise, Computerbase and Motor-Talk.",
+    description: "Naver、Yumpu、Heise、Computerbase、Motor-Talkからのバックリンクを持つ強力な商業権威を持つドイツビジネスドメイン。",
     mozScore: 33,
     pageAuthority: 27,
     linkingDomains: 321,
     inboundLinks: "3.9K+",
     followedLinks: "1.6K+",
-    category: "Business",
+    category: "ビジネス",
     price: "€795",
     stripePaymentLink: "https://buy.stripe.com/7sYaEXdlR02a4mF1ii9Zm0d",
     backlinks: "3.9K+",
@@ -1552,6 +1552,64 @@ const premiumDomains = [
   },
 ];
 
+// カテゴリ翻訳マッピング
+const categoryTranslations: Record<string, string> = {
+  "Education": "教育",
+  "Hospitality": "ホスピタリティ",
+  "Art": "アート",
+  "Art/Culture": "アート/文化",
+  "General": "一般",
+  "Entertainment": "エンターテイメント",
+  "Music": "音楽",
+  "International": "国際",
+  "Technology": "テクノロジー",
+  "Sport": "スポーツ",
+  "News": "ニュース",
+  "Business": "ビジネス",
+  "Tourism": "観光",
+  "Research": "研究",
+  "Collaboration": "コラボレーション",
+  "Projects": "プロジェクト",
+  "Media": "メディア",
+  "Network": "ネットワーク",
+  "Digital": "デジタル",
+  "Sustainability": "サステナビリティ",
+  "Beauty": "美容",
+  "Culture": "文化",
+  "Energy": "エネルギー",
+  "Food": "フード",
+  "Real Estate": "不動産",
+  "Music/Audio": "音楽/オーディオ",
+  "Finance": "金融",
+  "Design": "デザイン",
+  "Mobility": "モビリティ",
+  "Agriculture": "農業",
+  "Language/Culture": "言語/文化",
+  "Sport/Events": "スポーツ/イベント",
+  "Healthcare": "ヘルスケア",
+  "Art/Design": "アート/デザイン",
+  "Events": "イベント",
+  "Science": "科学",
+  "Health": "健康",
+  "Transport": "交通",
+  "Environment": "環境",
+  "Innovation": "イノベーション",
+  "Startups": "スタートアップ",
+  "Design/Hospitality": "デザイン/ホスピタリティ",
+  "Lifestyle": "ライフスタイル",
+  "History": "歴史",
+  "Photography": "写真",
+  "Maritime": "海事",
+  "Government/Culture": "政府/文化",
+  "Information": "情報",
+  "Portfolio": "ポートフォリオ",
+  "Government": "政府"
+};
+
+const translateCategory = (category: string): string => {
+  return categoryTranslations[category] || category;
+};
+
 const PremiumDomainsJA = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
@@ -1763,7 +1821,7 @@ const PremiumDomainsJA = () => {
                   <CardHeader className="pb-3">
                     <div className="flex items-start justify-between">
                       <Badge variant="outline" className="text-xs border-slate-600 text-slate-400">
-                        {domain.category}
+                        {translateCategory(domain.category)}
                       </Badge>
                       <div className="flex items-center gap-1 bg-amber-500/10 px-2 py-1 rounded-full">
                         <BarChart3 className="w-3 h-3 text-amber-400" />
@@ -2742,7 +2800,7 @@ const PremiumDomainsJA = () => {
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="fixed bottom-6 right-6 z-50 p-3 bg-amber-500 hover:bg-amber-600 text-slate-950 rounded-full shadow-lg transition-all duration-200 hover:shadow-xl"
-          aria-label="Back to top"
+          aria-label="ページトップへ戻る"
         >
           <ArrowUp className="w-6 h-6" />
         </button>
