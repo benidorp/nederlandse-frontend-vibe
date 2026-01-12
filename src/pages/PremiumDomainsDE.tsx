@@ -2213,6 +2213,10 @@ const PremiumDomainsDE = () => {
                   {
                     question: "Welche Branchen profitieren am meisten von expired Domains?",
                     answer: "Fast jede Branche kann von einer expired Domain mit Autorität profitieren: E-Commerce, Affiliate-Marketing, lokale Unternehmen, Blogs, SaaS, Immobilien, Gesundheitswesen, Finanzwesen und mehr. Überall, wo organischer Traffic und Google-Sichtbarkeit wichtig sind, bietet eine Domain mit bestehendem SEO-Wert einen Vorteil."
+                  },
+                  {
+                    question: "Warum erscheinen manchmal Websites aus eurem Portfolio in der Historie einer Domain?",
+                    answer: "Einige Domainnamen in unserem Portfolio wurden früher für eigene Projekte, Test-Websites oder 301-Redirects eingesetzt. Dies betrifft Websites wie NailTalk, OntwerpNovi, OliveVines und ähnliche Projekte. Das ist eigentlich ein Vorteil: Diese Domains haben nachgewiesene Ergebnisse und wurden aktiv auf SEO-Leistung getestet. Alle unsere Domainnamen werden vor dem Verkauf gründlich bei mehreren Quellen geprüft (wie Web-Historien-Archive, Google, Ahrefs, MOZ und Spam-Checker) und sind völlig frei von schädlicher Vergangenheit wie Spam, Erwachsenen-Inhalte oder Glücksspiel-Geschichte. Eine Website aus unserem eigenen Portfolio in der Historie ist also ein Zeichen von Qualität und sorgfältiger Verwaltung — kein Grund zur Sorge."
                   }
                 ].map((faq, index) => (
                   <AccordionItem key={index} value={`item-${index}`} className="border border-slate-700/50 rounded-lg px-6 bg-slate-800/30">
