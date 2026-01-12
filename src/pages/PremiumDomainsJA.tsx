@@ -1673,7 +1673,7 @@ const PremiumDomainsJA = () => {
         <title>高権威バックリンク付きプレミアム期限切れドメイン購入 | SEO価値</title>
         <meta name="description" content="バックリンク付き期限切れドメインをお探しですか？高権威とSEO価値を持つ信頼できる期限切れドメイン。Google上位表示を早めるプレミアムドメイン。即時利用可能。" />
         <meta name="keywords" content="期限切れドメイン購入, バックリンク付きドメイン, 権威あるドメイン, 信頼できる期限切れドメイン, プレミアムドメイン購入, SEO価値ドメイン, リンク付き古いドメイン, 販売中ベストドメイン" />
-        <link rel="canonical" href="https://iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" />
+        <link rel="canonical" href="https://www.iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" />
         <html lang="ja" />
       </Helmet>
 
