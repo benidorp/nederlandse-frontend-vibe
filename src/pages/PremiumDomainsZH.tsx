@@ -1680,18 +1680,20 @@ const PremiumDomainsZH = () => {
                   <strong className="text-white">域名权威（DA）</strong>是由SEO公司MOZ开发的评分系统，用于预测网站在搜索引擎结果页面（SERP）中的排名潜力。评分范围从1到100，分数越高表示排名潜力越大。
                 </p>
                 
-                <div className="grid md:grid-cols-3 gap-6 mb-8">
-                  <div className="text-center p-4 rounded-xl bg-slate-800/50">
-                    <div className="text-3xl font-bold text-red-400 mb-2">1-20</div>
-                    <div className="text-sm text-slate-400">新建/低权威</div>
+                <div className="grid sm:grid-cols-3 gap-4 max-w-2xl mx-auto mb-8">
+                  <div className="rounded-lg bg-black border border-cyan-500/50 p-4 text-center">
+                    <div className="text-xl font-bold text-cyan-400 mb-1">DA 20-25</div>
+                    <div className="text-sm font-medium text-white">良好权威</div>
                   </div>
-                  <div className="text-center p-4 rounded-xl bg-slate-800/50">
-                    <div className="text-3xl font-bold text-amber-400 mb-2">20-40</div>
-                    <div className="text-sm text-slate-400">中等权威</div>
+                  
+                  <div className="rounded-lg bg-black border border-yellow-500/50 p-4 text-center">
+                    <div className="text-xl font-bold text-yellow-400 mb-1">DA 25-30</div>
+                    <div className="text-sm font-medium text-white">强大权威</div>
                   </div>
-                  <div className="text-center p-4 rounded-xl bg-slate-800/50">
-                    <div className="text-3xl font-bold text-emerald-400 mb-2">40+</div>
-                    <div className="text-sm text-slate-400">高权威</div>
+
+                  <div className="rounded-lg bg-black border border-emerald-500/50 p-4 text-center">
+                    <div className="text-xl font-bold text-emerald-400 mb-1">DA 30+</div>
+                    <div className="text-sm font-medium text-white">卓越权威</div>
                   </div>
                 </div>
                 
