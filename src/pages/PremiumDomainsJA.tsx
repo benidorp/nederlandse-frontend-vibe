@@ -193,7 +193,7 @@ const premiumDomains = [
   },
   {
     name: "europe-en-midipyrenees.eu",
-    description: "French/European regional domain with backlinks from Scoop.it, France Info, La Tribune and French government.",
+    description: "Scoop.it、France Info、La Tribune、フランス政府からのバックリンクを持つフランス/ヨーロッパ地域ドメイン。",
     mozScore: 33,
     pageAuthority: 24,
     linkingDomains: 167,
@@ -207,7 +207,7 @@ const premiumDomains = [
   },
   {
     name: "fffb.be",
-    description: "Short and powerful Belgian domain with backlinks from Wikipedia, Variety, RTBF and Courrier International.",
+    description: "Wikipedia、Variety、RTBF、Courrier Internationalからのバックリンクを持つ短くて強力なベルギードメイン。",
     mozScore: 33,
     pageAuthority: 33,
     linkingDomains: 228,
@@ -222,7 +222,7 @@ const premiumDomains = [
   // DA 32
   {
     name: "improve-research.eu",
-    description: "Research domain with backlinks from Europa.eu, Cambridge, Springer and LSE.",
+    description: "Europa.eu、ケンブリッジ、Springer、LSEからのバックリンクを持つ研究ドメイン。",
     mozScore: 32,
     pageAuthority: 30,
     linkingDomains: 106,
@@ -236,7 +236,7 @@ const premiumDomains = [
   },
   {
     name: "co-da.eu",
-    description: "Short and powerful EU domain with backlinks from Globo, HuffPost, CBS News, Gizmodo and Fast Company.",
+    description: "Globo、HuffPost、CBS News、Gizmodo、Fast Companyからのバックリンクを持つ短くて強力なEUドメイン。",
     mozScore: 32,
     pageAuthority: 22,
     linkingDomains: 96,
@@ -250,7 +250,7 @@ const premiumDomains = [
   },
   {
     name: "emg-nice2015.fr",
-    description: "French domain with backlinks from Wikipedia, GoFundMe, Nice Matin and Triathlon.org.",
+    description: "Wikipedia、GoFundMe、Nice Matin、Triathlon.orgからのバックリンクを持つフランスドメイン。",
     mozScore: 32,
     pageAuthority: 31,
     linkingDomains: 191,
@@ -264,7 +264,7 @@ const premiumDomains = [
   },
   {
     name: "euromedialiteracy.eu",
-    description: "Educational EU domain with backlinks from Wikipedia, Penn State, Wisconsin and Council of Europe.",
+    description: "Wikipedia、ペンシルバニア州立大学、ウィスコンシン大学、欧州評議会からのバックリンクを持つ教育EUドメイン。",
     mozScore: 32,
     pageAuthority: 38,
     linkingDomains: 372,
@@ -278,7 +278,7 @@ const premiumDomains = [
   },
   {
     name: "citiexpress.eu",
-    description: "Transport and logistics EU domain with backlinks from TripAdvisor, SkyscraperCity and Rick Steves.",
+    description: "TripAdvisor、SkyscraperCity、Rick Stevesからのバックリンクを持つ交通・物流EUドメイン。",
     mozScore: 32,
     pageAuthority: 32,
     linkingDomains: 171,
@@ -293,7 +293,7 @@ const premiumDomains = [
   // DA 31
   {
     name: "machuproject.eu",
-    description: "European project domain with backlinks from Wikipedia, Cambridge, UNESCO and Reddit.",
+    description: "Wikipedia、ケンブリッジ、UNESCO、Redditからのバックリンクを持つヨーロッパプロジェクトドメイン。",
     mozScore: 31,
     pageAuthority: 27,
     linkingDomains: 162,
@@ -307,7 +307,7 @@ const premiumDomains = [
   },
   {
     name: "ramcip-project.eu",
-    description: "European research project domain with backlinks from Europa.eu, GitHub, NY Times and Springer.",
+    description: "Europa.eu、GitHub、NY Times、Springerからのバックリンクを持つヨーロッパ研究プロジェクトドメイン。",
     mozScore: 31,
     pageAuthority: 28,
     linkingDomains: 96,
@@ -321,7 +321,7 @@ const premiumDomains = [
   },
   {
     name: "evader-project.eu",
-    description: "EU project domain with backlinks from Europa.eu, Spiegel, Europa Press and Heise.",
+    description: "Europa.eu、シュピーゲル、Europa Press、Heiseからのバックリンクを持つEUプロジェクトドメイン。",
     mozScore: 31,
     pageAuthority: 30,
     linkingDomains: 91,
@@ -335,7 +335,7 @@ const premiumDomains = [
   },
   {
     name: "toastit-live.be",
-    description: "Belgian entertainment/media domain with backlinks from Wikipedia, KU Leuven, Nieuwsblad and Yle.",
+    description: "Wikipedia、KU Leuven、Nieuwsblad、Yleからのバックリンクを持つベルギーエンターテイメント/メディアドメイン。",
     mozScore: 31,
     pageAuthority: 29,
     linkingDomains: 268,
@@ -349,7 +349,7 @@ const premiumDomains = [
   },
   {
     name: "hznet.nl",
-    description: "Dutch network domain with backlinks from Microsoft, NOS, Neowin, Tweakers and XS4All.",
+    description: "Microsoft、NOS、Neowin、Tweakers、XS4Allからのバックリンクを持つオランダネットワークドメイン。",
     mozScore: 31,
     pageAuthority: 25,
     linkingDomains: 152,
@@ -363,7 +363,7 @@ const premiumDomains = [
   },
   {
     name: "leading-the-digital-decade.eu",
-    description: "Digital transformation EU domain with backlinks from Europa.eu, Politico EU and LSE.",
+    description: "Europa.eu、Politico EU、LSEからのバックリンクを持つデジタルトランスフォーメーションEUドメイン。",
     mozScore: 31,
     pageAuthority: 30,
     linkingDomains: 80,
@@ -377,7 +377,7 @@ const premiumDomains = [
   },
   {
     name: "landstewardship.eu",
-    description: "EU land management/sustainability domain with backlinks from Europa.eu, ABC.es, Gencat.cat and Spanish universities.",
+    description: "Europa.eu、ABC.es、Gencat.cat、スペインの大学からのバックリンクを持つEU土地管理/サステナビリティドメイン。",
     mozScore: 31,
     pageAuthority: 33,
     linkingDomains: 200,
@@ -388,12 +388,12 @@ const premiumDomains = [
     stripePaymentLink: "https://buy.stripe.com/dRm28r5TpaGO6uNe549Zm0b",
     backlinks: "7.5K+",
     topBacklinks: ["europa.eu (DA 97)", "abc.es (DA 93)", "gencat.cat (DA 89)", "ask.com (DA 88)", "ecoticias.com (DA 74)"],
-    useCases: ["Nature Management & Rewilding NGO", "Sustainable Agriculture Platform", "Ecotourism & Agritourism", "Environmental Consultancy Firm", "Landscape Architecture Studio", "Organic Farm Collective", "Climate Action Foundation", "Permaculture Academy", "Forests & Biodiversity Initiative", "Regenerative Agriculture Community"]
+    useCases: ["自然管理＆リワイルディングNGO", "持続可能な農業プラットフォーム", "エコツーリズム＆アグリツーリズム", "環境コンサルティング会社", "ランドスケープアーキテクチャスタジオ", "オーガニックファームコレクティブ", "気候変動対策財団", "パーマカルチャーアカデミー", "森林＆生物多様性イニシアチブ", "再生農業コミュニティ"]
   },
   // DA 30
   {
     name: "ilovecosmetics.eu",
-    description: "Beauty and cosmetics domain with backlinks from Alza, Glamour Magazine and CB Insights.",
+    description: "Alza、Glamour Magazine、CB Insightsからのバックリンクを持つ美容・化粧品ドメイン。",
     mozScore: 30,
     pageAuthority: 36,
     linkingDomains: 472,
@@ -404,11 +404,11 @@ const premiumDomains = [
     stripePaymentLink: "https://buy.stripe.com/fZu6oH6Xt3emg5n5yy9Zm0a",
     backlinks: "1.6K+",
     topBacklinks: ["alza.cz (DA 92)", "glamourmagazine.co.uk (DA 82)", "polyvore.com (DA 79)", "fave.co (DA 78)", "cbinsights.com (DA 77)"],
-    useCases: ["Beauty & Skincare E-commerce", "Cosmetics Review Blog", "Make-up Artist Portfolio", "Natural Cosmetics Brand", "Beauty Influencer Platform", "Beauty Salon Chain", "K-Beauty & J-Beauty Import", "Vegan Cosmetics Webshop", "Beauty Box Subscription Service", "Cosmetics Ingredients Database"]
+    useCases: ["美容＆スキンケアEコマース", "コスメレビューブログ", "メイクアップアーティストポートフォリオ", "ナチュラルコスメブランド", "ビューティーインフルエンサープラットフォーム", "ビューティーサロンチェーン", "K-Beauty＆J-Beautyインポート", "ビーガンコスメウェブショップ", "ビューティーボックスサブスクリプション", "化粧品成分データベース"]
   },
   {
     name: "rtmpilecki.eu",
-    description: "Historical/cultural EU domain with backlinks from Wikipedia (ES, ID, ZH), Polish government and Thread Reader.",
+    description: "Wikipedia（ES、ID、ZH）、ポーランド政府、Thread Readerからのバックリンクを持つ歴史的/文化的EUドメイン。",
     mozScore: 30,
     pageAuthority: 27,
     linkingDomains: 96,
@@ -422,7 +422,7 @@ const premiumDomains = [
   },
   {
     name: "friendsofthesupergrid.eu",
-    description: "Energy and infrastructure EU domain with backlinks from Wikipedia, CNET, IEEE and The Conversation.",
+    description: "Wikipedia、CNET、IEEE、The Conversationからのバックリンクを持つエネルギー・インフラEUドメイン。",
     mozScore: 30,
     pageAuthority: 30,
     linkingDomains: 297,
@@ -436,7 +436,7 @@ const premiumDomains = [
   },
   {
     name: "eureka-hvacr.eu",
-    description: "HVAC and climate technology EU domain with backlinks from Ow.ly, EurActiv and Danfoss.",
+    description: "Ow.ly、EurActiv、Danfossからのバックリンクを持つHVAC・空調技術EUドメイン。",
     mozScore: 30,
     pageAuthority: 23,
     linkingDomains: 80,
@@ -450,7 +450,7 @@ const premiumDomains = [
   },
   {
     name: "partymenu.eu",
-    description: "EU catering/event domain with backlinks from Google.sk, Wikiwand, RA.co and Pravda.sk.",
+    description: "Google.sk、Wikiwand、RA.co、Pravda.skからのバックリンクを持つEUケータリング/イベントドメイン。",
     mozScore: 30,
     pageAuthority: 35,
     linkingDomains: 328,
@@ -465,7 +465,7 @@ const premiumDomains = [
   // DA 29
   {
     name: "evacuate.eu",
-    description: "Safety and emergency planning EU domain with backlinks from Europa.eu, El País, Springer and KU Leuven.",
+    description: "Europa.eu、El País、Springer、KU Leuvenからのバックリンクを持つ安全・緊急計画EUドメイン。",
     mozScore: 29,
     pageAuthority: 24,
     linkingDomains: 99,
@@ -479,7 +479,7 @@ const premiumDomains = [
   },
   {
     name: "greenweek2010.eu",
-    description: "Sustainability domain with backlinks from Europa.eu, EurekAlert, RAI and AAAS.",
+    description: "Europa.eu、EurekAlert、RAI、AAASからのバックリンクを持つサステナビリティドメイン。",
     mozScore: 29,
     pageAuthority: 28,
     linkingDomains: 109,
@@ -493,7 +493,7 @@ const premiumDomains = [
   },
   {
     name: "bryn-somersethouse.co.uk",
-    description: "British real estate/hospitality domain with backlinks from Forbes, The Guardian, Evening Standard and Time Out.",
+    description: "Forbes、ガーディアン、Evening Standard、Time Outからのバックリンクを持つイギリス不動産/ホスピタリティドメイン。",
     mozScore: 29,
     pageAuthority: 30,
     linkingDomains: 96,
@@ -507,7 +507,7 @@ const premiumDomains = [
   },
   {
     name: "euforistudy.eu",
-    description: "Educational EU study domain with backlinks from The Guardian, Trinity College Dublin and VU Amsterdam.",
+    description: "ガーディアン、トリニティ・カレッジ・ダブリン、VUアムステルダムからのバックリンクを持つ教育EU研究ドメイン。",
     mozScore: 29,
     pageAuthority: 27,
     linkingDomains: 72,
@@ -521,7 +521,7 @@ const premiumDomains = [
   },
   {
     name: "beatassist.eu",
-    description: "Music production domain with backlinks from Google Sites, Scoop.it, Envato and MusicRadar.",
+    description: "Google Sites、Scoop.it、Envato、MusicRadarからのバックリンクを持つ音楽制作ドメイン。",
     mozScore: 29,
     pageAuthority: 29,
     linkingDomains: 164,
@@ -535,7 +535,7 @@ const premiumDomains = [
   },
   {
     name: "energaware.eu",
-    description: "Energy awareness EU project domain with backlinks from Europa.eu, UOL, El País and Le Figaro.",
+    description: "Europa.eu、UOL、El País、Le Figaroからのバックリンクを持つエネルギー意識EUプロジェクトドメイン。",
     mozScore: 29,
     pageAuthority: 26,
     linkingDomains: 61,
@@ -549,7 +549,7 @@ const premiumDomains = [
   },
   {
     name: "5gmedia.eu",
-    description: "Telecom/media domain with backlinks from Medium, IBM, Telefónica and universities.",
+    description: "Medium、IBM、Telefónica、大学からのバックリンクを持つテレコム/メディアドメイン。",
     mozScore: 29,
     pageAuthority: 24,
     linkingDomains: 69,
@@ -563,7 +563,7 @@ const premiumDomains = [
   },
   {
     name: "finnovaregio.eu",
-    description: "Financial innovation EU regional domain with backlinks from Crunchbase, Splashthat and Climate-KIC.",
+    description: "Crunchbase、Splashthat、Climate-KICからのバックリンクを持つ金融イノベーションEU地域ドメイン。",
     mozScore: 29,
     pageAuthority: 20,
     linkingDomains: 41,
@@ -577,7 +577,7 @@ const premiumDomains = [
   },
   {
     name: "worth-project.eu",
-    description: "Design and innovation project domain with backlinks from Europa.eu, Euronews, AngelList and UAL Arts.",
+    description: "Europa.eu、Euronews、AngelList、UAL Artsからのバックリンクを持つデザイン・イノベーションプロジェクトドメイン。",
     mozScore: 29,
     pageAuthority: 32,
     linkingDomains: 162,
@@ -591,7 +591,7 @@ const premiumDomains = [
   },
   {
     name: "push-pull-parking.eu",
-    description: "EU mobility/parking domain with backlinks from Europa.eu, Medium, Zeit.de and Thread Reader.",
+    description: "Europa.eu、Medium、Zeit.de、Thread Readerからのバックリンクを持つEUモビリティ/駐車場ドメイン。",
     mozScore: 29,
     pageAuthority: 30,
     linkingDomains: 107,
@@ -606,7 +606,7 @@ const premiumDomains = [
   // DA 28
   {
     name: "bovisadrivein.it",
-    description: "Italian entertainment domain with backlinks from Behance, Giphy, Corriere and MyMovies.",
+    description: "Behance、Giphy、Corriere、MyMoviesからのバックリンクを持つイタリアエンターテイメントドメイン。",
     mozScore: 28,
     pageAuthority: 22,
     linkingDomains: 52,
@@ -620,7 +620,7 @@ const premiumDomains = [
   },
   {
     name: "resurbis.eu",
-    description: "EU sustainability domain with backlinks from Europa.eu, MDPI, EurekAlert and Wired.",
+    description: "Europa.eu、MDPI、EurekAlert、Wiredからのバックリンクを持つEUサステナビリティドメイン。",
     mozScore: 28,
     pageAuthority: 24,
     linkingDomains: 87,
@@ -634,7 +634,7 @@ const premiumDomains = [
   },
   {
     name: "eu-sabana.eu",
-    description: "Sustainable agriculture EU project domain with backlinks from Europa.eu, The Conversation and Frontiers.",
+    description: "Europa.eu、The Conversation、Frontiersからのバックリンクを持つ持続可能農業EUプロジェクトドメイン。",
     mozScore: 28,
     pageAuthority: 24,
     linkingDomains: 69,
@@ -648,7 +648,7 @@ const premiumDomains = [
   },
   {
     name: "ellinikiglossa.eu",
-    description: "Greek language/culture domain with strong backlinks from Wikipedia, UCI.edu and universities.",
+    description: "Wikipedia、UCI.edu、大学からの強力なバックリンクを持つギリシャ語/文化ドメイン。",
     mozScore: 28,
     pageAuthority: 31,
     linkingDomains: 164,
@@ -662,7 +662,7 @@ const premiumDomains = [
   },
   {
     name: "bringaexpo.eu",
-    description: "Hungarian cycling/expo domain with strong backlinks from Origo.hu, Velvet.hu, Network.hu and other Hungarian media websites.",
+    description: "Origo.hu、Velvet.hu、Network.hu、その他ハンガリーメディアからの強力なバックリンクを持つハンガリーサイクリング/エキスポドメイン。",
     mozScore: 27,
     pageAuthority: 25,
     linkingDomains: 79,
@@ -676,7 +676,7 @@ const premiumDomains = [
   },
   {
     name: "movecare-project.eu",
-    description: "Care and mobility EU project domain with backlinks from Springer, MDPI, Il Fatto Quotidiano and Italian universities.",
+    description: "Springer、MDPI、Il Fatto Quotidiano、イタリアの大学からのバックリンクを持つケア・モビリティEUプロジェクトドメイン。",
     mozScore: 27,
     pageAuthority: 22,
     linkingDomains: 58,
@@ -690,7 +690,7 @@ const premiumDomains = [
   },
   {
     name: "davidhughesillustration.co.uk",
-    description: "Creative UK domain with backlinks from The Guardian, Creative Bloq, ORF.at and Publishers Weekly.",
+    description: "ガーディアン、Creative Bloq、ORF.at、Publishers Weeklyからのバックリンクを持つクリエイティブUKドメイン。",
     mozScore: 28,
     pageAuthority: 27,
     linkingDomains: 157,
@@ -704,7 +704,7 @@ const premiumDomains = [
   },
   {
     name: "centremlm.be",
-    description: "Belgian center domain with backlinks from Wikipedia (FR, IT, NL), Le Figaro and Wiktionary.",
+    description: "Wikipedia（FR、IT、NL）、Le Figaro、Wiktionaryからのバックリンクを持つベルギーセンタードメイン。",
     mozScore: 28,
     pageAuthority: 28,
     linkingDomains: 182,
@@ -718,7 +718,7 @@ const premiumDomains = [
   },
   {
     name: "epc2018.be",
-    description: "Belgian event domain with backlinks from TinyURL, UB.edu, Lund University and Confex.",
+    description: "TinyURL、UB.edu、ルンド大学、Confexからのバックリンクを持つベルギーイベントドメイン。",
     mozScore: 28,
     pageAuthority: 24,
     linkingDomains: 57,
@@ -732,7 +732,7 @@ const premiumDomains = [
   },
   {
     name: "youthstartproject.eu",
-    description: "Education/youth project domain with backlinks from Europa.eu, Campaign Archive, Observador and OpenEdition.",
+    description: "Europa.eu、Campaign Archive、Observador、OpenEditionからのバックリンクを持つ教育/ユースプロジェクトドメイン。",
     mozScore: 28,
     pageAuthority: 24,
     linkingDomains: 64,
@@ -747,7 +747,7 @@ const premiumDomains = [
   // DA 27
   {
     name: "spanvis.nl",
-    description: "Dutch domain with backlinks from Wikipedia (EN, RU, NL), Wikiwand and XS4All.",
+    description: "Wikipedia（EN、RU、NL）、Wikiwand、XS4Allからのバックリンクを持つオランダドメイン。",
     mozScore: 27,
     pageAuthority: 29,
     linkingDomains: 241,
@@ -761,7 +761,7 @@ const premiumDomains = [
   },
   {
     name: "seatglobal.eu",
-    description: "International mobility/transport domain with backlinks from Europa.eu, Springer, PLOS and Phys.org.",
+    description: "Europa.eu、Springer、PLOS、Phys.orgからのバックリンクを持つ国際モビリティ/交通ドメイン。",
     mozScore: 27,
     pageAuthority: 29,
     linkingDomains: 123,
@@ -775,7 +775,7 @@ const premiumDomains = [
   },
   {
     name: "arcomem.eu",
-    description: "Digital archive EU project domain with backlinks from Wikipedia, Europa.eu, W3.org, SlideShare and Oxford.",
+    description: "Wikipedia、Europa.eu、W3.org、SlideShare、オックスフォードからのバックリンクを持つデジタルアーカイブEUプロジェクトドメイン。",
     mozScore: 27,
     pageAuthority: 33,
     linkingDomains: 691,
@@ -789,7 +789,7 @@ const premiumDomains = [
   },
   {
     name: "lt-pl-ru.eu",
-    description: "Baltic region EU cooperation domain with backlinks from Europa.eu, Wikipedia DE, Ask.com and Rzeczpospolita.",
+    description: "Europa.eu、Wikipedia DE、Ask.com、Rzeczpospolitaからのバックリンクを持つバルト地域EU協力ドメイン。",
     mozScore: 27,
     pageAuthority: 31,
     linkingDomains: 155,
@@ -803,7 +803,7 @@ const premiumDomains = [
   },
   {
     name: "transitionproject.eu",
-    description: "Transition and change EU project domain with backlinks from Europa.eu, Eventbrite, Storify and Sheffield University.",
+    description: "Europa.eu、Eventbrite、Storify、シェフィールド大学からのバックリンクを持つ移行・変革EUプロジェクトドメイン。",
     mozScore: 27,
     pageAuthority: 28,
     linkingDomains: 75,
@@ -817,7 +817,7 @@ const premiumDomains = [
   },
   {
     name: "expo-2050.be",
-    description: "Belgian expo/exhibition domain with backlinks from The Conversation, Radio France, RTBF and La Libre.",
+    description: "The Conversation、Radio France、RTBF、La Libreからのバックリンクを持つベルギーエキスポ/展示ドメイン。",
     mozScore: 27,
     pageAuthority: 27,
     linkingDomains: 96,
@@ -831,7 +831,7 @@ const premiumDomains = [
   },
   {
     name: "iceel.eu",
-    description: "EU domain with backlinks from Europa.eu, France Info, CNRS and French universities.",
+    description: "Europa.eu、France Info、CNRS、フランスの大学からのバックリンクを持つEUドメイン。",
     mozScore: 27,
     pageAuthority: 30,
     linkingDomains: 130,
@@ -845,7 +845,7 @@ const premiumDomains = [
   },
   {
     name: "eustartupvillageforum.eu",
-    description: "Startup and innovation EU forum domain with backlinks from Europa.eu, Pages.dev, Campaign Archive and Silicon Republic.",
+    description: "Europa.eu、Pages.dev、Campaign Archive、Silicon Republicからのバックリンクを持つスタートアップ・イノベーションEUフォーラムドメイン。",
     mozScore: 27,
     pageAuthority: 28,
     linkingDomains: 85,
@@ -859,7 +859,7 @@ const premiumDomains = [
   },
   {
     name: "life-envoll.eu",
-    description: "Environment and nature EU project domain with backlinks from Europa.eu, FranceInfo, Campaign Archive and Midi Libre.",
+    description: "Europa.eu、FranceInfo、Campaign Archive、Midi Libreからのバックリンクを持つ環境・自然EUプロジェクトドメイン。",
     mozScore: 27,
     pageAuthority: 22,
     linkingDomains: 54,
@@ -874,7 +874,7 @@ const premiumDomains = [
   // DA 26
   {
     name: "covenant-capacity.eu",
-    description: "EU covenant and capacity building domain with backlinks from Europa.eu, BT, MyNewsDesk and WWF Panda.",
+    description: "Europa.eu、BT、MyNewsDesk、WWF Pandaからのバックリンクを持つEU協定・能力開発ドメイン。",
     mozScore: 26,
     pageAuthority: 24,
     linkingDomains: 85,
@@ -888,7 +888,7 @@ const premiumDomains = [
   },
   {
     name: "wetenschapbegintmetverwondering.nl",
-    description: "Dutch science communication domain with backlinks from RUG, NU.nl and National Science Agenda.",
+    description: "RUG、NU.nl、国立科学アジェンダからのバックリンクを持つオランダ科学コミュニケーションドメイン。",
     mozScore: 27,
     pageAuthority: 24,
     linkingDomains: 52,
@@ -902,7 +902,7 @@ const premiumDomains = [
   },
   {
     name: "khresmoi.eu",
-    description: "Medical search EU project domain with backlinks from MDPI, Springer, BioMedCentral and Charles University.",
+    description: "MDPI、Springer、BioMedCentral、カレル大学からのバックリンクを持つ医療検索EUプロジェクトドメイン。",
     mozScore: 27,
     pageAuthority: 32,
     linkingDomains: 184,
@@ -916,7 +916,7 @@ const premiumDomains = [
   },
   {
     name: "sialon.eu",
-    description: "EU health research domain with backlinks from BBC, Europa.eu and The Conversation.",
+    description: "BBC、Europa.eu、The Conversationからのバックリンクを持つEU健康研究ドメイン。",
     mozScore: 24,
     pageAuthority: 25,
     linkingDomains: 66,
@@ -930,7 +930,7 @@ const premiumDomains = [
   },
   {
     name: "spaceinfoday.eu",
-    description: "EU space domain with backlinks from Wikipedia, Europa.eu, ESA, UCM and ORF.",
+    description: "Wikipedia、Europa.eu、ESA、UCM、ORFからのバックリンクを持つEU宇宙ドメイン。",
     mozScore: 26,
     pageAuthority: 24,
     linkingDomains: 77,
@@ -944,7 +944,7 @@ const premiumDomains = [
   },
   {
     name: "beehive-erasmusplus.eu",
-    description: "Erasmus+ educational EU domain with backlinks from Pages.dev, Gameforge, GitBook and universities.",
+    description: "Pages.dev、Gameforge、GitBook、大学からのバックリンクを持つErasmus+教育EUドメイン。",
     mozScore: 26,
     pageAuthority: 34,
     linkingDomains: 452,
@@ -958,7 +958,7 @@ const premiumDomains = [
   },
   {
     name: "dunyaendesiedefilm.nl",
-    description: "Dutch film/media domain with backlinks from Wikipedia (EN, JA), IPFS, FilmWeb and Cinemagia.",
+    description: "Wikipedia（EN、JA）、IPFS、FilmWeb、Cinemagiaからのバックリンクを持つオランダ映画/メディアドメイン。",
     mozScore: 26,
     pageAuthority: 23,
     linkingDomains: 102,
@@ -972,7 +972,7 @@ const premiumDomains = [
   },
   {
     name: "102touchfm.co.uk",
-    description: "British radio/media domain with backlinks from Wikipedia, BBC, Bit.ly, Foursquare and DigitalSpy.",
+    description: "Wikipedia、BBC、Bit.ly、Foursquare、DigitalSpyからのバックリンクを持つイギリスラジオ/メディアドメイン。",
     mozScore: 26,
     pageAuthority: 30,
     linkingDomains: 292,
@@ -986,7 +986,7 @@ const premiumDomains = [
   },
   {
     name: "tca2000.co.uk",
-    description: "British domain with backlinks from Wikipedia (EN, FR, JA, PL), Fandom and DigitalSpy.",
+    description: "Wikipedia（EN、FR、JA、PL）、Fandom、DigitalSpyからのバックリンクを持つイギリスドメイン。",
     mozScore: 26,
     pageAuthority: 29,
     linkingDomains: 180,
@@ -1000,7 +1000,7 @@ const premiumDomains = [
   },
   {
     name: "deparisnet.be",
-    description: "Belgian network domain with backlinks from Europa.eu, Wikipedia (ES, FR), Yumpu and Google.be.",
+    description: "Europa.eu、Wikipedia（ES、FR）、Yumpu、Google.beからのバックリンクを持つベルギーネットワークドメイン。",
     mozScore: 26,
     pageAuthority: 28,
     linkingDomains: 135,
@@ -1558,12 +1558,14 @@ const categoryTranslations: Record<string, string> = {
   "Hospitality": "ホスピタリティ",
   "Art": "アート",
   "Art/Culture": "アート/文化",
+  "Art/Heritage": "アート/遺産",
   "General": "一般",
   "Entertainment": "エンターテイメント",
   "Music": "音楽",
   "International": "国際",
   "Technology": "テクノロジー",
   "Sport": "スポーツ",
+  "Sports": "スポーツ",
   "News": "ニュース",
   "Business": "ビジネス",
   "Tourism": "観光",
@@ -1603,7 +1605,10 @@ const categoryTranslations: Record<string, string> = {
   "Government/Culture": "政府/文化",
   "Information": "情報",
   "Portfolio": "ポートフォリオ",
-  "Government": "政府"
+  "Government": "政府",
+  "Safety": "安全",
+  "Gaming": "ゲーミング",
+  "Smart City": "スマートシティ"
 };
 
 const translateCategory = (category: string): string => {
