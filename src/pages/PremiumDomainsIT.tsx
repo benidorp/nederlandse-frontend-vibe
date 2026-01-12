@@ -2283,6 +2283,10 @@ const PremiumDomainsIT = () => {
                   {
                     question: "Quanto tempo ci vuole prima di vedere risultati?",
                     answer: "Gli effetti di un trasferimento di dominio o redirect 301 sono generalmente visibili nei risultati di ricerca entro 2-8 settimane. Dipende da quanto spesso Google crawla il tuo sito e dallo stato attuale del tuo sito web. I domini premium con backlink attivi spesso mostrano risultati più velocemente."
+                  },
+                  {
+                    question: "Perché a volte appaiono siti web dal vostro portfolio nella storia di un dominio?",
+                    answer: "Alcuni nomi di dominio nel nostro portfolio sono stati precedentemente utilizzati per i nostri progetti, siti web di prova o redirect 301. Questo riguarda siti web come NailTalk, OntwerpNovi, OliveVines e progetti simili. Questo è in realtà un vantaggio: questi domini hanno risultati comprovati e sono stati attivamente testati per le prestazioni SEO. Tutti i nostri nomi di dominio vengono accuratamente controllati presso più fonti prima della vendita (come archivi di storia web, Google, Ahrefs, MOZ e spam checker) e sono completamente privi di passato dannoso come spam, contenuti per adulti o storia di gioco d'azzardo. Un sito web dal nostro portfolio nella storia è quindi un segno di qualità e gestione attenta — non un motivo di preoccupazione."
                   }
                 ].map((faq, index) => (
                   <AccordionItem 

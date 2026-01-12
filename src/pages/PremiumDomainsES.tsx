@@ -2305,6 +2305,15 @@ const PremiumDomainsES = () => {
                   </AccordionContent>
                 </AccordionItem>
 
+                <AccordionItem value="item-17" className="bg-slate-800/50 border border-slate-700 rounded-lg px-6">
+                  <AccordionTrigger className="text-white hover:text-amber-400">
+                    ¿Por qué a veces aparecen sitios web de su portfolio en el historial de un dominio?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-slate-300">
+                    Algunos nombres de dominio en nuestro portfolio se han utilizado anteriormente para nuestros propios proyectos, sitios web de prueba o redirecciones 301. Esto incluye sitios web como NailTalk, OntwerpNovi, OliveVines y proyectos similares. Esto es en realidad una ventaja: estos dominios tienen resultados comprobados y han sido probados activamente para el rendimiento SEO. Todos nuestros nombres de dominio se verifican exhaustivamente en múltiples fuentes antes de la venta (como archivos de historial web, Google, Ahrefs, MOZ y verificadores de spam) y están completamente libres de pasado dañino como spam, contenido para adultos o historial de juegos de azar. Un sitio web de nuestro propio portfolio en el historial es, por lo tanto, una señal de calidad y gestión cuidadosa — no un motivo de preocupación.
+                  </AccordionContent>
+                </AccordionItem>
+
                 {/* Complete Guide */}
                 <AccordionItem value="complete-guide" className="bg-slate-800/50 border border-amber-500/30 rounded-lg px-6">
                   <AccordionTrigger className="text-amber-400 hover:text-amber-300 text-lg font-semibold">
