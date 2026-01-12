@@ -1842,23 +1842,7 @@ const PremiumDomainsES = () => {
                         <span className="text-lg font-bold text-amber-400">{domain.price}</span>
                       </div>
                       
-                      {domain.name === "friendsofthesupergrid.eu" ? (
-                        <div className="flex flex-col gap-3">
-                          <div 
-                            className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-slate-600 text-slate-300 font-bold rounded-md shadow-md text-lg cursor-not-allowed"
-                          >
-                            Vendido
-                          </div>
-                          <div className="flex flex-col items-center gap-2 text-center" data-nosnippet>
-                            <p className="text-[10px] text-slate-400 leading-tight">
-                              Este dominio ha sido vendido. ¿Interesado en dominios similares? Contáctenos para alternativas.
-                            </p>
-                            <a href="#domein-verhuizen" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
-                              ¿Cómo funciona la transferencia?
-                            </a>
-                          </div>
-                        </div>
-                      ) : (
+                      
                         <div className="flex flex-col gap-3">
                           {domain.stripePaymentLink ? (
                             <a 
@@ -1954,7 +1938,7 @@ const PremiumDomainsES = () => {
                             </div>
                           </div>
                         </div>
-                      )}
+                      
                     </div>
                   </CardContent>
                 </Card>
