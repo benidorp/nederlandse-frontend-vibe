@@ -3,9 +3,9 @@
   RewriteEngine On
   RewriteBase /
 
-  # Force non-www to root domain, preserve full path
-  RewriteCond %{HTTP_HOST} ^www\.iaee\.eu$ [NC]
-  RewriteRule ^(.*)$ https://iaee.eu/$1 [L,R=301]
+  # Force non-www to www domain, preserve full path (301 redirect for SEO)
+  RewriteCond %{HTTP_HOST} ^iaee\.eu$ [NC]
+  RewriteRule ^(.*)$ https://www.iaee.eu/$1 [L,R=301]
 
   # 301 Redirect: Premium Domeinen naar nieuwe URL structuur
   RewriteRule ^premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde$ /expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde [R=301,L]
