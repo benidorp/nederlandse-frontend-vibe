@@ -2341,144 +2341,144 @@ const PremiumDomainsJA = () => {
                     <div className="space-y-8 whitespace-pre-line">
                       {[
                         {
-                          question: "1. Which domain name should I buy as a beginner?",
-                          answer: "As a beginner, you are best off choosing a domain name that is easy to remember, clearly indicates what you do and exudes trust. Many starters search for \"which domain name should I buy\" and automatically end up with new domains, while a reliable expired domain name often already has built-up authority and value."
+                          question: "1. 初心者はどのドメイン名を購入すべきですか？",
+                          answer: "初心者として、覚えやすく、何をしているかを明確に示し、信頼感を与えるドメイン名を選ぶのが最善です。多くの初心者は「どのドメイン名を購入すべきか」と検索し、自動的に新しいドメインにたどり着きますが、信頼できる期限切れドメイン名は、すでに構築された権威と価値を持っていることが多いです。"
                         },
                         {
-                          question: "2. What is the difference between a new domain name and an expired domain name?",
-                          answer: "A new domain name has no history and starts completely from scratch. An expired domain name has been registered before and may still have backlinks, authority and trust with Google. That makes an expired domain name often more attractive for SEO and visibility."
+                          question: "2. 新しいドメイン名と期限切れドメイン名の違いは何ですか？",
+                          answer: "新しいドメイン名は履歴がなく、完全にゼロから始まります。期限切れドメイン名は以前に登録されており、バックリンク、権威、Googleからの信頼がまだ残っている可能性があります。そのため、期限切れドメイン名はSEOと可視性においてより魅力的であることが多いです。"
                         },
                         {
-                          question: "3. Is it better to buy a new domain name or an expired domain name?",
-                          answer: "Those who search for \"new domain name or expired domain name\" are usually comparing speed and results. For branding, a new name can work, but for getting found in Google faster, a good expired domain name often offers a clear head start."
+                          question: "3. 新しいドメイン名と期限切れドメイン名、どちらを購入する方が良いですか？",
+                          answer: "「新しいドメイン名か期限切れドメイン名か」を検索する人は、通常スピードと結果を比較しています。ブランディングには新しい名前が有効ですが、Googleでより早く見つけてもらうには、良い期限切れドメイン名がしばしば明確な先行優位性を提供します。"
                         },
                         {
-                          question: "4. Why does my new website score so poorly in Google?",
-                          answer: "New websites still need to build their reliability. Without backlinks and history, this often takes months. An expired domain name with good links can ensure that you don't have to start completely from scratch."
+                          question: "4. なぜ新しいウェブサイトはGoogleで順位が悪いのですか？",
+                          answer: "新しいウェブサイトはまだ信頼性を構築する必要があります。バックリンクと履歴がなければ、これには数ヶ月かかることがよくあります。良いリンクを持つ期限切れドメイン名は、完全にゼロから始める必要がないことを保証します。"
                         },
                         {
-                          question: "5. Is an expired domain name safe to buy?",
-                          answer: "Yes, as long as it is a checked and reliable expired domain name. The risk is not in \"expired\", but in domains that have not been checked for spam, abuse or bad backlinks."
+                          question: "5. 期限切れドメイン名を購入しても安全ですか？",
+                          answer: "はい、チェックされた信頼できる期限切れドメイン名であれば。リスクは「期限切れ」にあるのではなく、スパム、悪用、または悪いバックリンクについてチェックされていないドメインにあります。"
                         },
                         {
-                          question: "6. What does a domain name with good backlinks mean?",
-                          answer: "A domain name with good backlinks has references from real, relevant websites. These links ensure authority and trust with search engines, which is essential for SEO performance."
+                          question: "6. 良いバックリンクを持つドメイン名とは何を意味しますか？",
+                          answer: "良いバックリンクを持つドメイン名は、実際の関連するウェブサイトからの参照を持っています。これらのリンクは検索エンジンでの権威と信頼を確保し、SEOパフォーマンスに不可欠です。"
                         },
                         {
-                          question: "7. Why are backlinks important when buying a domain name?",
-                          answer: "Backlinks are one of the most important ranking factors of Google. When you search for \"SEO domain name buy\", you are actually looking for a domain that has already built up trust — exactly what a good expired domain name offers."
+                          question: "7. ドメイン名を購入する際にバックリンクが重要なのはなぜですか？",
+                          answer: "バックリンクはGoogleの最も重要なランキング要因の1つです。「SEOドメイン名購入」を検索するとき、実際にはすでに信頼を構築したドメインを探しています—まさに良い期限切れドメイン名が提供するものです。"
                         },
                         {
-                          question: "8. How can I see if an expired domain name is reliable?",
-                          answer: "A reliable expired domain name is checked for: website history, quality of backlinks, absence of spam, gambling or adult content. As a seller, you only select domains that meet these criteria."
+                          question: "8. 期限切れドメイン名が信頼できるかどうかをどのように確認できますか？",
+                          answer: "信頼できる期限切れドメイン名は、ウェブサイト履歴、バックリンクの品質、スパム・ギャンブル・アダルトコンテンツの不在についてチェックされています。販売者として、これらの基準を満たすドメインのみを選択します。"
                         },
                         {
-                          question: "9. Can I use an expired domain name for a new website?",
-                          answer: "Yes. You can perfectly use an expired domain name for a completely new project. The content is new, but the domain name already brings online authority."
+                          question: "9. 期限切れドメイン名を新しいウェブサイトに使用できますか？",
+                          answer: "はい。期限切れドメイン名を完全に新しいプロジェクトに使用できます。コンテンツは新しいですが、ドメイン名はすでにオンライン権威をもたらします。"
                         },
                         {
-                          question: "10. Is an expired domain name suitable for beginners?",
-                          answer: "Certainly. Beginners often benefit the most because they: get faster visibility, have less SEO backlog, make a more professional start."
+                          question: "10. 期限切れドメイン名は初心者に適していますか？",
+                          answer: "もちろんです。初心者は最も恩恵を受けることが多いです：より速い可視性、SEOの遅れが少ない、よりプロフェッショナルなスタート。"
                         },
                         {
-                          question: "11. Why are some domain names more expensive than others?",
-                          answer: "Searches like \"why is a domain name so expensive\" often come from misunderstanding value. The price is determined by: name quality, SEO value, backlinks, commercial applicability."
+                          question: "11. なぜ一部のドメイン名は他より高価なのですか？",
+                          answer: "「なぜドメイン名はこんなに高いのか」といった検索は、しばしば価値への誤解から来ます。価格は名前の品質、SEO価値、バックリンク、商業的適用性によって決まります。"
                         },
                         {
-                          question: "12. Can I sell an expired domain name later?",
-                          answer: "Yes. Many people search for \"domain name as investment\". A strong expired domain name often retains its value and can even increase in price."
+                          question: "12. 期限切れドメイン名を後で売却できますか？",
+                          answer: "はい。多くの人が「投資としてのドメイン名」を検索します。強力な期限切れドメイン名は価値を維持し、価格が上昇することさえあります。"
                         },
                         {
-                          question: "13. Can an expired domain name be bad for SEO?",
-                          answer: "Only if it has a bad history. That's why there is a big difference between: unchecked expired domains and carefully selected, reliable domain names."
+                          question: "13. 期限切れドメイン名がSEOに悪影響を与えることはありますか？",
+                          answer: "悪い履歴がある場合のみです。そのため、チェックされていない期限切れドメインと慎重に選択された信頼できるドメイン名には大きな違いがあります。"
                         },
                         {
-                          question: "14. What should I pay attention to when buying an expired domain name?",
-                          answer: "Important points of attention are: spam-free history, relevant backlinks, logical domain name, no trademark risk."
+                          question: "14. 期限切れドメイン名を購入する際に何に注意すべきですか？",
+                          answer: "重要な注意点：スパムのない履歴、関連するバックリンク、論理的なドメイン名、商標リスクなし。"
                         },
                         {
-                          question: "15. How quickly can I start after buying a domain name?",
-                          answer: "After transfer you can immediately use the domain name for: a website, email, webshop. Just like with a new domain name."
+                          question: "15. ドメイン名購入後、どのくらい早く始められますか？",
+                          answer: "移転後、すぐにドメイン名を使用できます：ウェブサイト、メール、ウェブショップ。新しいドメイン名と同じです。"
                         },
                         {
-                          question: "16. Do I need technical knowledge to use an expired domain name?",
-                          answer: "No. An expired domain name technically works the same as a new domain name and can be used with any hosting provider."
+                          question: "16. 期限切れドメイン名を使用するには技術的な知識が必要ですか？",
+                          answer: "いいえ。期限切れドメイン名は技術的に新しいドメイン名と同じように機能し、どのホスティングプロバイダーでも使用できます。"
                         },
                         {
-                          question: "17. Is an expired domain name suitable for a webshop?",
-                          answer: "Yes. Webshops especially benefit from: trust, authority, better start in Google. That is crucial for conversions."
+                          question: "17. 期限切れドメイン名はウェブショップに適していますか？",
+                          answer: "はい。ウェブショップは特に恩恵を受けます：信頼、権威、Googleでのより良いスタート。これはコンバージョンにとって重要です。"
                         },
                         {
-                          question: "18. What does domain authority mean when buying a domain name?",
-                          answer: "Domain authority is an indication of how strong a domain is based on links and history. Many expired domain names score higher here than new domains."
+                          question: "18. ドメイン名を購入する際のドメインオーソリティとは何を意味しますか？",
+                          answer: "ドメインオーソリティは、リンクと履歴に基づいてドメインがどれだけ強力かを示す指標です。多くの期限切れドメイン名は、新しいドメインよりもここで高いスコアを獲得します。"
                         },
                         {
-                          question: "19. Is an expired domain name better than link building?",
-                          answer: "For many entrepreneurs, yes. Link building is labor-intensive, expensive and can take years. With a good expired domain name you buy: an immediate head start, less risk, faster results."
+                          question: "19. 期限切れドメイン名はリンク構築より優れていますか？",
+                          answer: "多くの起業家にとって、はい。リンク構築は労働集約的で、高価で、何年もかかることがあります。良い期限切れドメイン名では：即座の先行優位性、リスクの軽減、より速い結果を購入できます。"
                         },
                         {
-                          question: "20. How much does a good expired domain name cost?",
-                          answer: "Prices vary depending on: domain authority, backlink profile, industry. A cheap domain without value says little — quality costs, but earns itself back."
+                          question: "20. 良い期限切れドメイン名はいくらかかりますか？",
+                          answer: "価格は、ドメインオーソリティ、バックリンクプロファイル、業界によって異なります。価値のない安いドメインはあまり意味がありません—品質にはコストがかかりますが、投資回収されます。"
                         },
                         {
-                          question: "21. Is a keyword in my domain name important for SEO?",
-                          answer: "Less important than it used to be. A clear, reliable name is now more important than exact keywords."
+                          question: "21. ドメイン名にキーワードを含めることはSEOにとって重要ですか？",
+                          answer: "以前ほど重要ではありません。明確で信頼できる名前は、今や正確なキーワードよりも重要です。"
                         },
                         {
-                          question: "22. Can I use an expired domain name for an affiliate website?",
-                          answer: "Yes, especially if it has relevant backlinks and thematic history. This gives you a quicker start in competitive niches."
+                          question: "22. 期限切れドメイン名をアフィリエイトウェブサイトに使用できますか？",
+                          answer: "はい、特に関連するバックリンクとテーマの履歴がある場合。これにより、競争の激しいニッチでより速いスタートが可能になります。"
                         },
                         {
-                          question: "23. What if an expired domain name has been penalized by Google?",
-                          answer: "A domain with a penalty should be avoided. That's why we check every domain in advance for spam, penalties and unnatural links."
+                          question: "23. 期限切れドメイン名がGoogleからペナルティを受けていた場合はどうなりますか？",
+                          answer: "ペナルティを受けたドメインは避けるべきです。そのため、すべてのドメインをスパム、ペナルティ、不自然なリンクについて事前にチェックしています。"
                         },
                         {
-                          question: "24. How do I transfer a purchased domain name to my own hosting?",
-                          answer: "After purchase you will receive an EPP/auth code. You enter this at your new registrar to complete the transfer."
+                          question: "24. 購入したドメイン名を自分のホスティングに移転するにはどうすればよいですか？",
+                          answer: "購入後、EPP/認証コードを受け取ります。このコードを新しいレジストラに入力して移転を完了します。"
                         },
                         {
-                          question: "25. Is a .nl or .eu domain better than a .com?",
-                          answer: "It depends on your target audience. For the Netherlands, .nl is strong. For Europe, .eu. For international, .com. The authority of the domain is more important than the extension."
+                          question: "25. .jpや.asiaドメインは.comより良いですか？",
+                          answer: "ターゲットオーディエンスによります。日本向けには.jpが強力です。アジア向けには.asia。国際向けには.com。ドメインの権威は拡張子よりも重要です。"
                         },
                         {
-                          question: "26. Can I redirect an expired domain name to my existing website?",
-                          answer: "Yes. With a 301 redirect you transfer the SEO value of the expired domain to your main site. This is a popular strategy for boosting authority."
+                          question: "26. 期限切れドメイン名を既存のウェブサイトにリダイレクトできますか？",
+                          answer: "はい。301リダイレクトを使用すると、期限切れドメインのSEO価値をメインサイトに転送できます。これは権威を高めるための人気のある戦略です。"
                         },
                         {
-                          question: "27. How long does it take before an expired domain name ranks in Google?",
-                          answer: "Faster than with a new domain — often within days or weeks, depending on the quality of the domain and the content you place."
+                          question: "27. 期限切れドメイン名がGoogleでランク付けされるまでどのくらいかかりますか？",
+                          answer: "新しいドメインより速く—ドメインの品質と配置するコンテンツによって、数日から数週間以内であることが多いです。"
                         },
                         {
-                          question: "28. What are the advantages of an expired domain name compared to a new domain name?",
-                          answer: "Faster visibility, existing backlinks, more trust with Google, less dependence on link building."
+                          question: "28. 新しいドメイン名と比較した期限切れドメイン名の利点は何ですか？",
+                          answer: "より速い可視性、既存のバックリンク、Googleからの信頼、リンク構築への依存度の低下。"
                         },
                         {
-                          question: "29. Can I trust an expired domain name from a random marketplace?",
-                          answer: "Not always. Many marketplaces do not check quality. That's why it's wiser to buy from a specialized seller who guarantees transparency and quality."
+                          question: "29. ランダムなマーケットプレイスからの期限切れドメイン名を信頼できますか？",
+                          answer: "常にではありません。多くのマーケットプレイスは品質をチェックしません。そのため、透明性と品質を保証する専門の販売者から購入する方が賢明です。"
                         },
                         {
-                          question: "30. How do I know if a domain name has valuable backlinks?",
-                          answer: "Use tools like Ahrefs, MOZ or SEMrush. We provide this information transparently for every domain in our portfolio."
+                          question: "30. ドメイン名に価値のあるバックリンクがあるかどうかをどのように確認しますか？",
+                          answer: "Ahrefs、MOZ、SEMrushなどのツールを使用します。ポートフォリオのすべてのドメインについて、この情報を透明に提供しています。"
                         },
                         {
-                          question: "31. Is investing in an expired domain name a good idea?",
-                          answer: "For many entrepreneurs and investors, yes. A strong domain with authority retains its value and can even increase."
+                          question: "31. 期限切れドメイン名への投資は良いアイデアですか？",
+                          answer: "多くの起業家や投資家にとって、はい。権威を持つ強力なドメインは価値を維持し、増加することさえあります。"
                         },
                         {
-                          question: "32. What happens to old backlinks when I build a new website?",
-                          answer: "The backlinks remain as long as they are not removed by the referring websites. That is precisely one of the great advantages of an expired domain name."
+                          question: "32. 新しいウェブサイトを構築したとき、古いバックリンクはどうなりますか？",
+                          answer: "バックリンクは、参照元のウェブサイトによって削除されない限り残ります。これこそが期限切れドメイン名の大きな利点の1つです。"
                         },
                         {
-                          question: "33. Can I use an expired domain name for a local business?",
-                          answer: "Yes, especially if the domain has regional relevance or local backlinks. This can help you get found in local searches."
+                          question: "33. 期限切れドメイン名を地元のビジネスに使用できますか？",
+                          answer: "はい、特にドメインに地域的な関連性やローカルバックリンクがある場合。これにより、ローカル検索で見つけてもらいやすくなります。"
                         },
                         {
-                          question: "34. Are there risks with buying an expired domain name?",
-                          answer: "Only if you don't check the domain in advance. Spam, penalties or unnatural links are risks that we filter out in advance."
+                          question: "34. 期限切れドメイン名を購入する際にリスクはありますか？",
+                          answer: "事前にドメインをチェックしない場合のみです。スパム、ペナルティ、または不自然なリンクは、私たちが事前にフィルタリングするリスクです。"
                         },
                         {
-                          question: "35. Why buy from a specialized expired domain seller?",
-                          answer: "Because you: get pre-checked quality, avoid risk, receive transparency about each domain, and save time and money on your own research."
+                          question: "35. なぜ専門の期限切れドメイン販売者から購入するのですか？",
+                          answer: "あなたが得るもの：事前にチェックされた品質、リスク回避、各ドメインに関する透明性、自分で調査する時間とお金の節約。"
                         }
                       ].map((faq, index) => (
                         <div key={index}>
@@ -2501,13 +2501,13 @@ const PremiumDomainsJA = () => {
               <div className="text-center mb-12">
                 <Badge className="mb-4 bg-amber-500/10 text-amber-400 border-amber-500/30">
                   <Mail className="w-4 h-4 mr-2 inline" />
-                  Get In Touch
+                  お問い合わせ
                 </Badge>
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                  Request Information or Make an Offer
+                  情報のご依頼またはオファーを送信
                 </h2>
                 <p className="text-slate-400">
-                  Interested in one of our premium domains? Fill in the form and we will contact you as soon as possible.
+                  プレミアムドメインにご興味がおありですか？フォームにご記入いただければ、できるだけ早くご連絡いたします。
                 </p>
               </div>
               
@@ -2518,13 +2518,13 @@ const PremiumDomainsJA = () => {
                       <div>
                         <label className="block text-sm font-medium text-slate-300 mb-2">
                           <User className="w-4 h-4 inline mr-2" />
-                          Name *
+                          お名前 *
                         </label>
                         <Input
                           type="text"
                           value={formData.name}
                           onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
-                          placeholder="Your name"
+                          placeholder="お名前を入力"
                           className="bg-slate-900/50 border-slate-700 text-white placeholder:text-slate-500 focus:border-amber-500"
                           required
                         />
@@ -2532,7 +2532,7 @@ const PremiumDomainsJA = () => {
                       <div>
                         <label className="block text-sm font-medium text-slate-300 mb-2">
                           <Mail className="w-4 h-4 inline mr-2" />
-                          Email *
+                          メールアドレス *
                         </label>
                         <Input
                           type="email"
@@ -2548,13 +2548,13 @@ const PremiumDomainsJA = () => {
                     <div>
                       <label className="block text-sm font-medium text-slate-300 mb-2">
                         <Globe className="w-4 h-4 inline mr-2" />
-                        Domain Name Choice *
+                        ご希望のドメイン名 *
                       </label>
                       <Input
                         type="text"
                         value={formData.domain}
                         onChange={(e) => setFormData(prev => ({ ...prev, domain: e.target.value }))}
-                        placeholder="e.g. FinanceAuthority.com"
+                        placeholder="例：FinanceAuthority.com"
                         className="bg-slate-900/50 border-slate-700 text-white placeholder:text-slate-500 focus:border-amber-500"
                         required
                       />
@@ -2563,12 +2563,12 @@ const PremiumDomainsJA = () => {
                     <div>
                       <label className="block text-sm font-medium text-slate-300 mb-2">
                         <MessageSquare className="w-4 h-4 inline mr-2" />
-                        Message / Additional Information
+                        メッセージ / 追加情報
                       </label>
                       <Textarea
                         value={formData.message}
                         onChange={(e) => setFormData(prev => ({ ...prev, message: e.target.value }))}
-                        placeholder="Tell us more about your interest, ask questions or make an offer..."
+                        placeholder="ご興味についてお聞かせください、ご質問やオファーをお送りください..."
                         rows={5}
                         className="bg-slate-900/50 border-slate-700 text-white placeholder:text-slate-500 focus:border-amber-500 resize-none"
                       />
@@ -2579,7 +2579,7 @@ const PremiumDomainsJA = () => {
                       size="lg"
                       className="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-lg py-6 shadow-lg shadow-amber-500/25 transition-all hover:shadow-amber-500/40"
                     >
-                      Submit Request
+                      リクエストを送信
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
                   </form>
@@ -2595,30 +2595,30 @@ const PremiumDomainsJA = () => {
             <div className="max-w-4xl mx-auto">
               <article className="prose prose-invert prose-lg max-w-none">
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 text-center">
-                  Buy Expired Domain Names: Invest in Proven SEO Authority
+                  期限切れドメイン名を購入：実証済みのSEO権威に投資
                 </h2>
                 
                 <div className="space-y-6 text-slate-300 leading-relaxed">
                   <p>
-                    <strong className="text-amber-400">Buying an expired domain name</strong> is the smartest way to immediately benefit from years of accumulated <strong className="text-white">domain authority</strong> and <strong className="text-white">quality backlinks</strong>. Unlike a new domain name, a premium expired domain already has trust with Google and other search engines. This translates directly into better rankings, faster indexation and more organic traffic.
+                    <strong className="text-amber-400">期限切れドメイン名を購入</strong>することは、何年もかけて蓄積された<strong className="text-white">ドメインオーソリティ</strong>と<strong className="text-white">質の高いバックリンク</strong>から即座に恩恵を受ける最も賢い方法です。新しいドメイン名とは異なり、プレミアム期限切れドメインはすでにGoogleやその他の検索エンジンからの信頼を持っています。これは直接的に、より良いランキング、より速いインデックス化、より多くのオーガニックトラフィックに繋がります。
                   </p>
                   
                   <p>
-                    Our carefully selected <strong className="text-amber-400">premium domains</strong> have a proven track record with backlinks from authoritative sources such as Wikipedia, universities, government institutions and reputable news sites. These <strong className="text-white">high-quality backlinks</strong> are the result of years of online presence and are practically impossible to build yourself — unless you're willing to invest thousands of euros in link building.
+                    厳選された<strong className="text-amber-400">プレミアムドメイン</strong>は、Wikipedia、大学、政府機関、信頼できるニュースサイトなどの権威ある情報源からのバックリンクで実証済みの実績を持っています。これらの<strong className="text-white">高品質なバックリンク</strong>は、何年ものオンライン存在の結果であり、自分で構築することは事実上不可能です—リンク構築に何千ユーロも投資する意思がない限り。
                   </p>
                   
                   <p>
-                    Whether you want to <strong className="text-white">start a webshop</strong>, launch an <strong className="text-white">affiliate website</strong>, or give your existing business an <strong className="text-white">SEO boost</strong>: an expired domain name with high <strong className="text-amber-400">MOZ Domain Authority (DA)</strong> gives you an unmistakable advantage over the competition. While others wait months for Google to trust their new domain, you immediately benefit from existing authority.
+                    <strong className="text-white">ウェブショップを始めたい</strong>場合でも、<strong className="text-white">アフィリエイトウェブサイト</strong>を立ち上げたい場合でも、既存のビジネスに<strong className="text-white">SEOブースト</strong>を与えたい場合でも：高い<strong className="text-amber-400">MOZドメインオーソリティ（DA）</strong>を持つ期限切れドメイン名は、競合他社に対して明確な優位性を与えます。他の人がGoogleが新しいドメインを信頼するまで何ヶ月も待っている間に、あなたは既存の権威から即座に恩恵を受けます。
                   </p>
                   
                   <p>
-                    <strong className="text-white">Why wait?</strong> Every premium domain in our portfolio is checked for spam-free history, relevant backlinks and good link profiles. You buy a strategic asset domain name that immediately adds value to your online presence. From <strong className="text-white">301 redirects</strong> for authority stacking to directly starting a new website: the possibilities are endless.
+                    <strong className="text-white">なぜ待つ必要がありますか？</strong>ポートフォリオ内のすべてのプレミアムドメインは、スパムのない履歴、関連するバックリンク、良好なリンクプロファイルについてチェックされています。オンラインプレゼンスに即座に価値を追加する戦略的資産ドメイン名を購入します。権威スタッキングのための<strong className="text-white">301リダイレクト</strong>から、新しいウェブサイトを直接開始するまで：可能性は無限です。
                   </p>
                   
                   <div className="bg-gradient-to-r from-amber-500/10 to-slate-800/30 border border-amber-500/20 rounded-xl p-6 mt-8">
                     <p className="text-center text-lg mb-0">
-                      <strong className="text-amber-400">Ready to accelerate your online success?</strong><br />
-                      <span className="text-slate-300">View our portfolio of 110+ premium expired domain names and discover which domain perfectly fits your ambition. Invest in proven authority today and leave your competitors behind.</span>
+                      <strong className="text-amber-400">オンラインでの成功を加速する準備はできていますか？</strong><br />
+                      <span className="text-slate-300">110以上のプレミアム期限切れドメイン名のポートフォリオをご覧いただき、あなたの野望に完璧に合うドメインを発見してください。今日、実証済みの権威に投資し、競合他社を置き去りにしましょう。</span>
                     </p>
                   </div>
                 </div>
@@ -2636,73 +2636,73 @@ const PremiumDomainsJA = () => {
                     <h2 className="text-xl font-bold text-white">
                       <div className="flex items-center gap-3">
                         <Globe className="w-6 h-6 text-amber-400" />
-                        <span>How do you transfer your domain with the transfer token (EPP/Auth code)?</span>
+                        <span>転送トークン（EPP/認証コード）でドメインを移転する方法</span>
                       </div>
                     </h2>
                   </div>
                   <div className="px-6 pb-6">
                     <div className="space-y-6 text-slate-300">
                       <p className="text-lg">
-                        After your purchase, you will receive a <strong className="text-amber-400">transfer token</strong> (also called EPP code or Auth code) within 24 hours at the email address you provided during payment. With this code you can easily transfer the domain to your own domain registrar or hosting provider.
+                        ご購入後、お支払い時に提供されたメールアドレスに24時間以内に<strong className="text-amber-400">転送トークン</strong>（EPPコードまたは認証コードとも呼ばれる）をお送りします。このコードを使用して、ドメインを自分のドメインレジストラまたはホスティングプロバイダーに簡単に移転できます。
                       </p>
                       
                       <div className="bg-slate-900/50 rounded-lg p-6 border border-slate-700">
-                        <h3 className="text-lg font-semibold text-white mb-4">Step-by-step instructions:</h3>
+                        <h3 className="text-lg font-semibold text-white mb-4">ステップバイステップの手順：</h3>
                         <ol className="space-y-4">
                           <li className="flex gap-3">
                             <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">1</span>
                             <div>
-                              <strong className="text-white">Receive the transfer token</strong>
-                              <p className="text-slate-400 mt-1">Check your inbox (and spam folder) for the email with the transfer token. You will receive this within 24 hours after payment.</p>
+                              <strong className="text-white">転送トークンを受け取る</strong>
+                              <p className="text-slate-400 mt-1">転送トークンが記載されたメールの受信トレイ（およびスパムフォルダ）を確認してください。お支払い後24時間以内に届きます。</p>
                             </div>
                           </li>
                           <li className="flex gap-3">
                             <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">2</span>
                             <div>
-                              <strong className="text-white">Log in to your domain registrar or hosting provider</strong>
-                              <p className="text-slate-400 mt-1">Go to the domain management of your provider (e.g. GoDaddy, Namecheap, Google Domains, OVH, etc.).</p>
+                              <strong className="text-white">ドメインレジストラまたはホスティングプロバイダーにログイン</strong>
+                              <p className="text-slate-400 mt-1">プロバイダー（GoDaddy、Namecheap、Google Domains、OVHなど）のドメイン管理にアクセスしてください。</p>
                             </div>
                           </li>
                           <li className="flex gap-3">
                             <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">3</span>
                             <div>
-                              <strong className="text-white">Start the domain transfer</strong>
-                              <p className="text-slate-400 mt-1">Look for the option "Transfer domain", "Domain transfer" or "Import domain". Enter the domain name you want to transfer.</p>
+                              <strong className="text-white">ドメイン移転を開始</strong>
+                              <p className="text-slate-400 mt-1">「ドメイン移転」、「ドメイントランスファー」、または「ドメインインポート」のオプションを探してください。移転したいドメイン名を入力します。</p>
                             </div>
                           </li>
                           <li className="flex gap-3">
                             <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">4</span>
                             <div>
-                              <strong className="text-white">Enter the transfer token</strong>
-                              <p className="text-slate-400 mt-1">Paste the transfer token (EPP/Auth code) you received from us in the designated field.</p>
+                              <strong className="text-white">転送トークンを入力</strong>
+                              <p className="text-slate-400 mt-1">当社から受け取った転送トークン（EPP/認証コード）を指定されたフィールドに貼り付けます。</p>
                             </div>
                           </li>
                           <li className="flex gap-3">
                             <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">5</span>
                             <div>
-                              <strong className="text-white">Confirm the transfer</strong>
-                              <p className="text-slate-400 mt-1">Enter the purchased domain name at your provider and confirm the transfer. Then enter the EPP code (transfer token) you received from us.</p>
+                              <strong className="text-white">移転を確認</strong>
+                              <p className="text-slate-400 mt-1">プロバイダーで購入したドメイン名を入力し、移転を確認します。次に、当社から受け取ったEPPコード（転送トークン）を入力します。</p>
                             </div>
                           </li>
                           <li className="flex gap-3">
                             <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">6</span>
                             <div>
-                              <strong className="text-white">Wait for completion</strong>
-                              <p className="text-slate-400 mt-1">The transfer is now initiated and usually takes 1-5 business days, depending on the domain extension (.nl, .be, .eu, .com, etc.). Once the transfer is complete, the domain will automatically appear in your account.</p>
+                              <strong className="text-white">完了を待つ</strong>
+                              <p className="text-slate-400 mt-1">移転が開始され、通常ドメイン拡張子（.jp、.asia、.com など）によって1〜5営業日かかります。移転が完了すると、ドメインは自動的にあなたのアカウントに表示されます。</p>
                             </div>
                           </li>
                           <li className="flex gap-3">
                             <span className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">7</span>
                             <div>
-                              <strong className="text-white">Use your domain</strong>
-                              <p className="text-slate-400 mt-1">After completion you can use the domain immediately: use it as a 301 redirect to your existing website for extra SEO value, or link it to a hosting package to build a new website.</p>
+                              <strong className="text-white">ドメインを使用</strong>
+                              <p className="text-slate-400 mt-1">完了後、すぐにドメインを使用できます：追加のSEO価値のために既存のウェブサイトへの301リダイレクトとして使用するか、ホスティングパッケージにリンクして新しいウェブサイトを構築します。</p>
                             </div>
                           </li>
                         </ol>
                       </div>
                       
                       <p className="text-slate-400 text-sm">
-                        Do you have questions about the domain transfer? Feel free to contact us at <a href="mailto:support@iaee.eu" className="text-amber-400 hover:text-amber-300">support@iaee.eu</a>.
+                        ドメイン移転についてご質問がありますか？<a href="mailto:support@iaee.eu" className="text-amber-400 hover:text-amber-300">support@iaee.eu</a>までお気軽にお問い合わせください。
                       </p>
                     </div>
                   </div>
@@ -2716,10 +2716,10 @@ const PremiumDomainsJA = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mx-auto text-center">
               <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                Get In Touch
+                お問い合わせ
               </h2>
               <p className="text-slate-300 mb-8">
-                Do you have questions about a specific domain or would you like advice on which expired domain name best fits your project? Feel free to contact us.
+                特定のドメインについてご質問がありますか、またはどの期限切れドメイン名がプロジェクトに最適かアドバイスが必要ですか？お気軽にお問い合わせください。
               </p>
               <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-8">
                 <div className="flex flex-col gap-4">
@@ -2730,7 +2730,7 @@ const PremiumDomainsJA = () => {
                     </a>
                   </div>
                   <p className="text-slate-400 text-sm">
-                    We respond to your message within 24 hours.
+                    24時間以内にメッセージに返信いたします。
                   </p>
                 </div>
               </div>
