@@ -1924,7 +1924,7 @@ const PremiumDomainsPT = () => {
                               <br />
                               Verifique também a pasta de spam.
                             </p>
-                            <a href="#transferir-dominio" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
+                            <a href="#domein-verhuizen" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
                               Como funciona a transferência?
                             </a>
                           </div>
