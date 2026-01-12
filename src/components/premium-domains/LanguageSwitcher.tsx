@@ -8,16 +8,16 @@ interface LanguageOption {
 
 const languages: LanguageOption[] = [
   { code: "nl", name: "Nederlands", path: "/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" },
-  { code: "en", name: "English", path: "/expireddomainnames/en/buy-premium-domain-names-high-authority-seo-value" },
-  { code: "de", name: "Deutsch", path: "/expireddomainnames/de/premium-domainnamen-kaufen-hohe-autoritaet-seo-wert" },
-  { code: "fr", name: "Français", path: "/expireddomainnames/fr/acheter-noms-domaine-premium-haute-autorite-valeur-seo" },
-  { code: "es", name: "Español", path: "/expireddomainnames/es/comprar-nombres-dominio-premium-alta-autoridad-valor-seo" },
-  { code: "it", name: "Italiano", path: "/expireddomainnames/it/acquistare-nomi-dominio-premium-alta-autorita-valore-seo" },
-  { code: "pl", name: "Polski", path: "/expireddomainnames/pl/kupic-premium-nazwy-domen-wysoki-autorytet-wartosc-seo" },
-  { code: "pt", name: "Português", path: "/expireddomainnames/pt/comprar-nomes-dominio-premium-alta-autoridade-valor-seo" },
+  { code: "en", name: "English", path: "/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" },
+  { code: "de", name: "Deutsch", path: "/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert" },
+  { code: "fr", name: "Français", path: "/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo" },
+  { code: "es", name: "Español", path: "/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" },
+  { code: "it", name: "Italiano", path: "/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo" },
+  { code: "pl", name: "Polski", path: "/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo" },
+  { code: "pt", name: "Português", path: "/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" },
 ];
 
-// SVG Flag components for better rendering
+// SVG Flag components
 const FlagNL = () => (
   <svg viewBox="0 0 32 24" className="w-full h-full">
     <rect width="32" height="8" fill="#AE1C28"/>
@@ -99,9 +99,9 @@ interface LanguageSwitcherProps {
 
 const LanguageSwitcher = ({ currentLanguage }: LanguageSwitcherProps) => {
   return (
-    <div className="flex items-center justify-center gap-3 py-4 bg-slate-900/90 backdrop-blur-sm border-b border-slate-700">
-      <span className="text-slate-300 text-sm font-medium mr-2 hidden sm:inline">🌍 Taal:</span>
-      <div className="flex items-center gap-2 sm:gap-3 flex-wrap justify-center">
+    <div className="flex items-center justify-center gap-2 py-3 bg-slate-800/80 backdrop-blur-sm border-b border-slate-700">
+      <span className="text-slate-400 text-xs font-medium mr-1 hidden sm:inline">Select language:</span>
+      <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap justify-center">
         {languages.map((lang) => {
           const FlagComponent = flagComponents[lang.code];
           const isActive = currentLanguage === lang.code;
@@ -111,19 +111,16 @@ const LanguageSwitcher = ({ currentLanguage }: LanguageSwitcherProps) => {
               key={lang.code}
               to={lang.path}
               className={`
-                relative w-10 h-7 sm:w-12 sm:h-8 rounded-sm overflow-hidden border-2 transition-all duration-200 
-                hover:scale-110 hover:shadow-lg hover:shadow-amber-500/30
+                relative w-7 h-5 sm:w-8 sm:h-6 rounded-sm overflow-hidden border transition-all duration-200 
+                hover:scale-110 hover:shadow-md
                 ${isActive 
-                  ? "border-amber-400 shadow-lg shadow-amber-500/40 scale-110 ring-2 ring-amber-400/50" 
-                  : "border-slate-600 opacity-75 hover:opacity-100 hover:border-slate-400"
+                  ? "border-amber-400 shadow-md shadow-amber-500/30 scale-105 ring-1 ring-amber-400/50" 
+                  : "border-slate-600 opacity-70 hover:opacity-100 hover:border-slate-400"
                 }
               `}
               title={lang.name}
             >
               <FlagComponent />
-              {isActive && (
-                <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-amber-400" />
-              )}
             </Link>
           );
         })}
