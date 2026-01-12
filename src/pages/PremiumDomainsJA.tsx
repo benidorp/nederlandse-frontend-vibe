@@ -1750,7 +1750,7 @@ const PremiumDomainsJA = () => {
             {/* VAT Notice */}
             <div className="max-w-5xl mx-auto mb-10 text-center">
               <p className="text-sm text-slate-300 font-medium bg-slate-800/40 border border-slate-700/40 rounded-lg px-4 py-3 inline-block">
-                <span className="text-amber-400 font-semibold">VAT information:</span> Prices are exclusive of VAT for private customers within the EU. Business customers within the EU can apply reverse charge VAT. For customers outside the EU, no VAT is charged.
+                <span className="text-amber-400 font-semibold">VAT情報：</span> 価格はEU内の個人のお客様向けにVAT別途です。EU内の法人のお客様はリバースチャージVATを適用できます。EU外のお客様にはVATは課金されません。
               </p>
             </div>
             
@@ -1782,7 +1782,7 @@ const PremiumDomainsJA = () => {
                       <div className="flex items-center justify-between text-sm">
                         <div className="flex items-center gap-2 text-slate-400">
                           <Link className="w-4 h-4" />
-                          <span>Backlinks: {domain.backlinks}</span>
+                          <span>バックリンク: {domain.backlinks}</span>
                         </div>
                       </div>
                       
@@ -1790,19 +1790,19 @@ const PremiumDomainsJA = () => {
                       {domain.pageAuthority && (
                         <div className="grid grid-cols-2 gap-2 text-xs">
                           <div className="bg-slate-800/50 rounded px-2 py-1">
-                            <span className="text-slate-500">Page Authority:</span>
+                            <span className="text-slate-500">ページ権威:</span>
                             <span className="text-white ml-1 font-medium">{domain.pageAuthority}</span>
                           </div>
                           <div className="bg-slate-800/50 rounded px-2 py-1">
-                            <span className="text-slate-500">Linking Domains:</span>
+                            <span className="text-slate-500">リンクドメイン:</span>
                             <span className="text-white ml-1 font-medium">{domain.linkingDomains}</span>
                           </div>
                           <div className="bg-slate-800/50 rounded px-2 py-1">
-                            <span className="text-slate-500">Inbound Links:</span>
+                            <span className="text-slate-500">被リンク:</span>
                             <span className="text-white ml-1 font-medium">{domain.inboundLinks}</span>
                           </div>
                           <div className="bg-slate-800/50 rounded px-2 py-1">
-                            <span className="text-slate-500">Followed Links:</span>
+                            <span className="text-slate-500">フォローリンク:</span>
                             <span className="text-white ml-1 font-medium">{domain.followedLinks}</span>
                           </div>
                         </div>
@@ -1811,7 +1811,7 @@ const PremiumDomainsJA = () => {
                       {/* Top backlinks */}
                       {domain.topBacklinks && domain.topBacklinks.length > 0 && (
                         <div className="text-xs">
-                          <span className="text-slate-500 block mb-1">Top Backlinks:</span>
+                          <span className="text-slate-500 block mb-1">トップバックリンク:</span>
                           <div className="flex flex-wrap gap-1">
                             {domain.topBacklinks.slice(0, 5).map((link, i) => (
                               <Badge key={i} variant="outline" className="text-[10px] border-amber-500/30 text-amber-400/80 bg-amber-500/5">
@@ -1825,7 +1825,7 @@ const PremiumDomainsJA = () => {
                       {/* Use Cases */}
                       {domain.useCases && domain.useCases.length > 0 && (
                         <div className="text-xs">
-                          <span className="text-slate-500 block mb-1">Suitable for:</span>
+                          <span className="text-slate-500 block mb-1">適した用途:</span>
                           <div className="flex flex-wrap gap-1">
                             {domain.useCases.map((useCase, i) => (
                               <Badge key={i} variant="outline" className="text-[10px] border-emerald-500/30 text-emerald-400/80 bg-emerald-500/5">
@@ -1840,7 +1840,7 @@ const PremiumDomainsJA = () => {
                     {/* Price Display - Compact at bottom */}
                     <div className="mt-auto pt-4 border-t border-slate-700/50">
                       <div className="flex items-center justify-between mb-3 bg-slate-800/60 rounded-lg px-3 py-2">
-                        <span className="text-sm font-medium text-slate-300">Price</span>
+                        <span className="text-sm font-medium text-slate-300">価格</span>
                         <span className="text-lg font-bold text-amber-400">{domain.price}</span>
                       </div>
                       
@@ -1849,7 +1849,7 @@ const PremiumDomainsJA = () => {
                           <div 
                             className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[#F59E0B] text-slate-950 font-bold rounded-md shadow-md text-lg"
                           >
-                            Buy Now
+                            今すぐ購入
                           </div>
                           <div className="flex flex-col items-center gap-2 text-center" data-nosnippet>
                             <div className="flex items-center justify-center gap-1 flex-wrap">
@@ -1914,17 +1914,17 @@ const PremiumDomainsJA = () => {
                             </div>
                             <div data-nosnippet>
                               <p className="text-[10px] text-slate-400 leading-tight mt-2">
-                                Secure payment via Stripe
+                                Stripe経由の安全な支払い
                                 <br />
-                                Automatically converted to your local currency
+                                お使いの通貨に自動変換されます
                               </p>
                               <p className="text-[10px] text-slate-400 leading-tight mt-3">
-                                After payment you will receive the transfer token (EPP/Auth code) at your email address within 24 hours.
+                                お支払い後、24時間以内に移転トークン（EPP/Authコード）をメールでお送りします。
                                 <br />
-                                Also check your spam folder.
+                                迷惑メールフォルダもご確認ください。
                               </p>
                               <a href="#domain-transfer" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
-                                How does the transfer work?
+                                移転の仕組みは？
                               </a>
                             </div>
                           </div>
@@ -1938,13 +1938,13 @@ const PremiumDomainsJA = () => {
                               rel="noopener noreferrer"
                               className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[#F59E0B] hover:bg-[#D97706] text-slate-950 font-bold rounded-md transition-all duration-200 shadow-md hover:shadow-lg text-lg"
                             >
-                              Buy Now
+                              今すぐ購入
                             </a>
                           ) : (
                             <div 
                               className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[#F59E0B] text-slate-950 font-bold rounded-md shadow-md text-lg"
                             >
-                              Buy Now
+                              今すぐ購入
                             </div>
                           )}
                           <div className="flex flex-col items-center gap-2 text-center" data-nosnippet>
@@ -2010,17 +2010,17 @@ const PremiumDomainsJA = () => {
                             </div>
                             <div data-nosnippet>
                               <p className="text-[10px] text-slate-400 leading-tight mt-2">
-                                Secure payment via Stripe
+                                Stripe経由の安全な支払い
                                 <br />
-                                Automatically converted to your local currency
+                                お使いの通貨に自動変換されます
                               </p>
                               <p className="text-[10px] text-slate-400 leading-tight mt-3">
-                                After payment you will receive the transfer token (EPP/Auth code) at your email address within 24 hours.
+                                お支払い後、24時間以内に移転トークン（EPP/Authコード）をメールでお送りします。
                                 <br />
-                                Also check your spam folder.
+                                迷惑メールフォルダもご確認ください。
                               </p>
                               <a href="#domain-transfer" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
-                                How does the transfer work?
+                                移転の仕組みは？
                               </a>
                             </div>
                           </div>
@@ -2040,13 +2040,13 @@ const PremiumDomainsJA = () => {
             <div className="text-center mb-16">
               <Badge className="mb-4 bg-slate-800 text-amber-400 border-slate-700">
                 <Award className="w-4 h-4 mr-2 inline" />
-                Strategic Advantage
+                戦略的優位性
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Why Premium Domain Names?
+                なぜプレミアムドメインなのか？
               </h2>
               <p className="text-slate-400 max-w-3xl mx-auto">
-                Premium domain names with high MOZ authority are a strategic investment that gives you an enormous advantage in search results.
+                高いMOZ権威を持つプレミアムドメインは、検索結果で大きなアドバンテージをもたらす戦略的投資です。
               </p>
             </div>
             
@@ -2054,33 +2054,33 @@ const PremiumDomainsJA = () => {
               {[
                 {
                   icon: TrendingUp,
-                  title: "Faster Rankings in Google",
-                  description: "Domains with existing authority rank faster than new domains. Google trusts websites with a proven track record."
+                  title: "Googleでより速いランキング",
+                  description: "既存の権威を持つドメインは、新しいドメインよりも早くランクインします。Googleは実績のあるウェブサイトを信頼します。"
                 },
                 {
                   icon: Shield,
-                  title: "More Trust from Google",
-                  description: "A domain with years of history and quality backlinks is seen by Google as more reliable and gets higher rankings."
+                  title: "Googleからの高い信頼",
+                  description: "長年の歴史と質の高いバックリンクを持つドメインは、Googleからより信頼性が高いと見なされ、より高いランキングを獲得します。"
                 },
                 {
                   icon: Target,
-                  title: "Higher Click-Through Rates (CTR)",
-                  description: "Premium domain names inspire trust in users, leading to higher click-through rates in search results and advertisements."
+                  title: "高いクリック率（CTR）",
+                  description: "プレミアムドメインはユーザーに信頼を与え、検索結果や広告でより高いクリック率につながります。"
                 },
                 {
                   icon: Zap,
-                  title: "Immediate SEO Advantage",
-                  description: "Instead of waiting years to build authority, you immediately benefit from the domain's existing SEO value."
+                  title: "即座のSEOアドバンテージ",
+                  description: "権威を築くために何年も待つ代わりに、ドメインの既存のSEO価値からすぐに恩恵を受けられます。"
                 },
                 {
                   icon: Globe,
-                  title: "Direct Type-In Traffic",
-                  description: "Memorable premium domain names generate direct traffic from users who type the domain directly into their browser."
+                  title: "ダイレクトタイプイントラフィック",
+                  description: "記憶に残るプレミアムドメインは、ユーザーがブラウザに直接ドメインを入力することで直接トラフィックを生成します。"
                 },
                 {
                   icon: Award,
-                  title: "Sustainable SEO Investment",
-                  description: "A premium domain is an asset that increases in value as your online presence grows and authority increases."
+                  title: "持続可能なSEO投資",
+                  description: "プレミアムドメインは、オンラインプレゼンスが成長し権威が増すにつれて価値が上がる資産です。"
                 }
               ].map((item, index) => (
                 <Card key={index} className="bg-slate-800/30 border-slate-700/50 hover:border-amber-500/30 transition-all group">
@@ -2100,26 +2100,26 @@ const PremiumDomainsJA = () => {
               <Card className="bg-slate-950 border-amber-500/30">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-white mb-4">
-                    The Power of MOZ Domain Authority
+                    MOZドメイン権威の力
                   </h3>
                   <p className="text-slate-300 leading-relaxed mb-6">
-                    MOZ Domain Authority (DA) is a score from 1-100 that predicts how well a website will rank in search engines. 
-                    The higher the score, the more authority the domain has built through quality backlinks, age and reliability.
+                    MOZドメイン権威（DA）は、ウェブサイトが検索エンジンでどれだけ上位にランクされるかを予測する1〜100のスコアです。
+                    スコアが高いほど、質の高いバックリンク、年齢、信頼性を通じてドメインがより多くの権威を築いていることを意味します。
                   </p>
                   <div className="grid sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
                     <div className="rounded-lg bg-black border border-cyan-500/50 p-4 text-center">
                       <div className="text-xl font-bold text-cyan-400 mb-1">DA 20-25</div>
-                      <div className="text-sm font-medium text-white">Good Authority</div>
+                      <div className="text-sm font-medium text-white">良好な権威</div>
                     </div>
                     
                     <div className="rounded-lg bg-black border border-yellow-500/50 p-4 text-center">
                       <div className="text-xl font-bold text-yellow-400 mb-1">DA 25-30</div>
-                      <div className="text-sm font-medium text-white">Strong Authority</div>
+                      <div className="text-sm font-medium text-white">強力な権威</div>
                     </div>
                     
                     <div className="rounded-lg bg-black border border-green-500/50 p-4 text-center">
                       <div className="text-xl font-bold text-green-400 mb-1">DA 30+</div>
-                      <div className="text-sm font-medium text-white">Premium Authority</div>
+                      <div className="text-sm font-medium text-white">プレミアム権威</div>
                     </div>
                   </div>
                 </CardContent>
@@ -2134,56 +2134,56 @@ const PremiumDomainsJA = () => {
             <div className="text-center mb-16">
               <Badge className="mb-4 bg-slate-800 text-amber-400 border-slate-700">
                 <Link className="w-4 h-4 mr-2 inline" />
-                SEO Strategies
+                SEO戦略
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                How Do SEO Redirects and Authority Building Work?
+                SEOリダイレクトと権威構築の仕組み
               </h2>
               <p className="text-slate-400 max-w-3xl mx-auto">
-                There are multiple strategic ways to deploy premium domains for maximum SEO impact.
+                最大のSEO効果を得るためにプレミアムドメインを展開する複数の戦略的方法があります。
               </p>
             </div>
             
             <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
               {[
                 {
-                  title: "301 Redirect Strategy",
-                  description: "A 301 redirect passes all SEO value and authority from the premium domain to your main domain. This is the fastest way to improve your rankings.",
+                  title: "301リダイレクト戦略",
+                  description: "301リダイレクトは、プレミアムドメインからメインドメインにすべてのSEO価値と権威を転送します。これはランキングを向上させる最速の方法です。",
                   benefits: [
-                    "Direct transfer of link juice",
-                    "Retention of all backlinks",
-                    "Quick boost in authority",
-                    "One-time setup, lasting effect"
+                    "リンクジュースの直接転送",
+                    "すべてのバックリンクの保持",
+                    "権威の迅速なブースト",
+                    "一度のセットアップで永続的な効果"
                   ]
                 },
                 {
-                  title: "Authority Stacking",
-                  description: "Build a network of authoritative domains that all link to your main site. This creates a powerful ecosystem of relevant, high-quality backlinks.",
+                  title: "権威スタッキング",
+                  description: "メインサイトにすべてリンクする権威あるドメインのネットワークを構築します。これにより、関連性が高く質の高いバックリンクの強力なエコシステムが作成されます。",
                   benefits: [
-                    "Multiple authority sources",
-                    "Thematic relevance",
-                    "Natural link profile",
-                    "Long-term SEO strategy"
+                    "複数の権威ソース",
+                    "テーマの関連性",
+                    "自然なリンクプロファイル",
+                    "長期的なSEO戦略"
                   ]
                 },
                 {
-                  title: "Use as Main Domain",
-                  description: "Start your new project directly with a domain that already has authority. This saves years of link building and domain age building.",
+                  title: "メインドメインとして使用",
+                  description: "すでに権威を持つドメインで新しいプロジェクトを直接開始します。これにより、リンク構築とドメイン年齢の構築に何年も節約できます。",
                   benefits: [
-                    "Start immediately with authority",
-                    "Existing trust from Google",
-                    "Faster indexation",
-                    "Advantage over competition"
+                    "すぐに権威を持って開始",
+                    "Googleからの既存の信頼",
+                    "より速いインデックス",
+                    "競合に対するアドバンテージ"
                   ]
                 },
                 {
-                  title: "Private Blog Network (PBN)",
-                  description: "Use premium domains to set up valuable content sites that generate powerful backlinks to your main site.",
+                  title: "プライベートブログネットワーク（PBN）",
+                  description: "プレミアムドメインを使用して、メインサイトへの強力なバックリンクを生成する価値あるコンテンツサイトを設定します。",
                   benefits: [
-                    "Full control over backlinks",
-                    "Thematic content sites",
-                    "Diverse link profiles",
-                    "Scalable link building"
+                    "バックリンクの完全なコントロール",
+                    "テーマ別コンテンツサイト",
+                    "多様なリンクプロファイル",
+                    "スケーラブルなリンク構築"
                   ]
                 }
               ].map((strategy, index) => (
@@ -2208,19 +2208,19 @@ const PremiumDomainsJA = () => {
             <div className="mt-20">
               <div className="text-center mb-12">
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                  Why These Domains Are Unique
+                  これらのドメインがユニークな理由
                 </h3>
                 <p className="text-slate-400 max-w-2xl mx-auto">
-                  Our premium domains are carefully selected and meet strict quality requirements.
+                  当社のプレミアムドメインは慎重に選択され、厳格な品質要件を満たしています。
                 </p>
               </div>
               
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
                 {[
-                  { icon: Shield, title: "Clean History", desc: "No spam or penalty history" },
-                  { icon: Link, title: "Quality Backlinks", desc: "From reliable sources" },
-                  { icon: BarChart3, title: "High DA Score", desc: "Minimum DA 20+" },
-                  { icon: Globe, title: "EU/Global TLDs", desc: ".eu, .nl, .be, .de, .co.uk" }
+                  { icon: Shield, title: "クリーンな履歴", desc: "スパムやペナルティ履歴なし" },
+                  { icon: Link, title: "質の高いバックリンク", desc: "信頼できるソースから" },
+                  { icon: BarChart3, title: "高DAスコア", desc: "最低DA 20以上" },
+                  { icon: Globe, title: "EU/グローバルTLD", desc: ".eu, .nl, .be, .de, .co.uk" }
                 ].map((item, index) => (
                   <div key={index} className="text-center p-6 rounded-xl bg-slate-800/30 border border-slate-700/50">
                     <div className="w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center mx-auto mb-4">
@@ -2240,10 +2240,10 @@ const PremiumDomainsJA = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <Badge className="mb-4 bg-slate-800 text-amber-400 border-slate-700">
-                Frequently Asked Questions
+                よくある質問
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                FAQ about Premium Domains & SEO
+                プレミアムドメインとSEOに関するFAQ
               </h2>
             </div>
             
@@ -2251,68 +2251,68 @@ const PremiumDomainsJA = () => {
               <Accordion type="single" collapsible className="space-y-4">
                 {[
                   {
-                    question: "Where can I buy an expired domain name with backlinks?",
-                    answer: "You can best buy an expired domain name with backlinks from a specialized seller who manually checks domains for quality, history and authority. This prevents you from buying a domain name with spam links or SEO problems. We only offer reliable expired domains that have been carefully checked."
+                    question: "バックリンク付きの期限切れドメインはどこで購入できますか？",
+                    answer: "バックリンク付きの期限切れドメインは、品質、履歴、権威を手動でチェックする専門の販売者から購入するのが最善です。これにより、スパムリンクやSEO問題のあるドメインを購入することを防げます。当社は慎重にチェックされた信頼できる期限切れドメインのみを提供しています。"
                   },
                   {
-                    question: "What is a reliable expired domain name with high authority?",
-                    answer: "A reliable expired domain name with high authority is a domain that has quality backlinks, a clean website history, no spam, gambling or adult past, and relevant links from real content. This type of domain name offers real SEO value and gives you an advantage in Google."
+                    question: "高権威の信頼できる期限切れドメインとは何ですか？",
+                    answer: "高権威の信頼できる期限切れドメインとは、質の高いバックリンク、クリーンなウェブサイト履歴、スパム・ギャンブル・アダルトコンテンツの過去がなく、実際のコンテンツからの関連リンクを持つドメインです。このタイプのドメインは本当のSEO価値を提供し、Googleでのアドバンテージをもたらします。"
                   },
                   {
-                    question: "How much SEO value does an expired domain name with links have?",
-                    answer: "The SEO value of an expired domain name with links lies mainly in existing backlinks, built-up domain authority and faster trust with Google. This can significantly shorten the time to rank — often months to years faster than with a new domain name."
+                    question: "リンク付きの期限切れドメインにはどれくらいのSEO価値がありますか？",
+                    answer: "リンク付きの期限切れドメインのSEO価値は、主に既存のバックリンク、蓄積されたドメイン権威、Googleからのより速い信頼にあります。これによりランキングまでの時間を大幅に短縮できます。新しいドメインよりも数ヶ月から数年早くなることがよくあります。"
                   },
                   {
-                    question: "Is an expired domain name with authority better than link building?",
-                    answer: "In many cases yes. With an expired domain name you buy existing links and authority, while link building can be time-consuming, expensive and risky. An old domain name with SEO value gives you an immediate advantage without months of investment in link building."
+                    question: "権威のある期限切れドメインはリンク構築より良いですか？",
+                    answer: "多くの場合、はい。期限切れドメインでは既存のリンクと権威を購入しますが、リンク構築は時間がかかり、高価で、リスクがあります。SEO価値のある古いドメインは、リンク構築への何ヶ月もの投資なしに即座のアドバンテージを提供します。"
                   },
                   {
-                    question: "Can I use an expired domain name for a new website?",
-                    answer: "Yes. You can perfectly use an expired domain name with SEO value for a new website, as long as the content logically connects to the subject and history of the domain. The backlinks remain active and you immediately benefit from the built-up authority."
+                    question: "期限切れドメインを新しいウェブサイトに使用できますか？",
+                    answer: "はい。SEO価値のある期限切れドメインを新しいウェブサイトに完全に使用できます。コンテンツがドメインの主題と履歴に論理的に接続している限り。バックリンクはアクティブなままで、蓄積された権威からすぐに恩恵を受けられます。"
                   },
                   {
-                    question: "What is the difference between a premium domain name and an expired domain name?",
-                    answer: "A premium domain name is mainly valuable due to name quality and brand value, while an expired domain name with backlinks brings extra SEO authority and history. Both can be valuable, depending on your goal. Some domains combine both advantages."
+                    question: "プレミアムドメインと期限切れドメインの違いは何ですか？",
+                    answer: "プレミアムドメインは主に名前の品質とブランド価値により価値がありますが、バックリンク付きの期限切れドメインは追加のSEO権威と履歴をもたらします。どちらも目標によって価値があります。一部のドメインは両方のアドバンテージを組み合わせています。"
                   },
                   {
-                    question: "Why are expired domain names with backlinks more expensive?",
-                    answer: "Expired domain names with backlinks are more expensive because they already have SEO value, they save time and costs, and they enable a faster start. You pay for built-up trust, not just for a name. The investment often pays for itself quickly through better rankings."
+                    question: "なぜバックリンク付きの期限切れドメインは高いのですか？",
+                    answer: "バックリンク付きの期限切れドメインは、すでにSEO価値があり、時間とコストを節約し、より速い開始を可能にするため高価です。名前だけでなく、蓄積された信頼に対して支払います。投資はより良いランキングを通じて迅速に回収されることが多いです。"
                   },
                   {
-                    question: "Are expired domain names with authority suitable for webshops?",
-                    answer: "Yes. For webshops, trust is crucial. An expired domain name with high authority can contribute to better visibility, higher conversions and faster indexation. This gives your webshop an advantage over competitors who start with a new domain name."
+                    question: "権威のある期限切れドメインはネットショップに適していますか？",
+                    answer: "はい。ネットショップでは信頼が重要です。高権威の期限切れドメインは、より良い可視性、より高いコンバージョン、より速いインデックス化に貢献できます。これにより、新しいドメインで始める競合他社に対してアドバンテージがあります。"
                   },
                   {
-                    question: "Can I combine a premium domain name with SEO benefits?",
-                    answer: "Yes. Some premium domain names are also expired domains with a strong link history. This combines brand value with SEO authority and is often the most valuable. In our portfolio you will find several domains that offer both advantages."
+                    question: "プレミアムドメインとSEOメリットを組み合わせることはできますか？",
+                    answer: "はい。一部のプレミアムドメインは、強力なリンク履歴を持つ期限切れドメインでもあります。これによりブランド価値とSEO権威が組み合わさり、最も価値があることが多いです。当社のポートフォリオには、両方のアドバンテージを提供するドメインがいくつかあります。"
                   },
                   {
-                    question: "Why are more and more entrepreneurs choosing expired domain names with SEO value?",
-                    answer: "Because entrepreneurs are looking for faster results in Google, less dependence on link building and a strong foundation for growth. A reliable expired domain name with backlinks and authority offers exactly that advantage that makes the difference."
+                    question: "なぜますます多くの起業家がSEO価値のある期限切れドメインを選んでいますか？",
+                    answer: "起業家がGoogleでのより速い結果、リンク構築への依存度の低減、成長のための強力な基盤を求めているからです。バックリンクと権威を持つ信頼できる期限切れドメインは、まさにその差をつけるアドバンテージを提供します。"
                   },
                   {
-                    question: "What is Domain Authority (DA) and why is it important?",
-                    answer: "Domain Authority is a score from 1-100 developed by MOZ that predicts how well a website will rank in search engines. A higher DA means more authority and better chances of ranking high. It is based on factors such as the number and quality of backlinks, the age of the domain and the overall reliability."
+                    question: "ドメイン権威（DA）とは何で、なぜ重要ですか？",
+                    answer: "ドメイン権威は、ウェブサイトが検索エンジンでどれだけ上位にランクされるかを予測するMOZが開発した1〜100のスコアです。高いDAはより多くの権威と高くランクされる可能性が高いことを意味します。バックリンクの数と質、ドメインの年齢、全体的な信頼性などの要因に基づいています。"
                   },
                   {
-                    question: "How does a 301 redirect work for SEO?",
-                    answer: "A 301 redirect is a permanent redirect that tells search engines that a page has been permanently moved. When you 301-redirect a premium domain to your site, a large part of the SEO value (link juice) of that domain is transferred to your site. This can significantly improve your rankings."
+                    question: "301リダイレクトはSEOでどのように機能しますか？",
+                    answer: "301リダイレクトは、ページが恒久的に移動したことを検索エンジンに伝える恒久的なリダイレクトです。プレミアムドメインをサイトに301リダイレクトすると、そのドメインのSEO価値（リンクジュース）の大部分がサイトに転送されます。これによりランキングが大幅に向上する可能性があります。"
                   },
                   {
-                    question: "How long does it take before I see results?",
-                    answer: "The effects of a domain transfer or 301 redirect are usually visible within 2-8 weeks in the search results. This depends on how often Google crawls your site and the current state of your website. Premium domains with active backlinks often show results faster."
+                    question: "結果が見えるまでどのくらいかかりますか？",
+                    answer: "ドメイン移転または301リダイレクトの効果は、通常2〜8週間以内に検索結果に表示されます。これはGoogleがサイトをクロールする頻度とウェブサイトの現在の状態によって異なります。アクティブなバックリンクを持つプレミアムドメインは、多くの場合より速く結果を示します。"
                   },
                   {
-                    question: "What is the best way to find expired domain names with authority?",
-                    answer: "The best way is through a specialized seller who pre-checks domains. Searching yourself via auction sites involves risks. We only select domain names with quality links, no spam history and real SEO value. This way you know for sure that you are investing in a reliable domain."
+                    question: "権威のある期限切れドメインを見つける最良の方法は何ですか？",
+                    answer: "最良の方法は、ドメインを事前にチェックする専門の販売者を通じてです。オークションサイトで自分で検索するとリスクがあります。当社は品質リンク、スパム履歴なし、本当のSEO価値を持つドメインのみを選択します。これにより、信頼できるドメインに投資していることを確信できます。"
                   },
                   {
-                    question: "Why are there sometimes websites from your portfolio in a domain's history?",
-                    answer: "Some domain names in our portfolio were previously used for our own projects, test websites or 301 redirects. This includes websites such as NailTalk, OntwerpNovi, OliveVines and similar projects. This is actually an advantage: these domains have proven results and have been actively tested for SEO performance. All our domain names are thoroughly checked before sale with multiple sources (such as web history archives, Google, Ahrefs, MOZ and spam checkers) and are completely free of harmful history such as spam, adult content or gambling-related history. A website from our own portfolio in the history is therefore a sign of quality and careful management — no reason for concern."
+                    question: "なぜドメインの履歴にあなたのポートフォリオのウェブサイトが時々ありますか？",
+                    answer: "当社のポートフォリオの一部のドメインは、以前は自社プロジェクト、テストウェブサイト、または301リダイレクトに使用されていました。これにはNailTalk、OntwerpNovi、OliveVinesなどのプロジェクトのウェブサイトが含まれます。これは実際にはアドバンテージです：これらのドメインは実証済みの結果があり、SEOパフォーマンスのために積極的にテストされています。すべてのドメインは販売前に複数のソース（ウェブ履歴アーカイブ、Google、Ahrefs、MOZ、スパムチェッカーなど）で徹底的にチェックされ、スパム、アダルトコンテンツ、ギャンブル関連の履歴などの有害な履歴が完全にありません。履歴にある当社ポートフォリオのウェブサイトは、品質と慎重な管理のサインであり、心配の理由ではありません。"
                   },
                   {
-                    question: "How does SEO and link building work? And why do I need to keep maintaining my purchased domain?",
-                    answer: "SEO (Search Engine Optimization) is about optimizing your website so that search engines like Google can find, understand and rank it better. Link building is a crucial part of this: obtaining backlinks (references) from other websites to yours. These links act as 'votes of confidence' and tell Google that your content is valuable.\n\n**Why maintenance is essential:**\nA premium domain name with existing backlinks gives you a strong foundation, but no domain name offers guarantees on rankings. SEO is an ongoing process. Backlinks can disappear over time when referring websites go offline or remove content. In addition, Google's algorithms change regularly, so what works today may be different tomorrow.\n\n**Tips for successful maintenance and link building:**\n• **Create valuable content** — Regularly publish relevant, original articles, guides or tools that others want to share and link to.\n• **Guest blogging** — Write articles for respected websites in your industry with a link back to your site.\n• **Broken link building** — Find broken links on relevant websites and offer your content as a replacement.\n• **HARO/Helpareporter** — Respond to journalist questions to get mentions and links in news articles.\n• **Social media and PR** — Actively share your content and build relationships with influencers and media.\n• **Internal link structure** — Ensure logical internal links between your pages to distribute authority.\n• **Monitor your backlinks** — Use tools like Ahrefs, MOZ or SEMrush to monitor your link profile and disavow harmful links.\n• **Technical SEO** — Ensure fast loading times, mobile-friendly design and a secure HTTPS connection.\n\n**Important to know:**\nNo domain name, no matter how strong, guarantees top positions in Google. The built-up authority gives you a head start, but success depends on continuous effort: regular content, active link building and technical maintenance. See your premium domain as a solid foundation — you determine the structure above it with consistent SEO efforts."
+                    question: "SEOとリンク構築はどのように機能しますか？購入したドメインを維持し続ける必要があるのはなぜですか？",
+                    answer: "SEO（検索エンジン最適化）は、Googleなどの検索エンジンがウェブサイトをより良く見つけ、理解し、ランク付けできるようにウェブサイトを最適化することです。リンク構築はこの重要な部分です：他のウェブサイトからあなたのウェブサイトへのバックリンク（参照）を獲得すること。これらのリンクは「信頼の票」として機能し、Googleにあなたのコンテンツが価値あることを伝えます。\n\n**なぜメンテナンスが不可欠か：**\n既存のバックリンクを持つプレミアムドメインは強力な基盤を提供しますが、どのドメインもランキングを保証しません。SEOは継続的なプロセスです。参照ウェブサイトがオフラインになったりコンテンツを削除したりすると、バックリンクは時間とともに消えることがあります。また、Googleのアルゴリズムは定期的に変更されるため、今日うまくいくことが明日は異なる可能性があります。\n\n**成功するメンテナンスとリンク構築のヒント：**\n• **価値あるコンテンツを作成** — 他の人が共有しリンクしたい関連性のある独自の記事、ガイド、ツールを定期的に公開します。\n• **ゲストブログ** — 業界で尊敬されるウェブサイトにあなたのサイトへのリンク付きで記事を書きます。\n• **壊れたリンク構築** — 関連ウェブサイトで壊れたリンクを見つけ、代替としてあなたのコンテンツを提供します。\n• **HARO/ジャーナリストを助ける** — ジャーナリストの質問に回答して、ニュース記事でのメンションとリンクを獲得します。\n• **ソーシャルメディアとPR** — コンテンツを積極的に共有し、インフルエンサーやメディアとの関係を構築します。\n• **内部リンク構造** — 権威を分配するためにページ間の論理的な内部リンクを確保します。\n• **バックリンクを監視** — Ahrefs、MOZ、SEMrushなどのツールを使用してリンクプロファイルを監視し、有害なリンクを否認します。\n• **技術的SEO** — 高速な読み込み時間、モバイルフレンドリーなデザイン、安全なHTTPS接続を確保します。\n\n**知っておくべき重要なこと：**\nどんなに強力なドメインでも、Googleでのトップポジションを保証しません。蓄積された権威は先行優位性を与えますが、成功は継続的な努力に依存します：定期的なコンテンツ、積極的なリンク構築、技術的なメンテナンス。プレミアムドメインを堅固な基盤として見てください—一貫したSEO努力でその上の構造を決定します。"
                   }
                 ].map((faq, index) => (
                   <AccordionItem 
@@ -2323,7 +2323,7 @@ const PremiumDomainsJA = () => {
                     <AccordionTrigger className="text-left text-white hover:text-amber-400 hover:no-underline py-4">
                       <h3 className="font-semibold">{faq.question}</h3>
                     </AccordionTrigger>
-                    <AccordionContent className="text-slate-400 pb-4 leading-relaxed">
+                    <AccordionContent className="text-slate-400 pb-4 leading-relaxed whitespace-pre-line">
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
@@ -2335,7 +2335,7 @@ const PremiumDomainsJA = () => {
                   className="bg-gradient-to-br from-amber-500/10 to-slate-800/40 border border-amber-500/30 rounded-xl px-6"
                 >
                   <AccordionTrigger className="text-left text-white hover:text-amber-400 hover:no-underline py-4">
-                    <h3 className="font-semibold">Complete Guide: 35 Questions about Expired Domain Names & SEO</h3>
+                    <h3 className="font-semibold">完全ガイド：期限切れドメインとSEOに関する35の質問</h3>
                   </AccordionTrigger>
                   <AccordionContent className="text-slate-400 pb-6 leading-relaxed">
                     <div className="space-y-8 whitespace-pre-line">
