@@ -2723,6 +2723,27 @@ const PremiumDomains = () => {
                           </div>
                         </div>
                       </div>
+
+                      {/* NordVPN Recommendation Section */}
+                      <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-lg p-4 mt-4">
+                        <div className="text-center">
+                          <h4 className="font-bold text-white text-lg mb-2">🔒 Bescherm Je Privacy met NordVPN</h4>
+                          <p className="text-white/90 text-sm mb-3">
+                            Wat is een VPN? Een <a href="https://www.tkqlhce.com/click-100643838-14352852" target="_blank" rel="noopener noreferrer" className="underline text-yellow-300 hover:text-yellow-200">Virtual Private Network (VPN)</a> versleutelt je internetverbinding en verbergt je IP-adres, waardoor je persoonlijke gegevens worden beschermd tegen hackers, trackers en surveillance.
+                          </p>
+                          <p className="text-white/80 text-xs mb-4">
+                            Voor eigenaren van premium domeinen is het beschermen van je online identiteit cruciaal. NordVPN stelt je in staat om anoniem te browsen, toegang te krijgen tot wereldwijde content en je zakelijke transacties te beveiligen.
+                          </p>
+                          <a 
+                            href="https://www.tkqlhce.com/click-100643838-14352852" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-2 px-6 rounded-full transition-colors text-sm"
+                          >
+                            Haal NordVPN Nu →
+                          </a>
+                        </div>
+                      </div>
                       
                       <p className="text-slate-400 text-sm">
                         Heeft u vragen over de domeinverhuizing? Neem gerust contact met ons op via <a href="mailto:support@iaee.eu" className="text-amber-400 hover:text-amber-300">support@iaee.eu</a>.
