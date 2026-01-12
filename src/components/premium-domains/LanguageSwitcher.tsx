@@ -99,7 +99,7 @@ interface LanguageSwitcherProps {
 
 const LanguageSwitcher = ({ currentLanguage }: LanguageSwitcherProps) => {
   return (
-    <div className="flex items-center justify-center gap-2 py-3 bg-slate-800/80 backdrop-blur-sm border-b border-slate-700">
+    <div className="flex items-center justify-center gap-2 py-3 bg-gradient-to-b from-slate-900 to-slate-800 border-b border-slate-700">
       <span className="text-slate-400 text-xs font-medium mr-1 hidden sm:inline">Select language:</span>
       <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap justify-center">
         {languages.map((lang) => {
@@ -111,11 +111,11 @@ const LanguageSwitcher = ({ currentLanguage }: LanguageSwitcherProps) => {
               key={lang.code}
               to={lang.path}
               className={`
-                relative w-5 h-4 sm:w-6 sm:h-4 rounded-sm overflow-hidden border transition-all duration-200 
-                hover:scale-110 hover:shadow-md bg-slate-900 p-0.5
+                relative w-6 h-5 sm:w-7 sm:h-5 rounded-sm overflow-hidden border transition-all duration-200 
+                hover:scale-110 hover:shadow-md bg-slate-800 p-0.5
                 ${isActive 
                   ? "border-amber-400 shadow-md shadow-amber-500/30 scale-105 ring-1 ring-amber-400/50" 
-                  : "border-slate-700 opacity-80 hover:opacity-100 hover:border-slate-500"
+                  : "border-slate-600 opacity-85 hover:opacity-100 hover:border-slate-400"
                 }
               `}
               title={lang.name}
