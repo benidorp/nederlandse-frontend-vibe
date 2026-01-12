@@ -111,11 +111,11 @@ const LanguageSwitcher = ({ currentLanguage }: LanguageSwitcherProps) => {
               key={lang.code}
               to={lang.path}
               className={`
-                relative w-7 h-5 sm:w-8 sm:h-6 rounded-sm overflow-hidden border transition-all duration-200 
-                hover:scale-110 hover:shadow-md
+                relative w-5 h-4 sm:w-6 sm:h-4 rounded-sm overflow-hidden border transition-all duration-200 
+                hover:scale-110 hover:shadow-md bg-slate-900 p-0.5
                 ${isActive 
                   ? "border-amber-400 shadow-md shadow-amber-500/30 scale-105 ring-1 ring-amber-400/50" 
-                  : "border-slate-600 opacity-70 hover:opacity-100 hover:border-slate-400"
+                  : "border-slate-700 opacity-80 hover:opacity-100 hover:border-slate-500"
                 }
               `}
               title={lang.name}
