@@ -2424,6 +2424,27 @@ const PremiumDomainsZH = () => {
                         <strong className="text-white">提示：</strong>请同时检查您的垃圾邮件文件夹中的转移令牌邮件。如果24小时后仍未收到代码，请通过support@iaee.eu联系我们。
                       </p>
                     </div>
+
+                    {/* NordVPN Recommendation Section */}
+                    <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-lg p-4 mt-4">
+                      <div className="text-center">
+                        <h4 className="font-bold text-white text-lg mb-2">🔒 使用NordVPN保护您的隐私</h4>
+                        <p className="text-white/90 text-sm mb-3">
+                          什么是VPN？<a href="https://www.tkqlhce.com/click-100643838-13765684" target="_blank" rel="noopener noreferrer" className="underline text-yellow-300 hover:text-yellow-200">虚拟专用网络（VPN）</a>可以加密您的互联网连接并隐藏您的IP地址，保护您的个人数据免受黑客、追踪器和监控的侵害。
+                        </p>
+                        <p className="text-white/80 text-xs mb-4">
+                          对于优质域名的所有者来说，保护您的在线身份至关重要。NordVPN让您可以匿名浏览、访问全球内容并保护您的商业交易安全。
+                        </p>
+                        <a 
+                          href="https://www.tkqlhce.com/click-100643838-13765684" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-2 px-6 rounded-full transition-colors text-sm"
+                        >
+                          立即获取NordVPN →
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
