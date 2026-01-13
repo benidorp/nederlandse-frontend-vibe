@@ -1874,8 +1874,7 @@ const PremiumDomainsES = () => {
                               {/* Mastercard */}
                               <div className="flex items-center bg-[#000000] rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
                                 <svg className="h-2 sm:h-2.5 w-3 sm:w-4" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <circle cx="11" cy="10" r="8" fill="#EB001B"/>
-                                  <circle cx="21" cy="10" r="8" fill="#F79E1B"/>
+                                  <circle cx="11" cy="10" r="8" fill="#EB001B"/><circle cx="21" cy="10" r="8" fill="#F79E1B"/>
                                   <path d="M16 3.5C18.5 5.5 20 7.5 20 10C20 12.5 18.5 14.5 16 16.5C13.5 14.5 12 12.5 12 10C12 7.5 13.5 5.5 16 3.5Z" fill="#FF5F00"/>
                                 </svg>
                               </div>
@@ -1895,43 +1894,25 @@ const PremiumDomainsES = () => {
                                   <span style={{color: '#5F6368'}}>Pay</span>
                                 </span>
                               </div>
-                              {/* Google Pay */}
-                              <div className="flex items-center bg-white rounded px-1 py-0.5 border border-slate-300 h-4">
-                                <svg className="h-2.5 w-10" viewBox="0 0 65 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <text x="0" y="14" fontSize="11" fontWeight="500" fontFamily="Arial">
-                                    <tspan fill="#4285F4">G</tspan>
-                                    <tspan fill="#EA4335">o</tspan>
-                                    <tspan fill="#FBBC05">o</tspan>
-                                    <tspan fill="#4285F4">g</tspan>
-                                    <tspan fill="#34A853">l</tspan>
-                                    <tspan fill="#EA4335">e</tspan>
-                                  </text>
-                                  <text x="38" y="14" fill="#5F6368" fontSize="11" fontWeight="500" fontFamily="Arial">Pay</text>
-                                </svg>
-                              </div>
-                              {/* Klarna */}
-                              <div className="flex items-center bg-[#FFB3C7] rounded px-1 py-0.5 h-4">
-                                <span className="text-black font-bold text-[7px]" style={{fontFamily: 'Arial'}}>Klarna</span>
-                              </div>
                             </div>
-                            <div className="flex items-center gap-2 mt-2">
-                              <Lock className="w-3 h-3 text-slate-400" />
-                              <div className="flex items-center bg-[#635BFF] rounded px-2 py-0.5">
-                                <span className="text-white font-bold text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
+                            <div className="flex items-center gap-1.5 sm:gap-2 mt-1 sm:mt-2">
+                              <Lock className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-slate-400" />
+                              <div className="flex items-center bg-[#635BFF] rounded px-1.5 sm:px-2 py-0.5">
+                                <span className="text-white font-bold text-xs sm:text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
                               </div>
                             </div>
                             <div data-nosnippet>
-                              <p className="text-[10px] text-slate-400 leading-tight mt-2">
+                              <p className="text-[8px] sm:text-[10px] text-slate-400 leading-tight mt-1.5 sm:mt-2">
                                 Pago seguro vía Stripe
                                 <br />
                                 Convertido automáticamente a su moneda local
                               </p>
-                              <p className="text-[10px] text-slate-400 leading-tight mt-3">
+                              <p className="text-[8px] sm:text-[10px] text-slate-400 leading-tight mt-2 sm:mt-3">
                                 Después del pago recibirá el token de transferencia (código EPP/Auth) en su correo electrónico dentro de 24 horas.
                                 <br />
                                 Revise también su carpeta de spam.
                               </p>
-                              <a href="#domein-verhuizen" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
+                              <a href="#domain-transfer" className="text-[8px] sm:text-[10px] text-amber-400 hover:text-amber-300 underline mt-1.5 sm:mt-2">
                                 ¿Cómo funciona la transferencia?
                               </a>
                             </div>

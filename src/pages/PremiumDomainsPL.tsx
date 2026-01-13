@@ -1678,38 +1678,67 @@ const PremiumDomainsPL = () => {
                       </div>
                       
                       {domain.stripePaymentLink && (
-                        <div className="space-y-2">
+                        <div className="flex flex-col gap-2 sm:gap-3">
                           <a 
-                            href={domain.stripePaymentLink} 
-                            target="_blank" 
+                            href={domain.stripePaymentLink}
+                            target="_blank"
                             rel="noopener noreferrer"
-                            className="w-full"
+                            className="w-full inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-3 sm:py-4 bg-[#F59E0B] hover:bg-[#D97706] text-slate-950 font-bold rounded-md shadow-md transition-all duration-200 hover:shadow-lg text-sm sm:text-base md:text-lg"
                           >
-                            <Button 
-                              className="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-semibold"
-                            >
-                              <Lock className="w-4 h-4 mr-2" />
-                              Kup Teraz
-                            </Button>
+                            Kup Teraz
+                            <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4" />
                           </a>
-                          <div className="flex items-center justify-center gap-2 text-[10px] text-slate-400">
-                            <span>Bezpieczna płatność przez</span>
-                            <img src={stripeLogo} alt="Stripe" className="h-4 opacity-70" />
-                          </div>
-                          <div data-nosnippet>
-                            <p className="text-[10px] text-slate-400 leading-tight mt-2">
-                              Bezpieczna płatność przez Stripe
-                              <br />
-                              Automatycznie przeliczane na Twoją lokalną walutę
-                            </p>
-                            <p className="text-[10px] text-slate-400 leading-tight mt-3">
-                              Po płatności otrzymasz token transferu (EPP/Auth-code) na swój adres e-mail w ciągu 24 godzin.
-                              <br />
-                              Sprawdź również folder spam.
-                            </p>
-                            <a href="#domein-verhuizen" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
-                              Jak działa transfer?
-                            </a>
+                          <div className="flex flex-col items-center gap-1.5 sm:gap-2 text-center" data-nosnippet>
+                            <div className="flex items-center justify-center gap-0.5 sm:gap-1 flex-wrap">
+                              {/* Visa */}
+                              <div className="flex items-center bg-[#1A1F71] rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
+                                <span className="text-white font-bold text-[5px] sm:text-[7px] italic tracking-tight" style={{fontFamily: 'Arial'}}>VISA</span>
+                              </div>
+                              {/* Mastercard */}
+                              <div className="flex items-center bg-[#000000] rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
+                                <svg className="h-2 sm:h-2.5 w-3 sm:w-4" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <circle cx="11" cy="10" r="8" fill="#EB001B"/><circle cx="21" cy="10" r="8" fill="#F79E1B"/>
+                                  <path d="M16 3.5C18.5 5.5 20 7.5 20 10C20 12.5 18.5 14.5 16 16.5C13.5 14.5 12 12.5 12 10C12 7.5 13.5 5.5 16 3.5Z" fill="#FF5F00"/>
+                                </svg>
+                              </div>
+                              {/* PayPal */}
+                              <div className="flex items-center bg-[#003087] rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
+                                <span className="text-white font-bold text-[5px] sm:text-[7px] italic" style={{fontFamily: 'Arial'}}>Pay</span>
+                                <span className="text-[#00ADEF] font-bold text-[5px] sm:text-[7px] italic" style={{fontFamily: 'Arial'}}>Pal</span>
+                              </div>
+                              {/* Klarna */}
+                              <div className="flex items-center bg-[#FFB3C7] rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
+                                <span className="text-black font-bold text-[5px] sm:text-[7px]" style={{fontFamily: 'Arial'}}>Klarna</span>
+                              </div>
+                              {/* GPay */}
+                              <div className="flex items-center bg-white rounded px-0.5 sm:px-1 py-0.5 border border-slate-300 h-3 sm:h-4">
+                                <span className="font-bold text-[5px] sm:text-[7px]" style={{fontFamily: 'Arial'}}>
+                                  <span style={{color: '#4285F4'}}>G</span>
+                                  <span style={{color: '#5F6368'}}>Pay</span>
+                                </span>
+                              </div>
+                            </div>
+                            <div className="flex items-center gap-1.5 sm:gap-2 mt-1 sm:mt-2">
+                              <Lock className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-slate-400" />
+                              <div className="flex items-center bg-[#635BFF] rounded px-1.5 sm:px-2 py-0.5">
+                                <span className="text-white font-bold text-xs sm:text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
+                              </div>
+                            </div>
+                            <div data-nosnippet>
+                              <p className="text-[8px] sm:text-[10px] text-slate-400 leading-tight mt-1.5 sm:mt-2">
+                                Bezpieczna płatność przez Stripe
+                                <br />
+                                Automatycznie przeliczane na Twoją lokalną walutę
+                              </p>
+                              <p className="text-[8px] sm:text-[10px] text-slate-400 leading-tight mt-2 sm:mt-3">
+                                Po płatności otrzymasz token transferu (EPP/Auth-code) na swój adres e-mail w ciągu 24 godzin.
+                                <br />
+                                Sprawdź również folder spam.
+                              </p>
+                              <a href="#domain-transfer" className="text-[8px] sm:text-[10px] text-amber-400 hover:text-amber-300 underline mt-1.5 sm:mt-2">
+                                Jak działa transfer?
+                              </a>
+                            </div>
                           </div>
                         </div>
                       )}
