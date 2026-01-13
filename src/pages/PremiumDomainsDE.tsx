@@ -1904,20 +1904,12 @@ const PremiumDomainsDE = () => {
                                   <text x="18" y="14" fill="white" fontSize="10" fontWeight="500" fontFamily="Arial">Pay</text>
                                 </svg>
                               </div>
-                              {/* Google Pay - Compact GPay on mobile */}
+                              {/* GPay */}
                               <div className="flex items-center bg-white rounded px-0.5 sm:px-1 py-0.5 border border-slate-300 h-3 sm:h-4">
-                                <svg className="h-2 sm:h-2.5 w-6 sm:w-10" viewBox="0 0 65 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <text x="0" y="14" fontSize="11" fontWeight="500" fontFamily="Arial">
-                                    <tspan fill="#4285F4">G</tspan>
-                                    <tspan fill="#EA4335" className="hidden sm:inline">o</tspan>
-                                    <tspan fill="#FBBC05" className="hidden sm:inline">o</tspan>
-                                    <tspan fill="#4285F4" className="hidden sm:inline">g</tspan>
-                                    <tspan fill="#34A853" className="hidden sm:inline">l</tspan>
-                                    <tspan fill="#EA4335" className="hidden sm:inline">e</tspan>
-                                  </text>
-                                  <text x="8" y="14" fill="#5F6368" fontSize="11" fontWeight="500" fontFamily="Arial" className="sm:hidden">Pay</text>
-                                  <text x="38" y="14" fill="#5F6368" fontSize="11" fontWeight="500" fontFamily="Arial" className="hidden sm:inline">Pay</text>
-                                </svg>
+                                <span className="font-bold text-[5px] sm:text-[7px]" style={{fontFamily: 'Arial'}}>
+                                  <span style={{color: '#4285F4'}}>G</span>
+                                  <span style={{color: '#5F6368'}}>Pay</span>
+                                </span>
                               </div>
                               {/* Klarna */}
                               <div className="flex items-center bg-[#FFB3C7] rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
