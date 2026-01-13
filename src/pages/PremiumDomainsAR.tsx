@@ -1633,6 +1633,83 @@ const PremiumDomainsAR = () => {
                           >
                             اشترِ الآن
                           </div>
+                          <div className="flex flex-col items-center gap-2 text-center" data-nosnippet>
+                            <div className="flex items-center justify-center gap-1 flex-wrap">
+                              {/* Visa */}
+                              <div className="flex items-center bg-[#1A1F71] rounded px-1 py-0.5 h-4">
+                                <span className="text-white font-bold text-[7px] italic tracking-tight" style={{fontFamily: 'Arial'}}>VISA</span>
+                              </div>
+                              {/* Mastercard */}
+                              <div className="flex items-center bg-[#000000] rounded px-1 py-0.5 h-4">
+                                <svg className="h-2.5 w-4" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <circle cx="11" cy="10" r="8" fill="#EB001B"/>
+                                  <circle cx="21" cy="10" r="8" fill="#F79E1B"/>
+                                  <path d="M16 3.5C18.5 5.5 20 7.5 20 10C20 12.5 18.5 14.5 16 16.5C13.5 14.5 12 12.5 12 10C12 7.5 13.5 5.5 16 3.5Z" fill="#FF5F00"/>
+                                </svg>
+                              </div>
+                              {/* PayPal */}
+                              <div className="flex items-center bg-[#003087] rounded px-1 py-0.5 h-4">
+                                <span className="text-white font-bold text-[7px] italic" style={{fontFamily: 'Arial'}}>Pay</span>
+                                <span className="text-[#00ADEF] font-bold text-[7px] italic" style={{fontFamily: 'Arial'}}>Pal</span>
+                              </div>
+                              {/* Amazon Pay */}
+                              <div className="flex items-center bg-[#232F3E] rounded px-1 py-0.5 h-4">
+                                <svg className="h-2.5 w-8" viewBox="0 0 60 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <text x="2" y="13" fill="#FF9900" fontSize="10" fontWeight="bold" fontFamily="Arial">amazon</text>
+                                  <path d="M2 16C8 18 16 19 24 18C28 17.5 32 16.5 35 15" stroke="#FF9900" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+                                  <path d="M34 13L36 15L34 17" stroke="#FF9900" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+                                  <text x="38" y="13" fill="white" fontSize="8" fontFamily="Arial">pay</text>
+                                </svg>
+                              </div>
+                              {/* Apple Pay */}
+                              <div className="flex items-center bg-black rounded px-1 py-0.5 h-4">
+                                <svg className="h-2.5 w-6" viewBox="0 0 50 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8.5 4C9.5 4 10.3 3.5 10.8 2.7C11.3 2 11.5 1 11.4 0C10.5 0.1 9.4 0.6 8.8 1.4C8.3 2 7.9 3 8 4C9 4 9.5 4 8.5 4Z" fill="white"/>
+                                  <path d="M11.4 4.3C9.8 4.2 8.4 5.2 7.6 5.2C6.8 5.2 5.6 4.3 4.3 4.4C2.6 4.4 1 5.3 0.2 6.9C-1.5 10 0.1 14.5 1.7 17C2.5 18.2 3.5 19.6 4.8 19.5C6 19.5 6.5 18.7 8 18.7C9.5 18.7 10 19.5 11.3 19.5C12.6 19.5 13.5 18.2 14.3 17C15.2 15.7 15.6 14.4 15.6 14.3C15.6 14.3 12.5 13.1 12.5 9.6C12.5 6.5 15 5.1 15.1 5C13.8 3.1 11.8 4.3 11.4 4.3Z" fill="white"/>
+                                  <text x="18" y="14" fill="white" fontSize="10" fontWeight="500" fontFamily="Arial">Pay</text>
+                                </svg>
+                              </div>
+                              {/* Google Pay */}
+                              <div className="flex items-center bg-white rounded px-1 py-0.5 border border-slate-300 h-4">
+                                <svg className="h-2.5 w-10" viewBox="0 0 65 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <text x="0" y="14" fontSize="11" fontWeight="500" fontFamily="Arial">
+                                    <tspan fill="#4285F4">G</tspan>
+                                    <tspan fill="#EA4335">o</tspan>
+                                    <tspan fill="#FBBC05">o</tspan>
+                                    <tspan fill="#4285F4">g</tspan>
+                                    <tspan fill="#34A853">l</tspan>
+                                    <tspan fill="#EA4335">e</tspan>
+                                  </text>
+                                  <text x="38" y="14" fill="#5F6368" fontSize="11" fontWeight="500" fontFamily="Arial">Pay</text>
+                                </svg>
+                              </div>
+                              {/* Klarna */}
+                              <div className="flex items-center bg-[#FFB3C7] rounded px-1 py-0.5 h-4">
+                                <span className="text-black font-bold text-[7px]" style={{fontFamily: 'Arial'}}>Klarna</span>
+                              </div>
+                            </div>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Lock className="w-3 h-3 text-slate-400" />
+                              <div className="flex items-center bg-[#635BFF] rounded px-2 py-0.5">
+                                <span className="text-white font-bold text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
+                              </div>
+                            </div>
+                            <div data-nosnippet>
+                              <p className="text-[10px] text-slate-400 leading-tight mt-2">
+                                دفع آمن عبر Stripe
+                                <br />
+                                يتم التحويل تلقائياً إلى عملتك المحلية
+                              </p>
+                              <p className="text-[10px] text-slate-400 leading-tight mt-3">
+                                بعد الدفع ستتلقى رمز النقل (EPP/Auth code) على بريدك الإلكتروني خلال 24 ساعة.
+                                <br />
+                                تحقق أيضاً من مجلد البريد العشوائي.
+                              </p>
+                              <a href="#domain-transfer" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
+                                كيف يعمل النقل؟
+                              </a>
+                            </div>
+                          </div>
                         </div>
                       ) : (
                         <div className="flex flex-col gap-3">
@@ -1647,10 +1724,11 @@ const PremiumDomainsAR = () => {
                           </a>
                           <div className="flex flex-col items-center gap-2 text-center" data-nosnippet>
                             <div className="flex items-center justify-center gap-1 flex-wrap">
-                              {/* Payment icons */}
+                              {/* Visa */}
                               <div className="flex items-center bg-[#1A1F71] rounded px-1 py-0.5 h-4">
                                 <span className="text-white font-bold text-[7px] italic tracking-tight" style={{fontFamily: 'Arial'}}>VISA</span>
                               </div>
+                              {/* Mastercard */}
                               <div className="flex items-center bg-[#000000] rounded px-1 py-0.5 h-4">
                                 <svg className="h-2.5 w-4" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <circle cx="11" cy="10" r="8" fill="#EB001B"/>
@@ -1658,12 +1736,68 @@ const PremiumDomainsAR = () => {
                                   <path d="M16 3.5C18.5 5.5 20 7.5 20 10C20 12.5 18.5 14.5 16 16.5C13.5 14.5 12 12.5 12 10C12 7.5 13.5 5.5 16 3.5Z" fill="#FF5F00"/>
                                 </svg>
                               </div>
+                              {/* PayPal */}
                               <div className="flex items-center bg-[#003087] rounded px-1 py-0.5 h-4">
                                 <span className="text-white font-bold text-[7px] italic" style={{fontFamily: 'Arial'}}>Pay</span>
                                 <span className="text-[#00ADEF] font-bold text-[7px] italic" style={{fontFamily: 'Arial'}}>Pal</span>
                               </div>
+                              {/* Amazon Pay */}
+                              <div className="flex items-center bg-[#232F3E] rounded px-1 py-0.5 h-4">
+                                <svg className="h-2.5 w-8" viewBox="0 0 60 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <text x="2" y="13" fill="#FF9900" fontSize="10" fontWeight="bold" fontFamily="Arial">amazon</text>
+                                  <path d="M2 16C8 18 16 19 24 18C28 17.5 32 16.5 35 15" stroke="#FF9900" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+                                  <path d="M34 13L36 15L34 17" stroke="#FF9900" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+                                  <text x="38" y="13" fill="white" fontSize="8" fontFamily="Arial">pay</text>
+                                </svg>
+                              </div>
+                              {/* Apple Pay */}
+                              <div className="flex items-center bg-black rounded px-1 py-0.5 h-4">
+                                <svg className="h-2.5 w-6" viewBox="0 0 50 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8.5 4C9.5 4 10.3 3.5 10.8 2.7C11.3 2 11.5 1 11.4 0C10.5 0.1 9.4 0.6 8.8 1.4C8.3 2 7.9 3 8 4C9 4 9.5 4 8.5 4Z" fill="white"/>
+                                  <path d="M11.4 4.3C9.8 4.2 8.4 5.2 7.6 5.2C6.8 5.2 5.6 4.3 4.3 4.4C2.6 4.4 1 5.3 0.2 6.9C-1.5 10 0.1 14.5 1.7 17C2.5 18.2 3.5 19.6 4.8 19.5C6 19.5 6.5 18.7 8 18.7C9.5 18.7 10 19.5 11.3 19.5C12.6 19.5 13.5 18.2 14.3 17C15.2 15.7 15.6 14.4 15.6 14.3C15.6 14.3 12.5 13.1 12.5 9.6C12.5 6.5 15 5.1 15.1 5C13.8 3.1 11.8 4.3 11.4 4.3Z" fill="white"/>
+                                  <text x="18" y="14" fill="white" fontSize="10" fontWeight="500" fontFamily="Arial">Pay</text>
+                                </svg>
+                              </div>
+                              {/* Google Pay */}
+                              <div className="flex items-center bg-white rounded px-1 py-0.5 border border-slate-300 h-4">
+                                <svg className="h-2.5 w-10" viewBox="0 0 65 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <text x="0" y="14" fontSize="11" fontWeight="500" fontFamily="Arial">
+                                    <tspan fill="#4285F4">G</tspan>
+                                    <tspan fill="#EA4335">o</tspan>
+                                    <tspan fill="#FBBC05">o</tspan>
+                                    <tspan fill="#4285F4">g</tspan>
+                                    <tspan fill="#34A853">l</tspan>
+                                    <tspan fill="#EA4335">e</tspan>
+                                  </text>
+                                  <text x="38" y="14" fill="#5F6368" fontSize="11" fontWeight="500" fontFamily="Arial">Pay</text>
+                                </svg>
+                              </div>
+                              {/* Klarna */}
+                              <div className="flex items-center bg-[#FFB3C7] rounded px-1 py-0.5 h-4">
+                                <span className="text-black font-bold text-[7px]" style={{fontFamily: 'Arial'}}>Klarna</span>
+                              </div>
                             </div>
-                            <p className="text-[9px] text-slate-500">دفع آمن عبر Stripe</p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Lock className="w-3 h-3 text-slate-400" />
+                              <div className="flex items-center bg-[#635BFF] rounded px-2 py-0.5">
+                                <span className="text-white font-bold text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
+                              </div>
+                            </div>
+                            <div data-nosnippet>
+                              <p className="text-[10px] text-slate-400 leading-tight mt-2">
+                                دفع آمن عبر Stripe
+                                <br />
+                                يتم التحويل تلقائياً إلى عملتك المحلية
+                              </p>
+                              <p className="text-[10px] text-slate-400 leading-tight mt-3">
+                                بعد الدفع ستتلقى رمز النقل (EPP/Auth code) على بريدك الإلكتروني خلال 24 ساعة.
+                                <br />
+                                تحقق أيضاً من مجلد البريد العشوائي.
+                              </p>
+                              <a href="#domain-transfer" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
+                                كيف يعمل النقل؟
+                              </a>
+                            </div>
                           </div>
                         </div>
                       )}
