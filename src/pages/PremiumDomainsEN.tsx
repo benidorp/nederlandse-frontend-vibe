@@ -2731,6 +2731,27 @@ const PremiumDomainsEN = () => {
                     We respond to your message within 24 hours.
                   </p>
                 </div>
+
+                {/* NordVPN Recommendation Section */}
+                <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-lg p-4 mt-6">
+                  <div className="text-center">
+                    <h4 className="font-bold text-white text-lg mb-2">🔒 Protect Your Privacy with NordVPN</h4>
+                    <p className="text-white/90 text-sm mb-3">
+                      What is a VPN? A <a href="https://www.dpbolvw.net/click-100643838-14471514" target="_blank" rel="noopener noreferrer" className="underline text-yellow-300 hover:text-yellow-200">Virtual Private Network (VPN)</a> encrypts your internet connection and hides your IP address, protecting your personal data from hackers, trackers, and surveillance.
+                    </p>
+                    <p className="text-white/80 text-xs mb-4">
+                      For premium domain owners, protecting your online identity is essential. NordVPN allows you to browse anonymously, access global content, and secure your business transactions.
+                    </p>
+                    <a 
+                      href="https://www.dpbolvw.net/click-100643838-14471514" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-2 px-6 rounded-full transition-colors text-sm"
+                    >
+                      Get NordVPN Now →
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
