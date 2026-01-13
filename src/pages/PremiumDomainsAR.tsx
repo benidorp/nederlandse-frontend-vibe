@@ -1357,20 +1357,21 @@ const PremiumDomainsAR = () => {
     e.preventDefault();
     
     const validation = validateContactForm(formData);
-    if (!validation.isValid) {
+    if (!validation.success) {
+      const errorMessages = 'errors' in validation ? Object.values(validation.errors).join(', ') : 'خطأ في التحقق';
       toast({
         title: "خطأ في التحقق",
-        description: validation.error,
+        description: errorMessages,
         variant: "destructive",
       });
       return;
     }
 
-    const mailtoUrl = buildSafeMailtoUrl({
-      to: 'info@expireddomainnames.co',
-      subject: `استفسار عن نطاق: ${formData.domain}`,
-      body: `الاسم: ${formData.name}\nالبريد الإلكتروني: ${formData.email}\nالنطاق: ${formData.domain}\nالرسالة: ${formData.message}`
-    });
+    const mailtoUrl = buildSafeMailtoUrl(
+      'info@expireddomainnames.co',
+      `استفسار عن نطاق: ${formData.domain}`,
+      `الاسم: ${formData.name}\nالبريد الإلكتروني: ${formData.email}\nالنطاق: ${formData.domain}\nالرسالة: ${formData.message}`
+    );
     
     window.location.href = mailtoUrl;
     
