@@ -1683,37 +1683,19 @@ const PremiumDomainsJA = () => {
         
         {/* Header */}
         <header className="sticky top-0 z-50 backdrop-blur-xl bg-slate-950/80 border-b border-amber-500/20">
-          <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-            <RouterLink to="/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" className="flex items-center gap-3">
-              <Crown className="h-8 w-8 text-amber-400" />
-              <span className="text-xl font-bold bg-gradient-to-r from-amber-200 to-amber-400 bg-clip-text text-transparent hover:from-amber-300 hover:to-amber-500 transition-all">
-                プレミアムドメイン
-              </span>
+          <div className="container mx-auto px-3 sm:px-4 py-3 sm:py-4 flex items-center justify-between">
+            <RouterLink to="/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" className="flex items-center gap-2 sm:gap-3 min-w-0 flex-shrink-0">
+              <Crown className="h-6 w-6 sm:h-8 sm:w-8 text-amber-400 flex-shrink-0" />
+              <span className="text-base sm:text-xl font-bold bg-gradient-to-r from-amber-200 to-amber-400 bg-clip-text text-transparent truncate">プレミアムドメイン</span>
             </RouterLink>
-            <nav className="hidden md:flex items-center gap-6">
-              <RouterLink to="/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium flex items-center gap-1">
-                <Home className="h-4 w-4" />
-                ホーム
-              </RouterLink>
-              <button onClick={() => scrollToSection("domains")} className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium">
-                ドメイン
-              </button>
-              <button onClick={() => scrollToSection("why-premium")} className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium">
-                メリット
-              </button>
-              <button onClick={() => scrollToSection("seo-redirects")} className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium">
-                SEO＆リダイレクト
-              </button>
-              <button onClick={() => scrollToSection("faq")} className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium">
-                よくある質問
-              </button>
-              <Button 
-                onClick={() => scrollToSection("contact")}
-                className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-semibold"
-              >
-                お問い合わせ
-              </Button>
+            <nav className="hidden md:flex items-center gap-4 lg:gap-6">
+              <RouterLink to="/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium flex items-center gap-1"><Home className="h-4 w-4" />ホーム</RouterLink>
+              <button onClick={() => scrollToSection("domains")} className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium">ドメイン</button>
+              <button onClick={() => scrollToSection("why-premium")} className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium">メリット</button>
+              <button onClick={() => scrollToSection("faq")} className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium">よくある質問</button>
+              <Button onClick={() => scrollToSection("contact")} className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-semibold">お問い合わせ</Button>
             </nav>
+            <Button onClick={() => scrollToSection("domains")} className="md:hidden bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-semibold text-xs px-3 py-2">ドメイン</Button>
           </div>
         </header>
 
