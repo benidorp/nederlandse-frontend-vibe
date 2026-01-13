@@ -1733,92 +1733,92 @@ const PremiumDomains = () => {
         </section>
 
         {/* Domain Listings */}
-        <section id="domains" className="py-20 relative">
+        <section id="domains" className="py-10 sm:py-16 md:py-20 relative">
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/50 to-transparent" />
           
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="text-center mb-12">
-              <Badge className="mb-4 bg-slate-800 text-amber-400 border-slate-700">
-                <Globe className="w-4 h-4 mr-2 inline" />
+          <div className="container mx-auto px-3 sm:px-4 relative z-10">
+            <div className="text-center mb-8 sm:mb-12">
+              <Badge className="mb-3 sm:mb-4 bg-slate-800 text-amber-400 border-slate-700 text-xs sm:text-sm">
+                <Globe className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2 inline" />
                 Beschikbare Domeinen
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 sm:mb-4 px-2">
                 Premium Domeinnamen Te Koop
               </h2>
-              <p className="text-slate-400 max-w-3xl mx-auto">
+              <p className="text-slate-400 max-w-3xl mx-auto text-sm sm:text-base px-2">
                 Elk domein is zorgvuldig geselecteerd op basis van MOZ-autoriteit, backlinkprofiel en SEO-potentieel. 
                 Wil je een <strong className="text-white">expired domeinnaam kopen</strong> of zoek je <strong className="text-white">betrouwbare expired domeinamen</strong>? Bekijk ons aanbod hieronder.
               </p>
             </div>
             
             {/* SEO Intro Text */}
-            <div className="max-w-5xl mx-auto mb-8 bg-slate-800/30 border border-slate-700/50 rounded-2xl p-8">
-              <p className="text-slate-300 leading-relaxed mb-4">
+            <div className="max-w-5xl mx-auto mb-6 sm:mb-8 bg-slate-800/30 border border-slate-700/50 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8">
+              <p className="text-slate-300 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
                 <strong className="text-white">Op zoek naar een domeinnaam met echte SEO-waarde?</strong> Bij ons koop je betrouwbare <strong className="text-amber-400">expired domeinnamen met backlinks</strong> en hoge autoriteit, zorgvuldig gecontroleerd op kwaliteit en historie. Met een expired domein start je niet vanaf nul, maar profiteer je direct van bestaande links, vertrouwen en online geschiedenis.
               </p>
-              <p className="text-slate-300 leading-relaxed mb-4">
+              <p className="text-slate-300 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
                 Naast expired domeinnamen bieden wij ook <strong className="text-amber-400">premium domeinnamen</strong> aan: korte, krachtige namen met merkwaarde en commerciële potentie. Of je nu een website, webshop of SEO-project start — een <strong className="text-white">domeinnaam met autoriteit</strong> geeft je een duidelijke voorsprong in Google.
               </p>
-              <p className="text-slate-300 leading-relaxed text-sm">
+              <p className="text-slate-300 leading-relaxed text-xs sm:text-sm">
                 <strong className="text-white">Veel gezocht:</strong> expired domeinnaam met backlinks kopen • betrouwbare expired domeinen • expired domeinnaam met autoriteit • premium domeinnaam kopen • domeinnaam met SEO waarde • oude domeinnaam met links • beste domeinnamen te koop
               </p>
             </div>
 
             {/* VAT Notice */}
-            <div className="max-w-5xl mx-auto mb-10 text-center">
-              <p className="text-sm text-slate-300 font-medium bg-slate-800/40 border border-slate-700/40 rounded-lg px-4 py-3 inline-block">
+            <div className="max-w-5xl mx-auto mb-6 sm:mb-10 text-center px-2">
+              <p className="text-xs sm:text-sm text-slate-300 font-medium bg-slate-800/40 border border-slate-700/40 rounded-lg px-3 sm:px-4 py-2 sm:py-3 inline-block">
                 <span className="text-amber-400 font-semibold">BTW-informatie:</span> Prijzen zijn exclusief BTW voor particuliere klanten binnen de EU. Zakelijke klanten binnen de EU kunnen de BTW verleggen. Voor klanten buiten de EU wordt geen BTW berekend.
               </p>
             </div>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6">
               {premiumDomains.map((domain, index) => (
                 <Card 
                   key={index} 
                   className="h-full flex flex-col bg-gradient-to-br from-slate-800/80 to-slate-900/80 border-slate-700/50 backdrop-blur hover:border-amber-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10 group"
                 >
-                  <CardHeader className="pb-3">
-                    <div className="flex items-start justify-between">
-                      <Badge variant="outline" className="text-xs border-slate-600 text-slate-400">
+                  <CardHeader className="pb-2 sm:pb-3 p-3 sm:p-4 md:p-6">
+                    <div className="flex items-start justify-between gap-2">
+                      <Badge variant="outline" className="text-[10px] sm:text-xs border-slate-600 text-slate-400 flex-shrink-0">
                         {domain.category}
                       </Badge>
-                      <div className="flex items-center gap-1 bg-amber-500/10 px-2 py-1 rounded-full">
-                        <BarChart3 className="w-3 h-3 text-amber-400" />
-                        <span className="text-xs font-semibold text-amber-400">MOZ {domain.mozScore}</span>
+                      <div className="flex items-center gap-1 bg-amber-500/10 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full flex-shrink-0">
+                        <BarChart3 className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-amber-400" />
+                        <span className="text-[10px] sm:text-xs font-semibold text-amber-400">MOZ {domain.mozScore}</span>
                       </div>
                     </div>
-                    <CardTitle className="text-xl text-white group-hover:text-amber-400 transition-colors mt-3">
+                    <CardTitle className="text-base sm:text-lg md:text-xl text-white group-hover:text-amber-400 transition-colors mt-2 sm:mt-3 break-all">
                       {domain.name}
                     </CardTitle>
-                    <CardDescription className="text-slate-400">
+                    <CardDescription className="text-slate-400 text-xs sm:text-sm">
                       {domain.description}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent className="flex flex-col flex-grow">
-                    <div className="space-y-3 mb-4">
-                      <div className="flex items-center justify-between text-sm">
-                        <div className="flex items-center gap-2 text-slate-400">
-                          <Link className="w-4 h-4" />
+                  <CardContent className="flex flex-col flex-grow p-3 sm:p-4 md:p-6 pt-0">
+                    <div className="space-y-2 sm:space-y-3 mb-3 sm:mb-4">
+                      <div className="flex items-center justify-between text-xs sm:text-sm">
+                        <div className="flex items-center gap-1.5 sm:gap-2 text-slate-400">
+                          <Link className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
                           <span>Backlinks: {domain.backlinks}</span>
                         </div>
                       </div>
                       
                       {/* Extra stats for domains with detailed info */}
                       {domain.pageAuthority && (
-                        <div className="grid grid-cols-2 gap-2 text-xs">
-                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                        <div className="grid grid-cols-2 gap-1.5 sm:gap-2 text-[10px] sm:text-xs">
+                          <div className="bg-slate-800/50 rounded px-1.5 sm:px-2 py-0.5 sm:py-1">
                             <span className="text-slate-500">Page Authority:</span>
                             <span className="text-white ml-1 font-medium">{domain.pageAuthority}</span>
                           </div>
-                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                          <div className="bg-slate-800/50 rounded px-1.5 sm:px-2 py-0.5 sm:py-1">
                             <span className="text-slate-500">Linking Domains:</span>
                             <span className="text-white ml-1 font-medium">{domain.linkingDomains}</span>
                           </div>
-                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                          <div className="bg-slate-800/50 rounded px-1.5 sm:px-2 py-0.5 sm:py-1">
                             <span className="text-slate-500">Inbound Links:</span>
                             <span className="text-white ml-1 font-medium">{domain.inboundLinks}</span>
                           </div>
-                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                          <div className="bg-slate-800/50 rounded px-1.5 sm:px-2 py-0.5 sm:py-1">
                             <span className="text-slate-500">Followed Links:</span>
                             <span className="text-white ml-1 font-medium">{domain.followedLinks}</span>
                           </div>
@@ -1827,11 +1827,11 @@ const PremiumDomains = () => {
                       
                       {/* Top backlinks */}
                       {domain.topBacklinks && domain.topBacklinks.length > 0 && (
-                        <div className="text-xs">
+                        <div className="text-[10px] sm:text-xs">
                           <span className="text-slate-500 block mb-1">Top Backlinks:</span>
-                          <div className="flex flex-wrap gap-1">
+                          <div className="flex flex-wrap gap-0.5 sm:gap-1">
                             {domain.topBacklinks.slice(0, 5).map((link, i) => (
-                              <Badge key={i} variant="outline" className="text-[10px] border-amber-500/30 text-amber-400/80 bg-amber-500/5">
+                              <Badge key={i} variant="outline" className="text-[8px] sm:text-[10px] border-amber-500/30 text-amber-400/80 bg-amber-500/5 px-1 sm:px-1.5 py-0">
                                 {link}
                               </Badge>
                             ))}
@@ -1841,11 +1841,11 @@ const PremiumDomains = () => {
                       
                       {/* Use Cases */}
                       {domain.useCases && domain.useCases.length > 0 && (
-                        <div className="text-xs">
+                        <div className="text-[10px] sm:text-xs">
                           <span className="text-slate-500 block mb-1">Geschikt voor:</span>
-                          <div className="flex flex-wrap gap-1">
+                          <div className="flex flex-wrap gap-0.5 sm:gap-1">
                             {domain.useCases.map((useCase, i) => (
-                              <Badge key={i} variant="outline" className="text-[10px] border-emerald-500/30 text-emerald-400/80 bg-emerald-500/5">
+                              <Badge key={i} variant="outline" className="text-[8px] sm:text-[10px] border-emerald-500/30 text-emerald-400/80 bg-emerald-500/5 px-1 sm:px-1.5 py-0">
                                 {useCase}
                               </Badge>
                             ))}
@@ -1855,14 +1855,14 @@ const PremiumDomains = () => {
                     </div>
                     
                     {/* Price Display - Compact at bottom */}
-                    <div className="mt-auto pt-4 border-t border-slate-700/50">
-                      <div className="flex items-center justify-between mb-3 bg-slate-800/60 rounded-lg px-3 py-2">
-                        <span className="text-sm font-medium text-slate-300">Prijs</span>
-                        <span className="text-lg font-bold text-amber-400">{domain.price}</span>
+                    <div className="mt-auto pt-3 sm:pt-4 border-t border-slate-700/50">
+                      <div className="flex items-center justify-between mb-2 sm:mb-3 bg-slate-800/60 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2">
+                        <span className="text-xs sm:text-sm font-medium text-slate-300">Prijs</span>
+                        <span className="text-base sm:text-lg font-bold text-amber-400">{domain.price}</span>
                       </div>
                       
                       {'stripeButtonId' in domain && domain.stripeButtonId ? (
-                        <div className="flex flex-col gap-3">
+                        <div className="flex flex-col gap-2 sm:gap-3">
                           <div 
                             className="stripe-button-container flex justify-center"
                             dangerouslySetInnerHTML={{
@@ -1872,53 +1872,48 @@ const PremiumDomains = () => {
                               ></stripe-buy-button>`
                             }}
                           />
-                          <div className="flex flex-col items-center gap-1.5 text-center" data-nosnippet>
-                            <div className="flex items-center justify-center gap-1 flex-wrap">
+                          <div className="flex flex-col items-center gap-1.5 sm:gap-2 text-center" data-nosnippet>
+                            <div className="flex items-center justify-center gap-0.5 sm:gap-1 flex-wrap">
                               {/* Apple Pay */}
-                              <div className="flex items-center bg-black rounded px-1 py-0.5 h-4">
-                                <svg className="h-2.5 w-6" viewBox="0 0 50 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <div className="flex items-center bg-black rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
+                                <svg className="h-2 sm:h-2.5 w-5 sm:w-6" viewBox="0 0 50 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <path d="M8.5 4C9.5 4 10.3 3.5 10.8 2.7C11.3 2 11.5 1 11.4 0C10.5 0.1 9.4 0.6 8.8 1.4C8.3 2 7.9 3 8 4C9 4 9.5 4 8.5 4Z" fill="white"/>
                                   <path d="M11.4 4.3C9.8 4.2 8.4 5.2 7.6 5.2C6.8 5.2 5.6 4.3 4.3 4.4C2.6 4.4 1 5.3 0.2 6.9C-1.5 10 0.1 14.5 1.7 17C2.5 18.2 3.5 19.6 4.8 19.5C6 19.5 6.5 18.7 8 18.7C9.5 18.7 10 19.5 11.3 19.5C12.6 19.5 13.5 18.2 14.3 17C15.2 15.7 15.6 14.4 15.6 14.3C15.6 14.3 12.5 13.1 12.5 9.6C12.5 6.5 15 5.1 15.1 5C13.8 3.1 11.8 4.3 11.4 4.3Z" fill="white"/>
                                   <text x="18" y="14" fill="white" fontSize="10" fontWeight="500" fontFamily="Arial">Pay</text>
                                 </svg>
                               </div>
-                              {/* Google Pay - Clear and readable */}
-                              <div className="flex items-center bg-white rounded px-1 py-0.5 border border-slate-300 h-4">
-                                <svg className="h-2.5 w-10" viewBox="0 0 65 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              {/* Google Pay */}
+                              <div className="flex items-center bg-white rounded px-0.5 sm:px-1 py-0.5 border border-slate-300 h-3 sm:h-4">
+                                <svg className="h-2 sm:h-2.5 w-6 sm:w-10" viewBox="0 0 65 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <text x="0" y="14" fontSize="11" fontWeight="500" fontFamily="Arial">
                                     <tspan fill="#4285F4">G</tspan>
-                                    <tspan fill="#EA4335">o</tspan>
-                                    <tspan fill="#FBBC05">o</tspan>
-                                    <tspan fill="#4285F4">g</tspan>
-                                    <tspan fill="#34A853">l</tspan>
-                                    <tspan fill="#EA4335">e</tspan>
                                   </text>
-                                  <text x="38" y="14" fill="#5F6368" fontSize="11" fontWeight="500" fontFamily="Arial">Pay</text>
+                                  <text x="8" y="14" fill="#5F6368" fontSize="11" fontWeight="500" fontFamily="Arial">Pay</text>
                                 </svg>
                               </div>
                               {/* Klarna */}
-                              <div className="flex items-center bg-[#FFB3C7] rounded px-1 py-0.5 h-4">
-                                <span className="text-black font-bold text-[7px]" style={{fontFamily: 'Arial'}}>Klarna</span>
+                              <div className="flex items-center bg-[#FFB3C7] rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
+                                <span className="text-black font-bold text-[5px] sm:text-[7px]" style={{fontFamily: 'Arial'}}>Klarna</span>
                               </div>
                             </div>
-                            <div className="flex items-center gap-2 mt-2">
-                              <Lock className="w-3 h-3 text-slate-400" />
-                              <div className="flex items-center bg-[#635BFF] rounded px-2 py-0.5">
-                                <span className="text-white font-bold text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
+                            <div className="flex items-center gap-1.5 sm:gap-2 mt-1 sm:mt-2">
+                              <Lock className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-slate-400" />
+                              <div className="flex items-center bg-[#635BFF] rounded px-1.5 sm:px-2 py-0.5">
+                                <span className="text-white font-bold text-xs sm:text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
                               </div>
                             </div>
                             <div data-nosnippet>
-                              <p className="text-[10px] text-slate-400 leading-tight mt-2">
+                              <p className="text-[8px] sm:text-[10px] text-slate-400 leading-tight mt-1.5 sm:mt-2">
                                 Veilige betaling via Stripe
                                 <br />
                                 Automatisch omgerekend naar uw lokale valuta
                               </p>
-                              <p className="text-[10px] text-slate-400 leading-tight mt-3">
+                              <p className="text-[8px] sm:text-[10px] text-slate-400 leading-tight mt-2 sm:mt-3">
                                 Na betaling ontvangt u binnen 24 uur de verhuistoken (EPP/Auth-code) op uw e-mailadres.
                                 <br />
                                 Controleer ook uw spamfolder.
                               </p>
-                              <a href="#domein-verhuizen" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
+                              <a href="#domein-verhuizen" className="text-[8px] sm:text-[10px] text-amber-400 hover:text-amber-300 underline mt-1.5 sm:mt-2">
                                 Hoe werkt verhuizen?
                               </a>
                             </div>
