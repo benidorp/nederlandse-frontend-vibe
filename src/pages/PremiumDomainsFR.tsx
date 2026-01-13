@@ -1752,57 +1752,57 @@ const PremiumDomainsFR = () => {
               </p>
             </div>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
               {premiumDomains.map((domain, index) => (
                 <Card key={index} className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 border-slate-700/50 hover:border-amber-500/50 transition-all duration-300 group relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                   
-                  <CardHeader className="pb-3 relative">
+                  <CardHeader className="p-3 sm:p-4 pb-2 sm:pb-3 relative">
                     <div className="flex items-start justify-between">
-                      <Badge variant="outline" className="text-xs border-slate-600 text-slate-400">
+                      <Badge variant="outline" className="text-[10px] sm:text-xs border-slate-600 text-slate-400">
                         {domain.category}
                       </Badge>
-                      <div className="flex items-center gap-1 bg-amber-500/10 px-2 py-1 rounded-full">
-                        <BarChart3 className="w-3 h-3 text-amber-400" />
-                        <span className="text-xs font-semibold text-amber-400">MOZ {domain.mozScore}</span>
+                      <div className="flex items-center gap-1 bg-amber-500/10 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full">
+                        <BarChart3 className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-amber-400" />
+                        <span className="text-[10px] sm:text-xs font-semibold text-amber-400">MOZ {domain.mozScore}</span>
                       </div>
                     </div>
-                    <CardTitle className="text-xl text-white mt-3 group-hover:text-amber-300 transition-colors">
+                    <CardTitle className="text-base sm:text-lg md:text-xl text-white mt-2 sm:mt-3 group-hover:text-amber-300 transition-colors break-all">
                       {domain.name}
                     </CardTitle>
-                    <CardDescription className="text-slate-400">
+                    <CardDescription className="text-xs sm:text-sm text-slate-400">
                       {domain.description}
                     </CardDescription>
                   </CardHeader>
                   
-                  <CardContent className="relative">
+                  <CardContent className="p-3 sm:p-4 pt-0 relative">
                     {/* Metrics Grid */}
-                    <div className="grid grid-cols-2 gap-2 mb-4">
-                      <div className="bg-slate-900/50 rounded-lg p-2 text-center">
-                        <div className="text-xs text-slate-500">Autorité Page</div>
-                        <div className="text-sm font-semibold text-white">{domain.pageAuthority}</div>
+                    <div className="grid grid-cols-2 gap-1.5 sm:gap-2 mb-3 sm:mb-4">
+                      <div className="bg-slate-900/50 rounded-lg p-1.5 sm:p-2 text-center">
+                        <div className="text-[9px] sm:text-xs text-slate-500">Autorité Page</div>
+                        <div className="text-xs sm:text-sm font-semibold text-white">{domain.pageAuthority}</div>
                       </div>
-                      <div className="bg-slate-900/50 rounded-lg p-2 text-center">
-                        <div className="text-xs text-slate-500">Domaines Liés</div>
-                        <div className="text-sm font-semibold text-white">{domain.linkingDomains}</div>
+                      <div className="bg-slate-900/50 rounded-lg p-1.5 sm:p-2 text-center">
+                        <div className="text-[9px] sm:text-xs text-slate-500">Domaines Liés</div>
+                        <div className="text-xs sm:text-sm font-semibold text-white">{domain.linkingDomains}</div>
                       </div>
-                      <div className="bg-slate-900/50 rounded-lg p-2 text-center">
-                        <div className="text-xs text-slate-500">Liens Entrants</div>
-                        <div className="text-sm font-semibold text-white">{domain.inboundLinks}</div>
+                      <div className="bg-slate-900/50 rounded-lg p-1.5 sm:p-2 text-center">
+                        <div className="text-[9px] sm:text-xs text-slate-500">Liens Entrants</div>
+                        <div className="text-xs sm:text-sm font-semibold text-white">{domain.inboundLinks}</div>
                       </div>
-                      <div className="bg-slate-900/50 rounded-lg p-2 text-center">
-                        <div className="text-xs text-slate-500">Liens Suivis</div>
-                        <div className="text-sm font-semibold text-white">{domain.followedLinks}</div>
+                      <div className="bg-slate-900/50 rounded-lg p-1.5 sm:p-2 text-center">
+                        <div className="text-[9px] sm:text-xs text-slate-500">Liens Suivis</div>
+                        <div className="text-xs sm:text-sm font-semibold text-white">{domain.followedLinks}</div>
                       </div>
                     </div>
                     
                     {/* Top Backlinks */}
                     {domain.topBacklinks && domain.topBacklinks.length > 0 && (
-                      <div className="text-xs mb-4">
+                      <div className="text-[10px] sm:text-xs mb-3 sm:mb-4">
                         <span className="text-slate-500 block mb-1">Top Backlinks :</span>
-                        <div className="flex flex-col gap-1">
+                        <div className="flex flex-col gap-0.5 sm:gap-1">
                           {domain.topBacklinks.slice(0, 5).map((link, i) => (
-                            <Badge key={i} variant="outline" className="text-[10px] border-amber-500/30 text-amber-400/80 bg-amber-500/5 w-fit">
+                            <Badge key={i} variant="outline" className="text-[8px] sm:text-[10px] border-amber-500/30 text-amber-400/80 bg-amber-500/5 w-fit">
                               {link}
                             </Badge>
                           ))}
@@ -1811,71 +1811,78 @@ const PremiumDomainsFR = () => {
                     )}
                     
                     {/* Price */}
-                    <div className="flex items-center justify-between mb-4 bg-slate-800/60 rounded-lg px-4 py-3">
-                      <span className="text-sm font-medium text-slate-300">Prix</span>
-                      <span className="text-2xl font-bold text-amber-400">{domain.price}</span>
+                    <div className="flex items-center justify-between mb-3 sm:mb-4 bg-slate-800/60 rounded-lg px-2 sm:px-4 py-2 sm:py-3">
+                      <span className="text-xs sm:text-sm font-medium text-slate-300">Prix</span>
+                      <span className="text-lg sm:text-2xl font-bold text-amber-400">{domain.price}</span>
                     </div>
                     
                     {/* Buy Button */}
-                    <div className="flex flex-col gap-3">
+                    <div className="flex flex-col gap-2 sm:gap-3">
                       {domain.stripePaymentLink ? (
                         <a 
                           href={domain.stripePaymentLink}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[#F59E0B] hover:bg-[#D97706] text-slate-950 font-bold rounded-md transition-all duration-200 shadow-md hover:shadow-lg text-lg"
+                          className="w-full inline-flex items-center justify-center gap-2 px-3 sm:px-6 py-2.5 sm:py-4 bg-[#F59E0B] hover:bg-[#D97706] text-slate-950 font-bold rounded-md transition-all duration-200 shadow-md hover:shadow-lg text-sm sm:text-lg"
                         >
                           Acheter Maintenant
                         </a>
                       ) : (
                         <div 
-                          className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[#F59E0B] text-slate-950 font-bold rounded-md shadow-md text-lg"
+                          className="w-full inline-flex items-center justify-center gap-2 px-3 sm:px-6 py-2.5 sm:py-4 bg-[#F59E0B] text-slate-950 font-bold rounded-md shadow-md text-sm sm:text-lg"
                         >
                           Acheter Maintenant
                         </div>
                       )}
-                      <div className="flex flex-col items-center gap-2 text-center" data-nosnippet>
-                        <div className="flex items-center justify-center gap-1 flex-wrap">
+                      <div className="flex flex-col items-center gap-1.5 sm:gap-2 text-center" data-nosnippet>
+                        <div className="flex items-center justify-center gap-0.5 sm:gap-1 flex-wrap">
                           {/* Visa */}
-                          <div className="flex items-center bg-[#1A1F71] rounded px-1 py-0.5 h-4">
-                            <span className="text-white font-bold text-[7px] italic tracking-tight" style={{fontFamily: 'Arial'}}>VISA</span>
+                          <div className="flex items-center bg-[#1A1F71] rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
+                            <span className="text-white font-bold text-[5px] sm:text-[7px] italic tracking-tight" style={{fontFamily: 'Arial'}}>VISA</span>
                           </div>
                           {/* Mastercard */}
-                          <div className="flex items-center bg-[#000000] rounded px-1 py-0.5 h-4">
-                            <svg className="h-2.5 w-4" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <div className="flex items-center bg-[#000000] rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
+                            <svg className="h-2 sm:h-2.5 w-3 sm:w-4" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <circle cx="11" cy="10" r="8" fill="#EB001B"/>
                               <circle cx="21" cy="10" r="8" fill="#F79E1B"/>
                               <path d="M16 3.5C18.5 5.5 20 7.5 20 10C20 12.5 18.5 14.5 16 16.5C13.5 14.5 12 12.5 12 10C12 7.5 13.5 5.5 16 3.5Z" fill="#FF5F00"/>
                             </svg>
                           </div>
                           {/* PayPal */}
-                          <div className="flex items-center bg-[#003087] rounded px-1 py-0.5 h-4">
-                            <span className="text-white font-bold text-[7px] italic" style={{fontFamily: 'Arial'}}>Pay</span>
-                            <span className="text-[#00ADEF] font-bold text-[7px] italic" style={{fontFamily: 'Arial'}}>Pal</span>
+                          <div className="flex items-center bg-[#003087] rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
+                            <span className="text-white font-bold text-[5px] sm:text-[7px] italic" style={{fontFamily: 'Arial'}}>Pay</span>
+                            <span className="text-[#00ADEF] font-bold text-[5px] sm:text-[7px] italic" style={{fontFamily: 'Arial'}}>Pal</span>
                           </div>
                           {/* Klarna */}
-                          <div className="flex items-center bg-[#FFB3C7] rounded px-1 py-0.5 h-4">
-                            <span className="text-black font-bold text-[7px]" style={{fontFamily: 'Arial'}}>Klarna</span>
+                          <div className="flex items-center bg-[#FFB3C7] rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
+                            <span className="text-black font-bold text-[5px] sm:text-[7px]" style={{fontFamily: 'Arial'}}>Klarna</span>
+                          </div>
+                          {/* GPay */}
+                          <div className="flex items-center bg-white rounded px-0.5 sm:px-1 py-0.5 border border-slate-300 h-3 sm:h-4">
+                            <span className="font-bold text-[5px] sm:text-[7px]" style={{fontFamily: 'Arial'}}>
+                              <span style={{color: '#4285F4'}}>G</span>
+                              <span style={{color: '#5F6368'}}>Pay</span>
+                            </span>
                           </div>
                         </div>
-                        <div className="flex items-center gap-2 mt-2">
-                          <Lock className="w-3 h-3 text-slate-400" />
-                          <div className="flex items-center bg-[#635BFF] rounded px-2 py-0.5">
-                            <span className="text-white font-bold text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
+                        <div className="flex items-center gap-1.5 sm:gap-2 mt-1 sm:mt-2">
+                          <Lock className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-slate-400" />
+                          <div className="flex items-center bg-[#635BFF] rounded px-1.5 sm:px-2 py-0.5">
+                            <span className="text-white font-bold text-xs sm:text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
                           </div>
                         </div>
                         <div data-nosnippet>
-                          <p className="text-[10px] text-slate-400 leading-tight mt-2">
+                          <p className="text-[8px] sm:text-[10px] text-slate-400 leading-tight mt-1 sm:mt-2">
                             Paiement sécurisé via Stripe
                             <br />
                             Conversion automatique dans votre devise locale
                           </p>
-                          <p className="text-[10px] text-slate-400 leading-tight mt-3">
+                          <p className="text-[8px] sm:text-[10px] text-slate-400 leading-tight mt-2 sm:mt-3">
                             Après paiement, vous recevrez le code de transfert (EPP/Auth-code) par e-mail sous 24 heures.
                             <br />
                             Vérifiez également votre dossier spam.
                           </p>
-                          <a href="#transfert-domaine" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
+                          <a href="#transfert-domaine" className="text-[8px] sm:text-[10px] text-amber-400 hover:text-amber-300 underline mt-1 sm:mt-2">
                             Comment fonctionne le transfert ?
                           </a>
                         </div>
