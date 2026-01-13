@@ -1402,14 +1402,14 @@ const PremiumDomainsAR = () => {
         
         {/* Header */}
         <header className="sticky top-0 z-50 backdrop-blur-xl bg-slate-950/80 border-b border-amber-500/20">
-          <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-            <RouterLink to="/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo" className="flex items-center gap-3">
-              <Crown className="h-8 w-8 text-amber-400" />
-              <span className="text-xl font-bold bg-gradient-to-r from-amber-200 to-amber-400 bg-clip-text text-transparent hover:from-amber-300 hover:to-amber-500 transition-all">
+          <div className="container mx-auto px-3 sm:px-4 py-3 sm:py-4 flex items-center justify-between">
+            <RouterLink to="/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo" className="flex items-center gap-2 sm:gap-3 min-w-0 flex-shrink-0">
+              <Crown className="h-6 w-6 sm:h-8 sm:w-8 text-amber-400 flex-shrink-0" />
+              <span className="text-base sm:text-xl font-bold bg-gradient-to-r from-amber-200 to-amber-400 bg-clip-text text-transparent hover:from-amber-300 hover:to-amber-500 transition-all truncate">
                 النطاقات المميزة
               </span>
             </RouterLink>
-            <nav className="hidden md:flex items-center gap-6">
+            <nav className="hidden md:flex items-center gap-4 lg:gap-6">
               <RouterLink to="/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo" className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium flex items-center gap-1">
                 <Home className="h-4 w-4" />
                 الرئيسية
@@ -1433,63 +1433,70 @@ const PremiumDomainsAR = () => {
                 اتصل بنا
               </Button>
             </nav>
+            {/* Mobile menu button */}
+            <Button 
+              onClick={() => scrollToSection("domains")}
+              className="md:hidden bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-semibold text-xs px-3 py-2"
+            >
+              النطاقات
+            </Button>
           </div>
         </header>
 
         {/* Hero Section */}
-        <section className="relative py-24 md:py-32 overflow-hidden">
+        <section className="relative py-12 sm:py-16 md:py-24 lg:py-32 overflow-hidden">
           {/* Background effects */}
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-900/20 via-transparent to-transparent" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-amber-500/5 rounded-full blur-3xl" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] sm:w-[600px] md:w-[800px] h-[400px] sm:h-[600px] md:h-[800px] bg-amber-500/5 rounded-full blur-3xl" />
           
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="container mx-auto px-3 sm:px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <Badge className="mb-6 bg-amber-500/10 text-amber-400 border-amber-500/30 px-4 py-2">
-                <Star className="w-4 h-4 ml-2 inline" />
+              <Badge className="mb-4 sm:mb-6 bg-amber-500/10 text-amber-400 border-amber-500/30 px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm">
+                <Star className="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2 inline" />
                 مجموعة حصرية من النطاقات المميزة
               </Badge>
               
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 sm:mb-6 leading-tight px-2">
                 <span className="bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 bg-clip-text text-transparent">
                   اشترِ أسماء نطاقات منتهية الصلاحية مميزة مع روابط خلفية وسلطة عالية وقيمة SEO
                 </span>
               </h1>
               
-              <p className="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-400 mb-6 sm:mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed px-2">
                 عزز حضورك عبر الإنترنت بأسماء نطاقات بنت سلطتها على مر السنين. 
                 مثالية لترتيب أسرع وروابط خلفية قوية وفوائد SEO مباشرة.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
                 <Button 
                   size="lg"
                   onClick={() => scrollToSection("domains")}
-                  className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-lg px-8 py-6 shadow-lg shadow-amber-500/25 transition-all hover:shadow-amber-500/40 hover:scale-105"
+                  className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 shadow-lg shadow-amber-500/25 transition-all hover:shadow-amber-500/40 hover:scale-105"
                 >
                   عرض النطاقات
-                  <ArrowLeft className="mr-2 h-5 w-5" />
+                  <ArrowLeft className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Button>
                 <Button 
                   size="lg"
                   variant="outline"
                   onClick={() => scrollToSection("why-premium")}
-                  className="bg-slate-800 border-slate-600 text-slate-200 hover:bg-slate-700 hover:text-white text-lg px-8 py-6"
+                  className="bg-slate-800 border-slate-600 text-slate-200 hover:bg-slate-700 hover:text-white text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6"
                 >
                   مزيد من المعلومات
                 </Button>
               </div>
               
               {/* Stats */}
-              <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="mt-8 sm:mt-12 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6 px-2">
                 {[
                   { label: "متوسط درجة MOZ", value: "+29" },
                   { label: "نطاقات مميزة", value: "+110" },
                   { label: "سنوات الخبرة", value: "+10" },
                   { label: "عملاء راضون", value: "+500" }
                 ].map((stat, index) => (
-                  <div key={index} className="p-4 rounded-xl bg-slate-800/50 border border-slate-700/50 backdrop-blur">
-                    <div className="text-2xl md:text-3xl font-bold text-amber-400">{stat.value}</div>
-                    <div className="text-sm text-slate-400 mt-1">{stat.label}</div>
+                  <div key={index} className="p-3 sm:p-4 rounded-xl bg-slate-800/50 border border-slate-700/50 backdrop-blur">
+                    <div className="text-xl sm:text-2xl md:text-3xl font-bold text-amber-400">{stat.value}</div>
+                    <div className="text-xs sm:text-sm text-slate-400 mt-1">{stat.label}</div>
                   </div>
                 ))}
               </div>
@@ -1498,92 +1505,92 @@ const PremiumDomainsAR = () => {
         </section>
 
         {/* Domain Listings */}
-        <section id="domains" className="py-20 relative">
+        <section id="domains" className="py-10 sm:py-16 md:py-20 relative">
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/50 to-transparent" />
           
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="text-center mb-12">
-              <Badge className="mb-4 bg-slate-800 text-amber-400 border-slate-700">
-                <Globe className="w-4 h-4 ml-2 inline" />
+          <div className="container mx-auto px-3 sm:px-4 relative z-10">
+            <div className="text-center mb-8 sm:mb-12">
+              <Badge className="mb-3 sm:mb-4 bg-slate-800 text-amber-400 border-slate-700 text-xs sm:text-sm">
+                <Globe className="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2 inline" />
                 النطاقات المتاحة
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 sm:mb-4 px-2">
                 أسماء نطاقات مميزة للبيع
               </h2>
-              <p className="text-slate-400 max-w-3xl mx-auto">
+              <p className="text-slate-400 max-w-3xl mx-auto text-sm sm:text-base px-2">
                 تم اختيار كل نطاق بعناية بناءً على سلطة MOZ وملف الروابط الخلفية وإمكانية SEO. 
                 هل تريد <strong className="text-white">شراء اسم نطاق منتهي الصلاحية</strong> أو تبحث عن <strong className="text-white">نطاقات منتهية موثوقة</strong>؟ اطلع على عروضنا أدناه.
               </p>
             </div>
             
             {/* SEO Intro Text */}
-            <div className="max-w-5xl mx-auto mb-8 bg-slate-800/30 border border-slate-700/50 rounded-2xl p-8">
-              <p className="text-slate-300 leading-relaxed mb-4">
+            <div className="max-w-5xl mx-auto mb-6 sm:mb-8 bg-slate-800/30 border border-slate-700/50 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8">
+              <p className="text-slate-300 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
                 <strong className="text-white">هل تبحث عن اسم نطاق بقيمة SEO حقيقية؟</strong> معنا يمكنك شراء <strong className="text-amber-400">أسماء نطاقات منتهية الصلاحية موثوقة مع روابط خلفية</strong> وسلطة عالية، تم فحصها بعناية للجودة والتاريخ. مع نطاق منتهي الصلاحية لا تبدأ من الصفر، بل تستفيد فوراً من الروابط الموجودة والثقة والتاريخ عبر الإنترنت.
               </p>
-              <p className="text-slate-300 leading-relaxed mb-4">
+              <p className="text-slate-300 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
                 بالإضافة إلى أسماء النطاقات منتهية الصلاحية، نقدم أيضاً <strong className="text-amber-400">أسماء نطاقات مميزة</strong>: أسماء قصيرة وقوية بقيمة علامة تجارية وإمكانات تجارية. سواء كنت تبدأ موقعاً إلكترونياً أو متجراً إلكترونياً أو مشروع SEO — فإن <strong className="text-white">اسم نطاق بسلطة</strong> يمنحك ميزة واضحة في جوجل.
               </p>
-              <p className="text-slate-300 leading-relaxed text-sm">
+              <p className="text-slate-300 leading-relaxed text-xs sm:text-sm">
                 <strong className="text-white">عمليات البحث الشائعة:</strong> شراء اسم نطاق منتهي الصلاحية مع روابط خلفية • نطاقات منتهية موثوقة • اسم نطاق منتهي بسلطة • شراء اسم نطاق مميز • اسم نطاق بقيمة SEO • اسم نطاق قديم بروابط • أفضل أسماء النطاقات للبيع
               </p>
             </div>
 
             {/* VAT Notice */}
-            <div className="max-w-5xl mx-auto mb-10 text-center">
-              <p className="text-sm text-slate-300 font-medium bg-slate-800/40 border border-slate-700/40 rounded-lg px-4 py-3 inline-block">
+            <div className="max-w-5xl mx-auto mb-6 sm:mb-10 text-center px-2">
+              <p className="text-xs sm:text-sm text-slate-300 font-medium bg-slate-800/40 border border-slate-700/40 rounded-lg px-3 sm:px-4 py-2 sm:py-3 inline-block">
                 <span className="text-amber-400 font-semibold">معلومات ضريبة القيمة المضافة:</span> الأسعار غير شاملة ضريبة القيمة المضافة للعملاء الخاصين داخل الاتحاد الأوروبي. يمكن للعملاء التجاريين داخل الاتحاد الأوروبي تطبيق الرسوم العكسية. للعملاء خارج الاتحاد الأوروبي، لا يتم فرض ضريبة القيمة المضافة.
               </p>
             </div>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6">
               {premiumDomains.map((domain, index) => (
                 <Card 
                   key={index} 
                   className="h-full flex flex-col bg-gradient-to-br from-slate-800/80 to-slate-900/80 border-slate-700/50 backdrop-blur hover:border-amber-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10 group"
                 >
-                  <CardHeader className="pb-3">
-                    <div className="flex items-start justify-between">
-                      <Badge variant="outline" className="text-xs border-slate-600 text-slate-400">
+                  <CardHeader className="pb-2 sm:pb-3 p-3 sm:p-4 md:p-6">
+                    <div className="flex items-start justify-between gap-2">
+                      <Badge variant="outline" className="text-[10px] sm:text-xs border-slate-600 text-slate-400 flex-shrink-0">
                         {domain.category}
                       </Badge>
-                      <div className="flex items-center gap-1 bg-amber-500/10 px-2 py-1 rounded-full">
-                        <BarChart3 className="w-3 h-3 text-amber-400" />
-                        <span className="text-xs font-semibold text-amber-400">MOZ {domain.mozScore}</span>
+                      <div className="flex items-center gap-1 bg-amber-500/10 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full flex-shrink-0">
+                        <BarChart3 className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-amber-400" />
+                        <span className="text-[10px] sm:text-xs font-semibold text-amber-400">MOZ {domain.mozScore}</span>
                       </div>
                     </div>
-                    <CardTitle className="text-xl text-white group-hover:text-amber-400 transition-colors mt-3" dir="ltr">
+                    <CardTitle className="text-base sm:text-lg md:text-xl text-white group-hover:text-amber-400 transition-colors mt-2 sm:mt-3 break-all" dir="ltr">
                       {domain.name}
                     </CardTitle>
-                    <CardDescription className="text-slate-400">
+                    <CardDescription className="text-slate-400 text-xs sm:text-sm">
                       {domain.description}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent className="flex flex-col flex-grow">
-                    <div className="space-y-3 mb-4">
-                      <div className="flex items-center justify-between text-sm">
-                        <div className="flex items-center gap-2 text-slate-400">
-                          <Link className="w-4 h-4" />
+                  <CardContent className="flex flex-col flex-grow p-3 sm:p-4 md:p-6 pt-0">
+                    <div className="space-y-2 sm:space-y-3 mb-3 sm:mb-4">
+                      <div className="flex items-center justify-between text-xs sm:text-sm">
+                        <div className="flex items-center gap-1.5 sm:gap-2 text-slate-400">
+                          <Link className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
                           <span>الروابط الخلفية: {domain.backlinks}</span>
                         </div>
                       </div>
                       
                       {/* Extra stats for domains with detailed info */}
                       {domain.pageAuthority && (
-                        <div className="grid grid-cols-2 gap-2 text-xs">
-                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                        <div className="grid grid-cols-2 gap-1.5 sm:gap-2 text-[10px] sm:text-xs">
+                          <div className="bg-slate-800/50 rounded px-1.5 sm:px-2 py-0.5 sm:py-1">
                             <span className="text-slate-500">سلطة الصفحة:</span>
                             <span className="text-white mr-1 font-medium">{domain.pageAuthority}</span>
                           </div>
-                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                          <div className="bg-slate-800/50 rounded px-1.5 sm:px-2 py-0.5 sm:py-1">
                             <span className="text-slate-500">نطاقات الربط:</span>
                             <span className="text-white mr-1 font-medium">{domain.linkingDomains}</span>
                           </div>
-                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                          <div className="bg-slate-800/50 rounded px-1.5 sm:px-2 py-0.5 sm:py-1">
                             <span className="text-slate-500">الروابط الواردة:</span>
                             <span className="text-white mr-1 font-medium">{domain.inboundLinks}</span>
                           </div>
-                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                          <div className="bg-slate-800/50 rounded px-1.5 sm:px-2 py-0.5 sm:py-1">
                             <span className="text-slate-500">الروابط المتبوعة:</span>
                             <span className="text-white mr-1 font-medium">{domain.followedLinks}</span>
                           </div>
@@ -1592,11 +1599,11 @@ const PremiumDomainsAR = () => {
                       
                       {/* Top backlinks */}
                       {domain.topBacklinks && domain.topBacklinks.length > 0 && (
-                        <div className="text-xs">
+                        <div className="text-[10px] sm:text-xs">
                           <span className="text-slate-500 block mb-1">أفضل الروابط الخلفية:</span>
-                          <div className="flex flex-wrap gap-1">
+                          <div className="flex flex-wrap gap-0.5 sm:gap-1">
                             {domain.topBacklinks.slice(0, 5).map((link, i) => (
-                              <Badge key={i} variant="outline" className="text-[10px] border-amber-500/30 text-amber-400/80 bg-amber-500/5" dir="ltr">
+                              <Badge key={i} variant="outline" className="text-[8px] sm:text-[10px] border-amber-500/30 text-amber-400/80 bg-amber-500/5 px-1 sm:px-1.5 py-0" dir="ltr">
                                 {link}
                               </Badge>
                             ))}
@@ -1606,11 +1613,11 @@ const PremiumDomainsAR = () => {
                       
                       {/* Use Cases */}
                       {domain.useCases && domain.useCases.length > 0 && (
-                        <div className="text-xs">
+                        <div className="text-[10px] sm:text-xs">
                           <span className="text-slate-500 block mb-1">مناسب لـ:</span>
-                          <div className="flex flex-wrap gap-1">
+                          <div className="flex flex-wrap gap-0.5 sm:gap-1">
                             {domain.useCases.map((useCase, i) => (
-                              <Badge key={i} variant="outline" className="text-[10px] border-emerald-500/30 text-emerald-400/80 bg-emerald-500/5">
+                              <Badge key={i} variant="outline" className="text-[8px] sm:text-[10px] border-emerald-500/30 text-emerald-400/80 bg-emerald-500/5 px-1 sm:px-1.5 py-0">
                                 {useCase}
                               </Badge>
                             ))}
@@ -1620,41 +1627,41 @@ const PremiumDomainsAR = () => {
                     </div>
                     
                     {/* Price Display - Compact at bottom */}
-                    <div className="mt-auto pt-4 border-t border-slate-700/50">
-                      <div className="flex items-center justify-between mb-3 bg-slate-800/60 rounded-lg px-3 py-2">
-                        <span className="text-sm font-medium text-slate-300">السعر</span>
-                        <span className="text-lg font-bold text-amber-400" dir="ltr">{domain.price}</span>
+                    <div className="mt-auto pt-3 sm:pt-4 border-t border-slate-700/50">
+                      <div className="flex items-center justify-between mb-2 sm:mb-3 bg-slate-800/60 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2">
+                        <span className="text-xs sm:text-sm font-medium text-slate-300">السعر</span>
+                        <span className="text-base sm:text-lg font-bold text-amber-400" dir="ltr">{domain.price}</span>
                       </div>
                       
                       {!domain.stripePaymentLink ? (
-                        <div className="flex flex-col gap-3">
+                        <div className="flex flex-col gap-2 sm:gap-3">
                           <div 
-                            className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[#F59E0B] text-slate-950 font-bold rounded-md shadow-md text-lg"
+                            className="w-full inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-3 sm:py-4 bg-[#F59E0B] text-slate-950 font-bold rounded-md shadow-md text-sm sm:text-base md:text-lg"
                           >
                             اشترِ الآن
                           </div>
-                          <div className="flex flex-col items-center gap-2 text-center" data-nosnippet>
-                            <div className="flex items-center justify-center gap-1 flex-wrap">
+                          <div className="flex flex-col items-center gap-1.5 sm:gap-2 text-center" data-nosnippet>
+                            <div className="flex items-center justify-center gap-0.5 sm:gap-1 flex-wrap">
                               {/* Visa */}
-                              <div className="flex items-center bg-[#1A1F71] rounded px-1 py-0.5 h-4">
-                                <span className="text-white font-bold text-[7px] italic tracking-tight" style={{fontFamily: 'Arial'}}>VISA</span>
+                              <div className="flex items-center bg-[#1A1F71] rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
+                                <span className="text-white font-bold text-[5px] sm:text-[7px] italic tracking-tight" style={{fontFamily: 'Arial'}}>VISA</span>
                               </div>
                               {/* Mastercard */}
-                              <div className="flex items-center bg-[#000000] rounded px-1 py-0.5 h-4">
-                                <svg className="h-2.5 w-4" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <div className="flex items-center bg-[#000000] rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
+                                <svg className="h-2 sm:h-2.5 w-3 sm:w-4" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <circle cx="11" cy="10" r="8" fill="#EB001B"/>
                                   <circle cx="21" cy="10" r="8" fill="#F79E1B"/>
                                   <path d="M16 3.5C18.5 5.5 20 7.5 20 10C20 12.5 18.5 14.5 16 16.5C13.5 14.5 12 12.5 12 10C12 7.5 13.5 5.5 16 3.5Z" fill="#FF5F00"/>
                                 </svg>
                               </div>
                               {/* PayPal */}
-                              <div className="flex items-center bg-[#003087] rounded px-1 py-0.5 h-4">
-                                <span className="text-white font-bold text-[7px] italic" style={{fontFamily: 'Arial'}}>Pay</span>
-                                <span className="text-[#00ADEF] font-bold text-[7px] italic" style={{fontFamily: 'Arial'}}>Pal</span>
+                              <div className="flex items-center bg-[#003087] rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
+                                <span className="text-white font-bold text-[5px] sm:text-[7px] italic" style={{fontFamily: 'Arial'}}>Pay</span>
+                                <span className="text-[#00ADEF] font-bold text-[5px] sm:text-[7px] italic" style={{fontFamily: 'Arial'}}>Pal</span>
                               </div>
                               {/* Amazon Pay */}
-                              <div className="flex items-center bg-[#232F3E] rounded px-1 py-0.5 h-4">
-                                <svg className="h-2.5 w-8" viewBox="0 0 60 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <div className="flex items-center bg-[#232F3E] rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
+                                <svg className="h-2 sm:h-2.5 w-6 sm:w-8" viewBox="0 0 60 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <text x="2" y="13" fill="#FF9900" fontSize="10" fontWeight="bold" fontFamily="Arial">amazon</text>
                                   <path d="M2 16C8 18 16 19 24 18C28 17.5 32 16.5 35 15" stroke="#FF9900" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
                                   <path d="M34 13L36 15L34 17" stroke="#FF9900" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
@@ -1662,16 +1669,16 @@ const PremiumDomainsAR = () => {
                                 </svg>
                               </div>
                               {/* Apple Pay */}
-                              <div className="flex items-center bg-black rounded px-1 py-0.5 h-4">
-                                <svg className="h-2.5 w-6" viewBox="0 0 50 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <div className="flex items-center bg-black rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
+                                <svg className="h-2 sm:h-2.5 w-5 sm:w-6" viewBox="0 0 50 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <path d="M8.5 4C9.5 4 10.3 3.5 10.8 2.7C11.3 2 11.5 1 11.4 0C10.5 0.1 9.4 0.6 8.8 1.4C8.3 2 7.9 3 8 4C9 4 9.5 4 8.5 4Z" fill="white"/>
                                   <path d="M11.4 4.3C9.8 4.2 8.4 5.2 7.6 5.2C6.8 5.2 5.6 4.3 4.3 4.4C2.6 4.4 1 5.3 0.2 6.9C-1.5 10 0.1 14.5 1.7 17C2.5 18.2 3.5 19.6 4.8 19.5C6 19.5 6.5 18.7 8 18.7C9.5 18.7 10 19.5 11.3 19.5C12.6 19.5 13.5 18.2 14.3 17C15.2 15.7 15.6 14.4 15.6 14.3C15.6 14.3 12.5 13.1 12.5 9.6C12.5 6.5 15 5.1 15.1 5C13.8 3.1 11.8 4.3 11.4 4.3Z" fill="white"/>
                                   <text x="18" y="14" fill="white" fontSize="10" fontWeight="500" fontFamily="Arial">Pay</text>
                                 </svg>
                               </div>
                               {/* Google Pay */}
-                              <div className="flex items-center bg-white rounded px-1 py-0.5 border border-slate-300 h-4">
-                                <svg className="h-2.5 w-10" viewBox="0 0 65 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <div className="flex items-center bg-white rounded px-0.5 sm:px-1 py-0.5 border border-slate-300 h-3 sm:h-4">
+                                <svg className="h-2 sm:h-2.5 w-8 sm:w-10" viewBox="0 0 65 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <text x="0" y="14" fontSize="11" fontWeight="500" fontFamily="Arial">
                                     <tspan fill="#4285F4">G</tspan>
                                     <tspan fill="#EA4335">o</tspan>
@@ -1684,119 +1691,72 @@ const PremiumDomainsAR = () => {
                                 </svg>
                               </div>
                               {/* Klarna */}
-                              <div className="flex items-center bg-[#FFB3C7] rounded px-1 py-0.5 h-4">
-                                <span className="text-black font-bold text-[7px]" style={{fontFamily: 'Arial'}}>Klarna</span>
+                              <div className="flex items-center bg-[#FFB3C7] rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
+                                <span className="text-black font-bold text-[5px] sm:text-[7px]" style={{fontFamily: 'Arial'}}>Klarna</span>
                               </div>
                             </div>
-                            <div className="flex items-center gap-2 mt-2">
-                              <Lock className="w-3 h-3 text-slate-400" />
-                              <div className="flex items-center bg-[#635BFF] rounded px-2 py-0.5">
-                                <span className="text-white font-bold text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
+                            <div className="flex items-center gap-1.5 sm:gap-2 mt-1 sm:mt-2">
+                              <Lock className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-slate-400" />
+                              <div className="flex items-center bg-[#635BFF] rounded px-1.5 sm:px-2 py-0.5">
+                                <span className="text-white font-bold text-xs sm:text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
                               </div>
                             </div>
                             <div data-nosnippet>
-                              <p className="text-[10px] text-slate-400 leading-tight mt-2">
+                              <p className="text-[8px] sm:text-[10px] text-slate-400 leading-tight mt-1.5 sm:mt-2">
                                 دفع آمن عبر Stripe
                                 <br />
                                 يتم التحويل تلقائياً إلى عملتك المحلية
                               </p>
-                              <p className="text-[10px] text-slate-400 leading-tight mt-3">
+                              <p className="text-[8px] sm:text-[10px] text-slate-400 leading-tight mt-2 sm:mt-3">
                                 بعد الدفع ستتلقى رمز النقل (EPP/Auth code) على بريدك الإلكتروني خلال 24 ساعة.
                                 <br />
                                 تحقق أيضاً من مجلد البريد العشوائي.
                               </p>
-                              <a href="#domain-transfer" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
+                              <a href="#domain-transfer" className="text-[8px] sm:text-[10px] text-amber-400 hover:text-amber-300 underline mt-1.5 sm:mt-2">
                                 كيف يعمل النقل؟
                               </a>
                             </div>
                           </div>
                         </div>
                       ) : (
-                        <div className="flex flex-col gap-3">
+                        <div className="flex flex-col gap-2 sm:gap-3">
                           <a 
                             href={domain.stripePaymentLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[#F59E0B] hover:bg-[#D97706] text-slate-950 font-bold rounded-md shadow-md transition-all duration-200 hover:shadow-lg text-lg"
+                            className="w-full inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-3 sm:py-4 bg-[#F59E0B] hover:bg-[#D97706] text-slate-950 font-bold rounded-md shadow-md transition-all duration-200 hover:shadow-lg text-sm sm:text-base md:text-lg"
                           >
                             اشترِ الآن
-                            <ExternalLink className="w-4 h-4" />
+                            <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4" />
                           </a>
-                          <div className="flex flex-col items-center gap-2 text-center" data-nosnippet>
-                            <div className="flex items-center justify-center gap-1 flex-wrap">
-                              {/* Visa */}
-                              <div className="flex items-center bg-[#1A1F71] rounded px-1 py-0.5 h-4">
-                                <span className="text-white font-bold text-[7px] italic tracking-tight" style={{fontFamily: 'Arial'}}>VISA</span>
+                          <div className="flex flex-col items-center gap-1.5 sm:gap-2 text-center" data-nosnippet>
+                            <div className="flex items-center justify-center gap-0.5 sm:gap-1 flex-wrap">
+                              <div className="flex items-center bg-[#1A1F71] rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
+                                <span className="text-white font-bold text-[5px] sm:text-[7px] italic tracking-tight" style={{fontFamily: 'Arial'}}>VISA</span>
                               </div>
-                              {/* Mastercard */}
-                              <div className="flex items-center bg-[#000000] rounded px-1 py-0.5 h-4">
-                                <svg className="h-2.5 w-4" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <circle cx="11" cy="10" r="8" fill="#EB001B"/>
-                                  <circle cx="21" cy="10" r="8" fill="#F79E1B"/>
+                              <div className="flex items-center bg-[#000000] rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
+                                <svg className="h-2 sm:h-2.5 w-3 sm:w-4" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <circle cx="11" cy="10" r="8" fill="#EB001B"/><circle cx="21" cy="10" r="8" fill="#F79E1B"/>
                                   <path d="M16 3.5C18.5 5.5 20 7.5 20 10C20 12.5 18.5 14.5 16 16.5C13.5 14.5 12 12.5 12 10C12 7.5 13.5 5.5 16 3.5Z" fill="#FF5F00"/>
                                 </svg>
                               </div>
-                              {/* PayPal */}
-                              <div className="flex items-center bg-[#003087] rounded px-1 py-0.5 h-4">
-                                <span className="text-white font-bold text-[7px] italic" style={{fontFamily: 'Arial'}}>Pay</span>
-                                <span className="text-[#00ADEF] font-bold text-[7px] italic" style={{fontFamily: 'Arial'}}>Pal</span>
+                              <div className="flex items-center bg-[#003087] rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
+                                <span className="text-white font-bold text-[5px] sm:text-[7px] italic" style={{fontFamily: 'Arial'}}>Pay</span>
+                                <span className="text-[#00ADEF] font-bold text-[5px] sm:text-[7px] italic" style={{fontFamily: 'Arial'}}>Pal</span>
                               </div>
-                              {/* Amazon Pay */}
-                              <div className="flex items-center bg-[#232F3E] rounded px-1 py-0.5 h-4">
-                                <svg className="h-2.5 w-8" viewBox="0 0 60 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <text x="2" y="13" fill="#FF9900" fontSize="10" fontWeight="bold" fontFamily="Arial">amazon</text>
-                                  <path d="M2 16C8 18 16 19 24 18C28 17.5 32 16.5 35 15" stroke="#FF9900" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-                                  <path d="M34 13L36 15L34 17" stroke="#FF9900" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
-                                  <text x="38" y="13" fill="white" fontSize="8" fontFamily="Arial">pay</text>
-                                </svg>
-                              </div>
-                              {/* Apple Pay */}
-                              <div className="flex items-center bg-black rounded px-1 py-0.5 h-4">
-                                <svg className="h-2.5 w-6" viewBox="0 0 50 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M8.5 4C9.5 4 10.3 3.5 10.8 2.7C11.3 2 11.5 1 11.4 0C10.5 0.1 9.4 0.6 8.8 1.4C8.3 2 7.9 3 8 4C9 4 9.5 4 8.5 4Z" fill="white"/>
-                                  <path d="M11.4 4.3C9.8 4.2 8.4 5.2 7.6 5.2C6.8 5.2 5.6 4.3 4.3 4.4C2.6 4.4 1 5.3 0.2 6.9C-1.5 10 0.1 14.5 1.7 17C2.5 18.2 3.5 19.6 4.8 19.5C6 19.5 6.5 18.7 8 18.7C9.5 18.7 10 19.5 11.3 19.5C12.6 19.5 13.5 18.2 14.3 17C15.2 15.7 15.6 14.4 15.6 14.3C15.6 14.3 12.5 13.1 12.5 9.6C12.5 6.5 15 5.1 15.1 5C13.8 3.1 11.8 4.3 11.4 4.3Z" fill="white"/>
-                                  <text x="18" y="14" fill="white" fontSize="10" fontWeight="500" fontFamily="Arial">Pay</text>
-                                </svg>
-                              </div>
-                              {/* Google Pay */}
-                              <div className="flex items-center bg-white rounded px-1 py-0.5 border border-slate-300 h-4">
-                                <svg className="h-2.5 w-10" viewBox="0 0 65 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <text x="0" y="14" fontSize="11" fontWeight="500" fontFamily="Arial">
-                                    <tspan fill="#4285F4">G</tspan>
-                                    <tspan fill="#EA4335">o</tspan>
-                                    <tspan fill="#FBBC05">o</tspan>
-                                    <tspan fill="#4285F4">g</tspan>
-                                    <tspan fill="#34A853">l</tspan>
-                                    <tspan fill="#EA4335">e</tspan>
-                                  </text>
-                                  <text x="38" y="14" fill="#5F6368" fontSize="11" fontWeight="500" fontFamily="Arial">Pay</text>
-                                </svg>
-                              </div>
-                              {/* Klarna */}
-                              <div className="flex items-center bg-[#FFB3C7] rounded px-1 py-0.5 h-4">
-                                <span className="text-black font-bold text-[7px]" style={{fontFamily: 'Arial'}}>Klarna</span>
+                              <div className="flex items-center bg-[#FFB3C7] rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
+                                <span className="text-black font-bold text-[5px] sm:text-[7px]" style={{fontFamily: 'Arial'}}>Klarna</span>
                               </div>
                             </div>
-                            <div className="flex items-center gap-2 mt-2">
-                              <Lock className="w-3 h-3 text-slate-400" />
-                              <div className="flex items-center bg-[#635BFF] rounded px-2 py-0.5">
-                                <span className="text-white font-bold text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
+                            <div className="flex items-center gap-1.5 sm:gap-2 mt-1 sm:mt-2">
+                              <Lock className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-slate-400" />
+                              <div className="flex items-center bg-[#635BFF] rounded px-1.5 sm:px-2 py-0.5">
+                                <span className="text-white font-bold text-xs sm:text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
                               </div>
                             </div>
                             <div data-nosnippet>
-                              <p className="text-[10px] text-slate-400 leading-tight mt-2">
-                                دفع آمن عبر Stripe
-                                <br />
-                                يتم التحويل تلقائياً إلى عملتك المحلية
-                              </p>
-                              <p className="text-[10px] text-slate-400 leading-tight mt-3">
-                                بعد الدفع ستتلقى رمز النقل (EPP/Auth code) على بريدك الإلكتروني خلال 24 ساعة.
-                                <br />
-                                تحقق أيضاً من مجلد البريد العشوائي.
-                              </p>
-                              <a href="#domain-transfer" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
-                                كيف يعمل النقل؟
-                              </a>
+                              <p className="text-[8px] sm:text-[10px] text-slate-400 leading-tight mt-1.5 sm:mt-2">دفع آمن عبر Stripe</p>
+                              <a href="#domain-transfer" className="text-[8px] sm:text-[10px] text-amber-400 hover:text-amber-300 underline mt-1.5 sm:mt-2">كيف يعمل النقل؟</a>
                             </div>
                           </div>
                         </div>
@@ -1810,22 +1770,22 @@ const PremiumDomainsAR = () => {
         </section>
 
         {/* Why Premium Domains Section */}
-        <section id="why-premium" className="py-20 bg-gradient-to-b from-slate-900 to-slate-950">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <Badge className="mb-4 bg-slate-800 text-amber-400 border-slate-700">
-                <Award className="w-4 h-4 ml-2 inline" />
+        <section id="why-premium" className="py-10 sm:py-16 md:py-20 bg-gradient-to-b from-slate-900 to-slate-950">
+          <div className="container mx-auto px-3 sm:px-4">
+            <div className="text-center mb-8 sm:mb-12 md:mb-16">
+              <Badge className="mb-3 sm:mb-4 bg-slate-800 text-amber-400 border-slate-700 text-xs sm:text-sm">
+                <Award className="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2 inline" />
                 لماذا النطاقات المميزة
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 sm:mb-4 px-2">
                 مزايا النطاق المميز
               </h2>
-              <p className="text-slate-400 max-w-2xl mx-auto">
+              <p className="text-slate-400 max-w-2xl mx-auto text-sm sm:text-base px-2">
                 اكتشف لماذا يختار رواد الأعمال والشركات الأذكياء النطاقات المميزة.
               </p>
             </div>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-6xl mx-auto">
               {[
                 {
                   icon: TrendingUp,
