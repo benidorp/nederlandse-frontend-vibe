@@ -2470,6 +2470,27 @@ const PremiumDomainsPL = () => {
                     Odpowiadamy na wiadomości w ciągu 24 godzin.
                   </p>
                 </div>
+
+                {/* NordVPN Recommendation Section */}
+                <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-lg p-4 mt-6">
+                  <div className="text-center">
+                    <h4 className="font-bold text-white text-lg mb-2">🔒 Chroń Swoją Prywatność z NordVPN</h4>
+                    <p className="text-white/90 text-sm mb-3">
+                      Czym jest VPN? <a href="https://www.tkqlhce.com/click-100643838-15295919" target="_blank" rel="noopener noreferrer" className="underline text-yellow-300 hover:text-yellow-200">Wirtualna Sieć Prywatna (VPN)</a> szyfruje Twoje połączenie internetowe i ukrywa Twój adres IP, chroniąc Twoje dane osobowe przed hakerami, śledzeniem i inwigilacją.
+                    </p>
+                    <p className="text-white/80 text-xs mb-4">
+                      Dla właścicieli domen premium ochrona tożsamości online jest niezbędna. NordVPN pozwala przeglądać anonimowo, uzyskiwać dostęp do globalnych treści i zabezpieczać transakcje biznesowe.
+                    </p>
+                    <a 
+                      href="https://www.tkqlhce.com/click-100643838-15295919" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-2 px-6 rounded-full transition-colors text-sm"
+                    >
+                      Pobierz NordVPN Teraz →
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
