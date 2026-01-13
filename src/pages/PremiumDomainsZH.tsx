@@ -1557,33 +1557,33 @@ const PremiumDomainsZH = () => {
         
         {/* Header */}
         <header className="sticky top-0 z-50 backdrop-blur-xl bg-slate-950/80 border-b border-amber-500/20">
-          <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-            <RouterLink to="/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" className="flex items-center gap-3">
-              <Crown className="h-8 w-8 text-amber-400" />
-              <span className="text-xl font-bold bg-gradient-to-r from-amber-200 to-amber-400 bg-clip-text text-transparent hover:from-amber-300 hover:to-amber-500 transition-all">
+          <div className="container mx-auto px-3 sm:px-4 py-3 sm:py-4 flex items-center justify-between">
+            <RouterLink to="/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" className="flex items-center gap-2 sm:gap-3 min-w-0 flex-shrink-0">
+              <Crown className="h-6 w-6 sm:h-8 sm:w-8 text-amber-400 flex-shrink-0" />
+              <span className="text-base sm:text-xl font-bold bg-gradient-to-r from-amber-200 to-amber-400 bg-clip-text text-transparent hover:from-amber-300 hover:to-amber-500 transition-all truncate">
                 优质域名
               </span>
             </RouterLink>
-            <nav className="hidden md:flex items-center gap-6">
-              <button onClick={() => scrollToSection("domains")} className="text-slate-300 hover:text-amber-400 transition-colors">
+            <nav className="hidden md:flex items-center gap-4 lg:gap-6">
+              <button onClick={() => scrollToSection("domains")} className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium">
                 域名
               </button>
-              <button onClick={() => scrollToSection("why-premium")} className="text-slate-300 hover:text-amber-400 transition-colors">
+              <button onClick={() => scrollToSection("why-premium")} className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium">
                 优势
               </button>
-              <button onClick={() => scrollToSection("moz-explanation")} className="text-slate-300 hover:text-amber-400 transition-colors">
+              <button onClick={() => scrollToSection("moz-explanation")} className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium">
                 关于MOZ DA
               </button>
-              <button onClick={() => scrollToSection("faq")} className="text-slate-300 hover:text-amber-400 transition-colors">
+              <button onClick={() => scrollToSection("faq")} className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium">
                 常见问题
               </button>
-              <button onClick={() => scrollToSection("contact")} className="text-slate-300 hover:text-amber-400 transition-colors">
+              <button onClick={() => scrollToSection("contact")} className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium">
                 联系我们
               </button>
             </nav>
             <Button 
               onClick={() => scrollToSection("domains")}
-              className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-semibold"
+              className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-semibold text-xs sm:text-sm px-3 sm:px-4 py-2"
             >
               查看域名
             </Button>
@@ -1591,67 +1591,67 @@ const PremiumDomainsZH = () => {
         </header>
 
         {/* Home Link */}
-        <div className="container mx-auto px-4 py-3">
+        <div className="container mx-auto px-3 sm:px-4 py-2 sm:py-3">
           <RouterLink 
             to="/" 
-            className="inline-flex items-center gap-2 text-slate-400 hover:text-amber-400 transition-colors text-sm"
+            className="inline-flex items-center gap-2 text-slate-400 hover:text-amber-400 transition-colors text-xs sm:text-sm"
           >
-            <Home className="w-4 h-4" />
+            <Home className="w-3 h-3 sm:w-4 sm:h-4" />
             <span>← 返回首页</span>
           </RouterLink>
         </div>
 
         {/* Hero Section */}
-        <section className="py-20 relative overflow-hidden">
+        <section className="py-10 sm:py-16 md:py-20 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 via-transparent to-slate-900/50" />
-          <div className="absolute top-20 left-10 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-amber-600/5 rounded-full blur-3xl" />
+          <div className="absolute top-20 left-10 w-48 sm:w-72 h-48 sm:h-72 bg-amber-500/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-20 right-10 w-64 sm:w-96 h-64 sm:h-96 bg-amber-600/5 rounded-full blur-3xl" />
           
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="container mx-auto px-3 sm:px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <Badge className="mb-6 bg-amber-500/10 text-amber-400 border-amber-500/30 text-sm px-4 py-1.5">
-                <Crown className="w-4 h-4 mr-2 inline" />
+              <Badge className="mb-4 sm:mb-6 bg-amber-500/10 text-amber-400 border-amber-500/30 text-xs sm:text-sm px-3 sm:px-4 py-1 sm:py-1.5">
+                <Crown className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2 inline" />
                 可靠的高权重过期域名
               </Badge>
               
-              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+              <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight px-2">
                 购买<span className="bg-gradient-to-r from-amber-400 to-amber-500 bg-clip-text text-transparent">优质过期域名</span>，获得SEO优势
               </h1>
               
-              <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-300 mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
                 投资经过验证的域名权威。我们精选的过期域名拥有<strong className="text-white">高权重外链</strong>和<strong className="text-white">强大的SEO价值</strong>。
               </p>
               
-              <div className="flex flex-wrap gap-4 justify-center mb-8">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-6 sm:mb-8 px-4">
                 <Button 
                   size="lg"
                   onClick={() => scrollToSection("domains")}
-                  className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-lg px-8 py-6 shadow-lg shadow-amber-500/25 transition-all hover:shadow-amber-500/40"
+                  className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 shadow-lg shadow-amber-500/25 transition-all hover:shadow-amber-500/40"
                 >
                   查看可用域名
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Button>
                 <Button 
                   variant="outline" 
                   size="lg"
                   onClick={() => scrollToSection("why-premium")}
-                  className="bg-slate-800 border-slate-600 text-slate-200 hover:bg-slate-700 hover:text-white text-lg px-8 py-6"
+                  className="bg-slate-800 border-slate-600 text-slate-200 hover:bg-slate-700 hover:text-white text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6"
                 >
                   了解更多
                 </Button>
               </div>
               
               {/* Stats */}
-              <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="mt-8 sm:mt-12 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6 px-2">
                 {[
                   { label: "平均MOZ评分", value: "29+" },
                   { label: "优质域名", value: "110+" },
                   { label: "经验年数", value: "10+" },
                   { label: "满意客户", value: "500+" }
                 ].map((stat, index) => (
-                  <div key={index} className="p-4 rounded-xl bg-slate-800/50 border border-slate-700/50 backdrop-blur">
-                    <div className="text-2xl md:text-3xl font-bold text-amber-400">{stat.value}</div>
-                    <div className="text-sm text-slate-400 mt-1">{stat.label}</div>
+                  <div key={index} className="p-3 sm:p-4 rounded-xl bg-slate-800/50 border border-slate-700/50 backdrop-blur">
+                    <div className="text-xl sm:text-2xl md:text-3xl font-bold text-amber-400">{stat.value}</div>
+                    <div className="text-xs sm:text-sm text-slate-400 mt-1">{stat.label}</div>
                   </div>
                 ))}
               </div>
@@ -1660,91 +1660,91 @@ const PremiumDomainsZH = () => {
         </section>
 
         {/* Domain Listings */}
-        <section id="domains" className="py-20 relative">
+        <section id="domains" className="py-10 sm:py-16 md:py-20 relative">
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/50 to-transparent" />
           
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="text-center mb-12">
-              <Badge className="mb-4 bg-slate-800 text-amber-400 border-slate-700">
-                <Globe className="w-4 h-4 mr-2 inline" />
+          <div className="container mx-auto px-3 sm:px-4 relative z-10">
+            <div className="text-center mb-8 sm:mb-12">
+              <Badge className="mb-3 sm:mb-4 bg-slate-800 text-amber-400 border-slate-700 text-xs sm:text-sm">
+                <Globe className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2 inline" />
                 可用域名
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 sm:mb-4 px-2">
                 优质域名出售
               </h2>
-              <p className="text-slate-400 max-w-3xl mx-auto">
+              <p className="text-slate-400 max-w-3xl mx-auto text-sm sm:text-base px-2">
                 每个域名都根据MOZ权威度、外链配置和SEO潜力精心挑选。
                 想要<strong className="text-white">购买过期域名</strong>或寻找<strong className="text-white">可靠的过期域名</strong>？请查看我们的产品。
               </p>
             </div>
             
             {/* SEO Intro Text */}
-            <div className="max-w-5xl mx-auto mb-8 bg-slate-800/30 border border-slate-700/50 rounded-2xl p-8">
-              <p className="text-slate-300 leading-relaxed mb-4">
+            <div className="max-w-5xl mx-auto mb-6 sm:mb-8 bg-slate-800/30 border border-slate-700/50 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8">
+              <p className="text-slate-300 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
                 <strong className="text-white">正在寻找具有真正SEO价值的域名？</strong>我们提供可靠的<strong className="text-amber-400">带外链的过期域名</strong>和高权重域名，经过严格的质量和历史检查。使用过期域名，您不必从零开始，可以立即受益于现有的链接、信任度和在线历史。
               </p>
-              <p className="text-slate-300 leading-relaxed mb-4">
+              <p className="text-slate-300 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
                 除了过期域名，我们还提供<strong className="text-amber-400">优质域名</strong>：简短有力的名称，具有品牌价值和商业潜力。无论您是建立网站、网店还是SEO项目——具有<strong className="text-white">权威的域名</strong>让您在Google中拥有明显优势。
               </p>
-              <p className="text-slate-300 leading-relaxed text-sm">
+              <p className="text-slate-300 leading-relaxed text-xs sm:text-sm">
                 <strong className="text-white">热门搜索：</strong>购买带外链的过期域名 • 可靠的过期域名 • 高权重过期域名 • 购买优质域名 • 有SEO价值的域名 • 带链接的老域名 • 最佳域名出售
               </p>
             </div>
 
             {/* VAT Notice */}
-            <div className="max-w-5xl mx-auto mb-10 text-center">
-              <p className="text-sm text-slate-300 font-medium bg-slate-800/40 border border-slate-700/40 rounded-lg px-4 py-3 inline-block">
+            <div className="max-w-5xl mx-auto mb-6 sm:mb-10 text-center px-2">
+              <p className="text-xs sm:text-sm text-slate-300 font-medium bg-slate-800/40 border border-slate-700/40 rounded-lg px-3 sm:px-4 py-2 sm:py-3 inline-block">
                 <span className="text-amber-400 font-semibold">增值税信息：</span> 价格不含欧盟境内私人客户的增值税。欧盟境内的企业客户可以适用反向征收增值税。欧盟境外的客户无需缴纳增值税。
               </p>
             </div>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6">
               {premiumDomains.map((domain, index) => (
                 <Card 
                   key={index} 
                   className="h-full flex flex-col bg-gradient-to-br from-slate-800/80 to-slate-900/80 border-slate-700/50 backdrop-blur hover:border-amber-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10 group"
                 >
-                  <CardHeader className="pb-3">
-                    <div className="flex items-start justify-between">
-                      <Badge variant="outline" className="text-xs border-slate-600 text-slate-400">
+                  <CardHeader className="pb-2 sm:pb-3 p-3 sm:p-4 md:p-6">
+                    <div className="flex items-start justify-between gap-2">
+                      <Badge variant="outline" className="text-[10px] sm:text-xs border-slate-600 text-slate-400 flex-shrink-0">
                         {domain.category}
                       </Badge>
-                      <div className="flex items-center gap-1 bg-amber-500/10 px-2 py-1 rounded-full">
-                        <BarChart3 className="w-3 h-3 text-amber-400" />
-                        <span className="text-xs font-semibold text-amber-400">MOZ {domain.mozScore}</span>
+                      <div className="flex items-center gap-1 bg-amber-500/10 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full flex-shrink-0">
+                        <BarChart3 className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-amber-400" />
+                        <span className="text-[10px] sm:text-xs font-semibold text-amber-400">MOZ {domain.mozScore}</span>
                       </div>
                     </div>
-                    <CardTitle className="text-xl text-white group-hover:text-amber-400 transition-colors mt-3">
+                    <CardTitle className="text-base sm:text-lg md:text-xl text-white group-hover:text-amber-400 transition-colors mt-2 sm:mt-3 break-all">
                       {domain.name}
                     </CardTitle>
-                    <CardDescription className="text-slate-400">
+                    <CardDescription className="text-slate-400 text-xs sm:text-sm">
                       {domain.description}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent className="flex flex-col flex-grow">
-                    <div className="space-y-3 mb-4">
-                      <div className="flex items-center justify-between text-sm">
-                        <div className="flex items-center gap-2 text-slate-400">
-                          <Link className="w-4 h-4" />
+                  <CardContent className="flex flex-col flex-grow p-3 sm:p-4 md:p-6 pt-0">
+                    <div className="space-y-2 sm:space-y-3 mb-3 sm:mb-4">
+                      <div className="flex items-center justify-between text-xs sm:text-sm">
+                        <div className="flex items-center gap-1.5 sm:gap-2 text-slate-400">
+                          <Link className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
                           <span>外链: {domain.backlinks}</span>
                         </div>
                       </div>
                       
                       {domain.pageAuthority && (
-                        <div className="grid grid-cols-2 gap-2 text-xs">
-                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                        <div className="grid grid-cols-2 gap-1.5 sm:gap-2 text-[10px] sm:text-xs">
+                          <div className="bg-slate-800/50 rounded px-1.5 sm:px-2 py-0.5 sm:py-1">
                             <span className="text-slate-500">页面权威:</span>
                             <span className="text-white ml-1 font-medium">{domain.pageAuthority}</span>
                           </div>
-                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                          <div className="bg-slate-800/50 rounded px-1.5 sm:px-2 py-0.5 sm:py-1">
                             <span className="text-slate-500">链接域名:</span>
                             <span className="text-white ml-1 font-medium">{domain.linkingDomains}</span>
                           </div>
-                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                          <div className="bg-slate-800/50 rounded px-1.5 sm:px-2 py-0.5 sm:py-1">
                             <span className="text-slate-500">入站链接:</span>
                             <span className="text-white ml-1 font-medium">{domain.inboundLinks}</span>
                           </div>
-                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                          <div className="bg-slate-800/50 rounded px-1.5 sm:px-2 py-0.5 sm:py-1">
                             <span className="text-slate-500">Followed链接:</span>
                             <span className="text-white ml-1 font-medium">{domain.followedLinks}</span>
                           </div>
@@ -1752,11 +1752,11 @@ const PremiumDomainsZH = () => {
                       )}
                       
                       {domain.topBacklinks && domain.topBacklinks.length > 0 && (
-                        <div className="text-xs">
+                        <div className="text-[10px] sm:text-xs">
                           <span className="text-slate-500 block mb-1">顶级外链:</span>
-                          <div className="flex flex-wrap gap-1">
+                          <div className="flex flex-wrap gap-0.5 sm:gap-1">
                             {domain.topBacklinks.slice(0, 5).map((link, i) => (
-                              <Badge key={i} variant="outline" className="text-[10px] border-amber-500/30 text-amber-400/80 bg-amber-500/5">
+                              <Badge key={i} variant="outline" className="text-[8px] sm:text-[10px] border-amber-500/30 text-amber-400/80 bg-amber-500/5 px-1 sm:px-1.5 py-0">
                                 {link}
                               </Badge>
                             ))}
@@ -1766,68 +1766,69 @@ const PremiumDomainsZH = () => {
                     </div>
                     
                     {/* Price Display - Compact at bottom */}
-                    <div className="mt-auto pt-4 border-t border-slate-700/50">
-                      <div className="flex items-center justify-between mb-3 bg-slate-800/60 rounded-lg px-3 py-2">
-                        <span className="text-sm font-medium text-slate-300">价格</span>
-                        <span className="text-lg font-bold text-amber-400">{domain.price}</span>
+                    <div className="mt-auto pt-3 sm:pt-4 border-t border-slate-700/50">
+                      <div className="flex items-center justify-between mb-2 sm:mb-3 bg-slate-800/60 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2">
+                        <span className="text-xs sm:text-sm font-medium text-slate-300">价格</span>
+                        <span className="text-base sm:text-lg font-bold text-amber-400">{domain.price}</span>
                       </div>
                       
-                      <div className="flex flex-col gap-3">
+                      <div className="flex flex-col gap-2 sm:gap-3">
                         {domain.stripePaymentLink ? (
                           <a 
                             href={domain.stripePaymentLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[#F59E0B] hover:bg-[#D97706] text-slate-950 font-bold rounded-md transition-all duration-200 shadow-md hover:shadow-lg text-lg"
+                            className="w-full inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-3 sm:py-4 bg-[#F59E0B] hover:bg-[#D97706] text-slate-950 font-bold rounded-md transition-all duration-200 shadow-md hover:shadow-lg text-sm sm:text-base md:text-lg"
                           >
                             立即购买
+                            <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4" />
                           </a>
                         ) : (
                           <div 
-                            className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[#F59E0B] text-slate-950 font-bold rounded-md shadow-md text-lg"
+                            className="w-full inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-3 sm:py-4 bg-[#F59E0B] text-slate-950 font-bold rounded-md shadow-md text-sm sm:text-base md:text-lg"
                           >
                             立即购买
                           </div>
                         )}
-                        <div className="flex flex-col items-center gap-2 text-center" data-nosnippet>
-                          <div className="flex items-center justify-center gap-1 flex-wrap">
-                            {/* Visa - Clear text logo */}
-                            <div className="flex items-center bg-[#1A1F71] rounded px-1 py-0.5 h-4">
-                              <span className="text-white font-bold text-[7px] italic tracking-tight" style={{fontFamily: 'Arial'}}>VISA</span>
+                        <div className="flex flex-col items-center gap-1.5 sm:gap-2 text-center" data-nosnippet>
+                          <div className="flex items-center justify-center gap-0.5 sm:gap-1 flex-wrap">
+                            {/* Visa */}
+                            <div className="flex items-center bg-[#1A1F71] rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
+                              <span className="text-white font-bold text-[5px] sm:text-[7px] italic tracking-tight" style={{fontFamily: 'Arial'}}>VISA</span>
                             </div>
-                            {/* Mastercard - Clear circles */}
-                            <div className="flex items-center bg-[#000000] rounded px-1 py-0.5 h-4">
-                              <svg className="h-2.5 w-4" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            {/* Mastercard */}
+                            <div className="flex items-center bg-[#000000] rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
+                              <svg className="h-2 sm:h-2.5 w-3 sm:w-4" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="11" cy="10" r="8" fill="#EB001B"/>
                                 <circle cx="21" cy="10" r="8" fill="#F79E1B"/>
                                 <path d="M16 3.5C18.5 5.5 20 7.5 20 10C20 12.5 18.5 14.5 16 16.5C13.5 14.5 12 12.5 12 10C12 7.5 13.5 5.5 16 3.5Z" fill="#FF5F00"/>
                               </svg>
                             </div>
-                            {/* PayPal - Clear text logo */}
-                            <div className="flex items-center bg-[#003087] rounded px-1 py-0.5 h-4">
-                              <span className="text-white font-bold text-[7px] italic" style={{fontFamily: 'Arial'}}>Pay</span>
-                              <span className="text-[#00ADEF] font-bold text-[7px] italic" style={{fontFamily: 'Arial'}}>Pal</span>
+                            {/* PayPal */}
+                            <div className="flex items-center bg-[#003087] rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
+                              <span className="text-white font-bold text-[5px] sm:text-[7px] italic" style={{fontFamily: 'Arial'}}>Pay</span>
+                              <span className="text-[#00ADEF] font-bold text-[5px] sm:text-[7px] italic" style={{fontFamily: 'Arial'}}>Pal</span>
                             </div>
-                            {/* Amazon Pay - Clear logo */}
-                            <div className="flex items-center bg-[#232F3E] rounded px-1 py-0.5 h-4">
-                              <svg className="h-2.5 w-8" viewBox="0 0 60 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            {/* Amazon Pay */}
+                            <div className="flex items-center bg-[#232F3E] rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
+                              <svg className="h-2 sm:h-2.5 w-6 sm:w-8" viewBox="0 0 60 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <text x="2" y="13" fill="#FF9900" fontSize="10" fontWeight="bold" fontFamily="Arial">amazon</text>
                                 <path d="M2 16C8 18 16 19 24 18C28 17.5 32 16.5 35 15" stroke="#FF9900" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
                                 <path d="M34 13L36 15L34 17" stroke="#FF9900" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
                                 <text x="38" y="13" fill="white" fontSize="8" fontFamily="Arial">pay</text>
                               </svg>
                             </div>
-                            {/* Apple Pay - Clear logo */}
-                            <div className="flex items-center bg-black rounded px-1 py-0.5 h-4">
-                              <svg className="h-2.5 w-6" viewBox="0 0 50 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            {/* Apple Pay */}
+                            <div className="flex items-center bg-black rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
+                              <svg className="h-2 sm:h-2.5 w-5 sm:w-6" viewBox="0 0 50 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8.5 4C9.5 4 10.3 3.5 10.8 2.7C11.3 2 11.5 1 11.4 0C10.5 0.1 9.4 0.6 8.8 1.4C8.3 2 7.9 3 8 4C9 4 9.5 4 8.5 4Z" fill="white"/>
                                 <path d="M11.4 4.3C9.8 4.2 8.4 5.2 7.6 5.2C6.8 5.2 5.6 4.3 4.3 4.4C2.6 4.4 1 5.3 0.2 6.9C-1.5 10 0.1 14.5 1.7 17C2.5 18.2 3.5 19.6 4.8 19.5C6 19.5 6.5 18.7 8 18.7C9.5 18.7 10 19.5 11.3 19.5C12.6 19.5 13.5 18.2 14.3 17C15.2 15.7 15.6 14.4 15.6 14.3C15.6 14.3 12.5 13.1 12.5 9.6C12.5 6.5 15 5.1 15.1 5C13.8 3.1 11.8 4.3 11.4 4.3Z" fill="white"/>
                                 <text x="18" y="14" fill="white" fontSize="10" fontWeight="500" fontFamily="Arial">Pay</text>
                               </svg>
                             </div>
-                            {/* Google Pay - Clear and readable */}
-                            <div className="flex items-center bg-white rounded px-1 py-0.5 border border-slate-300 h-4">
-                              <svg className="h-2.5 w-10" viewBox="0 0 65 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            {/* Google Pay */}
+                            <div className="flex items-center bg-white rounded px-0.5 sm:px-1 py-0.5 border border-slate-300 h-3 sm:h-4">
+                              <svg className="h-2 sm:h-2.5 w-8 sm:w-10" viewBox="0 0 65 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <text x="0" y="14" fontSize="11" fontWeight="500" fontFamily="Arial">
                                   <tspan fill="#4285F4">G</tspan>
                                   <tspan fill="#EA4335">o</tspan>
@@ -1839,29 +1840,29 @@ const PremiumDomainsZH = () => {
                                 <text x="38" y="14" fill="#5F6368" fontSize="11" fontWeight="500" fontFamily="Arial">Pay</text>
                               </svg>
                             </div>
-                            {/* Klarna - Clear logo */}
-                            <div className="flex items-center bg-[#FFB3C7] rounded px-1 py-0.5 h-4">
-                              <span className="text-black font-bold text-[7px]" style={{fontFamily: 'Arial'}}>Klarna</span>
+                            {/* Klarna */}
+                            <div className="flex items-center bg-[#FFB3C7] rounded px-0.5 sm:px-1 py-0.5 h-3 sm:h-4">
+                              <span className="text-black font-bold text-[5px] sm:text-[7px]" style={{fontFamily: 'Arial'}}>Klarna</span>
                             </div>
                           </div>
-                          <div className="flex items-center gap-2 mt-2">
-                            <Lock className="w-3 h-3 text-slate-400" />
-                            <div className="flex items-center bg-[#635BFF] rounded px-2 py-0.5">
-                              <span className="text-white font-bold text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
+                          <div className="flex items-center gap-1.5 sm:gap-2 mt-1 sm:mt-2">
+                            <Lock className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-slate-400" />
+                            <div className="flex items-center bg-[#635BFF] rounded px-1.5 sm:px-2 py-0.5">
+                              <span className="text-white font-bold text-xs sm:text-sm" style={{fontFamily: 'Arial'}}>stripe</span>
                             </div>
                           </div>
                           <div data-nosnippet>
-                            <p className="text-[10px] text-slate-400 leading-tight mt-2">
+                            <p className="text-[8px] sm:text-[10px] text-slate-400 leading-tight mt-1.5 sm:mt-2">
                               通过Stripe安全支付
                               <br />
                               自动转换为您当地的货币
                             </p>
-                            <p className="text-[10px] text-slate-400 leading-tight mt-3">
+                            <p className="text-[8px] sm:text-[10px] text-slate-400 leading-tight mt-2 sm:mt-3">
                               付款后，您将在24小时内收到转移令牌（EPP/Auth-code）到您的邮箱。
                               <br />
                               请同时检查垃圾邮件文件夹。
                             </p>
-                            <a href="#domain-transfer" className="text-[10px] text-amber-400 hover:text-amber-300 underline mt-2">
+                            <a href="#domain-transfer" className="text-[8px] sm:text-[10px] text-amber-400 hover:text-amber-300 underline mt-1.5 sm:mt-2">
                               转移如何进行？
                             </a>
                           </div>
