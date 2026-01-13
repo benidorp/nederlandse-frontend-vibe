@@ -1628,94 +1628,38 @@ const PremiumDomainsPT = () => {
         
         {/* Header */}
         <header className="sticky top-0 z-50 backdrop-blur-xl bg-slate-950/80 border-b border-amber-500/20">
-          <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-            <RouterLink to="/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" className="flex items-center gap-3">
-              <Crown className="h-8 w-8 text-amber-400" />
-              <span className="text-xl font-bold bg-gradient-to-r from-amber-200 to-amber-400 bg-clip-text text-transparent hover:from-amber-300 hover:to-amber-500 transition-all">
-                Domínios Premium
-              </span>
+          <div className="container mx-auto px-3 sm:px-4 py-3 sm:py-4 flex items-center justify-between">
+            <RouterLink to="/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" className="flex items-center gap-2 sm:gap-3 min-w-0 flex-shrink-0">
+              <Crown className="h-6 w-6 sm:h-8 sm:w-8 text-amber-400 flex-shrink-0" />
+              <span className="text-base sm:text-xl font-bold bg-gradient-to-r from-amber-200 to-amber-400 bg-clip-text text-transparent truncate">Domínios Premium</span>
             </RouterLink>
-            <nav className="hidden md:flex items-center gap-6">
-              <RouterLink to="/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium flex items-center gap-1">
-                <Home className="h-4 w-4" />
-                Início
-              </RouterLink>
-              <button onClick={() => scrollToSection("domains")} className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium">
-                Domínios
-              </button>
-              <button onClick={() => scrollToSection("why-premium")} className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium">
-                Porquê Premium?
-              </button>
-              <button onClick={() => scrollToSection("seo-redirects")} className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium">
-                SEO & Redirects
-              </button>
-              <button onClick={() => scrollToSection("faq")} className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium">
-                FAQ
-              </button>
-              <Button 
-                onClick={() => scrollToSection("contact")}
-                className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-semibold"
-              >
-                Contacto
-              </Button>
+            <nav className="hidden md:flex items-center gap-4 lg:gap-6">
+              <RouterLink to="/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium flex items-center gap-1"><Home className="h-4 w-4" />Início</RouterLink>
+              <button onClick={() => scrollToSection("domains")} className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium">Domínios</button>
+              <button onClick={() => scrollToSection("why-premium")} className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium">Porquê Premium?</button>
+              <button onClick={() => scrollToSection("faq")} className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium">FAQ</button>
+              <Button onClick={() => scrollToSection("contact")} className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-semibold">Contacto</Button>
             </nav>
+            <Button onClick={() => scrollToSection("domains")} className="md:hidden bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-semibold text-xs px-3 py-2">Domínios</Button>
           </div>
         </header>
 
         {/* Hero Section */}
-        <section className="relative py-24 md:py-32 overflow-hidden">
+        <section className="relative py-12 sm:py-16 md:py-24 lg:py-32 overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-900/20 via-transparent to-transparent" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-amber-500/5 rounded-full blur-3xl" />
-          
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] sm:w-[600px] md:w-[800px] h-[400px] sm:h-[600px] md:h-[800px] bg-amber-500/5 rounded-full blur-3xl" />
+          <div className="container mx-auto px-3 sm:px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <Badge className="mb-6 bg-amber-500/10 text-amber-400 border-amber-500/30 px-4 py-2">
-                <Star className="w-4 h-4 mr-2 inline" />
-                Coleção Exclusiva de Domínios Premium
-              </Badge>
-              
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                <span className="bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 bg-clip-text text-transparent">
-                  Domínios Premium Expirados com Backlinks Alta Autoridade & Valor SEO
-                </span>
-              </h1>
-              
-              <p className="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-                Fortaleça a sua presença online com nomes de domínio que já construíram anos de autoridade. 
-                Ideal para rankings mais rápidos, backlinks poderosos e vantagens SEO diretas.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button 
-                  size="lg"
-                  onClick={() => scrollToSection("domains")}
-                  className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-lg px-8 py-6 shadow-lg shadow-amber-500/25 transition-all hover:shadow-amber-500/40 hover:scale-105"
-                >
-                  Ver Domínios
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-                <Button 
-                  size="lg"
-                  variant="outline"
-                  onClick={() => scrollToSection("why-premium")}
-                  className="bg-slate-800 border-slate-600 text-slate-200 hover:bg-slate-700 hover:text-white text-lg px-8 py-6"
-                >
-                  Mais Informações
-                </Button>
+              <Badge className="mb-4 sm:mb-6 bg-amber-500/10 text-amber-400 border-amber-500/30 px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm"><Star className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2 inline" />Coleção Exclusiva de Domínios Premium</Badge>
+              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 sm:mb-6 leading-tight px-2"><span className="bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 bg-clip-text text-transparent">Domínios Premium Expirados com Backlinks Alta Autoridade & Valor SEO</span></h1>
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-400 mb-6 sm:mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed px-2">Fortaleça a sua presença online com nomes de domínio que já construíram anos de autoridade.</p>
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
+                <Button size="lg" onClick={() => scrollToSection("domains")} className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 shadow-lg shadow-amber-500/25">Ver Domínios<ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" /></Button>
+                <Button size="lg" variant="outline" onClick={() => scrollToSection("why-premium")} className="bg-slate-800 border-slate-600 text-slate-200 hover:bg-slate-700 text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6">Mais Informações</Button>
               </div>
-              
-              {/* Stats */}
-              <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
-                {[
-                  { label: "Pontuação MOZ Média", value: "29+" },
-                  { label: "Domínios Premium", value: "110+" },
-                  { label: "Anos de Experiência", value: "10+" },
-                  { label: "Clientes Satisfeitos", value: "500+" }
-                ].map((stat, index) => (
-                  <div key={index} className="p-4 rounded-xl bg-slate-800/50 border border-slate-700/50 backdrop-blur">
-                    <div className="text-2xl md:text-3xl font-bold text-amber-400">{stat.value}</div>
-                    <div className="text-sm text-slate-400 mt-1">{stat.label}</div>
-                  </div>
+              <div className="mt-8 sm:mt-12 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6 px-2">
+                {[{ label: "Pontuação MOZ Média", value: "29+" },{ label: "Domínios Premium", value: "110+" },{ label: "Anos de Experiência", value: "10+" },{ label: "Clientes Satisfeitos", value: "500+" }].map((stat, index) => (
+                  <div key={index} className="p-3 sm:p-4 rounded-xl bg-slate-800/50 border border-slate-700/50 backdrop-blur"><div className="text-xl sm:text-2xl md:text-3xl font-bold text-amber-400">{stat.value}</div><div className="text-xs sm:text-sm text-slate-400 mt-1">{stat.label}</div></div>
                 ))}
               </div>
             </div>
