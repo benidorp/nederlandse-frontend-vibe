@@ -1605,53 +1605,53 @@ const PremiumDomainsPL = () => {
               </p>
             </div>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
               {premiumDomains.map((domain, index) => (
                 <Card 
                   key={index} 
                   className="h-full flex flex-col bg-gradient-to-br from-slate-800/80 to-slate-900/80 border-slate-700/50 backdrop-blur hover:border-amber-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10 group"
                 >
-                  <CardHeader className="pb-3">
+                  <CardHeader className="p-3 sm:p-4 pb-2 sm:pb-3">
                     <div className="flex items-start justify-between">
-                      <Badge variant="outline" className="text-xs border-slate-600 text-slate-400">
+                      <Badge variant="outline" className="text-[10px] sm:text-xs border-slate-600 text-slate-400">
                         {domain.category}
                       </Badge>
-                      <div className="flex items-center gap-1 bg-amber-500/10 px-2 py-1 rounded-full">
-                        <BarChart3 className="w-3 h-3 text-amber-400" />
-                        <span className="text-xs font-semibold text-amber-400">MOZ {domain.mozScore}</span>
+                      <div className="flex items-center gap-1 bg-amber-500/10 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full">
+                        <BarChart3 className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-amber-400" />
+                        <span className="text-[10px] sm:text-xs font-semibold text-amber-400">MOZ {domain.mozScore}</span>
                       </div>
                     </div>
-                    <CardTitle className="text-xl text-white group-hover:text-amber-400 transition-colors mt-3">
+                    <CardTitle className="text-base sm:text-lg md:text-xl text-white group-hover:text-amber-400 transition-colors mt-2 sm:mt-3 break-all">
                       {domain.name}
                     </CardTitle>
-                    <CardDescription className="text-slate-400">
+                    <CardDescription className="text-xs sm:text-sm text-slate-400">
                       {domain.description}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent className="flex flex-col flex-grow">
-                    <div className="space-y-3 mb-4">
-                      <div className="flex items-center justify-between text-sm">
-                        <div className="flex items-center gap-2 text-slate-400">
-                          <Link className="w-4 h-4" />
+                  <CardContent className="p-3 sm:p-4 pt-0 flex flex-col flex-grow">
+                    <div className="space-y-2 sm:space-y-3 mb-3 sm:mb-4">
+                      <div className="flex items-center justify-between text-xs sm:text-sm">
+                        <div className="flex items-center gap-1.5 sm:gap-2 text-slate-400">
+                          <Link className="w-3 h-3 sm:w-4 sm:h-4" />
                           <span>Backlinki: {domain.backlinks}</span>
                         </div>
                       </div>
                       
                       {domain.pageAuthority && (
-                        <div className="grid grid-cols-2 gap-2 text-xs">
-                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                        <div className="grid grid-cols-2 gap-1.5 sm:gap-2 text-[10px] sm:text-xs">
+                          <div className="bg-slate-800/50 rounded px-1.5 sm:px-2 py-0.5 sm:py-1">
                             <span className="text-slate-500">Page Authority:</span>
                             <span className="text-white ml-1 font-medium">{domain.pageAuthority}</span>
                           </div>
-                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                          <div className="bg-slate-800/50 rounded px-1.5 sm:px-2 py-0.5 sm:py-1">
                             <span className="text-slate-500">Linkujące Domeny:</span>
                             <span className="text-white ml-1 font-medium">{domain.linkingDomains}</span>
                           </div>
-                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                          <div className="bg-slate-800/50 rounded px-1.5 sm:px-2 py-0.5 sm:py-1">
                             <span className="text-slate-500">Linki Przychodzące:</span>
                             <span className="text-white ml-1 font-medium">{domain.inboundLinks}</span>
                           </div>
-                          <div className="bg-slate-800/50 rounded px-2 py-1">
+                          <div className="bg-slate-800/50 rounded px-1.5 sm:px-2 py-0.5 sm:py-1">
                             <span className="text-slate-500">Linki Followed:</span>
                             <span className="text-white ml-1 font-medium">{domain.followedLinks}</span>
                           </div>
@@ -1659,11 +1659,11 @@ const PremiumDomainsPL = () => {
                       )}
                       
                       {domain.topBacklinks && domain.topBacklinks.length > 0 && (
-                        <div className="text-xs">
+                        <div className="text-[10px] sm:text-xs">
                           <span className="text-slate-500 block mb-1">Top Backlinki:</span>
-                          <div className="flex flex-wrap gap-1">
+                          <div className="flex flex-wrap gap-0.5 sm:gap-1">
                             {domain.topBacklinks.slice(0, 5).map((link, i) => (
-                              <Badge key={i} variant="outline" className="text-[10px] border-amber-500/30 text-amber-400/80 bg-amber-500/5">
+                              <Badge key={i} variant="outline" className="text-[8px] sm:text-[10px] border-amber-500/30 text-amber-400/80 bg-amber-500/5">
                                 {link}
                               </Badge>
                             ))}
@@ -1672,9 +1672,9 @@ const PremiumDomainsPL = () => {
                       )}
                     </div>
                     
-                    <div className="mt-auto space-y-3 pt-4 border-t border-slate-700/50">
+                    <div className="mt-auto space-y-2 sm:space-y-3 pt-3 sm:pt-4 border-t border-slate-700/50">
                       <div className="flex items-center justify-between">
-                        <span className="text-2xl font-bold text-white">{domain.price}</span>
+                        <span className="text-lg sm:text-2xl font-bold text-white">{domain.price}</span>
                       </div>
                       
                       {domain.stripePaymentLink && (
