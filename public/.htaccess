@@ -37,6 +37,9 @@
   RewriteRule ^ index.html [L]
 </IfModule>
 
+# 404 Error redirect to English Premium Domains page
+ErrorDocument 404 https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value
+
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType text/html "access plus 0 seconds"
