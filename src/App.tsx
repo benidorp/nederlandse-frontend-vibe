@@ -45,6 +45,8 @@ import PremiumDomainsJA from "./pages/PremiumDomainsJA";
 import PremiumDomainsLegalJA from "./pages/PremiumDomainsLegalJA";
 import PremiumDomainsAR from "./pages/PremiumDomainsAR";
 import PremiumDomainsLegalAR from "./pages/PremiumDomainsLegalAR";
+import PremiumDomainsTR from "./pages/PremiumDomainsTR";
+import PremiumDomainsLegalTR from "./pages/PremiumDomainsLegalTR";
 
 const queryClient = new QueryClient();
 
@@ -96,6 +98,8 @@ const App = () => (
           <Route path="/expireddomainnames/ja/houritsumonsho-puremiamudomein" element={<PremiumDomainsLegalJA />} />
           <Route path="/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo" element={<PremiumDomainsAR />} />
           <Route path="/expireddomainnames/ar/wathaeq-qanuniya-nitaqat-mumayaza" element={<PremiumDomainsLegalAR />} />
+          <Route path="/expireddomainnames/tr/premium-alan-adlari-yuksek-otorite-seo-degeri" element={<PremiumDomainsTR />} />
+          <Route path="/expireddomainnames/tr/premium-alan-adlari-yasal-belgeler" element={<PremiumDomainsLegalTR />} />
           {/* Redirects from old URLs */}
           <Route path="/expireddomeinnamen/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" element={<Navigate to="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" replace />} />
           <Route path="/expireddomeinnamen/nl/premium-domeinnamen-juridische-documenten" element={<Navigate to="/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" replace />} />

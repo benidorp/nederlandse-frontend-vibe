@@ -18,6 +18,7 @@ const languages: LanguageOption[] = [
   { code: "zh", name: "中文", path: "https://www.iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" },
   { code: "ja", name: "日本語", path: "https://www.iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" },
   { code: "ar", name: "العربية", path: "https://www.iaee.eu/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo" },
+  { code: "tr", name: "Türkçe", path: "https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yuksek-otorite-seo-degeri" },
 ];
 
 // SVG Flag components
@@ -114,6 +115,15 @@ const FlagAR = () => (
   </svg>
 );
 
+const FlagTR = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="24" fill="#E30A17"/>
+    <circle cx="11" cy="12" r="6" fill="#FFFFFF"/>
+    <circle cx="13" cy="12" r="4.8" fill="#E30A17"/>
+    <polygon points="17,12 19.5,10.5 18,12 19.5,13.5" fill="#FFFFFF"/>
+  </svg>
+);
+
 const flagComponents: Record<string, React.FC> = {
   nl: FlagNL,
   en: FlagGB,
@@ -126,6 +136,7 @@ const flagComponents: Record<string, React.FC> = {
   zh: FlagZH,
   ja: FlagJA,
   ar: FlagAR,
+  tr: FlagTR,
 };
 
 interface LanguageSwitcherProps {
