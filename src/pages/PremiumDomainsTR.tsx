@@ -256,8 +256,8 @@ const PremiumDomainsTR = () => {
     
     const validation = validateContactForm(formData);
     
-    if (!validation.isValid) {
-      setFormErrors(validation.errors);
+    if (!validation.success) {
+      setFormErrors((validation as { success: false; errors: Record<string, string> }).errors);
       toast({
         title: "Lütfen tüm zorunlu alanları doldurun",
         description: "Tüm zorunlu alanları kontrol edin ve tekrar deneyin.",
@@ -268,7 +268,9 @@ const PremiumDomainsTR = () => {
 
     setFormErrors({});
     
-    const mailtoUrl = buildSafeMailtoUrl(formData.name, formData.email, formData.domain, formData.message);
+    const subject = `Domain İsteği: ${formData.domain}`;
+    const body = `Ad: ${formData.name}\nE-posta: ${formData.email}\nDomain: ${formData.domain}\n\nMesaj:\n${formData.message}`;
+    const mailtoUrl = buildSafeMailtoUrl("info@iaee.eu", subject, body);
     window.location.href = mailtoUrl;
     
     toast({
