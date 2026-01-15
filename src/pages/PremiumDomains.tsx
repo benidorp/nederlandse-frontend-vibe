@@ -2613,29 +2613,29 @@ const PremiumDomains = () => {
               </article>
 
               {/* New EU Domain Value Section */}
-              <article className="prose prose-invert prose-lg max-w-none mt-16">
-                <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 text-center">
+              <div className="bg-gradient-to-br from-slate-800/80 via-slate-900/90 to-slate-800/80 border border-amber-500/30 rounded-2xl p-8 md:p-10 mt-16 shadow-xl">
+                <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">
                   Waarom hoogwaardige Europese .EU-webnamen zoveel waarde hebben
                 </h2>
                 
-                <div className="space-y-6 text-slate-300 leading-relaxed">
-                  <h3 className="text-xl md:text-2xl font-semibold text-amber-400 mt-8 mb-4">
+                <div className="space-y-6 text-slate-300 leading-relaxed text-lg">
+                  <h3 className="text-xl md:text-2xl font-semibold text-amber-400 mb-6">
                     Waardevolle Europese .EU-namen met een betrouwbaar verleden voor de Europese en internationale markt
                   </h3>
                   
                   <p>
-                    Veel van onze Europese .EU-webnamen zijn eerder gebruikte websites die onderdeel zijn geweest van voormalige projecten van de Europese Unie. Een dergelijk voormalig Europees project laat vaak een sterke en betrouwbare digitale voetafdruk achter. Dit maakt deze namen bijzonder aantrekkelijk voor ondernemers en internationale kopers die snel online zichtbaar willen worden met een zakelijke webnaam van hoge kwaliteit.
+                    Wij zijn gespecialiseerd in <strong className="text-amber-400">.EU</strong> en andere <strong className="text-amber-400">Europese domeinextensies</strong> en onderscheiden ons nadrukkelijk binnen dit segment. Veel van deze <strong className="text-white">Europese webnamen</strong> zijn in het verleden gebruikt voor officiële projecten, samenwerkingsverbanden en initiatieven binnen Europa, waardoor zij beschikken over <strong className="text-amber-400">kwalitatieve vermeldingen</strong> en <strong className="text-amber-400">hoogwaardige verwijzingen</strong>.
                   </p>
                   
                   <p>
-                    In de praktijk zijn deze Europese namen vaak waardevoller en betrouwbaarder dan veel .com, .net of .org-namen. Een bestaande webnaam met geschiedenis en een website met online geschiedenis straalt direct vertrouwen uit en vormt een waardevol digitaal bezit en een vertrouwd webadres met een aantoonbaar verleden.
+                    Waar andere extensies vaak verzadigd zijn, bieden <strong className="text-amber-400">.EU</strong> en <strong className="text-white">Europese domeinextensies</strong> juist <strong className="text-amber-400">betrouwbaarheid</strong>, <strong className="text-amber-400">geloofwaardigheid</strong> en een duidelijke <strong className="text-white">geografische identiteit</strong>. In de praktijk zijn deze Europese namen vaak waardevoller en betrouwbaarder dan veel <strong className="text-slate-200">.com</strong>, <strong className="text-slate-200">.net</strong> of <strong className="text-slate-200">.org</strong>-namen.
                   </p>
                   
                   <p>
-                    Voor zowel Europese als internationale kopers biedt een internationale webnaam met online verleden extra geloofwaardigheid. Een oude webadres met reputatie, een meertalige webnaam of een webnaam voor Europa is bij uitstek geschikt als webadres voor de internationale markt of als globale online naam voor bedrijven en projecten die professioneel willen positioneren. In veel gevallen kan ook de autoriteit van een .EU-naam strategisch worden ingezet via een redirect, waarbij de Europese uitstraling en opgebouwde waarde behouden blijven.
+                    Voor zowel Europese als <strong className="text-white">internationale kopers</strong> biedt een <strong className="text-amber-400">internationale webnaam</strong> met online verleden extra geloofwaardigheid. Een <strong className="text-white">oude webadres met reputatie</strong>, een <strong className="text-amber-400">meertalige webnaam</strong> of een <strong className="text-white">webnaam voor Europa</strong> is bij uitstek geschikt als webadres voor de <strong className="text-amber-400">internationale markt</strong> of als <strong className="text-white">globale online naam</strong> voor bedrijven en projecten die professioneel willen positioneren. In veel gevallen kan ook de autoriteit van een <strong className="text-amber-400">.EU-naam</strong> strategisch worden ingezet via een <strong className="text-white">redirect</strong>, waarbij de Europese uitstraling en opgebouwde waarde behouden blijven.
                   </p>
                 </div>
-              </article>
+              </div>
             </div>
           </div>
         </section>
