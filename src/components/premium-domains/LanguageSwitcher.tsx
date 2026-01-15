@@ -19,6 +19,7 @@ const languages: LanguageOption[] = [
   { code: "ja", name: "日本語", path: "https://www.iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" },
   { code: "ar", name: "العربية", path: "https://www.iaee.eu/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo" },
   { code: "tr", name: "Türkçe", path: "https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yuksek-otorite-seo-degeri" },
+  { code: "hi", name: "हिन्दी", path: "https://www.iaee.eu/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya" },
 ];
 
 // SVG Flag components
@@ -124,6 +125,15 @@ const FlagTR = () => (
   </svg>
 );
 
+const FlagHI = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="8" fill="#FF9933"/>
+    <rect y="8" width="32" height="8" fill="#FFFFFF"/>
+    <rect y="16" width="32" height="8" fill="#138808"/>
+    <circle cx="16" cy="12" r="3" fill="#000080"/>
+  </svg>
+);
+
 const flagComponents: Record<string, React.FC> = {
   nl: FlagNL,
   en: FlagGB,
@@ -137,6 +147,7 @@ const flagComponents: Record<string, React.FC> = {
   ja: FlagJA,
   ar: FlagAR,
   tr: FlagTR,
+  hi: FlagHI,
 };
 
 interface LanguageSwitcherProps {
