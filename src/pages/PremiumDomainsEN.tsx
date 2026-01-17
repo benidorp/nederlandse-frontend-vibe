@@ -1760,6 +1760,7 @@ const PremiumDomainsEN = () => {
                 <Globe className="w-5 h-5 text-amber-400" />
                 Important to Know
               </h3>
+              <p className="text-amber-400 font-medium mb-4">🌐 Globally accessible – also for non-EU buyers</p>
               <div className="space-y-3 text-slate-300 text-sm sm:text-base leading-relaxed">
                 <p>
                   <span className="text-amber-400 font-semibold">EU residents</span> can freely register all European domain extensions
@@ -1771,7 +1772,7 @@ const PremiumDomainsEN = () => {
                   For <span className="text-amber-400 font-semibold">.EU · .IT · .FR · .DE</span> normally an EU address or EU company is required
                 </p>
                 <p className="text-amber-400 font-medium pt-2">
-                  ➡️ Not an EU resident? You can easily register these domains via a trustee service — you can use their physical EU address for registration.{" "}
+                  ➡️ Also for non-EU buyers - Not an EU resident? You can easily register these domains via a domain registrar with a trustee service — you can make use of their physical EU address for registration.{" "}
                   <a 
                     href="#trustee-service-section" 
                     onClick={(e) => {
