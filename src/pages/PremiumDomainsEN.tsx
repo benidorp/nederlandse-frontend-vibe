@@ -1754,6 +1754,28 @@ const PremiumDomainsEN = () => {
               </p>
             </div>
 
+            {/* Important Information Box */}
+            <div className="max-w-5xl mx-auto mb-8 bg-gradient-to-br from-slate-800/60 to-slate-900/60 border border-amber-500/30 rounded-2xl p-6 sm:p-8">
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-4 flex items-center gap-2">
+                <Globe className="w-5 h-5 text-amber-400" />
+                Important to Know
+              </h3>
+              <div className="space-y-3 text-slate-300 text-sm sm:text-base leading-relaxed">
+                <p>
+                  <span className="text-amber-400 font-semibold">EU residents</span> can freely register all European domain extensions
+                </p>
+                <p>
+                  <span className="text-white font-semibold">.NL · .BE · .CO.UK</span> are freely registrable worldwide
+                </p>
+                <p>
+                  For <span className="text-amber-400 font-semibold">.EU · .IT · .FR · .DE</span> normally an EU address or EU company is required
+                </p>
+                <p className="text-amber-400 font-medium pt-2">
+                  ➡️ Not an EU resident? You can easily register these domains via a trustee service.
+                </p>
+              </div>
+            </div>
+
             {/* VAT Notice */}
             <div className="max-w-5xl mx-auto mb-10 text-center">
               <p className="text-sm text-slate-300 font-medium bg-slate-800/40 border border-slate-700/40 rounded-lg px-4 py-3 inline-block">
@@ -2212,6 +2234,189 @@ const PremiumDomainsEN = () => {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Trustee Service Section */}
+        <section className="py-16 bg-gradient-to-b from-slate-950 to-slate-900">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <Accordion type="single" collapsible className="space-y-4">
+                <AccordionItem 
+                  value="trustee-service"
+                  className="bg-gradient-to-br from-amber-500/10 to-slate-800/40 border border-amber-500/30 rounded-xl px-6"
+                >
+                  <AccordionTrigger className="text-left text-white hover:text-amber-400 hover:no-underline py-4">
+                    <div className="flex items-center gap-3">
+                      <Globe className="w-5 h-5 text-amber-400 flex-shrink-0" />
+                      <h3 className="text-lg sm:text-xl font-semibold">Premium .EU & European Extensions with History — What is a Trustee Service?</h3>
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-slate-300 pb-6 leading-relaxed">
+                    <div className="space-y-6">
+                      {/* Introduction */}
+                      <div className="bg-slate-800/50 rounded-xl p-5 border border-slate-700/50">
+                        <p className="text-sm sm:text-base mb-3">
+                          We specialize in <span className="text-amber-400 font-semibold">.EU and other European domain extensions</span>. Our portfolio consists of <span className="text-white font-semibold">premium and expired domain names</span> with proven online history, often from former European projects and initiatives.
+                        </p>
+                        <p className="text-amber-400 font-medium">🌐 Globally accessible – also for non-EU buyers</p>
+                      </div>
+
+                      {/* What is a Trustee */}
+                      <div>
+                        <h4 className="text-white font-semibold text-lg mb-3 flex items-center gap-2">
+                          🔐 What is a Trustee (Local Presence Service)?
+                        </h4>
+                        <p className="mb-3">A trustee is a recognized registrar that:</p>
+                        <ul className="space-y-2 ml-4">
+                          <li className="flex items-start gap-2">
+                            <CheckCircle className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" />
+                            <span>Uses a physical address within the EU for registration</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <CheckCircle className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" />
+                            <span>Acts as administrative contact with the registry</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <CheckCircle className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" />
+                            <span>Ensures the domain complies with all EU rules</span>
+                          </li>
+                        </ul>
+                      </div>
+
+                      {/* What this means for you */}
+                      <div className="bg-slate-800/50 rounded-xl p-5 border border-slate-700/50">
+                        <h4 className="text-white font-semibold mb-3">What this means for you:</h4>
+                        <div className="grid sm:grid-cols-2 gap-2">
+                          <div className="flex items-center gap-2 text-sm">
+                            <span className="text-green-400">✔️</span>
+                            <span>You remain full owner and administrator</span>
+                          </div>
+                          <div className="flex items-center gap-2 text-sm">
+                            <span className="text-green-400">✔️</span>
+                            <span>Free use for website, email, branding or redirects</span>
+                          </div>
+                          <div className="flex items-center gap-2 text-sm">
+                            <span className="text-green-400">✔️</span>
+                            <span>No EU company or local address needed</span>
+                          </div>
+                          <div className="flex items-center gap-2 text-sm">
+                            <span className="text-green-400">✔️</span>
+                            <span>Fully legal and transparent</span>
+                          </div>
+                        </div>
+                        <p className="text-slate-400 text-sm mt-3">For non-EU buyers this is the standard and most commonly used solution.</p>
+                      </div>
+
+                      {/* Trustee Registrars */}
+                      <div>
+                        <h4 className="text-white font-semibold text-lg mb-4 flex items-center gap-2">
+                          🧩 Trustee Registration via Recognized Registrars
+                        </h4>
+                        <div className="space-y-4">
+                          {/* INWX */}
+                          <div className="bg-slate-800/30 rounded-lg p-4 border border-slate-700/30">
+                            <h5 className="text-amber-400 font-semibold mb-2">INWX — Very affordable trustee (from €3)</h5>
+                            <p className="text-sm mb-2"><span className="text-slate-400">Supported extensions:</span> .EU · .IT · .FR · .DE</p>
+                            <p className="text-sm mb-2"><span className="text-slate-400">How it works:</span> During registration the trustee option is automatically offered. INWX uses an EU address for registration. You retain full control.</p>
+                            <p className="text-sm"><span className="text-slate-400">💰 Cost:</span> <span className="text-white font-medium">€3 per year</span></p>
+                            <a href="https://www.inwx.com/en/offer/localpresence" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300 text-sm underline">🔗 inwx.com/en/offer/localpresence</a>
+                          </div>
+
+                          {/* 101domain */}
+                          <div className="bg-slate-800/30 rounded-lg p-4 border border-slate-700/30">
+                            <h5 className="text-amber-400 font-semibold mb-2">101domain — Trustee directly during checkout</h5>
+                            <p className="text-sm mb-2">Trustee is automatically offered. Suitable for multiple European ccTLDs. Ideal for international businesses.</p>
+                            <p className="text-sm"><span className="text-slate-400">💰 Cost:</span> <span className="text-white font-medium">± $25 per year</span></p>
+                            <a href="https://www.101domain.com/trustee_service.htm" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300 text-sm underline">🔗 101domain.com/trustee_service.htm</a>
+                          </div>
+
+                          {/* Netim */}
+                          <div className="bg-slate-800/30 rounded-lg p-4 border border-slate-700/30">
+                            <h5 className="text-amber-400 font-semibold mb-2">Netim — Trustee only when required</h5>
+                            <p className="text-sm mb-2">Only active for extensions with obligation. Transparent and professional solution.</p>
+                            <p className="text-sm"><span className="text-slate-400">💰 Cost:</span> <span className="text-white font-medium">€10–€30 per year</span></p>
+                            <a href="https://www.netim.com/en/domain-name/services/trustee-service" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300 text-sm underline">🔗 netim.com/en/domain-name/services/trustee-service</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Comparison Table */}
+                      <div>
+                        <h4 className="text-white font-semibold mb-3">📊 Overview at a Glance</h4>
+                        <div className="overflow-x-auto">
+                          <table className="w-full text-sm border border-slate-700/50 rounded-lg overflow-hidden">
+                            <thead className="bg-slate-800/70">
+                              <tr>
+                                <th className="text-left px-4 py-2 text-amber-400 font-semibold">Registrar</th>
+                                <th className="text-left px-4 py-2 text-amber-400 font-semibold">Extensions</th>
+                                <th className="text-left px-4 py-2 text-amber-400 font-semibold">Trustee Cost</th>
+                              </tr>
+                            </thead>
+                            <tbody className="divide-y divide-slate-700/30">
+                              <tr className="bg-slate-800/30">
+                                <td className="px-4 py-2 text-white">INWX</td>
+                                <td className="px-4 py-2">.EU · .IT · .FR · .DE</td>
+                                <td className="px-4 py-2 text-green-400">€3 / year</td>
+                              </tr>
+                              <tr className="bg-slate-800/50">
+                                <td className="px-4 py-2 text-white">101domain</td>
+                                <td className="px-4 py-2">Various EU ccTLDs</td>
+                                <td className="px-4 py-2">± $25 / year</td>
+                              </tr>
+                              <tr className="bg-slate-800/30">
+                                <td className="px-4 py-2 text-white">Netim</td>
+                                <td className="px-4 py-2">Various EU ccTLDs</td>
+                                <td className="px-4 py-2">€10–€30 / year</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+                      {/* Why Premium EU Domains */}
+                      <div>
+                        <h4 className="text-white font-semibold text-lg mb-3 flex items-center gap-2">
+                          💎 Why Premium European Domains Are Extra Valuable
+                        </h4>
+                        <p className="mb-3">Our domains are more than just a name:</p>
+                        <div className="grid sm:grid-cols-2 gap-2 text-sm">
+                          <div className="flex items-center gap-2"><span>🔗</span><span>Online history & mentions</span></div>
+                          <div className="flex items-center gap-2"><span>🏛️</span><span>Often former EU projects</span></div>
+                          <div className="flex items-center gap-2"><span>🌍</span><span>Trust with European visitors</span></div>
+                          <div className="flex items-center gap-2"><span>📉</span><span>Less competition than .COM</span></div>
+                          <div className="flex items-center gap-2"><span>🔁</span><span>Perfect for 301 redirects (retain EU authority)</span></div>
+                          <div className="flex items-center gap-2"><span>🧠</span><span>Interesting for branding, SEO and investments</span></div>
+                        </div>
+                        <p className="text-slate-400 text-sm mt-3">
+                          In practice, these European names are often more valuable and reliable than many .COM, .NET or .ORG domains.
+                        </p>
+                      </div>
+
+                      {/* For International Investors */}
+                      <div className="bg-gradient-to-r from-amber-500/10 to-slate-800/30 rounded-xl p-5 border border-amber-500/20">
+                        <h4 className="text-white font-semibold text-lg mb-3 flex items-center gap-2">
+                          🌍 Ideal for International Investors
+                        </h4>
+                        <p className="mb-3">For investors outside the EU, European domains offer:</p>
+                        <ul className="space-y-1 text-sm">
+                          <li>• Exclusivity through regulations</li>
+                          <li>• Higher quality threshold</li>
+                          <li>• Strong geographic positioning</li>
+                          <li>• Attractive deployment for international projects</li>
+                        </ul>
+                        <p className="text-amber-400 font-medium mt-4">
+                          Via trustee registration, even premium expired .EU domains are deployable worldwide.
+                        </p>
+                        <p className="text-white font-semibold mt-2">
+                          ➡️ European authority. International applicability.
+                        </p>
+                      </div>
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </div>
           </div>
         </section>
