@@ -2276,7 +2276,7 @@ const PremiumDomainsEN = () => {
                         <p className="text-sm sm:text-base mb-3">
                           We specialize in <span className="text-amber-400 font-semibold">.EU and other European domain extensions</span>. Our portfolio consists of <span className="text-white font-semibold">premium and expired domain names</span> with proven online history, often from former European projects and initiatives.
                         </p>
-                        <p className="text-amber-400 font-medium">🌐 Globally accessible – also for non-EU buyers. You can use their physical EU address for registration.</p>
+                        <p className="text-amber-400 font-medium">🌐 Globally accessible – also for non-EU buyers via trustee registration using a verified EU address.</p>
                       </div>
 
                       {/* What is a Trustee */}
