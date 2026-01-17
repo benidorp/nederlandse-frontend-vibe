@@ -1771,7 +1771,23 @@ const PremiumDomainsEN = () => {
                   For <span className="text-amber-400 font-semibold">.EU · .IT · .FR · .DE</span> normally an EU address or EU company is required
                 </p>
                 <p className="text-amber-400 font-medium pt-2">
-                  ➡️ Not an EU resident? You can easily register these domains via a trustee service.
+                  ➡️ Not an EU resident? You can easily register these domains via a trustee service — you can use their physical EU address for registration.{" "}
+                  <a 
+                    href="#trustee-service-section" 
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const element = document.getElementById('trustee-service-section');
+                      element?.scrollIntoView({ behavior: 'smooth' });
+                      // Also open the accordion
+                      const trigger = element?.querySelector('button');
+                      if (trigger && trigger.getAttribute('data-state') === 'closed') {
+                        trigger.click();
+                      }
+                    }}
+                    className="underline hover:text-amber-300 cursor-pointer"
+                  >
+                    What is a Trustee Service?
+                  </a>
                 </p>
               </div>
             </div>
@@ -2239,7 +2255,7 @@ const PremiumDomainsEN = () => {
         </section>
 
         {/* Trustee Service Section */}
-        <section className="py-16 bg-gradient-to-b from-slate-950 to-slate-900">
+        <section id="trustee-service-section" className="py-16 bg-gradient-to-b from-slate-950 to-slate-900">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <Accordion type="single" collapsible className="space-y-4">
@@ -2260,7 +2276,7 @@ const PremiumDomainsEN = () => {
                         <p className="text-sm sm:text-base mb-3">
                           We specialize in <span className="text-amber-400 font-semibold">.EU and other European domain extensions</span>. Our portfolio consists of <span className="text-white font-semibold">premium and expired domain names</span> with proven online history, often from former European projects and initiatives.
                         </p>
-                        <p className="text-amber-400 font-medium">🌐 Globally accessible – also for non-EU buyers</p>
+                        <p className="text-amber-400 font-medium">🌐 Globally accessible – also for non-EU buyers. You can use their physical EU address for registration.</p>
                       </div>
 
                       {/* What is a Trustee */}
