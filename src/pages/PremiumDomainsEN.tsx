@@ -1772,7 +1772,7 @@ const PremiumDomainsEN = () => {
                   For <span className="text-amber-400 font-semibold">.EU · .IT · .FR · .DE</span> normally an EU address or EU company is required
                 </p>
                 <p className="text-amber-400 font-medium pt-2">
-                  ➡️ Not an EU resident? You can easily register these domains via a domain registrar with a trustee service — you can make use of their physical EU address for registration.{" "}
+                  ➡️ Not an EU resident? No problem, You can easily register these domains via a domain registrar with a trustee service — Using their physical EU address for registration.{" "}
                   <a 
                     href="#trustee-service-section" 
                     onClick={(e) => {
