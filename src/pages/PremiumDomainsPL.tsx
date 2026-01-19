@@ -1591,6 +1591,9 @@ const PremiumDomainsPL = () => {
                 <strong className="text-white">Szukasz domeny z prawdziwą wartością SEO?</strong> U nas kupisz niezawodne <strong className="text-amber-400">wygasłe domeny z backlinkami</strong> i wysokim autorytetem, starannie sprawdzone pod kątem jakości i historii. Z wygasłą domeną nie zaczynasz od zera, ale korzystasz bezpośrednio z istniejących linków, zaufania i historii online.
               </p>
               <p className="text-slate-300 leading-relaxed mb-4">
+                <strong className="text-amber-400">Specjalizujemy się w .EU i innych europejskich rozszerzeniach domen</strong> i wyraźnie wyróżniamy się w segmencie europejskich nazw webowych.
+              </p>
+              <p className="text-slate-300 leading-relaxed mb-4">
                 Te wygasłe domeny posiadają istniejące backlinki od <strong className="text-amber-400">renomowanych firm, instytucji medialnych i organizacji rządowych</strong> — niezbędne linki, które dla zwykłych stron internetowych są bardzo trudne lub niemożliwe do uzyskania. Wygasłe domeny to strategiczna przewaga, którą najlepsi marketerzy, agencje i inwestorzy wykorzystują od lat, aby rosnąć szybciej niż reszta.
               </p>
               <p className="text-slate-300 leading-relaxed mb-4">

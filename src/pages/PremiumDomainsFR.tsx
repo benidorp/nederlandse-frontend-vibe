@@ -1738,6 +1738,9 @@ const PremiumDomainsFR = () => {
                 <strong className="text-white">Vous cherchez un nom de domaine avec une vraie valeur SEO ?</strong> Chez nous, vous achetez des <strong className="text-amber-400">noms de domaine expirés fiables avec backlinks</strong> et haute autorité, soigneusement vérifiés pour la qualité et l'historique. Avec un domaine expiré, vous ne partez pas de zéro, mais profitez directement des liens existants, de la confiance et de l'historique en ligne.
               </p>
               <p className="text-slate-300 leading-relaxed mb-4">
+                <strong className="text-amber-400">Nous sommes spécialisés dans .EU et autres extensions de domaine européennes</strong> et nous distinguons clairement dans le segment des noms web européens.
+              </p>
+              <p className="text-slate-300 leading-relaxed mb-4">
                 Ces domaines expirés disposent de backlinks existants provenant d'<strong className="text-amber-400">entreprises réputées, d'institutions médiatiques et d'organisations gouvernementales</strong> — des liens essentiels qui pour les sites web normaux sont très difficiles voire impossibles à obtenir. Les domaines expirés sont un avantage stratégique que les meilleurs marketeurs, agences et investisseurs utilisent depuis des années pour croître plus vite que les autres.
               </p>
               <p className="text-slate-300 leading-relaxed mb-4">

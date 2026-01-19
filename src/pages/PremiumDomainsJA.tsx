@@ -1785,6 +1785,9 @@ const PremiumDomainsJA = () => {
                 <strong className="text-white">本当のSEO価値を持つドメイン名をお探しですか？</strong> 当社では、品質と履歴を慎重にチェックした、<strong className="text-amber-400">バックリンク付きの信頼できる期限切れドメイン</strong>と高権威をご購入いただけます。期限切れドメインを使用すると、ゼロから始める必要がなく、既存のリンク、信頼、オンライン履歴からすぐに恩恵を受けられます。
               </p>
               <p className="text-slate-300 leading-relaxed mb-4">
+                <strong className="text-amber-400">私たちは.EUおよび他のヨーロッパのドメイン拡張子を専門とし</strong>、ヨーロッパのウェブ名セグメントで明確に差別化しています。
+              </p>
+              <p className="text-slate-300 leading-relaxed mb-4">
                 期限切れドメインに加えて、<strong className="text-amber-400">プレミアムドメイン</strong>も提供しています：ブランド価値と商業的ポテンシャルを持つ短くて強力な名前。ウェブサイト、ネットショップ、SEOプロジェクトを始める場合でも、<strong className="text-white">権威あるドメイン名</strong>はGoogleで明確なアドバンテージをもたらします。
               </p>
               <p className="text-slate-300 leading-relaxed text-sm">

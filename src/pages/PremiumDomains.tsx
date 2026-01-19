@@ -1757,6 +1757,9 @@ const PremiumDomains = () => {
                 <strong className="text-white">Op zoek naar een domeinnaam met echte SEO-waarde?</strong> Bij ons koop je betrouwbare <strong className="text-amber-400">expired domeinnamen met backlinks</strong> en hoge autoriteit, zorgvuldig gecontroleerd op kwaliteit en historie. Met een expired domein start je niet vanaf nul, maar profiteer je direct van bestaande links, vertrouwen en online geschiedenis.
               </p>
               <p className="text-slate-300 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
+                <strong className="text-amber-400">Wij zijn gespecialiseerd in .EU en andere Europese domeinextensies</strong> en onderscheiden ons nadrukkelijk binnen het segment van Europese webnamen.
+              </p>
+              <p className="text-slate-300 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
                 Deze expired domains beschikken over bestaande backlinks van <strong className="text-amber-400">gerenommeerde bedrijven, media instituten en overheidsorganisaties</strong> — essentiële links die voor normale websites zeer moeilijk tot onmogelijk te verkrijgen zijn. Expired domains zijn een strategisch voordeel dat topmarketeers, agencies en investeerders al jaren inzetten om sneller te groeien dan de rest.
               </p>
               <p className="text-slate-300 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">

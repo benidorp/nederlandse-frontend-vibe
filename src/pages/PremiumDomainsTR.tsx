@@ -1686,6 +1686,9 @@ const PremiumDomainsTR = () => {
                 <strong className="text-white">Gerçek SEO değerine sahip bir alan adı mı arıyorsunuz?</strong> Bizimle kalite ve geçmiş açısından dikkatli bir şekilde kontrol edilmiş, <strong className="text-amber-400">backlink'li süresi dolmuş alan adları</strong> ve yüksek otorite satın alırsınız. Süresi dolmuş bir domain ile sıfırdan başlamazsınız, mevcut linklerden, güvenden ve çevrimiçi geçmişten hemen yararlanırsınız.
               </p>
               <p className="text-slate-300 leading-relaxed mb-4">
+                <strong className="text-amber-400">.EU ve diğer Avrupa alan uzantılarında uzmanlaşıyoruz</strong> ve Avrupa web adları segmentinde kendimizi açıkça farklılaştırıyoruz.
+              </p>
+              <p className="text-slate-300 leading-relaxed mb-4">
                 Bu süresi dolmuş domain'ler <strong className="text-amber-400">saygın şirketler, medya kuruluşları ve devlet kurumlarından</strong> mevcut backlinklere sahiptir — normal web siteleri için elde edilmesi çok zor veya imkansız olan temel linkler. Süresi dolmuş domain'ler, üst düzey pazarlamacıların, ajansların ve yatırımcıların yıllardır diğerlerinden daha hızlı büyümek için kullandıkları stratejik bir avantajdır.
               </p>
               <p className="text-slate-300 leading-relaxed mb-4">
