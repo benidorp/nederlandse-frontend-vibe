@@ -1744,6 +1744,9 @@ const PremiumDomainsEN = () => {
                 <strong className="text-white">Looking for a domain name with real SEO value?</strong> With us you buy reliable <strong className="text-amber-400">expired domain names with backlinks</strong> and high authority, carefully checked for quality and history. With an expired domain you don't start from scratch, but immediately benefit from existing links, trust and online history.
               </p>
               <p className="text-slate-300 leading-relaxed mb-4">
+                <strong className="text-amber-400">We specialize in .EU and other European domain extensions</strong> and clearly distinguish ourselves within the segment of European web names.
+              </p>
+              <p className="text-slate-300 leading-relaxed mb-4">
                 These expired domains have existing backlinks from <strong className="text-amber-400">reputable companies, media institutions and government organizations</strong> — essential links that for normal websites are very difficult or impossible to obtain. Expired domains are a strategic advantage that top marketers, agencies and investors have been using for years to grow faster than the rest.
               </p>
               <p className="text-slate-300 leading-relaxed mb-4">
