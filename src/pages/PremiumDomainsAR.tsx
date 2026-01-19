@@ -1529,6 +1529,9 @@ const PremiumDomainsAR = () => {
                 <strong className="text-white">هل تبحث عن اسم نطاق بقيمة SEO حقيقية؟</strong> معنا يمكنك شراء <strong className="text-amber-400">أسماء نطاقات منتهية الصلاحية موثوقة مع روابط خلفية</strong> وسلطة عالية، تم فحصها بعناية للجودة والتاريخ. مع نطاق منتهي الصلاحية لا تبدأ من الصفر، بل تستفيد فوراً من الروابط الموجودة والثقة والتاريخ عبر الإنترنت.
               </p>
               <p className="text-slate-300 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
+                <strong className="text-amber-400">نحن متخصصون في .EU وامتدادات النطاقات الأوروبية الأخرى</strong> ونميز أنفسنا بوضوح في قطاع أسماء الويب الأوروبية.
+              </p>
+              <p className="text-slate-300 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
                 تحتوي هذه النطاقات منتهية الصلاحية على روابط خلفية موجودة من <strong className="text-amber-400">شركات مرموقة ومؤسسات إعلامية ومنظمات حكومية</strong> — روابط أساسية يصعب أو يستحيل على المواقع العادية الحصول عليها. النطاقات منتهية الصلاحية هي ميزة استراتيجية يستخدمها أفضل المسوقين والوكالات والمستثرين منذ سنوات للنمو أسرع من الآخرين.
               </p>
               <p className="text-slate-300 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">

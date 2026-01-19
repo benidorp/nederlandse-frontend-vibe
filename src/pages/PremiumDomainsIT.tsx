@@ -1753,6 +1753,9 @@ const PremiumDomainsIT = () => {
                 <strong className="text-white">Cerchi un nome di dominio con vero valore SEO?</strong> Da noi acquisti <strong className="text-amber-400">domini scaduti con backlink</strong> affidabili e alta autorità, accuratamente verificati per qualità e storia. Con un dominio scaduto non parti da zero, ma benefici subito di link esistenti, fiducia e storia online.
               </p>
               <p className="text-slate-300 leading-relaxed mb-4">
+                <strong className="text-amber-400">Siamo specializzati in .EU e altre estensioni di dominio europee</strong> e ci distinguiamo chiaramente nel segmento dei nomi web europei.
+              </p>
+              <p className="text-slate-300 leading-relaxed mb-4">
                 Questi domini scaduti dispongono di backlink esistenti da <strong className="text-amber-400">aziende rinomate, istituzioni mediatiche e organizzazioni governative</strong> — link essenziali che per i siti web normali sono molto difficili o impossibili da ottenere. I domini scaduti sono un vantaggio strategico che i migliori marketer, agenzie e investitori utilizzano da anni per crescere più velocemente degli altri.
               </p>
               <p className="text-slate-300 leading-relaxed mb-4">

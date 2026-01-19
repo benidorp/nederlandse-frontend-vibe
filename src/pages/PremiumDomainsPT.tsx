@@ -1691,6 +1691,9 @@ const PremiumDomainsPT = () => {
                 <strong className="text-white">À procura de um nome de domínio com valor SEO real?</strong> Connosco compra <strong className="text-amber-400">domínios expirados fiáveis com backlinks</strong> e alta autoridade, cuidadosamente verificados quanto à qualidade e histórico. Com um domínio expirado não começa do zero, mas beneficia imediatamente de links existentes, confiança e histórico online.
               </p>
               <p className="text-slate-300 leading-relaxed mb-4">
+                <strong className="text-amber-400">Somos especializados em .EU e outras extensões de domínio europeias</strong> e distinguimo-nos claramente no segmento de nomes web europeus.
+              </p>
+              <p className="text-slate-300 leading-relaxed mb-4">
                 Estes domínios expirados possuem backlinks existentes de <strong className="text-amber-400">empresas conceituadas, instituições de media e organizações governamentais</strong> — links essenciais que para websites normais são muito difíceis ou impossíveis de obter. Domínios expirados são uma vantagem estratégica que os melhores profissionais de marketing, agências e investidores utilizam há anos para crescer mais rápido que os restantes.
               </p>
               <p className="text-slate-300 leading-relaxed mb-4">
