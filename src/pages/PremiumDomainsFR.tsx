@@ -2516,7 +2516,7 @@ const PremiumDomainsFR = () => {
                             <p className="text-sm mb-2"><span className="text-slate-400">Extensions supportées :</span> .EU · .IT · .FR · .DE</p>
                             <p className="text-sm mb-2"><span className="text-slate-400">Comment ça marche :</span> Lors de l'enregistrement, l'option trustee est automatiquement proposée. INWX utilise une adresse UE pour l'enregistrement. Vous gardez le contrôle total.</p>
                             <p className="text-sm"><span className="text-slate-400">💰 Coût :</span> <span className="text-white font-medium">3€ par an</span></p>
-                            <a href="https://www.inwx.com/en/offer/localpresence" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300 text-sm underline">🔗 inwx.com/en/offer/localpresence</a>
+                            <a href="https://www.inwx.com/en/offer/localpresence" target="_blank" rel="nofollow noopener noreferrer" className="text-amber-400 hover:text-amber-300 text-sm underline">🔗 inwx.com/en/offer/localpresence</a>
                           </div>
 
                           {/* 101domain */}
@@ -2524,7 +2524,7 @@ const PremiumDomainsFR = () => {
                             <h5 className="text-amber-400 font-semibold mb-2">101domain — Trustee directement au checkout</h5>
                             <p className="text-sm mb-2">Le trustee est automatiquement proposé. Convient pour plusieurs ccTLDs européens. Idéal pour les entreprises internationales.</p>
                             <p className="text-sm"><span className="text-slate-400">💰 Coût :</span> <span className="text-white font-medium">± 25$ par an</span></p>
-                            <a href="https://www.101domain.com/trustee_service.htm" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300 text-sm underline">🔗 101domain.com/trustee_service.htm</a>
+                            <a href="https://www.101domain.com/trustee_service.htm" target="_blank" rel="nofollow noopener noreferrer" className="text-amber-400 hover:text-amber-300 text-sm underline">🔗 101domain.com/trustee_service.htm</a>
                           </div>
 
                           {/* Netim */}
@@ -2532,7 +2532,7 @@ const PremiumDomainsFR = () => {
                             <h5 className="text-amber-400 font-semibold mb-2">Netim — Trustee uniquement si requis</h5>
                             <p className="text-sm mb-2">Actif uniquement pour les extensions avec obligation. Solution transparente et professionnelle.</p>
                             <p className="text-sm"><span className="text-slate-400">💰 Coût :</span> <span className="text-white font-medium">10€–30€ par an</span></p>
-                            <a href="https://www.netim.com/en/domain-name/services/trustee-service" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300 text-sm underline">🔗 netim.com/en/domain-name/services/trustee-service</a>
+                            <a href="https://www.netim.com/en/domain-name/services/trustee-service" target="_blank" rel="nofollow noopener noreferrer" className="text-amber-400 hover:text-amber-300 text-sm underline">🔗 netim.com/en/domain-name/services/trustee-service</a>
                           </div>
                         </div>
                       </div>
@@ -2835,7 +2835,7 @@ const PremiumDomainsFR = () => {
                               <a 
                                 href="https://www.junda.nl/wordpress-hosting?via=291063" 
                                 target="_blank" 
-                                rel="noopener noreferrer"
+                                rel="nofollow noopener noreferrer"
                                 className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-semibold rounded-lg transition-colors"
                               >
                                 <ExternalLink className="w-4 h-4" />
@@ -2844,7 +2844,7 @@ const PremiumDomainsFR = () => {
                               <a 
                                 href="https://www.junda.nl/domeinnaam-verhuizen?via=291063" 
                                 target="_blank" 
-                                rel="noopener noreferrer"
+                                rel="nofollow noopener noreferrer"
                                 className="inline-flex items-center gap-2 px-4 py-2 border border-amber-500 text-amber-400 hover:bg-amber-500/10 font-semibold rounded-lg transition-colors"
                               >
                                 <ExternalLink className="w-4 h-4" />
@@ -2860,7 +2860,7 @@ const PremiumDomainsFR = () => {
                         <div className="text-center">
                           <h4 className="font-bold text-white text-lg mb-2">🔒 Protégez Votre Vie Privée avec NordVPN</h4>
                           <p className="text-white/90 text-sm mb-3">
-                            Qu'est-ce qu'un VPN ? Un <a href="https://www.dpbolvw.net/click-100643838-12814529" target="_blank" rel="noopener noreferrer" className="underline text-yellow-300 hover:text-yellow-200">Réseau Privé Virtuel (VPN)</a> chiffre votre connexion internet et masque votre adresse IP, protégeant vos données personnelles contre les pirates, les traqueurs et la surveillance.
+                            Qu'est-ce qu'un VPN ? Un <a href="https://www.dpbolvw.net/click-100643838-12814529" target="_blank" rel="nofollow noopener noreferrer" className="underline text-yellow-300 hover:text-yellow-200">Réseau Privé Virtuel (VPN)</a> chiffre votre connexion internet et masque votre adresse IP, protégeant vos données personnelles contre les pirates, les traqueurs et la surveillance.
                           </p>
                           <p className="text-white/80 text-xs mb-4">
                             Pour les propriétaires de domaines premium, protéger votre identité en ligne est crucial. NordVPN vous permet de naviguer anonymement, d'accéder au contenu mondial et de sécuriser vos transactions commerciales.
@@ -2868,7 +2868,7 @@ const PremiumDomainsFR = () => {
                           <a 
                             href="https://www.dpbolvw.net/click-100643838-12814529" 
                             target="_blank" 
-                            rel="noopener noreferrer"
+                            rel="nofollow noopener noreferrer"
                             className="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-2 px-6 rounded-full transition-colors text-sm"
                           >
                             Obtenez NordVPN Maintenant →

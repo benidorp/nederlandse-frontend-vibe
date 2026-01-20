@@ -2341,7 +2341,7 @@ const PremiumDomainsEN = () => {
                             <p className="text-sm mb-2"><span className="text-slate-400">Supported extensions:</span> .EU · .IT · .FR · .DE</p>
                             <p className="text-sm mb-2"><span className="text-slate-400">How it works:</span> During registration the trustee option is automatically offered. INWX uses an EU address for registration. You retain full control.</p>
                             <p className="text-sm"><span className="text-slate-400">💰 Cost:</span> <span className="text-white font-medium">€3 per year</span></p>
-                            <a href="https://www.inwx.com/en/offer/localpresence" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300 text-sm underline">🔗 inwx.com/en/offer/localpresence</a>
+                            <a href="https://www.inwx.com/en/offer/localpresence" target="_blank" rel="nofollow noopener noreferrer" className="text-amber-400 hover:text-amber-300 text-sm underline">🔗 inwx.com/en/offer/localpresence</a>
                           </div>
 
                           {/* 101domain */}
@@ -2349,7 +2349,7 @@ const PremiumDomainsEN = () => {
                             <h5 className="text-amber-400 font-semibold mb-2">101domain — Trustee directly during checkout</h5>
                             <p className="text-sm mb-2">Trustee is automatically offered. Suitable for multiple European ccTLDs. Ideal for international businesses.</p>
                             <p className="text-sm"><span className="text-slate-400">💰 Cost:</span> <span className="text-white font-medium">± $25 per year</span></p>
-                            <a href="https://www.101domain.com/trustee_service.htm" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300 text-sm underline">🔗 101domain.com/trustee_service.htm</a>
+                            <a href="https://www.101domain.com/trustee_service.htm" target="_blank" rel="nofollow noopener noreferrer" className="text-amber-400 hover:text-amber-300 text-sm underline">🔗 101domain.com/trustee_service.htm</a>
                           </div>
 
                           {/* Netim */}
@@ -2357,7 +2357,7 @@ const PremiumDomainsEN = () => {
                             <h5 className="text-amber-400 font-semibold mb-2">Netim — Trustee only when required</h5>
                             <p className="text-sm mb-2">Only active for extensions with obligation. Transparent and professional solution.</p>
                             <p className="text-sm"><span className="text-slate-400">💰 Cost:</span> <span className="text-white font-medium">€10–€30 per year</span></p>
-                            <a href="https://www.netim.com/en/domain-name/services/trustee-service" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300 text-sm underline">🔗 netim.com/en/domain-name/services/trustee-service</a>
+                            <a href="https://www.netim.com/en/domain-name/services/trustee-service" target="_blank" rel="nofollow noopener noreferrer" className="text-amber-400 hover:text-amber-300 text-sm underline">🔗 netim.com/en/domain-name/services/trustee-service</a>
                           </div>
                         </div>
                       </div>
@@ -2945,7 +2945,7 @@ const PremiumDomainsEN = () => {
                   <div className="text-center">
                     <h4 className="font-bold text-white text-lg mb-2">🔒 Protect Your Privacy with NordVPN</h4>
                     <p className="text-white/90 text-sm mb-3">
-                      What is a VPN? A <a href="https://www.dpbolvw.net/click-100643838-14471514" target="_blank" rel="noopener noreferrer" className="underline text-yellow-300 hover:text-yellow-200">Virtual Private Network (VPN)</a> encrypts your internet connection and hides your IP address, protecting your personal data from hackers, trackers, and surveillance.
+                      What is a VPN? A <a href="https://www.dpbolvw.net/click-100643838-14471514" target="_blank" rel="nofollow noopener noreferrer" className="underline text-yellow-300 hover:text-yellow-200">Virtual Private Network (VPN)</a> encrypts your internet connection and hides your IP address, protecting your personal data from hackers, trackers, and surveillance.
                     </p>
                     <p className="text-white/80 text-xs mb-4">
                       For premium domain owners, protecting your online identity is essential. NordVPN allows you to browse anonymously, access global content, and secure your business transactions.
@@ -2953,7 +2953,7 @@ const PremiumDomainsEN = () => {
                     <a 
                       href="https://www.dpbolvw.net/click-100643838-14471514" 
                       target="_blank" 
-                      rel="noopener noreferrer"
+                      rel="nofollow noopener noreferrer"
                       className="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-2 px-6 rounded-full transition-colors text-sm"
                     >
                       Get NordVPN Now →

@@ -2605,7 +2605,7 @@ const PremiumDomainsES = () => {
                             <p className="text-sm mb-2"><span className="text-slate-400">Extensiones soportadas:</span> .EU · .IT · .FR · .DE</p>
                             <p className="text-sm mb-2"><span className="text-slate-400">Cómo funciona:</span> Durante el registro se ofrece automáticamente la opción trustee. INWX usa una dirección UE para el registro. Usted mantiene el control total.</p>
                             <p className="text-sm"><span className="text-slate-400">💰 Coste:</span> <span className="text-white font-medium">€3 por año</span></p>
-                            <a href="https://www.inwx.com/en/offer/localpresence" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300 text-sm underline">🔗 inwx.com/en/offer/localpresence</a>
+                            <a href="https://www.inwx.com/en/offer/localpresence" target="_blank" rel="nofollow noopener noreferrer" className="text-amber-400 hover:text-amber-300 text-sm underline">🔗 inwx.com/en/offer/localpresence</a>
                           </div>
 
                           {/* 101domain */}
@@ -2613,7 +2613,7 @@ const PremiumDomainsES = () => {
                             <h5 className="text-amber-400 font-semibold mb-2">101domain — Trustee directamente en el checkout</h5>
                             <p className="text-sm mb-2">Trustee se ofrece automáticamente. Adecuado para múltiples ccTLDs europeos. Ideal para empresas internacionales.</p>
                             <p className="text-sm"><span className="text-slate-400">💰 Coste:</span> <span className="text-white font-medium">± $25 por año</span></p>
-                            <a href="https://www.101domain.com/trustee_service.htm" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300 text-sm underline">🔗 101domain.com/trustee_service.htm</a>
+                            <a href="https://www.101domain.com/trustee_service.htm" target="_blank" rel="nofollow noopener noreferrer" className="text-amber-400 hover:text-amber-300 text-sm underline">🔗 101domain.com/trustee_service.htm</a>
                           </div>
 
                           {/* Netim */}
@@ -2621,7 +2621,7 @@ const PremiumDomainsES = () => {
                             <h5 className="text-amber-400 font-semibold mb-2">Netim — Trustee solo cuando es requerido</h5>
                             <p className="text-sm mb-2">Solo activo para extensiones con obligación. Solución transparente y profesional.</p>
                             <p className="text-sm"><span className="text-slate-400">💰 Coste:</span> <span className="text-white font-medium">€10–€30 por año</span></p>
-                            <a href="https://www.netim.com/en/domain-name/services/trustee-service" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300 text-sm underline">🔗 netim.com/en/domain-name/services/trustee-service</a>
+                            <a href="https://www.netim.com/en/domain-name/services/trustee-service" target="_blank" rel="nofollow noopener noreferrer" className="text-amber-400 hover:text-amber-300 text-sm underline">🔗 netim.com/en/domain-name/services/trustee-service</a>
                           </div>
                         </div>
                       </div>

@@ -2536,7 +2536,7 @@ const PremiumDomainsDE = () => {
                               <a 
                                 href="https://www.junda.nl/wordpress-hosting?via=291063" 
                                 target="_blank" 
-                                rel="noopener noreferrer"
+                                rel="nofollow noopener noreferrer"
                                 className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-semibold rounded-lg transition-colors"
                               >
                                 <ExternalLink className="w-4 h-4" />
@@ -2545,7 +2545,7 @@ const PremiumDomainsDE = () => {
                               <a 
                                 href="https://www.junda.nl/domeinnaam-verhuizen?via=291063" 
                                 target="_blank" 
-                                rel="noopener noreferrer"
+                                rel="nofollow noopener noreferrer"
                                 className="inline-flex items-center gap-2 px-4 py-2 border border-amber-500 text-amber-400 hover:bg-amber-500/10 font-semibold rounded-lg transition-colors"
                               >
                                 <ExternalLink className="w-4 h-4" />
@@ -2561,7 +2561,7 @@ const PremiumDomainsDE = () => {
                         <div className="text-center">
                           <h4 className="font-bold text-white text-lg mb-2">🔒 Schützen Sie Ihre Privatsphäre mit NordVPN</h4>
                           <p className="text-white/90 text-sm mb-3">
-                            Was ist ein VPN? Ein <a href="https://www.anrdoezrs.net/click-100643838-14063115" target="_blank" rel="noopener noreferrer" className="underline text-yellow-300 hover:text-yellow-200">Virtuelles Privates Netzwerk (VPN)</a> verschlüsselt Ihre Internetverbindung und verbirgt Ihre IP-Adresse, wodurch Ihre persönlichen Daten vor Hackern, Trackern und Überwachung geschützt werden.
+                            Was ist ein VPN? Ein <a href="https://www.anrdoezrs.net/click-100643838-14063115" target="_blank" rel="nofollow noopener noreferrer" className="underline text-yellow-300 hover:text-yellow-200">Virtuelles Privates Netzwerk (VPN)</a> verschlüsselt Ihre Internetverbindung und verbirgt Ihre IP-Adresse, wodurch Ihre persönlichen Daten vor Hackern, Trackern und Überwachung geschützt werden.
                           </p>
                           <p className="text-white/80 text-xs mb-4">
                             Für Besitzer von Premium-Domains ist der Schutz Ihrer Online-Identität entscheidend. NordVPN ermöglicht anonymes Surfen, Zugang zu globalen Inhalten und sichere Geschäftstransaktionen.
@@ -2569,7 +2569,7 @@ const PremiumDomainsDE = () => {
                           <a 
                             href="https://www.anrdoezrs.net/click-100643838-14063115" 
                             target="_blank" 
-                            rel="noopener noreferrer"
+                            rel="nofollow noopener noreferrer"
                             className="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-2 px-6 rounded-full transition-colors text-sm"
                           >
                             NordVPN Jetzt Holen →
