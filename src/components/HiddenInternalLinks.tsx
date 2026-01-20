@@ -45,8 +45,7 @@ const HiddenInternalLinks = () => {
       <Link to="/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya">Premium Domain Names HI</Link>
       <Link to="/expireddomainnames/hi/premium-domain-kanooni-dastavez">Premium Domains Legal HI</Link>
       
-      {/* Policy and other pages */}
-      <Link to="/policy">Legal Policy</Link>
+      {/* Other pages - /af, /policy, /docs-1 excluded from interlinking */}
       <Link to="/btw-calculator-wereldwijd">VAT Calculator</Link>
       
       {/* Spanish version */}

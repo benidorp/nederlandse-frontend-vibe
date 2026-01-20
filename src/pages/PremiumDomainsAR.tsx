@@ -2438,7 +2438,7 @@ const PremiumDomainsAR = () => {
                 <div className="text-center">
                   <h4 className="font-bold text-white text-lg mb-2">🔒 احمِ خصوصيتك مع NordVPN</h4>
                   <p className="text-white/90 text-sm mb-3">
-                    ما هي VPN؟ <a href="https://www.dpbolvw.net/click-100643838-15520886" target="_blank" rel="noopener noreferrer" className="underline text-yellow-300 hover:text-yellow-200">الشبكة الافتراضية الخاصة (VPN)</a> تشفر اتصالك بالإنترنت وتخفي عنوان IP الخاص بك، مما يحمي بياناتك الشخصية من القراصنة والمتتبعين والمراقبة.
+                    ما هي VPN؟ <a href="https://www.dpbolvw.net/click-100643838-15520886" target="_blank" rel="nofollow noopener noreferrer" className="underline text-yellow-300 hover:text-yellow-200">الشبكة الافتراضية الخاصة (VPN)</a> تشفر اتصالك بالإنترنت وتخفي عنوان IP الخاص بك، مما يحمي بياناتك الشخصية من القراصنة والمتتبعين والمراقبة.
                   </p>
                   <p className="text-white/80 text-xs mb-4">
                     لمالكي النطاقات المميزة، حماية هويتك عبر الإنترنت أمر ضروري. NordVPN يتيح لك التصفح بشكل مجهول والوصول إلى المحتوى العالمي وتأمين معاملاتك التجارية.
@@ -2446,7 +2446,7 @@ const PremiumDomainsAR = () => {
                   <a 
                     href="https://www.dpbolvw.net/click-100643838-15520886" 
                     target="_blank" 
-                    rel="noopener noreferrer"
+                    rel="nofollow noopener noreferrer"
                     className="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-2 px-6 rounded-full transition-colors text-sm"
                   >
                     احصل على NordVPN الآن ←
