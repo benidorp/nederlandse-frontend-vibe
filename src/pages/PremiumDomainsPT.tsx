@@ -2469,7 +2469,7 @@ const PremiumDomainsPT = () => {
                 <div className="text-center">
                   <h4 className="font-bold text-white text-lg mb-2">🔒 Proteja a Sua Privacidade com NordVPN</h4>
                   <p className="text-white/90 text-sm mb-3">
-                    O que é uma VPN? Uma <a href="https://www.dpbolvw.net/click-100643838-15520886" target="_blank" rel="noopener noreferrer" className="underline text-yellow-300 hover:text-yellow-200">Rede Privada Virtual (VPN)</a> encripta a sua ligação à internet e oculta o seu endereço IP, protegendo os seus dados pessoais de hackers, rastreadores e vigilância.
+                    O que é uma VPN? Uma <a href="https://www.dpbolvw.net/click-100643838-15520886" target="_blank" rel="nofollow noopener noreferrer" className="underline text-yellow-300 hover:text-yellow-200">Rede Privada Virtual (VPN)</a> encripta a sua ligação à internet e oculta o seu endereço IP, protegendo os seus dados pessoais de hackers, rastreadores e vigilância.
                   </p>
                   <p className="text-white/80 text-xs mb-4">
                     Para proprietários de domínios premium, proteger a sua identidade online é essencial. A NordVPN permite navegar anonimamente, aceder a conteúdos globais e proteger as suas transações comerciais.
@@ -2477,7 +2477,7 @@ const PremiumDomainsPT = () => {
                   <a 
                     href="https://www.dpbolvw.net/click-100643838-15520886" 
                     target="_blank" 
-                    rel="noopener noreferrer"
+                    rel="nofollow noopener noreferrer"
                     className="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-2 px-6 rounded-full transition-colors text-sm"
                   >
                     Obtenha NordVPN Agora →

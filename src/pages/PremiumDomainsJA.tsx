@@ -2751,7 +2751,7 @@ const PremiumDomainsJA = () => {
                   <div className="text-center">
                     <h4 className="font-bold text-white text-lg mb-2">🔒 NordVPNでプライバシーを保護</h4>
                     <p className="text-white/90 text-sm mb-3">
-                      VPNとは？<a href="https://www.tkqlhce.com/click-100643838-15295919" target="_blank" rel="noopener noreferrer" className="underline text-yellow-300 hover:text-yellow-200">仮想プライベートネットワーク（VPN）</a>はインターネット接続を暗号化し、IPアドレスを隠すことで、ハッカー、トラッカー、監視から個人データを保護します。
+                      VPNとは？<a href="https://www.tkqlhce.com/click-100643838-15295919" target="_blank" rel="nofollow noopener noreferrer" className="underline text-yellow-300 hover:text-yellow-200">仮想プライベートネットワーク（VPN）</a>はインターネット接続を暗号化し、IPアドレスを隠すことで、ハッカー、トラッカー、監視から個人データを保護します。
                     </p>
                     <p className="text-white/80 text-xs mb-4">
                       プレミアムドメインの所有者にとって、オンラインアイデンティティの保護は不可欠です。NordVPNを使用すると、匿名でブラウジングし、世界中のコンテンツにアクセスし、ビジネス取引を安全に保護できます。
@@ -2759,7 +2759,7 @@ const PremiumDomainsJA = () => {
                     <a 
                       href="https://www.tkqlhce.com/click-100643838-15295919" 
                       target="_blank" 
-                      rel="noopener noreferrer"
+                      rel="nofollow noopener noreferrer"
                       className="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-2 px-6 rounded-full transition-colors text-sm"
                     >
                       今すぐNordVPNを入手 →

@@ -2585,7 +2585,7 @@ const PremiumDomainsTR = () => {
                   <div className="text-center">
                     <h4 className="font-bold text-white text-lg mb-2">🔒 NordVPN ile Gizliliğinizi Koruyun</h4>
                     <p className="text-white/90 text-sm mb-3">
-                      VPN nedir? <a href="https://www.dpbolvw.net/click-100643838-14471514" target="_blank" rel="noopener noreferrer" className="underline text-yellow-300 hover:text-yellow-200">Sanal Özel Ağ (VPN)</a> internet bağlantınızı şifreler ve IP adresinizi gizleyerek kişisel verilerinizi hackerlardan, takipçilerden ve gözetimden korur.
+                      VPN nedir? <a href="https://www.dpbolvw.net/click-100643838-14471514" target="_blank" rel="nofollow noopener noreferrer" className="underline text-yellow-300 hover:text-yellow-200">Sanal Özel Ağ (VPN)</a> internet bağlantınızı şifreler ve IP adresinizi gizleyerek kişisel verilerinizi hackerlardan, takipçilerden ve gözetimden korur.
                     </p>
                     <p className="text-white/80 text-xs mb-4">
                       Premium domain sahipleri için çevrimiçi kimliğinizi korumak önemlidir. NordVPN, anonim gezinmenize, küresel içeriğe erişmenize ve iş işlemlerinizi güvence altına almanıza olanak tanır.
@@ -2593,7 +2593,7 @@ const PremiumDomainsTR = () => {
                     <a 
                       href="https://www.dpbolvw.net/click-100643838-14471514" 
                       target="_blank" 
-                      rel="noopener noreferrer"
+                      rel="nofollow noopener noreferrer"
                       className="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-2 px-6 rounded-full transition-colors text-sm"
                     >
                       NordVPN'i Şimdi Alın →
