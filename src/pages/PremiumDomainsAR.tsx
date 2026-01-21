@@ -2346,6 +2346,27 @@ const PremiumDomainsAR = () => {
                   </div>
                 </div>
               </article>
+
+              {/* New EU Domain Value Section */}
+              <div className="bg-gradient-to-br from-slate-800/80 via-slate-900/90 to-slate-800/80 border border-amber-500/30 rounded-2xl p-8 md:p-10 mt-16 shadow-xl">
+                <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">
+                  لماذا أسماء النطاقات الأوروبية .EU المميزة ذات قيمة كبيرة
+                </h2>
+                
+                <div className="space-y-6 text-slate-300 leading-relaxed text-lg">
+                  <h3 className="text-xl md:text-2xl font-semibold text-amber-400 mb-6">
+                    أسماء أوروبية .EU قيمة مع ماضٍ موثوق للسوق الأوروبية والدولية
+                  </h3>
+                  
+                  <p>
+                    بينما تكون الامتدادات الأخرى مشبعة في كثير من الأحيان، تقدم <strong className="text-amber-400">.EU</strong> و<strong className="text-white">امتدادات النطاقات الأوروبية</strong> <strong className="text-amber-400">الموثوقية</strong> و<strong className="text-amber-400">المصداقية</strong> و<strong className="text-white">هوية جغرافية</strong> واضحة. من الناحية العملية، غالباً ما تكون هذه الأسماء الأوروبية أكثر قيمة وموثوقية من العديد من أسماء <strong className="text-slate-200">.com</strong> و<strong className="text-slate-200">.net</strong> أو <strong className="text-slate-200">.org</strong>.
+                  </p>
+                  
+                  <p>
+                    للمشترين الأوروبيين و<strong className="text-white">الدوليين</strong>، يوفر <strong className="text-amber-400">اسم ويب دولي</strong> بتاريخ عبر الإنترنت مصداقية إضافية. <strong className="text-white">عنوان ويب قديم بسمعة</strong>، <strong className="text-amber-400">اسم ويب متعدد اللغات</strong> أو <strong className="text-white">اسم ويب لأوروبا</strong> مناسب بشكل مثالي كعنوان ويب <strong className="text-amber-400">للسوق الدولية</strong> أو كـ <strong className="text-white">اسم عبر الإنترنت عالمي</strong> للشركات والمشاريع التي تريد تموضع نفسها بشكل احترافي. في كثير من الحالات، يمكن أيضاً نشر سلطة <strong className="text-amber-400">اسم .EU</strong> بشكل استراتيجي عبر <strong className="text-white">إعادة التوجيه</strong>، مع الحفاظ على الجاذبية الأوروبية والقيمة المتراكمة.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
