@@ -2627,10 +2627,6 @@ const PremiumDomains = () => {
                   </h3>
                   
                   <p>
-                    Wij zijn gespecialiseerd in <strong className="text-amber-400">.EU</strong> en andere <strong className="text-amber-400">Europese domeinextensies</strong> en onderscheiden ons nadrukkelijk binnen dit segment. Veel van deze <strong className="text-white">Europese webnamen</strong> zijn in het verleden gebruikt voor officiële projecten, samenwerkingsverbanden en initiatieven binnen Europa, waardoor zij beschikken over <strong className="text-amber-400">kwalitatieve vermeldingen</strong> en <strong className="text-amber-400">hoogwaardige verwijzingen</strong>.
-                  </p>
-                  
-                  <p>
                     Waar andere extensies vaak verzadigd zijn, bieden <strong className="text-amber-400">.EU</strong> en <strong className="text-white">Europese domeinextensies</strong> juist <strong className="text-amber-400">betrouwbaarheid</strong>, <strong className="text-amber-400">geloofwaardigheid</strong> en een duidelijke <strong className="text-white">geografische identiteit</strong>. In de praktijk zijn deze Europese namen vaak waardevoller en betrouwbaarder dan veel <strong className="text-slate-200">.com</strong>, <strong className="text-slate-200">.net</strong> of <strong className="text-slate-200">.org</strong>-namen.
                   </p>
                   
