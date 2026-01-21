@@ -2417,6 +2417,27 @@ const PremiumDomainsIT = () => {
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
+
+              {/* New EU Domain Value Section */}
+              <div className="bg-gradient-to-br from-slate-800/80 via-slate-900/90 to-slate-800/80 border border-amber-500/30 rounded-2xl p-8 md:p-10 mt-16 shadow-xl">
+                <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">
+                  Perché i nomi di dominio europei .EU premium hanno così tanto valore
+                </h2>
+                
+                <div className="space-y-6 text-slate-300 leading-relaxed text-lg">
+                  <h3 className="text-xl md:text-2xl font-semibold text-amber-400 mb-6">
+                    Preziosi nomi europei .EU con un passato affidabile per il mercato europeo e internazionale
+                  </h3>
+                  
+                  <p>
+                    Mentre altre estensioni sono spesso saturate, <strong className="text-amber-400">.EU</strong> e le <strong className="text-white">estensioni di dominio europee</strong> offrono <strong className="text-amber-400">affidabilità</strong>, <strong className="text-amber-400">credibilità</strong> e una chiara <strong className="text-white">identità geografica</strong>. In pratica, questi nomi europei sono spesso più preziosi e affidabili di molti nomi <strong className="text-slate-200">.com</strong>, <strong className="text-slate-200">.net</strong> o <strong className="text-slate-200">.org</strong>.
+                  </p>
+                  
+                  <p>
+                    Per acquirenti europei e <strong className="text-white">internazionali</strong>, un <strong className="text-amber-400">nome web internazionale</strong> con storia online offre credibilità extra. Un <strong className="text-white">vecchio indirizzo web con reputazione</strong>, un <strong className="text-amber-400">nome web multilingue</strong> o un <strong className="text-white">nome web per l'Europa</strong> è ideale come indirizzo web per il <strong className="text-amber-400">mercato internazionale</strong> o come <strong className="text-white">nome online globale</strong> per aziende e progetti che vogliono posizionarsi professionalmente. In molti casi, l'autorità di un <strong className="text-amber-400">nome .EU</strong> può anche essere impiegata strategicamente tramite un <strong className="text-white">redirect</strong>, preservando l'appeal europeo e il valore accumulato.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
