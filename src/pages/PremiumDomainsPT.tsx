@@ -1616,10 +1616,22 @@ const PremiumDomainsPT = () => {
   return (
     <>
       <Helmet>
-        <title>Domínios Premium Expirados com Backlinks Alta Autoridade & Valor SEO</title>
+        <html lang="pt" />
+        <title>Domínios Premium Expirados com Backlinks | Alta Autoridade & Valor SEO</title>
         <meta name="description" content="Comprar domínio expirado com backlinks? Domínios expirados fiáveis com alta autoridade e valor SEO. Comprar domínio premium para rankings mais rápidos no Google. Disponíveis imediatamente." />
         <meta name="keywords" content="comprar domínio expirado, domínios expirados com backlinks, domínio com autoridade, domínios expirados fiáveis, comprar domínio premium, domínio com valor SEO, domínio antigo com links, melhores domínios à venda" />
         <link rel="canonical" href="https://iaee.eu/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="IAEE Premium Domains" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Domínios Premium Expirados com Backlinks | Alta Autoridade & Valor SEO" />
+        <meta property="og:description" content="Domínios expirados fiáveis com alta autoridade e valor SEO. Disponíveis imediatamente." />
+        <meta property="og:url" content="https://iaee.eu/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" />
+        <meta property="og:locale" content="pt_PT" />
+        <meta property="og:site_name" content="IAEE Premium Domains" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Domínios Premium Expirados com Backlinks" />
+        <meta name="twitter:description" content="Domínios expirados fiáveis com alta autoridade e valor SEO. Disponíveis imediatamente." />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">

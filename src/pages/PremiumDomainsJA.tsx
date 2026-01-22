@@ -1670,11 +1670,22 @@ const PremiumDomainsJA = () => {
   return (
     <>
       <Helmet>
+        <html lang="ja" />
         <title>高権威バックリンク付きプレミアム期限切れドメイン購入 | SEO価値</title>
         <meta name="description" content="バックリンク付き期限切れドメインをお探しですか？高権威とSEO価値を持つ信頼できる期限切れドメイン。Google上位表示を早めるプレミアムドメイン。即時利用可能。" />
         <meta name="keywords" content="期限切れドメイン購入, バックリンク付きドメイン, 権威あるドメイン, 信頼できる期限切れドメイン, プレミアムドメイン購入, SEO価値ドメイン, リンク付き古いドメイン, 販売中ベストドメイン" />
-        <link rel="canonical" href="https://www.iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" />
-        <html lang="ja" />
+        <link rel="canonical" href="https://iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="IAEE Premium Domains" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="高権威バックリンク付きプレミアム期限切れドメイン購入 | SEO価値" />
+        <meta property="og:description" content="高権威とSEO価値を持つ信頼できる期限切れドメイン。即時利用可能。" />
+        <meta property="og:url" content="https://iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" />
+        <meta property="og:locale" content="ja_JP" />
+        <meta property="og:site_name" content="IAEE Premium Domains" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="高権威バックリンク付きプレミアム期限切れドメイン購入" />
+        <meta name="twitter:description" content="高権威とSEO価値を持つ信頼できる期限切れドメイン。即時利用可能。" />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">

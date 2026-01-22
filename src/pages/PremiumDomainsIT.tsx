@@ -1616,10 +1616,22 @@ const PremiumDomainsIT = () => {
   return (
     <>
       <Helmet>
-        <title>Domini Premium Scaduti con Backlink Alta Autorità & Valore SEO</title>
+        <html lang="it" />
+        <title>Domini Premium Scaduti con Backlink | Alta Autorità & Valore SEO</title>
         <meta name="description" content="Acquista domini scaduti con backlink? Domini scaduti affidabili con alta autorità e valore SEO. Acquista dominio premium per ranking Google più veloci. Disponibili subito." />
         <meta name="keywords" content="acquistare dominio scaduto, domini scaduti con backlink, dominio con autorità, domini scaduti affidabili, acquistare dominio premium, dominio con valore SEO, vecchio dominio con link, migliori domini in vendita" />
         <link rel="canonical" href="https://iaee.eu/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="IAEE Premium Domains" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Domini Premium Scaduti con Backlink | Alta Autorità & Valore SEO" />
+        <meta property="og:description" content="Domini scaduti affidabili con alta autorità e valore SEO. Disponibili subito." />
+        <meta property="og:url" content="https://iaee.eu/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo" />
+        <meta property="og:locale" content="it_IT" />
+        <meta property="og:site_name" content="IAEE Premium Domains" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Domini Premium Scaduti con Backlink" />
+        <meta name="twitter:description" content="Domini scaduti affidabili con alta autorità e valore SEO. Disponibili subito." />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">

@@ -1516,10 +1516,22 @@ const PremiumDomainsPL = () => {
   return (
     <>
       <Helmet>
-        <title>Wygasłe domeny premium z backlinkami wysoki autorytet i wartość SEO</title>
+        <html lang="pl" />
+        <title>Wygasłe Domeny Premium z Backlinkami | Wysoki Autorytet i Wartość SEO</title>
         <meta name="description" content="Kup wygasłą domenę z backlinkami? Niezawodne wygasłe domeny z wysokim autorytetem i wartością SEO. Kup domenę premium dla szybszych rankingów Google. Dostępne natychmiast." />
         <meta name="keywords" content="kup wygasłą domenę, wygasłe domeny z backlinkami, domena z autorytetem, niezawodne wygasłe domeny, kup domenę premium, domena z wartością SEO" />
         <link rel="canonical" href="https://iaee.eu/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="IAEE Premium Domains" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Wygasłe Domeny Premium z Backlinkami | Wysoki Autorytet i Wartość SEO" />
+        <meta property="og:description" content="Niezawodne wygasłe domeny z wysokim autorytetem i wartością SEO. Dostępne natychmiast." />
+        <meta property="og:url" content="https://iaee.eu/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo" />
+        <meta property="og:locale" content="pl_PL" />
+        <meta property="og:site_name" content="IAEE Premium Domains" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Wygasłe Domeny Premium z Backlinkami" />
+        <meta name="twitter:description" content="Niezawodne wygasłe domeny z wysokim autorytetem i wartością SEO. Dostępne natychmiast." />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">

@@ -1587,11 +1587,22 @@ const PremiumDomainsHI = () => {
   return (
     <>
       <Helmet>
-        <title>प्रीमियम एक्सपायर्ड डोमेन नाम बैकलिंक्स के साथ उच्च अथॉरिटी और SEO मूल्य</title>
+        <html lang="hi" />
+        <title>प्रीमियम एक्सपायर्ड डोमेन नाम बैकलिंक्स के साथ | उच्च अथॉरिटी और SEO मूल्य</title>
         <meta name="description" content="बैकलिंक्स के साथ एक्सपायर्ड डोमेन नाम खरीदें? उच्च अथॉरिटी और SEO मूल्य वाले विश्वसनीय एक्सपायर्ड डोमेन। तेज़ Google रैंकिंग के लिए प्रीमियम डोमेन नाम खरीदें। तुरंत उपलब्ध।" />
         <meta name="keywords" content="एक्सपायर्ड डोमेन नाम खरीदें, बैकलिंक्स के साथ एक्सपायर्ड डोमेन नाम, अथॉरिटी वाला डोमेन नाम, विश्वसनीय एक्सपायर्ड डोमेन, प्रीमियम डोमेन नाम खरीदें, SEO मूल्य वाला डोमेन नाम" />
         <link rel="canonical" href="https://iaee.eu/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya" />
-        <html lang="hi" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="IAEE Premium Domains" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="प्रीमियम एक्सपायर्ड डोमेन नाम बैकलिंक्स के साथ | उच्च अथॉरिटी और SEO मूल्य" />
+        <meta property="og:description" content="उच्च अथॉरिटी और SEO मूल्य वाले विश्वसनीय एक्सपायर्ड डोमेन। तुरंत उपलब्ध।" />
+        <meta property="og:url" content="https://iaee.eu/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya" />
+        <meta property="og:locale" content="hi_IN" />
+        <meta property="og:site_name" content="IAEE Premium Domains" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="प्रीमियम एक्सपायर्ड डोमेन नाम बैकलिंक्स के साथ" />
+        <meta name="twitter:description" content="उच्च अथॉरिटी और SEO मूल्य वाले विश्वसनीय एक्सपायर्ड डोमेन। तुरंत उपलब्ध।" />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">

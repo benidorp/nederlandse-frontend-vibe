@@ -1617,10 +1617,22 @@ const PremiumDomainsDE = () => {
   return (
     <>
       <Helmet>
-        <title>Premium Expired Domains mit Backlinks hoher Autorität & SEO-Wert kaufen</title>
+        <html lang="de" />
+        <title>Premium Expired Domains mit Backlinks kaufen | Hohe Autorität & SEO-Wert</title>
         <meta name="description" content="Expired Domain mit Backlinks kaufen? Zuverlässige expired Domains mit hoher Autorität und SEO-Wert. Premium Domain kaufen für schnellere Google-Rankings. Sofort verfügbar." />
         <meta name="keywords" content="expired domain kaufen, expired domains mit backlinks, domain mit autorität, zuverlässige expired domains, premium domain kaufen, domain mit SEO wert, alte domain mit links, beste domains zu kaufen" />
         <link rel="canonical" href="https://iaee.eu/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="IAEE Premium Domains" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Premium Expired Domains mit Backlinks kaufen | Hohe Autorität & SEO-Wert" />
+        <meta property="og:description" content="Zuverlässige expired Domains mit hoher Autorität und SEO-Wert. Sofort verfügbar." />
+        <meta property="og:url" content="https://iaee.eu/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert" />
+        <meta property="og:locale" content="de_DE" />
+        <meta property="og:site_name" content="IAEE Premium Domains" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Premium Expired Domains mit Backlinks kaufen" />
+        <meta name="twitter:description" content="Zuverlässige expired Domains mit hoher Autorität und SEO-Wert. Sofort verfügbar." />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">

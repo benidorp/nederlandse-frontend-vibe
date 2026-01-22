@@ -1619,10 +1619,22 @@ const PremiumDomains = () => {
   return (
     <>
       <Helmet>
-        <title>Premium Expired domeinnamen met backlinks hoge autoriteit & SEO-Waarde</title>
+        <html lang="nl" />
+        <title>Premium Expired Domeinnamen met Backlinks | Hoge Autoriteit & SEO-Waarde</title>
         <meta name="description" content="Expired domeinnaam met backlinks kopen? Betrouwbare expired domeinen met hoge autoriteit en SEO-waarde. Premium domeinnaam kopen voor snellere Google rankings. Direct beschikbaar." />
         <meta name="keywords" content="expired domeinnaam kopen, expired domeinnamen met backlinks, domeinnaam met autoriteit, betrouwbare expired domeinen, premium domeinnaam kopen, domeinnaam met SEO waarde, oude domeinnaam met links, beste domeinnamen te koop" />
         <link rel="canonical" href="https://iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="IAEE Premium Domains" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Premium Expired Domeinnamen met Backlinks | Hoge Autoriteit & SEO-Waarde" />
+        <meta property="og:description" content="Expired domeinnaam met backlinks kopen? Betrouwbare expired domeinen met hoge autoriteit en SEO-waarde. Direct beschikbaar." />
+        <meta property="og:url" content="https://iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
+        <meta property="og:locale" content="nl_NL" />
+        <meta property="og:site_name" content="IAEE Premium Domains" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Premium Expired Domeinnamen met Backlinks" />
+        <meta name="twitter:description" content="Betrouwbare expired domeinen met hoge autoriteit en SEO-waarde. Direct beschikbaar." />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">

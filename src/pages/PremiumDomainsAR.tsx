@@ -1389,11 +1389,22 @@ const PremiumDomainsAR = () => {
   return (
     <>
       <Helmet>
-        <title>شراء أسماء نطاقات منتهية الصلاحية مميزة مع روابط خلفية وسلطة عالية وقيمة SEO</title>
+        <html lang="ar" dir="rtl" />
+        <title>شراء أسماء نطاقات منتهية الصلاحية مميزة | روابط خلفية وسلطة عالية وقيمة SEO</title>
         <meta name="description" content="شراء أسماء نطاقات منتهية الصلاحية مع روابط خلفية؟ نطاقات موثوقة مع سلطة عالية وقيمة SEO. اشترِ أسماء نطاقات مميزة لترتيب أسرع في جوجل. متاحة فوراً." />
         <meta name="keywords" content="شراء اسم نطاق منتهي الصلاحية, أسماء نطاقات منتهية الصلاحية مع روابط خلفية, اسم نطاق مع سلطة, نطاقات منتهية موثوقة, شراء اسم نطاق مميز, اسم نطاق مع قيمة SEO, اسم نطاق قديم مع روابط, أفضل أسماء النطاقات للبيع" />
         <link rel="canonical" href="https://iaee.eu/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo" />
-        <html lang="ar" dir="rtl" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="IAEE Premium Domains" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="شراء أسماء نطاقات منتهية الصلاحية مميزة | روابط خلفية وسلطة عالية" />
+        <meta property="og:description" content="نطاقات موثوقة مع سلطة عالية وقيمة SEO. متاحة فوراً." />
+        <meta property="og:url" content="https://iaee.eu/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo" />
+        <meta property="og:locale" content="ar_SA" />
+        <meta property="og:site_name" content="IAEE Premium Domains" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="شراء أسماء نطاقات منتهية الصلاحية مميزة" />
+        <meta name="twitter:description" content="نطاقات موثوقة مع سلطة عالية وقيمة SEO. متاحة فوراً." />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950" dir="rtl">
