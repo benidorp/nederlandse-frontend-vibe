@@ -1601,10 +1601,22 @@ const PremiumDomainsFR = () => {
   return (
     <>
       <Helmet>
-        <title>Noms de Domaine Expirés Premium avec Backlinks Haute Autorité & Valeur SEO</title>
+        <html lang="fr" />
+        <title>Noms de Domaine Expirés Premium avec Backlinks | Haute Autorité & Valeur SEO</title>
         <meta name="description" content="Acheter un nom de domaine expiré avec backlinks ? Domaines expirés fiables avec haute autorité et valeur SEO. Acheter un nom de domaine premium pour un meilleur classement Google. Disponible immédiatement." />
         <meta name="keywords" content="acheter nom de domaine expiré, noms de domaine expirés avec backlinks, nom de domaine avec autorité, domaines expirés fiables, acheter nom de domaine premium, nom de domaine avec valeur SEO, ancien nom de domaine avec liens, meilleurs noms de domaine à vendre" />
         <link rel="canonical" href="https://iaee.eu/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="IAEE Premium Domains" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Noms de Domaine Expirés Premium avec Backlinks | Haute Autorité & Valeur SEO" />
+        <meta property="og:description" content="Domaines expirés fiables avec haute autorité et valeur SEO. Disponible immédiatement." />
+        <meta property="og:url" content="https://iaee.eu/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo" />
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:site_name" content="IAEE Premium Domains" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Noms de Domaine Expirés Premium avec Backlinks" />
+        <meta name="twitter:description" content="Domaines expirés fiables avec haute autorité et valeur SEO. Disponible immédiatement." />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">

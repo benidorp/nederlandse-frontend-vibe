@@ -1548,10 +1548,22 @@ const PremiumDomainsTR = () => {
   return (
     <>
       <Helmet>
-        <title>Backlink'li Premium Süresi Dolmuş Alan Adları Satın Alın Yüksek Otorite & SEO Değeri</title>
+        <html lang="tr" />
+        <title>Backlink'li Premium Süresi Dolmuş Alan Adları | Yüksek Otorite & SEO Değeri</title>
         <meta name="description" content="Backlink'li süresi dolmuş alan adları mı satın almak istiyorsunuz? Yüksek otorite ve SEO değerine sahip güvenilir süresi dolmuş domain'ler. Daha hızlı Google sıralamaları için premium alan adları satın alın. Hemen mevcut." />
         <meta name="keywords" content="süresi dolmuş alan adı satın al, backlink'li süresi dolmuş alan adları, otoriteli alan adı, güvenilir süresi dolmuş domain'ler, premium alan adı satın al, SEO değerli alan adı, eski alan adı linklerle, satılık en iyi alan adları" />
         <link rel="canonical" href="https://iaee.eu/expireddomainnames/tr/premium-suresi-dolmus-alan-adlari-yuksek-otorite-seo-degeri" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="IAEE Premium Domains" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Backlink'li Premium Süresi Dolmuş Alan Adları | Yüksek Otorite & SEO Değeri" />
+        <meta property="og:description" content="Yüksek otorite ve SEO değerine sahip güvenilir süresi dolmuş domain'ler. Hemen mevcut." />
+        <meta property="og:url" content="https://iaee.eu/expireddomainnames/tr/premium-suresi-dolmus-alan-adlari-yuksek-otorite-seo-degeri" />
+        <meta property="og:locale" content="tr_TR" />
+        <meta property="og:site_name" content="IAEE Premium Domains" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Backlink'li Premium Süresi Dolmuş Alan Adları" />
+        <meta name="twitter:description" content="Yüksek otorite ve SEO değerine sahip güvenilir domain'ler. Hemen mevcut." />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">

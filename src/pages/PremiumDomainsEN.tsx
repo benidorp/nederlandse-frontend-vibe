@@ -1606,10 +1606,22 @@ const PremiumDomainsEN = () => {
   return (
     <>
       <Helmet>
-        <title>Buy Premium Expired Domain Names with Backlinks High Authority & SEO Value</title>
+        <html lang="en" />
+        <title>Buy Premium Expired Domain Names with Backlinks | High Authority & SEO Value</title>
         <meta name="description" content="Buy expired domain names with backlinks? Reliable expired domains with high authority and SEO value. Buy premium domain names for faster Google rankings. Immediately available." />
         <meta name="keywords" content="buy expired domain name, expired domain names with backlinks, domain name with authority, reliable expired domains, buy premium domain name, domain name with SEO value, old domain name with links, best domain names for sale" />
         <link rel="canonical" href="https://iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="IAEE Premium Domains" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Buy Premium Expired Domain Names with Backlinks | High Authority & SEO Value" />
+        <meta property="og:description" content="Reliable expired domains with high authority and SEO value. Buy premium domain names for faster Google rankings." />
+        <meta property="og:url" content="https://iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="IAEE Premium Domains" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Buy Premium Expired Domain Names with Backlinks" />
+        <meta name="twitter:description" content="Reliable expired domains with high authority and SEO value. Immediately available." />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">

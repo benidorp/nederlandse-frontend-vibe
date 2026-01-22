@@ -1606,10 +1606,22 @@ const PremiumDomainsES = () => {
   return (
     <>
       <Helmet>
-        <title>Dominios Premium Expirados con Backlinks de Alta Autoridad y Valor SEO</title>
+        <html lang="es" />
+        <title>Dominios Premium Expirados con Backlinks | Alta Autoridad y Valor SEO</title>
         <meta name="description" content="¿Comprar dominio expirado con backlinks? Dominios expirados fiables con alta autoridad y valor SEO. Comprar dominio premium para posicionamiento más rápido en Google. Disponibles inmediatamente." />
         <meta name="keywords" content="comprar dominio expirado, dominios expirados con backlinks, dominio con autoridad, dominios expirados fiables, comprar dominio premium, dominio con valor SEO, dominio antiguo con enlaces, mejores dominios en venta" />
         <link rel="canonical" href="https://iaee.eu/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="IAEE Premium Domains" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Dominios Premium Expirados con Backlinks | Alta Autoridad y Valor SEO" />
+        <meta property="og:description" content="Dominios expirados fiables con alta autoridad y valor SEO. Disponibles inmediatamente." />
+        <meta property="og:url" content="https://iaee.eu/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" />
+        <meta property="og:locale" content="es_ES" />
+        <meta property="og:site_name" content="IAEE Premium Domains" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Dominios Premium Expirados con Backlinks" />
+        <meta name="twitter:description" content="Dominios expirados fiables con alta autoridad y valor SEO. Disponibles inmediatamente." />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">

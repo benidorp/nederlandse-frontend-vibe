@@ -1545,10 +1545,22 @@ const PremiumDomainsZH = () => {
   return (
     <>
       <Helmet>
+        <html lang="zh" />
         <title>购买高权重优质过期域名 | 高DA外链SEO价值</title>
         <meta name="description" content="购买带外链的过期域名？可靠的高权重SEO价值过期域名。购买优质域名，更快获得Google排名。立即可用。" />
         <meta name="keywords" content="购买过期域名, 带外链的过期域名, 高权重域名, 可靠的过期域名, 购买优质域名, 有SEO价值的域名, 带链接的老域名, 最佳域名出售" />
-        <link rel="canonical" href="https://www.iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" />
+        <link rel="canonical" href="https://iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="IAEE Premium Domains" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="购买高权重优质过期域名 | 高DA外链SEO价值" />
+        <meta property="og:description" content="可靠的高权重SEO价值过期域名。立即可用。" />
+        <meta property="og:url" content="https://iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" />
+        <meta property="og:locale" content="zh_CN" />
+        <meta property="og:site_name" content="IAEE Premium Domains" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="购买高权重优质过期域名" />
+        <meta name="twitter:description" content="可靠的高权重SEO价值过期域名。立即可用。" />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
