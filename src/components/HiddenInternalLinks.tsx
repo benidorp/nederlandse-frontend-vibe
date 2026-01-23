@@ -89,6 +89,31 @@ const HiddenInternalLinks = () => {
       <Link to="/expireddomainnames/en/buy-premium-domains-high-authority-seo-value">High Authority Domain Names for Sale</Link>
       <Link to="/expireddomainnames/en/buy-premium-domains-high-authority-seo-value">Premium SEO Domains with Backlinks</Link>
       <Link to="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde">Domeinnamen met Backlinks Kopen</Link>
+      
+      {/* Additional cross-language Premium Domains links */}
+      <Link to="/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo">Comprar Domínios Expirados Portugal Brasil</Link>
+      <Link to="/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo">Kup Wygasłe Domeny Polska</Link>
+      <Link to="/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi">プレミアムドメイン購入日本</Link>
+      <Link to="/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi">购买高权重域名中国</Link>
+      <Link to="/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo">شراء نطاقات مميزة عربي</Link>
+      <Link to="/expireddomainnames/tr/premium-alan-adlari-yuksek-otorite-seo-degeri">Premium Alan Adları Türkiye</Link>
+      <Link to="/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya">प्रीमियम डोमेन खरीदें भारत</Link>
+      
+      {/* European domain extensions focus */}
+      <Link to="/expireddomainnames/en/buy-premium-domains-high-authority-seo-value">Buy EU Domain Names High Authority</Link>
+      <Link to="/expireddomainnames/en/buy-premium-domains-high-authority-seo-value">European Expired Domains for Sale</Link>
+      <Link to="/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert">EU Domains mit hoher Autorität kaufen</Link>
+      <Link to="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde">Europese Domeinnamen Kopen</Link>
+      <Link to="/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo">Noms de Domaine Européens Premium</Link>
+      <Link to="/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo">Dominios Europeos Premium con SEO</Link>
+      <Link to="/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo">Domini Europei Premium con Backlink</Link>
+      
+      {/* Expired domains SEO value keywords */}
+      <Link to="/expireddomainnames/en/buy-premium-domains-high-authority-seo-value">Aged Domains with DA Authority</Link>
+      <Link to="/expireddomainnames/en/buy-premium-domains-high-authority-seo-value">Old Domains with Strong Backlinks</Link>
+      <Link to="/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert">Alte Domains mit Backlinks</Link>
+      <Link to="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde">Oude Domeinnamen met SEO Waarde</Link>
+      <Link to="/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo">Domaines Anciens avec Autorité</Link>
     </nav>
   );
 };

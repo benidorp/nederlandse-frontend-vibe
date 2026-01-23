@@ -1626,15 +1626,40 @@ const PremiumDomains = () => {
         <link rel="canonical" href="https://iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="IAEE Premium Domains" />
+        
+        {/* Hreflang tags for international SEO */}
+        <link rel="alternate" hrefLang="nl" href="https://iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
+        <link rel="alternate" hrefLang="en" href="https://iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
+        <link rel="alternate" hrefLang="de" href="https://iaee.eu/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert" />
+        <link rel="alternate" hrefLang="fr" href="https://iaee.eu/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo" />
+        <link rel="alternate" hrefLang="es" href="https://iaee.eu/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" />
+        <link rel="alternate" hrefLang="it" href="https://iaee.eu/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo" />
+        <link rel="alternate" hrefLang="pt" href="https://iaee.eu/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" />
+        <link rel="alternate" hrefLang="pl" href="https://iaee.eu/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo" />
+        <link rel="alternate" hrefLang="ja" href="https://iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" />
+        <link rel="alternate" hrefLang="zh" href="https://iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" />
+        <link rel="alternate" hrefLang="ar" href="https://iaee.eu/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo" />
+        <link rel="alternate" hrefLang="tr" href="https://iaee.eu/expireddomainnames/tr/premium-alan-adlari-yuksek-otorite-seo-degeri" />
+        <link rel="alternate" hrefLang="hi" href="https://iaee.eu/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya" />
+        <link rel="alternate" hrefLang="x-default" href="https://iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
+        
+        {/* Open Graph tags */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Premium Expired Domeinnamen met Backlinks | Hoge Autoriteit & SEO-Waarde" />
         <meta property="og:description" content="Expired domeinnaam met backlinks kopen? Betrouwbare expired domeinen met hoge autoriteit en SEO-waarde. Direct beschikbaar." />
         <meta property="og:url" content="https://iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
         <meta property="og:locale" content="nl_NL" />
         <meta property="og:site_name" content="IAEE Premium Domains" />
+        <meta property="og:image" content="https://iaee.eu/images/premium-domains-og.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="640" />
+        <meta property="og:image:alt" content="Premium Domains - Hoge Autoriteit Domeinnamen" />
+        
+        {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Premium Expired Domeinnamen met Backlinks" />
         <meta name="twitter:description" content="Betrouwbare expired domeinen met hoge autoriteit en SEO-waarde. Direct beschikbaar." />
+        <meta name="twitter:image" content="https://iaee.eu/images/premium-domains-og.jpg" />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
