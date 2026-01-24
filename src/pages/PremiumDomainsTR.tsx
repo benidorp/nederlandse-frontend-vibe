@@ -1589,6 +1589,55 @@ const PremiumDomainsTR = () => {
         <meta name="twitter:title" content="Backlink'li Premium Süresi Dolmuş Alan Adları" />
         <meta name="twitter:description" content="Yüksek otorite ve SEO değerine sahip güvenilir domain'ler. Hemen mevcut." />
         <meta name="twitter:image" content="https://iaee.eu/images/premium-domains-og.jpg" />
+        
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://iaee.eu/#organization",
+                "name": "IAEE Premium Domains",
+                "url": "https://iaee.eu",
+                "description": "Yüksek otorite ve SEO değerine sahip premium süresi dolmuş domain'lerde uzman"
+              },
+              {
+                "@type": "WebPage",
+                "url": "https://iaee.eu/expireddomainnames/tr/premium-alan-adlari-yuksek-otorite-seo-degeri",
+                "name": "Backlink'li Premium Süresi Dolmuş Alan Adları | Yüksek Otorite & SEO Değeri",
+                "inLanguage": "tr"
+              },
+              {
+                "@type": "ItemList",
+                "name": "Premium Süresi Dolmuş Alan Adları",
+                "numberOfItems": ${premiumDomains.length},
+                "itemListElement": ${JSON.stringify(premiumDomains.slice(0, 10).map((domain, index) => ({
+                  "@type": "ListItem",
+                  "position": index + 1,
+                  "item": {
+                    "@type": "Product",
+                    "name": domain.name,
+                    "description": domain.description,
+                    "offers": {
+                      "@type": "Offer",
+                      "price": domain.price.replace("€", ""),
+                      "priceCurrency": "EUR"
+                    }
+                  }
+                })))}
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {"@type": "Question", "name": "Süresi dolmuş domain nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Süresi dolmuş domain, önceki sahibi tarafından yenilenmeyen ve artık kayıt için mevcut olan alan adıdır."}},
+                  {"@type": "Question", "name": "Neden backlinkler önemlidir?", "acceptedAnswer": {"@type": "Answer", "text": "Backlinkler Google için en önemli sıralama faktörlerinden biridir. Kaliteli backlinke sahip domainler arama sonuçlarında avantajlıdır."}},
+                  {"@type": "Question", "name": "301 yönlendirme SEO için nasıl çalışır?", "acceptedAnswer": {"@type": "Answer", "text": "301 yönlendirme, ziyaretçileri ve arama motorlarını eski domainden yeni web sitenize kalıcı olarak yönlendirir ve link değerini aktarır."}}
+                ]
+              }
+            ]
+          }
+        `}</script>
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">

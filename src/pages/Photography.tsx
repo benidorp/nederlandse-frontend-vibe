@@ -24,6 +24,7 @@ const Photography = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://iaee.eu/photography-legal-documents-terms-conditions-privacy-policy-contract-copyright-protection" />
+        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"Product","name":"Photography Legal Documents","description":"Essential legal documents for photographers including Terms, Privacy Policy, Copyright Protection, and Model Release.","brand":{"@type":"Brand","name":"IAEE"},"offers":{"@type":"Offer","price":"79","priceCurrency":"EUR","availability":"https://schema.org/InStock"}}`}</script>
       </Helmet>
       <GTranslateWidget />
       <div className="min-h-screen">

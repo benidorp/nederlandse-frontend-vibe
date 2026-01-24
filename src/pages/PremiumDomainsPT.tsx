@@ -1657,6 +1657,56 @@ const PremiumDomainsPT = () => {
         <meta name="twitter:title" content="Domínios Premium Expirados com Backlinks" />
         <meta name="twitter:description" content="Domínios expirados fiáveis com alta autoridade e valor SEO. Disponíveis imediatamente." />
         <meta name="twitter:image" content="https://iaee.eu/images/premium-domains-og.jpg" />
+        
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://iaee.eu/#organization",
+                "name": "IAEE Premium Domains",
+                "url": "https://iaee.eu",
+                "logo": "https://iaee.eu/images/premium-domains-og.jpg",
+                "description": "Especialista em domínios expirados premium com alta autoridade e valor SEO"
+              },
+              {
+                "@type": "WebPage",
+                "url": "https://iaee.eu/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo",
+                "name": "Domínios Premium Expirados com Backlinks | Alta Autoridade & Valor SEO",
+                "inLanguage": "pt"
+              },
+              {
+                "@type": "ItemList",
+                "name": "Domínios Premium Expirados",
+                "numberOfItems": ${premiumDomains.length},
+                "itemListElement": ${JSON.stringify(premiumDomains.slice(0, 10).map((domain, index) => ({
+                  "@type": "ListItem",
+                  "position": index + 1,
+                  "item": {
+                    "@type": "Product",
+                    "name": domain.name,
+                    "description": domain.description,
+                    "offers": {
+                      "@type": "Offer",
+                      "price": domain.price.replace("€", ""),
+                      "priceCurrency": "EUR"
+                    }
+                  }
+                })))}
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {"@type": "Question", "name": "O que é um domínio expirado?", "acceptedAnswer": {"@type": "Answer", "text": "Um domínio expirado é um nome de domínio que não foi renovado pelo proprietário anterior e está agora disponível para registo."}},
+                  {"@type": "Question", "name": "Por que os backlinks são importantes?", "acceptedAnswer": {"@type": "Answer", "text": "Os backlinks são um dos fatores de classificação mais importantes para o Google. Domínios com backlinks de qualidade têm vantagem nos resultados de pesquisa."}},
+                  {"@type": "Question", "name": "Como funciona um redirecionamento 301 para SEO?", "acceptedAnswer": {"@type": "Answer", "text": "Um redirecionamento 301 redireciona permanentemente visitantes e motores de busca do domínio antigo para o seu novo site, transferindo o valor dos links."}}
+                ]
+              }
+            ]
+          }
+        `}</script>
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">

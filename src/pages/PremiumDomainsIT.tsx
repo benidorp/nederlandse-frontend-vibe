@@ -1657,6 +1657,88 @@ const PremiumDomainsIT = () => {
         <meta name="twitter:title" content="Domini Premium Scaduti con Backlink" />
         <meta name="twitter:description" content="Domini scaduti affidabili con alta autorità e valore SEO. Disponibili subito." />
         <meta name="twitter:image" content="https://iaee.eu/images/premium-domains-og.jpg" />
+        
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://iaee.eu/#organization",
+                "name": "IAEE Premium Domains",
+                "url": "https://iaee.eu",
+                "logo": "https://iaee.eu/images/premium-domains-og.jpg",
+                "description": "Specialista in domini scaduti premium con alta autorità e valore SEO",
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "email": "support@iaee.eu",
+                  "contactType": "sales"
+                }
+              },
+              {
+                "@type": "WebPage",
+                "@id": "https://iaee.eu/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo/#webpage",
+                "url": "https://iaee.eu/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo",
+                "name": "Domini Premium Scaduti con Backlink | Alta Autorità & Valore SEO",
+                "description": "Acquista domini scaduti con backlink? Domini scaduti affidabili con alta autorità e valore SEO.",
+                "inLanguage": "it",
+                "isPartOf": {"@id": "https://iaee.eu/#website"}
+              },
+              {
+                "@type": "ItemList",
+                "name": "Domini Premium Scaduti",
+                "description": "Selezione di domini scaduti premium con alta autorità",
+                "numberOfItems": ${premiumDomains.length},
+                "itemListElement": ${JSON.stringify(premiumDomains.slice(0, 10).map((domain, index) => ({
+                  "@type": "ListItem",
+                  "position": index + 1,
+                  "item": {
+                    "@type": "Product",
+                    "name": domain.name,
+                    "description": domain.description,
+                    "category": domain.category,
+                    "offers": {
+                      "@type": "Offer",
+                      "price": domain.price.replace("€", ""),
+                      "priceCurrency": "EUR",
+                      "availability": "https://schema.org/InStock"
+                    }
+                  }
+                })))}
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "Cos'è un dominio scaduto?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Un dominio scaduto è un nome di dominio che non è stato rinnovato dal precedente proprietario ed è ora disponibile per la registrazione. Questi domini spesso mantengono i loro backlink e l'autorità accumulati."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Perché i backlink sono importanti?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "I backlink sono uno dei fattori di ranking più importanti per Google. I domini con backlink di qualità da siti autorevoli hanno un vantaggio nei risultati di ricerca."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Come funziona un redirect 301 per la SEO?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Un redirect 301 reindirizza permanentemente visitatori e motori di ricerca dal vecchio dominio al tuo nuovo sito web, trasferendo il valore dei link per migliori posizionamenti."
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        `}</script>
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">

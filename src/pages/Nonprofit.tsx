@@ -24,6 +24,7 @@ const Nonprofit = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://iaee.eu/nonprofit-charity-legal-documents-donation-terms-privacy-policy" />
+        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"Product","name":"Non-Profit Legal Documents","description":"Complete legal protection for charitable organizations including Donation Terms, Privacy Policy, and Volunteer Agreements.","brand":{"@type":"Brand","name":"IAEE"},"offers":{"@type":"Offer","price":"79","priceCurrency":"EUR","availability":"https://schema.org/InStock"}}`}</script>
       </Helmet>
       <GTranslateWidget />
       <div className="min-h-screen">

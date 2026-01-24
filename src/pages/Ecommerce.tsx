@@ -22,6 +22,23 @@ const Ecommerce = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://iaee.eu/essential-legal-documents-ecommerce-website-terms-conditions-privacy-policy-return-policy-shipping-policy" />
+        
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Essential Legal Documents for E-commerce Websites",
+            "description": "Complete legal protection package for e-commerce websites including Terms & Conditions, Privacy Policy, Return Policy, and Shipping Policy.",
+            "brand": {"@type": "Brand", "name": "IAEE"},
+            "offers": {
+              "@type": "Offer",
+              "price": "79",
+              "priceCurrency": "EUR",
+              "availability": "https://schema.org/InStock"
+            }
+          }
+        `}</script>
       </Helmet>
       <GTranslateWidget />
       <div className="min-h-screen">

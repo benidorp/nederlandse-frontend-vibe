@@ -1658,6 +1658,88 @@ const PremiumDomainsDE = () => {
         <meta name="twitter:title" content="Premium Expired Domains mit Backlinks kaufen" />
         <meta name="twitter:description" content="Zuverlässige expired Domains mit hoher Autorität und SEO-Wert. Sofort verfügbar." />
         <meta name="twitter:image" content="https://iaee.eu/images/premium-domains-og.jpg" />
+        
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://iaee.eu/#organization",
+                "name": "IAEE Premium Domains",
+                "url": "https://iaee.eu",
+                "logo": "https://iaee.eu/images/premium-domains-og.jpg",
+                "description": "Spezialist für Premium Expired Domains mit hoher Autorität und SEO-Wert",
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "email": "support@iaee.eu",
+                  "contactType": "sales"
+                }
+              },
+              {
+                "@type": "WebPage",
+                "@id": "https://iaee.eu/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert/#webpage",
+                "url": "https://iaee.eu/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert",
+                "name": "Premium Expired Domains mit Backlinks kaufen | Hohe Autorität & SEO-Wert",
+                "description": "Expired Domain mit Backlinks kaufen? Zuverlässige expired Domains mit hoher Autorität und SEO-Wert.",
+                "inLanguage": "de",
+                "isPartOf": {"@id": "https://iaee.eu/#website"}
+              },
+              {
+                "@type": "ItemList",
+                "name": "Premium Expired Domains",
+                "description": "Kuratierte Auswahl von Premium Expired Domains mit hoher Autorität",
+                "numberOfItems": ${premiumDomains.length},
+                "itemListElement": ${JSON.stringify(premiumDomains.slice(0, 10).map((domain, index) => ({
+                  "@type": "ListItem",
+                  "position": index + 1,
+                  "item": {
+                    "@type": "Product",
+                    "name": domain.name,
+                    "description": domain.description,
+                    "category": domain.category,
+                    "offers": {
+                      "@type": "Offer",
+                      "price": domain.price.replace("€", ""),
+                      "priceCurrency": "EUR",
+                      "availability": "https://schema.org/InStock"
+                    }
+                  }
+                })))}
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "Was ist eine expired Domain?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Eine expired Domain ist ein Domainname, der vom vorherigen Eigentümer nicht verlängert wurde und nun zur Registrierung verfügbar ist. Diese Domains behalten oft ihre aufgebauten Backlinks und Autorität."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Warum sind Backlinks wichtig?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Backlinks sind einer der wichtigsten Ranking-Faktoren für Google. Domains mit hochwertigen Backlinks von autoritativen Websites haben einen Vorteil in Suchmaschinenergebnissen."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Wie funktioniert ein 301 Redirect für SEO?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Ein 301 Redirect leitet Besucher und Suchmaschinen dauerhaft von der alten Domain auf Ihre neue Website um, wobei der Linkwert für bessere Rankings übertragen wird."
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        `}</script>
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">

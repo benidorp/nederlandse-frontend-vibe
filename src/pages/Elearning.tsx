@@ -20,6 +20,7 @@ const Elearning = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://iaee.eu/elearning-platform-legal-documents-terms-privacy-policy-gdpr-compliance" />
+        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"Product","name":"E-Learning Platform Legal Documents","description":"Complete legal protection for online education platforms including Terms, Privacy Policy, Course Terms, and GDPR Compliance.","brand":{"@type":"Brand","name":"IAEE"},"offers":{"@type":"Offer","price":"79","priceCurrency":"EUR","availability":"https://schema.org/InStock"}}`}</script>
       </Helmet>
       <GTranslateWidget />
       <HiddenInternalLinks />

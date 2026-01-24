@@ -1586,6 +1586,55 @@ const PremiumDomainsZH = () => {
         <meta name="twitter:title" content="购买高权重优质过期域名" />
         <meta name="twitter:description" content="可靠的高权重SEO价值过期域名。立即可用。" />
         <meta name="twitter:image" content="https://iaee.eu/images/premium-domains-og.jpg" />
+        
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://iaee.eu/#organization",
+                "name": "IAEE Premium Domains",
+                "url": "https://iaee.eu",
+                "description": "专注于高权重和SEO价值的优质过期域名"
+              },
+              {
+                "@type": "WebPage",
+                "url": "https://iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi",
+                "name": "购买高权重优质过期域名 | 高DA外链SEO价值",
+                "inLanguage": "zh"
+              },
+              {
+                "@type": "ItemList",
+                "name": "优质过期域名",
+                "numberOfItems": ${premiumDomains.length},
+                "itemListElement": ${JSON.stringify(premiumDomains.slice(0, 10).map((domain, index) => ({
+                  "@type": "ListItem",
+                  "position": index + 1,
+                  "item": {
+                    "@type": "Product",
+                    "name": domain.name,
+                    "description": domain.description,
+                    "offers": {
+                      "@type": "Offer",
+                      "price": domain.price.replace("€", ""),
+                      "priceCurrency": "EUR"
+                    }
+                  }
+                })))}
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {"@type": "Question", "name": "什么是过期域名？", "acceptedAnswer": {"@type": "Answer", "text": "过期域名是指前所有者未续费的域名，现在可以注册。这些域名通常保留其积累的外链和权重。"}},
+                  {"@type": "Question", "name": "为什么外链很重要？", "acceptedAnswer": {"@type": "Answer", "text": "外链是Google最重要的排名因素之一。拥有权威网站高质量外链的域名在搜索结果中具有优势。"}},
+                  {"@type": "Question", "name": "301重定向如何用于SEO？", "acceptedAnswer": {"@type": "Answer", "text": "301重定向将访问者和搜索引擎从旧域名永久重定向到您的新网站，转移链接价值以获得更好的排名。"}}
+                ]
+              }
+            ]
+          }
+        `}</script>
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
