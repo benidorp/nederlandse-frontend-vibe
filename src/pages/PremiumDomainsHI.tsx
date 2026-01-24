@@ -1628,6 +1628,55 @@ const PremiumDomainsHI = () => {
         <meta name="twitter:title" content="प्रीमियम एक्सपायर्ड डोमेन नाम बैकलिंक्स के साथ" />
         <meta name="twitter:description" content="उच्च अथॉरिटी और SEO मूल्य वाले विश्वसनीय एक्सपायर्ड डोमेन। तुरंत उपलब्ध।" />
         <meta name="twitter:image" content="https://iaee.eu/images/premium-domains-og.jpg" />
+        
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://iaee.eu/#organization",
+                "name": "IAEE Premium Domains",
+                "url": "https://iaee.eu",
+                "description": "उच्च अथॉरिटी और SEO मूल्य वाले प्रीमियम एक्सपायर्ड डोमेन में विशेषज्ञ"
+              },
+              {
+                "@type": "WebPage",
+                "url": "https://iaee.eu/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya",
+                "name": "प्रीमियम एक्सपायर्ड डोमेन नाम बैकलिंक्स के साथ | उच्च अथॉरिटी और SEO मूल्य",
+                "inLanguage": "hi"
+              },
+              {
+                "@type": "ItemList",
+                "name": "प्रीमियम एक्सपायर्ड डोमेन नाम",
+                "numberOfItems": ${premiumDomains.length},
+                "itemListElement": ${JSON.stringify(premiumDomains.slice(0, 10).map((domain, index) => ({
+                  "@type": "ListItem",
+                  "position": index + 1,
+                  "item": {
+                    "@type": "Product",
+                    "name": domain.name,
+                    "description": domain.description,
+                    "offers": {
+                      "@type": "Offer",
+                      "price": domain.price.replace("€", ""),
+                      "priceCurrency": "EUR"
+                    }
+                  }
+                })))}
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {"@type": "Question", "name": "एक्सपायर्ड डोमेन क्या है?", "acceptedAnswer": {"@type": "Answer", "text": "एक्सपायर्ड डोमेन वह डोमेन नाम है जो पिछले मालिक द्वारा रिन्यू नहीं किया गया और अब पंजीकरण के लिए उपलब्ध है।"}},
+                  {"@type": "Question", "name": "बैकलिंक्स क्यों महत्वपूर्ण हैं?", "acceptedAnswer": {"@type": "Answer", "text": "बैकलिंक्स Google के लिए सबसे महत्वपूर्ण रैंकिंग कारकों में से एक हैं। गुणवत्ता वाले बैकलिंक्स वाले डोमेन को सर्च परिणामों में लाभ मिलता है।"}},
+                  {"@type": "Question", "name": "301 रीडायरेक्ट SEO के लिए कैसे काम करता है?", "acceptedAnswer": {"@type": "Answer", "text": "301 रीडायरेक्ट आगंतुकों और सर्च इंजनों को पुराने डोमेन से आपकी नई वेबसाइट पर स्थायी रूप से रीडायरेक्ट करता है, लिंक मूल्य को ट्रांसफर करता है।"}}
+                ]
+              }
+            ]
+          }
+        `}</script>
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">

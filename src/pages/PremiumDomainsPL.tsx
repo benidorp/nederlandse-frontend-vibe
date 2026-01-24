@@ -1557,6 +1557,55 @@ const PremiumDomainsPL = () => {
         <meta name="twitter:title" content="Wygasłe Domeny Premium z Backlinkami" />
         <meta name="twitter:description" content="Niezawodne wygasłe domeny z wysokim autorytetem i wartością SEO. Dostępne natychmiast." />
         <meta name="twitter:image" content="https://iaee.eu/images/premium-domains-og.jpg" />
+        
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://iaee.eu/#organization",
+                "name": "IAEE Premium Domains",
+                "url": "https://iaee.eu",
+                "description": "Specjalista w domenach premium z wysokim autorytetem i wartością SEO"
+              },
+              {
+                "@type": "WebPage",
+                "url": "https://iaee.eu/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo",
+                "name": "Wygasłe Domeny Premium z Backlinkami | Wysoki Autorytet i Wartość SEO",
+                "inLanguage": "pl"
+              },
+              {
+                "@type": "ItemList",
+                "name": "Wygasłe Domeny Premium",
+                "numberOfItems": ${premiumDomains.length},
+                "itemListElement": ${JSON.stringify(premiumDomains.slice(0, 10).map((domain, index) => ({
+                  "@type": "ListItem",
+                  "position": index + 1,
+                  "item": {
+                    "@type": "Product",
+                    "name": domain.name,
+                    "description": domain.description,
+                    "offers": {
+                      "@type": "Offer",
+                      "price": domain.price.replace("€", ""),
+                      "priceCurrency": "EUR"
+                    }
+                  }
+                })))}
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {"@type": "Question", "name": "Co to jest wygasła domena?", "acceptedAnswer": {"@type": "Answer", "text": "Wygasła domena to nazwa domeny, która nie została odnowiona przez poprzedniego właściciela i jest teraz dostępna do rejestracji."}},
+                  {"@type": "Question", "name": "Dlaczego backlinki są ważne?", "acceptedAnswer": {"@type": "Answer", "text": "Backlinki są jednym z najważniejszych czynników rankingowych dla Google. Domeny z jakościowymi backlinkami mają przewagę w wynikach wyszukiwania."}},
+                  {"@type": "Question", "name": "Jak działa przekierowanie 301 dla SEO?", "acceptedAnswer": {"@type": "Answer", "text": "Przekierowanie 301 trwale przekierowuje odwiedzających i wyszukiwarki ze starej domeny na nową stronę, przenosząc wartość linków."}}
+                ]
+              }
+            ]
+          }
+        `}</script>
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">

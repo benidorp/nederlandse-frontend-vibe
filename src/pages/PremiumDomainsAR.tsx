@@ -1430,6 +1430,55 @@ const PremiumDomainsAR = () => {
         <meta name="twitter:title" content="شراء أسماء نطاقات منتهية الصلاحية مميزة" />
         <meta name="twitter:description" content="نطاقات موثوقة مع سلطة عالية وقيمة SEO. متاحة فوراً." />
         <meta name="twitter:image" content="https://iaee.eu/images/premium-domains-og.jpg" />
+        
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://iaee.eu/#organization",
+                "name": "IAEE Premium Domains",
+                "url": "https://iaee.eu",
+                "description": "متخصصون في أسماء النطاقات المميزة منتهية الصلاحية ذات السلطة العالية وقيمة SEO"
+              },
+              {
+                "@type": "WebPage",
+                "url": "https://iaee.eu/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo",
+                "name": "شراء أسماء نطاقات منتهية الصلاحية مميزة | روابط خلفية وسلطة عالية وقيمة SEO",
+                "inLanguage": "ar"
+              },
+              {
+                "@type": "ItemList",
+                "name": "أسماء النطاقات المميزة منتهية الصلاحية",
+                "numberOfItems": ${premiumDomains.length},
+                "itemListElement": ${JSON.stringify(premiumDomains.slice(0, 10).map((domain, index) => ({
+                  "@type": "ListItem",
+                  "position": index + 1,
+                  "item": {
+                    "@type": "Product",
+                    "name": domain.name,
+                    "description": domain.description,
+                    "offers": {
+                      "@type": "Offer",
+                      "price": domain.price.replace("€", ""),
+                      "priceCurrency": "EUR"
+                    }
+                  }
+                })))}
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {"@type": "Question", "name": "ما هو النطاق منتهي الصلاحية؟", "acceptedAnswer": {"@type": "Answer", "text": "النطاق منتهي الصلاحية هو اسم نطاق لم يجدده المالك السابق وهو الآن متاح للتسجيل."}},
+                  {"@type": "Question", "name": "لماذا الروابط الخلفية مهمة؟", "acceptedAnswer": {"@type": "Answer", "text": "الروابط الخلفية هي أحد أهم عوامل التصنيف في جوجل. النطاقات ذات الروابط الخلفية عالية الجودة لها ميزة في نتائج البحث."}},
+                  {"@type": "Question", "name": "كيف يعمل إعادة التوجيه 301 لـ SEO؟", "acceptedAnswer": {"@type": "Answer", "text": "إعادة التوجيه 301 توجه الزوار ومحركات البحث بشكل دائم من النطاق القديم إلى موقعك الجديد، مع نقل قيمة الروابط."}}
+                ]
+              }
+            ]
+          }
+        `}</script>
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950" dir="rtl">

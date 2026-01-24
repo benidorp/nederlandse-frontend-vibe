@@ -1711,6 +1711,55 @@ const PremiumDomainsJA = () => {
         <meta name="twitter:title" content="高権威バックリンク付きプレミアム期限切れドメイン購入" />
         <meta name="twitter:description" content="高権威とSEO価値を持つ信頼できる期限切れドメイン。即時利用可能。" />
         <meta name="twitter:image" content="https://iaee.eu/images/premium-domains-og.jpg" />
+        
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://iaee.eu/#organization",
+                "name": "IAEE Premium Domains",
+                "url": "https://iaee.eu",
+                "description": "高権威とSEO価値を持つプレミアム期限切れドメインの専門家"
+              },
+              {
+                "@type": "WebPage",
+                "url": "https://iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi",
+                "name": "高権威バックリンク付きプレミアム期限切れドメイン購入 | SEO価値",
+                "inLanguage": "ja"
+              },
+              {
+                "@type": "ItemList",
+                "name": "プレミアム期限切れドメイン",
+                "numberOfItems": ${premiumDomains.length},
+                "itemListElement": ${JSON.stringify(premiumDomains.slice(0, 10).map((domain, index) => ({
+                  "@type": "ListItem",
+                  "position": index + 1,
+                  "item": {
+                    "@type": "Product",
+                    "name": domain.name,
+                    "description": domain.description,
+                    "offers": {
+                      "@type": "Offer",
+                      "price": domain.price.replace("€", ""),
+                      "priceCurrency": "EUR"
+                    }
+                  }
+                })))}
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {"@type": "Question", "name": "期限切れドメインとは何ですか？", "acceptedAnswer": {"@type": "Answer", "text": "期限切れドメインとは、以前の所有者が更新しなかったため、現在登録可能なドメイン名です。"}},
+                  {"@type": "Question", "name": "なぜバックリンクは重要ですか？", "acceptedAnswer": {"@type": "Answer", "text": "バックリンクはGoogleの最も重要なランキング要因の1つです。権威あるサイトからの質の高いバックリンクを持つドメインは、検索結果で優位に立ちます。"}},
+                  {"@type": "Question", "name": "301リダイレクトはSEOにどのように機能しますか？", "acceptedAnswer": {"@type": "Answer", "text": "301リダイレクトは、訪問者と検索エンジンを古いドメインから新しいウェブサイトに永久的にリダイレクトし、リンク価値を転送します。"}}
+                ]
+              }
+            ]
+          }
+        `}</script>
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">

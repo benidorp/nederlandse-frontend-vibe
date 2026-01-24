@@ -1,8 +1,13 @@
+# Robots.txt for iaee.eu
+# Premium Domain Marketplace & Legal Documents
+
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Twitterbot
 Allow: /
@@ -10,5 +15,24 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+
 User-agent: *
 Allow: /
+Crawl-delay: 2
+
+# Sitemap location
+Sitemap: https://iaee.eu/sitemap.xml
+
+# Disallow patterns
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /private/

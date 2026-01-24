@@ -1660,6 +1660,95 @@ const PremiumDomains = () => {
         <meta name="twitter:title" content="Premium Expired Domeinnamen met Backlinks" />
         <meta name="twitter:description" content="Betrouwbare expired domeinen met hoge autoriteit en SEO-waarde. Direct beschikbaar." />
         <meta name="twitter:image" content="https://iaee.eu/images/premium-domains-og.jpg" />
+        
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://iaee.eu/#organization",
+                "name": "IAEE Premium Domains",
+                "url": "https://iaee.eu",
+                "logo": "https://iaee.eu/images/premium-domains-og.jpg",
+                "description": "Specialist in premium expired domeinnamen met hoge autoriteit en SEO-waarde",
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "email": "support@iaee.eu",
+                  "contactType": "sales"
+                }
+              },
+              {
+                "@type": "WebPage",
+                "@id": "https://iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde/#webpage",
+                "url": "https://iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde",
+                "name": "Premium Expired Domeinnamen met Backlinks | Hoge Autoriteit & SEO-Waarde",
+                "description": "Expired domeinnaam met backlinks kopen? Betrouwbare expired domeinen met hoge autoriteit en SEO-waarde.",
+                "inLanguage": "nl",
+                "isPartOf": {"@id": "https://iaee.eu/#website"}
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://iaee.eu/#website",
+                "url": "https://iaee.eu",
+                "name": "IAEE Premium Domains",
+                "publisher": {"@id": "https://iaee.eu/#organization"}
+              },
+              {
+                "@type": "ItemList",
+                "name": "Premium Expired Domeinnamen",
+                "description": "Gecureerde selectie van premium expired domeinnamen met hoge autoriteit",
+                "numberOfItems": ${premiumDomains.length},
+                "itemListElement": ${JSON.stringify(premiumDomains.slice(0, 10).map((domain, index) => ({
+                  "@type": "ListItem",
+                  "position": index + 1,
+                  "item": {
+                    "@type": "Product",
+                    "name": domain.name,
+                    "description": domain.description,
+                    "category": domain.category,
+                    "offers": {
+                      "@type": "Offer",
+                      "price": domain.price.replace("€", ""),
+                      "priceCurrency": "EUR",
+                      "availability": "https://schema.org/InStock"
+                    }
+                  }
+                })))}
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "Wat is een expired domein?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Een expired domein is een domeinnaam die niet is verlengd door de vorige eigenaar en nu beschikbaar is voor registratie. Deze domeinen behouden vaak hun opgebouwde backlinks en autoriteit."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Waarom zijn backlinks belangrijk?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Backlinks zijn een van de belangrijkste rankingfactoren voor Google. Domeinen met kwalitatieve backlinks van gezaghebbende websites hebben een voorsprong in zoekmachineresultaten."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Hoe werkt een 301 redirect voor SEO?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Een 301 redirect stuurt bezoekers en zoekmachines permanent door van het oude domein naar uw nieuwe website, waarbij de linkwaarde wordt overgedragen voor betere rankings."
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        `}</script>
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">

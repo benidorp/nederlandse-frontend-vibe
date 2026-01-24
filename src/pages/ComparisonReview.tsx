@@ -24,6 +24,7 @@ const ComparisonReview = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://iaee.eu/comparison-review-website-legal-documents-terms-privacy-affiliate-disclosure-disclaimer" />
+        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"Product","name":"Comparison & Review Website Legal Documents","description":"Essential legal documents for comparison and review websites including FTC-compliant Affiliate Disclosure, Privacy Policy, and Disclaimer.","brand":{"@type":"Brand","name":"IAEE"},"offers":{"@type":"Offer","price":"79","priceCurrency":"EUR","availability":"https://schema.org/InStock"}}`}</script>
       </Helmet>
       <GTranslateWidget />
       <div className="min-h-screen">
