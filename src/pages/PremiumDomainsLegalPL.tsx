@@ -1,22 +1,29 @@
-import { Helmet } from "react-helmet";
 import { Crown, ArrowLeft, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import LegalFooterPremiumDomainsPL from "@/components/premium-domains/LegalFooterPremiumDomainsPL";
 import FooterPremiumDomainsPL from "@/components/premium-domains/FooterPremiumDomainsPL";
+import { SEOHead, PREMIUM_DOMAINS_LEGAL_HREFLANG, getLegalPageBreadcrumbs } from "@/components/seo";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
 const PremiumDomainsLegalPL = () => {
+  const breadcrumbItems = getLegalPageBreadcrumbs("pl");
+  
   return (
     <>
-      <Helmet>
-        <title>Dokumenty Prawne Domeny Premium | Regulamin, Prywatność, Zastrzeżenia</title>
-        <meta 
-          name="description" 
-          content="Dokumenty prawne dotyczące sprzedaży domen premium. Regulamin, polityka prywatności, zastrzeżenia prawne i polityka cookies dla zakupu wygasłych domen z wartością SEO." 
-        />
-        <meta name="robots" content="noindex, nofollow" />
-        <link rel="canonical" href="https://iaee.eu/expireddomainnames/pl/dokumenty-prawne-domeny-premium" />
-      </Helmet>
+      <SEOHead
+        title="Dokumenty Prawne Domeny Premium | Regulamin, Prywatność, Zastrzeżenia"
+        description="Dokumenty prawne dotyczące sprzedaży domen premium. Regulamin, polityka prywatności, zastrzeżenia prawne i polityka cookies dla zakupu wygasłych domen z wartością SEO."
+        canonical="https://iaee.eu/expireddomainnames/pl/dokumenty-prawne-domeny-premium"
+        lang="pl"
+        robots="noindex, nofollow"
+        hreflangLinks={PREMIUM_DOMAINS_LEGAL_HREFLANG}
+        xDefaultUrl="https://iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
+        breadcrumbs={breadcrumbItems.map((item, i) => ({
+          name: item.label,
+          url: i === 0 ? "https://iaee.eu/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo" : "https://iaee.eu/expireddomainnames/pl/dokumenty-prawne-domeny-premium"
+        }))}
+      />
       
       <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900">
         {/* Header */}
@@ -42,6 +49,12 @@ const PremiumDomainsLegalPL = () => {
                 </Link>
               </div>
             </div>
+            <Breadcrumbs 
+              items={breadcrumbItems} 
+              homeLabel="Strona główna" 
+              homeHref="/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo"
+              className="mt-4 text-slate-400"
+            />
           </div>
         </header>
 

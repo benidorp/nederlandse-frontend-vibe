@@ -1,22 +1,29 @@
-import { Helmet } from "react-helmet";
 import { Crown, ArrowLeft, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import LegalFooterPremiumDomainsZH from "@/components/premium-domains/LegalFooterPremiumDomainsZH";
 import FooterPremiumDomainsZH from "@/components/premium-domains/FooterPremiumDomainsZH";
+import { SEOHead, PREMIUM_DOMAINS_LEGAL_HREFLANG, getLegalPageBreadcrumbs } from "@/components/seo";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
 const PremiumDomainsLegalZH = () => {
+  const breadcrumbItems = getLegalPageBreadcrumbs("zh");
+  
   return (
     <>
-      <Helmet>
-        <title>优质域名法律文件 | 服务条款、隐私政策、免责声明</title>
-        <meta 
-          name="description" 
-          content="优质过期域名销售的法律文件。服务条款、隐私政策、免责声明和Cookie政策。" 
-        />
-        <meta name="robots" content="noindex, nofollow" />
-        <link rel="canonical" href="https://iaee.eu/expireddomainnames/zh/fa-lv-wen-jian-you-zhi-yu-ming" />
-      </Helmet>
+      <SEOHead
+        title="优质域名法律文件 | 服务条款、隐私政策、免责声明"
+        description="优质过期域名销售的法律文件。服务条款、隐私政策、免责声明和Cookie政策。"
+        canonical="https://iaee.eu/expireddomainnames/zh/falv-wenjian-gaoji-yuming"
+        lang="zh"
+        robots="noindex, nofollow"
+        hreflangLinks={PREMIUM_DOMAINS_LEGAL_HREFLANG}
+        xDefaultUrl="https://iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
+        breadcrumbs={breadcrumbItems.map((item, i) => ({
+          name: item.label,
+          url: i === 0 ? "https://iaee.eu/expireddomainnames/zh/goumai-gaoji-yuming-seo-jiazhi" : "https://iaee.eu/expireddomainnames/zh/falv-wenjian-gaoji-yuming"
+        }))}
+      />
       
       <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900">
         {/* Header */}
@@ -42,6 +49,12 @@ const PremiumDomainsLegalZH = () => {
                 </Link>
               </div>
             </div>
+            <Breadcrumbs 
+              items={breadcrumbItems} 
+              homeLabel="首页" 
+              homeHref="/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi"
+              className="mt-4 text-slate-400"
+            />
           </div>
         </header>
 
