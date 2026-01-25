@@ -5,6 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
+import SafeMarkdown from "@/components/ui/safe-markdown";
 
 const faqItems = [
   {
@@ -441,10 +442,7 @@ const FAQES = () => {
                   {item.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground text-xs leading-relaxed pt-1 pb-2">
-                  <div 
-                    className="whitespace-pre-line [&_h1]:text-base [&_h1]:font-bold [&_h1]:text-foreground [&_h1]:mt-4 [&_h1]:mb-2 [&_h3]:text-sm [&_h3]:font-semibold [&_h3]:text-foreground [&_h3]:mt-3 [&_h3]:mb-1"
-                    dangerouslySetInnerHTML={{ __html: item.answer.replace(/### (.*?)$/gm, '<h3>$1</h3>').replace(/# (.*?)$/gm, '<h1>$1</h1>') }}
-                  />
+                  <SafeMarkdown content={item.answer} />
                 </AccordionContent>
               </AccordionItem>
             ))}
