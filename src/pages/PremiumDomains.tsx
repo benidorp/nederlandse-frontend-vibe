@@ -643,7 +643,8 @@ const premiumDomains = [
     price: "€429",
     stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
     backlinks: "413+",
-    topBacklinks: ["europa.eu (DA 97)", "theconversation.com (DA 92)", "frontiersin.org (DA 92)", "diarioinformacion.com (DA 82)", "informacion.es (DA 78)"]
+    topBacklinks: ["europa.eu (DA 97)", "theconversation.com (DA 92)", "frontiersin.org (DA 92)", "diarioinformacion.com (DA 82)", "informacion.es (DA 78)"],
+    sold: true
   },
   {
     name: "ellinikiglossa.eu",
@@ -1907,8 +1908,18 @@ const PremiumDomains = () => {
               {premiumDomains.map((domain, index) => (
                 <Card 
                   key={index} 
-                  className="h-full flex flex-col bg-gradient-to-br from-slate-800/80 to-slate-900/80 border-slate-700/50 backdrop-blur hover:border-amber-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10 group"
+                  className={`h-full flex flex-col bg-gradient-to-br from-slate-800/80 to-slate-900/80 border-slate-700/50 backdrop-blur transition-all duration-300 group relative overflow-hidden ${
+                    'sold' in domain && domain.sold 
+                      ? 'opacity-75' 
+                      : 'hover:border-amber-500/50 hover:shadow-lg hover:shadow-amber-500/10'
+                  }`}
                 >
+                  {/* Sold Banner */}
+                  {'sold' in domain && domain.sold && (
+                    <div className="absolute top-4 -right-8 z-20 rotate-45 bg-red-600 text-white text-xs font-bold py-1 px-10 shadow-lg">
+                      VERKOCHT
+                    </div>
+                  )}
                   <CardHeader className="pb-2 sm:pb-3 p-3 sm:p-4 md:p-6">
                     <div className="flex items-start justify-between gap-2">
                       <Badge variant="outline" className="text-[10px] sm:text-xs border-slate-600 text-slate-400 flex-shrink-0">
