@@ -1,20 +1,33 @@
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { ArrowLeft, FileText, Shield, Cookie, Scale, Home } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import FooterPremiumDomainsJA from "@/components/premium-domains/FooterPremiumDomainsJA";
 import LanguageSwitcher from "@/components/premium-domains/LanguageSwitcher";
+import { SEOHead, PREMIUM_DOMAINS_LEGAL_HREFLANG, getLegalPageBreadcrumbs } from "@/components/seo";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
 const PremiumDomainsLegalJA = () => {
+  const breadcrumbItems = getLegalPageBreadcrumbs("ja");
+  
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
-      <Helmet>
-        <title>法的文書 - プレミアムドメイン | 利用規約・プライバシーポリシー</title>
-        <meta name="description" content="プレミアムドメインの法的文書。利用規約、プライバシーポリシー、Cookieポリシー、免責事項をご確認ください。" />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://expireddomainnames.co/expireddomainnames/ja/houritsumonsho-puremiamudomein" />
-        <html lang="ja" />
-      </Helmet>
+      <SEOHead
+        title="法的文書 - プレミアムドメイン | 利用規約・プライバシーポリシー"
+        description="プレミアムドメインの法的文書。利用規約、プライバシーポリシー、Cookieポリシー、免責事項をご確認ください。"
+        canonical="https://iaee.eu/expireddomainnames/ja/houritsu-bunsho-premium-domain"
+        lang="ja"
+        robots="noindex, nofollow"
+        hreflangLinks={PREMIUM_DOMAINS_LEGAL_HREFLANG}
+        xDefaultUrl="https://iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
+        breadcrumbs={breadcrumbItems.map((item, i) => ({
+          name: item.label,
+          url: i === 0 ? "https://iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" : "https://iaee.eu/expireddomainnames/ja/houritsu-bunsho-premium-domain"
+        }))}
+        faqItems={[
+          { question: "利用規約の内容は？", answer: "プレミアム期限切れドメインの販売、移転、返金ポリシーをカバーしています。" },
+          { question: "プライバシーはどのように扱われますか？", answer: "最小限のデータのみを収集し、個人情報を第三者と共有することはありません。" }
+        ]}
+      />
 
       <LanguageSwitcher currentLanguage="ja" />
 
@@ -37,6 +50,12 @@ const PremiumDomainsLegalJA = () => {
               <span>ホーム</span>
             </Link>
           </div>
+          <Breadcrumbs 
+            items={breadcrumbItems} 
+            homeLabel="ホーム" 
+            homeHref="/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi"
+            className="mt-4 text-slate-400"
+          />
         </div>
       </header>
 

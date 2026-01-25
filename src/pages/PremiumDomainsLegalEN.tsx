@@ -1,22 +1,33 @@
-import { Helmet } from "react-helmet";
 import { Crown, ArrowLeft, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import LegalFooterPremiumDomainsEN from "@/components/premium-domains/LegalFooterPremiumDomainsEN";
 import FooterPremiumDomainsEN from "@/components/premium-domains/FooterPremiumDomainsEN";
+import { SEOHead, PREMIUM_DOMAINS_LEGAL_HREFLANG, getLegalPageBreadcrumbs } from "@/components/seo";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
 const PremiumDomainsLegalEN = () => {
+  const breadcrumbItems = getLegalPageBreadcrumbs("en");
+  
   return (
     <>
-      <Helmet>
-        <title>Legal Documents Premium Domains | Terms and Conditions, Privacy, Disclaimer</title>
-        <meta 
-          name="description" 
-          content="Legal documents for premium domain name sales. Terms and conditions, privacy policy, disclaimer and cookie policy for purchasing expired domains with SEO value." 
-        />
-        <meta name="robots" content="noindex, nofollow" />
-        <link rel="canonical" href="https://iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
-      </Helmet>
+      <SEOHead
+        title="Legal Documents Premium Domains | Terms and Conditions, Privacy, Disclaimer"
+        description="Legal documents for premium domain name sales. Terms and conditions, privacy policy, disclaimer and cookie policy for purchasing expired domains with SEO value."
+        canonical="https://iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
+        lang="en"
+        robots="noindex, nofollow"
+        hreflangLinks={PREMIUM_DOMAINS_LEGAL_HREFLANG}
+        xDefaultUrl="https://iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
+        breadcrumbs={breadcrumbItems.map((item, i) => ({
+          name: item.label,
+          url: i === 0 ? "https://iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" : "https://iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
+        }))}
+        faqItems={[
+          { question: "What are your terms and conditions?", answer: "Our terms cover domain sales, transfers, and refund policies for premium expired domains." },
+          { question: "How do you handle privacy?", answer: "We collect minimal data and never share personal information with third parties." }
+        ]}
+      />
       
       <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900">
         {/* Header */}
@@ -42,6 +53,12 @@ const PremiumDomainsLegalEN = () => {
                 </Link>
               </div>
             </div>
+            <Breadcrumbs 
+              items={breadcrumbItems} 
+              homeLabel="Home" 
+              homeHref="/expireddomainnames/en/buy-premium-domains-high-authority-seo-value"
+              className="mt-4 text-slate-400"
+            />
           </div>
         </header>
 

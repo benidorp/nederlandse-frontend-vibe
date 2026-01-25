@@ -1,22 +1,29 @@
-import { Helmet } from "react-helmet";
 import { Crown, ArrowLeft, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import LegalFooterPremiumDomainsIT from "@/components/premium-domains/LegalFooterPremiumDomainsIT";
 import FooterPremiumDomainsIT from "@/components/premium-domains/FooterPremiumDomainsIT";
+import { SEOHead, PREMIUM_DOMAINS_LEGAL_HREFLANG, getLegalPageBreadcrumbs } from "@/components/seo";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
 const PremiumDomainsLegalIT = () => {
+  const breadcrumbItems = getLegalPageBreadcrumbs("it");
+  
   return (
     <>
-      <Helmet>
-        <title>Documenti Legali Domini Premium | Termini e Condizioni, Privacy, Disclaimer</title>
-        <meta 
-          name="description" 
-          content="Documenti legali per la vendita di nomi di dominio premium. Termini e condizioni, informativa sulla privacy, disclaimer e politica sui cookie per l'acquisto di domini scaduti con valore SEO." 
-        />
-        <meta name="robots" content="noindex, nofollow" />
-        <link rel="canonical" href="https://iaee.eu/expireddomainnames/it/documenti-legali-domini-premium" />
-      </Helmet>
+      <SEOHead
+        title="Documenti Legali Domini Premium | Termini e Condizioni, Privacy, Disclaimer"
+        description="Documenti legali per la vendita di nomi di dominio premium. Termini e condizioni, informativa sulla privacy, disclaimer e politica sui cookie per l'acquisto di domini scaduti con valore SEO."
+        canonical="https://iaee.eu/expireddomainnames/it/documenti-legali-domini-premium"
+        lang="it"
+        robots="noindex, nofollow"
+        hreflangLinks={PREMIUM_DOMAINS_LEGAL_HREFLANG}
+        xDefaultUrl="https://iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
+        breadcrumbs={breadcrumbItems.map((item, i) => ({
+          name: item.label,
+          url: i === 0 ? "https://iaee.eu/expireddomainnames/it/acquistare-domini-premium-alta-autorita-valore-seo" : "https://iaee.eu/expireddomainnames/it/documenti-legali-domini-premium"
+        }))}
+      />
       
       <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900">
         {/* Header */}
@@ -42,6 +49,12 @@ const PremiumDomainsLegalIT = () => {
                 </Link>
               </div>
             </div>
+            <Breadcrumbs 
+              items={breadcrumbItems} 
+              homeLabel="Home" 
+              homeHref="/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo"
+              className="mt-4 text-slate-400"
+            />
           </div>
         </header>
 

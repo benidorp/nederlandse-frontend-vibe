@@ -1,22 +1,29 @@
-import { Helmet } from "react-helmet";
 import { Crown, ArrowLeft, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import LegalFooterPremiumDomainsTR from "@/components/premium-domains/LegalFooterPremiumDomainsTR";
 import FooterPremiumDomainsTR from "@/components/premium-domains/FooterPremiumDomainsTR";
+import { SEOHead, PREMIUM_DOMAINS_LEGAL_HREFLANG, getLegalPageBreadcrumbs } from "@/components/seo";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
 const PremiumDomainsLegalTR = () => {
+  const breadcrumbItems = getLegalPageBreadcrumbs("tr");
+  
   return (
     <>
-      <Helmet>
-        <title>Yasal Belgeler Premium Alan Adları | Şartlar ve Koşullar, Gizlilik, Sorumluluk Reddi</title>
-        <meta 
-          name="description" 
-          content="Premium alan adı satışları için yasal belgeler. Şartlar ve koşullar, gizlilik politikası, sorumluluk reddi ve SEO değerine sahip süresi dolmuş alan adlarının satın alınması için çerez politikası." 
-        />
-        <meta name="robots" content="noindex, nofollow" />
-        <link rel="canonical" href="https://iaee.eu/expireddomainnames/tr/premium-alan-adlari-yasal-belgeler" />
-      </Helmet>
+      <SEOHead
+        title="Yasal Belgeler Premium Alan Adları | Şartlar ve Koşullar, Gizlilik, Sorumluluk Reddi"
+        description="Premium alan adı satışları için yasal belgeler. Şartlar ve koşullar, gizlilik politikası, sorumluluk reddi ve SEO değerine sahip süresi dolmuş alan adlarının satın alınması için çerez politikası."
+        canonical="https://iaee.eu/expireddomainnames/tr/yasal-belgeler-premium-alan-adi"
+        lang="tr"
+        robots="noindex, nofollow"
+        hreflangLinks={PREMIUM_DOMAINS_LEGAL_HREFLANG}
+        xDefaultUrl="https://iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
+        breadcrumbs={breadcrumbItems.map((item, i) => ({
+          name: item.label,
+          url: i === 0 ? "https://iaee.eu/expireddomainnames/tr/premium-alan-adi-satin-al-seo-degeri" : "https://iaee.eu/expireddomainnames/tr/yasal-belgeler-premium-alan-adi"
+        }))}
+      />
       
       <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900">
         {/* Header */}
@@ -42,6 +49,12 @@ const PremiumDomainsLegalTR = () => {
                 </Link>
               </div>
             </div>
+            <Breadcrumbs 
+              items={breadcrumbItems} 
+              homeLabel="Ana Sayfa" 
+              homeHref="/expireddomainnames/tr/premium-alan-adlari-yuksek-otorite-seo-degeri"
+              className="mt-4 text-slate-400"
+            />
           </div>
         </header>
 

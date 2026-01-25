@@ -1,23 +1,29 @@
-import { Helmet } from "react-helmet";
 import { Crown, ArrowLeft, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import LegalFooterPremiumDomainsHI from "@/components/premium-domains/LegalFooterPremiumDomainsHI";
 import FooterPremiumDomainsHI from "@/components/premium-domains/FooterPremiumDomainsHI";
+import { SEOHead, PREMIUM_DOMAINS_LEGAL_HREFLANG, getLegalPageBreadcrumbs } from "@/components/seo";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
 const PremiumDomainsLegalHI = () => {
+  const breadcrumbItems = getLegalPageBreadcrumbs("hi");
+  
   return (
     <>
-      <Helmet>
-        <title>कानूनी दस्तावेज़ प्रीमियम डोमेन | नियम और शर्तें, गोपनीयता, अस्वीकरण</title>
-        <meta 
-          name="description" 
-          content="प्रीमियम डोमेन नामों की बिक्री के लिए कानूनी दस्तावेज़। SEO मूल्य वाले एक्सपायर्ड डोमेन की खरीद के लिए नियम और शर्तें, गोपनीयता नीति, अस्वीकरण और कुकी नीति।" 
-        />
-        <meta name="robots" content="noindex, nofollow" />
-        <link rel="canonical" href="https://iaee.eu/expireddomainnames/hi/premium-domain-kanooni-dastavez" />
-        <html lang="hi" />
-      </Helmet>
+      <SEOHead
+        title="कानूनी दस्तावेज़ प्रीमियम डोमेन | नियम और शर्तें, गोपनीयता, अस्वीकरण"
+        description="प्रीमियम डोमेन नामों की बिक्री के लिए कानूनी दस्तावेज़। SEO मूल्य वाले एक्सपायर्ड डोमेन की खरीद के लिए नियम और शर्तें, गोपनीयता नीति, अस्वीकरण और कुकी नीति।"
+        canonical="https://iaee.eu/expireddomainnames/hi/kanuni-dastavez-premium-domain"
+        lang="hi"
+        robots="noindex, nofollow"
+        hreflangLinks={PREMIUM_DOMAINS_LEGAL_HREFLANG}
+        xDefaultUrl="https://iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
+        breadcrumbs={breadcrumbItems.map((item, i) => ({
+          name: item.label,
+          url: i === 0 ? "https://iaee.eu/expireddomainnames/hi/premium-domain-kharide-seo-value" : "https://iaee.eu/expireddomainnames/hi/kanuni-dastavez-premium-domain"
+        }))}
+      />
       
       <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900">
         {/* Header */}
@@ -43,6 +49,12 @@ const PremiumDomainsLegalHI = () => {
                 </Link>
               </div>
             </div>
+            <Breadcrumbs 
+              items={breadcrumbItems} 
+              homeLabel="होम" 
+              homeHref="/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya"
+              className="mt-4 text-slate-400"
+            />
           </div>
         </header>
 

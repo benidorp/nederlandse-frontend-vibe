@@ -1,17 +1,28 @@
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Home } from "lucide-react";
 import LegalFooterPremiumDomainsES from "@/components/premium-domains/LegalFooterPremiumDomainsES";
 import FooterPremiumDomainsES from "@/components/premium-domains/FooterPremiumDomainsES";
+import { SEOHead, PREMIUM_DOMAINS_LEGAL_HREFLANG, getLegalPageBreadcrumbs } from "@/components/seo";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
 const PremiumDomainsLegalES = () => {
+  const breadcrumbItems = getLegalPageBreadcrumbs("es");
+  
   return (
     <div className="min-h-screen bg-slate-900 text-white">
-      <Helmet>
-        <title>Documentos Legales | Dominios Premium Expirados</title>
-        <meta name="description" content="Información legal importante sobre la compra de nombres de dominio premium expirados. Lea nuestros términos de venta, política de privacidad y descargo de responsabilidad." />
-        <meta name="robots" content="noindex, nofollow" />
-      </Helmet>
+      <SEOHead
+        title="Documentos Legales | Dominios Premium Expirados"
+        description="Información legal importante sobre la compra de nombres de dominio premium expirados. Lea nuestros términos de venta, política de privacidad y descargo de responsabilidad."
+        canonical="https://iaee.eu/expireddomainnames/es/documentos-legales-dominios-premium"
+        lang="es"
+        robots="noindex, nofollow"
+        hreflangLinks={PREMIUM_DOMAINS_LEGAL_HREFLANG}
+        xDefaultUrl="https://iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
+        breadcrumbs={breadcrumbItems.map((item, i) => ({
+          name: item.label,
+          url: i === 0 ? "https://iaee.eu/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" : "https://iaee.eu/expireddomainnames/es/documentos-legales-dominios-premium"
+        }))}
+      />
 
       {/* Header */}
       <header className="bg-slate-800/50 border-b border-slate-700">
@@ -29,6 +40,12 @@ const PremiumDomainsLegalES = () => {
                 Volver a dominios
               </Link>
             </div>
+            <Breadcrumbs 
+              items={breadcrumbItems} 
+              homeLabel="Inicio" 
+              homeHref="/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo"
+              className="mt-4 text-slate-400"
+            />
           </div>
         </div>
       </header>

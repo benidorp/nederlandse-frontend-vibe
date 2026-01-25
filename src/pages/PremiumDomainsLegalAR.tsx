@@ -1,23 +1,30 @@
-import { Helmet } from "react-helmet";
 import { Crown, ArrowLeft, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import LegalFooterPremiumDomainsAR from "@/components/premium-domains/LegalFooterPremiumDomainsAR";
 import FooterPremiumDomainsAR from "@/components/premium-domains/FooterPremiumDomainsAR";
+import { SEOHead, PREMIUM_DOMAINS_LEGAL_HREFLANG, getLegalPageBreadcrumbs } from "@/components/seo";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
 
 const PremiumDomainsLegalAR = () => {
+  const breadcrumbItems = getLegalPageBreadcrumbs("ar");
+  
   return (
     <>
-      <Helmet>
-        <title>الوثائق القانونية للنطاقات المميزة | الشروط والأحكام، الخصوصية، إخلاء المسؤولية</title>
-        <meta 
-          name="description" 
-          content="الوثائق القانونية لبيع أسماء النطاقات المميزة. الشروط والأحكام، سياسة الخصوصية، إخلاء المسؤولية وسياسة ملفات تعريف الارتباط لشراء النطاقات منتهية الصلاحية ذات قيمة SEO." 
-        />
-        <meta name="robots" content="noindex, nofollow" />
-        <link rel="canonical" href="https://iaee.eu/expireddomainnames/ar/wathaeq-qanuniya-nitaqat-mumayaza" />
-        <html lang="ar" dir="rtl" />
-      </Helmet>
+      <SEOHead
+        title="الوثائق القانونية للنطاقات المميزة | الشروط والأحكام، الخصوصية، إخلاء المسؤولية"
+        description="الوثائق القانونية لبيع أسماء النطاقات المميزة. الشروط والأحكام، سياسة الخصوصية، إخلاء المسؤولية وسياسة ملفات تعريف الارتباط لشراء النطاقات منتهية الصلاحية ذات قيمة SEO."
+        canonical="https://iaee.eu/expireddomainnames/ar/wathaeq-qanuniya-nitaqat-premium"
+        lang="ar"
+        dir="rtl"
+        robots="noindex, nofollow"
+        hreflangLinks={PREMIUM_DOMAINS_LEGAL_HREFLANG}
+        xDefaultUrl="https://iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
+        breadcrumbs={breadcrumbItems.map((item, i) => ({
+          name: item.label,
+          url: i === 0 ? "https://iaee.eu/expireddomainnames/ar/shira-nitaqat-muntahiya-seo" : "https://iaee.eu/expireddomainnames/ar/wathaeq-qanuniya-nitaqat-premium"
+        }))}
+      />
       
       <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900" dir="rtl">
         {/* Header */}
@@ -43,6 +50,12 @@ const PremiumDomainsLegalAR = () => {
                 </Link>
               </div>
             </div>
+            <Breadcrumbs 
+              items={breadcrumbItems} 
+              homeLabel="الرئيسية" 
+              homeHref="/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo"
+              className="mt-4 text-slate-400"
+            />
           </div>
         </header>
 
