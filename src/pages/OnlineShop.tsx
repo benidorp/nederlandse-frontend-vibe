@@ -1,45 +1,43 @@
-import { Helmet } from "react-helmet";
 import HeaderEN from "@/components/en/HeaderEN";
 import HiddenInternalLinks from "@/components/HiddenInternalLinks";
 import HeroOnlineShop from "@/components/online-shop/HeroOnlineShop";
 import ValuePropositionOnlineShop from "@/components/online-shop/ValuePropositionOnlineShop";
 import ServicesOnlineShop from "@/components/online-shop/ServicesOnlineShop";
 import BlogPostsOnlineShop from "@/components/online-shop/BlogPostsOnlineShop";
-
 import FAQOnlineShop from "@/components/online-shop/FAQOnlineShop";
 import PricingOnlineShop from "@/components/online-shop/PricingOnlineShop";
 import ReviewsOnlineShop from "@/components/online-shop/ReviewsOnlineShop";
 import FooterEN from "@/components/en/FooterEN";
 import GTranslateWidget from "@/components/GTranslateWidget";
+import SEOHead from "@/components/seo/SEOHead";
+import { Helmet } from "react-helmet";
 
 const OnlineShop = () => {
   return (
     <>
-      <HiddenInternalLinks />
       <Helmet>
         <script async src="https://js.stripe.com/v3/buy-button.js"></script>
-        <html lang="en" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://iaee.eu/webshop-online-business-legal-protection-terms-privacy-policy-cookie-policy-gdpr-compliance" />
-        
-        {/* JSON-LD Structured Data */}
-        <script type="application/ld+json">{`
-          {
-            "@context": "https://schema.org",
-            "@type": "Product",
-            "name": "Essential Legal Documents for Online Shops",
-            "description": "Complete legal protection package for webshops including Terms & Conditions, Privacy Policy, Cookie Policy, and GDPR Compliance documents.",
-            "brand": {"@type": "Brand", "name": "IAEE"},
-            "offers": {
-              "@type": "Offer",
-              "price": "79",
-              "priceCurrency": "EUR",
-              "availability": "https://schema.org/InStock"
-            }
-          }
-        `}</script>
       </Helmet>
+      <SEOHead
+        title="Essential Legal Documents for Online Shops | Terms, Privacy & GDPR"
+        description="Complete legal protection package for webshops including Terms & Conditions, Privacy Policy, Cookie Policy, and GDPR Compliance documents. Ready in minutes for €79."
+        canonical="https://iaee.eu/webshop-online-business-legal-protection-terms-privacy-policy-cookie-policy-gdpr-compliance"
+        lang="en"
+        ogType="product"
+        serviceName="Essential Legal Documents for Online Shops"
+        serviceDescription="Complete legal protection package for webshops including Terms & Conditions, Privacy Policy, Cookie Policy, and GDPR Compliance documents."
+        servicePrice={79}
+        serviceCurrency="EUR"
+        breadcrumbs={[
+          { name: "Home", url: "https://iaee.eu" },
+          { name: "Online Shop Legal Documents", url: "https://iaee.eu/webshop-online-business-legal-protection-terms-privacy-policy-cookie-policy-gdpr-compliance" }
+        ]}
+        faqItems={[
+          { question: "What documents are included?", answer: "Terms & Conditions, Privacy Policy, Cookie Policy, and GDPR Compliance documents." },
+          { question: "Are the documents GDPR compliant?", answer: "Yes, all documents are fully GDPR compliant." }
+        ]}
+      />
+      <HiddenInternalLinks />
       <GTranslateWidget />
       <div className="min-h-screen">
         <HeaderEN />
@@ -48,7 +46,6 @@ const OnlineShop = () => {
           <ValuePropositionOnlineShop />
           <ServicesOnlineShop />
           <BlogPostsOnlineShop />
-          
           <PricingOnlineShop />
           <ReviewsOnlineShop />
           <FAQOnlineShop />

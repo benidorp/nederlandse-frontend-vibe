@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet";
 import HeaderEN from "@/components/en/HeaderEN";
 import HiddenInternalLinks from "@/components/HiddenInternalLinks";
 import HeroComparisonReview from "@/components/comparison-review/HeroComparisonReview";
@@ -10,22 +9,35 @@ import ReviewsComparisonReview from "@/components/comparison-review/ReviewsCompa
 import FAQComparisonReview from "@/components/comparison-review/FAQComparisonReview";
 import FooterEN from "@/components/en/FooterEN";
 import GTranslateWidget from "@/components/GTranslateWidget";
+import SEOHead from "@/components/seo/SEOHead";
+import { Helmet } from "react-helmet";
 
 const ComparisonReview = () => {
   return (
     <>
-      <HiddenInternalLinks />
       <Helmet>
-        <title>Legal Documents for Comparison & Review Websites: Terms & Conditions, Privacy Policy, Affiliate Disclosure & Disclaimer</title>
-        <meta name="description" content="Essential legal documents for comparison and review websites including terms and conditions, FTC-compliant affiliate disclosure, privacy policy, liability disclaimer, and user content policies." />
-        <meta name="keywords" content="review website legal documents, comparison site terms, affiliate disclosure FTC, review platform privacy policy, product review disclaimer, consumer review legal" />
         <script async src="https://js.stripe.com/v3/buy-button.js"></script>
-        <html lang="en" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://iaee.eu/comparison-review-website-legal-documents-terms-privacy-affiliate-disclosure-disclaimer" />
-        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"Product","name":"Comparison & Review Website Legal Documents","description":"Essential legal documents for comparison and review websites including FTC-compliant Affiliate Disclosure, Privacy Policy, and Disclaimer.","brand":{"@type":"Brand","name":"IAEE"},"offers":{"@type":"Offer","price":"79","priceCurrency":"EUR","availability":"https://schema.org/InStock"}}`}</script>
       </Helmet>
+      <SEOHead
+        title="Legal Documents for Comparison & Review Websites | FTC-Compliant Disclosure"
+        description="Essential legal documents for comparison and review websites including terms and conditions, FTC-compliant affiliate disclosure, privacy policy, liability disclaimer, and user content policies. Ready for €79."
+        canonical="https://iaee.eu/comparison-review-website-legal-documents-terms-privacy-affiliate-disclosure-disclaimer"
+        lang="en"
+        ogType="product"
+        serviceName="Comparison & Review Website Legal Documents"
+        serviceDescription="Essential legal documents for comparison and review websites including FTC-compliant Affiliate Disclosure, Privacy Policy, and Disclaimer."
+        servicePrice={79}
+        serviceCurrency="EUR"
+        breadcrumbs={[
+          { name: "Home", url: "https://iaee.eu" },
+          { name: "Comparison & Review Legal Documents", url: "https://iaee.eu/comparison-review-website-legal-documents-terms-privacy-affiliate-disclosure-disclaimer" }
+        ]}
+        faqItems={[
+          { question: "What documents are included?", answer: "Terms & Conditions, FTC-compliant Affiliate Disclosure, Privacy Policy, Liability Disclaimer, and User Content Policies." },
+          { question: "Are the documents GDPR compliant?", answer: "Yes, all documents are fully GDPR compliant." }
+        ]}
+      />
+      <HiddenInternalLinks />
       <GTranslateWidget />
       <div className="min-h-screen">
         <HeaderEN />
