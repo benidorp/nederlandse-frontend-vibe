@@ -62,8 +62,8 @@ export interface SEOHeadProps {
 const generateOrganizationSchema = (props: SEOHeadProps) => ({
   "@type": "Organization",
   name: props.organizationName || "IAEE",
-  url: props.organizationUrl || "https://iaee.eu",
-  logo: props.organizationLogo || "https://iaee.eu/logo.png",
+  url: props.organizationUrl || "https://www.iaee.eu",
+  logo: props.organizationLogo || "https://www.iaee.eu/logo.png",
   sameAs: [
     "https://twitter.com/iaee_eu",
     "https://linkedin.com/company/iaee"
@@ -74,10 +74,10 @@ const generateOrganizationSchema = (props: SEOHeadProps) => ({
 const generateWebSiteSchema = (props: SEOHeadProps) => ({
   "@type": "WebSite",
   name: props.organizationName || "IAEE",
-  url: props.organizationUrl || "https://iaee.eu",
+  url: props.organizationUrl || "https://www.iaee.eu",
   potentialAction: {
     "@type": "SearchAction",
-    target: `${props.organizationUrl || "https://iaee.eu"}/search?q={search_term_string}`,
+    target: `${props.organizationUrl || "https://www.iaee.eu"}/search?q={search_term_string}`,
     "query-input": "required name=search_term_string"
   }
 });
@@ -157,7 +157,7 @@ const SEOHead = (props: SEOHeadProps) => {
     lang = "en",
     dir = "ltr",
     robots = "index, follow",
-    ogImage = "https://iaee.eu/images/premium-domains-og.jpg",
+    ogImage = "https://www.iaee.eu/images/premium-domains-og.jpg",
     ogType = "website",
     hreflangLinks = [],
     xDefaultUrl,
@@ -240,33 +240,33 @@ export default SEOHead;
 
 // Preset configurations for common page types
 export const PREMIUM_DOMAINS_HREFLANG = [
-  { lang: "nl", url: "https://iaee.eu/expireddomainnames/nl/verlopen-premium-domeinnamen-kopen-seo-waarde" },
-  { lang: "en", url: "https://iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" },
-  { lang: "de", url: "https://iaee.eu/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert" },
-  { lang: "fr", url: "https://iaee.eu/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo" },
-  { lang: "es", url: "https://iaee.eu/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" },
-  { lang: "it", url: "https://iaee.eu/expireddomainnames/it/acquistare-domini-premium-alta-autorita-valore-seo" },
-  { lang: "pt", url: "https://iaee.eu/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" },
-  { lang: "pl", url: "https://iaee.eu/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo" },
-  { lang: "ja", url: "https://iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" },
-  { lang: "zh", url: "https://iaee.eu/expireddomainnames/zh/goumai-gaoji-yuming-seo-jiazhi" },
-  { lang: "ar", url: "https://iaee.eu/expireddomainnames/ar/shira-nitaqat-muntahiya-seo" },
-  { lang: "tr", url: "https://iaee.eu/expireddomainnames/tr/premium-alan-adi-satin-al-seo-degeri" },
-  { lang: "hi", url: "https://iaee.eu/expireddomainnames/hi/premium-domain-kharide-seo-value" }
+  { lang: "nl", url: "https://www.iaee.eu/expireddomainnames/nl/verlopen-premium-domeinnamen-kopen-seo-waarde" },
+  { lang: "en", url: "https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" },
+  { lang: "de", url: "https://www.iaee.eu/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert" },
+  { lang: "fr", url: "https://www.iaee.eu/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo" },
+  { lang: "es", url: "https://www.iaee.eu/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" },
+  { lang: "it", url: "https://www.iaee.eu/expireddomainnames/it/acquistare-domini-premium-alta-autorita-valore-seo" },
+  { lang: "pt", url: "https://www.iaee.eu/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" },
+  { lang: "pl", url: "https://www.iaee.eu/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo" },
+  { lang: "ja", url: "https://www.iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" },
+  { lang: "zh", url: "https://www.iaee.eu/expireddomainnames/zh/goumai-gaoji-yuming-seo-jiazhi" },
+  { lang: "ar", url: "https://www.iaee.eu/expireddomainnames/ar/shira-nitaqat-muntahiya-seo" },
+  { lang: "tr", url: "https://www.iaee.eu/expireddomainnames/tr/premium-alan-adi-satin-al-seo-degeri" },
+  { lang: "hi", url: "https://www.iaee.eu/expireddomainnames/hi/premium-domain-kharide-seo-value" }
 ];
 
 export const PREMIUM_DOMAINS_LEGAL_HREFLANG = [
-  { lang: "nl", url: "https://iaee.eu/expireddomainnames/nl/juridische-documenten-premium-domeinen" },
-  { lang: "en", url: "https://iaee.eu/expireddomainnames/en/premium-domains-legal-documents" },
-  { lang: "de", url: "https://iaee.eu/expireddomainnames/de/rechtliche-dokumente-premium-domains" },
-  { lang: "fr", url: "https://iaee.eu/expireddomainnames/fr/documents-juridiques-domaines-premium" },
-  { lang: "es", url: "https://iaee.eu/expireddomainnames/es/documentos-legales-dominios-premium" },
-  { lang: "it", url: "https://iaee.eu/expireddomainnames/it/documenti-legali-domini-premium" },
-  { lang: "pt", url: "https://iaee.eu/expireddomainnames/pt/documentos-legais-dominios-premium" },
-  { lang: "pl", url: "https://iaee.eu/expireddomainnames/pl/dokumenty-prawne-domeny-premium" },
-  { lang: "ja", url: "https://iaee.eu/expireddomainnames/ja/houritsu-bunsho-premium-domain" },
-  { lang: "zh", url: "https://iaee.eu/expireddomainnames/zh/falv-wenjian-gaoji-yuming" },
-  { lang: "ar", url: "https://iaee.eu/expireddomainnames/ar/wathaeq-qanuniya-nitaqat-premium" },
-  { lang: "tr", url: "https://iaee.eu/expireddomainnames/tr/yasal-belgeler-premium-alan-adi" },
-  { lang: "hi", url: "https://iaee.eu/expireddomainnames/hi/kanuni-dastavez-premium-domain" }
+  { lang: "nl", url: "https://www.iaee.eu/expireddomainnames/nl/juridische-documenten-premium-domeinen" },
+  { lang: "en", url: "https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" },
+  { lang: "de", url: "https://www.iaee.eu/expireddomainnames/de/rechtliche-dokumente-premium-domains" },
+  { lang: "fr", url: "https://www.iaee.eu/expireddomainnames/fr/documents-juridiques-domaines-premium" },
+  { lang: "es", url: "https://www.iaee.eu/expireddomainnames/es/documentos-legales-dominios-premium" },
+  { lang: "it", url: "https://www.iaee.eu/expireddomainnames/it/documenti-legali-domini-premium" },
+  { lang: "pt", url: "https://www.iaee.eu/expireddomainnames/pt/documentos-legais-dominios-premium" },
+  { lang: "pl", url: "https://www.iaee.eu/expireddomainnames/pl/dokumenty-prawne-domeny-premium" },
+  { lang: "ja", url: "https://www.iaee.eu/expireddomainnames/ja/houritsu-bunsho-premium-domain" },
+  { lang: "zh", url: "https://www.iaee.eu/expireddomainnames/zh/falv-wenjian-gaoji-yuming" },
+  { lang: "ar", url: "https://www.iaee.eu/expireddomainnames/ar/wathaeq-qanuniya-nitaqat-premium" },
+  { lang: "tr", url: "https://www.iaee.eu/expireddomainnames/tr/yasal-belgeler-premium-alan-adi" },
+  { lang: "hi", url: "https://www.iaee.eu/expireddomainnames/hi/kanuni-dastavez-premium-domain" }
 ];
