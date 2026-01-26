@@ -21,7 +21,7 @@ const Photography = () => {
       <SEOHead
         title="Legal Documents for Photography Websites | Terms, Privacy & Copyright"
         description="Essential legal documents for photographers including terms and conditions, assignment agreements, privacy policy, disclaimer, quitclaim, and copyright protection. Ready in minutes for €79."
-        canonical="https://iaee.eu/photography-legal-documents-terms-conditions-privacy-policy-contract-copyright-protection"
+        canonical="https://www.iaee.eu/photography-legal-documents-terms-conditions-privacy-policy-contract-copyright-protection"
         lang="en"
         ogType="product"
         serviceName="Photography Legal Documents"
@@ -29,8 +29,8 @@ const Photography = () => {
         servicePrice={79}
         serviceCurrency="EUR"
         breadcrumbs={[
-          { name: "Home", url: "https://iaee.eu" },
-          { name: "Photography Legal Documents", url: "https://iaee.eu/photography-legal-documents-terms-conditions-privacy-policy-contract-copyright-protection" }
+          { name: "Home", url: "https://www.iaee.eu" },
+          { name: "Photography Legal Documents", url: "https://www.iaee.eu/photography-legal-documents-terms-conditions-privacy-policy-contract-copyright-protection" }
         ]}
         faqItems={[
           { question: "What documents are included?", answer: "Terms & Conditions, Privacy Policy, Copyright Protection, Model Release, and Assignment Agreements." },

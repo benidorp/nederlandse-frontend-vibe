@@ -64,7 +64,7 @@ const VATCalculator = () => {
         <meta name="description" content="Bereken eenvoudig BTW voor elk land wereldwijd. Professionele BTW-calculator voor ondernemers met actuele tarieven, inclusief/exclusief berekeningen en overzichtelijke resultaten." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://iaee.eu/btw-calculator-wereldwijd" />
+        <link rel="canonical" href="https://www.iaee.eu/btw-calculator-wereldwijd" />
       </Helmet>
       <GTranslateWidget />
       <div className="min-h-screen">

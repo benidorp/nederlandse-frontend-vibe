@@ -20,7 +20,7 @@ const StreamingMedia = () => {
       <SEOHead
         title="Legal Documents for Streaming & Media Websites | Terms, DMCA & Content License"
         description="Essential legal documents for streaming platforms including terms and conditions, content licensing, privacy policy, DMCA policy, and copyright protection for influencers and media companies. Ready for €79."
-        canonical="https://iaee.eu/streaming-media-legal-documents-terms-conditions-privacy-policy-dmca-content-license"
+        canonical="https://www.iaee.eu/streaming-media-legal-documents-terms-conditions-privacy-policy-dmca-content-license"
         lang="en"
         ogType="product"
         serviceName="Streaming & Media Legal Documents"
@@ -28,8 +28,8 @@ const StreamingMedia = () => {
         servicePrice={79}
         serviceCurrency="EUR"
         breadcrumbs={[
-          { name: "Home", url: "https://iaee.eu" },
-          { name: "Streaming & Media Legal Documents", url: "https://iaee.eu/streaming-media-legal-documents-terms-conditions-privacy-policy-dmca-content-license" }
+          { name: "Home", url: "https://www.iaee.eu" },
+          { name: "Streaming & Media Legal Documents", url: "https://www.iaee.eu/streaming-media-legal-documents-terms-conditions-privacy-policy-dmca-content-license" }
         ]}
         faqItems={[
           { question: "What documents are included?", answer: "Terms & Conditions, Content Licensing, Privacy Policy, DMCA Policy, and Copyright Protection." },

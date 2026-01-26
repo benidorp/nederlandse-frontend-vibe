@@ -3611,7 +3611,7 @@ For legal advice: Consult a lawyer specialized in internet law`;
         <meta name="description" content="Download free legal templates for affiliate websites including terms and conditions, privacy policy, disclaimer, and cookie policy." />
         <meta name="robots" content="noindex, nofollow" />
         <html lang="en" />
-        <link rel="canonical" href="https://iaee.eu/af" />
+        <link rel="canonical" href="https://www.iaee.eu/af" />
       </Helmet>
       <GTranslateWidget />
       <div className="min-h-screen bg-background">

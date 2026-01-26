@@ -22,7 +22,7 @@ const TravelBooking = () => {
       <SEOHead
         title="Must-Have Legal Protection for Hotel and Travel Websites | Terms & Cancellation Policy"
         description="Essential legal documents for travel booking and hotel platforms including terms and conditions, privacy policy, disclaimer, cancellation policy and GDPR compliance. Ready in minutes for €79."
-        canonical="https://iaee.eu/must-have-legal-protection-for-every-hotel-and-travel-website-terms-conditions-privacy-policy-cancellation-policy-disclaimer"
+        canonical="https://www.iaee.eu/must-have-legal-protection-for-every-hotel-and-travel-website-terms-conditions-privacy-policy-cancellation-policy-disclaimer"
         lang="en"
         ogType="product"
         serviceName="Travel & Hotel Legal Documents"
@@ -30,8 +30,8 @@ const TravelBooking = () => {
         servicePrice={79}
         serviceCurrency="EUR"
         breadcrumbs={[
-          { name: "Home", url: "https://iaee.eu" },
-          { name: "Travel & Hotel Legal Documents", url: "https://iaee.eu/must-have-legal-protection-for-every-hotel-and-travel-website-terms-conditions-privacy-policy-cancellation-policy-disclaimer" }
+          { name: "Home", url: "https://www.iaee.eu" },
+          { name: "Travel & Hotel Legal Documents", url: "https://www.iaee.eu/must-have-legal-protection-for-every-hotel-and-travel-website-terms-conditions-privacy-policy-cancellation-policy-disclaimer" }
         ]}
         faqItems={[
           { question: "What documents are included?", answer: "Terms & Conditions, Privacy Policy, Cancellation Policy, Disclaimer, and GDPR Compliance." },

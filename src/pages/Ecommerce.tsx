@@ -21,7 +21,7 @@ const Ecommerce = () => {
       <SEOHead
         title="Essential Legal Documents for E-commerce Websites | Terms & Privacy Policy"
         description="Complete legal protection package for e-commerce websites including Terms & Conditions, Privacy Policy, Return Policy, and Shipping Policy. Ready in minutes for €79."
-        canonical="https://iaee.eu/essential-legal-documents-ecommerce-website-terms-conditions-privacy-policy-return-policy-shipping-policy"
+        canonical="https://www.iaee.eu/essential-legal-documents-ecommerce-website-terms-conditions-privacy-policy-return-policy-shipping-policy"
         lang="en"
         ogType="product"
         serviceName="Essential Legal Documents for E-commerce Websites"
@@ -29,8 +29,8 @@ const Ecommerce = () => {
         servicePrice={79}
         serviceCurrency="EUR"
         breadcrumbs={[
-          { name: "Home", url: "https://iaee.eu" },
-          { name: "E-commerce Legal Documents", url: "https://iaee.eu/essential-legal-documents-ecommerce-website-terms-conditions-privacy-policy-return-policy-shipping-policy" }
+          { name: "Home", url: "https://www.iaee.eu" },
+          { name: "E-commerce Legal Documents", url: "https://www.iaee.eu/essential-legal-documents-ecommerce-website-terms-conditions-privacy-policy-return-policy-shipping-policy" }
         ]}
         faqItems={[
           { question: "What documents are included?", answer: "Terms & Conditions, Privacy Policy, Return Policy, and Shipping Policy." },

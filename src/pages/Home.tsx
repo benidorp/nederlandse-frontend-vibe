@@ -118,7 +118,7 @@ const Home = () => {
         <meta name="description" content="Complete legal protection packages for all website types. GDPR-compliant privacy policies, terms & conditions, and all essential legal documents. Ready in minutes, professionally written." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://iaee.eu/" />
+        <link rel="canonical" href="https://www.iaee.eu/" />
       </Helmet>
       <GTranslateWidget />
       <div className="min-h-screen">

@@ -21,7 +21,7 @@ const Elearning = () => {
       <SEOHead
         title="E-Learning Platform Legal Documents | Terms, Privacy Policy & GDPR Compliance"
         description="Complete legal protection for your online education platform. GDPR-compliant privacy policy, course terms, refund policy, and instructor agreements. Ready in minutes for €79."
-        canonical="https://iaee.eu/elearning-platform-legal-documents-terms-privacy-policy-gdpr-compliance"
+        canonical="https://www.iaee.eu/elearning-platform-legal-documents-terms-privacy-policy-gdpr-compliance"
         lang="en"
         ogType="product"
         serviceName="E-Learning Platform Legal Documents"
@@ -29,8 +29,8 @@ const Elearning = () => {
         servicePrice={79}
         serviceCurrency="EUR"
         breadcrumbs={[
-          { name: "Home", url: "https://iaee.eu" },
-          { name: "E-Learning Legal Documents", url: "https://iaee.eu/elearning-platform-legal-documents-terms-privacy-policy-gdpr-compliance" }
+          { name: "Home", url: "https://www.iaee.eu" },
+          { name: "E-Learning Legal Documents", url: "https://www.iaee.eu/elearning-platform-legal-documents-terms-privacy-policy-gdpr-compliance" }
         ]}
         faqItems={[
           { question: "What documents are included?", answer: "Terms & Conditions, Privacy Policy, Course Terms, Refund Policy, and Instructor Agreements." },
