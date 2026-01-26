@@ -22,7 +22,7 @@ const Spanish = () => {
         <meta name="robots" content="index, follow" />
         <title>Documentos Legales para Sitios Web de Afiliados: Términos y Condiciones, Política de Privacidad, Divulgación y Política de Cookies</title>
         <meta name="description" content="Documentos legales profesionales que protegen tu negocio de afiliados y garantizan el cumplimiento de todos los requisitos legales. Paquete asequible con términos y condiciones, política de privacidad y exenciones de responsabilidad." />
-        <link rel="canonical" href="https://iaee.eu/es/documentos-legales-sitios-web-afiliados-terminos-condiciones-politica-privacidad-divulgacion-cookies" />
+        <link rel="canonical" href="https://www.iaee.eu/es/documentos-legales-sitios-web-afiliados-terminos-condiciones-politica-privacidad-divulgacion-cookies" />
       </Helmet>
       <GTranslateWidget />
       <HiddenInternalLinks />

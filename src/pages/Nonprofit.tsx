@@ -22,7 +22,7 @@ const Nonprofit = () => {
       <SEOHead
         title="Non-Profit Legal Documents | Donation Terms, Privacy Policy & Volunteer Agreements"
         description="Complete legal protection for charitable organizations. GDPR-compliant privacy policy, donation terms, volunteer agreements, and fundraising disclosure. Protect your mission today for €79."
-        canonical="https://iaee.eu/nonprofit-charity-legal-documents-donation-terms-privacy-policy"
+        canonical="https://www.iaee.eu/nonprofit-charity-legal-documents-donation-terms-privacy-policy"
         lang="en"
         ogType="product"
         serviceName="Non-Profit Legal Documents"
@@ -30,8 +30,8 @@ const Nonprofit = () => {
         servicePrice={79}
         serviceCurrency="EUR"
         breadcrumbs={[
-          { name: "Home", url: "https://iaee.eu" },
-          { name: "Non-Profit Legal Documents", url: "https://iaee.eu/nonprofit-charity-legal-documents-donation-terms-privacy-policy" }
+          { name: "Home", url: "https://www.iaee.eu" },
+          { name: "Non-Profit Legal Documents", url: "https://www.iaee.eu/nonprofit-charity-legal-documents-donation-terms-privacy-policy" }
         ]}
         faqItems={[
           { question: "What documents are included?", answer: "Donation Terms, Privacy Policy, Volunteer Agreements, and Fundraising Disclosure." },

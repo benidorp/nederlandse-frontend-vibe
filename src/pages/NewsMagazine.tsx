@@ -22,7 +22,7 @@ const NewsMagazine = () => {
       <SEOHead
         title="Essential Legal Documents for News & Magazine Websites | GDPR-Compliant"
         description="Complete legal protection for your news or magazine website. Get GDPR-compliant privacy policy, editorial guidelines, copyright policy, terms & conditions - ready in minutes for €79."
-        canonical="https://iaee.eu/news-magazine-legal-documents-terms-conditions-privacy-policy-copyright-editorial-policy"
+        canonical="https://www.iaee.eu/news-magazine-legal-documents-terms-conditions-privacy-policy-copyright-editorial-policy"
         lang="en"
         ogType="product"
         serviceName="News & Magazine Legal Documents"
@@ -30,8 +30,8 @@ const NewsMagazine = () => {
         servicePrice={79}
         serviceCurrency="EUR"
         breadcrumbs={[
-          { name: "Home", url: "https://iaee.eu" },
-          { name: "News & Magazine Legal Documents", url: "https://iaee.eu/news-magazine-legal-documents-terms-conditions-privacy-policy-copyright-editorial-policy" }
+          { name: "Home", url: "https://www.iaee.eu" },
+          { name: "News & Magazine Legal Documents", url: "https://www.iaee.eu/news-magazine-legal-documents-terms-conditions-privacy-policy-copyright-editorial-policy" }
         ]}
         faqItems={[
           { question: "What documents are included?", answer: "Terms & Conditions, Privacy Policy, Editorial Guidelines, and Copyright Policy." },

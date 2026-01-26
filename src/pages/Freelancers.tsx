@@ -22,7 +22,7 @@ const Freelancers = () => {
       <SEOHead
         title="Legal Documents for Freelancers & Independent Contractors | Terms & Contracts"
         description="Professional legal documents for freelancers, self-employed professionals, and independent contractors. Includes client contracts, terms of service, privacy policy, and liability disclaimers. Complete legal protection for €79."
-        canonical="https://iaee.eu/freelancers-self-employed-legal-documents-contracts-terms-privacy-policy"
+        canonical="https://www.iaee.eu/freelancers-self-employed-legal-documents-contracts-terms-privacy-policy"
         lang="en"
         ogType="product"
         serviceName="Legal Documents Package for Freelancers & Independent Contractors"
@@ -30,8 +30,8 @@ const Freelancers = () => {
         servicePrice={79}
         serviceCurrency="EUR"
         breadcrumbs={[
-          { name: "Home", url: "https://iaee.eu" },
-          { name: "Freelancer Legal Documents", url: "https://iaee.eu/freelancers-self-employed-legal-documents-contracts-terms-privacy-policy" }
+          { name: "Home", url: "https://www.iaee.eu" },
+          { name: "Freelancer Legal Documents", url: "https://www.iaee.eu/freelancers-self-employed-legal-documents-contracts-terms-privacy-policy" }
         ]}
         faqItems={[
           { question: "What documents are included?", answer: "Client Contracts, Terms of Service, Privacy Policy, and Liability Disclaimers." },

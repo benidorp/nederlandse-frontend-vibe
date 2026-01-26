@@ -21,7 +21,7 @@ const Dropshipping = () => {
       <SEOHead
         title="Essential Legal Documents for Dropshipping Businesses | Terms & Privacy"
         description="Complete legal protection package for dropshipping businesses including Terms & Conditions, Privacy Policy, Supplier Agreement, and Refund Policy. Ready in minutes for €79."
-        canonical="https://iaee.eu/dropshipping-business-legal-documents-terms-conditions-privacy-policy-supplier-agreement-refund-policy"
+        canonical="https://www.iaee.eu/dropshipping-business-legal-protection-terms-conditions-privacy-policy-supplier-agreement-refund-policy"
         lang="en"
         ogType="product"
         serviceName="Essential Legal Documents for Dropshipping Businesses"
@@ -29,8 +29,8 @@ const Dropshipping = () => {
         servicePrice={79}
         serviceCurrency="EUR"
         breadcrumbs={[
-          { name: "Home", url: "https://iaee.eu" },
-          { name: "Dropshipping Legal Documents", url: "https://iaee.eu/dropshipping-business-legal-documents-terms-conditions-privacy-policy-supplier-agreement-refund-policy" }
+          { name: "Home", url: "https://www.iaee.eu" },
+          { name: "Dropshipping Legal Documents", url: "https://www.iaee.eu/dropshipping-business-legal-protection-terms-conditions-privacy-policy-supplier-agreement-refund-policy" }
         ]}
         faqItems={[
           { question: "What documents are included?", answer: "Terms & Conditions, Privacy Policy, Supplier Agreement, and Refund Policy." },

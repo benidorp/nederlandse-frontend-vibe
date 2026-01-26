@@ -21,7 +21,7 @@ const OnlineShop = () => {
       <SEOHead
         title="Essential Legal Documents for Online Shops | Terms, Privacy & GDPR"
         description="Complete legal protection package for webshops including Terms & Conditions, Privacy Policy, Cookie Policy, and GDPR Compliance documents. Ready in minutes for €79."
-        canonical="https://iaee.eu/webshop-online-business-legal-protection-terms-privacy-policy-cookie-policy-gdpr-compliance"
+        canonical="https://www.iaee.eu/webshop-online-business-legal-protection-terms-privacy-policy-cookie-policy-gdpr-compliance"
         lang="en"
         ogType="product"
         serviceName="Essential Legal Documents for Online Shops"
@@ -29,8 +29,8 @@ const OnlineShop = () => {
         servicePrice={79}
         serviceCurrency="EUR"
         breadcrumbs={[
-          { name: "Home", url: "https://iaee.eu" },
-          { name: "Online Shop Legal Documents", url: "https://iaee.eu/webshop-online-business-legal-protection-terms-privacy-policy-cookie-policy-gdpr-compliance" }
+          { name: "Home", url: "https://www.iaee.eu" },
+          { name: "Online Shop Legal Documents", url: "https://www.iaee.eu/webshop-online-business-legal-protection-terms-privacy-policy-cookie-policy-gdpr-compliance" }
         ]}
         faqItems={[
           { question: "What documents are included?", answer: "Terms & Conditions, Privacy Policy, Cookie Policy, and GDPR Compliance documents." },
