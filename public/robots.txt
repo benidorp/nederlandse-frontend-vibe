@@ -30,7 +30,7 @@ Allow: /
 Crawl-delay: 2
 
 # Sitemap location
-Sitemap: https://iaee.eu/sitemap.xml
+Sitemap: https://www.iaee.eu/sitemap.xml
 
 # Disallow patterns
 Disallow: /api/
