@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet";
 import HeaderEN from "@/components/en/HeaderEN";
 import HiddenInternalLinks from "@/components/HiddenInternalLinks";
 import HeroPhotography from "@/components/photography/HeroPhotography";
@@ -10,22 +9,35 @@ import ReviewsPhotography from "@/components/photography/ReviewsPhotography";
 import FAQPhotography from "@/components/photography/FAQPhotography";
 import FooterEN from "@/components/en/FooterEN";
 import GTranslateWidget from "@/components/GTranslateWidget";
+import SEOHead from "@/components/seo/SEOHead";
+import { Helmet } from "react-helmet";
 
 const Photography = () => {
   return (
     <>
-      <HiddenInternalLinks />
       <Helmet>
-        <title>Legal Documents for Photography Websites: Terms & Conditions, Privacy Policy, Disclosure & Cookie Policy</title>
-        <meta name="description" content="Essential legal documents for photographers including terms and conditions, assignment agreements, privacy policy, disclaimer, quitclaim, and copyright protection." />
-        <meta name="keywords" content="photography legal documents, photographer terms and conditions, photography contract, model release, copyright protection, photography disclaimer" />
         <script async src="https://js.stripe.com/v3/buy-button.js"></script>
-        <html lang="en" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://iaee.eu/photography-legal-documents-terms-conditions-privacy-policy-contract-copyright-protection" />
-        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"Product","name":"Photography Legal Documents","description":"Essential legal documents for photographers including Terms, Privacy Policy, Copyright Protection, and Model Release.","brand":{"@type":"Brand","name":"IAEE"},"offers":{"@type":"Offer","price":"79","priceCurrency":"EUR","availability":"https://schema.org/InStock"}}`}</script>
       </Helmet>
+      <SEOHead
+        title="Legal Documents for Photography Websites | Terms, Privacy & Copyright"
+        description="Essential legal documents for photographers including terms and conditions, assignment agreements, privacy policy, disclaimer, quitclaim, and copyright protection. Ready in minutes for €79."
+        canonical="https://iaee.eu/photography-legal-documents-terms-conditions-privacy-policy-contract-copyright-protection"
+        lang="en"
+        ogType="product"
+        serviceName="Photography Legal Documents"
+        serviceDescription="Essential legal documents for photographers including Terms, Privacy Policy, Copyright Protection, and Model Release."
+        servicePrice={79}
+        serviceCurrency="EUR"
+        breadcrumbs={[
+          { name: "Home", url: "https://iaee.eu" },
+          { name: "Photography Legal Documents", url: "https://iaee.eu/photography-legal-documents-terms-conditions-privacy-policy-contract-copyright-protection" }
+        ]}
+        faqItems={[
+          { question: "What documents are included?", answer: "Terms & Conditions, Privacy Policy, Copyright Protection, Model Release, and Assignment Agreements." },
+          { question: "Are the documents GDPR compliant?", answer: "Yes, all documents are fully GDPR compliant." }
+        ]}
+      />
+      <HiddenInternalLinks />
       <GTranslateWidget />
       <div className="min-h-screen">
         <HeaderEN />

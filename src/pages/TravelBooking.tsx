@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet";
 import HeaderEN from "@/components/en/HeaderEN";
 import HiddenInternalLinks from "@/components/HiddenInternalLinks";
 import HeroTravelBookingEN from "@/components/travel-booking/HeroTravelBookingEN";
@@ -11,18 +10,34 @@ import ReviewsEN from "@/components/en/ReviewsEN";
 import FAQTravelBookingEN from "@/components/travel-booking/FAQTravelBookingEN";
 import FooterEN from "@/components/en/FooterEN";
 import GTranslateWidget from "@/components/GTranslateWidget";
+import SEOHead from "@/components/seo/SEOHead";
+import { Helmet } from "react-helmet";
+
 const TravelBooking = () => {
-  return <>
+  return (
+    <>
       <Helmet>
         <script async src="https://js.stripe.com/v3/buy-button.js"></script>
-        <title>Must-Have Legal Protection for Every Hotel and Travel Website: Terms & Conditions, Privacy Policy, Cancellation Policy & Disclaimer</title>
-        <meta name="description" content="Essential legal documents for travel booking and hotel platforms including terms and conditions, privacy policy, disclaimer, cancellation policy and GDPR compliance." />
-        <meta name="keywords" content="travel booking website legal documents, hotel booking terms and conditions, cancellation policy, privacy policy travel industry, travel booking disclaimer" />
-        <html lang="en" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://iaee.eu/must-have-legal-protection-for-every-hotel-and-travel-website-terms-conditions-privacy-policy-cancellation-policy-disclaimer" />
       </Helmet>
+      <SEOHead
+        title="Must-Have Legal Protection for Hotel and Travel Websites | Terms & Cancellation Policy"
+        description="Essential legal documents for travel booking and hotel platforms including terms and conditions, privacy policy, disclaimer, cancellation policy and GDPR compliance. Ready in minutes for €79."
+        canonical="https://iaee.eu/must-have-legal-protection-for-every-hotel-and-travel-website-terms-conditions-privacy-policy-cancellation-policy-disclaimer"
+        lang="en"
+        ogType="product"
+        serviceName="Travel & Hotel Legal Documents"
+        serviceDescription="Essential legal documents for travel booking and hotel platforms including Terms, Privacy Policy, Cancellation Policy, and GDPR Compliance."
+        servicePrice={79}
+        serviceCurrency="EUR"
+        breadcrumbs={[
+          { name: "Home", url: "https://iaee.eu" },
+          { name: "Travel & Hotel Legal Documents", url: "https://iaee.eu/must-have-legal-protection-for-every-hotel-and-travel-website-terms-conditions-privacy-policy-cancellation-policy-disclaimer" }
+        ]}
+        faqItems={[
+          { question: "What documents are included?", answer: "Terms & Conditions, Privacy Policy, Cancellation Policy, Disclaimer, and GDPR Compliance." },
+          { question: "Are the documents GDPR compliant?", answer: "Yes, all documents are fully GDPR compliant." }
+        ]}
+      />
       <GTranslateWidget />
       <HiddenInternalLinks />
       <div className="min-h-screen">
@@ -39,6 +54,8 @@ const TravelBooking = () => {
         </main>
         <FooterEN />
       </div>
-    </>;
+    </>
+  );
 };
+
 export default TravelBooking;

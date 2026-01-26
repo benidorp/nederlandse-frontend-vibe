@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet";
 import HeaderEN from "@/components/en/HeaderEN";
 import HiddenInternalLinks from "@/components/HiddenInternalLinks";
 import HeroElearning from "@/components/elearning/HeroElearning";
@@ -10,18 +9,34 @@ import PricingElearning from "@/components/elearning/PricingElearning";
 import ReviewsElearning from "@/components/elearning/ReviewsElearning";
 import FooterEN from "@/components/en/FooterEN";
 import GTranslateWidget from "@/components/GTranslateWidget";
+import SEOHead from "@/components/seo/SEOHead";
+import { Helmet } from "react-helmet";
+
 const Elearning = () => {
-  return <>
+  return (
+    <>
       <Helmet>
         <script async src="https://js.stripe.com/v3/buy-button.js"></script>
-        <html lang="en" />
-        <title>E-Learning Platform Legal Documents | Terms, Privacy Policy & GDPR Compliance</title>
-        <meta name="description" content="Complete legal protection for your online education platform. GDPR-compliant privacy policy, course terms, refund policy, and instructor agreements. Ready in minutes." />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://iaee.eu/elearning-platform-legal-documents-terms-privacy-policy-gdpr-compliance" />
-        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"Product","name":"E-Learning Platform Legal Documents","description":"Complete legal protection for online education platforms including Terms, Privacy Policy, Course Terms, and GDPR Compliance.","brand":{"@type":"Brand","name":"IAEE"},"offers":{"@type":"Offer","price":"79","priceCurrency":"EUR","availability":"https://schema.org/InStock"}}`}</script>
       </Helmet>
+      <SEOHead
+        title="E-Learning Platform Legal Documents | Terms, Privacy Policy & GDPR Compliance"
+        description="Complete legal protection for your online education platform. GDPR-compliant privacy policy, course terms, refund policy, and instructor agreements. Ready in minutes for €79."
+        canonical="https://iaee.eu/elearning-platform-legal-documents-terms-privacy-policy-gdpr-compliance"
+        lang="en"
+        ogType="product"
+        serviceName="E-Learning Platform Legal Documents"
+        serviceDescription="Complete legal protection for online education platforms including Terms, Privacy Policy, Course Terms, and GDPR Compliance."
+        servicePrice={79}
+        serviceCurrency="EUR"
+        breadcrumbs={[
+          { name: "Home", url: "https://iaee.eu" },
+          { name: "E-Learning Legal Documents", url: "https://iaee.eu/elearning-platform-legal-documents-terms-privacy-policy-gdpr-compliance" }
+        ]}
+        faqItems={[
+          { question: "What documents are included?", answer: "Terms & Conditions, Privacy Policy, Course Terms, Refund Policy, and Instructor Agreements." },
+          { question: "Are the documents GDPR compliant?", answer: "Yes, all documents are fully GDPR compliant." }
+        ]}
+      />
       <GTranslateWidget />
       <HiddenInternalLinks />
       <div className="min-h-screen">
@@ -36,6 +51,8 @@ const Elearning = () => {
         </main>
         <FooterEN />
       </div>
-    </>;
+    </>
+  );
 };
+
 export default Elearning;
