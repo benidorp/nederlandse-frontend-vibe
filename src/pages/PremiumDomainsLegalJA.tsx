@@ -14,14 +14,14 @@ const PremiumDomainsLegalJA = () => {
       <SEOHead
         title="法的文書 - プレミアムドメイン | 利用規約・プライバシーポリシー"
         description="プレミアムドメインの法的文書。利用規約、プライバシーポリシー、Cookieポリシー、免責事項をご確認ください。"
-        canonical="https://iaee.eu/expireddomainnames/ja/houritsu-bunsho-premium-domain"
+        canonical="https://www.iaee.eu/expireddomainnames/ja/houritsu-bunsho-premium-domain"
         lang="ja"
         robots="noindex, nofollow"
         hreflangLinks={PREMIUM_DOMAINS_LEGAL_HREFLANG}
-        xDefaultUrl="https://iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
+        xDefaultUrl="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
         breadcrumbs={breadcrumbItems.map((item, i) => ({
           name: item.label,
-          url: i === 0 ? "https://iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" : "https://iaee.eu/expireddomainnames/ja/houritsu-bunsho-premium-domain"
+          url: i === 0 ? "https://www.iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" : "https://www.iaee.eu/expireddomainnames/ja/houritsu-bunsho-premium-domain"
         }))}
         faqItems={[
           { question: "利用規約の内容は？", answer: "プレミアム期限切れドメインの販売、移転、返金ポリシーをカバーしています。" },

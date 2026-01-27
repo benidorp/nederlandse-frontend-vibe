@@ -1549,34 +1549,34 @@ const PremiumDomainsZH = () => {
         <title>购买高权重优质过期域名 | 高DA外链SEO价值</title>
         <meta name="description" content="购买带外链的过期域名？可靠的高权重SEO价值过期域名。购买优质域名，更快获得Google排名。立即可用。" />
         <meta name="keywords" content="购买过期域名, 带外链的过期域名, 高权重域名, 可靠的过期域名, 购买优质域名, 有SEO价值的域名, 带链接的老域名, 最佳域名出售" />
-        <link rel="canonical" href="https://iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" />
+        <link rel="canonical" href="https://www.iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="IAEE Premium Domains" />
         
         {/* Hreflang tags for international SEO */}
-        <link rel="alternate" hrefLang="nl" href="https://iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
-        <link rel="alternate" hrefLang="en" href="https://iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
-        <link rel="alternate" hrefLang="de" href="https://iaee.eu/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert" />
-        <link rel="alternate" hrefLang="fr" href="https://iaee.eu/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo" />
-        <link rel="alternate" hrefLang="es" href="https://iaee.eu/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" />
-        <link rel="alternate" hrefLang="it" href="https://iaee.eu/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo" />
-        <link rel="alternate" hrefLang="pt" href="https://iaee.eu/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" />
-        <link rel="alternate" hrefLang="pl" href="https://iaee.eu/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo" />
-        <link rel="alternate" hrefLang="ja" href="https://iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" />
-        <link rel="alternate" hrefLang="zh" href="https://iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" />
-        <link rel="alternate" hrefLang="ar" href="https://iaee.eu/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo" />
-        <link rel="alternate" hrefLang="tr" href="https://iaee.eu/expireddomainnames/tr/premium-alan-adlari-yuksek-otorite-seo-degeri" />
-        <link rel="alternate" hrefLang="hi" href="https://iaee.eu/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya" />
-        <link rel="alternate" hrefLang="x-default" href="https://iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
+        <link rel="alternate" hrefLang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
+        <link rel="alternate" hrefLang="en" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
+        <link rel="alternate" hrefLang="de" href="https://www.iaee.eu/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert" />
+        <link rel="alternate" hrefLang="fr" href="https://www.iaee.eu/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo" />
+        <link rel="alternate" hrefLang="es" href="https://www.iaee.eu/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" />
+        <link rel="alternate" hrefLang="it" href="https://www.iaee.eu/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo" />
+        <link rel="alternate" hrefLang="pt" href="https://www.iaee.eu/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" />
+        <link rel="alternate" hrefLang="pl" href="https://www.iaee.eu/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo" />
+        <link rel="alternate" hrefLang="ja" href="https://www.iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" />
+        <link rel="alternate" hrefLang="zh" href="https://www.iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" />
+        <link rel="alternate" hrefLang="ar" href="https://www.iaee.eu/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo" />
+        <link rel="alternate" hrefLang="tr" href="https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yuksek-otorite-seo-degeri" />
+        <link rel="alternate" hrefLang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
         
         {/* Open Graph tags */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="购买高权重优质过期域名 | 高DA外链SEO价值" />
         <meta property="og:description" content="可靠的高权重SEO价值过期域名。立即可用。" />
-        <meta property="og:url" content="https://iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" />
+        <meta property="og:url" content="https://www.iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" />
         <meta property="og:locale" content="zh_CN" />
         <meta property="og:site_name" content="IAEE Premium Domains" />
-        <meta property="og:image" content="https://iaee.eu/images/premium-domains-og.jpg" />
+        <meta property="og:image" content="https://www.iaee.eu/images/premium-domains-og.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="640" />
         <meta property="og:image:alt" content="优质域名 - 高权重域名" />
@@ -1585,7 +1585,7 @@ const PremiumDomainsZH = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="购买高权重优质过期域名" />
         <meta name="twitter:description" content="可靠的高权重SEO价值过期域名。立即可用。" />
-        <meta name="twitter:image" content="https://iaee.eu/images/premium-domains-og.jpg" />
+        <meta name="twitter:image" content="https://www.iaee.eu/images/premium-domains-og.jpg" />
         
         {/* JSON-LD Structured Data */}
         <script type="application/ld+json">{`
@@ -1594,14 +1594,14 @@ const PremiumDomainsZH = () => {
             "@graph": [
               {
                 "@type": "Organization",
-                "@id": "https://iaee.eu/#organization",
+                "@id": "https://www.iaee.eu/#organization",
                 "name": "IAEE Premium Domains",
-                "url": "https://iaee.eu",
+                "url": "https://www.iaee.eu",
                 "description": "专注于高权重和SEO价值的优质过期域名"
               },
               {
                 "@type": "WebPage",
-                "url": "https://iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi",
+                "url": "https://www.iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi",
                 "name": "购买高权重优质过期域名 | 高DA外链SEO价值",
                 "inLanguage": "zh"
               },

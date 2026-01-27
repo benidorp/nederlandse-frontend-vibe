@@ -14,14 +14,14 @@ const PremiumDomainsLegalEN = () => {
       <SEOHead
         title="Legal Documents Premium Domains | Terms and Conditions, Privacy, Disclaimer"
         description="Legal documents for premium domain name sales. Terms and conditions, privacy policy, disclaimer and cookie policy for purchasing expired domains with SEO value."
-        canonical="https://iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
+        canonical="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
         lang="en"
         robots="noindex, nofollow"
         hreflangLinks={PREMIUM_DOMAINS_LEGAL_HREFLANG}
-        xDefaultUrl="https://iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
+        xDefaultUrl="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
         breadcrumbs={breadcrumbItems.map((item, i) => ({
           name: item.label,
-          url: i === 0 ? "https://iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" : "https://iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
+          url: i === 0 ? "https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" : "https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
         }))}
         faqItems={[
           { question: "What are your terms and conditions?", answer: "Our terms cover domain sales, transfers, and refund policies for premium expired domains." },

@@ -13,14 +13,14 @@ const PremiumDomainsLegalES = () => {
       <SEOHead
         title="Documentos Legales | Dominios Premium Expirados"
         description="Información legal importante sobre la compra de nombres de dominio premium expirados. Lea nuestros términos de venta, política de privacidad y descargo de responsabilidad."
-        canonical="https://iaee.eu/expireddomainnames/es/documentos-legales-dominios-premium"
+        canonical="https://www.iaee.eu/expireddomainnames/es/documentos-legales-dominios-premium"
         lang="es"
         robots="noindex, nofollow"
         hreflangLinks={PREMIUM_DOMAINS_LEGAL_HREFLANG}
-        xDefaultUrl="https://iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
+        xDefaultUrl="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
         breadcrumbs={breadcrumbItems.map((item, i) => ({
           name: item.label,
-          url: i === 0 ? "https://iaee.eu/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" : "https://iaee.eu/expireddomainnames/es/documentos-legales-dominios-premium"
+          url: i === 0 ? "https://www.iaee.eu/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" : "https://www.iaee.eu/expireddomainnames/es/documentos-legales-dominios-premium"
         }))}
       />
 

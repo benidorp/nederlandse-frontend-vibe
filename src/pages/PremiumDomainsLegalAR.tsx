@@ -14,15 +14,15 @@ const PremiumDomainsLegalAR = () => {
       <SEOHead
         title="الوثائق القانونية للنطاقات المميزة | الشروط والأحكام، الخصوصية، إخلاء المسؤولية"
         description="الوثائق القانونية لبيع أسماء النطاقات المميزة. الشروط والأحكام، سياسة الخصوصية، إخلاء المسؤولية وسياسة ملفات تعريف الارتباط لشراء النطاقات منتهية الصلاحية ذات قيمة SEO."
-        canonical="https://iaee.eu/expireddomainnames/ar/wathaeq-qanuniya-nitaqat-premium"
+        canonical="https://www.iaee.eu/expireddomainnames/ar/wathaeq-qanuniya-nitaqat-premium"
         lang="ar"
         dir="rtl"
         robots="noindex, nofollow"
         hreflangLinks={PREMIUM_DOMAINS_LEGAL_HREFLANG}
-        xDefaultUrl="https://iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
+        xDefaultUrl="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
         breadcrumbs={breadcrumbItems.map((item, i) => ({
           name: item.label,
-          url: i === 0 ? "https://iaee.eu/expireddomainnames/ar/shira-nitaqat-muntahiya-seo" : "https://iaee.eu/expireddomainnames/ar/wathaeq-qanuniya-nitaqat-premium"
+          url: i === 0 ? "https://www.iaee.eu/expireddomainnames/ar/shira-nitaqat-muntahiya-seo" : "https://www.iaee.eu/expireddomainnames/ar/wathaeq-qanuniya-nitaqat-premium"
         }))}
       />
       
