@@ -14,14 +14,14 @@ const PremiumDomainsLegalHI = () => {
       <SEOHead
         title="कानूनी दस्तावेज़ प्रीमियम डोमेन | नियम और शर्तें, गोपनीयता, अस्वीकरण"
         description="प्रीमियम डोमेन नामों की बिक्री के लिए कानूनी दस्तावेज़। SEO मूल्य वाले एक्सपायर्ड डोमेन की खरीद के लिए नियम और शर्तें, गोपनीयता नीति, अस्वीकरण और कुकी नीति।"
-        canonical="https://iaee.eu/expireddomainnames/hi/kanuni-dastavez-premium-domain"
+        canonical="https://www.iaee.eu/expireddomainnames/hi/kanuni-dastavez-premium-domain"
         lang="hi"
         robots="noindex, nofollow"
         hreflangLinks={PREMIUM_DOMAINS_LEGAL_HREFLANG}
-        xDefaultUrl="https://iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
+        xDefaultUrl="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
         breadcrumbs={breadcrumbItems.map((item, i) => ({
           name: item.label,
-          url: i === 0 ? "https://iaee.eu/expireddomainnames/hi/premium-domain-kharide-seo-value" : "https://iaee.eu/expireddomainnames/hi/kanuni-dastavez-premium-domain"
+          url: i === 0 ? "https://www.iaee.eu/expireddomainnames/hi/premium-domain-kharide-seo-value" : "https://www.iaee.eu/expireddomainnames/hi/kanuni-dastavez-premium-domain"
         }))}
       />
       

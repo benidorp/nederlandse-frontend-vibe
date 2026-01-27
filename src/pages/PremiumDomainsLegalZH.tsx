@@ -14,14 +14,14 @@ const PremiumDomainsLegalZH = () => {
       <SEOHead
         title="优质域名法律文件 | 服务条款、隐私政策、免责声明"
         description="优质过期域名销售的法律文件。服务条款、隐私政策、免责声明和Cookie政策。"
-        canonical="https://iaee.eu/expireddomainnames/zh/falv-wenjian-gaoji-yuming"
+        canonical="https://www.iaee.eu/expireddomainnames/zh/falv-wenjian-gaoji-yuming"
         lang="zh"
         robots="noindex, nofollow"
         hreflangLinks={PREMIUM_DOMAINS_LEGAL_HREFLANG}
-        xDefaultUrl="https://iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
+        xDefaultUrl="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
         breadcrumbs={breadcrumbItems.map((item, i) => ({
           name: item.label,
-          url: i === 0 ? "https://iaee.eu/expireddomainnames/zh/goumai-gaoji-yuming-seo-jiazhi" : "https://iaee.eu/expireddomainnames/zh/falv-wenjian-gaoji-yuming"
+          url: i === 0 ? "https://www.iaee.eu/expireddomainnames/zh/goumai-gaoji-yuming-seo-jiazhi" : "https://www.iaee.eu/expireddomainnames/zh/falv-wenjian-gaoji-yuming"
         }))}
       />
       

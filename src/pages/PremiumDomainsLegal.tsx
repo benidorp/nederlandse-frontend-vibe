@@ -14,14 +14,14 @@ const PremiumDomainsLegal = () => {
       <SEOHead
         title="Juridische Documenten Premium Domeinen | Algemene Voorwaarden, Privacy, Disclaimer"
         description="Juridische documenten voor premium domeinnamen verkoop. Algemene voorwaarden, privacybeleid, disclaimer en cookiebeleid voor de aankoop van expired domeinen met SEO-waarde."
-        canonical="https://iaee.eu/expireddomainnames/nl/juridische-documenten-premium-domeinen"
+        canonical="https://www.iaee.eu/expireddomainnames/nl/juridische-documenten-premium-domeinen"
         lang="nl"
         robots="noindex, nofollow"
         hreflangLinks={PREMIUM_DOMAINS_LEGAL_HREFLANG}
-        xDefaultUrl="https://iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
+        xDefaultUrl="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
         breadcrumbs={breadcrumbItems.map((item, i) => ({
           name: item.label,
-          url: i === 0 ? "https://iaee.eu/expireddomainnames/nl/verlopen-premium-domeinnamen-kopen-seo-waarde" : "https://iaee.eu/expireddomainnames/nl/juridische-documenten-premium-domeinen"
+          url: i === 0 ? "https://www.iaee.eu/expireddomainnames/nl/verlopen-premium-domeinnamen-kopen-seo-waarde" : "https://www.iaee.eu/expireddomainnames/nl/juridische-documenten-premium-domeinen"
         }))}
       />
       

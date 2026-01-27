@@ -1674,34 +1674,34 @@ const PremiumDomainsJA = () => {
         <title>高権威バックリンク付きプレミアム期限切れドメイン購入 | SEO価値</title>
         <meta name="description" content="バックリンク付き期限切れドメインをお探しですか？高権威とSEO価値を持つ信頼できる期限切れドメイン。Google上位表示を早めるプレミアムドメイン。即時利用可能。" />
         <meta name="keywords" content="期限切れドメイン購入, バックリンク付きドメイン, 権威あるドメイン, 信頼できる期限切れドメイン, プレミアムドメイン購入, SEO価値ドメイン, リンク付き古いドメイン, 販売中ベストドメイン" />
-        <link rel="canonical" href="https://iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" />
+        <link rel="canonical" href="https://www.iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="IAEE Premium Domains" />
         
         {/* Hreflang tags for international SEO */}
-        <link rel="alternate" hrefLang="nl" href="https://iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
-        <link rel="alternate" hrefLang="en" href="https://iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
-        <link rel="alternate" hrefLang="de" href="https://iaee.eu/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert" />
-        <link rel="alternate" hrefLang="fr" href="https://iaee.eu/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo" />
-        <link rel="alternate" hrefLang="es" href="https://iaee.eu/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" />
-        <link rel="alternate" hrefLang="it" href="https://iaee.eu/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo" />
-        <link rel="alternate" hrefLang="pt" href="https://iaee.eu/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" />
-        <link rel="alternate" hrefLang="pl" href="https://iaee.eu/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo" />
-        <link rel="alternate" hrefLang="ja" href="https://iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" />
-        <link rel="alternate" hrefLang="zh" href="https://iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" />
-        <link rel="alternate" hrefLang="ar" href="https://iaee.eu/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo" />
-        <link rel="alternate" hrefLang="tr" href="https://iaee.eu/expireddomainnames/tr/premium-alan-adlari-yuksek-otorite-seo-degeri" />
-        <link rel="alternate" hrefLang="hi" href="https://iaee.eu/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya" />
-        <link rel="alternate" hrefLang="x-default" href="https://iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
+        <link rel="alternate" hrefLang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
+        <link rel="alternate" hrefLang="en" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
+        <link rel="alternate" hrefLang="de" href="https://www.iaee.eu/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert" />
+        <link rel="alternate" hrefLang="fr" href="https://www.iaee.eu/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo" />
+        <link rel="alternate" hrefLang="es" href="https://www.iaee.eu/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" />
+        <link rel="alternate" hrefLang="it" href="https://www.iaee.eu/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo" />
+        <link rel="alternate" hrefLang="pt" href="https://www.iaee.eu/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" />
+        <link rel="alternate" hrefLang="pl" href="https://www.iaee.eu/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo" />
+        <link rel="alternate" hrefLang="ja" href="https://www.iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" />
+        <link rel="alternate" hrefLang="zh" href="https://www.iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" />
+        <link rel="alternate" hrefLang="ar" href="https://www.iaee.eu/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo" />
+        <link rel="alternate" hrefLang="tr" href="https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yuksek-otorite-seo-degeri" />
+        <link rel="alternate" hrefLang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
         
         {/* Open Graph tags */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="高権威バックリンク付きプレミアム期限切れドメイン購入 | SEO価値" />
         <meta property="og:description" content="高権威とSEO価値を持つ信頼できる期限切れドメイン。即時利用可能。" />
-        <meta property="og:url" content="https://iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" />
+        <meta property="og:url" content="https://www.iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" />
         <meta property="og:locale" content="ja_JP" />
         <meta property="og:site_name" content="IAEE Premium Domains" />
-        <meta property="og:image" content="https://iaee.eu/images/premium-domains-og.jpg" />
+        <meta property="og:image" content="https://www.iaee.eu/images/premium-domains-og.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="640" />
         <meta property="og:image:alt" content="プレミアムドメイン - 高権威ドメイン名" />
@@ -1710,7 +1710,7 @@ const PremiumDomainsJA = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="高権威バックリンク付きプレミアム期限切れドメイン購入" />
         <meta name="twitter:description" content="高権威とSEO価値を持つ信頼できる期限切れドメイン。即時利用可能。" />
-        <meta name="twitter:image" content="https://iaee.eu/images/premium-domains-og.jpg" />
+        <meta name="twitter:image" content="https://www.iaee.eu/images/premium-domains-og.jpg" />
         
         {/* JSON-LD Structured Data */}
         <script type="application/ld+json">{`
@@ -1719,14 +1719,14 @@ const PremiumDomainsJA = () => {
             "@graph": [
               {
                 "@type": "Organization",
-                "@id": "https://iaee.eu/#organization",
+                "@id": "https://www.iaee.eu/#organization",
                 "name": "IAEE Premium Domains",
-                "url": "https://iaee.eu",
+                "url": "https://www.iaee.eu",
                 "description": "高権威とSEO価値を持つプレミアム期限切れドメインの専門家"
               },
               {
                 "@type": "WebPage",
-                "url": "https://iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi",
+                "url": "https://www.iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi",
                 "name": "高権威バックリンク付きプレミアム期限切れドメイン購入 | SEO価値",
                 "inLanguage": "ja"
               },

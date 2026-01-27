@@ -14,14 +14,14 @@ const PremiumDomainsLegalDE = () => {
       <SEOHead
         title="Rechtliche Dokumente Premium Domains | AGB, Datenschutz, Haftungsausschluss"
         description="Rechtliche Dokumente für den Verkauf von Premium Domains. Allgemeine Geschäftsbedingungen, Datenschutzrichtlinie, Haftungsausschluss und Cookie-Richtlinie für den Kauf von Expired Domains mit SEO-Wert."
-        canonical="https://iaee.eu/expireddomainnames/de/rechtliche-dokumente-premium-domains"
+        canonical="https://www.iaee.eu/expireddomainnames/de/rechtliche-dokumente-premium-domains"
         lang="de"
         robots="noindex, nofollow"
         hreflangLinks={PREMIUM_DOMAINS_LEGAL_HREFLANG}
-        xDefaultUrl="https://iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
+        xDefaultUrl="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
         breadcrumbs={breadcrumbItems.map((item, i) => ({
           name: item.label,
-          url: i === 0 ? "https://iaee.eu/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert" : "https://iaee.eu/expireddomainnames/de/rechtliche-dokumente-premium-domains"
+          url: i === 0 ? "https://www.iaee.eu/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert" : "https://www.iaee.eu/expireddomainnames/de/rechtliche-dokumente-premium-domains"
         }))}
       />
       

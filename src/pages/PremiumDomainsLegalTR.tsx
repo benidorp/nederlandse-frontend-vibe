@@ -14,14 +14,14 @@ const PremiumDomainsLegalTR = () => {
       <SEOHead
         title="Yasal Belgeler Premium Alan Adları | Şartlar ve Koşullar, Gizlilik, Sorumluluk Reddi"
         description="Premium alan adı satışları için yasal belgeler. Şartlar ve koşullar, gizlilik politikası, sorumluluk reddi ve SEO değerine sahip süresi dolmuş alan adlarının satın alınması için çerez politikası."
-        canonical="https://iaee.eu/expireddomainnames/tr/yasal-belgeler-premium-alan-adi"
+        canonical="https://www.iaee.eu/expireddomainnames/tr/yasal-belgeler-premium-alan-adi"
         lang="tr"
         robots="noindex, nofollow"
         hreflangLinks={PREMIUM_DOMAINS_LEGAL_HREFLANG}
-        xDefaultUrl="https://iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
+        xDefaultUrl="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents"
         breadcrumbs={breadcrumbItems.map((item, i) => ({
           name: item.label,
-          url: i === 0 ? "https://iaee.eu/expireddomainnames/tr/premium-alan-adi-satin-al-seo-degeri" : "https://iaee.eu/expireddomainnames/tr/yasal-belgeler-premium-alan-adi"
+          url: i === 0 ? "https://www.iaee.eu/expireddomainnames/tr/premium-alan-adi-satin-al-seo-degeri" : "https://www.iaee.eu/expireddomainnames/tr/yasal-belgeler-premium-alan-adi"
         }))}
       />
       
