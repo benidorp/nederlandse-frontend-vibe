@@ -157,6 +157,11 @@ const FooterPremiumDomainsAR = () => {
                   وثائق المستقلين
                 </Link>
               </li>
+              <li>
+                <Link to="/btw-calculator-wereldwijd" className="text-slate-400 hover:text-amber-400 transition-colors text-sm">
+                  حاسبة ضريبة القيمة المضافة
+                </Link>
+              </li>
             </ul>
           </div>
 

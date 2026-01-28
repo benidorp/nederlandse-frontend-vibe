@@ -157,6 +157,11 @@ const FooterPremiumDomainsTR = () => {
                   Serbest Çalışan Yasal Belgeler
                 </Link>
               </li>
+              <li>
+                <Link to="/btw-calculator-wereldwijd" className="text-slate-400 hover:text-amber-400 transition-colors text-sm">
+                  KDV Hesaplayıcı
+                </Link>
+              </li>
             </ul>
           </div>
 

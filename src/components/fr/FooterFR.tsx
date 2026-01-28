@@ -135,7 +135,8 @@ const FooterFR = () => {
               <a href="/comparison-review-website-legal-documents-terms-privacy-affiliate-disclosure-disclaimer" className="text-sm text-muted-foreground hover:text-primary transition-colors">Comparison Review Legal Documents</a>
               <a href="/news-magazine-legal-documents-terms-conditions-privacy-policy-copyright-editorial-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">News Magazine Legal Documents</a>
               <a href="/freelancers-self-employed-legal-documents-contracts-terms-privacy-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">Freelancers Legal Documents</a>
-              <a href="/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" className="text-sm text-muted-foreground hover:text-primary transition-colors">Noms de Domaine Premium</a>
+              <a href="/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo" className="text-sm text-muted-foreground hover:text-primary transition-colors">Noms de Domaine Premium</a>
+              <a href="/btw-calculator-wereldwijd" className="text-sm text-muted-foreground hover:text-primary transition-colors">Calculateur de TVA</a>
             </nav>
           </div>
         </div>

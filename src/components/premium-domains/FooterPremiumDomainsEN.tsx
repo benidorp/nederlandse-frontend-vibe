@@ -157,6 +157,11 @@ const FooterPremiumDomainsEN = () => {
                   Freelancer Legal Docs
                 </Link>
               </li>
+              <li>
+                <Link to="/btw-calculator-wereldwijd" className="text-slate-400 hover:text-amber-400 transition-colors text-sm">
+                  VAT Calculator
+                </Link>
+              </li>
             </ul>
           </div>
 
