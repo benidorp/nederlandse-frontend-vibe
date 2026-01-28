@@ -60,6 +60,7 @@ const FooterPremiumDomainsHI = () => {
               <li><Link to="/expireddomainnames/ja/houritsumonsho-puremiamudomein" className="hover:text-amber-400 transition-colors">कानूनी दस्तावेज़ (JA)</Link></li>
               <li><Link to="/expireddomainnames/ar/wathaeq-qanuniya-nitaqat-mumayaza" className="hover:text-amber-400 transition-colors">कानूनी दस्तावेज़ (AR)</Link></li>
               <li><Link to="/expireddomainnames/tr/yasal-belgeler-premium-alan-adlari" className="hover:text-amber-400 transition-colors">कानूनी दस्तावेज़ (TR)</Link></li>
+              <li><Link to="/btw-calculator-wereldwijd" className="hover:text-amber-400 transition-colors">वैट कैलकुलेटर</Link></li>
             </ul>
           </div>
           

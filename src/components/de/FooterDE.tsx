@@ -146,7 +146,8 @@ const FooterDE = () => {
               <a href="/comparison-review-website-legal-documents-terms-privacy-affiliate-disclosure-disclaimer" className="text-sm text-muted-foreground hover:text-primary transition-colors">Comparison Review Legal Documents</a>
               <a href="/news-magazine-legal-documents-terms-conditions-privacy-policy-copyright-editorial-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">News Magazine Legal Documents</a>
               <a href="/freelancers-self-employed-legal-documents-contracts-terms-privacy-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">Freelancers Legal Documents</a>
-              <a href="/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" className="text-sm text-muted-foreground hover:text-primary transition-colors">Premium Domain Names</a>
+              <a href="/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert" className="text-sm text-muted-foreground hover:text-primary transition-colors">Premium Domains</a>
+              <a href="/btw-calculator-wereldwijd" className="text-sm text-muted-foreground hover:text-primary transition-colors">MwSt-Rechner</a>
             </nav>
           </div>
         </div>

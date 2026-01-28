@@ -12,6 +12,7 @@ import { useToast } from "@/hooks/use-toast";
 import LegalLinksPremiumDomainsEN from "@/components/premium-domains/LegalLinksPremiumDomainsEN";
 import FooterPremiumDomainsEN from "@/components/premium-domains/FooterPremiumDomainsEN";
 import LanguageSwitcher from "@/components/premium-domains/LanguageSwitcher";
+import HiddenInternalLinks from "@/components/HiddenInternalLinks";
 import stripeLogo from "@/assets/stripe-logo.svg";
 import { validateContactForm, buildSafeMailtoUrl } from "@/lib/formValidation";
 
@@ -3120,6 +3121,9 @@ const PremiumDomainsEN = () => {
         >
           <ArrowUp className="w-6 h-6" />
         </button>
+
+        {/* Hidden Internal Links for SEO */}
+        <HiddenInternalLinks />
 
         {/* Legal Footer */}
         <LegalLinksPremiumDomainsEN />

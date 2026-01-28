@@ -12,6 +12,7 @@ import { useToast } from "@/hooks/use-toast";
 import LegalLinksPremiumDomainsPT from "@/components/premium-domains/LegalLinksPremiumDomainsPT";
 import FooterPremiumDomainsPT from "@/components/premium-domains/FooterPremiumDomainsPT";
 import LanguageSwitcher from "@/components/premium-domains/LanguageSwitcher";
+import HiddenInternalLinks from "@/components/HiddenInternalLinks";
 import stripeLogo from "@/assets/stripe-logo.svg";
 import { validateContactForm, buildSafeMailtoUrl } from "@/lib/formValidation";
 
@@ -2595,6 +2596,9 @@ const PremiumDomainsPT = () => {
             </div>
           </div>
         </section>
+
+        {/* Hidden Internal Links for SEO */}
+        <HiddenInternalLinks />
 
         {/* Legal Links */}
         <LegalLinksPremiumDomainsPT />

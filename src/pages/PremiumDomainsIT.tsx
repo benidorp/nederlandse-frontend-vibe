@@ -12,6 +12,7 @@ import { useToast } from "@/hooks/use-toast";
 import LegalLinksPremiumDomainsIT from "@/components/premium-domains/LegalLinksPremiumDomainsIT";
 import FooterPremiumDomainsIT from "@/components/premium-domains/FooterPremiumDomainsIT";
 import LanguageSwitcher from "@/components/premium-domains/LanguageSwitcher";
+import HiddenInternalLinks from "@/components/HiddenInternalLinks";
 import { validateContactForm, buildSafeMailtoUrl } from "@/lib/formValidation";
 
 // Premium domain data - identical to Dutch version
@@ -2752,6 +2753,9 @@ const PremiumDomainsIT = () => {
         >
           <ArrowUp className="w-5 h-5" />
         </button>
+
+        {/* Hidden Internal Links for SEO */}
+        <HiddenInternalLinks />
 
         {/* Legal Links */}
         <LegalLinksPremiumDomainsIT />

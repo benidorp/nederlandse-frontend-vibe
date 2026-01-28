@@ -157,6 +157,11 @@ const FooterPremiumDomainsFR = () => {
                   Documents Juridiques Freelance
                 </Link>
               </li>
+              <li>
+                <Link to="/btw-calculator-wereldwijd" className="text-slate-400 hover:text-amber-400 transition-colors text-sm">
+                  Calculateur TVA
+                </Link>
+              </li>
             </ul>
           </div>
 

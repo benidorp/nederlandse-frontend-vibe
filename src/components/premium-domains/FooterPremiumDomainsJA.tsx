@@ -22,6 +22,7 @@ const FooterPremiumDomainsJA = () => {
               <li><a href="#advantages" className="hover:text-amber-400 transition-colors">メリット</a></li>
               <li><a href="#faq" className="hover:text-amber-400 transition-colors">よくある質問</a></li>
               <li><a href="#contact" className="hover:text-amber-400 transition-colors">お問い合わせ</a></li>
+              <li><a href="/btw-calculator-wereldwijd" className="hover:text-amber-400 transition-colors">消費税計算機</a></li>
             </ul>
           </div>
           
