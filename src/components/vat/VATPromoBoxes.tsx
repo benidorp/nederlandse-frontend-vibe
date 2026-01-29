@@ -1,0 +1,215 @@
+import { Link } from "react-router-dom";
+import { Card, CardContent } from "@/components/ui/card";
+import { Crown, FileText, Shield, Globe, ArrowRight, Sparkles, TrendingUp } from "lucide-react";
+
+interface VATPromoBoxesProps {
+  lang: "nl" | "en" | "de" | "fr" | "es" | "it" | "pl";
+}
+
+const translations = {
+  nl: {
+    premiumDomainsTitle: "🌐 Premium Domeinnamen met SEO Waarde",
+    premiumDomainsDesc: "Koop verlopen domeinnamen met hoge MOZ autoriteit en kwalitatieve backlinks. Boost je SEO direct!",
+    premiumDomainsCta: "Bekijk Premium Domeinen",
+    premiumDomainsLink: "/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde",
+    legalDocsTitle: "📋 Juridische Documenten voor Websites",
+    legalDocsDesc: "Bescherm je online business met professionele algemene voorwaarden, privacybeleid, cookie policy en meer.",
+    legalDocsCta: "Bekijk Juridische Templates",
+    legalDocsLink: "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
+    vpnTitle: "🔒 VPN Nodig voor EU Domein Registratie?",
+    vpnDesc: "Voor het registreren van .EU domeinen vanuit buiten Europa heb je een Europees IP-adres nodig. Gebruik een VPN of trustee service.",
+    vpnTip: "Tip: INWX biedt trustee service vanaf €3/jaar voor .EU, .IT, .FR en .DE extensies.",
+    sectionTitle: "Ontdek Onze Andere Diensten",
+  },
+  en: {
+    premiumDomainsTitle: "🌐 Premium Domains with SEO Value",
+    premiumDomainsDesc: "Buy expired domain names with high MOZ authority and quality backlinks. Boost your SEO instantly!",
+    premiumDomainsCta: "View Premium Domains",
+    premiumDomainsLink: "/expireddomainnames/en/buy-premium-domains-high-authority-seo-value",
+    legalDocsTitle: "📋 Legal Documents for Websites",
+    legalDocsDesc: "Protect your online business with professional terms and conditions, privacy policy, cookie policy and more.",
+    legalDocsCta: "View Legal Templates",
+    legalDocsLink: "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
+    vpnTitle: "🔒 Need VPN for EU Domain Registration?",
+    vpnDesc: "To register .EU domains from outside Europe, you need a European IP address. Use a VPN or trustee service.",
+    vpnTip: "Tip: INWX offers trustee service from €3/year for .EU, .IT, .FR and .DE extensions.",
+    sectionTitle: "Discover Our Other Services",
+  },
+  de: {
+    premiumDomainsTitle: "🌐 Premium-Domains mit SEO-Wert",
+    premiumDomainsDesc: "Kaufen Sie abgelaufene Domains mit hoher MOZ-Autorität und hochwertigen Backlinks. Steigern Sie Ihre SEO sofort!",
+    premiumDomainsCta: "Premium-Domains ansehen",
+    premiumDomainsLink: "/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert",
+    legalDocsTitle: "📋 Rechtsdokumente für Websites",
+    legalDocsDesc: "Schützen Sie Ihr Online-Business mit professionellen AGB, Datenschutzrichtlinien, Cookie-Richtlinien und mehr.",
+    legalDocsCta: "Rechtsvorlagen ansehen",
+    legalDocsLink: "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
+    vpnTitle: "🔒 VPN für EU-Domain-Registrierung benötigt?",
+    vpnDesc: "Um .EU-Domains von außerhalb Europas zu registrieren, benötigen Sie eine europäische IP-Adresse. Nutzen Sie einen VPN oder Treuhänder-Service.",
+    vpnTip: "Tipp: INWX bietet Treuhänder-Service ab €3/Jahr für .EU, .IT, .FR und .DE Erweiterungen.",
+    sectionTitle: "Entdecken Sie unsere anderen Dienste",
+  },
+  fr: {
+    premiumDomainsTitle: "🌐 Domaines Premium avec Valeur SEO",
+    premiumDomainsDesc: "Achetez des noms de domaine expirés avec une haute autorité MOZ et des backlinks de qualité. Boostez votre SEO instantanément !",
+    premiumDomainsCta: "Voir les Domaines Premium",
+    premiumDomainsLink: "/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo",
+    legalDocsTitle: "📋 Documents Juridiques pour Sites Web",
+    legalDocsDesc: "Protégez votre entreprise en ligne avec des conditions générales professionnelles, politique de confidentialité, politique de cookies et plus.",
+    legalDocsCta: "Voir les Modèles Juridiques",
+    legalDocsLink: "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
+    vpnTitle: "🔒 VPN Nécessaire pour l'Enregistrement de Domaine EU ?",
+    vpnDesc: "Pour enregistrer des domaines .EU depuis l'extérieur de l'Europe, vous avez besoin d'une adresse IP européenne. Utilisez un VPN ou un service de trustee.",
+    vpnTip: "Conseil : INWX offre un service de trustee à partir de 3€/an pour les extensions .EU, .IT, .FR et .DE.",
+    sectionTitle: "Découvrez Nos Autres Services",
+  },
+  es: {
+    premiumDomainsTitle: "🌐 Dominios Premium con Valor SEO",
+    premiumDomainsDesc: "Compra nombres de dominio expirados con alta autoridad MOZ y backlinks de calidad. ¡Impulsa tu SEO al instante!",
+    premiumDomainsCta: "Ver Dominios Premium",
+    premiumDomainsLink: "/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo",
+    legalDocsTitle: "📋 Documentos Legales para Sitios Web",
+    legalDocsDesc: "Protege tu negocio online con términos y condiciones profesionales, política de privacidad, política de cookies y más.",
+    legalDocsCta: "Ver Plantillas Legales",
+    legalDocsLink: "/es/documentos-legales-sitios-web-afiliados-terminos-condiciones-politica-privacidad-divulgacion-cookies",
+    vpnTitle: "🔒 ¿Necesitas VPN para Registro de Dominio EU?",
+    vpnDesc: "Para registrar dominios .EU desde fuera de Europa, necesitas una dirección IP europea. Usa un VPN o servicio de trustee.",
+    vpnTip: "Consejo: INWX ofrece servicio de trustee desde 3€/año para extensiones .EU, .IT, .FR y .DE.",
+    sectionTitle: "Descubre Nuestros Otros Servicios",
+  },
+  it: {
+    premiumDomainsTitle: "🌐 Domini Premium con Valore SEO",
+    premiumDomainsDesc: "Acquista nomi di dominio scaduti con alta autorità MOZ e backlink di qualità. Potenzia il tuo SEO istantaneamente!",
+    premiumDomainsCta: "Vedi Domini Premium",
+    premiumDomainsLink: "/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo",
+    legalDocsTitle: "📋 Documenti Legali per Siti Web",
+    legalDocsDesc: "Proteggi il tuo business online con termini e condizioni professionali, privacy policy, cookie policy e altro.",
+    legalDocsCta: "Vedi Template Legali",
+    legalDocsLink: "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
+    vpnTitle: "🔒 Hai Bisogno di VPN per la Registrazione di Domini EU?",
+    vpnDesc: "Per registrare domini .EU dall'esterno dell'Europa, hai bisogno di un indirizzo IP europeo. Usa una VPN o un servizio di trustee.",
+    vpnTip: "Suggerimento: INWX offre servizio di trustee da 3€/anno per estensioni .EU, .IT, .FR e .DE.",
+    sectionTitle: "Scopri I Nostri Altri Servizi",
+  },
+  pl: {
+    premiumDomainsTitle: "🌐 Domeny Premium z Wartością SEO",
+    premiumDomainsDesc: "Kup wygasłe domeny z wysokim autorytetem MOZ i jakościowymi backlinkami. Wzmocnij swoje SEO natychmiast!",
+    premiumDomainsCta: "Zobacz Domeny Premium",
+    premiumDomainsLink: "/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo",
+    legalDocsTitle: "📋 Dokumenty Prawne dla Stron Internetowych",
+    legalDocsDesc: "Chroń swój biznes online profesjonalnymi regulaminami, polityką prywatności, polityką cookies i więcej.",
+    legalDocsCta: "Zobacz Szablony Prawne",
+    legalDocsLink: "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
+    vpnTitle: "🔒 Potrzebujesz VPN do Rejestracji Domeny EU?",
+    vpnDesc: "Aby zarejestrować domeny .EU spoza Europy, potrzebujesz europejskiego adresu IP. Użyj VPN lub usługi powiernika.",
+    vpnTip: "Wskazówka: INWX oferuje usługę powiernika od 3€/rok dla rozszerzeń .EU, .IT, .FR i .DE.",
+    sectionTitle: "Odkryj Nasze Inne Usługi",
+  },
+};
+
+const VATPromoBoxes = ({ lang }: VATPromoBoxesProps) => {
+  const t = translations[lang];
+
+  return (
+    <section className="py-12 md:py-16 bg-gradient-to-b from-background to-muted/30">
+      <div className="container">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center gap-2 px-4 py-2 mb-4 rounded-full bg-primary/10 border border-primary/20">
+              <Sparkles className="w-4 h-4 text-primary" />
+              <span className="text-sm font-medium text-primary">{t.sectionTitle}</span>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            {/* Premium Domains Box */}
+            <Card className="group relative overflow-hidden border-2 border-amber-500/30 bg-gradient-to-br from-amber-500/10 via-background to-background hover:border-amber-500/50 hover:shadow-xl transition-all duration-300">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-amber-500/20 to-transparent rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500"></div>
+              <CardContent className="p-6 relative">
+                <div className="flex items-start gap-4">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <Crown className="w-7 h-7 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold text-foreground mb-2">{t.premiumDomainsTitle}</h3>
+                    <p className="text-muted-foreground mb-4 leading-relaxed">{t.premiumDomainsDesc}</p>
+                    <Link 
+                      to={t.premiumDomainsLink}
+                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-amber-500 hover:bg-amber-600 text-black font-semibold rounded-lg transition-all duration-200 shadow-md hover:shadow-lg group-hover:translate-x-1"
+                    >
+                      {t.premiumDomainsCta}
+                      <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  </div>
+                </div>
+                <div className="mt-4 flex items-center gap-4 text-sm text-muted-foreground">
+                  <div className="flex items-center gap-1">
+                    <TrendingUp className="w-4 h-4 text-amber-500" />
+                    <span>DA 20-38</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <Globe className="w-4 h-4 text-amber-500" />
+                    <span>110+ Domains</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Legal Documents Box */}
+            <Card className="group relative overflow-hidden border-2 border-primary/30 bg-gradient-to-br from-primary/10 via-background to-background hover:border-primary/50 hover:shadow-xl transition-all duration-300">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/20 to-transparent rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500"></div>
+              <CardContent className="p-6 relative">
+                <div className="flex items-start gap-4">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <FileText className="w-7 h-7 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold text-foreground mb-2">{t.legalDocsTitle}</h3>
+                    <p className="text-muted-foreground mb-4 leading-relaxed">{t.legalDocsDesc}</p>
+                    <Link 
+                      to={t.legalDocsLink}
+                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-lg transition-all duration-200 shadow-md hover:shadow-lg group-hover:translate-x-1"
+                    >
+                      {t.legalDocsCta}
+                      <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  </div>
+                </div>
+                <div className="mt-4 flex items-center gap-4 text-sm text-muted-foreground">
+                  <div className="flex items-center gap-1">
+                    <Shield className="w-4 h-4 text-primary" />
+                    <span>GDPR</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <FileText className="w-4 h-4 text-primary" />
+                    <span>15+ Templates</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* VPN Info Box */}
+          <Card className="border-2 border-slate-700/50 bg-gradient-to-r from-slate-900/50 to-slate-800/50">
+            <CardContent className="p-6">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500/20 to-cyan-600/10 flex items-center justify-center">
+                  <Shield className="w-6 h-6 text-cyan-400" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-bold text-foreground mb-2">{t.vpnTitle}</h3>
+                  <p className="text-muted-foreground mb-3">{t.vpnDesc}</p>
+                  <div className="p-3 rounded-lg bg-cyan-500/10 border border-cyan-500/20">
+                    <p className="text-sm text-cyan-400 font-medium">💡 {t.vpnTip}</p>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default VATPromoBoxes;

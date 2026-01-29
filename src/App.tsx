@@ -21,6 +21,12 @@ import NewsMagazine from "./pages/NewsMagazine";
 import Freelancers from "./pages/Freelancers";
 import Spanish from "./pages/Spanish";
 import VATCalculator from "./pages/VATCalculator";
+import VATCalculatorEN from "./pages/VATCalculatorEN";
+import VATCalculatorES from "./pages/VATCalculatorES";
+import VATCalculatorDE from "./pages/VATCalculatorDE";
+import VATCalculatorFR from "./pages/VATCalculatorFR";
+import VATCalculatorIT from "./pages/VATCalculatorIT";
+import VATCalculatorPL from "./pages/VATCalculatorPL";
 import LanguageDetector from "./components/LanguageDetector";
 import NotFound from "./pages/NotFound";
 import PremiumDomains from "./pages/PremiumDomains";
@@ -78,6 +84,12 @@ const App = () => (
           <Route path="/freelancers-self-employed-legal-documents-contracts-terms-privacy-policy" element={<Freelancers />} />
           <Route path="/es/documentos-legales-sitios-web-afiliados-terminos-condiciones-politica-privacidad-divulgacion-cookies" element={<Spanish />} />
           <Route path="/btw-calculator-wereldwijd" element={<VATCalculator />} />
+          <Route path="/vat-calculator-worldwide" element={<VATCalculatorEN />} />
+          <Route path="/calculadora-iva-mundial" element={<VATCalculatorES />} />
+          <Route path="/mwst-rechner-weltweit" element={<VATCalculatorDE />} />
+          <Route path="/calculateur-tva-mondial" element={<VATCalculatorFR />} />
+          <Route path="/calcolatore-iva-mondiale" element={<VATCalculatorIT />} />
+          <Route path="/kalkulator-vat-swiatowy" element={<VATCalculatorPL />} />
           <Route path="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" element={<PremiumDomains />} />
           <Route path="/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" element={<PremiumDomainsLegal />} />
           <Route path="/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" element={<PremiumDomainsEN />} />
