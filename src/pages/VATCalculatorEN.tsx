@@ -7,18 +7,18 @@ import VATPromoBoxes from "@/components/vat/VATPromoBoxes";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { vatRates, VATRate } from "@/data/vatRates";
-import VATResults from "@/components/vat/VATResults";
-import VATFAQSection from "@/components/vat/VATFAQSection";
+import VATResultsEN from "@/components/vat/VATResultsEN";
+import VATFAQSectionEN from "@/components/vat/VATFAQSectionEN";
 
-const VATCalculator = () => {
+const VATCalculatorEN = () => {
   const [selectedCountry, setSelectedCountry] = useState<VATRate | null>(null);
   const [amount, setAmount] = useState<string>("");
   const [includesVAT, setIncludesVAT] = useState<"yes" | "no">("no");
   const [selectedRate, setSelectedRate] = useState<number | null>(null);
+
   const handleCountryChange = (countryCode: string) => {
     const country = vatRates.find(c => c.countryCode === countryCode);
     if (country) {
@@ -27,10 +27,8 @@ const VATCalculator = () => {
     }
   };
 
-
   const results = useMemo(() => {
     if (!selectedCountry || !amount || selectedRate === null) return null;
-
     const numAmount = parseFloat(amount);
     if (isNaN(numAmount)) return null;
 
@@ -48,27 +46,30 @@ const VATCalculator = () => {
       amountInclVAT = numAmount + vatAmount;
     }
 
-    return {
-      country: selectedCountry,
-      rate: selectedRate,
-      amountExclVAT,
-      vatAmount,
-      amountInclVAT,
-    };
+    return { country: selectedCountry, rate: selectedRate, amountExclVAT, vatAmount, amountInclVAT };
   }, [selectedCountry, amount, selectedRate, includesVAT]);
 
   return (
     <>
       <Helmet>
-        <html lang="nl" />
-        <title>Wereldwijde BTW Calculator voor Ondernemers | BTW Berekenen Internationaal</title>
-        <meta name="description" content="Bereken eenvoudig BTW voor elk land wereldwijd. Professionele BTW-calculator voor ondernemers met actuele tarieven, inclusief/exclusief berekeningen en overzichtelijke resultaten." />
+        <html lang="en" />
+        <title>Worldwide VAT Calculator for Entrepreneurs | Calculate VAT Internationally</title>
+        <meta name="description" content="Easily calculate VAT for any country worldwide. Professional VAT calculator for entrepreneurs with current rates, inclusive/exclusive calculations and clear results." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.iaee.eu/btw-calculator-wereldwijd" />
+        <link rel="canonical" href="https://www.iaee.eu/vat-calculator-worldwide" />
+        <link rel="alternate" hrefLang="nl" href="https://www.iaee.eu/btw-calculator-wereldwijd" />
+        <link rel="alternate" hrefLang="en" href="https://www.iaee.eu/vat-calculator-worldwide" />
+        <link rel="alternate" hrefLang="de" href="https://www.iaee.eu/mwst-rechner-weltweit" />
+        <link rel="alternate" hrefLang="fr" href="https://www.iaee.eu/calculateur-tva-mondial" />
+        <link rel="alternate" hrefLang="es" href="https://www.iaee.eu/calculadora-iva-mundial" />
+        <link rel="alternate" hrefLang="it" href="https://www.iaee.eu/calcolatore-iva-mondiale" />
+        <link rel="alternate" hrefLang="pl" href="https://www.iaee.eu/kalkulator-vat-swiatowy" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.iaee.eu/vat-calculator-worldwide" />
       </Helmet>
       
-      <VATLanguageSwitcher currentLanguage="nl" />
+      <VATLanguageSwitcher currentLanguage="en" />
+      
       <div className="min-h-screen">
         <main>
           {/* Hero Section */}
@@ -78,44 +79,35 @@ const VATCalculator = () => {
               <div className="max-w-4xl mx-auto text-center">
                 <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full bg-gradient-to-r from-primary/20 to-secondary/20 border border-primary/30 backdrop-blur-sm shadow-lg">
                   <Globe className="w-4 h-4 text-primary animate-pulse" />
-                  <span className="text-sm font-semibold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Wereldwijd • 60+ Landen</span>
+                  <span className="text-sm font-semibold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Worldwide • 60+ Countries</span>
                 </div>
                 
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">
-                  Wereldwijde BTW-calculator
+                  Worldwide VAT Calculator
                 </h1>
                 
                 <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-                  Bereken eenvoudig en nauwkeurig de BTW (belasting toegevoegde waarde) voor elk land wereldwijd. 
-                  Professionele BTW-calculator met actuele tarieven voor internationale ondernemers, freelancers en bedrijven.
+                  Easily and accurately calculate VAT (Value Added Tax) for any country worldwide. 
+                  Professional VAT calculator with current rates for international entrepreneurs, freelancers and businesses.
                 </p>
 
                 <div className="flex flex-wrap gap-6 justify-center text-sm mb-8">
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">60+ Landen</span>
+                    <span className="text-muted-foreground">60+ Countries</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">Actuele Tarieven 2025</span>
+                    <span className="text-muted-foreground">Current 2025 Rates</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">Direct Resultaat</span>
+                    <span className="text-muted-foreground">Instant Results</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">100% Gratis</span>
+                    <span className="text-muted-foreground">100% Free</span>
                   </div>
-                </div>
-
-                <div className="max-w-3xl mx-auto text-left space-y-4">
-                  <p className="text-base text-muted-foreground leading-relaxed">
-                    Deze BTW-calculator is speciaal ontwikkeld voor internationale ondernemers, e-commerce bedrijven en freelancers die BTW moeten berekenen voor verschillende landen. Of je nu facturen maakt voor klanten in de EU, werkt met verschillende BTW-tarieven, of simpelweg wilt weten hoeveel BTW je moet betalen of terugkrijgen - onze calculator geeft je direct en accuraat antwoord.
-                  </p>
-                  <p className="text-base text-muted-foreground leading-relaxed">
-                    De tool ondersteunt alle EU-landen en daarbuiten, met zowel standaard als verlaagde BTW-tarieven. Perfect voor het opstellen van facturen, BTW-aangiftes, offertes en financiële rapportages. Alle bedragen worden automatisch berekend inclusief en exclusief BTW.
-                  </p>
                 </div>
               </div>
             </div>
@@ -126,69 +118,65 @@ const VATCalculator = () => {
             <div className="container">
               <div className="max-w-5xl mx-auto">
                 <div className="text-center mb-12">
-                  <h2 className="text-3xl md:text-4xl font-bold mb-4">Hoe werkt de BTW calculator?</h2>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4">How Does the VAT Calculator Work?</h2>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    In 4 eenvoudige stappen bereken je de BTW voor elk land
+                    Calculate VAT for any country in 4 simple steps
                   </p>
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                   <Card className="relative overflow-hidden border-2 hover:border-primary/50 transition-all group hover:shadow-colorful duration-300">
-                    <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary/20 to-transparent rounded-full -mr-12 -mt-12 group-hover:scale-150 transition-transform duration-300"></div>
                     <CardHeader>
                       <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
                         <Globe className="w-7 h-7 text-white" />
                       </div>
-                      <CardTitle className="text-xl font-bold">1. Kies land</CardTitle>
+                      <CardTitle className="text-xl font-bold">1. Choose country</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground leading-relaxed">
-                        Selecteer het land waarvoor je de BTW wilt berekenen uit onze lijst van 60+ landen.
+                        Select the country for which you want to calculate VAT from our list of 60+ countries.
                       </p>
                     </CardContent>
                   </Card>
 
                   <Card className="relative overflow-hidden border-2 hover:border-secondary/50 transition-all group hover:shadow-colorful duration-300">
-                    <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-secondary/20 to-transparent rounded-full -mr-12 -mt-12 group-hover:scale-150 transition-transform duration-300"></div>
                     <CardHeader>
                       <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-secondary to-secondary/70 flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
                         <TrendingUp className="w-7 h-7 text-white" />
                       </div>
-                      <CardTitle className="text-xl font-bold">2. Kies tarief</CardTitle>
+                      <CardTitle className="text-xl font-bold">2. Choose rate</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground leading-relaxed">
-                        Selecteer het standaard of verlaagd tarief. Elk land heeft eigen BTW-percentages.
+                        Select the standard or reduced rate. Each country has its own VAT percentages.
                       </p>
                     </CardContent>
                   </Card>
 
                   <Card className="relative overflow-hidden border-2 hover:border-accent/50 transition-all group hover:shadow-colorful duration-300">
-                    <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-accent/20 to-transparent rounded-full -mr-12 -mt-12 group-hover:scale-150 transition-transform duration-300"></div>
                     <CardHeader>
                       <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent to-accent/70 flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
                         <FileText className="w-7 h-7 text-white" />
                       </div>
-                      <CardTitle className="text-xl font-bold">3. Vul bedrag in</CardTitle>
+                      <CardTitle className="text-xl font-bold">3. Enter amount</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground leading-relaxed">
-                        Voer het bedrag in en geef aan of dit inclusief of exclusief BTW is.
+                        Enter the amount and indicate whether it is inclusive or exclusive of VAT.
                       </p>
                     </CardContent>
                   </Card>
 
                   <Card className="relative overflow-hidden border-2 hover:border-info/50 transition-all group hover:shadow-colorful duration-300">
-                    <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-info/20 to-transparent rounded-full -mr-12 -mt-12 group-hover:scale-150 transition-transform duration-300"></div>
                     <CardHeader>
                       <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-info to-info/70 flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
                         <Calculator className="w-7 h-7 text-white" />
                       </div>
-                      <CardTitle className="text-xl font-bold">4. Zie resultaat</CardTitle>
+                      <CardTitle className="text-xl font-bold">4. See result</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground leading-relaxed">
-                        De calculator toont direct alle bedragen en een overzicht voor je aangifte.
+                        The calculator immediately shows all amounts and an overview for your tax return.
                       </p>
                     </CardContent>
                   </Card>
@@ -197,38 +185,37 @@ const VATCalculator = () => {
             </div>
           </section>
 
+          {/* Calculator Section */}
           <section className="py-12 md:py-16 bg-background">
             <div className="container">
               <div className="max-w-5xl mx-auto">
                 <div className="text-center mb-10">
-                  <h2 className="text-3xl md:text-4xl font-bold mb-4">BTW Calculator</h2>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4">VAT Calculator</h2>
                   <p className="text-lg text-muted-foreground">
-                    Bereken direct de BTW voor jouw internationale transacties
+                    Instantly calculate VAT for your international transactions
                   </p>
                 </div>
                 
                 <div className="grid lg:grid-cols-2 gap-8">
-                  {/* Input Card */}
                   <Card className="border-2 shadow-lg">
                     <CardHeader className="space-y-1 pb-4">
                       <CardTitle className="text-2xl flex items-center gap-2">
                         <Calculator className="w-6 h-6 text-primary" />
-                        BTW Berekenen
+                        Calculate VAT
                       </CardTitle>
                       <CardDescription className="text-base">
-                        Vul de onderstaande velden in om de BTW te berekenen
+                        Fill in the fields below to calculate VAT
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-6">
-                      {/* Country Selection */}
                       <div className="space-y-3">
                         <Label htmlFor="country" className="text-base font-semibold">
                           <Globe className="w-4 h-4 inline mr-2" />
-                          Selecteer Land
+                          Select Country
                         </Label>
                         <Select onValueChange={handleCountryChange}>
                           <SelectTrigger id="country" className="h-14 text-base">
-                            <SelectValue placeholder="Kies een land..." />
+                            <SelectValue placeholder="Choose a country..." />
                           </SelectTrigger>
                           <SelectContent className="max-h-[300px]">
                             {vatRates.map((country) => (
@@ -245,11 +232,10 @@ const VATCalculator = () => {
 
                       {selectedCountry && (
                         <>
-                          {/* Rate Selection */}
                           <div className="space-y-3">
                             <Label className="text-base font-semibold">
                               <TrendingUp className="w-4 h-4 inline mr-2" />
-                              BTW-tarief
+                              VAT Rate
                             </Label>
                             <RadioGroup 
                               value={selectedRate?.toString()} 
@@ -258,44 +244,42 @@ const VATCalculator = () => {
                               <div className="flex items-center space-x-2 p-3 rounded-lg border bg-card hover:bg-accent/50 transition-colors">
                                 <RadioGroupItem value={selectedCountry.standardRate.toString()} id="standard" />
                                 <Label htmlFor="standard" className="cursor-pointer flex-1 font-medium">
-                                  Standaard tarief: {selectedCountry.standardRate}%
+                                  Standard rate: {selectedCountry.standardRate}%
                                 </Label>
                               </div>
                               {selectedCountry.reducedRates.map((rate, index) => (
                                 <div key={index} className="flex items-center space-x-2 p-3 rounded-lg border bg-card hover:bg-accent/50 transition-colors">
                                   <RadioGroupItem value={rate.toString()} id={`reduced-${index}`} />
                                   <Label htmlFor={`reduced-${index}`} className="cursor-pointer flex-1 font-medium">
-                                    Verlaagd tarief: {rate}%
+                                    Reduced rate: {rate}%
                                   </Label>
                                 </div>
                               ))}
                             </RadioGroup>
                           </div>
 
-                          {/* Include/Exclude VAT */}
                           <div className="space-y-3">
-                            <Label className="text-base font-semibold">Het bedrag is:</Label>
+                            <Label className="text-base font-semibold">The amount is:</Label>
                             <RadioGroup value={includesVAT} onValueChange={(value: "yes" | "no") => setIncludesVAT(value)}>
                               <div className="flex items-center space-x-2 p-3 rounded-lg border bg-card hover:bg-accent/50 transition-colors">
                                 <RadioGroupItem value="no" id="excl" />
                                 <Label htmlFor="excl" className="cursor-pointer flex-1 font-medium">
-                                  Exclusief BTW
+                                  Excluding VAT
                                 </Label>
                               </div>
                               <div className="flex items-center space-x-2 p-3 rounded-lg border bg-card hover:bg-accent/50 transition-colors">
                                 <RadioGroupItem value="yes" id="incl" />
                                 <Label htmlFor="incl" className="cursor-pointer flex-1 font-medium">
-                                  Inclusief BTW
+                                  Including VAT
                                 </Label>
                               </div>
                             </RadioGroup>
                           </div>
 
-                          {/* Amount Input */}
                           <div className="space-y-3">
                             <Label htmlFor="amount" className="text-base font-semibold">
                               <FileText className="w-4 h-4 inline mr-2" />
-                              Bedrag ({selectedCountry.currencySymbol})
+                              Amount ({selectedCountry.currencySymbol})
                             </Label>
                             <div className="relative">
                               <span className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground font-semibold text-lg">
@@ -319,19 +303,18 @@ const VATCalculator = () => {
                         <div className="text-center py-12 px-4">
                           <Globe className="w-16 h-16 mx-auto mb-4 text-muted-foreground/50" />
                           <p className="text-lg text-muted-foreground font-medium">
-                            Selecteer een land om te beginnen
+                            Select a country to get started
                           </p>
                           <p className="text-sm text-muted-foreground mt-2">
-                            Kies uit 60+ landen wereldwijd
+                            Choose from 60+ countries worldwide
                           </p>
                         </div>
                       )}
                     </CardContent>
                   </Card>
 
-                  {/* Results Card */}
                   {results ? (
-                    <VATResults key={`${results.country.countryCode}-${results.rate}`} results={results} />
+                    <VATResultsEN key={`${results.country.countryCode}-${results.rate}`} results={results} />
                   ) : (
                     <Card className="flex items-center justify-center border-2 shadow-lg">
                       <CardContent className="text-center py-16 px-6">
@@ -340,10 +323,10 @@ const VATCalculator = () => {
                           <Calculator className="w-20 h-20 mx-auto mb-6 text-primary relative" />
                         </div>
                         <p className="text-lg text-muted-foreground font-medium mb-2">
-                          Vul de gegevens in om de BTW te berekenen
+                          Enter the details to calculate VAT
                         </p>
                         <p className="text-sm text-muted-foreground">
-                          De resultaten verschijnen hier automatisch
+                          Results will appear here automatically
                         </p>
                       </CardContent>
                     </Card>
@@ -353,87 +336,11 @@ const VATCalculator = () => {
             </div>
           </section>
 
-          {/* SEO Content Section */}
-          <section className="py-12 md:py-16 bg-muted/30">
-            <div className="container">
-              <div className="max-w-4xl mx-auto prose prose-lg">
-                <h2 className="text-3xl font-bold mb-6 text-foreground">Waarom een internationale BTW-calculator gebruiken?</h2>
-                
-                <p className="text-muted-foreground mb-4">
-                  Als internationale ondernemer, e-commerce bedrijf of freelancer kom je regelmatig BTW tegen in verschillende landen. Elke land heeft eigen BTW-tarieven (ook wel VAT genoemd in het Engels), en deze kunnen flink verschillen. In Nederland is het standaard BTW-tarief 21%, maar in Hongarije bijvoorbeeld 27% en in Luxemburg slechts 17%. Deze verschillen maken het essentieel om een betrouwbare BTW-calculator te gebruiken.
-                </p>
-
-                <h3 className="text-2xl font-bold mt-8 mb-4 text-foreground">Voor wie is deze BTW-calculator geschikt?</h3>
-                <ul className="text-muted-foreground space-y-2 mb-6">
-                  <li><strong>E-commerce ondernemers</strong>: Verkoop je producten in meerdere EU-landen? Bereken eenvoudig de juiste BTW per land voor je facturen en productprijzen.</li>
-                  <li><strong>Freelancers & ZZP'ers</strong>: Werk je voor internationale klanten? Bepaal snel of je BTW moet berekenen en welk tarief van toepassing is.</li>
-                  <li><strong>Accountants & Boekhouders</strong>: Verwerk internationale transacties correct met actuele BTW-tarieven voor al je cliënten.</li>
-                  <li><strong>Import/Export bedrijven</strong>: Bereken de BTW voor grensoverschrijdende handel en zorg voor correcte aangifte.</li>
-                  <li><strong>Online dienstverleners</strong>: Bied je digitale diensten aan in de EU? Gebruik de juiste BTW-tarieven per land.</li>
-                </ul>
-
-                <h3 className="text-2xl font-bold mt-8 mb-4 text-foreground">BTW berekenen: inclusief of exclusief?</h3>
-                <p className="text-muted-foreground mb-4">
-                  Een veelvoorkomende vraag is of een bedrag inclusief of exclusief BTW is. Onze calculator kan beide berekenen:
-                </p>
-                <ul className="text-muted-foreground space-y-2 mb-6">
-                  <li><strong>Bedrag exclusief BTW</strong>: Je hebt een netto bedrag en wilt weten hoeveel BTW je moet optellen. Bijvoorbeeld: €100,- + 21% BTW = €121,-</li>
-                  <li><strong>Bedrag inclusief BTW</strong>: Je hebt een bruto bedrag en wilt weten hoeveel BTW erin zit. Bijvoorbeeld: €121,- waarvan €21,- BTW.</li>
-                </ul>
-
-                <h3 className="text-2xl font-bold mt-8 mb-4 text-foreground">Standaard en verlaagde BTW-tarieven</h3>
-                <p className="text-muted-foreground mb-4">
-                  Vrijwel elk land heeft meerdere BTW-tarieven. Het standaard tarief geldt voor de meeste goederen en diensten. Daarnaast zijn er vaak één of meerdere verlaagde tarieven voor bijvoorbeeld:
-                </p>
-                <ul className="text-muted-foreground space-y-2 mb-6">
-                  <li>Levensmiddelen en voedingsmiddelen</li>
-                  <li>Boeken, kranten en tijdschriften</li>
-                  <li>Medicijnen en medische hulpmiddelen</li>
-                  <li>Culturele diensten (musea, theater, etc.)</li>
-                  <li>Personen- en goederenvervoer</li>
-                  <li>Kinderopvang en onderwijs</li>
-                </ul>
-
-                <h3 className="text-2xl font-bold mt-8 mb-4 text-foreground">BTW in de Europese Unie</h3>
-                <p className="text-muted-foreground mb-4">
-                  Binnen de EU gelden speciale BTW-regelingen. De BTW-richtlijn harmoniseert veel regels, maar elk land mag eigen tarieven vaststellen binnen bepaalde bandbreedtes. Voor grensoverschrijdende diensten binnen de EU gelden vaak specifieke regels:
-                </p>
-                <ul className="text-muted-foreground space-y-2 mb-6">
-                  <li><strong>B2B (Business to Business)</strong>: Meestal verleggingsregeling - de afnemer berekent zelf de BTW</li>
-                  <li><strong>B2C (Business to Consumer)</strong>: BTW volgens land van de klant (voor digitale diensten en e-commerce)</li>
-                  <li><strong>OSS-regeling</strong>: Vereenvoudigde BTW-aangifte voor e-commerce binnen de EU</li>
-                </ul>
-
-                <h3 className="text-2xl font-bold mt-8 mb-4 text-foreground">Veelgestelde vragen over BTW berekenen</h3>
-                <div className="space-y-4 mb-6">
-                  <div>
-                    <h4 className="font-bold text-foreground mb-2">Hoe vaak veranderen BTW-tarieven?</h4>
-                    <p className="text-muted-foreground">
-                      BTW-tarieven worden meestal aangepast per 1 januari van een nieuw jaar. Onze calculator wordt regelmatig bijgewerkt met de laatste tarieven voor 2025.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-foreground mb-2">Kan ik deze calculator gebruiken voor mijn BTW-aangifte?</h4>
-                    <p className="text-muted-foreground">
-                      Ja, de bedragen die je berekent kun je direct gebruiken voor je BTW-aangifte. Let wel op dat je de juiste tarieven selecteert voor jouw specifieke goederen of diensten.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-foreground mb-2">Wat is het verschil tussen BTW en VAT?</h4>
-                    <p className="text-muted-foreground">
-                      BTW (Belasting Toegevoegde Waarde) en VAT (Value Added Tax) zijn hetzelfde. BTW is de Nederlandse term, VAT wordt internationaal gebruikt.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
           {/* Promo Boxes */}
-          <VATPromoBoxes lang="nl" />
+          <VATPromoBoxes lang="en" />
 
           {/* FAQ Section */}
-          <VATFAQSection />
+          <VATFAQSectionEN />
         </main>
         <FooterEN />
       </div>
@@ -441,4 +348,4 @@ const VATCalculator = () => {
   );
 };
 
-export default VATCalculator;
+export default VATCalculatorEN;
