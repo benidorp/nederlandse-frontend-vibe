@@ -181,6 +181,40 @@ const HiddenInternalLinks = () => {
       <Link to="/freelancers-self-employed-legal-documents-contracts-terms-privacy-policy">Consultant Service Agreement Template</Link>
       <Link to="/photography-legal-documents-terms-conditions-privacy-policy-contract-copyright-protection">Commercial Photography License Agreement</Link>
       <Link to="/must-have-legal-protection-for-every-hotel-and-travel-website-terms-conditions-privacy-policy-cancellation-policy-disclaimer">Tour Operator Legal Documents</Link>
+      
+      {/* Essential Legal Documents - All 20 Language Versions */}
+      <Link to="/de/wesentliche-rechtliche-dokumente-affiliate-website-agb-datenschutz-impressum-cookies">Rechtliche Dokumente Website DE</Link>
+      <Link to="/fr/documents-juridiques-essentiels-site-affiliation-conditions-politique-confidentialite-mentions-legales">Documents Juridiques Site Web FR</Link>
+      <Link to="/it/documenti-legali-essenziali-sito-affiliazione-termini-privacy-cookie">Documenti Legali Sito Web IT</Link>
+      <Link to="/pt/documentos-legais-essenciais-site-afiliados-termos-privacidade-cookies">Documentos Legais Website PT</Link>
+      <Link to="/sv/juridiska-dokument-affiliate-webbplats-villkor-integritetspolicy-cookies">Juridiska Dokument Webbplats SV</Link>
+      <Link to="/pl/dokumenty-prawne-strona-afiliacyjna-regulamin-polityka-prywatnosci-cookies">Dokumenty Prawne Strona PL</Link>
+      <Link to="/el/nomika-eggrafa-affiliate-website-oroi-politiki-aporritou-cookies">Νομικά Έγγραφα Ιστοσελίδα EL</Link>
+      <Link to="/da/juridiske-dokumenter-affiliate-website-vilkaar-privatlivspolitik-cookies">Juridiske Dokumenter Hjemmeside DA</Link>
+      <Link to="/no/juridiske-dokumenter-affiliate-nettsted-vilkaar-personvern-cookies">Juridiske Dokumenter Nettsted NO</Link>
+      <Link to="/ro/documente-legale-site-afiliat-termeni-politica-confidentialitate-cookies">Documente Legale Site RO</Link>
+      <Link to="/bg/pravni-dokumenti-affiliate-sait-usloviya-politika-poveritelnost-biskvitki">Правни Документи Уебсайт BG</Link>
+      <Link to="/fi/juridiset-asiakirjat-affiliate-sivusto-ehdot-tietosuojakaytanto-evasteet">Juridiset Asiakirjat Verkkosivusto FI</Link>
+      <Link to="/ru/yuridicheskie-dokumenty-affiliate-sait-usloviya-politika-konfidencialnosti-cookies">Юридические Документы Сайт RU</Link>
+      <Link to="/zh/falv-wenjian-lianmeng-wangzhan-tiaokuan-yinsi-zhengce-cookies">网站法律文件 ZH</Link>
+      <Link to="/hi/kanooni-dastavez-affiliate-website-niyam-gopyata-niti-cookies">कानूनी दस्तावेज़ वेबसाइट HI</Link>
+      <Link to="/ja/houritsumonsho-affiliate-saito-riyoukiyaku-privacy-policy-cookies">法的文書ウェブサイト JA</Link>
+      <Link to="/ar/wathaeq-qanuniya-mawqi-affiliate-shurut-siyasat-khususiya-cookies">وثائق قانونية موقع AR</Link>
+      <Link to="/ko/beobjeok-munseo-affiliate-websaiteu-iyongyakgwan-gaeinjeongbo-cookies">법적 문서 웹사이트 KO</Link>
+      
+      {/* Cross-linking between language versions with localized anchor text */}
+      <Link to="/de/wesentliche-rechtliche-dokumente-affiliate-website-agb-datenschutz-impressum-cookies">Wesentliche rechtliche Dokumente für Websites Deutschland</Link>
+      <Link to="/fr/documents-juridiques-essentiels-site-affiliation-conditions-politique-confidentialite-mentions-legales">Documents juridiques essentiels pour sites web France</Link>
+      <Link to="/it/documenti-legali-essenziali-sito-affiliazione-termini-privacy-cookie">Documenti legali essenziali per siti web Italia</Link>
+      <Link to="/pt/documentos-legais-essenciais-site-afiliados-termos-privacidade-cookies">Documentos legais essenciais para websites Portugal Brasil</Link>
+      <Link to="/sv/juridiska-dokument-affiliate-webbplats-villkor-integritetspolicy-cookies">Väsentliga juridiska dokument för webbplatser Sverige</Link>
+      <Link to="/pl/dokumenty-prawne-strona-afiliacyjna-regulamin-polityka-prywatnosci-cookies">Niezbędne dokumenty prawne dla stron internetowych Polska</Link>
+      <Link to="/ru/yuridicheskie-dokumenty-affiliate-sait-usloviya-politika-konfidencialnosti-cookies">Основные юридические документы для сайтов Россия</Link>
+      <Link to="/zh/falv-wenjian-lianmeng-wangzhan-tiaokuan-yinsi-zhengce-cookies">网站必备法律文件 中国</Link>
+      <Link to="/ja/houritsumonsho-affiliate-saito-riyoukiyaku-privacy-policy-cookies">ウェブサイト必須法的文書 日本</Link>
+      <Link to="/ko/beobjeok-munseo-affiliate-websaiteu-iyongyakgwan-gaeinjeongbo-cookies">웹사이트 필수 법적 문서 한국</Link>
+      <Link to="/ar/wathaeq-qanuniya-mawqi-affiliate-shurut-siyasat-khususiya-cookies">الوثائق القانونية الأساسية للمواقع العربية</Link>
+      <Link to="/hi/kanooni-dastavez-affiliate-website-niyam-gopyata-niti-cookies">वेबसाइटों के लिए आवश्यक कानूनी दस्तावेज़ भारत</Link>
     </nav>
   );
 };
