@@ -56,6 +56,26 @@ import PremiumDomainsLegalTR from "./pages/PremiumDomainsLegalTR";
 import PremiumDomainsHI from "./pages/PremiumDomainsHI";
 import PremiumDomainsLegalHI from "./pages/PremiumDomainsLegalHI";
 
+// Legal Documents Multi-language Pages
+import AffiliateDE from "./pages/AffiliateDE";
+import AffiliateFR from "./pages/AffiliateFR";
+import AffiliateIT from "./pages/AffiliateIT";
+import AffiliatePT from "./pages/AffiliatePT";
+import AffiliateSV from "./pages/AffiliateSV";
+import AffiliatePL from "./pages/AffiliatePL";
+import AffiliateEL from "./pages/AffiliateEL";
+import AffiliateDA from "./pages/AffiliateDA";
+import AffiliateNO from "./pages/AffiliateNO";
+import AffiliateRO from "./pages/AffiliateRO";
+import AffiliateBG from "./pages/AffiliateBG";
+import AffiliateFI from "./pages/AffiliateFI";
+import AffiliateRU from "./pages/AffiliateRU";
+import AffiliateZH from "./pages/AffiliateZH";
+import AffiliateHI from "./pages/AffiliateHI";
+import AffiliateJA from "./pages/AffiliateJA";
+import AffiliateAR from "./pages/AffiliateAR";
+import AffiliateKO from "./pages/AffiliateKO";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -82,7 +102,29 @@ const App = () => (
           <Route path="/comparison-review-website-legal-documents-terms-privacy-affiliate-disclosure-disclaimer" element={<ComparisonReview />} />
           <Route path="/news-magazine-legal-documents-terms-conditions-privacy-policy-copyright-editorial-policy" element={<NewsMagazine />} />
           <Route path="/freelancers-self-employed-legal-documents-contracts-terms-privacy-policy" element={<Freelancers />} />
+          
+          {/* Essential Legal Documents - Multi-language Routes */}
           <Route path="/es/documentos-legales-sitios-web-afiliados-terminos-condiciones-politica-privacidad-divulgacion-cookies" element={<Spanish />} />
+          <Route path="/de/wesentliche-rechtliche-dokumente-affiliate-website-agb-datenschutz-impressum-cookies" element={<AffiliateDE />} />
+          <Route path="/fr/documents-juridiques-essentiels-site-affiliation-conditions-politique-confidentialite-mentions-legales" element={<AffiliateFR />} />
+          <Route path="/it/documenti-legali-essenziali-sito-affiliazione-termini-privacy-cookie" element={<AffiliateIT />} />
+          <Route path="/pt/documentos-legais-essenciais-site-afiliados-termos-privacidade-cookies" element={<AffiliatePT />} />
+          <Route path="/sv/juridiska-dokument-affiliate-webbplats-villkor-integritetspolicy-cookies" element={<AffiliateSV />} />
+          <Route path="/pl/dokumenty-prawne-strona-afiliacyjna-regulamin-polityka-prywatnosci-cookies" element={<AffiliatePL />} />
+          <Route path="/el/nomika-eggrafa-affiliate-website-oroi-politiki-aporritou-cookies" element={<AffiliateEL />} />
+          <Route path="/da/juridiske-dokumenter-affiliate-website-vilkaar-privatlivspolitik-cookies" element={<AffiliateDA />} />
+          <Route path="/no/juridiske-dokumenter-affiliate-nettsted-vilkaar-personvern-cookies" element={<AffiliateNO />} />
+          <Route path="/ro/documente-legale-site-afiliat-termeni-politica-confidentialitate-cookies" element={<AffiliateRO />} />
+          <Route path="/bg/pravni-dokumenti-affiliate-sait-usloviya-politika-poveritelnost-biskvitki" element={<AffiliateBG />} />
+          <Route path="/fi/juridiset-asiakirjat-affiliate-sivusto-ehdot-tietosuojakaytanto-evasteet" element={<AffiliateFI />} />
+          <Route path="/ru/yuridicheskie-dokumenty-affiliate-sait-usloviya-politika-konfidencialnosti-cookies" element={<AffiliateRU />} />
+          <Route path="/zh/falv-wenjian-lianmeng-wangzhan-tiaokuan-yinsi-zhengce-cookies" element={<AffiliateZH />} />
+          <Route path="/hi/kanooni-dastavez-affiliate-website-niyam-gopyata-niti-cookies" element={<AffiliateHI />} />
+          <Route path="/ja/houritsumonsho-affiliate-saito-riyoukiyaku-privacy-policy-cookies" element={<AffiliateJA />} />
+          <Route path="/ar/wathaeq-qanuniya-mawqi-affiliate-shurut-siyasat-khususiya-cookies" element={<AffiliateAR />} />
+          <Route path="/ko/beobjeok-munseo-affiliate-websaiteu-iyongyakgwan-gaeinjeongbo-cookies" element={<AffiliateKO />} />
+          
+          {/* VAT Calculator Routes */}
           <Route path="/btw-calculator-wereldwijd" element={<VATCalculator />} />
           <Route path="/vat-calculator-worldwide" element={<VATCalculatorEN />} />
           <Route path="/calculadora-iva-mundial" element={<VATCalculatorES />} />
@@ -90,6 +132,8 @@ const App = () => (
           <Route path="/calculateur-tva-mondial" element={<VATCalculatorFR />} />
           <Route path="/calcolatore-iva-mondiale" element={<VATCalculatorIT />} />
           <Route path="/kalkulator-vat-swiatowy" element={<VATCalculatorPL />} />
+          
+          {/* Premium Domains Routes */}
           <Route path="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" element={<PremiumDomains />} />
           <Route path="/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" element={<PremiumDomainsLegal />} />
           <Route path="/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" element={<PremiumDomainsEN />} />
@@ -116,9 +160,11 @@ const App = () => (
           <Route path="/expireddomainnames/tr/premium-alan-adlari-yasal-belgeler" element={<PremiumDomainsLegalTR />} />
           <Route path="/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya" element={<PremiumDomainsHI />} />
           <Route path="/expireddomainnames/hi/premium-domain-kanooni-dastavez" element={<PremiumDomainsLegalHI />} />
+          
           {/* Redirects from old URLs */}
           <Route path="/expireddomeinnamen/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" element={<Navigate to="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" replace />} />
           <Route path="/expireddomeinnamen/nl/premium-domeinnamen-juridische-documenten" element={<Navigate to="/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" replace />} />
+          
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
