@@ -3,23 +3,20 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { FileText, Clock, Globe, CheckCircle2 } from "lucide-react";
 import nicoleProfile from "@/assets/nicole-profile.png";
-
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
   if (element) {
-    element.scrollIntoView({ behavior: 'smooth' });
+    element.scrollIntoView({
+      behavior: 'smooth'
+    });
   }
 };
-
 const ValuePropositionDropshipping = () => {
-  return (
-    <section className="py-20 bg-gradient-to-b from-background to-accent/5">
+  return <section className="py-20 bg-gradient-to-b from-background to-accent/5">
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">Professional Legal Documents for Dropshipping Businesses</Badge>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            All Legally Required Documents Your Dropshipping Store Needs
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">All Legally Required Documents Your Dropshipping website Store Needs</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             As a dropshipper, you sell products without holding inventory. But did you know you're still legally responsible 
             for customer protection, returns, and privacy compliance? Without proper legal documents, you risk high fines and legal disputes.
@@ -31,11 +28,7 @@ const ValuePropositionDropshipping = () => {
           <Card className="border-primary/20">
             <CardHeader>
               <div className="flex items-center gap-4 mb-4">
-                <img 
-                  src={nicoleProfile} 
-                  alt="Nicole Henderson - Legal specialist" 
-                  className="w-20 h-20 rounded-full object-cover"
-                />
+                <img src={nicoleProfile} alt="Nicole Henderson - Legal specialist" className="w-20 h-20 rounded-full object-cover" />
                 <div>
                   <CardTitle className="text-2xl">Nicole Henderson - Legal Specialist</CardTitle>
                   <CardDescription className="text-base">
@@ -72,7 +65,7 @@ const ValuePropositionDropshipping = () => {
         <div className="max-w-4xl mx-auto mb-16">
           <Card className="border-primary/20">
             <CardHeader>
-              <CardTitle className="text-2xl">What You Get: The Complete Legal Package</CardTitle>
+              <CardTitle className="text-2xl">What You Get: The Complete website Legal Package</CardTitle>
               <CardDescription className="text-base">
                 Our complete package contains all legal documents specifically written for dropshipping businesses. 
                 Not generic templates, but professional texts that perfectly align with your dropshipping business model:
@@ -207,11 +200,7 @@ const ValuePropositionDropshipping = () => {
                 Arrange all legal obligations for all your dropshipping stores. No monthly fees, no hassle with lawyers, 
                 no risk of fines. Just all the documents you need, ready to use.
               </p>
-              <Button 
-                size="lg" 
-                onClick={() => scrollToSection('pricing')}
-                className="bg-primary hover:bg-primary/90 text-white"
-              >
+              <Button size="lg" onClick={() => scrollToSection('pricing')} className="bg-primary hover:bg-primary/90 text-white">
                 Order Now
               </Button>
               <p className="text-sm text-muted-foreground mt-4">
@@ -221,8 +210,6 @@ const ValuePropositionDropshipping = () => {
           </CardContent>
         </Card>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ValuePropositionDropshipping;

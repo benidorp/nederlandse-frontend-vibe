@@ -1,49 +1,37 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Shield, FileText, Users, AlertTriangle, Cookie, Truck } from "lucide-react";
-
-const services = [
-  {
-    icon: Shield,
-    title: "GDPR Privacy Policy",
-    description: "Complete privacy policy that complies with all European privacy laws (GDPR). Specifically tailored for dropshipping businesses handling customer data and supplier relationships."
-  },
-  {
-    icon: FileText,
-    title: "Return & Refund Policy",
-    description: "Clear and legally compliant return policy. Essential for dropshipping to manage customer expectations regarding return processes and handling times with suppliers."
-  },
-  {
-    icon: Users,
-    title: "Terms & Conditions",
-    description: "Professional terms and conditions that protect your dropshipping business and clearly outline customer rights and obligations, including delivery timeframes."
-  },
-  {
-    icon: Truck,
-    title: "Shipping Policy",
-    description: "Detailed shipping policy explaining delivery times, costs, and processes specific to dropshipping operations with extended fulfillment periods."
-  },
-  {
-    icon: Cookie,
-    title: "Cookie Policy",
-    description: "GDPR-compliant cookie policy explaining how your dropshipping store uses cookies for tracking, analytics, and improving user experience."
-  },
-  {
-    icon: AlertTriangle,
-    title: "Implementation Guide",
-    description: "Step-by-step guide for implementing all documents correctly on your dropshipping store. Makes the legal setup process quick and hassle-free."
-  }
-];
-
+const services = [{
+  icon: Shield,
+  title: "GDPR Privacy Policy",
+  description: "Complete privacy policy that complies with all European privacy laws (GDPR). Specifically tailored for dropshipping businesses handling customer data and supplier relationships."
+}, {
+  icon: FileText,
+  title: "Return & Refund Policy",
+  description: "Clear and legally compliant return policy. Essential for dropshipping to manage customer expectations regarding return processes and handling times with suppliers."
+}, {
+  icon: Users,
+  title: "Terms & Conditions",
+  description: "Professional terms and conditions that protect your dropshipping business and clearly outline customer rights and obligations, including delivery timeframes."
+}, {
+  icon: Truck,
+  title: "Shipping Policy",
+  description: "Detailed shipping policy explaining delivery times, costs, and processes specific to dropshipping operations with extended fulfillment periods."
+}, {
+  icon: Cookie,
+  title: "Cookie Policy",
+  description: "GDPR-compliant cookie policy explaining how your dropshipping store uses cookies for tracking, analytics, and improving user experience."
+}, {
+  icon: AlertTriangle,
+  title: "Implementation Guide",
+  description: "Step-by-step guide for implementing all documents correctly on your dropshipping store. Makes the legal setup process quick and hassle-free."
+}];
 const ServicesDropshipping = () => {
-  return (
-    <section id="services" className="py-20 bg-gradient-to-b from-primary/5 to-secondary/5">
+  return <section id="services" className="py-20 bg-gradient-to-b from-primary/5 to-secondary/5">
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">What's Included</Badge>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Complete Legal Protection for Dropshipping Businesses
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Complete Legal website Protection for Dropshipping Businesses</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Everything you need to legally operate your dropshipping store with confidence and comply with international regulations.
           </p>
@@ -51,9 +39,8 @@ const ServicesDropshipping = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => {
-            const Icon = service.icon;
-            return (
-              <Card key={index} className="hover:shadow-lg transition-shadow bg-card/80 backdrop-blur">
+          const Icon = service.icon;
+          return <Card key={index} className="hover:shadow-lg transition-shadow bg-card/80 backdrop-blur">
                 <CardHeader>
                   <div className="h-14 w-14 rounded-xl bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center mb-4 shadow-md">
                     <Icon className="h-7 w-7 text-primary-foreground" />
@@ -65,13 +52,10 @@ const ServicesDropshipping = () => {
                     {service.description}
                   </CardDescription>
                 </CardContent>
-              </Card>
-            );
-          })}
+              </Card>;
+        })}
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ServicesDropshipping;
