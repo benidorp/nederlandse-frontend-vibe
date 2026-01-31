@@ -9,99 +9,127 @@ interface VATPromoBoxesProps {
 const translations = {
   nl: {
     premiumDomainsTitle: "🌐 Premium Domeinnamen met SEO Waarde",
-    premiumDomainsDesc: "Koop verlopen domeinnamen met hoge MOZ autoriteit en kwalitatieve backlinks. Boost je SEO direct!",
+    premiumDomainsDesc:
+      "Koop verlopen domeinnamen met hoge MOZ autoriteit en kwalitatieve backlinks. Boost je SEO direct!",
     premiumDomainsCta: "Bekijk Premium Domeinen",
     premiumDomainsLink: "/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde",
     legalDocsTitle: "📋 Juridische Documenten voor Websites",
-    legalDocsDesc: "Bescherm je online business met professionele algemene voorwaarden, privacybeleid, cookie policy en meer.",
+    legalDocsDesc:
+      "Bescherm je online business met professionele algemene voorwaarden, privacybeleid, cookie policy en meer.",
     legalDocsCta: "Bekijk Juridische Templates",
-    legalDocsLink: "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
+    legalDocsLink:
+      "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
     vpnTitle: "🔒 VPN Nodig voor EU Domein Registratie?",
-    vpnDesc: "Voor het registreren van .EU domeinen vanuit buiten Europa heb je een Europees IP-adres nodig. Gebruik een VPN of trustee service.",
-    vpnTip: "Tip: INWX biedt trustee service vanaf €3/jaar voor .EU, .IT, .FR en .DE extensies.",
+    vpnDesc:
+      "Voor het registreren van .EU domeinen vanuit buiten Europa heb je een Europees IP-adres nodig. Gebruik een VPN of trustee service.",
+    vpnTip: "Tip: biedt trustee service vanaf €3/jaar voor .EU, .IT, .FR en .DE extensies.",
     sectionTitle: "Ontdek Onze Andere Diensten",
   },
   en: {
     premiumDomainsTitle: "🌐 Premium Domains with SEO Value",
-    premiumDomainsDesc: "Buy expired domain names with high MOZ authority and quality backlinks. Boost your SEO instantly!",
+    premiumDomainsDesc:
+      "Buy expired domain names with high MOZ authority and quality backlinks. Boost your SEO instantly!",
     premiumDomainsCta: "View Premium Domains",
     premiumDomainsLink: "/expireddomainnames/en/buy-premium-domains-high-authority-seo-value",
     legalDocsTitle: "📋 Legal Documents for Websites",
-    legalDocsDesc: "Protect your online business with professional terms and conditions, privacy policy, cookie policy and more.",
+    legalDocsDesc:
+      "Protect your online business with professional terms and conditions, privacy policy, cookie policy and more.",
     legalDocsCta: "View Legal Templates",
-    legalDocsLink: "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
+    legalDocsLink:
+      "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
     vpnTitle: "🔒 Need VPN for EU Domain Registration?",
-    vpnDesc: "To register .EU domains from outside Europe, you need a European IP address. Use a VPN or trustee service.",
+    vpnDesc:
+      "To register .EU domains from outside Europe, you need a European IP address. Use a VPN or trustee service.",
     vpnTip: "Tip: INWX offers trustee service from €3/year for .EU, .IT, .FR and .DE extensions.",
     sectionTitle: "Discover Our Other Services",
   },
   de: {
     premiumDomainsTitle: "🌐 Premium-Domains mit SEO-Wert",
-    premiumDomainsDesc: "Kaufen Sie abgelaufene Domains mit hoher MOZ-Autorität und hochwertigen Backlinks. Steigern Sie Ihre SEO sofort!",
+    premiumDomainsDesc:
+      "Kaufen Sie abgelaufene Domains mit hoher MOZ-Autorität und hochwertigen Backlinks. Steigern Sie Ihre SEO sofort!",
     premiumDomainsCta: "Premium-Domains ansehen",
     premiumDomainsLink: "/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert",
     legalDocsTitle: "📋 Rechtsdokumente für Websites",
-    legalDocsDesc: "Schützen Sie Ihr Online-Business mit professionellen AGB, Datenschutzrichtlinien, Cookie-Richtlinien und mehr.",
+    legalDocsDesc:
+      "Schützen Sie Ihr Online-Business mit professionellen AGB, Datenschutzrichtlinien, Cookie-Richtlinien und mehr.",
     legalDocsCta: "Rechtsvorlagen ansehen",
-    legalDocsLink: "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
+    legalDocsLink:
+      "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
     vpnTitle: "🔒 VPN für EU-Domain-Registrierung benötigt?",
-    vpnDesc: "Um .EU-Domains von außerhalb Europas zu registrieren, benötigen Sie eine europäische IP-Adresse. Nutzen Sie einen VPN oder Treuhänder-Service.",
+    vpnDesc:
+      "Um .EU-Domains von außerhalb Europas zu registrieren, benötigen Sie eine europäische IP-Adresse. Nutzen Sie einen VPN oder Treuhänder-Service.",
     vpnTip: "Tipp: INWX bietet Treuhänder-Service ab €3/Jahr für .EU, .IT, .FR und .DE Erweiterungen.",
     sectionTitle: "Entdecken Sie unsere anderen Dienste",
   },
   fr: {
     premiumDomainsTitle: "🌐 Domaines Premium avec Valeur SEO",
-    premiumDomainsDesc: "Achetez des noms de domaine expirés avec une haute autorité MOZ et des backlinks de qualité. Boostez votre SEO instantanément !",
+    premiumDomainsDesc:
+      "Achetez des noms de domaine expirés avec une haute autorité MOZ et des backlinks de qualité. Boostez votre SEO instantanément !",
     premiumDomainsCta: "Voir les Domaines Premium",
     premiumDomainsLink: "/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo",
     legalDocsTitle: "📋 Documents Juridiques pour Sites Web",
-    legalDocsDesc: "Protégez votre entreprise en ligne avec des conditions générales professionnelles, politique de confidentialité, politique de cookies et plus.",
+    legalDocsDesc:
+      "Protégez votre entreprise en ligne avec des conditions générales professionnelles, politique de confidentialité, politique de cookies et plus.",
     legalDocsCta: "Voir les Modèles Juridiques",
-    legalDocsLink: "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
+    legalDocsLink:
+      "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
     vpnTitle: "🔒 VPN Nécessaire pour l'Enregistrement de Domaine EU ?",
-    vpnDesc: "Pour enregistrer des domaines .EU depuis l'extérieur de l'Europe, vous avez besoin d'une adresse IP européenne. Utilisez un VPN ou un service de trustee.",
+    vpnDesc:
+      "Pour enregistrer des domaines .EU depuis l'extérieur de l'Europe, vous avez besoin d'une adresse IP européenne. Utilisez un VPN ou un service de trustee.",
     vpnTip: "Conseil : INWX offre un service de trustee à partir de 3€/an pour les extensions .EU, .IT, .FR et .DE.",
     sectionTitle: "Découvrez Nos Autres Services",
   },
   es: {
     premiumDomainsTitle: "🌐 Dominios Premium con Valor SEO",
-    premiumDomainsDesc: "Compra nombres de dominio expirados con alta autoridad MOZ y backlinks de calidad. ¡Impulsa tu SEO al instante!",
+    premiumDomainsDesc:
+      "Compra nombres de dominio expirados con alta autoridad MOZ y backlinks de calidad. ¡Impulsa tu SEO al instante!",
     premiumDomainsCta: "Ver Dominios Premium",
     premiumDomainsLink: "/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo",
     legalDocsTitle: "📋 Documentos Legales para Sitios Web",
-    legalDocsDesc: "Protege tu negocio online con términos y condiciones profesionales, política de privacidad, política de cookies y más.",
+    legalDocsDesc:
+      "Protege tu negocio online con términos y condiciones profesionales, política de privacidad, política de cookies y más.",
     legalDocsCta: "Ver Plantillas Legales",
-    legalDocsLink: "/es/documentos-legales-sitios-web-afiliados-terminos-condiciones-politica-privacidad-divulgacion-cookies",
+    legalDocsLink:
+      "/es/documentos-legales-sitios-web-afiliados-terminos-condiciones-politica-privacidad-divulgacion-cookies",
     vpnTitle: "🔒 ¿Necesitas VPN para Registro de Dominio EU?",
-    vpnDesc: "Para registrar dominios .EU desde fuera de Europa, necesitas una dirección IP europea. Usa un VPN o servicio de trustee.",
+    vpnDesc:
+      "Para registrar dominios .EU desde fuera de Europa, necesitas una dirección IP europea. Usa un VPN o servicio de trustee.",
     vpnTip: "Consejo: INWX ofrece servicio de trustee desde 3€/año para extensiones .EU, .IT, .FR y .DE.",
     sectionTitle: "Descubre Nuestros Otros Servicios",
   },
   it: {
     premiumDomainsTitle: "🌐 Domini Premium con Valore SEO",
-    premiumDomainsDesc: "Acquista nomi di dominio scaduti con alta autorità MOZ e backlink di qualità. Potenzia il tuo SEO istantaneamente!",
+    premiumDomainsDesc:
+      "Acquista nomi di dominio scaduti con alta autorità MOZ e backlink di qualità. Potenzia il tuo SEO istantaneamente!",
     premiumDomainsCta: "Vedi Domini Premium",
     premiumDomainsLink: "/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo",
     legalDocsTitle: "📋 Documenti Legali per Siti Web",
-    legalDocsDesc: "Proteggi il tuo business online con termini e condizioni professionali, privacy policy, cookie policy e altro.",
+    legalDocsDesc:
+      "Proteggi il tuo business online con termini e condizioni professionali, privacy policy, cookie policy e altro.",
     legalDocsCta: "Vedi Template Legali",
-    legalDocsLink: "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
+    legalDocsLink:
+      "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
     vpnTitle: "🔒 Hai Bisogno di VPN per la Registrazione di Domini EU?",
-    vpnDesc: "Per registrare domini .EU dall'esterno dell'Europa, hai bisogno di un indirizzo IP europeo. Usa una VPN o un servizio di trustee.",
+    vpnDesc:
+      "Per registrare domini .EU dall'esterno dell'Europa, hai bisogno di un indirizzo IP europeo. Usa una VPN o un servizio di trustee.",
     vpnTip: "Suggerimento: INWX offre servizio di trustee da 3€/anno per estensioni .EU, .IT, .FR e .DE.",
     sectionTitle: "Scopri I Nostri Altri Servizi",
   },
   pl: {
     premiumDomainsTitle: "🌐 Domeny Premium z Wartością SEO",
-    premiumDomainsDesc: "Kup wygasłe domeny z wysokim autorytetem MOZ i jakościowymi backlinkami. Wzmocnij swoje SEO natychmiast!",
+    premiumDomainsDesc:
+      "Kup wygasłe domeny z wysokim autorytetem MOZ i jakościowymi backlinkami. Wzmocnij swoje SEO natychmiast!",
     premiumDomainsCta: "Zobacz Domeny Premium",
     premiumDomainsLink: "/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo",
     legalDocsTitle: "📋 Dokumenty Prawne dla Stron Internetowych",
-    legalDocsDesc: "Chroń swój biznes online profesjonalnymi regulaminami, polityką prywatności, polityką cookies i więcej.",
+    legalDocsDesc:
+      "Chroń swój biznes online profesjonalnymi regulaminami, polityką prywatności, polityką cookies i więcej.",
     legalDocsCta: "Zobacz Szablony Prawne",
-    legalDocsLink: "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
+    legalDocsLink:
+      "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
     vpnTitle: "🔒 Potrzebujesz VPN do Rejestracji Domeny EU?",
-    vpnDesc: "Aby zarejestrować domeny .EU spoza Europy, potrzebujesz europejskiego adresu IP. Użyj VPN lub usługi powiernika.",
+    vpnDesc:
+      "Aby zarejestrować domeny .EU spoza Europy, potrzebujesz europejskiego adresu IP. Użyj VPN lub usługi powiernika.",
     vpnTip: "Wskazówka: INWX oferuje usługę powiernika od 3€/rok dla rozszerzeń .EU, .IT, .FR i .DE.",
     sectionTitle: "Odkryj Nasze Inne Usługi",
   },
@@ -133,7 +161,7 @@ const VATPromoBoxes = ({ lang }: VATPromoBoxesProps) => {
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-foreground mb-2">{t.premiumDomainsTitle}</h3>
                     <p className="text-muted-foreground mb-4 leading-relaxed">{t.premiumDomainsDesc}</p>
-                    <Link 
+                    <Link
                       to={t.premiumDomainsLink}
                       className="inline-flex items-center gap-2 px-5 py-2.5 bg-amber-500 hover:bg-amber-600 text-black font-semibold rounded-lg transition-all duration-200 shadow-md hover:shadow-lg group-hover:translate-x-1"
                     >
@@ -166,7 +194,7 @@ const VATPromoBoxes = ({ lang }: VATPromoBoxesProps) => {
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-foreground mb-2">{t.legalDocsTitle}</h3>
                     <p className="text-muted-foreground mb-4 leading-relaxed">{t.legalDocsDesc}</p>
-                    <Link 
+                    <Link
                       to={t.legalDocsLink}
                       className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-lg transition-all duration-200 shadow-md hover:shadow-lg group-hover:translate-x-1"
                     >
