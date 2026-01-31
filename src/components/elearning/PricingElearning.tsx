@@ -1,10 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Sparkles, AlertTriangle } from "lucide-react";
 import stripeLogo from "@/assets/stripe-logo.svg";
-
 const PricingElearning = () => {
-  return (
-    <section id="pricing" className="py-20 bg-gradient-to-br from-background via-primary/5 to-background">
+  return <section id="pricing" className="py-20 bg-gradient-to-br from-background via-primary/5 to-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
@@ -13,9 +11,7 @@ const PricingElearning = () => {
               <Sparkles className="w-5 h-5" />
               <span className="font-semibold">Simple Pricing</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Complete Legal Protection
-            </h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Complete Legal Protection for your website.</h2>
             <p className="text-xl text-muted-foreground">
               One-time investment. No subscriptions. Lifetime access.
             </p>
@@ -39,36 +35,22 @@ const PricingElearning = () => {
             <CardContent className="space-y-6 pb-8">
               {/* What's included */}
               <div className="space-y-4">
-              {[
-                "GDPR-Compliant Privacy Policy for Students",
-                "Intellectual Property Protection Policy",
-                "Certificate & Accreditation Policy",
-                "Cookie & Tracking Policy",
-                "Implementation Guide with Step-by-Step Instructions",
-                "Lifetime Access - No Recurring Fees"
-              ].map((feature, index) => (
-                  <div key={index} className="flex items-start gap-3">
+              {["GDPR-Compliant Privacy Policy for Students", "Intellectual Property Protection Policy", "Certificate & Accreditation Policy", "Cookie & Tracking Policy", "Implementation Guide with Step-by-Step Instructions", "Lifetime Access - No Recurring Fees"].map((feature, index) => <div key={index} className="flex items-start gap-3">
                     <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center mt-0.5 shadow-md">
                       <Check className="w-4 h-4 text-primary-foreground" />
                     </div>
                     <span className="text-foreground font-medium">{feature}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
 
               {/* Payment Section */}
-              <div 
-                className="pt-6 border-t flex justify-center"
-              >
-                <div 
-                  className="[&_stripe-buy-button]:scale-125 [&_stripe-buy-button]:origin-center"
-                  dangerouslySetInnerHTML={{
-                    __html: `<stripe-buy-button
+              <div className="pt-6 border-t flex justify-center">
+                <div className="[&_stripe-buy-button]:scale-125 [&_stripe-buy-button]:origin-center" dangerouslySetInnerHTML={{
+                __html: `<stripe-buy-button
                       buy-button-id="buy_btn_1SKm3dFXIgtr666GOD7ZP6da"
                       publishable-key="pk_live_51SK0ndFXIgtr666GrmKudtOsf3HHcaBw06Ei3x8LbGKOYQ3oZeIrmpMpTfoTBJ5c7tPyFfbRC7pugHMC0l6b3ZKP009fgyIrGc"
                     ></stripe-buy-button>`
-                  }}
-                />
+              }} />
               </div>
 
               <div className="flex items-center justify-center gap-2 mt-4">
@@ -102,8 +84,6 @@ const PricingElearning = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default PricingElearning;
