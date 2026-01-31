@@ -5,13 +5,12 @@ import ValuePropositionDE from "@/components/de/ValuePropositionDE";
 import ServicesDE from "@/components/de/ServicesDE";
 import BlogPostsDE from "@/components/de/BlogPostsDE";
 import FAQDE from "@/components/de/FAQDE";
-import PricingDE from "@/components/de/PricingDE";
+import PricingEN from "@/components/en/PricingEN";
 import ReviewsDE from "@/components/de/ReviewsDE";
 import FooterDE from "@/components/de/FooterDE";
 import GTranslateWidget from "@/components/GTranslateWidget";
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
-import SEOIntroSection from "@/components/legal-docs/SEOIntroSection";
 import { Helmet } from "react-helmet";
 
 const AffiliateDE = () => {
@@ -45,12 +44,11 @@ const AffiliateDE = () => {
       <div className="min-h-screen">
         <HeaderEN />
         <main>
-          <SEOIntroSection lang="de" />
           <HeroDE />
           <ValuePropositionDE />
           <ServicesDE />
           <BlogPostsDE />
-          <PricingDE />
+          <PricingEN />
           <ReviewsDE />
           <FAQDE />
         </main>

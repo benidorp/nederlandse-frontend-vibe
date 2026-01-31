@@ -5,13 +5,12 @@ import ValuePropositionFR from "@/components/fr/ValuePropositionFR";
 import ServicesFR from "@/components/fr/ServicesFR";
 import BlogPostsFR from "@/components/fr/BlogPostsFR";
 import FAQFR from "@/components/fr/FAQFR";
-import PricingFR from "@/components/fr/PricingFR";
+import PricingEN from "@/components/en/PricingEN";
 import ReviewsFR from "@/components/fr/ReviewsFR";
 import FooterFR from "@/components/fr/FooterFR";
 import GTranslateWidget from "@/components/GTranslateWidget";
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
-import SEOIntroSection from "@/components/legal-docs/SEOIntroSection";
 import { Helmet } from "react-helmet";
 
 const AffiliateFR = () => {
@@ -45,12 +44,11 @@ const AffiliateFR = () => {
       <div className="min-h-screen">
         <HeaderEN />
         <main>
-          <SEOIntroSection lang="fr" />
           <HeroFR />
           <ValuePropositionFR />
           <ServicesFR />
           <BlogPostsFR />
-          <PricingFR />
+          <PricingEN />
           <ReviewsFR />
           <FAQFR />
         </main>

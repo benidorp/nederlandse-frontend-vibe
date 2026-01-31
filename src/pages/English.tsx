@@ -12,7 +12,6 @@ import FooterEN from "@/components/en/FooterEN";
 import GTranslateWidget from "@/components/GTranslateWidget";
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
-import SEOIntroSection from "@/components/legal-docs/SEOIntroSection";
 import { Helmet } from "react-helmet";
 
 const English = () => {
@@ -47,7 +46,6 @@ const English = () => {
       <div className="min-h-screen">
         <HeaderEN />
         <main>
-          <SEOIntroSection lang="en" />
           <HeroEN />
           <ValuePropositionEN />
           <ServicesEN />

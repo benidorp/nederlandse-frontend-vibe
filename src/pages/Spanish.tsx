@@ -13,7 +13,6 @@ import FooterES from "@/components/es/FooterES";
 import GTranslateWidget from "@/components/GTranslateWidget";
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
-import SEOIntroSection from "@/components/legal-docs/SEOIntroSection";
 
 const Spanish = () => {
   return (
@@ -46,7 +45,6 @@ const Spanish = () => {
       <div className="min-h-screen">
         <HeaderES />
         <main>
-          <SEOIntroSection lang="es" />
           <HeroES />
           <ValuePropositionES />
           <ServicesES />

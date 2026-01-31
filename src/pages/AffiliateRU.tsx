@@ -10,7 +10,6 @@ import FooterEN from "@/components/en/FooterEN";
 import GTranslateWidget from "@/components/GTranslateWidget";
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
-import SEOIntroSection from "@/components/legal-docs/SEOIntroSection";
 import { Helmet } from "react-helmet";
 
 const AffiliateRU = () => {
@@ -44,7 +43,6 @@ const AffiliateRU = () => {
       <div className="min-h-screen">
         <HeaderEN />
         <main>
-          <SEOIntroSection lang="ru" />
           <HeroEN />
           <ValuePropositionEN />
           <ServicesEN />

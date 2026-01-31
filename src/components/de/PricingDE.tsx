@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Check, AlertTriangle } from "lucide-react";
+import stripeLogo from "@/assets/stripe-logo.svg";
 
 const includedItems = [
   "Datenschutzerklärung (DSGVO-konform)",
@@ -51,15 +51,26 @@ const PricingDE = () => {
                 ))}
               </div>
 
-              <div className="pt-6 border-t">
-                <Button className="w-full h-14 text-lg font-semibold shadow-lg hover:shadow-xl transition-shadow" size="lg">
-                  Jetzt Bestellen
-                </Button>
+              <div 
+                className="pt-6 border-t flex justify-center"
+              >
+                <div 
+                  className="[&_stripe-buy-button]:scale-125 [&_stripe-buy-button]:origin-center"
+                  dangerouslySetInnerHTML={{
+                    __html: `<stripe-buy-button
+                      buy-button-id="buy_btn_1SKm3dFXIgtr666GOD7ZP6da"
+                      publishable-key="pk_live_51SK0ndFXIgtr666GrmKudtOsf3HHcaBw06Ei3x8LbGKOYQ3oZeIrmpMpTfoTBJ5c7tPyFfbRC7pugHMC0l6b3ZKP009fgyIrGc"
+                    ></stripe-buy-button>`
+                  }}
+                />
               </div>
 
-              <p className="text-base font-semibold text-center text-muted-foreground">
-                Veilig betalen via Stripe, automatisch omgerekend naar uw eigen valuta.
-              </p>
+              <div className="flex items-center justify-center gap-2 mt-4">
+                <img src={stripeLogo} alt="Stripe" className="h-5 w-5" />
+                <p className="text-sm font-medium text-muted-foreground">
+                  Sichere Zahlung über Stripe • Automatisch in Ihre lokale Währung umgerechnet
+                </p>
+              </div>
 
               <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-3">
                 <div className="flex gap-2">

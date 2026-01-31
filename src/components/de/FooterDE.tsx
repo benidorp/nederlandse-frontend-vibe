@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram, Mail } from "lucide-react";
 
 const FooterDE = () => {
   const scrollToSection = (id: string) => {
@@ -108,18 +108,6 @@ const FooterDE = () => {
                   support@iaee.eu
                 </a>
               </li>
-              <li className="flex items-start gap-2">
-                <Phone className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">
-                  +31 (0) 20 123 4567
-                </span>
-              </li>
-              <li className="flex items-start gap-2">
-                <MapPin className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">
-                  Amsterdam, Niederlande
-                </span>
-              </li>
             </ul>
           </div>
         </div>
@@ -131,7 +119,7 @@ const FooterDE = () => {
           </p>
           
           {/* All Pages Links */}
-          <div className="mt-8 pt-8 border-t border-border">
+          <div className="mt-8 pt-8 border-t border-border w-full">
             <h3 className="font-semibold mb-4">Alle rechtlichen Dokumentseiten</h3>
             <nav aria-label="Alle Seiten" className="grid grid-cols-2 md:grid-cols-3 gap-3">
               <a href="/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">Affiliate Website Legal Documents</a>
@@ -147,7 +135,7 @@ const FooterDE = () => {
               <a href="/news-magazine-legal-documents-terms-conditions-privacy-policy-copyright-editorial-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">News Magazine Legal Documents</a>
               <a href="/freelancers-self-employed-legal-documents-contracts-terms-privacy-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">Freelancers Legal Documents</a>
               <a href="/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert" className="text-sm text-muted-foreground hover:text-primary transition-colors">Premium Domains</a>
-              <a href="/btw-calculator-wereldwijd" className="text-sm text-muted-foreground hover:text-primary transition-colors">MwSt-Rechner</a>
+              <a href="/mwst-rechner-weltweit" className="text-sm text-muted-foreground hover:text-primary transition-colors">MwSt-Rechner</a>
             </nav>
           </div>
         </div>
