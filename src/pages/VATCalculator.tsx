@@ -13,7 +13,6 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { vatRates, VATRate } from "@/data/vatRates";
 import VATResults from "@/components/vat/VATResults";
 import VATFAQSection from "@/components/vat/VATFAQSection";
-
 const VATCalculator = () => {
   const [selectedCountry, setSelectedCountry] = useState<VATRate | null>(null);
   const [amount, setAmount] = useState<string>("");
@@ -26,18 +25,13 @@ const VATCalculator = () => {
       setSelectedRate(country.standardRate);
     }
   };
-
-
   const results = useMemo(() => {
     if (!selectedCountry || !amount || selectedRate === null) return null;
-
     const numAmount = parseFloat(amount);
     if (isNaN(numAmount)) return null;
-
     let amountExclVAT: number;
     let vatAmount: number;
     let amountInclVAT: number;
-
     if (includesVAT === "yes") {
       amountInclVAT = numAmount;
       amountExclVAT = numAmount / (1 + selectedRate / 100);
@@ -47,18 +41,15 @@ const VATCalculator = () => {
       vatAmount = numAmount * (selectedRate / 100);
       amountInclVAT = numAmount + vatAmount;
     }
-
     return {
       country: selectedCountry,
       rate: selectedRate,
       amountExclVAT,
       vatAmount,
-      amountInclVAT,
+      amountInclVAT
     };
   }, [selectedCountry, amount, selectedRate, includesVAT]);
-
-  return (
-    <>
+  return <>
       <Helmet>
         <html lang="nl" />
         <title>Wereldwijde BTW Calculator voor Ondernemers | BTW Berekenen Internationaal</title>
@@ -81,9 +72,7 @@ const VATCalculator = () => {
                   <span className="text-sm font-semibold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Wereldwijd • 60+ Landen</span>
                 </div>
                 
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">
-                  Wereldwijde BTW-calculator
-                </h1>
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">Internationale Wereldwijde BTW-calculator</h1>
                 
                 <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
                   Bereken eenvoudig en nauwkeurig de BTW (belasting toegevoegde waarde) voor elk land wereldwijd. 
@@ -231,44 +220,36 @@ const VATCalculator = () => {
                             <SelectValue placeholder="Kies een land..." />
                           </SelectTrigger>
                           <SelectContent className="max-h-[300px]">
-                            {vatRates.map((country) => (
-                              <SelectItem key={country.countryCode} value={country.countryCode}>
+                            {vatRates.map(country => <SelectItem key={country.countryCode} value={country.countryCode}>
                                 <span className="flex items-center gap-2">
                                   <span className="text-xl">{country.flag}</span>
                                   {country.country} ({country.currencySymbol})
                                 </span>
-                              </SelectItem>
-                            ))}
+                              </SelectItem>)}
                           </SelectContent>
                         </Select>
                       </div>
 
-                      {selectedCountry && (
-                        <>
+                      {selectedCountry && <>
                           {/* Rate Selection */}
                           <div className="space-y-3">
                             <Label className="text-base font-semibold">
                               <TrendingUp className="w-4 h-4 inline mr-2" />
                               BTW-tarief
                             </Label>
-                            <RadioGroup 
-                              value={selectedRate?.toString()} 
-                              onValueChange={(value) => setSelectedRate(parseFloat(value))}
-                            >
+                            <RadioGroup value={selectedRate?.toString()} onValueChange={value => setSelectedRate(parseFloat(value))}>
                               <div className="flex items-center space-x-2 p-3 rounded-lg border bg-card hover:bg-accent/50 transition-colors">
                                 <RadioGroupItem value={selectedCountry.standardRate.toString()} id="standard" />
                                 <Label htmlFor="standard" className="cursor-pointer flex-1 font-medium">
                                   Standaard tarief: {selectedCountry.standardRate}%
                                 </Label>
                               </div>
-                              {selectedCountry.reducedRates.map((rate, index) => (
-                                <div key={index} className="flex items-center space-x-2 p-3 rounded-lg border bg-card hover:bg-accent/50 transition-colors">
+                              {selectedCountry.reducedRates.map((rate, index) => <div key={index} className="flex items-center space-x-2 p-3 rounded-lg border bg-card hover:bg-accent/50 transition-colors">
                                   <RadioGroupItem value={rate.toString()} id={`reduced-${index}`} />
                                   <Label htmlFor={`reduced-${index}`} className="cursor-pointer flex-1 font-medium">
                                     Verlaagd tarief: {rate}%
                                   </Label>
-                                </div>
-                              ))}
+                                </div>)}
                             </RadioGroup>
                           </div>
 
@@ -301,22 +282,12 @@ const VATCalculator = () => {
                               <span className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground font-semibold text-lg">
                                 {selectedCountry.currencySymbol}
                               </span>
-                              <Input
-                                id="amount"
-                                type="number"
-                                step="0.01"
-                                placeholder="0.00"
-                                value={amount}
-                                onChange={(e) => setAmount(e.target.value)}
-                                className="pl-10 h-12 text-lg font-medium"
-                              />
+                              <Input id="amount" type="number" step="0.01" placeholder="0.00" value={amount} onChange={e => setAmount(e.target.value)} className="pl-10 h-12 text-lg font-medium" />
                             </div>
                           </div>
-                        </>
-                      )}
+                        </>}
 
-                      {!selectedCountry && (
-                        <div className="text-center py-12 px-4">
+                      {!selectedCountry && <div className="text-center py-12 px-4">
                           <Globe className="w-16 h-16 mx-auto mb-4 text-muted-foreground/50" />
                           <p className="text-lg text-muted-foreground font-medium">
                             Selecteer een land om te beginnen
@@ -324,16 +295,12 @@ const VATCalculator = () => {
                           <p className="text-sm text-muted-foreground mt-2">
                             Kies uit 60+ landen wereldwijd
                           </p>
-                        </div>
-                      )}
+                        </div>}
                     </CardContent>
                   </Card>
 
                   {/* Results Card */}
-                  {results ? (
-                    <VATResults key={`${results.country.countryCode}-${results.rate}`} results={results} />
-                  ) : (
-                    <Card className="flex items-center justify-center border-2 shadow-lg">
+                  {results ? <VATResults key={`${results.country.countryCode}-${results.rate}`} results={results} /> : <Card className="flex items-center justify-center border-2 shadow-lg">
                       <CardContent className="text-center py-16 px-6">
                         <div className="relative">
                           <div className="absolute inset-0 bg-primary/5 rounded-full blur-3xl"></div>
@@ -346,8 +313,7 @@ const VATCalculator = () => {
                           De resultaten verschijnen hier automatisch
                         </p>
                       </CardContent>
-                    </Card>
-                  )}
+                    </Card>}
                 </div>
               </div>
             </div>
@@ -437,8 +403,6 @@ const VATCalculator = () => {
         </main>
         <FooterEN />
       </div>
-    </>
-  );
+    </>;
 };
-
 export default VATCalculator;
