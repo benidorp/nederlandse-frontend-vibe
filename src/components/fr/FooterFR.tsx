@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram, Mail } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const FooterFR = () => {
@@ -98,16 +98,6 @@ const FooterFR = () => {
                   support@iaee.eu
                 </a>
               </li>
-              <li className="flex items-start gap-2 text-sm text-muted-foreground">
-                <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <a href="tel:+31201234567" className="hover:text-primary transition-colors">
-                  +31 20 123 4567
-                </a>
-              </li>
-              <li className="flex items-start gap-2 text-sm text-muted-foreground">
-                <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span>Amsterdam, Pays-Bas</span>
-              </li>
             </ul>
           </div>
         </div>
@@ -115,7 +105,7 @@ const FooterFR = () => {
         <div className="border-t pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              © 2024 Legal Affiliate Agreement. Tous droits réservés.
+              © 2025 Legal Affiliate Agreement. Tous droits réservés.
             </p>
           </div>
           
@@ -136,7 +126,7 @@ const FooterFR = () => {
               <a href="/news-magazine-legal-documents-terms-conditions-privacy-policy-copyright-editorial-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">News Magazine Legal Documents</a>
               <a href="/freelancers-self-employed-legal-documents-contracts-terms-privacy-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">Freelancers Legal Documents</a>
               <a href="/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo" className="text-sm text-muted-foreground hover:text-primary transition-colors">Noms de Domaine Premium</a>
-              <a href="/btw-calculator-wereldwijd" className="text-sm text-muted-foreground hover:text-primary transition-colors">Calculateur de TVA</a>
+              <a href="/calculateur-tva-mondial" className="text-sm text-muted-foreground hover:text-primary transition-colors">Calculateur de TVA</a>
             </nav>
           </div>
         </div>
