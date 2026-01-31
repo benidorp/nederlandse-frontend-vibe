@@ -9,9 +9,7 @@ const PricingFreelancers = () => {
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">Special Offer</Badge>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Complete Legal Protection Package
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Complete Legal website Protection Package</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Everything you need to protect your freelance business and work professionally with clients worldwide. 
             One-time payment, lifetime access.
