@@ -23,7 +23,7 @@ const PricingPhotography = () => {
                 
               </div>
               
-              <CardTitle className="text-2xl md:text-3xl mb-3">Complete Photography Legal Package</CardTitle>
+              <CardTitle className="text-2xl md:text-3xl mb-3">Complete website Photography Legal Package</CardTitle>
               <CardDescription className="text-base md:text-lg">
                 All essential legal documents for unlimited use across all your photography websites
               </CardDescription>

@@ -2,35 +2,25 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Check, Shield } from "lucide-react";
 import nicoleProfile from "@/assets/nicole-photography.png";
-
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
-  element?.scrollIntoView({ behavior: "smooth" });
+  element?.scrollIntoView({
+    behavior: "smooth"
+  });
 };
-
 const ValuePropositionPhotography = () => {
-  return (
-    <section id="about-me" className="py-20 bg-background">
+  return <section id="about-me" className="py-20 bg-background">
       <div className="container">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Why Legal Documents Are Essential for Photographers
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              As a professional photographer, you need proper legal protection for your business, your creative work, and your clients. 
-              Whether you're shooting portraits, weddings, commercial work, or events, having the right legal documents in place protects you from liability and copyright issues.
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Why Legal website Documents Are Essential for Photographers</h2>
+            <p className="text-lg text-muted-foreground">As a professional photographer, you need proper website legal protection for your business, your creative work, and your clients. Whether you're shooting portraits, weddings, commercial work, or events, having the right legal documents in place protects you from liability and copyright issues.</p>
           </div>
 
           <Card className="mb-12 bg-card border-border">
             <CardHeader>
               <div className="flex items-center gap-4">
-                <img 
-                  src={nicoleProfile} 
-                  alt="Nicole Henderson - Legal Specialist" 
-                  className="w-20 h-20 rounded-full object-cover"
-                />
+                <img src={nicoleProfile} alt="Nicole Henderson - Legal Specialist" className="w-20 h-20 rounded-full object-cover" />
                 <div>
                   <CardTitle className="text-2xl text-foreground">About Nicole Henderson</CardTitle>
                   <CardDescription>Legal Specialist for Creative Professionals</CardDescription>
@@ -64,20 +54,10 @@ const ValuePropositionPhotography = () => {
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="space-y-3">
-                {[
-                  "Terms & Conditions - specifically designed for photographers",
-                  "Assignment Agreement (Offerte) - with templates and email examples",
-                  "Privacy Policy - GDPR-compliant for photographers",
-                  "Cookie Policy - complete GDPR compliance",
-                  "Disclaimer - protect your photos and content",
-                  "Quitclaim - legal coverage for agreements with subjects",
-                  "Copyright Protection (Auteursrecht) - international coverage"
-                ].map((item, index) => (
-                  <div key={index} className="flex items-start gap-3">
+                {["Terms & Conditions - specifically designed for photographers", "Assignment Agreement (Offerte) - with templates and email examples", "Privacy Policy - GDPR-compliant for photographers", "Cookie Policy - complete GDPR compliance", "Disclaimer - protect your photos and content", "Quitclaim - legal coverage for agreements with subjects", "Copyright Protection (Auteursrecht) - international coverage"].map((item, index) => <div key={index} className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-red-600 flex-shrink-0 mt-0.5" />
                     <span className="text-foreground">{item}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
 
               <div className="pt-6 border-t border-border">
@@ -113,11 +93,7 @@ const ValuePropositionPhotography = () => {
                       Complete legal protection for your photography business. 
                       Use for unlimited websites. No recurring fees.
                     </p>
-                    <Button 
-                      size="lg" 
-                      onClick={() => scrollToSection("pricing")}
-                      className="w-full bg-primary hover:bg-primary/90"
-                    >
+                    <Button size="lg" onClick={() => scrollToSection("pricing")} className="w-full bg-primary hover:bg-primary/90">
                       Get Complete Package Now
                     </Button>
                   </div>
@@ -127,8 +103,6 @@ const ValuePropositionPhotography = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ValuePropositionPhotography;
