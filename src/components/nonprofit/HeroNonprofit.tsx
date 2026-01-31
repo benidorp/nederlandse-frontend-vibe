@@ -27,7 +27,7 @@ const HeroNonprofit = () => {
               </div>
 
               {/* Main heading */}
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-primary/80 to-accent bg-clip-text text-transparent animate-fade-in leading-tight">Complete Legal Documents for Your Charities, NGOs and non-profit organizations</h1>
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-primary/80 to-accent bg-clip-text text-transparent animate-fade-in leading-tight">Complete Website Legal Documents for Your Charities, NGOs and non-profit organizations</h1>
 
               {/* Subheading */}
               <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-fade-in">
