@@ -1,12 +1,12 @@
-import HeaderEN from "@/components/en/HeaderEN";
-import HeroEN from "@/components/en/HeroEN";
+import HeaderSV from "@/components/sv/HeaderSV";
+import HeroSV from "@/components/sv/HeroSV";
 import HiddenInternalLinks from "@/components/HiddenInternalLinks";
-import ValuePropositionEN from "@/components/en/ValuePropositionEN";
-import ServicesEN from "@/components/en/ServicesEN";
-import FAQEN from "@/components/en/FAQEN";
-import PricingEN from "@/components/en/PricingEN";
-import ReviewsEN from "@/components/en/ReviewsEN";
-import FooterEN from "@/components/en/FooterEN";
+import ValuePropositionSV from "@/components/sv/ValuePropositionSV";
+import ServicesSV from "@/components/sv/ServicesSV";
+import FAQSV from "@/components/sv/FAQSV";
+import PricingSV from "@/components/sv/PricingSV";
+import ReviewsSV from "@/components/sv/ReviewsSV";
+import FooterSV from "@/components/sv/FooterSV";
 import GTranslateWidget from "@/components/GTranslateWidget";
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
@@ -41,16 +41,16 @@ const AffiliateSV = () => {
       <LegalDocsLanguageSwitcher currentLang="sv" />
       <HiddenInternalLinks />
       <div className="min-h-screen">
-        <HeaderEN />
+        <HeaderSV />
         <main>
-          <HeroEN />
-          <ValuePropositionEN />
-          <ServicesEN />
-          <PricingEN />
-          <ReviewsEN />
-          <FAQEN />
+          <HeroSV />
+          <ValuePropositionSV />
+          <ServicesSV />
+          <PricingSV />
+          <ReviewsSV />
+          <FAQSV />
         </main>
-        <FooterEN />
+        <FooterSV />
       </div>
     </>
   );

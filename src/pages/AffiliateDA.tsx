@@ -1,12 +1,12 @@
-import HeaderEN from "@/components/en/HeaderEN";
-import HeroEN from "@/components/en/HeroEN";
+import HeaderDA from "@/components/da/HeaderDA";
+import HeroDA from "@/components/da/HeroDA";
 import HiddenInternalLinks from "@/components/HiddenInternalLinks";
-import ValuePropositionEN from "@/components/en/ValuePropositionEN";
-import ServicesEN from "@/components/en/ServicesEN";
-import FAQEN from "@/components/en/FAQEN";
-import PricingEN from "@/components/en/PricingEN";
-import ReviewsEN from "@/components/en/ReviewsEN";
-import FooterEN from "@/components/en/FooterEN";
+import ValuePropositionDA from "@/components/da/ValuePropositionDA";
+import ServicesDA from "@/components/da/ServicesDA";
+import FAQDA from "@/components/da/FAQDA";
+import PricingDA from "@/components/da/PricingDA";
+import ReviewsDA from "@/components/da/ReviewsDA";
+import FooterDA from "@/components/da/FooterDA";
 import GTranslateWidget from "@/components/GTranslateWidget";
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
@@ -41,16 +41,16 @@ const AffiliateDA = () => {
       <LegalDocsLanguageSwitcher currentLang="da" />
       <HiddenInternalLinks />
       <div className="min-h-screen">
-        <HeaderEN />
+        <HeaderDA />
         <main>
-          <HeroEN />
-          <ValuePropositionEN />
-          <ServicesEN />
-          <PricingEN />
-          <ReviewsEN />
-          <FAQEN />
+          <HeroDA />
+          <ValuePropositionDA />
+          <ServicesDA />
+          <PricingDA />
+          <ReviewsDA />
+          <FAQDA />
         </main>
-        <FooterEN />
+        <FooterDA />
       </div>
     </>
   );
