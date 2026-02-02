@@ -1,12 +1,12 @@
-import HeaderEN from "@/components/en/HeaderEN";
-import HeroEN from "@/components/en/HeroEN";
+import HeaderFI from "@/components/fi/HeaderFI";
+import HeroFI from "@/components/fi/HeroFI";
 import HiddenInternalLinks from "@/components/HiddenInternalLinks";
-import ValuePropositionEN from "@/components/en/ValuePropositionEN";
-import ServicesEN from "@/components/en/ServicesEN";
-import FAQEN from "@/components/en/FAQEN";
-import PricingEN from "@/components/en/PricingEN";
-import ReviewsEN from "@/components/en/ReviewsEN";
-import FooterEN from "@/components/en/FooterEN";
+import ValuePropositionFI from "@/components/fi/ValuePropositionFI";
+import ServicesFI from "@/components/fi/ServicesFI";
+import FAQFI from "@/components/fi/FAQFI";
+import PricingFI from "@/components/fi/PricingFI";
+import ReviewsFI from "@/components/fi/ReviewsFI";
+import FooterFI from "@/components/fi/FooterFI";
 import GTranslateWidget from "@/components/GTranslateWidget";
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
@@ -41,16 +41,16 @@ const AffiliateFI = () => {
       <LegalDocsLanguageSwitcher currentLang="fi" />
       <HiddenInternalLinks />
       <div className="min-h-screen">
-        <HeaderEN />
+        <HeaderFI />
         <main>
-          <HeroEN />
-          <ValuePropositionEN />
-          <ServicesEN />
-          <PricingEN />
-          <ReviewsEN />
-          <FAQEN />
+          <HeroFI />
+          <ValuePropositionFI />
+          <ServicesFI />
+          <PricingFI />
+          <ReviewsFI />
+          <FAQFI />
         </main>
-        <FooterEN />
+        <FooterFI />
       </div>
     </>
   );
