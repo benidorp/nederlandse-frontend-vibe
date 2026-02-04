@@ -1,12 +1,12 @@
-import HeaderEN from "@/components/en/HeaderEN";
-import HeroEN from "@/components/en/HeroEN";
+import HeaderAR from "@/components/ar/HeaderAR";
+import HeroAR from "@/components/ar/HeroAR";
 import HiddenInternalLinks from "@/components/HiddenInternalLinks";
-import ValuePropositionEN from "@/components/en/ValuePropositionEN";
-import ServicesEN from "@/components/en/ServicesEN";
-import FAQEN from "@/components/en/FAQEN";
-import PricingEN from "@/components/en/PricingEN";
-import ReviewsEN from "@/components/en/ReviewsEN";
-import FooterEN from "@/components/en/FooterEN";
+import ValuePropositionAR from "@/components/ar/ValuePropositionAR";
+import ServicesAR from "@/components/ar/ServicesAR";
+import FAQAR from "@/components/ar/FAQAR";
+import PricingAR from "@/components/ar/PricingAR";
+import ReviewsAR from "@/components/ar/ReviewsAR";
+import FooterAR from "@/components/ar/FooterAR";
 import GTranslateWidget from "@/components/GTranslateWidget";
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
@@ -41,16 +41,16 @@ const AffiliateAR = () => {
       <LegalDocsLanguageSwitcher currentLang="ar" />
       <HiddenInternalLinks />
       <div className="min-h-screen" dir="rtl">
-        <HeaderEN />
+        <HeaderAR />
         <main>
-          <HeroEN />
-          <ValuePropositionEN />
-          <ServicesEN />
-          <PricingEN />
-          <ReviewsEN />
-          <FAQEN />
+          <HeroAR />
+          <ValuePropositionAR />
+          <ServicesAR />
+          <PricingAR />
+          <ReviewsAR />
+          <FAQAR />
         </main>
-        <FooterEN />
+        <FooterAR />
       </div>
     </>
   );
