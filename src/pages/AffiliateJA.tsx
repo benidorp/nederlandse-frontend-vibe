@@ -1,12 +1,12 @@
-import HeaderEN from "@/components/en/HeaderEN";
-import HeroEN from "@/components/en/HeroEN";
+import HeaderJA from "@/components/ja/HeaderJA";
+import HeroJA from "@/components/ja/HeroJA";
 import HiddenInternalLinks from "@/components/HiddenInternalLinks";
-import ValuePropositionEN from "@/components/en/ValuePropositionEN";
-import ServicesEN from "@/components/en/ServicesEN";
-import FAQEN from "@/components/en/FAQEN";
-import PricingEN from "@/components/en/PricingEN";
-import ReviewsEN from "@/components/en/ReviewsEN";
-import FooterEN from "@/components/en/FooterEN";
+import ValuePropositionJA from "@/components/ja/ValuePropositionJA";
+import ServicesJA from "@/components/ja/ServicesJA";
+import FAQJA from "@/components/ja/FAQJA";
+import PricingJA from "@/components/ja/PricingJA";
+import ReviewsJA from "@/components/ja/ReviewsJA";
+import FooterJA from "@/components/ja/FooterJA";
 import GTranslateWidget from "@/components/GTranslateWidget";
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
@@ -41,16 +41,16 @@ const AffiliateJA = () => {
       <LegalDocsLanguageSwitcher currentLang="ja" />
       <HiddenInternalLinks />
       <div className="min-h-screen">
-        <HeaderEN />
+        <HeaderJA />
         <main>
-          <HeroEN />
-          <ValuePropositionEN />
-          <ServicesEN />
-          <PricingEN />
-          <ReviewsEN />
-          <FAQEN />
+          <HeroJA />
+          <ValuePropositionJA />
+          <ServicesJA />
+          <PricingJA />
+          <ReviewsJA />
+          <FAQJA />
         </main>
-        <FooterEN />
+        <FooterJA />
       </div>
     </>
   );

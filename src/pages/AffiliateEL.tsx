@@ -1,12 +1,12 @@
-import HeaderEN from "@/components/en/HeaderEN";
-import HeroEN from "@/components/en/HeroEN";
+import HeaderEL from "@/components/el/HeaderEL";
+import HeroEL from "@/components/el/HeroEL";
 import HiddenInternalLinks from "@/components/HiddenInternalLinks";
-import ValuePropositionEN from "@/components/en/ValuePropositionEN";
-import ServicesEN from "@/components/en/ServicesEN";
-import FAQEN from "@/components/en/FAQEN";
-import PricingEN from "@/components/en/PricingEN";
-import ReviewsEN from "@/components/en/ReviewsEN";
-import FooterEN from "@/components/en/FooterEN";
+import ValuePropositionEL from "@/components/el/ValuePropositionEL";
+import ServicesEL from "@/components/el/ServicesEL";
+import FAQEL from "@/components/el/FAQEL";
+import PricingEL from "@/components/el/PricingEL";
+import ReviewsEL from "@/components/el/ReviewsEL";
+import FooterEL from "@/components/el/FooterEL";
 import GTranslateWidget from "@/components/GTranslateWidget";
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
@@ -41,16 +41,16 @@ const AffiliateEL = () => {
       <LegalDocsLanguageSwitcher currentLang="el" />
       <HiddenInternalLinks />
       <div className="min-h-screen">
-        <HeaderEN />
+        <HeaderEL />
         <main>
-          <HeroEN />
-          <ValuePropositionEN />
-          <ServicesEN />
-          <PricingEN />
-          <ReviewsEN />
-          <FAQEN />
+          <HeroEL />
+          <ValuePropositionEL />
+          <ServicesEL />
+          <PricingEL />
+          <ReviewsEL />
+          <FAQEL />
         </main>
-        <FooterEN />
+        <FooterEL />
       </div>
     </>
   );

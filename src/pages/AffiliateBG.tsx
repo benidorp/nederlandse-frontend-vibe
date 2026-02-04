@@ -1,12 +1,12 @@
-import HeaderEN from "@/components/en/HeaderEN";
-import HeroEN from "@/components/en/HeroEN";
+import HeaderBG from "@/components/bg/HeaderBG";
+import HeroBG from "@/components/bg/HeroBG";
 import HiddenInternalLinks from "@/components/HiddenInternalLinks";
-import ValuePropositionEN from "@/components/en/ValuePropositionEN";
-import ServicesEN from "@/components/en/ServicesEN";
-import FAQEN from "@/components/en/FAQEN";
-import PricingEN from "@/components/en/PricingEN";
-import ReviewsEN from "@/components/en/ReviewsEN";
-import FooterEN from "@/components/en/FooterEN";
+import ValuePropositionBG from "@/components/bg/ValuePropositionBG";
+import ServicesBG from "@/components/bg/ServicesBG";
+import FAQBG from "@/components/bg/FAQBG";
+import PricingBG from "@/components/bg/PricingBG";
+import ReviewsBG from "@/components/bg/ReviewsBG";
+import FooterBG from "@/components/bg/FooterBG";
 import GTranslateWidget from "@/components/GTranslateWidget";
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
@@ -41,16 +41,16 @@ const AffiliateBG = () => {
       <LegalDocsLanguageSwitcher currentLang="bg" />
       <HiddenInternalLinks />
       <div className="min-h-screen">
-        <HeaderEN />
+        <HeaderBG />
         <main>
-          <HeroEN />
-          <ValuePropositionEN />
-          <ServicesEN />
-          <PricingEN />
-          <ReviewsEN />
-          <FAQEN />
+          <HeroBG />
+          <ValuePropositionBG />
+          <ServicesBG />
+          <PricingBG />
+          <ReviewsBG />
+          <FAQBG />
         </main>
-        <FooterEN />
+        <FooterBG />
       </div>
     </>
   );
