@@ -1,42 +1,91 @@
-import { Check, Shield, Zap, Clock } from "lucide-react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Check, AlertTriangle } from "lucide-react";
 import stripeLogo from "@/assets/stripe-logo.svg";
 
-const PricingKO = () => {
-  const features = ["이용약관", "개인정보보호정책 (GDPR 준수)", "쿠키 정책", "제휴 공개 (FTC 준수)", "면책조항", "구현 가이드", "즉시 다운로드", "무료 업데이트"];
+const includedItems = [
+  "개인정보보호정책 (GDPR 준수)",
+  "면책조항",
+  "제휴 공개 (FTC)",
+  "이용약관",
+  "쿠키 정책",
+  "구현 가이드"
+];
 
+const PricingKO = () => {
   return (
-    <section id="pricing" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">간단하고 투명한 가격</h2>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">일회성 결제 — 구독 없음, 숨겨진 비용 없음</p>
+    <section id="pricing" className="py-20 bg-background">
+      <div className="container">
+        <div className="text-center mb-12">
+          <Badge variant="outline" className="mb-4">가격</Badge>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            제휴 웹사이트 필수 문서
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            제휴 웹사이트에 필요한 모든 법적 문서가 포함된 완전 패키지입니다. 원하는 언어로 패키지를 쉽게 다운로드하세요 – 또는 여러 언어로 – 국제적 사용을 위해 사이트를 준비하세요.
+          </p>
         </div>
-        <div className="max-w-lg mx-auto">
-          <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-8 shadow-2xl relative overflow-hidden">
-            <div className="relative z-10">
-              <div className="text-center mb-8">
-                <div className="inline-flex items-center gap-2 bg-blue-500/20 text-blue-300 px-4 py-1 rounded-full text-sm font-medium mb-4">
-                  <Zap className="w-4 h-4" />전체 패키지
-                </div>
-                <div className="flex items-center justify-center gap-2 mb-2"><span className="text-5xl font-bold text-white">€79</span></div>
-                <p className="text-slate-400">일회성 결제</p>
+
+        <div className="max-w-2xl mx-auto">
+          <Card className="border-primary shadow-xl">
+            <CardHeader className="text-center pb-8">
+              <div className="mb-4">
+                <span className="text-5xl font-bold text-primary">€79</span>
+                <span className="text-muted-foreground ml-2">일회성</span>
               </div>
-              <div className="space-y-4 mb-8">
-                {features.map((feature, index) => (
+              <CardTitle className="text-2xl">완전 문서 패키지</CardTitle>
+              <CardDescription className="text-base">
+                무제한 사용을 위한 모든 필수 법적 문서
+              </CardDescription>
+            </CardHeader>
+            
+            <CardContent className="space-y-6">
+              <div className="space-y-3">
+                {includedItems.map((item, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <div className="w-6 h-6 bg-green-500/20 rounded-full flex items-center justify-center"><Check className="w-4 h-4 text-green-400" /></div>
-                    <span className="text-slate-300">{feature}</span>
+                    <div className="h-5 w-5 rounded-full bg-red-600 flex items-center justify-center flex-shrink-0">
+                      <Check className="h-3 w-3 text-white" />
+                    </div>
+                    <span className="text-foreground">{item}</span>
                   </div>
                 ))}
               </div>
-              <div className="space-y-4">
-                <stripe-buy-button buy-button-id="buy_btn_1SKm3dFXIgtr666GOD7ZP6da" publishable-key="pk_live_51NlaLxFXIgtr666GaVnQ6XK0LqYVG4mFt0CqM6LetcxVZkFLMEBzZY9UCfKSSXGQp2FbYLZ9ZYo6V5XXclGQE4XY00v1e0OIJQ"></stripe-buy-button>
-                <div className="flex items-center justify-center gap-2 text-slate-400 text-sm">
-                  <Shield className="w-4 h-4" /><span>안전한 결제</span><img src={stripeLogo} alt="Stripe" className="h-5 ml-1" />
+
+              <div 
+                className="pt-6 border-t flex justify-center"
+              >
+                <div 
+                  className="[&_stripe-buy-button]:scale-125 [&_stripe-buy-button]:origin-center"
+                  dangerouslySetInnerHTML={{
+                    __html: `<stripe-buy-button
+                      buy-button-id="buy_btn_1SKm3dFXIgtr666GOD7ZP6da"
+                      publishable-key="pk_live_51SK0ndFXIgtr666GrmKudtOsf3HHcaBw06Ei3x8LbGKOYQ3oZeIrmpMpTfoTBJ5c7tPyFfbRC7pugHMC0l6b3ZKP009fgyIrGc"
+                    ></stripe-buy-button>`
+                  }}
+                />
+              </div>
+
+              <div className="flex items-center justify-center gap-2 mt-4">
+                <img src={stripeLogo} alt="Stripe" className="h-5 w-5" />
+                <p className="text-sm font-medium text-muted-foreground">
+                  Stripe를 통한 안전한 결제 • 현지 통화로 자동 변환
+                </p>
+              </div>
+
+              <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-3">
+                <div className="flex gap-2">
+                  <AlertTriangle className="h-4 w-4 text-destructive flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h4 className="font-semibold text-sm text-foreground mb-0.5">중요: 환불 불가</h4>
+                    <p className="text-xs text-muted-foreground">
+                      당사 제품은 반품할 수 없으며 환불 보장을 제공하지 않습니다. 
+                      다운로드 후 쉽게 복사할 수 있는 디지털 문서의 경우 이는 합리적입니다.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
