@@ -1,66 +1,40 @@
-import { FileText, Shield, Scale } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import nicoleProfile from "@/assets/nicole-profile.png";
+import { ArrowRight } from "lucide-react";
+import heroImage from "@/assets/lawyer-hero.jpg";
 
 const HeroKO = () => {
-  const scrollToPricing = () => {
-    const pricingSection = document.getElementById('pricing');
-    if (pricingSection) {
-      pricingSection.scrollIntoView({ behavior: 'smooth' });
-    }
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-blue-400/20 to-indigo-500/20 rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-indigo-400/20 to-purple-500/20 rounded-full blur-3xl"></div>
-      </div>
-
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center space-y-8 max-w-4xl mx-auto">
-          <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg border border-blue-100">
-            <Shield className="w-5 h-5 text-green-500" />
-            <span className="text-sm font-medium text-slate-700">500개 이상의 웹사이트가 신뢰</span>
+    <section id="home" className="relative min-h-[600px] flex items-center bg-primary text-primary-foreground">
+      <div className="container grid lg:grid-cols-2 gap-8 items-center py-12">
+        <div className="space-y-6">
+          <div className="inline-block">
+            <span className="text-sm font-semibold text-primary-foreground/90 uppercase tracking-wide">법적 확실성</span>
           </div>
-
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-            <span className="text-slate-800">웹사이트 필수</span>
-            <br />
-            <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
-              법적 문서
-            </span>
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground leading-tight">
+            제휴 웹사이트를 위한 법적 문서: 이용약관, 개인정보보호정책, 공개 및 쿠키 정책
           </h1>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            완전한 컴플라이언스 패키지 — 이용약관, 개인정보보호정책, 쿠키 정책, 제휴 공개 및 면책조항.
+          <p className="text-lg text-primary-foreground/90 leading-relaxed">
+            제휴 비즈니스를 보호하고 모든 법적 요구사항 준수를 보장하는 전문 법적 문서.
+            저렴한 패키지에는 <strong>이용약관, 개인정보보호정책 및 면책조항</strong> 등
+            모든 필수 계약서가 포함되어 있습니다 — 완전한 준수, 신뢰 및 안심을 위해.
           </p>
-
-          <div className="flex flex-wrap gap-3 justify-center">
-            <div className="flex items-center gap-2 bg-white/60 px-4 py-2 rounded-full border border-slate-200">
-              <FileText className="w-4 h-4 text-blue-500" />
-              <span className="text-sm font-medium text-slate-700">5개 법적 템플릿</span>
-            </div>
-            <div className="flex items-center gap-2 bg-white/60 px-4 py-2 rounded-full border border-slate-200">
-              <Shield className="w-4 h-4 text-green-500" />
-              <span className="text-sm font-medium text-slate-700">GDPR 준수</span>
-            </div>
-            <div className="flex items-center gap-2 bg-white/60 px-4 py-2 rounded-full border border-slate-200">
-              <Scale className="w-4 h-4 text-purple-500" />
-              <span className="text-sm font-medium text-slate-700">FTC 준수</span>
-            </div>
-          </div>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" onClick={scrollToPricing} className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-6 text-lg rounded-xl shadow-lg">
-              전체 패키지 받기 — €79
+          <div className="flex flex-wrap gap-4">
+            <Button size="lg" onClick={() => scrollToSection("pricing")} className="group bg-primary-foreground text-primary hover:bg-primary-foreground/90">
+              패키지 보기 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            </Button>
+            <Button size="lg" variant="outline" onClick={() => scrollToSection("services")} className="border-primary-foreground/30 hover:bg-primary-foreground/10 text-slate-950">
+              자세한 정보
             </Button>
           </div>
-
-          <div className="flex items-center gap-6 justify-center text-sm text-slate-500">
-            <span>4.9/5 평점</span>
-            <span>즉시 다운로드</span>
-            <span>안전한 결제</span>
-          </div>
+        </div>
+        <div className="relative">
+          <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg blur-2xl opacity-50"></div>
+          <img src={heroImage} alt="전문 법률 컨설턴트" className="relative rounded-lg shadow-2xl w-full object-cover ring-2 ring-primary/10" />
         </div>
       </div>
     </section>
