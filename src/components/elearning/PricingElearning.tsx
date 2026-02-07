@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Sparkles, AlertTriangle } from "lucide-react";
 import stripeLogo from "@/assets/stripe-logo.svg";
+import StripeBuyButton from "@/components/StripeBuyButton";
 const PricingElearning = () => {
   return <section id="pricing" className="py-20 bg-gradient-to-br from-background via-primary/5 to-background">
       <div className="container mx-auto px-4">
@@ -45,12 +46,7 @@ const PricingElearning = () => {
 
               {/* Payment Section */}
               <div className="pt-6 border-t flex justify-center">
-                <div className="[&_stripe-buy-button]:scale-125 [&_stripe-buy-button]:origin-center" dangerouslySetInnerHTML={{
-                __html: `<stripe-buy-button
-                      buy-button-id="buy_btn_1SKm3dFXIgtr666GOD7ZP6da"
-                      publishable-key="pk_live_51SK0ndFXIgtr666GrmKudtOsf3HHcaBw06Ei3x8LbGKOYQ3oZeIrmpMpTfoTBJ5c7tPyFfbRC7pugHMC0l6b3ZKP009fgyIrGc"
-                    ></stripe-buy-button>`
-              }} />
+                <StripeBuyButton />
               </div>
 
               <div className="flex items-center justify-center gap-2 mt-4">

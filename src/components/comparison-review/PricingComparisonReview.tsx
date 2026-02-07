@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import stripeLogo from "@/assets/stripe-logo.svg";
+import StripeBuyButton from "@/components/StripeBuyButton";
 
 const PricingComparisonReview = () => {
   return (
@@ -83,14 +84,7 @@ const PricingComparisonReview = () => {
               <div className="text-4xl font-bold text-primary mb-2">€79</div>
               <p className="text-muted-foreground mb-6">One-time payment • Lifetime access • All documents included</p>
 
-              <div className="[&_stripe-buy-button]:scale-125 [&_stripe-buy-button]:origin-center flex justify-center"
-                dangerouslySetInnerHTML={{
-                  __html: `<stripe-buy-button
-                      buy-button-id="buy_btn_1SKm3dFXIgtr666GOD7ZP6da"
-                      publishable-key="pk_live_51SK0ndFXIgtr666GrmKudtOsf3HHcaBw06Ei3x8LbGKOYQ3oZeIrmpMpTfoTBJ5c7tPyFfbRC7pugHMC0l6b3ZKP009fgyIrGc"
-                    ></stripe-buy-button>`
-                }}
-              />
+              <StripeBuyButton />
 
               <div className="flex items-center justify-center gap-2">
                 <img src={stripeLogo} alt="Stripe secure payments" className="h-5 w-5" />
