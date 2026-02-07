@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Check, AlertTriangle } from "lucide-react";
 import stripeLogo from "@/assets/stripe-logo.svg";
+import StripeBuyButton from "@/components/StripeBuyButton";
 const includedItems = ["GDPR Privacy Policy", "Editorial Policy & Guidelines", "Copyright & Content Policy", "Terms & Conditions", "Legal Disclaimer", "Cookie Policy", "Implementation Guide"];
 const PricingNewsMagazine = () => {
   return <section id="pricing" className="py-20 bg-primary/5">
@@ -37,12 +38,7 @@ const PricingNewsMagazine = () => {
               </div>
 
               <div className="pt-6 border-t flex justify-center">
-                <div className="[&_stripe-buy-button]:scale-125 [&_stripe-buy-button]:origin-center" dangerouslySetInnerHTML={{
-                __html: `<stripe-buy-button
-                      buy-button-id="buy_btn_1SKm3dFXIgtr666GOD7ZP6da"
-                      publishable-key="pk_live_51SK0ndFXIgtr666GrmKudtOsf3HHcaBw06Ei3x8LbGKOYQ3oZeIrmpMpTfoTBJ5c7tPyFfbRC7pugHMC0l6b3ZKP009fgyIrGc"
-                    ></stripe-buy-button>`
-              }} />
+                <StripeBuyButton />
               </div>
 
               <div className="flex items-center justify-center gap-2 mt-4">

@@ -14,6 +14,7 @@ import FooterPremiumDomains from "@/components/premium-domains/FooterPremiumDoma
 import LanguageSwitcher from "@/components/premium-domains/LanguageSwitcher";
 import HiddenInternalLinks from "@/components/HiddenInternalLinks";
 import stripeLogo from "@/assets/stripe-logo.svg";
+import StripeBuyButton from "@/components/StripeBuyButton";
 import { validateContactForm, buildSafeMailtoUrl } from "@/lib/formValidation";
 
 // Premium domain data - can be easily updated
@@ -2009,13 +2010,9 @@ const PremiumDomains = () => {
                         <div className="flex flex-col gap-2 sm:gap-3">
                           <div 
                             className="stripe-button-container flex justify-center"
-                            dangerouslySetInnerHTML={{
-                              __html: `<stripe-buy-button
-                                buy-button-id="${domain.stripeButtonId}"
-                                publishable-key="pk_live_51SK0ndFXIgtr666GrmKudtOsf3HHcaBw06Ei3x8LbGKOYQ3oZeIrmpMpTfoTBJ5c7tPyFfbRC7pugHMC0l6b3ZKP009fgyIrGc"
-                              ></stripe-buy-button>`
-                            }}
-                          />
+                          >
+                            <StripeBuyButton buyButtonId={domain.stripeButtonId as string} className="stripe-button-container flex justify-center" />
+                          </div>
                           <div className="flex flex-col items-center gap-1.5 sm:gap-2 text-center" data-nosnippet>
                             <div className="flex items-center justify-center gap-0.5 sm:gap-1 flex-wrap">
                               {/* Apple Pay */}
