@@ -1,79 +1,42 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { Star } from "lucide-react";
-import nicoleProfile from "@/assets/nicole-profile.png";
-
+const reviews = [{
+  name: "Emma Thompson",
+  role: "Proprietar de Hotel",
+  rating: 5,
+  text: "Conducerea unui hotel boutique necesită protecție juridică adecvată, iar aceste documente au oferit exact ceea ce aveam nevoie. Politica de anulare și termenii și condițiile sunt extrem de clare pentru oaspeți, iar conformitatea GDPR mi-a oferit liniște sufletească. Calitate profesională la o fracțiune din costul unui avocat!"
+}, {
+  name: "Lucas Martinez",
+  role: "Fondator Platformă de Călătorii",
+  rating: 5,
+  text: "Ca administrator al unei platforme de rezervări pentru închirieri de vacanță, aceste șabloane juridice au fost salvatoare. Acoperă totul, de la protecția datelor la declarații de declinare a responsabilității, iar ghidul de implementare a făcut configurarea incredibil de simplă. Cea mai bună investiție pentru afacerea mea de turism!"
+}];
 const ReviewsRO = () => {
-  const reviews = [
-    {
-      name: "Maria A.",
-      role: "Proprietar Site",
-      content: "Aceste documente legale mi-au economisit sute de euro în taxe de avocat. Profesionale și complete.",
-      rating: 5,
-      image: nicoleProfile
-    },
-    {
-      name: "Ion B.",
-      role: "Blogger",
-      content: "Foarte ușor de utilizat și cuprinzător. Site-ul meu este acum complet protejat legal.",
-      rating: 5,
-      image: nicoleProfile
-    },
-    {
-      name: "Andrei C.",
-      role: "Antreprenor Digital",
-      content: "Calitate excelentă a documentelor. Dezvăluirea de afiliere este exact ce aveam nevoie pentru blogul meu.",
-      rating: 5,
-      image: nicoleProfile
-    },
-    {
-      name: "Elena D.",
-      role: "Proprietar E-commerce",
-      content: "Conform GDPR și ușor de implementat. Recomand cu încredere pentru orice site.",
-      rating: 5,
-      image: nicoleProfile
-    }
-  ];
-
-  return (
-    <section className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
-            Ce Spun Clienții Noștri
-          </h2>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            Mii de proprietari de site-uri au încredere în documentele noastre legale
+  return <section className="py-20 bg-background">
+      <div className="container">
+        <div className="text-center mb-12">
+          <Badge variant="outline" className="mb-4">Recenzii</Badge>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Ce Spun Clienții Noștri</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Descoperiți de ce proprietarii de hoteluri și platformele de călătorii au încredere în documentele noastre juridice
           </p>
         </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {reviews.map((review, index) => (
-            <div 
-              key={index}
-              className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              <div className="flex items-center gap-1 mb-4">
-                {[...Array(review.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                ))}
-              </div>
-              <p className="text-slate-600 mb-4 italic">"{review.content}"</p>
-              <div className="flex items-center gap-3">
-                <img 
-                  src={review.image} 
-                  alt={review.name} 
-                  className="w-10 h-10 rounded-full object-cover"
-                />
-                <div>
-                  <p className="font-semibold text-slate-800">{review.name}</p>
-                  <p className="text-sm text-slate-500">{review.role}</p>
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {reviews.map((review, index) => <Card key={index} className="hover:shadow-lg transition-shadow">
+              <CardContent className="pt-6">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(review.rating)].map((_, i) => <Star key={i} className="h-5 w-5 fill-primary text-primary" />)}
                 </div>
-              </div>
-            </div>
-          ))}
+                <p className="text-foreground leading-relaxed mb-6">"{review.text}"</p>
+                <div className="border-t pt-4">
+                  <p className="font-semibold text-foreground">{review.name}</p>
+                  <p className="text-sm text-muted-foreground">{review.role}</p>
+                </div>
+              </CardContent>
+            </Card>)}
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ReviewsRO;
