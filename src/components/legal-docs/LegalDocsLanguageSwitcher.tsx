@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-// URL mapping for all 20 languages with flags in labels
 const languageRoutes: Record<string, { path: string; label: string; flag: string }> = {
   en: {
     path: "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
@@ -101,6 +100,41 @@ const languageRoutes: Record<string, { path: string; label: string; flag: string
     path: "/ko/beobjeok-munseo-affiliate-websaiteu-iyongyakgwan-gaeinjeongbo-cookies",
     label: "🇰🇷 한국어",
     flag: "🇰🇷"
+  },
+  cs: {
+    path: "/cs/pravni-dokumenty-affiliate-web-podminky-zasady-ochrany-soukromi-cookies",
+    label: "🇨🇿 Čeština",
+    flag: "🇨🇿"
+  },
+  hu: {
+    path: "/hu/jogi-dokumentumok-affiliate-weboldal-felhasznalasi-feltetelek-adatvedelem-cookies",
+    label: "🇭🇺 Magyar",
+    flag: "🇭🇺"
+  },
+  uk: {
+    path: "/uk/yurydychni-dokumenty-affiliate-sait-umovy-polityka-konfidentsiinosti-cookies",
+    label: "🇺🇦 Українська",
+    flag: "🇺🇦"
+  },
+  sk: {
+    path: "/sk/pravne-dokumenty-affiliate-web-podmienky-ochrana-sukromia-cookies",
+    label: "🇸🇰 Slovenčina",
+    flag: "🇸🇰"
+  },
+  hr: {
+    path: "/hr/pravni-dokumenti-affiliate-web-stranica-uvjeti-privatnost-kolacici",
+    label: "🇭🇷 Hrvatski",
+    flag: "🇭🇷"
+  },
+  sr: {
+    path: "/sr/pravni-dokumenti-affiliate-sajt-uslovi-politika-privatnosti-kolacici",
+    label: "🇷🇸 Srpski",
+    flag: "🇷🇸"
+  },
+  sl: {
+    path: "/sl/pravni-dokumenti-affiliate-spletna-stran-pogoji-zasebnost-piskotki",
+    label: "🇸🇮 Slovenščina",
+    flag: "🇸🇮"
   }
 };
 

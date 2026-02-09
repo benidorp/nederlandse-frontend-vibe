@@ -75,6 +75,13 @@ import AffiliateHI from "./pages/AffiliateHI";
 import AffiliateJA from "./pages/AffiliateJA";
 import AffiliateAR from "./pages/AffiliateAR";
 import AffiliateKO from "./pages/AffiliateKO";
+import AffiliateCS from "./pages/AffiliateCS";
+import AffiliateHU from "./pages/AffiliateHU";
+import AffiliateUK from "./pages/AffiliateUK";
+import AffiliateSK from "./pages/AffiliateSK";
+import AffiliateHR from "./pages/AffiliateHR";
+import AffiliateSR from "./pages/AffiliateSR";
+import AffiliateSL from "./pages/AffiliateSL";
 
 const queryClient = new QueryClient();
 
@@ -123,6 +130,13 @@ const App = () => (
           <Route path="/ja/houritsumonsho-affiliate-saito-riyoukiyaku-privacy-policy-cookies" element={<AffiliateJA />} />
           <Route path="/ar/wathaeq-qanuniya-mawqi-affiliate-shurut-siyasat-khususiya-cookies" element={<AffiliateAR />} />
           <Route path="/ko/beobjeok-munseo-affiliate-websaiteu-iyongyakgwan-gaeinjeongbo-cookies" element={<AffiliateKO />} />
+          <Route path="/cs/pravni-dokumenty-affiliate-web-podminky-zasady-ochrany-soukromi-cookies" element={<AffiliateCS />} />
+          <Route path="/hu/jogi-dokumentumok-affiliate-weboldal-felhasznalasi-feltetelek-adatvedelem-cookies" element={<AffiliateHU />} />
+          <Route path="/uk/yurydychni-dokumenty-affiliate-sait-umovy-polityka-konfidentsiinosti-cookies" element={<AffiliateUK />} />
+          <Route path="/sk/pravne-dokumenty-affiliate-web-podmienky-ochrana-sukromia-cookies" element={<AffiliateSK />} />
+          <Route path="/hr/pravni-dokumenti-affiliate-web-stranica-uvjeti-privatnost-kolacici" element={<AffiliateHR />} />
+          <Route path="/sr/pravni-dokumenti-affiliate-sajt-uslovi-politika-privatnosti-kolacici" element={<AffiliateSR />} />
+          <Route path="/sl/pravni-dokumenti-affiliate-spletna-stran-pogoji-zasebnost-piskotki" element={<AffiliateSL />} />
           
           {/* VAT Calculator Routes */}
           <Route path="/btw-calculator-wereldwijd" element={<VATCalculator />} />
