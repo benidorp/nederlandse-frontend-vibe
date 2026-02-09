@@ -24,26 +24,26 @@ const Af = () => {
     const pageHeight = doc.internal.pageSize.getHeight();
     const margin = 20;
     const maxLineWidth = pageWidth - margin * 2;
-    
+
     // Clean up the content
     const cleanContent = content
-      .replace(/\[Insert Date\]/g, '')
-      .replace(/\[WebsiteName\]/g, 'Your Website')
-      .replace(/\[Insert Jurisdiction\]/g, '')
-      .replace(/\[Insert Location\]/g, '')
-      .replace(/\[Insert Contact Email\]/g, '')
-      .replace(/\[Insert Business Address\]/g, '');
-    
+      .replace(/\[Insert Date\]/g, "")
+      .replace(/\[WebsiteName\]/g, "Your Website")
+      .replace(/\[Insert Jurisdiction\]/g, "")
+      .replace(/\[Insert Location\]/g, "")
+      .replace(/\[Insert Contact Email\]/g, "")
+      .replace(/\[Insert Business Address\]/g, "");
+
     // Add title
     doc.setFontSize(16);
-    doc.setFont(undefined, 'bold');
+    doc.setFont(undefined, "bold");
     doc.text(title, margin, margin);
-    
+
     // Add content
     doc.setFontSize(9);
-    doc.setFont(undefined, 'normal');
+    doc.setFont(undefined, "normal");
     const lines = doc.splitTextToSize(cleanContent, maxLineWidth);
-    
+
     let y = margin + 10;
     lines.forEach((line: string) => {
       if (y > pageHeight - margin) {
@@ -53,15 +53,15 @@ const Af = () => {
       doc.text(line, margin, y);
       y += 4;
     });
-    
+
     // Download the PDF
-    doc.save(`${title.replace(/\s+/g, '-')}.pdf`);
+    doc.save(`${title.replace(/\s+/g, "-")}.pdf`);
   };
 
   const disclosure = `AFFILIATE DISCLOSURE & LEGAL AGREEMENT
 
-Effective Date: January 1, 2025
-Last Updated: January 27, 2025
+Effective Date: January 1, 2026
+Last Updated: January 7, 2026
 
 Welcome to [WebsiteName].com ("Website," "we," "our," or "us"). We are committed to full transparency regarding our affiliate relationships, user-generated content, intellectual property rights, and all legal obligations across multiple business sectors including e-commerce, dropshipping, travel booking, online learning, streaming media, nonprofit/charity operations, and photography services.
 
@@ -1754,7 +1754,6 @@ Email: [Insert Contact Email]
 Address: [Insert Business Address]
 Website: https://[WebsiteName].com`;
 
-
   const disclaimer = `DISCLAIMER
 
 Effective Date: [Insert Date]
@@ -2155,7 +2154,6 @@ For questions, concerns, or legal inquiries regarding this Disclaimer, please co
 📧 Email: [Insert Contact Email]
 📍 Address: [Insert Business Address]
 🌐 Website: https://[WebsiteName].com`;
-
 
   const cookiePolicy = `COOKIE POLICY
 
@@ -3608,7 +3606,10 @@ For legal advice: Consult a lawyer specialized in internet law`;
     <>
       <Helmet>
         <title>Legal Documents - Terms & Conditions, Privacy Policy, Disclaimer & Cookie Policy</title>
-        <meta name="description" content="Download free legal templates for affiliate websites including terms and conditions, privacy policy, disclaimer, and cookie policy." />
+        <meta
+          name="description"
+          content="Download free legal templates for affiliate websites including terms and conditions, privacy policy, disclaimer, and cookie policy."
+        />
         <meta name="robots" content="noindex, nofollow" />
         <html lang="en" />
         <link rel="canonical" href="https://www.iaee.eu/af" />
@@ -3616,240 +3617,197 @@ For legal advice: Consult a lawyer specialized in internet law`;
       <GTranslateWidget />
       <div className="min-h-screen bg-background">
         <HeaderEN />
-      
-      <main className="container mx-auto px-4 py-12 max-w-4xl">
-        <h1 className="text-4xl font-bold mb-8 text-foreground">Legal Documents</h1>
-        <p className="text-lg mb-12 text-muted-foreground">
-          Download the essential legal documents for your website. Each document is available as a downloadable .txt file.
-        </p>
 
-        {/* Affiliate Disclosure */}
-        <section className="mb-12 p-6 bg-card rounded-lg border border-border shadow-sm">
-          <div className="flex justify-between items-start mb-4">
-            <h2 className="text-2xl font-bold text-foreground">Disclosure</h2>
-            <div className="flex gap-2">
-              <Button
-                onClick={() => downloadTextFile("disclosure.txt", disclosure)}
-                variant="outline"
-                size="sm"
-              >
-                <FileText className="w-4 h-4 mr-2" />
-                .TXT
-              </Button>
-              <Button
-                onClick={() => downloadPDF("Disclosure", disclosure)}
-                variant="default"
-                size="sm"
-              >
-                <Download className="w-4 h-4 mr-2" />
-                PDF
-              </Button>
-            </div>
-          </div>
-          <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
-            {disclosure}
+        <main className="container mx-auto px-4 py-12 max-w-4xl">
+          <h1 className="text-4xl font-bold mb-8 text-foreground">Legal Documents</h1>
+          <p className="text-lg mb-12 text-muted-foreground">
+            Download the essential legal documents for your website. Each document is available as a downloadable .txt
+            file.
           </p>
-        </section>
 
-        {/* Terms and Conditions */}
-        <section className="mb-12 p-6 bg-card rounded-lg border border-border shadow-sm">
-          <div className="flex justify-between items-start mb-4">
-            <h2 className="text-2xl font-bold text-foreground">Terms and Conditions</h2>
-            <div className="flex gap-2">
-              <Button
-                onClick={() => downloadTextFile("terms-and-conditions.txt", termsAndConditions)}
-                variant="outline"
-                size="sm"
-              >
-                <FileText className="w-4 h-4 mr-2" />
-                .TXT
-              </Button>
-              <Button
-                onClick={() => downloadPDF("Terms-and-Conditions", termsAndConditions)}
-                variant="default"
-                size="sm"
-              >
-                <Download className="w-4 h-4 mr-2" />
-                PDF
-              </Button>
+          {/* Affiliate Disclosure */}
+          <section className="mb-12 p-6 bg-card rounded-lg border border-border shadow-sm">
+            <div className="flex justify-between items-start mb-4">
+              <h2 className="text-2xl font-bold text-foreground">Disclosure</h2>
+              <div className="flex gap-2">
+                <Button onClick={() => downloadTextFile("disclosure.txt", disclosure)} variant="outline" size="sm">
+                  <FileText className="w-4 h-4 mr-2" />
+                  .TXT
+                </Button>
+                <Button onClick={() => downloadPDF("Disclosure", disclosure)} variant="default" size="sm">
+                  <Download className="w-4 h-4 mr-2" />
+                  PDF
+                </Button>
+              </div>
             </div>
-          </div>
-          <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
-            {termsAndConditions}
-          </p>
-        </section>
+            <p className="text-muted-foreground whitespace-pre-line leading-relaxed">{disclosure}</p>
+          </section>
 
-        {/* Disclaimer */}
-        <section className="mb-12 p-6 bg-card rounded-lg border border-border shadow-sm">
-          <div className="flex justify-between items-start mb-4">
-            <h2 className="text-2xl font-bold text-foreground">Disclaimer</h2>
-            <div className="flex gap-2">
-              <Button
-                onClick={() => downloadTextFile("disclaimer.txt", disclaimer)}
-                variant="outline"
-                size="sm"
-              >
-                <FileText className="w-4 h-4 mr-2" />
-                .TXT
-              </Button>
-              <Button
-                onClick={() => downloadPDF("Disclaimer", disclaimer)}
-                variant="default"
-                size="sm"
-              >
-                <Download className="w-4 h-4 mr-2" />
-                PDF
-              </Button>
+          {/* Terms and Conditions */}
+          <section className="mb-12 p-6 bg-card rounded-lg border border-border shadow-sm">
+            <div className="flex justify-between items-start mb-4">
+              <h2 className="text-2xl font-bold text-foreground">Terms and Conditions</h2>
+              <div className="flex gap-2">
+                <Button
+                  onClick={() => downloadTextFile("terms-and-conditions.txt", termsAndConditions)}
+                  variant="outline"
+                  size="sm"
+                >
+                  <FileText className="w-4 h-4 mr-2" />
+                  .TXT
+                </Button>
+                <Button
+                  onClick={() => downloadPDF("Terms-and-Conditions", termsAndConditions)}
+                  variant="default"
+                  size="sm"
+                >
+                  <Download className="w-4 h-4 mr-2" />
+                  PDF
+                </Button>
+              </div>
             </div>
-          </div>
-          <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
-            {disclaimer}
-          </p>
-        </section>
+            <p className="text-muted-foreground whitespace-pre-line leading-relaxed">{termsAndConditions}</p>
+          </section>
 
-        {/* Cookie Policy */}
-        <section className="mb-12 p-6 bg-card rounded-lg border border-border shadow-sm">
-          <div className="flex justify-between items-start mb-4">
-            <h2 className="text-2xl font-bold text-foreground">Cookie Policy</h2>
-            <div className="flex gap-2">
-              <Button
-                onClick={() => downloadTextFile("cookie-policy.txt", cookiePolicy)}
-                variant="outline"
-                size="sm"
-              >
-                <FileText className="w-4 h-4 mr-2" />
-                .TXT
-              </Button>
-              <Button
-                onClick={() => downloadPDF("Cookie-Policy", cookiePolicy)}
-                variant="default"
-                size="sm"
-              >
-                <Download className="w-4 h-4 mr-2" />
-                PDF
-              </Button>
+          {/* Disclaimer */}
+          <section className="mb-12 p-6 bg-card rounded-lg border border-border shadow-sm">
+            <div className="flex justify-between items-start mb-4">
+              <h2 className="text-2xl font-bold text-foreground">Disclaimer</h2>
+              <div className="flex gap-2">
+                <Button onClick={() => downloadTextFile("disclaimer.txt", disclaimer)} variant="outline" size="sm">
+                  <FileText className="w-4 h-4 mr-2" />
+                  .TXT
+                </Button>
+                <Button onClick={() => downloadPDF("Disclaimer", disclaimer)} variant="default" size="sm">
+                  <Download className="w-4 h-4 mr-2" />
+                  PDF
+                </Button>
+              </div>
             </div>
-          </div>
-          <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
-            {cookiePolicy}
-          </p>
-        </section>
+            <p className="text-muted-foreground whitespace-pre-line leading-relaxed">{disclaimer}</p>
+          </section>
 
-        {/* Privacy Policy */}
-        <section className="mb-12 p-6 bg-card rounded-lg border border-border shadow-sm">
-          <div className="flex justify-between items-start mb-4">
-            <h2 className="text-2xl font-bold text-foreground">Privacy Policy</h2>
-            <div className="flex gap-2">
-              <Button
-                onClick={() => downloadTextFile("privacy-policy.txt", privacyPolicy)}
-                variant="outline"
-                size="sm"
-              >
-                <FileText className="w-4 h-4 mr-2" />
-                .TXT
-              </Button>
-              <Button
-                onClick={() => downloadPDF("Privacy-Policy", privacyPolicy)}
-                variant="default"
-                size="sm"
-              >
-                <Download className="w-4 h-4 mr-2" />
-                PDF
-              </Button>
+          {/* Cookie Policy */}
+          <section className="mb-12 p-6 bg-card rounded-lg border border-border shadow-sm">
+            <div className="flex justify-between items-start mb-4">
+              <h2 className="text-2xl font-bold text-foreground">Cookie Policy</h2>
+              <div className="flex gap-2">
+                <Button onClick={() => downloadTextFile("cookie-policy.txt", cookiePolicy)} variant="outline" size="sm">
+                  <FileText className="w-4 h-4 mr-2" />
+                  .TXT
+                </Button>
+                <Button onClick={() => downloadPDF("Cookie-Policy", cookiePolicy)} variant="default" size="sm">
+                  <Download className="w-4 h-4 mr-2" />
+                  PDF
+                </Button>
+              </div>
             </div>
-          </div>
-          <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
-            {privacyPolicy}
-          </p>
-        </section>
+            <p className="text-muted-foreground whitespace-pre-line leading-relaxed">{cookiePolicy}</p>
+          </section>
 
-        {/* Affiliate Disclaimer Variations */}
-        <section className="mb-12 p-6 bg-card rounded-lg border border-border shadow-sm">
-          <div className="flex justify-between items-start mb-4">
-            <h2 className="text-2xl font-bold text-foreground">Affiliate Disclaimer Variations</h2>
-            <div className="flex gap-2">
-              <Button
-                onClick={() => downloadTextFile("affiliate-disclaimer-variations.txt", affiliateDisclaimerVariations)}
-                variant="outline"
-                size="sm"
-              >
-                <FileText className="w-4 h-4 mr-2" />
-                .TXT
-              </Button>
-              <Button
-                onClick={() => downloadPDF("Affiliate-Disclaimer-Variations", affiliateDisclaimerVariations)}
-                variant="default"
-                size="sm"
-              >
-                <Download className="w-4 h-4 mr-2" />
-                PDF
-              </Button>
+          {/* Privacy Policy */}
+          <section className="mb-12 p-6 bg-card rounded-lg border border-border shadow-sm">
+            <div className="flex justify-between items-start mb-4">
+              <h2 className="text-2xl font-bold text-foreground">Privacy Policy</h2>
+              <div className="flex gap-2">
+                <Button
+                  onClick={() => downloadTextFile("privacy-policy.txt", privacyPolicy)}
+                  variant="outline"
+                  size="sm"
+                >
+                  <FileText className="w-4 h-4 mr-2" />
+                  .TXT
+                </Button>
+                <Button onClick={() => downloadPDF("Privacy-Policy", privacyPolicy)} variant="default" size="sm">
+                  <Download className="w-4 h-4 mr-2" />
+                  PDF
+                </Button>
+              </div>
             </div>
-          </div>
-          <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
-            {affiliateDisclaimerVariations}
-          </p>
-        </section>
+            <p className="text-muted-foreground whitespace-pre-line leading-relaxed">{privacyPolicy}</p>
+          </section>
 
-        {/* International Photography Terms */}
-        <section className="mb-12 p-6 bg-card rounded-lg border border-border shadow-sm">
-          <div className="flex justify-between items-start mb-4">
-            <h2 className="text-2xl font-bold text-foreground">International Photography Terms & Conditions</h2>
-            <div className="flex gap-2">
-              <Button
-                onClick={() => downloadTextFile("photography-terms.txt", photographyTerms)}
-                variant="outline"
-                size="sm"
-              >
-                <FileText className="w-4 h-4 mr-2" />
-                .TXT
-              </Button>
-              <Button
-                onClick={() => downloadPDF("International-Photography-Terms", photographyTerms)}
-                variant="default"
-                size="sm"
-              >
-                <Download className="w-4 h-4 mr-2" />
-                PDF
-              </Button>
+          {/* Affiliate Disclaimer Variations */}
+          <section className="mb-12 p-6 bg-card rounded-lg border border-border shadow-sm">
+            <div className="flex justify-between items-start mb-4">
+              <h2 className="text-2xl font-bold text-foreground">Affiliate Disclaimer Variations</h2>
+              <div className="flex gap-2">
+                <Button
+                  onClick={() => downloadTextFile("affiliate-disclaimer-variations.txt", affiliateDisclaimerVariations)}
+                  variant="outline"
+                  size="sm"
+                >
+                  <FileText className="w-4 h-4 mr-2" />
+                  .TXT
+                </Button>
+                <Button
+                  onClick={() => downloadPDF("Affiliate-Disclaimer-Variations", affiliateDisclaimerVariations)}
+                  variant="default"
+                  size="sm"
+                >
+                  <Download className="w-4 h-4 mr-2" />
+                  PDF
+                </Button>
+              </div>
             </div>
-          </div>
-          <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
-            {photographyTerms}
-          </p>
-        </section>
+            <p className="text-muted-foreground whitespace-pre-line leading-relaxed">{affiliateDisclaimerVariations}</p>
+          </section>
 
-        {/* Implementation Guide */}
-        <section className="mb-12 p-6 bg-primary/5 rounded-lg border-2 border-primary/20 shadow-sm">
-          <div className="flex justify-between items-start mb-4">
-            <h2 className="text-2xl font-bold text-foreground">Implementation Guide</h2>
-            <div className="flex gap-2">
-              <Button
-                onClick={() => downloadTextFile("implementation-guide.txt", implementationGuide)}
-                variant="outline"
-                size="sm"
-              >
-                <FileText className="w-4 h-4 mr-2" />
-                .TXT
-              </Button>
-              <Button
-                onClick={() => downloadPDF("Implementation-Guide", implementationGuide)}
-                variant="default"
-                size="sm"
-              >
-                <Download className="w-4 h-4 mr-2" />
-                PDF
-              </Button>
+          {/* International Photography Terms */}
+          <section className="mb-12 p-6 bg-card rounded-lg border border-border shadow-sm">
+            <div className="flex justify-between items-start mb-4">
+              <h2 className="text-2xl font-bold text-foreground">International Photography Terms & Conditions</h2>
+              <div className="flex gap-2">
+                <Button
+                  onClick={() => downloadTextFile("photography-terms.txt", photographyTerms)}
+                  variant="outline"
+                  size="sm"
+                >
+                  <FileText className="w-4 h-4 mr-2" />
+                  .TXT
+                </Button>
+                <Button
+                  onClick={() => downloadPDF("International-Photography-Terms", photographyTerms)}
+                  variant="default"
+                  size="sm"
+                >
+                  <Download className="w-4 h-4 mr-2" />
+                  PDF
+                </Button>
+              </div>
             </div>
-          </div>
-          <div className="prose prose-sm max-w-none text-foreground whitespace-pre-wrap">
-            {implementationGuide}
-          </div>
-        </section>
-      </main>
-      
-      <div className="gtranslate_wrapper"></div>
-      <FooterEN />
+            <p className="text-muted-foreground whitespace-pre-line leading-relaxed">{photographyTerms}</p>
+          </section>
+
+          {/* Implementation Guide */}
+          <section className="mb-12 p-6 bg-primary/5 rounded-lg border-2 border-primary/20 shadow-sm">
+            <div className="flex justify-between items-start mb-4">
+              <h2 className="text-2xl font-bold text-foreground">Implementation Guide</h2>
+              <div className="flex gap-2">
+                <Button
+                  onClick={() => downloadTextFile("implementation-guide.txt", implementationGuide)}
+                  variant="outline"
+                  size="sm"
+                >
+                  <FileText className="w-4 h-4 mr-2" />
+                  .TXT
+                </Button>
+                <Button
+                  onClick={() => downloadPDF("Implementation-Guide", implementationGuide)}
+                  variant="default"
+                  size="sm"
+                >
+                  <Download className="w-4 h-4 mr-2" />
+                  PDF
+                </Button>
+              </div>
+            </div>
+            <div className="prose prose-sm max-w-none text-foreground whitespace-pre-wrap">{implementationGuide}</div>
+          </section>
+        </main>
+
+        <div className="gtranslate_wrapper"></div>
+        <FooterEN />
       </div>
     </>
   );
