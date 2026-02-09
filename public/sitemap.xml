@@ -1,140 +1,409 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
+
   <!-- ============================================== -->
-  <!-- ESSENTIAL LEGAL DOCUMENTS FOR WEBSITES        -->
+  <!-- ESSENTIAL LEGAL DOCUMENTS - NICHE PAGES        -->
   <!-- ============================================== -->
-  
-  <!-- Affiliate Website Legal Documents (NL) -->
+
   <url>
     <loc>https://www.iaee.eu/affiliate-website-bescherming-essentiele-juridische-documenten-algemene-voorwaarden-privacyverklaring-disclosure-cookiebeleid</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Affiliate Website Legal Documents (EN) -->
+
   <url>
     <loc>https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Affiliate Website Legal Documents (ES) -->
-  <url>
-    <loc>https://www.iaee.eu/es/documentos-legales-sitios-web-afiliados-terminos-condiciones-politica-privacidad-divulgacion-cookies</loc>
-    <lastmod>2026-01-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  <!-- Photography Legal Documents -->
+
   <url>
     <loc>https://www.iaee.eu/photography-legal-documents-terms-conditions-privacy-policy-contract-copyright-protection</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Travel & Hotel Legal Documents -->
+
   <url>
     <loc>https://www.iaee.eu/must-have-legal-protection-for-every-hotel-and-travel-website-terms-conditions-privacy-policy-cancellation-policy-disclaimer</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- E-commerce Legal Documents -->
+
   <url>
     <loc>https://www.iaee.eu/essential-legal-documents-ecommerce-website-terms-conditions-privacy-policy-return-policy-shipping-policy</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Online Shop / Webshop Legal Documents -->
+
   <url>
     <loc>https://www.iaee.eu/webshop-online-business-legal-protection-terms-privacy-policy-cookie-policy-gdpr-compliance</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Dropshipping Legal Documents -->
+
   <url>
     <loc>https://www.iaee.eu/dropshipping-business-legal-protection-terms-conditions-privacy-policy-supplier-agreement-refund-policy</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- E-learning Legal Documents -->
+
   <url>
     <loc>https://www.iaee.eu/elearning-platform-legal-documents-terms-privacy-policy-gdpr-compliance</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Nonprofit Legal Documents -->
+
   <url>
     <loc>https://www.iaee.eu/nonprofit-charity-legal-documents-donation-terms-privacy-policy</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Streaming Media Legal Documents -->
+
   <url>
     <loc>https://www.iaee.eu/streaming-media-legal-documents-terms-conditions-privacy-policy-dmca-content-license</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Comparison/Review Website Legal Documents -->
+
   <url>
     <loc>https://www.iaee.eu/comparison-review-website-legal-documents-terms-privacy-affiliate-disclosure-disclaimer</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- News/Magazine Legal Documents -->
+
   <url>
     <loc>https://www.iaee.eu/news-magazine-legal-documents-terms-conditions-privacy-policy-copyright-editorial-policy</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Freelancers Legal Documents -->
+
   <url>
     <loc>https://www.iaee.eu/freelancers-self-employed-legal-documents-contracts-terms-privacy-policy</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Policy Page -->
+
   <url>
     <loc>https://www.iaee.eu/policy</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
+
   <!-- ============================================== -->
-  <!-- PREMIUM DOMAINS - ALL 13 LANGUAGE VERSIONS    -->
-  <!-- With full hreflang annotations                -->
+  <!-- ESSENTIAL LEGAL DOCUMENTS - 27 LANGUAGES       -->
+  <!-- With full hreflang annotations                 -->
   <!-- ============================================== -->
-  
+
+  <!-- Spanish (ES) -->
+  <url>
+    <loc>https://www.iaee.eu/es/documentos-legales-sitios-web-afiliados-terminos-condiciones-politica-privacidad-divulgacion-cookies</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/es/documentos-legales-sitios-web-afiliados-terminos-condiciones-politica-privacidad-divulgacion-cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+  </url>
+
+  <!-- German (DE) -->
+  <url>
+    <loc>https://www.iaee.eu/de/wesentliche-rechtliche-dokumente-affiliate-website-agb-datenschutz-impressum-cookies</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/de/wesentliche-rechtliche-dokumente-affiliate-website-agb-datenschutz-impressum-cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+  </url>
+
+  <!-- French (FR) -->
+  <url>
+    <loc>https://www.iaee.eu/fr/documents-juridiques-essentiels-site-affiliation-conditions-politique-confidentialite-mentions-legales</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/fr/documents-juridiques-essentiels-site-affiliation-conditions-politique-confidentialite-mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+  </url>
+
+  <!-- Italian (IT) -->
+  <url>
+    <loc>https://www.iaee.eu/it/documenti-legali-essenziali-sito-affiliazione-termini-privacy-cookie</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/it/documenti-legali-essenziali-sito-affiliazione-termini-privacy-cookie" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+  </url>
+
+  <!-- Portuguese (PT) -->
+  <url>
+    <loc>https://www.iaee.eu/pt/documentos-legais-essenciais-site-afiliados-termos-privacidade-cookies</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.iaee.eu/pt/documentos-legais-essenciais-site-afiliados-termos-privacidade-cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+  </url>
+
+  <!-- Swedish (SV) -->
+  <url>
+    <loc>https://www.iaee.eu/sv/juridiska-dokument-affiliate-webbplats-villkor-integritetspolicy-cookies</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.iaee.eu/sv/juridiska-dokument-affiliate-webbplats-villkor-integritetspolicy-cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+  </url>
+
+  <!-- Polish (PL) -->
+  <url>
+    <loc>https://www.iaee.eu/pl/dokumenty-prawne-strona-afiliacyjna-regulamin-polityka-prywatnosci-cookies</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/pl/dokumenty-prawne-strona-afiliacyjna-regulamin-polityka-prywatnosci-cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+  </url>
+
+  <!-- Greek (EL) -->
+  <url>
+    <loc>https://www.iaee.eu/el/nomika-eggrafa-affiliate-website-oroi-politiki-aporritou-cookies</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.iaee.eu/el/nomika-eggrafa-affiliate-website-oroi-politiki-aporritou-cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+  </url>
+
+  <!-- Danish (DA) -->
+  <url>
+    <loc>https://www.iaee.eu/da/juridiske-dokumenter-affiliate-website-vilkaar-privatlivspolitik-cookies</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.iaee.eu/da/juridiske-dokumenter-affiliate-website-vilkaar-privatlivspolitik-cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+  </url>
+
+  <!-- Norwegian (NO) -->
+  <url>
+    <loc>https://www.iaee.eu/no/juridiske-dokumenter-affiliate-nettsted-vilkaar-personvern-cookies</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.iaee.eu/no/juridiske-dokumenter-affiliate-nettsted-vilkaar-personvern-cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+  </url>
+
+  <!-- Romanian (RO) -->
+  <url>
+    <loc>https://www.iaee.eu/ro/documente-legale-site-afiliat-termeni-politica-confidentialitate-cookies</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.iaee.eu/ro/documente-legale-site-afiliat-termeni-politica-confidentialitate-cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+  </url>
+
+  <!-- Bulgarian (BG) -->
+  <url>
+    <loc>https://www.iaee.eu/bg/pravni-dokumenti-affiliate-sait-usloviya-politika-poveritelnost-biskvitki</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://www.iaee.eu/bg/pravni-dokumenti-affiliate-sait-usloviya-politika-poveritelnost-biskvitki" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+  </url>
+
+  <!-- Finnish (FI) -->
+  <url>
+    <loc>https://www.iaee.eu/fi/juridiset-asiakirjat-affiliate-sivusto-ehdot-tietosuojakaytanto-evasteet</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://www.iaee.eu/fi/juridiset-asiakirjat-affiliate-sivusto-ehdot-tietosuojakaytanto-evasteet" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+  </url>
+
+  <!-- Russian (RU) -->
+  <url>
+    <loc>https://www.iaee.eu/ru/yuridicheskie-dokumenty-affiliate-sait-usloviya-politika-konfidencialnosti-cookies</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.iaee.eu/ru/yuridicheskie-dokumenty-affiliate-sait-usloviya-politika-konfidencialnosti-cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+  </url>
+
+  <!-- Chinese (ZH) -->
+  <url>
+    <loc>https://www.iaee.eu/zh/falv-wenjian-lianmeng-wangzhan-tiaokuan-yinsi-zhengce-cookies</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.iaee.eu/zh/falv-wenjian-lianmeng-wangzhan-tiaokuan-yinsi-zhengce-cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+  </url>
+
+  <!-- Hindi (HI) -->
+  <url>
+    <loc>https://www.iaee.eu/hi/kanooni-dastavez-affiliate-website-niyam-gopyata-niti-cookies</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/hi/kanooni-dastavez-affiliate-website-niyam-gopyata-niti-cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+  </url>
+
+  <!-- Japanese (JA) -->
+  <url>
+    <loc>https://www.iaee.eu/ja/houritsumonsho-affiliate-saito-riyoukiyaku-privacy-policy-cookies</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.iaee.eu/ja/houritsumonsho-affiliate-saito-riyoukiyaku-privacy-policy-cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+  </url>
+
+  <!-- Arabic (AR) -->
+  <url>
+    <loc>https://www.iaee.eu/ar/wathaeq-qanuniya-mawqi-affiliate-shurut-siyasat-khususiya-cookies</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.iaee.eu/ar/wathaeq-qanuniya-mawqi-affiliate-shurut-siyasat-khususiya-cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+  </url>
+
+  <!-- Korean (KO) -->
+  <url>
+    <loc>https://www.iaee.eu/ko/beobjeok-munseo-affiliate-websaiteu-iyongyakgwan-gaeinjeongbo-cookies</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.iaee.eu/ko/beobjeok-munseo-affiliate-websaiteu-iyongyakgwan-gaeinjeongbo-cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+  </url>
+
+  <!-- Czech (CS) -->
+  <url>
+    <loc>https://www.iaee.eu/cs/pravni-dokumenty-affiliate-web-podminky-zasady-ochrany-soukromi-cookies</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://www.iaee.eu/cs/pravni-dokumenty-affiliate-web-podminky-zasady-ochrany-soukromi-cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+  </url>
+
+  <!-- Hungarian (HU) -->
+  <url>
+    <loc>https://www.iaee.eu/hu/jogi-dokumentumok-affiliate-weboldal-felhasznalasi-feltetelek-adatvedelem-cookies</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://www.iaee.eu/hu/jogi-dokumentumok-affiliate-weboldal-felhasznalasi-feltetelek-adatvedelem-cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+  </url>
+
+  <!-- Ukrainian (UK) -->
+  <url>
+    <loc>https://www.iaee.eu/uk/yurydychni-dokumenty-affiliate-sait-umovy-polityka-konfidentsiinosti-cookies</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://www.iaee.eu/uk/yurydychni-dokumenty-affiliate-sait-umovy-polityka-konfidentsiinosti-cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+  </url>
+
+  <!-- Slovak (SK) -->
+  <url>
+    <loc>https://www.iaee.eu/sk/pravne-dokumenty-affiliate-web-podmienky-ochrana-sukromia-cookies</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://www.iaee.eu/sk/pravne-dokumenty-affiliate-web-podmienky-ochrana-sukromia-cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+  </url>
+
+  <!-- Croatian (HR) -->
+  <url>
+    <loc>https://www.iaee.eu/hr/pravni-dokumenti-affiliate-web-stranica-uvjeti-privatnost-kolacici</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://www.iaee.eu/hr/pravni-dokumenti-affiliate-web-stranica-uvjeti-privatnost-kolacici" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+  </url>
+
+  <!-- Serbian (SR) -->
+  <url>
+    <loc>https://www.iaee.eu/sr/pravni-dokumenti-affiliate-sajt-uslovi-politika-privatnosti-kolacici</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://www.iaee.eu/sr/pravni-dokumenti-affiliate-sajt-uslovi-politika-privatnosti-kolacici" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+  </url>
+
+  <!-- Slovenian (SL) -->
+  <url>
+    <loc>https://www.iaee.eu/sl/pravni-dokumenti-affiliate-spletna-stran-pogoji-zasebnost-piskotki</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://www.iaee.eu/sl/pravni-dokumenti-affiliate-spletna-stran-pogoji-zasebnost-piskotki" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+  </url>
+
+  <!-- ============================================== -->
+  <!-- PREMIUM DOMAINS - ALL 13 LANGUAGE VERSIONS     -->
+  <!-- With full hreflang annotations                 -->
+  <!-- ============================================== -->
+
   <!-- Premium Domains - Dutch (NL) -->
   <url>
     <loc>https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
@@ -152,11 +421,11 @@
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
   </url>
-  
+
   <!-- Premium Domains - English (EN) -->
   <url>
     <loc>https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
@@ -174,11 +443,11 @@
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
   </url>
-  
+
   <!-- Premium Domains - German (DE) -->
   <url>
     <loc>https://www.iaee.eu/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
@@ -196,11 +465,11 @@
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
   </url>
-  
+
   <!-- Premium Domains - French (FR) -->
   <url>
     <loc>https://www.iaee.eu/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
@@ -218,526 +487,236 @@
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
   </url>
-  
+
   <!-- Premium Domains - Spanish (ES) -->
   <url>
     <loc>https://www.iaee.eu/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.iaee.eu/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.iaee.eu/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yuksek-otorite-seo-degeri" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
   </url>
-  
+
   <!-- Premium Domains - Italian (IT) -->
   <url>
     <loc>https://www.iaee.eu/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" />
     <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.iaee.eu/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.iaee.eu/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yuksek-otorite-seo-degeri" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
   </url>
-  
-  <!-- Premium Domains - Portuguese (PT) -->
-  <url>
-    <loc>https://www.iaee.eu/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo</loc>
-    <lastmod>2026-01-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.iaee.eu/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.iaee.eu/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yuksek-otorite-seo-degeri" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
-  </url>
-  
+
   <!-- Premium Domains - Polish (PL) -->
   <url>
     <loc>https://www.iaee.eu/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.iaee.eu/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.iaee.eu/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yuksek-otorite-seo-degeri" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
   </url>
-  
+
+  <!-- Premium Domains - Portuguese (PT) -->
+  <url>
+    <loc>https://www.iaee.eu/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.iaee.eu/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
+  </url>
+
   <!-- Premium Domains - Japanese (JA) -->
   <url>
     <loc>https://www.iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.iaee.eu/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.iaee.eu/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yuksek-otorite-seo-degeri" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
   </url>
-  
+
   <!-- Premium Domains - Chinese (ZH) -->
   <url>
     <loc>https://www.iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.iaee.eu/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://www.iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.iaee.eu/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yuksek-otorite-seo-degeri" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
   </url>
-  
+
   <!-- Premium Domains - Arabic (AR) -->
   <url>
     <loc>https://www.iaee.eu/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.iaee.eu/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.iaee.eu/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yuksek-otorite-seo-degeri" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
   </url>
-  
+
   <!-- Premium Domains - Turkish (TR) -->
   <url>
     <loc>https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yuksek-otorite-seo-degeri</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.iaee.eu/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.iaee.eu/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yuksek-otorite-seo-degeri" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
   </url>
-  
+
   <!-- Premium Domains - Hindi (HI) -->
   <url>
     <loc>https://www.iaee.eu/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/expireddomainnames/it/acquista-domini-premium-alta-autorita-valore-seo" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.iaee.eu/expireddomainnames/pt/comprar-dominios-premium-alta-autoridade-valor-seo" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/expireddomainnames/pl/kup-domeny-premium-wysoki-autorytet-wartosc-seo" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.iaee.eu/expireddomainnames/ja/puremiamudomein-kounyuu-seo-kachi" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.iaee.eu/expireddomainnames/zh/gou-mai-gao-quan-zhong-you-zhi-yu-ming-seo-jia-zhi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.iaee.eu/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yuksek-otorite-seo-degeri" />
     <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" />
   </url>
-  
+
   <!-- ============================================== -->
-  <!-- PREMIUM DOMAINS LEGAL PAGES - ALL LANGUAGES   -->
-  <!-- With full hreflang annotations                -->
+  <!-- PREMIUM DOMAINS LEGAL - ALL 13 LANGUAGES       -->
   <!-- ============================================== -->
-  
-  <!-- Premium Domains Legal - Dutch (NL) -->
+
   <url>
     <loc>https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-juridische-documenten</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/expireddomainnames/de/rechtliche-dokumente-premium-domains" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/expireddomainnames/fr/documents-juridiques-domaines-premium" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/expireddomainnames/es/documentos-legales-dominios-premium" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/expireddomainnames/it/documenti-legali-domini-premium" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.iaee.eu/expireddomainnames/pt/documentos-legais-dominios-premium" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/expireddomainnames/pl/dokumenty-prawne-domeny-premium" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.iaee.eu/expireddomainnames/ja/houritsumonsho-puremiamudomein" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.iaee.eu/expireddomainnames/zh/fa-lv-wen-jian-you-zhi-yu-ming" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.iaee.eu/expireddomainnames/ar/wathaeq-qanuniya-nitaqat-mumayaza" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yasal-belgeler" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kanooni-dastavez" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
   </url>
-  
-  <!-- Premium Domains Legal - English (EN) -->
   <url>
     <loc>https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/expireddomainnames/de/rechtliche-dokumente-premium-domains" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/expireddomainnames/fr/documents-juridiques-domaines-premium" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/expireddomainnames/es/documentos-legales-dominios-premium" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/expireddomainnames/it/documenti-legali-domini-premium" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.iaee.eu/expireddomainnames/pt/documentos-legais-dominios-premium" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/expireddomainnames/pl/dokumenty-prawne-domeny-premium" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.iaee.eu/expireddomainnames/ja/houritsumonsho-puremiamudomein" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.iaee.eu/expireddomainnames/zh/fa-lv-wen-jian-you-zhi-yu-ming" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.iaee.eu/expireddomainnames/ar/wathaeq-qanuniya-nitaqat-mumayaza" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yasal-belgeler" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kanooni-dastavez" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
   </url>
-  
-  <!-- Premium Domains Legal - German (DE) -->
   <url>
     <loc>https://www.iaee.eu/expireddomainnames/de/rechtliche-dokumente-premium-domains</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/expireddomainnames/de/rechtliche-dokumente-premium-domains" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/expireddomainnames/fr/documents-juridiques-domaines-premium" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/expireddomainnames/es/documentos-legales-dominios-premium" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/expireddomainnames/it/documenti-legali-domini-premium" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.iaee.eu/expireddomainnames/pt/documentos-legais-dominios-premium" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/expireddomainnames/pl/dokumenty-prawne-domeny-premium" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.iaee.eu/expireddomainnames/ja/houritsumonsho-puremiamudomein" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.iaee.eu/expireddomainnames/zh/fa-lv-wen-jian-you-zhi-yu-ming" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.iaee.eu/expireddomainnames/ar/wathaeq-qanuniya-nitaqat-mumayaza" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yasal-belgeler" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kanooni-dastavez" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
   </url>
-  
-  <!-- Premium Domains Legal - French (FR) -->
   <url>
     <loc>https://www.iaee.eu/expireddomainnames/fr/documents-juridiques-domaines-premium</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/expireddomainnames/de/rechtliche-dokumente-premium-domains" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/expireddomainnames/fr/documents-juridiques-domaines-premium" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/expireddomainnames/es/documentos-legales-dominios-premium" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/expireddomainnames/it/documenti-legali-domini-premium" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.iaee.eu/expireddomainnames/pt/documentos-legais-dominios-premium" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/expireddomainnames/pl/dokumenty-prawne-domeny-premium" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.iaee.eu/expireddomainnames/ja/houritsumonsho-puremiamudomein" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.iaee.eu/expireddomainnames/zh/fa-lv-wen-jian-you-zhi-yu-ming" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.iaee.eu/expireddomainnames/ar/wathaeq-qanuniya-nitaqat-mumayaza" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yasal-belgeler" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kanooni-dastavez" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
   </url>
-  
-  <!-- Premium Domains Legal - Spanish (ES) -->
   <url>
     <loc>https://www.iaee.eu/expireddomainnames/es/documentos-legales-dominios-premium</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/expireddomainnames/de/rechtliche-dokumente-premium-domains" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/expireddomainnames/fr/documents-juridiques-domaines-premium" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/expireddomainnames/es/documentos-legales-dominios-premium" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/expireddomainnames/it/documenti-legali-domini-premium" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.iaee.eu/expireddomainnames/pt/documentos-legais-dominios-premium" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/expireddomainnames/pl/dokumenty-prawne-domeny-premium" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.iaee.eu/expireddomainnames/ja/houritsumonsho-puremiamudomein" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.iaee.eu/expireddomainnames/zh/fa-lv-wen-jian-you-zhi-yu-ming" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.iaee.eu/expireddomainnames/ar/wathaeq-qanuniya-nitaqat-mumayaza" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yasal-belgeler" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kanooni-dastavez" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
   </url>
-  
-  <!-- Premium Domains Legal - Italian (IT) -->
   <url>
     <loc>https://www.iaee.eu/expireddomainnames/it/documenti-legali-domini-premium</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/expireddomainnames/de/rechtliche-dokumente-premium-domains" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/expireddomainnames/fr/documents-juridiques-domaines-premium" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/expireddomainnames/es/documentos-legales-dominios-premium" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/expireddomainnames/it/documenti-legali-domini-premium" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.iaee.eu/expireddomainnames/pt/documentos-legais-dominios-premium" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/expireddomainnames/pl/dokumenty-prawne-domeny-premium" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.iaee.eu/expireddomainnames/ja/houritsumonsho-puremiamudomein" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.iaee.eu/expireddomainnames/zh/fa-lv-wen-jian-you-zhi-yu-ming" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.iaee.eu/expireddomainnames/ar/wathaeq-qanuniya-nitaqat-mumayaza" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yasal-belgeler" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kanooni-dastavez" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
   </url>
-  
-  <!-- Premium Domains Legal - Portuguese (PT) -->
-  <url>
-    <loc>https://www.iaee.eu/expireddomainnames/pt/documentos-legais-dominios-premium</loc>
-    <lastmod>2026-01-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/expireddomainnames/de/rechtliche-dokumente-premium-domains" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/expireddomainnames/fr/documents-juridiques-domaines-premium" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/expireddomainnames/es/documentos-legales-dominios-premium" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/expireddomainnames/it/documenti-legali-domini-premium" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.iaee.eu/expireddomainnames/pt/documentos-legais-dominios-premium" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/expireddomainnames/pl/dokumenty-prawne-domeny-premium" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.iaee.eu/expireddomainnames/ja/houritsumonsho-puremiamudomein" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.iaee.eu/expireddomainnames/zh/fa-lv-wen-jian-you-zhi-yu-ming" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.iaee.eu/expireddomainnames/ar/wathaeq-qanuniya-nitaqat-mumayaza" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yasal-belgeler" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kanooni-dastavez" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
-  </url>
-  
-  <!-- Premium Domains Legal - Polish (PL) -->
   <url>
     <loc>https://www.iaee.eu/expireddomainnames/pl/dokumenty-prawne-domeny-premium</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/expireddomainnames/de/rechtliche-dokumente-premium-domains" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/expireddomainnames/fr/documents-juridiques-domaines-premium" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/expireddomainnames/es/documentos-legales-dominios-premium" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/expireddomainnames/it/documenti-legali-domini-premium" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.iaee.eu/expireddomainnames/pt/documentos-legais-dominios-premium" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/expireddomainnames/pl/dokumenty-prawne-domeny-premium" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.iaee.eu/expireddomainnames/ja/houritsumonsho-puremiamudomein" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.iaee.eu/expireddomainnames/zh/fa-lv-wen-jian-you-zhi-yu-ming" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.iaee.eu/expireddomainnames/ar/wathaeq-qanuniya-nitaqat-mumayaza" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yasal-belgeler" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kanooni-dastavez" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
   </url>
-  
-  <!-- Premium Domains Legal - Japanese (JA) -->
+  <url>
+    <loc>https://www.iaee.eu/expireddomainnames/pt/documentos-legais-dominios-premium</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://www.iaee.eu/expireddomainnames/ja/houritsumonsho-puremiamudomein</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/expireddomainnames/de/rechtliche-dokumente-premium-domains" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/expireddomainnames/fr/documents-juridiques-domaines-premium" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/expireddomainnames/es/documentos-legales-dominios-premium" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/expireddomainnames/it/documenti-legali-domini-premium" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.iaee.eu/expireddomainnames/pt/documentos-legais-dominios-premium" />
-    <xtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/expireddomainnames/pl/dokumenty-prawne-domeny-premium" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.iaee.eu/expireddomainnames/ja/houritsumonsho-puremiamudomein" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.iaee.eu/expireddomainnames/zh/fa-lv-wen-jian-you-zhi-yu-ming" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.iaee.eu/expireddomainnames/ar/wathaeq-qanuniya-nitaqat-mumayaza" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yasal-belgeler" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kanooni-dastavez" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
   </url>
-  
-  <!-- Premium Domains Legal - Chinese (ZH) -->
   <url>
     <loc>https://www.iaee.eu/expireddomainnames/zh/fa-lv-wen-jian-you-zhi-yu-ming</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/expireddomainnames/de/rechtliche-dokumente-premium-domains" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/expireddomainnames/fr/documents-juridiques-domaines-premium" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/expireddomainnames/es/documentos-legales-dominios-premium" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/expireddomainnames/it/documenti-legali-domini-premium" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.iaee.eu/expireddomainnames/pt/documentos-legais-dominios-premium" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/expireddomainnames/pl/dokumenty-prawne-domeny-premium" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.iaee.eu/expireddomainnames/ja/houritsumonsho-puremiamudomein" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.iaee.eu/expireddomainnames/zh/fa-lv-wen-jian-you-zhi-yu-ming" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.iaee.eu/expireddomainnames/ar/wathaeq-qanuniya-nitaqat-mumayaza" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yasal-belgeler" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kanooni-dastavez" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
   </url>
-  
-  <!-- Premium Domains Legal - Arabic (AR) -->
   <url>
     <loc>https://www.iaee.eu/expireddomainnames/ar/wathaeq-qanuniya-nitaqat-mumayaza</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/expireddomainnames/de/rechtliche-dokumente-premium-domains" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/expireddomainnames/fr/documents-juridiques-domaines-premium" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/expireddomainnames/es/documentos-legales-dominios-premium" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/expireddomainnames/it/documenti-legali-domini-premium" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.iaee.eu/expireddomainnames/pt/documentos-legais-dominios-premium" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/expireddomainnames/pl/dokumenty-prawne-domeny-premium" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.iaee.eu/expireddomainnames/ja/houritsumonsho-puremiamudomein" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.iaee.eu/expireddomainnames/zh/fa-lv-wen-jian-you-zhi-yu-ming" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.iaee.eu/expireddomainnames/ar/wathaeq-qanuniya-nitaqat-mumayaza" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yasal-belgeler" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kanooni-dastavez" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
   </url>
-  
-  <!-- Premium Domains Legal - Turkish (TR) -->
   <url>
     <loc>https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yasal-belgeler</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/expireddomainnames/de/rechtliche-dokumente-premium-domains" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/expireddomainnames/fr/documents-juridiques-domaines-premium" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/expireddomainnames/es/documentos-legales-dominios-premium" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/expireddomainnames/it/documenti-legali-domini-premium" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.iaee.eu/expireddomainnames/pt/documentos-legais-dominios-premium" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/expireddomainnames/pl/dokumenty-prawne-domeny-premium" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.iaee.eu/expireddomainnames/ja/houritsumonsho-puremiamudomein" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.iaee.eu/expireddomainnames/zh/fa-lv-wen-jian-you-zhi-yu-ming" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.iaee.eu/expireddomainnames/ar/wathaeq-qanuniya-nitaqat-mumayaza" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yasal-belgeler" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kanooni-dastavez" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
   </url>
-  
-  <!-- Premium Domains Legal - Hindi (HI) -->
   <url>
     <loc>https://www.iaee.eu/expireddomainnames/hi/premium-domain-kanooni-dastavez</loc>
-    <lastmod>2026-01-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/expireddomainnames/de/rechtliche-dokumente-premium-domains" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/expireddomainnames/fr/documents-juridiques-domaines-premium" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/expireddomainnames/es/documentos-legales-dominios-premium" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/expireddomainnames/it/documenti-legali-domini-premium" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.iaee.eu/expireddomainnames/pt/documentos-legais-dominios-premium" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/expireddomainnames/pl/dokumenty-prawne-domeny-premium" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.iaee.eu/expireddomainnames/ja/houritsumonsho-puremiamudomein" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://www.iaee.eu/expireddomainnames/zh/fa-lv-wen-jian-you-zhi-yu-ming" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.iaee.eu/expireddomainnames/ar/wathaeq-qanuniya-nitaqat-mumayaza" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yasal-belgeler" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/expireddomainnames/hi/premium-domain-kanooni-dastavez" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/expireddomainnames/en/premium-domains-legal-documents" />
-  </url>
-  
-  <!-- ============================================== -->
-  <!-- HOMEPAGE AND UTILITY PAGES                    -->
-  <!-- ============================================== -->
-  
-  <url>
-    <loc>https://www.iaee.eu/</loc>
-    <lastmod>2026-01-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.iaee.eu/docs-1</loc>
-    <lastmod>2026-01-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.iaee.eu/af</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
+
+  <!-- ============================================== -->
+  <!-- VAT CALCULATOR - 7 LANGUAGES                   -->
+  <!-- ============================================== -->
+
   <url>
     <loc>https://www.iaee.eu/btw-calculator-wereldwijd</loc>
-    <lastmod>2026-01-23</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.iaee.eu/vat-calculator-worldwide</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.iaee.eu/calculadora-iva-mundial</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.iaee.eu/mwst-rechner-weltweit</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.iaee.eu/calculateur-tva-mondial</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.iaee.eu/calcolatore-iva-mondiale</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.iaee.eu/kalkulator-vat-swiatowy</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
