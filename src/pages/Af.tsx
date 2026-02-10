@@ -7,7 +7,19 @@ import FooterEN from "@/components/en/FooterEN";
 import GTranslateWidget from "@/components/GTranslateWidget";
 import jsPDF from "jspdf";
 
-const Af = () => {
+export interface AfLegalProps {
+  lang?: string;
+  canonicalPath?: string;
+  pageTitle?: string;
+  pageDescription?: string;
+}
+
+export const AfContent = ({
+  lang = "en",
+  canonicalPath = "/af",
+  pageTitle = "Legal Documents - Terms & Conditions, Privacy Policy, Disclaimer & Cookie Policy",
+  pageDescription = "Download free legal templates for affiliate websites including terms and conditions, privacy policy, disclaimer, and cookie policy."
+}: AfLegalProps) => {
   const downloadTextFile = (filename: string, content: string) => {
     const element = document.createElement("a");
     const file = new Blob([content], { type: "text/plain" });
@@ -3605,16 +3617,13 @@ For legal advice: Consult a lawyer specialized in internet law`;
   return (
     <>
       <Helmet>
-        <title>Legal Documents - Terms & Conditions, Privacy Policy, Disclaimer & Cookie Policy</title>
-        <meta
-          name="description"
-          content="Download free legal templates for affiliate websites including terms and conditions, privacy policy, disclaimer, and cookie policy."
-        />
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
         <meta name="robots" content="noindex, nofollow" />
-        <html lang="en" />
-        <link rel="canonical" href="https://www.iaee.eu/af" />
+        <html lang={lang} />
+        <link rel="canonical" href={`https://www.iaee.eu${canonicalPath}`} />
       </Helmet>
-      <GTranslateWidget />
+      <GTranslateWidget defaultLanguage={lang} />
       <div className="min-h-screen bg-background">
         <HeaderEN />
 
@@ -3813,4 +3822,5 @@ For legal advice: Consult a lawyer specialized in internet law`;
   );
 };
 
+const Af = () => <AfContent />;
 export default Af;
