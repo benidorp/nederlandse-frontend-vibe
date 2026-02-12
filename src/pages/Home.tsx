@@ -21,83 +21,105 @@ import comparisonImage from "@/assets/page-comparison.jpg";
 import newsMagazineImage from "@/assets/page-news.jpg";
 import freelancersImage from "@/assets/page-freelancer.jpg";
 import spanishImage from "@/assets/nicole-profile.png";
-const pages = [{
-  title: "Affiliate Website Legal Documents",
-  description: "Complete legal protection for affiliate marketing websites with terms, privacy policy, disclosure and cookie policy.",
-  image: affiliateImage,
-  link: "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy"
-}, {
-  title: "Photography Legal Documents",
-  description: "Professional legal documents for photographers including contracts, copyright protection and privacy policies.",
-  image: photographyImage,
-  link: "/photography-legal-documents-terms-conditions-privacy-policy-contract-copyright-protection"
-}, {
-  title: "Travel & Hotel Legal Protection",
-  description: "Essential legal documents for travel and hotel websites with cancellation policy and terms & conditions.",
-  image: travelImage,
-  link: "/must-have-legal-protection-for-every-hotel-and-travel-website-terms-conditions-privacy-policy-cancellation-policy-disclaimer"
-}, {
-  title: "E-commerce Legal Documents",
-  description: "Complete legal protection for online stores with return policy, shipping policy and GDPR compliance.",
-  image: ecommerceImage,
-  link: "/essential-legal-documents-ecommerce-website-terms-conditions-privacy-policy-return-policy-shipping-policy"
-}, {
-  title: "Online Shop Legal Protection",
-  description: "Professional legal documents for webshops with cookie policy and GDPR compliance.",
-  image: onlineShopImage,
-  link: "/webshop-online-business-legal-protection-terms-privacy-policy-cookie-policy-gdpr-compliance"
-}, {
-  title: "Dropshipping Business Legal",
-  description: "Essential legal protection for dropshipping businesses with supplier agreements and refund policies.",
-  image: dropshippingImage,
-  link: "/dropshipping-business-legal-protection-terms-conditions-privacy-policy-supplier-agreement-refund-policy"
-}, {
-  title: "E-Learning Platform Legal",
-  description: "Complete legal documents for online education platforms with GDPR compliance and terms.",
-  image: elearningImage,
-  link: "/elearning-platform-legal-documents-terms-privacy-policy-gdpr-compliance"
-}, {
-  title: "Nonprofit & Charity Legal",
-  description: "Professional legal documents for nonprofits including donation terms and privacy policies.",
-  image: nonprofitImage,
-  link: "/nonprofit-charity-legal-documents-donation-terms-privacy-policy"
-}, {
-  title: "Streaming Media Legal",
-  description: "Essential legal protection for streaming platforms with DMCA policy and content licenses.",
-  image: streamingImage,
-  link: "/streaming-media-legal-documents-terms-conditions-privacy-policy-dmca-content-license"
-}, {
-  title: "Comparison & Review Sites",
-  description: "Complete legal documents for comparison and review websites with affiliate disclosures.",
-  image: comparisonImage,
-  link: "/comparison-review-website-legal-documents-terms-privacy-affiliate-disclosure-disclaimer"
-}, {
-  title: "News & Magazine Legal",
-  description: "Professional legal protection for news and magazine websites with editorial and copyright policies.",
-  image: newsMagazineImage,
-  link: "/news-magazine-legal-documents-terms-conditions-privacy-policy-copyright-editorial-policy"
-}, {
-  title: "Freelancers Legal Documents",
-  description: "Essential legal protection for freelancers and self-employed with contracts and privacy policies.",
-  image: freelancersImage,
-  link: "/freelancers-self-employed-legal-documents-contracts-terms-privacy-policy"
-}, {
-  title: "Premium Domain Names",
-  description: "High-authority premium domain names with proven SEO value for sale. Boost your rankings instantly.",
-  image: affiliateImage,
-  link: "/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde"
-}, {
-  title: "Spanish Legal Documents",
-  description: "Complete legal documents for affiliate websites in Spanish with terms and privacy policy.",
-  image: spanishImage,
-  link: "/es/documentos-legales-sitios-web-afiliados-terminos-condiciones-politica-privacidad-divulgacion-cookies"
-}];
+const pages = [
+  {
+    title: "Affiliate Website Legal Documents",
+    description:
+      "Complete legal protection for affiliate marketing websites with terms, privacy policy, disclosure and cookie policy.",
+    image: affiliateImage,
+    link: "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
+  },
+  {
+    title: "Photography Legal Documents",
+    description:
+      "Professional legal documents for photographers including contracts, copyright protection and privacy policies.",
+    image: photographyImage,
+    link: "/photography-legal-documents-terms-conditions-privacy-policy-contract-copyright-protection",
+  },
+  {
+    title: "Travel & Hotel Legal Protection",
+    description:
+      "Essential legal documents for travel and hotel websites with cancellation policy and terms & conditions.",
+    image: travelImage,
+    link: "/must-have-legal-protection-for-every-hotel-and-travel-website-terms-conditions-privacy-policy-cancellation-policy-disclaimer",
+  },
+  {
+    title: "E-commerce Legal Documents",
+    description: "Complete legal protection for online stores with return policy, shipping policy and GDPR compliance.",
+    image: ecommerceImage,
+    link: "/essential-legal-documents-ecommerce-website-terms-conditions-privacy-policy-return-policy-shipping-policy",
+  },
+  {
+    title: "Online Shop Legal Protection",
+    description: "Professional legal documents for webshops with cookie policy and GDPR compliance.",
+    image: onlineShopImage,
+    link: "/webshop-online-business-legal-protection-terms-privacy-policy-cookie-policy-gdpr-compliance",
+  },
+  {
+    title: "Dropshipping Business Legal",
+    description: "Essential legal protection for dropshipping businesses with supplier agreements and refund policies.",
+    image: dropshippingImage,
+    link: "/dropshipping-business-legal-protection-terms-conditions-privacy-policy-supplier-agreement-refund-policy",
+  },
+  {
+    title: "E-Learning Platform Legal",
+    description: "Complete legal documents for online education platforms with GDPR compliance and terms.",
+    image: elearningImage,
+    link: "/elearning-platform-legal-documents-terms-privacy-policy-gdpr-compliance",
+  },
+  {
+    title: "Nonprofit & Charity Legal",
+    description: "Professional legal documents for nonprofits including donation terms and privacy policies.",
+    image: nonprofitImage,
+    link: "/nonprofit-charity-legal-documents-donation-terms-privacy-policy",
+  },
+  {
+    title: "Streaming Media Legal",
+    description: "Essential legal protection for streaming platforms with DMCA policy and content licenses.",
+    image: streamingImage,
+    link: "/streaming-media-legal-documents-terms-conditions-privacy-policy-dmca-content-license",
+  },
+  {
+    title: "Comparison & Review Sites",
+    description: "Complete legal documents for comparison and review websites with affiliate disclosures.",
+    image: comparisonImage,
+    link: "/comparison-review-website-legal-documents-terms-privacy-affiliate-disclosure-disclaimer",
+  },
+  {
+    title: "News & Magazine Legal",
+    description: "Professional legal protection for news and magazine websites with editorial and copyright policies.",
+    image: newsMagazineImage,
+    link: "/news-magazine-legal-documents-terms-conditions-privacy-policy-copyright-editorial-policy",
+  },
+  {
+    title: "Freelancers Legal Documents",
+    description: "Essential legal protection for freelancers and self-employed with contracts and privacy policies.",
+    image: freelancersImage,
+    link: "/freelancers-self-employed-legal-documents-contracts-terms-privacy-policy",
+  },
+  {
+    title: "Premium Domain Names",
+    description: "High-authority premium domain names with proven SEO value for sale. Boost your rankings instantly.",
+    image: affiliateImage,
+    link: "/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde",
+  },
+  {
+    title: "Spanish Legal Documents",
+    description: "Complete legal documents for affiliate websites in Spanish with terms and privacy policy.",
+    image: spanishImage,
+    link: "/es/documentos-legales-sitios-web-afiliados-terminos-condiciones-politica-privacidad-divulgacion-cookies",
+  },
+];
 const Home = () => {
-  return <>
+  return (
+    <>
       <Helmet>
         <html lang="en" />
         <title>Professional Legal Documents for Every Website Type | GDPR Compliant</title>
-        <meta name="description" content="Complete legal protection packages for all website types. GDPR-compliant privacy policies, terms & conditions, and all essential legal documents. Ready in minutes, professionally written." />
+        <meta
+          name="description"
+          content="Complete legal protection packages for all website types. GDPR-compliant privacy policies, terms & conditions, and all essential legal documents. Ready in minutes, professionally written."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.iaee.eu/" />
@@ -115,40 +137,55 @@ const Home = () => {
                   <Shield className="w-4 h-4 text-primary" />
                   <span className="text-sm font-medium text-primary">Trusted by 10,000+ Businesses Worldwide</span>
                 </div>
-                
+
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
                   Professional Legal Documents for Every Website Type
                 </h1>
-                
+
                 <p className="text-xl md:text-2xl text-muted-foreground mb-4 leading-relaxed">
-                  Protect your online business with professionally crafted legal documents. GDPR-compliant, ready to use, and specifically tailored for your website type.
+                  Protect your online business with professionally crafted legal documents. GDPR-compliant, ready to
+                  use, and specifically tailored for your website type.
                 </p>
-                
+
                 <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-3xl mx-auto">
-                  Whether you're running an e-commerce store, affiliate website, photography business, or any other online venture, we provide comprehensive legal protection that's both affordable and easy to implement. No legal expertise required – just download, customize with your business details, and you're protected.
+                  Whether you're running an e-commerce store, affiliate website, photography business, or any other
+                  online venture, we provide comprehensive legal protection that's both affordable and easy to
+                  implement. No legal expertise required – just download, customize with your business details, and
+                  you're protected.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 max-w-4xl mx-auto">
-                  {[{
-                  icon: Shield,
-                  text: "GDPR Compliant"
-                }, {
-                  icon: FileText,
-                  text: "Ready in Minutes"
-                }, {
-                  icon: Scale,
-                  text: "Legally Reviewed"
-                }, {
-                  icon: CheckCircle,
-                  text: "Easy to Customize"
-                }].map((item, idx) => <div key={idx} className="flex items-center gap-3 p-4 rounded-lg bg-card border border-border hover:border-primary/50 transition-colors">
+                  {[
+                    {
+                      icon: Shield,
+                      text: "GDPR Compliant",
+                    },
+                    {
+                      icon: FileText,
+                      text: "Ready in Minutes",
+                    },
+                    {
+                      icon: Scale,
+                      text: "Legally Reviewed",
+                    },
+                    {
+                      icon: CheckCircle,
+                      text: "Easy to Customize",
+                    },
+                  ].map((item, idx) => (
+                    <div
+                      key={idx}
+                      className="flex items-center gap-3 p-4 rounded-lg bg-card border border-border hover:border-primary/50 transition-colors"
+                    >
                       <item.icon className="w-5 h-5 text-primary flex-shrink-0" />
                       <span className="text-sm font-medium">{item.text}</span>
-                    </div>)}
+                    </div>
+                  ))}
                 </div>
 
                 <p className="text-base text-muted-foreground mb-8">
-                  Choose your website type below and get instant access to all the legal documents you need to operate safely and compliantly.
+                  Choose your website type below and get instant access to all the legal documents you need to operate
+                  safely and compliantly.
                 </p>
               </div>
             </div>
@@ -166,7 +203,8 @@ const Home = () => {
                     Premium Expired Domain Names
                   </h2>
                   <p className="text-xl text-slate-300 mb-6 leading-relaxed">
-                    Boost your website's SEO rankings instantly with our curated collection of high-authority expired domain names. Each domain comes with proven backlinks and established domain authority.
+                    Boost your website's SEO rankings instantly with our curated collection of high-authority expired
+                    domain names. Each domain comes with proven backlinks and established domain authority.
                   </p>
                   <ul className="space-y-3 mb-8">
                     <li className="flex items-center gap-3 text-slate-300">
@@ -188,12 +226,19 @@ const Home = () => {
                   </ul>
                   <div className="flex flex-wrap gap-4">
                     <Link to="/expireddomainnames/en/buy-premium-domains-high-authority-seo-value">
-                      <Button size="lg" className="bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold text-lg px-8">
+                      <Button
+                        size="lg"
+                        className="bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold text-lg px-8"
+                      >
                         View Premium Domains
                       </Button>
                     </Link>
                     <Link to="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde">
-                      <Button size="lg" variant="outline" className="border-slate-500 text-slate-300 hover:bg-slate-700 text-lg px-8">
+                      <Button
+                        size="lg"
+                        variant="outline"
+                        className="border-slate-500 text-slate-300 hover:bg-slate-700 text-lg px-8"
+                      >
                         Nederlandse versie
                       </Button>
                     </Link>
@@ -202,8 +247,14 @@ const Home = () => {
                 <div className="order-1 lg:order-2">
                   <div className="relative">
                     <div className="absolute -inset-4 bg-gradient-to-r from-amber-500/20 to-amber-600/20 rounded-2xl blur-xl"></div>
-                    <img src={affiliateImage} alt="Premium Domain Names - High Authority SEO Domains" className="relative w-full h-auto rounded-xl shadow-2xl border border-slate-700" />
-                    <div className="absolute -bottom-4 -right-4 bg-amber-500 text-slate-900 px-6 py-3 rounded-lg font-bold text-lg shadow-lg">From €79</div>
+                    <img
+                      src={affiliateImage}
+                      alt="Premium Domain Names - High Authority SEO Domains"
+                      className="relative w-full h-auto rounded-xl shadow-2xl border border-slate-700"
+                    />
+                    <div className="absolute -bottom-4 -right-4 bg-amber-500 text-slate-900 px-6 py-3 rounded-lg font-bold text-lg shadow-lg">
+                      From €79
+                    </div>
                   </div>
                 </div>
               </div>
@@ -221,11 +272,10 @@ const Home = () => {
                         <Calculator className="w-8 h-8 text-primary" />
                       </div>
                       <div className="flex-1 text-center md:text-left">
-                        <h2 className="text-2xl md:text-3xl font-bold mb-2">
-                          Wereldwijde BTW-calculator
-                        </h2>
+                        <h2 className="text-2xl md:text-3xl font-bold mb-2">Wereldwijde BTW-calculator</h2>
                         <p className="text-muted-foreground mb-4">
-                          Bereken eenvoudig BTW voor meer dan 40 landen wereldwijd. Professionele tool voor internationale ondernemers.
+                          Bereken eenvoudig BTW voor meer dan 40 landen wereldwijd. Professionele tool voor
+                          internationale ondernemers.
                         </p>
                       </div>
                       <Link to="/btw-calculator-wereldwijd">
@@ -251,26 +301,34 @@ const Home = () => {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {pages.map((page, index) => <Link to={page.link} key={index} className="group">
+                {pages.map((page, index) => (
+                  <Link to={page.link} key={index} className="group">
                     <Card className="h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border-border hover:border-primary/50">
                       <CardHeader className="p-0">
                         <div className="aspect-video overflow-hidden rounded-t-lg bg-muted">
-                          <img src={page.image} alt={page.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+                          <img
+                            src={page.image}
+                            alt={page.title}
+                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                            loading="lazy"
+                          />
                         </div>
                       </CardHeader>
                       <CardContent className="p-6">
                         <CardTitle className="mb-3 text-xl group-hover:text-primary transition-colors leading-tight">
                           {page.title}
                         </CardTitle>
-                        <CardDescription className="mb-4 leading-relaxed">
-                          {page.description}
-                        </CardDescription>
-                        <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-all">
+                        <CardDescription className="mb-4 leading-relaxed">{page.description}</CardDescription>
+                        <Button
+                          variant="outline"
+                          className="w-full group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-all"
+                        >
                           View Details & Pricing
                         </Button>
                       </CardContent>
                     </Card>
-                  </Link>)}
+                  </Link>
+                ))}
               </div>
             </div>
           </section>
@@ -279,10 +337,12 @@ const Home = () => {
           <section className="py-16 md:py-24 bg-gradient-to-b from-primary/5 to-background">
             <div className="container">
               <div className="max-w-3xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Still Not Sure Which Package You Need?
-                </h2>
-                <p className="text-lg text-muted-foreground mb-8">Every package includes comprehensive legal protection tailored to your specific business model. All documents are written by legal professionals and regularly updated to comply with current regulations.</p>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">Still Not Sure Which Package You Need?</h2>
+                <p className="text-lg text-muted-foreground mb-8">
+                  Every package includes comprehensive legal protection tailored to your specific business model. All
+                  documents are written by legal professionals and regularly updated to comply with current
+                  regulations.Price 79{" "}
+                </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="text-lg px-8">
                     View All Packages
@@ -294,6 +354,7 @@ const Home = () => {
         </main>
         <FooterEN />
       </div>
-    </>;
+    </>
+  );
 };
 export default Home;
