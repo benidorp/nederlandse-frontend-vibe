@@ -131,15 +131,41 @@ All colors MUST be HSL.
   position: static;
   bottom: auto;
   right: auto;
+  width: 100%;
+}
+
+.gtranslate_wrapper.gtranslate-inline select {
+  width: 100%;
+  max-width: 320px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
 }
 
 /* Preserve text formatting during GTranslate translation */
 font[style] p,
 font[style] li,
 font[style] div,
+font[style] h1,
+font[style] h2,
+font[style] h3,
+font[style] h4,
 font p,
 font li,
-font div {
+font div,
+font h1,
+font h2,
+font h3,
+font h4 {
   margin-bottom: 0.5em;
   display: block;
+}
+
+/* Preserve whitespace in translated accordion content */
+font[style] .whitespace-pre-line,
+font .whitespace-pre-line,
+.notranslate + * p,
+[data-state] p {
+  white-space: pre-line !important;
+  margin-bottom: 0.75em;
 }

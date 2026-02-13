@@ -8,6 +8,10 @@ interface GTranslateWidgetProps {
 
 const GTranslateWidget = ({ defaultLanguage = "en", detectBrowserLanguage = false, inline = false }: GTranslateWidgetProps) => {
   useEffect(() => {
+    // Remove any previous GTranslate elements to avoid duplicates
+    const existingWidget = document.querySelector('.gt_float_switcher');
+    if (existingWidget) existingWidget.remove();
+
     // Configure GTranslate BEFORE loading the script
     (window as any).gtranslateSettings = {
       default_language: defaultLanguage,
@@ -21,25 +25,29 @@ const GTranslateWidget = ({ defaultLanguage = "en", detectBrowserLanguage = fals
         "tg", "ta", "te", "th", "tr", "uk", "ur", "uz", "vi"
       ],
       wrapper_selector: ".gtranslate_wrapper",
+      // Use dropdown widget type for inline placement
+      ...(inline ? { switcher_horizontal_position: "inline" } : {}),
     };
 
-    // Add GTranslate script AFTER settings are configured
+    // Use dropdown widget for inline, float widget for fixed
     const script = document.createElement("script");
-    script.src = "https://cdn.gtranslate.net/widgets/latest/float.js";
+    script.src = inline
+      ? "https://cdn.gtranslate.net/widgets/latest/dropdown.js"
+      : "https://cdn.gtranslate.net/widgets/latest/float.js";
     script.defer = true;
     document.body.appendChild(script);
 
     return () => {
-      // Safely remove script only if it's still in the DOM
       if (script.parentNode) {
         script.parentNode.removeChild(script);
       }
-      // Clean up gtranslate settings
       delete (window as any).gtranslateSettings;
     };
-  }, [defaultLanguage]);
+  }, [defaultLanguage, detectBrowserLanguage, inline]);
 
-  return <div className={`gtranslate_wrapper${inline ? ' gtranslate-inline' : ''}`}></div>;
+  return (
+    <div className={`gtranslate_wrapper${inline ? ' gtranslate-inline' : ''}`}></div>
+  );
 };
 
 export default GTranslateWidget;
