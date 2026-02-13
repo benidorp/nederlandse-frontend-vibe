@@ -31,9 +31,22 @@ export const AfContent = ({
 
   const [activeLang, setActiveLang] = useState("en");
   const [preparingDownload, setPreparingDownload] = useState<string | null>(null);
+  const [translationReady, setTranslationReady] = useState(true);
+  const [countdown, setCountdown] = useState(0);
+
+  const TRANSLATION_WAIT_SECONDS = 15;
 
   const handleLanguageChange = useCallback((langCode: string) => {
     setActiveLang(langCode);
+
+    // Block downloads while translation runs
+    if (langCode !== "en") {
+      setTranslationReady(false);
+      setCountdown(TRANSLATION_WAIT_SECONDS);
+    } else {
+      setTranslationReady(true);
+      setCountdown(0);
+    }
 
     // Try doGTranslate first (float widget), then fallback to select element (dropdown widget)
     const doTranslate = (window as any).doGTranslate;
@@ -50,6 +63,18 @@ export const AfContent = ({
       select.dispatchEvent(new Event('change', { bubbles: true }));
     }
   }, []);
+
+  // Countdown timer for translation readiness
+  useEffect(() => {
+    if (countdown <= 0) {
+      if (!translationReady && activeLang !== "en") {
+        setTranslationReady(true);
+      }
+      return;
+    }
+    const timer = setTimeout(() => setCountdown((c) => c - 1), 1000);
+    return () => clearTimeout(timer);
+  }, [countdown, translationReady, activeLang]);
 
   // Strip emoji/icon characters from text
   const stripEmojis = (text: string): string => {
@@ -95,60 +120,26 @@ export const AfContent = ({
     return "";
   };
 
-  // Scroll all af-sections into view so GTranslate translates everything, then run callback
-  // Skip scrolling if language is English (no translation needed)
-  const ensureAllTranslated = (callback: () => void) => {
-    if (activeLang === "en") {
-      callback();
-      return;
-    }
-
-    const sections = document.querySelectorAll("[data-af-section]");
-    if (sections.length === 0) { callback(); return; }
-
-    const originalScroll = window.scrollY;
-    let i = 0;
-
-    const scrollNext = () => {
-      if (i < sections.length) {
-        sections[i].scrollIntoView({ behavior: "instant" as ScrollBehavior });
-        i++;
-        setTimeout(scrollNext, 300);
-      } else {
-        setTimeout(() => {
-          window.scrollTo({ top: originalScroll, behavior: "instant" as ScrollBehavior });
-          callback();
-        }, 1000);
-      }
-    };
-
-    window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
-    setTimeout(scrollNext, 100);
-  };
-
   const downloadTextFile = (sectionIndex: number, fallbackFilename: string, sectionKey: string) => {
     setPreparingDownload(`${sectionKey}-txt`);
-    ensureAllTranslated(() => {
-      const content = getTranslatedSectionText(sectionIndex);
-      const title = getTranslatedSectionTitle(sectionIndex);
-      const filename = title ? title.replace(/[^a-zA-Z0-9\s\u00C0-\u024F\u0400-\u04FF\u4E00-\u9FFF\u3040-\u309F\u30A0-\u30FF\uAC00-\uD7AF]/g, "").replace(/\s+/g, "-").substring(0, 60) : fallbackFilename;
-      
-      const element = document.createElement("a");
-      const file = new Blob([content], { type: "text/plain;charset=utf-8" });
-      element.href = URL.createObjectURL(file);
-      element.download = `${filename}.txt`;
-      document.body.appendChild(element);
-      element.click();
-      document.body.removeChild(element);
-      setPreparingDownload(null);
-    });
+    const content = getTranslatedSectionText(sectionIndex);
+    const title = getTranslatedSectionTitle(sectionIndex);
+    const filename = title ? title.replace(/[^a-zA-Z0-9\s\u00C0-\u024F\u0400-\u04FF\u4E00-\u9FFF\u3040-\u309F\u30A0-\u30FF\uAC00-\uD7AF]/g, "").replace(/\s+/g, "-").substring(0, 60) : fallbackFilename;
+    
+    const element = document.createElement("a");
+    const file = new Blob([content], { type: "text/plain;charset=utf-8" });
+    element.href = URL.createObjectURL(file);
+    element.download = `${filename}.txt`;
+    document.body.appendChild(element);
+    element.click();
+    document.body.removeChild(element);
+    setPreparingDownload(null);
   };
 
   const downloadPDF = (sectionIndex: number, fallbackTitle: string, sectionKey: string) => {
     setPreparingDownload(`${sectionKey}-pdf`);
-    ensureAllTranslated(() => {
-      const content = getTranslatedSectionText(sectionIndex);
-      const pdfTitle = getTranslatedSectionTitle(sectionIndex) || fallbackTitle;
+    const content = getTranslatedSectionText(sectionIndex);
+    const pdfTitle = getTranslatedSectionTitle(sectionIndex) || fallbackTitle;
 
     const doc = new jsPDF();
     const pageWidth = doc.internal.pageSize.getWidth();
@@ -165,7 +156,6 @@ export const AfContent = ({
     doc.setFontSize(9);
     doc.setFont(undefined, "normal");
 
-    // Split content into paragraphs (double newlines), then wrap each paragraph
     const paragraphs = content.split(/\n\n+/);
     let y = margin + 12;
 
@@ -173,7 +163,6 @@ export const AfContent = ({
       const trimmed = paragraph.trim();
       if (!trimmed) return;
 
-      // Handle single newlines within a paragraph as line breaks
       const subLines = trimmed.split(/\n/);
       subLines.forEach((subLine) => {
         const wrappedLines = doc.splitTextToSize(subLine, maxLineWidth);
@@ -187,15 +176,13 @@ export const AfContent = ({
         });
       });
 
-      // Add extra spacing between paragraphs
       if (pIndex < paragraphs.length - 1) {
         y += paragraphSpacing;
       }
     });
 
     doc.save(`${pdfTitle.replace(/\s+/g, "-").substring(0, 60)}.pdf`);
-      setPreparingDownload(null);
-    });
+    setPreparingDownload(null);
   };
 
   const sections = [
@@ -243,7 +230,16 @@ export const AfContent = ({
 
         <main className="container mx-auto px-4 py-12 max-w-4xl">
           <h1 className="text-4xl font-bold mb-8 text-foreground">{t.legalDocumentsHeading}</h1>
-          <p className="text-lg mb-12 text-muted-foreground">{t.downloadDescription}</p>
+          <p className="text-lg mb-6 text-muted-foreground">{t.downloadDescription}</p>
+
+          {!translationReady && (
+            <div className="mb-12 p-4 bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-lg flex items-center gap-3">
+              <Loader2 className="w-5 h-5 animate-spin text-amber-600 dark:text-amber-400" />
+              <span className="text-amber-800 dark:text-amber-300 font-medium">
+                Vertaling wordt voorbereid... Downloads beschikbaar over {countdown} seconden
+              </span>
+            </div>
+          )}
 
           {sections.map(({ key, style }, index) => (
             <section
@@ -262,7 +258,7 @@ export const AfContent = ({
                     onClick={() => downloadTextFile(index, t.fileNames[key], key)}
                     variant="outline"
                     size="sm"
-                    disabled={preparingDownload !== null}
+                    disabled={preparingDownload !== null || !translationReady}
                   >
                     {preparingDownload === `${key}-txt` ? (
                       <Loader2 className="w-4 h-4 mr-2 animate-spin" />
@@ -275,7 +271,7 @@ export const AfContent = ({
                     onClick={() => downloadPDF(index, t.sectionTitles[key], key)}
                     variant="default"
                     size="sm"
-                    disabled={preparingDownload !== null}
+                    disabled={preparingDownload !== null || !translationReady}
                   >
                     {preparingDownload === `${key}-pdf` ? (
                       <Loader2 className="w-4 h-4 mr-2 animate-spin" />
