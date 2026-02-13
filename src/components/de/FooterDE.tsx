@@ -37,34 +37,34 @@ const FooterDE = () => {
             <h3 className="font-bold text-lg mb-4 text-foreground">Schnelllinks</h3>
             <ul className="space-y-2">
               <li>
-                <button 
+                <button
                   onClick={() => scrollToSection("home")}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors">
+
                   Startseite
                 </button>
               </li>
               <li>
-                <button 
+                <button
                   onClick={() => scrollToSection("uber-mich")}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors">
+
                   Über Mich
                 </button>
               </li>
               <li>
-                <button 
+                <button
                   onClick={() => scrollToSection("dienstleistungen")}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors">
+
                   Dienstleistungen
                 </button>
               </li>
               <li>
-                <button 
+                <button
                   onClick={() => scrollToSection("preise")}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors">
+
                   Preise
                 </button>
               </li>
@@ -76,7 +76,7 @@ const FooterDE = () => {
             <h3 className="font-bold text-lg mb-4 text-foreground">Rechtliches</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/de/af" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a className="text-sm text-muted-foreground hover:text-primary transition-colors" href="/policy ">
                   AGB
                 </a>
               </li>
@@ -140,8 +140,8 @@ const FooterDE = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 };
 
 export default FooterDE;
