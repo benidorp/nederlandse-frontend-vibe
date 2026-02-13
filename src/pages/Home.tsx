@@ -267,7 +267,7 @@ const Home = () => {
                       className="relative w-full h-auto rounded-xl shadow-2xl border border-slate-700"
                     />
                     <div className="absolute -bottom-4 -right-4 bg-amber-500 text-slate-900 px-6 py-3 rounded-lg font-bold text-lg shadow-lg">
-                      From €79
+                      From €79 • Free Shipping
                     </div>
                   </div>
                 </div>
