@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { Helmet } from "react-helmet";
-import { Download, FileText } from "lucide-react";
+import { Download, FileText, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import HeaderEN from "@/components/en/HeaderEN";
 import FooterEN from "@/components/en/FooterEN";
@@ -30,6 +30,7 @@ export const AfContent = ({
   const description = pageDescription || t.pageDescription;
 
   const [activeLang, setActiveLang] = useState("en");
+  const [preparingDownload, setPreparingDownload] = useState<string | null>(null);
 
   const handleLanguageChange = useCallback((langCode: string) => {
     setActiveLang(langCode);
@@ -130,7 +131,8 @@ export const AfContent = ({
     });
   };
 
-  const downloadTextFile = (sectionIndex: number, fallbackFilename: string) => {
+  const downloadTextFile = (sectionIndex: number, fallbackFilename: string, sectionKey: string) => {
+    setPreparingDownload(`${sectionKey}-txt`);
     ensureAllTranslated(() => {
       const content = getTranslatedSectionText(sectionIndex);
       const title = getTranslatedSectionTitle(sectionIndex);
@@ -143,10 +145,12 @@ export const AfContent = ({
       document.body.appendChild(element);
       element.click();
       document.body.removeChild(element);
+      setPreparingDownload(null);
     });
   };
 
-  const downloadPDF = (sectionIndex: number, fallbackTitle: string) => {
+  const downloadPDF = (sectionIndex: number, fallbackTitle: string, sectionKey: string) => {
+    setPreparingDownload(`${sectionKey}-pdf`);
     ensureAllTranslated(() => {
       const content = getTranslatedSectionText(sectionIndex);
       const pdfTitle = getTranslatedSectionTitle(sectionIndex) || fallbackTitle;
@@ -195,6 +199,7 @@ export const AfContent = ({
     });
 
     doc.save(`${pdfTitle.replace(/\s+/g, "-").substring(0, 60)}.pdf`);
+      setPreparingDownload(null);
     });
   };
 
@@ -259,19 +264,29 @@ export const AfContent = ({
                 <h2 className="text-2xl font-bold text-foreground" data-af-title>{t.sectionTitles[key]}</h2>
                 <div className="flex gap-2">
                   <Button
-                    onClick={() => downloadTextFile(index, t.fileNames[key])}
+                    onClick={() => downloadTextFile(index, t.fileNames[key], key)}
                     variant="outline"
                     size="sm"
+                    disabled={preparingDownload !== null}
                   >
-                    <FileText className="w-4 h-4 mr-2" />
+                    {preparingDownload === `${key}-txt` ? (
+                      <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                    ) : (
+                      <FileText className="w-4 h-4 mr-2" />
+                    )}
                     .TXT
                   </Button>
                   <Button
-                    onClick={() => downloadPDF(index, t.sectionTitles[key])}
+                    onClick={() => downloadPDF(index, t.sectionTitles[key], key)}
                     variant="default"
                     size="sm"
+                    disabled={preparingDownload !== null}
                   >
-                    <Download className="w-4 h-4 mr-2" />
+                    {preparingDownload === `${key}-pdf` ? (
+                      <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                    ) : (
+                      <Download className="w-4 h-4 mr-2" />
+                    )}
                     PDF
                   </Button>
                 </div>
