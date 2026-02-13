@@ -34,22 +34,19 @@ export const AfContent = ({
   const handleLanguageChange = useCallback((langCode: string) => {
     setActiveLang(langCode);
 
-    // Trigger GTranslate language switch
-    if (langCode === "en") {
-      // Reset to original
-      const restore = (window as any).doGTranslate;
-      if (restore) {
-        restore("en|en");
-      } else {
-        // Fallback: remove googtrans cookie and reload
-        document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-        document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=." + window.location.hostname;
-      }
-    } else {
-      const doTranslate = (window as any).doGTranslate;
-      if (doTranslate) {
-        doTranslate(`en|${langCode}`);
-      }
+    // Try doGTranslate first (float widget), then fallback to select element (dropdown widget)
+    const doTranslate = (window as any).doGTranslate;
+    if (doTranslate) {
+      doTranslate(`en|${langCode}`);
+      return;
+    }
+
+    // Fallback: programmatically change the GTranslate dropdown select
+    const select = document.querySelector('.gtranslate_wrapper select') as HTMLSelectElement;
+    if (select) {
+      const targetCode = langCode === "zh-CN" ? "zh" : langCode;
+      select.value = targetCode;
+      select.dispatchEvent(new Event('change', { bubbles: true }));
     }
   }, []);
 
@@ -162,7 +159,6 @@ export const AfContent = ({
       <div className="min-h-screen bg-background">
         <HeaderEN />
         <AfLanguageSwitcher activeLang={activeLang} onLanguageChange={handleLanguageChange} />
-        <div className="gtranslate_wrapper" style={{ display: "none" }}></div>
         <GTranslateWidget defaultLanguage="en" inline={true} />
 
         <main className="container mx-auto px-4 py-12 max-w-4xl">
