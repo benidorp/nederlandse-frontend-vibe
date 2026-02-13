@@ -7,6 +7,7 @@ import FooterEN from "@/components/en/FooterEN";
 import AfLanguageSwitcher from "@/components/af/AfLanguageSwitcher";
 import GTranslateWidget from "@/components/GTranslateWidget";
 import jsPDF from "jspdf";
+import html2canvas from "html2canvas";
 import { toast } from "sonner";
 import type { AfTranslations } from "@/data/af-translations/types";
 import enTranslations from "@/data/af-translations/en";
@@ -174,54 +175,89 @@ export const AfContent = ({
     toast.success("✅ TXT-bestand is succesvol gedownload!");
   };
 
-  const downloadPDF = (sectionIndex: number, fallbackTitle: string, sectionKey: string) => {
+  const downloadPDF = async (sectionIndex: number, fallbackTitle: string, sectionKey: string) => {
     setPreparingDownload(`${sectionKey}-pdf`);
-    const content = getTranslatedSectionText(sectionIndex);
     const pdfTitle = getTranslatedSectionTitle(sectionIndex) || fallbackTitle;
 
-    const doc = new jsPDF();
-    const pageWidth = doc.internal.pageSize.getWidth();
-    const pageHeight = doc.internal.pageSize.getHeight();
-    const margin = 20;
-    const maxLineWidth = pageWidth - margin * 2;
-    const lineHeight = 5;
-    const paragraphSpacing = 8;
+    try {
+      const sections = document.querySelectorAll("[data-af-section]");
+      const sectionEl = sections[sectionIndex] as HTMLElement;
+      if (!sectionEl) {
+        setPreparingDownload(null);
+        toast.error("Sectie niet gevonden.");
+        return;
+      }
 
-    doc.setFontSize(16);
-    doc.setFont(undefined, "bold");
-    doc.text(pdfTitle, margin, margin);
+      const contentEl = sectionEl.querySelector("[data-af-content]") as HTMLElement;
+      if (!contentEl) {
+        setPreparingDownload(null);
+        toast.error("Inhoud niet gevonden.");
+        return;
+      }
 
-    doc.setFontSize(9);
-    doc.setFont(undefined, "normal");
+      // Create a temporary container for clean PDF rendering
+      const tempContainer = document.createElement("div");
+      tempContainer.style.cssText = "position:absolute;left:-9999px;top:0;width:800px;padding:40px;background:#fff;color:#000;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.6;";
+      
+      // Add title
+      const titleEl = document.createElement("h1");
+      titleEl.style.cssText = "font-size:22px;font-weight:bold;margin-bottom:20px;color:#000;";
+      titleEl.textContent = pdfTitle;
+      tempContainer.appendChild(titleEl);
 
-    const paragraphs = content.split(/\n\n+/);
-    let y = margin + 12;
+      // Clone content
+      const contentClone = contentEl.cloneNode(true) as HTMLElement;
+      contentClone.style.cssText = "color:#000;font-size:14px;line-height:1.6;";
+      // Style all paragraphs
+      contentClone.querySelectorAll("p").forEach((p) => {
+        (p as HTMLElement).style.cssText = "margin-bottom:10px;color:#000;font-size:14px;line-height:1.6;";
+      });
+      tempContainer.appendChild(contentClone);
+      document.body.appendChild(tempContainer);
 
-    paragraphs.forEach((paragraph, pIndex) => {
-      const trimmed = paragraph.trim();
-      if (!trimmed) return;
-
-      const subLines = trimmed.split(/\n/);
-      subLines.forEach((subLine) => {
-        const wrappedLines = doc.splitTextToSize(subLine, maxLineWidth);
-        wrappedLines.forEach((line: string) => {
-          if (y > pageHeight - margin) {
-            doc.addPage();
-            y = margin;
-          }
-          doc.text(line, margin, y);
-          y += lineHeight;
-        });
+      const canvas = await html2canvas(tempContainer, {
+        scale: 2,
+        useCORS: true,
+        backgroundColor: "#ffffff",
+        width: 800,
       });
 
-      if (pIndex < paragraphs.length - 1) {
-        y += paragraphSpacing;
-      }
-    });
+      document.body.removeChild(tempContainer);
 
-    doc.save(`${pdfTitle.replace(/\s+/g, "-").substring(0, 60)}.pdf`);
+      const A4_WIDTH_MM = 210;
+      const A4_HEIGHT_MM = 297;
+      const MARGIN_MM = 15;
+      const CONTENT_WIDTH_MM = A4_WIDTH_MM - MARGIN_MM * 2;
+
+      const imgWidth = CONTENT_WIDTH_MM;
+      const imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+      const pdf = new jsPDF({ orientation: "portrait", unit: "mm", format: "a4" });
+      const imgData = canvas.toDataURL("image/png");
+
+      let yPosition = MARGIN_MM;
+      let remainingHeight = imgHeight;
+      const pageContentHeight = A4_HEIGHT_MM - MARGIN_MM * 2;
+
+      // First page
+      pdf.addImage(imgData, "PNG", MARGIN_MM, yPosition, imgWidth, imgHeight);
+
+      // Add pages if content overflows
+      while (remainingHeight > pageContentHeight) {
+        remainingHeight -= pageContentHeight;
+        pdf.addPage();
+        // Offset the image upward to show the next portion
+        const offset = -(imgHeight - remainingHeight - MARGIN_MM);
+        pdf.addImage(imgData, "PNG", MARGIN_MM, offset, imgWidth, imgHeight);
+      }
+
+      pdf.save(`${pdfTitle.replace(/[^a-zA-Z0-9\s\u00C0-\u024F\u0400-\u04FF\u4E00-\u9FFF]/g, "").replace(/\s+/g, "-").substring(0, 60)}.pdf`);
+      toast.success("✅ PDF-bestand is succesvol gedownload!");
+    } catch (err) {
+      console.error("PDF generation error:", err);
+      toast.error("Er is een fout opgetreden bij het genereren van de PDF.");
+    }
     setPreparingDownload(null);
-    toast.success("✅ PDF-bestand is succesvol gedownload!");
   };
 
   const sections = [
