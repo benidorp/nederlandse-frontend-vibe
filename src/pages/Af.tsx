@@ -50,6 +50,11 @@ export const AfContent = ({
     }
   }, []);
 
+  // Strip emoji/icon characters from text
+  const stripEmojis = (text: string): string => {
+    return text.replace(/[\u{1F300}-\u{1F9FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{FE00}-\u{FE0F}\u{200D}\u{20E3}\u{E0020}-\u{E007F}\u{1FA00}-\u{1FA6F}\u{1FA70}-\u{1FAFF}]/gu, '').replace(/\s{2,}/g, ' ').trim();
+  };
+
   // Extract translated text from a DOM section for downloads
   const getTranslatedSectionText = (sectionIndex: number): string => {
     const sections = document.querySelectorAll("[data-af-section]");
@@ -67,11 +72,11 @@ export const AfContent = ({
                 const textNode = document.createTextNode('\n');
                 br.parentNode?.replaceChild(textNode, br);
               });
-              return (clone as HTMLElement).innerText.trim();
+              return stripEmojis((clone as HTMLElement).innerText);
             })
             .join("\n\n");
         } else {
-          return (contentEl as HTMLElement).innerText.trim();
+          return stripEmojis((contentEl as HTMLElement).innerText);
         }
       }
     }
@@ -173,7 +178,7 @@ export const AfContent = ({
         <p key={i} className="mb-3 text-muted-foreground leading-relaxed">
           {lines.map((line, j) => (
             <React.Fragment key={j}>
-              {line}
+              {stripEmojis(line)}
               {j < lines.length - 1 && <br />}
             </React.Fragment>
           ))}
