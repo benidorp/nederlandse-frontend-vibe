@@ -56,6 +56,19 @@ export const AfContent = ({
     if (sections[sectionIndex]) {
       const contentEl = sections[sectionIndex].querySelector("[data-af-content]");
       if (contentEl) {
+        // Preserve paragraph structure by extracting text from each <p> with double newlines between them
+        const paragraphs = contentEl.querySelectorAll("p");
+        if (paragraphs.length > 0) {
+          return Array.from(paragraphs)
+            .map((p) => {
+              // Preserve <br> as single newlines within paragraphs
+              const clone = p.cloneNode(true) as HTMLElement;
+              clone.querySelectorAll("br").forEach((br) => br.replaceWith("\n"));
+              return (clone.textContent || "").trim();
+            })
+            .filter((text) => text.length > 0)
+            .join("\n\n");
+        }
         return contentEl.textContent || "";
       }
     }
@@ -96,6 +109,8 @@ export const AfContent = ({
     const pageHeight = doc.internal.pageSize.getHeight();
     const margin = 20;
     const maxLineWidth = pageWidth - margin * 2;
+    const lineHeight = 5;
+    const paragraphSpacing = 8;
 
     doc.setFontSize(16);
     doc.setFont(undefined, "bold");
@@ -103,16 +118,33 @@ export const AfContent = ({
 
     doc.setFontSize(9);
     doc.setFont(undefined, "normal");
-    const lines = doc.splitTextToSize(content, maxLineWidth);
 
-    let y = margin + 10;
-    lines.forEach((line: string) => {
-      if (y > pageHeight - margin) {
-        doc.addPage();
-        y = margin;
+    // Split content into paragraphs (double newlines), then wrap each paragraph
+    const paragraphs = content.split(/\n\n+/);
+    let y = margin + 12;
+
+    paragraphs.forEach((paragraph, pIndex) => {
+      const trimmed = paragraph.trim();
+      if (!trimmed) return;
+
+      // Handle single newlines within a paragraph as line breaks
+      const subLines = trimmed.split(/\n/);
+      subLines.forEach((subLine) => {
+        const wrappedLines = doc.splitTextToSize(subLine, maxLineWidth);
+        wrappedLines.forEach((line: string) => {
+          if (y > pageHeight - margin) {
+            doc.addPage();
+            y = margin;
+          }
+          doc.text(line, margin, y);
+          y += lineHeight;
+        });
+      });
+
+      // Add extra spacing between paragraphs
+      if (pIndex < paragraphs.length - 1) {
+        y += paragraphSpacing;
       }
-      doc.text(line, margin, y);
-      y += 4;
     });
 
     doc.save(`${pdfTitle.replace(/\s+/g, "-").substring(0, 60)}.pdf`);
