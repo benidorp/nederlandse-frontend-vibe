@@ -1,4 +1,5 @@
 import HeaderFR from "@/components/fr/HeaderFR";
+import PhotographyLanguageSwitcher from "@/components/photography/PhotographyLanguageSwitcher";
 import HiddenInternalLinks from "@/components/HiddenInternalLinks";
 import HeroPhotographyFR from "@/components/photography-fr/HeroPhotographyFR";
 import ValuePropositionPhotographyFR from "@/components/photography-fr/ValuePropositionPhotographyFR";
@@ -41,6 +42,7 @@ const PhotographyFR = () => {
       <GTranslateWidget />
       <div className="min-h-screen">
         <HeaderFR />
+        <PhotographyLanguageSwitcher currentLanguage="fr" />
         <main>
           <HeroPhotographyFR />
           <ValuePropositionPhotographyFR />
