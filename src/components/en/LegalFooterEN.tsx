@@ -767,6 +767,31 @@ Website: https://iaee.eu`
   }
 ];
 
+// Helper to convert text with \n\n into proper <p> elements for GTranslate compatibility
+const renderFormattedContent = (text: string) => {
+  const paragraphs = text.split(/\n\n+/);
+  return paragraphs.map((paragraph, index) => {
+    // Handle bullet points within paragraphs
+    const lines = paragraph.split('\n');
+    if (lines.length > 1) {
+      return (
+        <div key={index} className="mb-4">
+          {lines.map((line, lineIndex) => (
+            <p key={lineIndex} className={line.startsWith('•') ? 'pl-4 mb-1' : 'mb-1'}>
+              {line}
+            </p>
+          ))}
+        </div>
+      );
+    }
+    return (
+      <p key={index} className="mb-4">
+        {paragraph}
+      </p>
+    );
+  });
+};
+
 const LegalFooterEN = () => {
   return (
     <section id="legal-information" className="py-12">
@@ -776,8 +801,8 @@ const LegalFooterEN = () => {
           <AccordionTrigger className="text-lg font-semibold hover:no-underline">
             Terms and Conditions
           </AccordionTrigger>
-          <AccordionContent className="text-sm leading-relaxed whitespace-pre-line pt-4">
-            {legalDocuments[0].content}
+          <AccordionContent className="text-sm leading-relaxed pt-4">
+            {renderFormattedContent(legalDocuments[0].content)}
           </AccordionContent>
         </AccordionItem>
         
@@ -785,8 +810,8 @@ const LegalFooterEN = () => {
           <AccordionTrigger className="text-lg font-semibold hover:no-underline">
             Privacy Policy
           </AccordionTrigger>
-          <AccordionContent className="text-sm leading-relaxed whitespace-pre-line pt-4">
-            {legalDocuments[1].content}
+          <AccordionContent className="text-sm leading-relaxed pt-4">
+            {renderFormattedContent(legalDocuments[1].content)}
           </AccordionContent>
         </AccordionItem>
         
@@ -794,8 +819,8 @@ const LegalFooterEN = () => {
           <AccordionTrigger className="text-lg font-semibold hover:no-underline">
             Disclaimer
           </AccordionTrigger>
-          <AccordionContent className="text-sm leading-relaxed whitespace-pre-line pt-4">
-            {legalDocuments[2].content}
+          <AccordionContent className="text-sm leading-relaxed pt-4">
+            {renderFormattedContent(legalDocuments[2].content)}
           </AccordionContent>
         </AccordionItem>
         
@@ -803,8 +828,8 @@ const LegalFooterEN = () => {
           <AccordionTrigger className="text-lg font-semibold hover:no-underline">
             Cookie Policy
           </AccordionTrigger>
-          <AccordionContent className="text-sm leading-relaxed whitespace-pre-line pt-4">
-            {legalDocuments[3].content}
+          <AccordionContent className="text-sm leading-relaxed pt-4">
+            {renderFormattedContent(legalDocuments[3].content)}
           </AccordionContent>
         </AccordionItem>
       </Accordion>
