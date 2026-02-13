@@ -67,7 +67,7 @@ const FooterFR = () => {
             <h3 className="font-semibold mb-4">Juridique</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" rel="nofollow" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a rel="nofollow" className="text-sm text-muted-foreground hover:text-primary transition-colors" href="/policy ">
                   Politique de Confidentialité
                 </a>
               </li>
@@ -131,8 +131,8 @@ const FooterFR = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 };
 
 export default FooterFR;
