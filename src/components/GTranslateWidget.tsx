@@ -2,15 +2,17 @@ import { useEffect } from "react";
 
 interface GTranslateWidgetProps {
   defaultLanguage?: string;
+  detectBrowserLanguage?: boolean;
+  inline?: boolean;
 }
 
-const GTranslateWidget = ({ defaultLanguage = "en" }: GTranslateWidgetProps) => {
+const GTranslateWidget = ({ defaultLanguage = "en", detectBrowserLanguage = false, inline = false }: GTranslateWidgetProps) => {
   useEffect(() => {
     // Configure GTranslate BEFORE loading the script
     (window as any).gtranslateSettings = {
       default_language: defaultLanguage,
       native_language_names: true,
-      detect_browser_language: false,
+      detect_browser_language: detectBrowserLanguage,
       languages: [
         "sq", "ar", "hy", "az", "be", "bn", "bs", "bg", "zh", "hr", "cs", "da", "nl", "en",
         "et", "fil", "fi", "fr", "ka", "de", "el", "gu", "he", "hi", "hu", "is", "ig", "id",
@@ -37,7 +39,7 @@ const GTranslateWidget = ({ defaultLanguage = "en" }: GTranslateWidgetProps) => 
     };
   }, [defaultLanguage]);
 
-  return <div className="gtranslate_wrapper"></div>;
+  return <div className={`gtranslate_wrapper${inline ? ' gtranslate-inline' : ''}`}></div>;
 };
 
 export default GTranslateWidget;

@@ -125,3 +125,21 @@ All colors MUST be HSL.
   right: 20px;
   z-index: 9999;
 }
+
+/* Inline GTranslate widget (not fixed) */
+.gtranslate_wrapper.gtranslate-inline {
+  position: static;
+  bottom: auto;
+  right: auto;
+}
+
+/* Preserve text formatting during GTranslate translation */
+font[style] p,
+font[style] li,
+font[style] div,
+font p,
+font li,
+font div {
+  margin-bottom: 0.5em;
+  display: block;
+}
