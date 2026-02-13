@@ -31,6 +31,14 @@ const PricingDropshipping = () => {
         <div className="max-w-2xl mx-auto">
           <Card className="border-primary shadow-xl">
             <CardHeader className="text-center pb-8">
+              <div className="flex justify-center mb-6">
+                <img 
+                  src="/images/iaee-logo-dropshipping.png" 
+                  alt="IAEE - Essential Legal Documents for Dropshipping Businesses" 
+                  className="h-20 w-20 object-contain"
+                  loading="eager"
+                />
+              </div>
               <div className="mb-4">
                 <span className="text-5xl font-bold text-primary">€79</span>
                 <span className="text-muted-foreground ml-2">one-time</span>
