@@ -24,6 +24,7 @@ const Ecommerce = () => {
         canonical="https://www.iaee.eu/essential-legal-documents-ecommerce-website-terms-conditions-privacy-policy-return-policy-shipping-policy"
         lang="en"
         ogType="product"
+        ogImage="https://www.iaee.eu/images/iaee-logo-ecommerce.png"
         serviceName="Essential Legal Documents for E-commerce Websites"
         serviceDescription="Complete legal protection package for e-commerce websites including Terms & Conditions, Privacy Policy, Return Policy, and Shipping Policy."
         servicePrice={79}
