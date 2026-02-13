@@ -428,18 +428,24 @@ export const AfContent = ({
           </div>
 
           {!translationReady && (
-            <div className="mb-12 p-5 bg-primary/5 border-2 border-primary/20 rounded-xl flex items-center gap-4 shadow-md">
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 shrink-0">
-                <Loader2 className="w-6 h-6 animate-spin text-primary" />
+            <div className="fixed top-0 left-0 right-0 z-[9999] bg-primary text-primary-foreground shadow-lg">
+              <div className="container mx-auto px-4 py-3 flex items-center justify-center gap-4">
+                <Loader2 className="w-6 h-6 animate-spin shrink-0" />
+                <div className="text-center">
+                  <p className="font-bold text-base">
+                    ⏳ Even geduld — de pagina wordt vertaald en downloads worden voorbereid...
+                  </p>
+                  <p className="text-sm opacity-90 mt-0.5">
+                    De pagina scrollt automatisch om alle tekst te vertalen. Downloads zijn beschikbaar over{" "}
+                    <span className="font-black text-lg">{countdown}</span> seconden.
+                  </p>
+                </div>
               </div>
-              <div className="flex-1">
-                <p className="text-foreground font-semibold text-base">
-                  ⏳ Downloads worden voorbereid...
-                </p>
-                <p className="text-muted-foreground text-sm mt-1">
-                  De pagina wordt vertaald. Downloads zijn beschikbaar over{" "}
-                  <span className="font-bold text-primary text-lg">{countdown}</span> seconden.
-                </p>
+              <div className="h-1 bg-primary-foreground/20">
+                <div
+                  className="h-full bg-primary-foreground/80 transition-all duration-1000 ease-linear"
+                  style={{ width: `${((TRANSLATION_WAIT_SECONDS - countdown) / TRANSLATION_WAIT_SECONDS) * 100}%` }}
+                />
               </div>
             </div>
           )}
