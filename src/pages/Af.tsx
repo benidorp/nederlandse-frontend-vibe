@@ -260,6 +260,89 @@ export const AfContent = ({
     setPreparingDownload(null);
   };
 
+  const downloadAllTxt = () => {
+    setPreparingDownload("all-txt");
+    const allContent = sections.map((_, index) => {
+      const title = getTranslatedSectionTitle(index);
+      const content = getTranslatedSectionText(index);
+      return `${"=".repeat(60)}\n${title}\n${"=".repeat(60)}\n\n${content}`;
+    }).join("\n\n\n");
+
+    const element = document.createElement("a");
+    const file = new Blob([allContent], { type: "text/plain;charset=utf-8" });
+    element.href = URL.createObjectURL(file);
+    element.download = "All-Legal-Documents.txt";
+    document.body.appendChild(element);
+    element.click();
+    document.body.removeChild(element);
+    setPreparingDownload(null);
+    toast.success("✅ Alle documenten als TXT gedownload!");
+  };
+
+  const downloadAllPdf = async () => {
+    setPreparingDownload("all-pdf");
+    try {
+      const pdf = new jsPDF({ orientation: "portrait", unit: "mm", format: "a4" });
+      const A4_WIDTH_MM = 210;
+      const A4_HEIGHT_MM = 297;
+      const MARGIN_MM = 15;
+      const CONTENT_WIDTH_MM = A4_WIDTH_MM - MARGIN_MM * 2;
+      const pageContentHeight = A4_HEIGHT_MM - MARGIN_MM * 2;
+
+      const allSections = document.querySelectorAll("[data-af-section]");
+
+      for (let i = 0; i < allSections.length; i++) {
+        if (i > 0) pdf.addPage();
+
+        const sectionEl = allSections[i] as HTMLElement;
+        const contentEl = sectionEl.querySelector("[data-af-content]") as HTMLElement;
+        const titleText = getTranslatedSectionTitle(i);
+        if (!contentEl) continue;
+
+        const tempContainer = document.createElement("div");
+        tempContainer.style.cssText = "position:absolute;left:-9999px;top:0;width:800px;padding:40px;background:#fff;color:#000;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.6;";
+
+        const titleEl = document.createElement("h1");
+        titleEl.style.cssText = "font-size:22px;font-weight:bold;margin-bottom:20px;color:#000;";
+        titleEl.textContent = titleText;
+        tempContainer.appendChild(titleEl);
+
+        const contentClone = contentEl.cloneNode(true) as HTMLElement;
+        contentClone.style.cssText = "color:#000;font-size:14px;line-height:1.6;";
+        contentClone.querySelectorAll("p").forEach((p) => {
+          (p as HTMLElement).style.cssText = "margin-bottom:10px;color:#000;font-size:14px;line-height:1.6;";
+        });
+        tempContainer.appendChild(contentClone);
+        document.body.appendChild(tempContainer);
+
+        const canvas = await html2canvas(tempContainer, { scale: 2, useCORS: true, backgroundColor: "#ffffff", width: 800 });
+        document.body.removeChild(tempContainer);
+
+        const imgWidth = CONTENT_WIDTH_MM;
+        const imgHeight = (canvas.height * imgWidth) / canvas.width;
+        const imgData = canvas.toDataURL("image/png");
+
+        let yPosition = MARGIN_MM;
+        let remainingHeight = imgHeight;
+
+        pdf.addImage(imgData, "PNG", MARGIN_MM, yPosition, imgWidth, imgHeight);
+        while (remainingHeight > pageContentHeight) {
+          remainingHeight -= pageContentHeight;
+          pdf.addPage();
+          const offset = -(imgHeight - remainingHeight - MARGIN_MM);
+          pdf.addImage(imgData, "PNG", MARGIN_MM, offset, imgWidth, imgHeight);
+        }
+      }
+
+      pdf.save("All-Legal-Documents.pdf");
+      toast.success("✅ Alle documenten als PDF gedownload!");
+    } catch (err) {
+      console.error("PDF generation error:", err);
+      toast.error("Er is een fout opgetreden bij het genereren van de PDF.");
+    }
+    setPreparingDownload(null);
+  };
+
   const sections = [
     { key: "disclosure" as const, style: "default" },
     { key: "termsAndConditions" as const, style: "default" },
@@ -306,6 +389,43 @@ export const AfContent = ({
         <main className="container mx-auto px-4 py-12 max-w-4xl">
           <h1 className="text-4xl font-bold mb-8 text-foreground">{t.legalDocumentsHeading}</h1>
           <p className="text-lg mb-6 text-muted-foreground">{t.downloadDescription}</p>
+
+          {/* Download All Section */}
+          <div className="mb-12 p-6 bg-primary/10 border-2 border-primary/30 rounded-xl shadow-md">
+            <h2 className="text-xl font-bold text-foreground mb-2">📦 Download alle documenten in één keer</h2>
+            <p className="text-muted-foreground text-sm mb-4">
+              Klik op een van de knoppen hieronder om alle 8 juridische documenten tegelijk te downloaden als één gecombineerd bestand. 
+              U kunt ook elk document apart downloaden via de knoppen bij elke sectie hieronder.
+            </p>
+            <div className="flex gap-3">
+              <Button
+                onClick={() => downloadAllTxt()}
+                variant="outline"
+                size="default"
+                disabled={preparingDownload !== null || !translationReady}
+              >
+                {preparingDownload === "all-txt" ? (
+                  <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                ) : (
+                  <FileText className="w-4 h-4 mr-2" />
+                )}
+                Alle documenten als .TXT
+              </Button>
+              <Button
+                onClick={() => downloadAllPdf()}
+                variant="default"
+                size="default"
+                disabled={preparingDownload !== null || !translationReady}
+              >
+                {preparingDownload === "all-pdf" ? (
+                  <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                ) : (
+                  <Download className="w-4 h-4 mr-2" />
+                )}
+                Alle documenten als PDF
+              </Button>
+            </div>
+          </div>
 
           {!translationReady && (
             <div className="mb-12 p-5 bg-primary/5 border-2 border-primary/20 rounded-xl flex items-center gap-4 shadow-md">
