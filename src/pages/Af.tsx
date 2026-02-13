@@ -36,33 +36,69 @@ export const AfContent = ({
 
   const TRANSLATION_WAIT_SECONDS = 15;
 
+  // Auto-scroll through all sections to force GTranslate to translate everything
+  const autoScrollAllSections = useCallback(async () => {
+    const allSections = document.querySelectorAll("[data-af-section]");
+    if (allSections.length === 0) return;
+
+    // Save current scroll position
+    const originalScrollY = window.scrollY;
+
+    // Scroll to each section quickly to trigger GTranslate's lazy translation
+    for (let i = 0; i < allSections.length; i++) {
+      allSections[i].scrollIntoView({ behavior: "instant" as ScrollBehavior, block: "start" });
+      // Small delay to let GTranslate detect the visible text
+      await new Promise((r) => setTimeout(r, 400));
+    }
+
+    // Also scroll to the very bottom and top to catch any missed content
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "instant" as ScrollBehavior });
+    await new Promise((r) => setTimeout(r, 400));
+
+    // Restore original scroll position
+    window.scrollTo({ top: originalScrollY, behavior: "instant" as ScrollBehavior });
+  }, []);
+
   const handleLanguageChange = useCallback((langCode: string) => {
     setActiveLang(langCode);
 
-    // Block downloads while translation runs
     if (langCode !== "en") {
       setTranslationReady(false);
       setCountdown(TRANSLATION_WAIT_SECONDS);
+
+      // Trigger GTranslate
+      const doTranslate = (window as any).doGTranslate;
+      if (doTranslate) {
+        doTranslate(`en|${langCode}`);
+      } else {
+        const select = document.querySelector('.gtranslate_wrapper select') as HTMLSelectElement;
+        if (select) {
+          const targetCode = langCode === "zh-CN" ? "zh" : langCode;
+          select.value = targetCode;
+          select.dispatchEvent(new Event('change', { bubbles: true }));
+        }
+      }
+
+      // Wait a moment for GTranslate to start, then auto-scroll all sections
+      setTimeout(() => {
+        autoScrollAllSections();
+      }, 2000);
     } else {
       setTranslationReady(true);
       setCountdown(0);
-    }
 
-    // Try doGTranslate first (float widget), then fallback to select element (dropdown widget)
-    const doTranslate = (window as any).doGTranslate;
-    if (doTranslate) {
-      doTranslate(`en|${langCode}`);
-      return;
+      const doTranslate = (window as any).doGTranslate;
+      if (doTranslate) {
+        doTranslate(`en|en`);
+      } else {
+        const select = document.querySelector('.gtranslate_wrapper select') as HTMLSelectElement;
+        if (select) {
+          select.value = "en";
+          select.dispatchEvent(new Event('change', { bubbles: true }));
+        }
+      }
     }
-
-    // Fallback: programmatically change the GTranslate dropdown select
-    const select = document.querySelector('.gtranslate_wrapper select') as HTMLSelectElement;
-    if (select) {
-      const targetCode = langCode === "zh-CN" ? "zh" : langCode;
-      select.value = targetCode;
-      select.dispatchEvent(new Event('change', { bubbles: true }));
-    }
-  }, []);
+  }, [autoScrollAllSections]);
 
   // Countdown timer for translation readiness
   useEffect(() => {
