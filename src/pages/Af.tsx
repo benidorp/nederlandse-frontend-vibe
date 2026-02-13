@@ -96,39 +96,34 @@ export const AfContent = ({
   };
 
   // Scroll all af-sections into view so GTranslate translates everything, then run callback
+  // Skip scrolling if language is English (no translation needed)
   const ensureAllTranslated = (callback: () => void) => {
+    if (activeLang === "en") {
+      callback();
+      return;
+    }
+
     const sections = document.querySelectorAll("[data-af-section]");
     if (sections.length === 0) { callback(); return; }
 
     const originalScroll = window.scrollY;
+    let i = 0;
 
-    // Do two full passes to ensure GTranslate catches everything
-    const doPass = (passNum: number, onDone: () => void) => {
-      let i = 0;
-      const scrollNext = () => {
-        if (i < sections.length) {
-          sections[i].scrollIntoView({ behavior: "instant" as ScrollBehavior });
-          i++;
-          // Longer delay per section so GTranslate has time to translate
-          setTimeout(scrollNext, 350);
-        } else {
-          onDone();
-        }
-      };
-      // Scroll to top first
-      window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
-      setTimeout(scrollNext, 200);
-    };
-
-    // First pass, then second pass, then wait and execute
-    doPass(1, () => {
-      doPass(2, () => {
+    const scrollNext = () => {
+      if (i < sections.length) {
+        sections[i].scrollIntoView({ behavior: "instant" as ScrollBehavior });
+        i++;
+        setTimeout(scrollNext, 300);
+      } else {
         setTimeout(() => {
           window.scrollTo({ top: originalScroll, behavior: "instant" as ScrollBehavior });
           callback();
-        }, 1500);
-      });
-    });
+        }, 1000);
+      }
+    };
+
+    window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
+    setTimeout(scrollNext, 100);
   };
 
   const downloadTextFile = (sectionIndex: number, fallbackFilename: string, sectionKey: string) => {
