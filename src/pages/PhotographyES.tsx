@@ -1,4 +1,5 @@
 import HeaderES from "@/components/es/HeaderES";
+import PhotographyLanguageSwitcher from "@/components/photography/PhotographyLanguageSwitcher";
 import HiddenInternalLinks from "@/components/HiddenInternalLinks";
 import HeroPhotographyES from "@/components/photography-es/HeroPhotographyES";
 import ValuePropositionPhotographyES from "@/components/photography-es/ValuePropositionPhotographyES";
@@ -41,6 +42,7 @@ const PhotographyES = () => {
       <GTranslateWidget />
       <div className="min-h-screen">
         <HeaderES />
+        <PhotographyLanguageSwitcher currentLanguage="es" />
         <main>
           <HeroPhotographyES />
           <ValuePropositionPhotographyES />

@@ -1,4 +1,5 @@
 import HeaderEN from "@/components/en/HeaderEN";
+import PhotographyLanguageSwitcher from "@/components/photography/PhotographyLanguageSwitcher";
 import HiddenInternalLinks from "@/components/HiddenInternalLinks";
 import HeroPhotography from "@/components/photography/HeroPhotography";
 import ValuePropositionPhotography from "@/components/photography/ValuePropositionPhotography";
@@ -41,6 +42,7 @@ const Photography = () => {
       <GTranslateWidget />
       <div className="min-h-screen">
         <HeaderEN />
+        <PhotographyLanguageSwitcher currentLanguage="en" />
         <main>
           <HeroPhotography />
           <ValuePropositionPhotography />
