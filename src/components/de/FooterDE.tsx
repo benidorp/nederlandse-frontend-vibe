@@ -86,7 +86,7 @@ const FooterDE = () => {
                 </a>
               </li>
               <li>
-                <a href="/de/af" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a className="text-sm text-muted-foreground hover:text-primary transition-colors" href="/policy ">
                   Cookie-Richtlinie
                 </a>
               </li>
