@@ -39,6 +39,7 @@ import Photography from "./pages/Photography";
 import PhotographyDE from "./pages/PhotographyDE";
 import PhotographyFR from "./pages/PhotographyFR";
 import PhotographyES from "./pages/PhotographyES";
+import PhotographyIT from "./pages/PhotographyIT";
 import TravelBooking from "./pages/TravelBooking";
 import Ecommerce from "./pages/Ecommerce";
 import OnlineShop from "./pages/OnlineShop";
@@ -159,6 +160,7 @@ const App = () => (
           <Route path="/de/fotografie-rechtsdokumente-agb-datenschutz-urheberrecht-haftungsausschluss" element={<PhotographyDE />} />
           <Route path="/fr/photographie-documents-juridiques-cgv-confidentialite-droit-auteur-clause" element={<PhotographyFR />} />
           <Route path="/es/fotografia-documentos-legales-terminos-condiciones-privacidad-derechos-autor-aviso-legal" element={<PhotographyES />} />
+          <Route path="/it/fotografia-documenti-legali-termini-condizioni-privacy-diritto-autore-disclaimer" element={<PhotographyIT />} />
           <Route path="/must-have-legal-protection-for-every-hotel-and-travel-website-terms-conditions-privacy-policy-cancellation-policy-disclaimer" element={<TravelBooking />} />
           <Route path="/essential-legal-documents-ecommerce-website-terms-conditions-privacy-policy-return-policy-shipping-policy" element={<Ecommerce />} />
           <Route path="/webshop-online-business-legal-protection-terms-privacy-policy-cookie-policy-gdpr-compliance" element={<OnlineShop />} />
