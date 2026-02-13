@@ -31,7 +31,8 @@ const premiumDomains = [
     price: "€1495",
     backlinks: "4.6K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "lemonde.fr (DA 93)", "cornell.edu (DA 92)", "spiegel.de (DA 90)"],
-    stripePaymentLink: "https://buy.stripe.com/6oUeVdepVg18dXf9OO9Zm04"
+    stripePaymentLink: "https://buy.stripe.com/6oUeVdepVg18dXf9OO9Zm04",
+    image: "/images/premium-domains-logo.png"
   },
   // DA 37
   {
@@ -61,7 +62,8 @@ const premiumDomains = [
     price: "€950",
     backlinks: "1.9K+",
     topBacklinks: ["europa.eu (DA 97)", "theguardian.com (DA 94)", "telegraph.co.uk (DA 94)", "dw.com (DA 93)", "boston.com (DA 92)"],
-    stripePaymentLink: "https://buy.stripe.com/fZu4gzdlRaGOg5n3qq9Zm0h"
+    stripePaymentLink: "https://buy.stripe.com/fZu4gzdlRaGOg5n3qq9Zm0h",
+    image: "/images/premium-domains-logo.png"
   },
   {
     name: "tabby.eu",
@@ -75,7 +77,8 @@ const premiumDomains = [
     price: "€1950",
     stripePaymentLink: "https://buy.stripe.com/bJe7sL2HdcOWbP7bWW9Zm0g",
     backlinks: "3K+",
-    topBacklinks: ["youtube.com (DA 100)", "lemonde.fr (DA 93)", "mdpi.com (DA 92)", "corriere.it (DA 92)", "wired.it (DA 90)"]
+    topBacklinks: ["youtube.com (DA 100)", "lemonde.fr (DA 93)", "mdpi.com (DA 92)", "corriere.it (DA 92)", "wired.it (DA 90)"],
+    image: "/images/premium-domains-logo.png"
   },
   // DA 36
   {
@@ -90,7 +93,8 @@ const premiumDomains = [
     price: "€925",
     stripePaymentLink: "https://buy.stripe.com/28E00ja9F9CK6uNgdc9Zm0f",
     backlinks: "6.6K+",
-    topBacklinks: ["standaard.be (DA 81)", "nieuwsblad.be (DA 79)", "gva.be (DA 73)"]
+    topBacklinks: ["standaard.be (DA 81)", "nieuwsblad.be (DA 79)", "gva.be (DA 73)"],
+    image: "/images/premium-domains-logo.png"
   },
   {
     name: "beauxartsliege.be",
@@ -104,7 +108,8 @@ const premiumDomains = [
     price: "€925",
     stripePaymentLink: "https://buy.stripe.com/28E00ja9F9CK6uNgdc9Zm0f",
     backlinks: "1.1K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "cnn.com (DA 94)", "behance.net (DA 92)", "rtbf.be (DA 82)"]
+    topBacklinks: ["en.wikipedia.org (DA 97)", "cnn.com (DA 94)", "behance.net (DA 92)", "rtbf.be (DA 82)"],
+    image: "/images/premium-domains-logo.png"
   },
   {
     name: "paulsmithmusic.eu",
@@ -118,7 +123,8 @@ const premiumDomains = [
     price: "€925",
     stripePaymentLink: "https://buy.stripe.com/28E00ja9F9CK6uNgdc9Zm0f",
     backlinks: "719+",
-    topBacklinks: ["bbc.co.uk (DA 95)", "theguardian.com (DA 95)", "pitchfork.com (DA 88)", "nme.com (DA 86)"]
+    topBacklinks: ["bbc.co.uk (DA 95)", "theguardian.com (DA 95)", "pitchfork.com (DA 88)", "nme.com (DA 86)"],
+    image: "/images/premium-domains-logo.png"
   },
   {
     name: "eu-asiacentre.eu",
@@ -132,7 +138,8 @@ const premiumDomains = [
     price: "€925",
     stripePaymentLink: "https://buy.stripe.com/28E00ja9F9CK6uNgdc9Zm0f",
     backlinks: "898+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "reddit.com (DA 97)", "nbcnews.com (DA 93)", "cam.ac.uk (DA 93)"]
+    topBacklinks: ["en.wikipedia.org (DA 97)", "reddit.com (DA 97)", "nbcnews.com (DA 93)", "cam.ac.uk (DA 93)"],
+    image: "/images/premium-domains-logo.png"
   },
   // DA 35
   {
@@ -147,7 +154,8 @@ const premiumDomains = [
     price: "€875",
     stripePaymentLink: "https://buy.stripe.com/aFa5kD81x16e1ate549Zm0e",
     backlinks: "3.4K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "nasa.gov (DA 95)", "europa.eu (DA 94)", "ieee.org (DA 93)"]
+    topBacklinks: ["en.wikipedia.org (DA 97)", "nasa.gov (DA 95)", "europa.eu (DA 94)", "ieee.org (DA 93)"],
+    image: "/images/premium-domains-logo.png"
   },
   {
     name: "martonecycling.eu",
@@ -161,7 +169,8 @@ const premiumDomains = [
     price: "€875",
     stripePaymentLink: "https://buy.stripe.com/aFa5kD81x16e1ate549Zm0e",
     backlinks: "232+",
-    topBacklinks: ["globo.com (DA 93)", "vogue.com (DA 92)", "harpersbazaar.com (DA 89)", "grazia.it (DA 73)"]
+    topBacklinks: ["globo.com (DA 93)", "vogue.com (DA 92)", "harpersbazaar.com (DA 89)", "grazia.it (DA 73)"],
+    image: "/images/premium-domains-logo.png"
   },
   {
     name: "muenchner-kirchennachrichten.de",
@@ -175,7 +184,8 @@ const premiumDomains = [
     price: "€875",
     stripePaymentLink: "https://buy.stripe.com/aFa5kD81x16e1ate549Zm0e",
     backlinks: "3.3K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "de.wikipedia.org (DA 94)", "fandom.com (DA 94)", "spiegel.de (DA 93)", "la-croix.com (DA 88)"]
+    topBacklinks: ["en.wikipedia.org (DA 97)", "de.wikipedia.org (DA 94)", "fandom.com (DA 94)", "spiegel.de (DA 93)", "la-croix.com (DA 88)"],
+    image: "/images/premium-domains-logo.png"
   },
   // DA 33
   {
@@ -190,7 +200,8 @@ const premiumDomains = [
     price: "€795",
     stripePaymentLink: "https://buy.stripe.com/7sYaEXdlR02a4mF1ii9Zm0d",
     backlinks: "3.9K+",
-    topBacklinks: ["naver.com (DA 93)", "yumpu.com (DA 91)", "heise.de (DA 91)", "computerbase.de (DA 84)", "motor-talk.de (DA 73)"]
+    topBacklinks: ["naver.com (DA 93)", "yumpu.com (DA 91)", "heise.de (DA 91)", "computerbase.de (DA 84)", "motor-talk.de (DA 73)"],
+    image: "/images/premium-domains-logo.png"
   },
   {
     name: "europe-en-midipyrenees.eu",
@@ -204,7 +215,8 @@ const premiumDomains = [
     price: "€795",
     stripePaymentLink: "https://buy.stripe.com/7sYaEXdlR02a4mF1ii9Zm0d",
     backlinks: "690.3K+",
-    topBacklinks: ["scoop.it (DA 92)", "franceinfo.fr (DA 91)", "latribune.fr (DA 86)", "culture.gouv.fr (DA 76)", "agriculture.gouv.fr (DA 72)"]
+    topBacklinks: ["scoop.it (DA 92)", "franceinfo.fr (DA 91)", "latribune.fr (DA 86)", "culture.gouv.fr (DA 76)", "agriculture.gouv.fr (DA 72)"],
+    image: "/images/premium-domains-logo.png"
   },
   {
     name: "fffb.be",
@@ -218,7 +230,8 @@ const premiumDomains = [
     price: "€795",
     stripePaymentLink: "https://buy.stripe.com/7sYaEXdlR02a4mF1ii9Zm0d",
     backlinks: "1.7K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "variety.com (DA 93)", "constantcontact.com (DA 90)", "rtbf.be (DA 89)", "courrierinternational.com (DA 80)"]
+    topBacklinks: ["en.wikipedia.org (DA 97)", "variety.com (DA 93)", "constantcontact.com (DA 90)", "rtbf.be (DA 89)", "courrierinternational.com (DA 80)"],
+    image: "/images/premium-domains-logo.png"
   },
   // DA 32
   {
@@ -233,7 +246,8 @@ const premiumDomains = [
     price: "€775",
     stripePaymentLink: "https://buy.stripe.com/00w5kDbdJ16e3iB6CC9Zm0c",
     backlinks: "2.7K+",
-    topBacklinks: ["europa.eu (DA 94)", "cam.ac.uk (DA 93)", "springer.com (DA 92)", "lse.ac.uk (DA 90)"]
+    topBacklinks: ["europa.eu (DA 94)", "cam.ac.uk (DA 93)", "springer.com (DA 92)", "lse.ac.uk (DA 90)"],
+    image: "/images/premium-domains-logo.png"
   },
   {
     name: "co-da.eu",
@@ -247,7 +261,8 @@ const premiumDomains = [
     price: "€775",
     stripePaymentLink: "https://buy.stripe.com/00w5kDbdJ16e3iB6CC9Zm0c",
     backlinks: "276+",
-    topBacklinks: ["globo.com (DA 95)", "huffpost.com (DA 94)", "cbsnews.com (DA 93)", "gizmodo.com (DA 93)", "fastcompany.com (DA 92)"]
+    topBacklinks: ["globo.com (DA 95)", "huffpost.com (DA 94)", "cbsnews.com (DA 93)", "gizmodo.com (DA 93)", "fastcompany.com (DA 92)"],
+    image: "/images/premium-domains-logo.png"
   },
   {
     name: "emg-nice2015.fr",
@@ -261,7 +276,8 @@ const premiumDomains = [
     price: "€775",
     stripePaymentLink: "https://buy.stripe.com/00w5kDbdJ16e3iB6CC9Zm0c",
     backlinks: "3.1K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "gofundme.com (DA 93)", "mundodeportivo.com (DA 92)", "nicematin.com (DA 73)", "triathlon.org (DA 68)"]
+    topBacklinks: ["en.wikipedia.org (DA 97)", "gofundme.com (DA 93)", "mundodeportivo.com (DA 92)", "nicematin.com (DA 73)", "triathlon.org (DA 68)"],
+    image: "/images/premium-domains-logo.png"
   },
   {
     name: "euromedialiteracy.eu",
@@ -275,7 +291,8 @@ const premiumDomains = [
     price: "€775",
     stripePaymentLink: "https://buy.stripe.com/00w5kDbdJ16e3iB6CC9Zm0c",
     backlinks: "2.5K+",
-    topBacklinks: ["es.wikipedia.org (DA 96)", "psu.edu (DA 92)", "scoop.it (DA 92)", "wisc.edu (DA 91)", "coe.int (DA 89)"]
+    topBacklinks: ["es.wikipedia.org (DA 96)", "psu.edu (DA 92)", "scoop.it (DA 92)", "wisc.edu (DA 91)", "coe.int (DA 89)"],
+    image: "/images/premium-domains-logo.png"
   },
   {
     name: "citiexpress.eu",
@@ -289,7 +306,8 @@ const premiumDomains = [
     price: "€775",
     stripePaymentLink: "https://buy.stripe.com/00w5kDbdJ16e3iB6CC9Zm0c",
     backlinks: "307+",
-    topBacklinks: ["goo.gl (DA 95)", "tripadvisor.com (DA 93)", "skyscrapercity.com (DA 86)", "ricksteves.com (DA 77)", "rome2rio.com (DA 76)"]
+    topBacklinks: ["goo.gl (DA 95)", "tripadvisor.com (DA 93)", "skyscrapercity.com (DA 86)", "ricksteves.com (DA 77)", "rome2rio.com (DA 76)"],
+    image: "/images/premium-domains-logo.png"
   },
   // DA 31
   {
@@ -1697,7 +1715,7 @@ const PremiumDomainsEN = () => {
                     "name": domain.name,
                     "description": domain.description,
                     "category": domain.category,
-                    ...(domain.image ? {"image": "https://www.nederlandse-frontend-vibe.lovable.app" + domain.image} : {}),
+                    "image": "https://www.iaee.eu/images/premium-domains-logo.png",
                     "offers": {
                       "@type": "Offer",
                       "price": domain.price.replace("€", ""),
@@ -1939,15 +1957,11 @@ const PremiumDomainsEN = () => {
                   className="h-full flex flex-col bg-gradient-to-br from-slate-800/80 to-slate-900/80 border-slate-700/50 backdrop-blur hover:border-amber-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10 group"
                 >
                   <CardHeader className="pb-2 sm:pb-3 p-3 sm:p-4 md:p-6">
-                    <div className="flex items-start justify-between gap-2">
-                      <div className="flex items-center gap-2">
-                        {domain.image && (
-                          <img src={domain.image} alt={`${domain.name} premium domain`} className="w-8 h-8 rounded object-cover" />
-                        )}
-                        <Badge variant="outline" className="text-[10px] sm:text-xs border-slate-600 text-slate-400 flex-shrink-0">
-                          {domain.category}
-                        </Badge>
-                      </div>
+                    <div className="flex items-center justify-between gap-2">
+                      <Badge variant="outline" className="text-[10px] sm:text-xs border-slate-600 text-slate-400 flex-shrink-0">
+                        {domain.category}
+                      </Badge>
+                      <img src="/images/premium-domains-logo.png" alt={`${domain.name} premium domain`} className="w-9 h-9 rounded object-cover flex-shrink-0" />
                       <div className="flex items-center gap-1 bg-amber-500/10 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full flex-shrink-0">
                         <BarChart3 className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-amber-400" />
                         <span className="text-[10px] sm:text-xs font-semibold text-amber-400">MOZ {domain.mozScore}</span>
