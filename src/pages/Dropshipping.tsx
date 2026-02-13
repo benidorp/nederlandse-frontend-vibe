@@ -24,6 +24,7 @@ const Dropshipping = () => {
         canonical="https://www.iaee.eu/dropshipping-business-legal-protection-terms-conditions-privacy-policy-supplier-agreement-refund-policy"
         lang="en"
         ogType="product"
+        ogImage="https://www.iaee.eu/images/iaee-logo-dropshipping.png"
         serviceName="Essential Legal Documents for Dropshipping Businesses"
         serviceDescription="Complete legal protection package for dropshipping businesses including Terms & Conditions, Privacy Policy, Supplier Agreement, and Refund Policy."
         servicePrice={79}
