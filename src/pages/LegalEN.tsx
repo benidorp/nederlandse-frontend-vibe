@@ -14,10 +14,12 @@ const LegalEN = () => {
         <html lang="en" />
         <link rel="canonical" href="https://iaee.eu/policy" />
       </Helmet>
-      <GTranslateWidget />
       <div className="min-h-screen bg-background">
         <HeaderEN />
         <main className="container mx-auto px-4 py-12">
+          <div className="mb-8 flex justify-center">
+            <GTranslateWidget detectBrowserLanguage={true} inline={true} />
+          </div>
           <LegalFooterEN />
         </main>
         <FooterEN />
