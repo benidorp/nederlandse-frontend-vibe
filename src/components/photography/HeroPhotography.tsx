@@ -12,7 +12,7 @@ const HeroPhotography = () => {
       <div className="container py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">
               Essential Legal Documents for Photography Websites: Terms & Conditions, Privacy Policy, Copyright Protection & Disclaimer
             </h1>
             <p className="text-xl text-white/90 mb-8">Protect your photography business website with professionally crafted legal documents. Terms & Conditions, Assignment Agreements, Privacy Policy, Quitclaim, Copyright Protection & More.</p>
