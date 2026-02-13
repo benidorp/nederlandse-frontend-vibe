@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ============================================== -->
+  <!-- VAT CALCULATOR - 7 LANGUAGES                   -->
+  <!-- With full hreflang annotations                 -->
+  <!-- ============================================== -->
+
+  <!-- Dutch (NL) -->
+  <url>
+    <loc>https://www.iaee.eu/btw-calculator-wereldwijd</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/btw-calculator-wereldwijd" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/vat-calculator-worldwide" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/calculadora-iva-mundial" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/mwst-rechner-weltweit" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/calculateur-tva-mondial" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/calcolatore-iva-mondiale" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/kalkulator-vat-swiatowy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/vat-calculator-worldwide" />
+  </url>
+
+  <!-- English (EN) -->
+  <url>
+    <loc>https://www.iaee.eu/vat-calculator-worldwide</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/btw-calculator-wereldwijd" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/vat-calculator-worldwide" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/calculadora-iva-mundial" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/mwst-rechner-weltweit" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/calculateur-tva-mondial" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/calcolatore-iva-mondiale" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/kalkulator-vat-swiatowy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/vat-calculator-worldwide" />
+  </url>
+
+  <!-- Spanish (ES) -->
+  <url>
+    <loc>https://www.iaee.eu/calculadora-iva-mundial</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/btw-calculator-wereldwijd" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/vat-calculator-worldwide" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/calculadora-iva-mundial" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/mwst-rechner-weltweit" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/calculateur-tva-mondial" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/calcolatore-iva-mondiale" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/kalkulator-vat-swiatowy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/vat-calculator-worldwide" />
+  </url>
+
+  <!-- German (DE) -->
+  <url>
+    <loc>https://www.iaee.eu/mwst-rechner-weltweit</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/btw-calculator-wereldwijd" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/vat-calculator-worldwide" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/calculadora-iva-mundial" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/mwst-rechner-weltweit" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/calculateur-tva-mondial" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/calcolatore-iva-mondiale" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/kalkulator-vat-swiatowy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/vat-calculator-worldwide" />
+  </url>
+
+  <!-- French (FR) -->
+  <url>
+    <loc>https://www.iaee.eu/calculateur-tva-mondial</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/btw-calculator-wereldwijd" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/vat-calculator-worldwide" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/calculadora-iva-mundial" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/mwst-rechner-weltweit" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/calculateur-tva-mondial" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/calcolatore-iva-mondiale" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/kalkulator-vat-swiatowy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/vat-calculator-worldwide" />
+  </url>
+
+  <!-- Italian (IT) -->
+  <url>
+    <loc>https://www.iaee.eu/calcolatore-iva-mondiale</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/btw-calculator-wereldwijd" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/vat-calculator-worldwide" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/calculadora-iva-mundial" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/mwst-rechner-weltweit" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/calculateur-tva-mondial" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/calcolatore-iva-mondiale" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/kalkulator-vat-swiatowy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/vat-calculator-worldwide" />
+  </url>
+
+  <!-- Polish (PL) -->
+  <url>
+    <loc>https://www.iaee.eu/kalkulator-vat-swiatowy</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/btw-calculator-wereldwijd" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/vat-calculator-worldwide" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/calculadora-iva-mundial" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/mwst-rechner-weltweit" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/calculateur-tva-mondial" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/calcolatore-iva-mondiale" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/kalkulator-vat-swiatowy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/vat-calculator-worldwide" />
+  </url>
+
+</urlset>
