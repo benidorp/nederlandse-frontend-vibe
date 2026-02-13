@@ -7,6 +7,7 @@ import FooterEN from "@/components/en/FooterEN";
 import AfLanguageSwitcher from "@/components/af/AfLanguageSwitcher";
 import GTranslateWidget from "@/components/GTranslateWidget";
 import jsPDF from "jspdf";
+import { toast } from "sonner";
 import type { AfTranslations } from "@/data/af-translations/types";
 import enTranslations from "@/data/af-translations/en";
 
@@ -170,6 +171,7 @@ export const AfContent = ({
     element.click();
     document.body.removeChild(element);
     setPreparingDownload(null);
+    toast.success("✅ TXT-bestand is succesvol gedownload!");
   };
 
   const downloadPDF = (sectionIndex: number, fallbackTitle: string, sectionKey: string) => {
@@ -219,6 +221,7 @@ export const AfContent = ({
 
     doc.save(`${pdfTitle.replace(/\s+/g, "-").substring(0, 60)}.pdf`);
     setPreparingDownload(null);
+    toast.success("✅ PDF-bestand is succesvol gedownload!");
   };
 
   const sections = [
