@@ -16,8 +16,8 @@ const HeroNewsMagazine = () => {
       
       <div className="container relative z-10">
         <div className="max-w-3xl">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            Complete Legal Protection for Your News & Magazine Website
+           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+            Essential Legal Documents for News & Magazine Websites: Terms & Conditions, Privacy Policy, Editorial Guidelines & Copyright Policy
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8">GDPR-compliant privacy policy, editorial guidelines, copyright policy, and all essential legal documents. Ready in minutes, not weeks. Protect your publication and your readers.</p>
           <div className="flex flex-col sm:flex-row gap-4">

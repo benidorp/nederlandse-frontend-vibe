@@ -20,7 +20,7 @@ const Nonprofit = () => {
         <script async src="https://js.stripe.com/v3/buy-button.js"></script>
       </Helmet>
       <SEOHead
-        title="Non-Profit Legal Documents | Donation Terms, Privacy Policy & Volunteer Agreements"
+        title="Essential Legal Documents for Non-Profit & Charity Websites: Donation Terms, Privacy Policy, Volunteer Agreements & GDPR Compliance"
         description="Complete legal protection for charitable organizations. GDPR-compliant privacy policy, donation terms, volunteer agreements, and fundraising disclosure. Protect your mission today for €79."
         canonical="https://www.iaee.eu/nonprofit-charity-legal-documents-donation-terms-privacy-policy"
         lang="en"

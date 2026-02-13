@@ -19,7 +19,7 @@ const Elearning = () => {
         <script async src="https://js.stripe.com/v3/buy-button.js"></script>
       </Helmet>
       <SEOHead
-        title="E-Learning Platform Legal Documents | Terms, Privacy Policy & GDPR Compliance"
+        title="Essential Legal Documents for E-Learning & Online Course Websites: Terms & Conditions, Privacy Policy, Refund Policy & GDPR Compliance"
         description="Complete legal protection for your online education platform. GDPR-compliant privacy policy, course terms, refund policy, and instructor agreements. Ready in minutes for €79."
         canonical="https://www.iaee.eu/elearning-platform-legal-documents-terms-privacy-policy-gdpr-compliance"
         lang="en"

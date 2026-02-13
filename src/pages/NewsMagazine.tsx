@@ -20,7 +20,7 @@ const NewsMagazine = () => {
         <script async src="https://js.stripe.com/v3/buy-button.js"></script>
       </Helmet>
       <SEOHead
-        title="Essential Legal Documents for News & Magazine Websites | GDPR-Compliant"
+        title="Essential Legal Documents for News & Magazine Websites: Terms & Conditions, Privacy Policy, Editorial Guidelines & Copyright Policy"
         description="Complete legal protection for your news or magazine website. Get GDPR-compliant privacy policy, editorial guidelines, copyright policy, terms & conditions - ready in minutes for €79."
         canonical="https://www.iaee.eu/news-magazine-legal-documents-terms-conditions-privacy-policy-copyright-editorial-policy"
         lang="en"
