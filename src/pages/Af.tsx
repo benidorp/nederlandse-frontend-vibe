@@ -34,29 +34,29 @@ export const AfContent = ({
   const [translationReady, setTranslationReady] = useState(true);
   const [countdown, setCountdown] = useState(0);
 
-  const TRANSLATION_WAIT_SECONDS = 15;
+  const TRANSLATION_WAIT_SECONDS = 20;
 
-  // Auto-scroll through all sections to force GTranslate to translate everything
+  // Slow auto-scroll through all sections over ~18 seconds to force GTranslate to translate everything
   const autoScrollAllSections = useCallback(async () => {
     const allSections = document.querySelectorAll("[data-af-section]");
     if (allSections.length === 0) return;
 
-    // Save current scroll position
-    const originalScrollY = window.scrollY;
+    const totalScrollTime = 18000; // 18 seconds for scrolling (2s initial wait already passed)
+    const delayPerSection = Math.floor(totalScrollTime / (allSections.length + 2)); // +2 for top/bottom
 
-    // Scroll to each section quickly to trigger GTranslate's lazy translation
+    // Scroll to each section slowly to let GTranslate translate visible text
     for (let i = 0; i < allSections.length; i++) {
-      allSections[i].scrollIntoView({ behavior: "instant" as ScrollBehavior, block: "start" });
-      // Small delay to let GTranslate detect the visible text
-      await new Promise((r) => setTimeout(r, 400));
+      allSections[i].scrollIntoView({ behavior: "smooth" as ScrollBehavior, block: "start" });
+      await new Promise((r) => setTimeout(r, delayPerSection));
     }
 
-    // Also scroll to the very bottom and top to catch any missed content
-    window.scrollTo({ top: document.body.scrollHeight, behavior: "instant" as ScrollBehavior });
-    await new Promise((r) => setTimeout(r, 400));
+    // Scroll to the very bottom to catch any remaining content
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" as ScrollBehavior });
+    await new Promise((r) => setTimeout(r, delayPerSection));
 
-    // Restore original scroll position
-    window.scrollTo({ top: originalScrollY, behavior: "instant" as ScrollBehavior });
+    // Scroll back to top
+    window.scrollTo({ top: 0, behavior: "smooth" as ScrollBehavior });
+    await new Promise((r) => setTimeout(r, delayPerSection));
   }, []);
 
   const handleLanguageChange = useCallback((langCode: string) => {
@@ -269,11 +269,19 @@ export const AfContent = ({
           <p className="text-lg mb-6 text-muted-foreground">{t.downloadDescription}</p>
 
           {!translationReady && (
-            <div className="mb-12 p-4 bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-lg flex items-center gap-3">
-              <Loader2 className="w-5 h-5 animate-spin text-amber-600 dark:text-amber-400" />
-              <span className="text-amber-800 dark:text-amber-300 font-medium">
-                Vertaling wordt voorbereid... Downloads beschikbaar over {countdown} seconden
-              </span>
+            <div className="mb-12 p-5 bg-primary/5 border-2 border-primary/20 rounded-xl flex items-center gap-4 shadow-md">
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 shrink-0">
+                <Loader2 className="w-6 h-6 animate-spin text-primary" />
+              </div>
+              <div className="flex-1">
+                <p className="text-foreground font-semibold text-base">
+                  ⏳ Downloads worden voorbereid...
+                </p>
+                <p className="text-muted-foreground text-sm mt-1">
+                  De pagina wordt vertaald. Downloads zijn beschikbaar over{" "}
+                  <span className="font-bold text-primary text-lg">{countdown}</span> seconden.
+                </p>
+              </div>
             </div>
           )}
 
