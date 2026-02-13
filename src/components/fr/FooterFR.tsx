@@ -72,7 +72,7 @@ const FooterFR = () => {
                 </a>
               </li>
               <li>
-                <a href="#" rel="nofollow" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a rel="nofollow" className="text-sm text-muted-foreground hover:text-primary transition-colors" href="/policy ">
                   Conditions Générales
                 </a>
               </li>
