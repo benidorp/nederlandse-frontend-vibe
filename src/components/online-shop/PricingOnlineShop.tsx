@@ -39,6 +39,9 @@ const PricingOnlineShop = () => {
               <CardDescription className="text-base">
                 All essential legal documents for unlimited use across your webshops
               </CardDescription>
+              <div className="flex justify-center mt-6">
+                <img src="/images/iaee-logo.png" alt="IAEE - Essential Legal Documents" className="h-20 w-20 object-contain" loading="eager" />
+              </div>
             </CardHeader>
             
             <CardContent className="space-y-6">

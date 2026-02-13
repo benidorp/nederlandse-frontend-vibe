@@ -37,6 +37,9 @@ const PricingPhotographyDE = () => {
               <CardDescription className="text-base md:text-lg">
                 Alle wesentlichen Rechtsdokumente für unbegrenzte Nutzung auf all Ihren Fotografie-Websites
               </CardDescription>
+              <div className="flex justify-center mt-6">
+                <img src="/images/iaee-logo.png" alt="IAEE - Wesentliche Rechtsdokumente" className="h-20 w-20 object-contain" loading="eager" />
+              </div>
             </CardHeader>
 
             <CardContent className="space-y-6">
