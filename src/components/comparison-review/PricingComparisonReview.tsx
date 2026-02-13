@@ -21,6 +21,9 @@ const PricingComparisonReview = () => {
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-foreground mb-2">Complete Legal Documents Package</h3>
               <p className="text-muted-foreground">Everything you need to protect your review website</p>
+              <div className="flex justify-center mt-6">
+                <img src="/images/iaee-logo.png" alt="IAEE - Essential Legal Documents" className="h-20 w-20 object-contain" loading="eager" />
+              </div>
             </div>
 
             <div className="space-y-4 mb-8">

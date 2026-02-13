@@ -138,7 +138,7 @@ const generateServiceSchema = (props: SEOHeadProps) => {
     "@type": "Product",
     name: props.serviceName,
     description: props.serviceDescription || props.description,
-    image: props.ogImage || "https://www.iaee.eu/images/iaee-logo-dropshipping.png",
+    image: props.ogImage || "https://www.iaee.eu/images/iaee-logo.png",
     category: props.serviceType || "Digital Service",
     offers: props.servicePrice ? {
       "@type": "Offer",

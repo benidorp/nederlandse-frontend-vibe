@@ -38,6 +38,9 @@ const PricingJA = () => {
               <CardDescription className="text-base">
                 無制限使用のためのすべての必須法的書類
               </CardDescription>
+              <div className="flex justify-center mt-6">
+                <img src="/images/iaee-logo.png" alt="IAEE" className="h-20 w-20 object-contain" loading="eager" />
+              </div>
             </CardHeader>
             
             <CardContent className="space-y-6">

@@ -38,6 +38,9 @@ const PricingES = () => {
               <CardDescription className="text-base">
                 Todos los documentos legales esenciales para uso ilimitado
               </CardDescription>
+              <div className="flex justify-center mt-6">
+                <img src="/images/iaee-logo.png" alt="IAEE - Documentos Legales Esenciales" className="h-20 w-20 object-contain" loading="eager" />
+              </div>
             </CardHeader>
             
             <CardContent className="space-y-6">
