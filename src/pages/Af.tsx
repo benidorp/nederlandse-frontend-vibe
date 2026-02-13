@@ -94,23 +94,50 @@ export const AfContent = ({
     return "";
   };
 
+  // Scroll all af-sections into view so GTranslate translates everything, then run callback
+  const ensureAllTranslated = (callback: () => void) => {
+    const sections = document.querySelectorAll("[data-af-section]");
+    if (sections.length === 0) { callback(); return; }
+
+    // Scroll each section into view sequentially with a small delay
+    let i = 0;
+    const originalScroll = window.scrollY;
+    const scrollNext = () => {
+      if (i < sections.length) {
+        sections[i].scrollIntoView({ behavior: "instant" as ScrollBehavior });
+        i++;
+        setTimeout(scrollNext, 120);
+      } else {
+        // Wait a bit more for GTranslate to finish, then restore scroll and execute
+        setTimeout(() => {
+          window.scrollTo({ top: originalScroll, behavior: "instant" as ScrollBehavior });
+          callback();
+        }, 500);
+      }
+    };
+    scrollNext();
+  };
+
   const downloadTextFile = (sectionIndex: number, fallbackFilename: string) => {
-    const content = getTranslatedSectionText(sectionIndex);
-    const title = getTranslatedSectionTitle(sectionIndex);
-    const filename = title ? title.replace(/[^a-zA-Z0-9\s\u00C0-\u024F\u0400-\u04FF\u4E00-\u9FFF\u3040-\u309F\u30A0-\u30FF\uAC00-\uD7AF]/g, "").replace(/\s+/g, "-").substring(0, 60) : fallbackFilename;
-    
-    const element = document.createElement("a");
-    const file = new Blob([content], { type: "text/plain;charset=utf-8" });
-    element.href = URL.createObjectURL(file);
-    element.download = `${filename}.txt`;
-    document.body.appendChild(element);
-    element.click();
-    document.body.removeChild(element);
+    ensureAllTranslated(() => {
+      const content = getTranslatedSectionText(sectionIndex);
+      const title = getTranslatedSectionTitle(sectionIndex);
+      const filename = title ? title.replace(/[^a-zA-Z0-9\s\u00C0-\u024F\u0400-\u04FF\u4E00-\u9FFF\u3040-\u309F\u30A0-\u30FF\uAC00-\uD7AF]/g, "").replace(/\s+/g, "-").substring(0, 60) : fallbackFilename;
+      
+      const element = document.createElement("a");
+      const file = new Blob([content], { type: "text/plain;charset=utf-8" });
+      element.href = URL.createObjectURL(file);
+      element.download = `${filename}.txt`;
+      document.body.appendChild(element);
+      element.click();
+      document.body.removeChild(element);
+    });
   };
 
   const downloadPDF = (sectionIndex: number, fallbackTitle: string) => {
-    const content = getTranslatedSectionText(sectionIndex);
-    const pdfTitle = getTranslatedSectionTitle(sectionIndex) || fallbackTitle;
+    ensureAllTranslated(() => {
+      const content = getTranslatedSectionText(sectionIndex);
+      const pdfTitle = getTranslatedSectionTitle(sectionIndex) || fallbackTitle;
 
     const doc = new jsPDF();
     const pageWidth = doc.internal.pageSize.getWidth();
@@ -156,6 +183,7 @@ export const AfContent = ({
     });
 
     doc.save(`${pdfTitle.replace(/\s+/g, "-").substring(0, 60)}.pdf`);
+    });
   };
 
   const sections = [
