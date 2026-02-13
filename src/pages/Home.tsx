@@ -23,88 +23,102 @@ import freelancersImage from "@/assets/page-freelancer.jpg";
 import spanishImage from "@/assets/nicole-profile.png";
 const pages = [
   {
-    title: "Affiliate Website Legal Documents",
+    title: "Affiliate Website Essential Legal Documents",
+    subtitle: "Privacy Policy • Terms & Conditions • Disclosure • Cookie Policy",
     description:
-      "Complete legal protection for affiliate marketing websites with terms, privacy policy, disclosure and cookie policy.",
+      "Complete legal protection for affiliate marketing websites. GDPR-compliant, professionally written and ready to use.",
     image: affiliateImage,
     link: "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
   },
   {
-    title: "Photography Legal Documents",
+    title: "Photography Website Essential Legal Documents",
+    subtitle: "Privacy Policy • Terms & Conditions • Copyright • Disclaimer • Cookie Policy",
     description:
-      "Professional legal documents for photographers including contracts, copyright protection and privacy policies.",
+      "Professional legal documents for photography websites including contracts, copyright protection and privacy policies.",
     image: photographyImage,
     link: "/photography-legal-documents-terms-conditions-privacy-policy-contract-copyright-protection",
   },
   {
-    title: "Travel & Hotel Legal Protection",
+    title: "Travel & Hotel Website Essential Legal Protection",
+    subtitle: "Privacy Policy • Terms & Conditions • Cancellation Policy • Disclaimer • Cookie Policy",
     description:
-      "Essential legal documents for travel and hotel websites with cancellation policy and terms & conditions.",
+      "Essential legal documents for travel and hotel websites with cancellation policy and GDPR compliance.",
     image: travelImage,
     link: "/must-have-legal-protection-for-every-hotel-and-travel-website-terms-conditions-privacy-policy-cancellation-policy-disclaimer",
   },
   {
-    title: "E-commerce Legal Documents",
-    description: "Complete legal protection for online stores with return policy, shipping policy and GDPR compliance.",
+    title: "E-commerce Website Essential Legal Protection",
+    subtitle: "Privacy Policy • Terms & Conditions • Return Policy • Shipping Policy • Cookie Policy",
+    description: "Complete legal protection for e-commerce websites with return policy, shipping policy and GDPR compliance.",
     image: ecommerceImage,
     link: "/essential-legal-documents-ecommerce-website-terms-conditions-privacy-policy-return-policy-shipping-policy",
   },
   {
-    title: "Online Shop Legal Protection",
-    description: "Professional legal documents for webshops with cookie policy and GDPR compliance.",
+    title: "Online Shop Website Essential Legal Protection",
+    subtitle: "Privacy Policy • Terms & Conditions • Return Policy • Cookie Policy • Disclaimer",
+    description: "Professional legal documents for webshop websites with GDPR compliance and cookie policy.",
     image: onlineShopImage,
     link: "/webshop-online-business-legal-protection-terms-privacy-policy-cookie-policy-gdpr-compliance",
   },
   {
-    title: "Dropshipping Business Legal",
-    description: "Essential legal protection for dropshipping businesses with supplier agreements and refund policies.",
+    title: "Dropshipping Website Essential Legal Documents",
+    subtitle: "Privacy Policy • Terms & Conditions • Refund Policy • Shipping Policy • Cookie Policy",
+    description: "Essential legal protection for dropshipping websites with supplier agreements and refund policies.",
     image: dropshippingImage,
     link: "/dropshipping-business-legal-protection-terms-conditions-privacy-policy-supplier-agreement-refund-policy",
   },
   {
-    title: "E-Learning Platform Legal",
-    description: "Complete legal documents for online education platforms with GDPR compliance and terms.",
+    title: "E-Learning Website Essential Legal Documents",
+    subtitle: "Privacy Policy • Terms & Conditions • Disclaimer • Cookie Policy • Refund Policy",
+    description: "Complete legal documents for online education websites with GDPR compliance and terms.",
     image: elearningImage,
     link: "/elearning-platform-legal-documents-terms-privacy-policy-gdpr-compliance",
   },
   {
-    title: "Nonprofit & Charity Legal",
-    description: "Professional legal documents for nonprofits including donation terms and privacy policies.",
+    title: "Nonprofit & Charity Website Essential Legal Documents",
+    subtitle: "Privacy Policy • Terms & Conditions • Donation Terms • Disclaimer • Cookie Policy",
+    description: "Professional legal documents for nonprofit websites including donation terms and privacy policies.",
     image: nonprofitImage,
     link: "/nonprofit-charity-legal-documents-donation-terms-privacy-policy",
   },
   {
-    title: "Streaming Media Legal",
-    description: "Essential legal protection for streaming platforms with DMCA policy and content licenses.",
+    title: "Streaming Media Website Essential Legal Documents",
+    subtitle: "Privacy Policy • Terms & Conditions • DMCA Policy • Content License • Cookie Policy",
+    description: "Essential legal protection for streaming websites with DMCA policy and content licenses.",
     image: streamingImage,
     link: "/streaming-media-legal-documents-terms-conditions-privacy-policy-dmca-content-license",
   },
   {
-    title: "Comparison & Review Sites",
+    title: "Comparison & Review Website Essential Legal Documents",
+    subtitle: "Privacy Policy • Terms & Conditions • Affiliate Disclosure • Disclaimer • Cookie Policy",
     description: "Complete legal documents for comparison and review websites with affiliate disclosures.",
     image: comparisonImage,
     link: "/comparison-review-website-legal-documents-terms-privacy-affiliate-disclosure-disclaimer",
   },
   {
-    title: "News & Magazine Legal",
+    title: "News & Magazine Website Essential Legal Documents",
+    subtitle: "Privacy Policy • Terms & Conditions • Editorial Policy • Copyright • Cookie Policy",
     description: "Professional legal protection for news and magazine websites with editorial and copyright policies.",
     image: newsMagazineImage,
     link: "/news-magazine-legal-documents-terms-conditions-privacy-policy-copyright-editorial-policy",
   },
   {
-    title: "Freelancers Legal Documents",
-    description: "Essential legal protection for freelancers and self-employed with contracts and privacy policies.",
+    title: "Freelancer Website Essential Legal Documents",
+    subtitle: "Privacy Policy • Terms & Conditions • Contract Terms • Disclaimer • Cookie Policy",
+    description: "Essential legal protection for freelancer websites with contracts and privacy policies.",
     image: freelancersImage,
     link: "/freelancers-self-employed-legal-documents-contracts-terms-privacy-policy",
   },
   {
     title: "Premium Domain Names",
+    subtitle: "High Authority • Proven SEO Value • Instant Transfer",
     description: "High-authority premium domain names with proven SEO value for sale. Boost your rankings instantly.",
     image: affiliateImage,
     link: "/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde",
   },
   {
-    title: "Spanish Legal Documents",
+    title: "Spanish Affiliate Website Legal Documents",
+    subtitle: "Política de Privacidad • Términos y Condiciones • Divulgación • Cookies",
     description: "Complete legal documents for affiliate websites in Spanish with terms and privacy policy.",
     image: spanishImage,
     link: "/es/documentos-legales-sitios-web-afiliados-terminos-condiciones-politica-privacidad-divulgacion-cookies",
@@ -315,15 +329,22 @@ const Home = () => {
                         </div>
                       </CardHeader>
                       <CardContent className="p-6">
-                        <CardTitle className="mb-3 text-xl group-hover:text-primary transition-colors leading-tight">
+                        <CardTitle className="mb-2 text-lg group-hover:text-primary transition-colors leading-tight">
                           {page.title}
                         </CardTitle>
-                        <CardDescription className="mb-4 leading-relaxed">{page.description}</CardDescription>
+                        {page.subtitle && (
+                          <p className="text-xs text-primary/80 font-medium mb-3 leading-relaxed">{page.subtitle}</p>
+                        )}
+                        <CardDescription className="mb-4 leading-relaxed text-sm">{page.description}</CardDescription>
+                        <div className="flex items-center justify-between mb-4 pt-3 border-t border-border">
+                          <span className="text-2xl font-bold text-primary">€79</span>
+                          <span className="text-xs font-medium text-muted-foreground bg-muted px-2 py-1 rounded-full">📦 Digital Product • Free Postage</span>
+                        </div>
                         <Button
                           variant="outline"
                           className="w-full group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-all"
                         >
-                          View Details & Pricing
+                          View Package
                         </Button>
                       </CardContent>
                     </Card>
