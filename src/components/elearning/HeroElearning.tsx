@@ -27,7 +27,7 @@ const HeroElearning = () => {
               </div>
 
               {/* Main heading */}
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-primary/80 to-accent bg-clip-text text-transparent animate-fade-in leading-tight">Complete Legal Documents for Your E-Learning Website Platform</h1>
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-primary/80 to-accent bg-clip-text text-transparent animate-fade-in leading-tight">Essential Legal Documents for E-Learning & Online Course Websites: Terms & Conditions, Privacy Policy, Refund Policy & GDPR Compliance</h1>
 
               {/* Subheading */}
               <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-fade-in">Protect your website online courses, instructors, and students with professionally crafted legal documents. GDPR-compliant, ready to use, and trusted by educational platforms worldwide.</p>

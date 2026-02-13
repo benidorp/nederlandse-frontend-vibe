@@ -19,7 +19,7 @@ const Photography = () => {
         <script async src="https://js.stripe.com/v3/buy-button.js"></script>
       </Helmet>
       <SEOHead
-        title="Legal Documents for Photography Websites | Terms, Privacy & Copyright"
+        title="Essential Legal Documents for Photography Websites: Terms & Conditions, Privacy Policy, Copyright Protection & Disclaimer"
         description="Essential legal documents for photographers including terms and conditions, assignment agreements, privacy policy, disclaimer, quitclaim, and copyright protection. Ready in minutes for €79."
         canonical="https://www.iaee.eu/photography-legal-documents-terms-conditions-privacy-policy-contract-copyright-protection"
         lang="en"

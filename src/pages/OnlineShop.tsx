@@ -19,7 +19,7 @@ const OnlineShop = () => {
         <script async src="https://js.stripe.com/v3/buy-button.js"></script>
       </Helmet>
       <SEOHead
-        title="Essential Legal Documents for Online Shops | Terms, Privacy & GDPR"
+        title="Essential Legal Documents for E-Commerce & Online Shop Websites: Terms & Conditions, Privacy Policy, Cookie Policy & GDPR Compliance"
         description="Complete legal protection package for webshops including Terms & Conditions, Privacy Policy, Cookie Policy, and GDPR Compliance documents. Ready in minutes for €79."
         canonical="https://www.iaee.eu/webshop-online-business-legal-protection-terms-privacy-policy-cookie-policy-gdpr-compliance"
         lang="en"
