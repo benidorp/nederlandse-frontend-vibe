@@ -99,23 +99,35 @@ export const AfContent = ({
     const sections = document.querySelectorAll("[data-af-section]");
     if (sections.length === 0) { callback(); return; }
 
-    // Scroll each section into view sequentially with a small delay
-    let i = 0;
     const originalScroll = window.scrollY;
-    const scrollNext = () => {
-      if (i < sections.length) {
-        sections[i].scrollIntoView({ behavior: "instant" as ScrollBehavior });
-        i++;
-        setTimeout(scrollNext, 120);
-      } else {
-        // Wait a bit more for GTranslate to finish, then restore scroll and execute
+
+    // Do two full passes to ensure GTranslate catches everything
+    const doPass = (passNum: number, onDone: () => void) => {
+      let i = 0;
+      const scrollNext = () => {
+        if (i < sections.length) {
+          sections[i].scrollIntoView({ behavior: "instant" as ScrollBehavior });
+          i++;
+          // Longer delay per section so GTranslate has time to translate
+          setTimeout(scrollNext, 350);
+        } else {
+          onDone();
+        }
+      };
+      // Scroll to top first
+      window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
+      setTimeout(scrollNext, 200);
+    };
+
+    // First pass, then second pass, then wait and execute
+    doPass(1, () => {
+      doPass(2, () => {
         setTimeout(() => {
           window.scrollTo({ top: originalScroll, behavior: "instant" as ScrollBehavior });
           callback();
-        }, 500);
-      }
-    };
-    scrollNext();
+        }, 1500);
+      });
+    });
   };
 
   const downloadTextFile = (sectionIndex: number, fallbackFilename: string) => {
