@@ -63,13 +63,16 @@ export const AfContent = ({
             .map((p) => {
               // Preserve <br> as single newlines within paragraphs
               const clone = p.cloneNode(true) as HTMLElement;
-              clone.querySelectorAll("br").forEach((br) => br.replaceWith("\n"));
-              return (clone.textContent || "").trim();
+              clone.querySelectorAll('br').forEach(br => {
+                const textNode = document.createTextNode('\n');
+                br.parentNode?.replaceChild(textNode, br);
+              });
+              return (clone as HTMLElement).innerText.trim();
             })
-            .filter((text) => text.length > 0)
             .join("\n\n");
+        } else {
+          return (contentEl as HTMLElement).innerText.trim();
         }
-        return contentEl.textContent || "";
       }
     }
     return "";
