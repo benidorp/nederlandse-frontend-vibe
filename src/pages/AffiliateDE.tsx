@@ -8,7 +8,7 @@ import FAQDE from "@/components/de/FAQDE";
 import PricingEN from "@/components/en/PricingEN";
 import ReviewsDE from "@/components/de/ReviewsDE";
 import FooterDE from "@/components/de/FooterDE";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
 import { Helmet } from "react-helmet";
@@ -38,7 +38,7 @@ const AffiliateDE = () => {
           { question: "Sind die rechtlichen Dokumente DSGVO-konform?", answer: "Ja, alle wesentlichen rechtlichen Dokumente sind vollständig DSGVO-, CCPA- und FTC-konform für internationale Website-Nutzung." }
         ]}
       />
-      <GTranslateWidget />
+      
       <LegalDocsLanguageSwitcher currentLang="de" />
       <HiddenInternalLinks />
       <div className="min-h-screen">

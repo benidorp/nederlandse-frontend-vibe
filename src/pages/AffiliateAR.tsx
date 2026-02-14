@@ -7,7 +7,7 @@ import FAQAR from "@/components/ar/FAQAR";
 import PricingAR from "@/components/ar/PricingAR";
 import ReviewsAR from "@/components/ar/ReviewsAR";
 import FooterAR from "@/components/ar/FooterAR";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
 import { Helmet } from "react-helmet";
@@ -37,7 +37,7 @@ const AffiliateAR = () => {
           { question: "هل الوثائق القانونية متوافقة مع GDPR؟", answer: "نعم، جميع الوثائق القانونية الأساسية متوافقة تماماً مع GDPR وCCPA وFTC للاستخدام الدولي." }
         ]}
       />
-      <GTranslateWidget />
+      
       <LegalDocsLanguageSwitcher currentLang="ar" />
       <HiddenInternalLinks />
       <div className="min-h-screen" dir="rtl">

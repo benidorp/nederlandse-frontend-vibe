@@ -7,7 +7,7 @@ import FAQPL from "@/components/pl/FAQPL";
 import PricingPL from "@/components/pl/PricingPL";
 import ReviewsPL from "@/components/pl/ReviewsPL";
 import FooterPL from "@/components/pl/FooterPL";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
 import { Helmet } from "react-helmet";
@@ -37,7 +37,7 @@ const AffiliatePL = () => {
           { question: "Czy dokumenty prawne są zgodne z RODO?", answer: "Tak, wszystkie niezbędne dokumenty prawne są w pełni zgodne z RODO, CCPA i FTC do użytku międzynarodowego." }
         ]}
       />
-      <GTranslateWidget />
+      
       <LegalDocsLanguageSwitcher currentLang="pl" />
       <HiddenInternalLinks />
       <div className="min-h-screen">

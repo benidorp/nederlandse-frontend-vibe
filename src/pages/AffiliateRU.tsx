@@ -7,7 +7,7 @@ import FAQRU from "@/components/ru/FAQRU";
 import PricingRU from "@/components/ru/PricingRU";
 import ReviewsRU from "@/components/ru/ReviewsRU";
 import FooterRU from "@/components/ru/FooterRU";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
 import { Helmet } from "react-helmet";
@@ -37,7 +37,7 @@ const AffiliateRU = () => {
           { question: "Соответствуют ли юридические документы GDPR?", answer: "Да, все основные юридические документы полностью соответствуют GDPR, CCPA и FTC для международного использования." }
         ]}
       />
-      <GTranslateWidget />
+      
       <LegalDocsLanguageSwitcher currentLang="ru" />
       <HiddenInternalLinks />
       <div className="min-h-screen">

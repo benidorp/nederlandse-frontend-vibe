@@ -9,7 +9,7 @@ import PricingPhotographyMulti from "@/components/photography-shared/PricingPhot
 import ReviewsPhotographyMulti from "@/components/photography-shared/ReviewsPhotographyMulti";
 import FAQPhotographyMulti from "@/components/photography-shared/FAQPhotographyMulti";
 import FooterEN from "@/components/en/FooterEN";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import { Helmet } from "react-helmet";
 
@@ -39,7 +39,7 @@ const PhotographyHU = () => {
         ]}
       />
       <HiddenInternalLinks />
-      <GTranslateWidget />
+      
       <div className="min-h-screen">
         <HeaderEN />
         <PhotographyLanguageSwitcher currentLanguage="hu" />

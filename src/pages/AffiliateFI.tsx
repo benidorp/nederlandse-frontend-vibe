@@ -7,7 +7,7 @@ import FAQFI from "@/components/fi/FAQFI";
 import PricingFI from "@/components/fi/PricingFI";
 import ReviewsFI from "@/components/fi/ReviewsFI";
 import FooterFI from "@/components/fi/FooterFI";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
 import { Helmet } from "react-helmet";
@@ -37,7 +37,7 @@ const AffiliateFI = () => {
           { question: "Ovatko juridiset asiakirjat GDPR-yhteensopivia?", answer: "Kyllä, kaikki olennaiset juridiset asiakirjat ovat täysin GDPR-, CCPA- ja FTC-yhteensopivia kansainväliseen käyttöön." }
         ]}
       />
-      <GTranslateWidget />
+      
       <LegalDocsLanguageSwitcher currentLang="fi" />
       <HiddenInternalLinks />
       <div className="min-h-screen">

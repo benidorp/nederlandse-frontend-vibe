@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import HeaderEN from "@/components/en/HeaderEN";
 import FooterEN from "@/components/en/FooterEN";
 import AfLanguageSwitcher from "@/components/af/AfLanguageSwitcher";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import AfFloatingNav from "@/components/af/AfFloatingNav";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
@@ -391,7 +391,7 @@ export const AfContent = ({
       <div className="min-h-screen bg-background">
         <HeaderEN />
         <AfLanguageSwitcher activeLang={activeLang} onLanguageChange={handleLanguageChange} />
-        <GTranslateWidget defaultLanguage="en" inline={true} />
+        
 
         <main className="container mx-auto px-4 py-12 max-w-4xl">
           <h1 className="text-4xl font-bold mb-4 text-foreground">{t.legalDocumentsHeading}</h1>

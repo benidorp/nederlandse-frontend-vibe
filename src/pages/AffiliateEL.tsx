@@ -7,7 +7,7 @@ import FAQEL from "@/components/el/FAQEL";
 import PricingEL from "@/components/el/PricingEL";
 import ReviewsEL from "@/components/el/ReviewsEL";
 import FooterEL from "@/components/el/FooterEL";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
 import { Helmet } from "react-helmet";
@@ -37,7 +37,7 @@ const AffiliateEL = () => {
           { question: "Τα νομικά έγγραφα είναι συμβατά με το GDPR;", answer: "Ναι, όλα τα απαραίτητα νομικά έγγραφα είναι πλήρως συμβατά με GDPR, CCPA και FTC για διεθνή χρήση." }
         ]}
       />
-      <GTranslateWidget />
+      
       <LegalDocsLanguageSwitcher currentLang="el" />
       <HiddenInternalLinks />
       <div className="min-h-screen">

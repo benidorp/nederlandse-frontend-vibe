@@ -7,7 +7,7 @@ import FAQHI from "@/components/hi/FAQHI";
 import PricingHI from "@/components/hi/PricingHI";
 import ReviewsHI from "@/components/hi/ReviewsHI";
 import FooterHI from "@/components/hi/FooterHI";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
 import { Helmet } from "react-helmet";
@@ -37,7 +37,7 @@ const AffiliateHI = () => {
           { question: "क्या कानूनी दस्तावेज़ GDPR के अनुरूप हैं?", answer: "हां, सभी आवश्यक कानूनी दस्तावेज़ पूरी तरह से GDPR, CCPA और FTC के अनुरूप हैं अंतर्राष्ट्रीय उपयोग के लिए।" }
         ]}
       />
-      <GTranslateWidget />
+      
       <LegalDocsLanguageSwitcher currentLang="hi" />
       <HiddenInternalLinks />
       <div className="min-h-screen">
