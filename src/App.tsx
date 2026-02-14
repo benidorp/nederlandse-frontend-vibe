@@ -40,6 +40,28 @@ import PhotographyDE from "./pages/PhotographyDE";
 import PhotographyFR from "./pages/PhotographyFR";
 import PhotographyES from "./pages/PhotographyES";
 import PhotographyIT from "./pages/PhotographyIT";
+import PhotographySV from "./pages/PhotographySV";
+import PhotographyPL from "./pages/PhotographyPL";
+import PhotographyEL from "./pages/PhotographyEL";
+import PhotographyDA from "./pages/PhotographyDA";
+import PhotographyNO from "./pages/PhotographyNO";
+import PhotographyRO from "./pages/PhotographyRO";
+import PhotographyBG from "./pages/PhotographyBG";
+import PhotographyFI from "./pages/PhotographyFI";
+import PhotographyRU from "./pages/PhotographyRU";
+import PhotographyZH from "./pages/PhotographyZH";
+import PhotographyHI from "./pages/PhotographyHI";
+import PhotographyJA from "./pages/PhotographyJA";
+import PhotographyAR from "./pages/PhotographyAR";
+import PhotographyKO from "./pages/PhotographyKO";
+import PhotographyCS from "./pages/PhotographyCS";
+import PhotographyHU from "./pages/PhotographyHU";
+import PhotographyUK from "./pages/PhotographyUK";
+import PhotographySK from "./pages/PhotographySK";
+import PhotographyHR from "./pages/PhotographyHR";
+import PhotographySR from "./pages/PhotographySR";
+import PhotographySL from "./pages/PhotographySL";
+import PhotographyTR from "./pages/PhotographyTR";
 import TravelBooking from "./pages/TravelBooking";
 import Ecommerce from "./pages/Ecommerce";
 import OnlineShop from "./pages/OnlineShop";
@@ -156,11 +178,37 @@ const App = () => (
           <Route path="/rs/af" element={<AfLegalRS />} />
           <Route path="/si/af" element={<AfLegalSI />} />
           <Route path="/docs-1" element={<Languages />} />
+          
+          {/* Photography Routes */}
           <Route path="/photography-legal-documents-terms-conditions-privacy-policy-contract-copyright-protection" element={<Photography />} />
           <Route path="/de/fotografie-rechtsdokumente-agb-datenschutz-urheberrecht-haftungsausschluss" element={<PhotographyDE />} />
           <Route path="/fr/photographie-documents-juridiques-cgv-confidentialite-droit-auteur-clause" element={<PhotographyFR />} />
           <Route path="/es/fotografia-documentos-legales-terminos-condiciones-privacidad-derechos-autor-aviso-legal" element={<PhotographyES />} />
           <Route path="/it/fotografia-documenti-legali-termini-condizioni-privacy-diritto-autore-disclaimer" element={<PhotographyIT />} />
+          <Route path="/sv/fotografi-juridiska-dokument-villkor-integritetspolicy-upphovsratt-ansvarsfriskrivning" element={<PhotographySV />} />
+          <Route path="/pl/fotografia-dokumenty-prawne-regulamin-prywatnosc-prawa-autorskie-zastrzezenia" element={<PhotographyPL />} />
+          <Route path="/el/fotografia-nomika-engrafa-oroi-aporitou-pnevmatika-dikaiomata" element={<PhotographyEL />} />
+          <Route path="/da/fotografi-juridiske-dokumenter-vilkaar-privatlivspolitik-ophavsret-ansvarsfraskrivelse" element={<PhotographyDA />} />
+          <Route path="/no/fotografi-juridiske-dokumenter-vilkaar-personvern-opphavsrett-ansvarsfraskrivelse" element={<PhotographyNO />} />
+          <Route path="/ro/fotografie-documente-juridice-termeni-confidentialitate-drepturi-autor-declinare" element={<PhotographyRO />} />
+          <Route path="/bg/fotografiya-pravni-dokumenti-obshti-usloviya-poveritelnost-avtorski-prava" element={<PhotographyBG />} />
+          <Route path="/fi/valokuvaus-oikeudelliset-asiakirjat-kayttoehdot-tietosuoja-tekijanoikeus-vastuuvapaus" element={<PhotographyFI />} />
+          <Route path="/ru/fotografiya-yuridicheskie-dokumenty-usloviya-konfidencialnost-avtorskie-prava" element={<PhotographyRU />} />
+          <Route path="/zh/sheying-falv-wenjian-tiaokuan-yinsi-banquan-baohu-mianze" element={<PhotographyZH />} />
+          <Route path="/hi/photography-kanooni-dastavez-niyam-gopyata-copyright-suraksha" element={<PhotographyHI />} />
+          <Route path="/ja/shashin-houteki-bunsho-riyoukiyaku-privacy-chosakuken-hogo" element={<PhotographyJA />} />
+          <Route path="/ar/taswir-wathaeq-qanuniya-shurut-khususiya-huquq-nashr-ikhla-masuliya" element={<PhotographyAR />} />
+          <Route path="/ko/sajin-beobjeok-munseo-iyongyakgwan-gaeinjeongbo-jeojakkwon-boho" element={<PhotographyKO />} />
+          <Route path="/cs/fotografie-pravni-dokumenty-podminky-soukromi-autorska-prava-prohlaseni" element={<PhotographyCS />} />
+          <Route path="/hu/fotografia-jogi-dokumentumok-feltetelek-adatvedelem-szerzoi-jog-felelossegkizaras" element={<PhotographyHU />} />
+          <Route path="/uk/fotografiya-yurydychni-dokumenty-umovy-konfidentsijnist-avtorski-prava" element={<PhotographyUK />} />
+          <Route path="/sk/fotografia-pravne-dokumenty-podmienky-sukromie-autorske-prava-vyhlasenie" element={<PhotographySK />} />
+          <Route path="/hr/fotografija-pravni-dokumenti-uvjeti-privatnost-autorska-prava-odricanje" element={<PhotographyHR />} />
+          <Route path="/sr/fotografija-pravni-dokumenti-uslovi-privatnost-autorska-prava-odricanje" element={<PhotographySR />} />
+          <Route path="/sl/fotografija-pravni-dokumenti-pogoji-zasebnost-avtorske-pravice-omejitev" element={<PhotographySL />} />
+          <Route path="/tr/fotograf-yasal-belgeler-sartlar-gizlilik-telif-hakki-sorumluluk-reddi" element={<PhotographyTR />} />
+
+          {/* Other Industry Verticals */}
           <Route path="/must-have-legal-protection-for-every-hotel-and-travel-website-terms-conditions-privacy-policy-cancellation-policy-disclaimer" element={<TravelBooking />} />
           <Route path="/essential-legal-documents-ecommerce-website-terms-conditions-privacy-policy-return-policy-shipping-policy" element={<Ecommerce />} />
           <Route path="/webshop-online-business-legal-protection-terms-privacy-policy-cookie-policy-gdpr-compliance" element={<OnlineShop />} />
