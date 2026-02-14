@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { Helmet } from "react-helmet";
-import { Download, FileText, Loader2 } from "lucide-react";
+import { Download, FileText, Loader2, FileCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import HeaderEN from "@/components/en/HeaderEN";
 import FooterEN from "@/components/en/FooterEN";
 import AfLanguageSwitcher from "@/components/af/AfLanguageSwitcher";
 import GTranslateWidget from "@/components/GTranslateWidget";
+import AfFloatingNav from "@/components/af/AfFloatingNav";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
 import { toast } from "sonner";
@@ -387,7 +388,21 @@ export const AfContent = ({
         <GTranslateWidget defaultLanguage="en" inline={true} />
 
         <main className="container mx-auto px-4 py-12 max-w-4xl">
-          <h1 className="text-4xl font-bold mb-8 text-foreground">{t.legalDocumentsHeading}</h1>
+          <h1 className="text-4xl font-bold mb-4 text-foreground">{t.legalDocumentsHeading}</h1>
+          
+          {/* Document count badge */}
+          <div className="flex items-center gap-3 mb-6 p-4 bg-primary/10 border border-primary/20 rounded-lg">
+            <FileCheck className="w-6 h-6 text-primary shrink-0" />
+            <div>
+              <p className="text-base font-bold text-foreground">
+                📑 Deze pagina bevat <span className="text-primary">{sections.length} juridische documenten</span> — allemaal downloadbaar als PDF of TXT.
+              </p>
+              <p className="text-sm text-muted-foreground mt-0.5">
+                Gebruik de zwevende knop rechts om snel te navigeren en per stuk te downloaden.
+              </p>
+            </div>
+          </div>
+
           <p className="text-lg mb-6 text-muted-foreground">{t.downloadDescription}</p>
 
           {/* Download All Section */}
@@ -483,6 +498,14 @@ export const AfContent = ({
             </section>
           ))}
         </main>
+
+        <AfFloatingNav
+          sectionKeys={sections.map(s => s.key)}
+          sectionTitles={t.sectionTitles}
+          onDownloadTxt={(index) => downloadTextFile(index, t.fileNames[sections[index].key], sections[index].key)}
+          onDownloadPdf={(index) => downloadPDF(index, t.sectionTitles[sections[index].key], sections[index].key)}
+          disabled={preparingDownload !== null || !translationReady}
+        />
 
         <FooterEN />
       </div>
