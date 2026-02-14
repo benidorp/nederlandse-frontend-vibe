@@ -12,27 +12,6 @@ import AfLegalFR from "./pages/AfLegalFR";
 import AfLegalES from "./pages/AfLegalES";
 import AfLegalIT from "./pages/AfLegalIT";
 import AfLegalPT from "./pages/AfLegalPT";
-import AfLegalSE from "./pages/AfLegalSE";
-import AfLegalPL from "./pages/AfLegalPL";
-import AfLegalGR from "./pages/AfLegalGR";
-import AfLegalDK from "./pages/AfLegalDK";
-import AfLegalNO from "./pages/AfLegalNO";
-import AfLegalRO from "./pages/AfLegalRO";
-import AfLegalBG from "./pages/AfLegalBG";
-import AfLegalFI from "./pages/AfLegalFI";
-import AfLegalRU from "./pages/AfLegalRU";
-import AfLegalCN from "./pages/AfLegalCN";
-import AfLegalHI from "./pages/AfLegalHI";
-import AfLegalJP from "./pages/AfLegalJP";
-import AfLegalSA from "./pages/AfLegalSA";
-import AfLegalKR from "./pages/AfLegalKR";
-import AfLegalCZ from "./pages/AfLegalCZ";
-import AfLegalHU from "./pages/AfLegalHU";
-import AfLegalUA from "./pages/AfLegalUA";
-import AfLegalSK from "./pages/AfLegalSK";
-import AfLegalHR from "./pages/AfLegalHR";
-import AfLegalRS from "./pages/AfLegalRS";
-import AfLegalSI from "./pages/AfLegalSI";
 import Languages from "./pages/Languages";
 import LegalEN from "./pages/LegalEN";
 import Photography from "./pages/Photography";
@@ -156,27 +135,6 @@ const App = () => (
           <Route path="/es/af" element={<AfLegalES />} />
           <Route path="/it/af" element={<AfLegalIT />} />
           <Route path="/pt/af" element={<AfLegalPT />} />
-          <Route path="/se/af" element={<AfLegalSE />} />
-          <Route path="/pl/af" element={<AfLegalPL />} />
-          <Route path="/gr/af" element={<AfLegalGR />} />
-          <Route path="/dk/af" element={<AfLegalDK />} />
-          <Route path="/no/af" element={<AfLegalNO />} />
-          <Route path="/ro/af" element={<AfLegalRO />} />
-          <Route path="/bg/af" element={<AfLegalBG />} />
-          <Route path="/fi/af" element={<AfLegalFI />} />
-          <Route path="/ru/af" element={<AfLegalRU />} />
-          <Route path="/cn/af" element={<AfLegalCN />} />
-          <Route path="/hi/af" element={<AfLegalHI />} />
-          <Route path="/jp/af" element={<AfLegalJP />} />
-          <Route path="/sa/af" element={<AfLegalSA />} />
-          <Route path="/kr/af" element={<AfLegalKR />} />
-          <Route path="/cz/af" element={<AfLegalCZ />} />
-          <Route path="/hu/af" element={<AfLegalHU />} />
-          <Route path="/ua/af" element={<AfLegalUA />} />
-          <Route path="/sk/af" element={<AfLegalSK />} />
-          <Route path="/hr/af" element={<AfLegalHR />} />
-          <Route path="/rs/af" element={<AfLegalRS />} />
-          <Route path="/si/af" element={<AfLegalSI />} />
           <Route path="/docs-1" element={<Languages />} />
           
           {/* Photography Routes */}
