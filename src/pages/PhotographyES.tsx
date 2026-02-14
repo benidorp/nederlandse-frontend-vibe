@@ -9,7 +9,7 @@ import PricingPhotographyES from "@/components/photography-es/PricingPhotography
 import ReviewsPhotographyES from "@/components/photography-es/ReviewsPhotographyES";
 import FAQPhotographyES from "@/components/photography-es/FAQPhotographyES";
 import FooterES from "@/components/es/FooterES";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import { Helmet } from "react-helmet";
 
@@ -39,7 +39,7 @@ const PhotographyES = () => {
         ]}
       />
       <HiddenInternalLinks />
-      <GTranslateWidget />
+      
       <div className="min-h-screen">
         <HeaderES />
         <PhotographyLanguageSwitcher currentLanguage="es" />

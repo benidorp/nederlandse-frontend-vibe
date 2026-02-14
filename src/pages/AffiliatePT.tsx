@@ -7,7 +7,7 @@ import FAQPT from "@/components/pt/FAQPT";
 import PricingPT from "@/components/pt/PricingPT";
 import ReviewsPT from "@/components/pt/ReviewsPT";
 import FooterPT from "@/components/pt/FooterPT";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
 import { Helmet } from "react-helmet";
@@ -37,7 +37,7 @@ const AffiliatePT = () => {
           { question: "Os documentos legais são compatíveis com o GDPR?", answer: "Sim, todos os documentos legais essenciais são totalmente compatíveis com GDPR, CCPA e FTC para uso internacional." }
         ]}
       />
-      <GTranslateWidget />
+      
       <LegalDocsLanguageSwitcher currentLang="pt" />
       <HiddenInternalLinks />
       <div className="min-h-screen">

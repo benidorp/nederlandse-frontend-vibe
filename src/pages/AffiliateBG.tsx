@@ -7,7 +7,7 @@ import FAQBG from "@/components/bg/FAQBG";
 import PricingBG from "@/components/bg/PricingBG";
 import ReviewsBG from "@/components/bg/ReviewsBG";
 import FooterBG from "@/components/bg/FooterBG";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
 import { Helmet } from "react-helmet";
@@ -37,7 +37,7 @@ const AffiliateBG = () => {
           { question: "Правните документи съвместими ли са с GDPR?", answer: "Да, всички основни правни документи са напълно съвместими с GDPR, CCPA и FTC за международна употреба." }
         ]}
       />
-      <GTranslateWidget />
+      
       <LegalDocsLanguageSwitcher currentLang="bg" />
       <HiddenInternalLinks />
       <div className="min-h-screen">

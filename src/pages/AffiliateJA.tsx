@@ -7,7 +7,7 @@ import FAQJA from "@/components/ja/FAQJA";
 import PricingJA from "@/components/ja/PricingJA";
 import ReviewsJA from "@/components/ja/ReviewsJA";
 import FooterJA from "@/components/ja/FooterJA";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
 import { Helmet } from "react-helmet";
@@ -37,7 +37,7 @@ const AffiliateJA = () => {
           { question: "法的文書はGDPRに準拠していますか？", answer: "はい、すべての必須法的文書は国際利用のためにGDPR、CCPA、FTCに完全準拠しています。" }
         ]}
       />
-      <GTranslateWidget />
+      
       <LegalDocsLanguageSwitcher currentLang="ja" />
       <HiddenInternalLinks />
       <div className="min-h-screen">

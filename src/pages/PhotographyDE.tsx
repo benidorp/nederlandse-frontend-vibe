@@ -9,7 +9,7 @@ import PricingPhotographyDE from "@/components/photography-de/PricingPhotography
 import ReviewsPhotographyDE from "@/components/photography-de/ReviewsPhotographyDE";
 import FAQPhotographyDE from "@/components/photography-de/FAQPhotographyDE";
 import FooterDE from "@/components/de/FooterDE";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import { Helmet } from "react-helmet";
 
@@ -39,7 +39,7 @@ const PhotographyDE = () => {
         ]}
       />
       <HiddenInternalLinks />
-      <GTranslateWidget />
+      
       <div className="min-h-screen">
         <HeaderDE />
         <PhotographyLanguageSwitcher currentLanguage="de" />

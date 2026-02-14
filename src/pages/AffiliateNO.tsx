@@ -7,7 +7,7 @@ import FAQNO from "@/components/no/FAQNO";
 import PricingNO from "@/components/no/PricingNO";
 import ReviewsNO from "@/components/no/ReviewsNO";
 import FooterNO from "@/components/no/FooterNO";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
 import { Helmet } from "react-helmet";
@@ -37,7 +37,7 @@ const AffiliateNO = () => {
           { question: "Er de juridiske dokumentene GDPR-kompatible?", answer: "Ja, alle essensielle juridiske dokumenter er fullt GDPR-, CCPA- og FTC-kompatible for internasjonal bruk." }
         ]}
       />
-      <GTranslateWidget />
+      
       <LegalDocsLanguageSwitcher currentLang="no" />
       <HiddenInternalLinks />
       <div className="min-h-screen">

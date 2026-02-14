@@ -7,7 +7,7 @@ import FAQDA from "@/components/da/FAQDA";
 import PricingDA from "@/components/da/PricingDA";
 import ReviewsDA from "@/components/da/ReviewsDA";
 import FooterDA from "@/components/da/FooterDA";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
 import { Helmet } from "react-helmet";
@@ -37,7 +37,7 @@ const AffiliateDA = () => {
           { question: "Er de juridiske dokumenter GDPR-kompatible?", answer: "Ja, alle væsentlige juridiske dokumenter er fuldt GDPR-, CCPA- og FTC-kompatible til international brug." }
         ]}
       />
-      <GTranslateWidget />
+      
       <LegalDocsLanguageSwitcher currentLang="da" />
       <HiddenInternalLinks />
       <div className="min-h-screen">

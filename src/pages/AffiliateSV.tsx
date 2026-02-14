@@ -7,7 +7,7 @@ import FAQSV from "@/components/sv/FAQSV";
 import PricingSV from "@/components/sv/PricingSV";
 import ReviewsSV from "@/components/sv/ReviewsSV";
 import FooterSV from "@/components/sv/FooterSV";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
 import { Helmet } from "react-helmet";
@@ -37,7 +37,7 @@ const AffiliateSV = () => {
           { question: "Är de juridiska dokumenten GDPR-kompatibla?", answer: "Ja, alla väsentliga juridiska dokument är helt GDPR-, CCPA- och FTC-kompatibla för internationell användning." }
         ]}
       />
-      <GTranslateWidget />
+      
       <LegalDocsLanguageSwitcher currentLang="sv" />
       <HiddenInternalLinks />
       <div className="min-h-screen">

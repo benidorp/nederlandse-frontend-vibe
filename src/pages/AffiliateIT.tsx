@@ -7,7 +7,7 @@ import FAQIT from "@/components/it/FAQIT";
 import PricingIT from "@/components/it/PricingIT";
 import ReviewsIT from "@/components/it/ReviewsIT";
 import FooterIT from "@/components/it/FooterIT";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
 import { Helmet } from "react-helmet";
@@ -37,7 +37,7 @@ const AffiliateIT = () => {
           { question: "I documenti legali sono conformi al GDPR?", answer: "Sì, tutti i documenti legali essenziali sono pienamente conformi a GDPR, CCPA e FTC per uso internazionale." }
         ]}
       />
-      <GTranslateWidget />
+      
       <LegalDocsLanguageSwitcher currentLang="it" />
       <HiddenInternalLinks />
       <div className="min-h-screen">
