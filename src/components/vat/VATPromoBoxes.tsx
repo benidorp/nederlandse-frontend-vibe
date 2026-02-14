@@ -19,10 +19,9 @@ const translations = {
     legalDocsCta: "Bekijk Juridische Templates",
     legalDocsLink:
       "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
-    vpnTitle: "🔒 VPN Nodig voor EU Domein Registratie?",
-    vpnDesc:
-      "Voor het registreren van .EU domeinen vanuit buiten Europa heb je een Europees IP-adres nodig. Gebruik een VPN of trustee service.",
-    vpnTip: "Tip: biedt trustee service vanaf €3/jaar voor .EU, .IT, .FR en .DE extensies.",
+    vpnTitle: "🔒 Bescherm Je Privacy met NordVPN",
+    vpnDesc: "Een VPN versleutelt je internetverbinding en verbergt je IP-adres, waardoor je persoonlijke gegevens worden beschermd tegen hackers, trackers en surveillance.",
+    vpnCta: "Haal NordVPN Nu →",
     sectionTitle: "Ontdek Onze Andere Diensten",
   },
   en: {
@@ -37,10 +36,9 @@ const translations = {
     legalDocsCta: "View Legal Templates",
     legalDocsLink:
       "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
-    vpnTitle: "🔒 Need VPN for EU Domain Registration?",
-    vpnDesc:
-      "To register .EU domains from outside Europe, you need a European IP address. Use a VPN or trustee service.",
-    vpnTip: "Tip: INWX offers trustee service from €3/year for .EU, .IT, .FR and .DE extensions.",
+    vpnTitle: "🔒 Protect Your Privacy with NordVPN",
+    vpnDesc: "A VPN encrypts your internet connection and hides your IP address, protecting your personal data from hackers, trackers and surveillance.",
+    vpnCta: "Get NordVPN Now →",
     sectionTitle: "Discover Our Other Services",
   },
   de: {
@@ -55,10 +53,9 @@ const translations = {
     legalDocsCta: "Rechtsvorlagen ansehen",
     legalDocsLink:
       "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
-    vpnTitle: "🔒 VPN für EU-Domain-Registrierung benötigt?",
-    vpnDesc:
-      "Um .EU-Domains von außerhalb Europas zu registrieren, benötigen Sie eine europäische IP-Adresse. Nutzen Sie einen VPN oder Treuhänder-Service.",
-    vpnTip: "Tipp: INWX bietet Treuhänder-Service ab €3/Jahr für .EU, .IT, .FR und .DE Erweiterungen.",
+    vpnTitle: "🔒 Schützen Sie Ihre Privatsphäre mit NordVPN",
+    vpnDesc: "Ein VPN verschlüsselt Ihre Internetverbindung und verbirgt Ihre IP-Adresse, wodurch Ihre persönlichen Daten vor Hackern, Trackern und Überwachung geschützt werden.",
+    vpnCta: "NordVPN Jetzt Holen →",
     sectionTitle: "Entdecken Sie unsere anderen Dienste",
   },
   fr: {
@@ -73,10 +70,9 @@ const translations = {
     legalDocsCta: "Voir les Modèles Juridiques",
     legalDocsLink:
       "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
-    vpnTitle: "🔒 VPN Nécessaire pour l'Enregistrement de Domaine EU ?",
-    vpnDesc:
-      "Pour enregistrer des domaines .EU depuis l'extérieur de l'Europe, vous avez besoin d'une adresse IP européenne. Utilisez un VPN ou un service de trustee.",
-    vpnTip: "Conseil : INWX offre un service de trustee à partir de 3€/an pour les extensions .EU, .IT, .FR et .DE.",
+    vpnTitle: "🔒 Protégez Votre Vie Privée avec NordVPN",
+    vpnDesc: "Un VPN chiffre votre connexion internet et masque votre adresse IP, protégeant vos données personnelles contre les pirates, les trackers et la surveillance.",
+    vpnCta: "Obtenez NordVPN Maintenant →",
     sectionTitle: "Découvrez Nos Autres Services",
   },
   es: {
@@ -91,10 +87,9 @@ const translations = {
     legalDocsCta: "Ver Plantillas Legales",
     legalDocsLink:
       "/es/documentos-legales-sitios-web-afiliados-terminos-condiciones-politica-privacidad-divulgacion-cookies",
-    vpnTitle: "🔒 ¿Necesitas VPN para Registro de Dominio EU?",
-    vpnDesc:
-      "Para registrar dominios .EU desde fuera de Europa, necesitas una dirección IP europea. Usa un VPN o servicio de trustee.",
-    vpnTip: "Consejo: INWX ofrece servicio de trustee desde 3€/año para extensiones .EU, .IT, .FR y .DE.",
+    vpnTitle: "🔒 Protege Tu Privacidad con NordVPN",
+    vpnDesc: "Una VPN cifra tu conexión a internet y oculta tu dirección IP, protegiendo tus datos personales de hackers, rastreadores y vigilancia.",
+    vpnCta: "Obtén NordVPN Ahora →",
     sectionTitle: "Descubre Nuestros Otros Servicios",
   },
   it: {
@@ -109,10 +104,9 @@ const translations = {
     legalDocsCta: "Vedi Template Legali",
     legalDocsLink:
       "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
-    vpnTitle: "🔒 Hai Bisogno di VPN per la Registrazione di Domini EU?",
-    vpnDesc:
-      "Per registrare domini .EU dall'esterno dell'Europa, hai bisogno di un indirizzo IP europeo. Usa una VPN o un servizio di trustee.",
-    vpnTip: "Suggerimento: INWX offre servizio di trustee da 3€/anno per estensioni .EU, .IT, .FR e .DE.",
+    vpnTitle: "🔒 Proteggi la Tua Privacy con NordVPN",
+    vpnDesc: "Una VPN crittografa la tua connessione internet e nasconde il tuo indirizzo IP, proteggendo i tuoi dati personali da hacker, tracker e sorveglianza.",
+    vpnCta: "Ottieni NordVPN Ora →",
     sectionTitle: "Scopri I Nostri Altri Servizi",
   },
   pl: {
@@ -127,10 +121,9 @@ const translations = {
     legalDocsCta: "Zobacz Szablony Prawne",
     legalDocsLink:
       "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
-    vpnTitle: "🔒 Potrzebujesz VPN do Rejestracji Domeny EU?",
-    vpnDesc:
-      "Aby zarejestrować domeny .EU spoza Europy, potrzebujesz europejskiego adresu IP. Użyj VPN lub usługi powiernika.",
-    vpnTip: "Wskazówka: INWX oferuje usługę powiernika od 3€/rok dla rozszerzeń .EU, .IT, .FR i .DE.",
+    vpnTitle: "🔒 Chroń Swoją Prywatność z NordVPN",
+    vpnDesc: "VPN szyfruje twoje połączenie internetowe i ukrywa twój adres IP, chroniąc twoje dane osobowe przed hakerami, trackerami i inwigilacją.",
+    vpnCta: "Pobierz NordVPN Teraz →",
     sectionTitle: "Odkryj Nasze Inne Usługi",
   },
 };
@@ -217,23 +210,23 @@ const VATPromoBoxes = ({ lang }: VATPromoBoxesProps) => {
             </Card>
           </div>
 
-          {/* VPN Info Box */}
-          <Card className="border-2 border-slate-700/50 bg-gradient-to-r from-slate-900/50 to-slate-800/50">
-            <CardContent className="p-6">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500/20 to-cyan-600/10 flex items-center justify-center">
-                  <Shield className="w-6 h-6 text-cyan-400" />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-lg font-bold text-foreground mb-2">{t.vpnTitle}</h3>
-                  <p className="text-muted-foreground mb-3">{t.vpnDesc}</p>
-                  <div className="p-3 rounded-lg bg-cyan-500/10 border border-cyan-500/20">
-                    <p className="text-sm text-cyan-400 font-medium">💡 {t.vpnTip}</p>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+          {/* NordVPN Promo Box */}
+          <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-lg p-6">
+            <div className="text-center">
+              <h3 className="font-bold text-white text-xl mb-3">{t.vpnTitle}</h3>
+              <p className="text-white/90 text-sm mb-4 max-w-2xl mx-auto leading-relaxed">
+                {t.vpnDesc}
+              </p>
+              <a 
+                href="https://www.tkqlhce.com/click-100643838-14352852" 
+                target="_blank" 
+                rel="nofollow noopener noreferrer"
+                className="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-2.5 px-8 rounded-full transition-colors text-sm shadow-lg hover:shadow-xl"
+              >
+                {t.vpnCta}
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
