@@ -21,6 +21,12 @@ const sectionIcons: Record<string, string> = {
   implementationGuide: "🛠️",
 };
 
+// Dutch display overrides (prevents GTranslate mistranslation)
+const dutchTitleOverrides: Record<string, string> = {
+  disclosure: "Gebruikersvoorwaarden",
+  disclaimer: "Disclaimer",
+};
+
 const AfFloatingNav: React.FC<AfFloatingNavProps> = ({
   sectionKeys,
   sectionTitles,
@@ -60,7 +66,9 @@ const AfFloatingNav: React.FC<AfFloatingNavProps> = ({
                   className="w-full text-left px-3 py-2 text-sm font-medium text-foreground flex items-center gap-2"
                 >
                   <span className="text-base">{sectionIcons[key] || "📄"}</span>
-                  <span className="truncate flex-1">{sectionTitles[key]}</span>
+                  <span className={`truncate flex-1 ${dutchTitleOverrides[key] ? 'notranslate' : ''}`}>
+                    {dutchTitleOverrides[key] || sectionTitles[key]}
+                  </span>
                 </button>
                 <div className="flex gap-1 px-3 pb-2">
                   <Button

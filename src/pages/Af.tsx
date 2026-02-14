@@ -344,6 +344,12 @@ export const AfContent = ({
     setPreparingDownload(null);
   };
 
+  // Dutch display overrides for section titles (prevents GTranslate from mistranslating)
+  const dutchTitleOverrides: Record<string, string> = {
+    disclosure: "Gebruikersvoorwaarden",
+    disclaimer: "Disclaimer",
+  };
+
   const sections = [
     { key: "disclosure" as const, style: "default" },
     { key: "termsAndConditions" as const, style: "default" },
@@ -468,7 +474,13 @@ export const AfContent = ({
               }
             >
               <div className="flex justify-between items-start mb-4">
-                <h2 className="text-2xl font-bold text-foreground" data-af-title>{t.sectionTitles[key]}</h2>
+                <h2 className="text-2xl font-bold text-foreground" data-af-title>
+                  {dutchTitleOverrides[key] ? (
+                    <span className="notranslate">{dutchTitleOverrides[key]}</span>
+                  ) : (
+                    t.sectionTitles[key]
+                  )}
+                </h2>
                 <div className="flex gap-2">
                   <Button
                     onClick={() => downloadTextFile(index, t.fileNames[key], key)}
