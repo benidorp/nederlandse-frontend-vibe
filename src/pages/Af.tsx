@@ -404,11 +404,8 @@ export const AfContent = ({
                 size="default"
                 disabled={preparingDownload !== null || !translationReady}
               >
-                {preparingDownload === "all-txt" ? (
-                  <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                ) : (
-                  <FileText className="w-4 h-4 mr-2" />
-                )}
+                <Loader2 className={`w-4 h-4 mr-2 animate-spin ${preparingDownload === "all-txt" ? '' : 'hidden'}`} />
+                <FileText className={`w-4 h-4 mr-2 ${preparingDownload === "all-txt" ? 'hidden' : ''}`} />
                 Alle documenten als .TXT
               </Button>
               <Button
@@ -417,18 +414,14 @@ export const AfContent = ({
                 size="default"
                 disabled={preparingDownload !== null || !translationReady}
               >
-                {preparingDownload === "all-pdf" ? (
-                  <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                ) : (
-                  <Download className="w-4 h-4 mr-2" />
-                )}
+                <Loader2 className={`w-4 h-4 mr-2 animate-spin ${preparingDownload === "all-pdf" ? '' : 'hidden'}`} />
+                <Download className={`w-4 h-4 mr-2 ${preparingDownload === "all-pdf" ? 'hidden' : ''}`} />
                 Alle documenten als PDF
               </Button>
             </div>
           </div>
 
-          {!translationReady && (
-            <div className="fixed top-0 left-0 right-0 z-[9999] bg-primary text-primary-foreground shadow-lg">
+          <div className={`fixed top-0 left-0 right-0 z-[9999] bg-primary text-primary-foreground shadow-lg transition-transform duration-300 ${translationReady ? '-translate-y-full' : 'translate-y-0'}`}>
               <div className="container mx-auto px-4 py-3 flex items-center justify-center gap-4">
                 <Loader2 className="w-6 h-6 animate-spin shrink-0" />
                 <div className="text-center">
@@ -448,7 +441,6 @@ export const AfContent = ({
                 />
               </div>
             </div>
-          )}
 
           {sections.map(({ key, style }, index) => (
             <section
@@ -469,11 +461,8 @@ export const AfContent = ({
                     size="sm"
                     disabled={preparingDownload !== null || !translationReady}
                   >
-                    {preparingDownload === `${key}-txt` ? (
-                      <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                    ) : (
-                      <FileText className="w-4 h-4 mr-2" />
-                    )}
+                    <Loader2 className={`w-4 h-4 mr-2 animate-spin ${preparingDownload === `${key}-txt` ? '' : 'hidden'}`} />
+                    <FileText className={`w-4 h-4 mr-2 ${preparingDownload === `${key}-txt` ? 'hidden' : ''}`} />
                     .TXT
                   </Button>
                   <Button
@@ -482,11 +471,8 @@ export const AfContent = ({
                     size="sm"
                     disabled={preparingDownload !== null || !translationReady}
                   >
-                    {preparingDownload === `${key}-pdf` ? (
-                      <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                    ) : (
-                      <Download className="w-4 h-4 mr-2" />
-                    )}
+                    <Loader2 className={`w-4 h-4 mr-2 animate-spin ${preparingDownload === `${key}-pdf` ? '' : 'hidden'}`} />
+                    <Download className={`w-4 h-4 mr-2 ${preparingDownload === `${key}-pdf` ? 'hidden' : ''}`} />
                     PDF
                   </Button>
                 </div>
