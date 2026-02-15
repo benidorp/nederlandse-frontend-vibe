@@ -187,7 +187,7 @@ Deze BTW-calculator is speciaal ontwikkeld voor internationale ondernemers, e-co
             </div>
           </section>
 
-          <section className="py-12 md:py-20 bg-gradient-to-br from-[hsl(220,70%,25%)] via-[hsl(230,65%,30%)] to-[hsl(240,60%,22%)]">
+          <section className="py-12 md:py-20 bg-gradient-to-r from-blue-900 to-blue-700">
             <div className="container">
               <div className="max-w-5xl mx-auto">
                 <div className="text-center mb-10">
