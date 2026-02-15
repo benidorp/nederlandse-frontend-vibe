@@ -100,10 +100,10 @@ const VATCalculator = () => {
                 </div>
 
                 <div className="max-w-3xl mx-auto text-left space-y-4">
-                  <p className="text-base text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed text-lg font-semibold">
 
 Deze BTW-calculator is speciaal ontwikkeld voor internationale ondernemers, e-commerce bedrijven en freelancers die BTW moeten berekenen voor verschillende landen. Of je nu facturen maakt voor klanten in de EU, werkt met verschillende BTW-tarieven, of simpelweg wilt weten hoeveel BTW je moet betalen of terugkrijgen - onze calculator geeft je direct en accuraat antwoord.</p>
-                  <p className="text-base text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed text-lg font-semibold">
                     De tool ondersteunt alle EU-landen en daarbuiten, met zowel standaard als verlaagde BTW-tarieven. Perfect voor het opstellen van facturen, BTW-aangiftes, offertes en financiële rapportages. Alle bedragen worden automatisch berekend inclusief en exclusief BTW.
                   </p>
                 </div>
@@ -326,7 +326,7 @@ Deze BTW-calculator is speciaal ontwikkeld voor internationale ondernemers, e-co
               <div className="max-w-4xl mx-auto prose prose-lg">
                 <h2 className="text-3xl font-bold mb-6 text-foreground">Waarom een internationale BTW-calculator gebruiken?</h2>
                 
-                <p className="text-muted-foreground mb-4">
+                <p className="text-muted-foreground mb-4 text-lg font-semibold">
                   Als internationale ondernemer, e-commerce bedrijf of freelancer kom je regelmatig BTW tegen in verschillende landen. Elke land heeft eigen BTW-tarieven (ook wel VAT genoemd in het Engels), en deze kunnen flink verschillen. In Nederland is het standaard BTW-tarief 21%, maar in Hongarije bijvoorbeeld 27% en in Luxemburg slechts 17%. Deze verschillen maken het essentieel om een betrouwbare BTW-calculator te gebruiken.
                 </p>
 
@@ -349,7 +349,7 @@ Deze BTW-calculator is speciaal ontwikkeld voor internationale ondernemers, e-co
                 </ul>
 
                 <h3 className="text-2xl font-bold mt-8 mb-4 text-foreground">Standaard en verlaagde BTW-tarieven</h3>
-                <p className="text-muted-foreground mb-4">
+                <p className="text-muted-foreground mb-4 font-semibold">
                   Vrijwel elk land heeft meerdere BTW-tarieven. Het standaard tarief geldt voor de meeste goederen en diensten. Daarnaast zijn er vaak één of meerdere verlaagde tarieven voor bijvoorbeeld:
                 </p>
                 <ul className="text-muted-foreground space-y-2 mb-6">
@@ -362,7 +362,7 @@ Deze BTW-calculator is speciaal ontwikkeld voor internationale ondernemers, e-co
                 </ul>
 
                 <h3 className="text-2xl font-bold mt-8 mb-4 text-foreground">BTW in de Europese Unie</h3>
-                <p className="text-muted-foreground mb-4">
+                <p className="text-muted-foreground mb-4 font-semibold">
                   Binnen de EU gelden speciale BTW-regelingen. De BTW-richtlijn harmoniseert veel regels, maar elk land mag eigen tarieven vaststellen binnen bepaalde bandbreedtes. Voor grensoverschrijdende diensten binnen de EU gelden vaak specifieke regels:
                 </p>
                 <ul className="text-muted-foreground space-y-2 mb-6">
