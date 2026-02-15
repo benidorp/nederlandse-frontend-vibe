@@ -187,25 +187,25 @@ Deze BTW-calculator is speciaal ontwikkeld voor internationale ondernemers, e-co
             </div>
           </section>
 
-          <section className="py-12 md:py-20 bg-gradient-to-r from-blue-900 to-blue-700">
+          <section className="py-12 md:py-20 bg-background">
             <div className="container">
               <div className="max-w-5xl mx-auto">
                 <div className="text-center mb-10">
-                  <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">BTW Calculator</h2>
-                  <p className="text-lg text-blue-200/80">
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">BTW Calculator</h2>
+                  <p className="text-lg text-muted-foreground">
                     Bereken direct de BTW voor jouw internationale transacties
                   </p>
                 </div>
                 
                 <div className="grid lg:grid-cols-2 gap-8">
                   {/* Input Card */}
-                  <Card className="border-0 shadow-2xl bg-white/10 backdrop-blur-md text-white">
+                  <Card className="border-0 shadow-2xl bg-gradient-to-br from-primary via-secondary to-accent text-white">
                     <CardHeader className="space-y-1 pb-4">
                       <CardTitle className="text-2xl flex items-center gap-2 text-white">
-                        <Calculator className="w-6 h-6 text-blue-300" />
+                        <Calculator className="w-6 h-6 text-white/80" />
                         BTW Berekenen
                       </CardTitle>
-                      <CardDescription className="text-base text-blue-200/70">
+                      <CardDescription className="text-base text-white/70">
                         Vul de onderstaande velden in om de BTW te berekenen
                       </CardDescription>
                     </CardHeader>
@@ -213,11 +213,11 @@ Deze BTW-calculator is speciaal ontwikkeld voor internationale ondernemers, e-co
                       {/* Country Selection */}
                       <div className="space-y-3">
                         <Label htmlFor="country" className="text-base font-semibold text-white">
-                          <Globe className="w-4 h-4 inline mr-2 text-blue-300" />
+                          <Globe className="w-4 h-4 inline mr-2 text-white/80" />
                           Selecteer Land
                         </Label>
                         <Select onValueChange={handleCountryChange}>
-                          <SelectTrigger id="country" className="h-14 text-base bg-white/10 border-white/20 text-white placeholder:text-blue-200/50 hover:bg-white/15 transition-colors">
+                          <SelectTrigger id="country" className="h-14 text-base bg-white/15 border-white/20 text-white placeholder:text-white/50 hover:bg-white/20 transition-colors">
                             <SelectValue placeholder="Kies een land..." />
                           </SelectTrigger>
                           <SelectContent className="max-h-[300px]">
@@ -234,26 +234,26 @@ Deze BTW-calculator is speciaal ontwikkeld voor internationale ondernemers, e-co
                       {/* Rate Selection - always visible */}
                       <div className="space-y-3">
                         <Label className="text-base font-semibold text-white">
-                          <TrendingUp className="w-4 h-4 inline mr-2 text-blue-300" />
+                          <TrendingUp className="w-4 h-4 inline mr-2 text-white/80" />
                           BTW-tarief
                         </Label>
                         {selectedCountry ? (
                           <RadioGroup value={selectedRate?.toString()} onValueChange={(value) => setSelectedRate(parseFloat(value))}>
                             <div className="flex items-center space-x-2 p-3 rounded-lg border border-white/20 bg-white/5 hover:bg-white/10 transition-colors">
-                              <RadioGroupItem value={selectedCountry.standardRate.toString()} id="standard" className="border-white/40 text-blue-300" />
+                              <RadioGroupItem value={selectedCountry.standardRate.toString()} id="standard" className="border-white/40 text-white" />
                               <Label htmlFor="standard" className="cursor-pointer flex-1 font-medium text-white">
                                 Standaard tarief: {selectedCountry.standardRate}%
                               </Label>
                             </div>
                             {selectedCountry.reducedRates.map((rate, index) => <div key={index} className="flex items-center space-x-2 p-3 rounded-lg border border-white/20 bg-white/5 hover:bg-white/10 transition-colors">
-                                <RadioGroupItem value={rate.toString()} id={`reduced-${index}`} className="border-white/40 text-blue-300" />
+                                <RadioGroupItem value={rate.toString()} id={`reduced-${index}`} className="border-white/40 text-white" />
                                 <Label htmlFor={`reduced-${index}`} className="cursor-pointer flex-1 font-medium text-white">
                                   Verlaagd tarief: {rate}%
                                 </Label>
                               </div>)}
                           </RadioGroup>
                         ) : (
-                          <div className="p-3 rounded-lg border border-white/10 bg-white/5 text-blue-200/50 text-sm">
+                          <div className="p-3 rounded-lg border border-white/10 bg-white/5 text-white/50 text-sm">
                             Selecteer eerst een land om tarieven te zien
                           </div>
                         )}
@@ -264,13 +264,13 @@ Deze BTW-calculator is speciaal ontwikkeld voor internationale ondernemers, e-co
                         <Label className="text-base font-semibold text-white">Het bedrag is:</Label>
                         <RadioGroup value={includesVAT} onValueChange={(value: "yes" | "no") => setIncludesVAT(value)}>
                           <div className="flex items-center space-x-2 p-3 rounded-lg border border-white/20 bg-white/5 hover:bg-white/10 transition-colors">
-                            <RadioGroupItem value="no" id="excl" className="border-white/40 text-blue-300" />
+                            <RadioGroupItem value="no" id="excl" className="border-white/40 text-white" />
                             <Label htmlFor="excl" className="cursor-pointer flex-1 font-medium text-white">
                               Exclusief BTW
                             </Label>
                           </div>
                           <div className="flex items-center space-x-2 p-3 rounded-lg border border-white/20 bg-white/5 hover:bg-white/10 transition-colors">
-                            <RadioGroupItem value="yes" id="incl" className="border-white/40 text-blue-300" />
+                            <RadioGroupItem value="yes" id="incl" className="border-white/40 text-white" />
                             <Label htmlFor="incl" className="cursor-pointer flex-1 font-medium text-white">
                               Inclusief BTW
                             </Label>
@@ -281,30 +281,30 @@ Deze BTW-calculator is speciaal ontwikkeld voor internationale ondernemers, e-co
                       {/* Amount Input - always visible */}
                       <div className="space-y-3">
                         <Label htmlFor="amount" className="text-base font-semibold text-white">
-                          <FileText className="w-4 h-4 inline mr-2 text-blue-300" />
+                          <FileText className="w-4 h-4 inline mr-2 text-white/80" />
                           Bedrag {selectedCountry ? `(${selectedCountry.currencySymbol})` : '(€)'}
                         </Label>
                         <div className="relative">
-                          <span className="absolute left-4 top-1/2 -translate-y-1/2 text-blue-200/70 font-semibold text-lg">
+                          <span className="absolute left-4 top-1/2 -translate-y-1/2 text-white/70 font-semibold text-lg">
                             {selectedCountry ? selectedCountry.currencySymbol : '€'}
                           </span>
-                          <Input id="amount" type="number" step="0.01" placeholder="0.00" value={amount} onChange={(e) => setAmount(e.target.value)} className="pl-10 h-12 text-lg font-medium bg-white/10 border-white/20 text-white placeholder:text-blue-200/40 focus:border-blue-300/50 focus:ring-blue-300/20" />
+                          <Input id="amount" type="number" step="0.01" placeholder="0.00" value={amount} onChange={(e) => setAmount(e.target.value)} className="pl-10 h-12 text-lg font-medium bg-white/15 border-white/20 text-white placeholder:text-white/40 focus:border-white/50 focus:ring-white/20" />
                         </div>
                       </div>
                     </CardContent>
                   </Card>
 
                   {/* Results Card */}
-                  {results ? <VATResults key={`${results.country.countryCode}-${results.rate}`} results={results} /> : <Card className="flex items-center justify-center border-0 shadow-2xl bg-white/10 backdrop-blur-md">
+                  {results ? <VATResults key={`${results.country.countryCode}-${results.rate}`} results={results} /> : <Card className="flex items-center justify-center border-0 shadow-2xl bg-gradient-to-br from-primary via-secondary to-accent">
                       <CardContent className="text-center py-16 px-6">
                         <div className="relative">
-                          <div className="absolute inset-0 bg-blue-400/10 rounded-full blur-3xl"></div>
-                          <Calculator className="w-20 h-20 mx-auto mb-6 text-blue-300 relative" />
+                          <div className="absolute inset-0 bg-white/10 rounded-full blur-3xl"></div>
+                          <Calculator className="w-20 h-20 mx-auto mb-6 text-white/80 relative" />
                         </div>
                         <p className="text-lg text-white font-medium mb-2">
                           Vul de gegevens in om de BTW te berekenen
                         </p>
-                        <p className="text-sm text-blue-200/60">
+                        <p className="text-sm text-white/60">
                           De resultaten verschijnen hier automatisch
                         </p>
                       </CardContent>
