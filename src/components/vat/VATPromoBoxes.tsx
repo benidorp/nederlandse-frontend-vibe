@@ -214,7 +214,7 @@ const VATPromoBoxes = ({ lang }: VATPromoBoxesProps) => {
           <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-lg p-6">
             <div className="text-center">
               <h3 className="font-bold text-white text-xl mb-3">{t.vpnTitle}</h3>
-              <p className="text-white/90 text-sm mb-4 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-white/90 mb-4 max-w-2xl mx-auto leading-relaxed text-base font-semibold">
                 {t.vpnDesc}
               </p>
               <a
