@@ -8,7 +8,7 @@ interface VATPromoBoxesProps {
 
 const translations = {
   nl: {
-    premiumDomainsTitle: "🌐 Premium Domeinnamen met SEO Waarde",
+    premiumDomainsTitle: "🌐 Premium Expired Domeinnamen met SEO Waarde",
     premiumDomainsDesc:
     "Koop verlopen domeinnamen met hoge MOZ autoriteit en kwalitatieve backlinks. Boost je SEO direct! Start je website met een bestaande SEO-basis, rank sneller in Google en bespaar maanden aan linkbuilding. Ontdek krachtige domeinen die direct inzetbaar zijn voor jouw project.",
     premiumDomainsCta: "Bekijk Premium Domeinen",
