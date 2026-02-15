@@ -285,10 +285,10 @@ Deze BTW-calculator is speciaal ontwikkeld voor internationale ondernemers, e-co
                           Bedrag {selectedCountry ? `(${selectedCountry.currencySymbol})` : '(€)'}
                         </Label>
                         <div className="relative">
-                          <span className="absolute left-5 top-1/2 -translate-y-1/2 text-muted-foreground font-bold text-2xl">
+                          <span className="absolute left-5 top-1/2 -translate-y-1/2 text-muted-foreground font-bold text-4xl">
                             {selectedCountry ? selectedCountry.currencySymbol : '€'}
                           </span>
-                          <Input id="amount" type="number" step="0.01" placeholder="0.00" value={amount} onChange={(e) => setAmount(e.target.value)} className="pl-14 h-16 text-3xl font-bold bg-white border-white/40 text-foreground placeholder:text-muted-foreground/40 focus:border-primary focus:ring-primary/30 rounded-xl shadow-inner" />
+                          <Input id="amount" type="number" step="0.01" placeholder="0.00" value={amount} onChange={(e) => setAmount(e.target.value)} className="pl-16 h-24 text-5xl font-bold bg-white border-white/40 text-foreground placeholder:text-muted-foreground/40 focus:border-primary focus:ring-primary/30 rounded-xl shadow-inner" />
                         </div>
                       </div>
                     </CardContent>
