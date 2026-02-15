@@ -19,7 +19,7 @@ const VATCalculator = () => {
   const [includesVAT, setIncludesVAT] = useState<"yes" | "no">("no");
   const [selectedRate, setSelectedRate] = useState<number | null>(null);
   const handleCountryChange = (countryCode: string) => {
-    const country = vatRates.find(c => c.countryCode === countryCode);
+    const country = vatRates.find((c) => c.countryCode === countryCode);
     if (country) {
       setSelectedCountry(country);
       setSelectedRate(country.standardRate);
@@ -72,7 +72,8 @@ const VATCalculator = () => {
                   <span className="text-sm font-semibold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Wereldwijd • 60+ Landen</span>
                 </div>
                 
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">Internationale Wereldwijde BTW-calculator</h1>
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">Gratis CalculatorInternationale BTW Calculator – Wereldwijde VAT en Sales Tax Berekenen Per Land
+              </h1>
                 
                 <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
                   Bereken eenvoudig en nauwkeurig de BTW (belasting toegevoegde waarde) voor elk land wereldwijd. 
@@ -220,7 +221,7 @@ const VATCalculator = () => {
                             <SelectValue placeholder="Kies een land..." />
                           </SelectTrigger>
                           <SelectContent className="max-h-[300px]">
-                            {vatRates.map(country => <SelectItem key={country.countryCode} value={country.countryCode}>
+                            {vatRates.map((country) => <SelectItem key={country.countryCode} value={country.countryCode}>
                                 <span className="flex items-center gap-2">
                                   <span className="text-xl">{country.flag}</span>
                                   {country.country} ({country.currencySymbol})
@@ -237,7 +238,7 @@ const VATCalculator = () => {
                               <TrendingUp className="w-4 h-4 inline mr-2" />
                               BTW-tarief
                             </Label>
-                            <RadioGroup value={selectedRate?.toString()} onValueChange={value => setSelectedRate(parseFloat(value))}>
+                            <RadioGroup value={selectedRate?.toString()} onValueChange={(value) => setSelectedRate(parseFloat(value))}>
                               <div className="flex items-center space-x-2 p-3 rounded-lg border bg-card hover:bg-accent/50 transition-colors">
                                 <RadioGroupItem value={selectedCountry.standardRate.toString()} id="standard" />
                                 <Label htmlFor="standard" className="cursor-pointer flex-1 font-medium">
@@ -282,7 +283,7 @@ const VATCalculator = () => {
                               <span className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground font-semibold text-lg">
                                 {selectedCountry.currencySymbol}
                               </span>
-                              <Input id="amount" type="number" step="0.01" placeholder="0.00" value={amount} onChange={e => setAmount(e.target.value)} className="pl-10 h-12 text-lg font-medium" />
+                              <Input id="amount" type="number" step="0.01" placeholder="0.00" value={amount} onChange={(e) => setAmount(e.target.value)} className="pl-10 h-12 text-lg font-medium" />
                             </div>
                           </div>
                         </>}
@@ -403,6 +404,5 @@ const VATCalculator = () => {
         </main>
         <FooterEN />
       </div>
-    </>;
-};
+    </>;};
 export default VATCalculator;
