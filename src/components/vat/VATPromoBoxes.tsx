@@ -15,7 +15,7 @@ const translations = {
     premiumDomainsLink: "/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde",
     legalDocsTitle: "📋 Juridische Documenten voor Websites",
     legalDocsDesc:
-    "Bescherm je online business met professionele algemene voorwaarden, privacybeleid, cookie policy en meer.",
+    "Bescherm je online business met professionele algemene voorwaarden, privacybeleid, cookie policy en meer. Voldoe aan wetgeving, voorkom risico's en straal vertrouwen uit naar je klanten",
     legalDocsCta: "Bekijk Juridische Templates",
     legalDocsLink:
     "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy",
