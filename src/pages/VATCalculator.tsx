@@ -72,7 +72,7 @@ const VATCalculator = () => {
                   <span className="text-sm font-semibold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Wereldwijd • 60+ Landen</span>
                 </div>
                 
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">Gratis CalculatorInternationale BTW Calculator – Wereldwijde VAT en Sales Tax Berekenen Per Land
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">Gratis Internationale BTW Calculator (60+ landen) – Wereldwijde VAT & Sales Tax Berekenen
               </h1>
                 
                 <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
@@ -101,8 +101,8 @@ const VATCalculator = () => {
 
                 <div className="max-w-3xl mx-auto text-left space-y-4">
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Deze BTW-calculator is speciaal ontwikkeld voor internationale ondernemers, e-commerce bedrijven en freelancers die BTW moeten berekenen voor verschillende landen. Of je nu facturen maakt voor klanten in de EU, werkt met verschillende BTW-tarieven, of simpelweg wilt weten hoeveel BTW je moet betalen of terugkrijgen - onze calculator geeft je direct en accuraat antwoord.
-                  </p>
+
+Deze BTW-calculator is speciaal ontwikkeld voor internationale ondernemers, e-commerce bedrijven en freelancers die BTW moeten berekenen voor verschillende landen. Of je nu facturen maakt voor klanten in de EU, werkt met verschillende BTW-tarieven, of simpelweg wilt weten hoeveel BTW je moet betalen of terugkrijgen - onze calculator geeft je direct en accuraat antwoord.</p>
                   <p className="text-base text-muted-foreground leading-relaxed">
                     De tool ondersteunt alle EU-landen en daarbuiten, met zowel standaard als verlaagde BTW-tarieven. Perfect voor het opstellen van facturen, BTW-aangiftes, offertes en financiële rapportages. Alle bedragen worden automatisch berekend inclusief en exclusief BTW.
                   </p>
