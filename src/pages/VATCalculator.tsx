@@ -87,7 +87,7 @@ const VATCalculator = () => {
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">Actuele Tarieven 2025</span>
+                    <span className="text-muted-foreground">Actuele Tarieven</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-5 h-5 text-primary" />
