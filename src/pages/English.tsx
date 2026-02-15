@@ -9,7 +9,7 @@ import FAQEN from "@/components/en/FAQEN";
 import PricingEN from "@/components/en/PricingEN";
 import ReviewsEN from "@/components/en/ReviewsEN";
 import FooterEN from "@/components/en/FooterEN";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
 import { Helmet } from "react-helmet";
@@ -40,7 +40,7 @@ const English = () => {
           { question: "Can I use these documents for multiple websites?", answer: "Yes, one purchase covers unlimited use for all your current and future websites." }
         ]}
       />
-      <GTranslateWidget />
+      
       <LegalDocsLanguageSwitcher currentLang="en" />
       <HiddenInternalLinks />
       <div className="min-h-screen">
