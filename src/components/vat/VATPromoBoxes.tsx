@@ -152,7 +152,7 @@ const VATPromoBoxes = ({ lang }: VATPromoBoxesProps) => {
                     <Crown className="w-7 h-7 text-white" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-foreground mb-2">{t.premiumDomainsTitle}</h3>
+                    <h3 className="font-bold text-foreground mb-2 text-2xl">{t.premiumDomainsTitle}</h3>
                     <p className="text-muted-foreground mb-4 leading-relaxed font-bold text-base">{t.premiumDomainsDesc}</p>
                     <Link
                       to={t.premiumDomainsLink}
@@ -185,7 +185,7 @@ const VATPromoBoxes = ({ lang }: VATPromoBoxesProps) => {
                     <FileText className="w-7 h-7 text-white" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-foreground mb-2">{t.legalDocsTitle}</h3>
+                    <h3 className="font-bold text-foreground mb-2 text-2xl">{t.legalDocsTitle}</h3>
                     <p className="text-muted-foreground mb-4 leading-relaxed font-bold text-base">{t.legalDocsDesc}</p>
                     <Link
                       to={t.legalDocsLink}
