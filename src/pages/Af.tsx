@@ -7,6 +7,7 @@ import FooterEN from "@/components/en/FooterEN";
 import AfLanguageSwitcher from "@/components/af/AfLanguageSwitcher";
 
 import AfFloatingNav from "@/components/af/AfFloatingNav";
+import GTranslateWidget from "@/components/GTranslateWidget";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
 import { toast } from "sonner";
@@ -520,6 +521,7 @@ export const AfContent = ({
         />
 
         <FooterEN />
+        <GTranslateWidget />
       </div>
     </>
   );
