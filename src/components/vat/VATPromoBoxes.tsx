@@ -153,7 +153,7 @@ const VATPromoBoxes = ({ lang }: VATPromoBoxesProps) => {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-foreground mb-2">{t.premiumDomainsTitle}</h3>
-                    <p className="text-muted-foreground mb-4 leading-relaxed font-bold">{t.premiumDomainsDesc}</p>
+                    <p className="text-muted-foreground mb-4 leading-relaxed font-bold text-base">{t.premiumDomainsDesc}</p>
                     <Link
                       to={t.premiumDomainsLink}
                       className="inline-flex items-center gap-2 px-5 py-2.5 bg-amber-500 hover:bg-amber-600 text-black font-semibold rounded-lg transition-all duration-200 shadow-md hover:shadow-lg group-hover:translate-x-1">
@@ -186,7 +186,7 @@ const VATPromoBoxes = ({ lang }: VATPromoBoxesProps) => {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-foreground mb-2">{t.legalDocsTitle}</h3>
-                    <p className="text-muted-foreground mb-4 leading-relaxed">{t.legalDocsDesc}</p>
+                    <p className="text-muted-foreground mb-4 leading-relaxed font-bold text-base">{t.legalDocsDesc}</p>
                     <Link
                       to={t.legalDocsLink}
                       className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-lg transition-all duration-200 shadow-md hover:shadow-lg group-hover:translate-x-1">
