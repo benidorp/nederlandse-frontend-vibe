@@ -83,19 +83,19 @@ const VATCalculator = () => {
                 <div className="flex flex-wrap gap-6 justify-center text-sm mb-8">
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">60+ Landen</span>
+                    <span className="text-muted-foreground font-bold text-lg">60+ Landen</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">Actuele Tarieven</span>
+                    <span className="text-muted-foreground font-bold text-lg">Actuele Tarieven</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">Direct Resultaat</span>
+                    <span className="text-muted-foreground text-lg font-bold">Direct Resultaat</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">100% Gratis</span>
+                    <span className="text-muted-foreground text-lg font-bold">100% Gratis</span>
                   </div>
                 </div>
 
