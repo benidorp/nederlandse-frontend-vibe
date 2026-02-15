@@ -10,7 +10,7 @@ import FAQES from "@/components/es/FAQES";
 import PricingES from "@/components/es/PricingES";
 import ReviewsES from "@/components/es/ReviewsES";
 import FooterES from "@/components/es/FooterES";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
 
@@ -39,7 +39,7 @@ const Spanish = () => {
           { question: "¿Los documentos legales son compatibles con GDPR?", answer: "Sí, todos los documentos legales esenciales son totalmente compatibles con GDPR, CCPA y FTC para uso internacional." }
         ]}
       />
-      <GTranslateWidget />
+      
       <LegalDocsLanguageSwitcher currentLang="es" />
       <HiddenInternalLinks />
       <div className="min-h-screen">
