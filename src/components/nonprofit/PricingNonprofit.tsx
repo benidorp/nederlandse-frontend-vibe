@@ -5,13 +5,13 @@ import StripeBuyButton from "@/components/StripeBuyButton";
 
 const PricingNonprofit = () => {
   const features = [
-    "Complete Donation Terms & Conditions",
-    "GDPR-Compliant Privacy Policy",
-    "Volunteer Agreement Template",
-    "Cookie Policy",
-    "Fundraising Disclosure Statement",
-    "Implementation Guide & Checklist"
-  ];
+  "Complete Donation Terms & Conditions",
+  "GDPR-Compliant Privacy Policy",
+  "Volunteer Agreement Template",
+  "Cookie Policy",
+  "Fundraising Disclosure Statement",
+  "Implementation Guide & Checklist"];
+
 
   return (
     <section id="pricing" className="py-20 bg-gradient-to-br from-background via-primary/5 to-background">
@@ -23,8 +23,8 @@ const PricingNonprofit = () => {
               <Sparkles className="w-5 h-5" />
               <span className="font-semibold">Simple Pricing</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Invest in Your Mission's Protection
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Invest in the Website Protection of Your   Organization
+
             </h2>
             <p className="text-xl text-muted-foreground">
               One-time investment. No subscriptions. Lifetime access.
@@ -52,14 +52,14 @@ const PricingNonprofit = () => {
             <CardContent className="space-y-6 pb-8">
               {/* What's included */}
               <div className="space-y-4">
-              {features.map((feature, index) => (
-                  <div key={index} className="flex items-start gap-3">
+              {features.map((feature, index) =>
+                <div key={index} className="flex items-start gap-3">
                     <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center mt-0.5 shadow-md">
                       <Check className="w-4 h-4 text-primary-foreground" />
                     </div>
                     <span className="text-foreground font-medium">{feature}</span>
                   </div>
-                ))}
+                )}
               </div>
 
               {/* Payment Section */}
@@ -98,8 +98,8 @@ const PricingNonprofit = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default PricingNonprofit;
