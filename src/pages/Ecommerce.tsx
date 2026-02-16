@@ -8,7 +8,7 @@ import FAQEcommerce from "@/components/ecommerce/FAQEcommerce";
 import PricingEcommerce from "@/components/ecommerce/PricingEcommerce";
 import ReviewsEcommerce from "@/components/ecommerce/ReviewsEcommerce";
 import FooterEN from "@/components/en/FooterEN";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import { Helmet } from "react-helmet";
 
@@ -39,7 +39,7 @@ const Ecommerce = () => {
         ]}
       />
       <HiddenInternalLinks />
-      <GTranslateWidget />
+      
       <div className="min-h-screen">
         <HeaderEN />
         <main>

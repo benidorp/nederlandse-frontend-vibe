@@ -9,7 +9,7 @@ import FAQFreelancers from "@/components/freelancers/FAQFreelancers";
 import BlogPostsFreelancers from "@/components/freelancers/BlogPostsFreelancers";
 import CTABoxFreelancers from "@/components/freelancers/CTABoxFreelancers";
 import FooterFreelancers from "@/components/freelancers/FooterFreelancers";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import { Helmet } from "react-helmet";
 
@@ -52,7 +52,7 @@ const Freelancers = () => {
           <CTABoxFreelancers />
         </main>
         <FooterFreelancers />
-        <GTranslateWidget />
+        
       </div>
     </>
   );

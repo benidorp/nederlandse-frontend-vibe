@@ -8,7 +8,7 @@ import FAQElearning from "@/components/elearning/FAQElearning";
 import PricingElearning from "@/components/elearning/PricingElearning";
 import ReviewsElearning from "@/components/elearning/ReviewsElearning";
 import FooterEN from "@/components/en/FooterEN";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import { Helmet } from "react-helmet";
 
@@ -37,7 +37,7 @@ const Elearning = () => {
           { question: "Are the documents GDPR compliant?", answer: "Yes, all documents are fully GDPR compliant." }
         ]}
       />
-      <GTranslateWidget />
+      
       <HiddenInternalLinks />
       <div className="min-h-screen">
         <HeaderEN />
