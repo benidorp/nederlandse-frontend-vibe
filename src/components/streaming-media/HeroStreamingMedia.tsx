@@ -17,7 +17,7 @@ const HeroStreamingMedia = () => {
             </span>
           </div>
           
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground leading-tight">Protect Your Streaming & Media Websites Essential Legal Documents : Terms & Conditions, Privacy Policy, Content License & DMCA Policy
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground leading-tight">Protect Your Streaming & Media Websites Essential Legal Documents for Content CreatorsS: Terms & Conditions, Privacy Policy, Content License & DMCA Policy
 
         </h1>
           
