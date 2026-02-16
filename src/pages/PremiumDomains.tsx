@@ -1927,7 +1927,7 @@ const PremiumDomains = () => {
                   )}
                   <CardHeader className="pb-2 sm:pb-3 p-2 sm:p-3 md:p-4">
                     {domain.image && (
-                      <div className="-mt-1 mb-1 flex justify-center">
+                      <div className="mt-1 mb-2 flex justify-center">
                         <img src={domain.image} alt={`${domain.name} premium domain`} className="w-20 h-auto object-contain" />
                       </div>
                     )}
