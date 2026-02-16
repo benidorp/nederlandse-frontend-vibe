@@ -15,9 +15,9 @@ const HeroDropshipping = () => {
     backgroundPosition: 'center'
   }}>
       <div className="container relative z-10 text-center py-20">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
-          Essential Legal Documents for Your Dropshipping Business
-        </h1>
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">Protect Your Dropshipping Business with Essential Legal Documents.
+
+      </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-white/90">Protect your dropshipping website business with professionally crafted legal documents. GDPR-compliant policies, clear terms & conditions, and supplier agreements—all ready to implement immediately.</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" onClick={() => scrollToSection('pricing')} className="bg-primary hover:bg-primary/90 text-white">
