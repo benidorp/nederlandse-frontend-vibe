@@ -72,7 +72,7 @@ const VATCalculator = () => {
                   <span className="text-sm font-semibold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Wereldwijd • 60+ Landen</span>
                 </div>
                 
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">Gratis Internationale BTW Calculator (60+ landen) – Wereldwijd VAT & Sales Tax Berekenen
+                <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent lg:text-4xl">Gratis Internationale BTW Calculator (60+ landen) – Wereldwijd VAT & Sales Tax Berekenen
               </h1>
                 
                 <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
@@ -237,8 +237,8 @@ Deze BTW-calculator is speciaal ontwikkeld voor internationale ondernemers, e-co
                           <TrendingUp className="w-5 h-5 inline mr-2 text-white" />
                           BTW-tarief
                         </Label>
-                        {selectedCountry ? (
-                          <RadioGroup value={selectedRate?.toString()} onValueChange={(value) => setSelectedRate(parseFloat(value))}>
+                        {selectedCountry ?
+                      <RadioGroup value={selectedRate?.toString()} onValueChange={(value) => setSelectedRate(parseFloat(value))}>
                             <div className="flex items-center space-x-2 p-4 rounded-lg border border-white/30 bg-white/10 hover:bg-white/15 transition-colors">
                               <RadioGroupItem value={selectedCountry.standardRate.toString()} id="standard" className="border-white/50 text-white" />
                               <Label htmlFor="standard" className="cursor-pointer flex-1 font-semibold text-white text-lg">
@@ -251,12 +251,12 @@ Deze BTW-calculator is speciaal ontwikkeld voor internationale ondernemers, e-co
                                   Verlaagd tarief: {rate}%
                                 </Label>
                               </div>)}
-                          </RadioGroup>
-                        ) : (
-                          <div className="p-4 rounded-lg border border-white/20 bg-white/10 text-white/70 text-base font-medium">
+                          </RadioGroup> :
+
+                      <div className="p-4 rounded-lg border border-white/20 bg-white/10 text-white/70 text-base font-medium">
                             Selecteer eerst een land om tarieven te zien
                           </div>
-                        )}
+                      }
                       </div>
 
                       {/* Include/Exclude VAT - always visible */}
