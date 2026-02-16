@@ -1931,7 +1931,7 @@ const PremiumDomains = () => {
                         {domain.category}
                       </Badge>
                       {domain.image && (
-                        <img src={domain.image} alt={`${domain.name} premium domain`} className="w-9 h-auto object-contain flex-shrink-0" />
+                        <img src={domain.image} alt={`${domain.name} premium domain`} className="w-20 h-auto object-contain flex-shrink-0" />
                       )}
                       <div className="flex items-center gap-1 bg-amber-500/10 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full flex-shrink-0">
                         <BarChart3 className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-amber-400" />
