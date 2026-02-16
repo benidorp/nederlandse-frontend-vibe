@@ -192,9 +192,9 @@ Deze BTW-calculator is speciaal ontwikkeld voor internationale ondernemers, e-co
               <div className="max-w-5xl mx-auto">
                 <div className="text-center mb-10">
                   <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">BTW Calculator</h2>
-                  <p className="text-lg text-muted-foreground">
-                    Bereken direct de BTW voor jouw internationale transacties
-                  </p>
+                  <p className="text-lg text-muted-foreground">Bereken direct de BTW voor jouw nationale en internationale transacties
+
+                </p>
                 </div>
                 
                 <div className="grid lg:grid-cols-2 gap-8">
