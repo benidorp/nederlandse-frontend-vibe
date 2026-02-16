@@ -18,7 +18,7 @@ const HeroTravelBookingEN = () => {
             </span>
           </div>
           
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground leading-tight">Essential Legal Documents for Travel Booking and Hotel Websites: Terms & Conditions, Privacy Policy, Cancellation Policy & Disclaimer
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground leading-tight">Protect your Travel Booking and Hotel Websites : Essential Legal Documents Terms & Conditions, Privacy Policy, Cancellation Policy & Disclaimer
 
           </h1>
           
