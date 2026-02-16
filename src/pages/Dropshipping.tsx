@@ -8,7 +8,7 @@ import FAQDropshipping from "@/components/dropshipping/FAQDropshipping";
 import PricingDropshipping from "@/components/dropshipping/PricingDropshipping";
 import ReviewsDropshipping from "@/components/dropshipping/ReviewsDropshipping";
 import FooterEN from "@/components/en/FooterEN";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import { Helmet } from "react-helmet";
 
@@ -39,7 +39,7 @@ const Dropshipping = () => {
         ]}
       />
       <HiddenInternalLinks />
-      <GTranslateWidget />
+      
       <div className="min-h-screen">
         <HeaderEN />
         <main>

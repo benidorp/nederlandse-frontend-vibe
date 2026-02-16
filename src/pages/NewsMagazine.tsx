@@ -9,7 +9,7 @@ import PricingNewsMagazine from "@/components/news-magazine/PricingNewsMagazine"
 import ReviewsNewsMagazine from "@/components/news-magazine/ReviewsNewsMagazine";
 import FooterNewsMagazine from "@/components/news-magazine/FooterNewsMagazine";
 import CTABoxNewsMagazine from "@/components/news-magazine/CTABoxNewsMagazine";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import { Helmet } from "react-helmet";
 
@@ -38,7 +38,7 @@ const NewsMagazine = () => {
           { question: "Are the documents GDPR compliant?", answer: "Yes, all documents are fully GDPR compliant." }
         ]}
       />
-      <GTranslateWidget />
+      
       <div className="min-h-screen">
         <HeaderNewsMagazine />
         <main>

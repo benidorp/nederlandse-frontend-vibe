@@ -9,7 +9,7 @@ import FAQNonprofit from "@/components/nonprofit/FAQNonprofit";
 import PricingNonprofit from "@/components/nonprofit/PricingNonprofit";
 import ReviewsNonprofit from "@/components/nonprofit/ReviewsNonprofit";
 import FooterEN from "@/components/en/FooterEN";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import { Helmet } from "react-helmet";
 
@@ -39,7 +39,7 @@ const Nonprofit = () => {
         ]}
       />
       <HiddenInternalLinks />
-      <GTranslateWidget />
+      
       <div className="min-h-screen">
         <HeaderEN />
         <main>

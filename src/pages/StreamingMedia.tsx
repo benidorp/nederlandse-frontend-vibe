@@ -7,7 +7,7 @@ import PricingStreamingMedia from "@/components/streaming-media/PricingStreaming
 import ReviewsStreamingMedia from "@/components/streaming-media/ReviewsStreamingMedia";
 import FAQStreamingMedia from "@/components/streaming-media/FAQStreamingMedia";
 import FooterEN from "@/components/en/FooterEN";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import { Helmet } from "react-helmet";
 
@@ -37,7 +37,7 @@ const StreamingMedia = () => {
         ]}
       />
       <HiddenInternalLinks />
-      <GTranslateWidget />
+      
       <div className="min-h-screen">
         <HeaderEN />
         <main>

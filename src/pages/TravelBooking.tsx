@@ -9,7 +9,7 @@ import PricingTravelBookingEN from "@/components/travel-booking/PricingTravelBoo
 import ReviewsEN from "@/components/en/ReviewsEN";
 import FAQTravelBookingEN from "@/components/travel-booking/FAQTravelBookingEN";
 import FooterEN from "@/components/en/FooterEN";
-import GTranslateWidget from "@/components/GTranslateWidget";
+
 import SEOHead from "@/components/seo/SEOHead";
 import { Helmet } from "react-helmet";
 
@@ -38,7 +38,7 @@ const TravelBooking = () => {
           { question: "Are the documents GDPR compliant?", answer: "Yes, all documents are fully GDPR compliant." }
         ]}
       />
-      <GTranslateWidget />
+      
       <HiddenInternalLinks />
       <div className="min-h-screen">
         <HeaderEN />
