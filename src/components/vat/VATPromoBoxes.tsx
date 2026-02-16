@@ -213,8 +213,8 @@ const VATPromoBoxes = ({ lang }: VATPromoBoxesProps) => {
           {/* NordVPN Promo Box */}
           <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-lg p-6">
             <div className="text-center">
-              <h3 className="font-bold text-white text-xl mb-3">{t.vpnTitle}</h3>
-              <p className="text-white/90 mb-4 max-w-2xl mx-auto leading-relaxed font-semibold text-lg">
+              <h3 className="font-bold text-white mb-3 text-2xl">{t.vpnTitle}</h3>
+              <p className="text-white/90 mb-4 max-w-2xl mx-auto leading-relaxed font-semibold text-xl">
                 {t.vpnDesc}
               </p>
               <a
