@@ -1925,14 +1925,16 @@ const PremiumDomains = () => {
                       VERKOCHT
                     </div>
                   )}
-                  <CardHeader className="pb-2 sm:pb-3 p-3 sm:p-4 md:p-6">
+                  <CardHeader className="pb-2 sm:pb-3 p-2 sm:p-3 md:p-4">
+                    {domain.image && (
+                      <div className="-mt-1 mb-1 flex justify-center">
+                        <img src={domain.image} alt={`${domain.name} premium domain`} className="w-20 h-auto object-contain" />
+                      </div>
+                    )}
                     <div className="flex items-center justify-between gap-2">
                       <Badge variant="outline" className="text-[10px] sm:text-xs border-slate-600 text-slate-400 flex-shrink-0">
                         {domain.category}
                       </Badge>
-                      {domain.image && (
-                        <img src={domain.image} alt={`${domain.name} premium domain`} className="w-20 h-auto object-contain flex-shrink-0" />
-                      )}
                       <div className="flex items-center gap-1 bg-amber-500/10 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full flex-shrink-0">
                         <BarChart3 className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-amber-400" />
                         <span className="text-[10px] sm:text-xs font-semibold text-amber-400">MOZ {domain.mozScore}</span>
