@@ -18,8 +18,8 @@ const HeroTravelBookingEN = () => {
             </span>
           </div>
           
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground leading-tight">
-            Legal Documents for Travel Booking and Hotel Websites: Terms & Conditions, Privacy Policy, Cancellation Policy & Disclaimer
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground leading-tight">Essential Legal Documents for Travel Booking and Hotel Websites: Terms & Conditions, Privacy Policy, Cancellation Policy & Disclaimer
+
           </h1>
           
           <p className="text-lg text-primary-foreground/90 leading-relaxed">
@@ -29,20 +29,20 @@ const HeroTravelBookingEN = () => {
           </p>
           
           <div className="flex flex-wrap gap-4">
-            <Button 
-              size="lg" 
-              onClick={() => scrollToSection("pricing")} 
-              className="group bg-primary-foreground text-primary hover:bg-primary-foreground/90"
-            >
+            <Button
+              size="lg"
+              onClick={() => scrollToSection("pricing")}
+              className="group bg-primary-foreground text-primary hover:bg-primary-foreground/90">
+
               View Packages
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              onClick={() => scrollToSection("services")} 
-              className="border-primary-foreground/30 hover:bg-primary-foreground/10 text-slate-950"
-            >
+            <Button
+              size="lg"
+              variant="outline"
+              onClick={() => scrollToSection("services")}
+              className="border-primary-foreground/30 hover:bg-primary-foreground/10 text-slate-950">
+
               More Information
             </Button>
           </div>
@@ -50,15 +50,15 @@ const HeroTravelBookingEN = () => {
         
         <div className="relative">
           <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg blur-2xl opacity-50"></div>
-          <img 
-            src={heroImage} 
-            alt="Professional legal consultant for travel industry" 
-            className="relative rounded-lg shadow-2xl w-full object-cover ring-2 ring-primary/10" 
-          />
+          <img
+            src={heroImage}
+            alt="Professional legal consultant for travel industry"
+            className="relative rounded-lg shadow-2xl w-full object-cover ring-2 ring-primary/10" />
+
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroTravelBookingEN;
