@@ -47,7 +47,8 @@ const premiumDomains = [
     price: "€1750",
     backlinks: "1.9K+",
     topBacklinks: ["theguardian.com (DA 94)", "telegraph.co.uk (DA 94)", "dailymail.co.uk (DA 94)", "irishtimes.com (DA 91)", "derstandard.at (DA 82)"],
-    stripePaymentLink: "https://buy.stripe.com/8x2dR9epV9CK5qJaSS9Zm0i"
+    stripePaymentLink: "https://buy.stripe.com/8x2dR9epV9CK5qJaSS9Zm0i",
+    image: "/images/premium-domains-logo.png"
   },
   {
     name: "icesculpture.be",
