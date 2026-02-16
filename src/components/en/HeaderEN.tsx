@@ -7,10 +7,10 @@ const MAIN_PAGE = "/affiliate-website-protection-essential-legal-documents-terms
 const HeaderEN = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const isMainPage = location.pathname === MAIN_PAGE || location.pathname === "/";
+  const isLocalPage = location.pathname === MAIN_PAGE || location.pathname === "/" || location.pathname.toLowerCase().includes("photography") || location.pathname.toLowerCase().includes("fotografie");
 
   const scrollToSection = (id: string) => {
-    if (isMainPage) {
+    if (isLocalPage) {
       const element = document.getElementById(id);
       element?.scrollIntoView({ behavior: "smooth" });
     } else {
