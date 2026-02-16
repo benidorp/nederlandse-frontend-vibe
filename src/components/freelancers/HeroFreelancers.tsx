@@ -17,7 +17,7 @@ const HeroFreelancers = () => {
             </span>
           </div>
           
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground leading-tight">Professional Website Legal Documents for Freelancers, Self-Employed & Independent Contractors</h1>
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground leading-tight">Professional Website Legal Protection Essential Documents for Freelancers, Self-Employed & Independent Contractors</h1>
           
           <p className="text-lg text-primary-foreground/90 leading-relaxed">Protect your website freelance business with comprehensive legal documentation. Our affordable package includes client contracts, terms of service, privacy policy, liability disclaimers, and more— everything you need to work confidently and professionally with clients worldwide.<strong>client contracts, terms of service, privacy policy, liability disclaimers, and more</strong>—
             everything you need to work confidently and professionally with clients worldwide.
