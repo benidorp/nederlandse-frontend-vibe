@@ -17,9 +17,9 @@ const HeroStreamingMedia = () => {
             </span>
           </div>
           
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground leading-tight">
-            Legal Documents for Streaming & Media Websites: Terms & Conditions, Privacy Policy, Content License & DMCA Policy
-          </h1>
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground leading-tight">Protect Your Streaming & Media Websites Essential Legal Documents : Terms & Conditions, Privacy Policy, Content License & DMCA Policy
+
+        </h1>
           
           <p className="text-lg text-primary-foreground/90 leading-relaxed">Professional legal documents that protect your streaming website platform and ensure compliance with copyright laws. Our comprehensive package includes all essential agreements such as content licenses, user agreements, and DMCA policies— for complete legal coverage, trust, and creator protection.<strong>content licenses, user agreements, and DMCA policies</strong>—
             for complete legal coverage, trust, and creator protection.
