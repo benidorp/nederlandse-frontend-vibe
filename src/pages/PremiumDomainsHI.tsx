@@ -1880,10 +1880,10 @@ const PremiumDomainsHI = () => {
                   <CardHeader className="pb-2 sm:pb-3">
                     <div className="flex items-start justify-between gap-2">
                       <div className="min-w-0 flex-1">
-                        <CardTitle className="text-base sm:text-lg text-white group-hover:text-amber-400 transition-colors truncate">
+                        <CardTitle className="text-lg sm:text-xl md:text-2xl text-white group-hover:text-amber-400 transition-colors truncate">
                           {domain.name}
                         </CardTitle>
-                        <CardDescription className="text-slate-400 text-xs sm:text-sm mt-1 line-clamp-2">
+                        <CardDescription className="text-sm sm:text-base text-slate-300 mt-1 line-clamp-2">
                           {domain.description}
                         </CardDescription>
                       </div>

@@ -1965,10 +1965,10 @@ const PremiumDomainsIT = () => {
                         <span className="text-[10px] sm:text-xs font-semibold text-amber-400">MOZ {domain.mozScore}</span>
                       </div>
                     </div>
-                    <CardTitle className="text-base sm:text-lg md:text-xl text-white group-hover:text-amber-400 transition-colors mt-2 sm:mt-3 break-all">
+                    <CardTitle className="text-lg sm:text-xl md:text-2xl text-white group-hover:text-amber-400 transition-colors mt-2 sm:mt-3 break-all">
                       {domain.name}
                     </CardTitle>
-                    <CardDescription className="text-xs sm:text-sm text-slate-400">
+                    <CardDescription className="text-sm sm:text-base text-slate-300">
                       {domain.description}
                     </CardDescription>
                   </CardHeader>
