@@ -1990,11 +1990,9 @@ const PremiumDomains = () => {
                     </div>
                   )}
                   <CardHeader className="pb-2 sm:pb-3 p-2 sm:p-3 md:p-4">
-                    {domain.image && (
-                      <div className="mt-1 mb-2 flex justify-center">
-                        <img src={domain.image} alt={`${domain.name} premium domain`} className="w-20 h-auto object-contain" />
-                      </div>
-                    )}
+                    <div className="mt-1 mb-2 flex justify-center">
+                      <img src={domain.image || "/images/premium-domains-logo.png"} alt={`${domain.name} premium domain`} className="w-20 h-auto object-contain" />
+                    </div>
                     <div className="flex items-center justify-between gap-2">
                       <Badge variant="outline" className="text-[10px] sm:text-xs border-slate-600 text-slate-400 flex-shrink-0">
                         {domain.category}
