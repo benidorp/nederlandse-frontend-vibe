@@ -1978,6 +1978,9 @@ const PremiumDomainsFR = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                   
                   <CardHeader className="p-3 sm:p-4 pb-2 sm:pb-3 relative">
+                    <div className="mt-1 mb-2 flex justify-center">
+                      <img src="/images/premium-domains-logo.png" alt={`${domain.name} domaine premium et expiré`} className="w-20 h-auto object-contain" />
+                    </div>
                     <div className="flex items-start justify-between">
                       <Badge variant="outline" className="text-[10px] sm:text-xs border-slate-600 text-slate-400">
                         {domain.category}
