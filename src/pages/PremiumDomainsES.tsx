@@ -390,6 +390,20 @@ const premiumDomains = [
     topBacklinks: ["europa.eu (DA 97)", "abc.es (DA 93)", "gencat.cat (DA 89)", "ask.com (DA 88)", "ecoticias.com (DA 74)"],
     useCases: ["ONG de Gestión Natural y Rewilding", "Plataforma de Agricultura Sostenible", "Ecoturismo y Agroturismo", "Consultoría Ambiental", "Estudio de Arquitectura Paisajista", "Colectivo de Agricultura Ecológica", "Fundación de Acción Climática", "Academia de Permacultura", "Iniciativa de Bosques y Biodiversidad", "Comunidad de Agricultura Regenerativa"]
   },
+  {
+    name: "imess.eu",
+    description: "Dominio EU con backlinks de Bit.ly, Wikipedia (JA), UCL y Universidad de Helsinki.",
+    mozScore: 31,
+    pageAuthority: 32,
+    linkingDomains: 174,
+    inboundLinks: "748+",
+    followedLinks: "675+",
+    category: "Tecnología",
+    price: "€695",
+    stripePaymentLink: "https://buy.stripe.com/dRm28r5TpaGO6uNe549Zm0b",
+    backlinks: "748+",
+    topBacklinks: ["bit.ly (DA 94)", "ja.wikipedia.org (DA 93)", "ucl.ac.uk (DA 91)", "ku.dk (DA 87)", "helsinki.fi (DA 85)"]
+  },
   // DA 30
   {
     name: "ilovecosmetics.eu",
@@ -461,6 +475,20 @@ const premiumDomains = [
     stripePaymentLink: "https://buy.stripe.com/fZu6oH6Xt3emg5n5yy9Zm0a",
     backlinks: "2.2K+",
     topBacklinks: ["google.sk (DA 85)", "wikiwand.com (DA 85)", "ra.co (DA 85)", "pravda.sk (DA 79)", "dennikn.sk (DA 76)"]
+  },
+  {
+    name: "dowse.eu",
+    description: "Dominio EU con backlinks de GitHub, Medium, The Guardian y Vercel.",
+    mozScore: 30,
+    pageAuthority: 33,
+    linkingDomains: 184,
+    inboundLinks: "853+",
+    followedLinks: "462+",
+    category: "Tecnología",
+    price: "€595",
+    stripePaymentLink: "https://buy.stripe.com/fZu6oH6Xt3emg5n5yy9Zm0a",
+    backlinks: "853+",
+    topBacklinks: ["github.com (DA 96)", "medium.com (DA 95)", "theguardian.com (DA 94)", "vercel.app (DA 92)", "ycombinator.com (DA 90)"]
   },
   // DA 29
   {
@@ -604,6 +632,34 @@ const premiumDomains = [
     topBacklinks: ["europa.eu (DA 97)", "medium.com (DA 95)", "zeit.de (DA 91)", "threadreaderapp.com (DA 78)", "eur.nl (DA 68)"]
   },
   // DA 28
+  {
+    name: "scpenetwork.eu",
+    description: "Dominio red EU con backlinks de Springer, The Conversation, MDPI y Player.fm.",
+    mozScore: 28,
+    pageAuthority: 30,
+    linkingDomains: 131,
+    inboundLinks: "280+",
+    followedLinks: "186+",
+    category: "Investigación",
+    price: "€429",
+    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
+    backlinks: "280+",
+    topBacklinks: ["springer.com (DA 93)", "theconversation.com (DA 92)", "mdpi.com (DA 92)", "player.fm (DA 88)", "ncl.ac.uk (DA 85)"]
+  },
+  {
+    name: "papilios.eu",
+    description: "Dominio EU con altos linking domains y backlinks de Zoznam.sk, Centrum.cz y Penize.cz.",
+    mozScore: 28,
+    pageAuthority: 32,
+    linkingDomains: 833,
+    inboundLinks: "20.2K+",
+    followedLinks: "20.1K+",
+    category: "General",
+    price: "€429",
+    stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
+    backlinks: "20.2K+",
+    topBacklinks: ["zoznam.sk (DA 90)", "centrum.cz (DA 72)", "penize.cz (DA 62)", "n-1publications.org (DA 55)", "vinosol.ch (DA 55)"]
+  },
   {
     name: "bovisadrivein.it",
     description: "Dominio italiano de entretenimiento con backlinks de Behance, Giphy, Corriere y MyMovies.",
