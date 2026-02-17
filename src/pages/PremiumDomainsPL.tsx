@@ -1779,8 +1779,8 @@ const PremiumDomainsPL = () => {
                   </CardHeader>
                   <CardContent className="p-3 sm:p-4 pt-0 flex flex-col flex-grow">
                     <div className="space-y-2 sm:space-y-3 mb-3 sm:mb-4">
-                      <div className="flex items-center justify-between text-sm sm:text-base">
-                        <div className="flex items-center gap-1.5 sm:gap-2 text-slate-300">
+                      <div className="flex items-center justify-between text-xs sm:text-sm">
+                        <div className="flex items-center gap-1.5 sm:gap-2 text-slate-400">
                           <Link className="w-3 h-3 sm:w-4 sm:h-4" />
                           <span>Backlinki: {domain.backlinks}</span>
                         </div>
