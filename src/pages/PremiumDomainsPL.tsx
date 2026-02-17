@@ -1822,8 +1822,9 @@ const PremiumDomainsPL = () => {
                     </div>
                     
                     <div className="mt-auto space-y-2 sm:space-y-3 pt-3 sm:pt-4 border-t border-slate-700/50">
-                      <div className="flex items-center justify-between">
-                        <span className="text-lg sm:text-2xl font-bold text-white">{domain.price}</span>
+                      <div className="flex items-center justify-between mb-2 sm:mb-3 bg-slate-800/60 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2">
+                        <span className="text-xs sm:text-sm font-medium text-slate-300">Cena</span>
+                        <span className="text-base sm:text-lg font-bold text-amber-400">{domain.price}</span>
                       </div>
                       
                       {domain.stripePaymentLink && (
