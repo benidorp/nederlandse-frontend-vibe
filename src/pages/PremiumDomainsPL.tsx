@@ -1770,46 +1770,46 @@ const PremiumDomainsPL = () => {
                         <span className="text-[10px] sm:text-xs font-semibold text-amber-400">MOZ {domain.mozScore}</span>
                       </div>
                     </div>
-                    <CardTitle className="text-base sm:text-lg md:text-xl text-white group-hover:text-amber-400 transition-colors mt-2 sm:mt-3 break-all">
+                    <CardTitle className="text-lg sm:text-xl md:text-2xl text-white group-hover:text-amber-400 transition-colors mt-2 sm:mt-3 break-all">
                       {domain.name}
                     </CardTitle>
-                    <CardDescription className="text-xs sm:text-sm text-slate-400">
+                    <CardDescription className="text-sm sm:text-base text-slate-300">
                       {domain.description}
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="p-3 sm:p-4 pt-0 flex flex-col flex-grow">
                     <div className="space-y-2 sm:space-y-3 mb-3 sm:mb-4">
-                      <div className="flex items-center justify-between text-xs sm:text-sm">
-                        <div className="flex items-center gap-1.5 sm:gap-2 text-slate-400">
+                      <div className="flex items-center justify-between text-sm sm:text-base">
+                        <div className="flex items-center gap-1.5 sm:gap-2 text-slate-300">
                           <Link className="w-3 h-3 sm:w-4 sm:h-4" />
                           <span>Backlinki: {domain.backlinks}</span>
                         </div>
                       </div>
                       
                       {domain.pageAuthority && (
-                        <div className="grid grid-cols-2 gap-1.5 sm:gap-2 text-[10px] sm:text-xs">
+                        <div className="grid grid-cols-2 gap-1.5 sm:gap-2 text-xs sm:text-sm">
                           <div className="bg-slate-800/50 rounded px-1.5 sm:px-2 py-0.5 sm:py-1">
-                            <span className="text-slate-500">Page Authority:</span>
+                            <span className="text-slate-400">Page Authority:</span>
                             <span className="text-white ml-1 font-medium">{domain.pageAuthority}</span>
                           </div>
                           <div className="bg-slate-800/50 rounded px-1.5 sm:px-2 py-0.5 sm:py-1">
-                            <span className="text-slate-500">Linkujące Domeny:</span>
+                            <span className="text-slate-400">Linkujące Domeny:</span>
                             <span className="text-white ml-1 font-medium">{domain.linkingDomains}</span>
                           </div>
                           <div className="bg-slate-800/50 rounded px-1.5 sm:px-2 py-0.5 sm:py-1">
-                            <span className="text-slate-500">Linki Przychodzące:</span>
+                            <span className="text-slate-400">Linki Przychodzące:</span>
                             <span className="text-white ml-1 font-medium">{domain.inboundLinks}</span>
                           </div>
                           <div className="bg-slate-800/50 rounded px-1.5 sm:px-2 py-0.5 sm:py-1">
-                            <span className="text-slate-500">Linki Followed:</span>
+                            <span className="text-slate-400">Linki Followed:</span>
                             <span className="text-white ml-1 font-medium">{domain.followedLinks}</span>
                           </div>
                         </div>
                       )}
                       
                       {domain.topBacklinks && domain.topBacklinks.length > 0 && (
-                        <div className="text-[10px] sm:text-xs">
-                          <span className="text-slate-500 block mb-1">Top Backlinki:</span>
+                          <div className="text-xs sm:text-sm">
+                            <span className="text-slate-400 block mb-1">Top Backlinki:</span>
                           <div className="flex flex-wrap gap-0.5 sm:gap-1">
                             {domain.topBacklinks.slice(0, 5).map((link, i) => (
                               <Badge key={i} variant="outline" className="text-[8px] sm:text-[10px] border-amber-500/30 text-amber-400/80 bg-amber-500/5">
