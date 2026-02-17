@@ -320,7 +320,8 @@ const premiumDomains = [
     price: "€695",
     stripePaymentLink: "https://buy.stripe.com/dRm28r5TpaGO6uNe549Zm0b",
     backlinks: "333+",
-    topBacklinks: ["europa.eu (DA 97)", "github.com (DA 96)", "nytimes.com (DA 95)", "elpais.com (DA 94)", "springer.com (DA 93)"]
+    topBacklinks: ["europa.eu (DA 97)", "github.com (DA 96)", "nytimes.com (DA 95)", "elpais.com (DA 94)", "springer.com (DA 93)"],
+    sold: true
   },
   {
     name: "evader-project.eu",
@@ -421,7 +422,8 @@ const premiumDomains = [
     price: "€595",
     stripePaymentLink: "https://buy.stripe.com/fZu6oH6Xt3emg5n5yy9Zm0a",
     backlinks: "199+",
-    topBacklinks: ["es.wikipedia.org (DA 96)", "gov.pl (DA 91)", "threadreaderapp.com (DA 78)", "gloria.tv (DA 69)", "dbpedia.org (DA 65)"]
+    topBacklinks: ["es.wikipedia.org (DA 96)", "gov.pl (DA 91)", "threadreaderapp.com (DA 78)", "gloria.tv (DA 69)", "dbpedia.org (DA 65)"],
+    sold: true
   },
   {
     name: "friendsofthesupergrid.eu",
@@ -633,7 +635,8 @@ const premiumDomains = [
     price: "€429",
     stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
     backlinks: "185+",
-    topBacklinks: ["europa.eu (DA 97)", "mdpi.com (DA 92)", "eurekalert.org (DA 91)", "wired.it (DA 90)", "ub.edu (DA 86)"]
+    topBacklinks: ["europa.eu (DA 97)", "mdpi.com (DA 92)", "eurekalert.org (DA 91)", "wired.it (DA 90)", "ub.edu (DA 86)"],
+    sold: true
   },
   {
     name: "eu-sabana.eu",
@@ -775,7 +778,8 @@ const premiumDomains = [
     price: "€329",
     stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
     backlinks: "4.8K+",
-    topBacklinks: ["europa.eu (DA 97)", "springer.com (DA 93)", "plos.org (DA 93)", "salon.com (DA 91)", "phys.org (DA 91)"]
+    topBacklinks: ["europa.eu (DA 97)", "springer.com (DA 93)", "plos.org (DA 93)", "salon.com (DA 91)", "phys.org (DA 91)"],
+    sold: true
   },
   {
     name: "arcomem.eu",
@@ -1043,7 +1047,8 @@ const premiumDomains = [
     price: "€249",
     stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
     backlinks: "284+",
-    topBacklinks: ["pages.dev (DA 91)", "wikitravel.org (DA 79)", "groupon.co.uk (DA 76)", "groupon.fr (DA 63)", "travellerspoint.com (DA 60)"]
+    topBacklinks: ["pages.dev (DA 91)", "wikitravel.org (DA 79)", "groupon.co.uk (DA 76)", "groupon.fr (DA 63)", "travellerspoint.com (DA 60)"],
+    sold: true
   },
   {
     name: "recharge-green.eu",
@@ -1071,7 +1076,8 @@ const premiumDomains = [
     price: "€175",
     stripePaymentLink: "https://buy.stripe.com/8x26oH95B4iq9GZ6CC9Zm07",
     backlinks: "194+",
-    topBacklinks: ["europa.eu (DA 97)", "eldiario.es (DA 91)", "stuttgarter-zeitung.de (DA 81)", "techxplore.com (DA 79)", "uah.es (DA 70)"]
+    topBacklinks: ["europa.eu (DA 97)", "eldiario.es (DA 91)", "stuttgarter-zeitung.de (DA 81)", "techxplore.com (DA 79)", "uah.es (DA 70)"],
+    sold: true
   },
   {
     name: "aaliance.eu",
@@ -1141,7 +1147,8 @@ const premiumDomains = [
     price: "€249",
     stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
     backlinks: "2K+",
-    topBacklinks: ["apple.com (DA 99)", "bit.ly (DA 94)", "home.pl (DA 93)", "cocolog-nifty.com (DA 90)", "rtl.fr (DA 89)"]
+    topBacklinks: ["apple.com (DA 99)", "bit.ly (DA 94)", "home.pl (DA 93)", "cocolog-nifty.com (DA 90)", "rtl.fr (DA 89)"],
+    sold: true
   },
   {
     name: "landmark-project.eu",
@@ -1269,7 +1276,8 @@ const premiumDomains = [
     price: "€125",
     backlinks: "146+",
     topBacklinks: ["europa.eu (DA 97)", "theconversation.com (DA 92)", "mdpi.com (DA 92)", "siliconrepublic.com (DA 83)", "bristol.ac.uk (DA 78)"],
-    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
+    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06",
+    sold: true
   },
   {
     name: "200jaarstaten-generaal.nl",
@@ -1921,7 +1929,7 @@ const PremiumDomains = () => {
                 >
                   {/* Sold Banner */}
                   {'sold' in domain && domain.sold && (
-                    <div className="absolute top-8 -right-12 z-20 rotate-45 bg-red-600 text-white text-sm sm:text-base font-extrabold py-2 px-14 shadow-xl border-y-2 border-red-400 tracking-wider uppercase">
+                    <div className="absolute top-14 -right-12 z-20 rotate-45 bg-red-600 text-white text-sm sm:text-base font-extrabold py-2 px-14 shadow-xl border-y-2 border-red-400 tracking-wider uppercase">
                       VERKOCHT
                     </div>
                   )}
@@ -2009,7 +2017,13 @@ const PremiumDomains = () => {
                     
                     {/* Price Display - Compact at bottom */}
                     <div className="mt-auto pt-3 sm:pt-4 border-t border-slate-700/50">
-                      <div className="flex items-center justify-between mb-2 sm:mb-3 bg-slate-800/60 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2">
+                    {'sold' in domain && domain.sold ? (
+                      <div className="text-center py-3">
+                        <span className="text-red-400 font-bold text-sm sm:text-base">Dit domein is verkocht</span>
+                      </div>
+                    ) : (
+                    <>
+                    <div className="flex items-center justify-between mb-2 sm:mb-3 bg-slate-800/60 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2">
                         <span className="text-xs sm:text-sm font-medium text-slate-300">Prijs</span>
                         <span className="text-base sm:text-lg font-bold text-amber-400">{domain.price}</span>
                       </div>
@@ -2158,6 +2172,8 @@ const PremiumDomains = () => {
                           </div>
                         </div>
                       )}
+                    </>
+                    )}
                     </div>
                   </CardContent>
                 </Card>
