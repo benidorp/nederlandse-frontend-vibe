@@ -1855,7 +1855,7 @@ const PremiumDomainsZH = () => {
                 >
                   <CardHeader className="pb-2 sm:pb-3 p-3 sm:p-4 md:p-6">
                     <div className="mt-1 mb-2 flex justify-center">
-                      <img src="/images/premium-domains-logo-zh.png" alt={`${domain.name} 优质域名`} className="w-20 h-auto object-contain" />
+                      <img src="/images/premium-domains-logo-zh.png" alt={`购买 ${domain.name} - 高MOZ权威和SEO价值的优质过期域名 适用于任何网站`} className="w-20 h-auto object-contain" />
                     </div>
                     <div className="flex items-start justify-between gap-2">
                       <Badge variant="outline" className="text-[10px] sm:text-xs border-slate-600 text-slate-400 flex-shrink-0">

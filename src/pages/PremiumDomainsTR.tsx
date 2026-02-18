@@ -1857,7 +1857,7 @@ const PremiumDomainsTR = () => {
                 >
                   <CardHeader className="pb-2 sm:pb-3 p-3 sm:p-4 md:p-6">
                     <div className="mt-1 mb-2 flex justify-center">
-                      <img src="/images/premium-domains-logo-tr.png" alt={`${domain.name} premium alan adı`} className="w-20 h-auto object-contain" />
+                      <img src="/images/premium-domains-logo-tr.png" alt={`${domain.name} satın al - Yüksek MOZ otoritesi & SEO değeri olan premium süresi dolmuş alan adı her web sitesi için`} className="w-20 h-auto object-contain" />
                     </div>
                     <div className="flex items-start justify-between gap-2">
                       <Badge variant="outline" className="text-[10px] sm:text-xs border-slate-600 text-slate-400 flex-shrink-0">

@@ -1762,7 +1762,7 @@ const PremiumDomainsPL = () => {
                 >
                   <CardHeader className="p-3 sm:p-4 pb-2 sm:pb-3">
                     <div className="mt-1 mb-2 flex justify-center">
-                      <img src="/images/premium-domains-logo-pl.png" alt={`${domain.name} domena premium`} className="w-20 h-auto object-contain" />
+                      <img src="/images/premium-domains-logo-pl.png" alt={`Kup ${domain.name} - Premium wygasła domena z wysokim autorytetem MOZ & wartością SEO dla każdej strony`} className="w-20 h-auto object-contain" />
                     </div>
                     <div className="flex items-start justify-between">
                       <Badge variant="outline" className="text-[10px] sm:text-xs border-slate-600 text-slate-400">
