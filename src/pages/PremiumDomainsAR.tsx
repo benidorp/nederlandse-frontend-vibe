@@ -1699,7 +1699,7 @@ const PremiumDomainsAR = () => {
                 >
                   <CardHeader className="pb-2 sm:pb-3 p-3 sm:p-4 md:p-6">
                     <div className="mt-1 mb-2 flex justify-center">
-                      <img src="/images/premium-domains-logo-ar.png" alt={`${domain.name} نطاق بريميوم`} className="w-20 h-auto object-contain" />
+                      <img src="/images/premium-domains-logo-ar.png" alt={`شراء ${domain.name} - نطاق بريميوم منتهي الصلاحية مع سلطة MOZ عالية وقيمة SEO لأي موقع ويب`} className="w-20 h-auto object-contain" />
                     </div>
                     <div className="flex items-start justify-between gap-2">
                       <Badge variant="outline" className="text-[10px] sm:text-xs border-slate-600 text-slate-400 flex-shrink-0">

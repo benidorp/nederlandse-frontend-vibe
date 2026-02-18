@@ -1952,7 +1952,7 @@ const PremiumDomainsJA = () => {
                 >
                   <CardHeader className="p-3 sm:p-4 pb-2 sm:pb-3">
                     <div className="mt-1 mb-2 flex justify-center">
-                      <img src="/images/premium-domains-logo-ja.png" alt={`${domain.name} プレミアムドメイン`} className="w-20 h-auto object-contain" />
+                      <img src="/images/premium-domains-logo-ja.png" alt={`${domain.name} 購入 - 高MOZオーソリティ＆SEO価値のプレミアム期限切れドメイン あらゆるウェブサイト向け`} className="w-20 h-auto object-contain" />
                     </div>
                     <div className="flex items-start justify-between">
                       <Badge variant="outline" className="text-[10px] sm:text-xs border-slate-600 text-slate-400">
