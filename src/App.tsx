@@ -111,6 +111,7 @@ const PremiumDomainsLegalHI = lazyRetry(() => import("./pages/PremiumDomainsLega
 const DomainProductPage = lazyRetry(() => import("./pages/DomainProductPage"));
 const LaserEngraverArticle = lazyRetry(() => import("./pages/LaserEngraverArticle"));
 const TelescopeArticle = lazyRetry(() => import("./pages/TelescopeArticle"));
+const PrinterArticle = lazyRetry(() => import("./pages/PrinterArticle"));
 
 // Legal Documents Multi-language Pages
 const AffiliateDE = lazyRetry(() => import("./pages/AffiliateDE"));
@@ -277,6 +278,9 @@ const App = () => (
             
             {/* Telescope Article */}
             <Route path="/nl/beste-high-end-telescoop-kopen-vergelijken-beginners-professionals-top-premium-telescopen-astrofotografie-deep-sky-planeten-natuur-vogels-reviews" element={<TelescopeArticle />} />
+            
+            {/* 3D Printer Article */}
+            <Route path="/nl/beste-3d-printer-kopen-vergelijken-reviews-top-3d-printers-beginners-thuisgebruik-professionele-projecten" element={<PrinterArticle />} />
             
             {/* Redirects from old URLs */}
             <Route path="/expireddomeinnamen/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" element={<Navigate to="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" replace />} />
