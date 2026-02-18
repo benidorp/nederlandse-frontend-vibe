@@ -20,6 +20,16 @@ const languages: LanguageOption[] = [
   { code: "ar", name: "العربية", path: "https://www.iaee.eu/expireddomainnames/ar/shira-asma-nitaqat-mumayaza-sulta-aliya-qima-seo" },
   { code: "tr", name: "Türkçe", path: "https://www.iaee.eu/expireddomainnames/tr/premium-alan-adlari-yuksek-otorite-seo-degeri" },
   { code: "hi", name: "हिन्दी", path: "https://www.iaee.eu/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya" },
+  { code: "sv", name: "Svenska", path: "https://www.iaee.eu/expireddomainnames/sv/kop-premiumdomaner-hog-auktoritet-seo-varde" },
+  { code: "no", name: "Norsk", path: "https://www.iaee.eu/expireddomainnames/no/kjop-premiumdomener-hoy-autoritet-seo-verdi" },
+  { code: "da", name: "Dansk", path: "https://www.iaee.eu/expireddomainnames/da/kob-premium-domaener-hoj-autoritet-seo-vaerdi" },
+  { code: "fi", name: "Suomi", path: "https://www.iaee.eu/expireddomainnames/fi/osta-premium-verkkotunnukset-korkea-auktoriteetti-seo-arvo" },
+  { code: "cs", name: "Čeština", path: "https://www.iaee.eu/expireddomainnames/cs/koupit-premium-domeny-vysoka-autorita-seo-hodnota" },
+  { code: "el", name: "Ελληνικά", path: "https://www.iaee.eu/expireddomainnames/el/agoraste-premium-domains-ypsili-afthentia-seo-axia" },
+  { code: "ru", name: "Русский", path: "https://www.iaee.eu/expireddomainnames/ru/kupit-premium-domeny-vysokij-avtoritet-seo-cennost" },
+  { code: "ro", name: "Română", path: "https://www.iaee.eu/expireddomainnames/ro/cumpara-domenii-premium-autoritate-inalta-valoare-seo" },
+  { code: "bg", name: "Български", path: "https://www.iaee.eu/expireddomainnames/bg/kupete-premium-domeyni-visok-avtoritet-seo-stoynost" },
+  { code: "uk", name: "Українська", path: "https://www.iaee.eu/expireddomainnames/uk/kupyty-premium-domeny-vysokyj-avtorytet-seo-tsinnist" },
 ];
 
 // SVG Flag components
@@ -134,6 +144,92 @@ const FlagHI = () => (
   </svg>
 );
 
+// New flags for the 10 additional languages
+const FlagSV = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="24" fill="#006AA7"/>
+    <rect x="9" y="0" width="4" height="24" fill="#FECC00"/>
+    <rect x="0" y="10" width="32" height="4" fill="#FECC00"/>
+  </svg>
+);
+
+const FlagNO = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="24" fill="#BA0C2F"/>
+    <rect x="8" y="0" width="8" height="24" fill="#FFFFFF"/>
+    <rect x="0" y="8" width="32" height="8" fill="#FFFFFF"/>
+    <rect x="10" y="0" width="4" height="24" fill="#00205B"/>
+    <rect x="0" y="10" width="32" height="4" fill="#00205B"/>
+  </svg>
+);
+
+const FlagDA = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="24" fill="#C60C30"/>
+    <rect x="9" y="0" width="4" height="24" fill="#FFFFFF"/>
+    <rect x="0" y="10" width="32" height="4" fill="#FFFFFF"/>
+  </svg>
+);
+
+const FlagFI = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="24" fill="#FFFFFF"/>
+    <rect x="8" y="0" width="6" height="24" fill="#003580"/>
+    <rect x="0" y="9" width="32" height="6" fill="#003580"/>
+  </svg>
+);
+
+const FlagCS = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="12" fill="#FFFFFF"/>
+    <rect y="12" width="32" height="12" fill="#D7141A"/>
+    <polygon points="0,0 16,12 0,24" fill="#11457E"/>
+  </svg>
+);
+
+const FlagEL = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="24" fill="#0D5EAF"/>
+    {[0,1,2,3,4,5,6,7,8].map(i => (
+      <rect key={i} y={i * 2.67} width="32" height="2.67" fill={i % 2 === 0 ? "#0D5EAF" : "#FFFFFF"} />
+    ))}
+    <rect width="10.67" height="10.67" fill="#0D5EAF"/>
+    <rect x="4.34" y="0" width="2" height="10.67" fill="#FFFFFF"/>
+    <rect x="0" y="4.34" width="10.67" height="2" fill="#FFFFFF"/>
+  </svg>
+);
+
+const FlagRU = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="8" fill="#FFFFFF"/>
+    <rect y="8" width="32" height="8" fill="#0039A6"/>
+    <rect y="16" width="32" height="8" fill="#D52B1E"/>
+  </svg>
+);
+
+const FlagRO = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="10.67" height="24" fill="#002B7F"/>
+    <rect x="10.67" width="10.67" height="24" fill="#FCD116"/>
+    <rect x="21.33" width="10.67" height="24" fill="#CE1126"/>
+  </svg>
+);
+
+const FlagBG = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="8" fill="#FFFFFF"/>
+    <rect y="8" width="32" height="8" fill="#00966E"/>
+    <rect y="16" width="32" height="8" fill="#D62612"/>
+  </svg>
+);
+
+const FlagUK = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="12" fill="#005BBB"/>
+    <rect y="12" width="32" height="12" fill="#FFD500"/>
+  </svg>
+);
+
 const flagComponents: Record<string, React.FC> = {
   nl: FlagNL,
   en: FlagGB,
@@ -148,6 +244,16 @@ const flagComponents: Record<string, React.FC> = {
   ar: FlagAR,
   tr: FlagTR,
   hi: FlagHI,
+  sv: FlagSV,
+  no: FlagNO,
+  da: FlagDA,
+  fi: FlagFI,
+  cs: FlagCS,
+  el: FlagEL,
+  ru: FlagRU,
+  ro: FlagRO,
+  bg: FlagBG,
+  uk: FlagUK,
 };
 
 interface LanguageSwitcherProps {
@@ -177,7 +283,7 @@ const LanguageSwitcher = ({ currentLanguage }: LanguageSwitcherProps) => {
               `}
               title={lang.name}
             >
-              <FlagComponent />
+              {FlagComponent && <FlagComponent />}
             </a>
           );
         })}

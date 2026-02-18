@@ -108,6 +108,16 @@ const PremiumDomainsTR = lazyRetry(() => import("./pages/PremiumDomainsTR"));
 const PremiumDomainsLegalTR = lazyRetry(() => import("./pages/PremiumDomainsLegalTR"));
 const PremiumDomainsHI = lazyRetry(() => import("./pages/PremiumDomainsHI"));
 const PremiumDomainsLegalHI = lazyRetry(() => import("./pages/PremiumDomainsLegalHI"));
+const PremiumDomainsSV = lazyRetry(() => import("./pages/PremiumDomainsSV"));
+const PremiumDomainsNO = lazyRetry(() => import("./pages/PremiumDomainsNO"));
+const PremiumDomainsDA = lazyRetry(() => import("./pages/PremiumDomainsDA"));
+const PremiumDomainsFI = lazyRetry(() => import("./pages/PremiumDomainsFI"));
+const PremiumDomainsCS = lazyRetry(() => import("./pages/PremiumDomainsCS"));
+const PremiumDomainsEL = lazyRetry(() => import("./pages/PremiumDomainsEL"));
+const PremiumDomainsRU = lazyRetry(() => import("./pages/PremiumDomainsRU"));
+const PremiumDomainsRO = lazyRetry(() => import("./pages/PremiumDomainsRO"));
+const PremiumDomainsBG = lazyRetry(() => import("./pages/PremiumDomainsBG"));
+const PremiumDomainsUK = lazyRetry(() => import("./pages/PremiumDomainsUK"));
 const DomainProductPage = lazyRetry(() => import("./pages/DomainProductPage"));
 const LaserEngraverArticle = lazyRetry(() => import("./pages/LaserEngraverArticle"));
 const TelescopeArticle = lazyRetry(() => import("./pages/TelescopeArticle"));
@@ -268,6 +278,16 @@ const App = () => (
             <Route path="/expireddomainnames/tr/premium-alan-adlari-yasal-belgeler" element={<PremiumDomainsLegalTR />} />
             <Route path="/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya" element={<PremiumDomainsHI />} />
             <Route path="/expireddomainnames/hi/premium-domain-kanooni-dastavez" element={<PremiumDomainsLegalHI />} />
+            <Route path="/expireddomainnames/sv/kop-premiumdomaner-hog-auktoritet-seo-varde" element={<PremiumDomainsSV />} />
+            <Route path="/expireddomainnames/no/kjop-premiumdomener-hoy-autoritet-seo-verdi" element={<PremiumDomainsNO />} />
+            <Route path="/expireddomainnames/da/kob-premium-domaener-hoj-autoritet-seo-vaerdi" element={<PremiumDomainsDA />} />
+            <Route path="/expireddomainnames/fi/osta-premium-verkkotunnukset-korkea-auktoriteetti-seo-arvo" element={<PremiumDomainsFI />} />
+            <Route path="/expireddomainnames/cs/koupit-premium-domeny-vysoka-autorita-seo-hodnota" element={<PremiumDomainsCS />} />
+            <Route path="/expireddomainnames/el/agoraste-premium-domains-ypsili-afthentia-seo-axia" element={<PremiumDomainsEL />} />
+            <Route path="/expireddomainnames/ru/kupit-premium-domeny-vysokij-avtoritet-seo-cennost" element={<PremiumDomainsRU />} />
+            <Route path="/expireddomainnames/ro/cumpara-domenii-premium-autoritate-inalta-valoare-seo" element={<PremiumDomainsRO />} />
+            <Route path="/expireddomainnames/bg/kupete-premium-domeyni-visok-avtoritet-seo-stoynost" element={<PremiumDomainsBG />} />
+            <Route path="/expireddomainnames/uk/kupyty-premium-domeny-vysokyj-avtorytet-seo-tsinnist" element={<PremiumDomainsUK />} />
             
             {/* Individual Domain Product Pages */}
             <Route path="/domains/:domainSlug" element={<DomainProductPage />} />
