@@ -9,10 +9,10 @@ import laserSculpfun from "@/assets/laser-sculpfun-icube.jpg";
 import laserAtomstack from "@/assets/laser-atomstack-x20.jpg";
 import laserTwotrees from "@/assets/laser-twotrees-ts2.jpg";
 import laserXtoolS1_20w from "@/assets/laser-xtool-s1-20w.jpg";
-import laserProducts from "@/assets/laser-engraver-products.png";
-import laserReviews from "@/assets/laser-engraver-reviews.png";
-import laserBudget from "@/assets/laser-engraver-budget.png";
-import laserComparison from "@/assets/laser-engraver-comparison.png";
+import laserProducts from "@/assets/laser-products-overview.jpg";
+import laserReviews from "@/assets/laser-xtool-d1-review.jpg";
+import laserBudget from "@/assets/laser-budget-options.jpg";
+import laserComparison from "@/assets/laser-diode-vs-co2.jpg";
 
 const AMAZON_AFFILIATE_LINK = "https://amzn.to/4qGUul6";
 
