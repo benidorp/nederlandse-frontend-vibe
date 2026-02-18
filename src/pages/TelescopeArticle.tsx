@@ -11,7 +11,7 @@ import telescopeAstrophoto from "@/assets/telescope-astrophotography.jpg";
 import telescopeComparison from "@/assets/telescope-refractor-vs-reflector.jpg";
 import telescopeAccessories from "@/assets/telescope-accessories.jpg";
 
-const AMAZON_AFFILIATE_LINK = "https://amzn.to/4qGUul6";
+const AMAZON_AFFILIATE_LINK = "https://amzn.to/3OwYzei";
 
 const AmazonCTA = ({ text = "Bekijk op Amazon" }: { text?: string }) => (
   <a href={AMAZON_AFFILIATE_LINK} target="_blank" rel="nofollow noopener noreferrer" className="inline-block">
