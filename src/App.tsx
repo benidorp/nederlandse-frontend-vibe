@@ -110,6 +110,7 @@ const PremiumDomainsHI = lazyRetry(() => import("./pages/PremiumDomainsHI"));
 const PremiumDomainsLegalHI = lazyRetry(() => import("./pages/PremiumDomainsLegalHI"));
 const DomainProductPage = lazyRetry(() => import("./pages/DomainProductPage"));
 const LaserEngraverArticle = lazyRetry(() => import("./pages/LaserEngraverArticle"));
+const TelescopeArticle = lazyRetry(() => import("./pages/TelescopeArticle"));
 
 // Legal Documents Multi-language Pages
 const AffiliateDE = lazyRetry(() => import("./pages/AffiliateDE"));
@@ -273,6 +274,9 @@ const App = () => (
             {/* Laser Engraver Article */}
             <Route path="/nl/beste-laser-graveermachine-top-5-laser-engravers-beginners-thuisgebruik-business-review" element={<LaserEngraverArticle />} />
             <Route path="/nl/beste-laser-graveermachine-2026-reviews-koopgids" element={<Navigate to="/nl/beste-laser-graveermachine-top-5-laser-engravers-beginners-thuisgebruik-business-review" replace />} />
+            
+            {/* Telescope Article */}
+            <Route path="/nl/beste-high-end-telescoop-kopen-vergelijken-beginners-professionals-top-premium-telescopen-astrofotografie-deep-sky-planeten-natuur-vogels-reviews" element={<TelescopeArticle />} />
             
             {/* Redirects from old URLs */}
             <Route path="/expireddomeinnamen/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" element={<Navigate to="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" replace />} />
