@@ -108,6 +108,7 @@ const PremiumDomainsTR = lazyRetry(() => import("./pages/PremiumDomainsTR"));
 const PremiumDomainsLegalTR = lazyRetry(() => import("./pages/PremiumDomainsLegalTR"));
 const PremiumDomainsHI = lazyRetry(() => import("./pages/PremiumDomainsHI"));
 const PremiumDomainsLegalHI = lazyRetry(() => import("./pages/PremiumDomainsLegalHI"));
+const DomainProductPage = lazyRetry(() => import("./pages/DomainProductPage"));
 
 // Legal Documents Multi-language Pages
 const AffiliateDE = lazyRetry(() => import("./pages/AffiliateDE"));
@@ -264,6 +265,9 @@ const App = () => (
             <Route path="/expireddomainnames/tr/premium-alan-adlari-yasal-belgeler" element={<PremiumDomainsLegalTR />} />
             <Route path="/expireddomainnames/hi/premium-domain-kharidein-uchch-authority-seo-mulya" element={<PremiumDomainsHI />} />
             <Route path="/expireddomainnames/hi/premium-domain-kanooni-dastavez" element={<PremiumDomainsLegalHI />} />
+            
+            {/* Individual Domain Product Pages */}
+            <Route path="/domains/:domainSlug" element={<DomainProductPage />} />
             
             {/* Redirects from old URLs */}
             <Route path="/expireddomeinnamen/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" element={<Navigate to="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" replace />} />

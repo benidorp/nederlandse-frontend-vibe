@@ -17,7 +17,7 @@ import stripeLogo from "@/assets/stripe-logo.svg";
 import { validateContactForm, buildSafeMailtoUrl } from "@/lib/formValidation";
 
 // Premium domain data - exact copy from Dutch version
-const premiumDomains = [
+export const premiumDomains = [
   // DA 38
   {
     name: "escp-eap.eu",
@@ -2037,10 +2037,15 @@ const PremiumDomainsEN = () => {
                       </div>
                     </div>
                     <CardTitle className="text-lg sm:text-xl md:text-2xl text-white group-hover:text-amber-400 transition-colors mt-2 sm:mt-3 break-all">
-                      {domain.name}
+                      <RouterLink to={`/domains/${domain.name.replace(/\./g, '-')}`} className="hover:underline">
+                        {domain.name}
+                      </RouterLink>
                     </CardTitle>
                     <CardDescription className="text-sm sm:text-base text-slate-300">
                       {domain.description}
+                      <RouterLink to={`/domains/${domain.name.replace(/\./g, '-')}`} className="block mt-1 text-xs text-amber-400 hover:text-amber-300 underline">
+                        View full details →
+                      </RouterLink>
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="flex flex-col flex-grow p-3 sm:p-4 md:p-6 pt-0">
