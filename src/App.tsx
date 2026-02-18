@@ -271,7 +271,8 @@ const App = () => (
             <Route path="/domains/:domainSlug" element={<DomainProductPage />} />
             
             {/* Laser Engraver Article */}
-            <Route path="/nl/beste-laser-graveermachine-2026-reviews-koopgids" element={<LaserEngraverArticle />} />
+            <Route path="/nl/beste-laser-graveermachine-top-5-laser-engravers-beginners-thuisgebruik-business-review" element={<LaserEngraverArticle />} />
+            <Route path="/nl/beste-laser-graveermachine-2026-reviews-koopgids" element={<Navigate to="/nl/beste-laser-graveermachine-top-5-laser-engravers-beginners-thuisgebruik-business-review" replace />} />
             
             {/* Redirects from old URLs */}
             <Route path="/expireddomeinnamen/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" element={<Navigate to="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" replace />} />
