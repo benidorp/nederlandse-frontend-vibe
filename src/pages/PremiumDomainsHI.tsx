@@ -1878,6 +1878,9 @@ const PremiumDomainsHI = () => {
               {premiumDomains.map((domain, index) => (
                 <Card key={index} className="bg-gradient-to-br from-slate-800/60 to-slate-900/60 border-slate-700/50 hover:border-amber-500/30 transition-all duration-300 group overflow-hidden">
                   <CardHeader className="pb-2 sm:pb-3">
+                    <div className="mt-1 mb-2 flex justify-center">
+                      <img src="/images/premium-domains-logo-hi.png" alt={`${domain.name} प्रीमियम डोमेन`} className="w-20 h-auto object-contain" />
+                    </div>
                     <div className="flex items-start justify-between gap-2">
                       <div className="min-w-0 flex-1">
                         <CardTitle className="text-lg sm:text-xl md:text-2xl text-white group-hover:text-amber-400 transition-colors truncate">

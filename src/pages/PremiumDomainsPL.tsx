@@ -1761,6 +1761,9 @@ const PremiumDomainsPL = () => {
                   className="h-full flex flex-col bg-gradient-to-br from-slate-800/80 to-slate-900/80 border-slate-700/50 backdrop-blur hover:border-amber-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10 group"
                 >
                   <CardHeader className="p-3 sm:p-4 pb-2 sm:pb-3">
+                    <div className="mt-1 mb-2 flex justify-center">
+                      <img src="/images/premium-domains-logo-pl.png" alt={`${domain.name} domena premium`} className="w-20 h-auto object-contain" />
+                    </div>
                     <div className="flex items-start justify-between">
                       <Badge variant="outline" className="text-[10px] sm:text-xs border-slate-600 text-slate-400">
                         {domain.category}

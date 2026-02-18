@@ -1856,6 +1856,9 @@ const PremiumDomainsTR = () => {
                   className="h-full flex flex-col bg-gradient-to-br from-slate-800/80 to-slate-900/80 border-slate-700/50 backdrop-blur hover:border-amber-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10 group"
                 >
                   <CardHeader className="pb-2 sm:pb-3 p-3 sm:p-4 md:p-6">
+                    <div className="mt-1 mb-2 flex justify-center">
+                      <img src="/images/premium-domains-logo-tr.png" alt={`${domain.name} premium alan adı`} className="w-20 h-auto object-contain" />
+                    </div>
                     <div className="flex items-start justify-between gap-2">
                       <Badge variant="outline" className="text-[10px] sm:text-xs border-slate-600 text-slate-400 flex-shrink-0">
                         {domain.category}
