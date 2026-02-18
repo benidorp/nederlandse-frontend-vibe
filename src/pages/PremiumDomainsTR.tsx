@@ -1676,10 +1676,22 @@ const PremiumDomainsTR = () => {
                     "@type": "Product",
                     "name": domain.name,
                     "description": domain.description,
+                    "image": "https://www.iaee.eu/images/premium-domains-logo.png",
+                    "url": "https://www.iaee.eu/expireddomainnames/tr/premium-alan-adi-satin-al-seo-degeri",
+                    "sku": domain.name,
+                    "brand": {
+                      "@type": "Brand",
+                      "name": "IAEE Premium Domains"
+                    },
                     "offers": {
                       "@type": "Offer",
                       "price": domain.price.replace("€", ""),
-                      "priceCurrency": "EUR"
+                      "priceCurrency": "EUR",
+                      "availability": "https://schema.org/InStock",
+                      "seller": {
+                        "@type": "Organization",
+                        "name": "IAEE Premium Domains"
+                      }
                     }
                   }
                 })))}

@@ -1756,11 +1756,22 @@ const PremiumDomainsDE = () => {
                     "name": domain.name,
                     "description": domain.description,
                     "category": domain.category,
+                    "image": "https://www.iaee.eu/images/premium-domains-logo.png",
+                    "url": "https://www.iaee.eu/expireddomainnames/de/premium-domains-kaufen-hohe-autoritaet-seo-wert",
+                    "sku": domain.name,
+                    "brand": {
+                      "@type": "Brand",
+                      "name": "IAEE Premium Domains"
+                    },
                     "offers": {
                       "@type": "Offer",
                       "price": domain.price.replace("€", ""),
                       "priceCurrency": "EUR",
-                      "availability": "https://schema.org/InStock"
+                      "availability": "https://schema.org/InStock",
+                      "seller": {
+                        "@type": "Organization",
+                        "name": "IAEE Premium Domains"
+                      }
                     }
                   }
                 })))}
