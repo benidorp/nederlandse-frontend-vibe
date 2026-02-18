@@ -109,6 +109,7 @@ const PremiumDomainsLegalTR = lazyRetry(() => import("./pages/PremiumDomainsLega
 const PremiumDomainsHI = lazyRetry(() => import("./pages/PremiumDomainsHI"));
 const PremiumDomainsLegalHI = lazyRetry(() => import("./pages/PremiumDomainsLegalHI"));
 const DomainProductPage = lazyRetry(() => import("./pages/DomainProductPage"));
+const LaserEngraverArticle = lazyRetry(() => import("./pages/LaserEngraverArticle"));
 
 // Legal Documents Multi-language Pages
 const AffiliateDE = lazyRetry(() => import("./pages/AffiliateDE"));
@@ -268,6 +269,9 @@ const App = () => (
             
             {/* Individual Domain Product Pages */}
             <Route path="/domains/:domainSlug" element={<DomainProductPage />} />
+            
+            {/* Laser Engraver Article */}
+            <Route path="/nl/beste-laser-graveermachine-2026-reviews-koopgids" element={<LaserEngraverArticle />} />
             
             {/* Redirects from old URLs */}
             <Route path="/expireddomeinnamen/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" element={<Navigate to="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" replace />} />
