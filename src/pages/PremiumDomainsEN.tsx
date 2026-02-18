@@ -1771,12 +1771,22 @@ const PremiumDomainsEN = () => {
                     "name": domain.name,
                     "description": domain.description,
                     "category": domain.category,
-                    "image": "https://www.iaee.eu/images/premium-domains-logo.png",
+                    "image": "https://www.iaee.eu" + (domain.image || "/images/premium-domains-logo.png"),
+                    "url": "https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value",
+                    "sku": domain.name,
+                    "brand": {
+                      "@type": "Brand",
+                      "name": "IAEE Premium Domains"
+                    },
                     "offers": {
                       "@type": "Offer",
                       "price": domain.price.replace("€", ""),
                       "priceCurrency": "EUR",
-                      "availability": "https://schema.org/InStock"
+                      "availability": "https://schema.org/InStock",
+                      "seller": {
+                        "@type": "Organization",
+                        "name": "IAEE Premium Domains"
+                      }
                     }
                   }
                 })))}
