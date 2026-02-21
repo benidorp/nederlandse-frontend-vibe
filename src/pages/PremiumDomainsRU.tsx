@@ -13,6 +13,9 @@ import LanguageSwitcher from "@/components/premium-domains/LanguageSwitcher";
 import HiddenInternalLinks from "@/components/HiddenInternalLinks";
 import { validateContactForm, buildSafeMailtoUrl } from "@/lib/formValidation";
 import { premiumDomains } from "./PremiumDomainsEN";
+import { getTranslatedDomains } from "@/data/domainTranslations";
+
+const translatedDomains = getTranslatedDomains(premiumDomains, 'ru');
 
 const HREFLANG_URLS: Record<string, string> = {
   nl: "https://www.iaee.eu/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde",
@@ -223,7 +226,7 @@ const PremiumDomainsRU = () => {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6">
-              {premiumDomains.map((domain, index) => (
+              {translatedDomains.map((domain, index) => (
                 <Card key={index} className="h-full flex flex-col bg-gradient-to-br from-slate-800/80 to-slate-900/80 border-slate-700/50 backdrop-blur hover:border-amber-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10 group">
                   <CardHeader className="pb-2 sm:pb-3 p-3 sm:p-4 md:p-6">
                     <div className="mt-1 mb-2 flex justify-center">
