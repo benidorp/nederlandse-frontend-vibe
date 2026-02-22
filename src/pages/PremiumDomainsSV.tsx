@@ -403,6 +403,28 @@ const PremiumDomainsSV = () => {
           </div>
         </section>
 
+        {/* NordVPN Recommendation */}
+        <section className="py-10 bg-gradient-to-b from-slate-950 to-slate-900">
+          <div className="container mx-auto px-4">
+            <div className="max-w-2xl mx-auto">
+              <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-lg p-4">
+                <div className="text-center">
+                  <h4 className="font-bold text-white text-lg mb-2">🔒 Skydda Din Integritet med NordVPN</h4>
+                  <p className="text-white/90 text-sm mb-3">
+                    Vad är en VPN? En <a href="https://www.tkqlhce.com/click-100643838-14352852" target="_blank" rel="nofollow noopener noreferrer" className="underline text-yellow-300 hover:text-yellow-200">virtuellt privat nätverk (VPN)</a> krypterar din internetanslutning och döljer din IP-adress, vilket skyddar dina personuppgifter mot hackare, spårare och övervakning.
+                  </p>
+                  <p className="text-white/80 text-xs mb-4">
+                    För ägare av premiumdomäner är det viktigt att skydda sin onlineidentitet. NordVPN låter dig surfa anonymt, komma åt globalt innehåll och säkra dina affärstransaktioner.
+                  </p>
+                  <a href="https://www.tkqlhce.com/click-100643838-14352852" target="_blank" rel="nofollow noopener noreferrer" className="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-2 px-6 rounded-full transition-colors text-sm">
+                    Skaffa NordVPN Nu →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Final Contact */}
         <section className="py-16 bg-slate-950">
           <div className="container mx-auto px-4">

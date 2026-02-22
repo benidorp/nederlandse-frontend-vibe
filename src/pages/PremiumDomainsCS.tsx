@@ -402,6 +402,28 @@ const PremiumDomainsCS = () => {
           </div>
         </section>
 
+        {/* NordVPN Recommendation */}
+        <section className="py-10 bg-gradient-to-b from-slate-950 to-slate-900">
+          <div className="container mx-auto px-4">
+            <div className="max-w-2xl mx-auto">
+              <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-lg p-4">
+                <div className="text-center">
+                  <h4 className="font-bold text-white text-lg mb-2">🔒 Chraňte Své Soukromí s NordVPN</h4>
+                  <p className="text-white/90 text-sm mb-3">
+                    Co je VPN? <a href="https://www.tkqlhce.com/click-100643838-14352852" target="_blank" rel="nofollow noopener noreferrer" className="underline text-yellow-300 hover:text-yellow-200">Virtuální privátní síť (VPN)</a> šifruje vaše internetové připojení a skrývá vaši IP adresu, čímž chrání vaše osobní údaje před hackery, sledovači a sledováním.
+                  </p>
+                  <p className="text-white/80 text-xs mb-4">
+                    Pro vlastníky premium domén je ochrana online identity zásadní. NordVPN vám umožní anonymní prohlížení, přístup ke globálnímu obsahu a zabezpečení obchodních transakcí.
+                  </p>
+                  <a href="https://www.tkqlhce.com/click-100643838-14352852" target="_blank" rel="nofollow noopener noreferrer" className="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-2 px-6 rounded-full transition-colors text-sm">
+                    Získejte NordVPN →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Final Contact */}
         <section className="py-16 bg-slate-950">
           <div className="container mx-auto px-4">
