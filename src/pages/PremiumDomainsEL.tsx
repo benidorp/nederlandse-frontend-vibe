@@ -401,6 +401,28 @@ const PremiumDomainsEL = () => {
           </div>
         </section>
 
+        {/* NordVPN Recommendation */}
+        <section className="py-10 bg-gradient-to-b from-slate-950 to-slate-900">
+          <div className="container mx-auto px-4">
+            <div className="max-w-2xl mx-auto">
+              <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-lg p-4">
+                <div className="text-center">
+                  <h4 className="font-bold text-white text-lg mb-2">🔒 Προστατεύστε την Ιδιωτικότητά σας με NordVPN</h4>
+                  <p className="text-white/90 text-sm mb-3">
+                    Τι είναι ένα VPN; Ένα <a href="https://www.tkqlhce.com/click-100643838-14352852" target="_blank" rel="nofollow noopener noreferrer" className="underline text-yellow-300 hover:text-yellow-200">Εικονικό Ιδιωτικό Δίκτυο (VPN)</a> κρυπτογραφεί τη σύνδεσή σας στο διαδίκτυο και κρύβει τη διεύθυνση IP σας, προστατεύοντας τα προσωπικά σας δεδομένα.
+                  </p>
+                  <p className="text-white/80 text-xs mb-4">
+                    Για τους ιδιοκτήτες premium domains, η προστασία της online ταυτότητας είναι ουσιώδης. Το NordVPN σας επιτρέπει να περιηγείστε ανώνυμα και να ασφαλίζετε τις συναλλαγές σας.
+                  </p>
+                  <a href="https://www.tkqlhce.com/click-100643838-14352852" target="_blank" rel="nofollow noopener noreferrer" className="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-2 px-6 rounded-full transition-colors text-sm">
+                    Αποκτήστε NordVPN Τώρα →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Final Contact */}
         <section className="py-16 bg-slate-950">
           <div className="container mx-auto px-4">
