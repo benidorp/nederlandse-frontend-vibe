@@ -14,6 +14,9 @@ import HiddenInternalLinks from "@/components/HiddenInternalLinks";
 import { validateContactForm, buildSafeMailtoUrl } from "@/lib/formValidation";
 import { premiumDomains } from "./PremiumDomainsEN";
 import { getTranslatedDomains } from "@/data/domainTranslations";
+import SeoRedirectsSection from "@/components/premium-domains/shared/SeoRedirectsSection";
+import TrusteeServiceSection from "@/components/premium-domains/shared/TrusteeServiceSection";
+import EuDomainValueSection from "@/components/premium-domains/shared/EuDomainValueSection";
 
 const translatedDomains = getTranslatedDomains(premiumDomains, 'fi');
 
@@ -266,6 +269,10 @@ const PremiumDomainsFI = () => {
             </div>
           </div>
         </section>
+
+        <SeoRedirectsSection lang="fi" />
+        <TrusteeServiceSection lang="fi" />
+        <EuDomainValueSection lang="fi" />
 
         <section className="py-16 bg-gradient-to-b from-slate-900 to-slate-950">
           <div className="container mx-auto px-4">
