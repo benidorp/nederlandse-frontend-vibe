@@ -17,6 +17,7 @@ import { getTranslatedDomains } from "@/data/domainTranslations";
 import SeoRedirectsSection from "@/components/premium-domains/shared/SeoRedirectsSection";
 import TrusteeServiceSection from "@/components/premium-domains/shared/TrusteeServiceSection";
 import EuDomainValueSection from "@/components/premium-domains/shared/EuDomainValueSection";
+import InternalLanguageLinks from "@/components/premium-domains/shared/InternalLanguageLinks";
 
 const translatedDomains = getTranslatedDomains(premiumDomains, 'da');
 
@@ -328,6 +329,7 @@ const PremiumDomainsDA = () => {
 
         <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="fixed bottom-6 right-6 z-50 p-3 bg-amber-500 hover:bg-amber-600 text-slate-950 rounded-full shadow-lg transition-all duration-200 hover:shadow-xl" aria-label="Tilbage til toppen"><ArrowUp className="w-6 h-6" /></button>
         <HiddenInternalLinks />
+        <InternalLanguageLinks lang="da" currentLang="da" />
 
         <section className="py-12 bg-slate-900">
           <div className="container mx-auto px-4">
