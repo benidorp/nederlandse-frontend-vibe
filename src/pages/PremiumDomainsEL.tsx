@@ -17,6 +17,7 @@ import { getTranslatedDomains } from "@/data/domainTranslations";
 import SeoRedirectsSection from "@/components/premium-domains/shared/SeoRedirectsSection";
 import TrusteeServiceSection from "@/components/premium-domains/shared/TrusteeServiceSection";
 import EuDomainValueSection from "@/components/premium-domains/shared/EuDomainValueSection";
+import InternalLanguageLinks from "@/components/premium-domains/shared/InternalLanguageLinks";
 
 const translatedDomains = getTranslatedDomains(premiumDomains, 'el');
 
@@ -453,6 +454,7 @@ const PremiumDomainsEL = () => {
           <ArrowUp className="w-6 h-6" />
         </button>
         <HiddenInternalLinks />
+        <InternalLanguageLinks lang="el" currentLang="el" />
 
         {/* Legal Links */}
         <section className="py-12 bg-slate-900">

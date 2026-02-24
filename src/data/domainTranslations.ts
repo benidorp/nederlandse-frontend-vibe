@@ -327,22 +327,43 @@ const descriptionPatterns: Record<LangCode, {
   }
 };
 
+// Additional word translations for complete coverage
+const wordTranslations: Record<LangCode, Record<string, string>> = {
+  sv: { "domain": "domän", "with": "med", "from": "från", "backlinks": "bakåtlänkar", "strong": "starka", "art/event": "konst/evenemang", "ticketing": "biljett", "cycling": "cykel", "music": "musik", "entertainment": "underhållning", "tourism": "turism", "collaboration": "samarbete", "research": "forskning", "sustainability": "hållbarhet", "energy": "energi", "mobility": "mobilitet", "digital": "digitalt", "projects": "projekt", "sports": "sport", "sport": "sport", "news": "nyheter", "innovation": "innovation", "food": "mat", "safety": "säkerhet", "design": "design", "health": "hälsa", "science": "vetenskap", "culture": "kultur", "lifestyle": "livsstil", "photography": "fotografi", "gaming": "spel", "information": "information", "portfolio": "portfolio", "media": "media", "events": "evenemang", "smart city": "smart stad", "real estate": "fastigheter", "environment": "miljö", "finance": "finans", "government": "regering", "transport": "transport", "healthcare": "hälsovård", "startups": "startups", "maritime": "maritim", "beauty": "skönhet" },
+  no: { "domain": "domene", "with": "med", "from": "fra", "backlinks": "tilbakekoblinger", "strong": "sterke", "art/event": "kunst/arrangement", "ticketing": "billett", "cycling": "sykkel", "music": "musikk", "entertainment": "underholdning", "tourism": "turisme", "collaboration": "samarbeid", "research": "forskning", "sustainability": "bærekraft", "energy": "energi", "mobility": "mobilitet", "digital": "digitalt", "projects": "prosjekter", "sports": "sport", "sport": "sport", "news": "nyheter", "innovation": "innovasjon", "food": "mat", "safety": "sikkerhet", "design": "design", "health": "helse", "science": "vitenskap", "culture": "kultur", "lifestyle": "livsstil", "photography": "fotografi", "gaming": "spill", "information": "informasjon", "portfolio": "portefølje", "media": "media", "events": "arrangementer", "smart city": "smart by", "real estate": "eiendom", "environment": "miljø", "finance": "finans", "government": "regjering", "transport": "transport", "healthcare": "helsevesen", "startups": "startups", "maritime": "maritim", "beauty": "skjønnhet" },
+  da: { "domain": "domæne", "with": "med", "from": "fra", "backlinks": "backlinks", "strong": "stærke", "art/event": "kunst/begivenhed", "ticketing": "billet", "cycling": "cykel", "music": "musik", "entertainment": "underholdning", "tourism": "turisme", "collaboration": "samarbejde", "research": "forskning", "sustainability": "bæredygtighed", "energy": "energi", "mobility": "mobilitet", "digital": "digitalt", "projects": "projekter", "sports": "sport", "sport": "sport", "news": "nyheder", "innovation": "innovation", "food": "mad", "safety": "sikkerhed", "design": "design", "health": "sundhed", "science": "videnskab", "culture": "kultur", "lifestyle": "livsstil", "photography": "fotografi", "gaming": "spil", "information": "information", "portfolio": "portfolio", "media": "medier", "events": "begivenheder", "smart city": "smart by", "real estate": "ejendomme", "environment": "miljø", "finance": "finans", "government": "regering", "transport": "transport", "healthcare": "sundhed", "startups": "startups", "maritime": "maritim", "beauty": "skønhed" },
+  fi: { "domain": "verkkotunnus", "with": "kanssa", "from": "sivustoilta", "backlinks": "takalinkit", "strong": "vahvoja", "art/event": "taide/tapahtuma", "ticketing": "lipunmyynti", "cycling": "pyöräily", "music": "musiikki", "entertainment": "viihde", "tourism": "matkailu", "collaboration": "yhteistyö", "research": "tutkimus", "sustainability": "kestävyys", "energy": "energia", "mobility": "liikkuvuus", "digital": "digitaalinen", "projects": "projektit", "sports": "urheilu", "sport": "urheilu", "news": "uutiset", "innovation": "innovaatio", "food": "ruoka", "safety": "turvallisuus", "design": "muotoilu", "health": "terveys", "science": "tiede", "culture": "kulttuuri", "lifestyle": "elämäntapa", "photography": "valokuvaus", "gaming": "pelit", "information": "tiedotus", "portfolio": "portfolio", "media": "media", "events": "tapahtumat", "smart city": "älykäs kaupunki", "real estate": "kiinteistöt", "environment": "ympäristö", "finance": "rahoitus", "government": "hallinto", "transport": "kuljetus", "healthcare": "terveydenhuolto", "startups": "startupit", "maritime": "merenkulku", "beauty": "kauneus" },
+  cs: { "domain": "doména", "with": "s", "from": "z", "backlinks": "zpětné odkazy", "strong": "silné", "art/event": "umění/akce", "ticketing": "vstupenky", "cycling": "cyklistika", "music": "hudba", "entertainment": "zábava", "tourism": "cestovní ruch", "collaboration": "spolupráce", "research": "výzkum", "sustainability": "udržitelnost", "energy": "energie", "mobility": "mobilita", "digital": "digitální", "projects": "projekty", "sports": "sporty", "sport": "sport", "news": "zprávy", "innovation": "inovace", "food": "gastronomie", "safety": "bezpečnost", "design": "design", "health": "zdraví", "science": "věda", "culture": "kultura", "lifestyle": "životní styl", "photography": "fotografie", "gaming": "hry", "information": "informace", "portfolio": "portfolio", "media": "média", "events": "akce", "smart city": "chytré město", "real estate": "nemovitosti", "environment": "životní prostředí", "finance": "finance", "government": "vláda", "transport": "doprava", "healthcare": "zdravotnictví", "startups": "startupy", "maritime": "námořnictví", "beauty": "krása" },
+  el: { "domain": "domain", "with": "με", "from": "από", "backlinks": "backlinks", "strong": "ισχυρά", "art/event": "τέχνης/εκδηλώσεων", "ticketing": "εισιτήρια", "cycling": "ποδηλασία", "music": "μουσική", "entertainment": "ψυχαγωγία", "tourism": "τουρισμός", "collaboration": "συνεργασία", "research": "έρευνα", "sustainability": "βιωσιμότητα", "energy": "ενέργεια", "mobility": "κινητικότητα", "digital": "ψηφιακό", "projects": "έργα", "sports": "αθλήματα", "sport": "αθλητισμός", "news": "ειδήσεις", "innovation": "καινοτομία", "food": "τρόφιμα", "safety": "ασφάλεια", "design": "σχεδιασμός", "health": "υγεία", "science": "επιστήμη", "culture": "πολιτισμός", "lifestyle": "τρόπος ζωής", "photography": "φωτογραφία", "gaming": "παιχνίδια", "information": "πληροφορίες", "portfolio": "portfolio", "media": "μέσα", "events": "εκδηλώσεις", "smart city": "έξυπνη πόλη", "real estate": "ακίνητα", "environment": "περιβάλλον", "finance": "οικονομικά", "government": "κυβέρνηση", "transport": "μεταφορές", "healthcare": "υγειονομική περίθαλψη", "startups": "startups", "maritime": "ναυτιλία", "beauty": "ομορφιά" },
+  ru: { "domain": "домен", "with": "с", "from": "от", "backlinks": "обратные ссылки", "strong": "сильные", "art/event": "искусства/мероприятий", "ticketing": "билетный", "cycling": "велоспорт", "music": "музыка", "entertainment": "развлечения", "tourism": "туризм", "collaboration": "сотрудничество", "research": "исследования", "sustainability": "устойчивость", "energy": "энергетика", "mobility": "мобильность", "digital": "цифровой", "projects": "проекты", "sports": "спорт", "sport": "спорт", "news": "новости", "innovation": "инновации", "food": "питание", "safety": "безопасность", "design": "дизайн", "health": "здоровье", "science": "наука", "culture": "культура", "lifestyle": "стиль жизни", "photography": "фотография", "gaming": "игры", "information": "информация", "portfolio": "портфолио", "media": "медиа", "events": "мероприятия", "smart city": "умный город", "real estate": "недвижимость", "environment": "экология", "finance": "финансы", "government": "власть", "transport": "транспорт", "healthcare": "здравоохранение", "startups": "стартапы", "maritime": "морское", "beauty": "красота" },
+  ro: { "domain": "domeniu", "with": "cu", "from": "de la", "backlinks": "backlink-uri", "strong": "puternice", "art/event": "artă/evenimente", "ticketing": "bilete", "cycling": "ciclism", "music": "muzică", "entertainment": "divertisment", "tourism": "turism", "collaboration": "colaborare", "research": "cercetare", "sustainability": "sustenabilitate", "energy": "energie", "mobility": "mobilitate", "digital": "digital", "projects": "proiecte", "sports": "sporturi", "sport": "sport", "news": "știri", "innovation": "inovație", "food": "gastronomie", "safety": "siguranță", "design": "design", "health": "sănătate", "science": "știință", "culture": "cultură", "lifestyle": "stil de viață", "photography": "fotografie", "gaming": "jocuri", "information": "informații", "portfolio": "portofoliu", "media": "media", "events": "evenimente", "smart city": "oraș inteligent", "real estate": "imobiliare", "environment": "mediu", "finance": "finanțe", "government": "guvern", "transport": "transport", "healthcare": "sănătate", "startups": "startup-uri", "maritime": "maritim", "beauty": "frumusețe" },
+  bg: { "domain": "домейн", "with": "с", "from": "от", "backlinks": "обратни връзки", "strong": "силни", "art/event": "изкуство/събития", "ticketing": "билетен", "cycling": "велосипеден", "music": "музика", "entertainment": "развлечения", "tourism": "туризъм", "collaboration": "сътрудничество", "research": "изследвания", "sustainability": "устойчивост", "energy": "енергия", "mobility": "мобилност", "digital": "дигитално", "projects": "проекти", "sports": "спортове", "sport": "спорт", "news": "новини", "innovation": "иновации", "food": "храна", "safety": "безопасност", "design": "дизайн", "health": "здраве", "science": "наука", "culture": "култура", "lifestyle": "начин на живот", "photography": "фотография", "gaming": "игри", "information": "информация", "portfolio": "портфолио", "media": "медии", "events": "събития", "smart city": "умен град", "real estate": "имоти", "environment": "околна среда", "finance": "финанси", "government": "управление", "transport": "транспорт", "healthcare": "здравеопазване", "startups": "стартъпи", "maritime": "морско", "beauty": "красота" },
+  uk: { "domain": "домен", "with": "з", "from": "від", "backlinks": "зворотні посилання", "strong": "потужні", "art/event": "мистецтва/подій", "ticketing": "квитковий", "cycling": "велоспорт", "music": "музика", "entertainment": "розваги", "tourism": "туризм", "collaboration": "співпраця", "research": "дослідження", "sustainability": "сталість", "energy": "енергетика", "mobility": "мобільність", "digital": "цифрове", "projects": "проєкти", "sports": "спорт", "sport": "спорт", "news": "новини", "innovation": "інновації", "food": "харчування", "safety": "безпека", "design": "дизайн", "health": "здоров'я", "science": "наука", "culture": "культура", "lifestyle": "стиль життя", "photography": "фотографія", "gaming": "ігри", "information": "інформація", "portfolio": "портфоліо", "media": "медіа", "events": "події", "smart city": "розумне місто", "real estate": "нерухомість", "environment": "довкілля", "finance": "фінанси", "government": "влада", "transport": "транспорт", "healthcare": "охорона здоров'я", "startups": "стартапи", "maritime": "морське", "beauty": "краса" }
+};
+
 // Translate a description from English to target language
 function translateDescription(description: string, lang: LangCode): string {
   const p = descriptionPatterns[lang];
+  const w = wordTranslations[lang];
   let result = description;
   
-  // Replace "domain with backlinks from" pattern
-  result = result.replace(/domain with backlinks from/gi, `${p.domainWith}`);
+  // Replace full phrase patterns first (longest match first)
   result = result.replace(/domain with strong backlinks from/gi, `${p.domainWith}`);
   result = result.replace(/domain with high linking domains and backlinks from/gi, `${p.domainWith}`);
+  result = result.replace(/domain with backlinks from/gi, `${p.domainWith}`);
+  
+  // Replace "Short and memorable/powerful"
+  result = result.replace(/Short and memorable/gi, p.shortMemorable);
+  result = result.replace(/Short and powerful/gi, p.shortPowerful);
   
   // Replace "Premium" at start
   result = result.replace(/^Premium\s/i, `${p.premiumDomain} `);
   
-  // Replace "Short and memorable"
-  result = result.replace(/Short and memorable/gi, p.shortMemorable);
-  result = result.replace(/Short and powerful/gi, p.shortPowerful);
+  // Replace EU domain patterns
+  result = result.replace(/\bEU-FP7 project domain\b/gi, `EU-FP7 ${p.euProjectDomain}`);
+  result = result.replace(/\bEU H2020 mobility domain\b/gi, `EU H2020 ${p.euDomain}`);
+  result = result.replace(/\bEU project domain\b/gi, p.euProjectDomain);
+  result = result.replace(/\bEU domain\b/gi, p.euDomain);
   
   // Replace country adjectives
   result = result.replace(/\bBelgian\b/g, p.belgian);
@@ -355,28 +376,43 @@ function translateDescription(description: string, lang: LangCode): string {
   result = result.replace(/\bItalian\b/g, p.italian);
   result = result.replace(/\bWelsh\b/g, p.welsh);
   
-  // Replace common type words
+  // Replace multi-word type descriptors
   result = result.replace(/\bbusiness school\b/gi, p.businessSchool);
-  result = result.replace(/\bhotel\b/gi, p.hotel);
   result = result.replace(/\bart\/event\b/gi, p.artEvent);
-  result = result.replace(/\bticket(?:ing)?\b/gi, p.ticketing);
-  result = result.replace(/\bcycling\b/gi, p.cycling);
-  result = result.replace(/\bnetwork\b/gi, p.network);
-  result = result.replace(/\bregional\b/gi, p.regional);
-  result = result.replace(/\bcenter\b/gi, p.center);
   
-  // Replace connector words (only the last "and" before sources, being careful)
+  // Replace single-word English descriptors (case-insensitive, word boundaries)
+  const singleWords = ['hotel', 'ticketing', 'cycling', 'network', 'regional', 'center'];
+  singleWords.forEach(word => {
+    const regex = new RegExp(`\\b${word}\\b`, 'gi');
+    result = result.replace(regex, (p as any)[word] || w[word] || word);
+  });
+  
+  // Replace connector "and" before capitalized words (source names)
   result = result.replace(/ and (?=[A-Z])/g, ` ${p.and} `);
+  // Also replace remaining standalone "and"
+  result = result.replace(/ and /g, ` ${p.and} `);
   
-  // Replace EU domain patterns
-  result = result.replace(/\bEU project domain\b/gi, p.euProjectDomain);
-  result = result.replace(/\bEU domain\b/gi, p.euDomain);
-  result = result.replace(/\bEU-FP7 project domain\b/gi, `EU-FP7 ${p.euProjectDomain}`);
-  result = result.replace(/\bEU H2020 mobility domain\b/gi, `EU H2020 ${p.domainWith.split(' ')[0]}`);
+  // Replace remaining English words that might appear in descriptions
+  // "with strong" → translated
+  result = result.replace(/\bwith strong\b/gi, `${w['with']} ${p.strong}`);
+  result = result.replace(/\bwith high\b/gi, `${w['with']} ${p.high}`);
   
-  // Replace other English descriptors
-  result = result.replace(/\bwith strong\b/gi, p.strong);
+  // Catch remaining "with" followed by non-translated content
+  result = result.replace(/\bwith backlinks\b/gi, `${w['with']} ${w['backlinks']}`);
+  result = result.replace(/\bwith\b/gi, w['with']);
+  result = result.replace(/\bfrom\b/gi, w['from']);
+  result = result.replace(/\bstrong\b/gi, p.strong);
   result = result.replace(/\bhigh\b/gi, p.high);
+  
+  // Replace "linking domains"
+  const linkingDomainsTranslations: Record<LangCode, string> = {
+    sv: 'länkande domäner', no: 'koblede domener', da: 'linkende domæner', fi: 'linkittävät verkkotunnukset',
+    cs: 'odkazující domény', el: 'συνδεδεμένα domains', ru: 'ссылающиеся домены', ro: 'domenii cu legături',
+    bg: 'свързващи домейни', uk: 'пов\'язані домени'
+  };
+  result = result.replace(/\blinking domains\b/gi, linkingDomainsTranslations[lang]);
+  
+  // Replace "street"
   result = result.replace(/\bstreet\b/gi, '');
   
   return result;
