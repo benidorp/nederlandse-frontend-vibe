@@ -1,4 +1,4 @@
-type Lang = 'sv' | 'no' | 'da' | 'fi' | 'cs' | 'el' | 'ru' | 'ro' | 'bg' | 'uk';
+type Lang = 'sv' | 'no' | 'da' | 'fi' | 'cs' | 'el' | 'ru' | 'ro' | 'bg' | 'uk' | 'hr' | 'sk' | 'sr' | 'sl';
 
 const t: Record<Lang, {
   seoTitle: string; seoP1: string; seoP2: string; seoP3: string; seoP4: string; seoCta: string; seoCtaSub: string;

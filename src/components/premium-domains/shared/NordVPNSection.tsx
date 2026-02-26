@@ -1,6 +1,6 @@
 import { Shield } from "lucide-react";
 
-type Lang = 'sv' | 'no' | 'da' | 'fi' | 'cs' | 'el' | 'ru' | 'ro' | 'bg' | 'uk';
+type Lang = 'sv' | 'no' | 'da' | 'fi' | 'cs' | 'el' | 'ru' | 'ro' | 'bg' | 'uk' | 'hr' | 'sk' | 'sr' | 'sl';
 
 const NORDVPN_LINK = "https://www.tkqlhce.com/click-100643838-14352852";
 
