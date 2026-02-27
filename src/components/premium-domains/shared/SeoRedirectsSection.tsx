@@ -107,6 +107,46 @@ const t: Record<Lang, {
       { title: "Використання як Основний Домен", desc: "Запустіть свій новий проєкт одразу з доменом, який вже має авторитет.", benefits: ["Миттєвий старт з авторитетом", "Наявна довіра Google", "Швидша індексація", "Перевага над конкурентами"] },
       { title: "Приватна Мережа Блогів (PBN)", desc: "Використовуйте преміум-домени для створення цінних контентних сайтів.", benefits: ["Повний контроль над посиланнями", "Тематичні контентні сайти", "Різноманітні посилальні профілі", "Масштабоване нарощування посилань"] }
     ]
+  },
+  hr: {
+    badge: "SEO Strategije", title: "Kako Funkcioniraju SEO Preusmjeravanja i Izgradnja Autoriteta?",
+    subtitle: "Postoji više strateških načina korištenja premium domena za maksimalni SEO učinak.",
+    strategies: [
+      { title: "Strategija 301 Preusmjeravanja", desc: "301 preusmjeravanje prenosi svu SEO vrijednost i autoritet s premium domene na vašu glavnu domenu.", benefits: ["Izravan prijenos vrijednosti linkova", "Očuvanje svih povratnih linkova", "Brzi porast autoriteta", "Jednokratno postavljanje, trajan učinak"] },
+      { title: "Slaganje Autoriteta", desc: "Izgradite mrežu autoritativnih domena koje sve povezuju na vašu glavnu stranicu.", benefits: ["Više izvora autoriteta", "Tematska relevantnost", "Prirodni profil linkova", "Dugoročna SEO strategija"] },
+      { title: "Korištenje kao Glavna Domena", desc: "Pokrenite novi projekt odmah s domenom koja već ima autoritet.", benefits: ["Trenutni start s autoritetom", "Postojeće povjerenje Googlea", "Brže indeksiranje", "Prednost nad konkurencijom"] },
+      { title: "Privatna Blog Mreža (PBN)", desc: "Koristite premium domene za stvaranje vrijednih sadržajnih stranica.", benefits: ["Potpuna kontrola nad povratnim linkovima", "Tematske sadržajne stranice", "Raznovrsni profili linkova", "Skalabilna izgradnja linkova"] }
+    ]
+  },
+  sk: {
+    badge: "SEO Stratégie", title: "Ako Fungujú SEO Presmerovania a Budovanie Autority?",
+    subtitle: "Existuje niekoľko strategických spôsobov využitia prémiových domén pre maximálny SEO dopad.",
+    strategies: [
+      { title: "Stratégia 301 Presmerovania", desc: "301 presmerovanie prenáša všetku SEO hodnotu a autoritu z prémiovej domény na vašu hlavnú doménu.", benefits: ["Priamy prenos hodnoty odkazov", "Zachovanie všetkých spätných odkazov", "Rýchly nárast autority", "Jednorazové nastavenie, trvalý efekt"] },
+      { title: "Vrstvenie Autority", desc: "Vybudujte sieť autoritatívnych domén, ktoré všetky odkazujú na váš hlavný web.", benefits: ["Viac zdrojov autority", "Tematická relevancia", "Prirodzený profil odkazov", "Dlhodobá SEO stratégia"] },
+      { title: "Použitie ako Hlavná Doména", desc: "Spustite nový projekt priamo s doménou, ktorá už má autoritu.", benefits: ["Okamžitý štart s autoritou", "Existujúca dôvera od Google", "Rýchlejšia indexácia", "Výhoda nad konkurenciou"] },
+      { title: "Súkromná Blogová Sieť (PBN)", desc: "Využite prémiové domény na vytvorenie hodnotných obsahových webov.", benefits: ["Plná kontrola nad spätnými odkazmi", "Tematické obsahové weby", "Diverzifikované profily odkazov", "Škálovateľné budovanie odkazov"] }
+    ]
+  },
+  sr: {
+    badge: "СЕО Стратегије", title: "Како Функционишу СЕО Преусмеравања и Изградња Ауторитета?",
+    subtitle: "Постоји више стратешких начина коришћења премиум домена за максимални СЕО ефекат.",
+    strategies: [
+      { title: "Стратегија 301 Преусмеравања", desc: "301 преусмеравање преноси сву СЕО вредност и ауторитет са премиум домена на ваш главни домен.", benefits: ["Директан пренос вредности линкова", "Очување свих повратних линкова", "Брзи раст ауторитета", "Једнократно подешавање, трајан ефекат"] },
+      { title: "Слагање Ауторитета", desc: "Изградите мрежу ауторитативних домена који сви повезују на ваш главни сајт.", benefits: ["Више извора ауторитета", "Тематска релевантност", "Природни профил линкова", "Дугорочна СЕО стратегија"] },
+      { title: "Коришћење као Главни Домен", desc: "Покрените нови пројекат одмах са доменом који већ има ауторитет.", benefits: ["Тренутни старт са ауторитетом", "Постојеће поверење Гугла", "Брже индексирање", "Предност над конкуренцијом"] },
+      { title: "Приватна Блог Мрежа (PBN)", desc: "Користите премиум домене за стварање вредних садржајних сајтова.", benefits: ["Потпуна контрола над повратним линковима", "Тематски садржајни сајтови", "Разноврсни профили линкова", "Скалабилна изградња линкова"] }
+    ]
+  },
+  sl: {
+    badge: "SEO Strategije", title: "Kako Delujejo SEO Preusmeritve in Gradnja Avtoritete?",
+    subtitle: "Obstaja več strateških načinov uporabe premium domen za maksimalni SEO učinek.",
+    strategies: [
+      { title: "Strategija 301 Preusmeritve", desc: "301 preusmeritev prenese vso SEO vrednost in avtoriteto s premium domene na vašo glavno domeno.", benefits: ["Neposreden prenos vrednosti povezav", "Ohranitev vseh povratnih povezav", "Hitra rast avtoritete", "Enkratna nastavitev, trajen učinek"] },
+      { title: "Kopičenje Avtoritete", desc: "Zgradite mrežo avtoritativnih domen, ki vse povezujejo na vašo glavno stran.", benefits: ["Več virov avtoritete", "Tematska relevantnost", "Naravni profil povezav", "Dolgoročna SEO strategija"] },
+      { title: "Uporaba kot Glavna Domena", desc: "Zaženite nov projekt neposredno z domeno, ki že ima avtoriteto.", benefits: ["Takojšnji začetek z avtoriteto", "Obstoječe zaupanje Googla", "Hitrejše indeksiranje", "Prednost pred konkurenco"] },
+      { title: "Zasebno Blog Omrežje (PBN)", desc: "Uporabite premium domene za ustvarjanje vrednih vsebinskih strani.", benefits: ["Popoln nadzor nad povratnimi povezavami", "Tematske vsebinske strani", "Raznovrstni profili povezav", "Razširljiva gradnja povezav"] }
+    ]
   }
 };
 

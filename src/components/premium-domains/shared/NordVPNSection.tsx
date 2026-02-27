@@ -14,7 +14,11 @@ const t: Record<Lang, { title: string; desc: string; cta: string }> = {
   ru: { title: "Защитите Свою Конфиденциальность с NordVPN", desc: "Обезопасьте свою онлайн-деятельность с NordVPN. Идеально для защиты доменных транзакций.", cta: "Получить NordVPN" },
   ro: { title: "Protejează-ți Confidențialitatea cu NordVPN", desc: "Securizează-ți activitatea online cu NordVPN. Perfect pentru protejarea tranzacțiilor cu domenii.", cta: "Obține NordVPN" },
   bg: { title: "Защитете Поверителността Си с NordVPN", desc: "Осигурете онлайн дейността си с NordVPN. Перфектен за защита на домейн транзакции.", cta: "Вземете NordVPN" },
-  uk: { title: "Захистіть Свою Конфіденційність з NordVPN", desc: "Убезпечте свою онлайн-діяльність з NordVPN. Ідеально для захисту доменних транзакцій.", cta: "Отримати NordVPN" }
+  uk: { title: "Захистіть Свою Конфіденційність з NordVPN", desc: "Убезпечте свою онлайн-діяльність з NordVPN. Ідеально для захисту доменних транзакцій.", cta: "Отримати NordVPN" },
+  hr: { title: "Zaštitite Svoju Privatnost s NordVPN-om", desc: "Osigurajte svoju online aktivnost s NordVPN-om. Savršeno za zaštitu vaših domenskih transakcija.", cta: "Nabavite NordVPN" },
+  sk: { title: "Chráňte Svoje Súkromie s NordVPN", desc: "Zabezpečte svoju online činnosť s NordVPN. Ideálne na ochranu doménových transakcií.", cta: "Získať NordVPN" },
+  sr: { title: "Заштитите Своју Приватност са NordVPN-ом", desc: "Обезбедите своју онлајн активност са NordVPN-ом. Идеално за заштиту доменских трансакција.", cta: "Набавите NordVPN" },
+  sl: { title: "Zaščitite Svojo Zasebnost z NordVPN", desc: "Zavarujte svojo spletno dejavnost z NordVPN. Popolno za zaščito vaših domenskih transakcij.", cta: "Pridobite NordVPN" }
 };
 
 const NordVPNSection = ({ lang }: { lang: Lang }) => {
