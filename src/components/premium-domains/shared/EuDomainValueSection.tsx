@@ -105,6 +105,46 @@ const t: Record<Lang, {
     seoCta: "Готові прискорити свій онлайн-успіх?", seoCtaSub: "Дослідіть наше портфоліо з 110+ преміум-прострочених доменів.",
     euTitle: "Чому Преміум Європейські .EU Домени Настільки Цінні",
     euP1: ".EU домени представляють ексклюзивний клас цифрових активів.", euP2: "Багато походять з офіційних проєктів ЄС.", euP3: ".EU сегмент все ще пропонує можливості.", euP4: ".EU домени користуються особливою довірою.", euP5: ".EU домен позиціонує ваш бренд як європейськи свідомий.", euP6: "Інвестиція в преміум .EU домен означає інституційну підтримку."
+  },
+  hr: {
+    seoTitle: "Kupite Istekle Domene: Investirajte u Dokazani SEO Autoritet",
+    seoP1: "Kupnja istekle domene najinteligentniji je način da odmah iskoristite godine akumuliranog autoriteta i kvalitetnih povratnih linkova.",
+    seoP2: "Naše pažljivo odabrane premium domene imaju dokazan track record s povratnim linkovima iz autoritativnih izvora poput Wikipedije, sveučilišta i vladinih institucija.",
+    seoP3: "Bilo da želite pokrenuti web trgovinu, affiliate stranicu ili pojačati SEO svog poslovanja: istekla domena s visokim MOZ DA daje vam neospornu prednost.",
+    seoP4: "Svaka premium domena u našem portfelju provjerena je na čistu povijest, relevantne povratne linkove i dobre link profile.",
+    seoCta: "Spremni ubrzati svoj online uspjeh?", seoCtaSub: "Istražite naš portfelj od 110+ premium isteklih domena.",
+    euTitle: "Zašto Premium Europske .EU Domene Imaju Takvu Vrijednost",
+    euP1: "Europske .EU domene predstavljaju ekskluzivnu klasu digitalnih sredstava.", euP2: "Mnoge potječu iz službenih EU projekata.", euP3: ".EU segment još uvijek nudi prilike za domene s pravim autoritetom.", euP4: ".EU domene uživaju posebno povjerenje među europskim potrošačima.", euP5: ".EU domena pozicionira vaš brend kao europski svjestan.", euP6: "Ulaganje u premium .EU domenu znači institucionalnu podršku i ugrađeni SEO autoritet."
+  },
+  sk: {
+    seoTitle: "Kúpte Expirované Domény: Investujte do Preukázanej SEO Autority",
+    seoP1: "Kúpa expirovanej domény je najinteligentnejší spôsob, ako okamžite ťažiť z rokov naakumulovanej autority a kvalitných spätných odkazov.",
+    seoP2: "Naše starostlivo vybrané prémiové domény majú preukázaný track record so spätnými odkazmi z autoritatívnych zdrojov.",
+    seoP3: "Či chcete spustiť e-shop, affiliate web alebo posilniť SEO vášho podnikania: expirovaná doména s vysokým MOZ DA vám dáva nespornú výhodu.",
+    seoP4: "Každá prémiová doména v našom portfóliu je overená na čistú históriu a kvalitný profil odkazov.",
+    seoCta: "Pripravení zrýchliť svoj online úspech?", seoCtaSub: "Preskúmajte naše portfólio 110+ prémiových expirovaných domén.",
+    euTitle: "Prečo Majú Prémiové Európske .EU Domény Takú Hodnotu",
+    euP1: "Európske .EU domény predstavujú exkluzívnu triedu digitálnych aktív.", euP2: "Mnohé pochádzajú z oficiálnych projektov EÚ.", euP3: ".EU segment stále ponúka príležitosti.", euP4: ".EU domény sa tešia osobitnej dôvere.", euP5: ".EU doména pozicionuje vašu značku ako európsky uvedomelú.", euP6: "Investícia do prémiovej .EU domény znamená inštitucionálnu podporu."
+  },
+  sr: {
+    seoTitle: "Купите Истекле Домене: Инвестирајте у Доказани СЕО Ауторитет",
+    seoP1: "Куповина истекле домене најпаметнији је начин да одмах искористите године акумулираног ауторитета и квалитетних повратних линкова.",
+    seoP2: "Наши пажљиво одабрани премиум домени имају доказан рекорд са повратним линковима из ауторитативних извора.",
+    seoP3: "Било да желите да покренете онлајн продавницу, партнерски сајт или да појачате СЕО свог пословања.",
+    seoP4: "Сваки премиум домен у нашем портфолију проверен је на чисту историју и добар профил линкова.",
+    seoCta: "Спремни да убрзате свој онлајн успех?", seoCtaSub: "Истражите наш портфолио од 110+ премиум истеклих домена.",
+    euTitle: "Зашто Премиум Европски .EU Домени Имају Такву Вредност",
+    euP1: ".EU домени представљају ексклузивну класу дигиталних средстава.", euP2: "Многи потичу из званичних ЕУ пројеката.", euP3: ".EU сегмент и даље нуди прилике.", euP4: ".EU домени уживају посебно поверење.", euP5: ".EU домен позиционира ваш бренд као европски свестан.", euP6: "Инвестиција у премиум .EU домен значи институционалну подршку."
+  },
+  sl: {
+    seoTitle: "Kupite Potekle Domene: Investirajte v Dokazano SEO Avtoriteto",
+    seoP1: "Nakup potekle domene je najpametnejši način, da takoj izkoristite leta akumulirane avtoritete in kakovostnih povratnih povezav.",
+    seoP2: "Naše skrbno izbrane premium domene imajo dokazan track record s povratnimi povezavami iz avtoritativnih virov.",
+    seoP3: "Ne glede na to, ali želite odpreti spletno trgovino, partnersko stran ali okrepiti SEO vašega podjetja.",
+    seoP4: "Vsaka premium domena v našem portfelju je preverjena za čisto zgodovino in dober profil povezav.",
+    seoCta: "Pripravljeni pospešiti svoj spletni uspeh?", seoCtaSub: "Raziščite naš portfelj 110+ premium poteklih domen.",
+    euTitle: "Zakaj Imajo Premium Evropske .EU Domene Takšno Vrednost",
+    euP1: "Evropske .EU domene predstavljajo ekskluziven razred digitalnih sredstev.", euP2: "Mnoge izvirajo iz uradnih EU projektov.", euP3: ".EU segment še vedno ponuja priložnosti.", euP4: ".EU domene uživajo posebno zaupanje.", euP5: ".EU domena pozicionira vašo blagovno znamko kot evropsko osveščeno.", euP6: "Naložba v premium .EU domeno pomeni institucionalno podporo."
   }
 };
 

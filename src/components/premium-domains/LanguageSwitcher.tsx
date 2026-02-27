@@ -30,6 +30,10 @@ const languages: LanguageOption[] = [
   { code: "ro", name: "Română", path: "https://www.iaee.eu/expireddomainnames/ro/cumpara-domenii-premium-autoritate-inalta-valoare-seo" },
   { code: "bg", name: "Български", path: "https://www.iaee.eu/expireddomainnames/bg/kupete-premium-domeyni-visok-avtoritet-seo-stoynost" },
   { code: "uk", name: "Українська", path: "https://www.iaee.eu/expireddomainnames/uk/kupyty-premium-domeny-vysokyj-avtorytet-seo-tsinnist" },
+  { code: "hr", name: "Hrvatski", path: "https://www.iaee.eu/expireddomainnames/hr/kupite-premium-domene-visoki-autoritet-seo-vrijednost" },
+  { code: "sk", name: "Slovenčina", path: "https://www.iaee.eu/expireddomainnames/sk/kupit-premium-domeny-vysoka-autorita-seo-hodnota" },
+  { code: "sr", name: "Српски", path: "https://www.iaee.eu/expireddomainnames/sr/kupite-premium-domene-visoki-autoritet-seo-vrednost" },
+  { code: "sl", name: "Slovenščina", path: "https://www.iaee.eu/expireddomainnames/sl/kupite-premium-domene-visoka-avtoriteta-seo-vrednost" },
 ];
 
 // SVG Flag components
@@ -230,6 +234,43 @@ const FlagUK = () => (
   </svg>
 );
 
+const FlagHR = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="8" fill="#FF0000"/>
+    <rect y="8" width="32" height="8" fill="#FFFFFF"/>
+    <rect y="16" width="32" height="8" fill="#171796"/>
+    <rect x="12" y="6" width="8" height="12" fill="#FF0000" rx="1"/>
+    <rect x="13" y="7" width="3" height="3" fill="#FFFFFF"/>
+    <rect x="16" y="7" width="3" height="3" fill="#FF0000"/>
+  </svg>
+);
+
+const FlagSK = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="8" fill="#FFFFFF"/>
+    <rect y="8" width="32" height="8" fill="#0B4EA2"/>
+    <rect y="16" width="32" height="8" fill="#EE1C25"/>
+    <path d="M4,6 L4,18 Q10,16 10,12 Q10,8 4,6Z" fill="#FFFFFF" stroke="#EE1C25" strokeWidth="0.5"/>
+  </svg>
+);
+
+const FlagSR = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="8" fill="#C6363C"/>
+    <rect y="8" width="32" height="8" fill="#0C4076"/>
+    <rect y="16" width="32" height="8" fill="#FFFFFF"/>
+  </svg>
+);
+
+const FlagSL = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="8" fill="#FFFFFF"/>
+    <rect y="8" width="32" height="8" fill="#003DA5"/>
+    <rect y="16" width="32" height="8" fill="#ED1C24"/>
+    <path d="M4,4 L8,10 L12,4 Z" fill="#003DA5"/>
+  </svg>
+);
+
 const flagComponents: Record<string, React.FC> = {
   nl: FlagNL,
   en: FlagGB,
@@ -254,6 +295,10 @@ const flagComponents: Record<string, React.FC> = {
   ro: FlagRO,
   bg: FlagBG,
   uk: FlagUK,
+  hr: FlagHR,
+  sk: FlagSK,
+  sr: FlagSR,
+  sl: FlagSL,
 };
 
 interface LanguageSwitcherProps {

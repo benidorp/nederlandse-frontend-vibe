@@ -118,6 +118,10 @@ const PremiumDomainsRU = lazyRetry(() => import("./pages/PremiumDomainsRU"));
 const PremiumDomainsRO = lazyRetry(() => import("./pages/PremiumDomainsRO"));
 const PremiumDomainsBG = lazyRetry(() => import("./pages/PremiumDomainsBG"));
 const PremiumDomainsUK = lazyRetry(() => import("./pages/PremiumDomainsUK"));
+const PremiumDomainsHR = lazyRetry(() => import("./pages/PremiumDomainsHR"));
+const PremiumDomainsSK = lazyRetry(() => import("./pages/PremiumDomainsSK"));
+const PremiumDomainsSR = lazyRetry(() => import("./pages/PremiumDomainsSR"));
+const PremiumDomainsSL = lazyRetry(() => import("./pages/PremiumDomainsSL"));
 const DomainProductPage = lazyRetry(() => import("./pages/DomainProductPage"));
 const LaserEngraverArticle = lazyRetry(() => import("./pages/LaserEngraverArticle"));
 const TelescopeArticle = lazyRetry(() => import("./pages/TelescopeArticle"));
@@ -288,6 +292,10 @@ const App = () => (
             <Route path="/expireddomainnames/ro/cumpara-domenii-premium-autoritate-inalta-valoare-seo" element={<PremiumDomainsRO />} />
             <Route path="/expireddomainnames/bg/kupete-premium-domeyni-visok-avtoritet-seo-stoynost" element={<PremiumDomainsBG />} />
             <Route path="/expireddomainnames/uk/kupyty-premium-domeny-vysokyj-avtorytet-seo-tsinnist" element={<PremiumDomainsUK />} />
+            <Route path="/expireddomainnames/hr/kupite-premium-domene-visoki-autoritet-seo-vrijednost" element={<PremiumDomainsHR />} />
+            <Route path="/expireddomainnames/sk/kupit-premium-domeny-vysoka-autorita-seo-hodnota" element={<PremiumDomainsSK />} />
+            <Route path="/expireddomainnames/sr/kupite-premium-domene-visoki-autoritet-seo-vrednost" element={<PremiumDomainsSR />} />
+            <Route path="/expireddomainnames/sl/kupite-premium-domene-visoka-avtoriteta-seo-vrednost" element={<PremiumDomainsSL />} />
             
             {/* Individual Domain Product Pages */}
             <Route path="/domains/:domainSlug" element={<DomainProductPage />} />

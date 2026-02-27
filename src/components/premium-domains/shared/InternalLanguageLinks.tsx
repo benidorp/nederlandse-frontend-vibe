@@ -25,7 +25,11 @@ const allLanguagePages = [
   { lang: 'ru', label: 'Русский', url: '/expireddomainnames/ru/kupit-premium-domeny-vysokij-avtoritet-seo-cennost' },
   { lang: 'ro', label: 'Română', url: '/expireddomainnames/ro/cumpara-domenii-premium-autoritate-inalta-valoare-seo' },
   { lang: 'bg', label: 'Български', url: '/expireddomainnames/bg/kupete-premium-domejni-visok-avtoritet-seo-stojnost' },
-  { lang: 'uk', label: 'Українська', url: '/expireddomainnames/uk/kupyty-premium-domeny-vysokyj-avtorytet-seo-tsinnist' }
+  { lang: 'uk', label: 'Українська', url: '/expireddomainnames/uk/kupyty-premium-domeny-vysokyj-avtorytet-seo-tsinnist' },
+  { lang: 'hr', label: 'Hrvatski', url: '/expireddomainnames/hr/kupite-premium-domene-visoki-autoritet-seo-vrijednost' },
+  { lang: 'sk', label: 'Slovenčina', url: '/expireddomainnames/sk/kupit-premium-domeny-vysoka-autorita-seo-hodnota' },
+  { lang: 'sr', label: 'Српски', url: '/expireddomainnames/sr/kupite-premium-domene-visoki-autoritet-seo-vrednost' },
+  { lang: 'sl', label: 'Slovenščina', url: '/expireddomainnames/sl/kupite-premium-domene-visoka-avtoriteta-seo-vrednost' }
 ];
 
 const titles: Record<Lang, string> = {
@@ -38,7 +42,11 @@ const titles: Record<Lang, string> = {
   ru: 'Доступно на Всех Языках',
   ro: 'Disponibil în Toate Limbile',
   bg: 'Достъпно на Всички Езици',
-  uk: 'Доступно Всіма Мовами'
+  uk: 'Доступно Всіма Мовами',
+  hr: 'Dostupno na Svim Jezicima',
+  sk: 'Dostupné vo Všetkých Jazykoch',
+  sr: 'Доступно на Свим Језицима',
+  sl: 'Na Voljo v Vseh Jezikih'
 };
 
 const subtitles: Record<Lang, string> = {
@@ -51,7 +59,11 @@ const subtitles: Record<Lang, string> = {
   ru: 'Наш каталог премиум-доменов доступен на 23 языках. Найдите идеальный домен на своём языке.',
   ro: 'Colecția noastră de domenii premium este disponibilă în 23 de limbi. Găsiți domeniul perfect în limba dvs.',
   bg: 'Нашата колекция от премиум домейни е достъпна на 23 езика. Намерете перфектния домейн на вашия език.',
-  uk: 'Наша колекція преміум-доменів доступна 23 мовами. Знайдіть ідеальний домен вашою мовою.'
+  uk: 'Наша колекція преміум-доменів доступна 23 мовами. Знайдіть ідеальний домен вашою мовою.',
+  hr: 'Naša kolekcija premium domena dostupna je na 27 jezika. Pronađite savršenu domenu na svom jeziku.',
+  sk: 'Naša kolekcia prémiových domén je dostupná v 27 jazykoch. Nájdite ideálnu doménu vo svojom jazyku.',
+  sr: 'Наша колекција премиум домена доступна је на 27 језика. Пронађите савршен домен на свом језику.',
+  sl: 'Naša zbirka premium domen je na voljo v 27 jezikih. Poiščite popolno domeno v svojem jeziku.'
 };
 
 const InternalLanguageLinks = ({ currentLang }: { lang: Lang; currentLang: Lang }) => {
