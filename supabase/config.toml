@@ -5,3 +5,6 @@ verify_jwt = false
 
 [functions.ai-universal]
 verify_jwt = false
+
+[functions.manage-api-keys]
+verify_jwt = false
