@@ -228,7 +228,7 @@ serve(async (req) => {
       .gte("created_at", oneMinuteAgo);
 
     if ((userRecentJobs || 0) >= 10) {
-      return new Response(JSON.stringify({ error: "Rate limit exceeded. Please wait." }), {
+      return new Response(JSON.stringify({ error: "Too many requests. Please wait a moment and try again." }), {
         status: 429, headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
     }
@@ -292,7 +292,8 @@ serve(async (req) => {
     }
 
     if (!apiKey) {
-      return new Response(JSON.stringify({ error: "No API key configured for selected provider" }), {
+      console.error("No API key available", { userId, provider });
+      return new Response(JSON.stringify({ error: "Service configuration incomplete. Please check your settings." }), {
         status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
     }
@@ -349,9 +350,10 @@ serve(async (req) => {
         }
       }
       if (!result) {
+        console.error("AI provider failed", { userId, provider, error: err.message });
         await supabase.from("ai_jobs").update({ status: "failed", error_message: err.message }).eq("id", job.id);
         const status = err.message === "RATE_LIMITED" ? 429 : err.message === "PAYMENT_REQUIRED" ? 402 : 503;
-        return new Response(JSON.stringify({ error: err.message === "RATE_LIMITED" ? "Rate limited. Try again later." : err.message === "PAYMENT_REQUIRED" ? "Payment required. Add credits." : "AI processing failed." }), {
+        return new Response(JSON.stringify({ error: status === 429 ? "Too many requests. Please wait a moment and try again." : status === 402 ? "Service quota exceeded. Please try again later." : "Request failed. Please try again." }), {
           status, headers: { ...corsHeaders, "Content-Type": "application/json" },
         });
       }
