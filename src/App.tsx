@@ -127,6 +127,11 @@ const LaserEngraverArticle = lazyRetry(() => import("./pages/LaserEngraverArticl
 const TelescopeArticle = lazyRetry(() => import("./pages/TelescopeArticle"));
 const PrinterArticle = lazyRetry(() => import("./pages/PrinterArticle"));
 const AIDashboard = lazyRetry(() => import("./pages/AIDashboard"));
+const Login = lazyRetry(() => import("./pages/Login"));
+const Signup = lazyRetry(() => import("./pages/Signup"));
+const ForgotPassword = lazyRetry(() => import("./pages/ForgotPassword"));
+const ResetPassword = lazyRetry(() => import("./pages/ResetPassword"));
+import ProtectedRoute from "./components/ProtectedRoute";
 
 // Legal Documents Multi-language Pages
 const AffiliateDE = lazyRetry(() => import("./pages/AffiliateDE"));
@@ -315,8 +320,14 @@ const App = () => (
             <Route path="/expireddomeinnamen/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" element={<Navigate to="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" replace />} />
             <Route path="/expireddomeinnamen/nl/premium-domeinnamen-juridische-documenten" element={<Navigate to="/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" replace />} />
             
-            {/* AI Dashboard */}
-            <Route path="/ai-dashboard" element={<AIDashboard />} />
+            {/* Auth Routes */}
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
+            <Route path="/reset-password" element={<ResetPassword />} />
+
+            {/* AI Dashboard (Protected) */}
+            <Route path="/ai-dashboard" element={<ProtectedRoute><AIDashboard /></ProtectedRoute>} />
 
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
