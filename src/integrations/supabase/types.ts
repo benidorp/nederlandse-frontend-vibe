@@ -25,6 +25,7 @@ export type Database = {
           metadata: Json | null
           title: string | null
           updated_at: string
+          user_id: string | null
         }
         Insert: {
           content?: string | null
@@ -36,6 +37,7 @@ export type Database = {
           metadata?: Json | null
           title?: string | null
           updated_at?: string
+          user_id?: string | null
         }
         Update: {
           content?: string | null
@@ -47,6 +49,7 @@ export type Database = {
           metadata?: Json | null
           title?: string | null
           updated_at?: string
+          user_id?: string | null
         }
         Relationships: [
           {
@@ -72,6 +75,7 @@ export type Database = {
           status: string
           tokens_used: number | null
           updated_at: string
+          user_id: string | null
         }
         Insert: {
           completed_at?: string | null
@@ -86,6 +90,7 @@ export type Database = {
           status?: string
           tokens_used?: number | null
           updated_at?: string
+          user_id?: string | null
         }
         Update: {
           completed_at?: string | null
@@ -100,6 +105,7 @@ export type Database = {
           status?: string
           tokens_used?: number | null
           updated_at?: string
+          user_id?: string | null
         }
         Relationships: []
       }
@@ -134,6 +140,7 @@ export type Database = {
           model: string
           prompt_tokens: number
           total_tokens: number
+          user_id: string | null
         }
         Insert: {
           completion_tokens?: number
@@ -144,6 +151,7 @@ export type Database = {
           model: string
           prompt_tokens?: number
           total_tokens?: number
+          user_id?: string | null
         }
         Update: {
           completion_tokens?: number
@@ -154,6 +162,7 @@ export type Database = {
           model?: string
           prompt_tokens?: number
           total_tokens?: number
+          user_id?: string | null
         }
         Relationships: [
           {

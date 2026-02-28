@@ -63,10 +63,13 @@ serve(async (req) => {
     });
   }
 
+  const userId = claimsData.claims.sub as string;
+
   const OPENAI_API_KEY = Deno.env.get("OPENAI_API_KEY");
   if (!OPENAI_API_KEY) {
-    return new Response(JSON.stringify({ error: "OPENAI_API_KEY not configured" }), {
-      status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" },
+    console.error("CRITICAL: OPENAI_API_KEY not configured");
+    return new Response(JSON.stringify({ error: "Service temporarily unavailable" }), {
+      status: 503, headers: { ...corsHeaders, "Content-Type": "application/json" },
     });
   }
 
@@ -83,11 +86,12 @@ serve(async (req) => {
       });
     }
 
-    // Check rate limiting - count jobs in last minute
+    // Per-user rate limiting - count this user's jobs in last minute
     const oneMinuteAgo = new Date(Date.now() - 60000).toISOString();
-    const { count: recentJobs } = await supabase
+    const { count: userRecentJobs } = await supabase
       .from("ai_jobs")
       .select("*", { count: "exact", head: true })
+      .eq("user_id", userId)
       .gte("created_at", oneMinuteAgo);
 
     const { data: rateSetting } = await supabase
@@ -96,19 +100,20 @@ serve(async (req) => {
       .eq("setting_key", "rate_limit_per_minute")
       .single();
 
-    const rateLimit = rateSetting?.setting_value?.limit || 20;
-    if ((recentJobs || 0) >= rateLimit) {
-      return new Response(JSON.stringify({ error: "Rate limit exceeded. Please wait." }), {
+    const rateLimit = rateSetting?.setting_value?.limit || 10;
+    if ((userRecentJobs || 0) >= rateLimit) {
+      return new Response(JSON.stringify({ error: "Rate limit exceeded. Please wait a moment." }), {
         status: 429, headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
     }
 
-    // Check daily token limit
+    // Per-user daily token limit
     const todayStart = new Date();
     todayStart.setHours(0, 0, 0, 0);
     const { data: dailyUsage } = await supabase
       .from("ai_usage_logs")
       .select("total_tokens")
+      .eq("user_id", userId)
       .gte("created_at", todayStart.toISOString());
 
     const totalTokensToday = (dailyUsage || []).reduce((sum, log) => sum + log.total_tokens, 0);
@@ -120,7 +125,7 @@ serve(async (req) => {
 
     const dailyLimit = dailyLimitSetting?.setting_value?.limit || 500000;
     if (totalTokensToday >= dailyLimit) {
-      return new Response(JSON.stringify({ error: "Daily token limit reached." }), {
+      return new Response(JSON.stringify({ error: "Daily token limit reached. Try again tomorrow." }), {
         status: 429, headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
     }
@@ -128,13 +133,14 @@ serve(async (req) => {
     const model = requestedModel || MODEL_MAP[jobType] || "gpt-3.5-turbo";
     const systemPrompt = getSystemPrompt(jobType, language);
 
-    // Create job record
+    // Create job record with user_id
     const { data: job, error: jobError } = await supabase
       .from("ai_jobs")
       .insert({
         job_type: jobType,
         status: "processing",
         model,
+        user_id: userId,
         input_data: { content, language, batchItems },
       })
       .select()
@@ -167,15 +173,15 @@ serve(async (req) => {
 
     if (!openaiResponse.ok) {
       const errorText = await openaiResponse.text();
-      console.error("OpenAI error:", openaiResponse.status, errorText);
+      console.error("OpenAI API error:", openaiResponse.status, errorText);
 
       await supabase
         .from("ai_jobs")
         .update({ status: "failed", error_message: `OpenAI API error: ${openaiResponse.status}` })
         .eq("id", job.id);
 
-      return new Response(JSON.stringify({ error: "OpenAI API error", details: errorText }), {
-        status: 502, headers: { ...corsHeaders, "Content-Type": "application/json" },
+      return new Response(JSON.stringify({ error: "AI processing failed. Please try again later." }), {
+        status: 503, headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
     }
 
@@ -199,9 +205,10 @@ serve(async (req) => {
       })
       .eq("id", job.id);
 
-    // Log usage
+    // Log usage with user_id
     await supabase.from("ai_usage_logs").insert({
       job_id: job.id,
+      user_id: userId,
       model,
       prompt_tokens: usage.prompt_tokens || 0,
       completion_tokens: usage.completion_tokens || 0,
@@ -209,7 +216,7 @@ serve(async (req) => {
       cost_usd: costUsd,
     });
 
-    // Store generated content
+    // Store generated content with user_id
     let parsedResult = resultContent;
     try {
       parsedResult = JSON.parse(resultContent);
@@ -229,6 +236,7 @@ serve(async (req) => {
 
     await supabase.from("ai_generated_content").insert({
       job_id: job.id,
+      user_id: userId,
       content_type: contentTypeMap[jobType] || "translation",
       title: typeof parsedResult === "object" && parsedResult?.title ? parsedResult.title : `${jobType} - ${language}`,
       language,
@@ -253,7 +261,7 @@ serve(async (req) => {
     );
   } catch (e) {
     console.error("ai-process error:", e);
-    return new Response(JSON.stringify({ error: e instanceof Error ? e.message : "Unknown error" }), {
+    return new Response(JSON.stringify({ error: "An unexpected error occurred. Please try again." }), {
       status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" },
     });
   }
