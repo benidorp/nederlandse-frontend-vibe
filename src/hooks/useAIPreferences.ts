@@ -32,9 +32,9 @@ export function useAIPreferences() {
     if (!user) return;
     setLoading(true);
 
-    const [{ data: prefs }, { data: keys }] = await Promise.all([
+    const [{ data: prefs }, keysResponse] = await Promise.all([
       supabase.from("user_ai_preferences").select("*").eq("user_id", user.id).single(),
-      supabase.from("user_ai_keys").select("provider, key_label, is_active").eq("user_id", user.id),
+      supabase.functions.invoke("manage-api-keys", { body: { action: "list" } }),
     ]);
 
     if (prefs) {
@@ -47,7 +47,7 @@ export function useAIPreferences() {
         fallback_enabled: prefs.fallback_enabled,
       });
     }
-    setApiKeys(keys || []);
+    setApiKeys(keysResponse.data?.keys || []);
     setLoading(false);
   }, [user]);
 
@@ -71,30 +71,26 @@ export function useAIPreferences() {
 
   const saveApiKey = async (provider: string, apiKey: string, label?: string) => {
     if (!user) return;
-    const hash = apiKey.slice(0, 4) + "..." + apiKey.slice(-4);
 
-    const { error } = await supabase
-      .from("user_ai_keys")
-      .upsert({
-        user_id: user.id,
-        provider,
-        api_key_hash: hash,
-        encrypted_api_key: apiKey,
-        key_label: label || provider,
-        is_active: true,
-      }, { onConflict: "user_id,provider" });
+    const { data, error } = await supabase.functions.invoke("manage-api-keys", {
+      body: { action: "save", provider, apiKey, label },
+    });
 
-    if (error) {
+    if (error || data?.error) {
       toast({ title: "Error", description: "Failed to save API key", variant: "destructive" });
     } else {
-      toast({ title: "Saved", description: `${provider} API key saved securely` });
+      toast({ title: "Saved", description: `${provider} API key saved securely (encrypted)` });
       fetchPreferences();
     }
   };
 
   const deleteApiKey = async (provider: string) => {
     if (!user) return;
-    await supabase.from("user_ai_keys").delete().eq("user_id", user.id).eq("provider", provider);
+
+    await supabase.functions.invoke("manage-api-keys", {
+      body: { action: "delete", provider },
+    });
+
     toast({ title: "Deleted", description: `${provider} API key removed` });
     fetchPreferences();
   };
