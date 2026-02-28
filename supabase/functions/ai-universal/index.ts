@@ -1,6 +1,18 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
+// Decrypt function matching manage-api-keys encryption
+function decryptApiKey(ciphertext: string): string {
+  const secret = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") || "fallback-key";
+  const key = new TextEncoder().encode(secret);
+  const data = Uint8Array.from(atob(ciphertext), c => c.charCodeAt(0));
+  const decrypted = new Uint8Array(data.length);
+  for (let i = 0; i < data.length; i++) {
+    decrypted[i] = data[i] ^ key[i % key.length];
+  }
+  return new TextDecoder().decode(decrypted);
+}
+
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type, x-supabase-client-platform, x-supabase-client-platform-version, x-supabase-client-runtime, x-supabase-client-runtime-version",
@@ -242,7 +254,6 @@ serve(async (req) => {
     if (provider === "lovable") {
       apiKey = Deno.env.get("LOVABLE_API_KEY") || null;
     } else if (provider === "openai") {
-      // First check user's custom key
       const { data: userKey } = await supabase
         .from("user_ai_keys")
         .select("encrypted_api_key")
@@ -250,7 +261,7 @@ serve(async (req) => {
         .eq("provider", "openai")
         .eq("is_active", true)
         .single();
-      apiKey = userKey?.encrypted_api_key || Deno.env.get("OPENAI_API_KEY") || null;
+      apiKey = userKey?.encrypted_api_key ? decryptApiKey(userKey.encrypted_api_key) : (Deno.env.get("OPENAI_API_KEY") || null);
     } else if (provider === "claude") {
       const { data: userKey } = await supabase
         .from("user_ai_keys")
@@ -259,7 +270,7 @@ serve(async (req) => {
         .eq("provider", "claude")
         .eq("is_active", true)
         .single();
-      apiKey = userKey?.encrypted_api_key || null;
+      apiKey = userKey?.encrypted_api_key ? decryptApiKey(userKey.encrypted_api_key) : null;
     } else if (provider === "custom") {
       const { data: userKey } = await supabase
         .from("user_ai_keys")
@@ -268,8 +279,8 @@ serve(async (req) => {
         .eq("provider", "custom")
         .eq("is_active", true)
         .single();
-      apiKey = userKey?.encrypted_api_key || null;
-      provider = "openai"; // custom keys use OpenAI-compatible endpoints
+      apiKey = userKey?.encrypted_api_key ? decryptApiKey(userKey.encrypted_api_key) : null;
+      provider = "openai";
     }
 
     // Fallback logic
