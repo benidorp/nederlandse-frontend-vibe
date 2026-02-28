@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Languages, FileText, Link2, Search, Image, Code, Sparkles, BarChart3 } from "lucide-react";
+import { Languages, FileText, Link2, Search, Image, Code, Sparkles, BarChart3, LogOut } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { useAuth } from "@/hooks/useAuth";
 import AIUsageStats from "@/components/ai-dashboard/AIUsageStats";
 import TranslateTab from "@/components/ai-dashboard/TranslateTab";
 import BlogGeneratorTab from "@/components/ai-dashboard/BlogGeneratorTab";
@@ -12,19 +14,25 @@ import CodeAssistantTab from "@/components/ai-dashboard/CodeAssistantTab";
 import PageImproverTab from "@/components/ai-dashboard/PageImproverTab";
 
 const AIDashboard = () => {
+  const { user, signOut } = useAuth();
   const [activeTab, setActiveTab] = useState("overview");
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
       <div className="max-w-7xl mx-auto px-4 py-8">
         {/* Header */}
-        <div className="mb-8">
-          <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            AI SEO Automation Dashboard
-          </h1>
-          <p className="text-muted-foreground mt-1">
-            Powered by OpenAI GPT-3.5 & GPT-4 — All processing runs server-side
-          </p>
+        <div className="mb-8 flex items-center justify-between">
+          <div>
+            <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              AI SEO Automation Dashboard
+            </h1>
+            <p className="text-muted-foreground mt-1">
+              Powered by OpenAI GPT-3.5 & GPT-4 — Logged in as {user?.email}
+            </p>
+          </div>
+          <Button variant="outline" size="sm" onClick={signOut}>
+            <LogOut className="h-4 w-4" /> Sign Out
+          </Button>
         </div>
 
         <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
