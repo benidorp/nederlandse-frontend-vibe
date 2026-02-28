@@ -102,7 +102,7 @@ serve(async (req) => {
 
     const rateLimit = rateSetting?.setting_value?.limit || 10;
     if ((userRecentJobs || 0) >= rateLimit) {
-      return new Response(JSON.stringify({ error: "Rate limit exceeded. Please wait a moment." }), {
+      return new Response(JSON.stringify({ error: "Too many requests. Please wait a moment and try again." }), {
         status: 429, headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
     }
@@ -125,7 +125,7 @@ serve(async (req) => {
 
     const dailyLimit = dailyLimitSetting?.setting_value?.limit || 500000;
     if (totalTokensToday >= dailyLimit) {
-      return new Response(JSON.stringify({ error: "Daily token limit reached. Try again tomorrow." }), {
+      return new Response(JSON.stringify({ error: "Too many requests. Please wait a moment and try again." }), {
         status: 429, headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
     }
@@ -173,14 +173,14 @@ serve(async (req) => {
 
     if (!openaiResponse.ok) {
       const errorText = await openaiResponse.text();
-      console.error("OpenAI API error:", openaiResponse.status, errorText);
+      console.error("AI provider error:", { status: openaiResponse.status, details: errorText, userId, jobId: job.id });
 
       await supabase
         .from("ai_jobs")
-        .update({ status: "failed", error_message: `OpenAI API error: ${openaiResponse.status}` })
+        .update({ status: "failed", error_message: `Provider error: ${openaiResponse.status}` })
         .eq("id", job.id);
 
-      return new Response(JSON.stringify({ error: "AI processing failed. Please try again later." }), {
+      return new Response(JSON.stringify({ error: "Request failed. Please try again." }), {
         status: 503, headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
     }
