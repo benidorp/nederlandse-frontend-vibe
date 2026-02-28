@@ -126,6 +126,7 @@ const DomainProductPage = lazyRetry(() => import("./pages/DomainProductPage"));
 const LaserEngraverArticle = lazyRetry(() => import("./pages/LaserEngraverArticle"));
 const TelescopeArticle = lazyRetry(() => import("./pages/TelescopeArticle"));
 const PrinterArticle = lazyRetry(() => import("./pages/PrinterArticle"));
+const AIDashboard = lazyRetry(() => import("./pages/AIDashboard"));
 
 // Legal Documents Multi-language Pages
 const AffiliateDE = lazyRetry(() => import("./pages/AffiliateDE"));
@@ -314,6 +315,9 @@ const App = () => (
             <Route path="/expireddomeinnamen/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" element={<Navigate to="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" replace />} />
             <Route path="/expireddomeinnamen/nl/premium-domeinnamen-juridische-documenten" element={<Navigate to="/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" replace />} />
             
+            {/* AI Dashboard */}
+            <Route path="/ai-dashboard" element={<AIDashboard />} />
+
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
