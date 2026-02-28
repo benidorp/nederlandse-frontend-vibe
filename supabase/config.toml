@@ -2,3 +2,6 @@ project_id = "hkyircuwbfwncdhhzapp"
 
 [functions.ai-process]
 verify_jwt = false
+
+[functions.ai-universal]
+verify_jwt = false

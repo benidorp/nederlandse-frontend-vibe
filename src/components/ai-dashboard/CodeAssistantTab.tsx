@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { useAIProcess } from "@/hooks/useAIProcess";
+import { useUniversalAI } from "@/hooks/useUniversalAI";
 import { Code, Loader2, Copy } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -12,7 +12,7 @@ const CodeAssistantTab = () => {
   const [request, setRequest] = useState("");
   const [codeType, setCodeType] = useState("json-ld");
   const [result, setResult] = useState<any>(null);
-  const { processAI, isLoading } = useAIProcess();
+  const { processAI, isLoading } = useUniversalAI();
   const { toast } = useToast();
 
   const handleGenerate = async () => {
