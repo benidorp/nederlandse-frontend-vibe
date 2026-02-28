@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { useAIProcess } from "@/hooks/useAIProcess";
+import { useUniversalAI } from "@/hooks/useUniversalAI";
 import { Search, Loader2, Copy } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -11,7 +11,7 @@ const MetaOptimizerTab = () => {
   const [content, setContent] = useState("");
   const [language, setLanguage] = useState("en");
   const [result, setResult] = useState<any>(null);
-  const { processAI, isLoading } = useAIProcess();
+  const { processAI, isLoading } = useUniversalAI();
   const { toast } = useToast();
 
   const handleOptimize = async () => {

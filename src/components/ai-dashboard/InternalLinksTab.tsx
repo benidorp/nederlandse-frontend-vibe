@@ -3,14 +3,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { useAIProcess } from "@/hooks/useAIProcess";
+import { useUniversalAI } from "@/hooks/useUniversalAI";
 import { Link2, Loader2 } from "lucide-react";
 
 const InternalLinksTab = () => {
   const [content, setContent] = useState("");
   const [sitePages, setSitePages] = useState("");
   const [result, setResult] = useState<any>(null);
-  const { processAI, isLoading } = useAIProcess();
+  const { processAI, isLoading } = useUniversalAI();
 
   const handleAnalyze = async () => {
     if (!content.trim()) return;

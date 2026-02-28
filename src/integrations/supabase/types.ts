@@ -61,6 +61,60 @@ export type Database = {
           },
         ]
       }
+      ai_generated_pages: {
+        Row: {
+          created_at: string
+          domain: string | null
+          html_content: string
+          id: string
+          language: string
+          meta_description: string | null
+          meta_title: string | null
+          metadata: Json | null
+          niche: string | null
+          slug: string
+          source_page_id: string | null
+          status: string
+          title: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          domain?: string | null
+          html_content: string
+          id?: string
+          language?: string
+          meta_description?: string | null
+          meta_title?: string | null
+          metadata?: Json | null
+          niche?: string | null
+          slug: string
+          source_page_id?: string | null
+          status?: string
+          title: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          domain?: string | null
+          html_content?: string
+          id?: string
+          language?: string
+          meta_description?: string | null
+          meta_title?: string | null
+          metadata?: Json | null
+          niche?: string | null
+          slug?: string
+          source_page_id?: string | null
+          status?: string
+          title?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
       ai_jobs: {
         Row: {
           completed_at: string | null
@@ -72,6 +126,7 @@ export type Database = {
           job_type: string
           model: string
           output_data: Json | null
+          provider: string | null
           status: string
           tokens_used: number | null
           updated_at: string
@@ -87,6 +142,7 @@ export type Database = {
           job_type: string
           model?: string
           output_data?: Json | null
+          provider?: string | null
           status?: string
           tokens_used?: number | null
           updated_at?: string
@@ -102,6 +158,7 @@ export type Database = {
           job_type?: string
           model?: string
           output_data?: Json | null
+          provider?: string | null
           status?: string
           tokens_used?: number | null
           updated_at?: string
@@ -139,6 +196,7 @@ export type Database = {
           job_id: string | null
           model: string
           prompt_tokens: number
+          provider: string | null
           total_tokens: number
           user_id: string | null
         }
@@ -150,6 +208,7 @@ export type Database = {
           job_id?: string | null
           model: string
           prompt_tokens?: number
+          provider?: string | null
           total_tokens?: number
           user_id?: string | null
         }
@@ -161,6 +220,7 @@ export type Database = {
           job_id?: string | null
           model?: string
           prompt_tokens?: number
+          provider?: string | null
           total_tokens?: number
           user_id?: string | null
         }
@@ -173,6 +233,81 @@ export type Database = {
             referencedColumns: ["id"]
           },
         ]
+      }
+      user_ai_keys: {
+        Row: {
+          api_key_hash: string
+          created_at: string
+          encrypted_api_key: string
+          id: string
+          is_active: boolean
+          key_label: string | null
+          provider: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          api_key_hash: string
+          created_at?: string
+          encrypted_api_key: string
+          id?: string
+          is_active?: boolean
+          key_label?: string | null
+          provider: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          api_key_hash?: string
+          created_at?: string
+          encrypted_api_key?: string
+          id?: string
+          is_active?: boolean
+          key_label?: string | null
+          provider?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      user_ai_preferences: {
+        Row: {
+          auto_approve: boolean
+          created_at: string
+          default_provider: string
+          fallback_enabled: boolean
+          id: string
+          low_cost_mode: boolean
+          manual_approval: boolean
+          suggest_only: boolean
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          auto_approve?: boolean
+          created_at?: string
+          default_provider?: string
+          fallback_enabled?: boolean
+          id?: string
+          low_cost_mode?: boolean
+          manual_approval?: boolean
+          suggest_only?: boolean
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          auto_approve?: boolean
+          created_at?: string
+          default_provider?: string
+          fallback_enabled?: boolean
+          id?: string
+          low_cost_mode?: boolean
+          manual_approval?: boolean
+          suggest_only?: boolean
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
       }
     }
     Views: {

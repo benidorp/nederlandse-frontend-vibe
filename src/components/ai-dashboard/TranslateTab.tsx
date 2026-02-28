@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { useAIProcess } from "@/hooks/useAIProcess";
+import { useUniversalAI } from "@/hooks/useUniversalAI";
 import { Languages, Copy, Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -18,7 +18,7 @@ const TranslateTab = () => {
   const [content, setContent] = useState("");
   const [targetLang, setTargetLang] = useState("de");
   const [result, setResult] = useState("");
-  const { processAI, isLoading } = useAIProcess();
+  const { processAI, isLoading } = useUniversalAI();
   const { toast } = useToast();
 
   const handleTranslate = async () => {

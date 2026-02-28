@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { useAIProcess } from "@/hooks/useAIProcess";
+import { useUniversalAI } from "@/hooks/useUniversalAI";
 import { FileText, Loader2, Copy } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -13,7 +13,7 @@ const BlogGeneratorTab = () => {
   const [language, setLanguage] = useState("en");
   const [additionalInstructions, setAdditionalInstructions] = useState("");
   const [result, setResult] = useState<any>(null);
-  const { processAI, isLoading } = useAIProcess();
+  const { processAI, isLoading } = useUniversalAI();
   const { toast } = useToast();
 
   const handleGenerate = async () => {
