@@ -16,6 +16,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { flagComponents } from "@/components/af/AfFlags";
 
 const LANGUAGES = [
   { code: "en", label: "English" }, { code: "nl", label: "Nederlands" },
@@ -29,13 +30,19 @@ const LANGUAGES = [
   { code: "hu", label: "Magyar" }, { code: "hr", label: "Hrvatski" },
   { code: "sk", label: "Slovenčina" }, { code: "sl", label: "Slovenščina" },
   { code: "sr", label: "Srpski" }, { code: "uk", label: "Українська" },
-  { code: "ru", label: "Русский" }, { code: "zh", label: "中文" },
+  { code: "ru", label: "Русский" }, { code: "zh-CN", label: "中文" },
   { code: "ja", label: "日本語" }, { code: "ko", label: "한국어" },
   { code: "ar", label: "العربية" }, { code: "hi", label: "हिन्दी" },
-  { code: "tr", label: "Türkçe" },
+  { code: "tr", label: "Türkçe" }, { code: "th", label: "ไทย" },
+  { code: "vi", label: "Tiếng Việt" }, { code: "id", label: "Bahasa Indonesia" },
+  { code: "et", label: "Eesti" }, { code: "lv", label: "Latviešu" },
+  { code: "lt", label: "Lietuvių" }, { code: "is", label: "Íslenska" },
+  { code: "sq", label: "Shqip" }, { code: "mk", label: "Македонски" },
+  { code: "bs", label: "Bosanski" }, { code: "lb", label: "Lëtzebuergesch" },
+  { code: "bn", label: "বাংলা" }, { code: "ms", label: "Bahasa Melayu" },
 ];
 
-type ActiveTool = "generate" | "translate" | "seo" | "chat" | null;
+type ActiveTool = "generate" | "translate" | "seo" | "chat" | "clone" | null;
 
 interface ChatMessage {
   role: "user" | "assistant";
@@ -51,6 +58,7 @@ const AdminToolbar = () => {
   const [result, setResult] = useState("");
   const [processing, setProcessing] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [cloneLang, setCloneLang] = useState<string | null>(null);
 
   // Chat state
   const [chatMessages, setChatMessages] = useState<ChatMessage[]>([]);
@@ -61,7 +69,6 @@ const AdminToolbar = () => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [chatMessages]);
 
-  // Don't render for non-authenticated users
   if (loading || !user) return null;
 
   const handleAIAction = async (jobType: string, content: string, language?: string) => {
@@ -97,6 +104,35 @@ const AdminToolbar = () => {
   const handleGenerate = () => handleAIAction("page_improve", getPageContent(), "en");
   const handleTranslate = () => handleAIAction("translate", getPageContent(), targetLang);
   const handleSEO = () => handleAIAction("meta_optimize", getPageContent(), "en");
+
+  const handleCloneTranslate = async (langCode: string) => {
+    setCloneLang(langCode);
+    const langLabel = LANGUAGES.find(l => l.code === langCode)?.label || langCode;
+    const pageContent = getPageContent();
+    if (!pageContent.trim()) {
+      toast.error("No page content found to clone");
+      setCloneLang(null);
+      return;
+    }
+    setProcessing(true);
+    setResult("");
+    try {
+      const { data, error } = await supabase.functions.invoke("ai-universal", {
+        body: { jobType: "clone_page", content: pageContent, language: langCode },
+      });
+      if (error) throw error;
+      if (data?.error) throw new Error(data.error);
+      const res = data?.result;
+      setResult(typeof res === "string" ? res : JSON.stringify(res, null, 2));
+      toast.success(`Page cloned & translated to ${langLabel}!`);
+    } catch (err: any) {
+      console.error("Clone error:", err);
+      toast.error(err.message || "Clone & translate failed");
+    } finally {
+      setProcessing(false);
+      setCloneLang(null);
+    }
+  };
 
   const handleChatSend = async () => {
     if (!chatInput.trim() || processing) return;
@@ -142,7 +178,7 @@ const AdminToolbar = () => {
       {/* Collapsed bar */}
       <div className="bg-[hsl(var(--navy-dark))] text-white flex items-center gap-2 px-4 py-1.5 text-sm shadow-lg">
         <Sparkles className="h-4 w-4 text-[hsl(var(--secondary))]" />
-        <span className="font-semibold mr-2">Admin AI Tools</span>
+        <span className="font-semibold mr-2">Admin AI</span>
 
         <Button size="sm" variant={activeTool === "generate" ? "secondary" : "ghost"} className="h-7 text-xs text-white hover:text-white" onClick={() => toggleTool("generate")}>
           <Sparkles className="h-3 w-3 mr-1" /> Generate
@@ -152,6 +188,9 @@ const AdminToolbar = () => {
         </Button>
         <Button size="sm" variant={activeTool === "seo" ? "secondary" : "ghost"} className="h-7 text-xs text-white hover:text-white" onClick={() => toggleTool("seo")}>
           <Search className="h-3 w-3 mr-1" /> SEO
+        </Button>
+        <Button size="sm" variant={activeTool === "clone" ? "secondary" : "ghost"} className="h-7 text-xs text-white hover:text-white" onClick={() => toggleTool("clone")}>
+          <Copy className="h-3 w-3 mr-1" /> Clone & Translate
         </Button>
         <Button size="sm" variant={activeTool === "chat" ? "secondary" : "ghost"} className="h-7 text-xs text-white hover:text-white" onClick={() => toggleTool("chat")}>
           <MessageSquare className="h-3 w-3 mr-1" /> Chat
@@ -173,6 +212,7 @@ const AdminToolbar = () => {
                 {activeTool === "generate" && "✨ AI Content Generation & Improvement"}
                 {activeTool === "translate" && "🌐 AI Translation"}
                 {activeTool === "seo" && "🔍 SEO Meta Optimization"}
+                {activeTool === "clone" && "📄 Clone & Translate Page"}
                 {activeTool === "chat" && "💬 AI Workspace Chat"}
               </h3>
               <Button size="sm" variant="ghost" className="h-6 w-6 p-0 text-white" onClick={() => { setActiveTool(null); setExpanded(false); }}>
@@ -180,8 +220,61 @@ const AdminToolbar = () => {
               </Button>
             </div>
 
+            {/* Clone & Translate tool */}
+            {activeTool === "clone" && (
+              <div className="space-y-3">
+                <p className="text-xs text-white/60">Klik op een vlag om de huidige pagina te klonen en vertalen naar die taal.</p>
+                <div className="flex flex-wrap gap-2 justify-center">
+                  {LANGUAGES.map(({ code, label }) => {
+                    const FlagComponent = flagComponents[code];
+                    const isProcessingThis = processing && cloneLang === code;
+                    return (
+                      <button
+                        key={code}
+                        onClick={() => !processing && handleCloneTranslate(code)}
+                        disabled={processing}
+                        className={`
+                          relative w-9 h-7 rounded-sm overflow-hidden border transition-all duration-200 
+                          hover:scale-110 hover:shadow-md p-0.5 cursor-pointer
+                          ${isProcessingThis
+                            ? "border-[hsl(var(--secondary))] shadow-md shadow-[hsl(var(--secondary))]/30 scale-105 ring-1 ring-[hsl(var(--secondary))]/50"
+                            : "border-white/20 opacity-85 hover:opacity-100 hover:border-white/60"
+                          }
+                          ${processing && !isProcessingThis ? "opacity-40 cursor-not-allowed" : ""}
+                        `}
+                        title={`Clone & Translate → ${label}`}
+                      >
+                        {FlagComponent ? <FlagComponent /> : <span className="text-[10px]">{code}</span>}
+                        {isProcessingThis && (
+                          <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+                            <Loader2 className="h-3 w-3 animate-spin text-white" />
+                          </div>
+                        )}
+                      </button>
+                    );
+                  })}
+                </div>
+
+                <Textarea
+                  value={inputText}
+                  onChange={(e) => setInputText(e.target.value)}
+                  placeholder="Optioneel: plak hier custom content (laat leeg om huidige pagina-inhoud te gebruiken)"
+                  className="bg-white/10 border-white/20 text-white placeholder:text-white/40 text-sm min-h-[60px]"
+                />
+
+                {result && (
+                  <div className="relative bg-black/30 rounded-md p-3 text-sm whitespace-pre-wrap max-h-[30vh] overflow-y-auto">
+                    <Button size="sm" variant="ghost" className="absolute top-2 right-2 h-6 text-xs text-white/70 hover:text-white" onClick={copyResult}>
+                      {copied ? <Check className="h-3 w-3" /> : <Copy className="h-3 w-3" />}
+                    </Button>
+                    {result}
+                  </div>
+                )}
+              </div>
+            )}
+
             {/* Chat tool */}
-            {activeTool === "chat" ? (
+            {activeTool === "chat" && (
               <div className="space-y-3">
                 <div className="bg-black/30 rounded-md p-3 h-[250px] overflow-y-auto space-y-2">
                   {chatMessages.length === 0 && (
@@ -215,7 +308,10 @@ const AdminToolbar = () => {
                   </Button>
                 </div>
               </div>
-            ) : (
+            )}
+
+            {/* Existing tools: generate, translate, seo */}
+            {(activeTool === "generate" || activeTool === "translate" || activeTool === "seo") && (
               <>
                 <Textarea
                   value={inputText}
