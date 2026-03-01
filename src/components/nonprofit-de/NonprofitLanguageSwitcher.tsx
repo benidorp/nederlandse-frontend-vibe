@@ -1,13 +1,14 @@
 import { useNavigate } from "react-router-dom";
-import { FlagGB, FlagDE } from "@/components/af/AfFlags";
+import { FlagGB, FlagDE, FlagFR } from "@/components/af/AfFlags";
 
 interface NonprofitLanguageSwitcherProps {
-  activeLang: "en" | "de";
+  activeLang: "en" | "de" | "fr";
 }
 
 const languages = [
   { code: "en", label: "English", path: "/nonprofit-charity-legal-documents-donation-terms-privacy-policy", Flag: FlagGB },
   { code: "de", label: "Deutsch", path: "/de/gemeinnuetzige-organisation-rechtliche-dokumente-spendenbedingungen-datenschutz", Flag: FlagDE },
+  { code: "fr", label: "Français", path: "/fr/association-documents-juridiques-conditions-don-politique-confidentialite", Flag: FlagFR },
 ];
 
 const NonprofitLanguageSwitcher = ({ activeLang }: NonprofitLanguageSwitcherProps) => {
