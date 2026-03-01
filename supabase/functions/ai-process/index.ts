@@ -2,6 +2,7 @@ import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 import { getCorsHeaders, handleCorsPreflightIfNeeded } from "../_shared/cors.ts";
+import { validateContentInput, validateLanguage } from "../_shared/validation.ts";
 
 // Model routing: simple tasks use 3.5, complex use 4
 const MODEL_MAP: Record<string, string> = {
@@ -79,6 +80,30 @@ serve(async (req) => {
 
     if (!jobType || !content) {
       return new Response(JSON.stringify({ error: "jobType and content are required" }), {
+        status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+
+    // Validate jobType
+    const validJobTypes = ["translate", "blog", "meta_optimize", "alt_text", "internal_links", "code_generate", "page_improve"];
+    if (typeof jobType !== "string" || !validJobTypes.includes(jobType)) {
+      return new Response(JSON.stringify({ error: "Invalid jobType" }), {
+        status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+
+    // Validate content length
+    const contentErr = validateContentInput(content);
+    if (contentErr) {
+      return new Response(JSON.stringify({ error: contentErr }), {
+        status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+
+    // Validate language
+    const langErr = validateLanguage(language);
+    if (langErr) {
+      return new Response(JSON.stringify({ error: langErr }), {
         status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
     }

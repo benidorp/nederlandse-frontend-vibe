@@ -2,6 +2,7 @@ import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 import { getCorsHeaders, handleCorsPreflightIfNeeded } from "../_shared/cors.ts";
+import { validateApiKey, validateProvider } from "../_shared/validation.ts";
 
 // AES-GCM encryption using Web Crypto API
 function getEncryptionKeyBytes(): Uint8Array {
@@ -116,6 +117,20 @@ serve(async (req) => {
     if (action === "save") {
       if (!provider || !apiKey) {
         return new Response(JSON.stringify({ error: "provider and apiKey required" }), {
+          status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" },
+        });
+      }
+
+      const providerErr = validateProvider(provider);
+      if (providerErr) {
+        return new Response(JSON.stringify({ error: providerErr }), {
+          status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" },
+        });
+      }
+
+      const apiKeyErr = validateApiKey(apiKey);
+      if (apiKeyErr) {
+        return new Response(JSON.stringify({ error: apiKeyErr }), {
           status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" },
         });
       }
