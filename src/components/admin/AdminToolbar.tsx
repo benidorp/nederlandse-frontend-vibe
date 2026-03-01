@@ -319,6 +319,27 @@ const AdminToolbar = () => {
                   })}
                 </div>
 
+                {/* Progress bar */}
+                {bulkRunning && selectedLangs.size > 0 && (() => {
+                  const total = selectedLangs.size;
+                  const done = Object.values(cloneProgress).filter((s) => s === "done" || s === "error").length;
+                  const pct = Math.round((done / total) * 100);
+                  return (
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs text-white/60">
+                        <span>{done} / {total} talen verwerkt</span>
+                        <span>{pct}%</span>
+                      </div>
+                      <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden">
+                        <div
+                          className="h-full bg-[hsl(var(--secondary))] rounded-full transition-all duration-500 ease-out"
+                          style={{ width: `${pct}%` }}
+                        />
+                      </div>
+                    </div>
+                  );
+                })()}
+
                 <div className="flex items-center gap-3">
                   <span className="text-xs text-white/50">{selectedLangs.size} talen geselecteerd</span>
                   <Button
