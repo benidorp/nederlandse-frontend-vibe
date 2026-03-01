@@ -6,26 +6,63 @@ const corsHeaders = {
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type, x-supabase-client-platform, x-supabase-client-platform-version, x-supabase-client-runtime, x-supabase-client-runtime-version",
 };
 
-// Simple XOR-based encryption with a server-side secret (keys are also protected by RLS + service role)
-function getEncryptionKey(): Uint8Array {
+// AES-GCM encryption using Web Crypto API
+function getEncryptionKeyBytes(): Uint8Array {
   const secret = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") || "fallback-key";
   const encoder = new TextEncoder();
-  return encoder.encode(secret);
-}
-
-function encrypt(plaintext: string): string {
-  const key = getEncryptionKey();
-  const data = new TextEncoder().encode(plaintext);
-  const encrypted = new Uint8Array(data.length);
-  for (let i = 0; i < data.length; i++) {
-    encrypted[i] = data[i] ^ key[i % key.length];
+  const raw = encoder.encode(secret);
+  // Use first 32 bytes (256 bits) for AES-256, pad if needed
+  const key = new Uint8Array(32);
+  for (let i = 0; i < 32; i++) {
+    key[i] = raw[i % raw.length];
   }
-  // Encode as base64
-  return btoa(String.fromCharCode(...encrypted));
+  return key;
 }
 
-function decrypt(ciphertext: string): string {
-  const key = getEncryptionKey();
+async function importKey(): Promise<CryptoKey> {
+  const keyBytes = getEncryptionKeyBytes();
+  return await crypto.subtle.importKey(
+    "raw",
+    keyBytes,
+    { name: "AES-GCM" },
+    false,
+    ["encrypt", "decrypt"]
+  );
+}
+
+async function encrypt(plaintext: string): Promise<string> {
+  const key = await importKey();
+  const iv = crypto.getRandomValues(new Uint8Array(12)); // 96-bit IV for AES-GCM
+  const encoded = new TextEncoder().encode(plaintext);
+  const ciphertext = await crypto.subtle.encrypt(
+    { name: "AES-GCM", iv },
+    key,
+    encoded
+  );
+  // Prepend IV to ciphertext, then base64 encode
+  const combined = new Uint8Array(iv.length + new Uint8Array(ciphertext).length);
+  combined.set(iv);
+  combined.set(new Uint8Array(ciphertext), iv.length);
+  return btoa(String.fromCharCode(...combined));
+}
+
+async function decrypt(ciphertext: string): Promise<string> {
+  const key = await importKey();
+  const combined = Uint8Array.from(atob(ciphertext), c => c.charCodeAt(0));
+  const iv = combined.slice(0, 12);
+  const data = combined.slice(12);
+  const decrypted = await crypto.subtle.decrypt(
+    { name: "AES-GCM", iv },
+    key,
+    data
+  );
+  return new TextDecoder().decode(decrypted);
+}
+
+// Legacy XOR decrypt for migration of old keys
+function decryptLegacyXOR(ciphertext: string): string {
+  const secret = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") || "fallback-key";
+  const key = new TextEncoder().encode(secret);
   const data = Uint8Array.from(atob(ciphertext), c => c.charCodeAt(0));
   const decrypted = new Uint8Array(data.length);
   for (let i = 0; i < data.length; i++) {
@@ -34,8 +71,18 @@ function decrypt(ciphertext: string): string {
   return new TextDecoder().decode(decrypted);
 }
 
+// Try AES-GCM first, fall back to legacy XOR for old keys
+async function decryptWithFallback(ciphertext: string): Promise<string> {
+  try {
+    return await decrypt(ciphertext);
+  } catch {
+    // Legacy XOR-encrypted key — decrypt and re-encrypt with AES-GCM
+    return decryptLegacyXOR(ciphertext);
+  }
+}
+
 // Exported for use by other edge functions
-export { decrypt };
+export { decrypt, decryptWithFallback };
 
 serve(async (req) => {
   if (req.method === "OPTIONS") {
@@ -76,10 +123,8 @@ serve(async (req) => {
         });
       }
 
-      // Create a real hash (first 4 + last 4 chars as display label)
       const displayHash = apiKey.slice(0, 4) + "..." + apiKey.slice(-4);
-      // Encrypt the actual key
-      const encryptedKey = encrypt(apiKey);
+      const encryptedKey = await encrypt(apiKey);
 
       const { error } = await supabase
         .from("user_ai_keys")
@@ -155,7 +200,7 @@ serve(async (req) => {
         });
       }
 
-      const decryptedKey = decrypt(keyRecord.encrypted_api_key);
+      const decryptedKey = await decryptWithFallback(keyRecord.encrypted_api_key);
       return new Response(JSON.stringify({ key: decryptedKey }), {
         headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
