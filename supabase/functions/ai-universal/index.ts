@@ -57,6 +57,7 @@ async function decryptApiKey(ciphertext: string): Promise<string> {
 }
 
 import { getCorsHeaders, handleCorsPreflightIfNeeded } from "../_shared/cors.ts";
+import { validateContentInput, validateJobType, validateLanguage, validateDomain, validateStringField } from "../_shared/validation.ts";
 
 // Provider configs
 const PROVIDERS = {
@@ -255,6 +256,52 @@ serve(async (req) => {
 
     if (!jobType || !content) {
       return new Response(JSON.stringify({ error: "jobType and content are required" }), {
+        status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+
+    // Validate jobType
+    const jobTypeErr = validateJobType(jobType);
+    if (jobTypeErr) {
+      return new Response(JSON.stringify({ error: jobTypeErr }), {
+        status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+
+    // Validate content
+    const contentErr = validateContentInput(content);
+    if (contentErr) {
+      return new Response(JSON.stringify({ error: contentErr }), {
+        status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+
+    // Validate language
+    const langErr = validateLanguage(language);
+    if (langErr) {
+      return new Response(JSON.stringify({ error: langErr }), {
+        status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+
+    // Validate domain, niche, keywords
+    const domainErr = validateDomain(domain);
+    if (domainErr) {
+      return new Response(JSON.stringify({ error: domainErr }), {
+        status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+
+    const nicheErr = validateStringField(niche, "niche");
+    if (nicheErr) {
+      return new Response(JSON.stringify({ error: nicheErr }), {
+        status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+
+    const keywordsErr = validateStringField(keywords, "keywords", 1000);
+    if (keywordsErr) {
+      return new Response(JSON.stringify({ error: keywordsErr }), {
         status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
     }
