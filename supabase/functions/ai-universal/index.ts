@@ -1,8 +1,43 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
-// Decrypt function matching manage-api-keys encryption
-function decryptApiKey(ciphertext: string): string {
+// AES-GCM decryption matching manage-api-keys encryption
+function getEncryptionKeyBytes(): Uint8Array {
+  const secret = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") || "fallback-key";
+  const raw = new TextEncoder().encode(secret);
+  const key = new Uint8Array(32);
+  for (let i = 0; i < 32; i++) {
+    key[i] = raw[i % raw.length];
+  }
+  return key;
+}
+
+async function importKey(): Promise<CryptoKey> {
+  const keyBytes = getEncryptionKeyBytes();
+  return await crypto.subtle.importKey(
+    "raw",
+    keyBytes,
+    { name: "AES-GCM" },
+    false,
+    ["decrypt"]
+  );
+}
+
+async function decryptAESGCM(ciphertext: string): Promise<string> {
+  const key = await importKey();
+  const combined = Uint8Array.from(atob(ciphertext), c => c.charCodeAt(0));
+  const iv = combined.slice(0, 12);
+  const data = combined.slice(12);
+  const decrypted = await crypto.subtle.decrypt(
+    { name: "AES-GCM", iv },
+    key,
+    data
+  );
+  return new TextDecoder().decode(decrypted);
+}
+
+// Legacy XOR fallback for old keys not yet re-encrypted
+function decryptLegacyXOR(ciphertext: string): string {
   const secret = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") || "fallback-key";
   const key = new TextEncoder().encode(secret);
   const data = Uint8Array.from(atob(ciphertext), c => c.charCodeAt(0));
@@ -11,6 +46,14 @@ function decryptApiKey(ciphertext: string): string {
     decrypted[i] = data[i] ^ key[i % key.length];
   }
   return new TextDecoder().decode(decrypted);
+}
+
+async function decryptApiKey(ciphertext: string): Promise<string> {
+  try {
+    return await decryptAESGCM(ciphertext);
+  } catch {
+    return decryptLegacyXOR(ciphertext);
+  }
 }
 
 const corsHeaders = {
@@ -261,7 +304,7 @@ serve(async (req) => {
         .eq("provider", "openai")
         .eq("is_active", true)
         .single();
-      apiKey = userKey?.encrypted_api_key ? decryptApiKey(userKey.encrypted_api_key) : (Deno.env.get("OPENAI_API_KEY") || null);
+      apiKey = userKey?.encrypted_api_key ? await decryptApiKey(userKey.encrypted_api_key) : (Deno.env.get("OPENAI_API_KEY") || null);
     } else if (provider === "claude") {
       const { data: userKey } = await supabase
         .from("user_ai_keys")
@@ -270,7 +313,7 @@ serve(async (req) => {
         .eq("provider", "claude")
         .eq("is_active", true)
         .single();
-      apiKey = userKey?.encrypted_api_key ? decryptApiKey(userKey.encrypted_api_key) : null;
+      apiKey = userKey?.encrypted_api_key ? await decryptApiKey(userKey.encrypted_api_key) : null;
     } else if (provider === "custom") {
       const { data: userKey } = await supabase
         .from("user_ai_keys")
@@ -279,7 +322,7 @@ serve(async (req) => {
         .eq("provider", "custom")
         .eq("is_active", true)
         .single();
-      apiKey = userKey?.encrypted_api_key ? decryptApiKey(userKey.encrypted_api_key) : null;
+      apiKey = userKey?.encrypted_api_key ? await decryptApiKey(userKey.encrypted_api_key) : null;
       provider = "openai";
     }
 

@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useUniversalAI } from "@/hooks/useUniversalAI";
 import { FileText, Loader2, Copy } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import DOMPurify from "dompurify";
 
 const BlogGeneratorTab = () => {
   const [keyword, setKeyword] = useState("");
@@ -83,7 +84,7 @@ const BlogGeneratorTab = () => {
                     </div>
                   )}
                   <div className="prose prose-sm max-h-[400px] overflow-auto">
-                    <div dangerouslySetInnerHTML={{ __html: result.content || JSON.stringify(result) }} />
+                    <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(result.content || JSON.stringify(result), { ALLOWED_TAGS: ['p', 'br', 'strong', 'em', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol', 'li', 'a', 'blockquote', 'code', 'pre', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'span', 'div', 'img'], ALLOWED_ATTR: ['href', 'class', 'id', 'src', 'alt', 'title'], ALLOW_DATA_ATTR: false }) }} />
                   </div>
                 </>
               ) : (
