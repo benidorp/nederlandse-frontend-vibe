@@ -1,13 +1,14 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import {
   Sparkles, Languages, Search, ChevronDown, ChevronUp,
-  Loader2, X, Copy, Check
+  Loader2, X, Copy, Check, MessageSquare, Send, Bot, User
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
+import { Input } from "@/components/ui/input";
 import {
   Select,
   SelectContent,
@@ -34,7 +35,12 @@ const LANGUAGES = [
   { code: "tr", label: "Türkçe" },
 ];
 
-type ActiveTool = "generate" | "translate" | "seo" | null;
+type ActiveTool = "generate" | "translate" | "seo" | "chat" | null;
+
+interface ChatMessage {
+  role: "user" | "assistant";
+  content: string;
+}
 
 const AdminToolbar = () => {
   const { user, loading } = useAuth();
@@ -45,6 +51,15 @@ const AdminToolbar = () => {
   const [result, setResult] = useState("");
   const [processing, setProcessing] = useState(false);
   const [copied, setCopied] = useState(false);
+
+  // Chat state
+  const [chatMessages, setChatMessages] = useState<ChatMessage[]>([]);
+  const [chatInput, setChatInput] = useState("");
+  const chatEndRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [chatMessages]);
 
   // Don't render for non-authenticated users
   if (loading || !user) return null;
@@ -75,7 +90,6 @@ const AdminToolbar = () => {
 
   const getPageContent = () => {
     if (inputText.trim()) return inputText;
-    // Grab visible page text as fallback
     const main = document.querySelector("main") || document.body;
     return main.innerText?.substring(0, 5000) || "";
   };
@@ -83,6 +97,29 @@ const AdminToolbar = () => {
   const handleGenerate = () => handleAIAction("page_improve", getPageContent(), "en");
   const handleTranslate = () => handleAIAction("translate", getPageContent(), targetLang);
   const handleSEO = () => handleAIAction("meta_optimize", getPageContent(), "en");
+
+  const handleChatSend = async () => {
+    if (!chatInput.trim() || processing) return;
+    const userMsg: ChatMessage = { role: "user", content: chatInput };
+    setChatMessages((prev) => [...prev, userMsg]);
+    setChatInput("");
+    setProcessing(true);
+    try {
+      const { data, error } = await supabase.functions.invoke("ai-universal", {
+        body: { jobType: "workspace_chat", content: chatInput, language: "en" },
+      });
+      if (error) throw error;
+      if (data?.error) throw new Error(data.error);
+      const res = data?.result;
+      const parsed = typeof res === "object" ? res : { explanation: res };
+      const reply = parsed.explanation || (typeof res === "string" ? res : JSON.stringify(res, null, 2));
+      setChatMessages((prev) => [...prev, { role: "assistant", content: reply }]);
+    } catch (err: any) {
+      setChatMessages((prev) => [...prev, { role: "assistant", content: `❌ Error: ${err.message}` }]);
+    } finally {
+      setProcessing(false);
+    }
+  };
 
   const copyResult = () => {
     navigator.clipboard.writeText(result);
@@ -107,38 +144,21 @@ const AdminToolbar = () => {
         <Sparkles className="h-4 w-4 text-[hsl(var(--secondary))]" />
         <span className="font-semibold mr-2">Admin AI Tools</span>
 
-        <Button
-          size="sm"
-          variant={activeTool === "generate" ? "secondary" : "ghost"}
-          className="h-7 text-xs text-white hover:text-white"
-          onClick={() => toggleTool("generate")}
-        >
-          <Sparkles className="h-3 w-3 mr-1" /> Generate / Improve
+        <Button size="sm" variant={activeTool === "generate" ? "secondary" : "ghost"} className="h-7 text-xs text-white hover:text-white" onClick={() => toggleTool("generate")}>
+          <Sparkles className="h-3 w-3 mr-1" /> Generate
         </Button>
-        <Button
-          size="sm"
-          variant={activeTool === "translate" ? "secondary" : "ghost"}
-          className="h-7 text-xs text-white hover:text-white"
-          onClick={() => toggleTool("translate")}
-        >
+        <Button size="sm" variant={activeTool === "translate" ? "secondary" : "ghost"} className="h-7 text-xs text-white hover:text-white" onClick={() => toggleTool("translate")}>
           <Languages className="h-3 w-3 mr-1" /> Translate
         </Button>
-        <Button
-          size="sm"
-          variant={activeTool === "seo" ? "secondary" : "ghost"}
-          className="h-7 text-xs text-white hover:text-white"
-          onClick={() => toggleTool("seo")}
-        >
-          <Search className="h-3 w-3 mr-1" /> SEO Optimize
+        <Button size="sm" variant={activeTool === "seo" ? "secondary" : "ghost"} className="h-7 text-xs text-white hover:text-white" onClick={() => toggleTool("seo")}>
+          <Search className="h-3 w-3 mr-1" /> SEO
+        </Button>
+        <Button size="sm" variant={activeTool === "chat" ? "secondary" : "ghost"} className="h-7 text-xs text-white hover:text-white" onClick={() => toggleTool("chat")}>
+          <MessageSquare className="h-3 w-3 mr-1" /> Chat
         </Button>
 
         <div className="ml-auto">
-          <Button
-            size="sm"
-            variant="ghost"
-            className="h-7 text-xs text-white hover:text-white"
-            onClick={() => { setExpanded(!expanded); if (!expanded) setActiveTool(null); }}
-          >
+          <Button size="sm" variant="ghost" className="h-7 text-xs text-white hover:text-white" onClick={() => { setExpanded(!expanded); if (!expanded) setActiveTool(null); }}>
             {expanded ? <ChevronUp className="h-3 w-3" /> : <ChevronDown className="h-3 w-3" />}
           </Button>
         </div>
@@ -149,60 +169,93 @@ const AdminToolbar = () => {
         <div className="bg-[hsl(var(--navy))] text-white border-t border-white/10 p-4 shadow-xl max-h-[60vh] overflow-y-auto">
           <div className="max-w-4xl mx-auto space-y-3">
             <div className="flex items-center justify-between">
-              <h3 className="font-semibold text-sm capitalize">
+              <h3 className="font-semibold text-sm">
                 {activeTool === "generate" && "✨ AI Content Generation & Improvement"}
                 {activeTool === "translate" && "🌐 AI Translation"}
                 {activeTool === "seo" && "🔍 SEO Meta Optimization"}
+                {activeTool === "chat" && "💬 AI Workspace Chat"}
               </h3>
               <Button size="sm" variant="ghost" className="h-6 w-6 p-0 text-white" onClick={() => { setActiveTool(null); setExpanded(false); }}>
                 <X className="h-4 w-4" />
               </Button>
             </div>
 
-            <Textarea
-              value={inputText}
-              onChange={(e) => setInputText(e.target.value)}
-              placeholder="Paste or type content here… (leave empty to use current page content)"
-              className="bg-white/10 border-white/20 text-white placeholder:text-white/40 text-sm min-h-[80px]"
-            />
-
-            <div className="flex items-center gap-3">
-              {activeTool === "translate" && (
-                <Select value={targetLang} onValueChange={setTargetLang}>
-                  <SelectTrigger className="w-48 bg-white/10 border-white/20 text-white text-sm h-8">
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {LANGUAGES.map((l) => (
-                      <SelectItem key={l.code} value={l.code}>{l.label}</SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              )}
-
-              <Button
-                size="sm"
-                className="bg-[hsl(var(--secondary))] hover:bg-[hsl(var(--accent))] text-white h-8"
-                onClick={activeTool === "generate" ? handleGenerate : activeTool === "translate" ? handleTranslate : handleSEO}
-                disabled={processing}
-              >
-                {processing ? <Loader2 className="h-3 w-3 animate-spin mr-1" /> : null}
-                {activeTool === "generate" ? "Improve Content" : activeTool === "translate" ? "Translate" : "Optimize SEO"}
-              </Button>
-            </div>
-
-            {result && (
-              <div className="relative bg-black/30 rounded-md p-3 text-sm whitespace-pre-wrap max-h-[30vh] overflow-y-auto">
-                <Button
-                  size="sm"
-                  variant="ghost"
-                  className="absolute top-2 right-2 h-6 text-xs text-white/70 hover:text-white"
-                  onClick={copyResult}
-                >
-                  {copied ? <Check className="h-3 w-3" /> : <Copy className="h-3 w-3" />}
-                </Button>
-                {result}
+            {/* Chat tool */}
+            {activeTool === "chat" ? (
+              <div className="space-y-3">
+                <div className="bg-black/30 rounded-md p-3 h-[250px] overflow-y-auto space-y-2">
+                  {chatMessages.length === 0 && (
+                    <div className="text-center text-white/40 py-10 text-xs">
+                      <Bot className="h-8 w-8 mx-auto mb-2 opacity-30" />
+                      <p>Geef een opdracht, bijv. "Maak een nieuwe pagina over SEO tips"</p>
+                    </div>
+                  )}
+                  {chatMessages.map((msg, i) => (
+                    <div key={i} className={`flex gap-2 ${msg.role === "user" ? "justify-end" : "justify-start"}`}>
+                      {msg.role === "assistant" && <Bot className="h-5 w-5 text-[hsl(var(--secondary))] mt-0.5 shrink-0" />}
+                      <div className={`max-w-[80%] rounded-lg px-3 py-2 text-xs ${msg.role === "user" ? "bg-[hsl(var(--secondary))]/80" : "bg-white/10"}`}>
+                        <pre className="whitespace-pre-wrap font-sans">{msg.content}</pre>
+                      </div>
+                      {msg.role === "user" && <User className="h-5 w-5 text-white/50 mt-0.5 shrink-0" />}
+                    </div>
+                  ))}
+                  <div ref={chatEndRef} />
+                </div>
+                <div className="flex gap-2">
+                  <Input
+                    value={chatInput}
+                    onChange={(e) => setChatInput(e.target.value)}
+                    onKeyDown={(e) => e.key === "Enter" && handleChatSend()}
+                    placeholder="Type een opdracht… bijv. 'Create 5 SEO pages for travel niche'"
+                    className="bg-white/10 border-white/20 text-white placeholder:text-white/40 text-sm h-8"
+                    disabled={processing}
+                  />
+                  <Button size="sm" className="bg-[hsl(var(--secondary))] hover:bg-[hsl(var(--accent))] text-white h-8" onClick={handleChatSend} disabled={processing || !chatInput.trim()}>
+                    {processing ? <Loader2 className="h-3 w-3 animate-spin" /> : <Send className="h-3 w-3" />}
+                  </Button>
+                </div>
               </div>
+            ) : (
+              <>
+                <Textarea
+                  value={inputText}
+                  onChange={(e) => setInputText(e.target.value)}
+                  placeholder="Paste or type content here… (leave empty to use current page content)"
+                  className="bg-white/10 border-white/20 text-white placeholder:text-white/40 text-sm min-h-[80px]"
+                />
+                <div className="flex items-center gap-3">
+                  {activeTool === "translate" && (
+                    <Select value={targetLang} onValueChange={setTargetLang}>
+                      <SelectTrigger className="w-48 bg-white/10 border-white/20 text-white text-sm h-8">
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {LANGUAGES.map((l) => (
+                          <SelectItem key={l.code} value={l.code}>{l.label}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  )}
+                  <Button
+                    size="sm"
+                    className="bg-[hsl(var(--secondary))] hover:bg-[hsl(var(--accent))] text-white h-8"
+                    onClick={activeTool === "generate" ? handleGenerate : activeTool === "translate" ? handleTranslate : handleSEO}
+                    disabled={processing}
+                  >
+                    {processing ? <Loader2 className="h-3 w-3 animate-spin mr-1" /> : null}
+                    {activeTool === "generate" ? "Improve Content" : activeTool === "translate" ? "Translate" : "Optimize SEO"}
+                  </Button>
+                </div>
+
+                {result && (
+                  <div className="relative bg-black/30 rounded-md p-3 text-sm whitespace-pre-wrap max-h-[30vh] overflow-y-auto">
+                    <Button size="sm" variant="ghost" className="absolute top-2 right-2 h-6 text-xs text-white/70 hover:text-white" onClick={copyResult}>
+                      {copied ? <Check className="h-3 w-3" /> : <Copy className="h-3 w-3" />}
+                    </Button>
+                    {result}
+                  </div>
+                )}
+              </>
             )}
           </div>
         </div>
