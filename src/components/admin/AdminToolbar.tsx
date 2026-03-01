@@ -4,7 +4,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import {
   Sparkles, Languages, Search, ChevronDown, ChevronUp,
-  Loader2, X, Copy, Check, MessageSquare, Send, Bot, User
+  Loader2, X, Copy, Check, MessageSquare, Send, Bot, User, CheckSquare, Square, Play
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
@@ -42,6 +42,8 @@ const LANGUAGES = [
   { code: "bn", label: "বাংলা" }, { code: "ms", label: "Bahasa Melayu" },
 ];
 
+const AI_PROVIDER = "openai";
+
 type ActiveTool = "generate" | "translate" | "seo" | "chat" | "clone" | null;
 
 interface ChatMessage {
@@ -58,7 +60,11 @@ const AdminToolbar = () => {
   const [result, setResult] = useState("");
   const [processing, setProcessing] = useState(false);
   const [copied, setCopied] = useState(false);
-  const [cloneLang, setCloneLang] = useState<string | null>(null);
+
+  // Bulk clone state
+  const [selectedLangs, setSelectedLangs] = useState<Set<string>>(new Set());
+  const [cloneProgress, setCloneProgress] = useState<Record<string, "pending" | "processing" | "done" | "error">>({});
+  const [bulkRunning, setBulkRunning] = useState(false);
 
   // Chat state
   const [chatMessages, setChatMessages] = useState<ChatMessage[]>([]);
@@ -80,7 +86,7 @@ const AdminToolbar = () => {
     setResult("");
     try {
       const { data, error } = await supabase.functions.invoke("ai-universal", {
-        body: { jobType, content, language: language || "en" },
+        body: { jobType, content, language: language || "en", provider: AI_PROVIDER },
       });
       if (error) throw error;
       if (data?.error) throw new Error(data.error);
@@ -105,33 +111,65 @@ const AdminToolbar = () => {
   const handleTranslate = () => handleAIAction("translate", getPageContent(), targetLang);
   const handleSEO = () => handleAIAction("meta_optimize", getPageContent(), "en");
 
-  const handleCloneTranslate = async (langCode: string) => {
-    setCloneLang(langCode);
-    const langLabel = LANGUAGES.find(l => l.code === langCode)?.label || langCode;
-    const pageContent = getPageContent();
-    if (!pageContent.trim()) {
-      toast.error("No page content found to clone");
-      setCloneLang(null);
+  const toggleLangSelection = (code: string) => {
+    setSelectedLangs((prev) => {
+      const next = new Set(prev);
+      if (next.has(code)) next.delete(code); else next.add(code);
+      return next;
+    });
+  };
+
+  const selectAllLangs = () => {
+    if (selectedLangs.size === LANGUAGES.length) {
+      setSelectedLangs(new Set());
+    } else {
+      setSelectedLangs(new Set(LANGUAGES.map((l) => l.code)));
+    }
+  };
+
+  const handleBulkCloneTranslate = async () => {
+    const langs = Array.from(selectedLangs);
+    if (langs.length === 0) {
+      toast.error("Selecteer eerst minimaal één taal");
       return;
     }
-    setProcessing(true);
-    setResult("");
-    try {
-      const { data, error } = await supabase.functions.invoke("ai-universal", {
-        body: { jobType: "clone_page", content: pageContent, language: langCode },
-      });
-      if (error) throw error;
-      if (data?.error) throw new Error(data.error);
-      const res = data?.result;
-      setResult(typeof res === "string" ? res : JSON.stringify(res, null, 2));
-      toast.success(`Page cloned & translated to ${langLabel}!`);
-    } catch (err: any) {
-      console.error("Clone error:", err);
-      toast.error(err.message || "Clone & translate failed");
-    } finally {
-      setProcessing(false);
-      setCloneLang(null);
+    const pageContent = getPageContent();
+    if (!pageContent.trim()) {
+      toast.error("Geen pagina-inhoud gevonden");
+      return;
     }
+
+    setBulkRunning(true);
+    setResult("");
+    const progress: Record<string, "pending" | "processing" | "done" | "error"> = {};
+    langs.forEach((l) => (progress[l] = "pending"));
+    setCloneProgress({ ...progress });
+
+    const results: string[] = [];
+
+    for (const langCode of langs) {
+      const langLabel = LANGUAGES.find((l) => l.code === langCode)?.label || langCode;
+      progress[langCode] = "processing";
+      setCloneProgress({ ...progress });
+
+      try {
+        const { data, error } = await supabase.functions.invoke("ai-universal", {
+          body: { jobType: "clone_page", content: pageContent, language: langCode, provider: AI_PROVIDER },
+        });
+        if (error) throw error;
+        if (data?.error) throw new Error(data.error);
+        progress[langCode] = "done";
+        results.push(`✅ ${langLabel}: OK`);
+      } catch (err: any) {
+        progress[langCode] = "error";
+        results.push(`❌ ${langLabel}: ${err.message}`);
+      }
+      setCloneProgress({ ...progress });
+    }
+
+    setResult(results.join("\n"));
+    toast.success(`Bulk clone & translate voltooid: ${langs.length} talen`);
+    setBulkRunning(false);
   };
 
   const handleChatSend = async () => {
@@ -142,7 +180,7 @@ const AdminToolbar = () => {
     setProcessing(true);
     try {
       const { data, error } = await supabase.functions.invoke("ai-universal", {
-        body: { jobType: "workspace_chat", content: chatInput, language: "en" },
+        body: { jobType: "workspace_chat", content: chatInput, language: "en", provider: AI_PROVIDER },
       });
       if (error) throw error;
       if (data?.error) throw new Error(data.error);
@@ -171,6 +209,7 @@ const AdminToolbar = () => {
       setExpanded(true);
     }
     setResult("");
+    setCloneProgress({});
   };
 
   return (
@@ -212,7 +251,7 @@ const AdminToolbar = () => {
                 {activeTool === "generate" && "✨ AI Content Generation & Improvement"}
                 {activeTool === "translate" && "🌐 AI Translation"}
                 {activeTool === "seo" && "🔍 SEO Meta Optimization"}
-                {activeTool === "clone" && "📄 Clone & Translate Page"}
+                {activeTool === "clone" && "📄 Clone & Translate Page (Bulk)"}
                 {activeTool === "chat" && "💬 AI Workspace Chat"}
               </h3>
               <Button size="sm" variant="ghost" className="h-6 w-6 p-0 text-white" onClick={() => { setActiveTool(null); setExpanded(false); }}>
@@ -220,39 +259,77 @@ const AdminToolbar = () => {
               </Button>
             </div>
 
-            {/* Clone & Translate tool */}
+            {/* Clone & Translate tool with bulk selection */}
             {activeTool === "clone" && (
               <div className="space-y-3">
-                <p className="text-xs text-white/60">Klik op een vlag om de huidige pagina te klonen en vertalen naar die taal.</p>
+                <div className="flex items-center gap-3">
+                  <p className="text-xs text-white/60 flex-1">Selecteer talen en klik Start om de huidige pagina te klonen & vertalen. Alles via OpenAI.</p>
+                  <Button size="sm" variant="ghost" className="h-7 text-xs text-white/70 hover:text-white" onClick={selectAllLangs}>
+                    {selectedLangs.size === LANGUAGES.length ? <CheckSquare className="h-3 w-3 mr-1" /> : <Square className="h-3 w-3 mr-1" />}
+                    {selectedLangs.size === LANGUAGES.length ? "Deselecteer alles" : "Selecteer alles"}
+                  </Button>
+                </div>
+
                 <div className="flex flex-wrap gap-2 justify-center">
                   {LANGUAGES.map(({ code, label }) => {
                     const FlagComponent = flagComponents[code];
-                    const isProcessingThis = processing && cloneLang === code;
+                    const isSelected = selectedLangs.has(code);
+                    const status = cloneProgress[code];
                     return (
                       <button
                         key={code}
-                        onClick={() => !processing && handleCloneTranslate(code)}
-                        disabled={processing}
+                        onClick={() => !bulkRunning && toggleLangSelection(code)}
+                        disabled={bulkRunning}
                         className={`
                           relative w-9 h-7 rounded-sm overflow-hidden border transition-all duration-200 
                           hover:scale-110 hover:shadow-md p-0.5 cursor-pointer
-                          ${isProcessingThis
+                          ${isSelected
                             ? "border-[hsl(var(--secondary))] shadow-md shadow-[hsl(var(--secondary))]/30 scale-105 ring-1 ring-[hsl(var(--secondary))]/50"
-                            : "border-white/20 opacity-85 hover:opacity-100 hover:border-white/60"
+                            : "border-white/20 opacity-60 hover:opacity-100 hover:border-white/60"
                           }
-                          ${processing && !isProcessingThis ? "opacity-40 cursor-not-allowed" : ""}
+                          ${bulkRunning ? "cursor-not-allowed" : ""}
                         `}
-                        title={`Clone & Translate → ${label}`}
+                        title={`${label}${isSelected ? " ✓" : ""}`}
                       >
                         {FlagComponent ? <FlagComponent /> : <span className="text-[10px]">{code}</span>}
-                        {isProcessingThis && (
+                        {/* Status overlay */}
+                        {status === "processing" && (
                           <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
                             <Loader2 className="h-3 w-3 animate-spin text-white" />
+                          </div>
+                        )}
+                        {status === "done" && (
+                          <div className="absolute inset-0 bg-green-600/60 flex items-center justify-center">
+                            <Check className="h-3 w-3 text-white" />
+                          </div>
+                        )}
+                        {status === "error" && (
+                          <div className="absolute inset-0 bg-red-600/60 flex items-center justify-center">
+                            <X className="h-3 w-3 text-white" />
+                          </div>
+                        )}
+                        {/* Selection checkmark */}
+                        {isSelected && !status && (
+                          <div className="absolute top-0 right-0 bg-[hsl(var(--secondary))] rounded-bl-sm">
+                            <Check className="h-2.5 w-2.5 text-white" />
                           </div>
                         )}
                       </button>
                     );
                   })}
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <span className="text-xs text-white/50">{selectedLangs.size} talen geselecteerd</span>
+                  <Button
+                    size="sm"
+                    className="bg-[hsl(var(--secondary))] hover:bg-[hsl(var(--accent))] text-white h-8"
+                    onClick={handleBulkCloneTranslate}
+                    disabled={bulkRunning || selectedLangs.size === 0}
+                  >
+                    {bulkRunning ? <Loader2 className="h-3 w-3 animate-spin mr-1" /> : <Play className="h-3 w-3 mr-1" />}
+                    Start Clone & Translate ({selectedLangs.size})
+                  </Button>
                 </div>
 
                 <Textarea
