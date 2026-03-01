@@ -70,6 +70,7 @@ const Dropshipping = lazyRetry(() => import("./pages/Dropshipping"));
 const Elearning = lazyRetry(() => import("./pages/Elearning"));
 const Nonprofit = lazyRetry(() => import("./pages/Nonprofit"));
 const NonprofitDE = lazyRetry(() => import("./pages/NonprofitDE"));
+const NonprofitFR = lazyRetry(() => import("./pages/NonprofitFR"));
 const StreamingMedia = lazyRetry(() => import("./pages/StreamingMedia"));
 const ComparisonReview = lazyRetry(() => import("./pages/ComparisonReview"));
 const NewsMagazine = lazyRetry(() => import("./pages/NewsMagazine"));
@@ -221,6 +222,7 @@ const App = () => (
             <Route path="/elearning-platform-legal-documents-terms-privacy-policy-gdpr-compliance" element={<Elearning />} />
             <Route path="/nonprofit-charity-legal-documents-donation-terms-privacy-policy" element={<Nonprofit />} />
             <Route path="/de/gemeinnuetzige-organisation-rechtliche-dokumente-spendenbedingungen-datenschutz" element={<NonprofitDE />} />
+            <Route path="/fr/association-documents-juridiques-conditions-don-politique-confidentialite" element={<NonprofitFR />} />
             <Route path="/streaming-media-legal-documents-terms-conditions-privacy-policy-dmca-content-license" element={<StreamingMedia />} />
             <Route path="/comparison-review-website-legal-documents-terms-privacy-affiliate-disclosure-disclaimer" element={<ComparisonReview />} />
             <Route path="/news-magazine-legal-documents-terms-conditions-privacy-policy-copyright-editorial-policy" element={<NewsMagazine />} />
