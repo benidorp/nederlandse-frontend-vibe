@@ -22,6 +22,12 @@ const NonprofitDE = () => {
         description="Vollständiger Rechtsschutz für gemeinnützige Organisationen. DSGVO-konforme Datenschutzrichtlinie, Spendenbedingungen, Freiwilligenvereinbarungen und Spendenoffenlegung. Schützen Sie Ihre Mission noch heute für €79."
         canonical="https://www.iaee.eu/de/gemeinnuetzige-organisation-rechtliche-dokumente-spendenbedingungen-datenschutz"
         lang="de"
+        hreflangLinks={[
+          { lang: "en", url: "https://www.iaee.eu/nonprofit-charity-legal-documents-donation-terms-privacy-policy" },
+          { lang: "de", url: "https://www.iaee.eu/de/gemeinnuetzige-organisation-rechtliche-dokumente-spendenbedingungen-datenschutz" },
+          { lang: "fr", url: "https://www.iaee.eu/fr/association-documents-juridiques-conditions-don-politique-confidentialite" },
+        ]}
+        xDefaultUrl="https://www.iaee.eu/nonprofit-charity-legal-documents-donation-terms-privacy-policy"
         ogType="product"
         serviceName="Rechtsdokumente für gemeinnützige Organisationen"
         serviceDescription="Vollständiger Rechtsschutz für gemeinnützige Organisationen einschließlich Spendenbedingungen, Datenschutzrichtlinie und Freiwilligenvereinbarungen."

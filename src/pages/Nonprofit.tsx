@@ -25,6 +25,12 @@ const Nonprofit = () => {
         description="Complete legal protection for charitable organizations. GDPR-compliant privacy policy, donation terms, volunteer agreements, and fundraising disclosure. Protect your mission today for €79."
         canonical="https://www.iaee.eu/nonprofit-charity-legal-documents-donation-terms-privacy-policy"
         lang="en"
+        hreflangLinks={[
+          { lang: "en", url: "https://www.iaee.eu/nonprofit-charity-legal-documents-donation-terms-privacy-policy" },
+          { lang: "de", url: "https://www.iaee.eu/de/gemeinnuetzige-organisation-rechtliche-dokumente-spendenbedingungen-datenschutz" },
+          { lang: "fr", url: "https://www.iaee.eu/fr/association-documents-juridiques-conditions-don-politique-confidentialite" },
+        ]}
+        xDefaultUrl="https://www.iaee.eu/nonprofit-charity-legal-documents-donation-terms-privacy-policy"
         ogType="product"
         serviceName="Non-Profit Legal Documents"
         serviceDescription="Complete legal protection for charitable organizations including Donation Terms, Privacy Policy, and Volunteer Agreements."
