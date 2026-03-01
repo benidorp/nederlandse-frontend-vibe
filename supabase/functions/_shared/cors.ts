@@ -1,6 +1,7 @@
 const ALLOWED_ORIGINS = [
   "https://nederlandse-frontend-vibe.lovable.app",
   "https://id-preview--5b060d0c-1cc2-4ae2-9b34-5f25fafaaaea.lovable.app",
+  "https://5b060d0c-1cc2-4ae2-9b34-5f25fafaaaea.lovableproject.com",
   "http://localhost:5173",
   "http://localhost:8080",
 ];
