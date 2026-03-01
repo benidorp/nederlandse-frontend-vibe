@@ -56,10 +56,7 @@ async function decryptApiKey(ciphertext: string): Promise<string> {
   }
 }
 
-const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type, x-supabase-client-platform, x-supabase-client-platform-version, x-supabase-client-runtime, x-supabase-client-runtime-version",
-};
+import { getCorsHeaders, handleCorsPreflightIfNeeded } from "../_shared/cors.ts";
 
 // Provider configs
 const PROVIDERS = {
@@ -218,9 +215,9 @@ async function callProvider(
 }
 
 serve(async (req) => {
-  if (req.method === "OPTIONS") {
-    return new Response(null, { headers: corsHeaders });
-  }
+  const preflight = handleCorsPreflightIfNeeded(req);
+  if (preflight) return preflight;
+  const corsHeaders = getCorsHeaders(req);
 
   const authHeader = req.headers.get("Authorization");
   if (!authHeader?.startsWith("Bearer ")) {
