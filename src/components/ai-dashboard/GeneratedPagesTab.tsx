@@ -128,7 +128,7 @@ const GeneratedPagesTab = () => {
                 </div>
               )}
               <div className="border rounded-lg p-4 max-h-[500px] overflow-auto">
-                <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(selectedPage.html_content, { ALLOWED_TAGS: ['p', 'br', 'strong', 'em', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol', 'li', 'a', 'blockquote', 'code', 'pre', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'span', 'div', 'img', 'section', 'header', 'footer', 'nav', 'article'], ALLOWED_ATTR: ['href', 'class', 'id', 'src', 'alt', 'title', 'style'], ALLOW_DATA_ATTR: false }) }} />
+                <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(selectedPage.html_content, { ALLOWED_TAGS: ['p', 'br', 'strong', 'em', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol', 'li', 'a', 'blockquote', 'code', 'pre', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'span', 'div', 'img', 'section', 'header', 'footer', 'nav', 'article'], ALLOWED_ATTR: ['href', 'class', 'id', 'src', 'alt', 'title'], ALLOW_DATA_ATTR: false }) }} />
               </div>
             </div>
           ) : (
