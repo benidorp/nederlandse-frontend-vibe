@@ -1,14 +1,21 @@
-const ALLOWED_ORIGINS = [
+const STATIC_ORIGINS = [
   "https://nederlandse-frontend-vibe.lovable.app",
-  "https://id-preview--5b060d0c-1cc2-4ae2-9b34-5f25fafaaaea.lovable.app",
-  "https://5b060d0c-1cc2-4ae2-9b34-5f25fafaaaea.lovableproject.com",
   "http://localhost:5173",
   "http://localhost:8080",
 ];
 
+function isAllowedOrigin(origin: string): boolean {
+  if (STATIC_ORIGINS.includes(origin)) return true;
+  // Allow all Lovable preview/project domains
+  if (/^https:\/\/[a-z0-9-]+\.lovable\.app$/.test(origin)) return true;
+  if (/^https:\/\/[a-z0-9-]+\.lovableproject\.com$/.test(origin)) return true;
+  if (/^https:\/\/id-preview--[a-z0-9-]+\.lovable\.app$/.test(origin)) return true;
+  return false;
+}
+
 export function getCorsHeaders(req: Request): Record<string, string> {
   const origin = req.headers.get("Origin") || "";
-  const allowedOrigin = ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0];
+  const allowedOrigin = isAllowedOrigin(origin) ? origin : STATIC_ORIGINS[0];
   return {
     "Access-Control-Allow-Origin": allowedOrigin,
     "Access-Control-Allow-Headers":
