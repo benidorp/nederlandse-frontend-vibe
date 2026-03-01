@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import LanguageDetector from "./components/LanguageDetector";
+import AdminToolbar from "./components/admin/AdminToolbar";
 
 // Retry wrapper for lazy imports - handles stale chunk errors after deployments
 const lazyRetry = (importFn: () => Promise<any>) =>
@@ -170,6 +171,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <AdminToolbar />
         <LanguageDetector />
         <Suspense fallback={<div className="min-h-screen" />}>
           <Routes>
