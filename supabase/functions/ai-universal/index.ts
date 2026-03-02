@@ -120,7 +120,7 @@ const COST_MAP: Record<string, { input: number; output: number }> = {
 
 // Task -> model tier mapping
 const TASK_TIER: Record<string, string> = {
-  translate: "fast",
+  translate: "powerful",
   meta_optimize: "fast",
   alt_text: "fast",
   internal_links: "fast",
@@ -143,10 +143,16 @@ CRITICAL RULES:
 - Return ONLY the translated HTML content, nothing else
 - Do NOT wrap output in markdown code blocks (\`\`\`html or \`\`\`)
 - Do NOT add any explanation or commentary
-- Preserve ALL HTML tags, classes, attributes, links, and images exactly as-is
-- Only translate visible human-readable text (headings, paragraphs, button labels, alt text, placeholders)
+- Preserve ALL HTML tags, classes, attributes, links, images, SVGs, iframes, forms, buttons, and inputs exactly as-is
+- Preserve ALL inline styles, data attributes, and CSS classes unchanged
+- Preserve ALL href URLs, src URLs, and any embedded scripts (e.g. stripe-buy-button) byte-for-byte
+- Only translate visible human-readable text (headings, paragraphs, button labels, alt text, placeholders, aria-labels, title attributes)
 - Do NOT translate class names, IDs, href URLs, src URLs, or any code
-- The output must be valid HTML that can be directly inserted into a page`,
+- Do NOT remove, add, restructure, or simplify ANY HTML elements
+- The output HTML must have the EXACT same number of elements as the input
+- The rendered output must be visually IDENTICAL to the original, only in ${language}
+- The output must be valid HTML that can be directly inserted into a page
+- Do NOT truncate — output the COMPLETE translated HTML`,
     blog: `You are an expert SEO content writer. Write a comprehensive, SEO-optimized blog article in ${language}. Include proper H1/H2/H3 structure. Return as JSON with fields: title, metaTitle, metaDescription, content (HTML), faqItems (array of {question, answer}), suggestedLinks (array).`,
     meta_optimize: `You are an SEO meta tag specialist. Generate optimized meta tags for the given page content in ${language}. Return JSON with: metaTitle (max 60 chars), metaDescription (max 160 chars), ogTitle, ogDescription, keywords (array).`,
     alt_text: `You are an image SEO specialist. Generate descriptive, SEO-optimized alt text in ${language}. Return JSON array: [{imageDescription, altText, title}].`,
@@ -486,8 +492,8 @@ serve(async (req) => {
     let result;
     try {
       result = await callProvider(provider, apiKey, model, systemPrompt, userContent, {
-        temperature: jobType === "translate" ? 0.3 : 0.7,
-        maxTokens: jobType === "clone_page" ? 16384 : ["blog", "create_page", "domain_generate"].includes(jobType) ? 8000 : 4000,
+        temperature: ["translate", "clone_page"].includes(jobType) ? 0.3 : 0.7,
+        maxTokens: ["clone_page", "translate"].includes(jobType) ? 16384 : ["blog", "create_page", "domain_generate"].includes(jobType) ? 8000 : 4000,
       });
     } catch (err: any) {
       // Fallback on error
@@ -499,8 +505,8 @@ serve(async (req) => {
           provider = "lovable";
           model = fallbackModel;
           result = await callProvider("lovable", fallbackKey, fallbackModel, systemPrompt, userContent, {
-            temperature: jobType === "translate" ? 0.3 : 0.7,
-            maxTokens: jobType === "clone_page" ? 16384 : ["blog", "create_page", "domain_generate"].includes(jobType) ? 8000 : 4000,
+            temperature: ["translate", "clone_page"].includes(jobType) ? 0.3 : 0.7,
+            maxTokens: ["clone_page", "translate"].includes(jobType) ? 16384 : ["blog", "create_page", "domain_generate"].includes(jobType) ? 8000 : 4000,
           });
         }
       }
