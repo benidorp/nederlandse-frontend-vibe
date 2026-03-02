@@ -213,12 +213,34 @@ const AdminToolbar = () => {
         // Parse the AI result
         let parsed: any = {};
         try {
-          const resultStr = typeof data.result === "string" ? data.result : JSON.stringify(data.result);
-          // Strip markdown code block if present
-          const cleaned = resultStr.replace(/^```json\n?/, "").replace(/\n?```$/, "");
-          parsed = JSON.parse(cleaned);
+          if (typeof data.result === "object" && data.result !== null) {
+            // Already parsed by edge function
+            parsed = data.result;
+          } else {
+            const resultStr = typeof data.result === "string" ? data.result : JSON.stringify(data.result);
+            // Strip markdown code block if present
+            const cleaned = resultStr.replace(/^```(?:json|html)?\s*\n?/i, "").replace(/\n?```\s*$/i, "").trim();
+            parsed = JSON.parse(cleaned);
+          }
         } catch {
-          parsed = { htmlContent: data.result, title: currentTitle, slug: "" };
+          // If JSON parse fails, try regex extraction for htmlContent
+          const rawStr = typeof data.result === "string" ? data.result : JSON.stringify(data.result);
+          const htmlMatch = rawStr.match(/"htmlContent"\s*:\s*"([\s\S]*?)"\s*\}$/);
+          if (htmlMatch) {
+            const titleMatch = rawStr.match(/"title"\s*:\s*"([^"]+)"/);
+            const slugMatch = rawStr.match(/"slug"\s*:\s*"([^"]+)"/);
+            const metaTitleMatch = rawStr.match(/"metaTitle"\s*:\s*"([^"]+)"/);
+            const metaDescMatch = rawStr.match(/"metaDescription"\s*:\s*"([^"]+)"/);
+            parsed = {
+              htmlContent: htmlMatch[1].replace(/\\n/g, "\n").replace(/\\"/g, '"').replace(/\\\\/g, "\\"),
+              title: titleMatch?.[1] || currentTitle,
+              slug: slugMatch?.[1] || "",
+              metaTitle: metaTitleMatch?.[1] || "",
+              metaDescription: metaDescMatch?.[1] || "",
+            };
+          } else {
+            parsed = { htmlContent: rawStr, title: currentTitle, slug: "" };
+          }
         }
 
         // Build the slug for the translated page

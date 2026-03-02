@@ -544,10 +544,33 @@ serve(async (req) => {
     let parsedResult: any = rawContent;
     try {
       parsedResult = JSON.parse(rawContent);
-    } catch { /* not JSON, keep as string */ }
+    } catch {
+      // JSON.parse failed — try to extract htmlContent via regex for clone_page
+      if (["clone_page", "create_page"].includes(jobType)) {
+        const htmlMatch = rawContent.match(/"htmlContent"\s*:\s*"([\s\S]*?)"\s*\}$/);
+        if (htmlMatch) {
+          // Extract fields manually
+          const titleMatch = rawContent.match(/"title"\s*:\s*"([^"]+)"/);
+          const slugMatch = rawContent.match(/"slug"\s*:\s*"([^"]+)"/);
+          const metaTitleMatch = rawContent.match(/"metaTitle"\s*:\s*"([^"]+)"/);
+          const metaDescMatch = rawContent.match(/"metaDescription"\s*:\s*"([^"]+)"/);
+          const htmlContent = htmlMatch[1]
+            .replace(/\\n/g, "\n")
+            .replace(/\\"/g, '"')
+            .replace(/\\\\/g, "\\");
+          parsedResult = {
+            title: titleMatch?.[1] || "Untitled",
+            slug: slugMatch?.[1] || "untitled",
+            metaTitle: metaTitleMatch?.[1] || "",
+            metaDescription: metaDescMatch?.[1] || "",
+            htmlContent,
+          };
+        }
+      }
+    }
 
-    // Auto-create page if applicable
-    if (["create_page", "clone_page", "domain_generate"].includes(jobType) && typeof parsedResult === "object") {
+    // Auto-create page if applicable (skip clone_page — the toolbar handles that with proper slug)
+    if (["create_page", "domain_generate"].includes(jobType) && typeof parsedResult === "object") {
       if (jobType === "domain_generate" && parsedResult.pages) {
         for (const page of parsedResult.pages) {
           await supabase.from("ai_generated_pages").insert({
