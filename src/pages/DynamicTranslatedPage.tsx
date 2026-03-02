@@ -63,6 +63,9 @@ const DynamicTranslatedPage = () => {
 
   const sanitizedHtml = DOMPurify.sanitize(page.html_content);
 
+  // Check if content has its own sections (full-page clone) vs simple content
+  const isFullPageClone = sanitizedHtml.includes('<section');
+
   return (
     <>
       <Helmet>
@@ -73,6 +76,8 @@ const DynamicTranslatedPage = () => {
         <meta property="og:description" content={page.meta_description || ""} />
         <meta property="og:type" content="website" />
         <html lang={lang} />
+        {/* Load Stripe JS for buy buttons in cloned pages */}
+        <script async src="https://js.stripe.com/v3/buy-button.js"></script>
       </Helmet>
 
       <div className="min-h-screen">
@@ -80,9 +85,15 @@ const DynamicTranslatedPage = () => {
         {vertical && (
           <VerticalLanguageSwitcher vertical={vertical} currentLang={lang} />
         )}
-        <main className="container mx-auto px-4 py-8 max-w-4xl prose prose-lg dark:prose-invert">
-          <div dangerouslySetInnerHTML={{ __html: sanitizedHtml }} />
-        </main>
+        {isFullPageClone ? (
+          <main>
+            <div dangerouslySetInnerHTML={{ __html: sanitizedHtml }} />
+          </main>
+        ) : (
+          <main className="container mx-auto px-4 py-8 max-w-4xl prose prose-lg dark:prose-invert">
+            <div dangerouslySetInnerHTML={{ __html: sanitizedHtml }} />
+          </main>
+        )}
         <FooterEN />
       </div>
     </>
