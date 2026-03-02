@@ -75,10 +75,10 @@ const PROVIDERS = {
     url: "https://api.openai.com/v1/chat/completions",
     getKey: () => Deno.env.get("OPENAI_API_KEY"),
     models: {
-      fast: "gpt-3.5-turbo",
-      standard: "gpt-4",
-      powerful: "gpt-4",
-      cheapest: "gpt-3.5-turbo",
+      fast: "gpt-4o-mini",
+      standard: "gpt-4o",
+      powerful: "gpt-4o",
+      cheapest: "gpt-4o-mini",
     },
   },
   claude: {
@@ -95,6 +95,8 @@ const PROVIDERS = {
 
 // Cost per 1K tokens
 const COST_MAP: Record<string, { input: number; output: number }> = {
+  "gpt-4o-mini": { input: 0.00015, output: 0.0006 },
+  "gpt-4o": { input: 0.0025, output: 0.01 },
   "gpt-3.5-turbo": { input: 0.0005, output: 0.0015 },
   "gpt-4": { input: 0.03, output: 0.06 },
   "google/gemini-3-flash-preview": { input: 0.0001, output: 0.0004 },
@@ -435,7 +437,7 @@ serve(async (req) => {
     try {
       result = await callProvider(provider, apiKey, model, systemPrompt, userContent, {
         temperature: jobType === "translate" ? 0.3 : 0.7,
-        maxTokens: jobType === "clone_page" ? 64000 : ["blog", "create_page", "domain_generate"].includes(jobType) ? 8000 : 4000,
+        maxTokens: jobType === "clone_page" ? 16384 : ["blog", "create_page", "domain_generate"].includes(jobType) ? 8000 : 4000,
       });
     } catch (err: any) {
       // Fallback on error
@@ -448,7 +450,7 @@ serve(async (req) => {
           model = fallbackModel;
           result = await callProvider("lovable", fallbackKey, fallbackModel, systemPrompt, userContent, {
             temperature: jobType === "translate" ? 0.3 : 0.7,
-            maxTokens: jobType === "clone_page" ? 64000 : ["blog", "create_page", "domain_generate"].includes(jobType) ? 8000 : 4000,
+            maxTokens: jobType === "clone_page" ? 16384 : ["blog", "create_page", "domain_generate"].includes(jobType) ? 8000 : 4000,
           });
         }
       }
