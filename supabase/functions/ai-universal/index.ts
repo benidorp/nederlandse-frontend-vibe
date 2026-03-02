@@ -171,9 +171,12 @@ ABSOLUTE RULES:
 - The rendered output must be visually IDENTICAL to the original, only in ${language}
 
 CRITICAL OUTPUT FORMAT:
-- Return ONLY raw JSON (no markdown code blocks, no \`\`\`json wrapper, no explanation)
-- The JSON must have these fields: title, slug (SEO-friendly in ${language}), metaTitle (max 60 chars), metaDescription (max 160 chars), htmlContent (the COMPLETE translated HTML, every single element)
-- The htmlContent value must contain the full translated HTML ready for direct insertion into a page`,
+- Return ONLY the translated HTML — nothing else
+- Do NOT wrap in markdown code blocks (\`\`\`html or \`\`\`)  
+- Do NOT return JSON
+- Do NOT add any explanation, commentary, or metadata
+- The output must start with the first HTML tag and end with the last HTML tag
+- It must be valid HTML ready for direct insertion into a web page`,
     domain_generate: `You are a premium domain website generator specializing in expired domain monetization. Generate a complete website structure for domain "${extraContext?.domain}" in niche "${extraContext?.niche}" with keywords "${extraContext?.keywords}" in ${language}. Return JSON: {pages: [{title, slug, metaTitle, metaDescription, htmlContent, type}], blogStructure: [{title, slug}], internalLinks: [{from, to, anchorText}]}.`,
     generate_faq: `You are an FAQ generator. Create comprehensive FAQ items in ${language}. Return JSON: {faqItems: [{question, answer}]}.`,
     schema_markup: `You are a schema markup expert. Generate JSON-LD structured data. Return valid JSON-LD.`,
