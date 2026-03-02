@@ -349,6 +349,11 @@ serve(async (req) => {
     const fallbackEnabled = prefs?.fallback_enabled !== false;
     let provider = requestedProvider || prefs?.default_provider || "lovable";
 
+    // Force clone_page and translate to use Lovable AI (Gemini) — much faster, avoids OpenAI timeouts
+    if (["clone_page", "translate"].includes(jobType)) {
+      provider = "lovable";
+    }
+
     // Determine model
     const tier = lowCostMode ? "cheapest" : (TASK_TIER[jobType] || "standard");
     const providerConfig = PROVIDERS[provider as keyof typeof PROVIDERS] || PROVIDERS.lovable;
