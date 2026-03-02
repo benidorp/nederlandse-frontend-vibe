@@ -43,7 +43,7 @@ const LANGUAGES = [
   { code: "bn", label: "বাংলা" }, { code: "ms", label: "Bahasa Melayu" },
 ];
 
-const AI_PROVIDER = "openai";
+const AI_PROVIDER = "gemini";
 
 type ActiveTool = "generate" | "translate" | "seo" | "chat" | "clone" | null;
 
@@ -381,7 +381,7 @@ const AdminToolbar = () => {
             {activeTool === "clone" && (
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
-                  <p className="text-xs text-white/60 flex-1">Selecteer talen en klik Start om de huidige pagina te klonen & vertalen. Alles via OpenAI.</p>
+                  <p className="text-xs text-white/60 flex-1">Selecteer talen en klik Start om de huidige pagina te klonen & vertalen. Alles via Gemini AI.</p>
                   <Button size="sm" variant="ghost" className="h-7 text-xs text-white/70 hover:text-white" onClick={selectAllLangs}>
                     {selectedLangs.size === LANGUAGES.length ? <CheckSquare className="h-3 w-3 mr-1" /> : <Square className="h-3 w-3 mr-1" />}
                     {selectedLangs.size === LANGUAGES.length ? "Deselecteer alles" : "Selecteer alles"}
