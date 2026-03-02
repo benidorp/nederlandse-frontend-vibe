@@ -210,52 +210,45 @@ const AdminToolbar = () => {
         if (error) throw error;
         if (data?.error) throw new Error(data.error);
         
-        // Parse the AI result
-        let parsed: any = {};
-        try {
-          if (typeof data.result === "object" && data.result !== null) {
-            // Already parsed by edge function
-            parsed = data.result;
-          } else {
-            const resultStr = typeof data.result === "string" ? data.result : JSON.stringify(data.result);
-            // Strip markdown code block if present
-            const cleaned = resultStr.replace(/^```(?:json|html)?\s*\n?/i, "").replace(/\n?```\s*$/i, "").trim();
-            parsed = JSON.parse(cleaned);
+        // The clone_page now returns raw HTML (not JSON), so handle accordingly
+        let htmlContent = "";
+        let pageTitle = `${currentTitle} (${langLabel})`;
+        let metaTitle = "";
+        let metaDescription = "";
+        
+        const rawResult = typeof data.result === "string" ? data.result : JSON.stringify(data.result);
+        // Strip any markdown code block wrappers
+        const cleanedResult = rawResult.replace(/^```(?:json|html)?\s*\n?/i, "").replace(/\n?```\s*$/i, "").trim();
+        
+        // Check if the result is JSON (legacy) or raw HTML (new approach)
+        if (cleanedResult.startsWith("{") && cleanedResult.includes('"htmlContent"')) {
+          // Legacy JSON response — try to parse
+          try {
+            const parsed = typeof data.result === "object" ? data.result : JSON.parse(cleanedResult);
+            htmlContent = parsed.htmlContent || parsed.content || cleanedResult;
+            pageTitle = parsed.title || pageTitle;
+            metaTitle = parsed.metaTitle || "";
+            metaDescription = parsed.metaDescription || "";
+          } catch {
+            htmlContent = cleanedResult;
           }
-        } catch {
-          // If JSON parse fails, try regex extraction for htmlContent
-          const rawStr = typeof data.result === "string" ? data.result : JSON.stringify(data.result);
-          const htmlMatch = rawStr.match(/"htmlContent"\s*:\s*"([\s\S]*?)"\s*\}$/);
-          if (htmlMatch) {
-            const titleMatch = rawStr.match(/"title"\s*:\s*"([^"]+)"/);
-            const slugMatch = rawStr.match(/"slug"\s*:\s*"([^"]+)"/);
-            const metaTitleMatch = rawStr.match(/"metaTitle"\s*:\s*"([^"]+)"/);
-            const metaDescMatch = rawStr.match(/"metaDescription"\s*:\s*"([^"]+)"/);
-            parsed = {
-              htmlContent: htmlMatch[1].replace(/\\n/g, "\n").replace(/\\"/g, '"').replace(/\\\\/g, "\\"),
-              title: titleMatch?.[1] || currentTitle,
-              slug: slugMatch?.[1] || "",
-              metaTitle: metaTitleMatch?.[1] || "",
-              metaDescription: metaDescMatch?.[1] || "",
-            };
-          } else {
-            parsed = { htmlContent: rawStr, title: currentTitle, slug: "" };
-          }
+        } else {
+          // Raw HTML response (new approach) — use directly
+          htmlContent = cleanedResult;
         }
 
         // Build the slug for the translated page
         const baseSlug = currentPath.split("/").pop() || "page";
-        const translatedSlug = parsed.slug || baseSlug;
-        const fullPath = `/${langCode}/${translatedSlug}`;
+        const fullPath = `/${langCode}/${baseSlug}`;
         
         // Save the translated page to the database
         const { error: insertError } = await supabase.from("ai_generated_pages").insert({
-          title: parsed.title || parsed.metaTitle || `${currentTitle} (${langLabel})`,
+          title: pageTitle,
           slug: fullPath,
-          html_content: parsed.htmlContent || parsed.content || (typeof data.result === "string" ? data.result : ""),
+          html_content: htmlContent,
           language: langCode,
-          meta_title: parsed.metaTitle || parsed.title || "",
-          meta_description: parsed.metaDescription || "",
+          meta_title: metaTitle || pageTitle,
+          meta_description: metaDescription,
           status: "published",
           user_id: user!.id,
           niche: vertical || "general",
@@ -269,10 +262,10 @@ const AdminToolbar = () => {
           if (insertError.code === "23505") {
             await supabase.from("ai_generated_pages")
               .update({
-                html_content: parsed.htmlContent || parsed.content || (typeof data.result === "string" ? data.result : ""),
-                meta_title: parsed.metaTitle || parsed.title || "",
-                meta_description: parsed.metaDescription || "",
-                title: parsed.title || parsed.metaTitle || `${currentTitle} (${langLabel})`,
+                html_content: htmlContent,
+                meta_title: metaTitle || pageTitle,
+                meta_description: metaDescription,
+                title: pageTitle,
               })
               .eq("slug", fullPath)
               .eq("user_id", user!.id);
