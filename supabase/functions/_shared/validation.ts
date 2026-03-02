@@ -65,7 +65,7 @@ export function validateApiKey(apiKey: unknown): string | null {
 
 export function validateProvider(provider: unknown): string | null {
   if (typeof provider !== "string") return "provider must be a string";
-  const validProviders = ["openai", "claude", "custom", "lovable"];
+  const validProviders = ["openai", "claude", "custom", "lovable", "gemini"];
   if (!validProviders.includes(provider)) return `Invalid provider. Must be one of: ${validProviders.join(", ")}`;
   return null;
 }

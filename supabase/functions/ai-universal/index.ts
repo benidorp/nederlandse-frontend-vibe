@@ -91,6 +91,16 @@ const PROVIDERS = {
       cheapest: "claude-3-haiku-20240307",
     },
   },
+  gemini: {
+    url: "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
+    getKey: () => Deno.env.get("GEMINI_API_KEY"),
+    models: {
+      fast: "gemini-2.5-flash-preview-05-20",
+      standard: "gemini-2.5-flash-preview-05-20",
+      powerful: "gemini-2.5-pro-preview-05-06",
+      cheapest: "gemini-2.0-flash-lite",
+    },
+  },
 };
 
 // Cost per 1K tokens
@@ -103,6 +113,9 @@ const COST_MAP: Record<string, { input: number; output: number }> = {
   "google/gemini-2.5-flash": { input: 0.0001, output: 0.0004 },
   "google/gemini-2.5-flash-lite": { input: 0.00005, output: 0.0002 },
   "google/gemini-2.5-pro": { input: 0.00125, output: 0.005 },
+  "gemini-2.5-flash-preview-05-20": { input: 0.00015, output: 0.0006 },
+  "gemini-2.5-pro-preview-05-06": { input: 0.00125, output: 0.005 },
+  "gemini-2.0-flash-lite": { input: 0.00004, output: 0.00016 },
 };
 
 // Task -> model tier mapping
@@ -125,7 +138,15 @@ const TASK_TIER: Record<string, string> = {
 
 function getSystemPrompt(jobType: string, language: string, extraContext?: any): string {
   const prompts: Record<string, string> = {
-    translate: `You are a professional translator and SEO specialist. Translate the provided content to ${language}. Maintain HTML structure, SEO keywords, and natural readability. Return ONLY the translated content.`,
+     translate: `You are a professional translator. Translate the provided HTML content to ${language}. 
+CRITICAL RULES:
+- Return ONLY the translated HTML content, nothing else
+- Do NOT wrap output in markdown code blocks (\`\`\`html or \`\`\`)
+- Do NOT add any explanation or commentary
+- Preserve ALL HTML tags, classes, attributes, links, and images exactly as-is
+- Only translate visible human-readable text (headings, paragraphs, button labels, alt text, placeholders)
+- Do NOT translate class names, IDs, href URLs, src URLs, or any code
+- The output must be valid HTML that can be directly inserted into a page`,
     blog: `You are an expert SEO content writer. Write a comprehensive, SEO-optimized blog article in ${language}. Include proper H1/H2/H3 structure. Return as JSON with fields: title, metaTitle, metaDescription, content (HTML), faqItems (array of {question, answer}), suggestedLinks (array).`,
     meta_optimize: `You are an SEO meta tag specialist. Generate optimized meta tags for the given page content in ${language}. Return JSON with: metaTitle (max 60 chars), metaDescription (max 160 chars), ogTitle, ogDescription, keywords (array).`,
     alt_text: `You are an image SEO specialist. Generate descriptive, SEO-optimized alt text in ${language}. Return JSON array: [{imageDescription, altText, title}].`,
@@ -197,9 +218,11 @@ async function callProvider(
     };
   }
 
-  // OpenAI-compatible (both Lovable AI and OpenAI)
+  // OpenAI-compatible (Lovable AI, OpenAI, and Gemini)
   const url = provider === "lovable"
     ? "https://ai.gateway.lovable.dev/v1/chat/completions"
+    : provider === "gemini"
+    ? "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
     : "https://api.openai.com/v1/chat/completions";
 
   const resp = await fetch(url, {
@@ -349,9 +372,15 @@ serve(async (req) => {
     const fallbackEnabled = prefs?.fallback_enabled !== false;
     let provider = requestedProvider || prefs?.default_provider || "lovable";
 
-    // Force clone_page and translate to use Lovable AI (Gemini) — much faster, avoids OpenAI timeouts
-    if (["clone_page", "translate"].includes(jobType)) {
-      provider = "lovable";
+    // Force clone_page and translate to use Gemini direct — faster, avoids OpenAI timeouts
+    if (["clone_page", "translate"].includes(jobType) && provider !== "gemini") {
+      // If user has Gemini key, prefer it; otherwise fall back to Lovable AI
+      const geminiKey = Deno.env.get("GEMINI_API_KEY");
+      if (geminiKey) {
+        provider = "gemini";
+      } else {
+        provider = "lovable";
+      }
     }
 
     // Determine model
@@ -381,6 +410,16 @@ serve(async (req) => {
         .eq("is_active", true)
         .single();
       apiKey = userKey?.encrypted_api_key ? await decryptApiKey(userKey.encrypted_api_key) : null;
+    } else if (provider === "gemini") {
+      // First check user's own key, then env key
+      const { data: userKey } = await supabase
+        .from("user_ai_keys")
+        .select("encrypted_api_key")
+        .eq("user_id", userId)
+        .eq("provider", "gemini")
+        .eq("is_active", true)
+        .single();
+      apiKey = userKey?.encrypted_api_key ? await decryptApiKey(userKey.encrypted_api_key) : (Deno.env.get("GEMINI_API_KEY") || null);
     } else if (provider === "custom") {
       const { data: userKey } = await supabase
         .from("user_ai_keys")
