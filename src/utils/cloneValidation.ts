@@ -42,7 +42,7 @@ function countElements(doc: Document): ElementCount {
     links: doc.querySelectorAll("a[href]").length,
     images: doc.querySelectorAll("img").length,
     buttons: doc.querySelectorAll("button").length,
-    stripeButtons: doc.querySelectorAll("stripe-buy-button, [class*='stripe'], [data-stripe]").length,
+    stripeButtons: doc.querySelectorAll("stripe-buy-button").length,
     altTexts: doc.querySelectorAll("img[alt]:not([alt=''])").length,
     iframes: doc.querySelectorAll("iframe").length,
     forms: doc.querySelectorAll("form").length,
@@ -53,9 +53,22 @@ function countElements(doc: Document): ElementCount {
 }
 
 /**
+ * Safely build a CSS selector from a tag + class list.
+ * Filters out Tailwind arbitrary value classes like [&_stripe-buy-button]:scale-125
+ * which are NOT valid CSS selectors.
+ */
+function safeSelectorFromElement(el: Element): string | null {
+  const tag = el.tagName?.toLowerCase();
+  if (!tag) return null;
+  const classes = Array.from(el.classList).filter(
+    (c) => /^[a-zA-Z_-][a-zA-Z0-9_-]*$/.test(c)
+  );
+  if (classes.length === 0) return tag;
+  return `${tag}.${classes.join(".")}`;
+}
+
+/**
  * Auto-fix: inject missing critical elements from source into clone.
- * Strategy: find elements in source that are missing in clone, append them
- * at the same structural location (parent selector match).
  */
 function autoFixMissingElements(sourceHtml: string, cloneHtml: string): { fixedHtml: string; fixes: string[] } {
   const sourceDoc = parseHTML(sourceHtml);
@@ -67,20 +80,14 @@ function autoFixMissingElements(sourceHtml: string, cloneHtml: string): { fixedH
   const cloneStripe = cloneDoc.querySelectorAll("stripe-buy-button");
   if (sourceStripe.length > cloneStripe.length) {
     sourceStripe.forEach((el) => {
-      // Check if this specific button ID exists in clone
       const buyBtnId = el.getAttribute("buy-button-id");
       if (buyBtnId && !cloneDoc.querySelector(`stripe-buy-button[buy-button-id="${buyBtnId}"]`)) {
-        // Find parent in clone by matching nearby text or structure
         const parent = el.parentElement;
-        const parentTag = parent?.tagName?.toLowerCase() || "div";
-        const parentClass = parent?.className || "";
-        const targetParent = cloneDoc.querySelector(`${parentTag}.${parentClass.split(" ").filter(Boolean).join(".")}`) 
-          || cloneDoc.querySelector(parentTag) 
+        const parentSelector = parent ? safeSelectorFromElement(parent) : null;
+        const targetParent = (parentSelector ? cloneDoc.querySelector(parentSelector) : null)
           || cloneDoc.body;
-        if (targetParent) {
-          targetParent.appendChild(el.cloneNode(true));
-          fixes.push(`🔧 Stripe button (${buyBtnId}) hersteld`);
-        }
+        targetParent.appendChild(el.cloneNode(true));
+        fixes.push(`🔧 Stripe button (${buyBtnId}) hersteld`);
       }
     });
   }
@@ -92,12 +99,10 @@ function autoFixMissingElements(sourceHtml: string, cloneHtml: string): { fixedH
   sourceImgs.forEach((img) => {
     const src = img.getAttribute("src");
     if (src && !cloneSrcs.has(src)) {
-      // Try to find the parent section in clone
-      const parentSection = img.closest("section, div[class]");
+      const parentSection = img.closest("section");
       if (parentSection) {
-        const sectionClass = parentSection.className;
-        const targetSection = cloneDoc.querySelector(`section.${sectionClass.split(" ").filter(Boolean)[0]}`)
-          || cloneDoc.querySelector(`div.${sectionClass.split(" ").filter(Boolean)[0]}`);
+        const selector = safeSelectorFromElement(parentSection);
+        const targetSection = selector ? cloneDoc.querySelector(selector) : null;
         if (targetSection) {
           targetSection.appendChild(img.cloneNode(true));
           fixes.push(`🔧 Afbeelding hersteld: ${src.substring(0, 50)}…`);
@@ -106,12 +111,12 @@ function autoFixMissingElements(sourceHtml: string, cloneHtml: string): { fixedH
     }
   });
 
-  // Fix missing alt texts — add from source where possible
+  // Fix missing alt texts
   const cloneImgsAll = cloneDoc.querySelectorAll("img");
   cloneImgsAll.forEach((cloneImg) => {
     const src = cloneImg.getAttribute("src");
     if (src && (!cloneImg.getAttribute("alt") || cloneImg.getAttribute("alt") === "")) {
-      const sourceImg = sourceDoc.querySelector(`img[src="${src}"]`);
+      const sourceImg = sourceDoc.querySelector(`img[src="${CSS.escape(src)}"]`);
       if (sourceImg?.getAttribute("alt")) {
         cloneImg.setAttribute("alt", sourceImg.getAttribute("alt")!);
         fixes.push(`🔧 Alt-tekst hersteld voor: ${src.substring(0, 40)}…`);
@@ -119,7 +124,7 @@ function autoFixMissingElements(sourceHtml: string, cloneHtml: string): { fixedH
     }
   });
 
-  // Fix missing links (check by href) — only add truly missing ones
+  // Fix missing links
   const sourceLinks = sourceDoc.querySelectorAll("a[href]");
   const cloneHrefs = new Set(Array.from(cloneDoc.querySelectorAll("a[href]")).map((a) => a.getAttribute("href")));
   let missingLinkCount = 0;
@@ -149,7 +154,6 @@ export function validateAndFixClone(sourceHtml: string, cloneHtml: string): Vali
 
   const issues: ValidationIssue[] = [];
 
-  // Critical checks
   const criticalKeys: (keyof ElementCount)[] = ["stripeButtons", "iframes", "forms"];
   criticalKeys.forEach((key) => {
     if (sourceStats[key] > 0 && cloneStats[key] < sourceStats[key]) {
@@ -157,7 +161,6 @@ export function validateAndFixClone(sourceHtml: string, cloneHtml: string): Vali
     }
   });
 
-  // Warning checks
   const warningKeys: (keyof ElementCount)[] = ["links", "images", "buttons", "altTexts", "svgs", "inputs", "videos"];
   warningKeys.forEach((key) => {
     if (sourceStats[key] > 0 && cloneStats[key] < sourceStats[key]) {
@@ -165,7 +168,6 @@ export function validateAndFixClone(sourceHtml: string, cloneHtml: string): Vali
     }
   });
 
-  // Auto-fix
   const { fixedHtml, fixes } = autoFixMissingElements(sourceHtml, cloneHtml);
 
   return {
