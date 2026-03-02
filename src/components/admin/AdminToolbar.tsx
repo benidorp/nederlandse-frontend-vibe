@@ -106,8 +106,17 @@ const AdminToolbar = () => {
     if (inputText.trim()) return inputText;
     const main = document.querySelector("main") || document.body;
     if (asHtml) {
-      // For clone: send FULL HTML without truncation for 1:1 fidelity
-      return main.innerHTML || "";
+      // Clone DOM, strip Lovable editor attributes to reduce size ~70%
+      const clone = main.cloneNode(true) as HTMLElement;
+      clone.querySelectorAll("*").forEach((el) => {
+        const attrs = Array.from(el.attributes);
+        attrs.forEach((attr) => {
+          if (attr.name.startsWith("data-lov-") || attr.name.startsWith("data-component-")) {
+            el.removeAttribute(attr.name);
+          }
+        });
+      });
+      return clone.innerHTML || "";
     }
     return main.innerText?.substring(0, 5000) || "";
   };
