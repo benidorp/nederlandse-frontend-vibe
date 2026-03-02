@@ -259,6 +259,11 @@ const AdminToolbar = () => {
           const cleaned = rawResult.replace(/^```(?:json|html)?\s*\n?/i, "").replace(/\n?```\s*$/i, "").trim();
           translatedSections.push(cleaned);
           
+          // Small delay between chunks to avoid rate limiting
+          if (i < sections.length - 1) {
+            await new Promise(r => setTimeout(r, 1200));
+          }
+          
           // Remove progress line
           results.pop();
         }
