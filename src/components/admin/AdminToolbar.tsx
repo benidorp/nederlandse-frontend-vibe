@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/select";
 import { flagComponents } from "@/components/af/AfFlags";
 import { detectVerticalFromPath } from "@/utils/verticalDetection";
+import { validateAndFixClone, formatValidationReport } from "@/utils/cloneValidation";
 
 const LANGUAGES = [
   { code: "en", label: "English" }, { code: "nl", label: "Nederlands" },
@@ -178,13 +179,12 @@ const AdminToolbar = () => {
       toast.error("Selecteer eerst minimaal één taal");
       return;
     }
-    const pageContent = getPageContent(true); // Send full HTML for clone
+    const pageContent = getPageContent(true);
     if (!pageContent.trim()) {
       toast.error("Geen pagina-inhoud gevonden");
       return;
     }
 
-    // Detect vertical for auto-registration
     const currentPath = window.location.pathname;
     const vertical = detectVerticalFromPath(currentPath);
     const currentTitle = document.title;
@@ -198,75 +198,101 @@ const AdminToolbar = () => {
     const results: string[] = [];
     const createdPages: string[] = [];
 
+    // ─── STEP 1: Clone page in original language (exact copy, no translation) ───
+    results.push("📋 STAP 1: Pagina klonen in originele taal...");
+    setResult(results.join("\n"));
+
+    let clonedHtml = "";
+    try {
+      const { data, error } = await supabase.functions.invoke("ai-universal", {
+        body: { jobType: "clone_page", content: pageContent, language: "en", provider: AI_PROVIDER },
+      });
+      if (error) throw error;
+      if (data?.error) throw new Error(data.error);
+
+      const rawResult = typeof data.result === "string" ? data.result : JSON.stringify(data.result);
+      clonedHtml = rawResult.replace(/^```(?:json|html)?\s*\n?/i, "").replace(/\n?```\s*$/i, "").trim();
+
+      // If JSON response, extract htmlContent
+      if (clonedHtml.startsWith("{") && clonedHtml.includes('"htmlContent"')) {
+        try {
+          const parsed = typeof data.result === "object" ? data.result : JSON.parse(clonedHtml);
+          clonedHtml = parsed.htmlContent || parsed.content || clonedHtml;
+        } catch { /* use as-is */ }
+      }
+
+      results.push("✅ Kloon succesvol aangemaakt");
+    } catch (err: any) {
+      results.push(`❌ Kloon mislukt: ${err.message}`);
+      results.push("⏭️ Fallback: originele HTML wordt direct gebruikt");
+      clonedHtml = pageContent; // Use original as fallback
+    }
+
+    // ─── STEP 1b: Validate clone against source & auto-fix ───
+    results.push("");
+    results.push("🔍 STAP 1b: Validatie & auto-fix...");
+    setResult(results.join("\n"));
+
+    const validation = validateAndFixClone(pageContent, clonedHtml);
+    const report = formatValidationReport(validation);
+    results.push(report);
+
+    // Use the fixed HTML (with auto-repaired elements)
+    const baseHtml = validation.fixedHtml || clonedHtml;
+    results.push("");
+
+    // ─── STEP 2: Translate the validated clone into each target language ───
+    results.push("🌐 STAP 2: Vertalen naar geselecteerde talen...");
+    results.push("");
+    setResult(results.join("\n"));
+
     for (const langCode of langs) {
       const langLabel = LANGUAGES.find((l) => l.code === langCode)?.label || langCode;
       progress[langCode] = "processing";
       setCloneProgress({ ...progress });
 
       try {
+        // Use "translate" job type with the cloned HTML — preserves structure, only translates text
         const { data, error } = await supabase.functions.invoke("ai-universal", {
-          body: { jobType: "clone_page", content: pageContent, language: langCode, provider: AI_PROVIDER },
+          body: { jobType: "translate", content: baseHtml, language: langCode, provider: AI_PROVIDER },
         });
         if (error) throw error;
         if (data?.error) throw new Error(data.error);
-        
-        // The clone_page now returns raw HTML (not JSON), so handle accordingly
+
         let htmlContent = "";
-        let pageTitle = `${currentTitle} (${langLabel})`;
-        let metaTitle = "";
-        let metaDescription = "";
-        
         const rawResult = typeof data.result === "string" ? data.result : JSON.stringify(data.result);
-        // Strip any markdown code block wrappers
-        const cleanedResult = rawResult.replace(/^```(?:json|html)?\s*\n?/i, "").replace(/\n?```\s*$/i, "").trim();
-        
-        // Check if the result is JSON (legacy) or raw HTML (new approach)
-        if (cleanedResult.startsWith("{") && cleanedResult.includes('"htmlContent"')) {
-          // Legacy JSON response — try to parse
-          try {
-            const parsed = typeof data.result === "object" ? data.result : JSON.parse(cleanedResult);
-            htmlContent = parsed.htmlContent || parsed.content || cleanedResult;
-            pageTitle = parsed.title || pageTitle;
-            metaTitle = parsed.metaTitle || "";
-            metaDescription = parsed.metaDescription || "";
-          } catch {
-            htmlContent = cleanedResult;
-          }
-        } else {
-          // Raw HTML response (new approach) — use directly
-          htmlContent = cleanedResult;
+        htmlContent = rawResult.replace(/^```(?:json|html)?\s*\n?/i, "").replace(/\n?```\s*$/i, "").trim();
+
+        // Post-translate validation
+        const translateValidation = validateAndFixClone(baseHtml, htmlContent);
+        if (translateValidation.autoFixed.length > 0) {
+          htmlContent = translateValidation.fixedHtml;
+          results.push(`  🔧 ${langLabel}: ${translateValidation.autoFixed.length} auto-fixes`);
         }
 
-        // Build the slug for the translated page
+        const pageTitle = `${currentTitle} (${langLabel})`;
         const baseSlug = currentPath.split("/").pop() || "page";
         const fullPath = `/${langCode}/${baseSlug}`;
-        
-        // Save the translated page to the database
+
+        // Save the translated page
         const { error: insertError } = await supabase.from("ai_generated_pages").insert({
           title: pageTitle,
           slug: fullPath,
           html_content: htmlContent,
           language: langCode,
-          meta_title: metaTitle || pageTitle,
-          meta_description: metaDescription,
+          meta_title: pageTitle,
+          meta_description: "",
           status: "published",
           user_id: user!.id,
           niche: vertical || "general",
           source_page_id: null,
-          metadata: { vertical, sourcePath: currentPath },
+          metadata: { vertical, sourcePath: currentPath, validated: true, autoFixes: translateValidation.autoFixed.length },
         });
 
         if (insertError) {
-          console.error("Page save error:", insertError);
-          // If duplicate slug, try upsert approach
           if (insertError.code === "23505") {
             await supabase.from("ai_generated_pages")
-              .update({
-                html_content: htmlContent,
-                meta_title: metaTitle || pageTitle,
-                meta_description: metaDescription,
-                title: pageTitle,
-              })
+              .update({ html_content: htmlContent, title: pageTitle, metadata: { vertical, sourcePath: currentPath, validated: true } })
               .eq("slug", fullPath)
               .eq("user_id", user!.id);
           }
@@ -276,7 +302,6 @@ const AdminToolbar = () => {
         createdPages.push(fullPath);
         results.push(`✅ ${langLabel}: ${fullPath}`);
 
-        // Auto-register flag if vertical detected
         if (vertical) {
           await registerFlag(vertical, langCode, langLabel, fullPath);
           results[results.length - 1] += " 🏳️";
@@ -286,9 +311,10 @@ const AdminToolbar = () => {
         results.push(`❌ ${langLabel}: ${err.message}`);
       }
       setCloneProgress({ ...progress });
+      setResult(results.join("\n"));
     }
 
-    // Add clickable links
+    // Summary
     if (createdPages.length > 0) {
       results.push("");
       results.push("📄 Vertaalde pagina's:");
@@ -298,7 +324,7 @@ const AdminToolbar = () => {
     }
 
     setResult(results.join("\n"));
-    toast.success(`Bulk clone & translate voltooid: ${createdPages.length}/${langs.length} pagina's aangemaakt`);
+    toast.success(`Clone & Translate voltooid: ${createdPages.length}/${langs.length} pagina's`);
     setBulkRunning(false);
   };
 
