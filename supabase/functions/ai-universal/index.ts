@@ -170,7 +170,10 @@ ABSOLUTE RULES:
 - Do NOT truncate or cut off the HTML — output the COMPLETE page
 - The rendered output must be visually IDENTICAL to the original, only in ${language}
 
-Return JSON: {title, slug (SEO-friendly in ${language}), metaTitle (max 60 chars), metaDescription (max 160 chars), htmlContent (the COMPLETE translated HTML, every single element)}.`,
+CRITICAL OUTPUT FORMAT:
+- Return ONLY raw JSON (no markdown code blocks, no \`\`\`json wrapper, no explanation)
+- The JSON must have these fields: title, slug (SEO-friendly in ${language}), metaTitle (max 60 chars), metaDescription (max 160 chars), htmlContent (the COMPLETE translated HTML, every single element)
+- The htmlContent value must contain the full translated HTML ready for direct insertion into a page`,
     domain_generate: `You are a premium domain website generator specializing in expired domain monetization. Generate a complete website structure for domain "${extraContext?.domain}" in niche "${extraContext?.niche}" with keywords "${extraContext?.keywords}" in ${language}. Return JSON: {pages: [{title, slug, metaTitle, metaDescription, htmlContent, type}], blogStructure: [{title, slug}], internalLinks: [{from, to, anchorText}]}.`,
     generate_faq: `You are an FAQ generator. Create comprehensive FAQ items in ${language}. Return JSON: {faqItems: [{question, answer}]}.`,
     schema_markup: `You are a schema markup expert. Generate JSON-LD structured data. Return valid JSON-LD.`,
@@ -533,11 +536,15 @@ serve(async (req) => {
       cost_usd: costUsd,
     });
 
-    // Parse result
-    let parsedResult = result.content;
+    // Parse result — strip markdown code blocks first
+    let rawContent = result.content;
+    // Remove ```json ... ``` or ```html ... ``` wrappers
+    rawContent = rawContent.replace(/^```(?:json|html)?\s*\n?/i, "").replace(/\n?```\s*$/i, "").trim();
+    
+    let parsedResult: any = rawContent;
     try {
-      parsedResult = JSON.parse(result.content);
-    } catch { /* not JSON */ }
+      parsedResult = JSON.parse(rawContent);
+    } catch { /* not JSON, keep as string */ }
 
     // Auto-create page if applicable
     if (["create_page", "clone_page", "domain_generate"].includes(jobType) && typeof parsedResult === "object") {
