@@ -106,8 +106,8 @@ const AdminToolbar = () => {
     if (inputText.trim()) return inputText;
     const main = document.querySelector("main") || document.body;
     if (asHtml) {
-      // For clone: send full HTML to preserve structure, images, links, classes
-      return main.innerHTML?.substring(0, 15000) || "";
+      // For clone: send FULL HTML without truncation for 1:1 fidelity
+      return main.innerHTML || "";
     }
     return main.innerText?.substring(0, 5000) || "";
   };

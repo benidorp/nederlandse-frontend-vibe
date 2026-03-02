@@ -131,21 +131,23 @@ function getSystemPrompt(jobType: string, language: string, extraContext?: any):
     code_generate: `You are a web development expert. Generate clean, valid code. Return JSON: {code, language, description}.`,
     page_improve: `You are a CRO expert and SEO specialist. Analyze page content in ${language}. Return JSON: {readabilityScore, suggestions: [{type, current, improved, reason}]}.`,
     create_page: `You are a web page generator. Create a complete page in ${language}. Return JSON: {title, slug, metaTitle, metaDescription, htmlContent, headings: [{level, text}], internalLinks: [{text, url}]}.`,
-    clone_page: `You are an expert page cloner and translator. You receive the FULL HTML of a page. Your job is to create an EXACT 1:1 clone translated to ${language}.
+    clone_page: `You are an expert page cloner and translator. You receive the COMPLETE HTML of a page. Your job is to produce an EXACT 1:1 clone with ONLY the visible text translated to ${language}.
 
-CRITICAL RULES:
-1. PRESERVE ALL HTML tags, classes, IDs, data attributes, and structure EXACTLY as they are
-2. PRESERVE ALL <img> tags with their src, alt (translate alt text), and all attributes
-3. PRESERVE ALL <a> links with their href attributes unchanged
-4. PRESERVE ALL CSS classes and inline styles unchanged
-5. PRESERVE ALL SVG icons, buttons, forms, and interactive elements
-6. ONLY translate the visible text content (headings, paragraphs, button text, labels, alt text)
-7. Do NOT remove any HTML elements, do NOT simplify the structure
-8. Do NOT convert HTML to markdown - keep it as HTML
-9. Translate SEO-relevant text naturally for ${language}, using local keywords
-10. The output htmlContent must be valid HTML that looks IDENTICAL to the original when rendered
+STEP 1 — COPY: Take the ENTIRE HTML input as-is. Every single tag, class, id, data attribute, inline style, SVG, image, link, icon, button, form element — EVERYTHING must be preserved byte-for-byte.
+STEP 2 — TRANSLATE: Walk through the copied HTML and translate ONLY visible human-readable text (headings, paragraphs, button labels, link text, alt attributes, aria-labels, title attributes, placeholder text). Do NOT touch any HTML tags, attribute names, class names, href values, src values, or any code.
 
-Return JSON: {title, slug (SEO-friendly in ${language}), metaTitle (max 60 chars), metaDescription (max 160 chars), htmlContent (the full translated HTML)}.`,
+ABSOLUTE RULES:
+- The output HTML must have the EXACT same number of HTML elements as the input
+- Every <img>, <svg>, <a>, <button>, <input>, <form>, <video>, <iframe> must appear in the output
+- Every CSS class, inline style, and data-attribute must be preserved unchanged
+- All href and src URLs must remain unchanged
+- Do NOT add, remove, or restructure ANY HTML elements
+- Do NOT simplify, minify, or reformat the HTML
+- Do NOT convert to markdown
+- Do NOT truncate or cut off the HTML — output the COMPLETE page
+- The rendered output must be visually IDENTICAL to the original, only in ${language}
+
+Return JSON: {title, slug (SEO-friendly in ${language}), metaTitle (max 60 chars), metaDescription (max 160 chars), htmlContent (the COMPLETE translated HTML, every single element)}.`,
     domain_generate: `You are a premium domain website generator specializing in expired domain monetization. Generate a complete website structure for domain "${extraContext?.domain}" in niche "${extraContext?.niche}" with keywords "${extraContext?.keywords}" in ${language}. Return JSON: {pages: [{title, slug, metaTitle, metaDescription, htmlContent, type}], blogStructure: [{title, slug}], internalLinks: [{from, to, anchorText}]}.`,
     generate_faq: `You are an FAQ generator. Create comprehensive FAQ items in ${language}. Return JSON: {faqItems: [{question, answer}]}.`,
     schema_markup: `You are a schema markup expert. Generate JSON-LD structured data. Return valid JSON-LD.`,
@@ -416,7 +418,7 @@ serve(async (req) => {
         model,
         provider,
         user_id: userId,
-        input_data: { content: userContent.substring(0, 5000), language, domain, niche, keywords },
+        input_data: { content: userContent.substring(0, 10000), language, domain, niche, keywords },
       })
       .select()
       .single();
@@ -433,7 +435,7 @@ serve(async (req) => {
     try {
       result = await callProvider(provider, apiKey, model, systemPrompt, userContent, {
         temperature: jobType === "translate" ? 0.3 : 0.7,
-        maxTokens: jobType === "clone_page" ? 16000 : ["blog", "create_page", "domain_generate"].includes(jobType) ? 8000 : 4000,
+        maxTokens: jobType === "clone_page" ? 64000 : ["blog", "create_page", "domain_generate"].includes(jobType) ? 8000 : 4000,
       });
     } catch (err: any) {
       // Fallback on error
@@ -446,7 +448,7 @@ serve(async (req) => {
           model = fallbackModel;
           result = await callProvider("lovable", fallbackKey, fallbackModel, systemPrompt, userContent, {
             temperature: jobType === "translate" ? 0.3 : 0.7,
-            maxTokens: jobType === "clone_page" ? 16000 : ["blog", "create_page", "domain_generate"].includes(jobType) ? 8000 : 4000,
+            maxTokens: jobType === "clone_page" ? 64000 : ["blog", "create_page", "domain_generate"].includes(jobType) ? 8000 : 4000,
           });
         }
       }
