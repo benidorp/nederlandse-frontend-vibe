@@ -115,7 +115,7 @@ const TASK_TIER: Record<string, string> = {
   code_generate: "standard",
   page_improve: "standard",
   create_page: "powerful",
-  clone_page: "standard",
+  clone_page: "powerful",
   domain_generate: "powerful",
   fix_layout: "standard",
   workspace_chat: "standard",
@@ -131,7 +131,21 @@ function getSystemPrompt(jobType: string, language: string, extraContext?: any):
     code_generate: `You are a web development expert. Generate clean, valid code. Return JSON: {code, language, description}.`,
     page_improve: `You are a CRO expert and SEO specialist. Analyze page content in ${language}. Return JSON: {readabilityScore, suggestions: [{type, current, improved, reason}]}.`,
     create_page: `You are a web page generator. Create a complete page in ${language}. Return JSON: {title, slug, metaTitle, metaDescription, htmlContent, headings: [{level, text}], internalLinks: [{text, url}]}.`,
-    clone_page: `You are a page cloner and translator. Clone the page structure and translate all content to ${language}. Preserve HTML structure, headings hierarchy, and layout. Optimize keywords for ${language}. Return JSON: {title, slug, metaTitle, metaDescription, htmlContent}.`,
+    clone_page: `You are an expert page cloner and translator. You receive the FULL HTML of a page. Your job is to create an EXACT 1:1 clone translated to ${language}.
+
+CRITICAL RULES:
+1. PRESERVE ALL HTML tags, classes, IDs, data attributes, and structure EXACTLY as they are
+2. PRESERVE ALL <img> tags with their src, alt (translate alt text), and all attributes
+3. PRESERVE ALL <a> links with their href attributes unchanged
+4. PRESERVE ALL CSS classes and inline styles unchanged
+5. PRESERVE ALL SVG icons, buttons, forms, and interactive elements
+6. ONLY translate the visible text content (headings, paragraphs, button text, labels, alt text)
+7. Do NOT remove any HTML elements, do NOT simplify the structure
+8. Do NOT convert HTML to markdown - keep it as HTML
+9. Translate SEO-relevant text naturally for ${language}, using local keywords
+10. The output htmlContent must be valid HTML that looks IDENTICAL to the original when rendered
+
+Return JSON: {title, slug (SEO-friendly in ${language}), metaTitle (max 60 chars), metaDescription (max 160 chars), htmlContent (the full translated HTML)}.`,
     domain_generate: `You are a premium domain website generator specializing in expired domain monetization. Generate a complete website structure for domain "${extraContext?.domain}" in niche "${extraContext?.niche}" with keywords "${extraContext?.keywords}" in ${language}. Return JSON: {pages: [{title, slug, metaTitle, metaDescription, htmlContent, type}], blogStructure: [{title, slug}], internalLinks: [{from, to, anchorText}]}.`,
     generate_faq: `You are an FAQ generator. Create comprehensive FAQ items in ${language}. Return JSON: {faqItems: [{question, answer}]}.`,
     schema_markup: `You are a schema markup expert. Generate JSON-LD structured data. Return valid JSON-LD.`,
@@ -419,7 +433,7 @@ serve(async (req) => {
     try {
       result = await callProvider(provider, apiKey, model, systemPrompt, userContent, {
         temperature: jobType === "translate" ? 0.3 : 0.7,
-        maxTokens: ["blog", "create_page", "domain_generate", "clone_page"].includes(jobType) ? 8000 : 4000,
+        maxTokens: jobType === "clone_page" ? 16000 : ["blog", "create_page", "domain_generate"].includes(jobType) ? 8000 : 4000,
       });
     } catch (err: any) {
       // Fallback on error
@@ -432,7 +446,7 @@ serve(async (req) => {
           model = fallbackModel;
           result = await callProvider("lovable", fallbackKey, fallbackModel, systemPrompt, userContent, {
             temperature: jobType === "translate" ? 0.3 : 0.7,
-            maxTokens: ["blog", "create_page", "domain_generate", "clone_page"].includes(jobType) ? 8000 : 4000,
+            maxTokens: jobType === "clone_page" ? 16000 : ["blog", "create_page", "domain_generate"].includes(jobType) ? 8000 : 4000,
           });
         }
       }
