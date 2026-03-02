@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/select";
 import { flagComponents } from "@/components/af/AfFlags";
 import { detectVerticalFromPath } from "@/utils/verticalDetection";
-import { validateAndFixClone, formatValidationReport } from "@/utils/cloneValidation";
+import { validateAndFixClone } from "@/utils/cloneValidation";
 
 const LANGUAGES = [
   { code: "en", label: "English" }, { code: "nl", label: "Nederlands" },
@@ -107,17 +107,32 @@ const AdminToolbar = () => {
     if (inputText.trim()) return inputText;
     const main = document.querySelector("main") || document.body;
     if (asHtml) {
-      // Clone DOM, strip Lovable editor attributes to reduce size ~70%
+      // Clone DOM, strip editor/framework attributes and empty decorative divs to reduce payload ~80%
       const clone = main.cloneNode(true) as HTMLElement;
       clone.querySelectorAll("*").forEach((el) => {
         const attrs = Array.from(el.attributes);
         attrs.forEach((attr) => {
-          if (attr.name.startsWith("data-lov-") || attr.name.startsWith("data-component-")) {
+          if (
+            attr.name.startsWith("data-lov-") ||
+            attr.name.startsWith("data-component-") ||
+            attr.name.startsWith("data-radix-") ||
+            attr.name.startsWith("data-state") ||
+            attr.name === "data-testid"
+          ) {
             el.removeAttribute(attr.name);
           }
         });
       });
-      return clone.innerHTML || "";
+      // Remove purely decorative empty blur divs to cut size
+      clone.querySelectorAll("div.absolute").forEach((el) => {
+        if (!el.textContent?.trim() && el.children.length === 0 && el.className.includes("blur")) {
+          el.remove();
+        }
+      });
+      let html = clone.innerHTML || "";
+      // Collapse whitespace runs
+      html = html.replace(/\n\s*\n/g, "\n").replace(/\s{2,}/g, " ");
+      return html;
     }
     return main.innerText?.substring(0, 5000) || "";
   };
@@ -198,50 +213,23 @@ const AdminToolbar = () => {
     const results: string[] = [];
     const createdPages: string[] = [];
 
-    // ─── STEP 1: Clone page in original language (exact copy, no translation) ───
-    results.push("📋 STAP 1: Pagina klonen in originele taal...");
+    // ─── STEP 1: Validate source HTML & prepare base ───
+    results.push("🔍 STAP 1: Bronpagina valideren...");
     setResult(results.join("\n"));
 
-    let clonedHtml = "";
-    try {
-      const { data, error } = await supabase.functions.invoke("ai-universal", {
-        body: { jobType: "clone_page", content: pageContent, language: "en", provider: AI_PROVIDER },
-      });
-      if (error) throw error;
-      if (data?.error) throw new Error(data.error);
-
-      const rawResult = typeof data.result === "string" ? data.result : JSON.stringify(data.result);
-      clonedHtml = rawResult.replace(/^```(?:json|html)?\s*\n?/i, "").replace(/\n?```\s*$/i, "").trim();
-
-      // If JSON response, extract htmlContent
-      if (clonedHtml.startsWith("{") && clonedHtml.includes('"htmlContent"')) {
-        try {
-          const parsed = typeof data.result === "object" ? data.result : JSON.parse(clonedHtml);
-          clonedHtml = parsed.htmlContent || parsed.content || clonedHtml;
-        } catch { /* use as-is */ }
-      }
-
-      results.push("✅ Kloon succesvol aangemaakt");
-    } catch (err: any) {
-      results.push(`❌ Kloon mislukt: ${err.message}`);
-      results.push("⏭️ Fallback: originele HTML wordt direct gebruikt");
-      clonedHtml = pageContent; // Use original as fallback
-    }
-
-    // ─── STEP 1b: Validate clone against source & auto-fix ───
-    results.push("");
-    results.push("🔍 STAP 1b: Validatie & auto-fix...");
-    setResult(results.join("\n"));
-
-    const validation = validateAndFixClone(pageContent, clonedHtml);
-    const report = formatValidationReport(validation);
-    results.push(report);
-
-    // Use the fixed HTML (with auto-repaired elements)
-    const baseHtml = validation.fixedHtml || clonedHtml;
+    // Use the original page HTML directly — no AI clone step needed
+    // This avoids sending the full HTML to AI just to get an identical copy back
+    const baseHtml = pageContent;
+    const sourceStats = {
+      links: (baseHtml.match(/<a\s/gi) || []).length,
+      imgs: (baseHtml.match(/<img\s/gi) || []).length,
+      stripe: (baseHtml.match(/stripe-buy-button/gi) || []).length,
+    };
+    results.push(`📊 Bron: ${sourceStats.links} links, ${sourceStats.imgs} imgs, ${sourceStats.stripe} Stripe buttons`);
+    results.push(`📦 Payload: ${Math.round(baseHtml.length / 1024)}KB`);
     results.push("");
 
-    // ─── STEP 2: Translate the validated clone into each target language ───
+    // ─── STEP 2: Translate the source into each target language ───
     results.push("🌐 STAP 2: Vertalen naar geselecteerde talen...");
     results.push("");
     setResult(results.join("\n"));
