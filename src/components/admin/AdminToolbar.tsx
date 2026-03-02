@@ -102,9 +102,13 @@ const AdminToolbar = () => {
     }
   };
 
-  const getPageContent = () => {
+  const getPageContent = (asHtml = false) => {
     if (inputText.trim()) return inputText;
     const main = document.querySelector("main") || document.body;
+    if (asHtml) {
+      // For clone: send full HTML to preserve structure, images, links, classes
+      return main.innerHTML?.substring(0, 15000) || "";
+    }
     return main.innerText?.substring(0, 5000) || "";
   };
 
@@ -165,7 +169,7 @@ const AdminToolbar = () => {
       toast.error("Selecteer eerst minimaal één taal");
       return;
     }
-    const pageContent = getPageContent();
+    const pageContent = getPageContent(true); // Send full HTML for clone
     if (!pageContent.trim()) {
       toast.error("Geen pagina-inhoud gevonden");
       return;
