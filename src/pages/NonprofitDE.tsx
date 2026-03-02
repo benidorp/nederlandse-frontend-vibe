@@ -1,6 +1,6 @@
 import HeaderNonprofitDE from "@/components/nonprofit-de/HeaderNonprofitDE";
 import HiddenInternalLinks from "@/components/HiddenInternalLinks";
-import NonprofitLanguageSwitcher from "@/components/nonprofit-de/NonprofitLanguageSwitcher";
+import VerticalLanguageSwitcher from "@/components/shared/VerticalLanguageSwitcher";
 import HeroNonprofitDE from "@/components/nonprofit-de/HeroNonprofitDE";
 import ValuePropositionNonprofitDE from "@/components/nonprofit-de/ValuePropositionNonprofitDE";
 import ServicesNonprofitDE from "@/components/nonprofit-de/ServicesNonprofitDE";
@@ -46,7 +46,7 @@ const NonprofitDE = () => {
 
       <div className="min-h-screen">
         <HeaderNonprofitDE />
-        <NonprofitLanguageSwitcher activeLang="de" />
+        <VerticalLanguageSwitcher vertical="nonprofit" currentLang="de" />
         <main>
           <HeroNonprofitDE />
           <ValuePropositionNonprofitDE />
