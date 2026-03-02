@@ -309,6 +309,33 @@ export type Database = {
         }
         Relationships: []
       }
+      vertical_language_routes: {
+        Row: {
+          created_at: string
+          id: string
+          lang_code: string
+          lang_name: string
+          path: string
+          vertical: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          lang_code: string
+          lang_name: string
+          path: string
+          vertical: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          lang_code?: string
+          lang_name?: string
+          path?: string
+          vertical?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

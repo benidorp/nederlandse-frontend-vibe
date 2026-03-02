@@ -4,7 +4,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import {
   Sparkles, Languages, Search, ChevronDown, ChevronUp,
-  Loader2, X, Copy, Check, MessageSquare, Send, Bot, User, CheckSquare, Square, Play
+  Loader2, X, Copy, Check, MessageSquare, Send, Bot, User, CheckSquare, Square, Play, Flag
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
@@ -17,6 +17,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { flagComponents } from "@/components/af/AfFlags";
+import { detectVerticalFromPath } from "@/utils/verticalDetection";
 
 const LANGUAGES = [
   { code: "en", label: "English" }, { code: "nl", label: "Nederlands" },
@@ -127,6 +128,37 @@ const AdminToolbar = () => {
     }
   };
 
+  /** Register a translated page's flag in the DB so the switcher picks it up */
+  const registerFlag = async (vertical: string, langCode: string, langName: string, path: string) => {
+    try {
+      const { error } = await supabase.from("vertical_language_routes" as any).upsert(
+        { vertical, lang_code: langCode, lang_name: langName, path },
+        { onConflict: "vertical,lang_code" }
+      );
+      if (error) throw error;
+    } catch (err: any) {
+      console.error("Flag register error:", err);
+    }
+  };
+
+  /** Auto-detect vertical and register current page */
+  const handleRegisterCurrentPage = async () => {
+    const currentPath = window.location.pathname;
+    const vertical = detectVerticalFromPath(currentPath);
+    if (!vertical) {
+      toast.error("Kan de vertical niet detecteren op deze pagina");
+      return;
+    }
+    // Detect lang from URL
+    const langMatch = currentPath.match(/^\/([a-z]{2})\//);
+    const langCode = langMatch ? langMatch[1] : "en";
+    const langEntry = LANGUAGES.find(l => l.code === langCode);
+    const langName = langEntry?.label || langCode;
+
+    await registerFlag(vertical, langCode, langName, currentPath);
+    toast.success(`🏳️ Vlaggetje geregistreerd: ${langName} voor ${vertical}`);
+  };
+
   const handleBulkCloneTranslate = async () => {
     const langs = Array.from(selectedLangs);
     if (langs.length === 0) {
@@ -138,6 +170,10 @@ const AdminToolbar = () => {
       toast.error("Geen pagina-inhoud gevonden");
       return;
     }
+
+    // Detect vertical for auto-registration
+    const currentPath = window.location.pathname;
+    const vertical = detectVerticalFromPath(currentPath);
 
     setBulkRunning(true);
     setResult("");
@@ -160,6 +196,13 @@ const AdminToolbar = () => {
         if (data?.error) throw new Error(data.error);
         progress[langCode] = "done";
         results.push(`✅ ${langLabel}: OK`);
+
+        // Auto-register flag if vertical detected
+        if (vertical) {
+          const translatedPath = data?.translatedPath || `/${langCode}/${currentPath.split('/').pop() || ''}`;
+          await registerFlag(vertical, langCode, langLabel, translatedPath);
+          results[results.length - 1] += " 🏳️";
+        }
       } catch (err: any) {
         progress[langCode] = "error";
         results.push(`❌ ${langLabel}: ${err.message}`);
@@ -168,7 +211,7 @@ const AdminToolbar = () => {
     }
 
     setResult(results.join("\n"));
-    toast.success(`Bulk clone & translate voltooid: ${langs.length} talen`);
+    toast.success(`Bulk clone & translate voltooid: ${langs.length} talen${vertical ? " (vlaggetjes geregistreerd)" : ""}`);
     setBulkRunning(false);
   };
 
@@ -233,6 +276,9 @@ const AdminToolbar = () => {
         </Button>
         <Button size="sm" variant={activeTool === "chat" ? "secondary" : "ghost"} className="h-7 text-xs text-white hover:text-white" onClick={() => toggleTool("chat")}>
           <MessageSquare className="h-3 w-3 mr-1" /> Chat
+        </Button>
+        <Button size="sm" variant="ghost" className="h-7 text-xs text-white hover:text-white" onClick={handleRegisterCurrentPage} title="Registreer het vlaggetje van deze pagina voor de language switcher">
+          <Flag className="h-3 w-3 mr-1" /> Register Flag
         </Button>
 
         <div className="ml-auto">
