@@ -75,19 +75,26 @@ function autoFixMissingElements(sourceHtml: string, cloneHtml: string): { fixedH
   const cloneDoc = parseHTML(cloneHtml);
   const fixes: string[] = [];
 
-  // Fix missing Stripe buttons
+  // Fix missing Stripe buttons — place them in a visible pricing/CTA section, not hidden overlays
   const sourceStripe = sourceDoc.querySelectorAll("stripe-buy-button");
   const cloneStripe = cloneDoc.querySelectorAll("stripe-buy-button");
   if (sourceStripe.length > cloneStripe.length) {
     sourceStripe.forEach((el) => {
       const buyBtnId = el.getAttribute("buy-button-id");
       if (buyBtnId && !cloneDoc.querySelector(`stripe-buy-button[buy-button-id="${buyBtnId}"]`)) {
-        const parent = el.parentElement;
-        const parentSelector = parent ? safeSelectorFromElement(parent) : null;
-        const targetParent = (parentSelector ? cloneDoc.querySelector(parentSelector) : null)
-          || cloneDoc.body;
-        targetParent.appendChild(el.cloneNode(true));
-        fixes.push(`🔧 Stripe button (${buyBtnId}) hersteld`);
+        // Find the best visible container: look for pricing section, or a section with "price"/"buy"/"order"
+        const pricingSection = cloneDoc.querySelector("section[id*='pric'], section[id*='buy']")
+          || Array.from(cloneDoc.querySelectorAll("section")).find(s => 
+            s.textContent?.toLowerCase().includes("€") || s.textContent?.toLowerCase().includes("price") || s.textContent?.toLowerCase().includes("buy")
+          );
+        // Create a wrapper div so the button is visible and centered
+        const wrapper = cloneDoc.createElement("div");
+        wrapper.className = "flex justify-center items-center py-4";
+        wrapper.appendChild(el.cloneNode(true));
+        
+        const targetParent = pricingSection || cloneDoc.querySelector("main") || cloneDoc.body;
+        targetParent.appendChild(wrapper);
+        fixes.push(`🔧 Stripe button (${buyBtnId}) hersteld in pricing sectie`);
       }
     });
   }

@@ -213,24 +213,27 @@ const AdminToolbar = () => {
     const results: string[] = [];
     const createdPages: string[] = [];
 
-    // ─── STEP 1: Validate source HTML & prepare base ───
-    results.push("🔍 STAP 1: Bronpagina valideren...");
+    // ─── STEP 1: Validate source HTML & split into sections ───
+    results.push("🔍 STAP 1: Bronpagina valideren & opsplitsen...");
     setResult(results.join("\n"));
 
-    // Use the original page HTML directly — no AI clone step needed
-    // This avoids sending the full HTML to AI just to get an identical copy back
     const baseHtml = pageContent;
     const sourceStats = {
       links: (baseHtml.match(/<a\s/gi) || []).length,
       imgs: (baseHtml.match(/<img\s/gi) || []).length,
       stripe: (baseHtml.match(/stripe-buy-button/gi) || []).length,
     };
+    
+    // Split HTML into <section> chunks to avoid AI token limits
+    const sectionRegex = /<section[\s\S]*?<\/section>/gi;
+    const sections = baseHtml.match(sectionRegex) || [baseHtml];
+    
     results.push(`📊 Bron: ${sourceStats.links} links, ${sourceStats.imgs} imgs, ${sourceStats.stripe} Stripe buttons`);
-    results.push(`📦 Payload: ${Math.round(baseHtml.length / 1024)}KB`);
+    results.push(`📦 Payload: ${Math.round(baseHtml.length / 1024)}KB → ${sections.length} secties`);
     results.push("");
 
-    // ─── STEP 2: Translate the source into each target language ───
-    results.push("🌐 STAP 2: Vertalen naar geselecteerde talen...");
+    // ─── STEP 2: Translate each section per language ───
+    results.push("🌐 STAP 2: Vertalen per sectie naar geselecteerde talen...");
     results.push("");
     setResult(results.join("\n"));
 
@@ -240,16 +243,27 @@ const AdminToolbar = () => {
       setCloneProgress({ ...progress });
 
       try {
-        // Use "translate" job type with the cloned HTML — preserves structure, only translates text
-        const { data, error } = await supabase.functions.invoke("ai-universal", {
-          body: { jobType: "translate", content: baseHtml, language: langCode, provider: AI_PROVIDER },
-        });
-        if (error) throw error;
-        if (data?.error) throw new Error(data.error);
+        // Translate each section separately to stay within token limits
+        const translatedSections: string[] = [];
+        for (let i = 0; i < sections.length; i++) {
+          results.push(`  ⏳ ${langLabel}: sectie ${i + 1}/${sections.length}...`);
+          setResult(results.join("\n"));
+          
+          const { data, error } = await supabase.functions.invoke("ai-universal", {
+            body: { jobType: "translate", content: sections[i], language: langCode, provider: AI_PROVIDER },
+          });
+          if (error) throw error;
+          if (data?.error) throw new Error(data.error);
 
-        let htmlContent = "";
-        const rawResult = typeof data.result === "string" ? data.result : JSON.stringify(data.result);
-        htmlContent = rawResult.replace(/^```(?:json|html)?\s*\n?/i, "").replace(/\n?```\s*$/i, "").trim();
+          const rawResult = typeof data.result === "string" ? data.result : JSON.stringify(data.result);
+          const cleaned = rawResult.replace(/^```(?:json|html)?\s*\n?/i, "").replace(/\n?```\s*$/i, "").trim();
+          translatedSections.push(cleaned);
+          
+          // Remove progress line
+          results.pop();
+        }
+        
+        let htmlContent = translatedSections.join("\n");
 
         // Post-translate validation
         const translateValidation = validateAndFixClone(baseHtml, htmlContent);
