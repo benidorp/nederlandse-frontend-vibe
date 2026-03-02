@@ -1,6 +1,8 @@
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { flagComponents } from "@/components/af/AfFlags";
 import { verticalLanguages, type VerticalId } from "@/data/verticalLanguageRegistry";
+import { supabase } from "@/integrations/supabase/client";
 
 interface VerticalLanguageSwitcherProps {
   vertical: VerticalId;
@@ -11,6 +13,12 @@ interface VerticalLanguageSwitcherProps {
   dark?: boolean;
 }
 
+interface LangEntry {
+  code: string;
+  name: string;
+  path: string;
+}
+
 const VerticalLanguageSwitcher = ({
   vertical,
   currentLang,
@@ -18,7 +26,39 @@ const VerticalLanguageSwitcher = ({
   dark = false,
 }: VerticalLanguageSwitcherProps) => {
   const navigate = useNavigate();
-  const languages = verticalLanguages[vertical] || [];
+  const [dynamicLangs, setDynamicLangs] = useState<LangEntry[]>([]);
+
+  // Fetch dynamic language routes from DB
+  useEffect(() => {
+    const fetchDynamic = async () => {
+      try {
+        const { data, error } = await supabase
+          .from("vertical_language_routes" as any)
+          .select("lang_code, lang_name, path")
+          .eq("vertical", vertical);
+        if (error) throw error;
+        if (data) {
+          setDynamicLangs(
+            (data as any[]).map((r: any) => ({
+              code: r.lang_code,
+              name: r.lang_name,
+              path: r.path,
+            }))
+          );
+        }
+      } catch (err) {
+        console.error("Failed to fetch dynamic languages:", err);
+      }
+    };
+    fetchDynamic();
+  }, [vertical]);
+
+  // Merge static + dynamic (dynamic overrides static for same code)
+  const staticLangs = verticalLanguages[vertical] || [];
+  const mergedMap = new Map<string, LangEntry>();
+  staticLangs.forEach((l) => mergedMap.set(l.code, l));
+  dynamicLangs.forEach((l) => mergedMap.set(l.code, l));
+  const languages = Array.from(mergedMap.values());
 
   if (languages.length <= 1) return null;
 
@@ -43,7 +83,6 @@ const VerticalLanguageSwitcher = ({
       <span className={labelClass}>Select language:</span>
       <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap justify-center">
         {languages.map(({ code, name, path }) => {
-          // Map language codes: zh -> zh-CN for flag lookup, uk -> uk for flag lookup
           const flagCode = code === "zh" ? "zh-CN" : code;
           const FlagComponent = flagComponents[flagCode] || flagComponents[code];
           const isActive = currentLang === code;
