@@ -1,6 +1,6 @@
 // Shared input validation utilities for edge functions
 
-const MAX_CONTENT_LENGTH = 50000; // ~12,500 words
+const MAX_CONTENT_LENGTH = 200000; // ~50k words — needed for full HTML clone pages
 const MAX_STRING_FIELD = 255;
 const MAX_KEYWORDS_LENGTH = 1000;
 
