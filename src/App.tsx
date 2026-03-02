@@ -135,6 +135,7 @@ const Signup = lazyRetry(() => import("./pages/Signup"));
 const ForgotPassword = lazyRetry(() => import("./pages/ForgotPassword"));
 const ResetPassword = lazyRetry(() => import("./pages/ResetPassword"));
 import ProtectedRoute from "./components/ProtectedRoute";
+const DynamicTranslatedPage = lazyRetry(() => import("./pages/DynamicTranslatedPage"));
 
 // Legal Documents Multi-language Pages
 const AffiliateDE = lazyRetry(() => import("./pages/AffiliateDE"));
@@ -334,6 +335,12 @@ const App = () => (
 
             {/* AI Dashboard (Protected) */}
             <Route path="/ai-dashboard" element={<ProtectedRoute><AIDashboard /></ProtectedRoute>} />
+
+            {/* AI Dashboard (Protected) */}
+            <Route path="/ai-dashboard" element={<ProtectedRoute><AIDashboard /></ProtectedRoute>} />
+
+            {/* Dynamic translated pages from DB */}
+            <Route path="/:lang/*" element={<DynamicTranslatedPage />} />
 
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

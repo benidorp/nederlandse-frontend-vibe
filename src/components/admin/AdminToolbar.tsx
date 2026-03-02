@@ -174,6 +174,7 @@ const AdminToolbar = () => {
     // Detect vertical for auto-registration
     const currentPath = window.location.pathname;
     const vertical = detectVerticalFromPath(currentPath);
+    const currentTitle = document.title;
 
     setBulkRunning(true);
     setResult("");
@@ -182,6 +183,7 @@ const AdminToolbar = () => {
     setCloneProgress({ ...progress });
 
     const results: string[] = [];
+    const createdPages: string[] = [];
 
     for (const langCode of langs) {
       const langLabel = LANGUAGES.find((l) => l.code === langCode)?.label || langCode;
@@ -194,13 +196,61 @@ const AdminToolbar = () => {
         });
         if (error) throw error;
         if (data?.error) throw new Error(data.error);
+        
+        // Parse the AI result
+        let parsed: any = {};
+        try {
+          const resultStr = typeof data.result === "string" ? data.result : JSON.stringify(data.result);
+          // Strip markdown code block if present
+          const cleaned = resultStr.replace(/^```json\n?/, "").replace(/\n?```$/, "");
+          parsed = JSON.parse(cleaned);
+        } catch {
+          parsed = { htmlContent: data.result, title: currentTitle, slug: "" };
+        }
+
+        // Build the slug for the translated page
+        const baseSlug = currentPath.split("/").pop() || "page";
+        const translatedSlug = parsed.slug || baseSlug;
+        const fullPath = `/${langCode}/${translatedSlug}`;
+        
+        // Save the translated page to the database
+        const { error: insertError } = await supabase.from("ai_generated_pages").insert({
+          title: parsed.title || parsed.metaTitle || `${currentTitle} (${langLabel})`,
+          slug: fullPath,
+          html_content: parsed.htmlContent || parsed.content || (typeof data.result === "string" ? data.result : ""),
+          language: langCode,
+          meta_title: parsed.metaTitle || parsed.title || "",
+          meta_description: parsed.metaDescription || "",
+          status: "published",
+          user_id: user!.id,
+          niche: vertical || "general",
+          source_page_id: null,
+          metadata: { vertical, sourcePath: currentPath },
+        });
+
+        if (insertError) {
+          console.error("Page save error:", insertError);
+          // If duplicate slug, try upsert approach
+          if (insertError.code === "23505") {
+            await supabase.from("ai_generated_pages")
+              .update({
+                html_content: parsed.htmlContent || parsed.content || (typeof data.result === "string" ? data.result : ""),
+                meta_title: parsed.metaTitle || parsed.title || "",
+                meta_description: parsed.metaDescription || "",
+                title: parsed.title || parsed.metaTitle || `${currentTitle} (${langLabel})`,
+              })
+              .eq("slug", fullPath)
+              .eq("user_id", user!.id);
+          }
+        }
+
         progress[langCode] = "done";
-        results.push(`✅ ${langLabel}: OK`);
+        createdPages.push(fullPath);
+        results.push(`✅ ${langLabel}: ${fullPath}`);
 
         // Auto-register flag if vertical detected
         if (vertical) {
-          const translatedPath = data?.translatedPath || `/${langCode}/${currentPath.split('/').pop() || ''}`;
-          await registerFlag(vertical, langCode, langLabel, translatedPath);
+          await registerFlag(vertical, langCode, langLabel, fullPath);
           results[results.length - 1] += " 🏳️";
         }
       } catch (err: any) {
@@ -210,8 +260,17 @@ const AdminToolbar = () => {
       setCloneProgress({ ...progress });
     }
 
+    // Add clickable links
+    if (createdPages.length > 0) {
+      results.push("");
+      results.push("📄 Vertaalde pagina's:");
+      createdPages.forEach((p) => {
+        results.push(`  → ${window.location.origin}${p}`);
+      });
+    }
+
     setResult(results.join("\n"));
-    toast.success(`Bulk clone & translate voltooid: ${langs.length} talen${vertical ? " (vlaggetjes geregistreerd)" : ""}`);
+    toast.success(`Bulk clone & translate voltooid: ${createdPages.length}/${langs.length} pagina's aangemaakt`);
     setBulkRunning(false);
   };
 
