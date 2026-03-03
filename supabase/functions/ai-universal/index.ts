@@ -143,13 +143,14 @@ CRITICAL RULES:
 - Return ONLY the translated HTML content, nothing else
 - Do NOT wrap output in markdown code blocks (\`\`\`html or \`\`\`)
 - Do NOT add any explanation or commentary
+- IMPORTANT: You MUST translate the <h1> page title to ${language}. The H1 is the most important element to translate!
+- Translate ALL visible human-readable text: H1, H2, H3, H4, H5, H6 headings, paragraphs, spans, button labels, alt text, placeholders, aria-labels, title attributes
 - Preserve ALL HTML tags, classes, attributes, links, images, SVGs, iframes, forms, buttons, and inputs exactly as-is
 - Preserve ALL inline styles, data attributes, and CSS classes unchanged
 - NEVER change any src="" attribute value — image paths like /assets/filename.png MUST remain byte-for-byte identical
 - NEVER change any href="" attribute value
 - Preserve ALL embedded elements (e.g. stripe-buy-button) unchanged
 - FAQ sections use h2 for questions and h3 for answers. When you see an h3 with placeholder text like "[AI: schrijf hier een uitgebreid antwoord...]", replace it with a well-written, informative answer to the h2 question above it, in ${language}. Keep the h2/h3 structure.
-- Only translate visible human-readable text: headings, paragraphs, button labels, alt text, placeholders, aria-labels, title attributes
 - Do NOT translate class names, IDs, href URLs, src URLs, or any code
 - Do NOT remove, add, restructure, or simplify ANY HTML elements
 - The output HTML must have the EXACT same number of elements as the input
