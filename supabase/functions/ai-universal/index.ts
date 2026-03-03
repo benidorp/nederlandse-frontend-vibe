@@ -496,18 +496,22 @@ serve(async (req) => {
         maxTokens: ["clone_page", "translate"].includes(jobType) ? 16384 : ["blog", "create_page", "domain_generate"].includes(jobType) ? 8000 : 4000,
       });
     } catch (err: any) {
-      // Fallback on error
+      // Fallback on error — wrap in its own try-catch to prevent unhandled exceptions
       if (fallbackEnabled && provider !== "lovable" && err.message !== "PAYMENT_REQUIRED") {
         console.log(`Provider ${provider} failed, falling back to lovable`);
         const fallbackKey = Deno.env.get("LOVABLE_API_KEY");
         if (fallbackKey) {
-          const fallbackModel = PROVIDERS.lovable.models[tier as keyof typeof PROVIDERS.lovable.models];
-          provider = "lovable";
-          model = fallbackModel;
-          result = await callProvider("lovable", fallbackKey, fallbackModel, systemPrompt, userContent, {
-            temperature: ["translate", "clone_page"].includes(jobType) ? 0.3 : 0.7,
-            maxTokens: ["clone_page", "translate"].includes(jobType) ? 16384 : ["blog", "create_page", "domain_generate"].includes(jobType) ? 8000 : 4000,
-          });
+          try {
+            const fallbackModel = PROVIDERS.lovable.models[tier as keyof typeof PROVIDERS.lovable.models];
+            provider = "lovable";
+            model = fallbackModel;
+            result = await callProvider("lovable", fallbackKey, fallbackModel, systemPrompt, userContent, {
+              temperature: ["translate", "clone_page"].includes(jobType) ? 0.3 : 0.7,
+              maxTokens: ["clone_page", "translate"].includes(jobType) ? 16384 : ["blog", "create_page", "domain_generate"].includes(jobType) ? 8000 : 4000,
+            });
+          } catch (fallbackErr: any) {
+            console.error(`Lovable fallback also failed: ${fallbackErr.message}`);
+          }
         }
       }
       if (!result) {
