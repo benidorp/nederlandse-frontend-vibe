@@ -110,21 +110,20 @@ const AdminToolbar = () => {
       // Clone DOM, strip editor/framework attributes and empty decorative divs to reduce payload ~80%
       const clone = main.cloneNode(true) as HTMLElement;
 
-      // Convert Radix accordions to open Q&A blocks with h2 question / h3 answer
+      // Convert Radix accordions to open Q&A: h2 for question, h3 placeholder for AI to fill answer
       clone.querySelectorAll("[data-radix-collection-item]").forEach((item) => {
         const trigger = item.querySelector("button[data-radix-accordion-trigger], [role='button']");
-        const content = item.querySelector("[data-radix-accordion-content], [role='region']");
-        if (trigger && content) {
+        if (trigger) {
           const wrapper = document.createElement("div");
-          wrapper.className = (item.className || "border-2 border-primary/20 rounded-lg px-6") + " py-4";
+          wrapper.className = "mb-8";
           const h2 = document.createElement("h2");
           h2.className = "text-xl md:text-2xl font-bold mb-3";
           h2.textContent = trigger.textContent || "";
-          const answerDiv = document.createElement("div");
-          answerDiv.className = "text-muted-foreground leading-relaxed";
-          answerDiv.innerHTML = content.innerHTML;
+          const h3 = document.createElement("h3");
+          h3.className = "text-base md:text-lg text-muted-foreground leading-relaxed font-normal";
+          h3.textContent = "[AI: schrijf hier een uitgebreid antwoord op bovenstaande vraag in de doeltaal]";
           wrapper.appendChild(h2);
-          wrapper.appendChild(answerDiv);
+          wrapper.appendChild(h3);
           item.replaceWith(wrapper);
         }
       });
