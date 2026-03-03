@@ -147,9 +147,9 @@ CRITICAL RULES:
 - Preserve ALL inline styles, data attributes, and CSS classes unchanged
 - NEVER change any src="" attribute value — image paths like /assets/filename.png MUST remain byte-for-byte identical
 - NEVER change any href="" attribute value
-- Preserve ALL embedded elements (e.g. stripe-buy-button, details, summary) unchanged
-- CRITICAL: <details> and <summary> elements MUST be preserved exactly as-is. Translate the text inside <summary> tags but NEVER remove, restructure, or convert these elements. They provide interactive FAQ functionality.
-- Only translate visible human-readable text: headings, paragraphs, button labels, alt text, placeholders, aria-labels, title attributes, summary text inside <summary> tags
+- Preserve ALL embedded elements (e.g. stripe-buy-button) unchanged
+- FAQ sections use open h2/div format (not collapsible). Translate the text inside h2 headings and answer divs but preserve the structure.
+- Only translate visible human-readable text: headings, paragraphs, button labels, alt text, placeholders, aria-labels, title attributes
 - Do NOT translate class names, IDs, href URLs, src URLs, or any code
 - Do NOT remove, add, restructure, or simplify ANY HTML elements
 - The output HTML must have the EXACT same number of elements as the input
