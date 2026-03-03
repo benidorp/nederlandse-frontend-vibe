@@ -62,8 +62,8 @@ const DynamicTranslatedPage = () => {
   const lang = langMatch ? langMatch[1] : "en";
 
   const sanitizedHtml = DOMPurify.sanitize(page.html_content, {
-    ADD_TAGS: ['stripe-buy-button'],
-    ADD_ATTR: ['buy-button-id', 'publishable-key'],
+    ADD_TAGS: ['stripe-buy-button', 'details', 'summary'],
+    ADD_ATTR: ['buy-button-id', 'publishable-key', 'open'],
   });
 
   // Check if content has its own sections (full-page clone) vs simple content

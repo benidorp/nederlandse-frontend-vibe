@@ -145,8 +145,10 @@ CRITICAL RULES:
 - Do NOT add any explanation or commentary
 - Preserve ALL HTML tags, classes, attributes, links, images, SVGs, iframes, forms, buttons, and inputs exactly as-is
 - Preserve ALL inline styles, data attributes, and CSS classes unchanged
-- Preserve ALL href URLs, src URLs, and any embedded scripts (e.g. stripe-buy-button) byte-for-byte
-- Only translate visible human-readable text (headings, paragraphs, button labels, alt text, placeholders, aria-labels, title attributes)
+- NEVER change any src="" attribute value — image paths like /assets/filename.png MUST remain byte-for-byte identical
+- NEVER change any href="" attribute value
+- Preserve ALL embedded elements (e.g. stripe-buy-button, details, summary) unchanged
+- Only translate visible human-readable text: headings, paragraphs, button labels, alt text, placeholders, aria-labels, title attributes, summary text
 - Do NOT translate class names, IDs, href URLs, src URLs, or any code
 - Do NOT remove, add, restructure, or simplify ANY HTML elements
 - The output HTML must have the EXACT same number of elements as the input

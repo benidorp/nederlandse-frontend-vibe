@@ -109,6 +109,26 @@ const AdminToolbar = () => {
     if (asHtml) {
       // Clone DOM, strip editor/framework attributes and empty decorative divs to reduce payload ~80%
       const clone = main.cloneNode(true) as HTMLElement;
+
+      // Convert Radix accordions to native <details>/<summary> for static HTML interactivity
+      clone.querySelectorAll("[data-radix-collection-item]").forEach((item) => {
+        const trigger = item.querySelector("button[data-radix-accordion-trigger], [role='button']");
+        const content = item.querySelector("[data-radix-accordion-content], [role='region']");
+        if (trigger && content) {
+          const details = document.createElement("details");
+          details.className = item.className || "border-2 border-primary/20 rounded-lg px-6";
+          const summary = document.createElement("summary");
+          summary.className = "text-left text-lg font-semibold py-4 cursor-pointer hover:text-primary list-none";
+          summary.innerHTML = trigger.textContent || "";
+          const contentDiv = document.createElement("div");
+          contentDiv.className = "text-muted-foreground leading-relaxed pb-4";
+          contentDiv.innerHTML = content.innerHTML;
+          details.appendChild(summary);
+          details.appendChild(contentDiv);
+          item.replaceWith(details);
+        }
+      });
+
       clone.querySelectorAll("*").forEach((el) => {
         const attrs = Array.from(el.attributes);
         attrs.forEach((attr) => {
@@ -117,6 +137,7 @@ const AdminToolbar = () => {
             attr.name.startsWith("data-component-") ||
             attr.name.startsWith("data-radix-") ||
             attr.name.startsWith("data-state") ||
+            attr.name.startsWith("data-orientation") ||
             attr.name === "data-testid"
           ) {
             el.removeAttribute(attr.name);
@@ -270,11 +291,30 @@ const AdminToolbar = () => {
         
         let htmlContent = translatedSections.join("\n");
 
+        // Restore any image src paths that AI may have altered
+        const sourceSrcs = baseHtml.match(/src="([^"]*?)"/gi) || [];
+        const srcMap = new Map<string, string>();
+        sourceSrcs.forEach(s => {
+          const m = s.match(/src="([^"]*?)"/i);
+          if (m) {
+            const filename = m[1].split('/').pop() || '';
+            srcMap.set(filename, m[1]);
+          }
+        });
+        // Fix broken image paths by matching filenames
+        htmlContent = htmlContent.replace(/src="([^"]*?)"/gi, (match, srcVal) => {
+          const filename = srcVal.split('/').pop() || '';
+          if (srcMap.has(filename)) return `src="${srcMap.get(filename)}"`;
+          // Check if original src exists in source
+          const origSrc = Array.from(srcMap.values()).find(s => srcVal.includes(s.split('/').pop() || '___'));
+          if (origSrc) return `src="${origSrc}"`;
+          return match;
+        });
+
         // Ensure Stripe buy buttons are preserved from source
         const sourceStripeMatch = baseHtml.match(/<stripe-buy-button[^>]*>/gi) || [];
         const cloneHasStripe = htmlContent.includes('stripe-buy-button');
         if (sourceStripeMatch.length > 0 && !cloneHasStripe) {
-          // Inject Stripe button in a pricing wrapper at the end
           const stripeHtml = sourceStripeMatch.map(btn => 
             `<div class="flex justify-center py-8"><div class="[&_stripe-buy-button]:scale-125 [&_stripe-buy-button]:origin-center">${btn}</stripe-buy-button></div></div>`
           ).join('');
@@ -290,7 +330,13 @@ const AdminToolbar = () => {
           results.push(`  🔧 ${langLabel}: ${translateValidation.autoFixed.length} auto-fixes`);
         }
 
-        const pageTitle = `${currentTitle} (${langLabel})`;
+        // Extract translated H1 for page title
+        const h1Match = htmlContent.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i);
+        const translatedTitle = h1Match 
+          ? h1Match[1].replace(/<[^>]*>/g, '').trim()
+          : `${currentTitle} (${langLabel})`;
+        const pageTitle = translatedTitle || `${currentTitle} (${langLabel})`;
+        
         const baseSlug = currentPath.split("/").pop() || "page";
         const fullPath = `/${langCode}/${baseSlug}`;
 
