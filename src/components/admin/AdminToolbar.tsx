@@ -259,9 +259,9 @@ const AdminToolbar = () => {
           const cleaned = rawResult.replace(/^```(?:json|html)?\s*\n?/i, "").replace(/\n?```\s*$/i, "").trim();
           translatedSections.push(cleaned);
           
-          // Small delay between chunks to avoid rate limiting
+          // Delay between chunks to avoid rate limiting (2.5s for safety)
           if (i < sections.length - 1) {
-            await new Promise(r => setTimeout(r, 1200));
+            await new Promise(r => setTimeout(r, 2500));
           }
           
           // Remove progress line
@@ -269,6 +269,19 @@ const AdminToolbar = () => {
         }
         
         let htmlContent = translatedSections.join("\n");
+
+        // Ensure Stripe buy buttons are preserved from source
+        const sourceStripeMatch = baseHtml.match(/<stripe-buy-button[^>]*>/gi) || [];
+        const cloneHasStripe = htmlContent.includes('stripe-buy-button');
+        if (sourceStripeMatch.length > 0 && !cloneHasStripe) {
+          // Inject Stripe button in a pricing wrapper at the end
+          const stripeHtml = sourceStripeMatch.map(btn => 
+            `<div class="flex justify-center py-8"><div class="[&_stripe-buy-button]:scale-125 [&_stripe-buy-button]:origin-center">${btn}</stripe-buy-button></div></div>`
+          ).join('');
+          const pricingSection = `<section id="pricing-payment" class="py-12 bg-gradient-to-br from-background via-primary/5 to-background"><div class="container mx-auto px-4"><div class="max-w-4xl mx-auto text-center">${stripeHtml}</div></div></section>`;
+          htmlContent += '\n' + pricingSection;
+          results.push(`  💳 ${langLabel}: Stripe betaalknop hersteld`);
+        }
 
         // Post-translate validation
         const translateValidation = validateAndFixClone(baseHtml, htmlContent);

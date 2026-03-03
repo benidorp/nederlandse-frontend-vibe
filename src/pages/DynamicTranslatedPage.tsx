@@ -61,7 +61,10 @@ const DynamicTranslatedPage = () => {
   const langMatch = slug.match(/^\/([a-z]{2})\//);
   const lang = langMatch ? langMatch[1] : "en";
 
-  const sanitizedHtml = DOMPurify.sanitize(page.html_content);
+  const sanitizedHtml = DOMPurify.sanitize(page.html_content, {
+    ADD_TAGS: ['stripe-buy-button'],
+    ADD_ATTR: ['buy-button-id', 'publishable-key'],
+  });
 
   // Check if content has its own sections (full-page clone) vs simple content
   const isFullPageClone = sanitizedHtml.includes('<section');
