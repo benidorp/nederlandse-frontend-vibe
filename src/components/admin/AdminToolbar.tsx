@@ -110,21 +110,24 @@ const AdminToolbar = () => {
       // Clone DOM, strip editor/framework attributes and empty decorative divs to reduce payload ~80%
       const clone = main.cloneNode(true) as HTMLElement;
 
-      // Convert Radix accordions to open Q&A: h2 for question, h3 placeholder for AI to fill answer
-      clone.querySelectorAll("[data-radix-collection-item]").forEach((item) => {
-        const trigger = item.querySelector("button[data-radix-accordion-trigger], [role='button']");
-        if (trigger) {
-          const wrapper = document.createElement("div");
-          wrapper.className = "mb-8";
-          const h2 = document.createElement("h2");
-          h2.className = "text-xl md:text-2xl font-bold mb-3";
-          h2.textContent = trigger.textContent || "";
-          const h3 = document.createElement("h3");
-          h3.className = "text-base md:text-lg text-muted-foreground leading-relaxed font-normal";
-          h3.textContent = "[AI: schrijf hier een uitgebreid antwoord op bovenstaande vraag in de doeltaal]";
-          wrapper.appendChild(h2);
-          wrapper.appendChild(h3);
-          item.replaceWith(wrapper);
+      // Replace entire FAQ/accordion sections with a marker for AI to generate fresh FAQ
+      const faqSections = clone.querySelectorAll("section");
+      faqSections.forEach((section) => {
+        const hasAccordion = section.querySelector("[data-radix-collection-item], [data-state], [role='region']");
+        const textHint = (section.textContent || "").toLowerCase();
+        const isFAQ = hasAccordion || textHint.includes("frequently asked") || textHint.includes("faq") || textHint.includes("veelgestelde") || textHint.includes("häufig") || textHint.includes("questions fréquemment");
+        if (isFAQ) {
+          // Extract existing questions as context for the AI
+          const questions: string[] = [];
+          section.querySelectorAll("button, h2, h3, [role='button']").forEach(el => {
+            const t = (el.textContent || "").trim();
+            if (t.length > 10 && t.length < 200 && !t.includes("[AI:")) questions.push(t);
+          });
+          const questionsHint = questions.length > 0 ? ` Original questions for reference: ${questions.join(" | ")}` : "";
+          const marker = document.createElement("section");
+          marker.className = section.className;
+          marker.innerHTML = `<!-- GENERATE_FAQ: Generate 6 FAQ items as h2 (question) and h3 (answer) pairs about the page topic. Write detailed, helpful answers (2-3 sentences each). Use the same styling classes.${questionsHint} -->`;
+          section.replaceWith(marker);
         }
       });
 

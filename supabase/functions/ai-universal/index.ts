@@ -150,7 +150,7 @@ CRITICAL RULES:
 - NEVER change any src="" attribute value — image paths like /assets/filename.png MUST remain byte-for-byte identical
 - NEVER change any href="" attribute value
 - Preserve ALL embedded elements (e.g. stripe-buy-button) unchanged
-- FAQ sections use h2 for questions and h3 for answers. When you see an h3 with placeholder text like "[AI: schrijf hier een uitgebreid antwoord...]", replace it with a well-written, informative answer to the h2 question above it, in ${language}. Keep the h2/h3 structure.
+- When you see an HTML comment like <!-- GENERATE_FAQ: ... -->, replace it with 6 FAQ items. Each item should be a div with class="mb-8" containing an h2 (class="text-xl md:text-2xl font-bold mb-3") for the question and an h3 (class="text-base md:text-lg text-muted-foreground leading-relaxed font-normal") for a detailed answer (2-3 sentences). Write all content in ${language}. The FAQ should be relevant to the page topic. Keep the surrounding section wrapper.
 - Do NOT translate class names, IDs, href URLs, src URLs, or any code
 - Do NOT remove, add, restructure, or simplify ANY HTML elements
 - The output HTML must have the EXACT same number of elements as the input
