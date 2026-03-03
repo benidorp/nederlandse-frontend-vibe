@@ -148,7 +148,7 @@ CRITICAL RULES:
 - NEVER change any src="" attribute value — image paths like /assets/filename.png MUST remain byte-for-byte identical
 - NEVER change any href="" attribute value
 - Preserve ALL embedded elements (e.g. stripe-buy-button) unchanged
-- FAQ sections use open h2/div format (not collapsible). Translate the text inside h2 headings and answer divs but preserve the structure.
+- FAQ sections use h2 for questions and h3 for answers. When you see an h3 with placeholder text like "[AI: schrijf hier een uitgebreid antwoord...]", replace it with a well-written, informative answer to the h2 question above it, in ${language}. Keep the h2/h3 structure.
 - Only translate visible human-readable text: headings, paragraphs, button labels, alt text, placeholders, aria-labels, title attributes
 - Do NOT translate class names, IDs, href URLs, src URLs, or any code
 - Do NOT remove, add, restructure, or simplify ANY HTML elements
