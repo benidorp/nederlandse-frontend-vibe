@@ -323,6 +323,20 @@ const AdminToolbar = () => {
           results.push(`  💳 ${langLabel}: Stripe betaalknop hersteld`);
         }
 
+        // Ensure <details>/<summary> FAQ elements are preserved from source
+        const sourceDetailCount = (baseHtml.match(/<details[\s>]/gi) || []).length;
+        const cloneDetailCount = (htmlContent.match(/<details[\s>]/gi) || []).length;
+        if (sourceDetailCount > 0 && cloneDetailCount === 0) {
+          // AI stripped details/summary — extract from source and re-inject
+          const detailsRegex = /<details[\s\S]*?<\/details>/gi;
+          const sourceDetails = baseHtml.match(detailsRegex) || [];
+          if (sourceDetails.length > 0) {
+            const faqSection = `<section class="py-20 bg-gradient-to-b from-primary/5 to-background"><div class="container mx-auto px-4"><div class="max-w-3xl mx-auto space-y-4">${sourceDetails.join('\n')}</div></div></section>`;
+            htmlContent += '\n' + faqSection;
+            results.push(`  📋 ${langLabel}: FAQ <details> elementen hersteld (${sourceDetails.length})`);
+          }
+        }
+
         // Post-translate validation
         const translateValidation = validateAndFixClone(baseHtml, htmlContent);
         if (translateValidation.autoFixed.length > 0) {
@@ -337,8 +351,31 @@ const AdminToolbar = () => {
           : `${currentTitle} (${langLabel})`;
         const pageTitle = translatedTitle || `${currentTitle} (${langLabel})`;
         
+        // Translate slug: ask AI for a translated URL-safe slug
         const baseSlug = currentPath.split("/").pop() || "page";
-        const fullPath = `/${langCode}/${baseSlug}`;
+        let translatedSlug = baseSlug;
+        try {
+          const { data: slugData } = await supabase.functions.invoke("ai-universal", {
+            body: { 
+              jobType: "translate", 
+              content: `Translate this URL slug to ${langLabel}. Return ONLY the translated slug, lowercase, hyphens instead of spaces, no special characters, no accents (use ASCII equivalents), no explanation. Keep it SEO-friendly and under 80 characters. Original slug: ${baseSlug}`, 
+              language: langCode, 
+              provider: AI_PROVIDER 
+            },
+          });
+          if (slugData?.result) {
+            const rawSlug = (typeof slugData.result === "string" ? slugData.result : "")
+              .trim()
+              .toLowerCase()
+              .replace(/[^a-z0-9-]/g, '-')
+              .replace(/-+/g, '-')
+              .replace(/^-|-$/g, '');
+            if (rawSlug.length > 5) translatedSlug = rawSlug;
+          }
+        } catch (e) {
+          console.warn("Slug translation failed, using original:", e);
+        }
+        const fullPath = `/${langCode}/${translatedSlug}`;
 
         // Save the translated page
         const { error: insertError } = await supabase.from("ai_generated_pages").insert({

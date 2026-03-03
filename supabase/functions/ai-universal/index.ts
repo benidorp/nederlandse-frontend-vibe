@@ -148,7 +148,8 @@ CRITICAL RULES:
 - NEVER change any src="" attribute value — image paths like /assets/filename.png MUST remain byte-for-byte identical
 - NEVER change any href="" attribute value
 - Preserve ALL embedded elements (e.g. stripe-buy-button, details, summary) unchanged
-- Only translate visible human-readable text: headings, paragraphs, button labels, alt text, placeholders, aria-labels, title attributes, summary text
+- CRITICAL: <details> and <summary> elements MUST be preserved exactly as-is. Translate the text inside <summary> tags but NEVER remove, restructure, or convert these elements. They provide interactive FAQ functionality.
+- Only translate visible human-readable text: headings, paragraphs, button labels, alt text, placeholders, aria-labels, title attributes, summary text inside <summary> tags
 - Do NOT translate class names, IDs, href URLs, src URLs, or any code
 - Do NOT remove, add, restructure, or simplify ANY HTML elements
 - The output HTML must have the EXACT same number of elements as the input
