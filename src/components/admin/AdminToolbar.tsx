@@ -110,22 +110,22 @@ const AdminToolbar = () => {
       // Clone DOM, strip editor/framework attributes and empty decorative divs to reduce payload ~80%
       const clone = main.cloneNode(true) as HTMLElement;
 
-      // Convert Radix accordions to native <details>/<summary> for static HTML interactivity
+      // Convert Radix accordions to open Q&A blocks with h2 question / h3 answer
       clone.querySelectorAll("[data-radix-collection-item]").forEach((item) => {
         const trigger = item.querySelector("button[data-radix-accordion-trigger], [role='button']");
         const content = item.querySelector("[data-radix-accordion-content], [role='region']");
         if (trigger && content) {
-          const details = document.createElement("details");
-          details.className = item.className || "border-2 border-primary/20 rounded-lg px-6";
-          const summary = document.createElement("summary");
-          summary.className = "text-left text-lg font-semibold py-4 cursor-pointer hover:text-primary list-none";
-          summary.innerHTML = trigger.textContent || "";
-          const contentDiv = document.createElement("div");
-          contentDiv.className = "text-muted-foreground leading-relaxed pb-4";
-          contentDiv.innerHTML = content.innerHTML;
-          details.appendChild(summary);
-          details.appendChild(contentDiv);
-          item.replaceWith(details);
+          const wrapper = document.createElement("div");
+          wrapper.className = (item.className || "border-2 border-primary/20 rounded-lg px-6") + " py-4";
+          const h2 = document.createElement("h2");
+          h2.className = "text-xl md:text-2xl font-bold mb-3";
+          h2.textContent = trigger.textContent || "";
+          const answerDiv = document.createElement("div");
+          answerDiv.className = "text-muted-foreground leading-relaxed";
+          answerDiv.innerHTML = content.innerHTML;
+          wrapper.appendChild(h2);
+          wrapper.appendChild(answerDiv);
+          item.replaceWith(wrapper);
         }
       });
 
@@ -323,19 +323,7 @@ const AdminToolbar = () => {
           results.push(`  💳 ${langLabel}: Stripe betaalknop hersteld`);
         }
 
-        // Ensure <details>/<summary> FAQ elements are preserved from source
-        const sourceDetailCount = (baseHtml.match(/<details[\s>]/gi) || []).length;
-        const cloneDetailCount = (htmlContent.match(/<details[\s>]/gi) || []).length;
-        if (sourceDetailCount > 0 && cloneDetailCount === 0) {
-          // AI stripped details/summary — extract from source and re-inject
-          const detailsRegex = /<details[\s\S]*?<\/details>/gi;
-          const sourceDetails = baseHtml.match(detailsRegex) || [];
-          if (sourceDetails.length > 0) {
-            const faqSection = `<section class="py-20 bg-gradient-to-b from-primary/5 to-background"><div class="container mx-auto px-4"><div class="max-w-3xl mx-auto space-y-4">${sourceDetails.join('\n')}</div></div></section>`;
-            htmlContent += '\n' + faqSection;
-            results.push(`  📋 ${langLabel}: FAQ <details> elementen hersteld (${sourceDetails.length})`);
-          }
-        }
+        // FAQ is now open Q&A (h2/div), no details/summary restoration needed
 
         // Post-translate validation
         const translateValidation = validateAndFixClone(baseHtml, htmlContent);
