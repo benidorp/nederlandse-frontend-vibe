@@ -200,7 +200,7 @@ CRITICAL OUTPUT FORMAT:
   return prompts[jobType] || prompts.translate;
 }
 
-async function callProvider(
+async function callProviderOnce(
   provider: string,
   apiKey: string,
   model: string,
@@ -274,6 +274,34 @@ async function callProvider(
     content: data.choices?.[0]?.message?.content || "",
     usage: data.usage || { prompt_tokens: 0, completion_tokens: 0, total_tokens: 0 },
   };
+}
+
+// Retry wrapper with exponential backoff for rate limits
+async function callProvider(
+  provider: string,
+  apiKey: string,
+  model: string,
+  systemPrompt: string,
+  userContent: string,
+  options: { temperature?: number; maxTokens?: number } = {}
+) {
+  const maxRetries = 3;
+  const baseDelay = 3000; // 3 seconds
+
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    try {
+      return await callProviderOnce(provider, apiKey, model, systemPrompt, userContent, options);
+    } catch (err: any) {
+      if (err.message === "RATE_LIMITED" && attempt < maxRetries) {
+        const delay = baseDelay * Math.pow(2, attempt); // 3s, 6s, 12s
+        console.log(`Rate limited on attempt ${attempt + 1}, retrying in ${delay}ms...`);
+        await new Promise(resolve => setTimeout(resolve, delay));
+        continue;
+      }
+      throw err;
+    }
+  }
+  throw new Error("RATE_LIMITED"); // shouldn't reach here
 }
 
 serve(async (req) => {
