@@ -153,6 +153,13 @@ const AdminToolbar = () => {
         }
       });
       let html = clone.innerHTML || "";
+      // Convert Vite-hashed asset URLs (e.g. /assets/nicole-working-abc123.png)
+      // to stable public paths (e.g. /images/nicole-working.png) so cloned HTML works
+      html = html.replace(/src="[^"]*\/assets\/([^"]*?)-[a-zA-Z0-9_-]{8,}\.(png|jpg|jpeg|svg|webp)"/gi, 
+        (match, name, ext) => `src="/images/${name}.${ext}"`
+      );
+      // Also fix any /src/assets/ references that snuck through
+      html = html.replace(/src="\/src\/assets\/([^"]*)"/gi, 'src="/images/$1"');
       // Collapse whitespace runs
       html = html.replace(/\n\s*\n/g, "\n").replace(/\s{2,}/g, " ");
       return html;
