@@ -532,21 +532,42 @@ serve(async (req) => {
         maxTokens: ["clone_page", "translate"].includes(jobType) ? 16384 : ["blog", "create_page", "domain_generate"].includes(jobType) ? 8000 : 4000,
       });
     } catch (err: any) {
-      // Fallback on error — wrap in its own try-catch to prevent unhandled exceptions
-      if (fallbackEnabled && provider !== "lovable" && err.message !== "PAYMENT_REQUIRED") {
-        console.log(`Provider ${provider} failed, falling back to lovable`);
-        const fallbackKey = Deno.env.get("LOVABLE_API_KEY");
-        if (fallbackKey) {
-          try {
-            const fallbackModel = PROVIDERS.lovable.models[tier as keyof typeof PROVIDERS.lovable.models];
-            provider = "lovable";
-            model = fallbackModel;
-            result = await callProvider("lovable", fallbackKey, fallbackModel, systemPrompt, userContent, {
-              temperature: ["translate", "clone_page"].includes(jobType) ? 0.3 : 0.7,
-              maxTokens: ["clone_page", "translate"].includes(jobType) ? 16384 : ["blog", "create_page", "domain_generate"].includes(jobType) ? 8000 : 4000,
-            });
-          } catch (fallbackErr: any) {
-            console.error(`Lovable fallback also failed: ${fallbackErr.message}`);
+      // Fallback chain: try OpenAI first (if available and not already used), then Lovable
+      if (fallbackEnabled && err.message !== "PAYMENT_REQUIRED") {
+        const callOpts = {
+          temperature: ["translate", "clone_page"].includes(jobType) ? 0.3 : 0.7,
+          maxTokens: ["clone_page", "translate"].includes(jobType) ? 16384 : ["blog", "create_page", "domain_generate"].includes(jobType) ? 8000 : 4000,
+        };
+
+        // Try OpenAI fallback first (if not already the provider that failed)
+        if (provider !== "openai") {
+          const openaiKey = Deno.env.get("OPENAI_API_KEY");
+          if (openaiKey) {
+            try {
+              const openaiModel = PROVIDERS.openai.models[tier as keyof typeof PROVIDERS.openai.models];
+              console.log(`Provider ${provider} failed, falling back to openai (${openaiModel})`);
+              provider = "openai";
+              model = openaiModel;
+              result = await callProvider("openai", openaiKey, openaiModel, systemPrompt, userContent, callOpts);
+            } catch (openaiErr: any) {
+              console.error(`OpenAI fallback failed: ${openaiErr.message}`);
+            }
+          }
+        }
+
+        // Try Lovable fallback if OpenAI also failed
+        if (!result && provider !== "lovable") {
+          const lovableKey = Deno.env.get("LOVABLE_API_KEY");
+          if (lovableKey) {
+            try {
+              const fallbackModel = PROVIDERS.lovable.models[tier as keyof typeof PROVIDERS.lovable.models];
+              console.log(`Falling back to lovable (${fallbackModel})`);
+              provider = "lovable";
+              model = fallbackModel;
+              result = await callProvider("lovable", lovableKey, fallbackModel, systemPrompt, userContent, callOpts);
+            } catch (fallbackErr: any) {
+              console.error(`Lovable fallback also failed: ${fallbackErr.message}`);
+            }
           }
         }
       }
