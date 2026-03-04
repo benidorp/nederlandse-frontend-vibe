@@ -150,7 +150,11 @@ CRITICAL RULES:
 - NEVER change any src="" attribute value — image paths like /assets/filename.png MUST remain byte-for-byte identical
 - NEVER change any href="" attribute value
 - Preserve ALL embedded elements (e.g. stripe-buy-button) unchanged
-- When you see an HTML comment like <!-- GENERATE_FAQ: ... -->, replace it with 6 FAQ items. Each item should be a div with class="mb-8" containing an h2 (class="text-xl md:text-2xl font-bold mb-3") for the question and an h3 (class="text-base md:text-lg text-muted-foreground leading-relaxed font-normal") for a detailed answer (2-3 sentences). Write all content in ${language}. The FAQ should be relevant to the page topic. Keep the surrounding section wrapper.
+- When you see an HTML comment like <!-- GENERATE_FAQ: ... -->, replace it with a professional FAQ column. Use this exact structure:
+  First add a centered header: <div class="text-center mb-12"><h2 class="text-3xl md:text-4xl font-bold mb-4" style="background:linear-gradient(135deg,hsl(var(--primary)),hsl(var(--accent)));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">FAQ</h2><p class="text-lg" style="color:hsl(var(--muted-foreground))">Frequently Asked Questions</p></div>
+  Then wrap all items in: <div class="max-w-3xl mx-auto space-y-0 divide-y" style="border:1px solid hsl(var(--border));border-radius:12px;overflow:hidden">
+  Each FAQ item: <div style="padding:24px 28px;background:hsl(var(--card));transition:background 0.2s" onmouseover="this.style.background='hsl(var(--accent)/0.04)'" onmouseout="this.style.background='hsl(var(--card))'"><h2 style="font-size:1.1rem;font-weight:600;color:hsl(var(--foreground));margin:0 0 8px 0;display:flex;align-items:baseline;gap:10px"><span style="color:hsl(var(--primary));font-weight:700">Q.</span> QUESTION</h2><h3 style="font-size:0.95rem;font-weight:400;color:hsl(var(--muted-foreground));margin:0;line-height:1.7;padding-left:26px">ANSWER (2-3 detailed sentences)</h3></div>
+  Generate 6 items. Write the header text and all Q&A in ${language}. Keep the surrounding section wrapper.
 - Do NOT translate class names, IDs, href URLs, src URLs, or any code
 - Do NOT remove, add, restructure, or simplify ANY HTML elements
 - The output HTML must have the EXACT same number of elements as the input
