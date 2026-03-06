@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { useAuth } from "@/hooks/useAuth";
+import { useAdminRole } from "@/hooks/useAdminRole";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import {
@@ -54,7 +54,7 @@ interface ChatMessage {
 }
 
 const AdminToolbar = () => {
-  const { user, loading } = useAuth();
+  const { user, loading, isAdmin } = useAdminRole();
   const [expanded, setExpanded] = useState(false);
   const [activeTool, setActiveTool] = useState<ActiveTool>(null);
   const [inputText, setInputText] = useState("");
@@ -77,7 +77,7 @@ const AdminToolbar = () => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [chatMessages]);
 
-  if (loading || !user) return null;
+  if (loading || !user || !isAdmin) return null;
 
   const handleAIAction = async (jobType: string, content: string, language?: string) => {
     if (!content.trim()) {
