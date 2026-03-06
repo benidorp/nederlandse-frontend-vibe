@@ -46,7 +46,7 @@ const LANGUAGES = [
 
 const AI_PROVIDER = "gemini";
 
-type ActiveTool = "generate" | "translate" | "seo" | "chat" | "clone" | null;
+type ActiveTool = "generate" | "translate" | "seo" | "chat" | "clone" | "bulk-seo" | null;
 
 interface ChatMessage {
   role: "user" | "assistant";
