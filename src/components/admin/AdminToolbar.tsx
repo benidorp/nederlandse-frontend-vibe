@@ -726,6 +726,7 @@ const AdminToolbar = () => {
                   </div>
                 )}
               </div>
+            )}
 
             {/* Existing tools: generate, translate, seo */}
             {(activeTool === "generate" || activeTool === "translate" || activeTool === "seo") && (
