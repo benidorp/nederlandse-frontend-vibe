@@ -77,7 +77,7 @@ const AdminToolbar = () => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [chatMessages]);
 
-  if (loading || !user) return null;
+  if (loading || !user || !isAdmin) return null;
 
   const handleAIAction = async (jobType: string, content: string, language?: string) => {
     if (!content.trim()) {
