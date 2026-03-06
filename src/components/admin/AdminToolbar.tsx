@@ -671,6 +671,62 @@ const AdminToolbar = () => {
               </div>
             )}
 
+            {/* Bulk SEO Articles Generator */}
+            {activeTool === "bulk-seo" && (
+              <div className="space-y-3">
+                <p className="text-xs text-white/60">Generate 30 long-form SEO articles about expired domains, premium domains, and SEO strategy. Each article is 3000+ words with images.</p>
+                <div className="flex items-center gap-3">
+                  <Button
+                    size="sm"
+                    className="bg-[hsl(var(--secondary))] hover:bg-[hsl(var(--accent))] text-white h-8"
+                    onClick={async () => {
+                      setBulkRunning(true);
+                      setResult("");
+                      const results: string[] = [];
+                      for (let i = 0; i < 30; i++) {
+                        results.push(`⏳ Generating article ${i + 1}/30...`);
+                        setResult(results.join("\n"));
+                        try {
+                          const { data, error } = await supabase.functions.invoke("generate-seo-articles", {
+                            body: { startIndex: i, count: 1 },
+                          });
+                          results.pop();
+                          if (error) {
+                            results.push(`❌ Article ${i + 1}: ${error.message}`);
+                          } else if (data?.result) {
+                            const r = data.result;
+                            results.push(`${r.status === "created" ? "✅" : r.status === "skipped" ? "⏭️" : "❌"} ${r.slug} (${r.status})`);
+                          }
+                          setResult(results.join("\n"));
+                          // Delay between articles
+                          if (i < 29) await new Promise(r => setTimeout(r, 2000));
+                        } catch (e: any) {
+                          results.pop();
+                          results.push(`❌ Article ${i + 1}: ${e.message}`);
+                          setResult(results.join("\n"));
+                        }
+                      }
+                      results.push("\n🎉 Bulk generation complete!");
+                      setResult(results.join("\n"));
+                      setBulkRunning(false);
+                      toast.success("30 SEO articles generated!");
+                    }}
+                    disabled={bulkRunning}
+                  >
+                    {bulkRunning ? <Loader2 className="h-3 w-3 animate-spin mr-1" /> : <Play className="h-3 w-3 mr-1" />}
+                    Generate All 30 Articles
+                  </Button>
+                </div>
+                {result && (
+                  <div className="relative bg-black/30 rounded-md p-3 text-sm whitespace-pre-wrap max-h-[30vh] overflow-y-auto">
+                    <Button size="sm" variant="ghost" className="absolute top-2 right-2 h-6 text-xs text-white/70 hover:text-white" onClick={copyResult}>
+                      {copied ? <Check className="h-3 w-3" /> : <Copy className="h-3 w-3" />}
+                    </Button>
+                    {result}
+                  </div>
+                )}
+              </div>
+
             {/* Existing tools: generate, translate, seo */}
             {(activeTool === "generate" || activeTool === "translate" || activeTool === "seo") && (
               <>
