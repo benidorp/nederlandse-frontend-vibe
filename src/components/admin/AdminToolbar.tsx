@@ -515,6 +515,7 @@ const AdminToolbar = () => {
                 {activeTool === "seo" && "🔍 SEO Meta Optimization"}
                 {activeTool === "clone" && "📄 Clone & Translate Page (Bulk)"}
                 {activeTool === "chat" && "💬 AI Workspace Chat"}
+                {activeTool === "bulk-seo" && "📝 Generate 30 SEO Articles"}
               </h3>
               <Button size="sm" variant="ghost" className="h-6 w-6 p-0 text-white" onClick={() => { setActiveTool(null); setExpanded(false); }}>
                 <X className="h-4 w-4" />
