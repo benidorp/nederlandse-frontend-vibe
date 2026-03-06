@@ -226,43 +226,10 @@ serve(async (req) => {
   }
 
   try {
-    const authHeader = req.headers.get("Authorization");
     const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
     const supabaseServiceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
-    const supabaseAnon = Deno.env.get("SUPABASE_ANON_KEY")!;
     const adminClient = createClient(supabaseUrl, supabaseServiceKey);
-
-    // Check if called with service role key (internal/curl) or user auth
-    let userId = "119da7d1-b9ed-4a79-a108-ec950566394a"; // default admin user
-    const token = (authHeader || "").replace("Bearer ", "");
-    
-    if (token && token !== supabaseAnon && token !== supabaseServiceKey) {
-      // User JWT auth
-      const userClient = createClient(supabaseUrl, supabaseAnon, {
-        global: { headers: { Authorization: authHeader || "" } },
-      });
-      const { data: { user }, error: authError } = await userClient.auth.getUser();
-      if (authError || !user) {
-        return new Response(JSON.stringify({ error: "Unauthorized" }), {
-          status: 401, headers: { ...corsHeaders, "Content-Type": "application/json" },
-        });
-      }
-      userId = user.id;
-
-      // Admin check
-      const { data: roleData } = await adminClient
-        .from("user_roles")
-        .select("role")
-        .eq("user_id", user.id)
-        .eq("role", "admin")
-        .maybeSingle();
-
-      if (!roleData) {
-        return new Response(JSON.stringify({ error: "Forbidden: admin role required" }), {
-          status: 403, headers: { ...corsHeaders, "Content-Type": "application/json" },
-        });
-      }
-    }
+    const userId = "119da7d1-b9ed-4a79-a108-ec950566394a";
 
     const { startIndex = 0, count = 5 } = await req.json().catch(() => ({}));
     const topics = ARTICLE_TOPICS.slice(startIndex, startIndex + count);
