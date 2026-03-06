@@ -54,7 +54,7 @@ interface ChatMessage {
 }
 
 const AdminToolbar = () => {
-  const { user, loading } = useAuth();
+  const { user, loading, isAdmin } = useAdminRole();
   const [expanded, setExpanded] = useState(false);
   const [activeTool, setActiveTool] = useState<ActiveTool>(null);
   const [inputText, setInputText] = useState("");
