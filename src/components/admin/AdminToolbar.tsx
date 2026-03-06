@@ -490,6 +490,9 @@ const AdminToolbar = () => {
         <Button size="sm" variant={activeTool === "chat" ? "secondary" : "ghost"} className="h-7 text-xs text-white hover:text-white" onClick={() => toggleTool("chat")}>
           <MessageSquare className="h-3 w-3 mr-1" /> Chat
         </Button>
+        <Button size="sm" variant={activeTool === "bulk-seo" ? "secondary" : "ghost"} className="h-7 text-xs text-white hover:text-white" onClick={() => toggleTool("bulk-seo")}>
+          <Sparkles className="h-3 w-3 mr-1" /> Bulk SEO Pages
+        </Button>
         <Button size="sm" variant="ghost" className="h-7 text-xs text-white hover:text-white" onClick={handleRegisterCurrentPage} title="Registreer het vlaggetje van deze pagina voor de language switcher">
           <Flag className="h-3 w-3 mr-1" /> Register Flag
         </Button>
