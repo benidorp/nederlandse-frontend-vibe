@@ -383,7 +383,7 @@ Return ONLY the HTML content, no markdown, no code blocks.`;
           meta_title: topic.title,
           meta_description: topic.description,
           status: "published",
-          user_id: user.id,
+          user_id: userId,
           niche: "premium-domains",
           metadata: { keywords: topic.keywords, image: topic.image, generated: true },
         });
