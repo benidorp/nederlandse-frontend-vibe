@@ -46,8 +46,9 @@ const GTranslateWidget = ({ defaultLanguage = "en", detectBrowserLanguage = fals
     script.defer = true;
     document.body.appendChild(script);
 
-    if (detectBrowserLanguage) {
-      const browserLang = navigator.language.split("-")[0].toLowerCase();
+    // Auto-translate to target language (from referrer) or browser language
+    const autoLang = targetLanguage || (detectBrowserLanguage ? navigator.language.split("-")[0].toLowerCase() : null);
+    if (autoLang && autoLang !== defaultLanguage) {
       const supportedLangs = [
         "sq", "ar", "hy", "az", "be", "bn", "bs", "bg", "zh", "hr", "cs", "da", "nl", "en",
         "et", "fil", "fi", "fr", "ka", "de", "el", "gu", "he", "hi", "hu", "is", "ig", "id",
@@ -55,15 +56,14 @@ const GTranslateWidget = ({ defaultLanguage = "en", detectBrowserLanguage = fals
         "no", "fa", "pl", "pt", "pa", "ro", "ru", "sm", "sr", "sd", "sk", "sl", "es", "sv",
         "tg", "ta", "te", "th", "tr", "uk", "ur", "uz", "vi"
       ];
-
-      if (browserLang !== defaultLanguage && supportedLangs.includes(browserLang)) {
+      if (supportedLangs.includes(autoLang)) {
         const attemptAutoTranslate = (retries = 0) => {
           const select = document.querySelector('.gtranslate_wrapper select') as HTMLSelectElement;
           if (select) {
             const options = Array.from(select.options);
-            const matchingOption = options.find(opt => opt.value === browserLang);
+            const matchingOption = options.find(opt => opt.value === autoLang);
             if (matchingOption) {
-              select.value = browserLang;
+              select.value = autoLang;
               select.dispatchEvent(new Event('change', { bubbles: true }));
             }
           } else if (retries < 20) {
