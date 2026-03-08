@@ -1,6 +1,6 @@
 import { Globe } from "lucide-react";
 
-type Lang = 'sv' | 'no' | 'da' | 'fi' | 'cs' | 'el' | 'ru' | 'ro' | 'bg' | 'uk' | 'hr' | 'sk' | 'sr' | 'sl';
+type Lang = string;
 
 const allLanguagePages = [
   { lang: 'nl', label: 'Nederlands', url: '/expireddomainnames/nl/verlopen-premium-domeinnamen-kopen-seo-waarde' },
