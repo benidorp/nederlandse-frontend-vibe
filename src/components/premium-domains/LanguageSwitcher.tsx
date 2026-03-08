@@ -416,10 +416,10 @@ interface LanguageSwitcherProps {
 
 const LanguageSwitcher = ({ currentLanguage }: LanguageSwitcherProps) => {
   return (
-    <div className="flex items-center justify-center gap-2 py-4 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-800 border-b border-amber-500/20">
+    <div className="fixed bottom-0 left-0 right-0 z-50 flex items-center justify-center gap-2 py-3 bg-slate-950/95 backdrop-blur-sm border-t border-amber-500/20 shadow-[0_-4px_20px_rgba(0,0,0,0.4)]">
       <Globe className="h-4 w-4 text-amber-400 mr-1 hidden sm:inline" />
       <span className="text-amber-300/80 text-xs font-semibold mr-2 hidden sm:inline tracking-wide uppercase">Language:</span>
-      <div className="flex items-center gap-2 sm:gap-2.5 flex-wrap justify-center px-2">
+      <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap justify-center px-2 max-w-[90vw]">
         {languages.map((lang) => {
           const FlagComponent = flagComponents[lang.code];
           const isActive = currentLanguage === lang.code;
@@ -429,7 +429,7 @@ const LanguageSwitcher = ({ currentLanguage }: LanguageSwitcherProps) => {
               key={lang.code}
               href={lang.path}
               className={`
-                relative w-8 h-6 sm:w-9 sm:h-7 rounded overflow-hidden border-2 transition-all duration-200 
+                relative w-7 h-5 sm:w-8 sm:h-6 rounded overflow-hidden border-2 transition-all duration-200 
                 hover:scale-110 hover:shadow-lg bg-slate-800 p-0.5
                 ${isActive 
                   ? "border-amber-400 shadow-lg shadow-amber-500/40 scale-110 ring-2 ring-amber-400/50" 
