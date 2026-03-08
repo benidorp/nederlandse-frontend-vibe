@@ -5,6 +5,7 @@ import LegalFooterPremiumDomainsEN from "@/components/premium-domains/LegalFoote
 import FooterPremiumDomainsEN from "@/components/premium-domains/FooterPremiumDomainsEN";
 import { SEOHead, PREMIUM_DOMAINS_LEGAL_HREFLANG, getLegalPageBreadcrumbs } from "@/components/seo";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import GTranslateWidget from "@/components/GTranslateWidget";
 
 const PremiumDomainsLegalEN = () => {
   const breadcrumbItems = getLegalPageBreadcrumbs("en");
