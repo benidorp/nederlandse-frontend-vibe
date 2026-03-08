@@ -541,7 +541,7 @@ const wordMap: Record<LangCode, Record<string, string>> = {
 };
 
 // Translate a description from English to target language
-function translateDescription(description: string, lang: LangCode): string {
+function translateDescription(description: string, lang: string): string {
   let result = description;
   const phrases = phraseTranslations[lang];
   const words = wordMap[lang];
