@@ -5,9 +5,28 @@ import LegalFooterPremiumDomainsEN from "@/components/premium-domains/LegalFoote
 import FooterPremiumDomainsEN from "@/components/premium-domains/FooterPremiumDomainsEN";
 import { SEOHead, PREMIUM_DOMAINS_LEGAL_HREFLANG, getLegalPageBreadcrumbs } from "@/components/seo";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import GTranslateWidget from "@/components/GTranslateWidget";
 
 const PremiumDomainsLegalEN = () => {
   const breadcrumbItems = getLegalPageBreadcrumbs("en");
+
+  // Detect source language from referrer URL (e.g. /expireddomainnames/fr/... → "fr")
+  const getSourceLang = (): string | null => {
+    const ref = document.referrer;
+    if (!ref) return null;
+    try {
+      const url = new URL(ref);
+      const match = url.pathname.match(/\/expireddomainnames\/([a-z]{2})\//);
+      if (match && match[1] !== "en") return match[1];
+    } catch { /* ignore */ }
+    // Also check URL search param ?lang=fr
+    const params = new URLSearchParams(window.location.search);
+    const lang = params.get("lang");
+    if (lang && lang !== "en") return lang;
+    return null;
+  };
+
+  const sourceLang = getSourceLang();
   
   return (
     <>
@@ -39,6 +58,13 @@ const PremiumDomainsLegalEN = () => {
                 <span className="text-xl font-bold text-white">Premium Domains</span>
               </Link>
               <div className="flex items-center gap-3">
+                <div className="hidden sm:block">
+                  <GTranslateWidget 
+                    defaultLanguage="en" 
+                    targetLanguage={sourceLang}
+                    inline={true} 
+                  />
+                </div>
                 <Link to="/expireddomainnames/en/buy-premium-domains-high-authority-seo-value">
                   <Button variant="outline" className="bg-slate-800 border-slate-600 text-white hover:bg-slate-700">
                     <Home className="mr-2 h-4 w-4" />
