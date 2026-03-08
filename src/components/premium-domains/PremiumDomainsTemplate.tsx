@@ -187,6 +187,7 @@ const PremiumDomainsTemplate = ({ config: c }: { config: PDPageConfig }) => {
                   <div className="mt-auto pt-3 sm:pt-4 border-t border-slate-700/50">
                     <div className="flex items-center justify-between mb-2 sm:mb-3 bg-slate-800/60 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2"><span className="text-xs sm:text-sm font-medium text-slate-300">{c.priceLabel}</span><span className="text-base sm:text-lg font-bold text-amber-400">{domain.price}</span></div>
                     {domain.stripePaymentLink ? (<a href={domain.stripePaymentLink} target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-3 sm:py-4 bg-[#F59E0B] text-slate-950 font-bold rounded-md shadow-md hover:bg-[#D97706] transition-colors text-sm sm:text-base md:text-lg">{c.buyNow}</a>) : (<button onClick={() => handleDomainInquiry(domain.name)} className="w-full inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-3 sm:py-4 bg-slate-700 text-white font-bold rounded-md hover:bg-slate-600 transition-colors text-sm sm:text-base">{c.inquiryLabel}</button>)}
+                    <PaymentIcons lang={c.lang} />
                   </div>
                 </CardContent>
               </Card>
