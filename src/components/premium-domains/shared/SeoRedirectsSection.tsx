@@ -18,6 +18,16 @@ const t: Record<Lang, {
       { title: "Private Blog Network (PBN)", desc: "Use premium domains to create valuable content sites that generate powerful backlinks to your main site.", benefits: ["Full control over backlinks", "Thematic content sites", "Diversified link profiles", "Scalable link building"] }
     ]
   },
+  nl: {
+    badge: "SEO-Strategieën", title: "Hoe Werken SEO-Redirects en Autoriteitopbouw?",
+    subtitle: "Er zijn verschillende strategische manieren om premium domeinen te gebruiken voor maximale SEO-impact.",
+    strategies: [
+      { title: "301 Redirect Strategie", desc: "Een 301 redirect draagt alle SEO-waarde en autoriteit over van het premium domein naar uw hoofddomein. Dit is de snelste manier om uw rankings te verbeteren.", benefits: ["Directe overdracht van linkwaarde", "Behoud van alle backlinks", "Snelle autoriteitstoename", "Eenmalige setup, blijvend effect"] },
+      { title: "Autoriteit Stapelen", desc: "Bouw een netwerk van autoritaire domeinen die allemaal linken naar uw hoofdsite. Dit creëert een krachtig ecosysteem van relevante, hoogwaardige backlinks.", benefits: ["Meerdere autoriteitsbronnen", "Thematische relevantie", "Natuurlijk linkprofiel", "Langetermijn SEO-strategie"] },
+      { title: "Gebruik als Hoofddomein", desc: "Start uw nieuwe project direct met een domein dat al autoriteit heeft. Dit bespaart jaren van linkbuilding.", benefits: ["Direct starten met autoriteit", "Bestaand Google-vertrouwen", "Snellere indexering", "Concurrentievoordeel"] },
+      { title: "Privé Blognetwerk (PBN)", desc: "Gebruik premium domeinen om waardevolle contentsites te maken die krachtige backlinks genereren naar uw hoofdsite.", benefits: ["Volledige controle over backlinks", "Thematische contentsites", "Gediversifieerde linkprofielen", "Schaalbare linkbuilding"] }
+    ]
+  },
   sv: {
     badge: "SEO-Strategier", title: "Hur Fungerar SEO-Omdirigeringar och Auktoritetsbyggande?",
     subtitle: "Det finns flera strategiska sätt att använda premiumdomäner för maximal SEO-påverkan.",
