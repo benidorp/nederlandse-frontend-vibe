@@ -17,6 +17,9 @@ import { getTranslatedDomains } from "@/data/domainTranslations";
 import SeoRedirectsSection from "@/components/premium-domains/shared/SeoRedirectsSection";
 import TrusteeServiceSection from "@/components/premium-domains/shared/TrusteeServiceSection";
 import EuDomainValueSection from "@/components/premium-domains/shared/EuDomainValueSection";
+import ImportantToKnowSection from "@/components/premium-domains/shared/ImportantToKnowSection";
+import DomainTransferSection from "@/components/premium-domains/shared/DomainTransferSection";
+import ExtendedFAQSection from "@/components/premium-domains/shared/ExtendedFAQSection";
 import InternalLanguageLinks from "@/components/premium-domains/shared/InternalLanguageLinks";
 import { PREMIUM_DOMAINS_HREFLANG } from "@/data/premiumDomainsHreflang";
 
@@ -151,6 +154,8 @@ const PremiumDomainsTemplate = ({ config: c }: { config: PDPageConfig }) => {
           </div></div>
         </section>
 
+        <ImportantToKnowSection lang={c.lang} />
+
         <section id="domains" className="py-20 relative"><div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/50 to-transparent" /><div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-12"><Badge className="mb-4 bg-slate-800 text-amber-400 border-slate-700"><Globe className="w-4 h-4 mr-2 inline" />{c.gridBadge}</Badge><h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{c.gridTitle}</h2><p className="text-slate-400 max-w-3xl mx-auto">{c.gridSub}</p></div>
           <div className="max-w-5xl mx-auto mb-8 bg-slate-800/30 border border-slate-700/50 rounded-2xl p-8">
@@ -220,6 +225,8 @@ const PremiumDomainsTemplate = ({ config: c }: { config: PDPageConfig }) => {
         <SeoRedirectsSection lang={c.lang} />
         <TrusteeServiceSection lang={c.lang} />
         <EuDomainValueSection lang={c.lang} />
+        <DomainTransferSection lang={c.lang} />
+        <ExtendedFAQSection lang={c.lang} />
 
         <section className="py-16 bg-gradient-to-b from-slate-900 to-slate-950"><div className="container mx-auto px-4"><div className="max-w-4xl mx-auto"><article className="prose prose-invert prose-lg max-w-none">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 text-center">{c.seoTitle}</h2>
