@@ -80,7 +80,7 @@ const GTranslateWidget = ({ defaultLanguage = "en", detectBrowserLanguage = fals
       if (container) container.innerHTML = '';
       delete (window as any).gtranslateSettings;
     };
-  }, [defaultLanguage, detectBrowserLanguage, inline]);
+  }, [defaultLanguage, detectBrowserLanguage, targetLanguage, inline]);
 
   // Use a ref container so React never tries to reconcile GTranslate's DOM mutations
   return (
