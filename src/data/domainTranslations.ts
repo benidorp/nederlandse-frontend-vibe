@@ -1,7 +1,7 @@
 // Domain category and description translations for all 14 languages
 // Categories are translated, descriptions use a pattern-based translation system
 
-type LangCode = 'sv' | 'no' | 'da' | 'fi' | 'cs' | 'el' | 'ru' | 'ro' | 'bg' | 'uk' | 'hr' | 'sk' | 'sr' | 'sl' | 'ko' | 'hu' | 'th' | 'vi' | 'id' | 'et' | 'lv' | 'lt' | 'is' | 'sq' | 'mk' | 'bs' | 'lb' | 'bn' | 'ms';
+type LangCode = 'nl' | 'de' | 'fr' | 'es' | 'it' | 'pt' | 'pl' | 'tr' | 'ar' | 'hi' | 'ja' | 'zh' | 'sv' | 'no' | 'da' | 'fi' | 'cs' | 'el' | 'ru' | 'ro' | 'bg' | 'uk' | 'hr' | 'sk' | 'sr' | 'sl' | 'ko' | 'hu' | 'th' | 'vi' | 'id' | 'et' | 'lv' | 'lt' | 'is' | 'sq' | 'mk' | 'bs' | 'lb' | 'bn' | 'ms';
 
 // Category translations
 const categoryTranslations: Record<LangCode, Record<string, string>> = {
