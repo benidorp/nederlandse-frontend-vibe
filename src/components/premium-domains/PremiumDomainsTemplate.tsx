@@ -20,6 +20,8 @@ import EuDomainValueSection from "@/components/premium-domains/shared/EuDomainVa
 import ImportantToKnowSection from "@/components/premium-domains/shared/ImportantToKnowSection";
 import DomainTransferSection from "@/components/premium-domains/shared/DomainTransferSection";
 import ExtendedFAQSection from "@/components/premium-domains/shared/ExtendedFAQSection";
+import PaymentIcons from "@/components/premium-domains/shared/PaymentIcons";
+import WhyPremiumSection from "@/components/premium-domains/shared/WhyPremiumSection";
 import InternalLanguageLinks from "@/components/premium-domains/shared/InternalLanguageLinks";
 import { PREMIUM_DOMAINS_HREFLANG } from "@/data/premiumDomainsHreflang";
 
@@ -185,6 +187,7 @@ const PremiumDomainsTemplate = ({ config: c }: { config: PDPageConfig }) => {
                   <div className="mt-auto pt-3 sm:pt-4 border-t border-slate-700/50">
                     <div className="flex items-center justify-between mb-2 sm:mb-3 bg-slate-800/60 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2"><span className="text-xs sm:text-sm font-medium text-slate-300">{c.priceLabel}</span><span className="text-base sm:text-lg font-bold text-amber-400">{domain.price}</span></div>
                     {domain.stripePaymentLink ? (<a href={domain.stripePaymentLink} target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-3 sm:py-4 bg-[#F59E0B] text-slate-950 font-bold rounded-md shadow-md hover:bg-[#D97706] transition-colors text-sm sm:text-base md:text-lg">{c.buyNow}</a>) : (<button onClick={() => handleDomainInquiry(domain.name)} className="w-full inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-3 sm:py-4 bg-slate-700 text-white font-bold rounded-md hover:bg-slate-600 transition-colors text-sm sm:text-base">{c.inquiryLabel}</button>)}
+                    <PaymentIcons lang={c.lang} />
                   </div>
                 </CardContent>
               </Card>
@@ -192,14 +195,7 @@ const PremiumDomainsTemplate = ({ config: c }: { config: PDPageConfig }) => {
           </div>
         </div></section>
 
-        <section id="why-premium" className="py-20 bg-gradient-to-b from-slate-900 to-slate-950"><div className="container mx-auto px-4">
-          <div className="text-center mb-16"><Badge className="mb-4 bg-slate-800 text-amber-400 border-slate-700">{c.whyBadge}</Badge><h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{c.whyTitle}</h2><p className="text-slate-400 max-w-2xl mx-auto">{c.whySub}</p></div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            {c.whyCards.map((item, index) => { const icons = [Shield, Link, BarChart3, Globe]; const Icon = icons[index] || Globe; return (
-              <div key={index} className="text-center p-6 rounded-xl bg-slate-800/30 border border-slate-700/50"><div className="w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center mx-auto mb-4"><Icon className="h-6 w-6 text-amber-400" /></div><h4 className="text-white font-semibold mb-1">{item.title}</h4><p className="text-slate-400 text-sm">{item.desc}</p></div>
-            ); })}
-          </div>
-        </div></section>
+        <WhyPremiumSection lang={c.lang} />
 
         <section id="faq" className="py-20 bg-gradient-to-b from-slate-950 to-slate-900"><div className="container mx-auto px-4">
           <div className="text-center mb-16"><Badge className="mb-4 bg-slate-800 text-amber-400 border-slate-700">{c.faqBadge}</Badge><h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{c.faqTitle}</h2></div>
