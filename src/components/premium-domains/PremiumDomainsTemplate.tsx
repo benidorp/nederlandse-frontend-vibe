@@ -195,14 +195,7 @@ const PremiumDomainsTemplate = ({ config: c }: { config: PDPageConfig }) => {
           </div>
         </div></section>
 
-        <section id="why-premium" className="py-20 bg-gradient-to-b from-slate-900 to-slate-950"><div className="container mx-auto px-4">
-          <div className="text-center mb-16"><Badge className="mb-4 bg-slate-800 text-amber-400 border-slate-700">{c.whyBadge}</Badge><h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{c.whyTitle}</h2><p className="text-slate-400 max-w-2xl mx-auto">{c.whySub}</p></div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            {c.whyCards.map((item, index) => { const icons = [Shield, Link, BarChart3, Globe]; const Icon = icons[index] || Globe; return (
-              <div key={index} className="text-center p-6 rounded-xl bg-slate-800/30 border border-slate-700/50"><div className="w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center mx-auto mb-4"><Icon className="h-6 w-6 text-amber-400" /></div><h4 className="text-white font-semibold mb-1">{item.title}</h4><p className="text-slate-400 text-sm">{item.desc}</p></div>
-            ); })}
-          </div>
-        </div></section>
+        <WhyPremiumSection lang={c.lang} />
 
         <section id="faq" className="py-20 bg-gradient-to-b from-slate-950 to-slate-900"><div className="container mx-auto px-4">
           <div className="text-center mb-16"><Badge className="mb-4 bg-slate-800 text-amber-400 border-slate-700">{c.faqBadge}</Badge><h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{c.faqTitle}</h2></div>
