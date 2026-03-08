@@ -324,6 +324,21 @@ const App = () => (
             <Route path="/expireddomainnames/sk/kupit-premium-domeny-vysoka-autorita-seo-hodnota" element={<PremiumDomainsSK />} />
             <Route path="/expireddomainnames/sr/kupite-premium-domene-visoki-autoritet-seo-vrednost" element={<PremiumDomainsSR />} />
             <Route path="/expireddomainnames/sl/kupite-premium-domene-visoka-avtoriteta-seo-vrednost" element={<PremiumDomainsSL />} />
+            <Route path="/expireddomainnames/ko/peurimieom-domein-gumaehagi-nopun-gwonwi-seo-gachi" element={<PremiumDomainsKO />} />
+            <Route path="/expireddomainnames/hu/premium-domain-vasarlas-magas-tekintely-seo-ertek" element={<PremiumDomainsHU />} />
+            <Route path="/expireddomainnames/th/sue-domain-premium-amnaj-sung-kha-seo" element={<PremiumDomainsTH />} />
+            <Route path="/expireddomainnames/vi/mua-ten-mien-premium-uy-tin-cao-gia-tri-seo" element={<PremiumDomainsVI />} />
+            <Route path="/expireddomainnames/id/beli-domain-premium-otoritas-tinggi-nilai-seo" element={<PremiumDomainsID />} />
+            <Route path="/expireddomainnames/et/osta-premium-domeenid-korge-autoriteet-seo-vaartus" element={<PremiumDomainsET />} />
+            <Route path="/expireddomainnames/lv/pirkt-premium-domenu-augsta-autoritaate-seo-vertiba" element={<PremiumDomainsLV />} />
+            <Route path="/expireddomainnames/lt/pirkti-premium-domenus-auksta-autoritetas-seo-verte" element={<PremiumDomainsLT />} />
+            <Route path="/expireddomainnames/is/kaupa-premium-len-hatt-vald-seo-virdi" element={<PremiumDomainsIS />} />
+            <Route path="/expireddomainnames/sq/blini-domain-premium-autoritet-larte-vlere-seo" element={<PremiumDomainsSQ />} />
+            <Route path="/expireddomainnames/mk/kupete-premium-domeni-visok-avtoritet-seo-vrednost" element={<PremiumDomainsMK />} />
+            <Route path="/expireddomainnames/bs/kupite-premium-domene-visoki-autoritet-seo-vrijednost" element={<PremiumDomainsBS />} />
+            <Route path="/expireddomainnames/lb/kaaft-premium-domainen-hech-autoritaet-seo-wert" element={<PremiumDomainsLB />} />
+            <Route path="/expireddomainnames/bn/premium-domain-kinun-uccho-kartritwa-seo-mulya" element={<PremiumDomainsBN />} />
+            <Route path="/expireddomainnames/ms/beli-domain-premium-autoriti-tinggi-nilai-seo" element={<PremiumDomainsMS />} />
             
             {/* Individual Domain Product Pages */}
             <Route path="/domains/:domainSlug" element={<DomainProductPage />} />
