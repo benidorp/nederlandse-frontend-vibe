@@ -35,6 +35,21 @@ const languages: LanguageOption[] = [
   { code: "sk", name: "Slovenčina", path: "https://www.iaee.eu/expireddomainnames/sk/kupit-premium-domeny-vysoka-autorita-seo-hodnota" },
   { code: "sr", name: "Српски", path: "https://www.iaee.eu/expireddomainnames/sr/kupite-premium-domene-visoki-autoritet-seo-vrednost" },
   { code: "sl", name: "Slovenščina", path: "https://www.iaee.eu/expireddomainnames/sl/kupite-premium-domene-visoka-avtoriteta-seo-vrednost" },
+  { code: "ko", name: "한국어", path: "https://www.iaee.eu/expireddomainnames/ko/peurimieom-domein-gumaehagi-nopun-gwonwi-seo-gachi" },
+  { code: "hu", name: "Magyar", path: "https://www.iaee.eu/expireddomainnames/hu/premium-domain-vasarlas-magas-tekintely-seo-ertek" },
+  { code: "th", name: "ไทย", path: "https://www.iaee.eu/expireddomainnames/th/sue-domain-premium-amnaj-sung-kha-seo" },
+  { code: "vi", name: "Tiếng Việt", path: "https://www.iaee.eu/expireddomainnames/vi/mua-ten-mien-premium-uy-tin-cao-gia-tri-seo" },
+  { code: "id", name: "Bahasa Indonesia", path: "https://www.iaee.eu/expireddomainnames/id/beli-domain-premium-otoritas-tinggi-nilai-seo" },
+  { code: "et", name: "Eesti", path: "https://www.iaee.eu/expireddomainnames/et/osta-premium-domeenid-korge-autoriteet-seo-vaartus" },
+  { code: "lv", name: "Latviešu", path: "https://www.iaee.eu/expireddomainnames/lv/pirkt-premium-domenu-augsta-autoritaate-seo-vertiba" },
+  { code: "lt", name: "Lietuvių", path: "https://www.iaee.eu/expireddomainnames/lt/pirkti-premium-domenus-auksta-autoritetas-seo-verte" },
+  { code: "is", name: "Íslenska", path: "https://www.iaee.eu/expireddomainnames/is/kaupa-premium-len-hatt-vald-seo-virdi" },
+  { code: "sq", name: "Shqip", path: "https://www.iaee.eu/expireddomainnames/sq/blini-domain-premium-autoritet-larte-vlere-seo" },
+  { code: "mk", name: "Македонски", path: "https://www.iaee.eu/expireddomainnames/mk/kupete-premium-domeni-visok-avtoritet-seo-vrednost" },
+  { code: "bs", name: "Bosanski", path: "https://www.iaee.eu/expireddomainnames/bs/kupite-premium-domene-visoki-autoritet-seo-vrijednost" },
+  { code: "lb", name: "Lëtzebuergesch", path: "https://www.iaee.eu/expireddomainnames/lb/kaaft-premium-domainen-hech-autoritaet-seo-wert" },
+  { code: "bn", name: "বাংলা", path: "https://www.iaee.eu/expireddomainnames/bn/premium-domain-kinun-uccho-kartritwa-seo-mulya" },
+  { code: "ms", name: "Bahasa Melayu", path: "https://www.iaee.eu/expireddomainnames/ms/beli-domain-premium-autoriti-tinggi-nilai-seo" },
 ];
 
 // SVG Flag components
