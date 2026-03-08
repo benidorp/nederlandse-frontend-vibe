@@ -1,4 +1,4 @@
-type Lang = 'en' | 'sv' | 'no' | 'da' | 'fi' | 'cs' | 'el' | 'ru' | 'ro' | 'bg' | 'uk' | 'hr' | 'sk' | 'sr' | 'sl' | 'ko' | 'hu' | 'th' | 'vi' | 'id' | 'et' | 'lv' | 'lt' | 'is' | 'sq' | 'mk' | 'bs' | 'lb' | 'bn' | 'ms';
+type Lang = 'en' | 'nl' | 'sv' | 'no' | 'da' | 'fi' | 'cs' | 'el' | 'ru' | 'ro' | 'bg' | 'uk' | 'hr' | 'sk' | 'sr' | 'sl' | 'ko' | 'hu' | 'th' | 'vi' | 'id' | 'et' | 'lv' | 'lt' | 'is' | 'sq' | 'mk' | 'bs' | 'lb' | 'bn' | 'ms';
 
 const t: Record<Lang, {
   seoTitle: string; seoP1: string; seoP2: string; seoP3: string; seoP4: string; seoCta: string; seoCtaSub: string;
@@ -18,6 +18,21 @@ const t: Record<Lang, {
     euP4: ".EU domains enjoy particular trust among European consumers. Research shows that European users perceive .EU websites as more reliable for European services.",
     euP5: "With the growing focus on European digital sovereignty and GDPR compliance, a .EU domain positions your brand as European-conscious and trustworthy.",
     euP6: "Investing in a premium .EU domain means acquiring a digital asset with institutional backing, geographic relevance, and built-in SEO authority."
+  },
+  nl: {
+    seoTitle: "Koop Verlopen Domeinen: Investeer in Bewezen SEO-Autoriteit",
+    seoP1: "Het kopen van een verlopen domein is de slimste manier om direct te profiteren van jarenlang opgebouwde domeinautoriteit en kwaliteitsbacklinks.",
+    seoP2: "Onze zorgvuldig geselecteerde premium domeinen hebben een bewezen track record met backlinks van autoritaire bronnen zoals Wikipedia, universiteiten en overheidsinstanties.",
+    seoP3: "Of u nu een webshop wilt starten, een affiliatesite wilt lanceren of de SEO van uw bestaande bedrijf wilt verbeteren: een verlopen domein met hoge MOZ Domain Authority geeft u een onmiskenbaar voordeel.",
+    seoP4: "Elk premium domein in ons portfolio is gecontroleerd op spamvrije geschiedenis, relevante backlinks en goede linkprofielen.",
+    seoCta: "Klaar om uw online succes te versnellen?", seoCtaSub: "Verken ons portfolio van 110+ premium verlopen domeinnamen.",
+    euTitle: "Waarom Premium Europese .EU-Domeinnamen Zoveel Waarde Hebben",
+    euP1: "Europese .EU-domeinen vertegenwoordigen een exclusieve klasse van digitale activa. In tegenstelling tot .COM of .NET die voor iedereen beschikbaar zijn, vereisen .EU-domeinen een band met Europa — wat een natuurlijke drempel creëert die hun waarde verhoogt.",
+    euP2: "Veel van deze domeinen zijn afkomstig van officiële door de EU gefinancierde projecten, onderzoeksinitiatieven en culturele programma's. Deze institutionele achtergrond geeft hen backlinks van Europa.eu, nationale universiteiten en overheidsinstanties.",
+    euP3: "Terwijl de .COM-markt oververzadigd is met miljoenen geregistreerde domeinen, biedt het .EU-segment nog steeds mogelijkheden om domeinen te vinden met echte autoriteit en schone geschiedenis.",
+    euP4: ".EU-domeinen genieten bijzonder vertrouwen onder Europese consumenten. Onderzoek toont aan dat Europese gebruikers .EU-websites als betrouwbaarder ervaren voor Europese diensten.",
+    euP5: "Met de groeiende focus op Europese digitale soevereiniteit en AVG-naleving positioneert een .EU-domein uw merk als Europees bewust en betrouwbaar.",
+    euP6: "Investeren in een premium .EU-domein betekent het verwerven van een digitaal actief met institutionele steun, geografische relevantie en ingebouwde SEO-autoriteit."
   },
   sv: {
     seoTitle: "Köp Utgångna Domännamn: Investera i Bevisad SEO-Auktoritet",

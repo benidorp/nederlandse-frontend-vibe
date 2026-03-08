@@ -1,7 +1,7 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Globe, CheckCircle } from "lucide-react";
 
-type Lang = 'en' | 'sv' | 'no' | 'da' | 'fi' | 'cs' | 'el' | 'ru' | 'ro' | 'bg' | 'uk' | 'hr' | 'sk' | 'sr' | 'sl' | 'ko' | 'hu' | 'th' | 'vi' | 'id' | 'et' | 'lv' | 'lt' | 'is' | 'sq' | 'mk' | 'bs' | 'lb' | 'bn' | 'ms';
+type Lang = 'en' | 'nl' | 'sv' | 'no' | 'da' | 'fi' | 'cs' | 'el' | 'ru' | 'ro' | 'bg' | 'uk' | 'hr' | 'sk' | 'sr' | 'sl' | 'ko' | 'hu' | 'th' | 'vi' | 'id' | 'et' | 'lv' | 'lt' | 'is' | 'sq' | 'mk' | 'bs' | 'lb' | 'bn' | 'ms';
 
 const t: Record<Lang, {
   title: string; intro: string; globalAccess: string;
@@ -34,6 +34,26 @@ const t: Record<Lang, {
     investTitle: "🌍 Ideal for International Investors", investIntro: "For investors outside the EU, European domains offer:",
     investPoints: ["Exclusivity through regulation", "Higher quality threshold", "Strong geographic positioning", "Attractive use for international projects"],
     investCta: "Via trustee registration, premium expired .EU domains are usable globally.", investTagline: "➡️ European authority. International applicability."
+  },
+  nl: {
+    title: "Premium .EU & Europese Extensies met Geschiedenis — Wat is een Trustee Service?",
+    intro: "Wij zijn gespecialiseerd in .EU en andere Europese domeinextensies. Ons portfolio bestaat uit premium en verlopen domeinnamen met bewezen online geschiedenis.",
+    globalAccess: "🌐 Wereldwijd toegankelijk – ook voor niet-EU-kopers via trustee-registratie met een geverifieerd EU-adres.",
+    whatIs: "🔐 Wat is een Trustee (Lokale Aanwezigheidsdienst)?", whatIsDesc: "Een trustee is een erkende registrar die:",
+    uses: ["Een fysiek adres binnen de EU gebruikt voor registratie", "Optreedt als administratief contact bij het register", "Zorgt dat het domein voldoet aan alle EU-regels"],
+    meansTitle: "Wat dit voor u betekent:", means: ["U blijft volledige eigenaar en beheerder", "Vrij gebruik voor website, e-mail, merk of redirects", "Geen EU-bedrijf of lokaal adres nodig", "Volledig legaal en transparant"],
+    meansNote: "Voor niet-EU-kopers is dit de standaard en meest gebruikte oplossing.",
+    regTitle: "🧩 Trustee-Registratie via Erkende Registrars",
+    inwxTitle: "INWX — Zeer betaalbare trustee (vanaf €3)", inwxExt: ".EU · .IT · .FR · .DE", inwxHow: "Tijdens registratie wordt de trustee-optie automatisch aangeboden. INWX gebruikt een EU-adres voor registratie. U behoudt volledige controle.", inwxCost: "€3 per jaar",
+    d101Title: "101domain — Trustee direct bij afrekenen", d101Desc: "Trustee wordt automatisch aangeboden. Geschikt voor meerdere Europese ccTLD's.", d101Cost: "± $25 per jaar",
+    netimTitle: "Netim — Trustee alleen wanneer nodig", netimDesc: "Alleen actief voor extensies met vereisten. Transparante en professionele oplossing.", netimCost: "€10–€30 per jaar",
+    tableTitle: "📊 Overzicht", thReg: "Registrar", thExt: "Extensies", thCost: "Trustee-Kosten",
+    whyTitle: "💎 Waarom Premium Europese Domeinen Extra Waardevol Zijn", whyIntro: "Onze domeinen zijn meer dan alleen een naam:",
+    whyPoints: ["🔗 Online geschiedenis & vermeldingen", "🏛️ Vaak voormalige EU-projecten", "🌍 Vertrouwen bij Europese bezoekers", "📉 Minder concurrentie dan .COM", "🔁 Perfect voor 301 redirects", "🧠 Interessant voor branding, SEO en investeringen"],
+    whyNote: "In de praktijk zijn deze Europese namen vaak waardevoller en betrouwbaarder dan veel .COM, .NET of .ORG domeinen.",
+    investTitle: "🌍 Ideaal voor Internationale Investeerders", investIntro: "Voor investeerders buiten de EU bieden Europese domeinen:",
+    investPoints: ["Exclusiviteit door regelgeving", "Hogere kwaliteitsdrempel", "Sterke geografische positionering", "Aantrekkelijk gebruik voor internationale projecten"],
+    investCta: "Via trustee-registratie zijn premium verlopen .EU-domeinen wereldwijd bruikbaar.", investTagline: "➡️ Europese autoriteit. Internationale toepasbaarheid."
   },
   sv: {
     title: "Premium .EU & Europeiska Tillägg med Historik — Vad är en Trustee-Tjänst?",

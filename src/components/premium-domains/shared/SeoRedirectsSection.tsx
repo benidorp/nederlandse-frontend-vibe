@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link, CheckCircle } from "lucide-react";
 
-type Lang = 'en' | 'sv' | 'no' | 'da' | 'fi' | 'cs' | 'el' | 'ru' | 'ro' | 'bg' | 'uk' | 'hr' | 'sk' | 'sr' | 'sl' | 'ko' | 'hu' | 'th' | 'vi' | 'id' | 'et' | 'lv' | 'lt' | 'is' | 'sq' | 'mk' | 'bs' | 'lb' | 'bn' | 'ms';
+type Lang = 'en' | 'nl' | 'sv' | 'no' | 'da' | 'fi' | 'cs' | 'el' | 'ru' | 'ro' | 'bg' | 'uk' | 'hr' | 'sk' | 'sr' | 'sl' | 'ko' | 'hu' | 'th' | 'vi' | 'id' | 'et' | 'lv' | 'lt' | 'is' | 'sq' | 'mk' | 'bs' | 'lb' | 'bn' | 'ms';
 
 const t: Record<Lang, {
   badge: string; title: string; subtitle: string;
@@ -16,6 +16,16 @@ const t: Record<Lang, {
       { title: "Authority Stacking", desc: "Build a network of authoritative domains that all link to your main site. This creates a powerful ecosystem of relevant, high-quality backlinks.", benefits: ["Multiple authority sources", "Thematic relevance", "Natural link profile", "Long-term SEO strategy"] },
       { title: "Use as Main Domain", desc: "Launch your new project directly with a domain that already has authority. This saves years of link building.", benefits: ["Instant start with authority", "Existing Google trust", "Faster indexing", "Competitive advantage"] },
       { title: "Private Blog Network (PBN)", desc: "Use premium domains to create valuable content sites that generate powerful backlinks to your main site.", benefits: ["Full control over backlinks", "Thematic content sites", "Diversified link profiles", "Scalable link building"] }
+    ]
+  },
+  nl: {
+    badge: "SEO-Strategieën", title: "Hoe Werken SEO-Redirects en Autoriteitopbouw?",
+    subtitle: "Er zijn verschillende strategische manieren om premium domeinen te gebruiken voor maximale SEO-impact.",
+    strategies: [
+      { title: "301 Redirect Strategie", desc: "Een 301 redirect draagt alle SEO-waarde en autoriteit over van het premium domein naar uw hoofddomein. Dit is de snelste manier om uw rankings te verbeteren.", benefits: ["Directe overdracht van linkwaarde", "Behoud van alle backlinks", "Snelle autoriteitstoename", "Eenmalige setup, blijvend effect"] },
+      { title: "Autoriteit Stapelen", desc: "Bouw een netwerk van autoritaire domeinen die allemaal linken naar uw hoofdsite. Dit creëert een krachtig ecosysteem van relevante, hoogwaardige backlinks.", benefits: ["Meerdere autoriteitsbronnen", "Thematische relevantie", "Natuurlijk linkprofiel", "Langetermijn SEO-strategie"] },
+      { title: "Gebruik als Hoofddomein", desc: "Start uw nieuwe project direct met een domein dat al autoriteit heeft. Dit bespaart jaren van linkbuilding.", benefits: ["Direct starten met autoriteit", "Bestaand Google-vertrouwen", "Snellere indexering", "Concurrentievoordeel"] },
+      { title: "Privé Blognetwerk (PBN)", desc: "Gebruik premium domeinen om waardevolle contentsites te maken die krachtige backlinks genereren naar uw hoofdsite.", benefits: ["Volledige controle over backlinks", "Thematische contentsites", "Gediversifieerde linkprofielen", "Schaalbare linkbuilding"] }
     ]
   },
   sv: {
