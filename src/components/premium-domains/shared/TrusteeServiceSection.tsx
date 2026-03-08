@@ -1,7 +1,7 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Globe, CheckCircle } from "lucide-react";
 
-type Lang = 'sv' | 'no' | 'da' | 'fi' | 'cs' | 'el' | 'ru' | 'ro' | 'bg' | 'uk' | 'hr' | 'sk' | 'sr' | 'sl';
+type Lang = 'en' | 'sv' | 'no' | 'da' | 'fi' | 'cs' | 'el' | 'ru' | 'ro' | 'bg' | 'uk' | 'hr' | 'sk' | 'sr' | 'sl';
 
 const t: Record<Lang, {
   title: string; intro: string; globalAccess: string;
@@ -15,6 +15,26 @@ const t: Record<Lang, {
   investTitle: string; investIntro: string; investPoints: string[];
   investCta: string; investTagline: string;
 }> = {
+  en: {
+    title: "Premium .EU & European Extensions with History — What is a Trustee Service?",
+    intro: "We specialize in .EU and other European domain extensions. Our portfolio consists of premium and expired domain names with proven online history.",
+    globalAccess: "🌐 Globally accessible – also for non-EU buyers via trustee registration with a verified EU address.",
+    whatIs: "🔐 What is a Trustee (Local Presence Service)?", whatIsDesc: "A trustee is a recognized registrar that:",
+    uses: ["Uses a physical address within the EU for registration", "Acts as administrative contact with the registry", "Ensures the domain complies with all EU rules"],
+    meansTitle: "What this means for you:", means: ["You remain full owner and administrator", "Free use for website, email, brand or redirects", "No EU company or local address required", "Completely legal and transparent"],
+    meansNote: "For non-EU buyers, this is the standard and most commonly used solution.",
+    regTitle: "🧩 Trustee Registration via Recognized Registrars",
+    inwxTitle: "INWX — Very affordable trustee (from €3)", inwxExt: ".EU · .IT · .FR · .DE", inwxHow: "During registration, the trustee option is offered automatically. INWX uses an EU address for registration. You keep full control.", inwxCost: "€3 per year",
+    d101Title: "101domain — Trustee directly at checkout", d101Desc: "Trustee is offered automatically. Suitable for multiple European ccTLDs.", d101Cost: "± $25 per year",
+    netimTitle: "Netim — Trustee only when needed", netimDesc: "Active only for extensions with requirements. Transparent and professional solution.", netimCost: "€10–€30 per year",
+    tableTitle: "📊 Overview", thReg: "Registrar", thExt: "Extensions", thCost: "Trustee Cost",
+    whyTitle: "💎 Why Premium European Domains Are Extra Valuable", whyIntro: "Our domains are more than just a name:",
+    whyPoints: ["🔗 Online history & mentions", "🏛️ Often former EU projects", "🌍 Trust among European visitors", "📉 Less competition than .COM", "🔁 Perfect for 301 redirects", "🧠 Interesting for branding, SEO and investments"],
+    whyNote: "In practice, these European names are often more valuable and trustworthy than many .COM, .NET or .ORG domains.",
+    investTitle: "🌍 Ideal for International Investors", investIntro: "For investors outside the EU, European domains offer:",
+    investPoints: ["Exclusivity through regulation", "Higher quality threshold", "Strong geographic positioning", "Attractive use for international projects"],
+    investCta: "Via trustee registration, premium expired .EU domains are usable globally.", investTagline: "➡️ European authority. International applicability."
+  },
   sv: {
     title: "Premium .EU & Europeiska Tillägg med Historik — Vad är en Trustee-Tjänst?",
     intro: "Vi specialiserar oss på .EU och andra europeiska domäntillägg. Vår portfölj består av premium och utgångna domännamn med bevisad onlinehistorik.",
@@ -297,8 +317,8 @@ const t: Record<Lang, {
   }
 };
 
-const TrusteeServiceSection = ({ lang }: { lang: Lang }) => {
-  const c = t[lang];
+const TrusteeServiceSection = ({ lang }: { lang: string }) => {
+  const c = t[lang as Lang] || t['en'];
   return (
     <section id="trustee-service-section" className="py-16 bg-gradient-to-b from-slate-950 to-slate-900">
       <div className="container mx-auto px-4">

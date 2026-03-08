@@ -677,8 +677,10 @@ const useCaseTranslations: Record<string, Record<string, string>> = {
 // Main export: get translated domains for a given language
 export function getTranslatedDomains<T extends { name: string; description: string; category: string; useCases?: string[] }>(
   domains: T[],
-  lang: LangCode
+  lang: string
 ): T[] {
+  // Fallback: return original data for unsupported languages
+  if (!(lang in categoryTranslations)) return domains;
   const cats = categoryTranslations[lang];
   const ucTranslations = useCaseTranslations[lang] || {};
   

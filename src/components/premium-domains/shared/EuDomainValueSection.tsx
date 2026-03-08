@@ -1,9 +1,24 @@
-type Lang = 'sv' | 'no' | 'da' | 'fi' | 'cs' | 'el' | 'ru' | 'ro' | 'bg' | 'uk' | 'hr' | 'sk' | 'sr' | 'sl';
+type Lang = 'en' | 'sv' | 'no' | 'da' | 'fi' | 'cs' | 'el' | 'ru' | 'ro' | 'bg' | 'uk' | 'hr' | 'sk' | 'sr' | 'sl';
 
 const t: Record<Lang, {
   seoTitle: string; seoP1: string; seoP2: string; seoP3: string; seoP4: string; seoCta: string; seoCtaSub: string;
   euTitle: string; euP1: string; euP2: string; euP3: string; euP4: string; euP5: string; euP6: string;
 }> = {
+  en: {
+    seoTitle: "Buy Expired Domains: Invest in Proven SEO Authority",
+    seoP1: "Buying an expired domain is the smartest way to immediately benefit from years of accumulated domain authority and quality backlinks.",
+    seoP2: "Our carefully selected premium domains have a proven track record with backlinks from authoritative sources like Wikipedia, universities, and government institutions.",
+    seoP3: "Whether you want to start a webshop, launch an affiliate site, or boost your existing business SEO: an expired domain with high MOZ Domain Authority gives you an undeniable advantage.",
+    seoP4: "Every premium domain in our portfolio is checked for spam-free history, relevant backlinks, and good link profiles.",
+    seoCta: "Ready to accelerate your online success?", seoCtaSub: "Explore our portfolio of 110+ premium expired domain names.",
+    euTitle: "Why Premium European .EU Domain Names Hold Such Value",
+    euP1: "European .EU domains represent an exclusive class of digital assets. Unlike .COM or .NET which are available to everyone, .EU domains require a connection to Europe — creating a natural barrier that increases their value.",
+    euP2: "Many of these domains originate from official EU-funded projects, research initiatives and cultural programs. This institutional background gives them backlinks from Europa.eu, national universities and government agencies.",
+    euP3: "While the .COM market is oversaturated with millions of registered domains, the .EU segment still offers opportunities to find domains with genuine authority and clean history.",
+    euP4: ".EU domains enjoy particular trust among European consumers. Research shows that European users perceive .EU websites as more reliable for European services.",
+    euP5: "With the growing focus on European digital sovereignty and GDPR compliance, a .EU domain positions your brand as European-conscious and trustworthy.",
+    euP6: "Investing in a premium .EU domain means acquiring a digital asset with institutional backing, geographic relevance, and built-in SEO authority."
+  },
   sv: {
     seoTitle: "Köp Utgångna Domännamn: Investera i Bevisad SEO-Auktoritet",
     seoP1: "Att köpa ett utgånget domännamn är det smartaste sättet att omedelbart dra nytta av års ackumulerad domänauktoritet och kvalitativa bakåtlänkar.",
@@ -148,8 +163,8 @@ const t: Record<Lang, {
   }
 };
 
-const EuDomainValueSection = ({ lang }: { lang: Lang }) => {
-  const c = t[lang];
+const EuDomainValueSection = ({ lang }: { lang: string }) => {
+  const c = t[lang as Lang] || t['en'];
   return (
     <>
       <section className="py-16 bg-gradient-to-b from-slate-900 to-slate-950">
