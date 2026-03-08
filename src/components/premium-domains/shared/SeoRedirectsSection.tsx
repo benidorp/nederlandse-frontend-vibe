@@ -8,6 +8,16 @@ const t: Record<Lang, {
   badge: string; title: string; subtitle: string;
   strategies: { title: string; desc: string; benefits: string[] }[];
 }> = {
+  en: {
+    badge: "SEO Strategies", title: "How Do SEO Redirects and Authority Building Work?",
+    subtitle: "There are several strategic ways to use premium domains for maximum SEO impact.",
+    strategies: [
+      { title: "301 Redirect Strategy", desc: "A 301 redirect transfers all SEO value and authority from the premium domain to your main domain. This is the fastest way to improve your rankings.", benefits: ["Direct transfer of link value", "Preservation of all backlinks", "Rapid authority increase", "One-time setup, lasting effect"] },
+      { title: "Authority Stacking", desc: "Build a network of authoritative domains that all link to your main site. This creates a powerful ecosystem of relevant, high-quality backlinks.", benefits: ["Multiple authority sources", "Thematic relevance", "Natural link profile", "Long-term SEO strategy"] },
+      { title: "Use as Main Domain", desc: "Launch your new project directly with a domain that already has authority. This saves years of link building.", benefits: ["Instant start with authority", "Existing Google trust", "Faster indexing", "Competitive advantage"] },
+      { title: "Private Blog Network (PBN)", desc: "Use premium domains to create valuable content sites that generate powerful backlinks to your main site.", benefits: ["Full control over backlinks", "Thematic content sites", "Diversified link profiles", "Scalable link building"] }
+    ]
+  },
   sv: {
     badge: "SEO-Strategier", title: "Hur Fungerar SEO-Omdirigeringar och Auktoritetsbyggande?",
     subtitle: "Det finns flera strategiska sätt att använda premiumdomäner för maximal SEO-påverkan.",
