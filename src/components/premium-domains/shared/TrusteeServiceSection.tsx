@@ -317,8 +317,8 @@ const t: Record<Lang, {
   }
 };
 
-const TrusteeServiceSection = ({ lang }: { lang: Lang }) => {
-  const c = t[lang];
+const TrusteeServiceSection = ({ lang }: { lang: string }) => {
+  const c = t[lang as Lang] || t['en'];
   return (
     <section id="trustee-service-section" className="py-16 bg-gradient-to-b from-slate-950 to-slate-900">
       <div className="container mx-auto px-4">

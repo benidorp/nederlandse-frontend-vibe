@@ -163,8 +163,8 @@ const t: Record<Lang, {
   }
 };
 
-const EuDomainValueSection = ({ lang }: { lang: Lang }) => {
-  const c = t[lang];
+const EuDomainValueSection = ({ lang }: { lang: string }) => {
+  const c = t[lang as Lang] || t['en'];
   return (
     <>
       <section className="py-16 bg-gradient-to-b from-slate-900 to-slate-950">

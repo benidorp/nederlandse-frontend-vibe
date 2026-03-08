@@ -160,8 +160,8 @@ const t: Record<Lang, {
   }
 };
 
-const SeoRedirectsSection = ({ lang }: { lang: Lang }) => {
-  const content = t[lang];
+const SeoRedirectsSection = ({ lang }: { lang: string }) => {
+  const content = t[lang as Lang] || t['en'];
   return (
     <section id="seo-redirects" className="py-20 bg-slate-950">
       <div className="container mx-auto px-4">
