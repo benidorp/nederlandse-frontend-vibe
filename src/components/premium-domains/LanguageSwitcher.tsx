@@ -1,4 +1,5 @@
 // Using native anchor tags for absolute URLs
+import { Globe } from "lucide-react";
 
 interface LanguageOption {
   code: string;
