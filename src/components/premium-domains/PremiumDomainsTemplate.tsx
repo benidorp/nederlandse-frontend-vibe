@@ -154,6 +154,8 @@ const PremiumDomainsTemplate = ({ config: c }: { config: PDPageConfig }) => {
           </div></div>
         </section>
 
+        <ImportantToKnowSection lang={c.lang} />
+
         <section id="domains" className="py-20 relative"><div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/50 to-transparent" /><div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-12"><Badge className="mb-4 bg-slate-800 text-amber-400 border-slate-700"><Globe className="w-4 h-4 mr-2 inline" />{c.gridBadge}</Badge><h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{c.gridTitle}</h2><p className="text-slate-400 max-w-3xl mx-auto">{c.gridSub}</p></div>
           <div className="max-w-5xl mx-auto mb-8 bg-slate-800/30 border border-slate-700/50 rounded-2xl p-8">
