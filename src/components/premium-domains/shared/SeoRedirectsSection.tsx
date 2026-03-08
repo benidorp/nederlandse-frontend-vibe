@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link, CheckCircle } from "lucide-react";
 
-type Lang = 'en' | 'sv' | 'no' | 'da' | 'fi' | 'cs' | 'el' | 'ru' | 'ro' | 'bg' | 'uk' | 'hr' | 'sk' | 'sr' | 'sl';
+type Lang = 'en' | 'sv' | 'no' | 'da' | 'fi' | 'cs' | 'el' | 'ru' | 'ro' | 'bg' | 'uk' | 'hr' | 'sk' | 'sr' | 'sl' | 'ko' | 'hu' | 'th' | 'vi' | 'id' | 'et' | 'lv' | 'lt' | 'is' | 'sq' | 'mk' | 'bs' | 'lb' | 'bn' | 'ms';
 
 const t: Record<Lang, {
   badge: string; title: string; subtitle: string;
@@ -156,6 +156,156 @@ const t: Record<Lang, {
       { title: "Kopičenje Avtoritete", desc: "Zgradite mrežo avtoritativnih domen, ki vse povezujejo na vašo glavno stran.", benefits: ["Več virov avtoritete", "Tematska relevantnost", "Naravni profil povezav", "Dolgoročna SEO strategija"] },
       { title: "Uporaba kot Glavna Domena", desc: "Zaženite nov projekt neposredno z domeno, ki že ima avtoriteto.", benefits: ["Takojšnji začetek z avtoriteto", "Obstoječe zaupanje Googla", "Hitrejše indeksiranje", "Prednost pred konkurenco"] },
       { title: "Zasebno Blog Omrežje (PBN)", desc: "Uporabite premium domene za ustvarjanje vrednih vsebinskih strani.", benefits: ["Popoln nadzor nad povratnimi povezavami", "Tematske vsebinske strani", "Raznovrstni profili povezav", "Razširljiva gradnja povezav"] }
+    ]
+  },
+  ko: {
+    badge: "SEO 전략", title: "SEO 리디렉션과 권위 구축은 어떻게 작동하나요?",
+    subtitle: "프리미엄 도메인을 최대한 활용하는 여러 전략적 방법이 있습니다.",
+    strategies: [
+      { title: "301 리디렉션 전략", desc: "301 리디렉션은 프리미엄 도메인의 모든 SEO 가치와 권위를 메인 도메인으로 이전합니다.", benefits: ["링크 가치의 직접 이전", "모든 백링크 보존", "빠른 권위 상승", "일회 설정, 지속적 효과"] },
+      { title: "권위 스태킹", desc: "메인 사이트로 연결되는 권위 있는 도메인 네트워크를 구축하세요.", benefits: ["다중 권위 소스", "주제 관련성", "자연스러운 링크 프로필", "장기 SEO 전략"] },
+      { title: "메인 도메인으로 사용", desc: "이미 권위가 있는 도메인으로 새 프로젝트를 시작하세요.", benefits: ["즉시 권위로 시작", "기존 구글 신뢰", "더 빠른 인덱싱", "경쟁 우위"] },
+      { title: "프라이빗 블로그 네트워크 (PBN)", desc: "프리미엄 도메인으로 강력한 백링크를 생성하는 콘텐츠 사이트를 만드세요.", benefits: ["백링크 완전 통제", "주제별 콘텐츠 사이트", "다양한 링크 프로필", "확장 가능한 링크 빌딩"] }
+    ]
+  },
+  hu: {
+    badge: "SEO Stratégiák", title: "Hogyan Működnek az SEO Átirányítások és Tekintélyépítés?",
+    subtitle: "Többféle stratégiai mód létezik prémium domainek maximális SEO hatásához.",
+    strategies: [
+      { title: "301 Átirányítási Stratégia", desc: "A 301 átirányítás minden SEO értéket és tekintélyt átvisz a prémium domainről a fő domainre.", benefits: ["Link érték közvetlen átvitele", "Összes backlink megőrzése", "Gyors tekintély növekedés", "Egyszeri beállítás, tartós hatás"] },
+      { title: "Tekintély Halmozás", desc: "Építsen tekintélyes domain hálózatot, amely a fő oldalára mutat.", benefits: ["Több tekintélyforrás", "Tematikus relevancia", "Természetes linkprofil", "Hosszú távú SEO stratégia"] },
+      { title: "Fő Domainként Használat", desc: "Indítsa el új projektjét már tekintéllyel rendelkező domainnel.", benefits: ["Azonnali indulás tekintéllyel", "Meglévő Google bizalom", "Gyorsabb indexelés", "Versenyelőny"] },
+      { title: "Privát Blog Hálózat (PBN)", desc: "Használjon prémium domaineket értékes tartalomoldalak létrehozásához.", benefits: ["Teljes kontroll a backlinkek felett", "Tematikus tartalomoldalak", "Változatos linkprofilok", "Skálázható linképítés"] }
+    ]
+  },
+  th: {
+    badge: "กลยุทธ์ SEO", title: "การเปลี่ยนเส้นทาง SEO และการสร้างอำนาจทำงานอย่างไร?",
+    subtitle: "มีหลายวิธีเชิงกลยุทธ์ในการใช้โดเมนพรีเมียมเพื่อผลกระทบ SEO สูงสุด",
+    strategies: [
+      { title: "กลยุทธ์ 301 Redirect", desc: "301 redirect ถ่ายโอนค่า SEO และอำนาจทั้งหมดจากโดเมนพรีเมียมไปยังโดเมนหลัก", benefits: ["การถ่ายโอนค่าลิงก์โดยตรง", "รักษาแบ็คลิงก์ทั้งหมด", "เพิ่มอำนาจอย่างรวดเร็ว", "ตั้งค่าครั้งเดียว ผลลัพธ์ยาวนาน"] },
+      { title: "การสะสมอำนาจ", desc: "สร้างเครือข่ายโดเมนที่มีอำนาจที่ลิงก์ไปยังเว็บไซต์หลัก", benefits: ["แหล่งอำนาจหลายแหล่ง", "ความเกี่ยวข้องตามหัวข้อ", "โปรไฟล์ลิงก์ธรรมชาติ", "กลยุทธ์ SEO ระยะยาว"] },
+      { title: "ใช้เป็นโดเมนหลัก", desc: "เปิดตัวโปรเจกต์ใหม่ด้วยโดเมนที่มีอำนาจอยู่แล้ว", benefits: ["เริ่มต้นทันทีด้วยอำนาจ", "ความไว้วางใจจาก Google", "จัดทำดัชนีเร็วขึ้น", "ได้เปรียบในการแข่งขัน"] },
+      { title: "เครือข่ายบล็อกส่วนตัว (PBN)", desc: "ใช้โดเมนพรีเมียมสร้างเว็บไซต์เนื้อหาที่มีคุณค่า", benefits: ["ควบคุมแบ็คลิงก์เต็มที่", "เว็บไซต์เนื้อหาตามหัวข้อ", "โปรไฟล์ลิงก์หลากหลาย", "การสร้างลิงก์ที่ขยายได้"] }
+    ]
+  },
+  vi: {
+    badge: "Chiến Lược SEO", title: "Chuyển Hướng SEO và Xây Dựng Uy Tín Hoạt Động Như Thế Nào?",
+    subtitle: "Có nhiều cách chiến lược để sử dụng tên miền cao cấp nhằm đạt hiệu quả SEO tối đa.",
+    strategies: [
+      { title: "Chiến Lược 301 Redirect", desc: "301 redirect chuyển toàn bộ giá trị SEO và uy tín từ tên miền cao cấp sang tên miền chính.", benefits: ["Chuyển trực tiếp giá trị liên kết", "Bảo toàn tất cả backlink", "Tăng uy tín nhanh chóng", "Thiết lập một lần, hiệu quả lâu dài"] },
+      { title: "Xếp Chồng Uy Tín", desc: "Xây dựng mạng lưới tên miền có uy tín liên kết đến trang web chính.", benefits: ["Nhiều nguồn uy tín", "Liên quan theo chủ đề", "Hồ sơ liên kết tự nhiên", "Chiến lược SEO dài hạn"] },
+      { title: "Sử Dụng Làm Tên Miền Chính", desc: "Khởi động dự án mới với tên miền đã có uy tín.", benefits: ["Bắt đầu ngay với uy tín", "Sự tin tưởng Google sẵn có", "Lập chỉ mục nhanh hơn", "Lợi thế cạnh tranh"] },
+      { title: "Mạng Blog Riêng (PBN)", desc: "Sử dụng tên miền cao cấp để tạo các trang nội dung có giá trị.", benefits: ["Kiểm soát hoàn toàn backlink", "Trang nội dung theo chủ đề", "Hồ sơ liên kết đa dạng", "Xây dựng liên kết mở rộng được"] }
+    ]
+  },
+  id: {
+    badge: "Strategi SEO", title: "Bagaimana Redirect SEO dan Pembangunan Otoritas Bekerja?",
+    subtitle: "Ada beberapa cara strategis untuk menggunakan domain premium untuk dampak SEO maksimal.",
+    strategies: [
+      { title: "Strategi 301 Redirect", desc: "301 redirect mentransfer semua nilai SEO dan otoritas dari domain premium ke domain utama.", benefits: ["Transfer langsung nilai tautan", "Pelestarian semua backlink", "Peningkatan otoritas cepat", "Pengaturan sekali, efek bertahan lama"] },
+      { title: "Penumpukan Otoritas", desc: "Bangun jaringan domain berwibawa yang menautkan ke situs utama.", benefits: ["Banyak sumber otoritas", "Relevansi tematik", "Profil tautan alami", "Strategi SEO jangka panjang"] },
+      { title: "Gunakan Sebagai Domain Utama", desc: "Luncurkan proyek baru dengan domain yang sudah memiliki otoritas.", benefits: ["Mulai langsung dengan otoritas", "Kepercayaan Google yang ada", "Pengindeksan lebih cepat", "Keunggulan kompetitif"] },
+      { title: "Jaringan Blog Pribadi (PBN)", desc: "Gunakan domain premium untuk membuat situs konten bernilai.", benefits: ["Kontrol penuh atas backlink", "Situs konten tematik", "Profil tautan beragam", "Pembangunan tautan skalabel"] }
+    ]
+  },
+  et: {
+    badge: "SEO Strateegiad", title: "Kuidas Töötavad SEO Ümbersuunamised ja Autoriteetide Ehitamine?",
+    subtitle: "Premium domeenide kasutamiseks on mitmeid strateegilisi viise.",
+    strategies: [
+      { title: "301 Ümbersuunamise Strateegia", desc: "301 ümbersuunamine kannab kogu SEO väärtuse premium domeenilt põhidomeenile.", benefits: ["Lingi väärtuse otsene ülekanne", "Kõigi tagasilinkide säilitamine", "Kiire autoriteedi kasv", "Ühekordne seadistus, kestev efekt"] },
+      { title: "Autoriteedi Kogumine", desc: "Ehitage autoriteetne domeenivõrgustik, mis viitab põhisaidile.", benefits: ["Mitu autoriteediallikat", "Temaatiline asjakohasus", "Loomulik lingiprofiil", "Pikaajaline SEO strateegia"] },
+      { title: "Kasuta Põhidomeenina", desc: "Käivitage uus projekt domeeniga, millel on juba autoriteet.", benefits: ["Kohene start autoriteediga", "Olemasolev Google usaldus", "Kiirem indekseerimine", "Konkurentsieelis"] },
+      { title: "Privaatne Blogi Võrgustik (PBN)", desc: "Kasutage premium domeene väärtuslike sisulehtede loomiseks.", benefits: ["Täielik kontroll tagasilinkide üle", "Temaatilised sisulehed", "Mitmekesised lingiprofiilid", "Skaleeritav lingiehitus"] }
+    ]
+  },
+  lv: {
+    badge: "SEO Stratēģijas", title: "Kā Darbojas SEO Novirzīšana un Autoritātes Veidošana?",
+    subtitle: "Ir vairāki stratēģiski veidi, kā izmantot premium domēnus maksimālam SEO efektam.",
+    strategies: [
+      { title: "301 Novirzīšanas Stratēģija", desc: "301 novirzīšana pārnes visu SEO vērtību no premium domēna uz galveno domēnu.", benefits: ["Tiešs saišu vērtības pārvedums", "Visu atpakaļsaišu saglabāšana", "Ātra autoritātes pieaugums", "Vienreizēja iestatīšana, ilgstošs efekts"] },
+      { title: "Autoritātes Uzkrāšana", desc: "Izveidojiet autoritatīvu domēnu tīklu, kas norāda uz galveno vietni.", benefits: ["Vairāki autoritātes avoti", "Tematiska atbilstība", "Dabisks saišu profils", "Ilgtermiņa SEO stratēģija"] },
+      { title: "Izmantot kā Galveno Domēnu", desc: "Sāciet jaunu projektu ar domēnu, kuram jau ir autoritāte.", benefits: ["Tūlītējs sākums ar autoritāti", "Esoša Google uzticamība", "Ātrāka indeksēšana", "Konkurences priekšrocība"] },
+      { title: "Privāts Blogu Tīkls (PBN)", desc: "Izmantojiet premium domēnus vērtīgu satura vietņu izveidei.", benefits: ["Pilna kontrole pār atpakaļsaitēm", "Tematiskas satura vietnes", "Dažādoti saišu profili", "Mērogojama saišu veidošana"] }
+    ]
+  },
+  lt: {
+    badge: "SEO Strategijos", title: "Kaip Veikia SEO Peradresavimai ir Autoriteto Kūrimas?",
+    subtitle: "Yra keletas strateginių būdų naudoti premium domenus maksimaliam SEO poveikiui.",
+    strategies: [
+      { title: "301 Peradresavimo Strategija", desc: "301 peradresavimas perkelia visą SEO vertę iš premium domeno į pagrindinį domeną.", benefits: ["Tiesioginis nuorodų vertės perkėlimas", "Visų nuorodų išsaugojimas", "Greitas autoriteto augimas", "Vienkartinė sąranka, ilgalaikis efektas"] },
+      { title: "Autoriteto Kaupimas", desc: "Sukurkite autoritetingų domenų tinklą, nukreipiantį į pagrindinę svetainę.", benefits: ["Keli autoriteto šaltiniai", "Teminė atitiktis", "Natūralus nuorodų profilis", "Ilgalaikė SEO strategija"] },
+      { title: "Naudoti kaip Pagrindinį Domeną", desc: "Pradėkite naują projektą su domenu, kuris jau turi autoritetą.", benefits: ["Momentinis startas su autoritetu", "Esamas Google pasitikėjimas", "Greitesnis indeksavimas", "Konkurencinis pranašumas"] },
+      { title: "Privatus Tinklaraščių Tinklas (PBN)", desc: "Naudokite premium domenus vertingų turinio svetainių kūrimui.", benefits: ["Pilna kontrolė nuorodų", "Teminės turinio svetainės", "Įvairūs nuorodų profiliai", "Plečiamas nuorodų kūrimas"] }
+    ]
+  },
+  is: {
+    badge: "SEO Aðferðir", title: "Hvernig Virka SEO Tilvísanir og Valdauppbygging?",
+    subtitle: "Nokkrar stefnumarkandi leiðir eru til að nota úrvals lén fyrir hámarks SEO áhrif.",
+    strategies: [
+      { title: "301 Tilvísunarstefna", desc: "301 tilvísun flytur allt SEO gildi frá úrvalsléninu á aðallénið.", benefits: ["Bein yfirfærsla tengisgildis", "Varðveisla allra baktengla", "Hröð valdsaukning", "Einu sinni uppsetning, varanleg áhrif"] },
+      { title: "Valdsstöflun", desc: "Byggðu net valdamikilla léna sem tengja á aðalsíðuna.", benefits: ["Margir valdsuppsprettur", "Þemaleg tengsl", "Náttúruleg tengiprófíll", "Langtíma SEO stefna"] },
+      { title: "Nota sem Aðallén", desc: "Byrjaðu nýtt verkefni með léni sem þegar hefur vald.", benefits: ["Samstundis byrjun með valdi", "Núverandi Google traust", "Hraðari flokkun", "Samkeppnisforskot"] },
+      { title: "Einkabloggnet (PBN)", desc: "Notaðu úrvalslén til að búa til verðmætar efnissíður.", benefits: ["Full stjórn á baktengum", "Þemasíður með efni", "Fjölbreytt tengiprófíl", "Skalanleg tengiuppbygging"] }
+    ]
+  },
+  sq: {
+    badge: "Strategji SEO", title: "Si Funksionojnë Ridrejtimet SEO dhe Ndërtimi i Autoritetit?",
+    subtitle: "Ka disa mënyra strategjike për të përdorur domene premium për ndikim maksimal SEO.",
+    strategies: [
+      { title: "Strategjia 301 Redirect", desc: "301 redirect transferon vlerën SEO dhe autoritetin nga domeni premium tek domeni kryesor.", benefits: ["Transfer direkt i vlerës së linkut", "Ruajtja e të gjitha backlinks", "Rritje e shpejtë e autoritetit", "Vendosje një herë, efekt i qëndrueshëm"] },
+      { title: "Grumbullimi i Autoritetit", desc: "Ndërtoni rrjet domenesh me autoritet që lidhen me faqen kryesore.", benefits: ["Burime të shumta autoriteti", "Relevancë tematike", "Profil natyral linkesh", "Strategji SEO afatgjatë"] },
+      { title: "Përdorni si Domain Kryesor", desc: "Nisni projektin e ri me domen që ka autoritet.", benefits: ["Fillim i menjëhershëm me autoritet", "Besim ekzistues i Google", "Indeksim më i shpejtë", "Avantazh konkurrues"] },
+      { title: "Rrjet Privat Blogjesh (PBN)", desc: "Përdorni domene premium për faqe përmbajtjeje të vlefshme.", benefits: ["Kontroll i plotë mbi backlinks", "Faqe përmbajtjeje tematike", "Profile të larmishme linkesh", "Ndërtim i shkallëzueshëm linkesh"] }
+    ]
+  },
+  mk: {
+    badge: "SEO Стратегии", title: "Како Функционираат SEO Пренасочувања и Градење Авторитет?",
+    subtitle: "Постојат неколку стратешки начини за користење премиум домени за максимално SEO влијание.",
+    strategies: [
+      { title: "301 Пренасочување", desc: "301 пренасочувањето ја пренесува целата SEO вредност од премиум доменот на главниот домен.", benefits: ["Директен пренос на вредност", "Зачувување на сите линкови", "Брз раст на авторитет", "Еднократно поставување, траен ефект"] },
+      { title: "Натрупување на Авторитет", desc: "Изградете мрежа од авторитативни домени кои водат до главната страница.", benefits: ["Повеќе извори на авторитет", "Тематска релевантност", "Природен линк профил", "Долгорочна SEO стратегија"] },
+      { title: "Користете како Главен Домен", desc: "Започнете нов проект со домен кој веќе има авторитет.", benefits: ["Моментален старт со авторитет", "Постоечка Google доверба", "Побрзо индексирање", "Конкурентска предност"] },
+      { title: "Приватна Блог Мрежа (PBN)", desc: "Користете премиум домени за вредни содржински страници.", benefits: ["Целосна контрола над линкови", "Тематски содржински страници", "Различни линк профили", "Скалабилно градење линкови"] }
+    ]
+  },
+  bs: {
+    badge: "SEO Strategije", title: "Kako Funkcionišu SEO Preusmjeravanja i Izgradnja Autoriteta?",
+    subtitle: "Postoji nekoliko strateških načina korištenja premium domena za maksimalni SEO učinak.",
+    strategies: [
+      { title: "301 Preusmjeravanje", desc: "301 preusmjeravanje prenosi svu SEO vrijednost sa premium domene na glavnu domenu.", benefits: ["Direktan prijenos vrijednosti linkova", "Očuvanje svih backlinkova", "Brz rast autoriteta", "Jednokratno postavljanje, trajni efekt"] },
+      { title: "Gomilanje Autoriteta", desc: "Izgradite mrežu autoritativnih domena koje vode na glavnu stranicu.", benefits: ["Više izvora autoriteta", "Tematska relevantnost", "Prirodni link profil", "Dugoročna SEO strategija"] },
+      { title: "Glavni Domen", desc: "Pokrenite novi projekt s domenom koji već ima autoritet.", benefits: ["Trenutni početak s autoritetom", "Postojeće Google povjerenje", "Brže indeksiranje", "Konkurentska prednost"] },
+      { title: "Privatna Blog Mreža (PBN)", desc: "Koristite premium domene za vrijedne stranice sa sadržajem.", benefits: ["Potpuna kontrola nad backlinkovima", "Tematske stranice sa sadržajem", "Raznoliki link profili", "Skalabilno građenje linkova"] }
+    ]
+  },
+  lb: {
+    badge: "SEO Strategien", title: "Wéi Funktionéieren SEO Viruleedungen an Autoritéitsopbau?",
+    subtitle: "Et ginn e puer strategesch Weeër fir Premium Domainen ze benotze fir maximal SEO Impakt.",
+    strategies: [
+      { title: "301 Viruleedung", desc: "Eng 301 Viruleedung iwwerdréit all SEO Wäert vum Premium Domain op den Haaptdomain.", benefits: ["Direkten Transfer vum Linkwäert", "Erhale vun allen Backlinks", "Séier Autoritéitswuesstem", "Eemol opgesat, laangfristeg Effekt"] },
+      { title: "Autoritéitsstapelung", desc: "Baut en Netzwierk vun autoritéitsstarke Domainen déi op d'Haaptsäit verlinken.", benefits: ["Méi Autoritéitsquellen", "Thematesch Relevanz", "Natierlechen Linkprofil", "Laangfristeg SEO Strategie"] },
+      { title: "Als Haaptdomain benotzen", desc: "Start en neie Projet mat engem Domain deen scho Autoritéit huet.", benefits: ["Direkten Start mat Autoritéit", "Bestoend Google Vertrauen", "Méi schnell Indexéierung", "Competitiven Avantage"] },
+      { title: "Privaten Blog Netzwierk (PBN)", desc: "Benotzt Premium Domainen fir wäertvoll Inhaltsiten.", benefits: ["Voll Kontroll iwwer Backlinks", "Thematesch Inhaltsiten", "Diversifizéiert Linkprofiler", "Skaléierbar Linkopbau"] }
+    ]
+  },
+  bn: {
+    badge: "SEO কৌশল", title: "SEO রিডাইরেক্ট এবং কর্তৃত্ব নির্মাণ কীভাবে কাজ করে?",
+    subtitle: "প্রিমিয়াম ডোমেইন সর্বোচ্চ SEO প্রভাবের জন্য ব্যবহারের কৌশলগত উপায় রয়েছে।",
+    strategies: [
+      { title: "301 রিডাইরেক্ট কৌশল", desc: "301 রিডাইরেক্ট প্রিমিয়াম ডোমেইন থেকে প্রধান ডোমেইনে সমস্ত SEO মূল্য স্থানান্তর করে।", benefits: ["লিংক মূল্যের সরাসরি স্থানান্তর", "সমস্ত ব্যাকলিংক সংরক্ষণ", "দ্রুত কর্তৃত্ব বৃদ্ধি", "একবার সেটআপ, দীর্ঘস্থায়ী প্রভাব"] },
+      { title: "কর্তৃত্ব স্ট্যাকিং", desc: "প্রধান সাইটে লিংক করা কর্তৃত্বশীল ডোমেইনের নেটওয়ার্ক তৈরি করুন।", benefits: ["একাধিক কর্তৃত্বের উৎস", "বিষয়ভিত্তিক প্রাসঙ্গিকতা", "প্রাকৃতিক লিংক প্রোফাইল", "দীর্ঘমেয়াদী SEO কৌশল"] },
+      { title: "প্রধান ডোমেইন হিসেবে ব্যবহার", desc: "কর্তৃত্ব থাকা ডোমেইন দিয়ে নতুন প্রকল্প শুরু করুন।", benefits: ["কর্তৃত্ব সহ তাৎক্ষণিক শুরু", "বিদ্যমান Google বিশ্বাস", "দ্রুত ইনডেক্সিং", "প্রতিযোগিতামূলক সুবিধা"] },
+      { title: "প্রাইভেট ব্লগ নেটওয়ার্ক (PBN)", desc: "মূল্যবান কনটেন্ট সাইট তৈরি করতে প্রিমিয়াম ডোমেইন ব্যবহার করুন।", benefits: ["ব্যাকলিংকের সম্পূর্ণ নিয়ন্ত্রণ", "বিষয়ভিত্তিক কনটেন্ট সাইট", "বৈচিত্র্যময় লিংক প্রোফাইল", "স্কেলেবল লিংক বিল্ডিং"] }
+    ]
+  },
+  ms: {
+    badge: "Strategi SEO", title: "Bagaimana Pengalihan SEO dan Pembinaan Autoriti Berfungsi?",
+    subtitle: "Terdapat beberapa cara strategik untuk menggunakan domain premium bagi impak SEO maksimum.",
+    strategies: [
+      { title: "Strategi 301 Redirect", desc: "301 redirect memindahkan semua nilai SEO dari domain premium ke domain utama.", benefits: ["Pemindahan langsung nilai pautan", "Pemeliharaan semua pautan balik", "Peningkatan autoriti pantas", "Persediaan sekali, kesan berpanjangan"] },
+      { title: "Penimbunan Autoriti", desc: "Bina rangkaian domain berwibawa yang memaut ke laman utama.", benefits: ["Pelbagai sumber autoriti", "Kerelevanan tematik", "Profil pautan semula jadi", "Strategi SEO jangka panjang"] },
+      { title: "Guna Sebagai Domain Utama", desc: "Lancarkan projek baharu dengan domain yang mempunyai autoriti.", benefits: ["Mula serta-merta dengan autoriti", "Kepercayaan Google sedia ada", "Pengindeksan lebih pantas", "Kelebihan kompetitif"] },
+      { title: "Rangkaian Blog Peribadi (PBN)", desc: "Gunakan domain premium untuk mencipta laman kandungan bernilai.", benefits: ["Kawalan penuh ke atas pautan balik", "Laman kandungan tematik", "Profil pautan pelbagai", "Pembinaan pautan berskala"] }
     ]
   }
 };
