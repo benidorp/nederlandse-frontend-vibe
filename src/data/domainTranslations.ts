@@ -1035,7 +1035,11 @@ function translateDescription(description: string, lang: string): string {
     sv: 'länkande domäner', no: 'koblede domener', da: 'linkende domæner', fi: 'linkittävät verkkotunnukset',
     cs: 'odkazující domény', el: 'συνδεδεμένα domains', ru: 'ссылающиеся домены', ro: 'domenii cu legături',
     bg: 'свързващи домейни', uk: "пов'язані домени", hr: 'povezujuće domene', sk: 'odkazujúce domény',
-    sr: 'повезујући домени', sl: 'povezujoče domene'
+    sr: 'повезујући домени', sl: 'povezujoče domene',
+    ko: '연결 도메인', hu: 'hivatkozó domainek', th: 'โดเมนเชื่อมต่อ', vi: 'domain liên kết',
+    id: 'domain terhubung', et: 'ühendavad domeenid', lv: 'saistītie domēni', lt: 'susieti domenai',
+    is: 'tengd lén', sq: 'domene të lidhura', mk: 'поврзани домени', bs: 'povezane domene',
+    lb: 'verlinkt Domainen', bn: 'সংযুক্ত ডোমেইন', ms: 'domain dipautkan'
   };
   result = result.replace(/\blinking domains\b/gi, linkingDomainsTranslations[lang] || 'linking domains');
   
