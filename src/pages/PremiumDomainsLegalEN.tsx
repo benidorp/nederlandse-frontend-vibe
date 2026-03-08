@@ -61,7 +61,7 @@ const PremiumDomainsLegalEN = () => {
                 <div className="hidden sm:block">
                   <GTranslateWidget 
                     defaultLanguage="en" 
-                    detectBrowserLanguage={!!sourceLang}
+                    targetLanguage={sourceLang}
                     inline={true} 
                   />
                 </div>
