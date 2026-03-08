@@ -7,7 +7,7 @@ interface GTranslateWidgetProps {
   inline?: boolean;
 }
 
-const GTranslateWidget = ({ defaultLanguage = "en", detectBrowserLanguage = false, inline = false }: GTranslateWidgetProps) => {
+const GTranslateWidget = ({ defaultLanguage = "en", detectBrowserLanguage = false, targetLanguage = null, inline = false }: GTranslateWidgetProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
