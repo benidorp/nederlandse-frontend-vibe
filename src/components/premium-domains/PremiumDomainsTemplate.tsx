@@ -20,6 +20,8 @@ import EuDomainValueSection from "@/components/premium-domains/shared/EuDomainVa
 import ImportantToKnowSection from "@/components/premium-domains/shared/ImportantToKnowSection";
 import DomainTransferSection from "@/components/premium-domains/shared/DomainTransferSection";
 import ExtendedFAQSection from "@/components/premium-domains/shared/ExtendedFAQSection";
+import PaymentIcons from "@/components/premium-domains/shared/PaymentIcons";
+import WhyPremiumSection from "@/components/premium-domains/shared/WhyPremiumSection";
 import InternalLanguageLinks from "@/components/premium-domains/shared/InternalLanguageLinks";
 import { PREMIUM_DOMAINS_HREFLANG } from "@/data/premiumDomainsHreflang";
 
