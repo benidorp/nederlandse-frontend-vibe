@@ -2964,6 +2964,9 @@ function translateDescription(description: string, lang: string): string {
   
   // 5. Replace "linking domains"
   const linkingDomainsTranslations: Record<LangCode, string> = {
+    nl: 'linkende domeinen', de: 'verlinkende Domains', fr: 'domaines liés', es: 'dominios enlazados',
+    it: 'domini collegati', pt: 'domínios ligados', pl: 'linkujące domeny', tr: 'bağlantılı domainler',
+    ar: 'نطاقات مرتبطة', hi: 'लिंकिंग डोमेन', ja: 'リンクドメイン', zh: '链接域名',
     sv: 'länkande domäner', no: 'koblede domener', da: 'linkende domæner', fi: 'linkittävät verkkotunnukset',
     cs: 'odkazující domény', el: 'συνδεδεμένα domains', ru: 'ссылающиеся домены', ro: 'domenii cu legături',
     bg: 'свързващи домейни', uk: "пов'язані домени", hr: 'povezujuće domene', sk: 'odkazujúce domény',
