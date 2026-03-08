@@ -35,6 +35,21 @@ const languages: LanguageOption[] = [
   { code: "sk", name: "Slovenčina", path: "https://www.iaee.eu/expireddomainnames/sk/kupit-premium-domeny-vysoka-autorita-seo-hodnota" },
   { code: "sr", name: "Српски", path: "https://www.iaee.eu/expireddomainnames/sr/kupite-premium-domene-visoki-autoritet-seo-vrednost" },
   { code: "sl", name: "Slovenščina", path: "https://www.iaee.eu/expireddomainnames/sl/kupite-premium-domene-visoka-avtoriteta-seo-vrednost" },
+  { code: "ko", name: "한국어", path: "https://www.iaee.eu/expireddomainnames/ko/peurimieom-domein-gumaehagi-nopun-gwonwi-seo-gachi" },
+  { code: "hu", name: "Magyar", path: "https://www.iaee.eu/expireddomainnames/hu/premium-domain-vasarlas-magas-tekintely-seo-ertek" },
+  { code: "th", name: "ไทย", path: "https://www.iaee.eu/expireddomainnames/th/sue-domain-premium-amnaj-sung-kha-seo" },
+  { code: "vi", name: "Tiếng Việt", path: "https://www.iaee.eu/expireddomainnames/vi/mua-ten-mien-premium-uy-tin-cao-gia-tri-seo" },
+  { code: "id", name: "Bahasa Indonesia", path: "https://www.iaee.eu/expireddomainnames/id/beli-domain-premium-otoritas-tinggi-nilai-seo" },
+  { code: "et", name: "Eesti", path: "https://www.iaee.eu/expireddomainnames/et/osta-premium-domeenid-korge-autoriteet-seo-vaartus" },
+  { code: "lv", name: "Latviešu", path: "https://www.iaee.eu/expireddomainnames/lv/pirkt-premium-domenu-augsta-autoritaate-seo-vertiba" },
+  { code: "lt", name: "Lietuvių", path: "https://www.iaee.eu/expireddomainnames/lt/pirkti-premium-domenus-auksta-autoritetas-seo-verte" },
+  { code: "is", name: "Íslenska", path: "https://www.iaee.eu/expireddomainnames/is/kaupa-premium-len-hatt-vald-seo-virdi" },
+  { code: "sq", name: "Shqip", path: "https://www.iaee.eu/expireddomainnames/sq/blini-domain-premium-autoritet-larte-vlere-seo" },
+  { code: "mk", name: "Македонски", path: "https://www.iaee.eu/expireddomainnames/mk/kupete-premium-domeni-visok-avtoritet-seo-vrednost" },
+  { code: "bs", name: "Bosanski", path: "https://www.iaee.eu/expireddomainnames/bs/kupite-premium-domene-visoki-autoritet-seo-vrijednost" },
+  { code: "lb", name: "Lëtzebuergesch", path: "https://www.iaee.eu/expireddomainnames/lb/kaaft-premium-domainen-hech-autoritaet-seo-wert" },
+  { code: "bn", name: "বাংলা", path: "https://www.iaee.eu/expireddomainnames/bn/premium-domain-kinun-uccho-kartritwa-seo-mulya" },
+  { code: "ms", name: "Bahasa Melayu", path: "https://www.iaee.eu/expireddomainnames/ms/beli-domain-premium-autoriti-tinggi-nilai-seo" },
 ];
 
 // SVG Flag components
@@ -272,6 +287,84 @@ const FlagSL = () => (
   </svg>
 );
 
+// New flags for the 15 additional languages
+const FlagKO = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="24" fill="#FFFFFF"/><circle cx="16" cy="12" r="6" fill="#CD2E3A"/><path d="M16,6 A6,6 0 0,1 16,18 A3,3 0 0,0 16,12 A3,3 0 0,1 16,6" fill="#0047A0"/>
+  </svg>
+);
+const FlagHUNew = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="8" fill="#CE2939"/><rect y="8" width="32" height="8" fill="#FFFFFF"/><rect y="16" width="32" height="8" fill="#477050"/>
+  </svg>
+);
+const FlagTHNew = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="4" fill="#ED1C24"/><rect y="4" width="32" height="4" fill="#FFFFFF"/><rect y="8" width="32" height="8" fill="#241D4F"/><rect y="16" width="32" height="4" fill="#FFFFFF"/><rect y="20" width="32" height="4" fill="#ED1C24"/>
+  </svg>
+);
+const FlagVN = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="24" fill="#DA251D"/><polygon points="16,5 18,11 24,11 19,14.5 21,20.5 16,17 11,20.5 13,14.5 8,11 14,11" fill="#FFFF00"/>
+  </svg>
+);
+const FlagIDNew = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="12" fill="#FF0000"/><rect y="12" width="32" height="12" fill="#FFFFFF"/>
+  </svg>
+);
+const FlagEE = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="8" fill="#0072CE"/><rect y="8" width="32" height="8" fill="#000000"/><rect y="16" width="32" height="8" fill="#FFFFFF"/>
+  </svg>
+);
+const FlagLV = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="24" fill="#9E3039"/><rect y="10" width="32" height="4" fill="#FFFFFF"/>
+  </svg>
+);
+const FlagLT = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="8" fill="#FDB913"/><rect y="8" width="32" height="8" fill="#006A44"/><rect y="16" width="32" height="8" fill="#C1272D"/>
+  </svg>
+);
+const FlagISNew = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="24" fill="#003897"/><rect x="8" width="6" height="24" fill="#FFFFFF"/><rect y="9" width="32" height="6" fill="#FFFFFF"/><rect x="9.5" width="3" height="24" fill="#D72828"/><rect y="10.5" width="32" height="3" fill="#D72828"/>
+  </svg>
+);
+const FlagAL = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="24" fill="#E41E20"/><g fill="#000000" transform="translate(16,12) scale(0.4)"><polygon points="0,-20 5,-8 18,-12 8,-2 14,10 0,4 -14,10 -8,-2 -18,-12 -5,-8"/></g>
+  </svg>
+);
+const FlagMK = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="24" fill="#D20000"/><circle cx="16" cy="12" r="5" fill="#FFE600"/><line x1="0" y1="0" x2="32" y2="24" stroke="#FFE600" strokeWidth="2"/><line x1="32" y1="0" x2="0" y2="24" stroke="#FFE600" strokeWidth="2"/><line x1="16" y1="0" x2="16" y2="24" stroke="#FFE600" strokeWidth="2"/><line x1="0" y1="12" x2="32" y2="12" stroke="#FFE600" strokeWidth="2"/>
+  </svg>
+);
+const FlagBA = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="24" fill="#002395"/><polygon points="8,0 28,0 8,24" fill="#FECB00"/>
+  </svg>
+);
+const FlagLU = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="8" fill="#ED2939"/><rect y="8" width="32" height="8" fill="#FFFFFF"/><rect y="16" width="32" height="8" fill="#00A1DE"/>
+  </svg>
+);
+const FlagBD = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="24" fill="#006A4E"/><circle cx="14" cy="12" r="6" fill="#F42A41"/>
+  </svg>
+);
+const FlagMY = () => (
+  <svg viewBox="0 0 32 24" className="w-full h-full">
+    <rect width="32" height="24" fill="#010066"/><rect y="4" width="32" height="4" fill="#FFFFFF"/><rect y="8" width="32" height="8" fill="#CC0000"/><rect y="16" width="32" height="4" fill="#FFFFFF"/>
+    <rect width="16" height="12" fill="#010066"/><polygon points="8,2 9,5 12,5 9.5,7 10.5,10 8,8 5.5,10 6.5,7 4,5 7,5" fill="#FFE000"/>
+  </svg>
+);
+
 const flagComponents: Record<string, React.FC> = {
   nl: FlagNL,
   en: FlagGB,
@@ -300,6 +393,21 @@ const flagComponents: Record<string, React.FC> = {
   sk: FlagSK,
   sr: FlagSR,
   sl: FlagSL,
+  ko: FlagKO,
+  hu: FlagHUNew,
+  th: FlagTHNew,
+  vi: FlagVN,
+  id: FlagIDNew,
+  et: FlagEE,
+  lv: FlagLV,
+  lt: FlagLT,
+  is: FlagISNew,
+  sq: FlagAL,
+  mk: FlagMK,
+  bs: FlagBA,
+  lb: FlagLU,
+  bn: FlagBD,
+  ms: FlagMY,
 };
 
 interface LanguageSwitcherProps {
