@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 interface GTranslateWidgetProps {
   defaultLanguage?: string;
   detectBrowserLanguage?: boolean;
+  targetLanguage?: string | null;
   inline?: boolean;
 }
 
