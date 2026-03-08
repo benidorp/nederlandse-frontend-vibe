@@ -160,6 +160,161 @@ const t: Record<Lang, {
     seoCta: "Pripravljeni pospešiti svoj spletni uspeh?", seoCtaSub: "Raziščite naš portfelj 110+ premium poteklih domen.",
     euTitle: "Zakaj Imajo Premium Evropske .EU Domene Takšno Vrednost",
     euP1: "Evropske .EU domene predstavljajo ekskluziven razred digitalnih sredstev.", euP2: "Mnoge izvirajo iz uradnih EU projektov.", euP3: ".EU segment še vedno ponuja priložnosti.", euP4: ".EU domene uživajo posebno zaupanje.", euP5: ".EU domena pozicionira vašo blagovno znamko kot evropsko osveščeno.", euP6: "Naložba v premium .EU domeno pomeni institucionalno podporo."
+  },
+  ko: {
+    seoTitle: "만료 도메인 구매: 검증된 SEO 권위에 투자하세요",
+    seoP1: "만료 도메인 구매는 수년간 축적된 도메인 권위와 품질 백링크를 즉시 활용하는 가장 스마트한 방법입니다.",
+    seoP2: "엄선된 프리미엄 도메인은 위키피디아, 대학교, 정부기관 등 권위 있는 출처의 백링크를 보유하고 있습니다.",
+    seoP3: "웹숍 시작, 제휴 사이트 출시, 기존 비즈니스 SEO 강화 등 높은 MOZ DA를 가진 만료 도메인은 확실한 이점을 제공합니다.",
+    seoP4: "포트폴리오의 모든 프리미엄 도메인은 스팸 없는 이력, 관련 백링크, 양호한 링크 프로필을 검증받았습니다.",
+    seoCta: "온라인 성공을 가속화할 준비가 되셨나요?", seoCtaSub: "110개 이상의 프리미엄 만료 도메인 포트폴리오를 탐색하세요.",
+    euTitle: "프리미엄 유럽 .EU 도메인이 높은 가치를 지니는 이유",
+    euP1: ".EU 도메인은 독점적인 디지털 자산입니다. 누구나 등록 가능한 .COM과 달리, .EU 도메인은 유럽과의 연결이 필요해 가치가 높습니다.",
+    euP2: "많은 도메인이 공식 EU 지원 프로젝트, 연구 이니셔티브에서 유래하여 Europa.eu, 대학교, 정부기관의 백링크를 보유합니다.",
+    euP3: ".COM 시장이 과포화된 반면, .EU 세그먼트는 진정한 권위와 깨끗한 이력의 도메인을 찾을 기회를 제공합니다.",
+    euP4: ".EU 도메인은 유럽 소비자들 사이에서 특히 높은 신뢰를 받습니다.",
+    euP5: "유럽 디지털 주권과 GDPR 준수에 대한 관심이 커지면서, .EU 도메인은 브랜드를 유럽 친화적이고 신뢰할 수 있게 포지셔닝합니다.",
+    euP6: "프리미엄 .EU 도메인 투자는 제도적 지원, 지리적 관련성, 내재된 SEO 권위를 가진 디지털 자산을 획득하는 것입니다."
+  },
+  hu: {
+    seoTitle: "Lejárt Domainek Vásárlása: Fektessen be Bizonyított SEO Tekintélybe",
+    seoP1: "Lejárt domain vásárlása a legokosabb módja az évek alatt felhalmozott domaintekintély és minőségi backlinkek azonnali kihasználásának.",
+    seoP2: "Gondosan válogatott prémium domainjeinken Wikipédiáról, egyetemekről és kormányzati intézményekről származó backlinkek találhatók.",
+    seoP3: "Akár webshopot indít, affiliate oldalt hoz létre, vagy meglévő vállalkozása SEO-ját erősíti – a magas MOZ DA domainnel vitathatatlan előnybe kerül.",
+    seoP4: "Portfóliónk minden prémium domainjét ellenőrizzük a spammentes előzmények, releváns backlinkek és jó linkprofilok szempontjából.",
+    seoCta: "Készen áll online sikere felgyorsítására?", seoCtaSub: "Fedezze fel 110+ prémium lejárt domain portfóliónkat.",
+    euTitle: "Miért Olyan Értékesek a Prémium Európai .EU Domainek",
+    euP1: "Az európai .EU domainek a digitális eszközök exkluzív kategóriáját képviselik.", euP2: "Sok közülük hivatalos EU-finanszírozott projektekből származik.", euP3: "Az .EU szegmens még mindig kínál lehetőségeket.", euP4: "Az .EU domainek különösen nagy bizalomnak örvendenek.", euP5: "Egy .EU domain európai tudatosságot és megbízhatóságot sugároz.", euP6: "Prémium .EU domainbe fektetni intézményi háttérrel rendelkező digitális eszköz megszerzését jelenti."
+  },
+  th: {
+    seoTitle: "ซื้อโดเมนหมดอายุ: ลงทุนในอำนาจ SEO ที่พิสูจน์แล้ว",
+    seoP1: "การซื้อโดเมนหมดอายุเป็นวิธีที่ชาญฉลาดที่สุดในการได้รับประโยชน์จากอำนาจโดเมนที่สะสมมาหลายปีและแบ็คลิงก์คุณภาพ",
+    seoP2: "โดเมนพรีเมียมที่คัดสรรของเรามีแบ็คลิงก์จากแหล่งที่มีอำนาจ เช่น Wikipedia มหาวิทยาลัย และหน่วยงานรัฐบาล",
+    seoP3: "ไม่ว่าจะเปิดร้านค้าออนไลน์ เว็บไซต์พันธมิตร หรือเพิ่ม SEO ของธุรกิจ โดเมนที่มี MOZ DA สูงให้ข้อได้เปรียบที่ไม่อาจปฏิเสธได้",
+    seoP4: "โดเมนพรีเมียมทุกตัวในพอร์ตโฟลิโอถูกตรวจสอบประวัติปลอดสแปม แบ็คลิงก์ที่เกี่ยวข้อง และโปรไฟล์ลิงก์ที่ดี",
+    seoCta: "พร้อมที่จะเร่งความสำเร็จออนไลน์ของคุณหรือยัง?", seoCtaSub: "สำรวจพอร์ตโฟลิโอ 110+ โดเมนพรีเมียมหมดอายุของเรา",
+    euTitle: "ทำไมโดเมน .EU ของยุโรปพรีเมียมจึงมีค่ามาก",
+    euP1: "โดเมน .EU เป็นสินทรัพย์ดิจิทัลระดับพิเศษ", euP2: "โดเมนหลายตัวมาจากโครงการที่ได้รับทุนสนับสนุนจาก EU", euP3: "กลุ่ม .EU ยังคงมีโอกาสค้นหาโดเมนที่มีอำนาจจริง", euP4: "โดเมน .EU ได้รับความไว้วางใจเป็นพิเศษจากผู้บริโภคในยุโรป", euP5: "โดเมน .EU ช่วยวางตำแหน่งแบรนด์ของคุณให้เป็นมิตรกับยุโรป", euP6: "การลงทุนในโดเมน .EU พรีเมียมคือการได้มาซึ่งสินทรัพย์ดิจิทัลที่มีการสนับสนุนจากสถาบัน"
+  },
+  vi: {
+    seoTitle: "Mua Tên Miền Hết Hạn: Đầu Tư vào Uy Tín SEO Đã Được Chứng Minh",
+    seoP1: "Mua tên miền hết hạn là cách thông minh nhất để tận dụng ngay uy tín domain và backlink chất lượng tích lũy nhiều năm.",
+    seoP2: "Các tên miền cao cấp được chọn lọc kỹ có backlink từ các nguồn uy tín như Wikipedia, trường đại học và cơ quan chính phủ.",
+    seoP3: "Dù bạn muốn mở cửa hàng trực tuyến, trang liên kết hay tăng SEO cho doanh nghiệp – tên miền có MOZ DA cao mang lại lợi thế rõ ràng.",
+    seoP4: "Mỗi tên miền cao cấp trong danh mục đầu tư đều được kiểm tra lịch sử sạch, backlink liên quan và hồ sơ liên kết tốt.",
+    seoCta: "Sẵn sàng đẩy nhanh thành công trực tuyến?", seoCtaSub: "Khám phá danh mục 110+ tên miền hết hạn cao cấp.",
+    euTitle: "Tại Sao Tên Miền .EU Cao Cấp Của Châu Âu Có Giá Trị Cao",
+    euP1: "Tên miền .EU đại diện cho một lớp tài sản số độc quyền.", euP2: "Nhiều tên miền có nguồn gốc từ các dự án EU chính thức.", euP3: "Phân khúc .EU vẫn còn cơ hội tìm kiếm tên miền có uy tín thực sự.", euP4: "Tên miền .EU được người tiêu dùng châu Âu tin tưởng đặc biệt.", euP5: "Tên miền .EU định vị thương hiệu của bạn là thân thiện với châu Âu.", euP6: "Đầu tư vào tên miền .EU cao cấp nghĩa là có được tài sản số có sự hỗ trợ thể chế."
+  },
+  id: {
+    seoTitle: "Beli Domain Kedaluwarsa: Investasi pada Otoritas SEO yang Terbukti",
+    seoP1: "Membeli domain kedaluwarsa adalah cara paling cerdas untuk langsung memanfaatkan otoritas domain dan backlink berkualitas yang terakumulasi bertahun-tahun.",
+    seoP2: "Domain premium kami memiliki backlink dari sumber otoritatif seperti Wikipedia, universitas, dan lembaga pemerintah.",
+    seoP3: "Baik untuk memulai toko online, situs afiliasi, atau meningkatkan SEO bisnis – domain dengan MOZ DA tinggi memberikan keunggulan jelas.",
+    seoP4: "Setiap domain premium dalam portofolio kami diperiksa untuk riwayat bebas spam, backlink relevan, dan profil tautan yang baik.",
+    seoCta: "Siap mempercepat kesuksesan online Anda?", seoCtaSub: "Jelajahi portofolio 110+ domain premium kedaluwarsa kami.",
+    euTitle: "Mengapa Domain .EU Eropa Premium Sangat Bernilai",
+    euP1: "Domain .EU mewakili kelas eksklusif aset digital.", euP2: "Banyak berasal dari proyek resmi yang didanai EU.", euP3: "Segmen .EU masih menawarkan peluang.", euP4: "Domain .EU menikmati kepercayaan khusus dari konsumen Eropa.", euP5: "Domain .EU memposisikan merek Anda sebagai sadar Eropa.", euP6: "Berinvestasi di domain .EU premium berarti memperoleh aset digital dengan dukungan institusional."
+  },
+  et: {
+    seoTitle: "Ostke Aegunud Domeene: Investeerige Tõestatud SEO Autoriteeti",
+    seoP1: "Aegunud domeeni ostmine on nutikam viis aastatega kogunenud autoriteedi ja kvaliteetsete tagasilinkide koheseks kasutamiseks.",
+    seoP2: "Meie hoolikalt valitud premium domeenidel on tagasilingid autoriteetsetelt allikatelt nagu Wikipedia, ülikoolid ja valitsusasutused.",
+    seoP3: "Olenemata sellest, kas soovite avada veebipoodi, partnerleht või tugevdada SEO-d – kõrge MOZ DA domeen annab vaieldamatu eelise.",
+    seoP4: "Iga premium domeen on kontrollitud rämpspostivaba ajaloo, asjakohaste tagasilinkide ja hea lingiprofiili suhtes.",
+    seoCta: "Valmis oma veebiedu kiirendama?", seoCtaSub: "Tutvuge meie 110+ premium aegunud domeeni portfelliga.",
+    euTitle: "Miks on Premium Euroopa .EU Domeenid Nii Väärtuslikud",
+    euP1: ".EU domeenid esindavad eksklusiivset digitaalsete varade klassi.", euP2: "Paljud pärinevad ametlikest EL-i projektidest.", euP3: ".EU segment pakub endiselt võimalusi.", euP4: ".EU domeenid nautivad erilist usaldust.", euP5: ".EU domeen positsioneerib teie brändi Euroopa-teadlikuna.", euP6: ".EU domeeni investeerimine tähendab institutsionaalse toega digitaalse vara omandamist."
+  },
+  lv: {
+    seoTitle: "Pērciet Beigušos Domēnus: Investējiet Pierādītā SEO Autoritātē",
+    seoP1: "Beidzies domēna iegāde ir gudrākais veids, kā nekavējoties izmantot gadu gaitā uzkrāto autoritāti un kvalitatīvās atpakaļsaites.",
+    seoP2: "Mūsu rūpīgi atlasītajiem premium domēniem ir atpakaļsaites no autoritatīviem avotiem kā Wikipedia, universitātes un valdības iestādes.",
+    seoP3: "Neatkarīgi no tā, vai vēlaties atvērt interneta veikalu, partneru vietni vai stiprināt SEO – domēns ar augstu MOZ DA dod neapstrīdamu priekšrocību.",
+    seoP4: "Katrs premium domēns mūsu portfelī ir pārbaudīts attiecībā uz spama brīvu vēsturi un labu saišu profilu.",
+    seoCta: "Gatavi paātrināt savu tiešsaistes panākumus?", seoCtaSub: "Izpētiet mūsu 110+ premium beigušos domēnu portfeli.",
+    euTitle: "Kāpēc Premium Eiropas .EU Domēniem ir Tik Liela Vērtība",
+    euP1: ".EU domēni pārstāv ekskluzīvu digitālo aktīvu klasi.", euP2: "Daudzi cēlušies no oficiāliem ES projektiem.", euP3: ".EU segments joprojām piedāvā iespējas.", euP4: ".EU domēni bauda īpašu uzticamību.", euP5: ".EU domēns pozicionē jūsu zīmolu kā Eiropai draudzīgu.", euP6: "Ieguldījums premium .EU domēnā nozīmē institucionāli atbalstīta digitālā aktīva iegūšanu."
+  },
+  lt: {
+    seoTitle: "Pirkite Pasibaigusius Domenus: Investuokite į Įrodytą SEO Autoritetą",
+    seoP1: "Pasibaigusio domeno pirkimas yra protingiausias būdas iš karto pasinaudoti metų eigą sukauptu autoritetu ir kokybiškais nuorodomis.",
+    seoP2: "Mūsų atidžiai atrinktuose premium domenuose yra nuorodų iš autoritetingų šaltinių, tokių kaip Wikipedia, universitetai ir vyriausybės institucijos.",
+    seoP3: "Nesvarbu, ar norite atidaryti internetinę parduotuvę, partnerių svetainę ar sustiprinti SEO – domenas su aukštu MOZ DA suteikia neginčijamą pranašumą.",
+    seoP4: "Kiekvienas premium domenas mūsų portfelyje patikrintas dėl švaraus elgesio istorijos, aktualių nuorodų ir gero nuorodų profilio.",
+    seoCta: "Pasirengę pagreitinti savo internetinę sėkmę?", seoCtaSub: "Naršykite mūsų 110+ premium pasibaigusių domenų portfelį.",
+    euTitle: "Kodėl Premium Europos .EU Domenai Turi Tokią Vertę",
+    euP1: ".EU domenai yra išskirtinė skaitmeninių turtų klasė.", euP2: "Daugelis kilę iš oficialių ES projektų.", euP3: ".EU segmentas vis dar siūlo galimybių.", euP4: ".EU domenai turi ypatingą pasitikėjimą.", euP5: ".EU domenas pozicionuoja jūsų prekės ženklą kaip europietiškai sąmoningą.", euP6: "Investavimas į premium .EU domeną reiškia institucinės paramos turinčio skaitmeninio turto įsigijimą."
+  },
+  is: {
+    seoTitle: "Kauptu Útrunnin Lén: Fjárfestu í Sönnuðu SEO Valdi",
+    seoP1: "Að kaupa útrunnin lén er snjallasta leiðin til að nýta strax ára safnað lénsvald og gæðabaktengla.",
+    seoP2: "Vandlega valin úrvalslén okkar hafa baktengla frá valdamiklum aðilum eins og Wikipedia, háskólum og ríkisstofnunum.",
+    seoP3: "Hvort sem þú vilt opna vefverslun, vistfélagasíðu eða styrkja SEO – lén með háu MOZ DA gefur óumdeildegan kost.",
+    seoP4: "Hvert úrvalslén er athugað fyrir hreina sögu, viðeigandi baktengla og góð tengisnið.",
+    seoCta: "Tilbúin/n til að flýta árangri á netinu?", seoCtaSub: "Skoðaðu safn okkar af 110+ úrvals útrunnum lénum.",
+    euTitle: "Hvers Vegna Eru Úrvals Evrópsk .EU Lén Svona Verðmæt",
+    euP1: ".EU lén tákna einkarétt stétt stafrænna eigna.", euP2: "Mörg eiga uppruna sinn í opinberum ESB-verkefnum.", euP3: ".EU hlutinn býður enn tækifæri.", euP4: ".EU lén njóta sérstaks trausts.", euP5: ".EU lén staðsetur vörumerkið þitt sem evrópsk meðvitað.", euP6: "Fjárfesting í úrvals .EU léni þýðir öflun stafrænnar eignar með stofnanalegum stuðningi."
+  },
+  sq: {
+    seoTitle: "Blini Domene të Skaduara: Investoni në Autoritet SEO të Provuar",
+    seoP1: "Blerja e një domeni të skaduar është mënyra më e zgjuar për të përfituar menjëherë nga vitet e autoritetit të akumuluar.",
+    seoP2: "Domenet tona premium kanë backlinks nga burime autoritative si Wikipedia, universitete dhe institucione qeveritare.",
+    seoP3: "Pavarësisht nëse doni të hapni dyqan online, faqe affiliate apo të forconi SEO-n – një domen me MOZ DA të lartë ju jep avantazh.",
+    seoP4: "Çdo domen premium në portofolin tonë është kontrolluar për histori pa spam, backlinks relevante dhe profil të mirë linkesh.",
+    seoCta: "Gati për të përshpejtuar suksesin tuaj online?", seoCtaSub: "Eksploroni portofolin tonë me 110+ domene premium të skaduara.",
+    euTitle: "Pse Domenet .EU Premium Europiane Kanë Vlerë të Tillë",
+    euP1: "Domenet .EU përfaqësojnë një klasë ekskluzive asetesh digjitale.", euP2: "Shumë rrjedhin nga projekte zyrtare të BE-së.", euP3: "Segmenti .EU ende ofron mundësi.", euP4: "Domenet .EU gëzojnë besim të veçantë.", euP5: "Një domen .EU pozicionon markën tuaj si të ndërgjegjshme europiane.", euP6: "Investimi në domen .EU premium do të thotë fitimi i një aseti digjital me mbështetje institucionale."
+  },
+  mk: {
+    seoTitle: "Купете Истечени Домени: Инвестирајте во Докажан SEO Авторитет",
+    seoP1: "Купувањето на истечен домен е најпаметниот начин веднаш да ги искористите годините на акумулиран авторитет.",
+    seoP2: "Нашите внимателно избрани премиум домени имаат повратни линкови од авторитативни извори.",
+    seoP3: "Без разлика дали сакате онлајн продавница, партнерска страница или SEO подобрување – домен со висок MOZ DA дава неоспорна предност.",
+    seoP4: "Секој премиум домен е проверен за чиста историја и добар профил на линкови.",
+    seoCta: "Подготвени да го забрзате вашиот онлајн успех?", seoCtaSub: "Истражете го нашиот портфолио од 110+ премиум истечени домени.",
+    euTitle: "Зошто Премиум Европските .EU Домени Имаат Таква Вредност",
+    euP1: ".EU домените претставуваат ексклузивна класа на дигитални средства.", euP2: "Многу потекнуваат од официјални ЕУ проекти.", euP3: ".EU сегментот сè уште нуди можности.", euP4: ".EU домените уживаат посебна доверба.", euP5: ".EU домен го позиционира вашиот бренд како европски свесен.", euP6: "Инвестирањето во премиум .EU домен значи добивање дигитално средство со институционална поддршка."
+  },
+  bs: {
+    seoTitle: "Kupite Istekle Domene: Investirajte u Dokazani SEO Autoritet",
+    seoP1: "Kupovina istekle domene najpametniji je način da odmah iskoristite godine akumuliranog autoriteta i kvalitetnih backlinkova.",
+    seoP2: "Naši pažljivo odabrani premium domeni imaju backlinkove iz autoritativnih izvora kao Wikipedia, univerziteti i vladine institucije.",
+    seoP3: "Bilo da želite pokrenuti web shop, affiliate stranicu ili poboljšati SEO – domena s visokim MOZ DA daje nespornu prednost.",
+    seoP4: "Svaki premium domen u našem portfoliju provjeren je za čistu historiju i dobar link profil.",
+    seoCta: "Spremni ubrzati svoj online uspjeh?", seoCtaSub: "Istražite naš portfolio od 110+ premium isteklih domena.",
+    euTitle: "Zašto Premium Evropske .EU Domene Imaju Takvu Vrijednost",
+    euP1: ".EU domene predstavljaju ekskluzivnu klasu digitalnih sredstava.", euP2: "Mnoge potiču iz službenih EU projekata.", euP3: ".EU segment još uvijek nudi prilike.", euP4: ".EU domene uživaju posebno povjerenje.", euP5: ".EU domena pozicionira vaš brend kao evropski svjestan.", euP6: "Ulaganje u premium .EU domenu znači stjecanje digitalnog sredstva s institucionalnom podrškom."
+  },
+  lb: {
+    seoTitle: "Kaaft Ofgelafenen Domainen: Investéiert an Bewisen SEO Autoritéit",
+    seoP1: "En ofgelafenen Domain ze kafen ass dee schlausten Aart fir direkt vun Joere vu gesammeltem Autoritéit a Qualitéitsbacklinks ze profitéieren.",
+    seoP2: "Eis suergfälteg ausgewielte Premium Domainen hunn Backlinks vu autoritéitsstarke Quellen wéi Wikipedia, Universitéiten an Regierungsinstitutiouen.",
+    seoP3: "Egal ob Dir e Webshop opmaache wëllt, eng Affiliate-Säit oder Ären SEO stäerken – en Domain mat héijem MOZ DA gëtt Iech en onbestreidbaart Avantage.",
+    seoP4: "All Premium Domain an eisem Portfolio gëtt iwwerpréift fir spam-fräi Geschicht a gutt Linkprofiler.",
+    seoCta: "Prett Ären Online-Erfolleg ze beschleunegen?", seoCtaSub: "Entdeckt eise Portfolio vu 110+ Premium ofgelafenen Domainen.",
+    euTitle: "Firwat Premium Europäesch .EU Domainen Sou Wäertvoll Sinn",
+    euP1: ".EU Domainen vertriede eng exklusiv Klass vun digitalen Aktivaen.", euP2: "Vill kommen aus offiziellen EU-finanzéierten Projeten.", euP3: "Den .EU Segment bitt nach Chancen.", euP4: ".EU Domainen genéissen besonnescht Vertrauen.", euP5: "En .EU Domain positionéiert Är Marque als europäesch bewosst.", euP6: "An en Premium .EU Domain ze investéieren heescht en digital Aktiv mat institutioneller Ënnerstëtzung ze kréien."
+  },
+  bn: {
+    seoTitle: "মেয়াদোত্তীর্ণ ডোমেইন কিনুন: প্রমাণিত SEO কর্তৃত্বে বিনিয়োগ করুন",
+    seoP1: "মেয়াদোত্তীর্ণ ডোমেইন কেনা বছরের পর বছর সঞ্চিত কর্তৃত্ব এবং মানসম্পন্ন ব্যাকলিংক থেকে তাৎক্ষণিক সুবিধা পাওয়ার সবচেয়ে বুদ্ধিমান উপায়।",
+    seoP2: "আমাদের যত্ন সহকারে নির্বাচিত প্রিমিয়াম ডোমেইনে Wikipedia, বিশ্ববিদ্যালয় এবং সরকারি প্রতিষ্ঠানের ব্যাকলিংক রয়েছে।",
+    seoP3: "ওয়েবশপ, অ্যাফিলিয়েট সাইট বা ব্যবসার SEO শক্তিশালী করতে – উচ্চ MOZ DA ডোমেইন অনস্বীকার্য সুবিধা দেয়।",
+    seoP4: "পোর্টফোলিওর প্রতিটি প্রিমিয়াম ডোমেইন স্প্যাম-মুক্ত ইতিহাস এবং ভালো লিংক প্রোফাইলের জন্য পরীক্ষিত।",
+    seoCta: "আপনার অনলাইন সাফল্য ত্বরান্বিত করতে প্রস্তুত?", seoCtaSub: "আমাদের 110+ প্রিমিয়াম মেয়াদোত্তীর্ণ ডোমেইন পোর্টফোলিও অন্বেষণ করুন।",
+    euTitle: "কেন প্রিমিয়াম ইউরোপীয় .EU ডোমেইনের এত মূল্য",
+    euP1: ".EU ডোমেইন ডিজিটাল সম্পদের একটি একচেটিয়া শ্রেণী।", euP2: "অনেকগুলো অফিসিয়াল EU প্রকল্প থেকে এসেছে।", euP3: ".EU সেগমেন্ট এখনও সুযোগ প্রদান করে।", euP4: ".EU ডোমেইন বিশেষ আস্থা উপভোগ করে।", euP5: ".EU ডোমেইন আপনার ব্র্যান্ডকে ইউরোপ-বান্ধব হিসেবে অবস্থান দেয়।", euP6: "প্রিমিয়াম .EU ডোমেইনে বিনিয়োগ মানে প্রাতিষ্ঠানিক সমর্থন সহ ডিজিটাল সম্পদ অর্জন।"
+  },
+  ms: {
+    seoTitle: "Beli Domain Tamat Tempoh: Labur dalam Autoriti SEO yang Terbukti",
+    seoP1: "Membeli domain tamat tempoh adalah cara paling bijak untuk memanfaatkan autoriti domain dan pautan balik berkualiti yang terkumpul selama bertahun-tahun.",
+    seoP2: "Domain premium kami mempunyai pautan balik daripada sumber berwibawa seperti Wikipedia, universiti dan agensi kerajaan.",
+    seoP3: "Sama ada untuk membuka kedai dalam talian, laman afiliasi atau meningkatkan SEO – domain dengan MOZ DA tinggi memberikan kelebihan jelas.",
+    seoP4: "Setiap domain premium dalam portfolio kami diperiksa untuk sejarah bebas spam dan profil pautan yang baik.",
+    seoCta: "Bersedia mempercepatkan kejayaan dalam talian anda?", seoCtaSub: "Terokai portfolio 110+ domain premium tamat tempoh kami.",
+    euTitle: "Mengapa Domain .EU Eropah Premium Begitu Bernilai",
+    euP1: "Domain .EU mewakili kelas eksklusif aset digital.", euP2: "Banyak berasal daripada projek rasmi EU.", euP3: "Segmen .EU masih menawarkan peluang.", euP4: "Domain .EU menikmati kepercayaan istimewa.", euP5: "Domain .EU memposisikan jenama anda sebagai mesra Eropah.", euP6: "Pelaburan dalam domain .EU premium bermakna memperoleh aset digital dengan sokongan institusi."
   }
 };
 
