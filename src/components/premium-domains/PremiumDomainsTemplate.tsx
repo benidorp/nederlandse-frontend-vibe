@@ -20,6 +20,7 @@ import EuDomainValueSection from "@/components/premium-domains/shared/EuDomainVa
 import ImportantToKnowSection from "@/components/premium-domains/shared/ImportantToKnowSection";
 import DomainTransferSection from "@/components/premium-domains/shared/DomainTransferSection";
 import ExtendedFAQSection from "@/components/premium-domains/shared/ExtendedFAQSection";
+import SeoIntroText from "@/components/premium-domains/shared/SeoIntroText";
 import PaymentIcons from "@/components/premium-domains/shared/PaymentIcons";
 import WhyPremiumSection from "@/components/premium-domains/shared/WhyPremiumSection";
 import InternalLanguageLinks from "@/components/premium-domains/shared/InternalLanguageLinks";
@@ -163,6 +164,7 @@ const PremiumDomainsTemplate = ({ config: c }: { config: PDPageConfig }) => {
           <div className="max-w-5xl mx-auto mb-8 bg-slate-800/30 border border-slate-700/50 rounded-2xl p-8">
             {c.gridIntro.map((p, i) => (<p key={i} className="text-slate-300 leading-relaxed mb-4" dangerouslySetInnerHTML={{ __html: p }} />))}
           </div>
+          <SeoIntroText lang={c.lang} />
           <div className="max-w-5xl mx-auto mb-10 text-center"><p className="text-sm text-slate-300 font-medium bg-slate-800/40 border border-slate-700/40 rounded-lg px-4 py-3 inline-block"><span className="text-amber-400 font-semibold">{c.vatInfo}</span></p></div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6">
             {translatedDomains.map((domain, index) => (
