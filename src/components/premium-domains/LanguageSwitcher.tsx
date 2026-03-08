@@ -307,9 +307,10 @@ interface LanguageSwitcherProps {
 
 const LanguageSwitcher = ({ currentLanguage }: LanguageSwitcherProps) => {
   return (
-    <div className="flex items-center justify-center gap-2 py-3 bg-gradient-to-b from-black via-slate-900 to-slate-800 border-b border-slate-700/50">
-      <span className="text-slate-400 text-xs font-medium mr-1 hidden sm:inline">Select language:</span>
-      <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap justify-center">
+    <div className="flex items-center justify-center gap-2 py-4 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-800 border-b border-amber-500/20">
+      <Globe className="h-4 w-4 text-amber-400 mr-1 hidden sm:inline" />
+      <span className="text-amber-300/80 text-xs font-semibold mr-2 hidden sm:inline tracking-wide uppercase">Language:</span>
+      <div className="flex items-center gap-2 sm:gap-2.5 flex-wrap justify-center px-2">
         {languages.map((lang) => {
           const FlagComponent = flagComponents[lang.code];
           const isActive = currentLanguage === lang.code;
@@ -319,11 +320,11 @@ const LanguageSwitcher = ({ currentLanguage }: LanguageSwitcherProps) => {
               key={lang.code}
               href={lang.path}
               className={`
-                relative w-6 h-5 sm:w-7 sm:h-5 rounded-sm overflow-hidden border transition-all duration-200 
-                hover:scale-110 hover:shadow-md bg-slate-800 p-0.5
+                relative w-8 h-6 sm:w-9 sm:h-7 rounded overflow-hidden border-2 transition-all duration-200 
+                hover:scale-110 hover:shadow-lg bg-slate-800 p-0.5
                 ${isActive 
-                  ? "border-amber-400 shadow-md shadow-amber-500/30 scale-105 ring-1 ring-amber-400/50" 
-                  : "border-slate-600 opacity-85 hover:opacity-100 hover:border-slate-400"
+                  ? "border-amber-400 shadow-lg shadow-amber-500/40 scale-110 ring-2 ring-amber-400/50" 
+                  : "border-slate-600 opacity-80 hover:opacity-100 hover:border-amber-400/60"
                 }
               `}
               title={lang.name}
