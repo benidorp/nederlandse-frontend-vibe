@@ -3,7 +3,7 @@ type Lang = 'en' | 'nl' | 'de' | 'fr' | 'es' | 'it' | 'pt' | 'pl' | 'tr' | 'ar' 
 interface FaqItem { question: string; answer: string; }
 interface FaqData { sectionTitle: string; faqs: FaqItem[]; }
 
-const data: Record<Lang, FaqData> = {
+const data: Partial<Record<Lang, FaqData>> & { en: FaqData } = {
   en: { sectionTitle: "Complete Guide: 35 Questions about Expired Domain Names & SEO", faqs: [
     { question: "1. Which domain name should I buy as a beginner?", answer: "As a beginner, you are best off choosing a domain name that is easy to remember, clearly indicates what you do and exudes trust. Many starters search for 'which domain name should I buy' and automatically end up with new domains, while a reliable expired domain name often already has built-up authority and value." },
     { question: "2. What is the difference between a new domain name and an expired domain name?", answer: "A new domain name has no history and starts completely from scratch. An expired domain name has been registered before and may still have backlinks, authority and trust with Google. That makes an expired domain name often more attractive for SEO and visibility." },

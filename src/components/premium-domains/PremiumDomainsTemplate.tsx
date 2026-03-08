@@ -225,6 +225,8 @@ const PremiumDomainsTemplate = ({ config: c }: { config: PDPageConfig }) => {
         <SeoRedirectsSection lang={c.lang} />
         <TrusteeServiceSection lang={c.lang} />
         <EuDomainValueSection lang={c.lang} />
+        <DomainTransferSection lang={c.lang} />
+        <ExtendedFAQSection lang={c.lang} />
 
         <section className="py-16 bg-gradient-to-b from-slate-900 to-slate-950"><div className="container mx-auto px-4"><div className="max-w-4xl mx-auto"><article className="prose prose-invert prose-lg max-w-none">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 text-center">{c.seoTitle}</h2>
