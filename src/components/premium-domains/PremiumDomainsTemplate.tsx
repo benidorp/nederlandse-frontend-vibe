@@ -17,6 +17,9 @@ import { getTranslatedDomains } from "@/data/domainTranslations";
 import SeoRedirectsSection from "@/components/premium-domains/shared/SeoRedirectsSection";
 import TrusteeServiceSection from "@/components/premium-domains/shared/TrusteeServiceSection";
 import EuDomainValueSection from "@/components/premium-domains/shared/EuDomainValueSection";
+import ImportantToKnowSection from "@/components/premium-domains/shared/ImportantToKnowSection";
+import DomainTransferSection from "@/components/premium-domains/shared/DomainTransferSection";
+import ExtendedFAQSection from "@/components/premium-domains/shared/ExtendedFAQSection";
 import InternalLanguageLinks from "@/components/premium-domains/shared/InternalLanguageLinks";
 import { PREMIUM_DOMAINS_HREFLANG } from "@/data/premiumDomainsHreflang";
 
