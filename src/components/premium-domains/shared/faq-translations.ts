@@ -98,7 +98,7 @@ export const faqTranslationsRemaining: Record<string, { title: string; qs: strin
 };
 
 // Generate 35 FAQs using English as a fallback for missing questions in the simplified arrays
-export const getFullTranslatedFaqs = (lang: string, enQs: string[], enAs: string[]): { sectionTitle: string; faqs: any[] } => {
+export const getFullTranslatedFaqs = (lang: string, enQs: string[], enAs: string[]): FaqData => {
   const d = faqTranslationsRemaining[lang];
   if (!d) return { sectionTitle: "Complete Guide: 35 Questions", faqs: mk35(enQs, enAs) };
   

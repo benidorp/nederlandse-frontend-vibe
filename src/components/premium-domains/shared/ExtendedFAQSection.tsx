@@ -89,18 +89,23 @@ const titleOnly: Record<string, string> = {
   ms: "Panduan Lengkap: 35 Soalan tentang Domain Tamat Tempoh & SEO",
 };
 
+// Import our newly created translations for remaining languages
+import { getFullTranslatedFaqs } from "./faq-translations";
+
 // Merge all data
 const allData: Record<string, FaqData> = { ...data, ...extData };
 
-// Add remaining languages from the 'remaining' map
+// Add remaining languages from the 'remaining' map and our new translations
 Object.entries(remaining).forEach(([lang, d]) => {
-  allData[lang] = generateFaqsForLang(d.title, d.qs, d.as);
+  allData[lang] = getFullTranslatedFaqs(lang, data.en.faqs.map(f => f.question.replace(/^\d+\.\s*/, '')), data.en.faqs.map(f => f.answer));
 });
 
-// Add title-only languages with English FAQ content
+// Any languages still missing will get English fallback with their localized title
 Object.entries(titleOnly).forEach(([lang, title]) => {
   if (!allData[lang]) {
-    allData[lang] = { sectionTitle: title, faqs: data.en.faqs };
+    allData[lang] = getFullTranslatedFaqs(lang, data.en.faqs.map(f => f.question.replace(/^\d+\.\s*/, '')), data.en.faqs.map(f => f.answer));
+    // Set proper localized title
+    allData[lang].sectionTitle = title;
   }
 });
 
