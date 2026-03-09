@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- ============================================== -->
+  <!-- DUTCH ARTICLES - 3 REVIEW/GUIDE ARTICLES       -->
+  <!-- Last updated: 2026-03-09                       -->
+  <!-- ============================================== -->
+
+  <!-- Laser Engraver Article -->
+  <url>
+    <loc>https://www.iaee.eu/nl/beste-laser-graveermachine-top-5-laser-engravers-beginners-thuisgebruik-business-review</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Telescope Article -->
+  <url>
+    <loc>https://www.iaee.eu/nl/beste-high-end-telescoop-kopen-vergelijken-beginners-professionals-top-premium-telescopen-astrofotografie-deep-sky-planeten-natuur-vogels-reviews</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 3D Printer Article -->
+  <url>
+    <loc>https://www.iaee.eu/nl/beste-3d-printer-kopen-vergelijken-reviews-top-3d-printers-beginners-thuisgebruik-professionele-projecten</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>

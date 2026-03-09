@@ -6,7 +6,7 @@
   </sitemap>
   <sitemap>
     <loc>https://www.iaee.eu/sitemap-premium-domains.xml</loc>
-    <lastmod>2026-02-24</lastmod>
+    <lastmod>2026-03-08</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://www.iaee.eu/sitemap-premium-legal.xml</loc>
@@ -18,6 +18,10 @@
   </sitemap>
   <sitemap>
     <loc>https://www.iaee.eu/sitemap-vat-calculator.xml</loc>
-    <lastmod>2026-02-14</lastmod>
+    <lastmod>2026-03-09</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.iaee.eu/sitemap-articles-nl.xml</loc>
+    <lastmod>2026-03-09</lastmod>
   </sitemap>
 </sitemapindex>
