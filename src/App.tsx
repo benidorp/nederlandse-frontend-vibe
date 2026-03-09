@@ -79,11 +79,7 @@ const Freelancers = lazyRetry(() => import("./pages/Freelancers"));
 const Spanish = lazyRetry(() => import("./pages/Spanish"));
 const VATCalculator = lazyRetry(() => import("./pages/VATCalculator"));
 const VATCalculatorEN = lazyRetry(() => import("./pages/VATCalculatorEN"));
-const VATCalculatorES = lazyRetry(() => import("./pages/VATCalculatorES"));
-const VATCalculatorDE = lazyRetry(() => import("./pages/VATCalculatorDE"));
-const VATCalculatorFR = lazyRetry(() => import("./pages/VATCalculatorFR"));
-const VATCalculatorIT = lazyRetry(() => import("./pages/VATCalculatorIT"));
-const VATCalculatorPL = lazyRetry(() => import("./pages/VATCalculatorPL"));
+const VATCalculatorLangPage = lazyRetry(() => import("./pages/VATCalculatorLangPage"));
 const NotFound = lazyRetry(() => import("./pages/NotFound"));
 const PremiumDomains = lazyRetry(() => import("./pages/PremiumDomains"));
 const PremiumDomainsLegal = lazyRetry(() => import("./pages/PremiumDomainsLegal"));
@@ -274,14 +270,50 @@ const App = () => (
             <Route path="/sr/pravni-dokumenti-affiliate-sajt-uslovi-politika-privatnosti-kolacici" element={<AffiliateSR />} />
             <Route path="/sl/pravni-dokumenti-affiliate-spletna-stran-pogoji-zasebnost-piskotki" element={<AffiliateSL />} />
             
-            {/* VAT Calculator Routes */}
+            {/* VAT Calculator Routes - NL & EN keep custom pages */}
             <Route path="/btw-calculator-wereldwijd" element={<VATCalculator />} />
             <Route path="/vat-calculator-worldwide" element={<VATCalculatorEN />} />
-            <Route path="/calculadora-iva-mundial" element={<VATCalculatorES />} />
-            <Route path="/mwst-rechner-weltweit" element={<VATCalculatorDE />} />
-            <Route path="/calculateur-tva-mondial" element={<VATCalculatorFR />} />
-            <Route path="/calcolatore-iva-mondiale" element={<VATCalculatorIT />} />
-            <Route path="/kalkulator-vat-swiatowy" element={<VATCalculatorPL />} />
+            {/* VAT Calculator - 40 template languages */}
+            <Route path="/mwst-rechner-weltweit" element={<VATCalculatorLangPage langCode="de" />} />
+            <Route path="/calculateur-tva-mondial" element={<VATCalculatorLangPage langCode="fr" />} />
+            <Route path="/calculadora-iva-mundial" element={<VATCalculatorLangPage langCode="es" />} />
+            <Route path="/calcolatore-iva-mondiale" element={<VATCalculatorLangPage langCode="it" />} />
+            <Route path="/calculadora-iva-mundial-global" element={<VATCalculatorLangPage langCode="pt" />} />
+            <Route path="/kalkulator-vat-swiatowy" element={<VATCalculatorLangPage langCode="pl" />} />
+            <Route path="/kdv-hesaplayici-dunya" element={<VATCalculatorLangPage langCode="tr" />} />
+            <Route path="/hasbet-daribet-alqima-almudafa" element={<VATCalculatorLangPage langCode="ar" />} />
+            <Route path="/vat-calculator-vaishvik" element={<VATCalculatorLangPage langCode="hi" />} />
+            <Route path="/vat-keisanki-sekai" element={<VATCalculatorLangPage langCode="ja" />} />
+            <Route path="/zengzhishui-jisuanqi-quanqiu" element={<VATCalculatorLangPage langCode="zh" />} />
+            <Route path="/moms-kalkylator-varlden" element={<VATCalculatorLangPage langCode="sv" />} />
+            <Route path="/mva-kalkulator-verden" element={<VATCalculatorLangPage langCode="no" />} />
+            <Route path="/moms-beregner-verden" element={<VATCalculatorLangPage langCode="da" />} />
+            <Route path="/alv-laskuri-maailma" element={<VATCalculatorLangPage langCode="fi" />} />
+            <Route path="/kalkulacka-dph-svet" element={<VATCalculatorLangPage langCode="cs" />} />
+            <Route path="/ypologistis-fpa-pagkosmios" element={<VATCalculatorLangPage langCode="el" />} />
+            <Route path="/kalkulyator-nds-mirovoy" element={<VATCalculatorLangPage langCode="ru" />} />
+            <Route path="/calculator-tva-mondial-ro" element={<VATCalculatorLangPage langCode="ro" />} />
+            <Route path="/kalkulator-dds-sveten" element={<VATCalculatorLangPage langCode="bg" />} />
+            <Route path="/kalkulyator-pdv-svitovyy" element={<VATCalculatorLangPage langCode="uk" />} />
+            <Route path="/kalkulator-pdv-svjetski" element={<VATCalculatorLangPage langCode="hr" />} />
+            <Route path="/kalkulacka-dph-svetova" element={<VATCalculatorLangPage langCode="sk" />} />
+            <Route path="/kalkulator-pdv-svetski" element={<VATCalculatorLangPage langCode="sr" />} />
+            <Route path="/kalkulator-ddv-svetovni" element={<VATCalculatorLangPage langCode="sl" />} />
+            <Route path="/bugagachi-gyesangi-segye" element={<VATCalculatorLangPage langCode="ko" />} />
+            <Route path="/afa-kalkulator-vilagszerte" element={<VATCalculatorLangPage langCode="hu" />} />
+            <Route path="/khrueang-khit-phasi-lok" element={<VATCalculatorLangPage langCode="th" />} />
+            <Route path="/may-tinh-thue-gtgt-toan-cau" element={<VATCalculatorLangPage langCode="vi" />} />
+            <Route path="/kalkulator-ppn-seluruh-dunia" element={<VATCalculatorLangPage langCode="id" />} />
+            <Route path="/km-kalkulaator-uleeilmne" element={<VATCalculatorLangPage langCode="et" />} />
+            <Route path="/pvn-kalkulators-pasaule" element={<VATCalculatorLangPage langCode="lv" />} />
+            <Route path="/pvm-skaiciuokle-pasaulinis" element={<VATCalculatorLangPage langCode="lt" />} />
+            <Route path="/vsk-reiknivel-heimsins" element={<VATCalculatorLangPage langCode="is" />} />
+            <Route path="/llogaritese-tvsh-boterore" element={<VATCalculatorLangPage langCode="sq" />} />
+            <Route path="/kalkulator-ddv-svetski" element={<VATCalculatorLangPage langCode="mk" />} />
+            <Route path="/kalkulator-pdv-svjetski-bs" element={<VATCalculatorLangPage langCode="bs" />} />
+            <Route path="/mwst-rechner-weltweit-lb" element={<VATCalculatorLangPage langCode="lb" />} />
+            <Route path="/vat-calculator-bangla" element={<VATCalculatorLangPage langCode="bn" />} />
+            <Route path="/kalkulator-gst-seluruh-dunia" element={<VATCalculatorLangPage langCode="ms" />} />
             
             {/* Premium Domains Routes */}
             <Route path="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" element={<PremiumDomains />} />
