@@ -89,23 +89,23 @@ const titleOnly: Record<string, string> = {
   ms: "Panduan Lengkap: 35 Soalan tentang Domain Tamat Tempoh & SEO",
 };
 
-// Import our newly created translations for remaining languages
+// Import full translations for remaining languages (fi, cs, el, ru, ro, bg, uk, hr, sk, sr, sl, ko, hu, th, vi, id, et, lv, lt, is, sq, mk, bs, lb, bn, ms)
 import { getFullTranslatedFaqs } from "./faq-translations";
 
 // Merge all data
 const allData: Record<string, FaqData> = { ...data, ...extData };
 
-// Add remaining languages from the 'remaining' map and our new translations
+// Add languages from the 'remaining' map (sv, no, da) using their existing full translations
 Object.entries(remaining).forEach(([lang, d]) => {
-  allData[lang] = getFullTranslatedFaqs(lang, data.en.faqs.map(f => f.question.replace(/^\d+\.\s*/, '')), data.en.faqs.map(f => f.answer));
+  allData[lang] = generateFaqsForLang(d.title, d.qs, d.as);
 });
 
-// Any languages still missing will get English fallback with their localized title
-Object.entries(titleOnly).forEach(([lang, title]) => {
+// Add all titleOnly languages using our full translation files
+Object.entries(titleOnly).forEach(([lang]) => {
   if (!allData[lang]) {
-    allData[lang] = getFullTranslatedFaqs(lang, data.en.faqs.map(f => f.question.replace(/^\d+\.\s*/, '')), data.en.faqs.map(f => f.answer));
-    // Set proper localized title
-    allData[lang].sectionTitle = title;
+    const enQs = data.en.faqs.map(f => f.question.replace(/^\d+\.\s*/, ''));
+    const enAs = data.en.faqs.map(f => f.answer);
+    allData[lang] = getFullTranslatedFaqs(lang, enQs, enAs);
   }
 });
 
