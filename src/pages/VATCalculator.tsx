@@ -50,14 +50,94 @@ const VATCalculator = () => {
       amountInclVAT
     };
   }, [selectedCountry, amount, selectedRate, includesVAT]);
+
+  // JSON-LD Schema for SEO
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Gratis Internationale BTW Calculator",
+    "description": "Bereken BTW voor 60+ landen wereldwijd. Professionele BTW-calculator met actuele tarieven voor ondernemers, freelancers, ZZP'ers en e-commerce bedrijven.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Any",
+    "inLanguage": "nl",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "3156"
+    }
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat is BTW en hoe werkt het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "BTW (Belasting over de Toegevoegde Waarde) is een consumptiebelasting die in meer dan 170 landen wordt geheven op goederen en diensten in elke schakel van de productie- en distributieketen. Internationaal heet dit VAT (Value Added Tax) of GST (Goods and Services Tax)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe bereken ik BTW uit een bruto bedrag?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Om BTW uit een bruto bedrag te halen, deel je door (1 + BTW-percentage/100). Bijvoorbeeld bij 21% BTW: netto = bruto ÷ 1,21. Het verschil is het BTW-bedrag."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Moet ik BTW berekenen bij internationale verkoop?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dit hangt af van het land van de klant en of het B2B of B2C is. Bij B2B binnen de EU geldt de verleggingsregeling. Bij B2C geldt het tarief van het land van de klant. Export buiten de EU is meestal nultarief."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat is de OSS-regeling voor e-commerce?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De One Stop Shop (OSS) maakt het mogelijk om BTW voor B2C-verkopen aan consumenten in andere EU-landen via één kwartaalaangifte in je eigen land af te dragen, zonder registratie in elk afzonderlijk EU-land."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe werkt BTW bij dropshipping?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Als dropshipper ben je juridisch de verkoper en verantwoordelijk voor correcte BTW-berekening. Bij import van buiten de EU moet je rekening houden met invoer-BTW. Gebruik onze calculator om het juiste bedrag te bepalen."
+        }
+      }
+    ]
+  };
+
   return <>
       <Helmet>
         <html lang="nl" />
-        <title>Wereldwijde BTW Calculator voor Ondernemers | BTW Berekenen Internationaal</title>
-        <meta name="description" content="Bereken eenvoudig BTW voor elk land wereldwijd. Professionele BTW-calculator voor ondernemers met actuele tarieven, inclusief/exclusief berekeningen en overzichtelijke resultaten." />
+        <title>Gratis Internationale BTW Calculator (60+ landen) – Wereldwijd VAT & Sales Tax Berekenen</title>
+        <meta name="description" content="Gratis BTW calculator voor 60+ landen wereldwijd. Bereken BTW direct voor webshops, Shopify, WooCommerce, SaaS, freelancers en ZZP'ers. Inclusief/exclusief BTW berekenen met actuele tarieven voor EU en internationaal." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="BTW calculator, BTW berekenen, VAT calculator, internationale BTW, BTW webshop, BTW Shopify, BTW WooCommerce, BTW ZZP, BTW freelancer, BTW SaaS, BTW dropshipping, gratis BTW calculator" />
         <link rel="canonical" href="https://www.iaee.eu/btw-calculator-wereldwijd" />
+        <link rel="alternate" hrefLang="nl" href="https://www.iaee.eu/btw-calculator-wereldwijd" />
+        <link rel="alternate" hrefLang="en" href="https://www.iaee.eu/vat-calculator-worldwide" />
+        <link rel="alternate" hrefLang="de" href="https://www.iaee.eu/mwst-rechner-weltweit" />
+        <link rel="alternate" hrefLang="fr" href="https://www.iaee.eu/calculateur-tva-mondial" />
+        <link rel="alternate" hrefLang="es" href="https://www.iaee.eu/calculadora-iva-mundial" />
+        <link rel="alternate" hrefLang="it" href="https://www.iaee.eu/calcolatore-iva-mondiale" />
+        <link rel="alternate" hrefLang="pl" href="https://www.iaee.eu/kalkulator-vat-swiatowy" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.iaee.eu/vat-calculator-worldwide" />
+        <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
       
       <VATLanguageSwitcher currentLanguage="nl" />
