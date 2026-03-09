@@ -328,6 +328,11 @@ const VATCalculatorTemplate = ({ t }: VATCalculatorTemplateProps) => {
           {/* Promo Boxes */}
           <VATPromoBoxesTemplate t={t} />
 
+          {/* Comprehensive Guide */}
+          {vatGuideTranslations[t.code] && (
+            <VATGuideTemplate guide={vatGuideTranslations[t.code]} />
+          )}
+
           {/* FAQ Section */}
           <VATFAQTemplate t={t} />
         </main>
