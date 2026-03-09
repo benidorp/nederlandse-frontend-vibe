@@ -1,6 +1,7 @@
-import { FaqData } from "./ExtendedFAQSection";
+interface FaqItem { question: string; answer: string; }
+interface FaqData { sectionTitle: string; faqs: FaqItem[]; }
 
-const mk35 = (qs: string[], as: string[]): any[] => qs.map((q, i) => ({ question: `${i+1}. ${q}`, answer: as[i] }));
+const mk35 = (qs: string[], as: string[]): FaqItem[] => qs.map((q, i) => ({ question: `${i+1}. ${q}`, answer: as[i] }));
 
 export const faqTranslationsRemaining: Record<string, { title: string; qs: string[]; as: string[] }> = {
   fi: {
