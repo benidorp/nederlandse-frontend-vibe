@@ -395,84 +395,11 @@ Deze BTW-calculator is speciaal ontwikkeld voor internationale ondernemers, e-co
             </div>
           </section>
 
-          {/* SEO Content Section */}
-          <section className="py-12 md:py-16 bg-muted/30">
-            <div className="container">
-              <div className="max-w-4xl mx-auto prose prose-lg">
-                <h2 className="text-3xl font-bold mb-6 text-foreground">Waarom een internationale BTW-calculator gebruiken?</h2>
-                
-                <p className="text-muted-foreground mb-4 text-lg font-semibold">
-                  Als internationale ondernemer, e-commerce bedrijf of freelancer kom je regelmatig BTW tegen in verschillende landen. Elke land heeft eigen BTW-tarieven (ook wel VAT genoemd in het Engels), en deze kunnen flink verschillen. In Nederland is het standaard BTW-tarief 21%, maar in Hongarije bijvoorbeeld 27% en in Luxemburg slechts 17%. Deze verschillen maken het essentieel om een betrouwbare BTW-calculator te gebruiken.
-                </p>
-
-                <h3 className="text-2xl font-bold mt-8 mb-4 text-foreground">Voor wie is deze BTW-calculator geschikt?</h3>
-                <ul className="text-muted-foreground space-y-2 mb-6">
-                  <li><strong>E-commerce ondernemers</strong>: Verkoop je producten in meerdere EU-landen? Bereken eenvoudig de juiste BTW per land voor je facturen en productprijzen.</li>
-                  <li><strong>Freelancers & ZZP'ers</strong>: Werk je voor internationale klanten? Bepaal snel of je BTW moet berekenen en welk tarief van toepassing is.</li>
-                  <li><strong>Accountants & Boekhouders</strong>: Verwerk internationale transacties correct met actuele BTW-tarieven voor al je cliënten.</li>
-                  <li><strong>Import/Export bedrijven</strong>: Bereken de BTW voor grensoverschrijdende handel en zorg voor correcte aangifte.</li>
-                  <li><strong>Online dienstverleners</strong>: Bied je digitale diensten aan in de EU? Gebruik de juiste BTW-tarieven per land.</li>
-                </ul>
-
-                <h3 className="text-2xl font-bold mt-8 mb-4 text-foreground">BTW berekenen: inclusief of exclusief?</h3>
-                <p className="text-muted-foreground mb-4">
-                  Een veelvoorkomende vraag is of een bedrag inclusief of exclusief BTW is. Onze calculator kan beide berekenen:
-                </p>
-                <ul className="text-muted-foreground space-y-2 mb-6">
-                  <li><strong>Bedrag exclusief BTW</strong>: Je hebt een netto bedrag en wilt weten hoeveel BTW je moet optellen. Bijvoorbeeld: €100,- + 21% BTW = €121,-</li>
-                  <li><strong>Bedrag inclusief BTW</strong>: Je hebt een bruto bedrag en wilt weten hoeveel BTW erin zit. Bijvoorbeeld: €121,- waarvan €21,- BTW.</li>
-                </ul>
-
-                <h3 className="text-2xl font-bold mt-8 mb-4 text-foreground">Standaard en verlaagde BTW-tarieven</h3>
-                <p className="text-muted-foreground mb-4 font-semibold">
-                  Vrijwel elk land heeft meerdere BTW-tarieven. Het standaard tarief geldt voor de meeste goederen en diensten. Daarnaast zijn er vaak één of meerdere verlaagde tarieven voor bijvoorbeeld:
-                </p>
-                <ul className="text-muted-foreground space-y-2 mb-6">
-                  <li>Levensmiddelen en voedingsmiddelen</li>
-                  <li>Boeken, kranten en tijdschriften</li>
-                  <li>Medicijnen en medische hulpmiddelen</li>
-                  <li>Culturele diensten (musea, theater, etc.)</li>
-                  <li>Personen- en goederenvervoer</li>
-                  <li>Kinderopvang en onderwijs</li>
-                </ul>
-
-                <h3 className="text-2xl font-bold mt-8 mb-4 text-foreground">BTW in de Europese Unie</h3>
-                <p className="text-muted-foreground mb-4 font-semibold">
-                  Binnen de EU gelden speciale BTW-regelingen. De BTW-richtlijn harmoniseert veel regels, maar elk land mag eigen tarieven vaststellen binnen bepaalde bandbreedtes. Voor grensoverschrijdende diensten binnen de EU gelden vaak specifieke regels:
-                </p>
-                <ul className="text-muted-foreground space-y-2 mb-6">
-                  <li><strong>B2B (Business to Business)</strong>: Meestal verleggingsregeling - de afnemer berekent zelf de BTW</li>
-                  <li><strong>B2C (Business to Consumer)</strong>: BTW volgens land van de klant (voor digitale diensten en e-commerce)</li>
-                  <li><strong>OSS-regeling</strong>: Vereenvoudigde BTW-aangifte voor e-commerce binnen de EU</li>
-                </ul>
-
-                <h3 className="text-2xl font-bold mt-8 mb-4 text-foreground">Veelgestelde vragen over BTW berekenen</h3>
-                <div className="space-y-4 mb-6">
-                  <div>
-                    <h4 className="font-bold text-foreground mb-2">Hoe vaak veranderen BTW-tarieven?</h4>
-                    <p className="text-muted-foreground">
-                      BTW-tarieven worden meestal aangepast per 1 januari van een nieuw jaar. Onze calculator wordt regelmatig bijgewerkt met de laatste tarieven voor 2025.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-foreground mb-2">Kan ik deze calculator gebruiken voor mijn BTW-aangifte?</h4>
-                    <p className="text-muted-foreground">
-                      Ja, de bedragen die je berekent kun je direct gebruiken voor je BTW-aangifte. Let wel op dat je de juiste tarieven selecteert voor jouw specifieke goederen of diensten.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-foreground mb-2">Wat is het verschil tussen BTW en VAT?</h4>
-                    <p className="text-muted-foreground">
-                      BTW (Belasting Toegevoegde Waarde) en VAT (Value Added Tax) zijn hetzelfde. BTW is de Nederlandse term, VAT wordt internationaal gebruikt.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Promo Boxes */}
+          {/* Promo Boxes - directly after calculator */}
           <VATPromoBoxes lang="nl" />
+
+          {/* Comprehensive SEO Guide */}
+          <VATComprehensiveGuideNL />
 
           {/* FAQ Section */}
           <VATFAQSection />
