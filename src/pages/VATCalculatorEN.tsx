@@ -407,6 +407,9 @@ const VATCalculatorEN = () => {
             </div>
           </section>
 
+          {/* Comprehensive SEO Guide */}
+          <VATComprehensiveGuideEN />
+
           {/* Promo Boxes */}
           <VATPromoBoxes lang="en" />
 
