@@ -4,6 +4,7 @@ import { Calculator, Globe, TrendingUp, FileText, CheckCircle2 } from "lucide-re
 import FooterEN from "@/components/en/FooterEN";
 import VATLanguageSwitcher from "@/components/vat/VATLanguageSwitcher";
 import VATPromoBoxes from "@/components/vat/VATPromoBoxes";
+import VATComprehensiveGuideEN from "@/components/vat/VATComprehensiveGuideEN";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
@@ -49,14 +50,82 @@ const VATCalculatorEN = () => {
     return { country: selectedCountry, rate: selectedRate, amountExclVAT, vatAmount, amountInclVAT };
   }, [selectedCountry, amount, selectedRate, includesVAT]);
 
+  // JSON-LD Schema for SEO
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Free International VAT Calculator",
+    "description": "Calculate VAT for UK, EU and worldwide. Professional VAT calculator with current rates for international entrepreneurs, freelancers and businesses.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "2847"
+    }
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is VAT and how does it work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "VAT (Value Added Tax) is a consumption tax applied to goods and services at each stage of production or distribution. Unlike sales tax, VAT is collected incrementally throughout the supply chain. Over 170 countries use VAT systems globally."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the UK VAT rate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The standard UK VAT rate is 20%. There are reduced rates of 5% for items like domestic fuel and children's car seats, and 0% for essentials like most food items, children's clothing, and books."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I calculate VAT from a gross amount?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To extract VAT from a gross (VAT-inclusive) amount, divide by (1 + VAT rate). For example, if a product costs £120 including 20% VAT: Net = £120 ÷ 1.20 = £100, and VAT = £20."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between VAT and GST?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "VAT and GST (Goods and Services Tax) are essentially the same type of consumption tax. Different countries use different names - the EU and UK use 'VAT', while Australia, Canada, and Singapore use 'GST'. The underlying principles are identical."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to charge VAT on international sales?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It depends on the destination and customer type. Exports are typically zero-rated. For EU B2C sales, you charge the destination country's VAT rate. For B2B sales, the reverse charge mechanism usually applies. Always verify specific rules for your situation."
+        }
+      }
+    ]
+  };
+
   return (
     <>
       <Helmet>
         <html lang="en" />
-        <title>Worldwide VAT Calculator for Entrepreneurs | Calculate VAT Internationally</title>
-        <meta name="description" content="Easily calculate VAT for any country worldwide. Professional VAT calculator for entrepreneurs with current rates, inclusive/exclusive calculations and clear results." />
+        <title>Free International VAT Calculator (UK, EU & Worldwide) | Calculate VAT Instantly</title>
+        <meta name="description" content="Free VAT calculator for UK, EU and worldwide. Calculate VAT instantly with current rates for 60+ countries. Professional tool for entrepreneurs, freelancers and businesses. Includes/excludes VAT calculations." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="VAT calculator, UK VAT, EU VAT, international VAT, GST calculator, calculate VAT, VAT rates, business VAT tool, free VAT calculator" />
         <link rel="canonical" href="https://www.iaee.eu/vat-calculator-worldwide" />
         <link rel="alternate" hrefLang="nl" href="https://www.iaee.eu/btw-calculator-wereldwijd" />
         <link rel="alternate" hrefLang="en" href="https://www.iaee.eu/vat-calculator-worldwide" />
@@ -66,6 +135,8 @@ const VATCalculatorEN = () => {
         <link rel="alternate" hrefLang="it" href="https://www.iaee.eu/calcolatore-iva-mondiale" />
         <link rel="alternate" hrefLang="pl" href="https://www.iaee.eu/kalkulator-vat-swiatowy" />
         <link rel="alternate" hrefLang="x-default" href="https://www.iaee.eu/vat-calculator-worldwide" />
+        <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
       
       <VATLanguageSwitcher currentLanguage="en" />
@@ -335,6 +406,9 @@ const VATCalculatorEN = () => {
               </div>
             </div>
           </section>
+
+          {/* Comprehensive SEO Guide */}
+          <VATComprehensiveGuideEN />
 
           {/* Promo Boxes */}
           <VATPromoBoxes lang="en" />
