@@ -4,6 +4,8 @@ import { Calculator, Globe, TrendingUp, FileText, CheckCircle2 } from "lucide-re
 import FooterEN from "@/components/en/FooterEN";
 import VATLanguageSwitcher from "@/components/vat/VATLanguageSwitcher";
 import VATPromoBoxesTemplate from "@/components/vat/VATPromoBoxesTemplate";
+import VATGuideTemplate from "@/components/vat/VATGuideTemplate";
+import { vatGuideTranslations } from "@/data/vatGuideTranslations";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
@@ -325,6 +327,11 @@ const VATCalculatorTemplate = ({ t }: VATCalculatorTemplateProps) => {
 
           {/* Promo Boxes */}
           <VATPromoBoxesTemplate t={t} />
+
+          {/* Comprehensive Guide */}
+          {vatGuideTranslations[t.code] && (
+            <VATGuideTemplate guide={vatGuideTranslations[t.code]} />
+          )}
 
           {/* FAQ Section */}
           <VATFAQTemplate t={t} />
