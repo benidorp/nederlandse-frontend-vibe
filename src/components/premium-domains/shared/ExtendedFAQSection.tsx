@@ -101,11 +101,16 @@ Object.entries(remaining).forEach(([lang, d]) => {
 });
 
 // Add all titleOnly languages using our full translation files
+// Always use full translations when available, even if already in allData with only title
 Object.entries(titleOnly).forEach(([lang]) => {
-  if (!allData[lang]) {
-    const enQs = data.en.faqs.map(f => f.question.replace(/^\d+\.\s*/, ''));
-    const enAs = data.en.faqs.map(f => f.answer);
-    allData[lang] = getFullTranslatedFaqs(lang, enQs, enAs);
+  const enQs = data.en.faqs.map(f => f.question.replace(/^\d+\.\s*/, ''));
+  const enAs = data.en.faqs.map(f => f.answer);
+  const fullTranslation = getFullTranslatedFaqs(lang, enQs, enAs);
+  // Only override if fullTranslation has non-English content (i.e., exists in faqTranslationsRemaining)
+  if (fullTranslation.sectionTitle !== "Complete Guide: 35 Questions") {
+    allData[lang] = fullTranslation;
+  } else if (!allData[lang]) {
+    allData[lang] = fullTranslation;
   }
 });
 
