@@ -83,7 +83,7 @@ const VATCalculatorEN = () => {
                 </div>
                 
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">
-                  Worldwide VAT Calculator
+                  Free INTERNATIONAL VAT Calculator (UK, EU & Worldwide)
                 </h1>
                 
                 <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
