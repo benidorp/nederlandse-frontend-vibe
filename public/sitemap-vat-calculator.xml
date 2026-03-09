@@ -2,121 +2,103 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- ============================================== -->
-  <!-- VAT CALCULATOR - 7 LANGUAGES                   -->
-  <!-- With full hreflang annotations                 -->
-  <!-- ============================================== -->
+  <!-- VAT CALCULATOR - 42 LANGUAGES with full hreflang -->
 
-  <!-- Dutch (NL) -->
   <url>
     <loc>https://www.iaee.eu/btw-calculator-wereldwijd</loc>
-    <lastmod>2026-02-14</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/btw-calculator-wereldwijd" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/vat-calculator-worldwide" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/calculadora-iva-mundial" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/mwst-rechner-weltweit" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/calculateur-tva-mondial" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/calculadora-iva-mundial" />
     <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/calcolatore-iva-mondiale" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.iaee.eu/calculadora-iva-mundial-global" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/kalkulator-vat-swiatowy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.iaee.eu/kdv-hesaplayici-dunya" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.iaee.eu/moms-kalkylator-varlden" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.iaee.eu/mva-kalkulator-verden" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.iaee.eu/moms-beregner-verden" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://www.iaee.eu/alv-laskuri-maailma" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://www.iaee.eu/kalkulacka-dph-svet" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.iaee.eu/ypologistis-fpa-pagkosmios" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.iaee.eu/kalkulyator-nds-mirovoy" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.iaee.eu/calculator-tva-mondial-ro" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://www.iaee.eu/kalkulator-dds-sveten" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://www.iaee.eu/kalkulyator-pdv-svitovyy" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://www.iaee.eu/kalkulator-pdv-svjetski" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://www.iaee.eu/kalkulacka-dph-svetova" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://www.iaee.eu/kalkulator-pdv-svetski" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://www.iaee.eu/kalkulator-ddv-svetovni" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.iaee.eu/bugagachi-gyesangi-segye" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://www.iaee.eu/afa-kalkulator-vilagszerte" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.iaee.eu/khrueang-khit-phasi-lok" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://www.iaee.eu/may-tinh-thue-gtgt-toan-cau" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.iaee.eu/kalkulator-ppn-seluruh-dunia" />
+    <xhtml:link rel="alternate" hreflang="et" href="https://www.iaee.eu/km-kalkulaator-uleeilmne" />
+    <xhtml:link rel="alternate" hreflang="lv" href="https://www.iaee.eu/pvn-kalkulators-pasaule" />
+    <xhtml:link rel="alternate" hreflang="lt" href="https://www.iaee.eu/pvm-skaiciuokle-pasaulinis" />
+    <xhtml:link rel="alternate" hreflang="is" href="https://www.iaee.eu/vsk-reiknivel-heimsins" />
+    <xhtml:link rel="alternate" hreflang="sq" href="https://www.iaee.eu/llogaritese-tvsh-boterore" />
+    <xhtml:link rel="alternate" hreflang="mk" href="https://www.iaee.eu/kalkulator-ddv-svetski" />
+    <xhtml:link rel="alternate" hreflang="bs" href="https://www.iaee.eu/kalkulator-pdv-svjetski-bs" />
+    <xhtml:link rel="alternate" hreflang="lb" href="https://www.iaee.eu/mwst-rechner-weltweit-lb" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.iaee.eu/vat-calculator-bangla" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.iaee.eu/kalkulator-gst-seluruh-dunia" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.iaee.eu/hasbet-daribet-alqima-almudafa" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.iaee.eu/vat-calculator-vaishvik" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.iaee.eu/vat-keisanki-sekai" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.iaee.eu/zengzhishui-jisuanqi-quanqiu" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/vat-calculator-worldwide" />
   </url>
 
-  <!-- English (EN) -->
   <url>
     <loc>https://www.iaee.eu/vat-calculator-worldwide</loc>
-    <lastmod>2026-02-14</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/btw-calculator-wereldwijd" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/vat-calculator-worldwide" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/calculadora-iva-mundial" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/mwst-rechner-weltweit" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/calculateur-tva-mondial" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/calcolatore-iva-mondiale" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/kalkulator-vat-swiatowy" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/vat-calculator-worldwide" />
   </url>
-
-  <!-- Spanish (ES) -->
-  <url>
-    <loc>https://www.iaee.eu/calculadora-iva-mundial</loc>
-    <lastmod>2026-02-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/btw-calculator-wereldwijd" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/vat-calculator-worldwide" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/calculadora-iva-mundial" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/mwst-rechner-weltweit" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/calculateur-tva-mondial" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/calcolatore-iva-mondiale" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/kalkulator-vat-swiatowy" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/vat-calculator-worldwide" />
-  </url>
-
-  <!-- German (DE) -->
-  <url>
-    <loc>https://www.iaee.eu/mwst-rechner-weltweit</loc>
-    <lastmod>2026-02-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/btw-calculator-wereldwijd" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/vat-calculator-worldwide" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/calculadora-iva-mundial" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/mwst-rechner-weltweit" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/calculateur-tva-mondial" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/calcolatore-iva-mondiale" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/kalkulator-vat-swiatowy" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/vat-calculator-worldwide" />
-  </url>
-
-  <!-- French (FR) -->
-  <url>
-    <loc>https://www.iaee.eu/calculateur-tva-mondial</loc>
-    <lastmod>2026-02-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/btw-calculator-wereldwijd" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/vat-calculator-worldwide" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/calculadora-iva-mundial" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/mwst-rechner-weltweit" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/calculateur-tva-mondial" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/calcolatore-iva-mondiale" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/kalkulator-vat-swiatowy" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/vat-calculator-worldwide" />
-  </url>
-
-  <!-- Italian (IT) -->
-  <url>
-    <loc>https://www.iaee.eu/calcolatore-iva-mondiale</loc>
-    <lastmod>2026-02-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/btw-calculator-wereldwijd" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/vat-calculator-worldwide" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/calculadora-iva-mundial" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/mwst-rechner-weltweit" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/calculateur-tva-mondial" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/calcolatore-iva-mondiale" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/kalkulator-vat-swiatowy" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/vat-calculator-worldwide" />
-  </url>
-
-  <!-- Polish (PL) -->
-  <url>
-    <loc>https://www.iaee.eu/kalkulator-vat-swiatowy</loc>
-    <lastmod>2026-02-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.iaee.eu/btw-calculator-wereldwijd" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.iaee.eu/vat-calculator-worldwide" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.iaee.eu/calculadora-iva-mundial" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.iaee.eu/mwst-rechner-weltweit" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.iaee.eu/calculateur-tva-mondial" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.iaee.eu/calcolatore-iva-mondiale" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.iaee.eu/kalkulator-vat-swiatowy" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.iaee.eu/vat-calculator-worldwide" />
-  </url>
+  <url><loc>https://www.iaee.eu/mwst-rechner-weltweit</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/calculateur-tva-mondial</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/calculadora-iva-mundial</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/calcolatore-iva-mondiale</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/calculadora-iva-mundial-global</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/kalkulator-vat-swiatowy</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/kdv-hesaplayici-dunya</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/moms-kalkylator-varlden</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/mva-kalkulator-verden</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/moms-beregner-verden</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/alv-laskuri-maailma</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/kalkulacka-dph-svet</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/ypologistis-fpa-pagkosmios</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/kalkulyator-nds-mirovoy</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/calculator-tva-mondial-ro</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/kalkulator-dds-sveten</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/kalkulyator-pdv-svitovyy</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/kalkulator-pdv-svjetski</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/kalkulacka-dph-svetova</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/kalkulator-pdv-svetski</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/kalkulator-ddv-svetovni</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/bugagachi-gyesangi-segye</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/afa-kalkulator-vilagszerte</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/khrueang-khit-phasi-lok</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/may-tinh-thue-gtgt-toan-cau</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/kalkulator-ppn-seluruh-dunia</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/km-kalkulaator-uleeilmne</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/pvn-kalkulators-pasaule</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/pvm-skaiciuokle-pasaulinis</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/vsk-reiknivel-heimsins</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/llogaritese-tvsh-boterore</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/kalkulator-ddv-svetski</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/kalkulator-pdv-svjetski-bs</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/mwst-rechner-weltweit-lb</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/vat-calculator-bangla</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/kalkulator-gst-seluruh-dunia</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/hasbet-daribet-alqima-almudafa</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/vat-calculator-vaishvik</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/vat-keisanki-sekai</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.iaee.eu/zengzhishui-jisuanqi-quanqiu</loc><lastmod>2026-03-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
 </urlset>
