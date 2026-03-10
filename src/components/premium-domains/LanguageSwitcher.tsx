@@ -416,7 +416,7 @@ interface LanguageSwitcherProps {
 
 const LanguageSwitcher = ({ currentLanguage }: LanguageSwitcherProps) => {
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 flex items-center justify-center gap-2 py-3 bg-slate-950/95 backdrop-blur-sm border-t border-amber-500/20 shadow-[0_-4px_20px_rgba(0,0,0,0.4)]">
+    <div className="flex items-center justify-center gap-2 py-3 bg-slate-950/95 backdrop-blur-sm border-b border-amber-500/20 shadow-[0_4px_20px_rgba(0,0,0,0.4)]">
       <Globe className="h-4 w-4 text-amber-400 mr-1 hidden sm:inline" />
       <span className="text-amber-300/80 text-xs font-semibold mr-2 hidden sm:inline tracking-wide uppercase">Language:</span>
       <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap justify-center px-2 max-w-[90vw]">
