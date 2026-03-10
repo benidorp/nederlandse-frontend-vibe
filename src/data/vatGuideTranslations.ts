@@ -1,5 +1,9 @@
 // VAT Guide Translations - Full 3300+ word SEO guide for all 42 languages
 // Based on the Dutch benchmark (VATComprehensiveGuideNL)
+import { guideIT } from "./vatGuide-it";
+import { guidePT } from "./vatGuide-pt";
+import { guidePL } from "./vatGuide-pl";
+import { guideTR, guideSV, guideNO, guideDA, guideFI, guideIS } from "./vatGuide-nordic";
 
 export interface VATGuideContent {
   badge: string;
