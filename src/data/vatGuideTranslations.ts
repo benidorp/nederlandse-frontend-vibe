@@ -4,6 +4,13 @@ import { guideIT } from "./vatGuide-it";
 import { guidePT } from "./vatGuide-pt";
 import { guidePL } from "./vatGuide-pl";
 import { guideTR, guideSV, guideNO, guideDA, guideFI, guideIS } from "./vatGuide-nordic";
+import { guideCS } from "./vatGuide-cs";
+import { guideSK } from "./vatGuide-sk";
+import { guideHR } from "./vatGuide-hr";
+import { guideSR } from "./vatGuide-sr";
+import { guideSL } from "./vatGuide-sl";
+import { guideBS } from "./vatGuide-bs";
+import { guideMK } from "./vatGuide-mk";
 
 export interface VATGuideContent {
   badge: string;
