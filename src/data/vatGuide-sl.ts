@@ -59,7 +59,7 @@ export const guideSL: VATGuideContent = {
       "Hranite račune najmanj 10 let (Slovenija) ali po lokalnih pravilih",
       "Uporabljajte zaporedno številčenje računov",
       "Navedite ID številke za DDV obeh strank",
-      "Pri obrnjeni davčni obveznosti: na računu navedite „DDV obračuna prejemnik""
+      "Pri obrnjeni davčni obveznosti: na računu navedite 'DDV obračuna prejemnik'"
     ],
     s9DeadlineTitle: "Roki in obračuni",
     s9DeadlineItems: [

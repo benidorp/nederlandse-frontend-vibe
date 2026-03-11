@@ -59,7 +59,7 @@ export const guideCS: VATGuideContent = {
       "Uchovávejte faktury minimálně 10 let (ČR) nebo dle místních pravidel",
       "Používejte průběžné číslování faktur",
       "Uvádějte DIČ obou stran",
-      "Při přenesení daňové povinnosti: uveďte na faktuře „daň odvede zákazník""
+      "Při přenesení daňové povinnosti: uveďte na faktuře 'daň odvede zákazník'"
     ],
     s9DeadlineTitle: "Termíny a přiznání",
     s9DeadlineItems: [
