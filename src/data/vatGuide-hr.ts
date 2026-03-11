@@ -59,7 +59,7 @@ export const guideHR: VATGuideContent = {
       "Čuvajte račune minimalno 11 godina (Hrvatska) ili prema lokalnim pravilima",
       "Koristite uzastopno numeriranje računa",
       "Navedite PDV identifikacijske brojeve obiju strana",
-      "Kod prijenosa porezne obveze: navedite na računu „PDV obračunava primatelj""
+      "Kod prijenosa porezne obveze: navedite na računu 'PDV obračunava primatelj'"
     ],
     s9DeadlineTitle: "Rokovi i prijave",
     s9DeadlineItems: [

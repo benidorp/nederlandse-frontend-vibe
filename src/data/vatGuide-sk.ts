@@ -59,7 +59,7 @@ export const guideSK: VATGuideContent = {
       "Uchovávajte faktúry minimálne 10 rokov (SR) alebo podľa miestnych pravidiel",
       "Používajte priebežné číslovanie faktúr",
       "Uvádzajte IČ DPH oboch strán",
-      "Pri prenesení daňovej povinnosti: uveďte na faktúre „daň odvedie zákazník""
+      "Pri prenesení daňovej povinnosti: uveďte na faktúre 'daň odvedie zákazník'"
     ],
     s9DeadlineTitle: "Termíny a priznania",
     s9DeadlineItems: [
