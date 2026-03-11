@@ -11,6 +11,11 @@ import { guideSR } from "./vatGuide-sr";
 import { guideSL } from "./vatGuide-sl";
 import { guideBS } from "./vatGuide-bs";
 import { guideMK } from "./vatGuide-mk";
+import { guideRU } from "./vatGuide-ru";
+import { guideUK } from "./vatGuide-uk";
+import { guideBG } from "./vatGuide-bg";
+import { guideRO } from "./vatGuide-ro";
+import { guideHU } from "./vatGuide-hu";
 
 export interface VATGuideContent {
   badge: string;
