@@ -59,7 +59,7 @@ export const guideZH: VATGuideContent = {
       "至少保存发票5年或根据当地规定保存",
       "使用连续的发票编号",
       "包含双方的增值税识别号",
-      "反向征收情况下：在发票上注明"增值税反向征收""
+      "反向征收情况下：在发票上注明\u201C增值税反向征收\u201D"
     ],
     s9DeadlineTitle: "截止日期和申报",
     s9DeadlineItems: [
