@@ -16,6 +16,12 @@ import { guideUK } from "./vatGuide-uk";
 import { guideBG } from "./vatGuide-bg";
 import { guideRO } from "./vatGuide-ro";
 import { guideHU } from "./vatGuide-hu";
+import { guideEL } from "./vatGuide-el";
+import { guideKO } from "./vatGuide-ko";
+import { guideAR } from "./vatGuide-ar";
+import { guideHI } from "./vatGuide-hi";
+import { guideJA } from "./vatGuide-ja";
+import { guideZH } from "./vatGuide-zh";
 
 export interface VATGuideContent {
   badge: string;
@@ -667,11 +673,12 @@ export const vatGuideTranslations: Record<string, VATGuideContent> = {
   sl: guideSL,
   bs: guideBS,
   mk: guideMK,
-  ar: createGuideTranslation("ar", "دليل ضريبة القيمة المضافة 2025-2026", "الدليل الشامل لحساب ضريبة القيمة المضافة", "كل ما تحتاج معرفته عن حساب ضريبة القيمة المضافة.", "VAT"),
-  hi: createGuideTranslation("hi", "वैट गाइड 2025-2026", "अंतर्राष्ट्रीय वैट गणना गाइड", "वैट गणना के बारे में सब कुछ।", "VAT"),
-  ja: createGuideTranslation("ja", "VAT計算ガイド 2025-2026", "国際VAT計算の完全ガイド", "VAT計算について知っておくべきすべて。", "VAT"),
-  zh: createGuideTranslation("zh", "增值税指南 2025-2026", "国际增值税计算完整指南", "关于增值税计算你需要知道的一切。", "VAT"),
-  el: createGuideTranslation("el", "Οδηγός ΦΠΑ 2025-2026", "Ο Πλήρης Οδηγός για τον Υπολογισμό Διεθνούς ΦΠΑ", "Όλα όσα πρέπει να γνωρίζετε για τον υπολογισμό ΦΠΑ.", "ΦΠΑ"),
+  ar: guideAR,
+  hi: guideHI,
+  ja: guideJA,
+  zh: guideZH,
+  el: guideEL,
+  ko: guideKO,
   ru: guideRU,
   ro: guideRO,
   bg: guideBG,
