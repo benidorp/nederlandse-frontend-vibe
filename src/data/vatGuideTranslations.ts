@@ -26,6 +26,9 @@ import { guideTH } from "./vatGuide-th";
 import { guideVI } from "./vatGuide-vi";
 import { guideID } from "./vatGuide-id";
 import { guideET } from "./vatGuide-et";
+import { guideLV } from "./vatGuide-lv";
+import { guideLT } from "./vatGuide-lt";
+import { guideSQ } from "./vatGuide-sq";
 
 export interface VATGuideContent {
   badge: string;
