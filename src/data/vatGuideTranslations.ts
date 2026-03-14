@@ -22,6 +22,10 @@ import { guideAR } from "./vatGuide-ar";
 import { guideHI } from "./vatGuide-hi";
 import { guideJA } from "./vatGuide-ja";
 import { guideZH } from "./vatGuide-zh";
+import { guideTH } from "./vatGuide-th";
+import { guideVI } from "./vatGuide-vi";
+import { guideID } from "./vatGuide-id";
+import { guideET } from "./vatGuide-et";
 
 export interface VATGuideContent {
   badge: string;
