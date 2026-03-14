@@ -22,6 +22,10 @@ import { guideAR } from "./vatGuide-ar";
 import { guideHI } from "./vatGuide-hi";
 import { guideJA } from "./vatGuide-ja";
 import { guideZH } from "./vatGuide-zh";
+import { guideTH } from "./vatGuide-th";
+import { guideVI } from "./vatGuide-vi";
+import { guideID } from "./vatGuide-id";
+import { guideET } from "./vatGuide-et";
 
 export interface VATGuideContent {
   badge: string;
@@ -684,10 +688,10 @@ export const vatGuideTranslations: Record<string, VATGuideContent> = {
   bg: guideBG,
   uk: guideUK,
   hu: guideHU,
-  th: createGuideTranslation("th", "คู่มือภาษีมูลค่าเพิ่ม 2025-2026", "คู่มือฉบับสมบูรณ์สำหรับการคำนวณภาษีมูลค่าเพิ่มระหว่างประเทศ", "ทุกสิ่งที่คุณต้องรู้เกี่ยวกับการคำนวณภาษีมูลค่าเพิ่ม", "VAT"),
-  vi: createGuideTranslation("vi", "Hướng Dẫn VAT 2025-2026", "Hướng Dẫn Đầy Đủ về Tính Thuế GTGT Quốc Tế", "Tất cả những gì bạn cần biết về tính thuế GTGT.", "VAT"),
-  id: createGuideTranslation("id", "Panduan PPN 2025-2026", "Panduan Lengkap Perhitungan PPN Internasional", "Semua yang perlu Anda ketahui tentang perhitungan PPN.", "PPN"),
-  et: createGuideTranslation("et", "KM Juhend 2025-2026", "Täielik Juhend Rahvusvahelise KM Arvutamiseks", "Kõik, mida peate teadma KM arvutamise kohta.", "KM"),
+  th: guideTH,
+  vi: guideVI,
+  id: guideID,
+  et: guideET,
   lv: createGuideTranslation("lv", "PVN Ceļvedis 2025-2026", "Pilnīgs Ceļvedis Starptautiska PVN Aprēķināšanai", "Viss, kas jums jāzina par PVN aprēķināšanu.", "PVN"),
   lt: createGuideTranslation("lt", "PVM Vadovas 2025-2026", "Išsamus Vadovas Tarptautiniam PVM Skaičiavimui", "Viskas, ką reikia žinoti apie PVM skaičiavimą.", "PVM"),
   sq: createGuideTranslation("sq", "Udhëzues TVSH 2025-2026", "Udhëzuesi i Plotë për Llogaritjen e TVSH-së Ndërkombëtare", "Gjithçka që duhet të dini për llogaritjen e TVSH-së.", "TVSH"),
