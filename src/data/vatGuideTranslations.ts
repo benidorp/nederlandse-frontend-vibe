@@ -695,9 +695,9 @@ export const vatGuideTranslations: Record<string, VATGuideContent> = {
   vi: guideVI,
   id: guideID,
   et: guideET,
-  lv: createGuideTranslation("lv", "PVN Ceļvedis 2025-2026", "Pilnīgs Ceļvedis Starptautiska PVN Aprēķināšanai", "Viss, kas jums jāzina par PVN aprēķināšanu.", "PVN"),
-  lt: createGuideTranslation("lt", "PVM Vadovas 2025-2026", "Išsamus Vadovas Tarptautiniam PVM Skaičiavimui", "Viskas, ką reikia žinoti apie PVM skaičiavimą.", "PVM"),
-  sq: createGuideTranslation("sq", "Udhëzues TVSH 2025-2026", "Udhëzuesi i Plotë për Llogaritjen e TVSH-së Ndërkombëtare", "Gjithçka që duhet të dini për llogaritjen e TVSH-së.", "TVSH"),
+  lv: guideLV,
+  lt: guideLT,
+  sq: guideSQ,
   lb: createGuideTranslation("lb", "MwSt Guide 2025-2026", "De Komplett Guide fir International MwSt Berechnung", "Alles wat Dir iwwer MwSt Berechnung wësse musst.", "MwSt"),
   bn: createGuideTranslation("bn", "ভ্যাট গাইড 2025-2026", "আন্তর্জাতিক ভ্যাট গণনার সম্পূর্ণ গাইড", "ভ্যাট গণনা সম্পর্কে আপনার যা জানা দরকার।", "VAT"),
   ms: createGuideTranslation("ms", "Panduan GST 2025-2026", "Panduan Lengkap Pengiraan GST Antarabangsa", "Semua yang anda perlu tahu tentang pengiraan GST.", "GST")
