@@ -29,6 +29,9 @@ import { guideET } from "./vatGuide-et";
 import { guideLV } from "./vatGuide-lv";
 import { guideLT } from "./vatGuide-lt";
 import { guideSQ } from "./vatGuide-sq";
+import { guideLB } from "./vatGuide-lb";
+import { guideBN } from "./vatGuide-bn";
+import { guideMS } from "./vatGuide-ms";
 
 export interface VATGuideContent {
   badge: string;
@@ -698,9 +701,9 @@ export const vatGuideTranslations: Record<string, VATGuideContent> = {
   lv: guideLV,
   lt: guideLT,
   sq: guideSQ,
-  lb: createGuideTranslation("lb", "MwSt Guide 2025-2026", "De Komplett Guide fir International MwSt Berechnung", "Alles wat Dir iwwer MwSt Berechnung wësse musst.", "MwSt"),
-  bn: createGuideTranslation("bn", "ভ্যাট গাইড 2025-2026", "আন্তর্জাতিক ভ্যাট গণনার সম্পূর্ণ গাইড", "ভ্যাট গণনা সম্পর্কে আপনার যা জানা দরকার।", "VAT"),
-  ms: createGuideTranslation("ms", "Panduan GST 2025-2026", "Panduan Lengkap Pengiraan GST Antarabangsa", "Semua yang anda perlu tahu tentang pengiraan GST.", "GST")
+  lb: guideLB,
+  bn: guideBN,
+  ms: guideMS
 };
 
 export default vatGuideTranslations;
