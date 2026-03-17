@@ -12,6 +12,12 @@
   RewriteRule ^expireddomeinnamen/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde$ /expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde [R=301,L]
   RewriteRule ^expireddomeinnamen/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde$ /expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde [R=301,L]
 
+  # 301 Redirect: NL Article pages naar nailtalk.nl
+  RewriteRule ^nl/beste-laser-graveermachine-top-5-laser-engravers-beginners-thuisgebruik-business-review$ https://www.nailtalk.nl/nl/beste-laser-graveermachine-top-5-laser-engravers-beginners-thuisgebruik-business-review [R=301,L]
+  RewriteRule ^nl/beste-laser-graveermachine-2026-reviews-koopgids$ https://www.nailtalk.nl/nl/beste-laser-graveermachine-top-5-laser-engravers-beginners-thuisgebruik-business-review [R=301,L]
+  RewriteRule ^nl/beste-high-end-telescoop-kopen-vergelijken-beginners-professionals-top-premium-telescopen-astrofotografie-deep-sky-planeten-natuur-vogels-reviews$ https://www.nailtalk.nl/nl/beste-high-end-telescoop-kopen-vergelijken-beginners-professionals-top-premium-telescopen-astrofotografie-deep-sky-planeten-natuur-vogels-reviews [R=301,L]
+  RewriteRule ^nl/beste-3d-printer-kopen-vergelijken-reviews-top-3d-printers-beginners-thuisgebruik-professionele-projecten$ https://www.nailtalk.nl/nl/beste-3d-printer-kopen-vergelijken-reviews-top-3d-printers-beginners-thuisgebruik-professionele-projecten [R=301,L]
+
   # 301 Redirect: Premium Domeinen Juridische Documenten naar nieuwe URL structuur
   RewriteRule ^premium-domeinnamen-juridische-documenten$ /expireddomainnames/nl/premium-domeinnamen-juridische-documenten [R=301,L]
   RewriteRule ^expireddomeinnamen/nl/premium-domeinnamen-juridische-documenten$ /expireddomainnames/nl/premium-domeinnamen-juridische-documenten [R=301,L]
