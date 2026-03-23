@@ -1,0 +1,1 @@
+DROP POLICY IF EXISTS "Authenticated users can read ai_settings" ON public.ai_settings;

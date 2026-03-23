@@ -1,12 +1,23 @@
 import { Button } from "@/components/ui/button";
+import { useNavigate, useLocation } from "react-router-dom";
 import logo from "@/assets/logo.png";
+
+const MAIN_PAGE = "/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy";
+
 const HeaderEN = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const isLocalPage = location.pathname === MAIN_PAGE || location.pathname === "/" || location.pathname.toLowerCase().includes("photography") || location.pathname.toLowerCase().includes("fotografie");
+
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    element?.scrollIntoView({
-      behavior: "smooth"
-    });
+    if (isLocalPage) {
+      const element = document.getElementById(id);
+      element?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate(`${MAIN_PAGE}#${id}`);
+    }
   };
+
   return <header className="sticky top-0 z-50 w-full border-b bg-background/90 backdrop-blur supports-[backdrop-filter]:bg-background/70">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">

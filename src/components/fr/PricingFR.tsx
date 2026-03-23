@@ -1,7 +1,8 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Check, AlertTriangle } from "lucide-react";
+import stripeLogo from "@/assets/stripe-logo.svg";
+import StripeBuyButton from "@/components/StripeBuyButton";
 
 const includedItems = [
   "Politique de Confidentialité (conforme RGPD)",
@@ -37,6 +38,9 @@ const PricingFR = () => {
               <CardDescription className="text-base">
                 Tous les documents juridiques essentiels pour une utilisation illimitée
               </CardDescription>
+              <div className="flex justify-center mt-6">
+                <img src="/images/iaee-logo.png" alt="IAEE - Documents Juridiques Essentiels" className="h-20 w-20 object-contain" loading="eager" />
+              </div>
             </CardHeader>
             
             <CardContent className="space-y-6">
@@ -51,15 +55,16 @@ const PricingFR = () => {
                 ))}
               </div>
 
-              <div className="pt-6 border-t">
-                <Button className="w-full h-14 text-lg font-semibold shadow-lg hover:shadow-xl transition-shadow" size="lg">
-                  Commander Maintenant
-                </Button>
+              <div className="pt-6 border-t flex justify-center">
+                <StripeBuyButton />
               </div>
 
-              <p className="text-base font-semibold text-center text-muted-foreground">
-                Veilig betalen via Stripe, automatisch omgerekend naar uw eigen valuta.
-              </p>
+              <div className="flex items-center justify-center gap-2 mt-4">
+                <img src={stripeLogo} alt="Stripe" className="h-5 w-5" />
+                <p className="text-sm font-medium text-muted-foreground">
+                  Paiement sécurisé via Stripe • Converti automatiquement dans votre devise locale
+                </p>
+              </div>
 
               <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-3">
                 <div className="flex gap-2">

@@ -68,7 +68,7 @@ const services = [
 
 const ServicesEN = () => {
   return (
-    <section id="services" className="py-20 bg-primary/5">
+    <section id="services" className="py-20 bg-background">
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">Our Services</Badge>

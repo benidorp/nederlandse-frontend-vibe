@@ -487,7 +487,7 @@ const Languages = () => {
         <title>Languages - Legal Affiliate Agreement</title>
         <meta name="description" content="Access legal documents for affiliate websites in 65+ languages across Europe, Asia, and Africa." />
         <meta name="robots" content="noindex, nofollow" />
-        <link rel="canonical" href="https://iaee.eu/docs-1" />
+        <link rel="canonical" href="https://www.iaee.eu/docs-1" />
       </Helmet>
       <div className="min-h-screen bg-background">
         <HeaderEN />

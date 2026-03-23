@@ -9,41 +9,53 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 220 70% 15%;
+    --foreground: 215 25% 27%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 70% 15%;
+    --card-foreground: 215 25% 27%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 70% 15%;
+    --popover-foreground: 215 25% 27%;
 
-    --primary: 220 70% 25%;
+    --primary: 215 70% 28%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 220 70% 35%;
+    --primary-glow: 210 80% 45%;
 
-    --secondary: 220 15% 95%;
-    --secondary-foreground: 220 70% 15%;
+    --secondary: 205 85% 55%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 15% 96%;
-    --muted-foreground: 220 50% 30%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 25% 40%;
 
-    --accent: 220 65% 30%;
+    --accent: 200 65% 45%;
     --accent-foreground: 0 0% 100%;
 
-    --navy: 220 70% 25%;
-    --navy-dark: 220 70% 18%;
+    --success: 140 70% 50%;
+    --success-foreground: 0 0% 100%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(220 70% 25%), hsl(220 70% 35%));
-    --gradient-navy: linear-gradient(135deg, hsl(220 70% 18%), hsl(220 70% 25%));
-    --shadow-elegant: 0 10px 40px -10px hsl(220 70% 25% / 0.35);
-    --shadow-glow: 0 0 50px hsl(220 70% 35% / 0.25);
+    --info: 210 80% 55%;
+    --info-foreground: 0 0% 100%;
+
+    --warning: 35 90% 55%;
+    --warning-foreground: 0 0% 100%;
+
+    --navy: 215 80% 22%;
+    --navy-dark: 220 85% 15%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(215 70% 28%), hsl(205 85% 55%));
+    --gradient-secondary: linear-gradient(135deg, hsl(205 85% 55%), hsl(200 65% 45%));
+    --gradient-accent: linear-gradient(135deg, hsl(200 65% 45%), hsl(210 80% 55%));
+    --gradient-navy: linear-gradient(135deg, hsl(220 85% 15%), hsl(215 80% 22%));
+    --shadow-elegant: 0 10px 40px -10px hsl(215 70% 28% / 0.25);
+    --shadow-glow: 0 0 50px hsl(210 80% 45% / 0.2);
+    --shadow-colorful: 0 20px 60px -15px hsl(205 85% 55% / 0.3);
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 90%;
-    --input: 220 15% 90%;
-    --ring: 220 70% 25%;
+    --border: 215 20% 90%;
+    --input: 215 20% 90%;
+    --ring: 215 70% 28%;
 
     --radius: 0.5rem;
 
@@ -112,4 +124,48 @@ All colors MUST be HSL.
   bottom: 20px;
   right: 20px;
   z-index: 9999;
+}
+
+/* Inline GTranslate widget (not fixed) */
+.gtranslate_wrapper.gtranslate-inline {
+  position: static;
+  bottom: auto;
+  right: auto;
+  width: 100%;
+}
+
+.gtranslate_wrapper.gtranslate-inline select {
+  width: 100%;
+  max-width: 320px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Preserve text formatting during GTranslate translation */
+font[style] p,
+font[style] li,
+font[style] div,
+font[style] h1,
+font[style] h2,
+font[style] h3,
+font[style] h4,
+font p,
+font li,
+font div,
+font h1,
+font h2,
+font h3,
+font h4 {
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+/* Preserve whitespace in translated accordion content */
+font[style] .whitespace-pre-line,
+font .whitespace-pre-line,
+.notranslate + * p,
+[data-state] p {
+  white-space: pre-line !important;
+  margin-bottom: 0.75em;
 }

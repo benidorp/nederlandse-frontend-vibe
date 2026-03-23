@@ -19,16 +19,16 @@ const FooterES = () => {
               Documentos legales profesionales para afiliados. Totalmente conforme con el RGPD y directrices FTC.
             </p>
             <div className="flex gap-3">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors">
+              <a href="https://facebook.com" target="_blank" rel="nofollow noopener noreferrer" className="text-white/70 hover:text-white transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors">
+              <a href="https://twitter.com" target="_blank" rel="nofollow noopener noreferrer" className="text-white/70 hover:text-white transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors">
+              <a href="https://linkedin.com" target="_blank" rel="nofollow noopener noreferrer" className="text-white/70 hover:text-white transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors">
+              <a href="https://instagram.com" target="_blank" rel="nofollow noopener noreferrer" className="text-white/70 hover:text-white transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
             </div>
@@ -118,6 +118,8 @@ const FooterES = () => {
               <a href="/comparison-review-website-legal-documents-terms-privacy-affiliate-disclosure-disclaimer" className="text-sm text-white/70 hover:text-white transition-colors">Documentos Legales para Reseñas Comparativas</a>
               <a href="/news-magazine-legal-documents-terms-conditions-privacy-policy-copyright-editorial-policy" className="text-sm text-white/70 hover:text-white transition-colors">Documentos Legales para Revistas de Noticias</a>
               <a href="/freelancers-self-employed-legal-documents-contracts-terms-privacy-policy" className="text-sm text-white/70 hover:text-white transition-colors">Documentos Legales para Freelancers</a>
+              <a href="/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" className="text-sm text-white/70 hover:text-white transition-colors">Nombres de Dominio Premium</a>
+              <a href="/btw-calculator-wereldwijd" className="text-sm text-white/70 hover:text-white transition-colors">Calculadora de IVA</a>
             </nav>
           </div>
         </div>

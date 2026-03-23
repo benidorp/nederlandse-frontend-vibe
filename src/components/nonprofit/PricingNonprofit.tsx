@@ -1,16 +1,17 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Sparkles, AlertTriangle } from "lucide-react";
 import stripeLogo from "@/assets/stripe-logo.svg";
+import StripeBuyButton from "@/components/StripeBuyButton";
 
 const PricingNonprofit = () => {
   const features = [
-    "Complete Donation Terms & Conditions",
-    "GDPR-Compliant Privacy Policy",
-    "Volunteer Agreement Template",
-    "Cookie Policy",
-    "Fundraising Disclosure Statement",
-    "Implementation Guide & Checklist"
-  ];
+  "Complete Donation Terms & Conditions",
+  "GDPR-Compliant Privacy Policy",
+  "Volunteer Agreement Template",
+  "Cookie Policy",
+  "Fundraising Disclosure Statement",
+  "Implementation Guide & Checklist"];
+
 
   return (
     <section id="pricing" className="py-20 bg-gradient-to-br from-background via-primary/5 to-background">
@@ -22,8 +23,8 @@ const PricingNonprofit = () => {
               <Sparkles className="w-5 h-5" />
               <span className="font-semibold">Simple Pricing</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Invest in Your Mission's Protection
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Invest in the Website Protection of Your   Organization
+
             </h2>
             <p className="text-xl text-muted-foreground">
               One-time investment. No subscriptions. Lifetime access.
@@ -44,33 +45,26 @@ const PricingNonprofit = () => {
               </div>
               <CardTitle className="text-2xl">Non-Profit Legal Package</CardTitle>
               <p className="text-muted-foreground">One-time payment • Instant access</p>
+              <div className="flex justify-center mt-6">
+                <img src="/images/iaee-logo.png" alt="IAEE - Essential Legal Documents" className="h-20 w-20 object-contain" loading="eager" />
+              </div>
             </CardHeader>
             <CardContent className="space-y-6 pb-8">
               {/* What's included */}
               <div className="space-y-4">
-              {features.map((feature, index) => (
-                  <div key={index} className="flex items-start gap-3">
+              {features.map((feature, index) =>
+                <div key={index} className="flex items-start gap-3">
                     <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center mt-0.5 shadow-md">
                       <Check className="w-4 h-4 text-primary-foreground" />
                     </div>
                     <span className="text-foreground font-medium">{feature}</span>
                   </div>
-                ))}
+                )}
               </div>
 
               {/* Payment Section */}
-              <div 
-                className="pt-6 border-t flex justify-center"
-              >
-                <div 
-                  className="[&_stripe-buy-button]:scale-125 [&_stripe-buy-button]:origin-center"
-                  dangerouslySetInnerHTML={{
-                    __html: `<stripe-buy-button
-                      buy-button-id="buy_btn_1SKm3dFXIgtr666GOD7ZP6da"
-                      publishable-key="pk_live_51SK0ndFXIgtr666GrmKudtOsf3HHcaBw06Ei3x8LbGKOYQ3oZeIrmpMpTfoTBJ5c7tPyFfbRC7pugHMC0l6b3ZKP009fgyIrGc"
-                    ></stripe-buy-button>`
-                  }}
-                />
+              <div className="pt-6 border-t flex justify-center">
+                <StripeBuyButton />
               </div>
 
               <div className="flex items-center justify-center gap-2 mt-4">
@@ -104,8 +98,8 @@ const PricingNonprofit = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default PricingNonprofit;

@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import stripeLogo from "@/assets/stripe-logo.svg";
+import StripeBuyButton from "@/components/StripeBuyButton";
 
 const PricingComparisonReview = () => {
   return (
@@ -20,6 +21,9 @@ const PricingComparisonReview = () => {
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-foreground mb-2">Complete Legal Documents Package</h3>
               <p className="text-muted-foreground">Everything you need to protect your review website</p>
+              <div className="flex justify-center mt-6">
+                <img src="/images/iaee-logo.png" alt="IAEE - Essential Legal Documents" className="h-20 w-20 object-contain" loading="eager" />
+              </div>
             </div>
 
             <div className="space-y-4 mb-8">
@@ -83,14 +87,7 @@ const PricingComparisonReview = () => {
               <div className="text-4xl font-bold text-primary mb-2">€79</div>
               <p className="text-muted-foreground mb-6">One-time payment • Lifetime access • All documents included</p>
 
-              <div className="[&_stripe-buy-button]:scale-125 [&_stripe-buy-button]:origin-center flex justify-center"
-                dangerouslySetInnerHTML={{
-                  __html: `<stripe-buy-button
-                      buy-button-id="buy_btn_1SKm3dFXIgtr666GOD7ZP6da"
-                      publishable-key="pk_live_51SK0ndFXIgtr666GrmKudtOsf3HHcaBw06Ei3x8LbGKOYQ3oZeIrmpMpTfoTBJ5c7tPyFfbRC7pugHMC0l6b3ZKP009fgyIrGc"
-                    ></stripe-buy-button>`
-                }}
-              />
+              <StripeBuyButton />
 
               <div className="flex items-center justify-center gap-2">
                 <img src={stripeLogo} alt="Stripe secure payments" className="h-5 w-5" />

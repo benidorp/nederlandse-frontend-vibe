@@ -20,8 +20,8 @@ const HeroOnlineShop = () => {
             </span>
           </div>
           
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground leading-tight">
-            Comprehensive Legal Protection for Your Webshop & Online Business: Terms, Privacy Policy, Cookie Policy & GDPR Compliance
+           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground leading-tight">
+            Essential Legal Documents for E-Commerce & Online Shop Websites: Terms & Conditions, Privacy Policy, Cookie Policy & GDPR Compliance
           </h1>
           
           <p className="text-lg text-primary-foreground/90 leading-relaxed">

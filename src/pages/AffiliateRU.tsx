@@ -1,0 +1,59 @@
+import HeaderRU from "@/components/ru/HeaderRU";
+import HeroRU from "@/components/ru/HeroRU";
+import HiddenInternalLinks from "@/components/HiddenInternalLinks";
+import ValuePropositionRU from "@/components/ru/ValuePropositionRU";
+import ServicesRU from "@/components/ru/ServicesRU";
+import FAQRU from "@/components/ru/FAQRU";
+import PricingRU from "@/components/ru/PricingRU";
+import ReviewsRU from "@/components/ru/ReviewsRU";
+import FooterRU from "@/components/ru/FooterRU";
+
+import SEOHead from "@/components/seo/SEOHead";
+import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
+import { Helmet } from "react-helmet";
+
+const AffiliateRU = () => {
+  return (
+    <>
+      <Helmet>
+        <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+      </Helmet>
+      <SEOHead
+        title="Основные Юридические Документы для Сайтов | Условия, Конфиденциальность, Cookies – iaee.eu"
+        description="Полный пакет основных юридических документов для вашего сайта: условия использования, политика конфиденциальности, раскрытие партнёрских отношений, политика cookies и отказ от ответственности. Юридическое соответствие для сайтов упрощено. Только €79 на iaee.eu."
+        canonical="https://www.iaee.eu/ru/yuridicheskie-dokumenty-affiliate-sait-usloviya-politika-konfidencialnosti-cookies"
+        lang="ru"
+        ogType="product"
+        serviceName="Основные Юридические Документы для Сайтов"
+        serviceDescription="Полный пакет основных юридических документов для сайтов: условия использования, политика конфиденциальности, раскрытие партнёрских отношений, политика cookies и отказ от ответственности."
+        servicePrice={79}
+        serviceCurrency="EUR"
+        breadcrumbs={[
+          { name: "Главная", url: "https://www.iaee.eu" },
+          { name: "Основные Юридические Документы для Сайтов", url: "https://www.iaee.eu/ru/yuridicheskie-dokumenty-affiliate-sait-usloviya-politika-konfidencialnosti-cookies" }
+        ]}
+        faqItems={[
+          { question: "Какие основные юридические документы включены для моего сайта?", answer: "Условия использования, политика конфиденциальности, раскрытие партнёрских отношений, политика cookies, отказ от ответственности и руководство по внедрению." },
+          { question: "Соответствуют ли юридические документы GDPR?", answer: "Да, все основные юридические документы полностью соответствуют GDPR, CCPA и FTC для международного использования." }
+        ]}
+      />
+      
+      <LegalDocsLanguageSwitcher currentLang="ru" />
+      <HiddenInternalLinks />
+      <div className="min-h-screen">
+        <HeaderRU />
+        <main>
+          <HeroRU />
+          <ValuePropositionRU />
+          <ServicesRU />
+          <PricingRU />
+          <ReviewsRU />
+          <FAQRU />
+        </main>
+        <FooterRU />
+      </div>
+    </>
+  );
+};
+
+export default AffiliateRU;

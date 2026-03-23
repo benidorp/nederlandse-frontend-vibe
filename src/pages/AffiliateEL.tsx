@@ -1,0 +1,59 @@
+import HeaderEL from "@/components/el/HeaderEL";
+import HeroEL from "@/components/el/HeroEL";
+import HiddenInternalLinks from "@/components/HiddenInternalLinks";
+import ValuePropositionEL from "@/components/el/ValuePropositionEL";
+import ServicesEL from "@/components/el/ServicesEL";
+import FAQEL from "@/components/el/FAQEL";
+import PricingEL from "@/components/el/PricingEL";
+import ReviewsEL from "@/components/el/ReviewsEL";
+import FooterEL from "@/components/el/FooterEL";
+
+import SEOHead from "@/components/seo/SEOHead";
+import LegalDocsLanguageSwitcher from "@/components/legal-docs/LegalDocsLanguageSwitcher";
+import { Helmet } from "react-helmet";
+
+const AffiliateEL = () => {
+  return (
+    <>
+      <Helmet>
+        <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+      </Helmet>
+      <SEOHead
+        title="Απαραίτητα Νομικά Έγγραφα για Ιστοσελίδες | Όροι, Πολιτική Απορρήτου, Cookies – iaee.eu"
+        description="Πλήρες πακέτο απαραίτητων νομικών εγγράφων για την ιστοσελίδα σας: όροι και προϋποθέσεις, πολιτική απορρήτου, γνωστοποίηση affiliate, πολιτική cookies και αποποίηση ευθύνης. Νομική συμμόρφωση για ιστοσελίδες απλοποιημένη. Μόνο €79 στο iaee.eu."
+        canonical="https://www.iaee.eu/el/nomika-eggrafa-affiliate-website-oroi-politiki-aporritou-cookies"
+        lang="el"
+        ogType="product"
+        serviceName="Απαραίτητα Νομικά Έγγραφα για Ιστοσελίδες"
+        serviceDescription="Πλήρες πακέτο απαραίτητων νομικών εγγράφων για ιστοσελίδες: όροι και προϋποθέσεις, πολιτική απορρήτου, γνωστοποίηση affiliate, πολιτική cookies και αποποίηση ευθύνης."
+        servicePrice={79}
+        serviceCurrency="EUR"
+        breadcrumbs={[
+          { name: "Αρχική", url: "https://www.iaee.eu" },
+          { name: "Απαραίτητα Νομικά Έγγραφα για Ιστοσελίδες", url: "https://www.iaee.eu/el/nomika-eggrafa-affiliate-website-oroi-politiki-aporritou-cookies" }
+        ]}
+        faqItems={[
+          { question: "Ποια απαραίτητα νομικά έγγραφα περιλαμβάνονται για την ιστοσελίδα μου;", answer: "Όροι και προϋποθέσεις, πολιτική απορρήτου, γνωστοποίηση affiliate, πολιτική cookies, αποποίηση ευθύνης και οδηγός υλοποίησης." },
+          { question: "Τα νομικά έγγραφα είναι συμβατά με το GDPR;", answer: "Ναι, όλα τα απαραίτητα νομικά έγγραφα είναι πλήρως συμβατά με GDPR, CCPA και FTC για διεθνή χρήση." }
+        ]}
+      />
+      
+      <LegalDocsLanguageSwitcher currentLang="el" />
+      <HiddenInternalLinks />
+      <div className="min-h-screen">
+        <HeaderEL />
+        <main>
+          <HeroEL />
+          <ValuePropositionEL />
+          <ServicesEL />
+          <PricingEL />
+          <ReviewsEL />
+          <FAQEL />
+        </main>
+        <FooterEL />
+      </div>
+    </>
+  );
+};
+
+export default AffiliateEL;

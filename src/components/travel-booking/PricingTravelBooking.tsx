@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check, AlertTriangle } from "lucide-react";
+import StripeBuyButton from "@/components/StripeBuyButton";
 
 const includedItems = [
   "Privacybeleid (AVG-compliant)",
@@ -36,6 +37,9 @@ const PricingTravelBooking = () => {
               <CardDescription className="text-base">
                 Alle essentiële juridische documenten voor onbeperkt gebruik
               </CardDescription>
+              <div className="flex justify-center mt-6">
+                <img src="/images/iaee-logo.png" alt="IAEE - Essentiële Juridische Documenten" className="h-20 w-20 object-contain" loading="eager" />
+              </div>
             </CardHeader>
             
             <CardContent className="space-y-6">
@@ -50,18 +54,8 @@ const PricingTravelBooking = () => {
                 ))}
               </div>
 
-              <div 
-                className="pt-6 border-t flex justify-center"
-              >
-                <div 
-                  className="[&_stripe-buy-button]:scale-125 [&_stripe-buy-button]:origin-center"
-                  dangerouslySetInnerHTML={{
-                    __html: `<stripe-buy-button
-                      buy-button-id="buy_btn_1SKm3dFXIgtr666GOD7ZP6da"
-                      publishable-key="pk_live_51SK0ndFXIgtr666GrmKudtOsf3HHcaBw06Ei3x8LbGKOYQ3oZeIrmpMpTfoTBJ5c7tPyFfbRC7pugHMC0l6b3ZKP009fgyIrGc"
-                    ></stripe-buy-button>`
-                  }}
-                />
+              <div className="pt-6 border-t flex justify-center">
+                <StripeBuyButton />
               </div>
 
               <p className="text-base font-semibold text-center text-muted-foreground">

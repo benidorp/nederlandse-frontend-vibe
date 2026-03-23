@@ -3,9 +3,25 @@
   RewriteEngine On
   RewriteBase /
 
-  # Force non-www to root domain, preserve full path
-  RewriteCond %{HTTP_HOST} ^www\.iaee\.eu$ [NC]
-  RewriteRule ^(.*)$ https://iaee.eu/$1 [L,R=301]
+  # Force non-www to www domain, preserve full path (301 redirect for SEO)
+  RewriteCond %{HTTP_HOST} ^iaee\.eu$ [NC]
+  RewriteRule ^(.*)$ https://www.iaee.eu/$1 [L,R=301]
+
+  # 301 Redirect: Premium Domeinen naar nieuwe URL structuur
+  RewriteRule ^premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde$ /expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde [R=301,L]
+  RewriteRule ^expireddomeinnamen/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde$ /expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde [R=301,L]
+  RewriteRule ^expireddomeinnamen/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde$ /expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde [R=301,L]
+
+  # 301 Redirect: NL Article pages naar nailtalk.nl
+  RewriteRule ^nl/beste-laser-graveermachine-top-5-laser-engravers-beginners-thuisgebruik-business-review$ https://www.nailtalk.nl/nl/beste-laser-graveermachine-top-5-laser-engravers-beginners-thuisgebruik-business-review [R=301,L]
+  RewriteRule ^nl/beste-laser-graveermachine-2026-reviews-koopgids$ https://www.nailtalk.nl/nl/beste-laser-graveermachine-top-5-laser-engravers-beginners-thuisgebruik-business-review [R=301,L]
+  RewriteRule ^nl/beste-high-end-telescoop-kopen-vergelijken-beginners-professionals-top-premium-telescopen-astrofotografie-deep-sky-planeten-natuur-vogels-reviews$ https://www.nailtalk.nl/nl/beste-high-end-telescoop-kopen-vergelijken-beginners-professionals-top-premium-telescopen-astrofotografie-deep-sky-planeten-natuur-vogels-reviews [R=301,L]
+  RewriteRule ^nl/beste-3d-printer-kopen-vergelijken-reviews-top-3d-printers-beginners-thuisgebruik-professionele-projecten$ https://www.nailtalk.nl/nl/beste-3d-printer-kopen-vergelijken-reviews-top-3d-printers-beginners-thuisgebruik-professionele-projecten [R=301,L]
+
+  # 301 Redirect: Premium Domeinen Juridische Documenten naar nieuwe URL structuur
+  RewriteRule ^premium-domeinnamen-juridische-documenten$ /expireddomainnames/nl/premium-domeinnamen-juridische-documenten [R=301,L]
+  RewriteRule ^expireddomeinnamen/nl/premium-domeinnamen-juridische-documenten$ /expireddomainnames/nl/premium-domeinnamen-juridische-documenten [R=301,L]
+  RewriteRule ^expireddomeinnamen/premium-domeinnamen-juridische-documenten$ /expireddomainnames/nl/premium-domeinnamen-juridische-documenten [R=301,L]
 
   # GTranslate Pro: Allow PHP files and subdirectories
   # Let GTranslate handle language subdirectories (fr/, de/, nl/, etc.)
@@ -26,6 +42,9 @@
   # Otherwise: route everything to index.html (client-side routing)
   RewriteRule ^ index.html [L]
 </IfModule>
+
+# 404 Error redirect to English Premium Domains page
+ErrorDocument 404 https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value
 
 <IfModule mod_expires.c>
   ExpiresActive On

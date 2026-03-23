@@ -3,7 +3,6 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Shield, Zap, FileCheck } from "lucide-react";
 import nicoleProfile from "@/assets/nicole-working.png";
-
 const ValuePropositionStreamingMedia = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -11,9 +10,7 @@ const ValuePropositionStreamingMedia = () => {
       behavior: "smooth"
     });
   };
-
-  return (
-    <section className="py-20 bg-background">
+  return <section className="py-20 bg-background">
       <div className="container">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
@@ -33,11 +30,7 @@ const ValuePropositionStreamingMedia = () => {
               <div className="text-center mb-6">
                 <h3 className="text-2xl font-bold text-foreground mb-2">About Me</h3>
                 <div className="flex justify-center my-4">
-                  <img 
-                    src={nicoleProfile} 
-                    alt="Nicole Henderson - Legal specialist for media creators" 
-                    className="w-24 h-24 rounded-full object-cover border-4 border-primary/20 shadow-lg"
-                  />
+                  <img src={nicoleProfile} alt="Nicole Henderson - Legal specialist for media creators" className="w-24 h-24 rounded-full object-cover border-4 border-primary/20 shadow-lg" />
                 </div>
                 <p className="text-2xl font-bold text-primary mb-2">Nicole Henderson</p>
                 <p className="text-lg text-muted-foreground font-medium">
@@ -51,9 +44,7 @@ const ValuePropositionStreamingMedia = () => {
                 </p>
                 
                 <div className="pt-4">
-                  <h4 className="text-xl font-bold text-foreground mb-3">
-                    Professional Legal Documents for Streaming & Media Platforms
-                  </h4>
+                  <h4 className="text-xl font-bold text-foreground mb-3">Professional Legal Documents for Streaming & Media Platforms and websites</h4>
                   <p className="text-base text-muted-foreground leading-relaxed">
                     To answer the many questions about legal requirements for streaming platforms, I've developed high-quality legal documents specifically for media websites. These documents are designed for both national and international use and provide essential protection at a fraction of the usual cost. Get professional legal coverage at an affordable price—secure your platform today!
                   </p>
@@ -64,8 +55,7 @@ const ValuePropositionStreamingMedia = () => {
 
           <Card className="mb-8 border-2 border-primary/20 bg-primary/5">
             <CardHeader>
-              <CardTitle className="text-2xl flex items-center gap-3">
-                <Shield className="h-8 w-8 text-primary" />
+              <CardTitle className="text-2xl flex items-center gap-3">What You Get: The Complete Legal Package for your website.<Shield className="h-8 w-8 text-primary" />
                 What You Get: The Complete Legal Package
               </CardTitle>
             </CardHeader>
@@ -169,11 +159,7 @@ const ValuePropositionStreamingMedia = () => {
                 for all your streaming platforms. No monthly fees, no hassle with lawyers, no risk of copyright claims. 
                 Just all the documents you need, ready to use.
               </p>
-              <Button 
-                size="lg" 
-                onClick={() => scrollToSection("pricing")} 
-                className="group text-lg px-8 py-6 bg-primary-foreground text-primary hover:bg-primary-foreground/90"
-              >
+              <Button size="lg" onClick={() => scrollToSection("pricing")} className="group text-lg px-8 py-6 bg-primary-foreground text-primary hover:bg-primary-foreground/90">
                 Order Now for €79
                 <CheckCircle className="ml-2 h-5 w-5" />
               </Button>
@@ -184,8 +170,6 @@ const ValuePropositionStreamingMedia = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ValuePropositionStreamingMedia;

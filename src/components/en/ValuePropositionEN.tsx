@@ -29,7 +29,7 @@ const ValuePropositionEN = () => {
               Without these documents, you risk high fines and legal issues.
             </p>
             
-            <div id="about-me" className="mt-10 p-8 bg-secondary/30 rounded-xl border border-border shadow-sm text-foreground">
+            <div id="about-me" className="mt-10 p-8 bg-card rounded-xl border border-border shadow-sm text-foreground">
               <div className="text-center mb-6">
                 <h3 className="text-2xl font-bold text-foreground mb-2">About Me</h3>
                 <div className="flex justify-center my-4">
@@ -62,7 +62,7 @@ const ValuePropositionEN = () => {
             </div>
           </div>
 
-          <Card className="mb-8 border-2 border-primary/20 bg-primary/5">
+          <Card className="mb-8 border-2 border-primary/20 bg-card">
             <CardHeader>
               <CardTitle className="text-2xl flex items-center gap-3">
                 <Shield className="h-8 w-8 text-primary" />
@@ -76,7 +76,7 @@ const ValuePropositionEN = () => {
               </p>
               
               <div className="grid md:grid-cols-2 gap-4 mt-6">
-                <div className="flex items-start gap-3 p-4 rounded-lg bg-secondary/30 border border-primary/10">
+                <div className="flex items-start gap-3 p-4 rounded-lg bg-card border border-primary/10">
                   <CheckCircle className="h-5 w-5 text-red-600 mt-0.5 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold mb-1">GDPR Privacy Policy</h4>
@@ -84,7 +84,7 @@ const ValuePropositionEN = () => {
                   </div>
                 </div>
                 
-                <div className="flex items-start gap-3 p-4 rounded-lg bg-secondary/30 border border-primary/10">
+                <div className="flex items-start gap-3 p-4 rounded-lg bg-card border border-primary/10">
                   <CheckCircle className="h-5 w-5 text-red-600 mt-0.5 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold mb-1">Affiliate Disclosure</h4>
@@ -128,7 +128,7 @@ const ValuePropositionEN = () => {
           </Card>
 
           <div className="grid md:grid-cols-3 gap-6 mb-8">
-            <Card className="border-primary/20 bg-primary/5 text-foreground">
+            <Card className="border-primary/20 bg-card text-foreground">
               <CardContent className="pt-6">
                 <Zap className="h-10 w-10 text-navy mb-4" />
                 <h3 className="text-lg font-bold mb-2 text-foreground">Ready in Minutes</h3>
@@ -138,7 +138,7 @@ const ValuePropositionEN = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-primary/20 bg-primary/5 text-foreground">
+            <Card className="border-primary/20 bg-card text-foreground">
               <CardContent className="pt-6">
                 <FileCheck className="h-10 w-10 text-blue-600 mb-4" />
                 <h3 className="text-lg font-bold mb-2">For All Your Websites</h3>
@@ -148,7 +148,7 @@ const ValuePropositionEN = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-primary/20 bg-primary/5 text-foreground">
+            <Card className="border-primary/20 bg-card text-foreground">
               <CardContent className="pt-6">
                 <Shield className="h-10 w-10 text-green-600 mb-4" />
                 <h3 className="text-lg font-bold mb-2">International Use</h3>

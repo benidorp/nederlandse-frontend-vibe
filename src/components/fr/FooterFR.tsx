@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram, Mail } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const FooterFR = () => {
@@ -22,16 +22,16 @@ const FooterFR = () => {
               Documents juridiques professionnels pour les spécialistes du marketing d'affiliation. Entièrement conformes au RGPD et aux directives FTC.
             </p>
             <div className="flex gap-3">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://facebook.com" target="_blank" rel="nofollow noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://twitter.com" target="_blank" rel="nofollow noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://linkedin.com" target="_blank" rel="nofollow noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://instagram.com" target="_blank" rel="nofollow noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
             </div>
@@ -67,22 +67,22 @@ const FooterFR = () => {
             <h3 className="font-semibold mb-4">Juridique</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" rel="nofollow" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a rel="nofollow" className="text-sm text-muted-foreground hover:text-primary transition-colors" href="/policy ">
                   Politique de Confidentialité
                 </a>
               </li>
               <li>
-                <a href="#" rel="nofollow" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a rel="nofollow" className="text-sm text-muted-foreground hover:text-primary transition-colors" href="/policy ">
                   Conditions Générales
                 </a>
               </li>
               <li>
-                <a href="#" rel="nofollow" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a rel="nofollow" className="text-sm text-muted-foreground hover:text-primary transition-colors" href="/policy ">
                   Politique de Cookies
                 </a>
               </li>
               <li>
-                <a href="#" rel="nofollow" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a rel="nofollow" className="text-sm text-muted-foreground hover:text-primary transition-colors" href="/policy ">
                   Clause de Non-Responsabilité
                 </a>
               </li>
@@ -94,19 +94,9 @@ const FooterFR = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <a href="mailto:info@legalaffiliateagreement.com" className="hover:text-primary transition-colors">
+                <a href="mailto:support@iaee.eu" className="hover:text-primary transition-colors">
                   support@iaee.eu
                 </a>
-              </li>
-              <li className="flex items-start gap-2 text-sm text-muted-foreground">
-                <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <a href="tel:+31201234567" className="hover:text-primary transition-colors">
-                  +31 20 123 4567
-                </a>
-              </li>
-              <li className="flex items-start gap-2 text-sm text-muted-foreground">
-                <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span>Amsterdam, Pays-Bas</span>
               </li>
             </ul>
           </div>
@@ -115,7 +105,7 @@ const FooterFR = () => {
         <div className="border-t pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              © 2024 Legal Affiliate Agreement. Tous droits réservés.
+              © 2025 Legal Affiliate Agreement. Tous droits réservés.
             </p>
           </div>
           
@@ -135,12 +125,14 @@ const FooterFR = () => {
               <a href="/comparison-review-website-legal-documents-terms-privacy-affiliate-disclosure-disclaimer" className="text-sm text-muted-foreground hover:text-primary transition-colors">Comparison Review Legal Documents</a>
               <a href="/news-magazine-legal-documents-terms-conditions-privacy-policy-copyright-editorial-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">News Magazine Legal Documents</a>
               <a href="/freelancers-self-employed-legal-documents-contracts-terms-privacy-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">Freelancers Legal Documents</a>
+              <a href="/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo" className="text-sm text-muted-foreground hover:text-primary transition-colors">Noms de Domaine Premium</a>
+              <a href="/calculateur-tva-mondial" className="text-sm text-muted-foreground hover:text-primary transition-colors">Calculateur de TVA</a>
             </nav>
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 };
 
 export default FooterFR;

@@ -1,8 +1,8 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Check, AlertTriangle } from "lucide-react";
 import stripeLogo from "@/assets/stripe-logo.svg";
+import StripeBuyButton from "@/components/StripeBuyButton";
 
 const includedItems = [
   "Privacy Policy (GDPR-compliant)",
@@ -15,7 +15,7 @@ const includedItems = [
 
 const PricingEN = () => {
   return (
-    <section id="pricing" className="py-20 bg-primary/5">
+    <section id="pricing" className="py-20 bg-background">
       <div className="container">
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4">Pricing</Badge>
@@ -38,6 +38,9 @@ const PricingEN = () => {
               <CardDescription className="text-base">
                 All essential legal documents for unlimited use
               </CardDescription>
+              <div className="flex justify-center mt-6">
+                <img src="/images/iaee-logo.png" alt="IAEE - Essential Legal Documents for Websites" className="h-20 w-20 object-contain" loading="eager" />
+              </div>
             </CardHeader>
             
             <CardContent className="space-y-6">
@@ -52,18 +55,8 @@ const PricingEN = () => {
                 ))}
               </div>
 
-              <div 
-                className="pt-6 border-t flex justify-center"
-              >
-                <div 
-                  className="[&_stripe-buy-button]:scale-125 [&_stripe-buy-button]:origin-center"
-                  dangerouslySetInnerHTML={{
-                    __html: `<stripe-buy-button
-                      buy-button-id="buy_btn_1SKm3dFXIgtr666GOD7ZP6da"
-                      publishable-key="pk_live_51SK0ndFXIgtr666GrmKudtOsf3HHcaBw06Ei3x8LbGKOYQ3oZeIrmpMpTfoTBJ5c7tPyFfbRC7pugHMC0l6b3ZKP009fgyIrGc"
-                    ></stripe-buy-button>`
-                  }}
-                />
+              <div className="pt-6 border-t flex justify-center">
+                <StripeBuyButton />
               </div>
 
               <div className="flex items-center justify-center gap-2 mt-4">
