@@ -1,5 +1,4 @@
-import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
+import SEOHead from "@/components/seo/SEOHead";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Shield, FileText, Scale, CheckCircle, Calculator } from "lucide-react";
@@ -127,17 +126,18 @@ const pages = [
 const Home = () => {
   return (
     <>
-      <Helmet>
-        <html lang="en" />
-        <title>Professional Legal Documents for Every Website Type | GDPR Compliant</title>
-        <meta
-          name="description"
-          content="Complete legal protection packages for all website types. GDPR-compliant privacy policies, terms & conditions, and all essential legal documents. Ready in minutes, professionally written."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.iaee.eu/" />
-      </Helmet>
+      <SEOHead
+        title="Professional Legal Documents for Every Website Type | GDPR Compliant"
+        description="Complete legal protection packages for all website types. GDPR-compliant privacy policies, terms & conditions, and all essential legal documents. Ready in minutes, professionally written."
+        canonical="https://www.iaee.eu/"
+        lang="en"
+        robots="index, follow"
+        ogType="website"
+        ogImage="https://lovable.dev/opengraph-image-p98pqg.png"
+        breadcrumbs={[
+          { name: "Home", url: "https://www.iaee.eu/" },
+        ]}
+      />
       <GTranslateWidget />
       <div className="min-h-screen">
         <HeaderEN />
@@ -239,15 +239,15 @@ const Home = () => {
                     </li>
                   </ul>
                   <div className="flex flex-wrap gap-4">
-                    <Link to="/expireddomainnames/en/buy-premium-domains-high-authority-seo-value">
+                    <a href="/expireddomainnames/en/buy-premium-domains-high-authority-seo-value">
                       <Button
                         size="lg"
                         className="bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold text-lg px-8"
                       >
                         View Premium Domains
                       </Button>
-                    </Link>
-                    <Link to="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde">
+                    </a>
+                    <a href="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde">
                       <Button
                         size="lg"
                         variant="outline"
@@ -255,7 +255,7 @@ const Home = () => {
                       >
                         Nederlandse versie
                       </Button>
-                    </Link>
+                    </a>
                   </div>
                 </div>
                 <div className="order-1 lg:order-2">
@@ -292,11 +292,11 @@ const Home = () => {
                           internationale ondernemers.
                         </p>
                       </div>
-                      <Link to="/btw-calculator-wereldwijd">
+                      <a href="/btw-calculator-wereldwijd">
                         <Button size="lg" className="whitespace-nowrap">
                           Probeer nu gratis
                         </Button>
-                      </Link>
+                      </a>
                     </div>
                   </CardContent>
                 </Card>
@@ -316,7 +316,7 @@ const Home = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {pages.map((page, index) => (
-                  <Link to={page.link} key={index} className="group">
+                  <a href={page.link} key={index} className="group">
                     <Card className="h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border-border hover:border-primary/50">
                       <CardHeader className="p-0">
                         <div className="aspect-video overflow-hidden rounded-t-lg bg-muted">
@@ -348,7 +348,7 @@ const Home = () => {
                         </Button>
                       </CardContent>
                     </Card>
-                  </Link>
+                  </a>
                 ))}
               </div>
             </div>
