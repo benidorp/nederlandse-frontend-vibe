@@ -5,13 +5,6 @@ import { CheckCircle, Shield, Zap, FileCheck } from "lucide-react";
 import nicoleProfile from "@/assets/nicole-working.png";
 
 const ValuePropositionEN = () => {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    element?.scrollIntoView({
-      behavior: "smooth"
-    });
-  };
-
   return (
     <section className="py-20 bg-background">
       <div className="container">
@@ -169,14 +162,15 @@ const ValuePropositionEN = () => {
                 for all your affiliate websites. No monthly fees, no hassle with lawyers, no risk of fines. 
                 Just all the documents you need, ready to use.
               </p>
-              <Button 
-                size="lg" 
-                onClick={() => scrollToSection("pricing")} 
-                className="group text-lg px-8 py-6 bg-primary-foreground text-primary hover:bg-primary-foreground/90"
-              >
-                Order Now for €79
-                <CheckCircle className="ml-2 h-5 w-5" />
-              </Button>
+              <a href="#pricing">
+                <Button 
+                  size="lg" 
+                  className="group text-lg px-8 py-6 bg-primary-foreground text-primary hover:bg-primary-foreground/90"
+                >
+                  Order Now for €79
+                  <CheckCircle className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
               <p className="text-sm text-primary-foreground/80 mt-4">
                 💡 Consider this: one hour with a lawyer already costs more than €200
               </p>
