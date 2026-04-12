@@ -52,7 +52,7 @@ const translatedSeoPages = [
     changefreq: "monthly",
   },
   {
-    path: "/sv/fotografi-juridiska-dokument-villkor-integritetspolicy-upphovsratt-ansvarsfraskrivning",
+    path: "/sv/fotografi-juridiska-dokument-villkor-integritetspolicy-upphovsratt-ansvarsfriskrivning",
     priority: "0.8",
     changefreq: "monthly",
   },
