@@ -1,5 +1,4 @@
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
-import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 const FooterEN = () => {
   return <footer id="contact" className="bg-navy text-white border-t border-white/10">
@@ -7,10 +6,10 @@ const FooterEN = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Link to="/" className="flex items-center gap-2">
+              <a href="/" className="flex items-center gap-2">
                 <img src={logo} alt="IAEE - Legal Documents" className="h-10 w-10" />
                 <span className="text-lg font-bold text-white">IAEE Legal Documents</span>
-              </Link>
+              </a>
             </div>
             <p className="text-sm text-white/70 mb-4">
               Professional legal documents for affiliate marketers. Fully compliant with GDPR and FTC guidelines.
@@ -35,34 +34,34 @@ const FooterEN = () => {
             <h3 className="font-semibold mb-4 text-white">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-sm text-white/70 hover:text-white transition-colors">
+                <a href="/" className="text-sm text-white/70 hover:text-white transition-colors">
                   Home
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/about" className="text-sm text-white/70 hover:text-white transition-colors">
+                <a href="/about" className="text-sm text-white/70 hover:text-white transition-colors">
                   About
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/features" className="text-sm text-white/70 hover:text-white transition-colors">
+                <a href="/features" className="text-sm text-white/70 hover:text-white transition-colors">
                   Features
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/pricing" className="text-sm text-white/70 hover:text-white transition-colors">
+                <a href="/pricing" className="text-sm text-white/70 hover:text-white transition-colors">
                   Pricing
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/blog" className="text-sm text-white/70 hover:text-white transition-colors">
+                <a href="/blog" className="text-sm text-white/70 hover:text-white transition-colors">
                   Blog
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/contact" className="text-sm text-white/70 hover:text-white transition-colors">
+                <a href="/contact" className="text-sm text-white/70 hover:text-white transition-colors">
                   Contact
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
