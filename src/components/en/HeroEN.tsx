@@ -3,13 +3,6 @@ import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/lawyer-hero.jpg";
 
 const HeroEN = () => {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    element?.scrollIntoView({
-      behavior: "smooth"
-    });
-  };
-
   return (
     <section id="home" className="relative min-h-[600px] flex items-center bg-primary text-primary-foreground">
       <div className="container grid lg:grid-cols-2 gap-8 items-center py-12">
@@ -31,22 +24,24 @@ const HeroEN = () => {
           </p>
           
           <div className="flex flex-wrap gap-4">
-            <Button
-              size="lg"
-              onClick={() => scrollToSection("pricing")}
-              className="group bg-primary-foreground text-primary hover:bg-primary-foreground/90">
+            <a href="#pricing">
+              <Button
+                size="lg"
+                className="group bg-primary-foreground text-primary hover:bg-primary-foreground/90">
 
-              View Packages
-              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              onClick={() => scrollToSection("services")}
-              className="border-primary-foreground/30 hover:bg-primary-foreground/10 text-slate-950">
+                View Packages
+                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </a>
+            <a href="#services">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-primary-foreground/30 hover:bg-primary-foreground/10 text-slate-950">
 
-              More Information
-            </Button>
+                More Information
+              </Button>
+            </a>
           </div>
         </div>
         
