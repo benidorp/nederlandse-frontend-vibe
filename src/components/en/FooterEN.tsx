@@ -1,19 +1,16 @@
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 const FooterEN = () => {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    element?.scrollIntoView({
-      behavior: "smooth"
-    });
-  };
   return <footer id="contact" className="bg-navy text-white border-t border-white/10">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src={logo} alt="Legal Affiliate Agreement" className="h-10 w-10" />
-              <span className="text-lg font-bold text-white">Legal Affiliate Agreement</span>
+              <Link to="/" className="flex items-center gap-2">
+                <img src={logo} alt="IAEE - Legal Documents" className="h-10 w-10" />
+                <span className="text-lg font-bold text-white">IAEE Legal Documents</span>
+              </Link>
             </div>
             <p className="text-sm text-white/70 mb-4">
               Professional legal documents for affiliate marketers. Fully compliant with GDPR and FTC guidelines.
@@ -38,24 +35,34 @@ const FooterEN = () => {
             <h3 className="font-semibold mb-4 text-white">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <button onClick={() => scrollToSection("home")} className="text-sm text-white/70 hover:text-white transition-colors">
+                <Link to="/" className="text-sm text-white/70 hover:text-white transition-colors">
                   Home
-                </button>
+                </Link>
               </li>
               <li>
-                <button onClick={() => scrollToSection("about-me")} className="text-sm text-white/70 hover:text-white transition-colors">
-                  About Me
-                </button>
+                <Link to="/about" className="text-sm text-white/70 hover:text-white transition-colors">
+                  About
+                </Link>
               </li>
               <li>
-                <button onClick={() => scrollToSection("services")} className="text-sm text-white/70 hover:text-white transition-colors">
-                  Services
-                </button>
+                <Link to="/features" className="text-sm text-white/70 hover:text-white transition-colors">
+                  Features
+                </Link>
               </li>
               <li>
-                <button onClick={() => scrollToSection("pricing")} className="text-sm text-white/70 hover:text-white transition-colors">
+                <Link to="/pricing" className="text-sm text-white/70 hover:text-white transition-colors">
                   Pricing
-                </button>
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog" className="text-sm text-white/70 hover:text-white transition-colors">
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-sm text-white/70 hover:text-white transition-colors">
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
