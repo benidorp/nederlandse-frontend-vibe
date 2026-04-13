@@ -149,6 +149,8 @@ const ForgotPassword = lazyRetry(() => import("./pages/ForgotPassword"));
 const ResetPassword = lazyRetry(() => import("./pages/ResetPassword"));
 import ProtectedRoute from "./components/ProtectedRoute";
 const DynamicTranslatedPage = lazyRetry(() => import("./pages/DynamicTranslatedPage"));
+const BesteBadkuipen = lazyRetry(() => import("./pages/BesteBadkuipen"));
+const BesteSoundbars = lazyRetry(() => import("./pages/BesteSoundbars"));
 
 // Legal Documents Multi-language Pages
 const AffiliateDE = lazyRetry(() => import("./pages/AffiliateDE"));
@@ -325,6 +327,8 @@ const App = () => (
             {/* Premium Domains Routes */}
             <Route path="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" element={<PremiumDomains />} />
             <Route path="/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" element={<PremiumDomainsLegal />} />
+            <Route path="/nl/beste-inbouwbadkuip-kopen-top-5-nisbuizen-vergelijking-koopgids" element={<BesteBadkuipen />} />
+            <Route path="/nl/beste-soundbar-kopen-top-5-soundbars-televisie-vergelijking-koopgids" element={<BesteSoundbars />} />
             <Route path="/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" element={<PremiumDomainsEN />} />
             <Route path="/expireddomainnames/en/premium-domains-legal-documents" element={<PremiumDomainsLegalEN />} />
             <Route path="/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" element={<PremiumDomainsES />} />
