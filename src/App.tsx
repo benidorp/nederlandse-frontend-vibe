@@ -149,6 +149,8 @@ const ForgotPassword = lazyRetry(() => import("./pages/ForgotPassword"));
 const ResetPassword = lazyRetry(() => import("./pages/ResetPassword"));
 import ProtectedRoute from "./components/ProtectedRoute";
 const DynamicTranslatedPage = lazyRetry(() => import("./pages/DynamicTranslatedPage"));
+const BesteBadkuipen = lazyRetry(() => import("./pages/BesteBadkuipen"));
+const BesteSoundbars = lazyRetry(() => import("./pages/BesteSoundbars"));
 
 // Legal Documents Multi-language Pages
 const AffiliateDE = lazyRetry(() => import("./pages/AffiliateDE"));
