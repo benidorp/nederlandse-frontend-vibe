@@ -325,10 +325,6 @@ const App = () => (
             {/* Premium Domains Routes */}
             <Route path="/expireddomainnames/nl/premium-domeinnamen-kopen-hoge-autoriteit-seo-waarde" element={<PremiumDomains />} />
             <Route path="/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" element={<PremiumDomainsLegal />} />
-            <Route path="/nl/beste-inbouwbadkuip-kopen-top-5-nisbuizen-vergelijking-koopgids" element={<BesteBadkuipen />} />
-            <Route path="/nl/beste-soundbar-kopen-top-5-soundbars-televisie-vergelijking-koopgids" element={<BesteSoundbars />} />
-            <Route path="/nl/beste-loopband-kopen-top-5-hardloopbanden-vergelijking-koopgids" element={<BesteLoopbanden />} />
-            <Route path="/nl/beste-stepper-kopen-top-5-trapklimmers-vergelijking-koopgids" element={<BesteSteppers />} />
             <Route path="/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" element={<PremiumDomainsEN />} />
             <Route path="/expireddomainnames/en/premium-domains-legal-documents" element={<PremiumDomainsLegalEN />} />
             <Route path="/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" element={<PremiumDomainsES />} />
