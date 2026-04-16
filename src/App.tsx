@@ -151,6 +151,8 @@ import ProtectedRoute from "./components/ProtectedRoute";
 const DynamicTranslatedPage = lazyRetry(() => import("./pages/DynamicTranslatedPage"));
 const BesteBadkuipen = lazyRetry(() => import("./pages/BesteBadkuipen"));
 const BesteSoundbars = lazyRetry(() => import("./pages/BesteSoundbars"));
+const BesteLoopbanden = lazyRetry(() => import("./pages/BesteLoopbanden"));
+const BesteSteppers = lazyRetry(() => import("./pages/BesteSteppers"));
 
 // Legal Documents Multi-language Pages
 const AffiliateDE = lazyRetry(() => import("./pages/AffiliateDE"));
