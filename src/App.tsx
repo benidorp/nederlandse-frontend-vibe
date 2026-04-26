@@ -86,6 +86,8 @@ const VATCalculator = lazyRetry(() => import("./pages/VATCalculator"));
 const VATCalculatorEN = lazyRetry(() => import("./pages/VATCalculatorEN"));
 const VATCalculatorLangPage = lazyRetry(() => import("./pages/VATCalculatorLangPage"));
 const NotFound = lazyRetry(() => import("./pages/NotFound"));
+const ExpiredDomainArticlePage = lazyRetry(() => import("./pages/ExpiredDomainArticlePage"));
+const ExpiredDomainArticlesIndex = lazyRetry(() => import("./pages/ExpiredDomainArticlesIndex"));
 const PremiumDomains = lazyRetry(() => import("./pages/PremiumDomains"));
 const PremiumDomainsLegal = lazyRetry(() => import("./pages/PremiumDomainsLegal"));
 const PremiumDomainsEN = lazyRetry(() => import("./pages/PremiumDomainsEN"));
@@ -327,6 +329,8 @@ const App = () => (
             <Route path="/expireddomainnames/nl/premium-domeinnamen-juridische-documenten" element={<PremiumDomainsLegal />} />
             <Route path="/expireddomainnames/en/buy-premium-domains-high-authority-seo-value" element={<PremiumDomainsEN />} />
             <Route path="/expireddomainnames/en/premium-domains-legal-documents" element={<PremiumDomainsLegalEN />} />
+            <Route path="/expireddomainnames/en/articles" element={<ExpiredDomainArticlesIndex />} />
+            <Route path="/expireddomainnames/en/articles/:slug" element={<ExpiredDomainArticlePage />} />
             <Route path="/expireddomainnames/es/comprar-dominios-premium-alta-autoridad-valor-seo" element={<PremiumDomainsES />} />
             <Route path="/expireddomainnames/es/documentos-legales-dominios-premium" element={<PremiumDomainsLegalES />} />
             <Route path="/expireddomainnames/fr/acheter-domaines-premium-haute-autorite-valeur-seo" element={<PremiumDomainsFR />} />
