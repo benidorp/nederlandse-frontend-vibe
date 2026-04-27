@@ -21,11 +21,11 @@ const DynamicTranslatedPage = () => {
     const fetchPage = async () => {
       setLoading(true);
       try {
-        const { data, error } = await supabase
-          .from("ai_generated_pages")
-          .select("*")
+        // Use the public-safe view that excludes internal columns (user_id, source_page_id)
+        const { data, error } = await (supabase as any)
+          .from("published_pages_public")
+          .select("id, slug, title, meta_title, meta_description, html_content, language, domain, niche, status, metadata, created_at, updated_at")
           .eq("slug", slug)
-          .eq("status", "published")
           .maybeSingle();
 
         if (error) throw error;
