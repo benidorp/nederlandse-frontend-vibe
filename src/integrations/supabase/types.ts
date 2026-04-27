@@ -356,7 +356,54 @@ export type Database = {
       }
     }
     Views: {
-      [_ in never]: never
+      published_pages_public: {
+        Row: {
+          created_at: string | null
+          domain: string | null
+          html_content: string | null
+          id: string | null
+          language: string | null
+          meta_description: string | null
+          meta_title: string | null
+          metadata: Json | null
+          niche: string | null
+          slug: string | null
+          status: string | null
+          title: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          created_at?: string | null
+          domain?: string | null
+          html_content?: string | null
+          id?: string | null
+          language?: string | null
+          meta_description?: string | null
+          meta_title?: string | null
+          metadata?: Json | null
+          niche?: string | null
+          slug?: string | null
+          status?: string | null
+          title?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          created_at?: string | null
+          domain?: string | null
+          html_content?: string | null
+          id?: string | null
+          language?: string | null
+          meta_description?: string | null
+          meta_title?: string | null
+          metadata?: Json | null
+          niche?: string | null
+          slug?: string | null
+          status?: string | null
+          title?: string | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
     }
     Functions: {
       has_role: {
