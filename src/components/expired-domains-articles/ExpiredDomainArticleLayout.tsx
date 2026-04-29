@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { ArrowRight, CheckCircle2, ShieldCheck, Sparkles, Globe2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, ShieldCheck, Sparkles, Globe2, BookOpen } from "lucide-react";
 import HeaderEN from "@/components/en/HeaderEN";
 import FooterPremiumDomainsEN from "@/components/premium-domains/FooterPremiumDomainsEN";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { ARTICLE_META, getRelatedArticles } from "@/content/expired-domain-articles";
 
 export interface ArticleSection {
   heading: string;
