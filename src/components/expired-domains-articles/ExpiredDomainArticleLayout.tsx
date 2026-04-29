@@ -189,7 +189,15 @@ const ExpiredDomainArticleLayout = ({
             <li aria-hidden>›</li>
             <li><Link to={MARKETPLACE_URL} className="hover:text-slate-900">Premium Domains</Link></li>
             <li aria-hidden>›</li>
-            <li className="text-slate-700" aria-current="page">{h1}</li>
+            <li><Link to={ARTICLES_INDEX} className="hover:text-slate-900">Articles</Link></li>
+            {categoryName && (
+              <>
+                <li aria-hidden>›</li>
+                <li><Link to={categoryUrl} className="hover:text-slate-900">{categoryName}</Link></li>
+              </>
+            )}
+            <li aria-hidden>›</li>
+            <li className="text-slate-700 line-clamp-1" aria-current="page">{h1}</li>
           </ol>
         </nav>
 
