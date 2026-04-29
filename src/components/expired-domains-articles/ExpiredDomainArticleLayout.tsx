@@ -108,6 +108,12 @@ const ExpiredDomainArticleLayout = ({
   closingHook,
 }: ExpiredDomainArticleProps) => {
   const canonical = `${SITE}/expireddomainnames/en/articles/${slug}`;
+  const ARTICLES_INDEX = "/expireddomainnames/en/articles";
+  const meta = ARTICLE_META[slug];
+  const categoryId = meta?.categoryId;
+  const categoryName = meta?.categoryName;
+  const categoryUrl = categoryId ? `${ARTICLES_INDEX}?category=${categoryId}` : ARTICLES_INDEX;
+  const related = getRelatedArticles(slug, 6);
   const tocItems = sections.map((s) => ({ id: slugify(s.heading), heading: s.heading }));
 
   const articleSchema = {
@@ -116,6 +122,7 @@ const ExpiredDomainArticleLayout = ({
     headline: h1,
     description: metaDescription,
     keywords: primaryKeyword,
+    articleSection: categoryName,
     mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
     author: { "@type": "Organization", name: "IAEE" },
     publisher: {
@@ -142,7 +149,11 @@ const ExpiredDomainArticleLayout = ({
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: SITE },
       { "@type": "ListItem", position: 2, name: "Premium Domains", item: `${SITE}${MARKETPLACE_URL}` },
-      { "@type": "ListItem", position: 3, name: h1, item: canonical },
+      { "@type": "ListItem", position: 3, name: "Articles", item: `${SITE}${ARTICLES_INDEX}` },
+      ...(categoryName
+        ? [{ "@type": "ListItem", position: 4, name: categoryName, item: `${SITE}${categoryUrl}` }]
+        : []),
+      { "@type": "ListItem", position: categoryName ? 5 : 4, name: h1, item: canonical },
     ],
   };
 
