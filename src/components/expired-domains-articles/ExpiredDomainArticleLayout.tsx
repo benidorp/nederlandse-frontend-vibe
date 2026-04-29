@@ -295,15 +295,35 @@ const ExpiredDomainArticleLayout = ({
             </div>
           </div>
 
-          <aside className="mt-10 rounded-xl border border-slate-200 p-6">
-            <h2 className="text-xl font-semibold text-slate-900">Continue Reading</h2>
-            <ul className="mt-3 grid gap-2 sm:grid-cols-2 text-amber-700">
-              <li><Link className="hover:underline" to={MARKETPLACE_URL}>→ Premium Expired Domains Marketplace</Link></li>
-              <li><Link className="hover:underline" to="/expireddomainnames/en/premium-domains-legal-documents">→ Legal Documents for Domain Buyers</Link></li>
-              <li><Link className="hover:underline" to="/expireddomainnames/en/articles">→ All Buyer Guides</Link></li>
-              <li><Link className="hover:underline" to="/expireddomainnames/en/articles/smart-buyers-guide-to-expired-domain-names">→ The Smart Buyer’s Guide to Expired Domains</Link></li>
-            </ul>
-          </aside>
+          {related.length > 0 && (
+            <aside className="mt-12 rounded-xl border border-slate-200 p-6">
+              <div className="mb-4 flex items-center gap-2">
+                <BookOpen className="h-5 w-5 text-amber-600" />
+                <h2 className="text-xl font-semibold text-slate-900">Related Articles</h2>
+                {categoryName && (
+                  <Link to={categoryUrl} className="ml-auto text-sm font-medium text-amber-700 hover:underline">
+                    More in {categoryName} →
+                  </Link>
+                )}
+              </div>
+              <ul className="grid gap-4 sm:grid-cols-2">
+                {related.map((r) => (
+                  <li key={r.slug} className="group rounded-lg border border-slate-200 p-4 transition hover:border-amber-300">
+                    <Link to={`/expireddomainnames/en/articles/${r.slug}`} className="block">
+                      <p className="text-xs uppercase tracking-wide text-amber-600">{r.categoryName}</p>
+                      <h3 className="mt-1 text-base font-semibold text-slate-900 group-hover:text-amber-700">{r.h1}</h3>
+                      <p className="mt-1 line-clamp-2 text-sm text-slate-600">{r.metaDescription}</p>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-5 flex flex-wrap gap-3 text-sm">
+                <Link to={ARTICLES_INDEX} className="font-medium text-amber-700 hover:underline">→ All Buyer Guides</Link>
+                <Link to={MARKETPLACE_URL} className="font-medium text-amber-700 hover:underline">→ Premium Domains Marketplace</Link>
+                <Link to="/expireddomainnames/en/premium-domains-legal-documents" className="font-medium text-amber-700 hover:underline">→ Legal Documents for Domain Buyers</Link>
+              </div>
+            </aside>
+          )}
         </article>
       </main>
 
