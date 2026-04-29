@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { ArrowRight, CheckCircle2, ShieldCheck, Sparkles, Globe2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, ShieldCheck, Sparkles, Globe2, BookOpen } from "lucide-react";
 import HeaderEN from "@/components/en/HeaderEN";
 import FooterPremiumDomainsEN from "@/components/premium-domains/FooterPremiumDomainsEN";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { ARTICLE_META, getRelatedArticles } from "@/content/expired-domain-articles";
 
 export interface ArticleSection {
   heading: string;
@@ -107,6 +108,12 @@ const ExpiredDomainArticleLayout = ({
   closingHook,
 }: ExpiredDomainArticleProps) => {
   const canonical = `${SITE}/expireddomainnames/en/articles/${slug}`;
+  const ARTICLES_INDEX = "/expireddomainnames/en/articles";
+  const meta = ARTICLE_META[slug];
+  const categoryId = meta?.categoryId;
+  const categoryName = meta?.categoryName;
+  const categoryUrl = categoryId ? `${ARTICLES_INDEX}?category=${categoryId}` : ARTICLES_INDEX;
+  const related = getRelatedArticles(slug, 6);
   const tocItems = sections.map((s) => ({ id: slugify(s.heading), heading: s.heading }));
 
   const articleSchema = {
@@ -115,6 +122,7 @@ const ExpiredDomainArticleLayout = ({
     headline: h1,
     description: metaDescription,
     keywords: primaryKeyword,
+    articleSection: categoryName,
     mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
     author: { "@type": "Organization", name: "IAEE" },
     publisher: {
@@ -141,7 +149,11 @@ const ExpiredDomainArticleLayout = ({
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: SITE },
       { "@type": "ListItem", position: 2, name: "Premium Domains", item: `${SITE}${MARKETPLACE_URL}` },
-      { "@type": "ListItem", position: 3, name: h1, item: canonical },
+      { "@type": "ListItem", position: 3, name: "Articles", item: `${SITE}${ARTICLES_INDEX}` },
+      ...(categoryName
+        ? [{ "@type": "ListItem", position: 4, name: categoryName, item: `${SITE}${categoryUrl}` }]
+        : []),
+      { "@type": "ListItem", position: categoryName ? 5 : 4, name: h1, item: canonical },
     ],
   };
 
@@ -177,7 +189,15 @@ const ExpiredDomainArticleLayout = ({
             <li aria-hidden>›</li>
             <li><Link to={MARKETPLACE_URL} className="hover:text-slate-900">Premium Domains</Link></li>
             <li aria-hidden>›</li>
-            <li className="text-slate-700" aria-current="page">{h1}</li>
+            <li><Link to={ARTICLES_INDEX} className="hover:text-slate-900">Articles</Link></li>
+            {categoryName && (
+              <>
+                <li aria-hidden>›</li>
+                <li><Link to={categoryUrl} className="hover:text-slate-900">{categoryName}</Link></li>
+              </>
+            )}
+            <li aria-hidden>›</li>
+            <li className="text-slate-700 line-clamp-1" aria-current="page">{h1}</li>
           </ol>
         </nav>
 
@@ -275,15 +295,35 @@ const ExpiredDomainArticleLayout = ({
             </div>
           </div>
 
-          <aside className="mt-10 rounded-xl border border-slate-200 p-6">
-            <h2 className="text-xl font-semibold text-slate-900">Continue Reading</h2>
-            <ul className="mt-3 grid gap-2 sm:grid-cols-2 text-amber-700">
-              <li><Link className="hover:underline" to={MARKETPLACE_URL}>→ Premium Expired Domains Marketplace</Link></li>
-              <li><Link className="hover:underline" to="/expireddomainnames/en/premium-domains-legal-documents">→ Legal Documents for Domain Buyers</Link></li>
-              <li><Link className="hover:underline" to="/expireddomainnames/en/articles">→ All Buyer Guides</Link></li>
-              <li><Link className="hover:underline" to="/expireddomainnames/en/articles/smart-buyers-guide-to-expired-domain-names">→ The Smart Buyer’s Guide to Expired Domains</Link></li>
-            </ul>
-          </aside>
+          {related.length > 0 && (
+            <aside className="mt-12 rounded-xl border border-slate-200 p-6">
+              <div className="mb-4 flex items-center gap-2">
+                <BookOpen className="h-5 w-5 text-amber-600" />
+                <h2 className="text-xl font-semibold text-slate-900">Related Articles</h2>
+                {categoryName && (
+                  <Link to={categoryUrl} className="ml-auto text-sm font-medium text-amber-700 hover:underline">
+                    More in {categoryName} →
+                  </Link>
+                )}
+              </div>
+              <ul className="grid gap-4 sm:grid-cols-2">
+                {related.map((r) => (
+                  <li key={r.slug} className="group rounded-lg border border-slate-200 p-4 transition hover:border-amber-300">
+                    <Link to={`/expireddomainnames/en/articles/${r.slug}`} className="block">
+                      <p className="text-xs uppercase tracking-wide text-amber-600">{r.categoryName}</p>
+                      <h3 className="mt-1 text-base font-semibold text-slate-900 group-hover:text-amber-700">{r.h1}</h3>
+                      <p className="mt-1 line-clamp-2 text-sm text-slate-600">{r.metaDescription}</p>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-5 flex flex-wrap gap-3 text-sm">
+                <Link to={ARTICLES_INDEX} className="font-medium text-amber-700 hover:underline">→ All Buyer Guides</Link>
+                <Link to={MARKETPLACE_URL} className="font-medium text-amber-700 hover:underline">→ Premium Domains Marketplace</Link>
+                <Link to="/expireddomainnames/en/premium-domains-legal-documents" className="font-medium text-amber-700 hover:underline">→ Legal Documents for Domain Buyers</Link>
+              </div>
+            </aside>
+          )}
         </article>
       </main>
 
