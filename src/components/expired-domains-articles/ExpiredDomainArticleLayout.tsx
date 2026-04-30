@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import {
@@ -15,6 +16,9 @@ import {
   Lightbulb,
   Target,
   Zap,
+  ListOrdered,
+  X,
+  ChevronRight,
 } from "lucide-react";
 import HeaderEN from "@/components/en/HeaderEN";
 import FooterPremiumDomainsEN from "@/components/premium-domains/FooterPremiumDomainsEN";
@@ -22,9 +26,42 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ARTICLE_META, getRelatedArticles } from "@/content/expired-domain-articles";
 
-const heroImg = "/images/article-hero-domains.jpg";
-const authorityImg = "/images/article-section-authority.jpg";
-const strategyImg = "/images/article-section-strategy.jpg";
+/* Image pool — varied, all deep-blue editorial style */
+const IMAGE_POOL = [
+  "/images/article-hero-blue-network.jpg",
+  "/images/article-blue-authority.jpg",
+  "/images/article-blue-global.jpg",
+  "/images/article-blue-strategy.jpg",
+  "/images/article-blue-trust.jpg",
+  "/images/article-blue-growth.jpg",
+];
+
+/* Deterministic hash from slug → ensures each article has its own consistent image rotation */
+const hashSlug = (s: string) => {
+  let h = 0;
+  for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0;
+  return h;
+};
+
+const pickImages = (slug: string) => {
+  const h = hashSlug(slug);
+  const start = h % IMAGE_POOL.length;
+  return [0, 1, 2, 3].map((i) => IMAGE_POOL[(start + i) % IMAGE_POOL.length]);
+};
+
+/* SEO-rich H3 subheading templates — rotate based on section index + slug hash */
+const SUBHEAD_TEMPLATES = [
+  "Why this matters for your domain investment in 2026",
+  "Key signals serious buyers look at first",
+  "How premium expired domains compare to fresh registrations",
+  "What separates authority domains from average ones",
+  "Common mistakes to avoid when evaluating domains",
+  "Practical checklist for domain due diligence",
+  "Long-term ROI considerations for premium domains",
+  "How this impacts SEO rankings and indexing speed",
+  "Best practices for branding and trust building",
+  "What top domain investors do differently",
+];
 
 export interface ArticleSection {
   heading: string;
@@ -76,21 +113,32 @@ const estimateReadingMinutes = (props: ExpiredDomainArticleProps) => {
   return Math.max(4, Math.round(words / 220));
 };
 
-/* ---------- Reusable visual blocks ---------- */
+/* Split a long paragraph into smaller easy-to-read chunks (~2 sentences each) */
+const splitParagraph = (p: string): string[] => {
+  const sentences = p.match(/[^.!?]+[.!?]+(\s|$)/g) || [p];
+  if (sentences.length <= 2) return [p];
+  const chunks: string[] = [];
+  for (let i = 0; i < sentences.length; i += 2) {
+    chunks.push(sentences.slice(i, i + 2).join("").trim());
+  }
+  return chunks.filter(Boolean);
+};
+
+/* ---------- Reusable visual blocks (deep-blue palette) ---------- */
 
 const KeyTakeaways = ({ items }: { items: string[] }) => (
-  <aside className="my-10 overflow-hidden rounded-2xl border border-amber-200/70 bg-gradient-to-br from-amber-50 to-white p-6 shadow-sm md:p-8">
+  <aside className="my-10 overflow-hidden rounded-2xl border border-sky-300/60 bg-gradient-to-br from-sky-50 to-white p-6 shadow-sm md:p-8">
     <div className="mb-4 flex items-center gap-2">
-      <div className="flex h-9 w-9 items-center justify-center rounded-full bg-amber-500/15 text-amber-600">
+      <div className="flex h-9 w-9 items-center justify-center rounded-full bg-blue-600/15 text-blue-700">
         <Lightbulb className="h-5 w-5" />
       </div>
-      <h2 className="text-lg font-semibold text-slate-900">Key Takeaways</h2>
+      <h2 className="text-lg font-semibold text-[#0a2540]">Key Takeaways</h2>
     </div>
     <ul className="grid gap-3 sm:grid-cols-2">
       {items.map((t, i) => (
         <li key={i} className="flex gap-3 text-slate-700">
-          <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-emerald-600" />
-          <span className="text-sm leading-relaxed">{t}</span>
+          <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-sky-600" />
+          <span className="text-[15px] leading-relaxed">{t}</span>
         </li>
       ))}
     </ul>
@@ -98,47 +146,51 @@ const KeyTakeaways = ({ items }: { items: string[] }) => (
 );
 
 const PullQuote = ({ children }: { children: React.ReactNode }) => (
-  <figure className="my-12 border-l-4 border-amber-500 bg-slate-50 px-6 py-6 md:px-8 md:py-8">
-    <Quote className="mb-3 h-6 w-6 text-amber-500" />
-    <blockquote className="text-xl font-medium leading-snug text-slate-900 md:text-2xl">
+  <figure className="my-10 border-l-4 border-sky-400 bg-gradient-to-r from-sky-50 to-white px-5 py-6 md:my-12 md:px-8 md:py-8">
+    <Quote className="mb-3 h-6 w-6 text-sky-500" />
+    <blockquote className="text-lg font-medium leading-snug text-[#0a2540] md:text-2xl">
       {children}
     </blockquote>
   </figure>
 );
 
 const SectionImage = ({ src, alt, caption }: { src: string; alt: string; caption?: string }) => (
-  <figure className="not-prose my-12">
-    <div className="overflow-hidden rounded-2xl border border-slate-200 shadow-lg">
+  <figure className="not-prose my-10 md:my-12">
+    <div className="overflow-hidden rounded-2xl border border-sky-200 shadow-lg ring-1 ring-blue-900/5">
       <img
         src={src}
         alt={alt}
         loading="lazy"
+        decoding="async"
         width={1280}
         height={768}
+        sizes="(min-width: 1024px) 800px, (min-width: 640px) 90vw, 100vw"
         className="h-auto w-full object-cover"
       />
     </div>
     {caption && (
-      <figcaption className="mt-3 text-center text-sm italic text-slate-500">{caption}</figcaption>
+      <figcaption className="mt-3 text-center text-xs italic text-slate-500 md:text-sm">
+        {caption}
+      </figcaption>
     )}
   </figure>
 );
 
 const FeatureGrid = () => (
-  <div className="not-prose my-12 grid gap-5 sm:grid-cols-3">
+  <div className="not-prose my-10 grid gap-4 sm:grid-cols-3 md:my-12 md:gap-5">
     {[
-      { icon: TrendingUp, title: "Authority", text: "Verified MOZ DA & DR backed by real, organic backlink profiles." },
-      { icon: ShieldCheck, title: "Trust", text: "Hand-vetted history. No spam, no penalties, full transparency." },
+      { icon: TrendingUp, title: "Authority", text: "Verified MOZ DA & DR backed by real organic backlinks." },
+      { icon: ShieldCheck, title: "Trust", text: "Hand-vetted history. Zero spam, zero penalties, full transparency." },
       { icon: Zap, title: "Speed to Rank", text: "Aged authority means faster indexing and quicker SERP traction." },
     ].map((f) => (
       <div
         key={f.title}
-        className="group rounded-2xl border border-slate-200 bg-white p-6 transition hover:border-amber-300 hover:shadow-md"
+        className="group rounded-2xl border border-sky-200 bg-white p-5 transition hover:-translate-y-0.5 hover:border-blue-400 hover:shadow-lg md:p-6"
       >
-        <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-slate-900 text-amber-400 transition group-hover:bg-amber-500 group-hover:text-white">
+        <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-[#0a2540] text-sky-300 transition group-hover:bg-blue-600 group-hover:text-white">
           <f.icon className="h-5 w-5" />
         </div>
-        <h3 className="text-base font-semibold text-slate-900">{f.title}</h3>
+        <h3 className="text-base font-semibold text-[#0a2540]">{f.title}</h3>
         <p className="mt-1.5 text-sm leading-relaxed text-slate-600">{f.text}</p>
       </div>
     ))}
@@ -146,21 +198,21 @@ const FeatureGrid = () => (
 );
 
 const BuyCTA = () => (
-  <div className="not-prose my-14 overflow-hidden rounded-3xl border border-slate-200 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 p-8 text-white shadow-2xl md:p-12">
-    <div className="grid gap-8 md:grid-cols-[1.4fr_1fr] md:items-center">
+  <div className="not-prose my-12 overflow-hidden rounded-3xl border border-blue-700/30 bg-gradient-to-br from-[#0a2540] via-[#0e2f5c] to-[#1e40af] p-7 text-white shadow-2xl md:my-14 md:p-12">
+    <div className="grid gap-7 md:grid-cols-[1.4fr_1fr] md:items-center md:gap-8">
       <div>
-        <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-amber-400/40 bg-amber-400/10 px-3 py-1 text-xs font-medium text-amber-300">
+        <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-sky-300/40 bg-sky-300/10 px-3 py-1 text-xs font-medium text-sky-200">
           <Sparkles className="h-3.5 w-3.5" /> Curated Premium Inventory
         </div>
         <h3 className="text-2xl font-semibold leading-tight md:text-3xl">
           Find a domain worth building a real business on.
         </h3>
-        <p className="mt-3 max-w-lg text-slate-300">
+        <p className="mt-3 max-w-lg text-sky-100/90">
           Hand-picked premium expired domains with verified authority, clean backlink profiles, and
           instant credibility — ready to launch your next project.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
-          <Button asChild size="lg" className="bg-amber-400 text-slate-900 hover:bg-amber-300">
+          <Button asChild size="lg" className="bg-sky-300 text-[#0a2540] hover:bg-sky-200">
             <Link to={MARKETPLACE_URL}>
               View Available Domains <ArrowRight className="ml-1" />
             </Link>
@@ -171,50 +223,48 @@ const BuyCTA = () => (
         </div>
       </div>
       <div className="grid grid-cols-3 gap-3 text-center text-xs">
-        <div className="rounded-xl border border-white/10 bg-white/5 p-3">
-          <p className="text-2xl font-bold text-amber-400">125+</p>
-          <p className="mt-1 text-slate-400">Expert Guides</p>
-        </div>
-        <div className="rounded-xl border border-white/10 bg-white/5 p-3">
-          <p className="text-2xl font-bold text-amber-400">DA 25+</p>
-          <p className="mt-1 text-slate-400">Authority</p>
-        </div>
-        <div className="rounded-xl border border-white/10 bg-white/5 p-3">
-          <p className="text-2xl font-bold text-amber-400">100%</p>
-          <p className="mt-1 text-slate-400">Vetted</p>
-        </div>
+        {[
+          { v: "125+", l: "Expert Guides" },
+          { v: "DA 25+", l: "Authority" },
+          { v: "100%", l: "Vetted" },
+        ].map((s) => (
+          <div key={s.l} className="rounded-xl border border-white/10 bg-white/5 p-3">
+            <p className="text-xl font-bold text-sky-300 md:text-2xl">{s.v}</p>
+            <p className="mt-1 text-sky-100/70">{s.l}</p>
+          </div>
+        ))}
       </div>
     </div>
   </div>
 );
 
 const TwoColumnBuyBanner = () => (
-  <div className="not-prose my-12 grid gap-6 md:grid-cols-2">
-    <div className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition hover:shadow-md">
-      <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700">
+  <div className="not-prose my-12 grid gap-5 md:grid-cols-2 md:gap-6">
+    <div className="rounded-2xl border border-sky-200 bg-white p-6 shadow-sm transition hover:shadow-md md:p-7">
+      <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-sky-100 px-3 py-1 text-xs font-medium text-blue-800">
         <ShieldCheck className="h-3.5 w-3.5" /> Verified Authority
       </div>
-      <h3 className="text-xl font-semibold text-slate-900">Premium Expired Domains</h3>
+      <h3 className="text-xl font-semibold text-[#0a2540]">Premium Expired Domains</h3>
       <p className="mt-2 text-slate-600">
         Hand-vetted expired domains with strong MOZ scores, real backlinks, and proven topical
         history. Ready to power your next project.
       </p>
-      <Button asChild className="mt-5 w-full bg-slate-900 text-white hover:bg-slate-800">
+      <Button asChild className="mt-5 w-full bg-[#0a2540] text-white hover:bg-[#0e2f5c]">
         <Link to={MARKETPLACE_URL}>
           Browse Marketplace <ArrowRight className="ml-1" />
         </Link>
       </Button>
     </div>
-    <div className="rounded-2xl border border-amber-200 bg-gradient-to-br from-amber-50 to-amber-100/50 p-7 shadow-sm transition hover:shadow-md">
-      <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-amber-200/70 px-3 py-1 text-xs font-medium text-amber-800">
+    <div className="rounded-2xl border border-blue-300 bg-gradient-to-br from-sky-50 to-blue-100/60 p-6 shadow-sm transition hover:shadow-md md:p-7">
+      <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-blue-200/70 px-3 py-1 text-xs font-medium text-blue-900">
         <Globe2 className="h-3.5 w-3.5" /> Brandable & SEO-Ready
       </div>
-      <h3 className="text-xl font-semibold text-slate-900">Find Your Domain Today</h3>
+      <h3 className="text-xl font-semibold text-[#0a2540]">Find Your Domain Today</h3>
       <p className="mt-2 text-slate-700">
         Skip months of waiting for organic authority. Choose from premium domains built to give
         serious operators an immediate edge.
       </p>
-      <Button asChild className="mt-5 w-full bg-amber-500 text-white hover:bg-amber-600">
+      <Button asChild className="mt-5 w-full bg-blue-600 text-white hover:bg-blue-700">
         <Link to={MARKETPLACE_URL}>
           Explore Premium Inventory <ArrowRight className="ml-1" />
         </Link>
@@ -222,6 +272,67 @@ const TwoColumnBuyBanner = () => (
     </div>
   </div>
 );
+
+/* ---------- Mobile TOC (collapsible drawer) ---------- */
+
+const MobileTOC = ({
+  items,
+  open,
+  onClose,
+}: {
+  items: { id: string; heading: string }[];
+  open: boolean;
+  onClose: () => void;
+}) => {
+  if (!open) return null;
+  return (
+    <div className="fixed inset-0 z-50 lg:hidden" role="dialog" aria-modal="true" aria-label="Table of contents">
+      <div className="absolute inset-0 bg-[#0a2540]/60 backdrop-blur-sm" onClick={onClose} />
+      <div className="absolute bottom-0 left-0 right-0 max-h-[80vh] overflow-y-auto rounded-t-3xl border-t border-sky-300/30 bg-white p-5 shadow-2xl animate-in slide-in-from-bottom">
+        <div className="mb-4 flex items-center justify-between">
+          <h2 className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#0a2540]">
+            <BookOpen className="h-4 w-4 text-blue-600" /> In This Article
+          </h2>
+          <button
+            onClick={onClose}
+            aria-label="Close table of contents"
+            className="rounded-full p-1.5 text-slate-500 hover:bg-slate-100"
+          >
+            <X className="h-5 w-5" />
+          </button>
+        </div>
+        <ol className="space-y-2 pb-6 text-[15px]">
+          {items.map((t, i) => (
+            <li key={t.id}>
+              <a
+                href={`#${t.id}`}
+                onClick={onClose}
+                className="flex items-start gap-3 rounded-lg px-2 py-2 text-slate-700 transition hover:bg-sky-50 hover:text-blue-700"
+              >
+                <span className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-sky-100 text-xs font-bold text-blue-700">
+                  {i + 1}
+                </span>
+                <span className="leading-snug">{t.heading}</span>
+              </a>
+            </li>
+          ))}
+          <li>
+            <a
+              href="#faq"
+              onClick={onClose}
+              className="flex items-start gap-3 rounded-lg px-2 py-2 font-medium text-blue-700 hover:bg-sky-50"
+            >
+              <span className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-600 text-xs font-bold text-white">
+                ★
+              </span>
+              <span>Frequently Asked Questions</span>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  );
+};
 
 /* ---------- Main layout ---------- */
 
@@ -239,6 +350,8 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
     closingHook,
   } = props;
 
+  const [tocOpen, setTocOpen] = useState(false);
+
   const canonical = `${SITE}/expireddomainnames/en/articles/${slug}`;
   const ARTICLES_INDEX = "/expireddomainnames/en/articles";
   const meta = ARTICLE_META[slug];
@@ -250,6 +363,10 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
   const readingMin = estimateReadingMinutes(props);
   const publishedDate = "2026-04-15";
 
+  // Image rotation per article (deterministic)
+  const [heroImg, midImg1, midImg2, midImg3] = pickImages(slug);
+  const subheadStart = hashSlug(slug) % SUBHEAD_TEMPLATES.length;
+
   // Build key takeaways from first sentences of first 4 sections
   const takeaways = sections
     .slice(0, 4)
@@ -260,9 +377,7 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
 
   // Pick a meaningful pull quote from middle of article
   const pullQuoteCandidate =
-    sections[Math.floor(sections.length / 2)]?.paragraphs?.[0] ??
-    intro[intro.length - 1] ??
-    "";
+    sections[Math.floor(sections.length / 2)]?.paragraphs?.[0] ?? intro[intro.length - 1] ?? "";
   const pullQuote =
     pullQuoteCandidate.length > 200
       ? pullQuoteCandidate.slice(0, 197).split(" ").slice(0, -1).join(" ") + "…"
@@ -284,7 +399,7 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
       name: "IAEE",
       logo: { "@type": "ImageObject", url: `${SITE}/logo.png` },
     },
-    image: `${SITE}/images/article-hero-domains.jpg`,
+    image: `${SITE}${heroImg}`,
   };
 
   const faqSchema = {
@@ -313,6 +428,7 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
 
   const midIndex = Math.max(1, Math.floor(sections.length / 2));
   const quarterIndex = Math.max(1, Math.floor(sections.length / 4));
+  const threeQuarterIndex = Math.max(1, Math.floor((sections.length * 3) / 4));
 
   return (
     <div className="min-h-screen bg-white">
@@ -321,12 +437,13 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
         <meta name="robots" content="index, follow" />
+        <meta name="theme-color" content="#0a2540" />
         <link rel="canonical" href={canonical} />
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDescription} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={canonical} />
-        <meta property="og:image" content={`${SITE}/images/article-hero-domains.jpg`} />
+        <meta property="og:image" content={`${SITE}${heroImg}`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={metaTitle} />
         <meta name="twitter:description" content={metaDescription} />
@@ -337,165 +454,250 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
 
       <HeaderEN />
 
-      {/* HERO */}
-      <header className="relative overflow-hidden border-b border-slate-200 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 text-white">
+      {/* HERO — deep blue, matches reference */}
+      <header className="relative overflow-hidden border-b border-blue-900/20 bg-gradient-to-br from-[#061a36] via-[#0a2540] to-[#0e2f5c] text-white">
+        {/* subtle grid overlay */}
         <div
-          className="absolute inset-0 opacity-30"
+          className="absolute inset-0 opacity-[0.07]"
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(125,211,252,.6) 1px, transparent 1px), linear-gradient(90deg, rgba(125,211,252,.6) 1px, transparent 1px)",
+            backgroundSize: "48px 48px",
+          }}
+          aria-hidden
+        />
+        {/* hero image right side, hidden on small screens */}
+        <div
+          className="pointer-events-none absolute inset-y-0 right-0 hidden w-1/2 opacity-60 md:block"
           style={{
             backgroundImage: `url(${heroImg})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
+            maskImage: "linear-gradient(to left, black 30%, transparent 100%)",
+            WebkitMaskImage: "linear-gradient(to left, black 30%, transparent 100%)",
           }}
           aria-hidden
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/70 to-transparent" aria-hidden />
-        <div className="relative mx-auto max-w-5xl px-4 py-14 md:py-20">
-          <nav aria-label="Breadcrumb" className="mb-6 text-sm text-slate-300">
-            <ol className="flex flex-wrap items-center gap-2">
-              <li><Link to="/" className="hover:text-amber-300">Home</Link></li>
+        {/* mobile hero image strip */}
+        <div className="relative md:hidden">
+          <img
+            src={heroImg}
+            alt=""
+            aria-hidden
+            className="h-40 w-full object-cover opacity-50"
+            width={1280}
+            height={400}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0a2540]/60 to-[#0a2540]" />
+        </div>
+
+        <div className="relative mx-auto max-w-6xl px-4 py-10 md:py-20">
+          <nav aria-label="Breadcrumb" className="mb-5 text-xs text-sky-200/80 md:mb-6 md:text-sm">
+            <ol className="flex flex-wrap items-center gap-1.5 md:gap-2">
+              <li><Link to="/" className="hover:text-sky-300">Home</Link></li>
               <li aria-hidden>›</li>
-              <li><Link to={MARKETPLACE_URL} className="hover:text-amber-300">Premium Domains</Link></li>
+              <li><Link to={MARKETPLACE_URL} className="hover:text-sky-300">Premium Domains</Link></li>
               <li aria-hidden>›</li>
-              <li><Link to={ARTICLES_INDEX} className="hover:text-amber-300">Articles</Link></li>
+              <li><Link to={ARTICLES_INDEX} className="hover:text-sky-300">Articles</Link></li>
               {categoryName && (
                 <>
                   <li aria-hidden>›</li>
-                  <li><Link to={categoryUrl} className="hover:text-amber-300">{categoryName}</Link></li>
+                  <li><Link to={categoryUrl} className="hover:text-sky-300">{categoryName}</Link></li>
                 </>
               )}
             </ol>
           </nav>
 
-          {categoryName && (
-            <Link
-              to={categoryUrl}
-              className="mb-5 inline-flex items-center gap-2 rounded-full border border-amber-400/40 bg-amber-400/10 px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-amber-300 transition hover:bg-amber-400/20"
-            >
-              <Award className="h-3.5 w-3.5" /> {categoryName}
-            </Link>
-          )}
+          <div className="md:max-w-3xl">
+            {categoryName && (
+              <Link
+                to={categoryUrl}
+                className="mb-4 inline-flex items-center gap-2 rounded-full border border-sky-300/40 bg-sky-300/10 px-3 py-1.5 text-[11px] font-medium uppercase tracking-wider text-sky-200 transition hover:bg-sky-300/20 md:mb-5 md:px-4 md:text-xs"
+              >
+                <Award className="h-3.5 w-3.5" /> {categoryName}
+              </Link>
+            )}
 
-          <h1 className="max-w-4xl text-3xl font-bold leading-tight tracking-tight md:text-5xl lg:text-6xl">
-            {h1}
-          </h1>
+            <h1 className="text-[28px] font-bold leading-[1.15] tracking-tight md:text-5xl lg:text-6xl">
+              {h1}
+            </h1>
 
-          <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-slate-300">
-            <span className="inline-flex items-center gap-1.5">
-              <Calendar className="h-4 w-4 text-amber-400" />
-              <time dateTime={publishedDate}>April 15, 2026</time>
-            </span>
-            <span className="inline-flex items-center gap-1.5">
-              <Clock className="h-4 w-4 text-amber-400" />
-              {readingMin} min read
-            </span>
-            <span className="inline-flex items-center gap-1.5">
-              <BookOpen className="h-4 w-4 text-amber-400" />
-              By IAEE Editorial
-            </span>
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-sky-100/90 md:mt-6 md:text-lg">
+              {intro[0]?.split(". ").slice(0, 2).join(". ").slice(0, 220)}…
+            </p>
+
+            <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-sky-200/80 md:mt-6 md:gap-x-6 md:text-sm">
+              <span className="inline-flex items-center gap-1.5">
+                <Calendar className="h-4 w-4 text-sky-300" />
+                <time dateTime={publishedDate}>April 15, 2026</time>
+              </span>
+              <span className="inline-flex items-center gap-1.5">
+                <Clock className="h-4 w-4 text-sky-300" />
+                {readingMin} min read
+              </span>
+              <span className="inline-flex items-center gap-1.5">
+                <BookOpen className="h-4 w-4 text-sky-300" />
+                By IAEE Editorial
+              </span>
+            </div>
           </div>
         </div>
       </header>
 
-      <main className="mx-auto max-w-6xl px-4 py-10 md:py-16">
+      {/* Sticky mobile TOC trigger */}
+      <div className="sticky top-16 z-30 border-b border-sky-200 bg-white/95 backdrop-blur lg:hidden">
+        <button
+          onClick={() => setTocOpen(true)}
+          className="flex w-full items-center justify-between px-4 py-3 text-left text-sm font-semibold text-[#0a2540]"
+          aria-label="Open table of contents"
+        >
+          <span className="flex items-center gap-2">
+            <ListOrdered className="h-4 w-4 text-blue-600" />
+            Table of contents · {sections.length} sections
+          </span>
+          <ChevronRight className="h-4 w-4 text-blue-600" />
+        </button>
+      </div>
+
+      <MobileTOC items={tocItems} open={tocOpen} onClose={() => setTocOpen(false)} />
+
+      <main className="mx-auto max-w-6xl px-4 py-8 md:py-14">
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_280px]">
           {/* MAIN COLUMN */}
-          <article className="min-w-0">
-            {/* Lead / intro with dropcap */}
-            <div className="prose prose-slate max-w-none prose-p:leading-relaxed prose-p:text-slate-700 prose-p:text-lg">
-              {intro.map((p, i) => (
-                <p
-                  key={`intro-${i}`}
-                  className={
-                    i === 0
-                      ? "first-letter:float-left first-letter:mr-3 first-letter:text-6xl first-letter:font-bold first-letter:leading-none first-letter:text-amber-500"
-                      : ""
-                  }
-                >
-                  {p}
-                </p>
-              ))}
+          <article className="min-w-0 max-w-[68ch]">
+            {/* Lead / intro with dropcap — broken into smaller blocks */}
+            <div className="prose prose-slate max-w-none prose-p:text-[17px] prose-p:leading-[1.75] prose-p:text-slate-700 md:prose-p:text-lg md:prose-p:leading-[1.8]">
+              {intro.map((p, i) => {
+                const chunks = splitParagraph(p);
+                return chunks.map((chunk, j) => (
+                  <p
+                    key={`intro-${i}-${j}`}
+                    className={
+                      i === 0 && j === 0
+                        ? "first-letter:float-left first-letter:mr-3 first-letter:text-6xl first-letter:font-bold first-letter:leading-none first-letter:text-blue-600 md:first-letter:text-7xl"
+                        : ""
+                    }
+                  >
+                    {chunk}
+                  </p>
+                ));
+              })}
             </div>
 
             {takeaways.length >= 3 && <KeyTakeaways items={takeaways} />}
 
             <FeatureGrid />
 
-            {/* Sections */}
-            <div className="prose prose-slate max-w-none prose-headings:scroll-mt-24 prose-h2:mt-14 prose-h2:text-3xl prose-h2:font-bold prose-h2:tracking-tight prose-h2:text-slate-900 prose-h3:text-xl prose-h3:font-semibold prose-h3:text-slate-900 prose-p:leading-relaxed prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900">
-              {sections.map((section, i) => (
-                <section key={section.heading} id={slugify(section.heading)} className="mb-2">
-                  <div className="not-prose mb-4 mt-14 flex items-center gap-3">
-                    <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-amber-500 text-sm font-bold text-white shadow-sm">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <div className="h-px flex-1 bg-gradient-to-r from-amber-300 to-transparent" />
-                  </div>
-                  <h2>{section.heading}</h2>
-                  {section.paragraphs?.map((p, j) => <p key={`s${i}-p${j}`}>{p}</p>)}
-                  {section.bullets && section.bullets.length > 0 && (
-                    <ul className="my-6 space-y-2 rounded-xl border border-slate-200 bg-slate-50 p-5">
-                      {section.bullets.map((b, k) => (
-                        <li key={`s${i}-b${k}`} className="flex gap-3 marker:text-amber-500">
-                          <Target className="mt-1 h-4 w-4 shrink-0 text-amber-600" />
-                          <span>{b}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                  {section.subsections?.map((sub, m) => (
-                    <div key={`s${i}-sub${m}`}>
-                      <h3>{sub.heading}</h3>
-                      {sub.paragraphs.map((sp, n) => <p key={`s${i}-sub${m}-p${n}`}>{sp}</p>)}
+            {/* Sections — improved typography, broken text, SEO H3 subheadings */}
+            <div className="prose prose-slate max-w-none prose-headings:scroll-mt-32 prose-h2:mt-12 prose-h2:text-[26px] prose-h2:font-bold prose-h2:leading-tight prose-h2:tracking-tight prose-h2:text-[#0a2540] md:prose-h2:mt-16 md:prose-h2:text-[34px] prose-h3:mt-8 prose-h3:text-lg prose-h3:font-semibold prose-h3:text-[#0e2f5c] md:prose-h3:text-xl prose-p:text-[17px] prose-p:leading-[1.8] prose-p:text-slate-700 md:prose-p:text-lg prose-li:text-slate-700 prose-strong:text-[#0a2540] prose-a:text-blue-700 hover:prose-a:text-blue-800">
+              {sections.map((section, i) => {
+                const subhead = SUBHEAD_TEMPLATES[(subheadStart + i) % SUBHEAD_TEMPLATES.length];
+                return (
+                  <section key={section.heading} id={slugify(section.heading)} className="mb-2">
+                    <div className="not-prose mb-4 mt-12 flex items-center gap-3 md:mt-16">
+                      <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-blue-600 to-[#0a2540] text-sm font-bold text-white shadow-md md:h-10 md:w-10">
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                      <div className="h-px flex-1 bg-gradient-to-r from-sky-300 via-blue-200 to-transparent" />
                     </div>
-                  ))}
+                    <h2>{section.heading}</h2>
 
-                  {/* Inject visual blocks at strategic points */}
-                  {i === quarterIndex - 1 && (
-                    <SectionImage
-                      src={authorityImg}
-                      alt={`Authority signals visualization for ${primaryKeyword}`}
-                      caption="Real authority compounds — backlinks, age, and topical history all matter."
-                    />
-                  )}
-                  {i === midIndex - 1 && pullQuote && <PullQuote>"{pullQuote}"</PullQuote>}
-                  {i === midIndex && <BuyCTA />}
-                  {i === sections.length - 2 && (
-                    <SectionImage
-                      src={strategyImg}
-                      alt={`Strategic value of ${primaryKeyword}`}
-                      caption="A premium domain is a long-horizon brand asset, not a line-item expense."
-                    />
-                  )}
-                </section>
-              ))}
+                    {section.paragraphs?.map((p, j) => {
+                      const chunks = splitParagraph(p);
+                      return (
+                        <div key={`s${i}-p${j}`}>
+                          {/* Inject SEO H3 subheading after first paragraph if section has 3+ paragraphs */}
+                          {j === 1 && (section.paragraphs?.length || 0) >= 3 && (
+                            <h3>{subhead}</h3>
+                          )}
+                          {chunks.map((chunk, k) => (
+                            <p key={`s${i}-p${j}-c${k}`}>{chunk}</p>
+                          ))}
+                        </div>
+                      );
+                    })}
+
+                    {section.bullets && section.bullets.length > 0 && (
+                      <ul className="not-prose my-6 space-y-3 rounded-2xl border border-sky-200 bg-gradient-to-br from-sky-50/60 to-white p-5">
+                        {section.bullets.map((b, k) => (
+                          <li key={`s${i}-b${k}`} className="flex gap-3 text-[15px] leading-relaxed text-slate-700 md:text-base">
+                            <Target className="mt-1 h-4 w-4 shrink-0 text-blue-600" />
+                            <span>{b}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                    {section.subsections?.map((sub, m) => (
+                      <div key={`s${i}-sub${m}`}>
+                        <h3>{sub.heading}</h3>
+                        {sub.paragraphs.map((sp, n) => {
+                          const chunks = splitParagraph(sp);
+                          return chunks.map((chunk, q) => (
+                            <p key={`s${i}-sub${m}-p${n}-c${q}`}>{chunk}</p>
+                          ));
+                        })}
+                      </div>
+                    ))}
+
+                    {/* Inject visual blocks at strategic points — varied images per article */}
+                    {i === quarterIndex - 1 && (
+                      <SectionImage
+                        src={midImg1}
+                        alt={`Authority and trust signals for ${primaryKeyword}`}
+                        caption="Real authority compounds — backlinks, age, and topical history all matter."
+                      />
+                    )}
+                    {i === midIndex - 1 && pullQuote && <PullQuote>"{pullQuote}"</PullQuote>}
+                    {i === midIndex && <BuyCTA />}
+                    {i === midIndex + 1 && (
+                      <SectionImage
+                        src={midImg2}
+                        alt={`Strategic insights for ${primaryKeyword}`}
+                        caption="Smart domain decisions today shape brand equity for the next decade."
+                      />
+                    )}
+                    {i === threeQuarterIndex && (
+                      <SectionImage
+                        src={midImg3}
+                        alt={`Long-term value of ${primaryKeyword}`}
+                        caption="A premium domain is a long-horizon brand asset, not a line-item expense."
+                      />
+                    )}
+                  </section>
+                );
+              })}
             </div>
 
             {/* FAQ */}
-            <section id="faq" className="mt-16">
-              <div className="mb-6 flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-amber-500/15 text-amber-600">
+            <section id="faq" className="mt-14 md:mt-16">
+              <div className="mb-5 flex items-center gap-3 md:mb-6">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-600/10 text-blue-700">
                   <Lightbulb className="h-5 w-5" />
                 </div>
                 <div>
-                  <h2 className="text-3xl font-bold tracking-tight text-slate-900">Frequently Asked Questions</h2>
-                  <p className="mt-1 text-slate-600">Quick answers to what buyers ask most often.</p>
+                  <h2 className="text-[26px] font-bold leading-tight tracking-tight text-[#0a2540] md:text-3xl">
+                    Frequently Asked Questions
+                  </h2>
+                  <p className="mt-1 text-sm text-slate-600 md:text-base">
+                    Quick answers to what serious domain buyers ask most often.
+                  </p>
                 </div>
               </div>
-              <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-                <Accordion type="single" collapsible className="divide-y divide-slate-200">
+              <div className="overflow-hidden rounded-2xl border border-sky-200 bg-white shadow-sm">
+                <Accordion type="single" collapsible className="divide-y divide-sky-100">
                   {faqs.map((f, i) => (
                     <AccordionItem
                       key={`faq-${i}`}
                       value={`faq-${i}`}
-                      className="border-b-0 px-6 first:pt-1 last:pb-1"
+                      className="border-b-0 px-5 first:pt-1 last:pb-1 md:px-6"
                     >
                       <AccordionTrigger
                         headingLevel="h3"
-                        className="text-left text-base font-semibold text-slate-900 hover:no-underline data-[state=open]:text-amber-700"
+                        className="text-left text-[15px] font-semibold text-[#0a2540] hover:no-underline data-[state=open]:text-blue-700 md:text-base"
                       >
                         {f.question}
                       </AccordionTrigger>
-                      <AccordionContent className="pb-5 text-base leading-relaxed text-slate-700">
+                      <AccordionContent className="pb-5 text-[15px] leading-relaxed text-slate-700 md:text-base">
                         {f.answer}
                       </AccordionContent>
                     </AccordionItem>
@@ -505,12 +707,21 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
             </section>
 
             {/* Conclusion */}
-            <section className="mt-16">
-              <div className="rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-8 md:p-10">
-                <h2 className="mb-4 text-3xl font-bold tracking-tight text-slate-900">The Bottom Line</h2>
-                <div className="prose prose-slate max-w-none prose-p:leading-relaxed prose-p:text-slate-700 prose-p:text-lg">
-                  {conclusion.map((p, i) => <p key={`concl-${i}`}>{p}</p>)}
-                  {closingHook && <p className="mt-4 text-lg font-semibold text-amber-700">{closingHook}</p>}
+            <section className="mt-14 md:mt-16">
+              <div className="rounded-2xl border border-sky-200 bg-gradient-to-br from-sky-50 to-white p-6 md:p-10">
+                <h2 className="mb-4 text-[26px] font-bold leading-tight tracking-tight text-[#0a2540] md:text-3xl">
+                  The Bottom Line
+                </h2>
+                <div className="prose prose-slate max-w-none prose-p:text-[17px] prose-p:leading-[1.8] prose-p:text-slate-700 md:prose-p:text-lg">
+                  {conclusion.map((p, i) => {
+                    const chunks = splitParagraph(p);
+                    return chunks.map((chunk, j) => (
+                      <p key={`concl-${i}-${j}`}>{chunk}</p>
+                    ));
+                  })}
+                  {closingHook && (
+                    <p className="mt-4 text-lg font-semibold text-blue-700">{closingHook}</p>
+                  )}
                 </div>
               </div>
             </section>
@@ -518,16 +729,16 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
             <TwoColumnBuyBanner />
 
             {/* Trust strip */}
-            <div className="not-prose mt-12 grid gap-4 rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:grid-cols-3">
+            <div className="not-prose mt-12 grid gap-4 rounded-2xl border border-sky-200 bg-sky-50/60 p-5 sm:grid-cols-3 md:p-6">
               {[
                 { icon: CheckCircle2, title: "Hand-vetted inventory", text: "Every domain reviewed for quality and history." },
                 { icon: ShieldCheck, title: "Secure checkout", text: "Trusted payment providers and clean transfer support." },
                 { icon: Sparkles, title: "Real authority signals", text: "MOZ DA, backlinks, and topical history disclosed." },
               ].map((t) => (
                 <div key={t.title} className="flex items-start gap-3">
-                  <t.icon className="mt-0.5 h-5 w-5 text-emerald-600" />
+                  <t.icon className="mt-0.5 h-5 w-5 text-blue-600" />
                   <div>
-                    <p className="text-sm font-semibold text-slate-900">{t.title}</p>
+                    <p className="text-sm font-semibold text-[#0a2540]">{t.title}</p>
                     <p className="text-xs text-slate-600">{t.text}</p>
                   </div>
                 </div>
@@ -536,73 +747,73 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
 
             {/* Related articles */}
             {related.length > 0 && (
-              <aside className="mt-16">
-                <div className="mb-6 flex items-center gap-3">
-                  <BookOpen className="h-6 w-6 text-amber-600" />
-                  <h2 className="text-2xl font-bold tracking-tight text-slate-900">Continue Reading</h2>
+              <aside className="mt-14 md:mt-16">
+                <div className="mb-5 flex flex-wrap items-center gap-3 md:mb-6">
+                  <BookOpen className="h-6 w-6 text-blue-600" />
+                  <h2 className="text-2xl font-bold tracking-tight text-[#0a2540]">Continue Reading</h2>
                   {categoryName && (
                     <Link
                       to={categoryUrl}
-                      className="ml-auto text-sm font-medium text-amber-700 hover:underline"
+                      className="ml-auto text-sm font-medium text-blue-700 hover:underline"
                     >
                       More in {categoryName} →
                     </Link>
                   )}
                 </div>
-                <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 md:gap-5">
                   {related.map((r) => (
                     <li key={r.slug} className="group">
                       <Link
                         to={`/expireddomainnames/en/articles/${r.slug}`}
-                        className="block h-full rounded-2xl border border-slate-200 bg-white p-5 transition hover:-translate-y-0.5 hover:border-amber-300 hover:shadow-md"
+                        className="block h-full rounded-2xl border border-sky-200 bg-white p-5 transition hover:-translate-y-0.5 hover:border-blue-400 hover:shadow-lg"
                       >
-                        <p className="text-xs font-medium uppercase tracking-wider text-amber-600">
+                        <p className="text-xs font-medium uppercase tracking-wider text-blue-600">
                           {r.categoryName}
                         </p>
-                        <h3 className="mt-2 text-base font-semibold leading-snug text-slate-900 group-hover:text-amber-700">
+                        <h3 className="mt-2 text-base font-semibold leading-snug text-[#0a2540] group-hover:text-blue-700">
                           {r.h1}
                         </h3>
                         <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-slate-600">
                           {r.metaDescription}
                         </p>
-                        <span className="mt-3 inline-flex items-center text-sm font-medium text-amber-700">
+                        <span className="mt-3 inline-flex items-center text-sm font-medium text-blue-700">
                           Read article <ArrowRight className="ml-1 h-4 w-4 transition group-hover:translate-x-0.5" />
                         </span>
                       </Link>
                     </li>
                   ))}
                 </ul>
-                <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 border-t border-slate-200 pt-6 text-sm">
-                  <Link to={ARTICLES_INDEX} className="font-medium text-amber-700 hover:underline">→ All Buyer Guides</Link>
-                  <Link to={MARKETPLACE_URL} className="font-medium text-amber-700 hover:underline">→ Premium Domains Marketplace</Link>
-                  <Link to="/expireddomainnames/en/premium-domains-legal-documents" className="font-medium text-amber-700 hover:underline">→ Legal Documents for Domain Buyers</Link>
+                <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 border-t border-sky-200 pt-6 text-sm">
+                  <Link to={ARTICLES_INDEX} className="font-medium text-blue-700 hover:underline">→ All Buyer Guides</Link>
+                  <Link to={MARKETPLACE_URL} className="font-medium text-blue-700 hover:underline">→ Premium Domains Marketplace</Link>
+                  <Link to="/expireddomainnames/en/premium-domains-legal-documents" className="font-medium text-blue-700 hover:underline">→ Legal Documents for Domain Buyers</Link>
                 </div>
               </aside>
             )}
           </article>
 
-          {/* SIDEBAR */}
+          {/* SIDEBAR (desktop only) */}
           <aside className="hidden lg:block">
             <div className="sticky top-24 space-y-6">
               {/* TOC */}
-              <nav aria-label="Table of contents" className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-                <h2 className="mb-3 flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-slate-900">
-                  <BookOpen className="h-4 w-4 text-amber-600" /> In This Article
+              <nav aria-label="Table of contents" className="rounded-2xl border border-sky-200 bg-white p-5 shadow-sm">
+                <h2 className="mb-3 flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#0a2540]">
+                  <BookOpen className="h-4 w-4 text-blue-600" /> In This Article
                 </h2>
                 <ol className="space-y-2 text-sm">
                   {tocItems.map((t, i) => (
                     <li key={t.id}>
                       <a
                         href={`#${t.id}`}
-                        className="flex gap-2 text-slate-600 transition hover:text-amber-700"
+                        className="flex gap-2 text-slate-600 transition hover:text-blue-700"
                       >
-                        <span className="text-amber-500">{String(i + 1).padStart(2, "0")}</span>
+                        <span className="text-blue-500">{String(i + 1).padStart(2, "0")}</span>
                         <span className="line-clamp-2">{t.heading}</span>
                       </a>
                     </li>
                   ))}
                   <li>
-                    <a href="#faq" className="flex gap-2 font-medium text-amber-700 hover:underline">
+                    <a href="#faq" className="flex gap-2 font-medium text-blue-700 hover:underline">
                       <span>★</span>
                       <span>FAQ</span>
                     </a>
@@ -611,13 +822,13 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
               </nav>
 
               {/* Sidebar CTA */}
-              <div className="rounded-2xl border border-amber-200 bg-gradient-to-br from-slate-900 to-slate-800 p-6 text-white shadow-md">
-                <Sparkles className="mb-2 h-5 w-5 text-amber-400" />
+              <div className="rounded-2xl border border-blue-700/30 bg-gradient-to-br from-[#0a2540] to-[#1e40af] p-6 text-white shadow-md">
+                <Sparkles className="mb-2 h-5 w-5 text-sky-300" />
                 <h3 className="text-lg font-semibold">Premium Domains</h3>
-                <p className="mt-1.5 text-sm text-slate-300">
+                <p className="mt-1.5 text-sm text-sky-100/80">
                   Hand-picked, authority-backed domains for serious operators.
                 </p>
-                <Button asChild size="sm" className="mt-4 w-full bg-amber-400 text-slate-900 hover:bg-amber-300">
+                <Button asChild size="sm" className="mt-4 w-full bg-sky-300 text-[#0a2540] hover:bg-sky-200">
                   <Link to={MARKETPLACE_URL}>
                     Browse Marketplace <ArrowRight className="ml-1" />
                   </Link>
@@ -625,13 +836,13 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
               </div>
 
               {/* Trust signals */}
-              <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-                <h3 className="mb-3 text-sm font-bold uppercase tracking-wider text-slate-900">Why IAEE</h3>
+              <div className="rounded-2xl border border-sky-200 bg-white p-5 shadow-sm">
+                <h3 className="mb-3 text-sm font-bold uppercase tracking-wider text-[#0a2540]">Why IAEE</h3>
                 <ul className="space-y-2.5 text-sm text-slate-600">
-                  <li className="flex gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-emerald-600" /> Verified MOZ DA & DR</li>
-                  <li className="flex gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-emerald-600" /> Clean backlink profiles</li>
-                  <li className="flex gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-emerald-600" /> Secure escrow available</li>
-                  <li className="flex gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-emerald-600" /> Transfer support included</li>
+                  <li className="flex gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-blue-600" /> Verified MOZ DA & DR</li>
+                  <li className="flex gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-blue-600" /> Clean backlink profiles</li>
+                  <li className="flex gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-blue-600" /> Secure escrow available</li>
+                  <li className="flex gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-blue-600" /> Transfer support included</li>
                 </ul>
               </div>
             </div>
