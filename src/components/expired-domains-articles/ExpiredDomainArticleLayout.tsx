@@ -21,9 +21,10 @@ import FooterPremiumDomainsEN from "@/components/premium-domains/FooterPremiumDo
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ARTICLE_META, getRelatedArticles } from "@/content/expired-domain-articles";
-import heroImg from "/images/article-hero-domains.jpg";
-import authorityImg from "/images/article-section-authority.jpg";
-import strategyImg from "/images/article-section-strategy.jpg";
+
+const heroImg = "/images/article-hero-domains.jpg";
+const authorityImg = "/images/article-section-authority.jpg";
+const strategyImg = "/images/article-section-strategy.jpg";
 
 export interface ArticleSection {
   heading: string;
