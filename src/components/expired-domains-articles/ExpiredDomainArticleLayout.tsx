@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import {
@@ -19,6 +19,10 @@ import {
   ListOrdered,
   X,
   ChevronRight,
+  Menu,
+  Minimize2,
+  Smile,
+  Layers3,
 } from "lucide-react";
 import HeaderEN from "@/components/en/HeaderEN";
 import FooterPremiumDomainsEN from "@/components/premium-domains/FooterPremiumDomainsEN";
@@ -34,6 +38,12 @@ const IMAGE_POOL = [
   "/images/article-blue-strategy.jpg",
   "/images/article-blue-trust.jpg",
   "/images/article-blue-growth.jpg",
+  "/images/article-blue-analytics.jpg",
+  "/images/article-blue-branding.jpg",
+  "/images/article-blue-checklist.jpg",
+  "/images/article-blue-commerce.jpg",
+  "/images/article-blue-global-map.jpg",
+  "/images/article-blue-investment.jpg",
 ];
 
 /* Deterministic hash from slug → ensures each article has its own consistent image rotation */
@@ -61,6 +71,22 @@ const SUBHEAD_TEMPLATES = [
   "How this impacts SEO rankings and indexing speed",
   "Best practices for branding and trust building",
   "What top domain investors do differently",
+];
+
+const HUMAN_NOTES = [
+  "Simple rule: if a domain is hard to explain at a coffee table, customers will probably struggle too.",
+  "A good premium domain should feel obvious, trustworthy, and just a little bit unfair to competitors.",
+  "Think of the domain as the front door. If the front door looks solid, people step in faster.",
+  "Do the boring checks first. They save exciting amounts of money later.",
+  "When in doubt, choose clarity over cleverness. Google and humans both appreciate that.",
+];
+
+const EXAMPLE_TITLES = [
+  "Real-world example",
+  "Quick buyer scenario",
+  "Practical takeaway",
+  "Smart shortcut",
+  "Easy way to remember it",
 ];
 
 export interface ArticleSection {
@@ -113,14 +139,25 @@ const estimateReadingMinutes = (props: ExpiredDomainArticleProps) => {
   return Math.max(4, Math.round(words / 220));
 };
 
-/* Split a long paragraph into smaller easy-to-read chunks (~2 sentences each) */
+/* Split long copy into short, mobile-friendly reading blocks. */
 const splitParagraph = (p: string): string[] => {
-  const sentences = p.match(/[^.!?]+[.!?]+(\s|$)/g) || [p];
-  if (sentences.length <= 2) return [p];
+  const sentences = p.match(/[^.!?]+[.!?]+(\s|$)|[^.!?]+$/g)?.map((s) => s.trim()) || [p];
   const chunks: string[] = [];
-  for (let i = 0; i < sentences.length; i += 2) {
-    chunks.push(sentences.slice(i, i + 2).join("").trim());
-  }
+  let current: string[] = [];
+  let words = 0;
+
+  sentences.forEach((sentence) => {
+    const count = sentence.split(/\s+/).filter(Boolean).length;
+    if (current.length && (words + count > 34 || current.length >= 2)) {
+      chunks.push(current.join(" ").trim());
+      current = [];
+      words = 0;
+    }
+    current.push(sentence);
+    words += count;
+  });
+
+  if (current.length) chunks.push(current.join(" ").trim());
   return chunks.filter(Boolean);
 };
 
