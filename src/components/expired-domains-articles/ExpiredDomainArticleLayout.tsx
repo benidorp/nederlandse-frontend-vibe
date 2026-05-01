@@ -770,20 +770,15 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
                     </div>
                     <h2>{section.heading}</h2>
 
-                    {section.paragraphs?.map((p, j) => {
-                      const chunks = splitParagraph(p);
-                      return (
-                        <div key={`s${i}-p${j}`}>
-                          {/* Inject SEO H3 subheading after first paragraph if section has 3+ paragraphs */}
-                          {j === 1 && (section.paragraphs?.length || 0) >= 3 && (
-                            <h3>{subhead}</h3>
-                          )}
-                          {chunks.map((chunk, k) => (
-                            <p key={`s${i}-p${j}-c${k}`}>{chunk}</p>
-                          ))}
-                        </div>
-                      );
-                    })}
+                    {section.paragraphs?.map((p, j) => (
+                      <div key={`s${i}-p${j}`} className="not-prose my-5">
+                        {/* Inject SEO H3 subheading after first paragraph if section has 3+ paragraphs */}
+                        {j === 1 && (section.paragraphs?.length || 0) >= 3 && (
+                          <h3 className="mb-4 mt-8 text-xl font-bold leading-tight text-[#0e2f5c] md:text-2xl">{subhead}</h3>
+                        )}
+                        <ReadableParagraphs paragraphs={[p]} />
+                      </div>
+                    ))}
 
                     {section.bullets && section.bullets.length > 0 && (
                       <ul className="not-prose my-6 space-y-3 rounded-2xl border border-sky-200 bg-gradient-to-br from-sky-50/60 to-white p-5">
@@ -796,18 +791,19 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
                       </ul>
                     )}
                     {section.subsections?.map((sub, m) => (
-                      <div key={`s${i}-sub${m}`}>
-                        <h3>{sub.heading}</h3>
-                        {sub.paragraphs.map((sp, n) => {
-                          const chunks = splitParagraph(sp);
-                          return chunks.map((chunk, q) => (
-                            <p key={`s${i}-sub${m}-p${n}-c${q}`}>{chunk}</p>
-                          ));
-                        })}
+                      <div key={`s${i}-sub${m}`} className="not-prose my-8">
+                        <h3 className="mb-4 text-xl font-bold leading-tight text-[#0e2f5c] md:text-2xl">{sub.heading}</h3>
+                        <ReadableParagraphs paragraphs={sub.paragraphs} />
                       </div>
                     ))}
 
                     {/* Inject visual blocks at strategic points — varied images per article */}
+                    {i === 0 && (
+                      <FriendlyNote note={HUMAN_NOTES[(hashSlug(slug) + i) % HUMAN_NOTES.length]} />
+                    )}
+                    {i === 1 && (
+                      <ExampleBox title={EXAMPLE_TITLES[hashSlug(slug) % EXAMPLE_TITLES.length]} keyword={primaryKeyword} />
+                    )}
                     {i === quarterIndex - 1 && (
                       <SectionImage
                         src={midImg1}
@@ -816,7 +812,12 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
                       />
                     )}
                     {i === midIndex - 1 && pullQuote && <PullQuote>"{pullQuote}"</PullQuote>}
-                    {i === midIndex && <BuyCTA />}
+                    {i === midIndex && (
+                      <>
+                        <FriendlyNote note={HUMAN_NOTES[(hashSlug(slug) + i + 2) % HUMAN_NOTES.length]} />
+                        <BuyCTA />
+                      </>
+                    )}
                     {i === midIndex + 1 && (
                       <SectionImage
                         src={midImg2}
@@ -880,15 +881,10 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
                 <h2 className="mb-4 text-[26px] font-bold leading-tight tracking-tight text-[#0a2540] md:text-3xl">
                   The Bottom Line
                 </h2>
-                <div className="prose prose-slate max-w-none prose-p:text-[17px] prose-p:leading-[1.8] prose-p:text-slate-700 md:prose-p:text-lg">
-                  {conclusion.map((p, i) => {
-                    const chunks = splitParagraph(p);
-                    return chunks.map((chunk, j) => (
-                      <p key={`concl-${i}-${j}`}>{chunk}</p>
-                    ));
-                  })}
+                <div>
+                  <ReadableParagraphs paragraphs={conclusion} />
                   {closingHook && (
-                    <p className="mt-4 text-lg font-semibold text-blue-700">{closingHook}</p>
+                    <p className="mt-5 rounded-xl bg-blue-600/10 p-4 text-lg font-semibold leading-relaxed text-blue-700 md:text-xl">{closingHook}</p>
                   )}
                 </div>
               </div>
