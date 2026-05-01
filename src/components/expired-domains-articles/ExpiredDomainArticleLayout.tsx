@@ -310,7 +310,7 @@ const FeatureGrid = () => (
 );
 
 const BuyCTA = () => (
-  <div className="not-prose my-12 overflow-hidden rounded-3xl border border-blue-700/30 bg-gradient-to-br from-[#0a2540] via-navy to-primary-glow p-7 text-white shadow-2xl md:my-14 md:p-12">
+  <div className="not-prose my-12 overflow-hidden rounded-3xl border border-blue-700/30 bg-gradient-to-br from-navy-dark via-navy to-secondary p-7 text-white shadow-2xl md:my-14 md:p-12">
     <div className="grid gap-7 md:grid-cols-[1.4fr_1fr] md:items-center md:gap-8">
       <div>
         <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-sky-300/40 bg-sky-300/10 px-3 py-1 text-xs font-medium text-sky-200">
@@ -757,13 +757,13 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
             <FeatureGrid />
 
             {/* Sections — improved typography, broken text, SEO H3 subheadings */}
-            <div className="prose prose-slate max-w-none prose-headings:scroll-mt-32 prose-h2:mt-12 prose-h2:text-[28px] prose-h2:font-bold prose-h2:leading-tight prose-h2:tracking-tight prose-h2:text-navy-dark md:prose-h2:mt-16 md:prose-h2:text-[38px] prose-h3:mt-8 prose-h3:text-xl prose-h3:font-bold prose-h3:text-[#0e2f5c] md:prose-h3:text-2xl prose-li:text-slate-700 prose-strong:text-navy-dark prose-a:text-blue-700 hover:prose-a:text-blue-800">
+            <div className="prose prose-slate max-w-none prose-headings:scroll-mt-32 prose-h2:mt-12 prose-h2:text-[28px] prose-h2:font-bold prose-h2:leading-tight prose-h2:tracking-tight prose-h2:text-navy-dark md:prose-h2:mt-16 md:prose-h2:text-[38px] prose-h3:mt-8 prose-h3:text-xl prose-h3:font-bold prose-h3:text-navy md:prose-h3:text-2xl prose-li:text-slate-700 prose-strong:text-navy-dark prose-a:text-blue-700 hover:prose-a:text-blue-800">
               {sections.map((section, i) => {
                 const subhead = SUBHEAD_TEMPLATES[(subheadStart + i) % SUBHEAD_TEMPLATES.length];
                 return (
                   <section key={section.heading} id={slugify(section.heading)} className="mb-2">
                     <div className="not-prose mb-4 mt-12 flex items-center gap-3 md:mt-16">
-                      <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary-glow to-navy-dark text-sm font-bold text-white shadow-md md:h-10 md:w-10">
+                      <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-secondary to-navy-dark text-sm font-bold text-white shadow-md md:h-10 md:w-10">
                         {String(i + 1).padStart(2, "0")}
                       </span>
                       <div className="h-px flex-1 bg-gradient-to-r from-sky-300 via-blue-200 to-transparent" />
@@ -774,7 +774,7 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
                       <div key={`s${i}-p${j}`} className="not-prose my-5">
                         {/* Inject SEO H3 subheading after first paragraph if section has 3+ paragraphs */}
                         {j === 1 && (section.paragraphs?.length || 0) >= 3 && (
-                          <h3 className="mb-4 mt-8 text-xl font-bold leading-tight text-[#0e2f5c] md:text-2xl">{subhead}</h3>
+                          <h3 className="mb-4 mt-8 text-xl font-bold leading-tight text-navy md:text-2xl">{subhead}</h3>
                         )}
                         <ReadableParagraphs paragraphs={[p]} />
                       </div>
@@ -792,7 +792,7 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
                     )}
                     {section.subsections?.map((sub, m) => (
                       <div key={`s${i}-sub${m}`} className="not-prose my-8">
-                        <h3 className="mb-4 text-xl font-bold leading-tight text-[#0e2f5c] md:text-2xl">{sub.heading}</h3>
+                        <h3 className="mb-4 text-xl font-bold leading-tight text-navy md:text-2xl">{sub.heading}</h3>
                         <ReadableParagraphs paragraphs={sub.paragraphs} />
                       </div>
                     ))}
@@ -986,7 +986,7 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
               </nav>
 
               {/* Sidebar CTA */}
-              <div className="rounded-2xl border border-blue-700/30 bg-gradient-to-br from-navy-dark to-primary-glow p-6 text-white shadow-md">
+              <div className="rounded-2xl border border-blue-700/30 bg-gradient-to-br from-navy-dark to-secondary p-6 text-white shadow-md">
                 <Sparkles className="mb-2 h-5 w-5 text-sky-300" />
                 <h3 className="text-lg font-semibold">Premium Domains</h3>
                 <p className="mt-1.5 text-sm text-sky-100/80">
