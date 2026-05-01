@@ -490,6 +490,20 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
   const categoryName = meta?.categoryName;
   const categoryUrl = categoryId ? `${ARTICLES_INDEX}?category=${categoryId}` : ARTICLES_INDEX;
   const related = getRelatedArticles(slug, 6);
+  const enhancedFaqs = useMemo(
+    () => [
+      ...faqs,
+      {
+        question: `Is ${primaryKeyword} still worth considering in 2026?`,
+        answer: `Yes — when the domain has a clean history, relevant authority, and a name people can remember without doing mental gymnastics. Think practical, not magical.`,
+      },
+      {
+        question: `How do I choose the best domain for ${primaryKeyword}?`,
+        answer: `Start with trust signals: short name, clean backlink profile, relevant history, no trademark risk, and a clear match with your business model. If it sounds like a real brand, you are on the right track.`,
+      },
+    ].slice(0, 8),
+    [faqs, primaryKeyword],
+  );
   const tocItems = useMemo(() => sections.map((s) => ({ id: slugify(s.heading), heading: s.heading })), [sections]);
   const activeTocLabel = tocItems.find((item) => item.id === activeId)?.heading || "Start reading";
   const readingMin = estimateReadingMinutes(props);
@@ -537,7 +551,7 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: faqs.map((f) => ({
+    mainEntity: enhancedFaqs.map((f) => ({
       "@type": "Question",
       name: f.question,
       acceptedAnswer: { "@type": "Answer", text: f.answer },
@@ -854,7 +868,7 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
               </div>
               <div className="overflow-hidden rounded-2xl border border-sky-200 bg-white shadow-sm">
                 <Accordion type="single" collapsible className="divide-y divide-sky-100">
-                  {faqs.map((f, i) => (
+                  {enhancedFaqs.map((f, i) => (
                     <AccordionItem
                       key={`faq-${i}`}
                       value={`faq-${i}`}
@@ -967,20 +981,29 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
                 <ol className="space-y-2 text-sm">
                   {tocItems.map((t, i) => (
                     <li key={t.id}>
-                      <a
-                        href={`#${t.id}`}
-                        className="flex gap-2 text-slate-600 transition hover:text-blue-700"
+                      <button
+                        type="button"
+                        onClick={() => handleTocSelect(t.id)}
+                        className={`flex w-full gap-2 rounded-lg px-2 py-2 text-left transition ${
+                          activeId === t.id ? "bg-blue-600 text-white shadow-sm" : "text-slate-600 hover:bg-sky-50 hover:text-blue-700"
+                        }`}
                       >
-                        <span className="text-blue-500">{String(i + 1).padStart(2, "0")}</span>
+                        <span className={activeId === t.id ? "text-white" : "text-blue-500"}>{String(i + 1).padStart(2, "0")}</span>
                         <span className="line-clamp-2">{t.heading}</span>
-                      </a>
+                      </button>
                     </li>
                   ))}
                   <li>
-                    <a href="#faq" className="flex gap-2 font-medium text-blue-700 hover:underline">
+                    <button
+                      type="button"
+                      onClick={() => handleTocSelect("faq")}
+                      className={`flex w-full gap-2 rounded-lg px-2 py-2 text-left font-medium transition ${
+                        activeId === "faq" ? "bg-blue-600 text-white shadow-sm" : "text-blue-700 hover:bg-sky-50"
+                      }`}
+                    >
                       <span>★</span>
                       <span>FAQ</span>
-                    </a>
+                    </button>
                   </li>
                 </ol>
               </nav>
