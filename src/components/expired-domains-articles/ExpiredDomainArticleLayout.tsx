@@ -480,6 +480,8 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
   } = props;
 
   const [tocOpen, setTocOpen] = useState(false);
+  const [mobileTocExpanded, setMobileTocExpanded] = useState(false);
+  const [activeId, setActiveId] = useState<string>("");
 
   const canonical = `${SITE}/expireddomainnames/en/articles/${slug}`;
   const ARTICLES_INDEX = "/expireddomainnames/en/articles";
@@ -488,7 +490,8 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
   const categoryName = meta?.categoryName;
   const categoryUrl = categoryId ? `${ARTICLES_INDEX}?category=${categoryId}` : ARTICLES_INDEX;
   const related = getRelatedArticles(slug, 6);
-  const tocItems = sections.map((s) => ({ id: slugify(s.heading), heading: s.heading }));
+  const tocItems = useMemo(() => sections.map((s) => ({ id: slugify(s.heading), heading: s.heading })), [sections]);
+  const activeTocLabel = tocItems.find((item) => item.id === activeId)?.heading || "Start reading";
   const readingMin = estimateReadingMinutes(props);
   const publishedDate = "2026-04-15";
 
@@ -558,6 +561,31 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
   const midIndex = Math.max(1, Math.floor(sections.length / 2));
   const quarterIndex = Math.max(1, Math.floor(sections.length / 4));
   const threeQuarterIndex = Math.max(1, Math.floor((sections.length * 3) / 4));
+
+  useEffect(() => {
+    const ids = [...tocItems.map((item) => item.id), "faq"];
+    const nodes = ids.map((id) => document.getElementById(id)).filter(Boolean) as HTMLElement[];
+    if (!nodes.length) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (visible?.target.id) setActiveId(visible.target.id);
+      },
+      { rootMargin: "-18% 0px -62% 0px", threshold: [0.05, 0.2, 0.5] },
+    );
+
+    nodes.forEach((node) => observer.observe(node));
+    return () => observer.disconnect();
+  }, [tocItems]);
+
+  const handleTocSelect = (id: string) => {
+    setTocOpen(false);
+    setMobileTocExpanded(false);
+    window.setTimeout(() => scrollToAnchor(id), 20);
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -688,7 +716,7 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
         </button>
       </div>
 
-      <MobileTOC items={tocItems} open={tocOpen} onClose={() => setTocOpen(false)} />
+      <MobileTOC items={tocItems} open={tocOpen} activeId={activeId} onClose={() => setTocOpen(false)} onSelect={handleTocSelect} />
 
       <main className="mx-auto max-w-6xl px-4 py-8 md:py-14">
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_280px]">
