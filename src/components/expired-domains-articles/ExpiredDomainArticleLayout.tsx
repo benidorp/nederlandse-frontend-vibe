@@ -38,12 +38,12 @@ const IMAGE_POOL = [
   "/images/article-blue-strategy.jpg",
   "/images/article-blue-trust.jpg",
   "/images/article-blue-growth.jpg",
-  "/images/article-blue-analytics.jpg",
-  "/images/article-blue-branding.jpg",
-  "/images/article-blue-checklist.jpg",
   "/images/article-blue-commerce.jpg",
   "/images/article-blue-global-map.jpg",
-  "/images/article-blue-investment.jpg",
+  "/images/article-blue-handshake.jpg",
+  "/images/article-blue-server-network.jpg",
+  "/images/article-blue-laptop-clean.jpg",
+  "/images/article-blue-growth-abstract.jpg",
 ];
 
 /* Deterministic hash from slug → ensures each article has its own consistent image rotation */
@@ -702,51 +702,62 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
       </header>
 
       {/* Sticky mobile TOC trigger */}
-      <div className="sticky top-16 z-30 border-b border-sky-200 bg-white/95 backdrop-blur lg:hidden">
-        <button
-          onClick={() => setTocOpen(true)}
-          className="flex w-full items-center justify-between px-4 py-3 text-left text-sm font-semibold text-[#0a2540]"
-          aria-label="Open table of contents"
-        >
-          <span className="flex items-center gap-2">
-            <ListOrdered className="h-4 w-4 text-blue-600" />
-            Table of contents · {sections.length} sections
-          </span>
-          <ChevronRight className="h-4 w-4 text-blue-600" />
-        </button>
+      <div className="sticky top-16 z-30 border-b border-sky-200 bg-white/95 shadow-sm backdrop-blur lg:hidden">
+        <div className="px-3 py-2">
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setTocOpen(true)}
+              className="flex min-w-0 flex-1 items-center justify-between rounded-xl border border-sky-100 bg-white px-3 py-3 text-left text-sm font-semibold text-[#0a2540] shadow-sm"
+              aria-label="Open full table of contents"
+            >
+              <span className="flex min-w-0 items-center gap-2">
+                <ListOrdered className="h-4 w-4 shrink-0 text-blue-600" />
+                <span className="truncate">{activeTocLabel}</span>
+              </span>
+              <Menu className="h-4 w-4 shrink-0 text-blue-600" />
+            </button>
+            <button
+              onClick={() => setMobileTocExpanded((value) => !value)}
+              className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-600 text-white shadow-sm"
+              aria-label={mobileTocExpanded ? "Collapse table of contents" : "Expand quick table of contents"}
+              aria-expanded={mobileTocExpanded}
+            >
+              {mobileTocExpanded ? <Minimize2 className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
+            </button>
+          </div>
+          {mobileTocExpanded && (
+            <div className="mt-2 flex gap-2 overflow-x-auto pb-1">
+              {[...tocItems, { id: "faq", heading: "FAQ" }].map((item, index) => (
+                <button
+                  key={item.id}
+                  onClick={() => handleTocSelect(item.id)}
+                  className={`shrink-0 rounded-full border px-3 py-1.5 text-xs font-medium transition ${
+                    activeId === item.id ? "border-blue-600 bg-blue-600 text-white" : "border-sky-100 bg-white text-slate-700"
+                  }`}
+                >
+                  {item.id === "faq" ? "FAQ" : `${index + 1}. ${item.heading}`}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
 
       <MobileTOC items={tocItems} open={tocOpen} activeId={activeId} onClose={() => setTocOpen(false)} onSelect={handleTocSelect} />
 
-      <main className="mx-auto max-w-6xl px-4 py-8 md:py-14">
-        <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_280px]">
+      <main className="mx-auto max-w-7xl px-4 py-8 md:px-6 md:py-14">
+        <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_300px] xl:gap-14">
           {/* MAIN COLUMN */}
-          <article className="min-w-0 max-w-[68ch]">
+          <article className="min-w-0 max-w-none">
             {/* Lead / intro with dropcap — broken into smaller blocks */}
-            <div className="prose prose-slate max-w-none prose-p:text-[17px] prose-p:leading-[1.75] prose-p:text-slate-700 md:prose-p:text-lg md:prose-p:leading-[1.8]">
-              {intro.map((p, i) => {
-                const chunks = splitParagraph(p);
-                return chunks.map((chunk, j) => (
-                  <p
-                    key={`intro-${i}-${j}`}
-                    className={
-                      i === 0 && j === 0
-                        ? "first-letter:float-left first-letter:mr-3 first-letter:text-6xl first-letter:font-bold first-letter:leading-none first-letter:text-blue-600 md:first-letter:text-7xl"
-                        : ""
-                    }
-                  >
-                    {chunk}
-                  </p>
-                ));
-              })}
-            </div>
+            <ReadableParagraphs paragraphs={intro} firstDropcap />
 
             {takeaways.length >= 3 && <KeyTakeaways items={takeaways} />}
 
             <FeatureGrid />
 
             {/* Sections — improved typography, broken text, SEO H3 subheadings */}
-            <div className="prose prose-slate max-w-none prose-headings:scroll-mt-32 prose-h2:mt-12 prose-h2:text-[26px] prose-h2:font-bold prose-h2:leading-tight prose-h2:tracking-tight prose-h2:text-[#0a2540] md:prose-h2:mt-16 md:prose-h2:text-[34px] prose-h3:mt-8 prose-h3:text-lg prose-h3:font-semibold prose-h3:text-[#0e2f5c] md:prose-h3:text-xl prose-p:text-[17px] prose-p:leading-[1.8] prose-p:text-slate-700 md:prose-p:text-lg prose-li:text-slate-700 prose-strong:text-[#0a2540] prose-a:text-blue-700 hover:prose-a:text-blue-800">
+            <div className="prose prose-slate max-w-none prose-headings:scroll-mt-32 prose-h2:mt-12 prose-h2:text-[28px] prose-h2:font-bold prose-h2:leading-tight prose-h2:tracking-tight prose-h2:text-[#0a2540] md:prose-h2:mt-16 md:prose-h2:text-[38px] prose-h3:mt-8 prose-h3:text-xl prose-h3:font-bold prose-h3:text-[#0e2f5c] md:prose-h3:text-2xl prose-li:text-slate-700 prose-strong:text-[#0a2540] prose-a:text-blue-700 hover:prose-a:text-blue-800">
               {sections.map((section, i) => {
                 const subhead = SUBHEAD_TEMPLATES[(subheadStart + i) % SUBHEAD_TEMPLATES.length];
                 return (
