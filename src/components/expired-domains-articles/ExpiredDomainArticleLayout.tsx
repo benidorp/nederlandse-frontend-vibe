@@ -390,55 +390,72 @@ const TwoColumnBuyBanner = () => (
 const MobileTOC = ({
   items,
   open,
+  activeId,
   onClose,
+  onSelect,
 }: {
   items: { id: string; heading: string }[];
   open: boolean;
+  activeId?: string;
   onClose: () => void;
+  onSelect: (id: string) => void;
 }) => {
   if (!open) return null;
   return (
     <div className="fixed inset-0 z-50 lg:hidden" role="dialog" aria-modal="true" aria-label="Table of contents">
-      <div className="absolute inset-0 bg-[#0a2540]/60 backdrop-blur-sm" onClick={onClose} />
-      <div className="absolute bottom-0 left-0 right-0 max-h-[80vh] overflow-y-auto rounded-t-3xl border-t border-sky-300/30 bg-white p-5 shadow-2xl animate-in slide-in-from-bottom">
-        <div className="mb-4 flex items-center justify-between">
-          <h2 className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#0a2540]">
-            <BookOpen className="h-4 w-4 text-blue-600" /> In This Article
-          </h2>
-          <button
-            onClick={onClose}
-            aria-label="Close table of contents"
-            className="rounded-full p-1.5 text-slate-500 hover:bg-slate-100"
-          >
-            <X className="h-5 w-5" />
-          </button>
-        </div>
-        <ol className="space-y-2 pb-6 text-[15px]">
-          {items.map((t, i) => (
-            <li key={t.id}>
-              <a
-                href={`#${t.id}`}
-                onClick={onClose}
-                className="flex items-start gap-3 rounded-lg px-2 py-2 text-slate-700 transition hover:bg-sky-50 hover:text-blue-700"
-              >
-                <span className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-sky-100 text-xs font-bold text-blue-700">
-                  {i + 1}
-                </span>
-                <span className="leading-snug">{t.heading}</span>
-              </a>
-            </li>
-          ))}
-          <li>
-            <a
-              href="#faq"
+      <button className="absolute inset-0 w-full bg-[#0a2540]/65 backdrop-blur-sm" onClick={onClose} aria-label="Close table of contents overlay" />
+      <div className="absolute bottom-0 left-0 right-0 max-h-[82vh] overflow-hidden rounded-t-3xl border-t border-sky-300/30 bg-white shadow-2xl animate-in slide-in-from-bottom">
+        <div className="sticky top-0 z-10 border-b border-sky-100 bg-white p-5">
+          <div className="mx-auto mb-4 h-1.5 w-12 rounded-full bg-sky-200" aria-hidden />
+          <div className="flex items-center justify-between gap-3">
+            <div>
+              <h2 className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#0a2540]">
+                <BookOpen className="h-4 w-4 text-blue-600" /> Article sections
+              </h2>
+              <p className="mt-1 text-xs text-slate-500">Tap a section to jump there. No treasure map required.</p>
+            </div>
+            <button
               onClick={onClose}
-              className="flex items-start gap-3 rounded-lg px-2 py-2 font-medium text-blue-700 hover:bg-sky-50"
+              aria-label="Close table of contents"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-sky-100 text-slate-500 transition hover:bg-sky-50 hover:text-blue-700"
             >
-              <span className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-600 text-xs font-bold text-white">
+              <X className="h-5 w-5" />
+            </button>
+          </div>
+        </div>
+        <ol className="max-h-[62vh] space-y-2 overflow-y-auto px-5 pb-8 pt-4 text-[15px]">
+          {items.map((t, i) => {
+            const active = activeId === t.id;
+            return (
+              <li key={t.id}>
+                <button
+                  type="button"
+                  onClick={() => onSelect(t.id)}
+                  className={`flex w-full items-start gap-3 rounded-xl px-3 py-3 text-left transition ${
+                    active ? "bg-blue-600 text-white shadow-md" : "text-slate-700 hover:bg-sky-50 hover:text-blue-700"
+                  }`}
+                >
+                  <span className={`mt-0.5 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold ${active ? "bg-white/20 text-white" : "bg-sky-100 text-blue-700"}`}>
+                    {i + 1}
+                  </span>
+                  <span className="leading-snug">{t.heading}</span>
+                </button>
+              </li>
+            );
+          })}
+          <li>
+            <button
+              type="button"
+              onClick={() => onSelect("faq")}
+              className={`flex w-full items-start gap-3 rounded-xl px-3 py-3 text-left font-medium transition ${
+                activeId === "faq" ? "bg-blue-600 text-white shadow-md" : "text-blue-700 hover:bg-sky-50"
+              }`}
+            >
+              <span className={`mt-0.5 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold ${activeId === "faq" ? "bg-white/20 text-white" : "bg-blue-600 text-white"}`}>
                 ★
               </span>
               <span>Frequently Asked Questions</span>
-            </a>
+            </button>
           </li>
         </ol>
       </div>
