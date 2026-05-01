@@ -161,7 +161,82 @@ const splitParagraph = (p: string): string[] => {
   return chunks.filter(Boolean);
 };
 
+const scrollToAnchor = (id: string) => {
+  const node = document.getElementById(id);
+  if (!node) return;
+  node.scrollIntoView({ behavior: "smooth", block: "start" });
+  window.history.replaceState(null, "", `#${id}`);
+};
+
+const keywordPhrase = (keyword: string) =>
+  keyword
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 5)
+    .join(" ");
+
 /* ---------- Reusable visual blocks (deep-blue palette) ---------- */
+
+const ReadableParagraphs = ({
+  paragraphs,
+  firstDropcap = false,
+}: {
+  paragraphs: string[];
+  firstDropcap?: boolean;
+}) => (
+  <div className="not-prose space-y-4">
+    {paragraphs.flatMap((p, i) =>
+      splitParagraph(p).map((chunk, j) => (
+        <p
+          key={`${i}-${j}-${chunk.slice(0, 18)}`}
+          className={`rounded-xl border border-sky-100 bg-white/95 p-4 text-[18px] leading-[1.75] text-slate-700 shadow-sm md:p-5 md:text-[20px] md:leading-[1.8] ${
+            firstDropcap && i === 0 && j === 0
+              ? "first-letter:float-left first-letter:mr-3 first-letter:text-7xl first-letter:font-bold first-letter:leading-none first-letter:text-blue-600"
+              : ""
+          }`}
+        >
+          {chunk}
+        </p>
+      )),
+    )}
+  </div>
+);
+
+const FriendlyNote = ({ note }: { note: string }) => (
+  <aside className="not-prose my-8 rounded-2xl border border-sky-200 bg-gradient-to-br from-sky-50 via-white to-blue-50 p-5 shadow-sm md:p-6">
+    <div className="flex gap-4">
+      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-600/10 text-blue-700">
+        <Smile className="h-5 w-5" />
+      </div>
+      <div>
+        <h3 className="text-lg font-bold text-[#0a2540]">Plain-English tip</h3>
+        <p className="mt-1 text-[16px] leading-relaxed text-slate-700 md:text-[17px]">{note}</p>
+      </div>
+    </div>
+  </aside>
+);
+
+const ExampleBox = ({ title, keyword }: { title: string; keyword: string }) => (
+  <aside className="not-prose my-8 overflow-hidden rounded-2xl border border-blue-200 bg-white shadow-sm">
+    <div className="border-b border-sky-100 bg-gradient-to-r from-blue-50 to-sky-50 px-5 py-3">
+      <h3 className="flex items-center gap-2 text-lg font-bold text-[#0a2540]">
+        <Layers3 className="h-5 w-5 text-blue-600" /> {title}
+      </h3>
+    </div>
+    <div className="grid gap-0 md:grid-cols-3">
+      {[
+        ["Before", `A vague or forgettable domain makes ${keywordPhrase(keyword)} harder to trust.`],
+        ["Better", "A clean premium domain says: yes, this is a serious business."],
+        ["Result", "More clicks, easier recall, and fewer people asking: ‘wait, what was the website again?’"],
+      ].map(([label, text]) => (
+        <div key={label} className="border-t border-sky-100 p-5 md:border-l md:border-t-0 first:md:border-l-0">
+          <p className="text-xs font-bold uppercase tracking-wider text-blue-600">{label}</p>
+          <p className="mt-2 text-[16px] leading-relaxed text-slate-700">{text}</p>
+        </div>
+      ))}
+    </div>
+  </aside>
+);
 
 const KeyTakeaways = ({ items }: { items: string[] }) => (
   <aside className="my-10 overflow-hidden rounded-2xl border border-sky-300/60 bg-gradient-to-br from-sky-50 to-white p-6 shadow-sm md:p-8">
