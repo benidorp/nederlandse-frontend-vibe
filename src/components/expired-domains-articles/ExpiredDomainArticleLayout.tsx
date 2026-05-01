@@ -209,7 +209,7 @@ const FriendlyNote = ({ note }: { note: string }) => (
         <Smile className="h-5 w-5" />
       </div>
       <div>
-        <h3 className="text-lg font-bold text-[#0a2540]">Plain-English tip</h3>
+        <h3 className="text-lg font-bold text-navy-dark">Plain-English tip</h3>
         <p className="mt-1 text-[16px] leading-relaxed text-slate-700 md:text-[17px]">{note}</p>
       </div>
     </div>
@@ -219,7 +219,7 @@ const FriendlyNote = ({ note }: { note: string }) => (
 const ExampleBox = ({ title, keyword }: { title: string; keyword: string }) => (
   <aside className="not-prose my-8 overflow-hidden rounded-2xl border border-blue-200 bg-white shadow-sm">
     <div className="border-b border-sky-100 bg-gradient-to-r from-blue-50 to-sky-50 px-5 py-3">
-      <h3 className="flex items-center gap-2 text-lg font-bold text-[#0a2540]">
+      <h3 className="flex items-center gap-2 text-lg font-bold text-navy-dark">
         <Layers3 className="h-5 w-5 text-blue-600" /> {title}
       </h3>
     </div>
@@ -244,7 +244,7 @@ const KeyTakeaways = ({ items }: { items: string[] }) => (
       <div className="flex h-9 w-9 items-center justify-center rounded-full bg-blue-600/15 text-blue-700">
         <Lightbulb className="h-5 w-5" />
       </div>
-      <h2 className="text-lg font-semibold text-[#0a2540]">Key Takeaways</h2>
+      <h2 className="text-lg font-semibold text-navy-dark">Key Takeaways</h2>
     </div>
     <ul className="grid gap-3 sm:grid-cols-2">
       {items.map((t, i) => (
@@ -260,7 +260,7 @@ const KeyTakeaways = ({ items }: { items: string[] }) => (
 const PullQuote = ({ children }: { children: React.ReactNode }) => (
   <figure className="my-10 border-l-4 border-sky-400 bg-gradient-to-r from-sky-50 to-white px-5 py-6 md:my-12 md:px-8 md:py-8">
     <Quote className="mb-3 h-6 w-6 text-sky-500" />
-    <blockquote className="text-lg font-medium leading-snug text-[#0a2540] md:text-2xl">
+    <blockquote className="text-lg font-medium leading-snug text-navy-dark md:text-2xl">
       {children}
     </blockquote>
   </figure>
@@ -299,10 +299,10 @@ const FeatureGrid = () => (
         key={f.title}
         className="group rounded-2xl border border-sky-200 bg-white p-5 transition hover:-translate-y-0.5 hover:border-blue-400 hover:shadow-lg md:p-6"
       >
-        <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-[#0a2540] text-sky-300 transition group-hover:bg-blue-600 group-hover:text-white">
+        <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-navy-dark text-sky-300 transition group-hover:bg-blue-600 group-hover:text-white">
           <f.icon className="h-5 w-5" />
         </div>
-        <h3 className="text-base font-semibold text-[#0a2540]">{f.title}</h3>
+        <h3 className="text-base font-semibold text-navy-dark">{f.title}</h3>
         <p className="mt-1.5 text-sm leading-relaxed text-slate-600">{f.text}</p>
       </div>
     ))}
@@ -310,7 +310,7 @@ const FeatureGrid = () => (
 );
 
 const BuyCTA = () => (
-  <div className="not-prose my-12 overflow-hidden rounded-3xl border border-blue-700/30 bg-gradient-to-br from-[#0a2540] via-[#0e2f5c] to-[#1e40af] p-7 text-white shadow-2xl md:my-14 md:p-12">
+  <div className="not-prose my-12 overflow-hidden rounded-3xl border border-blue-700/30 bg-gradient-to-br from-[#0a2540] via-navy to-primary-glow p-7 text-white shadow-2xl md:my-14 md:p-12">
     <div className="grid gap-7 md:grid-cols-[1.4fr_1fr] md:items-center md:gap-8">
       <div>
         <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-sky-300/40 bg-sky-300/10 px-3 py-1 text-xs font-medium text-sky-200">
@@ -324,7 +324,7 @@ const BuyCTA = () => (
           instant credibility — ready to launch your next project.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
-          <Button asChild size="lg" className="bg-sky-300 text-[#0a2540] hover:bg-sky-200">
+          <Button asChild size="lg" className="bg-sky-300 text-navy-dark hover:bg-sky-200">
             <Link to={MARKETPLACE_URL}>
               View Available Domains <ArrowRight className="ml-1" />
             </Link>
@@ -356,12 +356,12 @@ const TwoColumnBuyBanner = () => (
       <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-sky-100 px-3 py-1 text-xs font-medium text-blue-800">
         <ShieldCheck className="h-3.5 w-3.5" /> Verified Authority
       </div>
-      <h3 className="text-xl font-semibold text-[#0a2540]">Premium Expired Domains</h3>
+      <h3 className="text-xl font-semibold text-navy-dark">Premium Expired Domains</h3>
       <p className="mt-2 text-slate-600">
         Hand-vetted expired domains with strong MOZ scores, real backlinks, and proven topical
         history. Ready to power your next project.
       </p>
-      <Button asChild className="mt-5 w-full bg-[#0a2540] text-white hover:bg-[#0e2f5c]">
+      <Button asChild className="mt-5 w-full bg-navy-dark text-white hover:bg-navy">
         <Link to={MARKETPLACE_URL}>
           Browse Marketplace <ArrowRight className="ml-1" />
         </Link>
@@ -371,7 +371,7 @@ const TwoColumnBuyBanner = () => (
       <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-blue-200/70 px-3 py-1 text-xs font-medium text-blue-900">
         <Globe2 className="h-3.5 w-3.5" /> Brandable & SEO-Ready
       </div>
-      <h3 className="text-xl font-semibold text-[#0a2540]">Find Your Domain Today</h3>
+      <h3 className="text-xl font-semibold text-navy-dark">Find Your Domain Today</h3>
       <p className="mt-2 text-slate-700">
         Skip months of waiting for organic authority. Choose from premium domains built to give
         serious operators an immediate edge.
@@ -403,13 +403,13 @@ const MobileTOC = ({
   if (!open) return null;
   return (
     <div className="fixed inset-0 z-50 lg:hidden" role="dialog" aria-modal="true" aria-label="Table of contents">
-      <button className="absolute inset-0 w-full bg-[#0a2540]/65 backdrop-blur-sm" onClick={onClose} aria-label="Close table of contents overlay" />
+      <button className="absolute inset-0 w-full bg-navy-dark/65 backdrop-blur-sm" onClick={onClose} aria-label="Close table of contents overlay" />
       <div className="absolute bottom-0 left-0 right-0 max-h-[82vh] overflow-hidden rounded-t-3xl border-t border-sky-300/30 bg-white shadow-2xl animate-in slide-in-from-bottom">
         <div className="sticky top-0 z-10 border-b border-sky-100 bg-white p-5">
           <div className="mx-auto mb-4 h-1.5 w-12 rounded-full bg-sky-200" aria-hidden />
           <div className="flex items-center justify-between gap-3">
             <div>
-              <h2 className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#0a2540]">
+              <h2 className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-navy-dark">
                 <BookOpen className="h-4 w-4 text-blue-600" /> Article sections
               </h2>
               <p className="mt-1 text-xs text-slate-500">Tap a section to jump there. No treasure map required.</p>
@@ -612,7 +612,7 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
       <HeaderEN />
 
       {/* HERO — deep blue, matches reference */}
-      <header className="relative overflow-hidden border-b border-blue-900/20 bg-gradient-to-br from-[#061a36] via-[#0a2540] to-[#0e2f5c] text-white">
+      <header className="relative overflow-hidden border-b border-blue-900/20 bg-gradient-to-br from-navy-dark via-navy to-primary text-white">
         {/* subtle grid overlay */}
         <div
           className="absolute inset-0 opacity-[0.07]"
@@ -645,7 +645,7 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
             width={1280}
             height={400}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0a2540]/60 to-[#0a2540]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-navy-dark/60 to-navy-dark" />
         </div>
 
         <div className="relative mx-auto max-w-6xl px-4 py-10 md:py-20">
@@ -707,7 +707,7 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
           <div className="flex items-center gap-2">
             <button
               onClick={() => setTocOpen(true)}
-              className="flex min-w-0 flex-1 items-center justify-between rounded-xl border border-sky-100 bg-white px-3 py-3 text-left text-sm font-semibold text-[#0a2540] shadow-sm"
+              className="flex min-w-0 flex-1 items-center justify-between rounded-xl border border-sky-100 bg-white px-3 py-3 text-left text-sm font-semibold text-navy-dark shadow-sm"
               aria-label="Open full table of contents"
             >
               <span className="flex min-w-0 items-center gap-2">
@@ -757,13 +757,13 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
             <FeatureGrid />
 
             {/* Sections — improved typography, broken text, SEO H3 subheadings */}
-            <div className="prose prose-slate max-w-none prose-headings:scroll-mt-32 prose-h2:mt-12 prose-h2:text-[28px] prose-h2:font-bold prose-h2:leading-tight prose-h2:tracking-tight prose-h2:text-[#0a2540] md:prose-h2:mt-16 md:prose-h2:text-[38px] prose-h3:mt-8 prose-h3:text-xl prose-h3:font-bold prose-h3:text-[#0e2f5c] md:prose-h3:text-2xl prose-li:text-slate-700 prose-strong:text-[#0a2540] prose-a:text-blue-700 hover:prose-a:text-blue-800">
+            <div className="prose prose-slate max-w-none prose-headings:scroll-mt-32 prose-h2:mt-12 prose-h2:text-[28px] prose-h2:font-bold prose-h2:leading-tight prose-h2:tracking-tight prose-h2:text-navy-dark md:prose-h2:mt-16 md:prose-h2:text-[38px] prose-h3:mt-8 prose-h3:text-xl prose-h3:font-bold prose-h3:text-[#0e2f5c] md:prose-h3:text-2xl prose-li:text-slate-700 prose-strong:text-navy-dark prose-a:text-blue-700 hover:prose-a:text-blue-800">
               {sections.map((section, i) => {
                 const subhead = SUBHEAD_TEMPLATES[(subheadStart + i) % SUBHEAD_TEMPLATES.length];
                 return (
                   <section key={section.heading} id={slugify(section.heading)} className="mb-2">
                     <div className="not-prose mb-4 mt-12 flex items-center gap-3 md:mt-16">
-                      <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-blue-600 to-[#0a2540] text-sm font-bold text-white shadow-md md:h-10 md:w-10">
+                      <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary-glow to-navy-dark text-sm font-bold text-white shadow-md md:h-10 md:w-10">
                         {String(i + 1).padStart(2, "0")}
                       </span>
                       <div className="h-px flex-1 bg-gradient-to-r from-sky-300 via-blue-200 to-transparent" />
@@ -844,7 +844,7 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
                   <Lightbulb className="h-5 w-5" />
                 </div>
                 <div>
-                  <h2 className="text-[26px] font-bold leading-tight tracking-tight text-[#0a2540] md:text-3xl">
+                  <h2 className="text-[26px] font-bold leading-tight tracking-tight text-navy-dark md:text-3xl">
                     Frequently Asked Questions
                   </h2>
                   <p className="mt-1 text-sm text-slate-600 md:text-base">
@@ -862,7 +862,7 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
                     >
                       <AccordionTrigger
                         headingLevel="h3"
-                        className="text-left text-[15px] font-semibold text-[#0a2540] hover:no-underline data-[state=open]:text-blue-700 md:text-base"
+                        className="text-left text-[15px] font-semibold text-navy-dark hover:no-underline data-[state=open]:text-blue-700 md:text-base"
                       >
                         {f.question}
                       </AccordionTrigger>
@@ -878,7 +878,7 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
             {/* Conclusion */}
             <section className="mt-14 md:mt-16">
               <div className="rounded-2xl border border-sky-200 bg-gradient-to-br from-sky-50 to-white p-6 md:p-10">
-                <h2 className="mb-4 text-[26px] font-bold leading-tight tracking-tight text-[#0a2540] md:text-3xl">
+                <h2 className="mb-4 text-[26px] font-bold leading-tight tracking-tight text-navy-dark md:text-3xl">
                   The Bottom Line
                 </h2>
                 <div>
@@ -902,7 +902,7 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
                 <div key={t.title} className="flex items-start gap-3">
                   <t.icon className="mt-0.5 h-5 w-5 text-blue-600" />
                   <div>
-                    <p className="text-sm font-semibold text-[#0a2540]">{t.title}</p>
+                    <p className="text-sm font-semibold text-navy-dark">{t.title}</p>
                     <p className="text-xs text-slate-600">{t.text}</p>
                   </div>
                 </div>
@@ -914,7 +914,7 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
               <aside className="mt-14 md:mt-16">
                 <div className="mb-5 flex flex-wrap items-center gap-3 md:mb-6">
                   <BookOpen className="h-6 w-6 text-blue-600" />
-                  <h2 className="text-2xl font-bold tracking-tight text-[#0a2540]">Continue Reading</h2>
+                  <h2 className="text-2xl font-bold tracking-tight text-navy-dark">Continue Reading</h2>
                   {categoryName && (
                     <Link
                       to={categoryUrl}
@@ -934,7 +934,7 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
                         <p className="text-xs font-medium uppercase tracking-wider text-blue-600">
                           {r.categoryName}
                         </p>
-                        <h3 className="mt-2 text-base font-semibold leading-snug text-[#0a2540] group-hover:text-blue-700">
+                        <h3 className="mt-2 text-base font-semibold leading-snug text-navy-dark group-hover:text-blue-700">
                           {r.h1}
                         </h3>
                         <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-slate-600">
@@ -961,7 +961,7 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
             <div className="sticky top-24 space-y-6">
               {/* TOC */}
               <nav aria-label="Table of contents" className="rounded-2xl border border-sky-200 bg-white p-5 shadow-sm">
-                <h2 className="mb-3 flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#0a2540]">
+                <h2 className="mb-3 flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-navy-dark">
                   <BookOpen className="h-4 w-4 text-blue-600" /> In This Article
                 </h2>
                 <ol className="space-y-2 text-sm">
@@ -986,13 +986,13 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
               </nav>
 
               {/* Sidebar CTA */}
-              <div className="rounded-2xl border border-blue-700/30 bg-gradient-to-br from-[#0a2540] to-[#1e40af] p-6 text-white shadow-md">
+              <div className="rounded-2xl border border-blue-700/30 bg-gradient-to-br from-navy-dark to-primary-glow p-6 text-white shadow-md">
                 <Sparkles className="mb-2 h-5 w-5 text-sky-300" />
                 <h3 className="text-lg font-semibold">Premium Domains</h3>
                 <p className="mt-1.5 text-sm text-sky-100/80">
                   Hand-picked, authority-backed domains for serious operators.
                 </p>
-                <Button asChild size="sm" className="mt-4 w-full bg-sky-300 text-[#0a2540] hover:bg-sky-200">
+                <Button asChild size="sm" className="mt-4 w-full bg-sky-300 text-navy-dark hover:bg-sky-200">
                   <Link to={MARKETPLACE_URL}>
                     Browse Marketplace <ArrowRight className="ml-1" />
                   </Link>
@@ -1001,7 +1001,7 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
 
               {/* Trust signals */}
               <div className="rounded-2xl border border-sky-200 bg-white p-5 shadow-sm">
-                <h3 className="mb-3 text-sm font-bold uppercase tracking-wider text-[#0a2540]">Why IAEE</h3>
+                <h3 className="mb-3 text-sm font-bold uppercase tracking-wider text-navy-dark">Why IAEE</h3>
                 <ul className="space-y-2.5 text-sm text-slate-600">
                   <li className="flex gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-blue-600" /> Verified MOZ DA & DR</li>
                   <li className="flex gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-blue-600" /> Clean backlink profiles</li>
