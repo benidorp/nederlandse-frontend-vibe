@@ -629,6 +629,23 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
     return () => observer.disconnect();
   }, [tocItems]);
 
+  // Reading-progress bar
+  useEffect(() => {
+    const onScroll = () => {
+      const doc = document.documentElement;
+      const total = (doc.scrollHeight - doc.clientHeight) || 1;
+      const pct = Math.min(100, Math.max(0, (window.scrollY / total) * 100));
+      setProgress(pct);
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
+  }, []);
+
   const handleTocSelect = (id: string) => {
     setTocOpen(false);
     setMobileTocExpanded(false);
