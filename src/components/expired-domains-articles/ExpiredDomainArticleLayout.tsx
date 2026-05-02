@@ -915,7 +915,11 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
                   The Bottom Line
                 </h2>
                 <div>
-                  <ReadableParagraphs paragraphs={conclusion} />
+                  <div className="space-y-5">
+                    {conclusion.map((p, i) => (
+                      <LongFormParagraph key={`concl-${i}`} text={p} />
+                    ))}
+                  </div>
                   {closingHook && (
                     <p className="mt-5 rounded-xl bg-blue-600/10 p-4 text-lg font-semibold leading-relaxed text-blue-700 md:text-xl">{closingHook}</p>
                   )}
