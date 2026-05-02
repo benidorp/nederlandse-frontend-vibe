@@ -59,7 +59,7 @@ const pickImages = (slug: string) => {
   return [0, 1, 2, 3].map((i) => IMAGE_POOL[(start + i) % IMAGE_POOL.length]);
 };
 
-/* SEO-rich H3 subheading templates — rotate based on section index + slug hash */
+/* SEO-rich H3 subheading templates — large pool, deterministic per paragraph */
 const SUBHEAD_TEMPLATES = [
   "Why this matters for your domain investment in 2026",
   "Key signals serious buyers look at first",
@@ -71,6 +71,21 @@ const SUBHEAD_TEMPLATES = [
   "How this impacts SEO rankings and indexing speed",
   "Best practices for branding and trust building",
   "What top domain investors do differently",
+  "The structural reason most cheap domains fail",
+  "Where real authority comes from — and where it doesn't",
+  "Reading the backlink profile like a professional",
+  "How aged domains shorten the path to page one",
+  "The trust gap between a brand domain and a generic one",
+  "What to verify before you transfer a single euro",
+  "How buyers spot toxic history in under five minutes",
+  "Brand recall: the silent multiplier of paid traffic",
+  "Why short, clean .com still wins in 2026",
+  "The hidden cost of picking the wrong name",
+  "How smart operators stack authority over time",
+  "From domain to brand: turning a name into equity",
+  "When a higher price actually pays for itself",
+  "The negotiation moves that quietly save thousands",
+  "How to think about domains as appreciating assets",
 ];
 
 const HUMAN_NOTES = [
