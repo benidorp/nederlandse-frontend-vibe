@@ -59,6 +59,42 @@ const pickImages = (slug: string) => {
   return [0, 1, 2, 3].map((i) => IMAGE_POOL[(start + i) % IMAGE_POOL.length]);
 };
 
+/* Deterministic non-repeating permutation of the image pool — gives every section
+   in an article its own unique image, and varies the order across articles. */
+const buildSectionImages = (slug: string, count: number): string[] => {
+  const pool = [...IMAGE_POOL];
+  const h = hashSlug(slug);
+  // Fisher–Yates with a deterministic PRNG seeded by slug hash
+  let seed = h || 1;
+  const rand = () => {
+    seed = (seed * 1664525 + 1013904223) >>> 0;
+    return seed / 0xffffffff;
+  };
+  for (let i = pool.length - 1; i > 0; i--) {
+    const j = Math.floor(rand() * (i + 1));
+    [pool[i], pool[j]] = [pool[j], pool[i]];
+  }
+  const out: string[] = [];
+  for (let i = 0; i < count; i++) out.push(pool[i % pool.length]);
+  return out;
+};
+
+/* Section-aware caption + alt builders so every figure feels unique */
+const captionForSection = (heading: string, keyword: string): string => {
+  const h = heading.toLowerCase();
+  if (/(authority|trust|rank)/.test(h)) return `Why ${keyword} compounds real authority over time.`;
+  if (/(buy|acquire|negotiat|price|invest|roi)/.test(h)) return `Smart acquisition turns ${keyword} into a long-term asset.`;
+  if (/(brand|name|memorab|recall)/.test(h)) return `Strong naming makes ${keyword} stick in customer memory.`;
+  if (/(seo|search|google|ranking|backlink|link)/.test(h)) return `Search signals reward clean, well-aged ${keyword}.`;
+  if (/(history|wayback|spam|toxic|penalt)/.test(h)) return `History matters: vetted ${keyword} avoids hidden risk.`;
+  if (/(strategy|portfolio|stack|growth|future|scale)/.test(h)) return `Strategic ${keyword} scales with the brand it powers.`;
+  if (/(market|industry|niche|vertical|region)/.test(h)) return `Market context shapes the real value of ${keyword}.`;
+  if (/(technical|transfer|migration|redirect|registr)/.test(h)) return `Solid technical execution protects ${keyword} value.`;
+  return `${heading} — practical view on ${keyword}.`;
+};
+const altForSection = (heading: string, keyword: string): string =>
+  `${heading} — editorial illustration for ${keyword}`;
+
 /* SEO-rich H3 subheading templates — large pool, deterministic per paragraph */
 const SUBHEAD_TEMPLATES = [
   "Why this matters for your domain investment in 2026",
