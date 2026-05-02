@@ -676,6 +676,14 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
 
       <HeaderEN />
 
+      {/* Reading-progress bar — sticky at very top */}
+      <div className="fixed inset-x-0 top-0 z-[60] h-1 bg-transparent pointer-events-none" aria-hidden>
+        <div
+          className="h-full bg-gradient-to-r from-sky-400 via-blue-500 to-blue-700 transition-[width] duration-150 ease-out"
+          style={{ width: `${progress}%` }}
+        />
+      </div>
+
       {/* HERO — deep blue, matches reference */}
       <header className="relative overflow-hidden border-b border-blue-900/20 bg-gradient-to-br from-navy-dark via-navy to-primary text-white">
         {/* subtle grid overlay */}
