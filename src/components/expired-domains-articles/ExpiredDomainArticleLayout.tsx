@@ -759,17 +759,28 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_300px] xl:gap-14">
           {/* MAIN COLUMN */}
           <article className="min-w-0 max-w-none">
-            {/* Lead / intro with dropcap — broken into smaller blocks */}
-            <ReadableParagraphs paragraphs={intro} firstDropcap />
+            {/* Lead / intro — long-form editorial flow with TL;DR */}
+            <div className="space-y-6">
+              {intro.map((p, i) => (
+                <LongFormParagraph key={`intro-${i}`} text={p} dropcap={i === 0} />
+              ))}
+            </div>
+
+            {intro[0] && (
+              <TLDR
+                text={(intro[intro.length - 1] || intro[0]).split(". ").slice(0, 2).join(". ")}
+                keyword={primaryKeyword}
+              />
+            )}
 
             {takeaways.length >= 3 && <KeyTakeaways items={takeaways} />}
 
             <FeatureGrid />
 
-            {/* Sections — improved typography, broken text, SEO H3 subheadings */}
-            <div className="prose prose-slate max-w-none prose-headings:scroll-mt-32 prose-h2:mt-12 prose-h2:text-[28px] prose-h2:font-bold prose-h2:leading-tight prose-h2:tracking-tight prose-h2:text-navy-dark md:prose-h2:mt-16 md:prose-h2:text-[38px] prose-h3:mt-8 prose-h3:text-xl prose-h3:font-bold prose-h3:text-navy md:prose-h3:text-2xl prose-li:text-slate-700 prose-strong:text-navy-dark prose-a:text-blue-700 hover:prose-a:text-blue-800">
+            {/* Sections — magazine-style long-form with H3 SEO subhead above every paragraph */}
+            <div className="prose prose-slate max-w-none prose-headings:scroll-mt-32 prose-h2:mt-12 prose-h2:text-[30px] prose-h2:font-bold prose-h2:leading-tight prose-h2:tracking-tight prose-h2:text-navy-dark md:prose-h2:mt-16 md:prose-h2:text-[40px] prose-h3:mt-10 prose-h3:text-[20px] prose-h3:font-bold prose-h3:leading-snug prose-h3:text-navy md:prose-h3:text-[26px] prose-li:text-slate-700 prose-strong:text-navy-dark prose-a:text-blue-700 hover:prose-a:text-blue-800">
               {sections.map((section, i) => {
-                const subhead = SUBHEAD_TEMPLATES[(subheadStart + i) % SUBHEAD_TEMPLATES.length];
+                const paragraphs = section.paragraphs ?? [];
                 return (
                   <section key={section.heading} id={slugify(section.heading)} className="mb-2">
                     <div className="not-prose mb-4 mt-12 flex items-center gap-3 md:mt-16">
@@ -780,20 +791,28 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
                     </div>
                     <h2>{section.heading}</h2>
 
-                    {section.paragraphs?.map((p, j) => (
-                      <div key={`s${i}-p${j}`} className="not-prose my-5">
-                        {/* Inject SEO H3 subheading after first paragraph if section has 3+ paragraphs */}
-                        {j === 1 && (section.paragraphs?.length || 0) >= 3 && (
-                          <h3 className="mb-4 mt-8 text-xl font-bold leading-tight text-navy md:text-2xl">{subhead}</h3>
-                        )}
-                        <ReadableParagraphs paragraphs={[p]} />
-                      </div>
-                    ))}
+                    {paragraphs.map((p, j) => {
+                      // SEO H3 subheading above EVERY paragraph (skip first if it's the lead-in)
+                      const subhead =
+                        j === 0
+                          ? null
+                          : SUBHEAD_TEMPLATES[(subheadStart + i * 3 + j) % SUBHEAD_TEMPLATES.length];
+                      return (
+                        <div key={`s${i}-p${j}`} className="not-prose my-6 md:my-8">
+                          {subhead && (
+                            <h3 className="mb-4 mt-8 text-[20px] font-bold leading-snug tracking-tight text-navy md:text-[26px]">
+                              {subhead}
+                            </h3>
+                          )}
+                          <LongFormParagraph text={p} />
+                        </div>
+                      );
+                    })}
 
                     {section.bullets && section.bullets.length > 0 && (
-                      <ul className="not-prose my-6 space-y-3 rounded-2xl border border-sky-200 bg-gradient-to-br from-sky-50/60 to-white p-5">
+                      <ul className="not-prose my-8 space-y-3 rounded-2xl border border-sky-200 bg-gradient-to-br from-sky-50/60 to-white p-5 md:p-6">
                         {section.bullets.map((b, k) => (
-                          <li key={`s${i}-b${k}`} className="flex gap-3 text-[15px] leading-relaxed text-slate-700 md:text-base">
+                          <li key={`s${i}-b${k}`} className="flex gap-3 text-[16px] leading-relaxed text-slate-700 md:text-[17px]">
                             <Target className="mt-1 h-4 w-4 shrink-0 text-blue-600" />
                             <span>{b}</span>
                           </li>
@@ -801,13 +820,17 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
                       </ul>
                     )}
                     {section.subsections?.map((sub, m) => (
-                      <div key={`s${i}-sub${m}`} className="not-prose my-8">
-                        <h3 className="mb-4 text-xl font-bold leading-tight text-navy md:text-2xl">{sub.heading}</h3>
-                        <ReadableParagraphs paragraphs={sub.paragraphs} />
+                      <div key={`s${i}-sub${m}`} className="not-prose my-10 space-y-6">
+                        <h3 className="mb-2 text-[20px] font-bold leading-snug tracking-tight text-navy md:text-[26px]">
+                          {sub.heading}
+                        </h3>
+                        {sub.paragraphs.map((sp, n) => (
+                          <LongFormParagraph key={`s${i}-sub${m}-p${n}`} text={sp} />
+                        ))}
                       </div>
                     ))}
 
-                    {/* Inject visual blocks at strategic points — varied images per article */}
+                    {/* Visual blocks at strategic points */}
                     {i === 0 && (
                       <FriendlyNote note={HUMAN_NOTES[(hashSlug(slug) + i) % HUMAN_NOTES.length]} />
                     )}
