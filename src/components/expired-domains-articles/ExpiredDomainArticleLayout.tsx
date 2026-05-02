@@ -868,19 +868,19 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
                       </div>
                     ))}
 
-                    {/* Visual blocks at strategic points */}
+                    {/* Unique per-section visual — every section gets its own image, no repeats within an article */}
+                    <SectionImage
+                      src={sectionImages[i]}
+                      alt={altForSection(section.heading, primaryKeyword)}
+                      caption={captionForSection(section.heading, primaryKeyword)}
+                    />
+
+                    {/* Editorial accents at strategic points */}
                     {i === 0 && (
                       <FriendlyNote note={HUMAN_NOTES[(hashSlug(slug) + i) % HUMAN_NOTES.length]} />
                     )}
                     {i === 1 && (
                       <ExampleBox title={EXAMPLE_TITLES[hashSlug(slug) % EXAMPLE_TITLES.length]} keyword={primaryKeyword} />
-                    )}
-                    {i === quarterIndex - 1 && (
-                      <SectionImage
-                        src={midImg1}
-                        alt={`Authority and trust signals for ${primaryKeyword}`}
-                        caption="Real authority compounds — backlinks, age, and topical history all matter."
-                      />
                     )}
                     {i === midIndex - 1 && pullQuote && <PullQuote>"{pullQuote}"</PullQuote>}
                     {i === midIndex && (
@@ -888,20 +888,6 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
                         <FriendlyNote note={HUMAN_NOTES[(hashSlug(slug) + i + 2) % HUMAN_NOTES.length]} />
                         <BuyCTA />
                       </>
-                    )}
-                    {i === midIndex + 1 && (
-                      <SectionImage
-                        src={midImg2}
-                        alt={`Strategic insights for ${primaryKeyword}`}
-                        caption="Smart domain decisions today shape brand equity for the next decade."
-                      />
-                    )}
-                    {i === threeQuarterIndex && (
-                      <SectionImage
-                        src={midImg3}
-                        alt={`Long-term value of ${primaryKeyword}`}
-                        caption="A premium domain is a long-horizon brand asset, not a line-item expense."
-                      />
                     )}
                   </section>
                 );
