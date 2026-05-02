@@ -514,6 +514,7 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
   const [tocOpen, setTocOpen] = useState(false);
   const [mobileTocExpanded, setMobileTocExpanded] = useState(false);
   const [activeId, setActiveId] = useState<string>("");
+  const [progress, setProgress] = useState(0);
 
   const canonical = `${SITE}/expireddomainnames/en/articles/${slug}`;
   const ARTICLES_INDEX = "/expireddomainnames/en/articles";
@@ -541,8 +542,9 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
   const readingMin = estimateReadingMinutes(props);
   const publishedDate = "2026-04-15";
 
-  // Image rotation per article (deterministic)
-  const [heroImg, midImg1, midImg2, midImg3] = pickImages(slug);
+  // Image rotation per article (deterministic) — hero + per-section unique visuals
+  const [heroImg] = pickImages(slug);
+  const sectionImages = useMemo(() => buildSectionImages(slug, sections.length), [slug, sections.length]);
   const subheadStart = hashSlug(slug) % SUBHEAD_TEMPLATES.length;
 
   // Build key takeaways from first sentences of first 4 sections
