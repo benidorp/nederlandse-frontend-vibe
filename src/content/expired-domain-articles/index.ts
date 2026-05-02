@@ -127,6 +127,24 @@ import a_why_short_domains_sell_for_six_figures from "./data/why-short-domains-s
 import a_why_the_com_tld_still_dominates_in_2026 from "./data/why-the-com-tld-still-dominates-in-2026";
 import a_why_your_domain_is_your_most_important_marketing_channel from "./data/why-your-domain-is-your-most-important-marketing-channel";
 
+import a_how_to_spot_undervalued_premium_domains from "./data/how-to-spot-undervalued-premium-domains";
+import a_why_clean_anchor_text_profiles_protect_domain_value from "./data/why-clean-anchor-text-profiles-protect-domain-value";
+import a_how_to_build_an_evergreen_content_hub_on_an_expired_domain from "./data/how-to-build-an-evergreen-content-hub-on-an-expired-domain";
+import a_premium_domains_for_clean_energy_and_climate_tech from "./data/premium-domains-for-clean-energy-and-climate-tech";
+import a_how_domain_trust_impacts_conversion_on_checkout_pages from "./data/how-domain-trust-impacts-conversion-on-checkout-pages";
+import a_why_typo_domains_still_have_real_business_value from "./data/why-typo-domains-still-have-real-business-value";
+import a_how_to_evaluate_domains_with_foreign_language_backlinks from "./data/how-to-evaluate-domains-with-foreign-language-backlinks";
+import a_premium_domains_for_cross_border_ecommerce_brands from "./data/premium-domains-for-cross-border-ecommerce-brands";
+import a_how_to_use_historical_screenshots_to_vet_an_expired_domain from "./data/how-to-use-historical-screenshots-to-vet-an-expired-domain";
+import a_why_niche_relevance_beats_raw_domain_authority from "./data/why-niche-relevance-beats-raw-domain-authority";
+import a_how_premium_domains_help_with_investor_pitch_credibility from "./data/how-premium-domains-help-with-investor-pitch-credibility";
+import a_how_to_rebuild_an_expired_domain_without_tripping_google from "./data/how-to-rebuild-an-expired-domain-without-tripping-google";
+import a_the_economics_of_domain_portfolio_renewals from "./data/the-economics-of-domain-portfolio-renewals";
+import a_how_to_pick_a_domain_for_a_newsletter_first_business from "./data/how-to-pick-a-domain-for-a-newsletter-first-business";
+import a_why_acquiring_a_domain_with_existing_traffic_is_a_shortcut from "./data/why-acquiring-a-domain-with-existing-traffic-is-a-shortcut";
+import a_premium_domains_for_marketplaces_built_on_trust from "./data/premium-domains-for-marketplaces-built-on-trust";
+import a_how_to_write_a_domain_acquisition_policy_for_your_company from "./data/how-to-write-a-domain-acquisition-policy-for-your-company";
+
 export const ARTICLES: Record<string, ExpiredDomainArticleProps> = {
   "301-redirect-strategy-for-expired-domains": a_301_redirect_strategy_for_expired_domains,
   "better-domain-name-saves-branding-time-budget": a_better_domain_name_saves_branding_time_budget,
@@ -252,7 +270,24 @@ export const ARTICLES: Record<string, ExpiredDomainArticleProps> = {
   "why-premium-expired-domains-worth-more-than-you-think": a_why_premium_expired_domains_worth_more_than_you_think,
   "why-short-domains-sell-for-six-figures": a_why_short_domains_sell_for_six_figures,
   "why-the-com-tld-still-dominates-in-2026": a_why_the_com_tld_still_dominates_in_2026,
-  "why-your-domain-is-your-most-important-marketing-channel": a_why_your_domain_is_your_most_important_marketing_channel
+  "why-your-domain-is-your-most-important-marketing-channel": a_why_your_domain_is_your_most_important_marketing_channel,
+  "how-to-spot-undervalued-premium-domains": a_how_to_spot_undervalued_premium_domains,
+  "why-clean-anchor-text-profiles-protect-domain-value": a_why_clean_anchor_text_profiles_protect_domain_value,
+  "how-to-build-an-evergreen-content-hub-on-an-expired-domain": a_how_to_build_an_evergreen_content_hub_on_an_expired_domain,
+  "premium-domains-for-clean-energy-and-climate-tech": a_premium_domains_for_clean_energy_and_climate_tech,
+  "how-domain-trust-impacts-conversion-on-checkout-pages": a_how_domain_trust_impacts_conversion_on_checkout_pages,
+  "why-typo-domains-still-have-real-business-value": a_why_typo_domains_still_have_real_business_value,
+  "how-to-evaluate-domains-with-foreign-language-backlinks": a_how_to_evaluate_domains_with_foreign_language_backlinks,
+  "premium-domains-for-cross-border-ecommerce-brands": a_premium_domains_for_cross_border_ecommerce_brands,
+  "how-to-use-historical-screenshots-to-vet-an-expired-domain": a_how_to_use_historical_screenshots_to_vet_an_expired_domain,
+  "why-niche-relevance-beats-raw-domain-authority": a_why_niche_relevance_beats_raw_domain_authority,
+  "how-premium-domains-help-with-investor-pitch-credibility": a_how_premium_domains_help_with_investor_pitch_credibility,
+  "how-to-rebuild-an-expired-domain-without-tripping-google": a_how_to_rebuild_an_expired_domain_without_tripping_google,
+  "the-economics-of-domain-portfolio-renewals": a_the_economics_of_domain_portfolio_renewals,
+  "how-to-pick-a-domain-for-a-newsletter-first-business": a_how_to_pick_a_domain_for_a_newsletter_first_business,
+  "why-acquiring-a-domain-with-existing-traffic-is-a-shortcut": a_why_acquiring_a_domain_with_existing_traffic_is_a_shortcut,
+  "premium-domains-for-marketplaces-built-on-trust": a_premium_domains_for_marketplaces_built_on_trust,
+  "how-to-write-a-domain-acquisition-policy-for-your-company": a_how_to_write_a_domain_acquisition_policy_for_your_company
 };
 
 export const ARTICLE_SLUGS: string[] = [
@@ -381,6 +416,23 @@ export const ARTICLE_SLUGS: string[] = [
   "why-short-domains-sell-for-six-figures",
   "why-the-com-tld-still-dominates-in-2026",
   "why-your-domain-is-your-most-important-marketing-channel",
+  "how-to-spot-undervalued-premium-domains",
+  "why-clean-anchor-text-profiles-protect-domain-value",
+  "how-to-build-an-evergreen-content-hub-on-an-expired-domain",
+  "premium-domains-for-clean-energy-and-climate-tech",
+  "how-domain-trust-impacts-conversion-on-checkout-pages",
+  "why-typo-domains-still-have-real-business-value",
+  "how-to-evaluate-domains-with-foreign-language-backlinks",
+  "premium-domains-for-cross-border-ecommerce-brands",
+  "how-to-use-historical-screenshots-to-vet-an-expired-domain",
+  "why-niche-relevance-beats-raw-domain-authority",
+  "how-premium-domains-help-with-investor-pitch-credibility",
+  "how-to-rebuild-an-expired-domain-without-tripping-google",
+  "the-economics-of-domain-portfolio-renewals",
+  "how-to-pick-a-domain-for-a-newsletter-first-business",
+  "why-acquiring-a-domain-with-existing-traffic-is-a-shortcut",
+  "premium-domains-for-marketplaces-built-on-trust",
+  "how-to-write-a-domain-acquisition-policy-for-your-company",
 ];
 
 export interface ArticleMeta {
@@ -517,7 +569,24 @@ export const ARTICLE_META: Record<string, ArticleMeta> = {
   "why-premium-expired-domains-worth-more-than-you-think": { slug: "why-premium-expired-domains-worth-more-than-you-think", h1: "Why Premium Expired Domain Names Are Worth More Than Most People Think", metaDescription: "Discover why premium expired domain names are a top-tier digital asset. Learn how their hidden SEO, traffic, and authority offer unparalleled ROI for entrepreneurs.", primaryKeyword: "premium expired domain names", categoryId: "industries-and-niches", categoryName: "Industries & Niches" },
   "why-short-domains-sell-for-six-figures": { slug: "why-short-domains-sell-for-six-figures", h1: "Why Short Domains Sell for Six Figures: The Real Reasons", metaDescription: "Discover why short domains six figures are the hallmark of elite digital assets. Explore scarcity, brand psychology, and the value of short domain investments.", primaryKeyword: "short domains six figures", categoryId: "branding", categoryName: "Branding & Naming" },
   "why-the-com-tld-still-dominates-in-2026": { slug: "why-the-com-tld-still-dominates-in-2026", h1: "Why the .com TLD Still Dominates the Domain Market in 2026", metaDescription: "Discover why the .com TLD dominates 2026. Learn why premium expired domains in the .com namespace are the top choice for brands and investors seeking ROI.", primaryKeyword: "com tld dominates 2026", categoryId: "branding", categoryName: "Branding & Naming" },
-  "why-your-domain-is-your-most-important-marketing-channel": { slug: "why-your-domain-is-your-most-important-marketing-channel", h1: "Why Your Domain Is Your Most Important Marketing Channel", metaDescription: "Discover why your domain most important marketing asset is crucial for growth. Learn to leverage premium expired domains to scale your brand and SEO authority.", primaryKeyword: "domain most important marketing", categoryId: "industries-and-niches", categoryName: "Industries & Niches" }
+  "why-your-domain-is-your-most-important-marketing-channel": { slug: "why-your-domain-is-your-most-important-marketing-channel", h1: "Why Your Domain Is Your Most Important Marketing Channel", metaDescription: "Discover why your domain most important marketing asset is crucial for growth. Learn to leverage premium expired domains to scale your brand and SEO authority.", primaryKeyword: "domain most important marketing", categoryId: "industries-and-niches", categoryName: "Industries & Niches" },
+  "how-to-spot-undervalued-premium-domains": { slug: "how-to-spot-undervalued-premium-domains", h1: "How to Spot Undervalued Premium Domains Before the Market Catches Up", metaDescription: "Learn how to spot undervalued premium domains using authority signals, niche relevance, and resale history. A practical guide for serious investors and operators.", primaryKeyword: "spot undervalued premium domains", categoryId: "investing-and-flipping", categoryName: "Investing & Flipping" },
+  "why-clean-anchor-text-profiles-protect-domain-value": { slug: "why-clean-anchor-text-profiles-protect-domain-value", h1: "Why Clean Anchor Text Profiles Protect Long-Term Domain Value", metaDescription: "Discover why clean anchor text profiles signal trust, prevent penalties, and protect the long-term SEO value of premium expired domains in 2026.", primaryKeyword: "clean anchor text profiles", categoryId: "seo-and-authority", categoryName: "SEO & Authority" },
+  "how-to-build-an-evergreen-content-hub-on-an-expired-domain": { slug: "how-to-build-an-evergreen-content-hub-on-an-expired-domain", h1: "How to Build an Evergreen Content Hub on an Expired Domain", metaDescription: "Use an expired domain to launch an evergreen content hub. Learn topic clustering, internal linking, and authority transfer for compounding organic growth.", primaryKeyword: "evergreen content hub expired domain", categoryId: "seo-and-authority", categoryName: "SEO & Authority" },
+  "premium-domains-for-clean-energy-and-climate-tech": { slug: "premium-domains-for-clean-energy-and-climate-tech", h1: "Premium Domains for Clean Energy and Climate Tech Brands", metaDescription: "Discover why premium domains for clean energy and climate tech founders accelerate trust, fundraising, and SEO authority in a fast-growing vertical.", primaryKeyword: "premium domains clean energy", categoryId: "industries-and-niches", categoryName: "Industries & Niches" },
+  "how-domain-trust-impacts-conversion-on-checkout-pages": { slug: "how-domain-trust-impacts-conversion-on-checkout-pages", h1: "How Domain Trust Impacts Conversion on Checkout Pages", metaDescription: "A premium domain reduces checkout friction. Learn how domain trust shapes conversion on payment pages, refunds risk, and repeat-purchase behavior.", primaryKeyword: "domain trust checkout conversion", categoryId: "ecommerce-and-retail", categoryName: "Ecommerce & Retail" },
+  "why-typo-domains-still-have-real-business-value": { slug: "why-typo-domains-still-have-real-business-value", h1: "Why Typo Domains Still Have Real Business Value in 2026", metaDescription: "Typo domains are not just defensive plays — they capture intent traffic, protect ad spend, and reinforce brand equity. Here is how to evaluate them.", primaryKeyword: "typo domains business value", categoryId: "buying-and-evaluation", categoryName: "Buying & Evaluation" },
+  "how-to-evaluate-domains-with-foreign-language-backlinks": { slug: "how-to-evaluate-domains-with-foreign-language-backlinks", h1: "How to Evaluate Domains With Foreign-Language Backlink Profiles", metaDescription: "Foreign-language backlinks can boost or hurt a domain. Learn how to evaluate them for relevance, geography, and risk before buying premium expired domains.", primaryKeyword: "evaluate domains foreign language backlinks", categoryId: "buying-and-evaluation", categoryName: "Buying & Evaluation" },
+  "premium-domains-for-cross-border-ecommerce-brands": { slug: "premium-domains-for-cross-border-ecommerce-brands", h1: "Premium Domains for Cross-Border Ecommerce Brands That Scale", metaDescription: "Cross-border ecommerce needs a domain that travels well. Discover how premium domains drive trust, conversion, and SEO across multiple regions and languages.", primaryKeyword: "premium domains cross border ecommerce", categoryId: "ecommerce-and-retail", categoryName: "Ecommerce & Retail" },
+  "how-to-use-historical-screenshots-to-vet-an-expired-domain": { slug: "how-to-use-historical-screenshots-to-vet-an-expired-domain", h1: "How to Use Historical Screenshots to Vet an Expired Domain", metaDescription: "Wayback screenshots reveal a domain's true past. Learn how to read historical snapshots to vet expired domains for spam, relevance, and brand fit.", primaryKeyword: "historical screenshots vet expired domain", categoryId: "buying-and-evaluation", categoryName: "Buying & Evaluation" },
+  "why-niche-relevance-beats-raw-domain-authority": { slug: "why-niche-relevance-beats-raw-domain-authority", h1: "Why Niche Relevance Beats Raw Domain Authority Every Time", metaDescription: "Raw DA is a vanity metric. Discover why topical, niche-relevant authority outperforms generic high-DA domains for SEO results, conversions, and trust.", primaryKeyword: "niche relevance vs domain authority", categoryId: "seo-and-authority", categoryName: "SEO & Authority" },
+  "how-premium-domains-help-with-investor-pitch-credibility": { slug: "how-premium-domains-help-with-investor-pitch-credibility", h1: "How Premium Domains Help With Investor Pitch Credibility", metaDescription: "Investors judge startups in seconds. Learn how a premium domain shifts perception, supports pitch credibility, and signals serious commitment to the business.", primaryKeyword: "premium domains investor pitch", categoryId: "startups", categoryName: "Startups & Founders" },
+  "how-to-rebuild-an-expired-domain-without-tripping-google": { slug: "how-to-rebuild-an-expired-domain-without-tripping-google", h1: "How to Rebuild an Expired Domain Without Tripping Google", metaDescription: "Bringing an expired domain back online is risky if done wrong. Learn the safe rebuild playbook for content, structure, and link continuity that Google rewards.", primaryKeyword: "rebuild expired domain google safe", categoryId: "seo-and-authority", categoryName: "SEO & Authority" },
+  "the-economics-of-domain-portfolio-renewals": { slug: "the-economics-of-domain-portfolio-renewals", h1: "The Economics of Domain Portfolio Renewals: When to Hold and Drop", metaDescription: "Renewals quietly compound. Learn the economics of domain portfolio renewals: when to hold, when to drop, and how to protect long-term portfolio ROI.", primaryKeyword: "domain portfolio renewals economics", categoryId: "investing-and-flipping", categoryName: "Investing & Flipping" },
+  "how-to-pick-a-domain-for-a-newsletter-first-business": { slug: "how-to-pick-a-domain-for-a-newsletter-first-business", h1: "How to Pick a Premium Domain for a Newsletter-First Business", metaDescription: "Newsletter brands live or die on recall. Learn how to pick a premium domain that is easy to type, easy to remember, and built for long-term creator growth.", primaryKeyword: "domain for newsletter first business", categoryId: "creators-and-media", categoryName: "Creators & Media" },
+  "why-acquiring-a-domain-with-existing-traffic-is-a-shortcut": { slug: "why-acquiring-a-domain-with-existing-traffic-is-a-shortcut", h1: "Why Acquiring a Domain With Existing Traffic Is a Real Shortcut", metaDescription: "Buying a domain with real type-in or organic traffic is a strategic shortcut. Learn how to evaluate, acquire, and monetize traffic-bearing premium domains.", primaryKeyword: "domain with existing traffic shortcut", categoryId: "investing-and-flipping", categoryName: "Investing & Flipping" },
+  "premium-domains-for-marketplaces-built-on-trust": { slug: "premium-domains-for-marketplaces-built-on-trust", h1: "Premium Domains for Marketplaces Built on Trust and Repeat Use", metaDescription: "Two-sided marketplaces win on trust. Discover how a premium domain accelerates supply, demand, and repeat usage in modern transactional platforms.", primaryKeyword: "premium domains trust marketplaces", categoryId: "ecommerce-and-retail", categoryName: "Ecommerce & Retail" },
+  "how-to-write-a-domain-acquisition-policy-for-your-company": { slug: "how-to-write-a-domain-acquisition-policy-for-your-company", h1: "How to Write a Domain Acquisition Policy for Your Growing Company", metaDescription: "Stop buying domains ad hoc. Learn how to write a domain acquisition policy that protects brand, budget, and IP as your company scales across regions.", primaryKeyword: "domain acquisition policy company", categoryId: "branding", categoryName: "Branding & Naming" },
 };
 
 export interface ArticleCategory { id: string; name: string }
