@@ -154,28 +154,7 @@ const estimateReadingMinutes = (props: ExpiredDomainArticleProps) => {
   return Math.max(4, Math.round(words / 220));
 };
 
-/* Split long copy into short, mobile-friendly reading blocks. */
-const splitParagraph = (p: string): string[] => {
-  const sentences = p.match(/[^.!?]+[.!?]+(\s|$)|[^.!?]+$/g)?.map((s) => s.trim()) || [p];
-  const chunks: string[] = [];
-  let current: string[] = [];
-  let words = 0;
-
-  sentences.forEach((sentence) => {
-    const count = sentence.split(/\s+/).filter(Boolean).length;
-    if (current.length && (words + count > 34 || current.length >= 2)) {
-      chunks.push(current.join(" ").trim());
-      current = [];
-      words = 0;
-    }
-    current.push(sentence);
-    words += count;
-  });
-
-  if (current.length) chunks.push(current.join(" ").trim());
-  return chunks.filter(Boolean);
-};
-
+/* Long-form paragraphs — no boxed chunks. Just clean editorial flow. */
 const scrollToAnchor = (id: string) => {
   const node = document.getElementById(id);
   if (!node) return;
@@ -192,33 +171,35 @@ const keywordPhrase = (keyword: string) =>
 
 /* ---------- Reusable visual blocks (deep-blue palette) ---------- */
 
-const ReadableParagraphs = ({
-  paragraphs,
-  firstDropcap = false,
+const LongFormParagraph = ({
+  text,
+  dropcap = false,
 }: {
-  paragraphs: string[];
-  firstDropcap?: boolean;
+  text: string;
+  dropcap?: boolean;
 }) => (
-  <div className="not-prose space-y-4">
-    {paragraphs.flatMap((p, i) =>
-      splitParagraph(p).map((chunk, j) => (
-        <p
-          key={`${i}-${j}-${chunk.slice(0, 18)}`}
-          className={`rounded-xl border border-sky-100 bg-white/95 p-4 text-[18px] leading-[1.75] text-slate-700 shadow-sm md:p-5 md:text-[20px] md:leading-[1.8] ${
-            firstDropcap && i === 0 && j === 0
-              ? "first-letter:float-left first-letter:mr-3 first-letter:text-7xl first-letter:font-bold first-letter:leading-none first-letter:text-blue-600"
-              : ""
-          }`}
-        >
-          {chunk}
-        </p>
-      )),
-    )}
-  </div>
+  <p
+    className={`text-[18px] leading-[1.85] text-slate-700 md:text-[19px] md:leading-[1.9] ${
+      dropcap
+        ? "first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:text-6xl first-letter:font-bold first-letter:leading-none first-letter:text-blue-700 md:first-letter:text-7xl"
+        : ""
+    }`}
+  >
+    {text}
+  </p>
+);
+
+const TLDR = ({ text, keyword }: { text: string; keyword: string }) => (
+  <aside className="not-prose my-8 rounded-2xl border-l-4 border-blue-600 bg-gradient-to-r from-sky-50 via-white to-white p-5 shadow-sm md:p-6">
+    <p className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-blue-700">Summary (TL;DR)</p>
+    <p className="text-[16px] leading-relaxed text-slate-700 md:text-[17px]">
+      <strong className="text-navy-dark">{keywordPhrase(keyword)}</strong> — {text}
+    </p>
+  </aside>
 );
 
 const FriendlyNote = ({ note }: { note: string }) => (
-  <aside className="not-prose my-8 rounded-2xl border border-sky-200 bg-gradient-to-br from-sky-50 via-white to-blue-50 p-5 shadow-sm md:p-6">
+  <aside className="not-prose my-10 rounded-2xl border border-sky-200 bg-gradient-to-br from-sky-50 via-white to-blue-50 p-5 shadow-sm md:p-6">
     <div className="flex gap-4">
       <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-600/10 text-blue-700">
         <Smile className="h-5 w-5" />
