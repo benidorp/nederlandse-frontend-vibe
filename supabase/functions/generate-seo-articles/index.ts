@@ -1,10 +1,6 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
-
-const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
-};
+import { getCorsHeaders, handleCorsPreflightIfNeeded } from "../_shared/cors.ts";
 
 const ARTICLE_TOPICS = [
   { slug: "ultimate-guide-buying-expired-domain-names-seo", title: "The Ultimate Guide to Buying Expired Domain Names for SEO", keywords: "expired domain names, buy expired domains, SEO domains, domain authority", image: "/images/expired-domains-hero.png", description: "Comprehensive guide covering everything you need to know about purchasing expired domain names to boost your SEO strategy and website authority." },
