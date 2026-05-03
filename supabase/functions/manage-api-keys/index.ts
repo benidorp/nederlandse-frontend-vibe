@@ -204,33 +204,8 @@ serve(async (req) => {
       });
     }
 
-    // Internal: decrypt a key (only called from other edge functions, not exposed to client)
-    if (action === "decrypt") {
-      if (!provider) {
-        return new Response(JSON.stringify({ error: "provider required" }), {
-          status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" },
-        });
-      }
-
-      const { data: keyRecord } = await supabase
-        .from("user_ai_keys")
-        .select("encrypted_api_key")
-        .eq("user_id", user.id)
-        .eq("provider", provider)
-        .eq("is_active", true)
-        .single();
-
-      if (!keyRecord) {
-        return new Response(JSON.stringify({ key: null }), {
-          headers: { ...corsHeaders, "Content-Type": "application/json" },
-        });
-      }
-
-      const decryptedKey = await decryptWithFallback(keyRecord.encrypted_api_key);
-      return new Response(JSON.stringify({ key: decryptedKey }), {
-        headers: { ...corsHeaders, "Content-Type": "application/json" },
-      });
-    }
+    // Note: 'decrypt' action removed for security. Edge functions that need
+    // plaintext keys should import decryption logic directly (see ai-universal/index.ts).
 
     return new Response(JSON.stringify({ error: "Invalid action" }), {
       status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" },
