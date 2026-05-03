@@ -145,6 +145,57 @@ import a_why_acquiring_a_domain_with_existing_traffic_is_a_shortcut from "./data
 import a_premium_domains_for_marketplaces_built_on_trust from "./data/premium-domains-for-marketplaces-built-on-trust";
 import a_how_to_write_a_domain_acquisition_policy_for_your_company from "./data/how-to-write-a-domain-acquisition-policy-for-your-company";
 
+import a_expired_domains_for_renewable_energy_startups from "./data/expired-domains-for-renewable-energy-startups";
+import a_premium_domains_for_solar_installation_companies from "./data/premium-domains-for-solar-installation-companies";
+import a_expired_domains_for_the_hotel_and_hospitality_industry from "./data/expired-domains-for-the-hotel-and-hospitality-industry";
+import a_premium_domains_for_boutique_hotel_brands_in_2026 from "./data/premium-domains-for-boutique-hotel-brands-in-2026";
+import a_expired_domains_for_luxury_leisure_and_lifestyle_brands from "./data/expired-domains-for-luxury-leisure-and-lifestyle-brands";
+import a_premium_domains_for_cruise_lines_and_ocean_travel from "./data/premium-domains-for-cruise-lines-and-ocean-travel";
+import a_expired_domains_for_ski_resorts_and_winter_tourism from "./data/expired-domains-for-ski-resorts-and-winter-tourism";
+import a_premium_domains_for_wedding_planners_and_bridal_brands from "./data/premium-domains-for-wedding-planners-and-bridal-brands";
+import a_expired_domains_for_golf_clubs_and_country_resorts from "./data/expired-domains-for-golf-clubs-and-country-resorts";
+import a_premium_domains_for_yacht_charter_and_marine_leisure from "./data/premium-domains-for-yacht-charter-and-marine-leisure";
+import a_expired_domains_for_electric_vehicle_charging_networks from "./data/expired-domains-for-electric-vehicle-charging-networks";
+import a_premium_domains_for_the_used_car_and_automotive_market from "./data/premium-domains-for-the-used-car-and-automotive-market";
+import a_expired_domains_for_car_dealerships_and_auto_leasing from "./data/expired-domains-for-car-dealerships-and-auto-leasing";
+import a_premium_domains_for_craft_beer_breweries_and_distilleries from "./data/premium-domains-for-craft-beer-breweries-and-distilleries";
+import a_expired_domains_for_wine_merchants_and_online_vineyards from "./data/expired-domains-for-wine-merchants-and-online-vineyards";
+import a_premium_domains_for_vegan_and_plant_based_food_brands from "./data/premium-domains-for-vegan-and-plant-based-food-brands";
+import a_expired_domains_for_restaurants_and_fine_dining_concepts from "./data/expired-domains-for-restaurants-and-fine-dining-concepts";
+import a_premium_domains_for_personal_finance_and_investing_blogs from "./data/premium-domains-for-personal-finance-and-investing-blogs";
+import a_expired_domains_for_crypto_exchanges_and_trading_platforms from "./data/expired-domains-for-crypto-exchanges-and-trading-platforms";
+import a_premium_domains_for_nft_marketplaces_and_digital_art from "./data/premium-domains-for-nft-marketplaces-and-digital-art";
+import a_expired_domains_for_online_casinos_and_igaming_brands from "./data/expired-domains-for-online-casinos-and-igaming-brands";
+import a_premium_domains_for_esports_teams_and_gaming_brands from "./data/premium-domains-for-esports-teams-and-gaming-brands";
+import a_expired_domains_for_streaming_and_on_demand_video from "./data/expired-domains-for-streaming-and-on-demand-video";
+import a_premium_domains_for_podcast_networks_and_audio_brands from "./data/premium-domains-for-podcast-networks-and-audio-brands";
+import a_expired_domains_for_telemedicine_and_digital_health from "./data/expired-domains-for-telemedicine-and-digital-health";
+import a_premium_domains_for_mental_health_and_therapy_platforms from "./data/premium-domains-for-mental-health-and-therapy-platforms";
+import a_expired_domains_for_dental_practices_and_clinics from "./data/expired-domains-for-dental-practices-and-clinics";
+import a_premium_domains_for_veterinary_practices_and_pet_care from "./data/premium-domains-for-veterinary-practices-and-pet-care";
+import a_expired_domains_for_pet_food_and_natural_pet_brands from "./data/expired-domains-for-pet-food-and-natural-pet-brands";
+import a_premium_domains_for_parenting_and_baby_product_brands from "./data/premium-domains-for-parenting-and-baby-product-brands";
+import a_expired_domains_for_online_tutoring_and_homeschooling from "./data/expired-domains-for-online-tutoring-and-homeschooling";
+import a_premium_domains_for_language_learning_apps_and_schools from "./data/premium-domains-for-language-learning-apps-and-schools";
+import a_expired_domains_for_mortgage_brokers_and_home_loans from "./data/expired-domains-for-mortgage-brokers-and-home-loans";
+import a_premium_domains_for_accountants_and_tax_advisor_firms from "./data/premium-domains-for-accountants-and-tax-advisor-firms";
+import a_expired_domains_for_solar_panel_and_battery_installers from "./data/expired-domains-for-solar-panel-and-battery-installers";
+import a_premium_domains_for_heat_pump_and_hvac_contractors from "./data/premium-domains-for-heat-pump-and-hvac-contractors";
+import a_expired_domains_for_sustainable_fashion_and_slow_apparel from "./data/expired-domains-for-sustainable-fashion-and-slow-apparel";
+import a_premium_domains_for_sneaker_resellers_and_streetwear from "./data/premium-domains-for-sneaker-resellers-and-streetwear";
+import a_expired_domains_for_jewelry_brands_and_watch_retailers from "./data/expired-domains-for-jewelry-brands-and-watch-retailers";
+import a_premium_domains_for_real_estate_agencies_and_brokers from "./data/premium-domains-for-real-estate-agencies-and-brokers";
+import a_expired_domains_for_vacation_rental_and_short_stay_sites from "./data/expired-domains-for-vacation-rental-and-short-stay-sites";
+import a_premium_domains_for_spa_sauna_and_wellness_retreats from "./data/premium-domains-for-spa-sauna-and-wellness-retreats";
+import a_expired_domains_for_fitness_studios_and_personal_trainers from "./data/expired-domains-for-fitness-studios-and-personal-trainers";
+import a_premium_domains_for_cannabis_and_cbd_ecommerce_brands from "./data/premium-domains-for-cannabis-and-cbd-ecommerce-brands";
+import a_expired_domains_for_adventure_travel_and_outdoor_gear from "./data/expired-domains-for-adventure-travel-and-outdoor-gear";
+import a_premium_domains_for_music_festivals_and_event_promoters from "./data/premium-domains-for-music-festivals-and-event-promoters";
+import a_expired_domains_for_conference_and_trade_show_brands from "./data/expired-domains-for-conference-and-trade-show-brands";
+import a_premium_domains_for_legal_tech_and_online_law_platforms from "./data/premium-domains-for-legal-tech-and-online-law-platforms";
+import a_expired_domains_for_hr_tech_and_recruitment_marketplaces from "./data/expired-domains-for-hr-tech-and-recruitment-marketplaces";
+import a_premium_domains_for_sports_teams_leagues_and_clubs from "./data/premium-domains-for-sports-teams-leagues-and-clubs";
+
 export const ARTICLES: Record<string, ExpiredDomainArticleProps> = {
   "301-redirect-strategy-for-expired-domains": a_301_redirect_strategy_for_expired_domains,
   "better-domain-name-saves-branding-time-budget": a_better_domain_name_saves_branding_time_budget,
@@ -287,7 +338,57 @@ export const ARTICLES: Record<string, ExpiredDomainArticleProps> = {
   "how-to-pick-a-domain-for-a-newsletter-first-business": a_how_to_pick_a_domain_for_a_newsletter_first_business,
   "why-acquiring-a-domain-with-existing-traffic-is-a-shortcut": a_why_acquiring_a_domain_with_existing_traffic_is_a_shortcut,
   "premium-domains-for-marketplaces-built-on-trust": a_premium_domains_for_marketplaces_built_on_trust,
-  "how-to-write-a-domain-acquisition-policy-for-your-company": a_how_to_write_a_domain_acquisition_policy_for_your_company
+  "how-to-write-a-domain-acquisition-policy-for-your-company": a_how_to_write_a_domain_acquisition_policy_for_your_company,
+  "expired-domains-for-renewable-energy-startups": a_expired_domains_for_renewable_energy_startups,
+  "premium-domains-for-solar-installation-companies": a_premium_domains_for_solar_installation_companies,
+  "expired-domains-for-the-hotel-and-hospitality-industry": a_expired_domains_for_the_hotel_and_hospitality_industry,
+  "premium-domains-for-boutique-hotel-brands-in-2026": a_premium_domains_for_boutique_hotel_brands_in_2026,
+  "expired-domains-for-luxury-leisure-and-lifestyle-brands": a_expired_domains_for_luxury_leisure_and_lifestyle_brands,
+  "premium-domains-for-cruise-lines-and-ocean-travel": a_premium_domains_for_cruise_lines_and_ocean_travel,
+  "expired-domains-for-ski-resorts-and-winter-tourism": a_expired_domains_for_ski_resorts_and_winter_tourism,
+  "premium-domains-for-wedding-planners-and-bridal-brands": a_premium_domains_for_wedding_planners_and_bridal_brands,
+  "expired-domains-for-golf-clubs-and-country-resorts": a_expired_domains_for_golf_clubs_and_country_resorts,
+  "premium-domains-for-yacht-charter-and-marine-leisure": a_premium_domains_for_yacht_charter_and_marine_leisure,
+  "expired-domains-for-electric-vehicle-charging-networks": a_expired_domains_for_electric_vehicle_charging_networks,
+  "premium-domains-for-the-used-car-and-automotive-market": a_premium_domains_for_the_used_car_and_automotive_market,
+  "expired-domains-for-car-dealerships-and-auto-leasing": a_expired_domains_for_car_dealerships_and_auto_leasing,
+  "premium-domains-for-craft-beer-breweries-and-distilleries": a_premium_domains_for_craft_beer_breweries_and_distilleries,
+  "expired-domains-for-wine-merchants-and-online-vineyards": a_expired_domains_for_wine_merchants_and_online_vineyards,
+  "premium-domains-for-vegan-and-plant-based-food-brands": a_premium_domains_for_vegan_and_plant_based_food_brands,
+  "expired-domains-for-restaurants-and-fine-dining-concepts": a_expired_domains_for_restaurants_and_fine_dining_concepts,
+  "premium-domains-for-personal-finance-and-investing-blogs": a_premium_domains_for_personal_finance_and_investing_blogs,
+  "expired-domains-for-crypto-exchanges-and-trading-platforms": a_expired_domains_for_crypto_exchanges_and_trading_platforms,
+  "premium-domains-for-nft-marketplaces-and-digital-art": a_premium_domains_for_nft_marketplaces_and_digital_art,
+  "expired-domains-for-online-casinos-and-igaming-brands": a_expired_domains_for_online_casinos_and_igaming_brands,
+  "premium-domains-for-esports-teams-and-gaming-brands": a_premium_domains_for_esports_teams_and_gaming_brands,
+  "expired-domains-for-streaming-and-on-demand-video": a_expired_domains_for_streaming_and_on_demand_video,
+  "premium-domains-for-podcast-networks-and-audio-brands": a_premium_domains_for_podcast_networks_and_audio_brands,
+  "expired-domains-for-telemedicine-and-digital-health": a_expired_domains_for_telemedicine_and_digital_health,
+  "premium-domains-for-mental-health-and-therapy-platforms": a_premium_domains_for_mental_health_and_therapy_platforms,
+  "expired-domains-for-dental-practices-and-clinics": a_expired_domains_for_dental_practices_and_clinics,
+  "premium-domains-for-veterinary-practices-and-pet-care": a_premium_domains_for_veterinary_practices_and_pet_care,
+  "expired-domains-for-pet-food-and-natural-pet-brands": a_expired_domains_for_pet_food_and_natural_pet_brands,
+  "premium-domains-for-parenting-and-baby-product-brands": a_premium_domains_for_parenting_and_baby_product_brands,
+  "expired-domains-for-online-tutoring-and-homeschooling": a_expired_domains_for_online_tutoring_and_homeschooling,
+  "premium-domains-for-language-learning-apps-and-schools": a_premium_domains_for_language_learning_apps_and_schools,
+  "expired-domains-for-mortgage-brokers-and-home-loans": a_expired_domains_for_mortgage_brokers_and_home_loans,
+  "premium-domains-for-accountants-and-tax-advisor-firms": a_premium_domains_for_accountants_and_tax_advisor_firms,
+  "expired-domains-for-solar-panel-and-battery-installers": a_expired_domains_for_solar_panel_and_battery_installers,
+  "premium-domains-for-heat-pump-and-hvac-contractors": a_premium_domains_for_heat_pump_and_hvac_contractors,
+  "expired-domains-for-sustainable-fashion-and-slow-apparel": a_expired_domains_for_sustainable_fashion_and_slow_apparel,
+  "premium-domains-for-sneaker-resellers-and-streetwear": a_premium_domains_for_sneaker_resellers_and_streetwear,
+  "expired-domains-for-jewelry-brands-and-watch-retailers": a_expired_domains_for_jewelry_brands_and_watch_retailers,
+  "premium-domains-for-real-estate-agencies-and-brokers": a_premium_domains_for_real_estate_agencies_and_brokers,
+  "expired-domains-for-vacation-rental-and-short-stay-sites": a_expired_domains_for_vacation_rental_and_short_stay_sites,
+  "premium-domains-for-spa-sauna-and-wellness-retreats": a_premium_domains_for_spa_sauna_and_wellness_retreats,
+  "expired-domains-for-fitness-studios-and-personal-trainers": a_expired_domains_for_fitness_studios_and_personal_trainers,
+  "premium-domains-for-cannabis-and-cbd-ecommerce-brands": a_premium_domains_for_cannabis_and_cbd_ecommerce_brands,
+  "expired-domains-for-adventure-travel-and-outdoor-gear": a_expired_domains_for_adventure_travel_and_outdoor_gear,
+  "premium-domains-for-music-festivals-and-event-promoters": a_premium_domains_for_music_festivals_and_event_promoters,
+  "expired-domains-for-conference-and-trade-show-brands": a_expired_domains_for_conference_and_trade_show_brands,
+  "premium-domains-for-legal-tech-and-online-law-platforms": a_premium_domains_for_legal_tech_and_online_law_platforms,
+  "expired-domains-for-hr-tech-and-recruitment-marketplaces": a_expired_domains_for_hr_tech_and_recruitment_marketplaces,
+  "premium-domains-for-sports-teams-leagues-and-clubs": a_premium_domains_for_sports_teams_leagues_and_clubs,
 };
 
 export const ARTICLE_SLUGS: string[] = [
@@ -433,6 +534,56 @@ export const ARTICLE_SLUGS: string[] = [
   "why-acquiring-a-domain-with-existing-traffic-is-a-shortcut",
   "premium-domains-for-marketplaces-built-on-trust",
   "how-to-write-a-domain-acquisition-policy-for-your-company",
+  "expired-domains-for-renewable-energy-startups",
+  "premium-domains-for-solar-installation-companies",
+  "expired-domains-for-the-hotel-and-hospitality-industry",
+  "premium-domains-for-boutique-hotel-brands-in-2026",
+  "expired-domains-for-luxury-leisure-and-lifestyle-brands",
+  "premium-domains-for-cruise-lines-and-ocean-travel",
+  "expired-domains-for-ski-resorts-and-winter-tourism",
+  "premium-domains-for-wedding-planners-and-bridal-brands",
+  "expired-domains-for-golf-clubs-and-country-resorts",
+  "premium-domains-for-yacht-charter-and-marine-leisure",
+  "expired-domains-for-electric-vehicle-charging-networks",
+  "premium-domains-for-the-used-car-and-automotive-market",
+  "expired-domains-for-car-dealerships-and-auto-leasing",
+  "premium-domains-for-craft-beer-breweries-and-distilleries",
+  "expired-domains-for-wine-merchants-and-online-vineyards",
+  "premium-domains-for-vegan-and-plant-based-food-brands",
+  "expired-domains-for-restaurants-and-fine-dining-concepts",
+  "premium-domains-for-personal-finance-and-investing-blogs",
+  "expired-domains-for-crypto-exchanges-and-trading-platforms",
+  "premium-domains-for-nft-marketplaces-and-digital-art",
+  "expired-domains-for-online-casinos-and-igaming-brands",
+  "premium-domains-for-esports-teams-and-gaming-brands",
+  "expired-domains-for-streaming-and-on-demand-video",
+  "premium-domains-for-podcast-networks-and-audio-brands",
+  "expired-domains-for-telemedicine-and-digital-health",
+  "premium-domains-for-mental-health-and-therapy-platforms",
+  "expired-domains-for-dental-practices-and-clinics",
+  "premium-domains-for-veterinary-practices-and-pet-care",
+  "expired-domains-for-pet-food-and-natural-pet-brands",
+  "premium-domains-for-parenting-and-baby-product-brands",
+  "expired-domains-for-online-tutoring-and-homeschooling",
+  "premium-domains-for-language-learning-apps-and-schools",
+  "expired-domains-for-mortgage-brokers-and-home-loans",
+  "premium-domains-for-accountants-and-tax-advisor-firms",
+  "expired-domains-for-solar-panel-and-battery-installers",
+  "premium-domains-for-heat-pump-and-hvac-contractors",
+  "expired-domains-for-sustainable-fashion-and-slow-apparel",
+  "premium-domains-for-sneaker-resellers-and-streetwear",
+  "expired-domains-for-jewelry-brands-and-watch-retailers",
+  "premium-domains-for-real-estate-agencies-and-brokers",
+  "expired-domains-for-vacation-rental-and-short-stay-sites",
+  "premium-domains-for-spa-sauna-and-wellness-retreats",
+  "expired-domains-for-fitness-studios-and-personal-trainers",
+  "premium-domains-for-cannabis-and-cbd-ecommerce-brands",
+  "expired-domains-for-adventure-travel-and-outdoor-gear",
+  "premium-domains-for-music-festivals-and-event-promoters",
+  "expired-domains-for-conference-and-trade-show-brands",
+  "premium-domains-for-legal-tech-and-online-law-platforms",
+  "expired-domains-for-hr-tech-and-recruitment-marketplaces",
+  "premium-domains-for-sports-teams-leagues-and-clubs",
 ];
 
 export interface ArticleMeta {
