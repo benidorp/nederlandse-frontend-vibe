@@ -1855,6 +1855,9 @@ const PremiumDomainsEN = () => {
               <button onClick={() => scrollToSection("faq")} className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium">
                 FAQ
               </button>
+              <RouterLink to="/expireddomainnames/en/articles" className="text-slate-300 hover:text-amber-400 transition-colors text-sm font-medium">
+                Blog
+              </RouterLink>
               <Button 
                 onClick={() => scrollToSection("contact")}
                 className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-semibold"
