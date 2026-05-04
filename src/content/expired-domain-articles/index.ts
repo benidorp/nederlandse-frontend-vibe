@@ -196,6 +196,56 @@ import a_premium_domains_for_legal_tech_and_online_law_platforms from "./data/pr
 import a_expired_domains_for_hr_tech_and_recruitment_marketplaces from "./data/expired-domains-for-hr-tech-and-recruitment-marketplaces";
 import a_premium_domains_for_sports_teams_leagues_and_clubs from "./data/premium-domains-for-sports-teams-leagues-and-clubs";
 
+import a_expired_domains_for_boutique_coffee_roasters_and_specialty_cafes from "./data/expired-domains-for-boutique-coffee-roasters-and-specialty-cafes";
+import a_premium_domains_for_microbreweries_and_craft_beer_startups from "./data/premium-domains-for-microbreweries-and-craft-beer-startups";
+import a_expired_domains_for_eco_tourism_and_sustainable_travel_brands from "./data/expired-domains-for-eco-tourism-and-sustainable-travel-brands";
+import a_premium_domains_for_glamping_resorts_and_luxury_camping from "./data/premium-domains-for-glamping-resorts-and-luxury-camping";
+import a_expired_domains_for_private_aviation_and_jet_charter_services from "./data/expired-domains-for-private-aviation-and-jet-charter-services";
+import a_premium_domains_for_yoga_studios_and_online_meditation_apps from "./data/premium-domains-for-yoga-studios-and-online-meditation-apps";
+import a_expired_domains_for_equestrian_brands_and_horse_riding_schools from "./data/expired-domains-for-equestrian-brands-and-horse-riding-schools";
+import a_premium_domains_for_sailing_schools_and_boat_rental_marketplaces from "./data/premium-domains-for-sailing-schools-and-boat-rental-marketplaces";
+import a_expired_domains_for_aquaculture_and_sustainable_seafood_brands from "./data/expired-domains-for-aquaculture-and-sustainable-seafood-brands";
+import a_premium_domains_for_vertical_farming_and_indoor_agriculture_startups from "./data/premium-domains-for-vertical-farming-and-indoor-agriculture-startups";
+import a_expired_domains_for_3d_printing_services_and_additive_manufacturing from "./data/expired-domains-for-3d-printing-services-and-additive-manufacturing";
+import a_premium_domains_for_robotics_startups_and_industrial_automation from "./data/premium-domains-for-robotics-startups-and-industrial-automation";
+import a_expired_domains_for_drone_services_and_aerial_inspection_companies from "./data/expired-domains-for-drone-services-and-aerial-inspection-companies";
+import a_premium_domains_for_quantum_computing_and_deep_tech_startups from "./data/premium-domains-for-quantum-computing-and-deep-tech-startups";
+import a_expired_domains_for_biotech_startups_and_clinical_research_firms from "./data/expired-domains-for-biotech-startups-and-clinical-research-firms";
+import a_premium_domains_for_medspa_clinics_and_aesthetic_treatment_centers from "./data/premium-domains-for-medspa-clinics-and-aesthetic-treatment-centers";
+import a_expired_domains_for_physiotherapy_clinics_and_rehab_specialists from "./data/expired-domains-for-physiotherapy-clinics-and-rehab-specialists";
+import a_premium_domains_for_orthodontists_and_cosmetic_dental_practices from "./data/premium-domains-for-orthodontists-and-cosmetic-dental-practices";
+import a_expired_domains_for_ivf_clinics_and_fertility_treatment_centers from "./data/expired-domains-for-ivf-clinics-and-fertility-treatment-centers";
+import a_premium_domains_for_elderly_care_and_home_nursing_services from "./data/premium-domains-for-elderly-care-and-home-nursing-services";
+import a_expired_domains_for_childcare_centers_and_private_preschools from "./data/expired-domains-for-childcare-centers-and-private-preschools";
+import a_premium_domains_for_private_tutoring_and_stem_after_school_programs from "./data/premium-domains-for-private-tutoring-and-stem-after-school-programs";
+import a_expired_domains_for_coworking_spaces_and_flexible_office_providers from "./data/expired-domains-for-coworking-spaces-and-flexible-office-providers";
+import a_premium_domains_for_vacation_villa_rentals_and_luxury_property_management from "./data/premium-domains-for-vacation-villa-rentals-and-luxury-property-management";
+import a_expired_domains_for_travel_insurance_and_international_health_cover from "./data/expired-domains-for-travel-insurance-and-international-health-cover";
+import a_premium_domains_for_pet_insurance_and_veterinary_coverage_platforms from "./data/premium-domains-for-pet-insurance-and-veterinary-coverage-platforms";
+import a_expired_domains_for_meal_kit_delivery_and_healthy_eating_startups from "./data/expired-domains-for-meal-kit-delivery-and-healthy-eating-startups";
+import a_premium_domains_for_functional_mushroom_and_adaptogen_supplement_brands from "./data/premium-domains-for-functional-mushroom-and-adaptogen-supplement-brands";
+import a_expired_domains_for_collagen_and_beauty_from_within_supplement_brands from "./data/expired-domains-for-collagen-and-beauty-from-within-supplement-brands";
+import a_premium_domains_for_natural_skincare_and_clean_beauty_startups from "./data/premium-domains-for-natural-skincare-and-clean-beauty-startups";
+import a_expired_domains_for_mens_grooming_brands_and_barbershop_chains from "./data/expired-domains-for-mens-grooming-brands-and-barbershop-chains";
+import a_premium_domains_for_bridal_fashion_and_wedding_dress_designers from "./data/premium-domains-for-bridal-fashion-and-wedding-dress-designers";
+import a_expired_domains_for_second_hand_luxury_and_pre_owned_fashion_marketplaces from "./data/expired-domains-for-second-hand-luxury-and-pre-owned-fashion-marketplaces";
+import a_premium_domains_for_vintage_watch_dealers_and_collectible_marketplaces from "./data/premium-domains-for-vintage-watch-dealers-and-collectible-marketplaces";
+import a_expired_domains_for_art_galleries_and_online_fine_art_marketplaces from "./data/expired-domains-for-art-galleries-and-online-fine-art-marketplaces";
+import a_premium_domains_for_music_production_and_online_recording_platforms from "./data/premium-domains-for-music-production-and-online-recording-platforms";
+import a_expired_domains_for_film_production_and_independent_cinema_brands from "./data/expired-domains-for-film-production-and-independent-cinema-brands";
+import a_premium_domains_for_book_publishers_and_independent_author_platforms from "./data/premium-domains-for-book-publishers-and-independent-author-platforms";
+import a_expired_domains_for_travel_bloggers_and_niche_destination_guides from "./data/expired-domains-for-travel-bloggers-and-niche-destination-guides";
+import a_premium_domains_for_food_bloggers_and_recipe_content_creators from "./data/premium-domains-for-food-bloggers-and-recipe-content-creators";
+import a_expired_domains_for_fitness_coaches_and_online_personal_training_brands from "./data/expired-domains-for-fitness-coaches-and-online-personal-training-brands";
+import a_premium_domains_for_life_coaches_and_online_mindset_mentor_platforms from "./data/premium-domains-for-life-coaches-and-online-mindset-mentor-platforms";
+import a_expired_domains_for_saas_startups_targeting_vertical_niche_industries from "./data/expired-domains-for-saas-startups-targeting-vertical-niche-industries";
+import a_premium_domains_for_no_code_tools_and_low_code_platform_startups from "./data/premium-domains-for-no-code-tools-and-low-code-platform-startups";
+import a_expired_domains_for_cybersecurity_consultants_and_managed_soc_providers from "./data/expired-domains-for-cybersecurity-consultants-and-managed-soc-providers";
+import a_premium_domains_for_renewable_energy_investment_and_green_finance_brands from "./data/premium-domains-for-renewable-energy-investment-and-green-finance-brands";
+import a_expired_domains_for_luxury_real_estate_and_international_property_portals from "./data/expired-domains-for-luxury-real-estate-and-international-property-portals";
+import a_premium_domains_for_relocation_services_and_expat_onboarding_platforms from "./data/premium-domains-for-relocation-services-and-expat-onboarding-platforms";
+import a_expired_domains_for_language_schools_and_online_language_tutor_marketplaces from "./data/expired-domains-for-language-schools-and-online-language-tutor-marketplaces";
+import a_premium_domains_for_summer_camps_and_youth_adventure_program_brands from "./data/premium-domains-for-summer-camps-and-youth-adventure-program-brands";
 export const ARTICLES: Record<string, ExpiredDomainArticleProps> = {
   "301-redirect-strategy-for-expired-domains": a_301_redirect_strategy_for_expired_domains,
   "better-domain-name-saves-branding-time-budget": a_better_domain_name_saves_branding_time_budget,
@@ -389,6 +439,56 @@ export const ARTICLES: Record<string, ExpiredDomainArticleProps> = {
   "premium-domains-for-legal-tech-and-online-law-platforms": a_premium_domains_for_legal_tech_and_online_law_platforms,
   "expired-domains-for-hr-tech-and-recruitment-marketplaces": a_expired_domains_for_hr_tech_and_recruitment_marketplaces,
   "premium-domains-for-sports-teams-leagues-and-clubs": a_premium_domains_for_sports_teams_leagues_and_clubs,
+  "expired-domains-for-boutique-coffee-roasters-and-specialty-cafes": a_expired_domains_for_boutique_coffee_roasters_and_specialty_cafes,
+  "premium-domains-for-microbreweries-and-craft-beer-startups": a_premium_domains_for_microbreweries_and_craft_beer_startups,
+  "expired-domains-for-eco-tourism-and-sustainable-travel-brands": a_expired_domains_for_eco_tourism_and_sustainable_travel_brands,
+  "premium-domains-for-glamping-resorts-and-luxury-camping": a_premium_domains_for_glamping_resorts_and_luxury_camping,
+  "expired-domains-for-private-aviation-and-jet-charter-services": a_expired_domains_for_private_aviation_and_jet_charter_services,
+  "premium-domains-for-yoga-studios-and-online-meditation-apps": a_premium_domains_for_yoga_studios_and_online_meditation_apps,
+  "expired-domains-for-equestrian-brands-and-horse-riding-schools": a_expired_domains_for_equestrian_brands_and_horse_riding_schools,
+  "premium-domains-for-sailing-schools-and-boat-rental-marketplaces": a_premium_domains_for_sailing_schools_and_boat_rental_marketplaces,
+  "expired-domains-for-aquaculture-and-sustainable-seafood-brands": a_expired_domains_for_aquaculture_and_sustainable_seafood_brands,
+  "premium-domains-for-vertical-farming-and-indoor-agriculture-startups": a_premium_domains_for_vertical_farming_and_indoor_agriculture_startups,
+  "expired-domains-for-3d-printing-services-and-additive-manufacturing": a_expired_domains_for_3d_printing_services_and_additive_manufacturing,
+  "premium-domains-for-robotics-startups-and-industrial-automation": a_premium_domains_for_robotics_startups_and_industrial_automation,
+  "expired-domains-for-drone-services-and-aerial-inspection-companies": a_expired_domains_for_drone_services_and_aerial_inspection_companies,
+  "premium-domains-for-quantum-computing-and-deep-tech-startups": a_premium_domains_for_quantum_computing_and_deep_tech_startups,
+  "expired-domains-for-biotech-startups-and-clinical-research-firms": a_expired_domains_for_biotech_startups_and_clinical_research_firms,
+  "premium-domains-for-medspa-clinics-and-aesthetic-treatment-centers": a_premium_domains_for_medspa_clinics_and_aesthetic_treatment_centers,
+  "expired-domains-for-physiotherapy-clinics-and-rehab-specialists": a_expired_domains_for_physiotherapy_clinics_and_rehab_specialists,
+  "premium-domains-for-orthodontists-and-cosmetic-dental-practices": a_premium_domains_for_orthodontists_and_cosmetic_dental_practices,
+  "expired-domains-for-ivf-clinics-and-fertility-treatment-centers": a_expired_domains_for_ivf_clinics_and_fertility_treatment_centers,
+  "premium-domains-for-elderly-care-and-home-nursing-services": a_premium_domains_for_elderly_care_and_home_nursing_services,
+  "expired-domains-for-childcare-centers-and-private-preschools": a_expired_domains_for_childcare_centers_and_private_preschools,
+  "premium-domains-for-private-tutoring-and-stem-after-school-programs": a_premium_domains_for_private_tutoring_and_stem_after_school_programs,
+  "expired-domains-for-coworking-spaces-and-flexible-office-providers": a_expired_domains_for_coworking_spaces_and_flexible_office_providers,
+  "premium-domains-for-vacation-villa-rentals-and-luxury-property-management": a_premium_domains_for_vacation_villa_rentals_and_luxury_property_management,
+  "expired-domains-for-travel-insurance-and-international-health-cover": a_expired_domains_for_travel_insurance_and_international_health_cover,
+  "premium-domains-for-pet-insurance-and-veterinary-coverage-platforms": a_premium_domains_for_pet_insurance_and_veterinary_coverage_platforms,
+  "expired-domains-for-meal-kit-delivery-and-healthy-eating-startups": a_expired_domains_for_meal_kit_delivery_and_healthy_eating_startups,
+  "premium-domains-for-functional-mushroom-and-adaptogen-supplement-brands": a_premium_domains_for_functional_mushroom_and_adaptogen_supplement_brands,
+  "expired-domains-for-collagen-and-beauty-from-within-supplement-brands": a_expired_domains_for_collagen_and_beauty_from_within_supplement_brands,
+  "premium-domains-for-natural-skincare-and-clean-beauty-startups": a_premium_domains_for_natural_skincare_and_clean_beauty_startups,
+  "expired-domains-for-mens-grooming-brands-and-barbershop-chains": a_expired_domains_for_mens_grooming_brands_and_barbershop_chains,
+  "premium-domains-for-bridal-fashion-and-wedding-dress-designers": a_premium_domains_for_bridal_fashion_and_wedding_dress_designers,
+  "expired-domains-for-second-hand-luxury-and-pre-owned-fashion-marketplaces": a_expired_domains_for_second_hand_luxury_and_pre_owned_fashion_marketplaces,
+  "premium-domains-for-vintage-watch-dealers-and-collectible-marketplaces": a_premium_domains_for_vintage_watch_dealers_and_collectible_marketplaces,
+  "expired-domains-for-art-galleries-and-online-fine-art-marketplaces": a_expired_domains_for_art_galleries_and_online_fine_art_marketplaces,
+  "premium-domains-for-music-production-and-online-recording-platforms": a_premium_domains_for_music_production_and_online_recording_platforms,
+  "expired-domains-for-film-production-and-independent-cinema-brands": a_expired_domains_for_film_production_and_independent_cinema_brands,
+  "premium-domains-for-book-publishers-and-independent-author-platforms": a_premium_domains_for_book_publishers_and_independent_author_platforms,
+  "expired-domains-for-travel-bloggers-and-niche-destination-guides": a_expired_domains_for_travel_bloggers_and_niche_destination_guides,
+  "premium-domains-for-food-bloggers-and-recipe-content-creators": a_premium_domains_for_food_bloggers_and_recipe_content_creators,
+  "expired-domains-for-fitness-coaches-and-online-personal-training-brands": a_expired_domains_for_fitness_coaches_and_online_personal_training_brands,
+  "premium-domains-for-life-coaches-and-online-mindset-mentor-platforms": a_premium_domains_for_life_coaches_and_online_mindset_mentor_platforms,
+  "expired-domains-for-saas-startups-targeting-vertical-niche-industries": a_expired_domains_for_saas_startups_targeting_vertical_niche_industries,
+  "premium-domains-for-no-code-tools-and-low-code-platform-startups": a_premium_domains_for_no_code_tools_and_low_code_platform_startups,
+  "expired-domains-for-cybersecurity-consultants-and-managed-soc-providers": a_expired_domains_for_cybersecurity_consultants_and_managed_soc_providers,
+  "premium-domains-for-renewable-energy-investment-and-green-finance-brands": a_premium_domains_for_renewable_energy_investment_and_green_finance_brands,
+  "expired-domains-for-luxury-real-estate-and-international-property-portals": a_expired_domains_for_luxury_real_estate_and_international_property_portals,
+  "premium-domains-for-relocation-services-and-expat-onboarding-platforms": a_premium_domains_for_relocation_services_and_expat_onboarding_platforms,
+  "expired-domains-for-language-schools-and-online-language-tutor-marketplaces": a_expired_domains_for_language_schools_and_online_language_tutor_marketplaces,
+  "premium-domains-for-summer-camps-and-youth-adventure-program-brands": a_premium_domains_for_summer_camps_and_youth_adventure_program_brands,
 };
 
 export const ARTICLE_SLUGS: string[] = [
@@ -584,6 +684,56 @@ export const ARTICLE_SLUGS: string[] = [
   "premium-domains-for-legal-tech-and-online-law-platforms",
   "expired-domains-for-hr-tech-and-recruitment-marketplaces",
   "premium-domains-for-sports-teams-leagues-and-clubs",
+  "expired-domains-for-boutique-coffee-roasters-and-specialty-cafes",
+  "premium-domains-for-microbreweries-and-craft-beer-startups",
+  "expired-domains-for-eco-tourism-and-sustainable-travel-brands",
+  "premium-domains-for-glamping-resorts-and-luxury-camping",
+  "expired-domains-for-private-aviation-and-jet-charter-services",
+  "premium-domains-for-yoga-studios-and-online-meditation-apps",
+  "expired-domains-for-equestrian-brands-and-horse-riding-schools",
+  "premium-domains-for-sailing-schools-and-boat-rental-marketplaces",
+  "expired-domains-for-aquaculture-and-sustainable-seafood-brands",
+  "premium-domains-for-vertical-farming-and-indoor-agriculture-startups",
+  "expired-domains-for-3d-printing-services-and-additive-manufacturing",
+  "premium-domains-for-robotics-startups-and-industrial-automation",
+  "expired-domains-for-drone-services-and-aerial-inspection-companies",
+  "premium-domains-for-quantum-computing-and-deep-tech-startups",
+  "expired-domains-for-biotech-startups-and-clinical-research-firms",
+  "premium-domains-for-medspa-clinics-and-aesthetic-treatment-centers",
+  "expired-domains-for-physiotherapy-clinics-and-rehab-specialists",
+  "premium-domains-for-orthodontists-and-cosmetic-dental-practices",
+  "expired-domains-for-ivf-clinics-and-fertility-treatment-centers",
+  "premium-domains-for-elderly-care-and-home-nursing-services",
+  "expired-domains-for-childcare-centers-and-private-preschools",
+  "premium-domains-for-private-tutoring-and-stem-after-school-programs",
+  "expired-domains-for-coworking-spaces-and-flexible-office-providers",
+  "premium-domains-for-vacation-villa-rentals-and-luxury-property-management",
+  "expired-domains-for-travel-insurance-and-international-health-cover",
+  "premium-domains-for-pet-insurance-and-veterinary-coverage-platforms",
+  "expired-domains-for-meal-kit-delivery-and-healthy-eating-startups",
+  "premium-domains-for-functional-mushroom-and-adaptogen-supplement-brands",
+  "expired-domains-for-collagen-and-beauty-from-within-supplement-brands",
+  "premium-domains-for-natural-skincare-and-clean-beauty-startups",
+  "expired-domains-for-mens-grooming-brands-and-barbershop-chains",
+  "premium-domains-for-bridal-fashion-and-wedding-dress-designers",
+  "expired-domains-for-second-hand-luxury-and-pre-owned-fashion-marketplaces",
+  "premium-domains-for-vintage-watch-dealers-and-collectible-marketplaces",
+  "expired-domains-for-art-galleries-and-online-fine-art-marketplaces",
+  "premium-domains-for-music-production-and-online-recording-platforms",
+  "expired-domains-for-film-production-and-independent-cinema-brands",
+  "premium-domains-for-book-publishers-and-independent-author-platforms",
+  "expired-domains-for-travel-bloggers-and-niche-destination-guides",
+  "premium-domains-for-food-bloggers-and-recipe-content-creators",
+  "expired-domains-for-fitness-coaches-and-online-personal-training-brands",
+  "premium-domains-for-life-coaches-and-online-mindset-mentor-platforms",
+  "expired-domains-for-saas-startups-targeting-vertical-niche-industries",
+  "premium-domains-for-no-code-tools-and-low-code-platform-startups",
+  "expired-domains-for-cybersecurity-consultants-and-managed-soc-providers",
+  "premium-domains-for-renewable-energy-investment-and-green-finance-brands",
+  "expired-domains-for-luxury-real-estate-and-international-property-portals",
+  "premium-domains-for-relocation-services-and-expat-onboarding-platforms",
+  "expired-domains-for-language-schools-and-online-language-tutor-marketplaces",
+  "premium-domains-for-summer-camps-and-youth-adventure-program-brands",
 ];
 
 export interface ArticleMeta {
