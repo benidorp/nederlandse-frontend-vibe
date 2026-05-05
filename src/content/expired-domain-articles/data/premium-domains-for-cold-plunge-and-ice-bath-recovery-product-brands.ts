@@ -77,24 +77,6 @@ const article: ExpiredDomainArticleProps = {
         "Exit options for premium domains for cold plunge brands typically fall into three buckets: strategic sale to an operator in the cold plunge brands space, marketplace listing to a portfolio buyer, and brokered private sale to a fund. Knowing which of these you are building toward, from day one, dramatically improves both your acquisition price and your eventual exit multiple."
       ]
     }
-  ],
-  "faq": [
-    {
-      "question": "Are premium domains for cold plunge brands actually worth the premium price in 2026?",
-      "answer": "For serious operators in the cold plunge brands category, yes — provided diligence is done properly. The ROI comes from compounding SEO authority, lower paid acquisition cost, and a measurable conversion lift on every channel. For hobby projects, a fresh registration is usually a better fit."
-    },
-    {
-      "question": "What is a fair price range for premium domains for cold plunge brands?",
-      "answer": "Prices vary widely. Clean, short, on-niche names commonly clear the four to low five-figure range, with flagship one-word category domains running into six figures. The right anchor is always the strategic value to your cold plunge brands business, not the seller's asking price in isolation."
-    },
-    {
-      "question": "How do I check if premium domains for cold plunge brands were ever penalised by Google?",
-      "answer": "Combine three signals: historical traffic curves in SimilarWeb or Semrush, sudden anchor-text spikes in Ahrefs and Majestic, and Wayback snapshots showing thin or off-topic content. Any two of those together justify walking away from the cold plunge brands candidate."
-    },
-    {
-      "question": "Should I rebuild on premium domains for cold plunge brands or 301-redirect them?",
-      "answer": "For cold plunge brands brand acquisitions, rebuild. The on-page signals matter as much as the inherited authority. For pure authority plays where your main brand is already established, a carefully mapped 301 with topically aligned destination URLs is often the cleaner play."
-    }
   ]
 };
 
