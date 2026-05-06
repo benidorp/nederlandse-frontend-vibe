@@ -1037,6 +1037,8 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
 
             <TwoColumnBuyBanner />
 
+            <ThreeColumnPromoStrip />
+
             {/* Trust strip */}
             <div className="not-prose mt-12 grid gap-4 rounded-2xl border border-sky-200 bg-sky-50/60 p-5 sm:grid-cols-3 md:p-6">
               {[
