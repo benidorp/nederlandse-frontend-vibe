@@ -897,6 +897,8 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
 
             <FeatureGrid />
 
+            <ThreeColumnPromoStrip />
+
             {/* Sections — magazine-style long-form with H3 SEO subhead above every paragraph */}
             <div className="prose prose-slate max-w-none prose-headings:scroll-mt-32 prose-h2:mt-12 prose-h2:text-[30px] prose-h2:font-bold prose-h2:leading-tight prose-h2:tracking-tight prose-h2:text-navy-dark md:prose-h2:mt-16 md:prose-h2:text-[40px] prose-h3:mt-10 prose-h3:text-[20px] prose-h3:font-bold prose-h3:leading-snug prose-h3:text-navy md:prose-h3:text-[26px] prose-li:text-slate-700 prose-strong:text-navy-dark prose-a:text-blue-700 hover:prose-a:text-blue-800">
               {sections.map((section, i) => {
