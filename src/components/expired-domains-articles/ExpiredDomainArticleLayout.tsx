@@ -382,6 +382,63 @@ const BuyCTA = () => (
   </div>
 );
 
+const NORDVPN_LINK = "https://www.tkqlhce.com/click-100643838-14352852";
+
+const ThreeColumnPromoStrip = () => (
+  <div className="not-prose my-12 grid gap-5 md:grid-cols-3">
+    {/* NordVPN */}
+    <a
+      href={NORDVPN_LINK}
+      target="_blank"
+      rel="nofollow noopener noreferrer sponsored"
+      className="group relative flex flex-col overflow-hidden rounded-2xl border-2 border-blue-500/40 bg-gradient-to-br from-blue-900 via-blue-700 to-blue-600 p-6 text-white shadow-xl transition hover:-translate-y-1 hover:border-blue-300 hover:shadow-2xl"
+    >
+      <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-blue-400/20 blur-2xl transition group-hover:bg-blue-300/30" />
+      <ShieldCheck className="mb-3 h-8 w-8 text-sky-300" />
+      <p className="text-[11px] font-bold uppercase tracking-wider text-sky-200/90">Sponsored · NordVPN</p>
+      <h3 className="mt-1 text-xl font-extrabold leading-tight">Protect Your Domain Business with NordVPN</h3>
+      <p className="mt-2 text-sm leading-relaxed text-sky-100/90">
+        Secure WHOIS lookups, registrar logins, and escrow transfers on any network. Industry-leading VPN trusted by domain investors worldwide.
+      </p>
+      <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-sky-200 group-hover:text-white">
+        Get NordVPN Deal <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+      </span>
+    </a>
+    {/* Premium Domains CTA 1 */}
+    <Link
+      to={MARKETPLACE_URL}
+      className="group relative flex flex-col overflow-hidden rounded-2xl border-2 border-amber-400/50 bg-gradient-to-br from-amber-500 via-amber-400 to-orange-400 p-6 text-navy-dark shadow-xl transition hover:-translate-y-1 hover:border-amber-300 hover:shadow-2xl"
+    >
+      <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-white/30 blur-2xl transition group-hover:bg-white/50" />
+      <Sparkles className="mb-3 h-8 w-8 text-navy-dark" />
+      <p className="text-[11px] font-bold uppercase tracking-wider text-navy-dark/80">🔥 Hot · Premium Inventory</p>
+      <h3 className="mt-1 text-xl font-extrabold leading-tight">Browse 100+ Premium Expired Domains</h3>
+      <p className="mt-2 text-sm font-medium leading-relaxed text-navy-dark/90">
+        Hand-vetted .com domains with verified MOZ DA, clean backlinks and instant SEO authority. From €429.
+      </p>
+      <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-extrabold text-navy-dark group-hover:underline">
+        View Marketplace Now <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+      </span>
+    </Link>
+    {/* Premium Domains CTA 2 */}
+    <Link
+      to={MARKETPLACE_URL}
+      className="group relative flex flex-col overflow-hidden rounded-2xl border-2 border-emerald-400/50 bg-gradient-to-br from-emerald-600 via-emerald-500 to-teal-500 p-6 text-white shadow-xl transition hover:-translate-y-1 hover:border-emerald-300 hover:shadow-2xl"
+    >
+      <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-emerald-200/30 blur-2xl transition group-hover:bg-emerald-200/50" />
+      <TrendingUp className="mb-3 h-8 w-8 text-white" />
+      <p className="text-[11px] font-bold uppercase tracking-wider text-emerald-100">⭐ Best Value · IAEE</p>
+      <h3 className="mt-1 text-xl font-extrabold leading-tight">Buy a High-Authority Premium Domain Today</h3>
+      <p className="mt-2 text-sm leading-relaxed text-white/95">
+        Skip months of SEO grind. Acquire an aged premium .com with real backlinks and start ranking faster.
+      </p>
+      <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-extrabold text-white group-hover:underline">
+        Explore Premium Domains <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+      </span>
+    </Link>
+  </div>
+);
+
 const TwoColumnBuyBanner = () => (
   <div className="not-prose my-12 grid gap-5 md:grid-cols-2 md:gap-6">
     <div className="rounded-2xl border border-sky-200 bg-white p-6 shadow-sm transition hover:shadow-md md:p-7">
