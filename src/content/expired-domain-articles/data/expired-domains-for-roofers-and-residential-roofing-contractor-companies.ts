@@ -3,108 +3,112 @@ import type { ExpiredDomainArticleProps } from "@/components/expired-domains-art
 
 const article: ExpiredDomainArticleProps = {
   "slug": "expired-domains-for-roofers-and-residential-roofing-contractor-companies",
-  "primaryKeyword": "expired domains for roofers",
-  "metaTitle": "Expired Domains for Roofers And Residential Roofing Contractor Companies: 2026 SEO, Branding & ",
-  "metaDescription": "Complete 2026 buyer guide to expired domains for roofers. Evaluate authority, brand fit, valuation, ROI and risks for serious roofers operators and investors.",
-  "h1": "Expired Domains for Roofers And Residential Roofing Contractor Companies in 2026: SEO, Branding, Authority and Buyer Strategy",
+  "primaryKeyword": "premium expired domain names for Roofers and Residential Roofing Contractor Companies",
+  "metaTitle": "Premium and Expired Domain Names for Roofers and Residential Roofing Contractor Companies: A Hands On Field Guide for Modern Operators",
+  "metaDescription": "How to read the real signals behind premium and expired domain names for Roofers and Residential Roofing Contractor Companies, separate noise from substance a",
+  "h1": "Premium and Expired Domain Names for Roofers and Residential Roofing Contractor Companies: A Hands On Field Guide for Modern Operators",
   "intro": [
-    "In 2026, expired domains for roofers have become one of the most underpriced strategic levers in the roofers space. While most operators chase paid traffic and short-term content, a smaller group of buyers is locking in clean, brandable assets that will compound trust and SEO authority for the next decade. This guide is written for that second group.",
-    "Most articles on expired domains for roofers either oversell the upside or skip the boring diligence work that separates good purchases from expensive regrets. The reality lives in the middle. There are repeatable wins for buyers who learn to read backlink integrity, historical topical relevance, brand fit with the roofers category, and renewal economics.",
-    "By the end of this article you will have a practical playbook you can apply the next time a expired domains for roofers opportunity crosses your desk: a flagship brand acquisition, a defensive registration, an SEO authority play that supports a roofers content engine, or a portfolio addition you intend to flip in two to five years."
+    "Inside Roofers and Residential Roofing Contractor Companies, the gap between a forgettable domain and a premium one is rarely about price; it is about what the asset does to the rest of the business across the next five to ten years. Premium and expired domain names sit at the intersection of three forces reshaping Roofers and Residential Roofing Contractor Companies: rising buyer expectations around digital trust, a shrinking pool of clean brandable assets and a search landscape where authority compounds faster than ever.",
+    "By the end of this guide you will have a calm playbook for the next premium or expired domain decision in Roofers and Residential Roofing Contractor Companies that lands on your desk. The framework in this article is the same one experienced Roofers and Residential Roofing Contractor Companies buyers use to filter listings, structure offers and protect renewals across years of cycles.",
+    "The patience needed to buy well inside Roofers and Residential Roofing Contractor Companies is unfashionable, but it is exactly what produces the asymmetrically good outcomes that quietly fund operators and investors. For founders and investors active in Roofers and Residential Roofing Contractor Companies, the right domain is rarely cosmetic; it is one of the few decisions that quietly compounds across every channel."
   ],
   "sections": [
     {
-      "heading": "Why Expired Domains for Roofers And Residential Roofing Contractor Companies Matter More in 2026 Than Ever Before",
+      "heading": "The Underrated Lever of Premium Domains Inside Roofers and Residential Roofing Contractor Companies",
       "paragraphs": [
-        "Three forces are reshaping the roofers landscape: rising buyer expectations around digital trust, a shrinking pool of clean brandable .com assets in this vertical, and a search environment where established authority compounds far faster than fresh registrations can build. Together they make expired domains for roofers one of the few decisions that quietly impact every channel a roofers business will ever run.",
-        "Sophisticated buyers have noticed. The best expired domains for roofers now move off the open market within days, often through private brokers and curated inventories rather than auction sites. Casual buyers see only the leftovers, while serious operators see deal flow that never reaches the public eye. Understanding this two-tier market is the first step in playing it well.",
-        "If you build a real roofers brand, the domain is the asset that survives every redesign, every team change, every product pivot. Treating expired domains for roofers as a strategic decision rather than a marketing line item is the single mindset shift that separates buyers who win from buyers who churn through forgettable names."
+        "The compounding inside Roofers and Residential Roofing Contractor Companies is small per touchpoint but relentless, and it favors patient buyers more than impulsive ones. Once you own a premium Roofers and Residential Roofing Contractor Companies name, almost every channel in the business gets a small permanent tailwind that never has to be paid for again.",
+        "Buyers who win in Roofers and Residential Roofing Contractor Companies read deeper signals — backlink integrity, historical topical relevance, brand fit and renewal economics. The honest truth about premium and expired domains for Roofers and Residential Roofing Contractor Companies is that the good outcomes are real but earned. In Roofers and Residential Roofing Contractor Companies, the spread between strong and weak assets keeps widening, which favors prepared buyers and punishes impulsive ones.",
+        "The framework below has been used by quiet operators across Roofers and Residential Roofing Contractor Companies to filter listings, structure offers and protect renewals for years. Whether you are buying one flagship name for Roofers and Residential Roofing Contractor Companies or quietly building a small portfolio, the same principles apply. The goal of the rest of this article is to hand you a small toolkit you can reuse on every Roofers and Residential Roofing Contractor Companies domain opportunity."
       ]
     },
     {
-      "heading": "Reading the Real Signals Behind a Strong Expired Domains for Roofers And Residential Roofing Contractor Companies Opportunity",
+      "heading": "The Diligence Signals That Predict Outcomes for Roofers and Residential Roofing Contractor Companies Domains",
       "paragraphs": [
-        "Headline metrics like Domain Rating, Domain Authority and Trust Flow are useful filters, but they should never be the deciding factor when you evaluate expired domains for roofers. Look beneath them at linking-root-domains profile, anchor-text distribution, organic traffic patterns, and the topical alignment of historical content with your future roofers business.",
-        "The Wayback Machine is the single most valuable diligence tool on the entire web for expired domains for roofers. Pull at least eight to twelve historical snapshots covering the last decade. You are looking for theme consistency, absence of spam-vertical usage (unless intended), and editorial backlinks from genuine roofers blogs, trade publications and association sites.",
-        "A surprisingly strong signal for expired domains for roofers is naming hygiene: short, easy to spell, no hyphens or numbers, pronounceable on a phone call. These small properties translate directly into lower customer acquisition cost, higher recall, and easier word-of-mouth in the roofers community over a multi-year horizon."
+        "Real human traffic patterns matter far more than headline scores when judging a Roofers and Residential Roofing Contractor Companies domain. When you score a Roofers and Residential Roofing Contractor Companies candidate, force yourself to look past a single number and read the underlying pattern instead.",
+        "Wayback frequently reveals adult, gambling, pharma or scam usage that no live tool will surface today. The Wayback Machine remains the single most useful diligence tool for Roofers and Residential Roofing Contractor Companies buyers. For any serious Roofers and Residential Roofing Contractor Companies candidate, spend twenty minutes inside Wayback before anything else.",
+        "Hyphens, numbers and creative misspellings always extract a small permanent tax from any Roofers and Residential Roofing Contractor Companies brand that adopts them. If a Roofers and Residential Roofing Contractor Companies name is hard to dictate over the phone without spelling it out, it will quietly cost you forever. Within Roofers and Residential Roofing Contractor Companies, the names that age best are the ones a tired person can spell correctly the first time."
       ]
     },
     {
-      "heading": "How to Evaluate Expired Domains for Roofers And Residential Roofing Contractor Companies Without Falling for Surface Metrics",
+      "heading": "The Diligence Workflow Real Roofers and Residential Roofing Contractor Companies Buyers Actually Use",
       "paragraphs": [
-        "Build a one-page diligence template you reuse on every candidate. Force yourself to answer five questions in writing before any wire transfer: Who linked historically? What did the site rank for at peak? Has it ever been algorithmically or manually penalised? Is the trademark landscape clean in your geographies? And what is a realistic five-year renewal cost relative to strategic value?",
-        "Use at least two independent backlink databases — for example Ahrefs and Majestic — to cross-check the link profile of any expired domains for roofers candidate. Disagreements between them are signal, not noise. They reveal either short-lived spam links inflating one tool or genuinely high-authority links the other tool missed entirely.",
-        "For expired domains for roofers specifically, weight niche relevance heavily. A modest-DR domain with twenty editorial links from real roofers publications outperforms a flashy high-DR generic domain with hundreds of unrelated comment links almost every time, especially under Google's modern Helpful Content era."
+        "Refusing to skip cells in the diligence sheet is what separates serious Roofers and Residential Roofing Contractor Companies buyers from hobbyists who lose money slowly. The fastest way to professionalize Roofers and Residential Roofing Contractor Companies buying is to standardize the diligence sheet for every single listing. Five honest answers in writing, every time, surface ninety percent of the problems on a Roofers and Residential Roofing Contractor Companies candidate before any contract is signed.",
+        "Short-lived spam links inflating one tool's score is one of the most common ways Roofers and Residential Roofing Contractor Companies buyers get tricked into overpaying. Two databases are the minimum honest standard for Roofers and Residential Roofing Contractor Companies link diligence and the work takes less than ten minutes.",
+        "Twenty contextual Roofers and Residential Roofing Contractor Companies links from inside the niche are worth more than two hundred generic links from outside it. Relevance trumps authority for most Roofers and Residential Roofing Contractor Companies acquisitions in modern ranking environments and the gap keeps widening with each algorithm update."
       ]
     },
     {
-      "heading": "Branding, Trust and Conversion Lift From Expired Domains for Roofers And Residential Roofing Contractor Companies",
+      "heading": "Brand, Trust and Conversion Lift Inside Roofers and Residential Roofing Contractor Companies",
       "paragraphs": [
-        "On the brand side, a great roofers domain pays you back every single time someone hears the name. Customers spell it correctly the first time, repeat it accurately to friends, and trust an email from that address without a second thought. Each tiny win compounds into pipeline you would otherwise have to buy through paid channels at painful CPMs.",
-        "Conversion lift from expired domains for roofers is often quietly significant. A/B tests run by sophisticated roofers operators consistently show two to seven percent uplift in checkout completion or lead-form submission when the brand domain looks senior, short, and category-appropriate — simply because perceived risk drops at the moment of decision.",
-        "For roofers businesses that depend on referrals and word of mouth, the domain is also the single most-shared marketing asset you own. Every email signature, business card, podcast mention and partner integration is an unpaid impression. Make it count by choosing a name that is genuinely memorable."
+        "Each tiny brand win on a senior Roofers and Residential Roofing Contractor Companies domain multiplies into pipeline you would otherwise have to buy through paid channels. A senior Roofers and Residential Roofing Contractor Companies domain quietly removes friction at every touchpoint in the buyer journey. On the brand side, a great Roofers and Residential Roofing Contractor Companies domain pays you back every time someone hears or types the name.",
+        "Perceived risk drops at the moment of decision when a Roofers and Residential Roofing Contractor Companies brand sits on a short, senior, category-appropriate domain. Conversion uplift from premium and expired domains in Roofers and Residential Roofing Contractor Companies is often quietly significant.",
+        "A good Roofers and Residential Roofing Contractor Companies domain becomes a permanent line item in every email signature, slide deck and invoice you ever send. Inside Roofers and Residential Roofing Contractor Companies, your domain shows up on every contract, deck, invoice and email signature for the lifetime of the business. For Roofers and Residential Roofing Contractor Companies businesses that depend on referrals, partnerships or procurement, the domain is the most-shared marketing asset you own."
       ]
     },
     {
-      "heading": "SEO Authority: How Expired Domains for Roofers And Residential Roofing Contractor Companies Accelerate Rankings",
+      "heading": "How a Clean Domain History Shortens Time to First Ranking in Roofers and Residential Roofing Contractor Companies",
       "paragraphs": [
-        "From a pure SEO angle, expired domains for roofers deliver the head start that fresh registrations cannot match. Aged authority, contextual backlinks and historical topical relevance stack on top of any new content you publish. That accelerates indexing, shortens the time to first ranked keyword, and meaningfully reduces the months of patience required before content marketing pays off in the roofers category.",
-        "The accelerator effect is most visible in mid-difficulty long-tail terms within the roofers space — the exact terms where most independent operators win business in 2026. Expect compounding rather than overnight wins; the curve is typically steepest between months six and eighteen after a clean rebuild on top of a vetted asset.",
-        "Pair the domain with a content plan that respects topical depth. Cover the roofers niche thoroughly with people-first content, internal linking that mirrors a coherent topical map, and clean technical SEO. Combined with the inherited authority of a quality expired domains for roofers acquisition, this remains one of the most repeatable SEO playbooks of the decade."
+        "Indexing happens faster on aged Roofers and Residential Roofing Contractor Companies domains and first rankings show up sooner than on fresh registrations. Patience required before content marketing pays off in Roofers and Residential Roofing Contractor Companies drops noticeably when the underlying domain is aged and clean.",
+        "The accelerator effect is strongest in mid-difficulty long-tail terms within Roofers and Residential Roofing Contractor Companies — the exact queries where most operators win business. Visible compounding on a vetted Roofers and Residential Roofing Contractor Companies domain generally arrives between months six and eighteen after the relaunch.",
+        "Pair the Roofers and Residential Roofing Contractor Companies domain with a content plan that respects topical depth. Plan a tight topical map, ship people-first writing on the Roofers and Residential Roofing Contractor Companies domain and keep the technical setup boring and clean."
       ]
     },
     {
-      "heading": "Buyer Playbook: Acquiring Expired Domains for Roofers And Residential Roofing Contractor Companies the Right Way",
+      "heading": "The Practical Mechanics of Buying Roofers and Residential Roofing Contractor Companies Domains Safely",
       "paragraphs": [
-        "Step one is intent. Write down, in one paragraph, what role this roofers domain will play. Without that paragraph you will negotiate poorly and overpay. With it, you will quickly disqualify ninety percent of candidates and protect your budget for the names that genuinely fit your expired domains for roofers strategy.",
-        "Step two is diligence. Run the five-question template above, pull at least ten historical snapshots, cross-check backlinks across two tools, and check trademark databases in your operating geographies (USPTO, EUIPO, WIPO Global Brand Database). Twenty minutes here routinely saves five-figure mistakes on expired domains for roofers deals.",
-        "Step three is structure. Always use a reputable escrow provider, request a clean WHOIS push within the same registrar where possible, and confirm renewal cost for at least the next five years before signing. For meaningful expired domains for roofers purchases, never wire funds directly to a private seller without escrow."
+        "Without a written purpose for a Roofers and Residential Roofing Contractor Companies domain you will negotiate poorly and overpay. Intent on paper for any serious Roofers and Residential Roofing Contractor Companies acquisition disqualifies ninety percent of candidates almost instantly. A clear written purpose for a Roofers and Residential Roofing Contractor Companies asset stops emotional bidding and frees up budget for the few names that genuinely fit.",
+        "Step two is diligence: run the five-question template, pull historical snapshots and cross-check the backlink profiles for any Roofers and Residential Roofing Contractor Companies candidate. Check trademark databases in every operating geography that matters for the Roofers and Residential Roofing Contractor Companies brand you intend to build. Diligence on a Roofers and Residential Roofing Contractor Companies candidate is non-negotiable; the work is unglamorous and quick, but skipping it is how smart buyers end up owning toxic assets.",
+        "Structure protects the Roofers and Residential Roofing Contractor Companies buyer; escrow, a same-registrar push and confirmed renewal economics turn a risky transfer into a boring administrative event. Confirm the renewal cost for the next five years before signing on a Roofers and Residential Roofing Contractor Companies domain, not after."
       ]
     },
     {
-      "heading": "Common Mistakes to Avoid When Buying Expired Domains for Roofers And Residential Roofing Contractor Companies",
+      "heading": "Where Most Premium Roofers and Residential Roofing Contractor Companies Domain Deals Go Wrong",
       "paragraphs": [
-        "The most common mistake on expired domains for roofers deals is anchoring price to a backlink tool's \"domain value\" estimate. Those numbers are loose modelling exercises, not appraisals. Real value emerges from the intersection of brand fit, niche relevance, link integrity and the cash flow your roofers business will generate behind the asset.",
-        "Another frequent mistake is ignoring trademark exposure. A beautiful roofers name is worthless if it collides with a registered mark in your operating geography. Spend thirty minutes on EUIPO, USPTO and WIPO before any meaningful expired domains for roofers purchase. Cheap insurance.",
-        "Finally, do not skip the renewal-cost conversation. Some premium aftermarket names carry inflated renewal fees or registry premium pricing that quietly compounds. For long-horizon expired domains for roofers bets, a name that costs ten dollars per year to renew is structurally different from one that costs four hundred dollars per year."
+        "Premium Roofers and Residential Roofing Contractor Companies domains punish transactional thinking and reward buyers who plan years ahead. Plan the Roofers and Residential Roofing Contractor Companies integration and renewal calendar before signing, not after; the cost difference compounds quietly for years. The best outcomes on Roofers and Residential Roofing Contractor Companies domain acquisitions go to buyers who plan the next five years before the WHOIS push happens.",
+        "Always run trademark searches in every market where you intend to operate the Roofers and Residential Roofing Contractor Companies brand, including phonetic and translated variants. A short trademark search across real operating geographies costs nothing and surfaces almost every meaningful risk on a Roofers and Residential Roofing Contractor Companies candidate.",
+        "One tool is never enough on a serious Roofers and Residential Roofing Contractor Companies candidate; two databases plus manual review beats any single dashboard score. No single number captures the real value of a Roofers and Residential Roofing Contractor Companies domain in modern search environments. Let your eyes overrule any single platform that disagrees with the rest of the evidence on a Roofers and Residential Roofing Contractor Companies listing."
       ]
     },
     {
-      "heading": "Long-Term Value, Renewal Economics and Exit Options for Expired Domains for Roofers And Residential Roofing Contractor Companies",
+      "heading": "The Quiet Compounding of a Disciplined Roofers and Residential Roofing Contractor Companies Domain Portfolio",
       "paragraphs": [
-        "Plan expired domains for roofers purchases as ten-year decisions, not ten-month ones. The compounding only fully materialises across multiple Google algorithm cycles, brand iterations and product launches. Buyers who hold high-quality roofers assets with patience consistently outperform buyers who flip on the first marginal offer.",
-        "Renewal economics matter more than buyers expect. A clean .com on a standard registrar at roughly fifteen dollars per year is structurally different from a country-code or new-gTLD asset that carries premium renewals. For long-horizon expired domains for roofers positions, model renewal costs across the full holding period before you sign anything.",
-        "Exit options for expired domains for roofers typically fall into three buckets: strategic sale to an operator in the roofers space, marketplace listing to a portfolio buyer, and brokered private sale to a fund. Knowing which of these you are building toward, from day one, dramatically improves both your acquisition price and your eventual exit multiple."
+        "Quality Roofers and Residential Roofing Contractor Companies names are getting scarcer every year while informed demand keeps rising. Looking ahead, the supply of premium Roofers and Residential Roofing Contractor Companies names continues to shrink while serious buyers keep raising the bar. The small Roofers and Residential Roofing Contractor Companies portfolio you assemble this year tends to look very cheap five years out, provided each acquisition can be defended in writing.",
+        "Treat Roofers and Residential Roofing Contractor Companies domains the way a real estate investor treats buildings: a few core holdings paired with a small flow of opportunistic trades. A handful of flagship Roofers and Residential Roofing Contractor Companies names held for the long term, supported by a rotating layer of trade-grade names, is the classic shape that works.",
+        "Done consistently, premium and expired domains for Roofers and Residential Roofing Contractor Companies quietly outperform almost every other line item on a digital balance sheet. Inside Roofers and Residential Roofing Contractor Companies, the discipline of always pricing the deal against a five-year cost of ownership is the actual edge."
       ]
     }
   ],
   "faqs": [
     {
-      "question": "Are expired domains for roofers actually worth the premium price in 2026?",
-      "answer": "For serious operators, yes — provided diligence is done properly. The ROI compounds through SEO authority, lower paid acquisition cost, and measurable conversion lift. For hobby projects, a fresh registration is usually the better fit."
+      "question": "Are expired Roofers and Residential Roofing Contractor Companies domains the same as premium Roofers and Residential Roofing Contractor Companies domains?",
+      "answer": "Both categories deserve the same diligence; the legal status of the name matters less than the trust signals it carries forward into your ownership. Most premium Roofers and Residential Roofing Contractor Companies names sold on the secondary market are technically expired or dropped at some point in their history, but plenty of premium Roofers and Residential Roofing Contractor Companies names never expired at all."
     },
     {
-      "question": "What is a fair price range for expired domains for roofers?",
-      "answer": "Prices vary widely. Clean, short, on-niche names typically clear the four to low five-figure range, with flagship one-word category domains running into six figures. Anchor price to strategic value, not the seller's asking number."
+      "question": "Will Google penalize me for buying an expired Roofers and Residential Roofing Contractor Companies domain?",
+      "answer": "The risk on an expired Roofers and Residential Roofing Contractor Companies domain comes from what was there before and what you do after, not from the act of buying it. Not for the purchase itself; penalties usually trace back to either inherited toxic links or aggressive tactics on the rebuild."
     },
     {
-      "question": "How do I check if expired domains for roofers were ever penalised by Google?",
-      "answer": "Combine three signals: historical traffic curves in SimilarWeb or Semrush, sudden anchor-text spikes in Ahrefs and Majestic, and Wayback snapshots showing thin or off-topic content. Any two together justify walking away."
+      "question": "What is the most expensive mistake with Roofers and Residential Roofing Contractor Companies domains?",
+      "answer": "Treating a Roofers and Residential Roofing Contractor Companies acquisition as a one-off purchase rather than a strategic position is the most expensive mistake first-time buyers keep making."
     },
     {
-      "question": "Should I rebuild on expired domains for roofers or 301-redirect them?",
-      "answer": "For brand acquisitions, rebuild — on-page signals matter as much as inherited authority. For pure authority plays where your main brand is established, a carefully mapped 301 with topically aligned destinations is the cleaner play."
+      "question": "Which tools are most useful for vetting a Roofers and Residential Roofing Contractor Companies domain?",
+      "answer": "Tools matter less than the reading; the same dashboard outputs lead to wildly different conclusions depending on whether the Roofers and Residential Roofing Contractor Companies buyer actually understands what they are looking at. Two independent backlink tools plus Wayback plus a trademark search is the floor for any serious Roofers and Residential Roofing Contractor Companies candidate; everything beyond that is incremental."
     },
     {
-      "question": "Where should I buy expired domains for roofers safely?",
-      "answer": "Use vetted marketplaces and brokers, and always close through escrow. For meaningful purchases, never wire funds directly to a private seller without escrow protection — it is the single most preventable category of loss in this market."
+      "question": "What separates a premium Roofers and Residential Roofing Contractor Companies domain from a generic one?",
+      "answer": "The defining traits of a premium Roofers and Residential Roofing Contractor Companies domain are clarity, brevity and a quiet history of legitimate use; everything else is supporting evidence. Premium Roofers and Residential Roofing Contractor Companies domains usually combine three things: a short, easy-to-spell name, a clean and topically relevant history and a backlink profile that would be difficult to recreate today."
+    },
+    {
+      "question": "How quickly can I expect ranking gains on a clean Roofers and Residential Roofing Contractor Companies domain?",
+      "answer": "Expect early signs within weeks and the real flywheel between months six and eighteen; anyone promising faster results in Roofers and Residential Roofing Contractor Companies is selling something."
     }
   ],
   "conclusion": [
-    "Expired Domains for serious operators are no longer a luxury in 2026 — they are infrastructure. The buyers who treat expired domains for roofers as a strategic, ten-year decision consistently outperform those who treat them as a marketing line item, and the gap is widening as the supply of clean roofers names continues to shrink.",
-    "If you remember nothing else, remember the diligence template, the trademark check, the renewal economics, and the discipline of writing down the role the domain will play before you negotiate. Those four habits separate professional roofers domain buyers from everyone else."
+    "The buyers who win inside Roofers and Residential Roofing Contractor Companies are not the cleverest negotiators; they are the most consistent diligence-runners and the most disciplined renewers. Done consistently, premium and expired domain names for Roofers and Residential Roofing Contractor Companies outperform almost every other line item on a digital balance sheet.",
+    "Done well, premium and expired domain investments inside Roofers and Residential Roofing Contractor Companies compound silently across pipeline, brand and search; done poorly, they leak budget every renewal cycle. The difference between good and bad Roofers and Residential Roofing Contractor Companies domain outcomes is almost entirely upstream of the wire transfer: written intent, honest diligence and calm structure."
   ],
-  "closingHook": "Treat your next expired domains for roofers purchase as the foundation of a decade of compounding — because that is exactly what it is."
+  "closingHook": "Years from now, the Roofers and Residential Roofing Contractor Companies buyers who slowed down today will look genuinely lucky. They will not have been."
 };
 
 export default article;

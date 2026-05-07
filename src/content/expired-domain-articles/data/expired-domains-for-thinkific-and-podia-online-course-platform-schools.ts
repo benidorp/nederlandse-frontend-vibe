@@ -3,108 +3,112 @@ import type { ExpiredDomainArticleProps } from "@/components/expired-domains-art
 
 const article: ExpiredDomainArticleProps = {
   "slug": "expired-domains-for-thinkific-and-podia-online-course-platform-schools",
-  "primaryKeyword": "expired domains for Thinkific course schools",
-  "metaTitle": "Expired Domains for Thinkific And Podia Online Course Platform Schools: 2026 SEO, Branding & Do",
-  "metaDescription": "Complete 2026 buyer guide to expired domains for Thinkific course schools. Evaluate authority, brand fit, valuation, ROI and risks for serious Thinkific course schools operators and investors.",
-  "h1": "Expired Domains for Thinkific And Podia Online Course Platform Schools in 2026: SEO, Branding, Authority and Buyer Strategy",
+  "primaryKeyword": "premium expired domain names for Thinkific and Podia Online Course Platform Schools",
+  "metaTitle": "How Founders and Investors Should Approach Premium and Expired Domain Names for Thinkific and Podia Online Course Platform Schools",
+  "metaDescription": "Learn how operators select premium and expired domain names for Thinkific and Podia Online Course Platform Schools, from backlink quality and history checks t",
+  "h1": "How Founders and Investors Should Approach Premium and Expired Domain Names for Thinkific and Podia Online Course Platform Schools",
   "intro": [
-    "In 2026, expired domains for Thinkific course schools have become one of the most underpriced strategic levers in the Thinkific course schools space. While most operators chase paid traffic and short-term content, a smaller group of buyers is locking in clean, brandable assets that will compound trust and SEO authority for the next decade. This guide is written for that second group.",
-    "Most articles on expired domains for Thinkific course schools either oversell the upside or skip the boring diligence work that separates good purchases from expensive regrets. The reality lives in the middle. There are repeatable wins for buyers who learn to read backlink integrity, historical topical relevance, brand fit with the Thinkific course schools category, and renewal economics.",
-    "By the end of this article you will have a practical playbook you can apply the next time a expired domains for Thinkific course schools opportunity crosses your desk: a flagship brand acquisition, a defensive registration, an SEO authority play that supports a Thinkific course schools content engine, or a portfolio addition you intend to flip in two to five years."
+    "For founders and investors active in Thinkific and Podia Online Course Platform Schools, the right domain is rarely cosmetic; it is one of the few decisions that quietly compounds across every channel. The framework in this article is the same one experienced Thinkific and Podia Online Course Platform Schools buyers use to filter listings, structure offers and protect renewals across years of cycles.",
+    "Premium and expired domain names sit at the intersection of three forces reshaping Thinkific and Podia Online Course Platform Schools: rising buyer expectations around digital trust, a shrinking pool of clean brandable assets and a search landscape where authority compounds faster than ever. Most coverage of premium and expired domain names for Thinkific and Podia Online Course Platform Schools either oversells the upside or skips the diligence work entirely; this guide tries to do neither.",
+    "Whether you are acquiring a flagship Thinkific and Podia Online Course Platform Schools brand, a defensive registration or a long horizon portfolio asset, the same handful of principles separate good outcomes from expensive lessons. If you only remember one thing about premium and expired domain names for Thinkific and Podia Online Course Platform Schools, make it this: the best deals look unspectacular at the moment of acquisition and only reveal themselves over years of compounding."
   ],
   "sections": [
     {
-      "heading": "Why Expired Domains for Thinkific And Podia Online Course Platform Schools Matter More in 2026 Than Ever Before",
+      "heading": "The Underrated Lever of Premium Domains Inside Thinkific and Podia Online Course Platform Schools",
       "paragraphs": [
-        "Three forces are reshaping the Thinkific course schools landscape: rising buyer expectations around digital trust, a shrinking pool of clean brandable .com assets in this vertical, and a search environment where established authority compounds far faster than fresh registrations can build. Together they make expired domains for Thinkific course schools one of the few decisions that quietly impact every channel a Thinkific course schools business will ever run.",
-        "Sophisticated buyers have noticed. The best expired domains for Thinkific course schools now move off the open market within days, often through private brokers and curated inventories rather than auction sites. Casual buyers see only the leftovers, while serious operators see deal flow that never reaches the public eye. Understanding this two-tier market is the first step in playing it well.",
-        "If you build a real Thinkific course schools brand, the domain is the asset that survives every redesign, every team change, every product pivot. Treating expired domains for Thinkific course schools as a strategic decision rather than a marketing line item is the single mindset shift that separates buyers who win from buyers who churn through forgettable names."
+        "Founders building inside Thinkific and Podia Online Course Platform Schools eventually learn the same lesson: media budgets recover from bad campaigns, but the wrong domain follows you forever. The compounding inside Thinkific and Podia Online Course Platform Schools is small per touchpoint but relentless, and it favors patient buyers more than impulsive ones. Most teams active in Thinkific and Podia Online Course Platform Schools underrate how much a premium or expired domain quietly shifts long term economics.",
+        "Coverage of premium and expired domains in Thinkific and Podia Online Course Platform Schools tends to oscillate between hype and dismissal, and the truth lives in the middle. Buyers who win in Thinkific and Podia Online Course Platform Schools read deeper signals — backlink integrity, historical topical relevance, brand fit and renewal economics. The asset class around Thinkific and Podia Online Course Platform Schools domains is much closer to commercial real estate than to lottery tickets.",
+        "Done well, these steps make the next Thinkific and Podia Online Course Platform Schools decision faster, cheaper and clearly justified in writing before any money moves. The goal of the rest of this article is to hand you a small toolkit you can reuse on every Thinkific and Podia Online Course Platform Schools domain opportunity. The remainder of this guide breaks the workflow into checks you can run in a single afternoon on any Thinkific and Podia Online Course Platform Schools candidate."
       ]
     },
     {
-      "heading": "Reading the Real Signals Behind a Strong Expired Domains for Thinkific And Podia Online Course Platform Schools Opportunity",
+      "heading": "The Diligence Signals That Predict Outcomes for Thinkific and Podia Online Course Platform Schools Domains",
       "paragraphs": [
-        "Headline metrics like Domain Rating, Domain Authority and Trust Flow are useful filters, but they should never be the deciding factor when you evaluate expired domains for Thinkific course schools. Look beneath them at linking-root-domains profile, anchor-text distribution, organic traffic patterns, and the topical alignment of historical content with your future Thinkific course schools business.",
-        "The Wayback Machine is the single most valuable diligence tool on the entire web for expired domains for Thinkific course schools. Pull at least eight to twelve historical snapshots covering the last decade. You are looking for theme consistency, absence of spam-vertical usage (unless intended), and editorial backlinks from genuine Thinkific course schools blogs, trade publications and association sites.",
-        "A surprisingly strong signal for expired domains for Thinkific course schools is naming hygiene: short, easy to spell, no hyphens or numbers, pronounceable on a phone call. These small properties translate directly into lower customer acquisition cost, higher recall, and easier word-of-mouth in the Thinkific course schools community over a multi-year horizon."
+        "Strong Thinkific and Podia Online Course Platform Schools candidates reveal themselves through patterns rather than peaks of any single metric. Steady, multi-year link acquisition is one of the best signals a Thinkific and Podia Online Course Platform Schools domain has been used legitimately rather than manipulated.",
+        "If the Thinkific and Podia Online Course Platform Schools domain you like has any chapter you would not be comfortable explaining to a future investor, walk away. For any serious Thinkific and Podia Online Course Platform Schools candidate, spend twenty minutes inside Wayback before anything else.",
+        "A surprisingly powerful signal is naming hygiene: short, easy to spell, no hyphens or numbers, pronounceable on a phone call without spelling. Naming hygiene matters more in Thinkific and Podia Online Course Platform Schools than most buyers admit when they are caught up in negotiations."
       ]
     },
     {
-      "heading": "How to Evaluate Expired Domains for Thinkific And Podia Online Course Platform Schools Without Falling for Surface Metrics",
+      "heading": "How to Evaluate Thinkific and Podia Online Course Platform Schools Domains Without Falling for Surface Metrics",
       "paragraphs": [
-        "Build a one-page diligence template you reuse on every candidate. Force yourself to answer five questions in writing before any wire transfer: Who linked historically? What did the site rank for at peak? Has it ever been algorithmically or manually penalised? Is the trademark landscape clean in your geographies? And what is a realistic five-year renewal cost relative to strategic value?",
-        "Use at least two independent backlink databases — for example Ahrefs and Majestic — to cross-check the link profile of any expired domains for Thinkific course schools candidate. Disagreements between them are signal, not noise. They reveal either short-lived spam links inflating one tool or genuinely high-authority links the other tool missed entirely.",
-        "For expired domains for Thinkific course schools specifically, weight niche relevance heavily. A modest-DR domain with twenty editorial links from real Thinkific course schools publications outperforms a flashy high-DR generic domain with hundreds of unrelated comment links almost every time, especially under Google's modern Helpful Content era."
+        "Build a one page diligence template you reuse on every Thinkific and Podia Online Course Platform Schools candidate. Five honest answers in writing, every time, surface ninety percent of the problems on a Thinkific and Podia Online Course Platform Schools candidate before any contract is signed.",
+        "Two databases are the minimum honest standard for Thinkific and Podia Online Course Platform Schools link diligence and the work takes less than ten minutes. Cross-check the link profile in at least two independent backlink databases such as Ahrefs and Majestic on every Thinkific and Podia Online Course Platform Schools candidate.",
+        "Topical alignment usually matters more than raw authority for Thinkific and Podia Online Course Platform Schools candidates in the modern Helpful Content era. Relevance trumps authority for most Thinkific and Podia Online Course Platform Schools acquisitions in modern ranking environments and the gap keeps widening with each algorithm update. A modest-DR domain with twenty editorial links from genuine Thinkific and Podia Online Course Platform Schools publications outperforms a high-DR generic domain with hundreds of unrelated links almost every time."
       ]
     },
     {
-      "heading": "Branding, Trust and Conversion Lift From Expired Domains for Thinkific And Podia Online Course Platform Schools",
+      "heading": "Brand and Trust Effects of a Premium Thinkific and Podia Online Course Platform Schools Domain Name",
       "paragraphs": [
-        "On the brand side, a great Thinkific course schools domain pays you back every single time someone hears the name. Customers spell it correctly the first time, repeat it accurately to friends, and trust an email from that address without a second thought. Each tiny win compounds into pipeline you would otherwise have to buy through paid channels at painful CPMs.",
-        "Conversion lift from expired domains for Thinkific course schools is often quietly significant. A/B tests run by sophisticated Thinkific course schools operators consistently show two to seven percent uplift in checkout completion or lead-form submission when the brand domain looks senior, short, and category-appropriate — simply because perceived risk drops at the moment of decision.",
-        "For Thinkific course schools businesses that depend on referrals and word of mouth, the domain is also the single most-shared marketing asset you own. Every email signature, business card, podcast mention and partner integration is an unpaid impression. Make it count by choosing a name that is genuinely memorable."
+        "People remember a strong Thinkific and Podia Online Course Platform Schools name after one mention and assume the business is established before the first conversation begins. A senior Thinkific and Podia Online Course Platform Schools domain quietly removes friction at every touchpoint in the buyer journey. Brand-grade Thinkific and Podia Online Course Platform Schools names earn you trust before the first sales call has even started.",
+        "Conversion uplift from premium and expired domains in Thinkific and Podia Online Course Platform Schools is often quietly significant. Within Thinkific and Podia Online Course Platform Schools, controlled experiments routinely uncover conversion gains of a few percentage points after a domain upgrade.",
+        "For Thinkific and Podia Online Course Platform Schools businesses that depend on referrals, partnerships or procurement, the domain is the most-shared marketing asset you own. Every email signature, business card, podcast mention and trade-show booth is an unpaid impression for your Thinkific and Podia Online Course Platform Schools brand."
       ]
     },
     {
-      "heading": "SEO Authority: How Expired Domains for Thinkific And Podia Online Course Platform Schools Accelerate Rankings",
+      "heading": "How Aged Authority Accelerates Rankings for Thinkific and Podia Online Course Platform Schools Keywords",
       "paragraphs": [
-        "From a pure SEO angle, expired domains for Thinkific course schools deliver the head start that fresh registrations cannot match. Aged authority, contextual backlinks and historical topical relevance stack on top of any new content you publish. That accelerates indexing, shortens the time to first ranked keyword, and meaningfully reduces the months of patience required before content marketing pays off in the Thinkific course schools category.",
-        "The accelerator effect is most visible in mid-difficulty long-tail terms within the Thinkific course schools space — the exact terms where most independent operators win business in 2026. Expect compounding rather than overnight wins; the curve is typically steepest between months six and eighteen after a clean rebuild on top of a vetted asset.",
-        "Pair the domain with a content plan that respects topical depth. Cover the Thinkific course schools niche thoroughly with people-first content, internal linking that mirrors a coherent topical map, and clean technical SEO. Combined with the inherited authority of a quality expired domains for Thinkific course schools acquisition, this remains one of the most repeatable SEO playbooks of the decade."
+        "Indexing happens faster on aged Thinkific and Podia Online Course Platform Schools domains and first rankings show up sooner than on fresh registrations. Patience required before content marketing pays off in Thinkific and Podia Online Course Platform Schools drops noticeably when the underlying domain is aged and clean.",
+        "Expect compounding rather than overnight wins on a Thinkific and Podia Online Course Platform Schools acquisition; the curve is steepest between months six and eighteen. Inside Thinkific and Podia Online Course Platform Schools, the head start mostly shows up on long-tail queries first, then expands inward toward the harder commercial terms. Long-tail Thinkific and Podia Online Course Platform Schools traffic comes in first, then the harder commercial terms slowly follow as the new content program matures.",
+        "Pair the Thinkific and Podia Online Course Platform Schools domain with a content plan that respects topical depth. Plan a tight topical map, ship people-first writing on the Thinkific and Podia Online Course Platform Schools domain and keep the technical setup boring and clean. Inherited authority on a Thinkific and Podia Online Course Platform Schools domain only pays off when the new content actually deserves it."
       ]
     },
     {
-      "heading": "Buyer Playbook: Acquiring Expired Domains for Thinkific And Podia Online Course Platform Schools the Right Way",
+      "heading": "How to Actually Close a Clean Thinkific and Podia Online Course Platform Schools Domain Acquisition",
       "paragraphs": [
-        "Step one is intent. Write down, in one paragraph, what role this Thinkific course schools domain will play. Without that paragraph you will negotiate poorly and overpay. With it, you will quickly disqualify ninety percent of candidates and protect your budget for the names that genuinely fit your expired domains for Thinkific course schools strategy.",
-        "Step two is diligence. Run the five-question template above, pull at least ten historical snapshots, cross-check backlinks across two tools, and check trademark databases in your operating geographies (USPTO, EUIPO, WIPO Global Brand Database). Twenty minutes here routinely saves five-figure mistakes on expired domains for Thinkific course schools deals.",
-        "Step three is structure. Always use a reputable escrow provider, request a clean WHOIS push within the same registrar where possible, and confirm renewal cost for at least the next five years before signing. For meaningful expired domains for Thinkific course schools purchases, never wire funds directly to a private seller without escrow."
+        "Step one is intent: write down, in one paragraph, what role this Thinkific and Podia Online Course Platform Schools domain will play in the business. Intent comes first in Thinkific and Podia Online Course Platform Schools buying, and that intent has to live on paper, not just in your head. One honest paragraph about the role of a Thinkific and Podia Online Course Platform Schools asset is the cheapest filter ever invented and saves more than any tool subscription.",
+        "Step two is diligence: run the five-question template, pull historical snapshots and cross-check the backlink profiles for any Thinkific and Podia Online Course Platform Schools candidate. Diligence on a Thinkific and Podia Online Course Platform Schools candidate is non-negotiable; the work is unglamorous and quick, but skipping it is how smart buyers end up owning toxic assets. Check trademark databases in every operating geography that matters for the Thinkific and Podia Online Course Platform Schools brand you intend to build.",
+        "Structure protects the Thinkific and Podia Online Course Platform Schools buyer; escrow, a same-registrar push and confirmed renewal economics turn a risky transfer into a boring administrative event. Request a clean WHOIS push within the same registrar where possible on every Thinkific and Podia Online Course Platform Schools acquisition."
       ]
     },
     {
-      "heading": "Common Mistakes to Avoid When Buying Expired Domains for Thinkific And Podia Online Course Platform Schools",
+      "heading": "The Expensive Errors First Time Thinkific and Podia Online Course Platform Schools Buyers Keep Making",
       "paragraphs": [
-        "The most common mistake on expired domains for Thinkific course schools deals is anchoring price to a backlink tool's \"domain value\" estimate. Those numbers are loose modelling exercises, not appraisals. Real value emerges from the intersection of brand fit, niche relevance, link integrity and the cash flow your Thinkific course schools business will generate behind the asset.",
-        "Another frequent mistake is ignoring trademark exposure. A beautiful Thinkific course schools name is worthless if it collides with a registered mark in your operating geography. Spend thirty minutes on EUIPO, USPTO and WIPO before any meaningful expired domains for Thinkific course schools purchase. Cheap insurance.",
-        "Finally, do not skip the renewal-cost conversation. Some premium aftermarket names carry inflated renewal fees or registry premium pricing that quietly compounds. For long-horizon expired domains for Thinkific course schools bets, a name that costs ten dollars per year to renew is structurally different from one that costs four hundred dollars per year."
+        "Buyers who plan integration, renewal cycles and brand migration before the deal closes consistently outperform on Thinkific and Podia Online Course Platform Schools acquisitions. Treating any meaningful Thinkific and Podia Online Course Platform Schools acquisition as a single event rather than a multi-year position is the classic rookie error.",
+        "The second mistake is ignoring trademark exposure on Thinkific and Podia Online Course Platform Schools candidates. A Thinkific and Podia Online Course Platform Schools name that conflicts with a registered mark in your operating geography is a liability with a countdown timer. Always run trademark searches in every market where you intend to operate the Thinkific and Podia Online Course Platform Schools brand, including phonetic and translated variants.",
+        "No single number captures the real value of a Thinkific and Podia Online Course Platform Schools domain in modern search environments. Let your eyes overrule any single platform that disagrees with the rest of the evidence on a Thinkific and Podia Online Course Platform Schools listing."
       ]
     },
     {
-      "heading": "Long-Term Value, Renewal Economics and Exit Options for Expired Domains for Thinkific And Podia Online Course Platform Schools",
+      "heading": "Building a Small, Intentional Thinkific and Podia Online Course Platform Schools Domain Portfolio",
       "paragraphs": [
-        "Plan expired domains for Thinkific course schools purchases as ten-year decisions, not ten-month ones. The compounding only fully materialises across multiple Google algorithm cycles, brand iterations and product launches. Buyers who hold high-quality Thinkific course schools assets with patience consistently outperform buyers who flip on the first marginal offer.",
-        "Renewal economics matter more than buyers expect. A clean .com on a standard registrar at roughly fifteen dollars per year is structurally different from a country-code or new-gTLD asset that carries premium renewals. For long-horizon expired domains for Thinkific course schools positions, model renewal costs across the full holding period before you sign anything.",
-        "Exit options for expired domains for Thinkific course schools typically fall into three buckets: strategic sale to an operator in the Thinkific course schools space, marketplace listing to a portfolio buyer, and brokered private sale to a fund. Knowing which of these you are building toward, from day one, dramatically improves both your acquisition price and your eventual exit multiple."
+        "Quality Thinkific and Podia Online Course Platform Schools names are getting scarcer every year while informed demand keeps rising. The small Thinkific and Podia Online Course Platform Schools portfolio you assemble this year tends to look very cheap five years out, provided each acquisition can be defended in writing.",
+        "Renewal discipline keeps the Thinkific and Podia Online Course Platform Schools portfolio math honest year after year and prevents quiet bleed. For investors, Thinkific and Podia Online Course Platform Schools domains reward a portfolio approach over a single bet. Track every renewal cost on the Thinkific and Podia Online Course Platform Schools portfolio; the math is unforgiving on names you cannot eventually monetize.",
+        "Done consistently, premium and expired domains for Thinkific and Podia Online Course Platform Schools quietly outperform almost every other line item on a digital balance sheet. For operators, the Thinkific and Podia Online Course Platform Schools math is simpler than investors usually make it."
       ]
     }
   ],
   "faqs": [
     {
-      "question": "Are expired domains for Thinkific course schools actually worth the premium price in 2026?",
-      "answer": "For serious operators, yes — provided diligence is done properly. The ROI compounds through SEO authority, lower paid acquisition cost, and measurable conversion lift. For hobby projects, a fresh registration is usually the better fit."
+      "question": "Are expired Thinkific and Podia Online Course Platform Schools domains the same as premium Thinkific and Podia Online Course Platform Schools domains?",
+      "answer": "Both categories deserve the same diligence; the legal status of the name matters less than the trust signals it carries forward into your ownership."
     },
     {
-      "question": "What is a fair price range for expired domains for Thinkific course schools?",
-      "answer": "Prices vary widely. Clean, short, on-niche names typically clear the four to low five-figure range, with flagship one-word category domains running into six figures. Anchor price to strategic value, not the seller's asking number."
+      "question": "Which tools are most useful for vetting a Thinkific and Podia Online Course Platform Schools domain?",
+      "answer": "A combination of two backlink databases, the Wayback Machine, a trademark search in every operating geography and a quick manual review of historical anchors covers most Thinkific and Podia Online Course Platform Schools risk."
     },
     {
-      "question": "How do I check if expired domains for Thinkific course schools were ever penalised by Google?",
-      "answer": "Combine three signals: historical traffic curves in SimilarWeb or Semrush, sudden anchor-text spikes in Ahrefs and Majestic, and Wayback snapshots showing thin or off-topic content. Any two together justify walking away."
+      "question": "Do these domains really help Thinkific and Podia Online Course Platform Schools rankings?",
+      "answer": "When done right, yes; aged authority, clean backlinks and historical relevance shorten the path to ranking for competitive Thinkific and Podia Online Course Platform Schools terms."
     },
     {
-      "question": "Should I rebuild on expired domains for Thinkific course schools or 301-redirect them?",
-      "answer": "For brand acquisitions, rebuild — on-page signals matter as much as inherited authority. For pure authority plays where your main brand is established, a carefully mapped 301 with topically aligned destinations is the cleaner play."
+      "question": "How should I think about renewal costs over five years on a Thinkific and Podia Online Course Platform Schools domain?",
+      "answer": "Five-year renewal modelling on every Thinkific and Podia Online Course Platform Schools candidate keeps the portfolio honest and surfaces names that should never have been bought in the first place."
     },
     {
-      "question": "Where should I buy expired domains for Thinkific course schools safely?",
-      "answer": "Use vetted marketplaces and brokers, and always close through escrow. For meaningful purchases, never wire funds directly to a private seller without escrow protection — it is the single most preventable category of loss in this market."
+      "question": "What is the most expensive mistake with Thinkific and Podia Online Course Platform Schools domains?",
+      "answer": "Skipping written intent on a Thinkific and Podia Online Course Platform Schools acquisition almost always leads to overpaying, under-using the asset and quietly regretting the deal years later. Treating a Thinkific and Podia Online Course Platform Schools acquisition as a one-off purchase rather than a strategic position is the most expensive mistake first-time buyers keep making."
+    },
+    {
+      "question": "Are premium and expired domain names for Thinkific and Podia Online Course Platform Schools still worth buying?",
+      "answer": "For disciplined operators, premium and expired domain names for Thinkific and Podia Online Course Platform Schools remain one of the few asymmetric assets you can simply buy and hold. Yes, provided you focus on quality; demand for trustworthy Thinkific and Podia Online Course Platform Schools names keeps rising while supply of clean short brand assets keeps shrinking."
     }
   ],
   "conclusion": [
-    "Expired Domains for serious operators are no longer a luxury in 2026 — they are infrastructure. The buyers who treat expired domains for Thinkific course schools as a strategic, ten-year decision consistently outperform those who treat them as a marketing line item, and the gap is widening as the supply of clean Thinkific course schools names continues to shrink.",
-    "If you remember nothing else, remember the diligence template, the trademark check, the renewal economics, and the discipline of writing down the role the domain will play before you negotiate. Those four habits separate professional Thinkific course schools domain buyers from everyone else."
+    "Done consistently, premium and expired domain names for Thinkific and Podia Online Course Platform Schools outperform almost every other line item on a digital balance sheet. The asset class around Thinkific and Podia Online Course Platform Schools domains quietly favors the patient profile every cycle; impatience pays for the patience of others.",
+    "Premium and expired domain names for Thinkific and Podia Online Course Platform Schools sit somewhere between marketing and infrastructure; treat them with the seriousness of the latter and the creativity of the former. The bottom line on premium and expired domain names for Thinkific and Podia Online Course Platform Schools is that they reward operators who slow down, verify the signals and build for the long horizon."
   ],
-  "closingHook": "Treat your next expired domains for Thinkific course schools purchase as the foundation of a decade of compounding — because that is exactly what it is."
+  "closingHook": "The Thinkific and Podia Online Course Platform Schools operators who own the right names early rarely talk about it; they just keep winning the boring deals."
 };
 
 export default article;
