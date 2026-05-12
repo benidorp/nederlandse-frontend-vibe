@@ -173,7 +173,40 @@ const PremiumDomainsTemplate = ({ config: c }: { config: PDPageConfig }) => {
           </div>
           <SeoIntroText lang={c.lang} />
           <div className="max-w-5xl mx-auto mb-10 text-center"><p className="text-sm text-slate-300 font-medium bg-slate-800/40 border border-slate-700/40 rounded-lg px-4 py-3 inline-block"><span className="text-amber-400 font-semibold">{c.vatInfo}</span></p></div>
+          <div className="max-w-2xl mx-auto mb-8">
+            <div className="relative">
+              <Search className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-400" />
+              <Input
+                type="search"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search premium domains by name, category or keyword…"
+                aria-label="Search premium domains"
+                className="pl-12 pr-12 h-12 bg-slate-800/60 border-slate-700 text-white placeholder:text-slate-400 focus:border-amber-500 focus-visible:ring-amber-500/30 rounded-xl text-base"
+              />
+              {searchQuery && (
+                <button
+                  type="button"
+                  onClick={() => setSearchQuery("")}
+                  aria-label="Clear search"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-1 text-slate-400 hover:text-amber-400 hover:bg-slate-700/60"
+                >
+                  <X className="h-4 w-4" />
+                </button>
+              )}
+            </div>
+            {q && (
+              <p className="mt-2 text-center text-xs text-slate-400">
+                {translatedDomains.length} {translatedDomains.length === 1 ? "domain" : "domains"} found for “{searchQuery}”
+              </p>
+            )}
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6">
+            {translatedDomains.length === 0 && (
+              <div className="col-span-full text-center py-12 text-slate-400">
+                No domains match your search. Try a different keyword.
+              </div>
+            )}
             {translatedDomains.map((domain, index) => (
               <Card key={index} className="h-full flex flex-col bg-gradient-to-br from-slate-800/80 to-slate-900/80 border-slate-700/50 backdrop-blur hover:border-amber-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10 group">
                 <CardHeader className="pb-2 sm:pb-3 p-3 sm:p-4 md:p-6">
