@@ -29,6 +29,7 @@ import FooterPremiumDomainsEN from "@/components/premium-domains/FooterPremiumDo
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ARTICLE_META, getRelatedArticles } from "@/content/expired-domain-articles";
+import PremiumDomainBox from "@/components/expired-domains-articles/PremiumDomainBox";
 
 /* Image pool — varied, all deep-blue editorial style */
 const IMAGE_POOL = [
