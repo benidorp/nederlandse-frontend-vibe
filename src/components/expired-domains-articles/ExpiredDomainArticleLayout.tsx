@@ -1168,7 +1168,7 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
                 <ul className="space-y-2.5 text-sm text-slate-600">
                   <li className="flex gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-blue-600" /> Verified MOZ DA & DR</li>
                   <li className="flex gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-blue-600" /> Clean backlink profiles</li>
-                  <li className="flex gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-blue-600" /> Secure escrow available</li>
+                  <li className="flex gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-blue-600" /> Fast secure registrar transfer</li>
                   <li className="flex gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-blue-600" /> Transfer support included</li>
                 </ul>
               </div>
