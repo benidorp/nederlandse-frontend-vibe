@@ -102,8 +102,15 @@ const PremiumDomainsTemplate = ({ config: c }: { config: PDPageConfig }) => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({ name: "", email: "", domain: "", message: "" });
   const [formErrors, setFormErrors] = useState<Record<string, string>>({});
+  const [searchQuery, setSearchQuery] = useState("");
   const scrollToSection = (id: string) => { document.getElementById(id)?.scrollIntoView({ behavior: "smooth" }); };
-  const translatedDomains = getTranslatedDomains(premiumDomains, c.lang as any);
+  const allTranslatedDomains = getTranslatedDomains(premiumDomains, c.lang as any);
+  const q = searchQuery.trim().toLowerCase();
+  const translatedDomains = q
+    ? allTranslatedDomains.filter((d) =>
+        [d.name, d.category, d.description].some((f) => (f || "").toLowerCase().includes(q))
+      )
+    : allTranslatedDomains;
   const url = PREMIUM_DOMAINS_HREFLANG[c.lang] || "";
   const path = url.replace("https://www.iaee.eu", "");
 
