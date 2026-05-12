@@ -880,6 +880,9 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_300px] xl:gap-14">
           {/* MAIN COLUMN */}
           <article className="min-w-0 max-w-none">
+            {/* Mobile / tablet: Premium Domain box above content */}
+            <PremiumDomainBox slug={slug} placement="mobile" />
+
             {/* Lead / intro — long-form editorial flow with TL;DR */}
             <div className="space-y-6">
               {intro.map((p, i) => (
