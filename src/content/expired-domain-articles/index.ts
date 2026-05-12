@@ -2144,7 +2144,9 @@ export const ARTICLES: Record<string, ExpiredDomainArticleProps> = {
   "how-to-brief-external-accountants-before-capitalising-a-premium-or-expired-domain-name-acquisition-on-the-bala": a_how_to_brief_external_accountants_before_capitalising_a_premium_or_expired_domain_name_acquisition_on_the_bala,
   "how-to-brief-internal-marketing-teams-before-a-public-migration-onto-a-newly-acquired-premium-or-expired-domai": a_how_to_brief_internal_marketing_teams_before_a_public_migration_onto_a_newly_acquired_premium_or_expired_domai,
   "how-to-brief-engineering-teams-before-a-production-cutover-onto-a-newly-acquired-premium-or-expired-domain-nam": a_how_to_brief_engineering_teams_before_a_production_cutover_onto_a_newly_acquired_premium_or_expired_domain_nam,
-: string[] = [
+};
+
+export const ARTICLE_SLUGS: string[] = [
   "301-redirect-strategy-for-expired-domains",
   "better-domain-name-saves-branding-time-budget",
   "brandable-vs-keyword-domains-which-to-buy",
@@ -3212,7 +3214,9 @@ export const ARTICLES: Record<string, ExpiredDomainArticleProps> = {
   "how-to-brief-external-accountants-before-capitalising-a-premium-or-expired-domain-name-acquisition-on-the-bala",
   "how-to-brief-internal-marketing-teams-before-a-public-migration-onto-a-newly-acquired-premium-or-expired-domai",
   "how-to-brief-engineering-teams-before-a-production-cutover-onto-a-newly-acquired-premium-or-expired-domain-nam",
- {
+];
+
+export interface ArticleMeta {
   slug: string;
   h1: string;
   metaDescription: string;
