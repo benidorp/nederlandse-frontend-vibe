@@ -1111,25 +1111,7 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
           <aside className="hidden lg:block">
             <div className="sticky top-24 space-y-6">
               {/* Featured Premium Expired Domain Name */}
-              <div className="overflow-hidden rounded-2xl border-2 border-amber-300 bg-gradient-to-br from-amber-50 via-white to-sky-50 p-5 shadow-md">
-                <div className="mb-2 inline-flex items-center gap-1.5 rounded-full bg-amber-500 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white">
-                  <Sparkles className="h-3 w-3" /> Premium Expired Domain
-                </div>
-                <h3 className="mt-2 text-base font-bold text-navy-dark">Aged .com & .eu domains with real authority</h3>
-                <p className="mt-1.5 text-xs leading-relaxed text-slate-600">
-                  Verified MOZ DA, clean backlink history and instant SEO power. Hand-picked premium expired domain names ready to transfer today.
-                </p>
-                <ul className="mt-3 space-y-1 text-xs text-slate-700">
-                  <li className="flex gap-1.5"><CheckCircle2 className="mt-0.5 h-3.5 w-3.5 shrink-0 text-emerald-600" /> DA 28+ verified authority</li>
-                  <li className="flex gap-1.5"><CheckCircle2 className="mt-0.5 h-3.5 w-3.5 shrink-0 text-emerald-600" /> Real aged backlink profiles</li>
-                  <li className="flex gap-1.5"><CheckCircle2 className="mt-0.5 h-3.5 w-3.5 shrink-0 text-emerald-600" /> Secure escrow & fast transfer</li>
-                </ul>
-                <Button asChild size="sm" className="mt-4 w-full bg-blue-600 text-white shadow-sm hover:bg-blue-700">
-                  <Link to={MARKETPLACE_URL}>
-                    View Premium Domains <ArrowRight className="ml-1 h-4 w-4" />
-                  </Link>
-                </Button>
-              </div>
+              <PremiumDomainBox slug={slug} placement="sidebar" />
 
               {/* TOC */}
               <nav aria-label="Table of contents" className="rounded-2xl border border-sky-200 bg-white p-5 shadow-sm">
