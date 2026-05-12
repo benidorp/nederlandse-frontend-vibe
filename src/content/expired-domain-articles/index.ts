@@ -3214,7 +3214,9 @@ export const ARTICLE_SLUGS: string[] = [
   "how-to-brief-external-accountants-before-capitalising-a-premium-or-expired-domain-name-acquisition-on-the-bala",
   "how-to-brief-internal-marketing-teams-before-a-public-migration-onto-a-newly-acquired-premium-or-expired-domai",
   "how-to-brief-engineering-teams-before-a-production-cutover-onto-a-newly-acquired-premium-or-expired-domain-nam",
- {
+];
+
+export interface ArticleMeta {
   slug: string;
   h1: string;
   metaDescription: string;
