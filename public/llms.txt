@@ -1,0 +1,40 @@
+# IAEE — Premium Expired Domains & Essential Legal Documents
+
+> Marketplace for premium expired domains (DA 28+) ideal for 301 redirects and link equity, plus ready-to-use legal document packs (Terms, Privacy, Disclaimer, Cookie Policy) for websites in 40+ languages.
+
+IAEE (www.iaee.eu) sells two main products:
+- **Premium expired domain names** with proven SEO authority, perfect for 301 redirects.
+- **Essential legal document packs** (€79) for affiliate sites, photography businesses, e-commerce, nonprofits, freelancers, and more — localized in 40+ languages.
+
+The site also publishes long-form articles on expired domains, SEO, and a worldwide VAT calculator with country guides.
+
+## Pages
+
+- [Home](/): Overview of premium domains and legal document packs.
+- [Premium Expired Domains](/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy): English marketplace landing page for premium expired domains.
+- [Expired Domain Articles](/expireddomainnames/en/articles): Long-form guides on expired domains, 301 redirects, and SEO authority.
+- [Pricing](/pricing): Pricing for legal document packs and domain tiers.
+- [About](/about): About IAEE.
+- [Contact](/contact): Contact form and support.
+- [Blog](/blog): News and updates.
+- [Policy](/policy): Central Terms, Privacy Policy, Disclaimer and Cookie Policy.
+- [VAT Calculator](/btw-calculator-wereldwijd): Worldwide VAT calculator with country guides.
+
+## Verticals (legal document packs)
+
+- [Photography](/photography-legal-documents-terms-conditions-privacy-policy-contract-copyright-protection): Legal docs for photographers.
+- [E-commerce](/ecommerce): Legal docs for online shops.
+- [Dropshipping](/dropshipping): Legal docs for dropshipping stores.
+- [Online Shop](/online-shop): Legal docs for online stores.
+- [Freelancers](/freelancers): Legal docs for freelancers.
+- [Nonprofit](/nonprofit): Legal docs for nonprofits.
+- [E-learning](/elearning): Legal docs for course creators.
+- [Travel Booking](/travel-booking): Legal docs for travel sites.
+- [News & Magazine](/news-magazine): Legal docs for publishers.
+- [Streaming Media](/streaming-media): Legal docs for streaming platforms.
+- [Comparison & Review](/comparison-review): Legal docs for review sites.
+
+## Optional
+
+- [Sitemap Index](/sitemap.xml): XML sitemap index for crawlers.
+- [Robots](/robots.txt): Crawl rules.
