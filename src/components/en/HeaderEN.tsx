@@ -27,7 +27,7 @@ const HeaderEN = () => {
           <a href="/pricing" className={`text-sm font-medium hover:text-primary transition-colors ${location.pathname === "/pricing" ? "text-primary" : "text-foreground"}`}>
             Pricing
           </a>
-          <a href="/blog" className={`text-sm font-medium hover:text-primary transition-colors ${location.pathname === "/blog" ? "text-primary" : "text-foreground"}`}>
+          <a href="/expireddomainnames/en/articles" className={`text-sm font-medium hover:text-primary transition-colors ${location.pathname.startsWith("/expireddomainnames/en/articles") ? "text-primary" : "text-foreground"}`}>
             Blog
           </a>
           <a href="/contact" className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors">

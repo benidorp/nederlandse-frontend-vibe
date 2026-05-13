@@ -54,7 +54,7 @@ const FooterEN = () => {
                 </a>
               </li>
               <li>
-                <a href="/blog" className="text-sm text-white/70 hover:text-white transition-colors">
+                <a href="/expireddomainnames/en/articles" className="text-sm text-white/70 hover:text-white transition-colors">
                   Blog
                 </a>
               </li>
