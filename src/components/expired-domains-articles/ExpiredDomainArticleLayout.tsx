@@ -977,6 +977,7 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
                       <>
                         <FriendlyNote note={HUMAN_NOTES[(hashSlug(slug) + i + 2) % HUMAN_NOTES.length]} />
                         <BuyCTA />
+                        <MidArticlePremiumBanner slug={slug} />
                       </>
                     )}
                   </section>
