@@ -18,7 +18,7 @@ const NordVpnWideBox = () => {
         <div className="flex items-center gap-3 bg-blue-600 px-5 py-4 text-white md:px-7">
           <Shield className="h-6 w-6 shrink-0" />
           <h2 className="text-lg font-bold tracking-tight md:text-xl">
-            Protect Your Domain Investing with NordVPN
+            Protect Your Privacy with NordVPN
           </h2>
         </div>
 
