@@ -145,6 +145,7 @@ const PremiumDomainsBN = lazyRetry(() => import("./pages/PremiumDomainsBN"));
 const PremiumDomainsMS = lazyRetry(() => import("./pages/PremiumDomainsMS"));
 const DomainProductPage = lazyRetry(() => import("./pages/DomainProductPage"));
 const AIDashboard = lazyRetry(() => import("./pages/AIDashboard"));
+const SeoIndexationReport = lazyRetry(() => import("./pages/SeoIndexationReport"));
 const Login = lazyRetry(() => import("./pages/Login"));
 const Signup = lazyRetry(() => import("./pages/Signup"));
 const ForgotPassword = lazyRetry(() => import("./pages/ForgotPassword"));
@@ -400,8 +401,8 @@ const App = () => (
             {/* AI Dashboard (Protected) */}
             <Route path="/ai-dashboard" element={<ProtectedRoute><AIDashboard /></ProtectedRoute>} />
 
-            {/* AI Dashboard (Protected) */}
-            <Route path="/ai-dashboard" element={<ProtectedRoute><AIDashboard /></ProtectedRoute>} />
+            {/* SEO Indexation Report (Protected, admin-only enforced server-side) */}
+            <Route path="/seo-indexation" element={<ProtectedRoute><SeoIndexationReport /></ProtectedRoute>} />
 
             {/* Dynamic translated pages from DB */}
             <Route path="/:lang/*" element={<DynamicTranslatedPage />} />
