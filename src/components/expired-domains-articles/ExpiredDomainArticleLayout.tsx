@@ -1176,6 +1176,9 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
             </div>
           </aside>
         </div>
+
+        {/* Wide NordVPN affiliate column — appears on every article page */}
+        <NordVpnWideBox />
       </main>
 
       <FooterPremiumDomainsEN />
