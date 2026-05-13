@@ -10,7 +10,7 @@ const NORDVPN_URL = "https://www.dpbolvw.net/click-100643838-14471514";
 const NordVpnWideBox = () => {
   return (
     <section
-      aria-label="NordVPN — protect your domain investing"
+      aria-label="NordVPN — protect your privacy online"
       className="my-12 overflow-hidden rounded-2xl border-2 border-blue-300 bg-gradient-to-br from-blue-50 via-white to-sky-50 p-3 shadow-md md:p-4"
     >
       <div className="overflow-hidden rounded-xl bg-white">
@@ -26,9 +26,10 @@ const NordVpnWideBox = () => {
         <div className="grid gap-6 px-5 py-6 md:grid-cols-[1fr_auto] md:items-center md:gap-10 md:px-7 md:py-7">
           <div>
             <p className="text-sm leading-relaxed text-slate-700 md:text-base">
-              Buying premium expired domains, logging into registrars and moving
-              wires across borders exposes you to trackers, public Wi-Fi snooping
-              and credential theft. A{" "}
+              Your personal data — passwords, banking sessions, emails and
+              browsing history — is exposed every time you connect to the
+              internet, whether you are at home, in the office or on public
+              Wi-Fi in a café, hotel or airport. A{" "}
               <a
                 href={NORDVPN_URL}
                 target="_blank"
@@ -37,26 +38,27 @@ const NordVpnWideBox = () => {
               >
                 Virtual Private Network (VPN)
               </a>{" "}
-              encrypts your connection and hides your IP — essential hygiene for
-              anyone managing a serious domain portfolio.
+              encrypts your full connection and hides your real IP address, so
+              advertisers, hackers and network operators can no longer track
+              what you do or steal what you send.
             </p>
 
             <ul className="mt-4 grid gap-2 text-sm text-slate-700 sm:grid-cols-2">
               <li className="flex items-start gap-2">
                 <Lock className="mt-0.5 h-4 w-4 shrink-0 text-blue-600" />
-                Encrypt registrar &amp; escrow logins
-              </li>
-              <li className="flex items-start gap-2">
-                <Globe className="mt-0.5 h-4 w-4 shrink-0 text-blue-600" />
-                Access marketplaces from any country
+                Bank-grade encryption for every device
               </li>
               <li className="flex items-start gap-2">
                 <Shield className="mt-0.5 h-4 w-4 shrink-0 text-blue-600" />
-                Hide your IP from sellers &amp; brokers
+                Stay private at home and in the office
               </li>
               <li className="flex items-start gap-2">
                 <Lock className="mt-0.5 h-4 w-4 shrink-0 text-blue-600" />
-                Safe banking on hotel &amp; café Wi-Fi
+                Safe browsing on public &amp; hotel Wi-Fi
+              </li>
+              <li className="flex items-start gap-2">
+                <Globe className="mt-0.5 h-4 w-4 shrink-0 text-blue-600" />
+                Hide your IP &amp; block trackers worldwide
               </li>
             </ul>
 
