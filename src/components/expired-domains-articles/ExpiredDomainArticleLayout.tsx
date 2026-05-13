@@ -31,6 +31,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { ARTICLE_META, getRelatedArticles } from "@/content/expired-domain-articles";
 import PremiumDomainBox from "@/components/expired-domains-articles/PremiumDomainBox";
 import NordVpnWideBox from "@/components/expired-domains-articles/NordVpnWideBox";
+import MidArticlePremiumBanner from "@/components/expired-domains-articles/MidArticlePremiumBanner";
 
 /* Image pool — varied, all deep-blue editorial style */
 const IMAGE_POOL = [
@@ -976,6 +977,7 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
                       <>
                         <FriendlyNote note={HUMAN_NOTES[(hashSlug(slug) + i + 2) % HUMAN_NOTES.length]} />
                         <BuyCTA />
+                        <MidArticlePremiumBanner slug={slug} />
                       </>
                     )}
                   </section>

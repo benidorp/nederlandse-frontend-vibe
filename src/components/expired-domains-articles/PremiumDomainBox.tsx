@@ -20,27 +20,29 @@ interface Variant {
   cta: string;
 }
 
+const FIXED_BADGE = "Premium Expired Domain Names";
+
 const VARIANTS: Variant[] = [
   {
     id: "A",
-    badge: "Premium Expired Domains",
-    headline: "Aged .com & .eu domains with real authority",
-    copy: "Verified MOZ DA, clean backlink history and instant SEO power. Hand-picked premium expired domain names ready to transfer today.",
-    cta: "View Premium Domains",
+    badge: FIXED_BADGE,
+    headline: "Skip 2 years of SEO grind — buy a domain that already ranks",
+    copy: "Hand-picked aged .com & .eu names with verified MOZ DA, clean backlink histories and instant trust. Inventory moves fast — most listings sell within 14 days.",
+    cta: "See Today's Premium Domains →",
   },
   {
     id: "B",
-    badge: "Featured Marketplace",
-    headline: "Skip the sandbox. Launch on aged authority.",
-    copy: "Browse hand-picked premium expired domain names with verified DA, clean histories and fast registrar transfer.",
-    cta: "Browse Premium Domains",
+    badge: FIXED_BADGE,
+    headline: "Aged authority your competitors can't buy twice",
+    copy: "Each premium expired domain in our marketplace has real backlinks from real sites — not PBNs. Launch on day one with the SEO equity others spend years building.",
+    cta: "Browse the Marketplace →",
   },
   {
     id: "C",
-    badge: "Limited Inventory",
-    headline: "Buy a domain that already ranks",
-    copy: "Real aged domains with verified DA, clean histories and fast registrar transfer. Stop building from zero — start with authority.",
-    cta: "Browse the Marketplace",
+    badge: FIXED_BADGE,
+    headline: "One great domain is worth a thousand blog posts",
+    copy: "Verified DA 28+, clean Wayback history, fast registrar transfer. Stop building from zero — claim a name that Google already trusts before someone else does.",
+    cta: "View Available Domains →",
   },
 ];
 
