@@ -31,6 +31,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { ARTICLE_META, getRelatedArticles } from "@/content/expired-domain-articles";
 import PremiumDomainBox from "@/components/expired-domains-articles/PremiumDomainBox";
 import NordVpnWideBox from "@/components/expired-domains-articles/NordVpnWideBox";
+import MidArticlePremiumBanner from "@/components/expired-domains-articles/MidArticlePremiumBanner";
 
 /* Image pool — varied, all deep-blue editorial style */
 const IMAGE_POOL = [
