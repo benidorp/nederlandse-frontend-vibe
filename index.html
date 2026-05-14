@@ -2,6 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      // Force www canonical host (apex iaee.eu -> www.iaee.eu) to avoid duplicate content.
+      (function () {
+        try {
+          var h = window.location.hostname;
+          if (h === 'iaee.eu') {
+            var target = 'https://www.iaee.eu' + window.location.pathname + window.location.search + window.location.hash;
+            window.location.replace(target);
+          }
+        } catch (e) {}
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Professional Legal Documents for Every Website Type | IAEE</title>
     <meta name="description" content="Complete legal protection packages for all website types. GDPR-compliant privacy policies, terms & conditions, and all essential legal documents. Ready in minutes, professionally written.">
