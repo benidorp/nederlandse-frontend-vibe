@@ -77,8 +77,12 @@ const SHARE_TARGETS = [
 
 const FloatingShareBar = () => {
   const [open, setOpen] = useState(true);
-  const [url, setUrl] = useState("");
-  const [title, setTitle] = useState("");
+  const [url, setUrl] = useState(() =>
+    typeof window !== "undefined" ? window.location.href : "https://www.iaee.eu/"
+  );
+  const [title, setTitle] = useState(() =>
+    typeof document !== "undefined" ? document.title : ""
+  );
 
   useEffect(() => {
     setUrl(window.location.href);
