@@ -77,8 +77,12 @@ const SHARE_TARGETS = [
 
 const FloatingShareBar = () => {
   const [open, setOpen] = useState(true);
-  const [url, setUrl] = useState("");
-  const [title, setTitle] = useState("");
+  const [url, setUrl] = useState(() =>
+    typeof window !== "undefined" ? window.location.href : "https://www.iaee.eu/"
+  );
+  const [title, setTitle] = useState(() =>
+    typeof document !== "undefined" ? document.title : ""
+  );
 
   useEffect(() => {
     setUrl(window.location.href);
@@ -125,20 +129,43 @@ const FloatingShareBar = () => {
       >
         <CloseIcon className="h-3.5 w-3.5" />
       </button>
-      {SHARE_TARGETS.map((s) => (
-        <button
-          key={s.name}
-          onClick={() => handleClick(s.name, s.href)}
-          aria-label={`Deel op ${s.name}`}
-          title={`Deel op ${s.name}`}
-          style={{ color: s.color }}
-          className="group h-10 w-10 rounded-full bg-background border border-border flex items-center justify-center shadow-sm hover:scale-110 hover:shadow-md transition-all duration-200 hover:text-white"
-          onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = s.color)}
-          onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "")}
-        >
-          {s.icon}
-        </button>
-      ))}
+      {SHARE_TARGETS.map((s) => {
+        const href = s.name === "Instagram" ? "#" : s.href(url, title);
+        const commonClass =
+          "group h-10 w-10 rounded-full bg-background border border-border flex items-center justify-center shadow-sm hover:scale-110 hover:shadow-md transition-all duration-200 hover:text-white";
+        if (s.name === "Instagram") {
+          return (
+            <button
+              key={s.name}
+              onClick={() => handleClick(s.name, s.href)}
+              aria-label={`Deel op ${s.name}`}
+              title={`Deel op ${s.name} (link kopiëren)`}
+              style={{ color: s.color }}
+              className={commonClass}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = s.color)}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "")}
+            >
+              {s.icon}
+            </button>
+          );
+        }
+        return (
+          <a
+            key={s.name}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            aria-label={`Deel op ${s.name}`}
+            title={`Deel op ${s.name}`}
+            style={{ color: s.color }}
+            className={commonClass}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = s.color)}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "")}
+          >
+            {s.icon}
+          </a>
+        );
+      })}
     </aside>
   );
 };
