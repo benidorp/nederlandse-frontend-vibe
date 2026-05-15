@@ -43,8 +43,13 @@
   RewriteRule ^ index.html [L]
 </IfModule>
 
-# 404 Error redirect to English Premium Domains page
-ErrorDocument 404 https://www.iaee.eu/expireddomainnames/en/buy-premium-domains-high-authority-seo-value
+# 404 -> homepage as a true 301 (permanent) redirect.
+# ErrorDocument with an external URL emits 302, so we use RedirectMatch instead.
+# This runs only when no earlier rewrite matched (i.e. the request is for a non-existent file).
+<IfModule mod_alias.c>
+  RedirectMatch 301 ^/404(/.*)?$ https://www.iaee.eu/
+</IfModule>
+ErrorDocument 404 /index.html
 
 <IfModule mod_expires.c>
   ExpiresActive On
