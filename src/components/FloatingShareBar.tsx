@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { Facebook, Linkedin, MessageCircle, Share2, X as CloseIcon } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { Share2, X as CloseIcon } from "lucide-react";
 
 /**
  * Floating right-side share bar.
@@ -77,6 +77,8 @@ const SHARE_TARGETS = [
 
 const FloatingShareBar = () => {
   const [open, setOpen] = useState(true);
+  const [status, setStatus] = useState("");
+  const statusTimerRef = useRef<number | null>(null);
   const [url, setUrl] = useState(() =>
     typeof window !== "undefined" ? window.location.href : "https://www.iaee.eu/"
   );
@@ -87,22 +89,47 @@ const FloatingShareBar = () => {
   useEffect(() => {
     setUrl(window.location.href);
     setTitle(document.title || "");
+    return () => {
+      if (statusTimerRef.current) window.clearTimeout(statusTimerRef.current);
+    };
   }, []);
 
-  const handleClick = async (name: string, hrefBuilder: (u: string, t: string) => string) => {
-    if (name === "Instagram") {
-      try {
-        await navigator.clipboard.writeText(url);
-        // eslint-disable-next-line no-alert
-        alert("Link gekopieerd — plak hem in je Instagram bio of story.");
-      } catch {
-        // eslint-disable-next-line no-alert
-        alert(url);
-      }
-      return;
+  const showStatus = (message: string) => {
+    setStatus(message);
+    if (statusTimerRef.current) window.clearTimeout(statusTimerRef.current);
+    statusTimerRef.current = window.setTimeout(() => setStatus(""), 2600);
+  };
+
+  const copyCurrentUrl = async () => {
+    try {
+      await navigator.clipboard.writeText(url);
+      return true;
+    } catch {
+      const textarea = document.createElement("textarea");
+      textarea.value = url;
+      textarea.setAttribute("readonly", "");
+      textarea.style.position = "fixed";
+      textarea.style.left = "-9999px";
+      document.body.appendChild(textarea);
+      textarea.select();
+      const copied = document.execCommand("copy");
+      document.body.removeChild(textarea);
+      return copied;
     }
-    const href = hrefBuilder(url, title);
-    if (href) window.open(href, "_blank", "noopener,noreferrer,width=600,height=600");
+  };
+
+  const handleInstagramShare = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({ title, url });
+        return;
+      } catch (error) {
+        if (error instanceof DOMException && error.name === "AbortError") return;
+      }
+    }
+
+    const copied = await copyCurrentUrl();
+    showStatus(copied ? "Link gekopieerd voor Instagram" : url);
   };
 
   if (!open) {
@@ -110,9 +137,9 @@ const FloatingShareBar = () => {
       <button
         onClick={() => setOpen(true)}
         aria-label="Open deelbalk"
-        className="fixed right-3 top-1/2 -translate-y-1/2 z-40 h-11 w-11 rounded-full bg-primary text-primary-foreground shadow-lg flex items-center justify-center hover:scale-110 transition-transform"
+        className="fixed right-2 top-1/2 -translate-y-1/2 z-40 h-9 w-9 rounded-full bg-primary text-primary-foreground shadow-lg flex items-center justify-center hover:scale-105 transition-transform"
       >
-        <Share2 className="h-5 w-5" />
+        <Share2 className="h-4 w-4" />
       </button>
     );
   }
@@ -120,14 +147,14 @@ const FloatingShareBar = () => {
   return (
     <aside
       aria-label="Deel deze pagina"
-      className="fixed right-3 top-1/2 -translate-y-1/2 z-40 flex flex-col items-center gap-2 rounded-full bg-background/90 backdrop-blur border border-border p-2 shadow-xl"
+      className="fixed right-2 top-1/2 -translate-y-1/2 z-40 flex flex-col items-center gap-1.5 rounded-full bg-background/90 backdrop-blur border border-border p-1.5 shadow-lg"
     >
       <button
         onClick={() => setOpen(false)}
         aria-label="Verberg deelbalk"
-        className="h-7 w-7 rounded-full text-muted-foreground hover:bg-muted flex items-center justify-center"
+        className="h-6 w-6 rounded-full text-muted-foreground hover:bg-muted flex items-center justify-center"
       >
-        <CloseIcon className="h-3.5 w-3.5" />
+        <CloseIcon className="h-3 w-3" />
       </button>
       {SHARE_TARGETS.map((s) => {
         const href = s.name === "Instagram" ? "#" : s.href(url, title);
