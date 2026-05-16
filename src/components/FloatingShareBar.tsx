@@ -159,14 +159,14 @@ const FloatingShareBar = () => {
       {SHARE_TARGETS.map((s) => {
         const href = s.name === "Instagram" ? "#" : s.href(url, title);
         const commonClass =
-          "group h-10 w-10 rounded-full bg-background border border-border flex items-center justify-center shadow-sm hover:scale-110 hover:shadow-md transition-all duration-200 hover:text-white";
+          "group h-8 w-8 rounded-full bg-background border border-border flex items-center justify-center shadow-sm hover:scale-105 hover:shadow-md transition-all duration-200 hover:text-white [&_svg]:h-4 [&_svg]:w-4";
         if (s.name === "Instagram") {
           return (
             <button
               key={s.name}
-              onClick={() => handleClick(s.name, s.href)}
+              onClick={handleInstagramShare}
               aria-label={`Deel op ${s.name}`}
-              title={`Deel op ${s.name} (link kopiëren)`}
+              title={`Deel op ${s.name} (delen of link kopiëren)`}
               style={{ color: s.color }}
               className={commonClass}
               onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = s.color)}
@@ -193,6 +193,11 @@ const FloatingShareBar = () => {
           </a>
         );
       })}
+      {status && (
+        <span className="absolute right-11 top-1/2 -translate-y-1/2 whitespace-nowrap rounded-md bg-foreground px-2 py-1 text-xs text-background shadow-md">
+          {status}
+        </span>
+      )}
     </aside>
   );
 };
