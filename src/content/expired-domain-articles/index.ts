@@ -1076,6 +1076,32 @@ import a_how_to_brief_external_accountants_before_capitalising_a_premium_or_expi
 import a_how_to_brief_internal_marketing_teams_before_a_public_migration_onto_a_newly_acquired_premium_or_expired_domai from "./data/how-to-brief-internal-marketing-teams-before-a-public-migration-onto-a-newly-acquired-premium-or-expired-domai";
 import a_how_to_brief_engineering_teams_before_a_production_cutover_onto_a_newly_acquired_premium_or_expired_domain_nam from "./data/how-to-brief-engineering-teams-before-a-production-cutover-onto-a-newly-acquired-premium-or-expired-domain-nam";
 
+import a_how_to_flip_expired_domains_on_godaddy_auctions from "./data/how-to-flip-expired-domains-on-godaddy-auctions";
+import a_expired_domains_for_ai_image_generation_startups from "./data/expired-domains-for-ai-image-generation-startups";
+import a_premium_domains_for_creator_economy_platforms from "./data/premium-domains-for-creator-economy-platforms";
+import a_how_to_use_chatgpt_to_vet_expired_domains from "./data/how-to-use-chatgpt-to-vet-expired-domains";
+import a_expired_domains_for_mobile_banking_and_neobank_startups from "./data/expired-domains-for-mobile-banking-and-neobank-startups";
+import a_premium_domains_for_electric_bike_brands from "./data/premium-domains-for-electric-bike-brands";
+import a_how_to_build_a_newsletter_empire_with_an_expired_domain from "./data/how-to-build-a-newsletter-empire-with-an-expired-domain";
+import a_expired_domains_for_personal_injury_law_firms from "./data/expired-domains-for-personal-injury-law-firms";
+import a_premium_domains_for_virtual_reality_and_spatial_computing from "./data/premium-domains-for-virtual-reality-and-spatial-computing";
+import a_how_to_spot_keyword_rich_expired_domains_with_buyer_intent from "./data/how-to-spot-keyword-rich-expired-domains-with-buyer-intent";
+import a_expired_domains_for_pickleball_brands_and_equipment_makers from "./data/expired-domains-for-pickleball-brands-and-equipment-makers";
+import a_premium_domains_for_podcast_advertising_networks from "./data/premium-domains-for-podcast-advertising-networks";
+import a_how_to_use_expired_domains_for_localized_seo_in_secondary_cities from "./data/how-to-use-expired-domains-for-localized-seo-in-secondary-cities";
+import a_expired_domains_for_luxury_watch_marketplaces from "./data/expired-domains-for-luxury-watch-marketplaces";
+import a_premium_domains_for_cold_plunge_and_recovery_brands from "./data/premium-domains-for-cold-plunge-and-recovery-brands";
+import a_how_to_evaluate_an_expired_domain_with_archive_link_decay from "./data/how-to-evaluate-an-expired-domain-with-archive-link-decay";
+import a_expired_domains_for_niche_saas_built_on_vertical_data from "./data/expired-domains-for-niche-saas-built-on-vertical-data";
+import a_premium_domains_for_pet_tech_and_smart_pet_care_brands from "./data/premium-domains-for-pet-tech-and-smart-pet-care-brands";
+import a_how_to_time_the_market_when_buying_premium_com_domains from "./data/how-to-time-the-market-when-buying-premium-com-domains";
+import a_expired_domains_for_private_equity_and_family_office_websites from "./data/expired-domains-for-private-equity-and-family-office-websites";
+import a_premium_domains_for_augmented_reality_shopping_platforms from "./data/premium-domains-for-augmented-reality-shopping-platforms";
+import a_how_to_syndicate_content_from_an_expired_domain_without_losing_equity from "./data/how-to-syndicate-content-from-an-expired-domain-without-losing-equity";
+import a_expired_domains_for_emerging_market_fintech_startups from "./data/expired-domains-for-emerging-market-fintech-startups";
+import a_premium_domains_for_cybersecurity_training_academies from "./data/premium-domains-for-cybersecurity-training-academies";
+import a_how_to_protect_a_premium_domain_acquisition_from_internal_leaks from "./data/how-to-protect-a-premium-domain-acquisition-from-internal-leaks";
+
 export const ARTICLES: Record<string, ExpiredDomainArticleProps> = {
   "301-redirect-strategy-for-expired-domains": a_301_redirect_strategy_for_expired_domains,
   "better-domain-name-saves-branding-time-budget": a_better_domain_name_saves_branding_time_budget,
@@ -2144,6 +2170,32 @@ export const ARTICLES: Record<string, ExpiredDomainArticleProps> = {
   "how-to-brief-external-accountants-before-capitalising-a-premium-or-expired-domain-name-acquisition-on-the-bala": a_how_to_brief_external_accountants_before_capitalising_a_premium_or_expired_domain_name_acquisition_on_the_bala,
   "how-to-brief-internal-marketing-teams-before-a-public-migration-onto-a-newly-acquired-premium-or-expired-domai": a_how_to_brief_internal_marketing_teams_before_a_public_migration_onto_a_newly_acquired_premium_or_expired_domai,
   "how-to-brief-engineering-teams-before-a-production-cutover-onto-a-newly-acquired-premium-or-expired-domain-nam": a_how_to_brief_engineering_teams_before_a_production_cutover_onto_a_newly_acquired_premium_or_expired_domain_nam,
+  "how-to-flip-expired-domains-on-godaddy-auctions": a_how_to_flip_expired_domains_on_godaddy_auctions,
+  "expired-domains-for-ai-image-generation-startups": a_expired_domains_for_ai_image_generation_startups,
+  "premium-domains-for-creator-economy-platforms": a_premium_domains_for_creator_economy_platforms,
+  "how-to-use-chatgpt-to-vet-expired-domains": a_how_to_use_chatgpt_to_vet_expired_domains,
+  "expired-domains-for-mobile-banking-and-neobank-startups": a_expired_domains_for_mobile_banking_and_neobank_startups,
+  "premium-domains-for-electric-bike-brands": a_premium_domains_for_electric_bike_brands,
+  "how-to-build-a-newsletter-empire-with-an-expired-domain": a_how_to_build_a_newsletter_empire_with_an_expired_domain,
+  "expired-domains-for-personal-injury-law-firms": a_expired_domains_for_personal_injury_law_firms,
+  "premium-domains-for-virtual-reality-and-spatial-computing": a_premium_domains_for_virtual_reality_and_spatial_computing,
+  "how-to-spot-keyword-rich-expired-domains-with-buyer-intent": a_how_to_spot_keyword_rich_expired_domains_with_buyer_intent,
+  "expired-domains-for-pickleball-brands-and-equipment-makers": a_expired_domains_for_pickleball_brands_and_equipment_makers,
+  "premium-domains-for-podcast-advertising-networks": a_premium_domains_for_podcast_advertising_networks,
+  "how-to-use-expired-domains-for-localized-seo-in-secondary-cities": a_how_to_use_expired_domains_for_localized_seo_in_secondary_cities,
+  "expired-domains-for-luxury-watch-marketplaces": a_expired_domains_for_luxury_watch_marketplaces,
+  "premium-domains-for-cold-plunge-and-recovery-brands": a_premium_domains_for_cold_plunge_and_recovery_brands,
+  "how-to-evaluate-an-expired-domain-with-archive-link-decay": a_how_to_evaluate_an_expired_domain_with_archive_link_decay,
+  "expired-domains-for-niche-saas-built-on-vertical-data": a_expired_domains_for_niche_saas_built_on_vertical_data,
+  "premium-domains-for-pet-tech-and-smart-pet-care-brands": a_premium_domains_for_pet_tech_and_smart_pet_care_brands,
+  "how-to-time-the-market-when-buying-premium-com-domains": a_how_to_time_the_market_when_buying_premium_com_domains,
+  "expired-domains-for-private-equity-and-family-office-websites": a_expired_domains_for_private_equity_and_family_office_websites,
+  "premium-domains-for-augmented-reality-shopping-platforms": a_premium_domains_for_augmented_reality_shopping_platforms,
+  "how-to-syndicate-content-from-an-expired-domain-without-losing-equity": a_how_to_syndicate_content_from_an_expired_domain_without_losing_equity,
+  "expired-domains-for-emerging-market-fintech-startups": a_expired_domains_for_emerging_market_fintech_startups,
+  "premium-domains-for-cybersecurity-training-academies": a_premium_domains_for_cybersecurity_training_academies,
+  "how-to-protect-a-premium-domain-acquisition-from-internal-leaks": a_how_to_protect_a_premium_domain_acquisition_from_internal_leaks,
+
 };
 
 export const ARTICLE_SLUGS: string[] = [
@@ -3214,6 +3266,32 @@ export const ARTICLE_SLUGS: string[] = [
   "how-to-brief-external-accountants-before-capitalising-a-premium-or-expired-domain-name-acquisition-on-the-bala",
   "how-to-brief-internal-marketing-teams-before-a-public-migration-onto-a-newly-acquired-premium-or-expired-domai",
   "how-to-brief-engineering-teams-before-a-production-cutover-onto-a-newly-acquired-premium-or-expired-domain-nam",
+  "how-to-flip-expired-domains-on-godaddy-auctions",
+  "expired-domains-for-ai-image-generation-startups",
+  "premium-domains-for-creator-economy-platforms",
+  "how-to-use-chatgpt-to-vet-expired-domains",
+  "expired-domains-for-mobile-banking-and-neobank-startups",
+  "premium-domains-for-electric-bike-brands",
+  "how-to-build-a-newsletter-empire-with-an-expired-domain",
+  "expired-domains-for-personal-injury-law-firms",
+  "premium-domains-for-virtual-reality-and-spatial-computing",
+  "how-to-spot-keyword-rich-expired-domains-with-buyer-intent",
+  "expired-domains-for-pickleball-brands-and-equipment-makers",
+  "premium-domains-for-podcast-advertising-networks",
+  "how-to-use-expired-domains-for-localized-seo-in-secondary-cities",
+  "expired-domains-for-luxury-watch-marketplaces",
+  "premium-domains-for-cold-plunge-and-recovery-brands",
+  "how-to-evaluate-an-expired-domain-with-archive-link-decay",
+  "expired-domains-for-niche-saas-built-on-vertical-data",
+  "premium-domains-for-pet-tech-and-smart-pet-care-brands",
+  "how-to-time-the-market-when-buying-premium-com-domains",
+  "expired-domains-for-private-equity-and-family-office-websites",
+  "premium-domains-for-augmented-reality-shopping-platforms",
+  "how-to-syndicate-content-from-an-expired-domain-without-losing-equity",
+  "expired-domains-for-emerging-market-fintech-startups",
+  "premium-domains-for-cybersecurity-training-academies",
+  "how-to-protect-a-premium-domain-acquisition-from-internal-leaks",
+
 ];
 
 export interface ArticleMeta {
@@ -4294,6 +4372,32 @@ export const ARTICLE_META: Record<string, ArticleMeta> = {
   "how-to-brief-external-accountants-before-capitalising-a-premium-or-expired-domain-name-acquisition-on-the-bala": { slug: "how-to-brief-external-accountants-before-capitalising-a-premium-or-expired-domain-name-acquisition-on-the-bala", h1: "How to Brief External Accountants Before Capitalising a Premium or Expired Domain Name Acquisition on the Balance Sheet", metaDescription: "A practical guide for serious buyers evaluating premium and expired domain names connected to How to Brief External Accountants Before Capitalising a Premium or Expired Domain Name, covering diligence, negotiation, renewals and long horizon value.", primaryKeyword: "premium expired domain names for How to Brief External Accountants Before Capitalising a Premium or Expired Domain Name", categoryId: "buying-and-evaluation", categoryName: "Buying & Evaluation" },
   "how-to-brief-internal-marketing-teams-before-a-public-migration-onto-a-newly-acquired-premium-or-expired-domai": { slug: "how-to-brief-internal-marketing-teams-before-a-public-migration-onto-a-newly-acquired-premium-or-expired-domai", h1: "How to Brief Internal Marketing Teams Before a Public Migration Onto a Newly Acquired Premium or Expired Domain Name", metaDescription: "A practical guide for serious buyers evaluating premium and expired domain names connected to How to Brief Internal Marketing Teams Before a Public Migration Onto a Newly Acquired, covering diligence, negotiation, renewals and long horizon value.", primaryKeyword: "premium expired domain names for How to Brief Internal Marketing Teams Before a Public Migration Onto a Newly Acquired", categoryId: "buying-and-evaluation", categoryName: "Buying & Evaluation" },
   "how-to-brief-engineering-teams-before-a-production-cutover-onto-a-newly-acquired-premium-or-expired-domain-nam": { slug: "how-to-brief-engineering-teams-before-a-production-cutover-onto-a-newly-acquired-premium-or-expired-domain-nam", h1: "How to Brief Engineering Teams Before a Production Cutover Onto a Newly Acquired Premium or Expired Domain Name", metaDescription: "A practical guide for serious buyers evaluating premium and expired domain names connected to How to Brief Engineering Teams Before a Production Cutover Onto a Newly Acquired Premium, covering diligence, negotiation, renewals and long horizon value.", primaryKeyword: "premium expired domain names for How to Brief Engineering Teams Before a Production Cutover Onto a Newly Acquired Premium", categoryId: "buying-and-evaluation", categoryName: "Buying & Evaluation" },
+  "how-to-flip-expired-domains-on-godaddy-auctions": { slug: "how-to-flip-expired-domains-on-godaddy-auctions", h1: "How to Flip Expired Domains on GoDaddy Auctions for Real Profit", metaDescription: "A practical guide to how to flip expired domains on godaddy auctions for real profit, covering diligence, valuation, negotiation and long-term renewal disc...", primaryKeyword: "flipping expired domains on GoDaddy auctions", categoryId: "investing-and-flipping", categoryName: "Investing & Flipping" },
+  "expired-domains-for-ai-image-generation-startups": { slug: "expired-domains-for-ai-image-generation-startups", h1: "Expired Domains for AI Image Generation Startups: A Buyer Playbook", metaDescription: "A practical guide to expired domains for ai image generation startups: a buyer playbook, covering diligence, valuation, negotiation and long-term renewal d...", primaryKeyword: "expired domains for AI image generation startups", categoryId: "startups", categoryName: "Startups & Founders" },
+  "premium-domains-for-creator-economy-platforms": { slug: "premium-domains-for-creator-economy-platforms", h1: "Premium Domains for Creator Economy Platforms in 2026", metaDescription: "A practical guide to premium domains for creator economy platforms in 2026, covering diligence, valuation, negotiation and long-term renewal discipline for...", primaryKeyword: "premium domains for creator economy platforms", categoryId: "creators-and-media", categoryName: "Creators & Media" },
+  "how-to-use-chatgpt-to-vet-expired-domains": { slug: "how-to-use-chatgpt-to-vet-expired-domains", h1: "How to Use ChatGPT to Vet Expired Domains Without Getting Burned", metaDescription: "A practical guide to how to use chatgpt to vet expired domains without getting burned, covering diligence, valuation, negotiation and long-term renewal dis...", primaryKeyword: "using ChatGPT to vet expired domains", categoryId: "buying-and-evaluation", categoryName: "Buying & Evaluation" },
+  "expired-domains-for-mobile-banking-and-neobank-startups": { slug: "expired-domains-for-mobile-banking-and-neobank-startups", h1: "Expired Domains for Mobile Banking and Neobank Startups", metaDescription: "A practical guide to expired domains for mobile banking and neobank startups, covering diligence, valuation, negotiation and long-term renewal discipline f...", primaryKeyword: "expired domains for mobile banking and neobank startups", categoryId: "industries-and-niches", categoryName: "Industries & Niches" },
+  "premium-domains-for-electric-bike-brands": { slug: "premium-domains-for-electric-bike-brands", h1: "Premium Domains for Electric Bike Brands and E-Mobility Retailers", metaDescription: "A practical guide to premium domains for electric bike brands and e-mobility retailers, covering diligence, valuation, negotiation and long-term renewal di...", primaryKeyword: "premium domains for electric bike brands", categoryId: "industries-and-niches", categoryName: "Industries & Niches" },
+  "how-to-build-a-newsletter-empire-with-an-expired-domain": { slug: "how-to-build-a-newsletter-empire-with-an-expired-domain", h1: "How to Build a Newsletter Empire on an Expired Domain", metaDescription: "A practical guide to how to build a newsletter empire on an expired domain, covering diligence, valuation, negotiation and long-term renewal discipline for...", primaryKeyword: "newsletter empire on expired domain", categoryId: "creators-and-media", categoryName: "Creators & Media" },
+  "expired-domains-for-personal-injury-law-firms": { slug: "expired-domains-for-personal-injury-law-firms", h1: "Expired Domains for Personal Injury Law Firms: SEO Edge in Local Markets", metaDescription: "A practical guide to expired domains for personal injury law firms: seo edge in local markets, covering diligence, valuation, negotiation and long-term ren...", primaryKeyword: "expired domains for personal injury law firms", categoryId: "local-and-services", categoryName: "Local & Services" },
+  "premium-domains-for-virtual-reality-and-spatial-computing": { slug: "premium-domains-for-virtual-reality-and-spatial-computing", h1: "Premium Domains for Virtual Reality and Spatial Computing Startups", metaDescription: "A practical guide to premium domains for virtual reality and spatial computing startups, covering diligence, valuation, negotiation and long-term renewal d...", primaryKeyword: "premium domains for virtual reality and spatial computing", categoryId: "startups", categoryName: "Startups & Founders" },
+  "how-to-spot-keyword-rich-expired-domains-with-buyer-intent": { slug: "how-to-spot-keyword-rich-expired-domains-with-buyer-intent", h1: "How to Spot Keyword Rich Expired Domains With Real Buyer Intent", metaDescription: "A practical guide to how to spot keyword rich expired domains with real buyer intent, covering diligence, valuation, negotiation and long-term renewal disc...", primaryKeyword: "keyword rich expired domains with buyer intent", categoryId: "seo-and-authority", categoryName: "SEO & Authority" },
+  "expired-domains-for-pickleball-brands-and-equipment-makers": { slug: "expired-domains-for-pickleball-brands-and-equipment-makers", h1: "Expired Domains for Pickleball Brands and Equipment Makers", metaDescription: "A practical guide to expired domains for pickleball brands and equipment makers, covering diligence, valuation, negotiation and long-term renewal disciplin...", primaryKeyword: "expired domains for pickleball brands", categoryId: "industries-and-niches", categoryName: "Industries & Niches" },
+  "premium-domains-for-podcast-advertising-networks": { slug: "premium-domains-for-podcast-advertising-networks", h1: "Premium Domains for Podcast Advertising Networks and Audio Adtech", metaDescription: "A practical guide to premium domains for podcast advertising networks and audio adtech, covering diligence, valuation, negotiation and long-term renewal di...", primaryKeyword: "premium domains for podcast advertising networks", categoryId: "creators-and-media", categoryName: "Creators & Media" },
+  "how-to-use-expired-domains-for-localized-seo-in-secondary-cities": { slug: "how-to-use-expired-domains-for-localized-seo-in-secondary-cities", h1: "How to Use Expired Domains for Localized SEO in Secondary Cities", metaDescription: "A practical guide to how to use expired domains for localized seo in secondary cities, covering diligence, valuation, negotiation and long-term renewal dis...", primaryKeyword: "expired domains for localized SEO in secondary cities", categoryId: "seo-and-authority", categoryName: "SEO & Authority" },
+  "expired-domains-for-luxury-watch-marketplaces": { slug: "expired-domains-for-luxury-watch-marketplaces", h1: "Expired Domains for Luxury Watch Marketplaces and Pre-Owned Dealers", metaDescription: "A practical guide to expired domains for luxury watch marketplaces and pre-owned dealers, covering diligence, valuation, negotiation and long-term renewal ...", primaryKeyword: "expired domains for luxury watch marketplaces", categoryId: "ecommerce-and-retail", categoryName: "Ecommerce & Retail" },
+  "premium-domains-for-cold-plunge-and-recovery-brands": { slug: "premium-domains-for-cold-plunge-and-recovery-brands", h1: "Premium Domains for Cold Plunge and Recovery Wellness Brands", metaDescription: "A practical guide to premium domains for cold plunge and recovery wellness brands, covering diligence, valuation, negotiation and long-term renewal discipl...", primaryKeyword: "premium domains for cold plunge and recovery brands", categoryId: "industries-and-niches", categoryName: "Industries & Niches" },
+  "how-to-evaluate-an-expired-domain-with-archive-link-decay": { slug: "how-to-evaluate-an-expired-domain-with-archive-link-decay", h1: "How to Evaluate an Expired Domain When Its Archive Links Decay", metaDescription: "A practical guide to how to evaluate an expired domain when its archive links decay, covering diligence, valuation, negotiation and long-term renewal disci...", primaryKeyword: "evaluating expired domains with archive link decay", categoryId: "seo-and-authority", categoryName: "SEO & Authority" },
+  "expired-domains-for-niche-saas-built-on-vertical-data": { slug: "expired-domains-for-niche-saas-built-on-vertical-data", h1: "Expired Domains for Niche SaaS Built on Vertical Data", metaDescription: "A practical guide to expired domains for niche saas built on vertical data, covering diligence, valuation, negotiation and long-term renewal discipline for...", primaryKeyword: "expired domains for niche vertical SaaS", categoryId: "startups", categoryName: "Startups & Founders" },
+  "premium-domains-for-pet-tech-and-smart-pet-care-brands": { slug: "premium-domains-for-pet-tech-and-smart-pet-care-brands", h1: "Premium Domains for Pet Tech and Smart Pet Care Brands", metaDescription: "A practical guide to premium domains for pet tech and smart pet care brands, covering diligence, valuation, negotiation and long-term renewal discipline fo...", primaryKeyword: "premium domains for pet tech brands", categoryId: "industries-and-niches", categoryName: "Industries & Niches" },
+  "how-to-time-the-market-when-buying-premium-com-domains": { slug: "how-to-time-the-market-when-buying-premium-com-domains", h1: "How to Time the Market When Buying Premium .com Domains", metaDescription: "A practical guide to how to time the market when buying premium .com domains, covering diligence, valuation, negotiation and long-term renewal discipline f...", primaryKeyword: "timing the market for premium .com domains", categoryId: "investing-and-flipping", categoryName: "Investing & Flipping" },
+  "expired-domains-for-private-equity-and-family-office-websites": { slug: "expired-domains-for-private-equity-and-family-office-websites", h1: "Expired Domains for Private Equity and Family Office Websites", metaDescription: "A practical guide to expired domains for private equity and family office websites, covering diligence, valuation, negotiation and long-term renewal discip...", primaryKeyword: "expired domains for private equity and family offices", categoryId: "industries-and-niches", categoryName: "Industries & Niches" },
+  "premium-domains-for-augmented-reality-shopping-platforms": { slug: "premium-domains-for-augmented-reality-shopping-platforms", h1: "Premium Domains for Augmented Reality Shopping Platforms", metaDescription: "A practical guide to premium domains for augmented reality shopping platforms, covering diligence, valuation, negotiation and long-term renewal discipline ...", primaryKeyword: "premium domains for augmented reality shopping platforms", categoryId: "ecommerce-and-retail", categoryName: "Ecommerce & Retail" },
+  "how-to-syndicate-content-from-an-expired-domain-without-losing-equity": { slug: "how-to-syndicate-content-from-an-expired-domain-without-losing-equity", h1: "How to Syndicate Content From an Expired Domain Without Losing Link Equity", metaDescription: "A practical guide to how to syndicate content from an expired domain without losing link equity, covering diligence, valuation, negotiation and long-term r...", primaryKeyword: "syndicating content from an expired domain", categoryId: "seo-and-authority", categoryName: "SEO & Authority" },
+  "expired-domains-for-emerging-market-fintech-startups": { slug: "expired-domains-for-emerging-market-fintech-startups", h1: "Expired Domains for Emerging Market Fintech Startups", metaDescription: "A practical guide to expired domains for emerging market fintech startups, covering diligence, valuation, negotiation and long-term renewal discipline for ...", primaryKeyword: "expired domains for emerging market fintech", categoryId: "regional-markets", categoryName: "Regional Markets" },
+  "premium-domains-for-cybersecurity-training-academies": { slug: "premium-domains-for-cybersecurity-training-academies", h1: "Premium Domains for Cybersecurity Training Academies and Certifications", metaDescription: "A practical guide to premium domains for cybersecurity training academies and certifications, covering diligence, valuation, negotiation and long-term rene...", primaryKeyword: "premium domains for cybersecurity training academies", categoryId: "industries-and-niches", categoryName: "Industries & Niches" },
+  "how-to-protect-a-premium-domain-acquisition-from-internal-leaks": { slug: "how-to-protect-a-premium-domain-acquisition-from-internal-leaks", h1: "How to Protect a Premium Domain Acquisition From Internal Leaks", metaDescription: "A practical guide to how to protect a premium domain acquisition from internal leaks, covering diligence, valuation, negotiation and long-term renewal disc...", primaryKeyword: "protecting a premium domain acquisition from leaks", categoryId: "buying-and-evaluation", categoryName: "Buying & Evaluation" },
+
 };
 
 export interface ArticleCategory { id: string; name: string }
