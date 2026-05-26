@@ -7,7 +7,7 @@
 // reason per URL must still be checked manually in GSC. This report
 // surfaces the candidate list so the user knows which URLs to inspect.
 
-import { corsHeaders } from "npm:@supabase/supabase-js@2/cors";
+import { getCorsHeaders, handleCorsPreflightIfNeeded } from "../_shared/cors.ts";
 import { createClient } from "npm:@supabase/supabase-js@2";
 
 const SITE = "https://www.iaee.eu/";
@@ -108,7 +108,9 @@ async function collectSitemapStatus() {
 }
 
 Deno.serve(async (req) => {
-  if (req.method === "OPTIONS") return new Response("ok", { headers: corsHeaders });
+  const preflight = handleCorsPreflightIfNeeded(req);
+  if (preflight) return preflight;
+  const corsHeaders = getCorsHeaders(req);
 
   try {
     // Auth: must be signed in admin
