@@ -33,7 +33,10 @@
     <meta name="twitter:description" content="Complete legal protection packages for all website types. GDPR-compliant privacy policies, terms & conditions, and all essential legal documents.">
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-    <link rel="canonical" href="https://www.iaee.eu/" />
+    <!-- Canonical intentionally NOT set sitewide: each route owns its own canonical via react-helmet-async.
+         A static canonical here would duplicate per-page canonicals (link[rel] does not dedupe),
+         causing Google to mark every page as "Alternate page with proper canonical". -->
+
     <link rel="icon" type="image/x-icon" href="https://storage.googleapis.com/gpt-engineer-file-uploads/faZxB9VmFFUyiJnZBFcXJoapWd93/uploads/1760843485446-download (9).png">
   </head>
 
