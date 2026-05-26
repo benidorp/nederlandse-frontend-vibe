@@ -63,6 +63,23 @@ serve(async (req) => {
 
   const userId = claimsData.claims.sub as string;
 
+  // Use service role for DB operations
+  const supabaseKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
+  const supabase = createClient(supabaseUrl, supabaseKey);
+
+  // Admin role gate - prevent paid AI cost abuse from any signed-up user
+  const { data: adminRole } = await supabase
+    .from("user_roles")
+    .select("role")
+    .eq("user_id", userId)
+    .eq("role", "admin")
+    .maybeSingle();
+  if (!adminRole) {
+    return new Response(JSON.stringify({ error: "Forbidden: admin role required" }), {
+      status: 403, headers: { ...corsHeaders, "Content-Type": "application/json" },
+    });
+  }
+
   const OPENAI_API_KEY = Deno.env.get("OPENAI_API_KEY");
   if (!OPENAI_API_KEY) {
     console.error("CRITICAL: OPENAI_API_KEY not configured");
@@ -70,10 +87,6 @@ serve(async (req) => {
       status: 503, headers: { ...corsHeaders, "Content-Type": "application/json" },
     });
   }
-
-  // Use service role for DB operations
-  const supabaseKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
-  const supabase = createClient(supabaseUrl, supabaseKey);
 
   try {
     const { jobType, content, language = "en", model: requestedModel, batchItems } = await req.json();
