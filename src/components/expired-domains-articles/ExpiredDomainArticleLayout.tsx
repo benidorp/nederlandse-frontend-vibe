@@ -604,6 +604,15 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
 
   // Image rotation per article (deterministic) — hero + per-section unique visuals
   const [heroImg] = pickImages(slug);
+
+  // Hardened meta values — guarantee non-empty, length-capped strings so OG/Twitter/SEO never ship empty fields.
+  const safeMetaTitle = (metaTitle?.trim() || h1 || "Premium & Expired Domains | IAEE").slice(0, 70);
+  const safeMetaDescription = (
+    metaDescription?.trim() ||
+    intro?.[0]?.trim() ||
+    `${h1} — practical guide on premium and expired domain names at IAEE.`
+  ).slice(0, 200);
+  const ogImage = heroImg?.startsWith("http") ? heroImg : `${SITE}${heroImg || "/images/premium-domains-og.jpg"}`;
   const sectionImages = useMemo(() => buildSectionImages(slug, sections.length), [slug, sections.length]);
   const subheadStart = hashSlug(slug) % SUBHEAD_TEMPLATES.length;
 
@@ -716,23 +725,29 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
     <div className="min-h-screen bg-white">
       <Helmet>
         <html lang="en" />
-        <title>{metaTitle}</title>
-        <meta name="description" content={metaDescription} />
-        <meta name="robots" content="index, follow" />
+        <title>{safeMetaTitle}</title>
+        <meta name="description" content={safeMetaDescription} />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
         <meta name="theme-color" content="#0a2540" />
         <link rel="canonical" href={canonical} />
-        <meta property="og:title" content={metaTitle} />
-        <meta property="og:description" content={metaDescription} />
+        <meta property="og:site_name" content="IAEE" />
+        <meta property="og:title" content={safeMetaTitle} />
+        <meta property="og:description" content={safeMetaDescription} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={canonical} />
-        <meta property="og:image" content={`${SITE}${heroImg}`} />
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:image:alt" content={safeMetaTitle} />
+        <meta property="article:published_time" content={publishedDate} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={metaTitle} />
-        <meta name="twitter:description" content={metaDescription} />
+        <meta name="twitter:url" content={canonical} />
+        <meta name="twitter:title" content={safeMetaTitle} />
+        <meta name="twitter:description" content={safeMetaDescription} />
+        <meta name="twitter:image" content={ogImage} />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
+
 
       <HeaderEN />
 

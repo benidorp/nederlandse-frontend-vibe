@@ -65,13 +65,14 @@ const LanguagePage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
         {/* Hreflang tags for SEO */}
-        <link rel="alternate" hrefLang="x-default" href="https://iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.iaee.eu/affiliate-website-protection-essential-legal-documents-terms-conditions-privacy-policy-disclosure-cookie-policy" />
         {supportedLanguages.map(langCode => (
-          <link key={langCode} rel="alternate" hrefLang={langCode} href={`https://iaee.eu/${langCode}`} />
+          <link key={langCode} rel="alternate" hrefLang={langCode} href={`https://www.iaee.eu/${langCode}`} />
         ))}
         
         {/* Canonical URL */}
-        <link rel="canonical" href={`https://iaee.eu/${lang}`} />
+        <link rel="canonical" href={`https://www.iaee.eu/${lang}`} />
+
       </Helmet>
       <GTranslateWidget defaultLanguage={lang} />
       <div className="min-h-screen">
