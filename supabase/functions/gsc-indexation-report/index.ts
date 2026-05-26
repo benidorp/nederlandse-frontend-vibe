@@ -7,7 +7,7 @@
 // reason per URL must still be checked manually in GSC. This report
 // surfaces the candidate list so the user knows which URLs to inspect.
 
-import { corsHeaders } from "npm:@supabase/supabase-js@2/cors";
+import { getCorsHeaders, handleCorsPreflightIfNeeded } from "../_shared/cors.ts";
 import { createClient } from "npm:@supabase/supabase-js@2";
 
 const SITE = "https://www.iaee.eu/";
