@@ -604,6 +604,15 @@ const ExpiredDomainArticleLayout = (props: ExpiredDomainArticleProps) => {
 
   // Image rotation per article (deterministic) — hero + per-section unique visuals
   const [heroImg] = pickImages(slug);
+
+  // Hardened meta values — guarantee non-empty, length-capped strings so OG/Twitter/SEO never ship empty fields.
+  const safeMetaTitle = (metaTitle?.trim() || h1 || "Premium & Expired Domains | IAEE").slice(0, 70);
+  const safeMetaDescription = (
+    metaDescription?.trim() ||
+    intro?.[0]?.trim() ||
+    `${h1} — practical guide on premium and expired domain names at IAEE.`
+  ).slice(0, 200);
+  const ogImage = heroImg?.startsWith("http") ? heroImg : `${SITE}${heroImg || "/images/premium-domains-og.jpg"}`;
   const sectionImages = useMemo(() => buildSectionImages(slug, sections.length), [slug, sections.length]);
   const subheadStart = hashSlug(slug) % SUBHEAD_TEMPLATES.length;
 
