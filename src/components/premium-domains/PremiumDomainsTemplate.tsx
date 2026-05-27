@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Crown, Shield, Globe, ArrowRight, Star, Link, BarChart3, Mail, User, MessageSquare, ArrowUp, Search, X } from "lucide-react";
-import { Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink, useNavigate } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
 import LanguageSwitcher from "@/components/premium-domains/LanguageSwitcher";
 import HiddenInternalLinks from "@/components/HiddenInternalLinks";
