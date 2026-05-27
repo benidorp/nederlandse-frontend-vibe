@@ -190,24 +190,54 @@ const PremiumDomainsTemplate = ({ config: c }: { config: PDPageConfig }) => {
           <div className="max-w-5xl mx-auto mb-10 text-center"><p className="text-sm text-slate-300 font-medium bg-slate-800/40 border border-slate-700/40 rounded-lg px-4 py-3 inline-block"><span className="text-amber-400 font-semibold">{c.vatInfo}</span></p></div>
           <div className="max-w-2xl mx-auto mb-8">
             <div className="relative">
-              <Search className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-400" />
+              <Search className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-400 z-10" />
               <Input
                 type="search"
                 value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search premium domains by name, category or keyword…"
+                onChange={(e) => { setSearchQuery(e.target.value); setShowSuggestions(true); }}
+                onFocus={() => setShowSuggestions(true)}
+                onBlur={() => setTimeout(() => setShowSuggestions(false), 150)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    e.preventDefault();
+                    if (nameMatches[0]) goToDomain(nameMatches[0].name);
+                  } else if (e.key === "Escape") {
+                    setShowSuggestions(false);
+                  }
+                }}
+                placeholder="Search a domain name and press Enter to open it…"
                 aria-label="Search premium domains"
+                autoComplete="off"
                 className="pl-12 pr-12 h-12 bg-slate-800/60 border-slate-700 text-white placeholder:text-slate-400 focus:border-amber-500 focus-visible:ring-amber-500/30 rounded-xl text-base"
               />
               {searchQuery && (
                 <button
                   type="button"
-                  onClick={() => setSearchQuery("")}
+                  onClick={() => { setSearchQuery(""); setShowSuggestions(false); }}
                   aria-label="Clear search"
-                  className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-1 text-slate-400 hover:text-amber-400 hover:bg-slate-700/60"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-1 text-slate-400 hover:text-amber-400 hover:bg-slate-700/60 z-10"
                 >
                   <X className="h-4 w-4" />
                 </button>
+              )}
+              {showSuggestions && q && nameMatches.length > 0 && (
+                <ul
+                  role="listbox"
+                  className="absolute left-0 right-0 top-full mt-2 z-20 max-h-80 overflow-auto rounded-xl border border-slate-700 bg-slate-900/95 backdrop-blur shadow-xl"
+                >
+                  {nameMatches.map((d) => (
+                    <li key={d.name}>
+                      <button
+                        type="button"
+                        onMouseDown={(e) => { e.preventDefault(); goToDomain(d.name); }}
+                        className="flex w-full items-center justify-between gap-3 px-4 py-2.5 text-left text-sm text-slate-200 hover:bg-amber-500/10 hover:text-amber-300"
+                      >
+                        <span className="font-medium break-all">{d.name}</span>
+                        <span className="text-xs text-amber-400/80 flex-shrink-0">{d.price}</span>
+                      </button>
+                    </li>
+                  ))}
+                </ul>
               )}
             </div>
             {q && (
