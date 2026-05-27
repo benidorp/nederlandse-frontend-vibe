@@ -234,6 +234,45 @@ export type Database = {
           },
         ]
       }
+      contact_submissions: {
+        Row: {
+          created_at: string
+          domain: string | null
+          email: string
+          email_error: string | null
+          email_sent: boolean
+          id: string
+          message: string | null
+          name: string
+          recipient_email: string
+          source_page: string | null
+        }
+        Insert: {
+          created_at?: string
+          domain?: string | null
+          email: string
+          email_error?: string | null
+          email_sent?: boolean
+          id?: string
+          message?: string | null
+          name: string
+          recipient_email?: string
+          source_page?: string | null
+        }
+        Update: {
+          created_at?: string
+          domain?: string | null
+          email?: string
+          email_error?: string | null
+          email_sent?: boolean
+          id?: string
+          message?: string | null
+          name?: string
+          recipient_email?: string
+          source_page?: string | null
+        }
+        Relationships: []
+      }
       user_ai_keys: {
         Row: {
           api_key_hash: string
