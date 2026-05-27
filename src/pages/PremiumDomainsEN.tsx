@@ -15,6 +15,7 @@ import LanguageSwitcher from "@/components/premium-domains/LanguageSwitcher";
 import HiddenInternalLinks from "@/components/HiddenInternalLinks";
 import stripeLogo from "@/assets/stripe-logo.svg";
 import { validateContactForm, buildSafeMailtoUrl } from "@/lib/formValidation";
+import { supabase } from "@/integrations/supabase/client";
 
 // Premium domain data - exact copy from Dutch version
 export const premiumDomains = [
@@ -1636,18 +1637,18 @@ const PremiumDomainsEN = () => {
     message: ""
   });
   const [formErrors, setFormErrors] = useState<Record<string, string>>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormErrors({});
-    
-    // Validate form data
+
     const validation = validateContactForm(formData);
-    
+
     if (!validation.success) {
       const errorResult = validation as { success: false; errors: Record<string, string> };
       setFormErrors(errorResult.errors);
@@ -1655,23 +1656,46 @@ const PremiumDomainsEN = () => {
       toast({
         title: "Please correct the form errors",
         description: firstError,
-        variant: "destructive"
+        variant: "destructive",
       });
       return;
     }
 
     const { data } = validation;
-    
-    // Build safe mailto URL with sanitized data
-    const subject = `Premium Domain Inquiry: ${data.domain}`;
-    const body = `Name: ${data.name}\nEmail: ${data.email}\nDomain: ${data.domain}\n\nMessage:\n${data.message || ""}`;
-    
-    window.location.href = buildSafeMailtoUrl("support@iaee.eu", subject, body);
-    
-    toast({
-      title: "Request is being sent",
-      description: "Your email client will open to send the request."
-    });
+    setIsSubmitting(true);
+
+    try {
+      const { data: result, error } = await supabase.functions.invoke("submit-contact", {
+        body: {
+          name: data.name,
+          email: data.email,
+          domain: data.domain,
+          message: data.message || "",
+          source_page: typeof window !== "undefined" ? window.location.href : "",
+        },
+      });
+
+      if (error || !result?.ok) {
+        throw new Error(error?.message || "Submission failed");
+      }
+
+      toast({
+        title: "Message sent",
+        description: "Thanks! We received your inquiry and will get back to you shortly.",
+      });
+      setFormData({ name: "", email: "", domain: "", message: "" });
+    } catch (err) {
+      // Fallback to mailto so the message is never lost
+      const subject = `Premium Domain Inquiry: ${data.domain}`;
+      const body = `Name: ${data.name}\nEmail: ${data.email}\nDomain: ${data.domain}\n\nMessage:\n${data.message || ""}`;
+      window.location.href = buildSafeMailtoUrl("alice19777@gmail.com", subject, body);
+      toast({
+        title: "Opening your email app as backup",
+        description: "We couldn't reach the server, so your email client will open instead.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleDomainInquiry = (domainName: string) => {
