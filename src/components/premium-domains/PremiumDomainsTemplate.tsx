@@ -100,9 +100,11 @@ export interface PDPageConfig {
 
 const PremiumDomainsTemplate = ({ config: c }: { config: PDPageConfig }) => {
   const { toast } = useToast();
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({ name: "", email: "", domain: "", message: "" });
   const [formErrors, setFormErrors] = useState<Record<string, string>>({});
   const [searchQuery, setSearchQuery] = useState("");
+  const [showSuggestions, setShowSuggestions] = useState(false);
   const scrollToSection = (id: string) => { document.getElementById(id)?.scrollIntoView({ behavior: "smooth" }); };
   const allTranslatedDomains = getTranslatedDomains(premiumDomains, c.lang as any);
   const q = searchQuery.trim().toLowerCase();
@@ -111,6 +113,19 @@ const PremiumDomainsTemplate = ({ config: c }: { config: PDPageConfig }) => {
         [d.name, d.category, d.description].some((f) => (f || "").toLowerCase().includes(q))
       )
     : allTranslatedDomains;
+  const nameMatches = q
+    ? allTranslatedDomains
+        .filter((d) => d.name.toLowerCase().includes(q))
+        .sort((a, b) => {
+          const ai = a.name.toLowerCase().indexOf(q);
+          const bi = b.name.toLowerCase().indexOf(q);
+          return ai - bi;
+        })
+        .slice(0, 8)
+    : [];
+  const goToDomain = (name: string) => {
+    navigate(`/domains/${name.replace(/\./g, "-")}`);
+  };
   const url = PREMIUM_DOMAINS_HREFLANG[c.lang] || "";
   const path = url.replace("https://www.iaee.eu", "");
 
