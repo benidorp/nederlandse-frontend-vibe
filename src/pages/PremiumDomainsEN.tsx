@@ -3032,9 +3032,10 @@ const PremiumDomainsEN = () => {
                     <Button 
                       type="submit"
                       size="lg"
-                      className="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-lg py-6 shadow-lg shadow-amber-500/25 transition-all hover:shadow-amber-500/40"
+                      disabled={isSubmitting}
+                      className="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-lg py-6 shadow-lg shadow-amber-500/25 transition-all hover:shadow-amber-500/40 disabled:opacity-60"
                     >
-                      Submit Request
+                      {isSubmitting ? "Sending..." : "Submit Request"}
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
                   </form>
