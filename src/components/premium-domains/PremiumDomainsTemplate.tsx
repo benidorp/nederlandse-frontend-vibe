@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Crown, Shield, Globe, ArrowRight, Star, Link, BarChart3, Mail, User, MessageSquare, ArrowUp, Search, X } from "lucide-react";
-import { Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink, useNavigate } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
 import LanguageSwitcher from "@/components/premium-domains/LanguageSwitcher";
 import HiddenInternalLinks from "@/components/HiddenInternalLinks";
@@ -100,9 +100,11 @@ export interface PDPageConfig {
 
 const PremiumDomainsTemplate = ({ config: c }: { config: PDPageConfig }) => {
   const { toast } = useToast();
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({ name: "", email: "", domain: "", message: "" });
   const [formErrors, setFormErrors] = useState<Record<string, string>>({});
   const [searchQuery, setSearchQuery] = useState("");
+  const [showSuggestions, setShowSuggestions] = useState(false);
   const scrollToSection = (id: string) => { document.getElementById(id)?.scrollIntoView({ behavior: "smooth" }); };
   const allTranslatedDomains = getTranslatedDomains(premiumDomains, c.lang as any);
   const q = searchQuery.trim().toLowerCase();
@@ -111,6 +113,19 @@ const PremiumDomainsTemplate = ({ config: c }: { config: PDPageConfig }) => {
         [d.name, d.category, d.description].some((f) => (f || "").toLowerCase().includes(q))
       )
     : allTranslatedDomains;
+  const nameMatches = q
+    ? allTranslatedDomains
+        .filter((d) => d.name.toLowerCase().includes(q))
+        .sort((a, b) => {
+          const ai = a.name.toLowerCase().indexOf(q);
+          const bi = b.name.toLowerCase().indexOf(q);
+          return ai - bi;
+        })
+        .slice(0, 8)
+    : [];
+  const goToDomain = (name: string) => {
+    navigate(`/domains/${name.replace(/\./g, "-")}`);
+  };
   const url = PREMIUM_DOMAINS_HREFLANG[c.lang] || "";
   const path = url.replace("https://www.iaee.eu", "");
 
@@ -175,24 +190,54 @@ const PremiumDomainsTemplate = ({ config: c }: { config: PDPageConfig }) => {
           <div className="max-w-5xl mx-auto mb-10 text-center"><p className="text-sm text-slate-300 font-medium bg-slate-800/40 border border-slate-700/40 rounded-lg px-4 py-3 inline-block"><span className="text-amber-400 font-semibold">{c.vatInfo}</span></p></div>
           <div className="max-w-2xl mx-auto mb-8">
             <div className="relative">
-              <Search className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-400" />
+              <Search className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-400 z-10" />
               <Input
                 type="search"
                 value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search premium domains by name, category or keyword…"
+                onChange={(e) => { setSearchQuery(e.target.value); setShowSuggestions(true); }}
+                onFocus={() => setShowSuggestions(true)}
+                onBlur={() => setTimeout(() => setShowSuggestions(false), 150)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    e.preventDefault();
+                    if (nameMatches[0]) goToDomain(nameMatches[0].name);
+                  } else if (e.key === "Escape") {
+                    setShowSuggestions(false);
+                  }
+                }}
+                placeholder="Search a domain name and press Enter to open it…"
                 aria-label="Search premium domains"
+                autoComplete="off"
                 className="pl-12 pr-12 h-12 bg-slate-800/60 border-slate-700 text-white placeholder:text-slate-400 focus:border-amber-500 focus-visible:ring-amber-500/30 rounded-xl text-base"
               />
               {searchQuery && (
                 <button
                   type="button"
-                  onClick={() => setSearchQuery("")}
+                  onClick={() => { setSearchQuery(""); setShowSuggestions(false); }}
                   aria-label="Clear search"
-                  className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-1 text-slate-400 hover:text-amber-400 hover:bg-slate-700/60"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-1 text-slate-400 hover:text-amber-400 hover:bg-slate-700/60 z-10"
                 >
                   <X className="h-4 w-4" />
                 </button>
+              )}
+              {showSuggestions && q && nameMatches.length > 0 && (
+                <ul
+                  role="listbox"
+                  className="absolute left-0 right-0 top-full mt-2 z-20 max-h-80 overflow-auto rounded-xl border border-slate-700 bg-slate-900/95 backdrop-blur shadow-xl"
+                >
+                  {nameMatches.map((d) => (
+                    <li key={d.name}>
+                      <button
+                        type="button"
+                        onMouseDown={(e) => { e.preventDefault(); goToDomain(d.name); }}
+                        className="flex w-full items-center justify-between gap-3 px-4 py-2.5 text-left text-sm text-slate-200 hover:bg-amber-500/10 hover:text-amber-300"
+                      >
+                        <span className="font-medium break-all">{d.name}</span>
+                        <span className="text-xs text-amber-400/80 flex-shrink-0">{d.price}</span>
+                      </button>
+                    </li>
+                  ))}
+                </ul>
               )}
             </div>
             {q && (
