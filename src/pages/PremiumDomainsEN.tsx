@@ -1630,6 +1630,7 @@ export const premiumDomains = [
 
 const PremiumDomainsEN = () => {
   const { toast } = useToast();
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -1638,6 +1639,22 @@ const PremiumDomainsEN = () => {
   });
   const [formErrors, setFormErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [showSuggestions, setShowSuggestions] = useState(false);
+
+  const q = searchQuery.trim().toLowerCase();
+  const filteredDomains = q
+    ? premiumDomains.filter((d) =>
+        [d.name, d.category, d.description].some((f) => (f || "").toLowerCase().includes(q))
+      )
+    : premiumDomains;
+  const nameMatches = q
+    ? premiumDomains
+        .filter((d) => d.name.toLowerCase().includes(q))
+        .sort((a, b) => a.name.toLowerCase().indexOf(q) - b.name.toLowerCase().indexOf(q))
+        .slice(0, 8)
+    : [];
+  const goToDomain = (name: string) => navigate(`/domains/${name.replace(/\./g, "-")}`);
 
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
