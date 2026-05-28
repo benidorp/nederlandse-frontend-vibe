@@ -6,8 +6,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Crown, TrendingUp, Shield, Globe, Zap, Award, ArrowRight, CheckCircle, Star, Link, Target, BarChart3, Mail, User, MessageSquare, Lock, ArrowUp, Home, ExternalLink } from "lucide-react";
-import { Link as RouterLink } from "react-router-dom";
+import { Crown, TrendingUp, Shield, Globe, Zap, Award, ArrowRight, CheckCircle, Star, Link, Target, BarChart3, Mail, User, MessageSquare, Lock, ArrowUp, Home, ExternalLink, Search, X } from "lucide-react";
+import { Link as RouterLink, useNavigate } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
 import LegalLinksPremiumDomainsEN from "@/components/premium-domains/LegalLinksPremiumDomainsEN";
 import FooterPremiumDomainsEN from "@/components/premium-domains/FooterPremiumDomainsEN";
@@ -1630,6 +1630,7 @@ export const premiumDomains = [
 
 const PremiumDomainsEN = () => {
   const { toast } = useToast();
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -1638,6 +1639,22 @@ const PremiumDomainsEN = () => {
   });
   const [formErrors, setFormErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [showSuggestions, setShowSuggestions] = useState(false);
+
+  const q = searchQuery.trim().toLowerCase();
+  const filteredDomains = q
+    ? premiumDomains.filter((d) =>
+        [d.name, d.category, d.description].some((f) => (f || "").toLowerCase().includes(q))
+      )
+    : premiumDomains;
+  const nameMatches = q
+    ? premiumDomains
+        .filter((d) => d.name.toLowerCase().includes(q))
+        .sort((a, b) => a.name.toLowerCase().indexOf(q) - b.name.toLowerCase().indexOf(q))
+        .slice(0, 8)
+    : [];
+  const goToDomain = (name: string) => navigate(`/domains/${name.replace(/\./g, "-")}`);
 
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -2043,8 +2060,69 @@ const PremiumDomainsEN = () => {
               </p>
             </div>
             
+            <div className="max-w-2xl mx-auto mb-8">
+              <div className="relative">
+                <Search className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-400 z-10" />
+                <Input
+                  type="search"
+                  value={searchQuery}
+                  onChange={(e) => { setSearchQuery(e.target.value); setShowSuggestions(true); }}
+                  onFocus={() => setShowSuggestions(true)}
+                  onBlur={() => setTimeout(() => setShowSuggestions(false), 150)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      e.preventDefault();
+                      if (nameMatches[0]) goToDomain(nameMatches[0].name);
+                    } else if (e.key === "Escape") {
+                      setShowSuggestions(false);
+                    }
+                  }}
+                  placeholder="Search a domain name and press Enter to open it…"
+                  aria-label="Search premium domains"
+                  autoComplete="off"
+                  className="pl-12 pr-12 h-12 bg-slate-800/60 border-slate-700 text-white placeholder:text-slate-400 focus:border-amber-500 focus-visible:ring-amber-500/30 rounded-xl text-base"
+                />
+                {searchQuery && (
+                  <button
+                    type="button"
+                    onClick={() => { setSearchQuery(""); setShowSuggestions(false); }}
+                    aria-label="Clear search"
+                    className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-1 text-slate-400 hover:text-amber-400 hover:bg-slate-700/60 z-10"
+                  >
+                    <X className="h-4 w-4" />
+                  </button>
+                )}
+                {showSuggestions && q && nameMatches.length > 0 && (
+                  <ul role="listbox" className="absolute left-0 right-0 top-full mt-2 z-20 max-h-80 overflow-auto rounded-xl border border-slate-700 bg-slate-900/95 backdrop-blur shadow-xl">
+                    {nameMatches.map((d) => (
+                      <li key={d.name}>
+                        <button
+                          type="button"
+                          onMouseDown={(e) => { e.preventDefault(); goToDomain(d.name); }}
+                          className="flex w-full items-center justify-between gap-3 px-4 py-2.5 text-left text-sm text-slate-200 hover:bg-amber-500/10 hover:text-amber-300"
+                        >
+                          <span className="font-medium break-all">{d.name}</span>
+                          <span className="text-xs text-amber-400/80 flex-shrink-0">{d.price}</span>
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+              {q && (
+                <p className="mt-2 text-center text-xs text-slate-400">
+                  {filteredDomains.length} {filteredDomains.length === 1 ? "domain" : "domains"} found for “{searchQuery}”
+                </p>
+              )}
+            </div>
+
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6">
-              {premiumDomains.map((domain, index) => (
+              {filteredDomains.length === 0 && (
+                <div className="col-span-full text-center py-12 text-slate-400">
+                  No domains match your search. Try a different keyword.
+                </div>
+              )}
+              {filteredDomains.map((domain, index) => (
                 <Card 
                   key={index} 
                   className="h-full flex flex-col bg-gradient-to-br from-slate-800/80 to-slate-900/80 border-slate-700/50 backdrop-blur hover:border-amber-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10 group"
