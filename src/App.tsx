@@ -405,7 +405,7 @@ const App = () => (
             <Route path="/ai-dashboard" element={<AdminRoute><AIDashboard /></AdminRoute>} />
 
             {/* SEO Indexation Report (Protected, admin-only enforced server-side) */}
-            <Route path="/seo-indexation" element={<ProtectedRoute><SeoIndexationReport /></ProtectedRoute>} />
+            <Route path="/seo-indexation" element={<AdminRoute><SeoIndexationReport /></AdminRoute>} />
 
             {/* Dynamic translated pages from DB */}
             <Route path="/:lang/*" element={<DynamicTranslatedPage />} />
