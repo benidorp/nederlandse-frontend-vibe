@@ -402,7 +402,7 @@ const App = () => (
             <Route path="/reset-password" element={<ResetPassword />} />
 
             {/* AI Dashboard (Protected) */}
-            <Route path="/ai-dashboard" element={<ProtectedRoute><AIDashboard /></ProtectedRoute>} />
+            <Route path="/ai-dashboard" element={<AdminRoute><AIDashboard /></AdminRoute>} />
 
             {/* SEO Indexation Report (Protected, admin-only enforced server-side) */}
             <Route path="/seo-indexation" element={<ProtectedRoute><SeoIndexationReport /></ProtectedRoute>} />
