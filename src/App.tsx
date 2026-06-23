@@ -152,6 +152,7 @@ const Signup = lazyRetry(() => import("./pages/Signup"));
 const ForgotPassword = lazyRetry(() => import("./pages/ForgotPassword"));
 const ResetPassword = lazyRetry(() => import("./pages/ResetPassword"));
 import ProtectedRoute from "./components/ProtectedRoute";
+import AdminRoute from "./components/AdminRoute";
 const DynamicTranslatedPage = lazyRetry(() => import("./pages/DynamicTranslatedPage"));
 
 // Legal Documents Multi-language Pages
