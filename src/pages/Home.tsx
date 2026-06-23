@@ -133,7 +133,7 @@ const Home = () => {
         lang="en"
         robots="index, follow"
         ogType="website"
-        ogImage="https://lovable.dev/opengraph-image-p98pqg.png"
+        ogImage="https://www.iaee.eu/images/premium-domains-og.jpg"
         breadcrumbs={[
           { name: "Home", url: "https://www.iaee.eu/" },
         ]}
