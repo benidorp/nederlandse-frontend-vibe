@@ -128,6 +128,16 @@ const VATCalculator = () => {
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="BTW calculator, BTW berekenen, VAT calculator, internationale BTW, BTW webshop, BTW Shopify, BTW WooCommerce, BTW ZZP, BTW freelancer, BTW SaaS, BTW dropshipping, gratis BTW calculator" />
         <link rel="canonical" href="https://www.iaee.eu/btw-calculator-wereldwijd" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.iaee.eu/btw-calculator-wereldwijd" />
+        <meta property="og:title" content="Gratis Internationale BTW Calculator (60+ landen) – Wereldwijd VAT & Sales Tax Berekenen" />
+        <meta property="og:description" content="Gratis BTW calculator voor 60+ landen wereldwijd. Bereken BTW direct voor webshops, Shopify, WooCommerce, SaaS, freelancers en ZZP'ers met actuele tarieven." />
+        <meta property="og:image" content="https://www.iaee.eu/images/premium-domains-og.jpg" />
+        <meta property="og:site_name" content="IAEE" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Gratis Internationale BTW Calculator (60+ landen)" />
+        <meta name="twitter:description" content="Gratis BTW calculator voor 60+ landen wereldwijd met actuele tarieven voor EU en internationaal." />
+        <meta name="twitter:image" content="https://www.iaee.eu/images/premium-domains-og.jpg" />
         <link rel="alternate" hrefLang="nl" href="https://www.iaee.eu/btw-calculator-wereldwijd" />
         <link rel="alternate" hrefLang="en" href="https://www.iaee.eu/vat-calculator-worldwide" />
         <link rel="alternate" hrefLang="de" href="https://www.iaee.eu/mwst-rechner-weltweit" />
