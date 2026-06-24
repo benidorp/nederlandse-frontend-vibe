@@ -190,6 +190,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <AutoSocialMeta />
         <AdminToolbar />
         <FloatingShareBar />
         <LanguageDetector />
