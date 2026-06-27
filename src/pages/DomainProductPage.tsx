@@ -141,9 +141,14 @@ const DomainProductPage = () => {
               "@id": `${canonicalUrl}/#product`,
               "name": domain.name,
               "description": `${domain.description} Premium expired domain with MOZ Domain Authority ${domain.mozScore}, Page Authority ${domain.pageAuthority}, ${domain.linkingDomains} linking domains and ${domain.backlinks} total backlinks.`,
-              "image": "https://www.iaee.eu/images/premium-domains-logo.png",
+              "image": [
+                "https://www.iaee.eu/images/premium-domains-og.jpg",
+                "https://www.iaee.eu/images/premium-domains-logo.png"
+              ],
               "url": canonicalUrl,
               "sku": domain.name,
+              "mpn": domain.name,
+              "productID": domain.name,
               "category": domain.category,
               "brand": {
                 "@type": "Brand",
@@ -160,7 +165,43 @@ const DomainProductPage = () => {
                   "name": "IAEE Premium Domains"
                 },
                 "priceValidUntil": "2027-12-31",
-                "itemCondition": "https://schema.org/NewCondition"
+                "itemCondition": "https://schema.org/NewCondition",
+                "shippingDetails": {
+                  "@type": "OfferShippingDetails",
+                  "shippingRate": {
+                    "@type": "MonetaryAmount",
+                    "value": "0",
+                    "currency": "EUR"
+                  },
+                  "shippingDestination": {
+                    "@type": "DefinedRegion",
+                    "geoMidpoint": {
+                      "@type": "GeoCoordinates",
+                      "latitude": "0",
+                      "longitude": "0"
+                    }
+                  },
+                  "deliveryTime": {
+                    "@type": "ShippingDeliveryTime",
+                    "handlingTime": {
+                      "@type": "QuantitativeValue",
+                      "minValue": 0,
+                      "maxValue": 1,
+                      "unitCode": "DAY"
+                    },
+                    "transitTime": {
+                      "@type": "QuantitativeValue",
+                      "minValue": 0,
+                      "maxValue": 1,
+                      "unitCode": "DAY"
+                    }
+                  }
+                },
+                "hasMerchantReturnPolicy": {
+                  "@type": "MerchantReturnPolicy",
+                  "applicableCountry": "EU",
+                  "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+                }
               },
               "additionalProperty": [
                 {
@@ -185,6 +226,7 @@ const DomainProductPage = () => {
                 }
               ]
             },
+
             {
               "@type": "FAQPage",
               "mainEntity": [
