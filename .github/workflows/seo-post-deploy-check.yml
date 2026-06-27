@@ -1,0 +1,26 @@
+name: SEO Post-Deploy Check
+
+# Runs after every deploy + nightly. Validates:
+#  - Key URLs return 200 and are indexable (no noindex)
+#  - Open Graph + Twitter tags present
+#  - JSON-LD Product schema has image, description, brand, offers.shippingDetails,
+#    offers.hasMerchantReturnPolicy (the exact fields Google Merchant flags)
+# Fails the job (=> red alert) when any URL is missing required fields.
+
+on:
+  workflow_run:
+    workflows: ["Deploy to cPanel", "Deploy via FTP"]
+    types: [completed]
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - name: Run SEO audit
+        run: node scripts/seo-post-deploy-check.mjs
