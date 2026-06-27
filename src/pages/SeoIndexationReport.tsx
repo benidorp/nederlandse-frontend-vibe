@@ -27,14 +27,29 @@ interface Report {
   notIndexedUrls: string[];
 }
 
+interface InspectResult {
+  url: string;
+  verdict?: string;
+  coverageState?: string;
+  indexingState?: string;
+  lastCrawlTime?: string;
+  googleCanonical?: string;
+  userCanonical?: string;
+  inspectionResultLink?: string;
+  error?: string;
+}
+
 const SeoIndexationReport = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [report, setReport] = useState<Report | null>(null);
+  const [verifying, setVerifying] = useState(false);
+  const [inspectResults, setInspectResults] = useState<InspectResult[] | null>(null);
 
   const run = async () => {
     setLoading(true);
     setError(null);
+    setInspectResults(null);
     try {
       const { data, error } = await supabase.functions.invoke("gsc-indexation-report");
       if (error) throw error;
@@ -47,9 +62,30 @@ const SeoIndexationReport = () => {
     }
   };
 
+  const verifyWithGSC = async () => {
+    if (!report) return;
+    setVerifying(true);
+    setError(null);
+    try {
+      // Inspect up to 50 URLs per run (GSC API daily cap is ~600/day).
+      const urls = report.notIndexedUrls.slice(0, 50);
+      const { data, error } = await supabase.functions.invoke("gsc-url-inspect", {
+        body: { urls, siteUrl: report.site },
+      });
+      if (error) throw error;
+      if ((data as any).error) throw new Error((data as any).error);
+      setInspectResults((data as any).results as InspectResult[]);
+    } catch (e: any) {
+      setError(e.message ?? String(e));
+    } finally {
+      setVerifying(false);
+    }
+  };
+
   useEffect(() => {
     run();
   }, []);
+
 
   return (
     <>
