@@ -438,6 +438,24 @@ export type Database = {
         }
         Relationships: []
       }
+      system_secrets: {
+        Row: {
+          created_at: string
+          key: string
+          value: string
+        }
+        Insert: {
+          created_at?: string
+          key: string
+          value: string
+        }
+        Update: {
+          created_at?: string
+          key?: string
+          value?: string
+        }
+        Relationships: []
+      }
       user_ai_keys: {
         Row: {
           api_key_hash: string
