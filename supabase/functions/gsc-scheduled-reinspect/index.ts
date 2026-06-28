@@ -46,13 +46,21 @@ async function collectSitemapUrls(): Promise<string[]> {
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response("ok");
 
-  // Auth: shared secret from pg_cron, or admin JWT for manual trigger.
-  const cronSecret = Deno.env.get("CRON_SECRET");
-  const provided = req.headers.get("x-cron-secret");
+  // Auth: shared secret from pg_cron (stored in system_secrets), or admin JWT.
   const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
   const serviceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
+  const adminClient = createClient(supabaseUrl, serviceKey);
 
-  let authorized = !!(cronSecret && provided && provided === cronSecret);
+  const provided = req.headers.get("x-cron-secret");
+  let authorized = false;
+  if (provided) {
+    const { data: secret } = await adminClient
+      .from("system_secrets")
+      .select("value")
+      .eq("key", "gsc_reinspect_cron_token")
+      .maybeSingle();
+    if (secret?.value && secret.value === provided) authorized = true;
+  }
   if (!authorized) {
     const auth = req.headers.get("Authorization") ?? "";
     const supa = createClient(supabaseUrl, Deno.env.get("SUPABASE_ANON_KEY")!, {
