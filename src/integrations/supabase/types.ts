@@ -360,6 +360,60 @@ export type Database = {
         }
         Relationships: []
       }
+      gsc_inspection_results: {
+        Row: {
+          coverage_state: string | null
+          created_at: string
+          error: string | null
+          google_canonical: string | null
+          indexing_state: string | null
+          inspect_count: number
+          inspection_result_link: string | null
+          last_crawl_time: string | null
+          last_inspected_at: string
+          page_fetch_state: string | null
+          robots_txt_state: string | null
+          site_url: string
+          url: string
+          user_canonical: string | null
+          verdict: string | null
+        }
+        Insert: {
+          coverage_state?: string | null
+          created_at?: string
+          error?: string | null
+          google_canonical?: string | null
+          indexing_state?: string | null
+          inspect_count?: number
+          inspection_result_link?: string | null
+          last_crawl_time?: string | null
+          last_inspected_at?: string
+          page_fetch_state?: string | null
+          robots_txt_state?: string | null
+          site_url: string
+          url: string
+          user_canonical?: string | null
+          verdict?: string | null
+        }
+        Update: {
+          coverage_state?: string | null
+          created_at?: string
+          error?: string | null
+          google_canonical?: string | null
+          indexing_state?: string | null
+          inspect_count?: number
+          inspection_result_link?: string | null
+          last_crawl_time?: string | null
+          last_inspected_at?: string
+          page_fetch_state?: string | null
+          robots_txt_state?: string | null
+          site_url?: string
+          url?: string
+          user_canonical?: string | null
+          verdict?: string | null
+        }
+        Relationships: []
+      }
       suppressed_emails: {
         Row: {
           created_at: string
@@ -381,6 +435,24 @@ export type Database = {
           id?: string
           metadata?: Json | null
           reason?: string
+        }
+        Relationships: []
+      }
+      system_secrets: {
+        Row: {
+          created_at: string
+          key: string
+          value: string
+        }
+        Insert: {
+          created_at?: string
+          key: string
+          value: string
+        }
+        Update: {
+          created_at?: string
+          key?: string
+          value?: string
         }
         Relationships: []
       }
