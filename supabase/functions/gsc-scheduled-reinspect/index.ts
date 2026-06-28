@@ -85,7 +85,7 @@ Deno.serve(async (req) => {
     return new Response(JSON.stringify({ error: "GSC connector not configured" }), { status: 500 });
   }
 
-  const admin = createClient(supabaseUrl, serviceKey);
+  const admin = adminClient;
 
   // Optional override via body { limit }.
   let limit = MAX_PER_RUN;
