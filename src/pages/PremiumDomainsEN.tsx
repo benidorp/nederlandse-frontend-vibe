@@ -1827,7 +1827,18 @@ const PremiumDomainsEN = () => {
                       "seller": {
                         "@type": "Organization",
                         "name": "IAEE Premium Domains"
-                      }
+                      },
+                       "shippingDetails": {
+                         "@type": "OfferShippingDetails",
+                         "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "EUR"},
+                         "shippingDestination": {"@type": "DefinedRegion", "addressCountry": ["NL","BE","DE","FR","IT","ES","AT","PT","IE","FI","SE","DK","PL","CZ","SK","HU","RO","BG","HR","SI","EE","LV","LT","LU","MT","CY","GR","US","GB"]},
+                         "deliveryTime": {"@type": "ShippingDeliveryTime","handlingTime": {"@type":"QuantitativeValue","minValue":0,"maxValue":1,"unitCode":"DAY"},"transitTime":{"@type":"QuantitativeValue","minValue":1,"maxValue":5,"unitCode":"DAY"}}
+                       },
+                       "hasMerchantReturnPolicy": {
+                         "@type": "MerchantReturnPolicy",
+                         "applicableCountry": ["NL","BE","DE","FR","IT","ES","AT","PT","IE","FI","SE","DK","PL","CZ","SK","HU","RO","BG","HR","SI","EE","LV","LT","LU","MT","CY","GR"],
+                         "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+                       }
                     }
                   }
                 })))}
