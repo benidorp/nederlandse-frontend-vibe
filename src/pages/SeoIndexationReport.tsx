@@ -45,6 +45,27 @@ const SeoIndexationReport = () => {
   const [report, setReport] = useState<Report | null>(null);
   const [verifying, setVerifying] = useState(false);
   const [inspectResults, setInspectResults] = useState<InspectResult[] | null>(null);
+  const [bulkRunning, setBulkRunning] = useState(false);
+  const [bulkSummary, setBulkSummary] = useState<{ submitted: number; indexed: number; notIndexed: number; errors: number } | null>(null);
+
+  const runBulkReindex = async () => {
+    setBulkRunning(true);
+    setError(null);
+    setBulkSummary(null);
+    try {
+      const { data, error } = await supabase.functions.invoke("gsc-bulk-reindex-premium", {
+        body: { limit: 200, delayMs: 200 },
+      });
+      if (error) throw error;
+      if ((data as any).error) throw new Error((data as any).error);
+      const s = (data as any).summary;
+      setBulkSummary({ submitted: (data as any).submitted, indexed: s.indexed, notIndexed: s.notIndexed, errors: s.errors });
+    } catch (e: any) {
+      setError(e.message ?? String(e));
+    } finally {
+      setBulkRunning(false);
+    }
+  };
 
   const run = async () => {
     setLoading(true);
