@@ -45,6 +45,27 @@ const SeoIndexationReport = () => {
   const [report, setReport] = useState<Report | null>(null);
   const [verifying, setVerifying] = useState(false);
   const [inspectResults, setInspectResults] = useState<InspectResult[] | null>(null);
+  const [bulkRunning, setBulkRunning] = useState(false);
+  const [bulkSummary, setBulkSummary] = useState<{ submitted: number; indexed: number; notIndexed: number; errors: number } | null>(null);
+
+  const runBulkReindex = async () => {
+    setBulkRunning(true);
+    setError(null);
+    setBulkSummary(null);
+    try {
+      const { data, error } = await supabase.functions.invoke("gsc-bulk-reindex-premium", {
+        body: { limit: 200, delayMs: 200 },
+      });
+      if (error) throw error;
+      if ((data as any).error) throw new Error((data as any).error);
+      const s = (data as any).summary;
+      setBulkSummary({ submitted: (data as any).submitted, indexed: s.indexed, notIndexed: s.notIndexed, errors: s.errors });
+    } catch (e: any) {
+      setError(e.message ?? String(e));
+    } finally {
+      setBulkRunning(false);
+    }
+  };
 
   const run = async () => {
     setLoading(true);
@@ -94,13 +115,27 @@ const SeoIndexationReport = () => {
         <meta name="robots" content="noindex,nofollow" />
       </Helmet>
       <main className="container mx-auto px-4 py-8 max-w-5xl">
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center justify-between mb-6 flex-wrap gap-3">
           <h1 className="text-3xl font-bold">Search Console Indexation Report</h1>
-          <Button onClick={run} disabled={loading} variant="outline" size="sm">
-            <RefreshCw className={`h-4 w-4 mr-2 ${loading ? "animate-spin" : ""}`} />
-            Refresh
-          </Button>
+          <div className="flex gap-2">
+            <Button onClick={runBulkReindex} disabled={bulkRunning} size="sm">
+              {bulkRunning ? <Loader2 className="h-4 w-4 mr-2 animate-spin" /> : null}
+              Bulk re-inspect premium domains
+            </Button>
+            <Button onClick={run} disabled={loading} variant="outline" size="sm">
+              <RefreshCw className={`h-4 w-4 mr-2 ${loading ? "animate-spin" : ""}`} />
+              Refresh
+            </Button>
+          </div>
         </div>
+
+        {bulkSummary && (
+          <Card className="p-4 mb-4 bg-primary/5 text-sm">
+            Bulk re-inspection finished — <strong>{bulkSummary.submitted}</strong> URLs submitted ·
+            {" "}✅ {bulkSummary.indexed} indexed · ❌ {bulkSummary.notIndexed} not indexed · ⚠️ {bulkSummary.errors} errors.
+            Both premium sitemaps were resubmitted to Google to trigger a re-crawl.
+          </Card>
+        )}
 
         {loading && (
           <div className="flex items-center gap-2 text-muted-foreground">
