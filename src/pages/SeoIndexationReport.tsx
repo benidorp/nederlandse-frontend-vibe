@@ -115,13 +115,27 @@ const SeoIndexationReport = () => {
         <meta name="robots" content="noindex,nofollow" />
       </Helmet>
       <main className="container mx-auto px-4 py-8 max-w-5xl">
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center justify-between mb-6 flex-wrap gap-3">
           <h1 className="text-3xl font-bold">Search Console Indexation Report</h1>
-          <Button onClick={run} disabled={loading} variant="outline" size="sm">
-            <RefreshCw className={`h-4 w-4 mr-2 ${loading ? "animate-spin" : ""}`} />
-            Refresh
-          </Button>
+          <div className="flex gap-2">
+            <Button onClick={runBulkReindex} disabled={bulkRunning} size="sm">
+              {bulkRunning ? <Loader2 className="h-4 w-4 mr-2 animate-spin" /> : null}
+              Bulk re-inspect premium domains
+            </Button>
+            <Button onClick={run} disabled={loading} variant="outline" size="sm">
+              <RefreshCw className={`h-4 w-4 mr-2 ${loading ? "animate-spin" : ""}`} />
+              Refresh
+            </Button>
+          </div>
         </div>
+
+        {bulkSummary && (
+          <Card className="p-4 mb-4 bg-primary/5 text-sm">
+            Bulk re-inspection finished — <strong>{bulkSummary.submitted}</strong> URLs submitted ·
+            {" "}✅ {bulkSummary.indexed} indexed · ❌ {bulkSummary.notIndexed} not indexed · ⚠️ {bulkSummary.errors} errors.
+            Both premium sitemaps were resubmitted to Google to trigger a re-crawl.
+          </Card>
+        )}
 
         {loading && (
           <div className="flex items-center gap-2 text-muted-foreground">
