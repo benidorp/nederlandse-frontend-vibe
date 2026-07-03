@@ -114,7 +114,7 @@ Deno.serve(async (req) => {
               url: u, verdict: null, coverage_state: null, indexing_state: null,
               robots_txt_state: null, page_fetch_state: null, last_crawl_time: null,
               google_canonical: null, user_canonical: null, inspection_result_link: null,
-              last_error: data?.error?.message || `HTTP ${r.status}`,
+              error: data?.error?.message || `HTTP ${r.status}`,
               last_inspected_at: new Date().toISOString(),
             }, { onConflict: "url" });
           } else {
@@ -127,14 +127,14 @@ Deno.serve(async (req) => {
               last_crawl_time: idx.lastCrawlTime ?? null,
               google_canonical: idx.googleCanonical, user_canonical: idx.userCanonical,
               inspection_result_link: data?.inspectionResult?.inspectionResultLink,
-              last_error: null,
+              error: null,
               last_inspected_at: new Date().toISOString(),
             }, { onConflict: "url" });
           }
         } catch (e) {
           errors++;
           await supa.from("gsc_inspection_results").upsert({
-            url: u, last_error: (e as Error).message, last_inspected_at: new Date().toISOString(),
+            url: u, error: (e as Error).message, last_inspected_at: new Date().toISOString(),
           }, { onConflict: "url" });
         }
         processed++;
