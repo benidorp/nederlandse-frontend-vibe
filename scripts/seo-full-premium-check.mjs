@@ -154,5 +154,28 @@ async function runPool(items, worker, size) {
 
   console.log(`✅ passed=${passed.length}  ⚠️ warn=${warned.length}  ❌ fail=${failed.length}`);
   console.log(`Report → ${OUT_JSON}\n         ${OUT_MD}`);
+
+  // Optionally POST the report to the store function so the SEO Indexation
+  // Report UI can diff the last two runs. Requires SEO_REPORT_STORE_URL and
+  // SEO_REPORT_STORE_SECRET (== project's CRON_SECRET) in the environment.
+  const storeUrl = process.env.SEO_REPORT_STORE_URL;
+  const storeSecret = process.env.SEO_REPORT_STORE_SECRET;
+  if (storeUrl && storeSecret) {
+    try {
+      const r = await fetch(`${storeUrl.replace(/\/$/, "")}/store`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "x-cron-secret": storeSecret },
+        body: JSON.stringify({ secret: storeSecret, report }),
+      });
+      const data = await r.json();
+      console.log(`Stored report id=${data.id ?? "?"} (previous=${data.previous_id ?? "none"})`);
+      if (data?.diff?.regressed?.length) console.log(`⚠️ ${data.diff.regressed.length} URLs regressed since previous run`);
+      if (data?.diff?.improved?.length) console.log(`✅ ${data.diff.improved.length} URLs improved since previous run`);
+    } catch (e) {
+      console.warn(`Report store failed: ${e.message}`);
+    }
+  }
+
   process.exit(failed.length ? 1 : 0);
 })();
+

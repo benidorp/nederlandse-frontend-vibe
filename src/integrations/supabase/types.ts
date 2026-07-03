@@ -360,6 +360,51 @@ export type Database = {
         }
         Relationships: []
       }
+      gsc_bulk_jobs: {
+        Row: {
+          error_message: string | null
+          errors: number
+          finished_at: string | null
+          id: string
+          indexed: number
+          not_indexed: number
+          processed: number
+          sitemaps_resubmitted: Json | null
+          started_at: string
+          status: string
+          total: number
+          updated_at: string
+        }
+        Insert: {
+          error_message?: string | null
+          errors?: number
+          finished_at?: string | null
+          id?: string
+          indexed?: number
+          not_indexed?: number
+          processed?: number
+          sitemaps_resubmitted?: Json | null
+          started_at?: string
+          status?: string
+          total?: number
+          updated_at?: string
+        }
+        Update: {
+          error_message?: string | null
+          errors?: number
+          finished_at?: string | null
+          id?: string
+          indexed?: number
+          not_indexed?: number
+          processed?: number
+          sitemaps_resubmitted?: Json | null
+          started_at?: string
+          status?: string
+          total?: number
+          updated_at?: string
+        }
+        Relationships: []
+      }
       gsc_inspection_results: {
         Row: {
           coverage_state: string | null
@@ -411,6 +456,39 @@ export type Database = {
           url?: string
           user_canonical?: string | null
           verdict?: string | null
+        }
+        Relationships: []
+      }
+      seo_reports: {
+        Row: {
+          created_at: string
+          duration_ms: number | null
+          failed: number
+          id: string
+          passed: number
+          results: Json
+          total: number
+          warned: number
+        }
+        Insert: {
+          created_at?: string
+          duration_ms?: number | null
+          failed?: number
+          id?: string
+          passed?: number
+          results: Json
+          total?: number
+          warned?: number
+        }
+        Update: {
+          created_at?: string
+          duration_ms?: number | null
+          failed?: number
+          id?: string
+          passed?: number
+          results?: Json
+          total?: number
+          warned?: number
         }
         Relationships: []
       }
