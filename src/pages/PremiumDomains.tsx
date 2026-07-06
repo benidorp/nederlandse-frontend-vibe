@@ -1903,7 +1903,7 @@ const PremiumDomains = () => {
               
               <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 sm:mb-6 leading-tight px-2">
                 <span className="bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 bg-clip-text text-transparent">
-                  Premium Expired domeinnamen met backlinks hoge autoriteit & SEO-Waarde
+                  Premium Expired Domeinnamen met Hoge Autoriteit & SEO-Waarde
                 </span>
               </h1>
               
