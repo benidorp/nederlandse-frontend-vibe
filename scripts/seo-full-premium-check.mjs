@@ -127,7 +127,8 @@ async function runPool(items, worker, size) {
 
   const failed = results.filter((r) => r.errors.length);
   const warned = results.filter((r) => !r.errors.length && r.warnings.length);
-  const passed = results.filter((r) => !r.errors.length && !r.warnings.length);
+  const noted = results.filter((r) => !r.errors.length && !r.warnings.length && r.notes?.length);
+  const passed = results.filter((r) => !r.errors.length && !r.warnings.length && !r.notes?.length);
 
   const report = {
     generatedAt: new Date().toISOString(),
@@ -135,6 +136,7 @@ async function runPool(items, worker, size) {
     total: results.length,
     passed: passed.length,
     warned: warned.length,
+    noted: noted.length,
     failed: failed.length,
     results,
   };
@@ -147,6 +149,7 @@ async function runPool(items, worker, size) {
     ``,
     `- ✅ Passed: **${passed.length}**`,
     `- ⚠️ Warnings: **${warned.length}**`,
+    `- ℹ️ Noted (SPA-rendered): **${noted.length}**`,
     `- ❌ Failed: **${failed.length}** / ${results.length}`,
     ``,
     failed.length ? `## Failed URLs\n${failed.map((r) => `- \`${r.url}\` — ${r.errors.join("; ")}`).join("\n")}` : `## ✅ No failures`,
@@ -155,7 +158,7 @@ async function runPool(items, worker, size) {
   ].join("\n");
   await writeFile(OUT_MD, md);
 
-  console.log(`✅ passed=${passed.length}  ⚠️ warn=${warned.length}  ❌ fail=${failed.length}`);
+  console.log(`✅ passed=${passed.length}  ⚠️ warn=${warned.length}  ℹ️ noted=${noted.length}  ❌ fail=${failed.length}`);
   console.log(`Report → ${OUT_JSON}\n         ${OUT_MD}`);
 
   // Optionally POST the report to the store function so the SEO Indexation
