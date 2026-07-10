@@ -98,7 +98,10 @@ async function auditUrl(url) {
 
   const products = extractProducts(html);
   rec.products = products.length;
-  if (url.includes("/domains/") && !products.length) rec.warnings.push("no Product JSON-LD");
+  // Individual /domains/{slug} pages are SPA-rendered — the Product JSON-LD is
+  // injected by react-helmet-async at runtime, so it is not visible to a
+  // static HTML fetch. Googlebot renders JS and will pick it up; only note it.
+  if (url.includes("/domains/") && !products.length) rec.notes = ["SPA-rendered: Product JSON-LD injected client-side (react-helmet-async)"];
   products.forEach((p, i) => auditProduct(p).forEach((e) => rec.errors.push(`Product[${i}]: missing ${e}`)));
   return rec;
 }
