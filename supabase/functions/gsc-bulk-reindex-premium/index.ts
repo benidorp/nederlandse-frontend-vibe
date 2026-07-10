@@ -70,9 +70,17 @@ Deno.serve(async (req) => {
       list = [...set].slice(0, limit);
     }
 
+    // Snapshot current verdicts BEFORE re-inspecting so we can produce a diff.
+    const { data: beforeRows } = await supa
+      .from("gsc_inspection_results")
+      .select("url, verdict, coverage_state, indexing_state, last_inspected_at")
+      .in("url", list);
+    const beforeMap: Record<string, { verdict: string | null; coverage_state: string | null; indexing_state: string | null; last_inspected_at: string | null }> = {};
+    for (const r of beforeRows ?? []) beforeMap[r.url] = { verdict: r.verdict, coverage_state: r.coverage_state, indexing_state: r.indexing_state, last_inspected_at: r.last_inspected_at };
+
     const { data: job, error: jobErr } = await supa
       .from("gsc_bulk_jobs")
-      .insert({ status: "running", total: list.length })
+      .insert({ status: "running", total: list.length, before_snapshot: beforeMap })
       .select()
       .single();
     if (jobErr || !job) return json({ error: `Failed to create job: ${jobErr?.message}` }, 500);
