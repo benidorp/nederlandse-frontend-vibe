@@ -70,9 +70,17 @@ Deno.serve(async (req) => {
       list = [...set].slice(0, limit);
     }
 
+    // Snapshot current verdicts BEFORE re-inspecting so we can produce a diff.
+    const { data: beforeRows } = await supa
+      .from("gsc_inspection_results")
+      .select("url, verdict, coverage_state, indexing_state, last_inspected_at")
+      .in("url", list);
+    const beforeMap: Record<string, { verdict: string | null; coverage_state: string | null; indexing_state: string | null; last_inspected_at: string | null }> = {};
+    for (const r of beforeRows ?? []) beforeMap[r.url] = { verdict: r.verdict, coverage_state: r.coverage_state, indexing_state: r.indexing_state, last_inspected_at: r.last_inspected_at };
+
     const { data: job, error: jobErr } = await supa
       .from("gsc_bulk_jobs")
-      .insert({ status: "running", total: list.length })
+      .insert({ status: "running", total: list.length, before_snapshot: beforeMap })
       .select()
       .single();
     if (jobErr || !job) return json({ error: `Failed to create job: ${jobErr?.message}` }, 500);
@@ -101,6 +109,7 @@ Deno.serve(async (req) => {
         await supa.from("gsc_bulk_jobs").update({ sitemaps_resubmitted: sitemapsResubmitted, updated_at: new Date().toISOString() }).eq("id", job.id);
       }
 
+      const afterMap: Record<string, string | null> = {};
       for (const u of list) {
         try {
           const r = await fetch(`${GW}/v1/urlInspection/index:inspect`, {
@@ -110,6 +119,7 @@ Deno.serve(async (req) => {
           const data = await r.json().catch(() => ({}));
           if (!r.ok) {
             errors++;
+            afterMap[u] = null;
             await supa.from("gsc_inspection_results").upsert({
               url: u, verdict: null, coverage_state: null, indexing_state: null,
               robots_txt_state: null, page_fetch_state: null, last_crawl_time: null,
@@ -120,6 +130,7 @@ Deno.serve(async (req) => {
           } else {
             const idx = data?.inspectionResult?.indexStatusResult ?? {};
             const verdict = idx.verdict;
+            afterMap[u] = verdict ?? null;
             if (verdict === "PASS") indexed++; else if (verdict) notIndexed++;
             await supa.from("gsc_inspection_results").upsert({
               url: u, verdict, coverage_state: idx.coverageState, indexing_state: idx.indexingState,
@@ -133,6 +144,7 @@ Deno.serve(async (req) => {
           }
         } catch (e) {
           errors++;
+          afterMap[u] = null;
           await supa.from("gsc_inspection_results").upsert({
             url: u, error: (e as Error).message, last_inspected_at: new Date().toISOString(),
           }, { onConflict: "url" });
@@ -147,9 +159,37 @@ Deno.serve(async (req) => {
         await new Promise((res) => setTimeout(res, delayMs));
       }
 
+      // Compute before/after diff: which URLs transitioned in indexed status.
+      const improved: string[] = [];
+      const regressed: string[] = [];
+      const stillIndexed: string[] = [];
+      const stillNotIndexed: string[] = [];
+      const newlyInspected: string[] = [];
+      for (const u of list) {
+        const before = beforeMap[u]?.verdict ?? null;
+        const after = afterMap[u] ?? null;
+        const wasPass = before === "PASS";
+        const nowPass = after === "PASS";
+        if (!before) newlyInspected.push(u);
+        else if (!wasPass && nowPass) improved.push(u);
+        else if (wasPass && !nowPass) regressed.push(u);
+        else if (wasPass && nowPass) stillIndexed.push(u);
+        else stillNotIndexed.push(u);
+      }
+      const diff = {
+        before_totals: {
+          indexed: Object.values(beforeMap).filter((v) => v.verdict === "PASS").length,
+          not_indexed: Object.values(beforeMap).filter((v) => v.verdict && v.verdict !== "PASS").length,
+          missing: list.length - Object.keys(beforeMap).length,
+        },
+        after_totals: { indexed, not_indexed: notIndexed, errors },
+        improved, regressed, still_indexed: stillIndexed, still_not_indexed: stillNotIndexed, newly_inspected: newlyInspected,
+      };
+
       await supa.from("gsc_bulk_jobs").update({
         processed, indexed, not_indexed: notIndexed, errors,
         status: "completed",
+        diff,
         finished_at: new Date().toISOString(),
         updated_at: new Date().toISOString(),
       }).eq("id", job.id);

@@ -362,6 +362,8 @@ export type Database = {
       }
       gsc_bulk_jobs: {
         Row: {
+          before_snapshot: Json | null
+          diff: Json | null
           error_message: string | null
           errors: number
           finished_at: string | null
@@ -376,6 +378,8 @@ export type Database = {
           updated_at: string
         }
         Insert: {
+          before_snapshot?: Json | null
+          diff?: Json | null
           error_message?: string | null
           errors?: number
           finished_at?: string | null
@@ -390,6 +394,8 @@ export type Database = {
           updated_at?: string
         }
         Update: {
+          before_snapshot?: Json | null
+          diff?: Json | null
           error_message?: string | null
           errors?: number
           finished_at?: string | null
