@@ -669,8 +669,7 @@ const premiumDomains = [
     price: "€429",
     stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
     backlinks: "20.2K+",
-    topBacklinks: ["zoznam.sk (DA 90)", "centrum.cz (DA 72)", "penize.cz (DA 62)", "n-1publications.org (DA 55)", "vinosol.ch (DA 55)"],
-    sold: true
+    topBacklinks: ["zoznam.sk (DA 90)", "centrum.cz (DA 72)", "penize.cz (DA 62)", "n-1publications.org (DA 55)", "vinosol.ch (DA 55)"]
   },
   {
     name: "bovisadrivein.it",
