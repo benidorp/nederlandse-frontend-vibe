@@ -134,7 +134,8 @@ const premiumDomains = [
     price: "€925",
     stripePaymentLink: "https://buy.stripe.com/28E00ja9F9CK6uNgdc9Zm0f",
     backlinks: "898+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "reddit.com (DA 97)", "nbcnews.com (DA 93)", "cam.ac.uk (DA 93)"]
+    topBacklinks: ["en.wikipedia.org (DA 97)", "reddit.com (DA 97)", "nbcnews.com (DA 93)", "cam.ac.uk (DA 93)"],
+    sold: true
   },
   // DA 35
   {
@@ -149,7 +150,8 @@ const premiumDomains = [
     price: "€875",
     stripePaymentLink: "https://buy.stripe.com/aFa5kD81x16e1ate549Zm0e",
     backlinks: "3.4K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "nasa.gov (DA 95)", "europa.eu (DA 94)", "ieee.org (DA 93)"]
+    topBacklinks: ["en.wikipedia.org (DA 97)", "nasa.gov (DA 95)", "europa.eu (DA 94)", "ieee.org (DA 93)"],
+    sold: true
   },
   {
     name: "martonecycling.eu",
@@ -163,7 +165,8 @@ const premiumDomains = [
     price: "€875",
     stripePaymentLink: "https://buy.stripe.com/aFa5kD81x16e1ate549Zm0e",
     backlinks: "232+",
-    topBacklinks: ["globo.com (DA 93)", "vogue.com (DA 92)", "harpersbazaar.com (DA 89)", "grazia.it (DA 73)"]
+    topBacklinks: ["globo.com (DA 93)", "vogue.com (DA 92)", "harpersbazaar.com (DA 89)", "grazia.it (DA 73)"],
+    sold: true
   },
   {
     name: "muenchner-kirchennachrichten.de",
@@ -564,7 +567,8 @@ const premiumDomains = [
     price: "€429",
     stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
     backlinks: "1.5K+",
-    topBacklinks: ["sites.google.com (DA 96)", "scoop.it (DA 92)", "envato.com (DA 91)", "informer.com (DA 90)", "codecanyon.net (DA 83)"]
+    topBacklinks: ["sites.google.com (DA 96)", "scoop.it (DA 92)", "envato.com (DA 91)", "informer.com (DA 90)", "codecanyon.net (DA 83)"],
+    sold: true
   },
   {
     name: "energaware.eu",
@@ -592,7 +596,8 @@ const premiumDomains = [
     price: "€675",
     stripePaymentLink: "https://buy.stripe.com/cNi00jdlR9CK5qJf989Zm0k",
     backlinks: "338+",
-    topBacklinks: ["medium.com (DA 95)", "ibm.com (DA 93)", "telefonica.com (DA 79)", "upv.es (DA 79)", "upm.es (DA 78)"]
+    topBacklinks: ["medium.com (DA 95)", "ibm.com (DA 93)", "telefonica.com (DA 79)", "upv.es (DA 79)", "upm.es (DA 78)"],
+    sold: true
   },
   {
     name: "finnovaregio.eu",
@@ -649,7 +654,8 @@ const premiumDomains = [
     price: "€429",
     stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
     backlinks: "280+",
-    topBacklinks: ["springer.com (DA 93)", "theconversation.com (DA 92)", "mdpi.com (DA 92)", "player.fm (DA 88)", "ncl.ac.uk (DA 85)"]
+    topBacklinks: ["springer.com (DA 93)", "theconversation.com (DA 92)", "mdpi.com (DA 92)", "player.fm (DA 88)", "ncl.ac.uk (DA 85)"],
+    sold: true
   },
   {
     name: "papilios.eu",
@@ -663,7 +669,8 @@ const premiumDomains = [
     price: "€429",
     stripePaymentLink: "https://buy.stripe.com/6oU9ATgy37uC1at3qq9Zm09",
     backlinks: "20.2K+",
-    topBacklinks: ["zoznam.sk (DA 90)", "centrum.cz (DA 72)", "penize.cz (DA 62)", "n-1publications.org (DA 55)", "vinosol.ch (DA 55)"]
+    topBacklinks: ["zoznam.sk (DA 90)", "centrum.cz (DA 72)", "penize.cz (DA 62)", "n-1publications.org (DA 55)", "vinosol.ch (DA 55)"],
+    sold: true
   },
   {
     name: "bovisadrivein.it",
@@ -749,7 +756,8 @@ const premiumDomains = [
     price: "€329",
     stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
     backlinks: "117+",
-    topBacklinks: ["springer.com (DA 93)", "mdpi.com (DA 92)", "ilfattoquotidiano.it (DA 90)", "unimi.it (DA 72)", "polimi.it (DA 71)"]
+    topBacklinks: ["springer.com (DA 93)", "mdpi.com (DA 92)", "ilfattoquotidiano.it (DA 90)", "unimi.it (DA 72)", "polimi.it (DA 71)"],
+    sold: true
   },
   {
     name: "davidhughesillustration.co.uk",
@@ -962,7 +970,8 @@ const premiumDomains = [
     price: "€329",
     stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
     backlinks: "97+",
-    topBacklinks: ["rug.nl (DA 84)", "nu.nl (DA 91)", "wetenschapsagenda.nl (DA 65)"]
+    topBacklinks: ["rug.nl (DA 84)", "nu.nl (DA 91)", "wetenschapsagenda.nl (DA 65)"],
+    sold: true
   },
   {
     name: "khresmoi.eu",
@@ -976,7 +985,8 @@ const premiumDomains = [
     price: "€329",
     stripePaymentLink: "https://buy.stripe.com/fZufZhbdJ5mu8CVe549Zm08",
     backlinks: "31.7K+",
-    topBacklinks: ["mdpi.com (DA 92)", "springer.com (DA 93)", "biomedcentral.com (DA 91)", "cuni.cz (DA 85)"]
+    topBacklinks: ["mdpi.com (DA 92)", "springer.com (DA 93)", "biomedcentral.com (DA 91)", "cuni.cz (DA 85)"],
+    sold: true
   },
   {
     name: "sialon.eu",
@@ -1089,7 +1099,8 @@ const premiumDomains = [
     price: "€249",
     stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
     backlinks: "66+",
-    topBacklinks: ["cnn.com (DA 94)", "theconversation.com (DA 92)", "realty.rbc.ru (DA 88)", "pagina12.com.ar (DA 82)", "elledecor.com (DA 80)"]
+    topBacklinks: ["cnn.com (DA 94)", "theconversation.com (DA 92)", "realty.rbc.ru (DA 88)", "pagina12.com.ar (DA 82)", "elledecor.com (DA 80)"],
+    sold: true
   },
   {
     name: "hotelgiotto.eu",
@@ -1175,7 +1186,8 @@ const premiumDomains = [
     price: "€249",
     stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
     backlinks: "175+",
-    topBacklinks: ["mixcloud.com (DA 92)", "standaard.be (DA 76)", "elle.be (DA 62)", "outtraveler.com (DA 55)", "seniorennet.be (DA 54)"]
+    topBacklinks: ["mixcloud.com (DA 92)", "standaard.be (DA 76)", "elle.be (DA 62)", "outtraveler.com (DA 55)", "seniorennet.be (DA 54)"],
+    sold: true
   },
   {
     name: "front-vosges-14-18.eu",
@@ -1232,7 +1244,8 @@ const premiumDomains = [
     price: "€249",
     stripePaymentLink: "https://buy.stripe.com/bJefZh5Tp7uCf1jaSS9Zm0m",
     backlinks: "613+",
-    topBacklinks: ["medium.com (DA 95)", "tinyurl.com (DA 94)", "bit.ly (DA 94)", "about.me (DA 92)", "pages.dev (DA 91)"]
+    topBacklinks: ["medium.com (DA 95)", "tinyurl.com (DA 94)", "bit.ly (DA 94)", "about.me (DA 92)", "pages.dev (DA 91)"],
+    sold: true
   },
   {
     name: "happyvpro.nl",
@@ -1318,7 +1331,8 @@ const premiumDomains = [
     price: "€175",
     stripePaymentLink: "https://buy.stripe.com/8x26oH95B4iq9GZ6CC9Zm07",
     backlinks: "1.9K+",
-    topBacklinks: ["en.wikipedia.org (DA 97)", "europa.eu (DA 97)", "es.wikipedia.org (DA 96)", "pt.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)"]
+    topBacklinks: ["en.wikipedia.org (DA 97)", "europa.eu (DA 97)", "es.wikipedia.org (DA 96)", "pt.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)"],
+    sold: true
   },
   {
     name: "maribe.eu",
@@ -1389,7 +1403,8 @@ const premiumDomains = [
     price: "€125",
     backlinks: "113+",
     topBacklinks: ["fr.wikipedia.org (DA 95)", "bfmtv.com (DA 92)", "heise.de (DA 91)", "nu.nl (DA 91)", "europe1.fr (DA 90)"],
-    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
+    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06",
+    sold: true
   },
   {
     name: "lifemanev.eu",
@@ -1460,7 +1475,8 @@ const premiumDomains = [
     price: "€125",
     backlinks: "4.9K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "es.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)", "ru.wikipedia.org (DA 94)", "creativecommons.org (DA 94)"],
-    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
+    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06",
+    sold: true
   },
   {
     name: "europeanmuseumforum.eu",
@@ -1474,7 +1490,8 @@ const premiumDomains = [
     price: "€125",
     backlinks: "4.9K+",
     topBacklinks: ["en.wikipedia.org (DA 97)", "es.wikipedia.org (DA 96)", "fr.wikipedia.org (DA 95)", "ru.wikipedia.org (DA 94)", "creativecommons.org (DA 94)"],
-    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06"
+    stripePaymentLink: "https://buy.stripe.com/cNi3cv81xg18g5nf989Zm06",
+    sold: true
   },
   {
     name: "escmalta2018.eu",
