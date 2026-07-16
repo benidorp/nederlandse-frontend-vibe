@@ -366,7 +366,8 @@ const premiumDomains = [
     price: "€695",
     stripePaymentLink: "https://buy.stripe.com/dRm28r5TpaGO6uNe549Zm0b",
     backlinks: "1.7K+",
-    topBacklinks: ["microsoft.com (DA 99)", "nos.nl (DA 90)", "neowin.net (DA 88)", "techpowerup.com (DA 83)", "tweakers.net (DA 79)"]
+    topBacklinks: ["microsoft.com (DA 99)", "nos.nl (DA 90)", "neowin.net (DA 88)", "techpowerup.com (DA 83)", "tweakers.net (DA 79)"],
+    sold: true
   },
   {
     name: "leading-the-digital-decade.eu",
@@ -380,7 +381,8 @@ const premiumDomains = [
     price: "€695",
     stripePaymentLink: "https://buy.stripe.com/dRm28r5TpaGO6uNe549Zm0b",
     backlinks: "189+",
-    topBacklinks: ["europa.eu (DA 97)", "politico.eu (DA 91)", "lse.ac.uk (DA 89)", "fapesp.br (DA 72)", "eureporter.co (DA 68)"]
+    topBacklinks: ["europa.eu (DA 97)", "politico.eu (DA 91)", "lse.ac.uk (DA 89)", "fapesp.br (DA 72)", "eureporter.co (DA 68)"],
+    sold: true
   },
   {
     name: "landstewardship.eu",
